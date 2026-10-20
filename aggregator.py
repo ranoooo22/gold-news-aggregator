@@ -97,4 +97,4 @@ def process_news():
     embeddings = embed_model.encode(titles)
     
     new_clusters = []
-    for idx, article in enumerate
+    for idx, article in enumerate(new_articles):

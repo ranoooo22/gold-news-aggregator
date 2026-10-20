@@ -1,13 +1,13 @@
 import os
 import json
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 import requests
 import feedparser
 from sentence_transformers import SentenceTransformer, util
 from google import genai
 
-# 1. KI EINRICHTEN (NEUES SDK)
+# 1. KI EINRICHTEN
 API_KEY = os.environ.get("GEMINI_API_KEY")
 client = None
 if API_KEY:
@@ -32,50 +32,83 @@ print("Lade Embeddings-Modell...")
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 def load_history():
-    """Lädt die alte data.json und verwirft fehlerhafte KI-Zusammenfassungen automatisch."""
+    """Lädt data.json, behält nur valide Zusammenfassungen der letzten 24h."""
+    now = datetime.now()
+    cutoff_time = now - timedelta(hours=24)
+    
     try:
         with open("data.json", "r", encoding="utf-8") as f:
             history = json.load(f)
             
-            saubere_historie = []
+            clean_history = []
             for cluster in history:
                 summary = cluster.get("summary", "")
-                if "Summary could not be generated" not in summary and "konnte nicht generiert werden" not in summary:
-                    saubere_historie.append(cluster)
+                # Fehlerhafte Zusammenfassungen rigoros ignorieren
+                if not summary or "could not be generated" in summary or "konnte nicht generiert werden" in summary:
+                    continue
+                
+                # Nur Artikel behalten, die maximal 24 Stunden alt sind
+                try:
+                    cluster_date = datetime.strptime(cluster.get("main_date", ""), "%Y-%m-%d %H:%M")
+                    if cluster_date >= cutoff_time:
+                        clean_history.append(cluster)
+                except ValueError:
+                    continue
             
-            print(f"Historie geladen: {len(saubere_historie)} gültige Cluster.")
-            return saubere_historie
+            print(f"Historie geladen: {len(clean_history)} gültige Cluster aus den letzten 24h.")
+            return clean_history
             
     except (FileNotFoundError, json.JSONDecodeError):
-        print("Gedächtnis ist leer. Starte neu.")
         return []
 
 def fetch_new_articles(existing_urls):
+    """Holt nur neue Artikel, die maximal 24 Stunden alt sind."""
     articles = []
+    now = datetime.now()
+    cutoff_time = now - timedelta(hours=24)
+
     for source, url in FEEDS.items():
         try:
             response = requests.get(url, headers=HEADERS, timeout=10)
             feed = feedparser.parse(response.content)
             
-            for entry in feed.entries[:15]:
+            for entry in feed.entries[:20]:
                 link = entry.link
                 if link in existing_urls:
                     continue 
                 
-                try:
-                    pub_date = datetime.fromtimestamp(time.mktime(entry.published_parsed)).strftime("%Y-%m-%d %H:%M")
-                except:
-                    pub_date = datetime.now().strftime("%Y-%m-%d %H:%M")
+                # Publikationsdatum ermitteln
+                pub_dt = None
+                if hasattr(entry, "published_parsed") and entry.published_parsed:
+                    try:
+                        pub_dt = datetime.fromtimestamp(time.mktime(entry.published_parsed))
+                    except Exception:
+                        pub_dt = None
                 
-                articles.append({"title": entry.title, "link": link, "source": source, "date": pub_date})
+                # Wenn kein gültiges Datum vorhanden ist, nehmen wir die aktuelle Zeit
+                if not pub_dt:
+                    pub_dt = now
+
+                # Strikt verwerfen, wenn älter als 24 Stunden (z.B. aus 2025)
+                if pub_dt < cutoff_time:
+                    continue
+
+                pub_date_str = pub_dt.strftime("%Y-%m-%d %H:%M")
+                articles.append({
+                    "title": entry.title,
+                    "link": link,
+                    "source": source,
+                    "date": pub_date_str,
+                    "_timestamp": pub_dt.timestamp()
+                })
         except Exception as e:
             print(f"Fehler bei {source}: {e}")
     return articles
 
 def generate_summary(articles_in_cluster, max_retries=3):
-    """Generates summary using gemini-3.5-flash-lite (1500 calls/day limit)."""
+    """Generiert die Zusammenfassung via gemini-3.5-flash-lite."""
     if not client:
-        return "No AI summary available (Missing API Key)."
+        return None
     
     titles = [a["title"] for a in articles_in_cluster]
     prompt = f"You are a neutral financial analyst. Summarize these headlines into a single event in 2 to 3 objective, unbiased sentences in English. Avoid sensationalism. Headlines: {'; '.join(titles)}"
@@ -90,24 +123,24 @@ def generate_summary(articles_in_cluster, max_retries=3):
         except Exception as e:
             print(f"Gemini API Versuch {attempt}/{max_retries} fehlgeschlagen: {e}")
             if attempt < max_retries:
-                time.sleep(4 * attempt)  # Wartet bei Überlastung kurz (4s, 8s)
+                time.sleep(3 * attempt)
             else:
-                return "Summary could not be generated."
+                return None
 
 def process_news():
     history = load_history()
     
     existing_urls = set()
     for cluster in history:
-        for article in cluster["articles"]:
+        for article in cluster.get("articles", []):
             existing_urls.add(article["link"])
 
     new_articles = fetch_new_articles(existing_urls)
     if not new_articles:
-        print("Keine neuen Artikel gefunden.")
+        print("Keine neuen tagesaktuellen Artikel gefunden.")
         return history
 
-    print(f"{len(new_articles)} neue Artikel gefunden. Clustere...")
+    print(f"{len(new_articles)} neue Artikel aus den letzten 24h gefunden. Clustere...")
     titles = [a["title"] for a in new_articles]
     embeddings = embed_model.encode(titles)
     
@@ -126,6 +159,7 @@ def process_news():
             new_clusters.append({
                 "cluster_title": article["title"],
                 "main_date": article["date"],
+                "_timestamp": article["_timestamp"],
                 "main_embedding": embeddings[idx],
                 "articles": [article]
             })
@@ -134,11 +168,34 @@ def process_news():
     for cluster in new_clusters:
         del cluster["main_embedding"]
         print(f"Erstelle KI-Zusammenfassung für: {cluster['cluster_title']}")
-        cluster["summary"] = generate_summary(cluster["articles"])
-        final_new_clusters.append(cluster)
+        summary = generate_summary(cluster["articles"])
+        
+        # Wichtig: Nur speichern, wenn die KI erfolgreich war!
+        if summary:
+            cluster["summary"] = summary
+            final_new_clusters.append(cluster)
+        else:
+            print(f"Überspringe Cluster ohne Zusammenfassung: {cluster['cluster_title']}")
 
-    updated_history = final_new_clusters + history
-    return updated_history[:100]
+    # Zusammenführen und strikt chronologisch nach Datum sortieren (neueste zuerst)
+    all_clusters = final_new_clusters + history
+    
+    for c in all_clusters:
+        if "_timestamp" not in c:
+            try:
+                c["_timestamp"] = datetime.strptime(c["main_date"], "%Y-%m-%d %H:%M").timestamp()
+            except Exception:
+                c["_timestamp"] = 0
+
+    all_clusters.sort(key=lambda x: x["_timestamp"], reverse=True)
+
+    # Bereinige interne Hilfsvariablen vor dem Speichern
+    for c in all_clusters:
+        c.pop("_timestamp", None)
+        for a in c.get("articles", []):
+            a.pop("_timestamp", None)
+
+    return all_clusters[:50]
 
 if __name__ == "__main__":
     final_data = process_news()

@@ -7,12 +7,13 @@ import feedparser
 from sentence_transformers import SentenceTransformer, util
 from google import genai
 
-# 1. KI EINRICHTEN (NEUES SDK)
+# 1. KI EINRICHTEN (NEUES SDK, ALTES MODELL MIT HOHEM LIMIT)
 API_KEY = os.environ.get("GEMINI_API_KEY")
 client = None
 if API_KEY:
     try:
-        client = genai.Client(api_key=API_KEY)
+        # Forciere die v1beta API, um 404-Fehler bei 1.5-flash zu vermeiden
+        client = genai.Client(api_key=API_KEY, http_options={'api_version': 'v1beta'})
     except Exception as e:
         print(f"Fehler bei KI-Initialisierung: {e}")
 
@@ -37,14 +38,13 @@ def load_history():
         with open("data.json", "r", encoding="utf-8") as f:
             history = json.load(f)
             
-            # Wirf alle Cluster weg, bei denen die KI zuvor versagt hat
             saubere_historie = []
             for cluster in history:
                 summary = cluster.get("summary", "")
                 if "Summary could not be generated" not in summary and "konnte nicht generiert werden" not in summary:
                     saubere_historie.append(cluster)
             
-            print(f"Historie geladen: {len(saubere_historie)} gültige Cluster (fehlerhafte wurden gelöscht).")
+            print(f"Historie geladen: {len(saubere_historie)} gültige Cluster.")
             return saubere_historie
             
     except (FileNotFoundError, json.JSONDecodeError):
@@ -52,7 +52,6 @@ def load_history():
         return []
 
 def fetch_new_articles(existing_urls):
-    """Holt nur neue Artikel, die noch nicht in der Historie sind."""
     articles = []
     for source, url in FEEDS.items():
         try:
@@ -75,7 +74,7 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def generate_summary(articles_in_cluster, max_retries=3):
-    """Generates an English summary using Gemini with automatic retries for 503 errors."""
+    """Generates summary using gemini-1.5-flash (1500 calls/day limit)."""
     if not client:
         return "No AI summary available (Missing API Key)."
     
@@ -85,14 +84,14 @@ def generate_summary(articles_in_cluster, max_retries=3):
     for attempt in range(1, max_retries + 1):
         try:
             response = client.models.generate_content(
-                model='gemini-3.8-flash',
+                model='gemini-1.5-flash',
                 contents=prompt
             )
             return response.text.replace('\n', ' ').strip()
         except Exception as e:
             print(f"Gemini API Versuch {attempt}/{max_retries} fehlgeschlagen: {e}")
             if attempt < max_retries:
-                time.sleep(3 * attempt)  # Wartet kurz (3s, dann 6s), bevor erneut angefragt wird
+                time.sleep(3 * attempt)
             else:
                 return "Summary could not be generated."
 

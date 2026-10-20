@@ -22,7 +22,7 @@ FEEDS = {
     "Kitco": "https://www.kitco.com/news/rss",
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
     "Yahoo Finance": "https://finance.yahoo.com/news/rssindex",
-    "Investing.com": "https://de.investing.com/rss/news_11.rss"
+    "Investing.com": "https://www.investing.com/rss/news_11.rss"  # <-- Jetzt der englische Commodities-Feed
 }
 
 HEADERS = {
@@ -176,7 +176,7 @@ def process_news():
         added = False
         for cluster in new_clusters:
             sim = util.cos_sim(embeddings[idx], cluster["main_embedding"]).item()
-            if sim > 0.65:
+            if sim > 0.50:
                 sources_in_cluster = [a["source"] for a in cluster["articles"]]
                 if article["source"] not in sources_in_cluster:
                     cluster["articles"].append(article)

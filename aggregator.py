@@ -98,3 +98,36 @@ def process_news():
     
     new_clusters = []
     for idx, article in enumerate(new_articles):
+        added = False
+        for cluster in new_clusters:
+            sim = util.cos_sim(embeddings[idx], cluster["main_embedding"]).item()
+            if sim > 0.65:
+                sources_in_cluster = [a["source"] for a in cluster["articles"]]
+                if article["source"] not in sources_in_cluster:
+                    cluster["articles"].append(article)
+                added = True
+                break
+        if not added:
+            new_clusters.append({
+                "cluster_title": article["title"],
+                "main_date": article["date"],
+                "main_embedding": embeddings[idx],
+                "articles": [article]
+            })
+
+    # Erstelle Zusammenfassungen
+    final_new_clusters = []
+    for cluster in new_clusters:
+        del cluster["main_embedding"]
+        print(f"Erstelle KI-Zusammenfassung für: {cluster['cluster_title']}")
+        cluster["summary"] = generate_summary(cluster["articles"])
+        final_new_clusters.append(cluster)
+
+    # Neue Cluster oben an die Historie anhängen (max. 100 Cluster speichern)
+    updated_history = final_new_clusters + history
+    return updated_history[:100]
+
+if __name__ == "__main__":
+    final_data = process_news()
+    with open("data.json", "w", encoding="utf-8") as f:
+        json.dump(final_data, f, indent=4, ensure_ascii=False)

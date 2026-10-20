@@ -28,7 +28,7 @@ jobs:
       - name: Aggregator-Skript ausführen
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python aggregator.py
+        run: python check_models.py
 
       - name: Änderungen speichern
         run: |

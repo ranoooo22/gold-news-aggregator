@@ -2,11 +2,11 @@ name: Automatischer News-Aggregator
 
 on:
   schedule:
-    - cron: '0 * * * *' # Läuft jede Stunde
-  workflow_dispatch: # Erlaubt den manuellen Start
+    - cron: '0 * * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write # Erlaubt dem Bot, die data.json zu speichern
+  contents: write
 
 jobs:
   update-news:
@@ -23,15 +23,17 @@ jobs:
 
       - name: Abhängigkeiten installieren
         run: |
-          pip install feedparser sentence-transformers
+          pip install feedparser sentence-transformers requests google-generativeai
 
       - name: Aggregator-Skript ausführen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python aggregator.py
 
-      - name: Änderungen speichern (Commit & Push)
+      - name: Änderungen speichern
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json
-          git commit -m "Automatische News-Aktualisierung" || exit 0
+          git commit -m "Automatische News-Aktualisierung mit KI" || exit 0
           git push

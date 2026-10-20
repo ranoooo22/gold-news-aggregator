@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gold News Aggregator (AI Powered)</title>
+    <title>Financial & Gold News Aggregator</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -38,9 +38,9 @@
 </head>
 <body>
 
-    <h1>Wirtschafts- & Gold-News (KI-Zusammenfassung)</h1>
+    <h1>Financial & Gold News Aggregator</h1>
     <div id="news-container">
-        <p style="text-align:center; color:#7f8c8d;">Lade neueste Nachrichten...</p>
+        <p style="text-align:center; color:#7f8c8d;">Loading latest news...</p>
     </div>
 
     <script>
@@ -51,7 +51,7 @@
                 container.innerHTML = ''; 
 
                 if (!data || data.length === 0) {
-                    container.innerHTML = '<p style="text-align:center;">Aktuell keine Nachrichten verfügbar.</p>';
+                    container.innerHTML = '<p style="text-align:center;">No news available at the moment.</p>';
                     return;
                 }
 
@@ -61,11 +61,10 @@
 
                     const dateStr = `<div class="date">${cluster.main_date}</div>`;
                     
-                    // Prüfen ob eine Zusammenfassung da ist, ansonsten den Titel nehmen
-                    const summaryText = cluster.summary ? cluster.summary : "Keine KI-Zusammenfassung verfügbar.";
-                    const summaryBox = `<div class="summary"><strong>Zusammenfassung:</strong> ${summaryText}</div>`;
+                    const summaryText = cluster.summary ? cluster.summary : "No AI summary available.";
+                    const summaryBox = `<div class="summary"><strong>Summary:</strong> ${summaryText}</div>`;
                     
-                    let sourcesHtml = `<div class="sources-title">Gemeldet von:</div><ul class="source-list">`;
+                    let sourcesHtml = `<div class="sources-title">Reported by:</div><ul class="source-list">`;
                     cluster.articles.forEach(article => {
                         sourcesHtml += `
                             <li class="source-item">

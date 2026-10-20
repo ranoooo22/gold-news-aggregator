@@ -64,19 +64,19 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def generate_summary(articles_in_cluster):
-    """Lässt die Gemini-KI eine sachliche Zusammenfassung schreiben."""
+    """Lässt die Gemini-KI eine englische Zusammenfassung schreiben."""
     if not gemini_model:
-        return "Keine Zusammenfassung verfügbar (API-Key fehlt)."
+        return "No AI summary available (Missing API Key)."
     
     titles = [a["title"] for a in articles_in_cluster]
-    prompt = f"Du bist ein neutraler Finanzanalyst. Fasse diese Schlagzeilen zu einem einzigen Ereignis in 2 bis 3 sachlichen, wertfreien Sätzen auf Deutsch zusammen. Vermeide reisserische Wörter. Schlagzeilen: {'; '.join(titles)}"
+    prompt = f"You are a neutral financial analyst. Summarize these headlines into a single event in 2 to 3 objective, unbiased sentences in English. Avoid sensationalism. Headlines: {'; '.join(titles)}"
     
     try:
         response = gemini_model.generate_content(prompt)
         return response.text.replace('\n', ' ').strip()
     except Exception as e:
         print(f"Gemini API Fehler: {e}")
-        return "Zusammenfassung konnte nicht generiert werden."
+        return "Summary could not be generated."
 
 def process_news():
     history = load_history()

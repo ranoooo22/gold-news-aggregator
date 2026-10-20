@@ -11,11 +11,8 @@ from google import genai
 API_KEY = os.environ.get("GEMINI_API_KEY")
 client = None
 if API_KEY:
-try:
-        response = client.models.generate_content(
-            model='gemini-2.5-flash',
-            contents=prompt
-        )
+    try:
+        client = genai.Client(api_key=API_KEY)
     except Exception as e:
         print(f"Fehler bei KI-Initialisierung: {e}")
 
@@ -75,7 +72,7 @@ def generate_summary(articles_in_cluster):
     
     try:
         response = client.models.generate_content(
-            model='gemini-2.5-flash',
+            model='gemini-3.8-flash',
             contents=prompt
         )
         return response.text.replace('\n', ' ').strip()

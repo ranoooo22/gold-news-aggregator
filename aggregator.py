@@ -106,7 +106,7 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def generate_summary(articles_in_cluster, max_retries=3):
-    """Generiert die Zusammenfassung via gemini-3.5-flash-lite."""
+    """Generiert die Zusammenfassung via gemini-3.6-flash."""
     if not client:
         return None
     
@@ -116,12 +116,12 @@ def generate_summary(articles_in_cluster, max_retries=3):
     for attempt in range(1, max_retries + 1):
         try:
             response = client.models.generate_content(
-                model='gemini-3.5-flash-lite',
+                model='gemini-3.6-flash',
                 contents=prompt
             )
             return response.text.replace('\n', ' ').strip()
         except Exception as e:
-            print(f"Gemini API Versuch {attempt}/{max_retries} fehlgeschlagen: {e}")
+            print(f"Gemini API Versuch {attempt}/{max_retries} fehlgeschlagen. Fehlergrund: {e}")
             if attempt < max_retries:
                 time.sleep(3 * attempt)
             else:

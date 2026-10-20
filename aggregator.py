@@ -62,23 +62,27 @@ def fetch_new_articles(existing_urls):
             print(f"Fehler bei {source}: {e}")
     return articles
 
-def generate_summary(articles_in_cluster):
-    """Generates an English summary using the new Google GenAI SDK."""
+def generate_summary(articles_in_cluster, max_retries=3):
+    """Generates an English summary using Gemini with automatic retries for 503 errors."""
     if not client:
         return "No AI summary available (Missing API Key)."
     
     titles = [a["title"] for a in articles_in_cluster]
     prompt = f"You are a neutral financial analyst. Summarize these headlines into a single event in 2 to 3 objective, unbiased sentences in English. Avoid sensationalism. Headlines: {'; '.join(titles)}"
     
-    try:
-        response = client.models.generate_content(
-            model='gemini-3.8-flash',
-            contents=prompt
-        )
-        return response.text.replace('\n', ' ').strip()
-    except Exception as e:
-        print(f"Gemini API Fehler: {e}")
-        return "Summary could not be generated."
+    for attempt in range(1, max_retries + 1):
+        try:
+            response = client.models.generate_content(
+                model='gemini-3.8-flash',
+                contents=prompt
+            )
+            return response.text.replace('\n', ' ').strip()
+        except Exception as e:
+            print(f"Gemini API Versuch {attempt}/{max_retries} fehlgeschlagen: {e}")
+            if attempt < max_retries:
+                time.sleep(3 * attempt)  # Wartet kurz (3s, dann 6s), bevor erneut angefragt wird
+            else:
+                return "Summary could not be generated."
 
 def process_news():
     history = load_history()

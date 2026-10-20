@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gold News Aggregator</title>
+    <title>Gold News Aggregator (AI Powered)</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -13,122 +13,72 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 30px;
-        }
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
         .cluster {
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            border-left: 5px solid #d4af37; /* Goldener Akzent */
+            background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 5px solid #d4af37;
         }
-        .cluster h2 {
-            margin-top: 0;
-            font-size: 1.2rem;
-            color: #2c3e50;
+        .cluster h2 { margin-top: 0; font-size: 1.3rem; color: #2c3e50; margin-bottom: 5px;}
+        .date { font-size: 0.85rem; color: #7f8c8d; margin-bottom: 15px; }
+        .summary {
+            background-color: #f8f9fa; padding: 15px; border-radius: 6px;
+            font-size: 1.05rem; line-height: 1.5; color: #34495e; margin-bottom: 20px;
+            border: 1px solid #e9ecef;
         }
-        .date {
-            font-size: 0.85rem;
-            color: #7f8c8d;
-            margin-bottom: 15px;
-        }
-        .source-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .source-item {
-            margin-bottom: 8px;
-            font-size: 0.95rem;
-            display: flex;
-            align-items: baseline;
-        }
+        .sources-title { font-size: 0.9rem; font-weight: bold; color: #7f8c8d; margin-bottom: 10px; text-transform: uppercase; }
+        .source-list { list-style: none; padding: 0; margin: 0; }
+        .source-item { margin-bottom: 8px; font-size: 0.95rem; display: flex; align-items: baseline; }
         .source-badge {
-            background-color: #ecf0f1;
-            color: #2c3e50;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            margin-right: 10px;
-            min-width: 60px;
-            text-align: center;
+            background-color: #ecf0f1; color: #2c3e50; padding: 3px 8px;
+            border-radius: 4px; font-size: 0.75rem; font-weight: bold; margin-right: 10px; min-width: 60px; text-align: center;
         }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .loading {
-            text-align: center;
-            color: #7f8c8d;
-        }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
 
-    <h1>Wirtschafts- & Gold-News Aggregator</h1>
+    <h1>Wirtschafts- & Gold-News (KI-Zusammenfassung)</h1>
     <div id="news-container">
-        <p class="loading">Lade neueste Nachrichten...</p>
+        <p style="text-align:center; color:#7f8c8d;">Lade neueste Nachrichten...</p>
     </div>
 
     <script>
-        // Lade die JSON-Daten
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById('news-container');
-                container.innerHTML = ''; // Lade-Text entfernen
+                container.innerHTML = ''; 
 
                 if (!data || data.length === 0) {
-                    container.innerHTML = '<p class="loading">Aktuell keine Nachrichten verfügbar.</p>';
+                    container.innerHTML = '<p style="text-align:center;">Aktuell keine Nachrichten verfügbar.</p>';
                     return;
                 }
 
-                // Für jeden Cluster eine Karte erstellen
                 data.forEach(cluster => {
                     const clusterDiv = document.createElement('div');
                     clusterDiv.className = 'cluster';
 
-                    const title = document.createElement('h2');
-                    title.textContent = cluster.cluster_title;
-                    clusterDiv.appendChild(title);
-
-                    const date = document.createElement('div');
-                    date.className = 'date';
-                    date.textContent = "Zuletzt gemeldet: " + cluster.main_date;
-                    clusterDiv.appendChild(date);
-
-                    const sourceList = document.createElement('ul');
-                    sourceList.className = 'source-list';
-
-                    // Alle Artikel (Quellen) dieses Clusters auflisten
+                    const dateStr = `<div class="date">${cluster.main_date}</div>`;
+                    
+                    // Prüfen ob eine Zusammenfassung da ist, ansonsten den Titel nehmen
+                    const summaryText = cluster.summary ? cluster.summary : "Keine KI-Zusammenfassung verfügbar.";
+                    const summaryBox = `<div class="summary"><strong>Zusammenfassung:</strong> ${summaryText}</div>`;
+                    
+                    let sourcesHtml = `<div class="sources-title">Gemeldet von:</div><ul class="source-list">`;
                     cluster.articles.forEach(article => {
-                        const li = document.createElement('li');
-                        li.className = 'source-item';
-                        
-                        li.innerHTML = `
-                            <span class="source-badge">${article.source}</span>
-                            <a href="${article.link}" target="_blank">${article.title}</a>
-                        `;
-                        sourceList.appendChild(li);
+                        sourcesHtml += `
+                            <li class="source-item">
+                                <span class="source-badge">${article.source}</span>
+                                <a href="${article.link}" target="_blank">${article.title}</a>
+                            </li>`;
                     });
+                    sourcesHtml += `</ul>`;
 
-                    clusterDiv.appendChild(sourceList);
+                    clusterDiv.innerHTML = dateStr + summaryBox + sourcesHtml;
                     container.appendChild(clusterDiv);
                 });
-            })
-            .catch(error => {
-                document.getElementById('news-container').innerHTML = '<p class="loading">Fehler beim Laden der Daten.</p>';
-                console.error('Error fetching data:', error);
             });
     </script>
-
 </body>
 </html>

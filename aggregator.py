@@ -5,16 +5,16 @@ from datetime import datetime
 import requests
 import feedparser
 from sentence_transformers import SentenceTransformer, util
-import google.generativeai as genai
+from google import genai
 
-# 1. KI EINRICHTEN
+# 1. KI EINRICHTEN (NEUES SDK)
 API_KEY = os.environ.get("GEMINI_API_KEY")
+client = None
 if API_KEY:
-    genai.configure(api_key=API_KEY)
-    gemini_model = genai.GenerativeModel('gemini-1.5-flash')
-else:
-    print("WARNUNG: Kein Gemini API Key gefunden!")
-    gemini_model = None
+    try:
+        client = genai.Client(api_key=API_KEY)
+    except Exception as e:
+        print(f"Fehler bei KI-Initialisierung: {e}")
 
 # 2. QUELLEN & TARNKAPPE (User-Agent)
 FEEDS = {
@@ -44,14 +44,13 @@ def fetch_new_articles(existing_urls):
     articles = []
     for source, url in FEEDS.items():
         try:
-            # Nutze requests mit Tarnkappe, um Blockaden zu umgehen
             response = requests.get(url, headers=HEADERS, timeout=10)
             feed = feedparser.parse(response.content)
             
             for entry in feed.entries[:15]:
                 link = entry.link
                 if link in existing_urls:
-                    continue # Überspringe alte Artikel
+                    continue 
                 
                 try:
                     pub_date = datetime.fromtimestamp(time.mktime(entry.published_parsed)).strftime("%Y-%m-%d %H:%M")
@@ -64,15 +63,18 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def generate_summary(articles_in_cluster):
-    """Lässt die Gemini-KI eine englische Zusammenfassung schreiben."""
-    if not gemini_model:
+    """Generates an English summary using the new Google GenAI SDK."""
+    if not client:
         return "No AI summary available (Missing API Key)."
     
     titles = [a["title"] for a in articles_in_cluster]
     prompt = f"You are a neutral financial analyst. Summarize these headlines into a single event in 2 to 3 objective, unbiased sentences in English. Avoid sensationalism. Headlines: {'; '.join(titles)}"
     
     try:
-        response = gemini_model.generate_content(prompt)
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt
+        )
         return response.text.replace('\n', ' ').strip()
     except Exception as e:
         print(f"Gemini API Fehler: {e}")
@@ -81,7 +83,6 @@ def generate_summary(articles_in_cluster):
 def process_news():
     history = load_history()
     
-    # Extrahiere alle bekannten Links, um Duplikate in der Historie zu vermeiden
     existing_urls = set()
     for cluster in history:
         for article in cluster["articles"]:
@@ -115,7 +116,6 @@ def process_news():
                 "articles": [article]
             })
 
-    # Erstelle Zusammenfassungen
     final_new_clusters = []
     for cluster in new_clusters:
         del cluster["main_embedding"]
@@ -123,7 +123,6 @@ def process_news():
         cluster["summary"] = generate_summary(cluster["articles"])
         final_new_clusters.append(cluster)
 
-    # Neue Cluster oben an die Historie anhängen (max. 100 Cluster speichern)
     updated_history = final_new_clusters + history
     return updated_history[:100]
 

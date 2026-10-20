@@ -1,6 +1,7 @@
 import os
 import json
 import time
+import re
 from datetime import datetime, timedelta
 import requests
 import feedparser
@@ -16,7 +17,7 @@ if API_KEY:
     except Exception as e:
         print(f"Fehler bei KI-Initialisierung: {e}")
 
-# 2. QUELLEN & TARNKAPPE (User-Agent)
+# 2. QUELLEN & TARNKAPPE
 FEEDS = {
     "Kitco": "https://www.kitco.com/news/rss",
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
@@ -31,6 +32,11 @@ HEADERS = {
 print("Lade Embeddings-Modell...")
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
+def clean_html(raw_html):
+    """Entfernt HTML-Tags aus RSS-Beschreibungen."""
+    cleanr = re.compile('<.*?>')
+    return re.sub(cleanr, '', raw_html) if raw_html else ""
+
 def load_history():
     """Lädt data.json, behält nur valide Zusammenfassungen der letzten 24h."""
     now = datetime.now()
@@ -43,11 +49,9 @@ def load_history():
             clean_history = []
             for cluster in history:
                 summary = cluster.get("summary", "")
-                # Fehlerhafte Zusammenfassungen rigoros ignorieren
                 if not summary or "could not be generated" in summary or "konnte nicht generiert werden" in summary:
                     continue
                 
-                # Nur Artikel behalten, die maximal 24 Stunden alt sind
                 try:
                     cluster_date = datetime.strptime(cluster.get("main_date", ""), "%Y-%m-%d %H:%M")
                     if cluster_date >= cutoff_time:
@@ -62,7 +66,7 @@ def load_history():
         return []
 
 def fetch_new_articles(existing_urls):
-    """Holt nur neue Artikel, die maximal 24 Stunden alt sind."""
+    """Holt neue Artikel inkl. Snippets, maximal 24 Stunden alt."""
     articles = []
     now = datetime.now()
     cutoff_time = now - timedelta(hours=24)
@@ -77,28 +81,31 @@ def fetch_new_articles(existing_urls):
                 if link in existing_urls:
                     continue 
                 
-                # Publikationsdatum ermitteln
                 pub_dt = None
                 if hasattr(entry, "published_parsed") and entry.published_parsed:
                     try:
                         pub_dt = datetime.fromtimestamp(time.mktime(entry.published_parsed))
                     except Exception:
-                        pub_dt = None
+                        pass
                 
-                # Wenn kein gültiges Datum vorhanden ist, nehmen wir die aktuelle Zeit
                 if not pub_dt:
                     pub_dt = now
 
-                # Strikt verwerfen, wenn älter als 24 Stunden (z.B. aus 2025)
                 if pub_dt < cutoff_time:
                     continue
 
                 pub_date_str = pub_dt.strftime("%Y-%m-%d %H:%M")
+                
+                # Extrahiere detaillierten Text für die KI-Analyse
+                raw_desc = entry.get("summary", entry.get("description", ""))
+                clean_desc = clean_html(raw_desc).strip()
+                
                 articles.append({
                     "title": entry.title,
                     "link": link,
                     "source": source,
                     "date": pub_date_str,
+                    "description": clean_desc,
                     "_timestamp": pub_dt.timestamp()
                 })
         except Exception as e:
@@ -106,12 +113,31 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def generate_summary(articles_in_cluster, max_retries=3):
-    """Generiert die Zusammenfassung via gemini-3.6-flash."""
+    """Führt eine tiefgehende Analyse mit Quellenangaben und XAUUSD-Prognose durch."""
     if not client:
         return None
     
-    titles = [a["title"] for a in articles_in_cluster]
-    prompt = f"You are a neutral financial analyst. Summarize these headlines into a single event in 2 to 3 objective, unbiased sentences in English. Avoid sensationalism. Headlines: {'; '.join(titles)}"
+    # Bereite den Kontext aus verschiedenen Quellen vor
+    news_data = []
+    for a in articles_in_cluster:
+        news_data.append(f"Source: [{a['source']}]\nHeadline: {a['title']}\nDetails: {a['description']}\n")
+    
+    context_text = "\n".join(news_data)
+    
+    prompt = f"""You are an expert financial analyst and commodities trader. Analyze these news reports about the same event.
+    
+    Task 1: Synthesize a single, objective summary (3-4 sentences). Compare the reports and combine the facts.
+    Task 2: Use inline citations strictly matching the provided source names to indicate where specific facts came from (e.g., "The Fed paused rates [CNBC Commodities], causing dollar weakness [Kitco].").
+    Task 3: Based ONLY on this specific news event, predict the immediate short-term impact on the XAUUSD (Gold) price.
+    
+    Format your response EXACTLY like this:
+    [Your synthesized summary with inline citations here.]
+    
+    XAUUSD Outlook: [Bullish / Bearish / Neutral] - [1 sentence explaining why based on the text]
+
+    News Reports to Analyze:
+    {context_text}
+    """
     
     for attempt in range(1, max_retries + 1):
         try:
@@ -119,11 +145,12 @@ def generate_summary(articles_in_cluster, max_retries=3):
                 model='gemini-3.6-flash',
                 contents=prompt
             )
-            return response.text.replace('\n', ' ').strip()
+            # HTML-Zeilenumbrüche einfügen, damit die Website die Absätze sauber trennt
+            return response.text.strip().replace('\n', '<br>')
         except Exception as e:
-            print(f"Gemini API Versuch {attempt}/{max_retries} fehlgeschlagen. Fehlergrund: {e}")
+            print(f"Gemini API Versuch {attempt}/{max_retries} fehlgeschlagen: {e}")
             if attempt < max_retries:
-                time.sleep(3 * attempt)
+                time.sleep(5 * attempt)
             else:
                 return None
 
@@ -165,19 +192,20 @@ def process_news():
             })
 
     final_new_clusters = []
-    for cluster in new_clusters:
+    # Verarbeite maximal 8 neue Cluster pro Durchlauf (schützt vor dem 5-Requests-Pro-Minute Limit)
+    for cluster in new_clusters[:8]:
         del cluster["main_embedding"]
-        print(f"Erstelle KI-Zusammenfassung für: {cluster['cluster_title']}")
+        print(f"Erstelle analytische Zusammenfassung für: {cluster['cluster_title']}")
         summary = generate_summary(cluster["articles"])
         
-        # Wichtig: Nur speichern, wenn die KI erfolgreich war!
         if summary:
             cluster["summary"] = summary
             final_new_clusters.append(cluster)
+            print("Erfolgreich. Warte 13s für Rate-Limits...")
+            time.sleep(13) 
         else:
             print(f"Überspringe Cluster ohne Zusammenfassung: {cluster['cluster_title']}")
 
-    # Zusammenführen und strikt chronologisch nach Datum sortieren (neueste zuerst)
     all_clusters = final_new_clusters + history
     
     for c in all_clusters:
@@ -189,11 +217,11 @@ def process_news():
 
     all_clusters.sort(key=lambda x: x["_timestamp"], reverse=True)
 
-    # Bereinige interne Hilfsvariablen vor dem Speichern
     for c in all_clusters:
         c.pop("_timestamp", None)
         for a in c.get("articles", []):
             a.pop("_timestamp", None)
+            a.pop("description", None) # Halte die JSON-Datei schlank
 
     return all_clusters[:50]
 

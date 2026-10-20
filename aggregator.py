@@ -1,103 +1,100 @@
-import feedparser
+import os
 import json
 import time
 from datetime import datetime
+import requests
+import feedparser
 from sentence_transformers import SentenceTransformer, util
+import google.generativeai as genai
 
-# 1. QUELLEN DEFINIEREN (Gratis RSS-Feeds mit starkem Rohstoff/Gold-Bezug)
+# 1. KI EINRICHTEN
+API_KEY = os.environ.get("GEMINI_API_KEY")
+if API_KEY:
+    genai.configure(api_key=API_KEY)
+    gemini_model = genai.GenerativeModel('gemini-1.5-flash')
+else:
+    print("WARNUNG: Kein Gemini API Key gefunden!")
+    gemini_model = None
+
+# 2. QUELLEN & TARNKAPPE (User-Agent)
 FEEDS = {
     "Kitco": "https://www.kitco.com/news/rss",
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
     "Yahoo Finance": "https://finance.yahoo.com/news/rssindex",
-    "Investing.com": "https://de.investing.com/rss/news_11.rss" # Deutsche Rohstoff-News (Beispiel)
+    "Investing.com": "https://de.investing.com/rss/news_11.rss"
 }
 
-# 2. KI-MODELL LADEN (Dieses Modell ist klein, schnell und gratis)
-print("Lade KI-Modell für Textvergleich...")
-model = SentenceTransformer('all-MiniLM-L6-v2')
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+}
 
-def fetch_news():
-    print("Sammle Nachrichten von den Quellen...")
+print("Lade Embeddings-Modell...")
+embed_model = SentenceTransformer('all-MiniLM-L6-v2')
+
+def load_history():
+    """Lädt die alte data.json, um eine Historie aufzubauen."""
+    try:
+        with open("data.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return []
+
+def fetch_new_articles(existing_urls):
+    """Holt nur neue Artikel, die noch nicht in der Historie sind."""
     articles = []
-    
     for source, url in FEEDS.items():
         try:
-            feed = feedparser.parse(url)
-            for entry in feed.entries[:15]: # Holen wir die neuesten 15 Artikel pro Quelle
-                # Datum parsen (Falls vorhanden, ansonsten aktuelle Zeit)
+            # Nutze requests mit Tarnkappe, um Blockaden zu umgehen
+            response = requests.get(url, headers=HEADERS, timeout=10)
+            feed = feedparser.parse(response.content)
+            
+            for entry in feed.entries[:15]:
+                link = entry.link
+                if link in existing_urls:
+                    continue # Überspringe alte Artikel
+                
                 try:
                     pub_date = datetime.fromtimestamp(time.mktime(entry.published_parsed)).strftime("%Y-%m-%d %H:%M")
                 except:
                     pub_date = datetime.now().strftime("%Y-%m-%d %H:%M")
                 
-                articles.append({
-                    "title": entry.title,
-                    "link": entry.link,
-                    "source": source,
-                    "date": pub_date
-                })
+                articles.append({"title": entry.title, "link": link, "source": source, "date": pub_date})
         except Exception as e:
-            print(f"Fehler beim Abrufen von {source}: {e}")
-            
-    print(f"Insgesamt {len(articles)} Artikel gesammelt.")
+            print(f"Fehler bei {source}: {e}")
     return articles
 
-def cluster_articles(articles, threshold=0.65):
-    print("Dedupliziere und gruppiere Artikel...")
-    if not articles:
-        return []
-
-    # Alle Titel in Vektoren (Zahlenreihen) umwandeln
-    titles = [article["title"] for article in articles]
-    embeddings = model.encode(titles)
-
-    clusters = []
+def generate_summary(articles_in_cluster):
+    """Lässt die Gemini-KI eine sachliche Zusammenfassung schreiben."""
+    if not gemini_model:
+        return "Keine Zusammenfassung verfügbar (API-Key fehlt)."
     
-    for idx, article in enumerate(articles):
-        added = False
-        # Vergleiche den aktuellen Artikel mit bestehenden Clustern
-        for cluster in clusters:
-            # Wir vergleichen ihn einfach mit dem ersten (Haupt-)Artikel des Clusters
-            main_embedding = cluster["main_embedding"]
-            similarity = util.cos_sim(embeddings[idx], main_embedding).item()
-            
-            # Wenn die Ähnlichkeit über unserem Schwellenwert (z.B. 65%) liegt
-            if similarity > threshold:
-                # Prüfen, ob die Quelle nicht schon im Cluster ist (wir wollen keine zwei Reuters-Artikel im selben Cluster)
-                sources_in_cluster = [a["source"] for a in cluster["articles"]]
-                if article["source"] not in sources_in_cluster:
-                    cluster["articles"].append(article)
-                added = True
-                break
-        
-        # Wenn er zu keinem bestehenden Cluster passt, mach ein neues auf
-        if not added:
-            clusters.append({
-                "cluster_title": article["title"], # Der erste Artikel gibt dem Cluster den Namen
-                "main_date": article["date"],
-                "main_embedding": embeddings[idx], # Wird nur intern für den Vergleich gespeichert
-                "articles": [article]
-            })
-
-    # Wir bereinigen das Ganze: Wir brauchen die Vektoren nicht in der JSON-Datei
-    final_clusters = []
-    for cluster in clusters:
-        del cluster["main_embedding"]
-        # Wir sortieren nach Clustern, die von mehr als einer Quelle gemeldet wurden (Je mehr Quellen, desto relevanter)
-        final_clusters.append(cluster)
-
-    final_clusters.sort(key=lambda x: len(x["articles"]), reverse=True)
+    titles = [a["title"] for a in articles_in_cluster]
+    prompt = f"Du bist ein neutraler Finanzanalyst. Fasse diese Schlagzeilen zu einem einzigen Ereignis in 2 bis 3 sachlichen, wertfreien Sätzen auf Deutsch zusammen. Vermeide reisserische Wörter. Schlagzeilen: {'; '.join(titles)}"
     
-    print(f"Es wurden {len(final_clusters)} einzigartige News-Cluster erstellt.")
-    return final_clusters
+    try:
+        response = gemini_model.generate_content(prompt)
+        return response.text.replace('\n', ' ').strip()
+    except Exception as e:
+        print(f"Gemini API Fehler: {e}")
+        return "Zusammenfassung konnte nicht generiert werden."
 
-if __name__ == "__main__":
-    # Hauptprogramm
-    raw_articles = fetch_news()
-    clustered_news = cluster_articles(raw_articles)
+def process_news():
+    history = load_history()
     
-    # Als JSON speichern
-    with open("data.json", "w", encoding="utf-8") as f:
-        json.dump(clustered_news, f, indent=4, ensure_ascii=False)
-        
-    print("Fertig! data.json wurde erstellt.")
+    # Extrahiere alle bekannten Links, um Duplikate in der Historie zu vermeiden
+    existing_urls = set()
+    for cluster in history:
+        for article in cluster["articles"]:
+            existing_urls.add(article["link"])
+
+    new_articles = fetch_new_articles(existing_urls)
+    if not new_articles:
+        print("Keine neuen Artikel gefunden.")
+        return history
+
+    print(f"{len(new_articles)} neue Artikel gefunden. Clustere...")
+    titles = [a["title"] for a in new_articles]
+    embeddings = embed_model.encode(titles)
+    
+    new_clusters = []
+    for idx, article in enumerate

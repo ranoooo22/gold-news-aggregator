@@ -32,11 +32,23 @@ print("Lade Embeddings-Modell...")
 embed_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 def load_history():
-    """Lädt die alte data.json, um eine Historie aufzubauen."""
+    """Lädt die alte data.json und verwirft fehlerhafte KI-Zusammenfassungen automatisch."""
     try:
         with open("data.json", "r", encoding="utf-8") as f:
-            return json.load(f)
+            history = json.load(f)
+            
+            # Wirf alle Cluster weg, bei denen die KI zuvor versagt hat
+            saubere_historie = []
+            for cluster in history:
+                summary = cluster.get("summary", "")
+                if "Summary could not be generated" not in summary and "konnte nicht generiert werden" not in summary:
+                    saubere_historie.append(cluster)
+            
+            print(f"Historie geladen: {len(saubere_historie)} gültige Cluster (fehlerhafte wurden gelöscht).")
+            return saubere_historie
+            
     except (FileNotFoundError, json.JSONDecodeError):
+        print("Gedächtnis ist leer. Starte neu.")
         return []
 
 def fetch_new_articles(existing_urls):

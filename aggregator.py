@@ -11,8 +11,11 @@ from google import genai
 API_KEY = os.environ.get("GEMINI_API_KEY")
 client = None
 if API_KEY:
-    try:
-        client = genai.Client(api_key=API_KEY)
+try:
+        response = client.models.generate_content(
+            model='gemini-2.5-flash',
+            contents=prompt
+        )
     except Exception as e:
         print(f"Fehler bei KI-Initialisierung: {e}")
 

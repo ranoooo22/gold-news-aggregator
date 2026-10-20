@@ -19,11 +19,11 @@ jobs:
       - name: Python einrichten
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Abhängigkeiten installieren
         run: |
-          pip install feedparser sentence-transformers requests google-generativeai
+          pip install feedparser sentence-transformers requests google-genai
 
       - name: Aggregator-Skript ausführen
         env:

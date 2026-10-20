@@ -142,7 +142,7 @@ def generate_summary(articles_in_cluster, max_retries=3):
     for attempt in range(1, max_retries + 1):
         try:
             response = client.models.generate_content(
-                model='gemini-3.6-flash',
+                model='gemini-3.5-flash-lite',
                 contents=prompt
             )
             # HTML-Zeilenumbrüche einfügen, damit die Website die Absätze sauber trennt

@@ -137,7 +137,7 @@ def generate_summary(articles_in_cluster, max_retries=3):
     
     context_text = "\n".join(news_data)
     
-        prompt = f"""You are a quantitative financial analyst. Analyze these news reports and output ONLY a valid JSON object. Do not use markdown blocks (no ```json). 
+    prompt = f"""You are a quantitative financial analyst. Analyze these news reports and output ONLY a valid JSON object. Do not use markdown blocks (no ```json). 
     IMPORTANT: Write all values and summaries entirely in English!
     
     Required JSON structure:

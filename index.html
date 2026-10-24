@@ -7,77 +7,95 @@
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f4f5f8;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
+            margin: 0;
             padding: 20px;
         }
-        h1 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
-        .cluster {
-            background: white; border-radius: 8px; padding: 25px; margin-bottom: 25px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 5px solid #d4af37;
+        h1 {
+            text-align: center;
+            color: #1e293b;
+            margin-bottom: 30px;
         }
-        .cluster h2 { margin-top: 0; font-size: 1.3rem; color: #2c3e50; margin-bottom: 5px;}
-        .date { font-size: 0.85rem; color: #7f8c8d; margin-bottom: 15px; }
-        .summary {
-            background-color: #f8f9fa; padding: 15px; border-radius: 6px;
-            font-size: 1.05rem; line-height: 1.5; color: #34495e; margin-bottom: 20px;
-            border: 1px solid #e9ecef;
+        #news-container {
+            max-width: 800px;
+            margin: 0 auto;
         }
-        .sources-title { font-size: 0.9rem; font-weight: bold; color: #7f8c8d; margin-bottom: 10px; text-transform: uppercase; }
-        .source-list { list-style: none; padding: 0; margin: 0; }
-        .source-item { margin-bottom: 8px; font-size: 0.95rem; display: flex; align-items: baseline; }
+        .news-card {
+            background-color: #fff;
+            border-radius: 8px;
+            border-left: 6px solid #eab308;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .date-header {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .summary-box {
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #eef0f2;
+        }
+        .summary-label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .structured-data {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        .outlook-box {
+            padding: 10px;
+            background-color: #fff;
+            border-left: 4px solid #d4af37;
+            font-size: 0.95em;
+            margin-top: 10px;
+        }
+        .reported-by-label {
+            color: #64748b;
+            font-weight: bold;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+        .source-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
         .source-badge {
-            background-color: #ecf0f1; color: #2c3e50; padding: 3px 8px;
-            border-radius: 4px; font-size: 0.75rem; font-weight: bold; margin-right: 10px; min-width: 60px; text-align: center;
+            background-color: #e2e8f0;
+            color: #1e293b;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-right: 15px;
+            white-space: nowrap;
+            min-width: 100px;
+            text-align: center;
         }
-        a { color: #3498db; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        .source-link {
+            color: #3b82f6;
+            text-decoration: none;
+            line-height: 1.4;
+        }
+        .source-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <h1>Financial & Gold News Aggregator</h1>
     <div id="news-container">
-        <p style="text-align:center; color:#7f8c8d;">Loading latest news...</p>
+        <p style="text-align:center;">Lade News...</p>
     </div>
 
     <script>
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('news-container');
-                container.innerHTML = ''; 
-
-                if (!data || data.length === 0) {
-                    container.innerHTML = '<p style="text-align:center;">No news available at the moment.</p>';
-                    return;
-                }
-
-                data.forEach(cluster => {
-                    const clusterDiv = document.createElement('div');
-                    clusterDiv.className = 'cluster';
-
-                    const dateStr = `<div class="date">${cluster.main_date}</div>`;
-                    
-                    const summaryText = cluster.summary ? cluster.summary : "No AI summary available.";
-                    const summaryBox = `<div class="summary"><strong>Summary:</strong> ${summaryText}</div>`;
-                    
-                    let sourcesHtml = `<div class="sources-title">Reported by:</div><ul class="source-list">`;
-                    cluster.articles.forEach(article => {
-                        sourcesHtml += `
-                            <li class="source-item">
-                                <span class="source-badge">${article.source}</span>
-                                <a href="${article.link}" target="_blank">${article.title}</a>
-                            </li>`;
-                    });
-                    sourcesHtml += `</ul>`;
-
-                    clusterDiv.innerHTML = dateStr + summaryBox + sourcesHtml;
-                    container.appendChild(clusterDiv);
-                });
-            });
-    </script>
-</body>
-</html>
+        async function loadNews() {

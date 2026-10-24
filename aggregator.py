@@ -137,17 +137,18 @@ def generate_summary(articles_in_cluster, max_retries=3):
     
     context_text = "\n".join(news_data)
     
-    prompt = f"""You are a quantitative financial analyst. Analyze these news reports and output ONLY a valid JSON object. Do not use markdown blocks (no ```json).
+        prompt = f"""You are a quantitative financial analyst. Analyze these news reports and output ONLY a valid JSON object. Do not use markdown blocks (no ```json). 
+    IMPORTANT: Write all values and summaries entirely in English!
     
     Required JSON structure:
     {{
-        "Fakten": "Objektive Zusammenfassung der Fakten aus den Berichten (inklusive [Quellenangabe]).",
-        "Unsicherheiten": "Was ist unklar, spekulativ oder unbestätigt?",
-        "Makro_Kontext": "Einordnung in den weltwirtschaftlichen Kontext (z.B. Geldpolitik, Ölpreis, Kriege).",
-        "Wirkungs_Zeitpunkt": "Liegt die Auswirkung in der Vergangenheit, Gegenwart oder Zukunft?",
-        "Zeitrahmen": "Stunden/Tage, Tage/Wochen oder Wochen/Monate",
-        "XAUUSD_Auswirkung": "Bullish, Bearish oder Neutral",
-        "Wahrscheinlichkeit_Prozent": <Ganzzahl 0 100 und zwischen>
+        "Facts": "Detailed summary of the core facts. Explain exactly WHAT happened and WHY it happened based on the text. Avoid vague generalities. Include [Source] citations.",
+        "Uncertainties": "What is unclear, speculative, or unconfirmed?",
+        "Macro_Context": "Macro-economic context (e.g., monetary policy, oil prices, geopolitical tensions).",
+        "Impact_Timing": "Past, Present, or Future",
+        "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Impact_Timing is Past)",
+        "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
+        "Probability_Percent": <Integer 0 100 and based between certainty confidence consensus impact in on representing source this wording your>
     }}
 
     News Reports to Analyze:

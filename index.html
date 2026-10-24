@@ -133,20 +133,22 @@
 
                     let summaryHTML = "";
                     if (typeof cluster.summary === 'object' && cluster.summary !== null) {
+                                            let summaryHTML = "";
+                    if (typeof cluster.summary === 'object' && cluster.summary !== null) {
                         summaryHTML = `
                             <div class="structured-data">
-                                <strong>Fakten:</strong> ${cluster.summary.Fakten || '-'}<br><br>
-                                <strong>Makro-Kontext:</strong> ${cluster.summary.Makro_Kontext || '-'}<br><br>
-                                <strong>Unsicherheiten:</strong> ${cluster.summary.Unsicherheiten || '-'}
+                                <strong>Facts:</strong> ${cluster.summary.Facts || '-'}<br><br>
+                                <strong>Macro Context:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
+                                <strong>Uncertainties:</strong> ${cluster.summary.Uncertainties || '-'}
                             </div>
                             <div class="outlook-box">
-                                <strong>XAUUSD Auswirkung:</strong> ${cluster.summary.XAUUSD_Auswirkung || '-'} (${cluster.summary.Wahrscheinlichkeit_Prozent || '0'}%)<br>
-                                <strong>Zeitrahmen:</strong> ${cluster.summary.Zeitrahmen || '-'} <br>
-                                <strong>Wirkung:</strong> ${cluster.summary.Wirkungs_Zeitpunkt || '-'}
+                                <strong>XAUUSD Impact:</strong> ${cluster.summary.XAUUSD_Impact || '-'} (${cluster.summary.Probability_Percent || '0'}%)<br>
+                                <strong>Timeframe:</strong> ${cluster.summary.Timeframe || '-'} <br>
+                                <strong>Timing:</strong> ${cluster.summary.Impact_Timing || '-'}
                             </div>
                         `;
                     } else {
-                        summaryHTML = `<div class="structured-data">${cluster.summary || 'Zusammenfassung fehlt.'}</div>`;
+                        summaryHTML = `<div class="structured-data">${cluster.summary || 'Summary missing.'}</div>`;
                     }
 
                     let sourcesHTML = '';

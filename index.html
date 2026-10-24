@@ -85,9 +85,6 @@
             text-decoration: none;
             line-height: 1.4;
         }
-        .source-link:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
@@ -99,3 +96,89 @@
 
     <script>
         async function loadNews() {
+            const container = document.getElementById('news-container');
+            try {
+                const response = await fetch('data.json?t=' + new Date().getTime());
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP Error: ${response.status}`);
+                }
+                
+                // Text holen, um Abstürze bei kaputtem JSON zu verhindern
+                const textData = await response.text();
+                
+                let clusters;
+                try {
+                    clusters = JSON.parse(textData);
+                } catch (e) {
+                    container.innerHTML = `<p style="color:red; text-align:center;"><b>Syntax-Fehler in data.json!</b><br>Das Python-Skript hat ungültige Daten gespeichert.</p><br><pre style="background:#eee; padding:10px;">${textData.substring(0, 300)}...</pre>`;
+                    return;
+                }
+
+                container.innerHTML = '';
+
+                if (!Array.isArray(clusters)) {
+                    container.innerHTML = '<p style="text-align:center;">Datenformat ist keine Liste (Array).</p>';
+                    return;
+                }
+
+                if (clusters.length === 0) {
+                    container.innerHTML = '<p style="text-align:center;">No news available at the moment.</p>';
+                    return;
+                }
+
+                clusters.forEach(cluster => {
+                    const card = document.createElement('div');
+                    card.className = 'news-card';
+
+                    let summaryHTML = "";
+                    if (typeof cluster.summary === 'object' && cluster.summary !== null) {
+                        summaryHTML = `
+                            <div class="structured-data">
+                                <strong>Fakten:</strong> ${cluster.summary.Fakten || '-'}<br><br>
+                                <strong>Makro-Kontext:</strong> ${cluster.summary.Makro_Kontext || '-'}<br><br>
+                                <strong>Unsicherheiten:</strong> ${cluster.summary.Unsicherheiten || '-'}
+                            </div>
+                            <div class="outlook-box">
+                                <strong>XAUUSD Auswirkung:</strong> ${cluster.summary.XAUUSD_Auswirkung || '-'} (${cluster.summary.Wahrscheinlichkeit_Prozent || '0'}%)<br>
+                                <strong>Zeitrahmen:</strong> ${cluster.summary.Zeitrahmen || '-'} <br>
+                                <strong>Wirkung:</strong> ${cluster.summary.Wirkungs_Zeitpunkt || '-'}
+                            </div>
+                        `;
+                    } else {
+                        summaryHTML = `<div class="structured-data">${cluster.summary || 'Zusammenfassung fehlt.'}</div>`;
+                    }
+
+                    let sourcesHTML = '';
+                    if (cluster.articles && cluster.articles.length > 0) {
+                        cluster.articles.forEach(article => {
+                            sourcesHTML += `
+                                <div class="source-item">
+                                    <span class="source-badge">${article.source}</span>
+                                    <a href="${article.link}" target="_blank" class="source-link">${article.title}</a>
+                                </div>
+                            `;
+                        });
+                    }
+
+                    card.innerHTML = `
+                        <div class="date-header">${cluster.main_date || 'Unbekanntes Datum'}</div>
+                        <div class="summary-box">
+                            <div class="summary-label">Summary:</div>
+                            ${summaryHTML}
+                        </div>
+                        <div class="reported-by-label">REPORTED BY:</div>
+                        ${sourcesHTML}
+                    `;
+                    
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                container.innerHTML = `<p style="color:red; text-align:center;">Kritischer Fehler beim Laden der Seite: ${error.message}</p>`;
+            }
+        }
+
+        loadNews();
+    </script>
+</body>
+</html>

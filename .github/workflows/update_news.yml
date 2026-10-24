@@ -2,7 +2,7 @@ name: Automatischer News-Aggregator
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0/15 * * * *'
   workflow_dispatch:
 
 permissions:

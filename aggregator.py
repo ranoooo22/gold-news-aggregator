@@ -19,10 +19,10 @@ if API_KEY:
 
 # 2. QUELLEN & TARNKAPPE
 FEEDS = {
-    "Kitco": "https://www.kitco.com/news/rss",
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
-    "Yahoo Finance": "https://finance.yahoo.com/news/rssindex",
-    "Investing.com": "https://www.investing.com/rss/news_11.rss"  # <-- Jetzt der englische Commodities-Feed
+    "Investing.com": "https://www.investing.com/rss/news_11.rss",
+    "Yahoo Finance Gold": "https://finance.yahoo.com/rss/headline?s=GC=F",
+    "Yahoo Finance Oil": "https://finance.yahoo.com/rss/headline?s=CL=F"
 }
 
 HEADERS = {

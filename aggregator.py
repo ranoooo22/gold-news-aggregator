@@ -26,7 +26,11 @@ FEEDS = {
 }
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Connection": "keep-alive",
+    "Referer": "https://www.google.com/"
 }
 
 print("Lade Embeddings-Modell...")
@@ -176,7 +180,7 @@ def process_news():
         added = False
         for cluster in new_clusters:
             sim = util.cos_sim(embeddings[idx], cluster["main_embedding"]).item()
-            if sim > 0.50:
+            if sim > 0.35:
                 sources_in_cluster = [a["source"] for a in cluster["articles"]]
                 if article["source"] not in sources_in_cluster:
                     cluster["articles"].append(article)

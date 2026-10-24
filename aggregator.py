@@ -70,7 +70,7 @@ def load_history():
         return []
 
 def fetch_new_articles(existing_urls):
-    """Holt neue Artikel inkl. Snippets, maximal 24 Stunden alt."""
+    """Holt neue Artikel und protokolliert unsichtbare Server-Blockaden."""
     articles = []
     now = datetime.now()
     cutoff_time = now - timedelta(hours=24)
@@ -78,7 +78,17 @@ def fetch_new_articles(existing_urls):
     for source, url in FEEDS.items():
         try:
             response = requests.get(url, headers=HEADERS, timeout=10)
+            
+            # Macht Blockaden (z.B. Error 403 oder 429) im Log sichtbar
+            if response.status_code != 200:
+                print(f"Blockiert bei {source}: HTTP Status {response.status_code}")
+                continue
+                
             feed = feedparser.parse(response.content)
+            
+            if not feed.entries:
+                print(f"Warnung bei {source}: Seite erreichbar (HTTP 200), aber Feed ist leer.")
+                continue
             
             for entry in feed.entries[:20]:
                 link = entry.link
@@ -100,7 +110,6 @@ def fetch_new_articles(existing_urls):
 
                 pub_date_str = pub_dt.strftime("%Y-%m-%d %H:%M")
                 
-                # Extrahiere detaillierten Text für die KI-Analyse
                 raw_desc = entry.get("summary", entry.get("description", ""))
                 clean_desc = clean_html(raw_desc).strip()
                 
@@ -113,7 +122,8 @@ def fetch_new_articles(existing_urls):
                     "_timestamp": pub_dt.timestamp()
                 })
         except Exception as e:
-            print(f"Fehler bei {source}: {e}")
+            print(f"Technischer Fehler bei {source}: {e}")
+            
     return articles
 
 def generate_summary(articles_in_cluster, max_retries=3):

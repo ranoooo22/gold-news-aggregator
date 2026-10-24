@@ -127,27 +127,28 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def generate_summary(articles_in_cluster, max_retries=3):
-    """Führt eine tiefgehende Analyse mit Quellenangaben und XAUUSD-Prognose durch."""
+    """Führt eine tiefgehende Analyse durch und erzwingt eine JSON-Ausgabe für das MT5-Skript."""
     if not client:
         return None
     
-    # Bereite den Kontext aus verschiedenen Quellen vor
     news_data = []
     for a in articles_in_cluster:
         news_data.append(f"Source: [{a['source']}]\nHeadline: {a['title']}\nDetails: {a['description']}\n")
     
     context_text = "\n".join(news_data)
     
-    prompt = f"""You are an expert financial analyst and commodities trader. Analyze these news reports about the same event.
+    prompt = f"""You are a quantitative financial analyst. Analyze these news reports and output ONLY a valid JSON object. Do not use markdown blocks (no ```json).
     
-    Task 1: Synthesize a single, objective summary (3-4 sentences). Compare the reports and combine the facts.
-    Task 2: Use inline citations strictly matching the provided source names to indicate where specific facts came from (e.g., "The Fed paused rates [CNBC Commodities], causing dollar weakness [Kitco].").
-    Task 3: Based ONLY on this specific news event, predict the immediate short-term impact on the XAUUSD (Gold) price.
-    
-    Format your response EXACTLY like this:
-    [Your synthesized summary with inline citations here.]
-    
-    XAUUSD Outlook: [Bullish / Bearish / Neutral] - [1 sentence explaining why based on the text]
+    Required JSON structure:
+    {{
+        "Fakten": "Objektive Zusammenfassung der Fakten aus den Berichten (inklusive [Quellenangabe]).",
+        "Unsicherheiten": "Was ist unklar, spekulativ oder unbestätigt?",
+        "Makro_Kontext": "Einordnung in den weltwirtschaftlichen Kontext (z.B. Geldpolitik, Ölpreis, Kriege).",
+        "Wirkungs_Zeitpunkt": "Liegt die Auswirkung in der Vergangenheit, Gegenwart oder Zukunft?",
+        "Zeitrahmen": "Stunden/Tage, Tage/Wochen oder Wochen/Monate",
+        "XAUUSD_Auswirkung": "Bullish, Bearish oder Neutral",
+        "Wahrscheinlichkeit_Prozent": <Ganzzahl 0 100 und zwischen>
+    }}
 
     News Reports to Analyze:
     {context_text}
@@ -159,8 +160,18 @@ def generate_summary(articles_in_cluster, max_retries=3):
                 model='gemini-3.5-flash-lite',
                 contents=prompt
             )
-            # HTML-Zeilenumbrüche einfügen, damit die Website die Absätze sauber trennt
-            return response.text.strip().replace('\n', '<br>')
+            
+            raw_text = response.text.strip()
+            # Bereinige eventuelle Markdown-Formatierungen der KI
+            if raw_text.startswith("```json"):
+                raw_text = raw_text[7:-3].strip()
+            elif raw_text.startswith("```"):
+                raw_text = raw_text[3:-3].strip()
+                
+            # Konvertiert den Text-String in ein echtes JSON-Objekt (Python Dictionary)
+            json_data = json.loads(raw_text)
+            return json_data
+            
         except Exception as e:
             print(f"Gemini API Versuch {attempt}/{max_retries} fehlgeschlagen: {e}")
             if attempt < max_retries:

@@ -6,14 +6,16 @@
     <title>Financial & Gold News Aggregator</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f8; color: #333; margin: 0; padding: 20px; }
-        h1 { text-align: center; color: #1e293b; margin-bottom: 30px; }
+        h1 { text-align: center; color: #1e293b; margin-bottom: 20px; }
+        #controls { max-width: 800px; margin: 0 auto 30px auto; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+        select { padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; background-color: #fff; font-size: 0.95em; cursor: pointer; outline: none; }
         #news-container { max-width: 800px; margin: 0 auto; }
         .news-card { background-color: #fff; border-radius: 8px; border-left: 6px solid #eab308; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .date-header { color: #888; font-size: 0.9em; margin-bottom: 15px; }
         .summary-box { background-color: #f8f9fa; border-radius: 6px; padding: 15px; margin-bottom: 20px; border: 1px solid #eef0f2; }
         .summary-label { font-weight: bold; margin-bottom: 10px; }
         .structured-data { margin-bottom: 12px; line-height: 1.5; }
-        .outlook-box { padding: 10px; background-color: #fff; border-left: 4px solid #d4af37; font-size: 0.95em; margin-top: 10px; }
+        .outlook-box { padding: 12px; background-color: #fff; border-left: 4px solid #d4af37; font-size: 0.95em; margin-top: 10px; }
         .reported-by-label { color: #64748b; font-weight: bold; font-size: 0.85em; text-transform: uppercase; margin-bottom: 15px; }
         .source-item { display: flex; align-items: flex-start; margin-bottom: 10px; }
         .source-badge { background-color: #e2e8f0; color: #1e293b; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; margin-right: 15px; white-space: nowrap; min-width: 100px; text-align: center; }
@@ -23,84 +25,132 @@
 <body>
 
     <h1>Financial & Gold News Aggregator</h1>
+    
+    <div id="controls">
+        <select id="filter-impact" onchange="renderNews()">
+            <option value="all">All Impacts</option>
+            <option value="Bullish">Bullish</option>
+            <option value="Bearish">Bearish</option>
+            <option value="Neutral">Neutral</option>
+        </select>
+        <select id="filter-type" onchange="renderNews()">
+            <option value="all">All News Types</option>
+            <option value="cluster">Connected Clusters</option>
+            <option value="single">Single Articles</option>
+        </select>
+        <select id="sort-by" onchange="renderNews()">
+            <option value="newest">Sort: Newest First</option>
+            <option value="probability">Sort: Highest Probability</option>
+        </select>
+    </div>
+
     <div id="news-container">
         <p style="text-align:center;">Lade News...</p>
     </div>
 
     <script>
+        let allClusters = [];
+
         async function loadNews() {
             const container = document.getElementById('news-container');
             try {
                 const response = await fetch('data.json?t=' + new Date().getTime());
-                if (!response.ok) {
-                    throw new Error(`HTTP Error: ${response.status}`);
-                }
+                if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
                 const textData = await response.text();
                 
-                let clusters;
                 try {
-                    clusters = JSON.parse(textData);
+                    allClusters = JSON.parse(textData);
                 } catch (e) {
-                    container.innerHTML = `<p style="color:red; text-align:center;"><b>Syntax-Fehler in data.json!</b><br>Das Skript hat ungültige Daten gespeichert.</p>`;
+                    container.innerHTML = `<p style="color:red; text-align:center;"><b>Syntax-Fehler in data.json!</b></p>`;
                     return;
                 }
-
-                container.innerHTML = '';
-                if (!Array.isArray(clusters) || clusters.length === 0) {
-                    container.innerHTML = '<p style="text-align:center;">No news available at the moment.</p>';
-                    return;
-                }
-
-                clusters.forEach(cluster => {
-                    const card = document.createElement('div');
-                    card.className = 'news-card';
-
-                    let summaryHTML = "";
-                    if (typeof cluster.summary === 'object' && cluster.summary !== null) {
-                        summaryHTML = `
-                            <div class="structured-data">
-                                <strong>Facts:</strong> ${cluster.summary.Facts || cluster.summary.Fakten || '-'}<br><br>
-                                <strong>Macro Context:</strong> ${cluster.summary.Macro_Context || cluster.summary.Makro_Kontext || '-'}<br><br>
-                                <strong>Uncertainties:</strong> ${cluster.summary.Uncertainties || cluster.summary.Unsicherheiten || '-'}
-                            </div>
-                            <div class="outlook-box">
-                                <strong>XAUUSD Impact:</strong> ${cluster.summary.XAUUSD_Impact || cluster.summary.XAUUSD_Auswirkung || '-'} (${cluster.summary.Probability_Percent || cluster.summary.Wahrscheinlichkeit_Prozent || '0'}%)<br>
-                                <strong>Timeframe:</strong> ${cluster.summary.Timeframe || cluster.summary.Zeitrahmen || '-'} <br>
-                                <strong>Timing:</strong> ${cluster.summary.Impact_Timing || cluster.summary.Wirkungs_Zeitpunkt || '-'}<br>
-                                <strong>Price Target:</strong> ${cluster.summary.Orderflow_Price_Target || '-'}
-                            </div>
-                        `;
-                    } else {
-                        summaryHTML = `<div class="structured-data">${cluster.summary || 'Summary missing.'}</div>`;
-                    }
-
-                    let sourcesHTML = '';
-                    if (cluster.articles && cluster.articles.length > 0) {
-                        cluster.articles.forEach(article => {
-                            sourcesHTML += `
-                                <div class="source-item">
-                                    <span class="source-badge">${article.source}</span>
-                                    <a href="${article.link}" target="_blank" class="source-link">${article.title}</a>
-                                </div>
-                            `;
-                        });
-                    }
-
-                    card.innerHTML = `
-                        <div class="date-header">${cluster.main_date || 'Unbekannt'}</div>
-                        <div class="summary-box">
-                            <div class="summary-label">Summary:</div>
-                            ${summaryHTML}
-                        </div>
-                        <div class="reported-by-label">REPORTED BY:</div>
-                        ${sourcesHTML}
-                    `;
-                    container.appendChild(card);
-                });
+                renderNews();
             } catch (error) {
-                container.innerHTML = `<p style="color:red; text-align:center;">Kritischer Fehler beim Laden der Seite: ${error.message}</p>`;
+                container.innerHTML = `<p style="color:red; text-align:center;">Fehler beim Laden: ${error.message}</p>`;
             }
         }
+
+        function renderNews() {
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+            
+            const filterImpact = document.getElementById('filter-impact').value;
+            const filterType = document.getElementById('filter-type').value;
+            const sortBy = document.getElementById('sort-by').value;
+
+            // Filtern
+            let filtered = allClusters.filter(cluster => {
+                if (filterType === 'cluster' && cluster.articles.length <= 1) return false;
+                if (filterType === 'single' && cluster.articles.length > 1) return false;
+                
+                if (filterImpact !== 'all') {
+                    const impact = cluster.summary?.XAUUSD_Impact || '';
+                    if (!impact.toLowerCase().includes(filterImpact.toLowerCase())) return false;
+                }
+                return true;
+            });
+
+            // Sortieren
+            if (sortBy === 'probability') {
+                filtered.sort((a, b) => {
+                    const probA = parseInt(a.summary?.Probability_Percent || 0);
+                    const probB = parseInt(b.summary?.Probability_Percent || 0);
+                    return probB - probA;
+                });
+            } else {
+                // Default: Newest first
+                filtered.sort((a, b) => (b._timestamp || 0) - (a._timestamp || 0));
+            }
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<p style="text-align:center;">No matching news found.</p>';
+                return;
+            }
+
+            filtered.forEach(cluster => {
+                const card = document.createElement('div');
+                card.className = 'news-card';
+
+                let summaryHTML = "";
+                if (typeof cluster.summary === 'object' && cluster.summary !== null) {
+                    summaryHTML = `
+                        <div class="structured-data">
+                            <strong>Facts:</strong> ${cluster.summary.Facts || '-'}<br><br>
+                            <strong>Macro Context:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
+                            <strong>Uncertainties:</strong> ${cluster.summary.Uncertainties || '-'}
+                        </div>
+                        <div class="outlook-box">
+                            <strong>XAUUSD Impact:</strong> ${cluster.summary.XAUUSD_Impact || '-'} (${cluster.summary.Probability_Percent || '0'}%)<br>
+                            <strong>Timeframe:</strong> ${cluster.summary.Timeframe || '-'}<br>
+                            <strong>Timing:</strong> ${cluster.summary.Impact_Timing || '-'}<br>
+                            <strong>Price Action Cause (Last 24h):</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}<br>
+                            <strong>Price Target:</strong> ${cluster.summary.Orderflow_Price_Target || '-'}
+                        </div>
+                    `;
+                } else {
+                    summaryHTML = `<div class="structured-data">${cluster.summary || 'Summary missing.'}</div>`;
+                }
+
+                let sourcesHTML = cluster.articles.map(article => `
+                    <div class="source-item">
+                        <span class="source-badge">${article.source}</span>
+                        <a href="${article.link}" target="_blank" class="source-link">${article.title}</a>
+                    </div>
+                `).join('');
+
+                card.innerHTML = `
+                    <div class="date-header">${cluster.main_date || 'Unbekannt'}</div>
+                    <div class="summary-box">
+                        <div class="summary-label">Summary:</div>
+                        ${summaryHTML}
+                    </div>
+                    <div class="reported-by-label">REPORTED BY (${cluster.articles.length} Source${cluster.articles.length > 1 ? 's' : ''}):</div>
+                    ${sourcesHTML}
+                `;
+                container.appendChild(card);
+            });
+        }
+
         loadNews();
     </script>
 </body>

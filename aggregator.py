@@ -85,9 +85,8 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def fetch_oanda_orderbook():
-    """Holt die Order-Cluster und druckt Fehler ins GitHub-Log."""
+    """Holt die Order-Cluster und filtert unrealistische Ausreisser heraus."""
     if not OANDA_API_KEY:
-        print("FEHLER: OANDA_API_KEY ist leer. .yml-Datei prüfen!")
         return "Keine OANDA API-Daten verfügbar (Key fehlt)."
     
     url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
@@ -95,19 +94,35 @@ def fetch_oanda_orderbook():
     
     try:
         response = requests.get(url, headers=headers, timeout=10)
-        print(f"OANDA API Status: {response.status_code}")
         
         if response.status_code == 200:
             data = response.json()
-            buckets = data.get("orderBook", {}).get("buckets", [])
-            buckets.sort(key=lambda x: float(x.get("longCountPercent", 0)) + float(x.get("shortCountPercent", 0)), reverse=True)
+            orderbook = data.get("orderBook", {})
             
-            liquidity_info = "XAU/USD Retail Liquidity Zones (Top 5 Clusters):\n"
-            for b in buckets[:5]:
+            # Aktuellen Marktpreis auslesen
+            current_price_str = orderbook.get("price", "0")
+            current_price = float(current_price_str)
+            
+            buckets = orderbook.get("buckets", [])
+            valid_buckets = []
+            
+            # Filtere alle Cluster heraus, die weiter als 3% vom aktuellen Preis entfernt sind
+            for b in buckets:
+                try:
+                    p = float(b.get("price", 0))
+                    if current_price > 0 and abs(p - current_price) / current_price <= 0.03:
+                        valid_buckets.append(b)
+                except ValueError:
+                    continue
+                    
+            # Sortiere nun die relevanten (nahen) Cluster nach grösster Liquidität
+            valid_buckets.sort(key=lambda x: float(x.get("longCountPercent", 0)) + float(x.get("shortCountPercent", 0)), reverse=True)
+            
+            liquidity_info = f"Current XAU/USD Price: {current_price}\nRetail Liquidity Zones (Top 5 Clusters near current price):\n"
+            for b in valid_buckets[:5]:
                 liquidity_info += f"- Price: {b.get('price')} | Buy Orders: {b.get('longCountPercent')}% | Sell Orders: {b.get('shortCountPercent')}%\n"
             return liquidity_info
             
-        print(f"OANDA Antwort: {response.text}")
         return f"OANDA API Fehler: {response.status_code}"
     except Exception as e:
         return f"OANDA Verbindungsfehler: {e}"

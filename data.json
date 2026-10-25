@@ -1,7 +1,32 @@
 [
     {
+        "main_date": "2026-10-25 09:00",
+        "_timestamp": 1792918823.0,
+        "articles": [
+            {
+                "title": "Saudi Arabia intercepts drones and missiles as fighting with Yemen’s Houthis continues",
+                "link": "https://www.investing.com/news/commodities-news/saudi-arabia-intercepts-drones-and-missiles-as-fighting-with-yemens-houthis-continues-4971080",
+                "source": "Investing.com",
+                "date": "2026-10-25 09:00",
+                "description": "",
+                "_timestamp": 1792918823.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Saudi Arabia intercepted drones and missiles amid ongoing fighting with Yemen’s Houthis, increasing geopolitical tensions in the Middle East [Investing.com].",
+            "Uncertainties": "The full scale of the attacks, potential damage to critical infrastructure, and whether the conflict will escalate to involve other regional actors remain unconfirmed.",
+            "Macro_Context": "Geopolitical conflicts in the Middle East typically increase safe-haven demand for gold (XAUUSD) due to perceived risks to global stability and energy supplies.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Orderflow_Price_Target": "N/A. The provided retail liquidity zones appear to contain historical or anomalous price levels (such as 1.000 or 1000.000) that do not reflect current market pricing, making a logical technical price target unfeasible."
+        }
+    },
+    {
         "main_date": "2026-10-24 21:48",
-        "_timestamp": 1792894620.0,
+        "_timestamp": 1792911513.0,
         "articles": [
             {
                 "title": "Bitcoin or Gold: Which Is the Better Inflation Hedge With Prices Up 3.7%?",
@@ -90,18 +115,99 @@
                 "date": "2026-10-25 02:17",
                 "description": "A familiar safe haven faces another uncomfortable question.",
                 "_timestamp": 1792894620.0
+            },
+            {
+                "title": "Gold market and central banks: Russia, Kazakhstan sell as Poland, China buy",
+                "link": "https://www.euronews.com/2026/10/25/gold-market-and-central-banks-russia-kazakhstan-sell-as-poland-china-buy?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-25 06:58",
+                "description": "Russia and Kazakhstan are offloading some central-bank gold, while Poland's is buying more. What does this reshuffle mean for individual gold investors?View on euronews",
+                "_timestamp": 1792911513.0
+            },
+            {
+                "title": "Bitcoin price today: BTC recovers to $80,800 ahead of Fed meeting",
+                "link": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-price-today-btc-recovers-052418630.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-25 05:24",
+                "description": "Investing.com -- Bitcoin recovered to around $80,800 on Sunday after a sharp weekend selloff, as investors assessed heavy cryptocurrency liquidations ahead of the Federal Reserve’s upcoming interest rate decision.",
+                "_timestamp": 1792905858.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Gold prices fell below $4,000 following its worst week in five months, driven by margin calls, soaring oil prices due to Middle East conflict risks, and rising rate-hike odds from the Federal Reserve [Yahoo Finance Gold]. Higher interest rates increase opportunity costs for non-interest-bearing bullion, turning it temporarily into a liability despite persistent inflation pressures.",
-            "Uncertainties": "Whether upcoming key economic events will allow buyers to defend the $4,000 psychological threshold or if further margin liquidation will push prices deeper into support.",
-            "Macro_Context": "Persistent consumer price inflation alongside rising interest rates, increasing oil prices driven by geopolitical tensions, and shifting real wages impacting global safe-haven demand.",
+            "Facts": "Gold fell below the key psychological level of $4,000 following its worst week in five months, driven by margin calls, soaring oil prices from Middle East conflicts, and rising rate-hike odds after the Federal Reserve raised rates for the first time since 2023 [Yahoo Finance Gold].",
+            "Uncertainties": "It remains unconfirmed whether buyers can successfully hold the line near the $4,000 level following recent heavy liquidations and how ongoing central bank reserve reshuffling by nations like Poland, China, Russia, and Kazakhstan will ultimately influence immediate retail sentiment.",
+            "Macro_Context": "Persistent consumer price inflation (up 3.7%), rising interest rates and increased rate-hike odds by the Federal Reserve, surging oil prices due to geopolitical risks in the Middle East, and shrinking real wages.",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
+            "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bearish",
             "Probability_Percent": 65,
-            "Orderflow_Price_Target": "N/A. Current retail liquidity clusters show anomalous low-range values (e.g., 1000.00 and 1187.00) that do not reflect active market depth for current spot prices above $4,000."
+            "Orderflow_Price_Target": "1000.000 - Price is drawn toward this heavy sell order cluster as bearish momentum dominates following the break below the $4,000 threshold and rising interest rate pressures."
+        }
+    },
+    {
+        "main_date": "2026-10-24 21:00",
+        "_timestamp": 1792905222.0,
+        "articles": [
+            {
+                "title": "Fuel Oil Becomes Asia’s Next Cost Shock",
+                "link": "https://finance.yahoo.com/energy/articles/fuel-oil-becomes-asia-next-210000466.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-24 21:00",
+                "description": "Singapore’s HSFO crack surged above $10/bbl in October from a $5 discount in February, as disrupted Middle Eastern and Russian supplies collided with resilient bunker demand.",
+                "_timestamp": 1792875600.0
+            },
+            {
+                "title": "Goldman Sachs warns on the Hormuz crisis and rising fuel costs",
+                "link": "https://www.thestreet.com/investing/stocks/goldman-sachs-warns-on-the-hormuz-crisis-and-rising-fuel-costs?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-24 19:47",
+                "description": "The bank says shipping oil has become seven times more expensive, and the pain is spreading to refiners and tanker stocks.",
+                "_timestamp": 1792871220.0
+            },
+            {
+                "title": "Goldman Sachs Says Refiners See 'High Probability' Of Sharp Oil Supply Drop As Houthi Attacks Escalate — Crude Oil Prices Hit 6-Month High",
+                "link": "https://stocktwits.com/news-articles/markets/equity/goldman-sachs-crude-oil-prices-6-month-high-iran-war-houthi-attacks/cZUGXqNRBUf?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-24 06:28",
+                "description": "Goldman Sachs' co-head of Global Commodities Research and head of Oil Research, Daan Struyven, said the recent rise in crude prices reflects growing downside risks to supply.",
+                "_timestamp": 1792823315.0
+            },
+            {
+                "title": "Berkshire Owns Both Chevron and Occidental. Which Oil Stock Is the Better Buy Now?",
+                "link": "https://www.fool.com/investing/2026/10/24/berkshire-owns-both-chevron-and-occidental-which-o/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-24 21:35",
+                "description": "Oil prices are high, which is a relatively greater benefit to Occidental, but what happens when commodity prices fall?",
+                "_timestamp": 1792877700.0
+            },
+            {
+                "title": "Coca-Cola Stock Fell a Day After a 52-Week High. Here’s Why India Matters on October 27",
+                "link": "https://www.tikr.com/blog/coca-cola-stock-fell-a-day-after-a-52-week-high-heres-why-india-matters-on-october-27?ref=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-24 20:31",
+                "description": "Key Stats for Coca-Cola StockCurrent Price: $92. 71Target Price (Mid): ~$108Street Target: ~$95Potential Total Return: ~17%Annualized IRR: ~4% / year__Now Live: Discover how much upside your favorite stocks could have using TIKR’s new Valuation Model (It’s free)__ >>> What Happened?The Coca-Cola Company (KO) closed at $92.",
+                "_timestamp": 1792873914.0
+            },
+            {
+                "title": "3 Oil Stocks Worth Watching As Brent Crude Tests $117",
+                "link": "https://finance.yahoo.com/energy/articles/3-oil-stocks-worth-watching-051342089.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-25 05:13",
+                "description": "Oil markets have snapped back into the spotlight after Brent crude hit about US$117 a barrel on fears of wider conflict around Iran, and that sudden price shock is reshaping risk and opportunity across global portfolios. Some businesses could see cash flow resilience or stronger pricing power, while others face higher costs and pressure on demand. This article walks through three stocks exposed to this news, outlining which may deserve a closer look and which might warrant more caution. The...",
+                "_timestamp": 1792905222.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Crude oil prices hit a 6-month high with Brent crude testing $117 a barrel, driven by escalating Houthi attacks, Middle Eastern and Russian supply disruptions, and the Hormuz crisis causing shipping costs to surge [Yahoo Finance Oil]. Goldman Sachs warns of a high probability of a sharp oil supply drop, spreading cost shocks to Asian fuel oil and refiners [Yahoo Finance Oil].",
+            "Uncertainties": "The exact scale and duration of the Hormuz crisis and potential military escalations involving Iran remain unconfirmed.",
+            "Macro_Context": "Geopolitical tensions in the Middle East are causing severe supply chain disruptions and surging energy/fuel costs, acting as an inflationary shock to the global economy.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 75,
+            "Orderflow_Price_Target": "N/A. The provided retail order book liquidity clusters are structurally anomalous and disconnected from realistic current market pricing for XAUUSD, making a logical target invalid."
         }
     },
     {
@@ -243,63 +349,6 @@
         }
     },
     {
-        "main_date": "2026-10-24 21:00",
-        "_timestamp": 1792877700.0,
-        "articles": [
-            {
-                "title": "Fuel Oil Becomes Asia’s Next Cost Shock",
-                "link": "https://finance.yahoo.com/energy/articles/fuel-oil-becomes-asia-next-210000466.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-24 21:00",
-                "description": "Singapore’s HSFO crack surged above $10/bbl in October from a $5 discount in February, as disrupted Middle Eastern and Russian supplies collided with resilient bunker demand.",
-                "_timestamp": 1792875600.0
-            },
-            {
-                "title": "Goldman Sachs warns on the Hormuz crisis and rising fuel costs",
-                "link": "https://www.thestreet.com/investing/stocks/goldman-sachs-warns-on-the-hormuz-crisis-and-rising-fuel-costs?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-24 19:47",
-                "description": "The bank says shipping oil has become seven times more expensive, and the pain is spreading to refiners and tanker stocks.",
-                "_timestamp": 1792871220.0
-            },
-            {
-                "title": "Goldman Sachs Says Refiners See 'High Probability' Of Sharp Oil Supply Drop As Houthi Attacks Escalate — Crude Oil Prices Hit 6-Month High",
-                "link": "https://stocktwits.com/news-articles/markets/equity/goldman-sachs-crude-oil-prices-6-month-high-iran-war-houthi-attacks/cZUGXqNRBUf?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-24 06:28",
-                "description": "Goldman Sachs' co-head of Global Commodities Research and head of Oil Research, Daan Struyven, said the recent rise in crude prices reflects growing downside risks to supply.",
-                "_timestamp": 1792823315.0
-            },
-            {
-                "title": "Berkshire Owns Both Chevron and Occidental. Which Oil Stock Is the Better Buy Now?",
-                "link": "https://www.fool.com/investing/2026/10/24/berkshire-owns-both-chevron-and-occidental-which-o/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-24 21:35",
-                "description": "Oil prices are high, which is a relatively greater benefit to Occidental, but what happens when commodity prices fall?",
-                "_timestamp": 1792877700.0
-            },
-            {
-                "title": "Coca-Cola Stock Fell a Day After a 52-Week High. Here’s Why India Matters on October 27",
-                "link": "https://www.tikr.com/blog/coca-cola-stock-fell-a-day-after-a-52-week-high-heres-why-india-matters-on-october-27?ref=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-24 20:31",
-                "description": "Key Stats for Coca-Cola StockCurrent Price: $92. 71Target Price (Mid): ~$108Street Target: ~$95Potential Total Return: ~17%Annualized IRR: ~4% / year__Now Live: Discover how much upside your favorite stocks could have using TIKR’s new Valuation Model (It’s free)__ >>> What Happened?The Coca-Cola Company (KO) closed at $92.",
-                "_timestamp": 1792873914.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Goldman Sachs warns of a high probability of sharp oil supply drops due to escalating Houthi attacks and Hormuz crisis disruptions, sending crude prices to a 6-month high and surging Asian fuel oil cracks [Yahoo Finance Oil].",
-            "Uncertainties": "The exact duration and severity of the geopolitical shipping disruptions in the Middle East and their ultimate passthrough to broader inflation remain unquantified.",
-            "Macro_Context": "Geopolitical supply shocks in the Middle East and Russia are driving up global energy costs, fueling inflationary pressures that typically support safe-haven assets like gold.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "N/A. The provided retail order book liquidity clusters are anomalous and do not reflect realistic current market pricing for XAUUSD."
-        }
-    },
-    {
         "main_date": "2026-10-24 20:34",
         "_timestamp": 1792875857.0,
         "articles": [
@@ -413,56 +462,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Orderflow_Price_Target": "N/A. The provided retail liquidity clusters are mathematically anomalous and unrealistic for current XAUUSD market pricing, precluding a logical price target derivation."
-        }
-    },
-    {
-        "main_date": "2026-10-24 08:48",
-        "_timestamp": 1792831683.0,
-        "articles": [
-            {
-                "title": "Ukrainian strike on enterprise in Russia’s Oryol kills three, governor says",
-                "link": "https://www.investing.com/news/commodities-news/ukrainian-strike-on-enterprise-in-russias-oryol-kills-three-governor-says-4970733",
-                "source": "Investing.com",
-                "date": "2026-10-24 08:48",
-                "description": "",
-                "_timestamp": 1792831683.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "A Ukrainian strike on an enterprise in Russia's Oryol region resulted in three deaths, according to the local governor. This escalation in the Russia-Ukraine conflict occurred due to ongoing military hostilities and retaliatory drone or missile strikes [Investing.com].",
-            "Uncertainties": "The exact strategic importance of the targeted enterprise, the scale of military retaliation by Russia, and whether this will trigger a broader escalation affecting commodity markets remain unconfirmed.",
-            "Macro_Context": "Geopolitical tensions in Eastern Europe continuously influence safe-haven assets like gold (XAUUSD), although market reaction often depends on the involvement of major global powers and broader energy market impacts.",
-            "Impact_Timing": "Past",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "N/A. The current retail liquidity zones reflect anomalous or stale pricing data (e.g., 1.000 to 1000.000) that do not align with current market pricing, making a valid technical price target impossible to determine."
-        }
-    },
-    {
-        "main_date": "2026-10-24 06:00",
-        "_timestamp": 1792821628.0,
-        "articles": [
-            {
-                "title": "Marco Rubio calls on those seeking change in Cuba to partner with CIA",
-                "link": "https://www.investing.com/news/commodities-news/trump-says-us-will-take-care-of-cuba-on-its-way-back-from-iran-4970339",
-                "source": "Investing.com",
-                "date": "2026-10-24 06:00",
-                "description": "",
-                "_timestamp": 1792821628.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "US Senator Marco Rubio publicly called on individuals seeking political change in Cuba to partner with the CIA, a statement that touches upon geopolitical tensions in Latin America [Investing.com].",
-            "Uncertainties": "It remains unclear if this rhetoric will translate into concrete foreign policy actions, direct operational changes, or broader geopolitical retaliation that affects global safe-haven flows.",
-            "Macro_Context": "Geopolitical rhetoric involving the US and Latin America contributes to baseline geopolitical risk, though its direct transmission mechanism to global safe-haven assets like gold is currently negligible.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "N/A. The provided retail liquidity zones contain anomalous or non-market prices that do not align with current spot XAUUSD market valuations, making a logical price target impossible to determine."
         }
     }
 ]

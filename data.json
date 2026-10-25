@@ -1,7 +1,7 @@
 [
     {
         "main_date": "2026-10-25 06:58",
-        "_timestamp": 1792948124.0,
+        "_timestamp": 1792959002.0,
         "articles": [
             {
                 "title": "Gold market and central banks: Russia, Kazakhstan sell as Poland, China buy",
@@ -162,18 +162,52 @@
                 "date": "2026-10-25 15:44",
                 "description": "Vista Energy reports on October 28 with Brent oil briefly topping $130 and a full quarter of newly acquired Vaca Muerta assets on the books. Whether that windfall survived peso costs and geopolitical chaos on its way to free cash flow is the question Wall Street is waiting to answer.",
                 "_timestamp": 1792943088.0
+            },
+            {
+                "title": "3 Canadian Growth Stocks With Earnings Growth Over 20%",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-canadian-growth-stocks-earnings-201002068.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-25 20:10",
+                "description": "Canada’s push to expand oil, gas and LNG exports under Mark Carney’s energy ambitions has refocused attention on domestic companies that can grow while still keeping their balance sheets in solid shape. That mix of ambition and financial discipline is exactly what this “healthy high growth potential” group offers. This article walks through three Canadian stocks from the screener that analysts expect to deliver strong earnings growth over the next few years. The three stocks highlighted here...",
+                "_timestamp": 1792959002.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Gold prices faced downward pressure, moving from above $4,025 down to test the $3,995 level amid persistent inflation concerns, shifts in central bank reserve allocations (with Russia and Kazakhstan offloading while Poland and China buy), and rising geopolitical tensions driving Brent crude toward multi-month highs [Yahoo Finance Gold, Yahoo Finance Oil].",
-            "Uncertainties": "The exact trajectory of upcoming Federal Reserve interest rate decisions and how sustained high oil prices will impact broader global inflation expectations remain unpredictable.",
-            "Macro_Context": "Persistent inflation, geopolitical conflicts in the Middle East pushing energy prices higher, and central bank reserve realignments are creating a complex cross-asset environment where both traditional safe-havens like gold and risk assets experience heightened volatility.",
+            "Facts": "Gold prices experienced localized profit-taking and consolidation while global central bank behavior diverged, with Russia and Kazakhstan offloading reserves while Poland and China actively accumulate [Yahoo Finance Gold]. Meanwhile, rising geopolitical tensions in the Middle East have driven Brent crude towards $117-$130, heightening global inflation concerns and keeping pressure on risk assets [Yahoo Finance Oil].",
+            "Uncertainties": "The exact trajectory of the Federal Reserve's upcoming interest rate decisions and the immediate severity of Middle East energy supply disruptions remain unpredictable.",
+            "Macro_Context": "Persistent inflation, rising energy and oil prices driven by geopolitical conflicts, and shifting central bank gold reserves create a complex environment characterized by tighter monetary policy expectations and heightened safe-haven demand.",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
             "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Gold drifted lower over the past 24 hours from approximately $4,025 to test support near $3,995, aligning with profit-taking and technical pullbacks amidst broader macroeconomic recalibrations.",
+            "Past_Price_Action_Cause": "Gold drifted lower from above $4,025 down toward the $3,995 area over the past 24 hours, reflecting minor profit-taking and liquidation ripples following broader crypto and asset volatility before finding initial stabilization near current order book liquidity.",
+            "Orderflow_Price_Target": "4030.00"
+        }
+    },
+    {
+        "main_date": "2026-10-25 20:03",
+        "_timestamp": 1792958611.0,
+        "articles": [
+            {
+                "title": "Selling $300,000 of GLD Bought Five Years Ago Means a $162,713 Gain Taxed as a Collectible, Not a Stock",
+                "link": "https://247wallst.com/investing/etf/2026/10/25/selling-300000-of-gld-bought-five-years-ago-means-a-162713-gain-taxed-as-a-collectible-not-a-stock/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-25 20:03",
+                "description": "GLD trades like a stock but the IRS does not treat it like one, and the difference in your tax bill when you finally sell could be far larger than you expect.",
+                "_timestamp": 1792958611.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "An article from Yahoo Finance Gold highlights that the IRS classifies physical gold ETFs like GLD as collectibles rather than stocks, subjecting capital gains upon sale to a higher collectibles tax rate instead of standard long-term capital gains tax.",
+            "Uncertainties": "Whether this specific tax clarification will prompt investors to reallocate from paper gold (GLD) to physical bullion or other assets is unconfirmed.",
+            "Macro_Context": "Broader macroeconomic factors continue to drive gold near historic highs around the 4000 USD level, amid ongoing inflation concerns and central bank demand.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
             "Orderflow_Price_Target": "4030.00"
         }
     },

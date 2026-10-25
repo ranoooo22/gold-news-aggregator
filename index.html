@@ -57,7 +57,6 @@
 
                     let summaryHTML = "";
                     if (typeof cluster.summary === 'object' && cluster.summary !== null) {
-                        // Abfrage für neue englische ODER alte deutsche Keys
                         summaryHTML = `
                             <div class="structured-data">
                                 <strong>Facts:</strong> ${cluster.summary.Facts || cluster.summary.Fakten || '-'}<br><br>
@@ -67,7 +66,8 @@
                             <div class="outlook-box">
                                 <strong>XAUUSD Impact:</strong> ${cluster.summary.XAUUSD_Impact || cluster.summary.XAUUSD_Auswirkung || '-'} (${cluster.summary.Probability_Percent || cluster.summary.Wahrscheinlichkeit_Prozent || '0'}%)<br>
                                 <strong>Timeframe:</strong> ${cluster.summary.Timeframe || cluster.summary.Zeitrahmen || '-'} <br>
-                                <strong>Timing:</strong> ${cluster.summary.Impact_Timing || cluster.summary.Wirkungs_Zeitpunkt || '-'}
+                                <strong>Timing:</strong> ${cluster.summary.Impact_Timing || cluster.summary.Wirkungs_Zeitpunkt || '-'}<br>
+                                <strong>Price Target:</strong> ${cluster.summary.Orderflow_Price_Target || '-'}
                             </div>
                         `;
                     } else {

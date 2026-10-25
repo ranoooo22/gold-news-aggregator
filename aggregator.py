@@ -41,7 +41,6 @@ def fetch_new_articles(existing_urls):
         try:
             response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=10)
             if response.status_code != 200:
-                print(f"Blockiert bei {source}: HTTP Status {response.status_code}")
                 continue
                 
             feed = feedparser.parse(response.content)
@@ -79,7 +78,7 @@ def fetch_new_articles(existing_urls):
                     "_timestamp": pub_dt.timestamp()
                 })
         except Exception as e:
-            print(f"Technischer Fehler bei {source}: {e}")
+            print(f"Fehler bei {source}: {e}")
             
     return articles
 
@@ -118,7 +117,6 @@ def fetch_oanda_orderbook():
         return f"OANDA Verbindungsfehler: {e}"
 
 def fetch_oanda_price_history():
-    """Holt die H1-Kerzen der letzten 24 Stunden zur Analyse vergangener Preisschwankungen."""
     if not OANDA_API_KEY:
         return "Keine Preisdaten verfügbar."
     url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=24&granularity=H1"
@@ -138,6 +136,60 @@ def fetch_oanda_price_history():
     except Exception as e:
         return f"OANDA Candle Fehler: {e}"
 
+def update_market_data():
+    if not OANDA_API_KEY:
+        return
+    
+    market_data = {"candles": [], "orderbook": []}
+    headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
+    
+    try:
+        url_candles = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4"
+        res_c = requests.get(url_candles, headers=headers, timeout=10)
+        if res_c.status_code == 200:
+            for c in res_c.json().get("candles", []):
+                if c.get("complete"):
+                    dt = datetime.strptime(c["time"][:19], "%Y-%m-%dT%H:%M:%S")
+                    market_data["candles"].append({
+                        "time": int(dt.timestamp()),
+                        "open": float(c["mid"]["o"]),
+                        "high": float(c["mid"]["h"]),
+                        "low": float(c["mid"]["l"]),
+                        "close": float(c["mid"]["c"])
+                    })
+    except Exception as e:
+        print(f"Fehler beim Laden der H4-Kerzen: {e}")
+
+    try:
+        url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
+        res_ob = requests.get(url_ob, headers=headers, timeout=10)
+        if res_ob.status_code == 200:
+            orderbook = res_ob.json().get("orderBook", {})
+            current_price = float(orderbook.get("price", "0"))
+            buckets = orderbook.get("buckets", [])
+            valid_buckets = []
+            
+            for b in buckets:
+                try:
+                    p = float(b.get("price", 0))
+                    if current_price > 0 and abs(p - current_price) / current_price <= 0.03:
+                        valid_buckets.append(b)
+                except ValueError:
+                    continue
+            
+            valid_buckets.sort(key=lambda x: float(x.get("longCountPercent", 0)) + float(x.get("shortCountPercent", 0)), reverse=True)
+            
+            for b in valid_buckets[:5]:
+                market_data["orderbook"].append({
+                    "price": float(b.get("price")),
+                    "volume": float(b.get("longCountPercent", 0)) + float(b.get("shortCountPercent", 0))
+                })
+    except Exception as e:
+        print(f"Fehler beim Laden der Orderbuch-Level: {e}")
+
+    with open("market_data.json", "w", encoding="utf-8") as f:
+        json.dump(market_data, f)
+
 def generate_summary(articles_in_cluster, orderbook_data, price_history_data, max_retries=3):
     if not client:
         return None
@@ -155,7 +207,7 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
         "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
         "Probability_Percent": <Integer 0 to 100>,
-        "Past_Price_Action_Cause": "Explain briefly if and how these specific news events align with the provided 24h price action (e.g., 'The drop to 2600 at 14:00 correlates with the CPI release...'). Write 'N/A' if no clear correlation.",
+        "Past_Price_Action_Cause": "Explain briefly if and how these specific news events align with the provided 24h price action. Write 'N/A' if no clear correlation.",
         "Orderflow_Price_Target": "Based on News Impact and Liquidity Zones, state exact logical price target."
     }}
 
@@ -217,6 +269,8 @@ def main():
         print("Keine neuen Artikel gefunden.")
         with open(DATA_FILE, "w", encoding="utf-8") as f:
             json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
+        print("Aktualisiere Chart-Daten...")
+        update_market_data()
         return
 
     print(f"{len(new_articles)} neue Artikel gefunden. Clustere...")
@@ -268,6 +322,9 @@ def main():
             
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
+        
+    print("Aktualisiere Chart-Daten...")
+    update_market_data()
     print("Update abgeschlossen.")
 
 if __name__ == "__main__":

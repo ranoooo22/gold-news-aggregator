@@ -30,6 +30,13 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python aggregator.py
 
+      - name: Run aggregator script
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          OANDA_API_KEY: ${{ secrets.OANDA_API_KEY }}
+          OANDA_ACCOUNT_ID: ${{ secrets.OANDA_ACCOUNT_ID }}
+        run: python aggregator.py
+
       - name: Änderungen speichern
         run: |
           git config --global user.name "github-actions[bot]"

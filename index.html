@@ -59,10 +59,26 @@
             const container = document.getElementById('chart-container');
             try {
                 const response = await fetch('market_data.json?t=' + new Date().getTime());
-                if (!response.ok) return;
+                if (!response.ok) {
+                    container.innerHTML = `<p style="text-align:center; padding: 20px;">HTTP Error: ${response.status}</p>`;
+                    return;
+                }
                 const data = await response.json();
                 
-                if (!data.candles || data.candles.length === 0) return;
+                if (!data.candles || data.candles.length === 0) {
+                    container.innerHTML = `<p style="text-align:center; padding: 20px;">Keine Kerzen-Daten gefunden.</p>`;
+                    return;
+                }
+
+                let sortedCandles = data.candles.sort((a, b) => a.time - b.time);
+                let uniqueCandles = [];
+                let lastTime = 0;
+                sortedCandles.forEach(c => {
+                    if (c.time > lastTime) {
+                        uniqueCandles.push(c);
+                        lastTime = c.time;
+                    }
+                });
 
                 const chart = LightweightCharts.createChart(container, {
                     width: container.clientWidth,
@@ -75,7 +91,8 @@
                 const candleSeries = chart.addCandlestickSeries({
                     upColor: '#26a69a', downColor: '#ef5350', borderVisible: false, wickUpColor: '#26a69a', wickDownColor: '#ef5350'
                 });
-                candleSeries.setData(data.candles);
+                
+                candleSeries.setData(uniqueCandles);
 
                 if (data.orderbook) {
                     data.orderbook.forEach((level, index) => {
@@ -90,7 +107,7 @@
                     });
                 }
             } catch (error) {
-                console.error("Chart konnte nicht geladen werden:", error);
+                container.innerHTML = `<p style="color:red; font-weight:bold; padding: 20px;">Chart Ladefehler: ${error.message}</p>`;
             }
         }
 

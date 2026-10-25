@@ -33,7 +33,6 @@ def clean_html(raw_html):
     return re.sub(cleanr, '', raw_html)
 
 def fetch_new_articles(existing_urls):
-    """Holt neue Artikel und protokolliert unsichtbare Server-Blockaden."""
     articles = []
     now = datetime.now()
     cutoff_time = now - timedelta(hours=24)
@@ -47,7 +46,7 @@ def fetch_new_articles(existing_urls):
                 
             feed = feedparser.parse(response.content)
             if not feed.entries:
-                print(f"Warnung bei {source}: Seite erreichbar (HTTP 200), aber Feed ist leer.")
+                print(f"Warnung bei {source}: Seite erreichbar, aber Feed leer.")
                 continue
             
             for entry in feed.entries[:20]:
@@ -86,14 +85,18 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def fetch_oanda_orderbook():
-    """Holt die 5 grössten Order-Cluster für XAU/USD von OANDA."""
+    """Holt die Order-Cluster und druckt Fehler ins GitHub-Log."""
     if not OANDA_API_KEY:
+        print("FEHLER: OANDA_API_KEY ist leer. .yml-Datei prüfen!")
         return "Keine OANDA API-Daten verfügbar (Key fehlt)."
+    
     url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
     headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
     
     try:
         response = requests.get(url, headers=headers, timeout=10)
+        print(f"OANDA API Status: {response.status_code}")
+        
         if response.status_code == 200:
             data = response.json()
             buckets = data.get("orderBook", {}).get("buckets", [])
@@ -103,12 +106,13 @@ def fetch_oanda_orderbook():
             for b in buckets[:5]:
                 liquidity_info += f"- Price: {b.get('price')} | Buy Orders: {b.get('longCountPercent')}% | Sell Orders: {b.get('shortCountPercent')}%\n"
             return liquidity_info
+            
+        print(f"OANDA Antwort: {response.text}")
         return f"OANDA API Fehler: {response.status_code}"
     except Exception as e:
         return f"OANDA Verbindungsfehler: {e}"
 
 def generate_summary(articles_in_cluster, orderbook_data, max_retries=3):
-    """Führt eine tiefgehende Analyse durch und erzwingt eine JSON-Ausgabe."""
     if not client:
         return None
     
@@ -169,7 +173,6 @@ def main():
     now = datetime.now()
     cutoff_timestamp = (now - timedelta(hours=24)).timestamp()
     
-    # Filtere alte Cluster raus
     valid_clusters = [c for c in existing_data if c.get("_timestamp", 0) > cutoff_timestamp]
     
     existing_urls = set()
@@ -214,7 +217,6 @@ def main():
                 "summary": None
             })
     
-    # Sortiere chronologisch (neueste zuerst)
     valid_clusters.sort(key=lambda x: x.get("_timestamp", 0), reverse=True)
     
     for cluster in valid_clusters:

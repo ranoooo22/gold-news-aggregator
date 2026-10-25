@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Financial & Gold News Aggregator</title>
-   <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f8; color: #333; margin: 0; padding: 20px; }
-        h1 { text-align: center; color: #1e293b; margin-bottom: 20px; }
-        #controls { max-width: 800px; margin: 0 auto 30px auto; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f8; color: #333; margin: 0; padding: 0; }
+        
+        /* Tab Navigation */
+        .tab-nav { display: flex; justify-content: space-around; background: #fff; padding: 10px 0; border-bottom: 1px solid #e2e8f0; margin-bottom: 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .tab-btn { background: none; border: none; font-size: 1em; font-weight: bold; color: #64748b; cursor: pointer; padding: 12px 20px; border-radius: 6px; transition: all 0.2s; width: 45%; }
+        .tab-btn.active { color: #1e293b; background: #f1f5f9; box-shadow: inset 0 -2px 0 #3b82f6; }
+        .tab-content { display: none; padding: 0 20px; }
+        .tab-content.active { display: block; }
+
+        h1 { text-align: center; color: #1e293b; margin: 20px 0; }
+        
+        /* Controls & Cards */
+        #controls { max-width: 800px; margin: 0 auto 20px auto; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
         select { padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; background-color: #fff; font-size: 0.95em; cursor: pointer; outline: none; }
-        #chart-container { max-width: 800px; height: 400px; margin: 0 auto 30px auto; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden; }
+        #chart-container { max-width: 800px; height: 450px; margin: 0 auto 30px auto; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden; }
         #news-container { max-width: 800px; margin: 0 auto; }
+        
         .news-card { background-color: #fff; border-radius: 8px; border-left: 6px solid #eab308; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .date-header { color: #888; font-size: 0.9em; margin-bottom: 15px; }
         .summary-box { background-color: #f8f9fa; border-radius: 6px; padding: 15px; margin-bottom: 20px; border: 1px solid #eef0f2; }
@@ -26,34 +37,51 @@
 </head>
 <body>
 
-    <h1>Financial & Gold News Aggregator</h1>
-    
-    <div id="controls">
-        <select id="filter-impact" onchange="renderNews()">
-            <option value="all">All Impacts</option>
-            <option value="Bullish">Bullish</option>
-            <option value="Bearish">Bearish</option>
-            <option value="Neutral">Neutral</option>
-        </select>
-        <select id="filter-type" onchange="renderNews()">
-            <option value="all">All News Types</option>
-            <option value="cluster">Connected Clusters</option>
-            <option value="single">Single Articles</option>
-        </select>
-        <select id="sort-by" onchange="renderNews()">
-            <option value="newest">Sort: Newest First</option>
-            <option value="probability">Sort: Highest Probability</option>
-        </select>
+    <div class="tab-nav">
+        <button class="tab-btn active" onclick="switchTab(event, 'chart-tab')">📊 Chart & Orders</button>
+        <button class="tab-btn" onclick="switchTab(event, 'news-tab')">📰 News Analyse</button>
     </div>
 
-    <div id="chart-container"></div>
+    <h1>Financial & Gold Aggregator</h1>
 
-    <div id="news-container">
-        <p style="text-align:center;">Lade News...</p>
+    <!-- CHART TAB -->
+    <div id="chart-tab" class="tab-content active">
+        <div id="chart-container"></div>
+    </div>
+
+    <!-- NEWS TAB -->
+    <div id="news-tab" class="tab-content">
+        <div id="controls">
+            <select id="filter-impact" onchange="renderNews()">
+                <option value="all">All Impacts</option>
+                <option value="Bullish">Bullish</option>
+                <option value="Bearish">Bearish</option>
+                <option value="Neutral">Neutral</option>
+            </select>
+            <select id="filter-type" onchange="renderNews()">
+                <option value="all">All News Types</option>
+                <option value="cluster">Connected Clusters</option>
+                <option value="single">Single Articles</option>
+            </select>
+            <select id="sort-by" onchange="renderNews()">
+                <option value="newest">Sort: Newest First</option>
+                <option value="probability">Sort: Highest Probability</option>
+            </select>
+        </div>
+        <div id="news-container">
+            <p style="text-align:center;">Lade News...</p>
+        </div>
     </div>
 
     <script>
         let allClusters = [];
+
+        function switchTab(event, tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
 
         async function loadChart() {
             const container = document.getElementById('chart-container');
@@ -65,10 +93,7 @@
                 }
                 const data = await response.json();
                 
-                if (!data.candles || data.candles.length === 0) {
-                    container.innerHTML = `<p style="text-align:center; padding: 20px;">Keine Kerzen-Daten gefunden.</p>`;
-                    return;
-                }
+                if (!data.candles || data.candles.length === 0) return;
 
                 let sortedCandles = data.candles.sort((a, b) => a.time - b.time);
                 let uniqueCandles = [];
@@ -82,7 +107,7 @@
 
                 const chart = LightweightCharts.createChart(container, {
                     width: container.clientWidth,
-                    height: 400,
+                    height: 450,
                     layout: { backgroundColor: '#ffffff', textColor: '#333' },
                     grid: { vertLines: { color: '#f0f3fa' }, horzLines: { color: '#f0f3fa' } },
                     timeScale: { timeVisible: true }
@@ -102,7 +127,7 @@
                             lineWidth: 2,
                             lineStyle: LightweightCharts.LineStyle.Dashed,
                             axisLabelVisible: true,
-                            title: `Liquidity ${index + 1}`
+                            title: `L${index + 1} (${level.volume.toFixed(2)}%)`
                         });
                     });
                 }

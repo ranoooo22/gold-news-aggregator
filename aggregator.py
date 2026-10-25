@@ -46,7 +46,6 @@ def fetch_new_articles(existing_urls):
                 
             feed = feedparser.parse(response.content)
             if not feed.entries:
-                print(f"Warnung bei {source}: Seite erreichbar, aber Feed leer.")
                 continue
             
             for entry in feed.entries[:20]:
@@ -85,28 +84,21 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def fetch_oanda_orderbook():
-    """Holt die Order-Cluster und filtert unrealistische Ausreisser heraus."""
     if not OANDA_API_KEY:
         return "Keine OANDA API-Daten verfügbar (Key fehlt)."
-    
     url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
     headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
     
     try:
         response = requests.get(url, headers=headers, timeout=10)
-        
         if response.status_code == 200:
             data = response.json()
             orderbook = data.get("orderBook", {})
-            
-            # Aktuellen Marktpreis auslesen
-            current_price_str = orderbook.get("price", "0")
-            current_price = float(current_price_str)
+            current_price = float(orderbook.get("price", "0"))
             
             buckets = orderbook.get("buckets", [])
             valid_buckets = []
             
-            # Filtere alle Cluster heraus, die weiter als 3% vom aktuellen Preis entfernt sind
             for b in buckets:
                 try:
                     p = float(b.get("price", 0))
@@ -115,41 +107,64 @@ def fetch_oanda_orderbook():
                 except ValueError:
                     continue
                     
-            # Sortiere nun die relevanten (nahen) Cluster nach grösster Liquidität
             valid_buckets.sort(key=lambda x: float(x.get("longCountPercent", 0)) + float(x.get("shortCountPercent", 0)), reverse=True)
             
             liquidity_info = f"Current XAU/USD Price: {current_price}\nRetail Liquidity Zones (Top 5 Clusters near current price):\n"
             for b in valid_buckets[:5]:
                 liquidity_info += f"- Price: {b.get('price')} | Buy Orders: {b.get('longCountPercent')}% | Sell Orders: {b.get('shortCountPercent')}%\n"
             return liquidity_info
-            
         return f"OANDA API Fehler: {response.status_code}"
     except Exception as e:
         return f"OANDA Verbindungsfehler: {e}"
 
-def generate_summary(articles_in_cluster, orderbook_data, max_retries=3):
+def fetch_oanda_price_history():
+    """Holt die H1-Kerzen der letzten 24 Stunden zur Analyse vergangener Preisschwankungen."""
+    if not OANDA_API_KEY:
+        return "Keine Preisdaten verfügbar."
+    url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=24&granularity=H1"
+    headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
+    try:
+        response = requests.get(url, headers=headers, timeout=10)
+        if response.status_code == 200:
+            candles = response.json().get("candles", [])
+            history = "XAU/USD H1 Price History (Last 24h):\n"
+            for c in candles:
+                if c.get("complete"):
+                    time_str = c.get("time")[:16].replace("T", " ")
+                    close_price = c.get("mid", {}).get("c")
+                    history += f"- {time_str} UTC: {close_price}\n"
+            return history
+        return "OANDA Candle API Fehler"
+    except Exception as e:
+        return f"OANDA Candle Fehler: {e}"
+
+def generate_summary(articles_in_cluster, orderbook_data, price_history_data, max_retries=3):
     if not client:
         return None
     
-    news_data = "\n".join([f"Source: [{a['source']}]\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in articles_in_cluster])
+    news_data = "\n".join([f"Source: [{a['source']}]\nDate: {a['date']}\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in articles_in_cluster])
     
-    prompt = f"""You are a quantitative financial analyst. Analyze these news reports and the current retail order book liquidity. Output ONLY a valid JSON object without markdown blocks. Write all values in English!
+    prompt = f"""You are a quantitative financial analyst. Analyze these news reports, the past 24h price action, and current liquidity. Output ONLY a valid JSON object without markdown blocks. Write all values in English!
     
     Required JSON structure:
     {{
         "Facts": "Detailed summary of core facts and WHY it happened. Include [Source].",
         "Uncertainties": "What is unclear, speculative, or unconfirmed?",
-        "Macro_Context": "Macro-economic context (e.g., monetary policy, oil prices).",
+        "Macro_Context": "Macro-economic context.",
         "Impact_Timing": "Past, Present, or Future",
-        "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Impact_Timing is Past)",
+        "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
         "Probability_Percent": <Integer 0 to 100>,
-        "Orderflow_Price_Target": "Based on the News Impact and the provided Liquidity Zones, state the exact logical price target for XAUUSD (e.g., '2750.50' or 'N/A') and one brief sentence explaining why it hits that liquidity cluster."
+        "Past_Price_Action_Cause": "Explain briefly if and how these specific news events align with the provided 24h price action (e.g., 'The drop to 2600 at 14:00 correlates with the CPI release...'). Write 'N/A' if no clear correlation.",
+        "Orderflow_Price_Target": "Based on News Impact and Liquidity Zones, state exact logical price target."
     }}
 
     News Reports:
     {news_data}
     
+    24h Price History:
+    {price_history_data}
+
     Current Order Book:
     {orderbook_data}
     """
@@ -234,13 +249,16 @@ def main():
     
     valid_clusters.sort(key=lambda x: x.get("_timestamp", 0), reverse=True)
     
+    print("Lade 24h Preishistorie von OANDA...")
+    price_history_data = fetch_oanda_price_history()
+    
     for cluster in valid_clusters:
         if cluster.get("needs_update", False):
             print(f"Lade OANDA Orderflow-Daten für: {cluster['articles'][0]['title']}...")
             orderbook_data = fetch_oanda_orderbook()
             
             print(f"Erstelle analytische Zusammenfassung...")
-            summary = generate_summary(cluster["articles"], orderbook_data)
+            summary = generate_summary(cluster["articles"], orderbook_data, price_history_data)
             
             if summary:
                 cluster["summary"] = summary

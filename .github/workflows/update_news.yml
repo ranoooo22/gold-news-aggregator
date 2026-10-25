@@ -35,4 +35,5 @@ jobs:
           git config --global user.email "action@github.com"
           git add data.json market_data.json
           git commit -m "Auto-update news and market data" || echo "Keine neuen Änderungen zum Committen."
+          git pull --rebase origin main
           git push

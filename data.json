@@ -1,33 +1,89 @@
 [
     {
-        "main_date": "2026-10-26 21:45",
-        "_timestamp": 1793051100.0,
+        "main_date": "2026-10-26 19:54",
+        "_timestamp": 1793062463.0,
         "articles": [
             {
-                "title": "Perpetua Resources Awarded Up to $40 Million in U.S. Army Funding to Advance Domestic Tungsten Supply for American Defense",
-                "link": "https://finance.yahoo.com/news/perpetua-resources-awarded-40-million-214500543.html?.tsrc=rss",
+                "title": "Oil settles lower on peace hopes, Saudi attacks limit losses",
+                "link": "https://www.investing.com/news/commodities-news/oil-prices-down-almost-1-in-early-trading-4971306",
+                "source": "Investing.com",
+                "date": "2026-10-26 19:54",
+                "description": "",
+                "_timestamp": 1793044464.0
+            },
+            {
+                "title": "Oil falls from near six-month high as Iran mediation efforts ease supply worries",
+                "link": "https://www.investing.com/news/commodities-news/oil-falls-from-6mth-highs-saudi-attacks-keep-supply-risks-in-focus-4971338",
+                "source": "Investing.com",
+                "date": "2026-10-26 18:58",
+                "description": "",
+                "_timestamp": 1793041113.0
+            },
+            {
+                "title": "Saudi defence pact countries push for peace in Tehran as Houthis launch more attacks",
+                "link": "https://www.investing.com/news/commodities-news/iran-hosts-saudi-defence-pact-states-as-houthis-launch-more-attacks-4972847",
+                "source": "Investing.com",
+                "date": "2026-10-26 18:42",
+                "description": "",
+                "_timestamp": 1793040178.0
+            },
+            {
+                "title": "Geopolitical tensions complicate the gold bull case, says AHG president",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/geopolitical-tensions-complicate-gold-bull-182438839.html?.tsrc=rss",
                 "source": "Yahoo Finance Gold",
-                "date": "2026-10-26 21:45",
-                "description": "Perpetua Resources Corp. (Nasdaq: PPTA) (TSX: PPTA) (\"Perpetua Resources\" or \"Perpetua\" or the \"Company\") today announced a new 36-month, $40 million award through the U.S. Army's Defense Ordnance Technology Consortium (\"DOTC\") from the Portfolio Acquisition Executive Agile Sustainment & Ammunition (\"PAE AS&amp;A\") located at Picatinny Arsenal, N.J. This award will fund a program to evaluate the technical and economic feasibility of producing tungsten concentrate at the historical Stibnite Mining Di",
-                "_timestamp": 1793051100.0
+                "date": "2026-10-26 18:24",
+                "description": "Investing.com -- Geopolitical tensions in the Middle East are complicating the outlook for gold, even as central bank buying continues to underpin demand, Max Baecker, president of American Hartford Gold, told Investing.com.",
+                "_timestamp": 1793039078.0
+            },
+            {
+                "title": "Trump’s Treasury Says Gulf Oil Is “Roaring Back” as Exxon Heads Into Earnings Near a Record",
+                "link": "https://www.tikr.com/blog/trumps-treasury-says-gulf-oil-is-roaring-back-as-exxon-heads-into-earnings-near-a-record?ref=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 18:21",
+                "description": "Key TakeawaysTreasury Secretary Scott Bessent said on Friday that Persian Gulf oil exports have passed pre-conflict levels, and Brent crude fell 1% on Monday on hopes the Iran war is easing. Analysts expect ExxonMobil to earn $13.",
+                "_timestamp": 1793038912.0
+            },
+            {
+                "title": "Gold jumps as easing oil prices eases inflation fears",
+                "link": "https://www.investing.com/news/commodities-news/gold-steadies-near-3mth-low-as-elevated-oil-prices-weigh-fed-meet-eyed-4971362",
+                "source": "Investing.com",
+                "date": "2026-10-26 20:53",
+                "description": "",
+                "_timestamp": 1793047998.0
+            },
+            {
+                "title": "Oil extends losses as Iran mediation efforts ease escalation fears",
+                "link": "https://www.investing.com/news/commodities-news/oil-extends-losses-as-iran-mediation-efforts-ease-escalation-fears-4973997",
+                "source": "Investing.com",
+                "date": "2026-10-27 00:24",
+                "description": "",
+                "_timestamp": 1793060663.0
+            },
+            {
+                "title": "Oil extends losses as Iran mediation efforts ease escalation fears",
+                "link": "https://finance.yahoo.com/energy/articles/oil-extends-losses-iran-mediation-005423071.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 00:54",
+                "description": "Investing.com-- Oil prices edged lower in Asian trading on Tuesday, falling for a second straight session as diplomatic efforts to ease the U.S.-Israeli war with Iran tempered fears of a broader regional escalation.",
+                "_timestamp": 1793062463.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Perpetua Resources Corp. was awarded up to $40 million in funding over 36 months by the U.S. Army's Defense Ordnance Technology Consortium to evaluate the technical and economic feasibility of producing tungsten concentrate at the Stibnite Mining District to secure domestic defense supply chains [Yahoo Finance Gold].",
-            "Uncertainties": "It remains unclear if the feasibility study will successfully lead to full-scale commercial production, and the news is specific to a micro-cap mining company rather than broader macroeconomic monetary policies driving gold.",
-            "Macro_Context": "The broader macroeconomic context involves ongoing supply chain security initiatives and defense spending by the U.S. government, though this specific corporate funding announcement has negligible direct impact on global macroeconomic gold pricing drivers.",
+            "Facts": "Gold prices jumped and oil prices fell as diplomatic and mediation efforts involving Saudi defense pact countries in Tehran eased fears of a broader regional escalation in the U.S.-Israeli conflict with Iran, reducing inflation fears [Investing.com]. Persian Gulf oil exports passed pre-conflict levels according to Treasury Secretary Scott Bessent [Yahoo Finance Oil].",
+            "Uncertainties": "The durability of the peace mediation efforts remains unconfirmed, and ongoing Houthi attacks continue to present tail risks to regional stability and supply chains [Investing.com].",
+            "Macro_Context": "Easing crude oil prices alleviate persistent inflation pressures globally, while ongoing central bank demand continues to provide a strong structural floor for gold prices despite complex geopolitical crosscurrents [Investing.com, Yahoo Finance Gold].",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "N/A",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "XAU/USD consolidated tightly around the 4005-4020 range over the past 24 hours, digesting the complex interplay between falling oil-driven inflation fears and persistent geopolitical tensions in the Middle East.",
             "Orderflow_Price_Target": "4030.00"
         }
     },
     {
         "main_date": "2026-10-26 16:28",
-        "_timestamp": 1793049006.0,
+        "_timestamp": 1793062002.0,
         "articles": [
             {
                 "title": "Stock Market Midday, Oct. 26: Tech Sector Rallies on Anthropic IPO Filing and Cooling Oil Prices",
@@ -156,24 +212,64 @@
                 "date": "2026-10-26 20:50",
                 "description": "For questions about this article or underlying research, email help@trefis.com.",
                 "_timestamp": 1793047827.0
+            },
+            {
+                "title": "Stock Market Today, Oct. 26: AI Optimism Lifts Nasdaq as Tech Stocks Rebound",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/10/26/stock-market-today-oct-26-ai-optimism-lifts-nasdaq-as-tech-stocks-rebound/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 21:50",
+                "description": "On Oct. 26, 2026, Anthropic's IPO filing sparked a tech rally, while Meta's $95 billion AI infrastructure plan weighed on sentiment.",
+                "_timestamp": 1793051400.0
+            },
+            {
+                "title": "Stocks Start a Big Week With Solid Gains: Stock Market Today",
+                "link": "https://www.kiplinger.com/investing/stocks/stocks-start-a-big-week-with-solid-gains-stock-market-today?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 20:14",
+                "description": "Is it an exaggeration to say this is the most important week all year for the stock market? Maybe, maybe not, with Mag 7 earnings and a Fed meeting on tap.",
+                "_timestamp": 1793045655.0
+            },
+            {
+                "title": "Spotting winners: Matador Resources (NYSE:MTDR) and U.S. shale E&P stocks in Q2",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/spotting-winners-matador-resources-nyse-001447376.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 00:14",
+                "description": "Wrapping up Q2 earnings, we look at the numbers and key takeaways for the u.s. shale e&amp;p stocks, including Matador Resources (NYSE:MTDR) and its peers.",
+                "_timestamp": 1793060087.0
+            },
+            {
+                "title": "Stock Market Today, Oct. 26: AI Optimism Lifts Nasdaq as Tech Stocks Rebound",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/10/26/stock-market-today-oct-26-ai-optimism-lifts-nasdaq-as-tech-stocks-rebound/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 21:50",
+                "description": "On Oct. 26, 2026, Anthropic's IPO filing sparked a tech rally, while Meta's $95 billion AI infrastructure plan weighed on sentiment.",
+                "_timestamp": 1793051400.0
+            },
+            {
+                "title": "Gold Price Crashed 25%, But Investors are Still Buying",
+                "link": "https://beincrypto.com/gold-price-falls-etfs-rally-investors-keep-buying/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 00:46",
+                "description": "Gold fell 25% since the Iran war began, yet gold ETF holdings hit a record. See who is buying, who is selling, and why.",
+                "_timestamp": 1793062002.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "US equities rallied driven by the Anthropic IPO filing, tech sector strength, and cooling oil prices following easing geopolitical tensions in the Middle East [Yahoo Finance Gold, Yahoo Finance Oil]. Despite these risk-on equity flows and cooling energy prices, gold prices advanced toward the 4017 level, supported by persistent macroeconomic uncertainties and prospective central bank rate decisions [Yahoo Finance Gold].",
-            "Uncertainties": "Whether cooling Middle East tensions will be sustained or if geopolitical risks will flare up again; the ultimate outcome of upcoming big tech earnings reports and their broader market spillover [Yahoo Finance Gold, Yahoo Finance Oil].",
-            "Macro_Context": "Broader financial markets are experiencing a risk-on shift due to major tech IPO activity and easing oil prices, while upcoming macroeconomic data releases and earnings reports continue to keep central bank rate expectations volatile for December [Yahoo Finance Oil].",
+            "Facts": "US equities advanced following Anthropic's IPO filing and a decline in crude oil prices, while hopes for easing Iran tensions reduced immediate safe-haven demand [Yahoo Finance Gold, Yahoo Finance Oil]. Despite reports that gold fell 25% since the Iran war began, gold ETF holdings remain at record highs as long-term investors continue to buy [Yahoo Finance Oil].",
+            "Uncertainties": "The exact impact of upcoming Fed interest rate decisions and heavy corporate earnings volume on broader risk sentiment remains ambiguous [Yahoo Finance Oil].",
+            "Macro_Context": "Markets are balancing cooling geopolitical tensions in the Middle East and declining oil prices against upcoming heavy tech earnings and potential Federal Reserve rate policy updates [Yahoo Finance Gold, Yahoo Finance Oil].",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 62,
-            "Past_Price_Action_Cause": "Gold prices rebounded from early session dips near 3985 to consolidate around the 4017 level, reflecting underlying resilience despite broader equity market rallies and declining oil prices [Yahoo Finance Gold].",
-            "Orderflow_Price_Target": "4030.00"
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "XAU/USD traded in a stable range between roughly 3989 and 4023 over the past 24 hours, consolidating as cooling geopolitical tensions countered persistent structural buying in gold ETFs.",
+            "Orderflow_Price_Target": "4030.000"
         }
     },
     {
         "main_date": "2026-10-26 19:00",
-        "_timestamp": 1793048400.0,
+        "_timestamp": 1793059200.0,
         "articles": [
             {
                 "title": "BC-Gold-Silver",
@@ -206,158 +302,48 @@
                 "date": "2026-10-26 21:00",
                 "description": "Vancouver, British Columbia--(Newsfile Corp. - October 26, 2026) - Western Copper and Gold Corporation (TSX: WRN) (NYSE American: WRN) (\"Western\" or the \"Company\") today announced that Sandeep Singh will step down as President and Chief Executive Officer and as a director of the Company effective October 31, 2026. Mark E. Smith, Chairman of the Board, will be appointed Interim Chief Executive Officer of the Company, and Michael Psihogios will be appointed President of the Company in addition to.",
                 "_timestamp": 1793048400.0
+            },
+            {
+                "title": "30 September 2026 Quarterly Activities Report",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/30-september-2026-quarterly-activities-000000031.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 00:00",
+                "description": "2m cash and >250,000L strategic diesel reserve on handADELAIDE, AU / ACCESS Newswire / October 26, 2026 / Barton Gold Holdings Ltd (Barton or the Company)ACN: 633 442 618 ABN: 36 633 442 618 Level 22, 30 Pirie Street Adelaide SA 5000 T: +61 8 8379 7166 E: contact@bartongold.auStock Codes:ASX: BGD OTC PINK: BGDFF FRA: BGD3Capital Structure+271.",
+                "_timestamp": 1793059200.0
+            },
+            {
+                "title": "Austral Gold Files Q3 2026 Quarterly Activities Report",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/austral-gold-files-q3-2026-235000218.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 23:50",
+                "description": "Sydney, Australia--(Newsfile Corp. - October 26, 2026) - Established gold producer Austral Gold Limited (ASX: AGD) (TSXV: AGLD) (OTCQB: AGLDF) (Austral or the Company) is pleased to announce that it has filed its Q3 2026 Quarterly Activities Report. The complete Report is available under the Company's profile at www.asx.com.au, www.sedarplus.ca and on the Company's website at australgold.com.Q3 2026 HighlightsProduction up 50%: 6,479 gold equivalent ounces (GEOs) from Company-owned material (Q2.",
+                "_timestamp": 1793058600.0
+            },
+            {
+                "title": "How Investors Are Reacting To IAMGOLD (TSX:IMG) Nameplate Capacity Reached",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/investors-reacting-iamgold-tsx-img-232647684.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 23:26",
+                "description": "IAMGOLD reported that the Côté Gold mine has reached nameplate capacity, alongside more than $500 million in net debt reduction and the launch of a share buyback program, with an updated mine plan expected to include 20.3 million ounces of consolidated mineral resources. This shift from high construction risk toward cash generation at Côté Gold gives IAMGOLD a clearer production base to support balance sheet repair and any future capital return decisions. In the following sections, we...",
+                "_timestamp": 1793057207.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "New York Mercantile Exchange reported active gold and silver futures trading sessions with open interest rising to 398,298 contracts [Yahoo Finance Gold]. Evolution Mining reported robust quarterly operational output of 154,000 ounces of gold and 18,000 tonnes of copper with an AISC of A$1,653 per ounce [Yahoo Finance Gold]. Western Copper and Gold announced a leadership transition with Sandeep Singh stepping down and Mark E. Smith appointed as Interim CEO [Yahoo Finance Gold].",
-            "Uncertainties": "The long-term impact of Western Copper and Gold's executive transition on upcoming project timelines remains speculative, and overall macro drivers such as central bank buying remain unconfirmed in the immediate news flow.",
-            "Macro_Context": "Mining sector cost efficiencies and steady institutional futures trading volume support a stable operating environment for precious metals producers amidst broader global economic conditions.",
+            "Facts": "Gold miners such as Evolution Mining, Barton Gold, Austral Gold, and IAMGOLD released strong Q3 2026 production and operational reports, showcasing cost discipline, production increases, and nameplate capacity achievements at major assets like the Côté Gold mine [Yahoo Finance Gold]. Concurrently, corporate leadership changes were announced at Western Copper and Gold [Yahoo Finance Gold]. Overall fundamental news reflects steady operational expansion across the sector rather than systemic macroeconomic shifts.",
+            "Uncertainties": "It remains unclear how broader macroeconomic factors like upcoming monetary policy decisions will influence long-term gold spot prices despite solid mining output reports.",
+            "Macro_Context": "The broader macroeconomic environment features steady mining sector productivity and operational reports amid persistent demand for precious metals.",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
+            "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold prices moved within a range of approximately 3985 to 4023 over the past 24 hours, digesting routine futures market settlements and corporate mining updates without a directional macro catalyst.",
+            "Past_Price_Action_Cause": "Gold prices fluctuated within a stable range between 3989 and 4023 over the past 24 hours, displaying typical intraday volatility without a direct structural catalyst from the corporate mining updates.",
             "Orderflow_Price_Target": "4030.000"
         }
     },
     {
-        "main_date": "2026-10-26 19:54",
-        "_timestamp": 1793047998.0,
-        "articles": [
-            {
-                "title": "Oil settles lower on peace hopes, Saudi attacks limit losses",
-                "link": "https://www.investing.com/news/commodities-news/oil-prices-down-almost-1-in-early-trading-4971306",
-                "source": "Investing.com",
-                "date": "2026-10-26 19:54",
-                "description": "",
-                "_timestamp": 1793044464.0
-            },
-            {
-                "title": "Oil falls from near six-month high as Iran mediation efforts ease supply worries",
-                "link": "https://www.investing.com/news/commodities-news/oil-falls-from-6mth-highs-saudi-attacks-keep-supply-risks-in-focus-4971338",
-                "source": "Investing.com",
-                "date": "2026-10-26 18:58",
-                "description": "",
-                "_timestamp": 1793041113.0
-            },
-            {
-                "title": "Saudi defence pact countries push for peace in Tehran as Houthis launch more attacks",
-                "link": "https://www.investing.com/news/commodities-news/iran-hosts-saudi-defence-pact-states-as-houthis-launch-more-attacks-4972847",
-                "source": "Investing.com",
-                "date": "2026-10-26 18:42",
-                "description": "",
-                "_timestamp": 1793040178.0
-            },
-            {
-                "title": "Geopolitical tensions complicate the gold bull case, says AHG president",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/geopolitical-tensions-complicate-gold-bull-182438839.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-26 18:24",
-                "description": "Investing.com -- Geopolitical tensions in the Middle East are complicating the outlook for gold, even as central bank buying continues to underpin demand, Max Baecker, president of American Hartford Gold, told Investing.com.",
-                "_timestamp": 1793039078.0
-            },
-            {
-                "title": "Trump’s Treasury Says Gulf Oil Is “Roaring Back” as Exxon Heads Into Earnings Near a Record",
-                "link": "https://www.tikr.com/blog/trumps-treasury-says-gulf-oil-is-roaring-back-as-exxon-heads-into-earnings-near-a-record?ref=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-26 18:21",
-                "description": "Key TakeawaysTreasury Secretary Scott Bessent said on Friday that Persian Gulf oil exports have passed pre-conflict levels, and Brent crude fell 1% on Monday on hopes the Iran war is easing. Analysts expect ExxonMobil to earn $13.",
-                "_timestamp": 1793038912.0
-            },
-            {
-                "title": "Gold jumps as easing oil prices eases inflation fears",
-                "link": "https://www.investing.com/news/commodities-news/gold-steadies-near-3mth-low-as-elevated-oil-prices-weigh-fed-meet-eyed-4971362",
-                "source": "Investing.com",
-                "date": "2026-10-26 20:53",
-                "description": "",
-                "_timestamp": 1793047998.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Oil prices settled lower as mediation efforts ease supply worries and Persian Gulf oil exports return to pre-conflict levels, though continued Houthi attacks limited losses [Investing.com, Yahoo Finance Oil]. Concurrently, easing oil prices alleviated broader inflation fears, triggering a jump in gold prices supported by ongoing central bank demand despite complex geopolitical headwinds [Investing.com, Yahoo Finance Gold].",
-            "Uncertainties": "The true longevity of the Middle East peace talks and whether ongoing Houthi attacks will disrupt regional stability and reignite supply concerns remain unconfirmed.",
-            "Macro_Context": "Global markets are reacting to receding geopolitical risk premiums in the energy sector, easing inflation fears, and persistent central bank purchasing supporting precious metals.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "XAU/USD consolidated and rose from around 3985 up toward the 4020 level over the past 24 hours, aligning with the macroeconomic relief from falling oil prices which eased inflation fears and boosted gold demand.",
-            "Orderflow_Price_Target": "4030.00"
-        }
-    },
-    {
-        "main_date": "2026-10-26 18:06",
-        "_timestamp": 1793046280.0,
-        "articles": [
-            {
-                "title": "Fed Rate Path, AI Revenue To Drive Markets After Midterms, Says UBS’ Alli McCartney: Iran, Oil Overhang May Remain",
-                "link": "https://stocktwits.com/news-articles/markets/equity/fed-rate-path-ai-revenue-to-drive-markets-after-midterms/cZU3J86RBz2?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-26 18:06",
-                "description": "In an interview with CNBC, McCartney said investors need evidence that AI investments can generate enough revenue to justify infrastructure spending.",
-                "_timestamp": 1793038015.0
-            },
-            {
-                "title": "US consumers paying the most for fuel price spikes from Iran war, study says",
-                "link": "https://www.investing.com/news/commodities-news/us-consumers-paying-the-most-for-fuel-price-spikes-from-iran-war-study-says-4973618",
-                "source": "Investing.com",
-                "date": "2026-10-26 20:24",
-                "description": "",
-                "_timestamp": 1793046280.0
-            },
-            {
-                "title": "Iran War Pushes Trump's Average Gasoline Prices Above Biden's",
-                "link": "https://finance.yahoo.com/energy/articles/iran-war-pushes-trumps-average-200000905.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-26 20:00",
-                "description": "Average U.S. gasoline prices under Trump have overtaken Biden-era levels, reaching $3.472 per gallon versus $3.471 under Biden.",
-                "_timestamp": 1793044800.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Markets are reacting to ongoing geopolitical tensions stemming from the Iran war, which has driven up fuel prices and created an oil market overhang [Investing.com, Yahoo Finance Oil]. Additionally, investors are monitoring the Fed rate path and AI revenue sustainability [Yahoo Finance Oil]. Gold (XAU/USD) has maintained strength near the 4017 level.",
-            "Uncertainties": "The exact duration and escalation risks of the Iran war remain unpredictable, along with the precise timeline for AI infrastructure monetization and its subsequent macroeconomic impact.",
-            "Macro_Context": "Geopolitical conflict in the Middle East is driving energy price spikes and inflationary pressures, while central banks navigate interest rate paths amidst broader technology sector valuation concerns.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Past_Price_Action_Cause": "Gold prices pushed upward from near 3985 to highs above 4023 over the past 24 hours, aligning with safe-haven demand prompted by ongoing Middle Eastern conflict and energy supply concerns.",
-            "Orderflow_Price_Target": "4030.00"
-        }
-    },
-    {
-        "main_date": "2026-10-26 20:16",
-        "_timestamp": 1793045782.0,
-        "articles": [
-            {
-                "title": "Brazil markets battered after Lula win, AI in focus elsewhere",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-sink-traders-brace-tech-022128987.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-26 20:16",
-                "description": "Brazilian markets took a battering Monday following the shock reelection of leftist President Luiz Inacio Lula da Silva, but elsewhere investors were focused on artificial intelligence (AI) technology companies.Anthropic, one of the world's leading artificial intelligence companies, on Monday made public its plans to sell shares on the stock market in mid-November.",
-                "_timestamp": 1793045782.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Brazilian markets fell following the shock reelection of leftist President Luiz Inacio Lula da Silva, while global investor attention elsewhere remained focused on AI developments, notably Anthropic's planned mid-November IPO [Yahoo Finance Oil].",
-            "Uncertainties": "The direct macroeconomic spillover effects of Brazil's election outcome on global safe-haven assets remain ambiguous, and the broader market reception to Anthropic's upcoming IPO is speculative.",
-            "Macro_Context": "Mixed global market sentiment driven by regional political shifts in Latin America and high growth/tech sector optimism around artificial intelligence.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "N/A",
-            "Orderflow_Price_Target": "4030.00"
-        }
-    },
-    {
         "main_date": "2026-10-26 19:19",
-        "_timestamp": 1793043629.0,
+        "_timestamp": 1793059200.0,
         "articles": [
             {
                 "title": "London Gas Oil consolidates in range as ADX flatlines: Live levels",
@@ -398,19 +384,245 @@
                 "date": "2026-10-26 19:40",
                 "description": "For questions about this article or underlying research, email help@trefis.com.",
                 "_timestamp": 1793043629.0
+            },
+            {
+                "title": "Is Pan African Resources (LSE:PAF) Reasonably Priced on Cash Flow?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/pan-african-resources-lse-paf-221536503.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 22:15",
+                "description": "Pan African Resources has seen its share price move sharply in recent years, which puts fresh attention on whether the current £1.11 level is backed up by the cash the business can generate. With the stock pulling back in recent weeks after a very strong multi year run, the key issue is how much of its cash flow story is already reflected in that price. Over the past 5 years, Pan African Resources has delivered a very large share price gain of about 7x, which raises the question of how...",
+                "_timestamp": 1793052936.0
+            },
+            {
+                "title": "UK Weighs Scrapping Its Largest Untapped Oilfield With Oil Over $100",
+                "link": "https://finance.yahoo.com/energy/articles/uk-weighs-scrapping-largest-untapped-000000615.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 00:00",
+                "description": "Britain faces a major political split over the £8.7 billion Rosebank oilfield, with energy security and investment concerns clashing with climate commitments.",
+                "_timestamp": 1793059200.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Oil markets are seeing mixed technical developments with WTI nearing resistance at $106.75 and Brent showing a V-Top reversal at $117.45, while broader concerns focus on how high energy prices impact corporate equities like Procter & Gamble [Investing.com, Yahoo Finance Oil].",
-            "Uncertainties": "The exact trajectory of global energy inflation and its direct transmission mechanism into central bank monetary policy adjustments remains unconfirmed.",
-            "Macro_Context": "Elevated global energy prices continue to stoke inflation expectations, increasing macro uncertainty and driving safe-haven demand alongside hedging behaviors.",
+            "Facts": "Crude oil prices remain elevated above $100 per barrel, with WTI near $106.75 resistance and Brent showing a V-top reversal near $117.45 [Investing.com]. Additionally, the UK is weighing the cancellation of its largest untapped oilfield, Rosebank, due to clashing climate and energy security commitments [Yahoo Finance Oil]. These high energy prices drive inflationary pressures, supporting gold's role as an inflation hedge.",
+            "Uncertainties": "The ultimate political decision regarding the Rosebank oilfield remains unconfirmed, and oil price sustainability near current multi-year highs is uncertain given recent technical resistance levels.",
+            "Macro_Context": "High energy prices driven by elevated crude oil benchmarks continue to sustain global inflationary pressures, prompting safe-haven and inflation-hedge demand in precious metals like gold.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
             "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "XAU/USD consolidated within the 3985-4023 range over the past 24 hours, finding strong buying support near 3993 and moving upward toward current levels around 4012 amid elevated energy-driven macro pressures.",
+            "Past_Price_Action_Cause": "XAU/USD showed resilient consolidation around the 4010-4020 range over the past 24 hours, supported by persistent macroeconomic inflation concerns tied to elevated oil prices.",
             "Orderflow_Price_Target": "4030.000"
+        }
+    },
+    {
+        "main_date": "2026-10-26 16:43",
+        "_timestamp": 1793056680.0,
+        "articles": [
+            {
+                "title": "LODE GOLD INITIATES EXPLORATION TO EVALUATE UPSIDE POTENTIAL AT HISTORIC HIGH-GRADE MINES WITHIN FREMONT GOLD MINE",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/lode-gold-initiates-exploration-evaluate-164300809.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 16:43",
+                "description": "Lode Gold Resources Inc. (TSXV: LOD) (OTCQB: LODFF) (FSE: X27) (\"Lode Gold\" or the \"Company\") is pleased to announce that it is initiating exploration work to evaluate additional gold potential at its 100%-owned Fremont Gold Mine, located on privately owned patented land in Mariposa County, California.",
+                "_timestamp": 1793032980.0
+            },
+            {
+                "title": "Lode Gold Initiates Exploration to Evaluate Upside Potential at Historic High-Grade Mines Within Fremont Gold Mine",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/lode-gold-initiates-exploration-evaluate-130000734.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 13:00",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - October 26, 2026) - Lode Gold Resources Inc. (TSXV: LOD) (OTCQB: LODFF) (FSE: X27) (\"Lode Gold\" or the \"Company\") is pleased to announce that it is initiating exploration work to evaluate additional gold potential at its 100%-owned Fremont Gold Mine, located on privately owned patented land in Mariposa County, California.Fremont is a historically producing gold mine comprising seven deposits and four former mines, supported by significant existing..",
+                "_timestamp": 1793019600.0
+            },
+            {
+                "title": "Xali Gold Submits FTA Application for Resource Confirmation and Exploration Drilling at the Pico Machay Gold Project",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/xali-gold-submits-fta-application-175237567.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 17:52",
+                "description": "Xali Gold (XGC.V) submitted its Ficha Tecnica Ambiental (FTA) application to Peru's Ministry of Ener",
+                "_timestamp": 1793037157.0
+            },
+            {
+                "title": "Pinnacle Silver and Gold secures drilling permit for El Potrero project in Mexico",
+                "link": "https://www.proactiveinvestors.com/companies/news/1100685/pinnacle-silver-and-gold-secures-drilling-permit-for-el-potrero-project-in-mexico-1100685.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 12:54",
+                "description": "Pinnacle Silver & Gold Corp (TSX-V:PINN, OTCQB:PSGCF, FRA:P9J) has secured an environmental permit for surface drilling at its past-producing El Potrero gold-silver project in Durango, Mexico, as it advances permitting for a potential mine and processing plant. The permit, issued by...",
+                "_timestamp": 1793019240.0
+            },
+            {
+                "title": "Rio Tinto, LCL agree farm-in on PNG’s Liamu copper-gold project",
+                "link": "https://www.mining-technology.com/news/rio-tinto-lcl-farm-in-liamu-project/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 13:20",
+                "description": "The Liamu project includes the Dada gold-copper porphyry discovery and the Ubei epithermal gold-copper prospect.",
+                "_timestamp": 1793020822.0
+            },
+            {
+                "title": "FireFly Metals makes high-grade copper-gold discovery at Mount Joy",
+                "link": "https://www.proactiveinvestors.com/companies/news/1100716/firefly-metals-makes-high-grade-copper-gold-discovery-at-mount-joy-1100716.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 23:18",
+                "description": "FireFly Metals Ltd (ASX:FFM, TSX:FFM, OTC:FFMFF) has made a high-grade copper-gold discovery at the Mount Joy prospect within its Green Bay Copper-Gold Project in Newfoundland, Canada, with initial drilling returning 22.5 metres at 2.5% copper equivalent from 109 metres. The discovery...",
+                "_timestamp": 1793056680.0
+            },
+            {
+                "title": "FireFly makes another significant high-grade copper-gold VMS discovery",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/firefly-makes-another-significant-high-225200002.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 22:52",
+                "description": "Green Bay Copper-Gold Project, Canada The greenfields discovery, just 35km from the flagship Ming Mine, highlights the exploration potential of numerous targets to be tested at Green Bay KEY POINTS Regional exploration drilling at the Green Bay Copper-Gold Project has discovered a significant copper and gold-rich Volcanogenic Massive Sulphide (VMS) system at the Mount Joy prospect near Tilt CoveMount Joy was a new target identified by FireFly’s extensive geophysical and geochemical campaign The",
+                "_timestamp": 1793055120.0
+            },
+            {
+                "title": "Could High Grade Apollo Drill Results Change The Bull Case For Collective Mining Stock?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/could-high-grade-apollo-drill-221303632.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 22:13",
+                "description": "Collective Mining reported new assay results from the Apollo deposit at Guayabales, including high-grade gold, silver, copper and tungsten across both the Ramp Zone and Shallow Halo Zone, with several intervals sitting outside the current Mineral Resource block model. The discovery of high-grade carbonate base metal veins and shallow silver tungsten rich mineralization suggests that Apollo’s mineralization style is more complex and multi metal than the current resource shell implies. We will...",
+                "_timestamp": 1793052783.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Multiple junior mining and exploration companies, including Lode Gold Resources, Xali Gold, Pinnacle Silver & Gold, FireFly Metals, and Collective Mining, have announced new high-grade copper-gold discoveries, drilling permits, and exploration initiatives across various global projects [Yahoo Finance Gold]. These corporate developments reflect ongoing private sector investment and micro-level activity in precious metals exploration, but do not represent macroeconomic shifts or immediate supply-demand shocks for spot gold.",
+            "Uncertainties": "The economic viability, grade consistency, and long-term production timelines of these newly announced junior mining projects remain speculative and unconfirmed.",
+            "Macro_Context": "The broader macroeconomic environment features stable high-level gold valuations near the 4000 USD threshold, driven by global central bank reserves, geopolitical safe-haven demand, and inflation hedges, rather than micro-level junior exploration updates.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4030.000"
+        }
+    },
+    {
+        "main_date": "2026-10-26 18:06",
+        "_timestamp": 1793055600.0,
+        "articles": [
+            {
+                "title": "Fed Rate Path, AI Revenue To Drive Markets After Midterms, Says UBS’ Alli McCartney: Iran, Oil Overhang May Remain",
+                "link": "https://stocktwits.com/news-articles/markets/equity/fed-rate-path-ai-revenue-to-drive-markets-after-midterms/cZU3J86RBz2?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 18:06",
+                "description": "In an interview with CNBC, McCartney said investors need evidence that AI investments can generate enough revenue to justify infrastructure spending.",
+                "_timestamp": 1793038015.0
+            },
+            {
+                "title": "US consumers paying the most for fuel price spikes from Iran war, study says",
+                "link": "https://www.investing.com/news/commodities-news/us-consumers-paying-the-most-for-fuel-price-spikes-from-iran-war-study-says-4973618",
+                "source": "Investing.com",
+                "date": "2026-10-26 20:24",
+                "description": "",
+                "_timestamp": 1793046280.0
+            },
+            {
+                "title": "Iran War Pushes Trump's Average Gasoline Prices Above Biden's",
+                "link": "https://finance.yahoo.com/energy/articles/iran-war-pushes-trumps-average-200000905.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 20:00",
+                "description": "Average U.S. gasoline prices under Trump have overtaken Biden-era levels, reaching $3.472 per gallon versus $3.471 under Biden.",
+                "_timestamp": 1793044800.0
+            },
+            {
+                "title": "Beijing Pushes Domestic Oil Production as Iranian Supply Dries Up",
+                "link": "https://finance.yahoo.com/energy/articles/beijing-pushes-domestic-oil-production-230000429.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 23:00",
+                "description": "China is urging its oil and gas giants to boost domestic production, as the Iran war exposes Beijing's dependence on imported energy.",
+                "_timestamp": 1793055600.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Geopolitical tensions stemming from the Iran war have disrupted Iranian oil supply, pushing U.S. gasoline prices to an average of $3.472 per gallon, which surpasses Biden-era levels [Yahoo Finance Oil, Investing.com]. Concurrently, China is urging domestic energy giants to accelerate production to offset dwindling Iranian imports [Yahoo Finance Oil], while broader market sentiment remains pressured by questions surrounding Federal Reserve rate paths and AI revenue viability [Yahoo Finance Oil].",
+            "Uncertainties": "The exact duration and escalation ceiling of the Iran war remain unknown, along with the precise impact of China's emergency domestic production drive on global oil balances and future Federal Reserve monetary policy maneuvers.",
+            "Macro_Context": "Ongoing geopolitical conflict in the Middle East is driving energy price inflation, creating supply chain overhangs, and compounding macroeconomic uncertainty regarding central bank rate paths and tech-driven market valuations.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Gold hovered near the $4,000 to $4,020 range over the past 24 hours, supported by safe-haven demand stemming from ongoing Middle Eastern geopolitical conflicts and energy supply disruptions.",
+            "Orderflow_Price_Target": "4030.000"
+        }
+    },
+    {
+        "main_date": "2026-10-26 21:47",
+        "_timestamp": 1793051247.0,
+        "articles": [
+            {
+                "title": "Anthropic’s IPO had over 90 pages of risk factors. Should you worry?",
+                "link": "https://www.usatoday.com/story/money/2026/10/26/anthropic-ipo-risk-factors-worry/92450159007/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 21:47",
+                "description": "The artificial intelligence company's IPO filing includes a list almost 100 pages long of potential threats.",
+                "_timestamp": 1793051247.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Anthropic's IPO filing includes nearly 100 pages detailing extensive risk factors concerning potential threats to the artificial intelligence company's business model and growth trajectory [Yahoo Finance Oil].",
+            "Uncertainties": "It is unclear how these specific risk factors will directly impact broader financial markets or alter investor sentiment toward traditional safe-haven assets like gold.",
+            "Macro_Context": "The broader macroeconomic environment involves tech sector developments and equity market valuations, which occasionally drive rotation into safe-haven assets such as gold.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4030.000"
+        }
+    },
+    {
+        "main_date": "2026-10-26 21:45",
+        "_timestamp": 1793051100.0,
+        "articles": [
+            {
+                "title": "Perpetua Resources Awarded Up to $40 Million in U.S. Army Funding to Advance Domestic Tungsten Supply for American Defense",
+                "link": "https://finance.yahoo.com/news/perpetua-resources-awarded-40-million-214500543.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-26 21:45",
+                "description": "Perpetua Resources Corp. (Nasdaq: PPTA) (TSX: PPTA) (\"Perpetua Resources\" or \"Perpetua\" or the \"Company\") today announced a new 36-month, $40 million award through the U.S. Army's Defense Ordnance Technology Consortium (\"DOTC\") from the Portfolio Acquisition Executive Agile Sustainment & Ammunition (\"PAE AS&amp;A\") located at Picatinny Arsenal, N.J. This award will fund a program to evaluate the technical and economic feasibility of producing tungsten concentrate at the historical Stibnite Mining Di",
+                "_timestamp": 1793051100.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Perpetua Resources Corp. was awarded up to $40 million in funding over 36 months by the U.S. Army's Defense Ordnance Technology Consortium to evaluate the technical and economic feasibility of producing tungsten concentrate at the Stibnite Mining District to secure domestic defense supply chains [Yahoo Finance Gold].",
+            "Uncertainties": "It remains unclear if the feasibility study will successfully lead to full-scale commercial production, and the news is specific to a micro-cap mining company rather than broader macroeconomic monetary policies driving gold.",
+            "Macro_Context": "The broader macroeconomic context involves ongoing supply chain security initiatives and defense spending by the U.S. government, though this specific corporate funding announcement has negligible direct impact on global macroeconomic gold pricing drivers.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4030.00"
+        }
+    },
+    {
+        "main_date": "2026-10-26 20:16",
+        "_timestamp": 1793045782.0,
+        "articles": [
+            {
+                "title": "Brazil markets battered after Lula win, AI in focus elsewhere",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-sink-traders-brace-tech-022128987.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 20:16",
+                "description": "Brazilian markets took a battering Monday following the shock reelection of leftist President Luiz Inacio Lula da Silva, but elsewhere investors were focused on artificial intelligence (AI) technology companies.Anthropic, one of the world's leading artificial intelligence companies, on Monday made public its plans to sell shares on the stock market in mid-November.",
+                "_timestamp": 1793045782.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Brazilian markets fell following the shock reelection of leftist President Luiz Inacio Lula da Silva, while global investor attention elsewhere remained focused on AI developments, notably Anthropic's planned mid-November IPO [Yahoo Finance Oil].",
+            "Uncertainties": "The direct macroeconomic spillover effects of Brazil's election outcome on global safe-haven assets remain ambiguous, and the broader market reception to Anthropic's upcoming IPO is speculative.",
+            "Macro_Context": "Mixed global market sentiment driven by regional political shifts in Latin America and high growth/tech sector optimism around artificial intelligence.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4030.00"
         }
     },
     {
@@ -543,64 +755,6 @@
             "Macro_Context": "Higher energy prices and robust corporate earnings in the oil sector point to persistent energy cost pressures, which can influence broader commodity markets and inflationary expectations.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "N/A",
-            "Orderflow_Price_Target": "4030.000"
-        }
-    },
-    {
-        "main_date": "2026-10-26 16:43",
-        "_timestamp": 1793037157.0,
-        "articles": [
-            {
-                "title": "LODE GOLD INITIATES EXPLORATION TO EVALUATE UPSIDE POTENTIAL AT HISTORIC HIGH-GRADE MINES WITHIN FREMONT GOLD MINE",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/lode-gold-initiates-exploration-evaluate-164300809.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-26 16:43",
-                "description": "Lode Gold Resources Inc. (TSXV: LOD) (OTCQB: LODFF) (FSE: X27) (\"Lode Gold\" or the \"Company\") is pleased to announce that it is initiating exploration work to evaluate additional gold potential at its 100%-owned Fremont Gold Mine, located on privately owned patented land in Mariposa County, California.",
-                "_timestamp": 1793032980.0
-            },
-            {
-                "title": "Lode Gold Initiates Exploration to Evaluate Upside Potential at Historic High-Grade Mines Within Fremont Gold Mine",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/lode-gold-initiates-exploration-evaluate-130000734.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-26 13:00",
-                "description": "Vancouver, British Columbia--(Newsfile Corp. - October 26, 2026) - Lode Gold Resources Inc. (TSXV: LOD) (OTCQB: LODFF) (FSE: X27) (\"Lode Gold\" or the \"Company\") is pleased to announce that it is initiating exploration work to evaluate additional gold potential at its 100%-owned Fremont Gold Mine, located on privately owned patented land in Mariposa County, California.Fremont is a historically producing gold mine comprising seven deposits and four former mines, supported by significant existing..",
-                "_timestamp": 1793019600.0
-            },
-            {
-                "title": "Xali Gold Submits FTA Application for Resource Confirmation and Exploration Drilling at the Pico Machay Gold Project",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/xali-gold-submits-fta-application-175237567.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-26 17:52",
-                "description": "Xali Gold (XGC.V) submitted its Ficha Tecnica Ambiental (FTA) application to Peru's Ministry of Ener",
-                "_timestamp": 1793037157.0
-            },
-            {
-                "title": "Pinnacle Silver and Gold secures drilling permit for El Potrero project in Mexico",
-                "link": "https://www.proactiveinvestors.com/companies/news/1100685/pinnacle-silver-and-gold-secures-drilling-permit-for-el-potrero-project-in-mexico-1100685.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-26 12:54",
-                "description": "Pinnacle Silver & Gold Corp (TSX-V:PINN, OTCQB:PSGCF, FRA:P9J) has secured an environmental permit for surface drilling at its past-producing El Potrero gold-silver project in Durango, Mexico, as it advances permitting for a potential mine and processing plant. The permit, issued by...",
-                "_timestamp": 1793019240.0
-            },
-            {
-                "title": "Rio Tinto, LCL agree farm-in on PNG’s Liamu copper-gold project",
-                "link": "https://www.mining-technology.com/news/rio-tinto-lcl-farm-in-liamu-project/?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-26 13:20",
-                "description": "The Liamu project includes the Dada gold-copper porphyry discovery and the Ubei epithermal gold-copper prospect.",
-                "_timestamp": 1793020822.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Junior mining companies such as Lode Gold Resources, Xali Gold, Pinnacle Silver and Gold, and major players like Rio Tinto are initiating new exploration projects, securing drilling permits, and advancing joint ventures in regions like California, Peru, Mexico, and Papua New Guinea. These updates reflect ongoing industry exploration activities driven by corporate strategies to expand resource reserves [Yahoo Finance Gold].",
-            "Uncertainties": "It remains unclear what the ultimate commercial yield and extraction viability of these newly explored or permitted deposits will be, as early-stage exploration carries high uncertainty.",
-            "Macro_Context": "The broader macroeconomic environment features steady investment in gold exploration and resource development amid elevated baseline gold valuations near the 4000 USD level.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Weeks/Months",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "N/A",

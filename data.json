@@ -1,1 +1,617 @@
-[]
+[
+    {
+        "main_date": "2026-10-27 13:45",
+        "_timestamp": 1793110120.0,
+        "articles": [
+            {
+                "title": "Tech rises for second day in a row as chip stocks gain: AlphaCheck",
+                "link": "https://finance.yahoo.com/markets/article/tech-rises-for-2nd-day-in-a-row-as-chip-stocks-gain-alphacheck-134531476.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:45",
+                "description": "Tech stocks rose on Tuesday for a second day in a row.",
+                "_timestamp": 1793108731.0
+            },
+            {
+                "title": "Stock Market Today: Nasdaq Up As Fed Meet Starts; Mining, Chip Funds Make A Move Higher (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/6294d29d-51d6-3bfe-87d4-877203694b78/stock-market-today%3A-nasdaq-up.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 14:08",
+                "description": "The Dow Jones index rises Tuesday as the Fed meeting starts. Boeing stock tumbles on earnings.",
+                "_timestamp": 1793110120.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Tech stocks and major indices such as the Nasdaq and Dow Jones rose as the Federal Reserve meeting commenced, with specific gains seen in chip and mining stocks despite individual setbacks like Boeing's earnings tumble [Yahoo Finance Oil].",
+            "Uncertainties": "The exact outcome and forward guidance of the ongoing Fed meeting remain unconfirmed, alongside the broader implications of tech sector volatility on safe-haven assets.",
+            "Macro_Context": "Markets are reacting to the initiation of the Federal Reserve meeting while broader risk-on sentiment is supported by gains in equities and technology sectors.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAU_USD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "XAU/USD showed a recovery from lows around 3994.930 to current levels near 4035.225, reflecting typical intraday volatility and minor safe-haven positioning as equity markets navigate the start of the Fed meeting.",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:58",
+        "_timestamp": 1793109639.0,
+        "articles": [
+            {
+                "title": "Gold volatile ahead of Fed decision; Iran diplomacy hopes in focus",
+                "link": "https://www.investing.com/news/commodities-news/gold-slips-near-4010-as-traders-await-fed-decision-iran-diplomacy-offers-hope-4974024",
+                "source": "Investing.com",
+                "date": "2026-10-27 12:58",
+                "description": "",
+                "_timestamp": 1793105934.0
+            },
+            {
+                "title": "BC-Gold Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-140039569.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 14:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Tuesday, October 27.Contract Open High Low Last Change Today's Volume Monday's Volume  Oct 26 3995.",
+                "_timestamp": 1793109639.0
+            },
+            {
+                "title": "KEFI JV conditionally approves Jibal Qutman gold project",
+                "link": "https://www.mining-technology.com/news/kefi-jv-approves-jibal-qutman-project/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 13:35",
+                "description": "The proposed oxide-gold operation is expected to recover around 258,000oz over seven years.",
+                "_timestamp": 1793108103.0
+            },
+            {
+                "title": "National Bank Remains Cautious on Canadian Dollar as Commodity, Rate Risks Persist",
+                "link": "https://finance.yahoo.com/markets/currencies/articles/national-bank-remains-cautious-canadian-120915001.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 12:09",
+                "description": "The Canadian dollar remains susceptible to further weakness as gold and oil prices provide less supp",
+                "_timestamp": 1793102955.0
+            },
+            {
+                "title": "TSX futures point higher with upcoming Bank of Canada meeting in focus",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-point-higher-upcoming-130011435.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 13:00",
+                "description": "Investing.com - Futures linked to Canada’s main stock index edged up on Tuesday, with investors assessing movements in oil and gold prices and looking ahead to a series of central bank interest rate decisions this week.",
+                "_timestamp": 1793106011.0
+            },
+            {
+                "title": "BC-Crude Oil Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-140019234.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 14:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Tuesday, October 27.Light Sweet Crude (NYMX)1,000 bbl.",
+                "_timestamp": 1793109619.0
+            },
+            {
+                "title": "Exchange-Traded Funds Higher, Equity Futures Mixed Pre-Bell Tuesday as Investors Assess Corporate Earnings",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-equity-131350822.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:13",
+                "description": "The broad market exchange-traded fund SPDR S&amp;P 500 ETF Trust (SPY) was up 0.4% and the actively trad",
+                "_timestamp": 1793106830.0
+            },
+            {
+                "title": "Update: US Equity Futures Edge Higher Pre-Bell as Traders Digest Corporate Earnings, Fed Kicks Off Policy Meeting",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-edge-higher-125516646.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:55",
+                "description": "(Updates with economic data, recent oil price movement, world markets' overview and corporate stock",
+                "_timestamp": 1793105716.0
+            },
+            {
+                "title": "Macro Matters Are Still Moving Markets. Stock Futures Rise on Lower Oil.",
+                "link": "https://finance.yahoo.com/m/cd4ad3e7-c435-3b20-938e-c33d7276e664/macro-matters-are-still.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:43",
+                "description": "Oil futures slid and stock futures spiked as investors eyed potential diplomatic efforts out of Iran.",
+                "_timestamp": 1793104984.0
+            },
+            {
+                "title": "National Bank Remains Cautious on Canadian Dollar as Commodity, Rate Risks Persist",
+                "link": "https://finance.yahoo.com/markets/currencies/articles/national-bank-remains-cautious-canadian-120915001.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:09",
+                "description": "The Canadian dollar remains susceptible to further weakness as gold and oil prices provide less supp",
+                "_timestamp": 1793102955.0
+            },
+            {
+                "title": "Diamondback Energy (FANG) Following Oil Price Shock Is Its Discipline Already Priced In",
+                "link": "https://finance.yahoo.com/energy/articles/diamondback-energy-fang-following-oil-120840288.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:08",
+                "description": "Rising oil prices linked to the Iran war have put fresh attention on Diamondback Energy (FANG), which is holding production relatively steady instead of chasing short term gains through rapid output growth. Recent trading suggests investors are rewarding that restraint. Diamondback Energy’s share price is up 10.96% over the past month and 35.97% year to date, while its 1 year total shareholder return of 46.90% and 5 year total shareholder return of 129.34% indicate ongoing momentum rather...",
+                "_timestamp": 1793102920.0
+            },
+            {
+                "title": "Canadian Stock Market Today: TSX Futures Steady On Oil Support And BoC Rate Focus",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/canadian-stock-market-today-tsx-120814781.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:08",
+                "description": "The Morning Bull - Canadian Market Morning Update Tuesday, 27 Oct 2026 Canadian stocks are poised for a slightly cautious open, with attention focused on energy markets. The key driver today is the US Strategic Petroleum Reserve, which is sitting at its lowest level since 1982 and keeping supply risks front and centre. SPR inventories remain under pressure as withdrawals continue, while the latest API crude forecast points to a possible 0.8m build after a prior 4.93m draw. That mix keeps...",
+                "_timestamp": 1793102894.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Gold prices are exhibiting volatility as the Federal Reserve kicks off its policy-setting meeting and markets digest potential diplomatic developments regarding Iran [Investing.com]. Additionally, crude oil futures and stock futures saw movement following potential diplomatic efforts out of Iran, which eased geopolitical risk premiums [Yahoo Finance Oil].",
+            "Uncertainties": "The exact outcome of the upcoming Federal Reserve rate decision and whether Iran diplomacy will yield sustained de-escalation remain unconfirmed.",
+            "Macro_Context": "Macroeconomic attention is heavily focused on central bank policy meetings, specifically the Federal Reserve and the Bank of Canada, alongside geopolitical risk factors including Middle East diplomacy and tight US Strategic Petroleum Reserve inventories.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "XAU/USD dipped toward the 3995 level during Asian trading hours amid easing oil and geopolitical concerns, but subsequently recovered past 4029 as markets consolidated ahead of the Federal Reserve meeting.",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 13:55",
+        "_timestamp": 1793109600.0,
+        "articles": [
+            {
+                "title": "Sun Valley Minerals Commences Trading on the TSX Venture Exchange; Launches Maiden Drill Program at Tarumán Main",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/sun-valley-minerals-commences-trading-135500962.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 13:55",
+                "description": "TORONTO, ON / ACCESS Newswire / October 27, 2026 / . (\"Sun Valley\" or the \"Company\")(TSXV:SUNV) is pleased to announce that, further to its news releases dated October 20 and October 23, 2026, its common shares have commenced trading on the TSX Venture Exchange (the \"TSXV\") today under the ticker symbol \"SUNV\".",
+                "_timestamp": 1793109300.0
+            },
+            {
+                "title": "Great Plains Metals' South Australian partner finds district-scale copper-gold system",
+                "link": "https://www.proactiveinvestors.com/companies/news/1100751/great-plains-metals-south-australian-partner-finds-district-scale-copper-gold-system-1100751.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 12:36",
+                "description": "Great Plains Metals Corp (TSX-V:GPS, FRA:8VC0) said a maiden field campaign at its North Gawler Craton Project in South Australia has identified widespread outcropping copper mineralization, with high-grade samples returning up to 31.1% copper. The project is managed by joint-venture partner...",
+                "_timestamp": 1793104560.0
+            },
+            {
+                "title": "PPX Intercepts High-Grade Gold, Silver, and Copper at Callanquitas, with 13.28 g/t Au, 5,204 g/t Ag and 5.4% Cu Over 1.0 m; and Completes the First Drill Hole at Portachuelos",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/ppx-intercepts-high-grade-gold-140000113.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 14:00",
+                "description": "TORONTO, ON / ACCESS Newswire / October 27, 2026 / (TSXV:PPX)(BVL:PPX), is pleased to announce the results from underground diamond drilling program at the Callanquitas Mine, work carried out in coordination with Proyectos la Patagonia S. (PLP), a mining partner of the company.",
+                "_timestamp": 1793109600.0
+            },
+            {
+                "title": "C3 Metals extends Khaleesi copper mineralization 200 metres east in Peru",
+                "link": "https://www.proactiveinvestors.com/companies/news/1100756/c3-metals-extends-khaleesi-copper-mineralization-200-metres-east-in-peru-1100756.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 13:12",
+                "description": "C3 Metals Inc (TSX-V:CCCM, OTC:CUAUF) has extended copper mineralization 200 metres eastward at its 100%-owned Khaleesi project in southern Peru, with two new drill holes intersecting broad zones of near-surface copper and one hitting higher-grade skarn at depth. Hole KHZ5960-004 returned a...",
+                "_timestamp": 1793106720.0
+            },
+            {
+                "title": "Emperor Resumes Fully Funded Drilling Program at Duquesne West",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/emperor-resumes-fully-funded-drilling-123000258.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 12:30",
+                "description": "Edmonton, Alberta--(Newsfile Corp. - October 27, 2026) - Emperor Metals Inc. (CSE: AUOZ) (OTCQB: EMAUF) (FSE: 9NH) (\"Emperor\") is pleased to announce the resumption of diamond drilling at its Duquesne West Gold Project in Quebec's Southern Abitibi Greenstone Belt.CEO John Florek commented: \"This pause was a strategic decision, not a slowdown in exploration. Rather than simply waiting for laboratory results, our team used the opportunity to integrate every available dataset into an AI-assisted...",
+                "_timestamp": 1793104200.0
+            },
+            {
+                "title": "Sitka Gold Completes 60,000 Metre Diamond Drill Program at Its RC Gold Project in Yukon; Appoints Termuende as Chairman of the Board",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/sitka-gold-completes-60-000-123000125.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 12:30",
+                "description": "Tim Termuende appointed to the Board of Directors as Chairman60,000 metre diamond drill program completed at Sitka's flagship RC Gold ProjectMineralized lamprophyre with visible gold discovered at the Pukelman intrusionResults pending for 90 diamond drill holes totalling approximately 30,242 metresVancouver, British Columbia--(Newsfile Corp. - October 27, 2026) - The Board of Directors of Sitka Gold Corp. (TSXV: SIG) (FSE: 1RF) (OTCQX: SITKF) (\"Sitka\" or \"Sitka Gold\" or the \"Company\") is pleased",
+                "_timestamp": 1793104200.0
+            },
+            {
+                "title": "Salazar Resources Provides El Domo Construction Update, Initiates Drill Program at Tarqui and Engages IR firms",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/salazar-resources-provides-el-domo-114500388.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 11:45",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - October 27, 2026) - Salazar Resources Limited (TSXV: SRL) (OTCQB: SRLZF) (FSE: CCG) (\"Salazar\" or the \"Company\") provides an update on construction at the Curipamba-El Domo project, as reported by the project's operator, Silvercorp Metals Inc. (\"Silvercorp\"). Salazar's 25% interest in the project is fully carried through to commercial production. In addition, drilling is now underway at the Yumi gold-silver veins on the Company's 100% owned Tarqui..",
+                "_timestamp": 1793101500.0
+            },
+            {
+                "title": "Lahontan Gold Provides Corporate Update on Santa Fe and West Santa Fe Drill Programs",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/lahontan-gold-provides-corporate-santa-113000304.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 11:30",
+                "description": "TORONTO, Oct. 27, 2026 (GLOBE NEWSWIRE) -- Lahontan Gold Corp. (TSXV:LG, OTCQB:LGCXF) (the \"Company\" or \"Lahontan\") is pleased to provide an update on its drilling programs at its Flagship Santa Fe Mine Project and nearby West Santa Fe Project, located in mining friendly Nevada’s Walker Lane. Year to date, the Company has completed 11,565 metres of drilling at Santa Fe and 1,769 metres of drilling at West Santa Fe for a combined total of 13,334 metres as summarized below: Santa Fe Mine Project:",
+                "_timestamp": 1793100600.0
+            },
+            {
+                "title": "Geomorphic AI Engaged by Au Gold Corp to Validate Drill Targets and Generate New Gold Projects in Victoria",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/geomorphic-ai-engaged-au-gold-113000067.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 11:30",
+                "description": "Portland, Oregon--(Newsfile Corp. - October 27, 2026) - Geomorphic AI (\"Geomorphic\" or the \"Company\"), a private North American AI-driven minerals prospect generator, an AI-driven minerals prospect generator, is pleased to announce that it has been engaged by Au Gold Corp (TSXV: AUGC) (\"Au Gold\") to independently validate drill targeting at Au Gold's 100%-owned Havelock Gold-Antimony Project in Victoria, Australia, and to conduct a broader project generation program across the Victorian...",
+                "_timestamp": 1793100600.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Multiple mining and exploration companies released operational updates, including new drilling programs, joint-venture discoveries, and project developments across various global locations [Yahoo Finance Gold]. These micro-level announcements reflect ongoing exploration activity in the precious and base metals sector but do not directly impact macroeconomic monetary policies or central bank gold reserves.",
+            "Uncertainties": "It remains unclear how these individual junior mining developments will translate into economically viable commercial production, as most reports focus on early-stage exploration drill results and corporate updates.",
+            "Macro_Context": "The broader macroeconomic environment involves stable global commodity exploration trends, though company-specific mining updates have no direct bearing on sovereign debt, inflation figures, or Federal Reserve rate expectations that primarily drive macro gold pricing.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:47",
+        "_timestamp": 1793109197.0,
+        "articles": [
+            {
+                "title": "Royal Caribbean Stock Jumps. Its Earnings Are Good News for Cruise Fuel Fears.",
+                "link": "https://finance.yahoo.com/m/3c6f0030-2081-3f1b-8f47-72fd2cd6dd6b/royal-caribbean-stock-jumps..html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:47",
+                "description": "The cruise-line operator beats Wall Street’s third-quarter earnings target and raises its full-year guidance.",
+                "_timestamp": 1793105220.0
+            },
+            {
+                "title": "Bitcoin faces further downside as oil surge, AI fears weigh on risk appetite",
+                "link": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-faces-further-downside-oil-135317653.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:53",
+                "description": "Investing.com -- Bitcoin faces further downside after a sharp selloff last week, as renewed geopolitical tensions, fears of an artificial intelligence bubble and tightening global liquidity weigh on risk appetite, according to digital asset investment firm Hilbert Group.",
+                "_timestamp": 1793109197.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Royal Caribbean reported strong third-quarter earnings and raised full-year guidance [Yahoo Finance Oil]. Simultaneously, Bitcoin and broader risk assets face downside pressure due to an oil surge, renewed geopolitical tensions, AI bubble fears, and tightening global liquidity [Yahoo Finance Oil].",
+            "Uncertainties": "The exact scale and duration of the oil surge and its secondary effects on broader inflation and monetary policy tightening remain unquantified.",
+            "Macro_Context": "Rising geopolitical tensions and oil price surges are impacting global risk sentiment and liquidity, causing headwinds for risk assets while driving safe-haven demand.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 68,
+            "Past_Price_Action_Cause": "XAU/USD dipped to a low near 3994.930 before staging a robust recovery toward 4029.785 and 4035.225, aligning with safe-haven inflows driven by geopolitical tensions and oil-related risk-off pressures.",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:06",
+        "_timestamp": 1793108356.0,
+        "articles": [
+            {
+                "title": "UAE to supply Indonesia with up to 30 million barrels of oil",
+                "link": "https://www.investing.com/news/commodities-news/uae-to-supply-indonesia-with-up-to-30-million-barrels-of-oil-93CH-4975363",
+                "source": "Investing.com",
+                "date": "2026-10-27 12:06",
+                "description": "",
+                "_timestamp": 1793102819.0
+            },
+            {
+                "title": "Middle Eastern Powers Met to De-escalate Tensions. Oil Prices Remain Above $110 a Barrel.",
+                "link": "https://www.ibtimes.com/middle-eastern-powers-met-de-escalate-tensions-oil-prices-remain-above-110-barrel-3809036?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:39",
+                "description": "Top officials from Saudi Arabia, Turkey and Pakistan traveled to Tehran as fears of renewed escalation with the U.S. and Israel climb.",
+                "_timestamp": 1793108356.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Top officials from Saudi Arabia, Turkey, and Pakistan traveled to Tehran to de-escalate tensions as fears of renewed conflict with the U.S. and Israel increase [Yahoo Finance Oil]. Additionally, the UAE agreed to supply Indonesia with up to 30 million barrels of oil [Investing.com]. Oil prices remain elevated above $110 a barrel [Yahoo Finance Oil], supporting inflationary pressures.",
+            "Uncertainties": "It remains unconfirmed whether diplomatic efforts in Tehran will successfully prevent a military escalation between Middle Eastern powers, the U.S., and Israel.",
+            "Macro_Context": "High oil prices above $110 per barrel continue to drive persistent inflationary concerns globally, while geopolitical friction in the Middle East provides persistent safe-haven demand for gold despite ongoing diplomatic talks.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAU_Impact": "Bullish",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "XAU/USD consolidated near the 3995-4005 region during early European trading before rallying past 4029 as ongoing geopolitical risks and elevated energy prices drove safe-haven inflows.",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 11:30",
+        "_timestamp": 1793107800.0,
+        "articles": [
+            {
+                "title": "Asset Strategies International to Attend the 52nd Annual New Orleans Investment Conference",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/asset-strategies-international-attend-52nd-113000077.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 11:30",
+                "description": "Rockville, Maryland--(Newsfile Corp. - October 27, 2026) - Asset Strategies International announced today that it will be participating in the 52nd Annual New Orleans Investment Conference at the Hilton New Orleans Riverside October 28 – 31, 2026. Rich Checkan, will be presenting on Thursday, October 29, 2026, and will be available to meet with investors during the Conference. The New Orleans Investment Conference gathers some of the world’s brightest and most successful analysts,...",
+                "_timestamp": 1793100600.0
+            },
+            {
+                "title": "SLAM Exploration to Attend the 52nd Annual New Orleans Investment Conference",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/slam-exploration-attend-52nd-annual-133000962.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 13:30",
+                "description": "Miramachi, New Brunswick--(Newsfile Corp. - October 27, 2026) - SLAM Exploration (TSXV: SXL) (OTCQB: SXLXF) announces that it will be participating in the 52nd Annual New Orleans Investment Conference at the Hilton New Orleans Riverside October 28 - 31, 2026. Mr. Gravel and the SLAM team will meet investors, analysts, and industry professionals at the Company's booth to discuss SLAM's exploration projects and recent success and progress in New Brunswick.The New Orleans Investment Conference...",
+                "_timestamp": 1793107800.0
+            },
+            {
+                "title": "Space Exploration Technologies Corp. (SPCX) Builds a Broader Deep-Tech Growth Platform",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/space-exploration-technologies-corp-spcx-104833654.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:04",
+                "description": "Fred Alger Management, an investment management company, released its “Alger Spectra Fund” third-quarter 2026 investor letter. The letter can be downloaded here. During the third quarter of 2026, U.S. equities delivered modest gains, with the S&amp;P 500 advancing 2%. Despite robust corporate earnings and resilient consumer spending, market breadth remained weak as 60% of S&amp;P […]",
+                "_timestamp": 1793106273.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Asset Strategies International and SLAM Exploration announced their participation in the upcoming 52nd Annual New Orleans Investment Conference, while Fred Alger Management released its third-quarter 2026 investor letter highlighting modest U.S. equity gains and weak market breadth [Yahoo Finance Gold, Yahoo Finance Oil]. These corporate and conference updates drove no direct fundamental gold supply-demand shifts.",
+            "Uncertainties": "It remains unclear whether broader macroeconomic data or geopolitical factors will override the current range-bound technical consolidation in gold prices.",
+            "Macro_Context": "U.S. equities are showing modest gains with weak market breadth amid resilient consumer spending and robust corporate earnings.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 09:15",
+        "_timestamp": 1793106060.0,
+        "articles": [
+            {
+                "title": "UBS cuts palladium forecast on weaker investor sentiment",
+                "link": "https://www.investing.com/news/commodities-news/ubs-cuts-palladium-forecast-on-weaker-investor-sentiment-93CH-4974536",
+                "source": "Investing.com",
+                "date": "2026-10-27 09:15",
+                "description": "",
+                "_timestamp": 1793092505.0
+            },
+            {
+                "title": "UBS cuts palladium forecast on weaker investor sentiment",
+                "link": "https://www.investing.com/news/commodities-news/ubs-cuts-palladium-forecast-on-weaker-investor-sentiment-93CH-4974535",
+                "source": "Investing.com",
+                "date": "2026-10-27 09:15",
+                "description": "",
+                "_timestamp": 1793092504.0
+            },
+            {
+                "title": "3 Stocks With Broker Rating Upgrades to Bet on Right Away",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-stocks-broker-rating-upgrades-130100849.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:01",
+                "description": "Allegion, United Rentals and Clean Harbors draw broker rating upgrades, backed by strong 2026 earnings growth projections. See why these three stocks stand out.",
+                "_timestamp": 1793106060.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "UBS cut its palladium forecast due to weaker investor sentiment [Investing.com], and several equities received broker rating upgrades backed by 2026 earnings projections [Yahoo Finance Oil]. These specific news events have minimal direct relevance to gold (XAU/USD).",
+            "Uncertainties": "The broader macroeconomic drivers behind the precious metals sentiment shift and specific central bank stances remain unconfirmed.",
+            "Macro_Context": "Mixed sentiment across precious metals with a downward adjustment in palladium forecasts by major institutions, contrasted with steady equity market optimism.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:54",
+        "_timestamp": 1793105652.0,
+        "articles": [
+            {
+                "title": "Meta Platforms’ (META) AI Agent Opens a New Growth Opportunity",
+                "link": "https://finance.yahoo.com/technology/ai/articles/meta-platforms-meta-ai-agent-105412607.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:54",
+                "description": "Fred Alger Management, an investment management company, released its “Alger Spectra Fund” third-quarter 2026 investor letter. The letter can be downloaded here. During the third quarter of 2026, U.S. equities delivered modest gains, with the S&amp;P 500 advancing 2%. Despite robust corporate earnings and resilient consumer spending, market breadth remained weak as 60% of S&amp;P […]",
+                "_timestamp": 1793105652.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Fred Alger Management released its Q3 2026 investor letter for the Alger Spectra Fund, noting modest U.S. equity gains with the S&P 500 up 2%, driven in part by growth opportunities in Meta Platforms' (META) AI agent, despite weak market breadth [Yahoo Finance Oil].",
+            "Uncertainties": "The provided news focuses entirely on equity markets and Meta's AI developments, lacking direct macroeconomic drivers or geopolitical catalysts specifically related to gold (XAU/USD).",
+            "Macro_Context": "U.S. equities are showing modest gains with resilient consumer spending and corporate earnings, though market breadth remains constrained.",
+            "Impact_Timing": "Past",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:52",
+        "_timestamp": 1793105566.0,
+        "articles": [
+            {
+                "title": "Freeport beats Q3 estimates on higher copper, gold prices",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/freeport-beats-q3-estimates-higher-125246075.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 12:52",
+                "description": "Investing.com -- Freeport-McMoRan (NYSE: FCX) reported third-quarter earnings before the open on Tuesday, topping consensus expectations.",
+                "_timestamp": 1793105566.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Freeport-McMoRan reported third-quarter earnings topping consensus expectations, driven by higher copper and gold prices [Yahoo Finance Gold].",
+            "Uncertainties": "The exact breakdown of contribution between copper versus gold price realizations in Freeport's earnings beat remains unquantified in the headline.",
+            "Macro_Context": "Elevated commodity prices, particularly for gold and copper, are bolstering corporate profitability in the mining sector.",
+            "Impact_Timing": "Past",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:39",
+        "_timestamp": 1793104759.0,
+        "articles": [
+            {
+                "title": "Microsoft Corp.’s (MSFT) AI Strategy Gains Revenue Momentum",
+                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-corp-msft-ai-strategy-105819898.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:39",
+                "description": "Fred Alger Management, an investment management company, released its “Alger Spectra Fund” third-quarter 2026 investor letter. The letter can be downloaded here. During the third quarter of 2026, U.S. equities delivered modest gains, with the S&amp;P 500 advancing 2%. Despite robust corporate earnings and resilient consumer spending, market breadth remained weak as 60% of S&amp;P […]",
+                "_timestamp": 1793104759.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Fred Alger Management released its Q3 2026 Alger Spectra Fund investor letter, highlighting that Microsoft Corp.'s (MSFT) AI strategy is gaining revenue momentum amid a modest 2% gain for the S&P 500 and weak market breadth [Yahoo Finance Oil].",
+            "Uncertainties": "The provided news focuses on broader equity performance and tech sector revenue momentum rather than direct drivers for precious metals, leaving specific macroeconomic triggers for gold unconfirmed.",
+            "Macro_Context": "U.S. equities delivered modest gains with resilient consumer spending and robust corporate earnings, though market breadth remained weak as a significant portion of the S&P 500 lagged.",
+            "Impact_Timing": "Past",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:04",
+        "_timestamp": 1793102640.0,
+        "articles": [
+            {
+                "title": "Bright Signs for the Economy Ahead of Vital Day",
+                "link": "https://finance.yahoo.com/m/57238d79-87e0-304f-a24f-df06df0c0c63/bright-signs-for-the-economy.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 12:04",
+                "description": "Consumer earnings are surging before the Fed decision and big tech earnings.",
+                "_timestamp": 1793102640.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Consumer earnings are surging prior to an upcoming Federal Reserve decision and major technology company earnings reports, reflecting a generally resilient economic backdrop. [Yahoo Finance Gold]",
+            "Uncertainties": "The exact monetary policy outcome of the upcoming Fed meeting and the specific earnings results of big tech companies remain unknown.",
+            "Macro_Context": "Markets are positioning ahead of high-impact macroeconomic events, including central bank decisions and corporate earnings releases, which drive overall risk sentiment and currency valuations.",
+            "Impact_Timing": "Future",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Gold experienced a minor corrective dip towards the 3994 level during Asian trading hours before rebounding sharply past the 4029 level as market participants positioned ahead of upcoming macroeconomic updates.",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 11:53",
+        "_timestamp": 1793102035.0,
+        "articles": [
+            {
+                "title": "India’s diesel exports set to surge from 2027 as refiners expand",
+                "link": "https://www.investing.com/news/commodities-news/indias-diesel-exports-set-to-surge-from-2027-as-refiners-expand-93CH-4975241",
+                "source": "Investing.com",
+                "date": "2026-10-27 11:53",
+                "description": "",
+                "_timestamp": 1793102035.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "India's diesel exports are projected to surge starting from 2027 as domestic refiners expand their processing capacities [Investing.com].",
+            "Uncertainties": "The exact volume increase, global demand absorption capacity by 2027, and potential shifts in geopolitical energy trade routes remain speculative.",
+            "Macro_Context": "Long-term expansion in Asian refining capacity points to stable or potentially lower global energy input costs, influencing broader inflationary trends and commodity supply chains.",
+            "Impact_Timing": "Future",
+            "Timeframe": "Weeks/Months",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 11:00",
+        "_timestamp": 1793098830.0,
+        "articles": [
+            {
+                "title": "Oil choppy as Houthi attacks offset push to ease Mideast conflict",
+                "link": "https://www.investing.com/news/commodities-news/oil-extends-losses-as-iran-mediation-efforts-ease-escalation-fears-4973997",
+                "source": "Investing.com",
+                "date": "2026-10-27 11:00",
+                "description": "",
+                "_timestamp": 1793098830.0
+            },
+            {
+                "title": "Oil rises as hopes for diplomacy offset impact of renewed Houthi attacks",
+                "link": "https://www.investing.com/news/commodities-news/oil-eases-on-middle-east-diplomacy-hopes-saudi-attacks-keep-supply-worries-alive-4974185",
+                "source": "Investing.com",
+                "date": "2026-10-27 10:43",
+                "description": "",
+                "_timestamp": 1793097817.0
+            },
+            {
+                "title": "OPEC+ oil producers set to keep output targets steady at Sunday meeting, sources say",
+                "link": "https://www.investing.com/news/commodities-news/opec-oil-producers-set-to-keep-output-targets-steady-at-sunday-meeting-sources-say-4974571",
+                "source": "Investing.com",
+                "date": "2026-10-27 09:30",
+                "description": "",
+                "_timestamp": 1793093421.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Oil prices remain choppy and sensitive as renewed Houthi attacks offset diplomatic efforts to ease Middle East conflicts [Investing.com]. Simultaneously, sources indicate that OPEC+ oil producers are set to maintain their output targets steady at their upcoming Sunday meeting [Investing.com]. These geopolitical and supply factors impact broader commodity trends and inflation expectations.",
+            "Uncertainties": "The exact duration and escalation level of the Houthi attacks remain unpredictable, and the final official outcome of the upcoming OPEC+ ministerial meeting could deviate from current source leaks.",
+            "Macro_Context": "Ongoing geopolitical tensions in the Middle East combined with steady OPEC+ production policies create persistent supply-side risks for energy markets, influencing global inflation hedging and safe-haven flows into gold.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Gold prices initially experienced mild downward pressure towards the 3994 level during early European hours before recovering sharply above 4029 as safe-haven demand reacted to Middle Eastern geopolitical risks.",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 10:45",
+        "_timestamp": 1793097900.0,
+        "articles": [
+            {
+                "title": "Morning Bid: ANTimatter",
+                "link": "https://www.investing.com/news/commodities-news/morning-bid-antimatter-4974888",
+                "source": "Investing.com",
+                "date": "2026-10-27 10:45",
+                "description": "",
+                "_timestamp": 1793097900.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "The provided news headline 'Morning Bid: ANTimatter' from Investing.com contains no substantive details or macro-economic data points explaining market movements [Investing.com].",
+            "Uncertainties": "The news report lacks any context, making it impossible to determine what 'ANTimatter' refers to in relation to financial markets or commodities.",
+            "Macro_Context": "Macro-economic conditions remain standard with gold trading tightly around the 4000 to 4035 USD range, showing mild upward momentum in the last few hours despite a lack of significant news catalysts.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 09:49",
+        "_timestamp": 1793094554.0,
+        "articles": [
+            {
+                "title": "European gas pauses 4-day surge; Depleted storage leaves floor under curves",
+                "link": "https://www.investing.com/news/commodities-news/european-gas-pauses-4day-surge-depleted-storage-leaves-floor-under-curves-4974468",
+                "source": "Investing.com",
+                "date": "2026-10-27 09:49",
+                "description": "",
+                "_timestamp": 1793094554.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "European natural gas prices paused a four-day surge as depleted storage levels continue to provide a strong structural floor under the forward curves [Investing.com].",
+            "Uncertainties": "The exact rate of winter inventory depletion and potential geopolitical supply shocks remain unpredictable.",
+            "Macro_Context": "Energy market volatility and commodity cost pressures continue to drive persistent inflation concerns, influencing broader market sentiment.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "XAU/USD showed a minor pullback to a low near 3994.93 before recovering strongly past 4029 to current levels around 4035, reacting to broader commodity market dynamics and safe-haven demand.",
+            "Orderflow_Price_Target": "4045.000"
+        }
+    }
+]

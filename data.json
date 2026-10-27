@@ -1,49 +1,7 @@
 [
     {
-        "main_date": "2026-10-27 12:13",
-        "_timestamp": 1793105220.0,
-        "articles": [
-            {
-                "title": "Stock Market Today: Dow Rises Ahead Of Fed Meet; Boeing Rallies On Earnings (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/6294d29d-51d6-3bfe-87d4-877203694b78/stock-market-today%3A-dow-rises.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-27 12:13",
-                "description": "The Dow Jones index rises Tuesday ahead of the Fed meeting. Boeing stock rallies on earnings.",
-                "_timestamp": 1793103205.0
-            },
-            {
-                "title": "Bright Signs for the Economy Ahead of Vital Day",
-                "link": "https://finance.yahoo.com/m/57238d79-87e0-304f-a24f-df06df0c0c63/bright-signs-for-the-economy.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-27 12:04",
-                "description": "Consumer earnings are surging before the Fed decision and big tech earnings.",
-                "_timestamp": 1793102640.0
-            },
-            {
-                "title": "Royal Caribbean Stock Jumps. Its Earnings Are Good News for Cruise Fuel Fears.",
-                "link": "https://finance.yahoo.com/m/3c6f0030-2081-3f1b-8f47-72fd2cd6dd6b/royal-caribbean-stock-jumps..html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-27 12:47",
-                "description": "The cruise-line operator beats Wall Street’s third-quarter earnings target and raises its full-year guidance.",
-                "_timestamp": 1793105220.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Stock markets are rising and major corporate earnings, including Boeing and Royal Caribbean, are beating expectations ahead of an upcoming Federal Reserve meeting and vital consumer earnings reports [Yahoo Finance Oil, Yahoo Finance Gold].",
-            "Uncertainties": "The specific outcome and forward guidance of the upcoming Federal Reserve meeting remain unconfirmed, alongside the actual results of upcoming major tech earnings.",
-            "Macro_Context": "Optimism surrounding corporate earnings and resilient consumer spending is driving equities higher ahead of a pivotal central bank meeting.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD traded in a relatively stable range between approximately 3993 and 4025 over the past 24 hours, consolidating as markets await the macroeconomic catalysts and Fed meeting.",
-            "Orderflow_Price_Target": "4035.500"
-        }
-    },
-    {
         "main_date": "2026-10-27 11:23",
-        "_timestamp": 1793104984.0,
+        "_timestamp": 1793109639.0,
         "articles": [
             {
                 "title": "Gold slips ahead of Fed decision; Iran diplomacy hopes in focus",
@@ -132,24 +90,48 @@
                 "date": "2026-10-27 12:43",
                 "description": "Oil futures slid and stock futures spiked as investors eyed potential diplomatic efforts out of Iran.",
                 "_timestamp": 1793104984.0
+            },
+            {
+                "title": "BC-Gold Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-140039569.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 14:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Tuesday, October 27.Contract Open High Low Last Change Today's Volume Monday's Volume  Oct 26 3995.",
+                "_timestamp": 1793109639.0
+            },
+            {
+                "title": "TSX futures point higher with upcoming Bank of Canada meeting in focus",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-futures-point-higher-upcoming-130011435.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 13:00",
+                "description": "Investing.com - Futures linked to Canada’s main stock index edged up on Tuesday, with investors assessing movements in oil and gold prices and looking ahead to a series of central bank interest rate decisions this week.",
+                "_timestamp": 1793106011.0
+            },
+            {
+                "title": "BC-Crude Oil Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-140019234.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 14:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Tuesday, October 27.Light Sweet Crude (NYMX)1,000 bbl.",
+                "_timestamp": 1793109619.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Gold prices briefly dipped below the $4,000 threshold to around $3,993-$4,025 per troy ounce as investors adopted a cautious stance ahead of the upcoming Federal Reserve rate decision [Yahoo Finance Gold]. Additionally, potential diplomatic efforts regarding Iran and a firmer U.S. dollar reduced safe-haven demand [Investing.com, Yahoo Finance Oil].",
-            "Uncertainties": "The exact policy outcome of the upcoming Federal Reserve meeting and the concrete progress or outcomes of Iran diplomacy remain unconfirmed.",
-            "Macro_Context": "Markets are heavily focused on global central bank rate decisions, particularly the Federal Reserve meeting, alongside currency strength in the U.S. dollar and geopolitical developments involving Iran.",
+            "Facts": "Gold prices slipped briefly below the $4,000 threshold during early trading on October 27, 2026, pressured by a firming U.S. dollar and cautious investor positioning ahead of the upcoming Federal Reserve rate decision [Yahoo Finance Gold, Yahoo Finance Oil]. Additionally, easing geopolitical tensions regarding Iran diplomacy weighed on safe-haven assets and reduced oil prices, further contributing to the broader market sentiment [Investing.com, Yahoo Finance Oil].",
+            "Uncertainties": "The exact outcome of the upcoming Federal Reserve rate decision and future trajectory of U.S. monetary policy remain uncertain. Potential shifts in geopolitical negotiations involving Iran could also cause sudden volatility.",
+            "Macro_Context": "Global markets are focusing heavily on central bank rate decisions, specifically the upcoming U.S. Federal Reserve meeting and potential rate actions by the Bank of Canada driven by energy-related inflation risks [Yahoo Finance Oil]. The U.S. dollar remains strong, hovering near a six-month high, while crude oil fluctuates amid supply concerns and potential diplomatic developments [Yahoo Finance Oil].",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Gold prices experienced localized selling pressure, touching lows near $3,993 before recovering slightly above $4,023, reflecting cautious consolidation right ahead of the Fed meeting and a stronger dollar.",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold dipped below the $4,000 mark overnight to a low of approximately $3,994.93 before recovering back above $4,029.78 as of 13:00 UTC, aligning with early profit-taking and cautious sentiment ahead of the Fed meeting followed by a rebound as lower oil prices and diplomatic headlines circulated.",
             "Orderflow_Price_Target": "4034.000"
         }
     },
     {
         "main_date": "2026-10-27 11:00",
-        "_timestamp": 1793104560.0,
+        "_timestamp": 1793109600.0,
         "articles": [
             {
                 "title": "Alex Metals Drills 11.7 Metres Grading 1.71% Copper and 1.92 g/t Gold near Surface and Discovers the Triple G VMS Target at the KSO VMS Project in Southeast Alaska",
@@ -286,24 +268,48 @@
                 "date": "2026-10-27 12:36",
                 "description": "Great Plains Metals Corp (TSX-V:GPS, FRA:8VC0) said a maiden field campaign at its North Gawler Craton Project in South Australia has identified widespread outcropping copper mineralization, with high-grade samples returning up to 31.1% copper. The project is managed by joint-venture partner...",
                 "_timestamp": 1793104560.0
+            },
+            {
+                "title": "Sun Valley Minerals Commences Trading on the TSX Venture Exchange; Launches Maiden Drill Program at Tarumán Main",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/sun-valley-minerals-commences-trading-135500962.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 13:55",
+                "description": "TORONTO, ON / ACCESS Newswire / October 27, 2026 / . (\"Sun Valley\" or the \"Company\")(TSXV:SUNV) is pleased to announce that, further to its news releases dated October 20 and October 23, 2026, its common shares have commenced trading on the TSX Venture Exchange (the \"TSXV\") today under the ticker symbol \"SUNV\".",
+                "_timestamp": 1793109300.0
+            },
+            {
+                "title": "PPX Intercepts High-Grade Gold, Silver, and Copper at Callanquitas, with 13.28 g/t Au, 5,204 g/t Ag and 5.4% Cu Over 1.0 m; and Completes the First Drill Hole at Portachuelos",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/ppx-intercepts-high-grade-gold-140000113.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 14:00",
+                "description": "TORONTO, ON / ACCESS Newswire / October 27, 2026 / (TSXV:PPX)(BVL:PPX), is pleased to announce the results from underground diamond drilling program at the Callanquitas Mine, work carried out in coordination with Proyectos la Patagonia S. (PLP), a mining partner of the company.",
+                "_timestamp": 1793109600.0
+            },
+            {
+                "title": "C3 Metals extends Khaleesi copper mineralization 200 metres east in Peru",
+                "link": "https://www.proactiveinvestors.com/companies/news/1100756/c3-metals-extends-khaleesi-copper-mineralization-200-metres-east-in-peru-1100756.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 13:12",
+                "description": "C3 Metals Inc (TSX-V:CCCM, OTC:CUAUF) has extended copper mineralization 200 metres eastward at its 100%-owned Khaleesi project in southern Peru, with two new drill holes intersecting broad zones of near-surface copper and one hitting higher-grade skarn at depth. Hole KHZ5960-004 returned a...",
+                "_timestamp": 1793106720.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Multiple junior mining and exploration companies reported successful drilling results, resource expansions, and new project developments for gold and copper assets across various global jurisdictions [Yahoo Finance Gold]. These include positive drill intersections by Alex Metals, IAMGOLD, Wescan Goldfields, White Gold Corp, C3 Metals, and others.",
-            "Uncertainties": "The reported news items are micro-economic updates regarding individual mining exploration results and corporate developments rather than macro-level drivers. It is unclear how these localized corporate updates translate into overarching macroeconomic demand or supply shifts for physical bullion.",
-            "Macro_Context": "The broader macroeconomic environment features continuous resource exploration and development updates from junior miners, reflecting ongoing corporate activities in the precious and base metals sectors.",
+            "Facts": "A series of mining and exploration updates from various junior and major mining companies were released, detailing positive drill results, resource expansions, and project updates for gold, copper, and critical minerals globally [Yahoo Finance Gold]. These micro-level announcements reflect ongoing localized mining developments rather than systemic macroeconomic shocks.",
+            "Uncertainties": "It remains unclear how these individual project developments will translate into actual commercial production, and whether broader market liquidity or macroeconomic factors will overshadow these micro-level mining updates.",
+            "Macro_Context": "The broader macroeconomic environment involves steady gold demand and standard market fluctuations, with spot gold trading near the $4,030 level.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "The 24h price action shows XAU/USD fluctuating within a tight range around the 4000 level without a strong directional trend, which aligns with the micro-focused nature of the corporate mining news that lacks macro-economic weight to drive spot gold prices significantly.",
-            "Orderflow_Price_Target": "N/A"
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4034.000"
         }
     },
     {
         "main_date": "2026-10-27 09:15",
-        "_timestamp": 1793102920.0,
+        "_timestamp": 1793109197.0,
         "articles": [
             {
                 "title": "UBS cuts palladium forecast on weaker investor sentiment",
@@ -336,84 +342,114 @@
                 "date": "2026-10-27 12:08",
                 "description": "Rising oil prices linked to the Iran war have put fresh attention on Diamondback Energy (FANG), which is holding production relatively steady instead of chasing short term gains through rapid output growth. Recent trading suggests investors are rewarding that restraint. Diamondback Energy’s share price is up 10.96% over the past month and 35.97% year to date, while its 1 year total shareholder return of 46.90% and 5 year total shareholder return of 129.34% indicate ongoing momentum rather...",
                 "_timestamp": 1793102920.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "UBS cut its palladium forecast due to weaker investor sentiment [Investing.com], Wall Street futures ticked higher driven by tech sector optimism [Yahoo Finance Oil], and energy companies like Diamondback Energy are benefiting from rising oil prices linked to the Iran war [Yahoo Finance Oil].",
-            "Uncertainties": "The full extent and duration of the Iran conflict and its impact on broader commodities and safe-haven flows remain uncertain.",
-            "Macro_Context": "Ongoing geopolitical tensions involving Iran are driving oil price shocks, while broader equity markets show resilience supported by technology sector optimism.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD traded in a relatively tight range between 3994 and 4023 over the past 24 hours, showing consolidation amidst mixed macroeconomic signals and steady geopolitical developments.",
-            "Orderflow_Price_Target": "4022.000"
-        }
-    },
-    {
-        "main_date": "2026-10-27 12:06",
-        "_timestamp": 1793102819.0,
-        "articles": [
-            {
-                "title": "UAE to supply Indonesia with up to 30 million barrels of oil",
-                "link": "https://www.investing.com/news/commodities-news/uae-to-supply-indonesia-with-up-to-30-million-barrels-of-oil-93CH-4975363",
-                "source": "Investing.com",
-                "date": "2026-10-27 12:06",
-                "description": "",
-                "_timestamp": 1793102819.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "The UAE has agreed to supply Indonesia with up to 30 million barrels of oil, strengthening bilateral energy trade and geopolitical ties [Investing.com].",
-            "Uncertainties": "Specific delivery timelines, pricing formulas, and payment mechanisms remain undisclosed.",
-            "Macro_Context": "Energy supply agreements between major producers and emerging economies influence regional energy security and broader commodity markets, though the direct impact on precious metals is minimal.",
-            "Impact_Timing": "Future",
-            "Timeframe": "Weeks/Months",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "N/A",
-            "Orderflow_Price_Target": "4022.00"
-        }
-    },
-    {
-        "main_date": "2026-10-27 11:53",
-        "_timestamp": 1793102035.0,
-        "articles": [
-            {
-                "title": "India’s diesel exports set to surge from 2027 as refiners expand",
-                "link": "https://www.investing.com/news/commodities-news/indias-diesel-exports-set-to-surge-from-2027-as-refiners-expand-93CH-4975241",
-                "source": "Investing.com",
-                "date": "2026-10-27 11:53",
-                "description": "",
-                "_timestamp": 1793102035.0
             },
             {
-                "title": "India Rejects Claims of U.S. Pressure Over Russian Oil Purchases",
-                "link": "https://finance.yahoo.com/energy/articles/india-rejects-claims-u-pressure-103000497.html?.tsrc=rss",
+                "title": "Bitcoin faces further downside as oil surge, AI fears weigh on risk appetite",
+                "link": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-faces-further-downside-oil-135317653.html?.tsrc=rss",
                 "source": "Yahoo Finance Oil",
-                "date": "2026-10-27 10:30",
-                "description": "India says its declining Russian crude oil imports reflect changing market economics rather than U.S. pressure, as refiners increasingly favor competitively priced Middle Eastern supplies.",
-                "_timestamp": 1793097000.0
+                "date": "2026-10-27 13:53",
+                "description": "Investing.com -- Bitcoin faces further downside after a sharp selloff last week, as renewed geopolitical tensions, fears of an artificial intelligence bubble and tightening global liquidity weigh on risk appetite, according to digital asset investment firm Hilbert Group.",
+                "_timestamp": 1793109197.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "India stated that its declining Russian crude oil imports are due to changing market economics rather than U.S. pressure, with refiners increasingly favoring competitively priced Middle Eastern supplies [Yahoo Finance Oil]. Additionally, India's diesel exports are projected to surge starting in 2027 as domestic refiners expand operations [Investing.com].",
-            "Uncertainties": "The exact future trajectory of global energy prices and how shifts in Indian refining dynamics will definitively impact broader commodity inflation remain unconfirmed.",
-            "Macro_Context": "Energy market adaptations, shifting oil trade routes between Russia and the Middle East, and evolving refining capacities in emerging economies like India.",
-            "Impact_Timing": "Future",
-            "Timeframe": "Weeks/Months",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "N/A",
-            "Orderflow_Price_Target": "4022.000"
+            "Facts": "Geopolitical tensions surrounding the Iran war continue to drive oil price shocks, raising inflationary pressures and creating broader market anxiety alongside tighter global liquidity and AI bubble concerns [Yahoo Finance Oil]. XAU/USD experienced a dip toward the 3994.93 level during early European hours before recovering strongly back above 4029.78 as safe-haven demand reasserted itself.",
+            "Uncertainties": "The exact trajectory of the Iran conflict, the extent of impending central bank tightening due to oil-driven inflation, and the real-time spillover effects from tech sector volatility remain unconfirmed.",
+            "Macro_Context": "Ongoing geopolitical conflict in the Middle East is driving oil prices higher, stoking inflationary concerns and tightening global liquidity, while equities show mixed pre-bell sentiment with tech optimism counterbalanced by broader risk aversion.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "XAU/USD dipped to a low of 3994.93 as initial risk sentiment wobbled, but quickly rebounded toward 4029.78 as macro uncertainty, geopolitical tensions, and oil-driven inflation fears triggered renewed safe-haven buying.",
+            "Orderflow_Price_Target": "4035.500"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:13",
+        "_timestamp": 1793108731.0,
+        "articles": [
+            {
+                "title": "Stock Market Today: Dow Rises Ahead Of Fed Meet; Boeing Rallies On Earnings (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/6294d29d-51d6-3bfe-87d4-877203694b78/stock-market-today%3A-dow-rises.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:13",
+                "description": "The Dow Jones index rises Tuesday ahead of the Fed meeting. Boeing stock rallies on earnings.",
+                "_timestamp": 1793103205.0
+            },
+            {
+                "title": "Bright Signs for the Economy Ahead of Vital Day",
+                "link": "https://finance.yahoo.com/m/57238d79-87e0-304f-a24f-df06df0c0c63/bright-signs-for-the-economy.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 12:04",
+                "description": "Consumer earnings are surging before the Fed decision and big tech earnings.",
+                "_timestamp": 1793102640.0
+            },
+            {
+                "title": "Royal Caribbean Stock Jumps. Its Earnings Are Good News for Cruise Fuel Fears.",
+                "link": "https://finance.yahoo.com/m/3c6f0030-2081-3f1b-8f47-72fd2cd6dd6b/royal-caribbean-stock-jumps..html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:47",
+                "description": "The cruise-line operator beats Wall Street’s third-quarter earnings target and raises its full-year guidance.",
+                "_timestamp": 1793105220.0
+            },
+            {
+                "title": "Freeport beats Q3 estimates on higher copper, gold prices",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/freeport-beats-q3-estimates-higher-125246075.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 12:52",
+                "description": "Investing.com -- Freeport-McMoRan (NYSE: FCX) reported third-quarter earnings before the open on Tuesday, topping consensus expectations.",
+                "_timestamp": 1793105566.0
+            },
+            {
+                "title": "Tech rises for second day in a row as chip stocks gain: AlphaCheck",
+                "link": "https://finance.yahoo.com/markets/article/tech-rises-for-2nd-day-in-a-row-as-chip-stocks-gain-alphacheck-134531476.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:45",
+                "description": "Tech stocks rose on Tuesday for a second day in a row.",
+                "_timestamp": 1793108731.0
+            },
+            {
+                "title": "Stock Market Today: Nasdaq Up As Fed Meet Starts; Boeing Shares Tumble On Earnings Miss (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/6294d29d-51d6-3bfe-87d4-877203694b78/stock-market-today%3A-nasdaq-up.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:44",
+                "description": "The Dow Jones index rises Tuesday as the Fed meeting starts. Boeing stock tumbles on earnings.",
+                "_timestamp": 1793108650.0
+            },
+            {
+                "title": "Exchange-Traded Funds Higher, Equity Futures Mixed Pre-Bell Tuesday as Investors Assess Corporate Earnings",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-higher-equity-131350822.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:13",
+                "description": "The broad market exchange-traded fund SPDR S&amp;P 500 ETF Trust (SPY) was up 0.4% and the actively trad",
+                "_timestamp": 1793106830.0
+            },
+            {
+                "title": "Update: US Equity Futures Edge Higher Pre-Bell as Traders Digest Corporate Earnings, Fed Kicks Off Policy Meeting",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/us-equity-futures-edge-higher-125516646.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:55",
+                "description": "(Updates with economic data, recent oil price movement, world markets' overview and corporate stock",
+                "_timestamp": 1793105716.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Markets are reacting to the kick-off of the Federal Reserve policy meeting, ongoing corporate earnings (with mixed results from companies like Boeing), and a generally positive tone in equity markets as consumer earnings and tech stocks rise. Freeport-McMoRan also beat Q3 estimates on higher copper and gold prices [Yahoo Finance Gold, Yahoo Finance Oil].",
+            "Uncertainties": "The exact outcome of the upcoming Federal Reserve rate decision and guidance remains unconfirmed, leading to cautious positioning in risk assets.",
+            "Macro_Context": "The Federal Reserve has kicked off its policy meeting, with equity markets showing strength ahead of the announcement while digesting third-quarter corporate earnings and economic data.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Gold prices initially dipped to a low near 3994.930 UTC before staging a strong recovery toward 4029.785, aligning with pre-Fed meeting positioning and rising commodity valuation support.",
+            "Orderflow_Price_Target": "4035.500"
         }
     },
     {
         "main_date": "2026-10-27 11:00",
-        "_timestamp": 1793101515.0,
+        "_timestamp": 1793108356.0,
         "articles": [
             {
                 "title": "Oil choppy as Houthi attacks offset push to ease Mideast conflict",
@@ -462,24 +498,32 @@
                 "date": "2026-10-27 10:30",
                 "description": "Oil prices moved higher on Tuesday, reversing earlier declines as markets assessed diplomatic efforts to reduce tensions involving Iran alongside reports of further attacks on regional energy infrastructure. At 04:10 ET (08:10 GMT), Brent crude futures were trading 0.",
                 "_timestamp": 1793097009.0
+            },
+            {
+                "title": "Middle Eastern Powers Met to De-escalate Tensions. Oil Prices Remain Above $110 a Barrel.",
+                "link": "https://www.ibtimes.com/middle-eastern-powers-met-de-escalate-tensions-oil-prices-remain-above-110-barrel-3809036?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:39",
+                "description": "Top officials from Saudi Arabia, Turkey and Pakistan traveled to Tehran as fears of renewed escalation with the U.S. and Israel climb.",
+                "_timestamp": 1793108356.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Oil prices experienced choppy trading and marginal gains as markets weighed renewed Houthi attacks on regional energy infrastructure against ongoing diplomatic efforts to ease Middle East tensions and expectations that OPEC+ will keep output targets steady [Investing.com, Yahoo Finance Oil]. Additionally, reports highlight that the U.S. emergency oil reserve is at a 1982 low with elevated gas prices carrying political weight [Yahoo Finance Oil].",
-            "Uncertainties": "The exact outcome of upcoming OPEC+ quota discussions for 2027 and the efficacy of diplomatic talks regarding Iran and regional proxies remain unconfirmed.",
-            "Macro_Context": "Geopolitical tensions in the Middle East and supply management by OPEC+ continue to drive energy market volatility, influencing broader inflationary expectations and safe-haven demand.",
+            "Facts": "Oil prices remain elevated above $110 a barrel driven by ongoing Houthi attacks on regional energy infrastructure and geopolitical tensions, despite diplomatic meetings involving Saudi Arabia, Turkey, Pakistan, and Iran in Tehran [Yahoo Finance Oil]. Additionally, OPEC+ is expected to keep output targets steady at its upcoming meeting [Investing.com], and the U.S. emergency oil reserve has dropped to a 1982 low [Yahoo Finance Oil].",
+            "Uncertainties": "The exact outcome of ongoing Middle East diplomatic de-escalation efforts and whether further energy infrastructure attacks will disrupt physical supplies remain uncertain.",
+            "Macro_Context": "High energy prices driven by Middle Eastern geopolitical conflict and constrained global strategic petroleum reserves are contributing to persistent inflationary pressures and political sensitivity.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold prices remained relatively range-bound between 3994 and 4023 over the past 24 hours, consolidating near the 4015 level as energy market headlines provided mixed geopolitical signals without creating a strong directional catalyst for precious metals.",
-            "Orderflow_Price_Target": "4022.00"
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "XAU/USD consolidated near the 3994-4010 support zone during early Asian and European trading before bouncing higher toward 4029.785, reflecting safe-haven demand fueled by persistent Middle Eastern geopolitical friction and high energy prices.",
+            "Orderflow_Price_Target": "4035.500"
         }
     },
     {
         "main_date": "2026-10-27 11:30",
-        "_timestamp": 1793100600.0,
+        "_timestamp": 1793107800.0,
         "articles": [
             {
                 "title": "Asset Strategies International to Attend the 52nd Annual New Orleans Investment Conference",
@@ -496,15 +540,91 @@
                 "date": "2026-10-27 10:48",
                 "description": "Fred Alger Management, an investment management company, released its “Alger Spectra Fund” third-quarter 2026 investor letter. The letter can be downloaded here. During the third quarter of 2026, U.S. equities delivered modest gains, with the S&amp;P 500 advancing 2%. Despite robust corporate earnings and resilient consumer spending, market breadth remained weak as 60% of S&amp;P […]",
                 "_timestamp": 1793098113.0
+            },
+            {
+                "title": "SLAM Exploration to Attend the 52nd Annual New Orleans Investment Conference",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/slam-exploration-attend-52nd-annual-133000962.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 13:30",
+                "description": "Miramachi, New Brunswick--(Newsfile Corp. - October 27, 2026) - SLAM Exploration (TSXV: SXL) (OTCQB: SXLXF) announces that it will be participating in the 52nd Annual New Orleans Investment Conference at the Hilton New Orleans Riverside October 28 - 31, 2026. Mr. Gravel and the SLAM team will meet investors, analysts, and industry professionals at the Company's booth to discuss SLAM's exploration projects and recent success and progress in New Brunswick.The New Orleans Investment Conference...",
+                "_timestamp": 1793107800.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Asset Strategies International announced its participation in the 52nd Annual New Orleans Investment Conference, where Rich Checkan will present and meet with investors [Yahoo Finance Gold]. Additionally, Fred Alger Management released its third-quarter 2026 investor letter highlighting modest gains in U.S. equities and weak market breadth [Yahoo Finance Oil]. These corporate updates do not provide macroeconomic catalysts capable of driving directional momentum in gold.",
-            "Uncertainties": "Whether upcoming investor presentations or broader equity market performance will trigger capital reallocation into or out of precious metals remains unconfirmed.",
-            "Macro_Context": "U.S. equities delivered modest gains with the S&P 500 advancing 2% in Q3 2026 amidst resilient consumer spending and corporate earnings, though weak market breadth persists [Yahoo Finance Oil].",
+            "Facts": "Asset Strategies International and SLAM Exploration announced their participation in the upcoming 52nd Annual New Orleans Investment Conference taking place from October 28 to 31, 2026 [Yahoo Finance Gold]. Additionally, broader tech growth updates and modest Q3 U.S. equity gains were reported [Yahoo Finance Oil]. These corporate updates reflect normal industry marketing and event scheduling rather than direct macroeconomic drivers for physical gold.",
+            "Uncertainties": "It remains unconfirmed whether discussions at the New Orleans Investment Conference will yield any material shift in retail investor sentiment or new capital inflows into physical gold and mining equities.",
+            "Macro_Context": "U.S. equities delivered modest gains in Q3 2026 with resilient consumer spending, while broader market breadth stayed weak, creating a mixed macro backdrop for safe-haven assets.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
+            "XAU_USD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The news reports have no direct causal link to the past 24h price action. The price movement exhibited a typical intraday dip to the 3994.930 level followed by a recovery toward 4029.785, driven by standard technical liquidity sweeps rather than fundamental news catalysts.",
+            "Orderflow_Price_Target": "4034.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:06",
+        "_timestamp": 1793102819.0,
+        "articles": [
+            {
+                "title": "UAE to supply Indonesia with up to 30 million barrels of oil",
+                "link": "https://www.investing.com/news/commodities-news/uae-to-supply-indonesia-with-up-to-30-million-barrels-of-oil-93CH-4975363",
+                "source": "Investing.com",
+                "date": "2026-10-27 12:06",
+                "description": "",
+                "_timestamp": 1793102819.0
+            },
+            {
+                "title": "3 Top Refining & Marketing Picks on Strong Profit Margins",
+                "link": "https://finance.yahoo.com/energy/articles/3-top-refining-marketing-picks-115800822.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 11:58",
+                "description": "Following a careful analysis of the Zacks Oil and Gas - Refining & Marketing industry, we advise buying three stocks: MPC, PBF and PSX.",
+                "_timestamp": 1793102280.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "The UAE has agreed to supply Indonesia with up to 30 million barrels of oil [Investing.com]. Additionally, industry analysts highlight strong profit margins in the oil refining and marketing sector, recommending specific stock picks like MPC, PBF, and PSX [Yahoo Finance Oil]. These developments reflect active bilateral energy trade and localized sectoral strength.",
+            "Uncertainties": "The exact delivery timeline, pricing mechanisms, and financial valuation of the UAE-Indonesia oil supply agreement remain undisclosed. Furthermore, the direct macroeconomic transmission to broader precious metals markets is unquantified.",
+            "Macro_Context": "Energy markets remain active with bilateral supply agreements and solid refining margins, influencing overall commodity sentiment and inflationary expectations, which indirectly impact safe-haven assets like gold.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4034.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 11:53",
+        "_timestamp": 1793102035.0,
+        "articles": [
+            {
+                "title": "India’s diesel exports set to surge from 2027 as refiners expand",
+                "link": "https://www.investing.com/news/commodities-news/indias-diesel-exports-set-to-surge-from-2027-as-refiners-expand-93CH-4975241",
+                "source": "Investing.com",
+                "date": "2026-10-27 11:53",
+                "description": "",
+                "_timestamp": 1793102035.0
+            },
+            {
+                "title": "India Rejects Claims of U.S. Pressure Over Russian Oil Purchases",
+                "link": "https://finance.yahoo.com/energy/articles/india-rejects-claims-u-pressure-103000497.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 10:30",
+                "description": "India says its declining Russian crude oil imports reflect changing market economics rather than U.S. pressure, as refiners increasingly favor competitively priced Middle Eastern supplies.",
+                "_timestamp": 1793097000.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "India stated that its declining Russian crude oil imports are due to changing market economics rather than U.S. pressure, with refiners increasingly favoring competitively priced Middle Eastern supplies [Yahoo Finance Oil]. Additionally, India's diesel exports are projected to surge starting in 2027 as domestic refiners expand operations [Investing.com].",
+            "Uncertainties": "The exact future trajectory of global energy prices and how shifts in Indian refining dynamics will definitively impact broader commodity inflation remain unconfirmed.",
+            "Macro_Context": "Energy market adaptations, shifting oil trade routes between Russia and the Middle East, and evolving refining capacities in emerging economies like India.",
+            "Impact_Timing": "Future",
+            "Timeframe": "Weeks/Months",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "N/A",

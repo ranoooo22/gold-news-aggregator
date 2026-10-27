@@ -1,7 +1,7 @@
 [
     {
         "main_date": "2026-10-26 19:54",
-        "_timestamp": 1793062463.0,
+        "_timestamp": 1793078665.0,
         "articles": [
             {
                 "title": "Oil settles lower on peace hopes, Saudi attacks limit losses",
@@ -66,24 +66,56 @@
                 "date": "2026-10-27 00:54",
                 "description": "Investing.com-- Oil prices edged lower in Asian trading on Tuesday, falling for a second straight session as diplomatic efforts to ease the U.S.-Israeli war with Iran tempered fears of a broader regional escalation.",
                 "_timestamp": 1793062463.0
+            },
+            {
+                "title": "Oil slips 1% as Iran diplomacy eases supply fears",
+                "link": "https://www.investing.com/news/commodities-news/oil-eases-on-middle-east-diplomacy-hopes-saudi-attacks-keep-supply-worries-alive-4974185",
+                "source": "Investing.com",
+                "date": "2026-10-27 05:24",
+                "description": "",
+                "_timestamp": 1793078665.0
+            },
+            {
+                "title": "Gold slips near $4,010 as traders await Fed decision, Iran diplomacy offers hope",
+                "link": "https://www.investing.com/news/commodities-news/gold-slips-near-4010-as-traders-await-fed-decision-iran-diplomacy-offers-hope-4974024",
+                "source": "Investing.com",
+                "date": "2026-10-27 04:23",
+                "description": "",
+                "_timestamp": 1793075033.0
+            },
+            {
+                "title": "Gold slips near $4,010 as traders await Fed decision, Iran diplomacy offers hope",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-slips-near-4-010-013656079.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 01:36",
+                "description": "Investing.com -- Gold prices edged lower on Tuesday as investors awaited the Federal Reserve’s policy decision this week, with diplomatic efforts to ease the U.S.-Iran conflict offering some relief to energy markets even as inflation concerns and uncertainty over interest rates continued to weigh on bullion.",
+                "_timestamp": 1793065016.0
+            },
+            {
+                "title": "Gold slips near $4,010 as traders await Fed decision, Iran diplomacy offers hope",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-slips-near-4-010-013656079.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 01:36",
+                "description": "Investing.com -- Gold prices edged lower on Tuesday as investors awaited the Federal Reserve’s policy decision this week, with diplomatic efforts to ease the U.S.-Iran conflict offering some relief to energy markets even as inflation concerns and uncertainty over interest rates continued to weigh on bullion.",
+                "_timestamp": 1793065016.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Gold prices jumped and oil prices fell as diplomatic and mediation efforts involving Saudi defense pact countries in Tehran eased fears of a broader regional escalation in the U.S.-Israeli conflict with Iran, reducing inflation fears [Investing.com]. Persian Gulf oil exports passed pre-conflict levels according to Treasury Secretary Scott Bessent [Yahoo Finance Oil].",
-            "Uncertainties": "The durability of the peace mediation efforts remains unconfirmed, and ongoing Houthi attacks continue to present tail risks to regional stability and supply chains [Investing.com].",
-            "Macro_Context": "Easing crude oil prices alleviate persistent inflation pressures globally, while ongoing central bank demand continues to provide a strong structural floor for gold prices despite complex geopolitical crosscurrents [Investing.com, Yahoo Finance Gold].",
+            "Facts": "Gold prices slipped near $4,010 as diplomatic efforts to ease the U.S.-Iran conflict and lower oil prices reduced safe-haven and inflation concerns, while traders also awaited the upcoming Federal Reserve policy decision [Yahoo Finance Gold]. Persian Gulf oil exports passed pre-conflict levels as mediation efforts eased supply worries [Yahoo Finance Oil].",
+            "Uncertainties": "The ultimate outcome of the U.S.-Iran mediation and peace talks remains unconfirmed, and the Federal Reserve's interest rate decision path is still uncertain.",
+            "Macro_Context": "Geopolitical tensions in the Middle East are showing signs of de-escalation with diplomatic mediation, leading to lower oil prices and reduced inflation fears, while markets await the upcoming Federal Reserve policy announcement.",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
             "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "XAU/USD consolidated tightly around the 4005-4020 range over the past 24 hours, digesting the complex interplay between falling oil-driven inflation fears and persistent geopolitical tensions in the Middle East.",
-            "Orderflow_Price_Target": "4030.00"
+            "Past_Price_Action_Cause": "Gold prices traded relatively range-bound between roughly 4,005 and 4,023 over the past 24 hours, experiencing a slight downward drift toward the $4,010 level as easing Middle East tensions and falling oil prices dampened immediate safe-haven demand.",
+            "Orderflow_Price_Target": "3975.000"
         }
     },
     {
         "main_date": "2026-10-26 16:28",
-        "_timestamp": 1793062002.0,
+        "_timestamp": 1793073952.0,
         "articles": [
             {
                 "title": "Stock Market Midday, Oct. 26: Tech Sector Rallies on Anthropic IPO Filing and Cooling Oil Prices",
@@ -252,24 +284,74 @@
                 "date": "2026-10-27 00:46",
                 "description": "Gold fell 25% since the Iran war began, yet gold ETF holdings hit a record. See who is buying, who is selling, and why.",
                 "_timestamp": 1793062002.0
+            },
+            {
+                "title": "Stocks Rally Ahead of Busy Week as Crude Oil Prices Ease",
+                "link": "https://www.barchart.com/story/news/8461586/stocks-rally-ahead-of-busy-week-as-crude-oil-prices-ease?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 20:39",
+                "description": "The S&amp;P 500 Index ($SPX ) (SPY ) rose +0.67% on Monday, the Dow Jones Industrial Average ($DOWI ) (DIA ) rose +0.29%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) rose +1.09%. December E-mini S&amp;P futures (ESZ26 ) rose +0.70%, and December E-mini Nasdaq futures (NQZ26 ) rose...",
+                "_timestamp": 1793047159.0
+            },
+            {
+                "title": "Greenfire Resources (NYSE:GFR) Stock Could Be Overvalued As Analyst Upgrades Land",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/greenfire-resources-nyse-gfr-stock-011315157.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 01:13",
+                "description": "Greenfire Resources has delivered a strong share price run in 2026, which puts a spotlight on whether the current US$7.00 level lines up with what its sales can reasonably support. With the stock on more investor radars after recent coverage, the real question is how much of the business's revenue profile is already baked into the price. The share price is up 45.5% year to date, which raises the stakes for anyone asking if the revenue base can carry this kind of move. Recent analyst upgrades...",
+                "_timestamp": 1793063595.0
+            },
+            {
+                "title": "US futures and Asian stocks advance following a rally on Wall Street",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/us-futures-asian-stocks-advance-040552073.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 04:05",
+                "description": "HONG KONG (AP) — Asian stocks were mostly higher Tuesday after an AI-led rally on Wall Street ahead of major corporate earnings and central-bank decisions. futures edged higher and oil prices extended losses.",
+                "_timestamp": 1793073952.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "US equities advanced following Anthropic's IPO filing and a decline in crude oil prices, while hopes for easing Iran tensions reduced immediate safe-haven demand [Yahoo Finance Gold, Yahoo Finance Oil]. Despite reports that gold fell 25% since the Iran war began, gold ETF holdings remain at record highs as long-term investors continue to buy [Yahoo Finance Oil].",
-            "Uncertainties": "The exact impact of upcoming Fed interest rate decisions and heavy corporate earnings volume on broader risk sentiment remains ambiguous [Yahoo Finance Oil].",
-            "Macro_Context": "Markets are balancing cooling geopolitical tensions in the Middle East and declining oil prices against upcoming heavy tech earnings and potential Federal Reserve rate policy updates [Yahoo Finance Gold, Yahoo Finance Oil].",
+            "Facts": "Global equity markets rallied following Anthropic's blockbuster IPO filing and easing Middle East/Iran tensions, which simultaneously caused crude oil prices to decline [Yahoo Finance Gold, Yahoo Finance Oil]. Despite these risk-on macro conditions and a reported prior pullback in gold prices, safe-haven demand and ETF accumulation remained robust [Yahoo Finance Oil].",
+            "Uncertainties": "The exact timing and trajectory of upcoming Federal Reserve rate decisions and major corporate earnings reports could abruptly alter current risk sentiment.",
+            "Macro_Context": "Broader financial markets are experiencing a risk-on rotation driven by AI sector optimism, cooling oil prices, and easing geopolitical tensions in the Middle East, while investors await upcoming central bank policy decisions.",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
+            "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD traded in a stable range between roughly 3989 and 4023 over the past 24 hours, consolidating as cooling geopolitical tensions countered persistent structural buying in gold ETFs.",
-            "Orderflow_Price_Target": "4030.000"
+            "Past_Price_Action_Cause": "XAU/USD exhibited minor volatility within a relatively tight range around the 4005-4023 level over the past 24 hours, digesting conflicting drivers of risk-on equity rallies and ongoing retail safe-haven interest.",
+            "Orderflow_Price_Target": "4026.500"
+        }
+    },
+    {
+        "main_date": "2026-10-27 02:46",
+        "_timestamp": 1793069177.0,
+        "articles": [
+            {
+                "title": "KOSPI Jumps 4.5% as Seoul Halts Program Buying Before SK Hynix Earnings",
+                "link": "https://beincrypto.com/kospi-second-buy-sidecar-six-days/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 02:46",
+                "description": "The KOSPI rose 4.53% and tripped its second buy-side sidecar in six days as SK Hynix and Samsung earnings approach.",
+                "_timestamp": 1793069177.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "The KOSPI rose 4.53% and triggered its second buy-side sidecar in six days as Seoul halted program buying ahead of upcoming major tech earnings from SK Hynix and Samsung [Yahoo Finance Oil].",
+            "Uncertainties": "It remains unclear how sustainable the equity market rally will be once corporate earnings are fully released and whether halted program buying will introduce structural volatility in Asian equities.",
+            "Macro_Context": "Positive momentum in Asian equity markets driven by heavyweights like SK Hynix and Samsung improves broader risk sentiment, which can occasionally pressure safe-haven assets like gold depending on currency and yield dynamics.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4026.500"
         }
     },
     {
         "main_date": "2026-10-26 19:00",
-        "_timestamp": 1793059200.0,
+        "_timestamp": 1793068200.0,
         "articles": [
             {
                 "title": "BC-Gold-Silver",
@@ -326,19 +408,27 @@
                 "date": "2026-10-26 23:26",
                 "description": "IAMGOLD reported that the Côté Gold mine has reached nameplate capacity, alongside more than $500 million in net debt reduction and the launch of a share buyback program, with an updated mine plan expected to include 20.3 million ounces of consolidated mineral resources. This shift from high construction risk toward cash generation at Côté Gold gives IAMGOLD a clearer production base to support balance sheet repair and any future capital return decisions. In the following sections, we...",
                 "_timestamp": 1793057207.0
+            },
+            {
+                "title": "Bitcoin and gold are 2026’s worst-performing assets, and history offers no precedent",
+                "link": "https://www.thestreet.com/crypto/markets/bitcoin-and-gold-are-2026s-worst-performing-assets-and-history-offers-no-precedent?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-27 02:30",
+                "description": "The two assets investors often turn to for protection are trailing stocks, bonds and even cash this year.",
+                "_timestamp": 1793068200.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Gold miners such as Evolution Mining, Barton Gold, Austral Gold, and IAMGOLD released strong Q3 2026 production and operational reports, showcasing cost discipline, production increases, and nameplate capacity achievements at major assets like the Côté Gold mine [Yahoo Finance Gold]. Concurrently, corporate leadership changes were announced at Western Copper and Gold [Yahoo Finance Gold]. Overall fundamental news reflects steady operational expansion across the sector rather than systemic macroeconomic shifts.",
-            "Uncertainties": "It remains unclear how broader macroeconomic factors like upcoming monetary policy decisions will influence long-term gold spot prices despite solid mining output reports.",
-            "Macro_Context": "The broader macroeconomic environment features steady mining sector productivity and operational reports amid persistent demand for precious metals.",
+            "Facts": "Mining reports from Evolution Mining, Barton Gold, Austral Gold, and IAMGOLD highlight steady operational output, nameplate capacities, and corporate adjustments, while commentary from Yahoo Finance Gold notes gold struggling relative to other assets in 2026 [Yahoo Finance Gold].",
+            "Uncertainties": "Broad macroeconomic catalysts driving relative asset underperformance remain broad and speculative, and individual miner reports lack a unified sector-wide demand picture.",
+            "Macro_Context": "Gold is experiencing relative underperformance compared to other major asset classes in 2026 despite stable corporate mining outputs.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold prices fluctuated within a stable range between 3989 and 4023 over the past 24 hours, displaying typical intraday volatility without a direct structural catalyst from the corporate mining updates.",
-            "Orderflow_Price_Target": "4030.000"
+            "Past_Price_Action_Cause": "Gold exhibited minor intraday volatility, dipping towards 3993 before recovering back into the 4010-4017 range, largely reflecting balanced liquidity sweeps without a strong directional macro catalyst.",
+            "Orderflow_Price_Target": "4026.500"
         }
     },
     {
@@ -545,6 +635,33 @@
             "Probability_Percent": 65,
             "Past_Price_Action_Cause": "Gold hovered near the $4,000 to $4,020 range over the past 24 hours, supported by safe-haven demand stemming from ongoing Middle Eastern geopolitical conflicts and energy supply disruptions.",
             "Orderflow_Price_Target": "4030.000"
+        }
+    },
+    {
+        "main_date": "2026-10-26 22:14",
+        "_timestamp": 1793052896.0,
+        "articles": [
+            {
+                "title": "Soybeans Fall on Monday with Brazil Currency Pressure",
+                "link": "https://www.barchart.com/story/news/8463202/soybeans-fall-on-monday-with-brazil-currency-pressure?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-26 22:14",
+                "description": "Soybeans closed with contracts 7 ¼ to 16 cents lower across the board, following elections in Brazil over the weekend. The cmdtyView national average Cash Bean price was down 15 1/2 cents at $11.84 1/2. Soymeal futures were down $4.70 to $6.50, with Soy Oil futures 11 to 27 points...",
+                "_timestamp": 1793052896.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Soybean futures and related products fell following the weekend elections in Brazil, which exerted currency pressure and influenced agricultural commodities [Yahoo Finance Oil].",
+            "Uncertainties": "The exact long-term monetary policy impacts of the Brazilian election results on currency valuation and sustained agricultural export volumes remain unconfirmed.",
+            "Macro_Context": "Broader agricultural and currency markets are adjusting to political developments in major exporting nations like Brazil, which indirectly affect global commodity pricing and inflationary gauges.",
+            "Impact_Timing": "Past",
+            "Timeframe": "N/A",
+            "XAU_Impact": "Neutral",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "4026.500"
         }
     },
     {

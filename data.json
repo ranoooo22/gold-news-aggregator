@@ -1,5 +1,55 @@
 [
     {
+        "main_date": "2026-10-27 11:00",
+        "_timestamp": 1793111810.0,
+        "articles": [
+            {
+                "title": "Oil choppy as Houthi attacks offset push to ease Mideast conflict",
+                "link": "https://www.investing.com/news/commodities-news/oil-extends-losses-as-iran-mediation-efforts-ease-escalation-fears-4973997",
+                "source": "Investing.com",
+                "date": "2026-10-27 11:00",
+                "description": "",
+                "_timestamp": 1793098830.0
+            },
+            {
+                "title": "Oil rises as hopes for diplomacy offset impact of renewed Houthi attacks",
+                "link": "https://www.investing.com/news/commodities-news/oil-eases-on-middle-east-diplomacy-hopes-saudi-attacks-keep-supply-worries-alive-4974185",
+                "source": "Investing.com",
+                "date": "2026-10-27 10:43",
+                "description": "",
+                "_timestamp": 1793097817.0
+            },
+            {
+                "title": "OPEC+ oil producers set to keep output targets steady at Sunday meeting, sources say",
+                "link": "https://www.investing.com/news/commodities-news/opec-oil-producers-set-to-keep-output-targets-steady-at-sunday-meeting-sources-say-4974571",
+                "source": "Investing.com",
+                "date": "2026-10-27 09:30",
+                "description": "",
+                "_timestamp": 1793093421.0
+            },
+            {
+                "title": "Yemen’s Houthis say they hit Saudi Ras Tanura oil refinery with missile",
+                "link": "https://www.investing.com/news/commodities-news/yemens-houthis-say-they-hit-saudi-ras-tanura-oil-refinery-with-missile-4976138",
+                "source": "Investing.com",
+                "date": "2026-10-27 14:36",
+                "description": "",
+                "_timestamp": 1793111810.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Oil prices experienced choppy trading as renewed Houthi attacks, including a reported missile strike on Saudi Arabia's Ras Tanura oil refinery [Investing.com], offset ongoing diplomatic efforts to ease Middle East conflicts [Investing.com] and expectations that OPEC+ will keep output targets steady [Investing.com].",
+            "Uncertainties": "The full extent of damage to the Ras Tanura oil refinery and the actual response magnitude from Saudi Arabia and international allies remain unconfirmed.",
+            "Macro_Context": "Geopolitical tensions in the Middle East continue to drive energy market volatility, influencing broader safe-haven asset demand and inflationary expectations.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "XAU/USD showed an initial minor dip down toward the 3994.93 level before rebounding strongly past the 4029.78 level, aligning with escalating Middle East geopolitical risks that trigger safe-haven demand.",
+            "Orderflow_Price_Target": "4060.00"
+        }
+    },
+    {
         "main_date": "2026-10-27 13:45",
         "_timestamp": 1793110120.0,
         "articles": [
@@ -35,7 +85,7 @@
     },
     {
         "main_date": "2026-10-27 12:58",
-        "_timestamp": 1793109639.0,
+        "_timestamp": 1793110046.0,
         "articles": [
             {
                 "title": "Gold volatile ahead of Fed decision; Iran diplomacy hopes in focus",
@@ -132,19 +182,27 @@
                 "date": "2026-10-27 12:08",
                 "description": "The Morning Bull - Canadian Market Morning Update Tuesday, 27 Oct 2026 Canadian stocks are poised for a slightly cautious open, with attention focused on energy markets. The key driver today is the US Strategic Petroleum Reserve, which is sitting at its lowest level since 1982 and keeping supply risks front and centre. SPR inventories remain under pressure as withdrawals continue, while the latest API crude forecast points to a possible 0.8m build after a prior 4.93m draw. That mix keeps...",
                 "_timestamp": 1793102894.0
+            },
+            {
+                "title": "Production Discipline Could Be A Key Test For Diamondback Stock (FANG)",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/production-discipline-could-key-test-140726738.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 14:07",
+                "description": "Permian Basin producers, including Diamondback Energy, recently kept output growth measured even as oil prices climbed following the Iran war and related geopolitical risks. This reflected restrained activity rather than a rapid drilling response. This choice to prioritize production discipline over chasing higher spot prices highlights management’s focus on capital efficiency, cash generation and avoiding a repeat of past oversupply cycles. This article examines how Diamondback Energy’s...",
+                "_timestamp": 1793110046.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Gold prices are exhibiting volatility as the Federal Reserve kicks off its policy-setting meeting and markets digest potential diplomatic developments regarding Iran [Investing.com]. Additionally, crude oil futures and stock futures saw movement following potential diplomatic efforts out of Iran, which eased geopolitical risk premiums [Yahoo Finance Oil].",
-            "Uncertainties": "The exact outcome of the upcoming Federal Reserve rate decision and whether Iran diplomacy will yield sustained de-escalation remain unconfirmed.",
-            "Macro_Context": "Macroeconomic attention is heavily focused on central bank policy meetings, specifically the Federal Reserve and the Bank of Canada, alongside geopolitical risk factors including Middle East diplomacy and tight US Strategic Petroleum Reserve inventories.",
+            "Facts": "Gold prices are exhibiting volatility as markets prepare for the upcoming Federal Reserve policy meeting and monitor geopolitical developments, specifically potential diplomatic efforts regarding Iran which have also affected oil prices [Investing.com]. Additionally, KEFI's joint venture conditionally approved the Jibal Qutman gold project, expected to recover 258,000oz over seven years [Yahoo Finance Gold].",
+            "Uncertainties": "The exact outcome of the Fed's upcoming interest rate decision and the true extent of progress regarding Iran diplomacy remain unconfirmed.",
+            "Macro_Context": "Macro-economic conditions are heavily driven by upcoming central bank rate decisions (Fed and Bank of Canada), fluctuating oil and commodity prices tied to geopolitical risks, and corporate earnings reports.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD dipped toward the 3995 level during Asian trading hours amid easing oil and geopolitical concerns, but subsequently recovered past 4029 as markets consolidated ahead of the Federal Reserve meeting.",
-            "Orderflow_Price_Target": "4045.000"
+            "Past_Price_Action_Cause": "Gold traded relatively range-bound between roughly 3994 and 4030 over the past 24 hours, reflecting cautious consolidation as the market digests fluctuating oil prices and awaits the Fed meeting kickoff.",
+            "Orderflow_Price_Target": "4031.000"
         }
     },
     {
@@ -256,19 +314,36 @@
                 "date": "2026-10-27 13:53",
                 "description": "Investing.com -- Bitcoin faces further downside after a sharp selloff last week, as renewed geopolitical tensions, fears of an artificial intelligence bubble and tightening global liquidity weigh on risk appetite, according to digital asset investment firm Hilbert Group.",
                 "_timestamp": 1793109197.0
+            },
+            {
+                "title": "Stocks Perk Higher After Oil Prices Ease",
+                "link": "https://finance.yahoo.com/m/f1137ada-5aa8-3eef-988c-1456bc56e6ab/stocks-perk-higher-after-oil.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:36",
+                "description": "Wall Street was cautiously buying stocks in the face of easing oil prices.",
+                "_timestamp": 1793108177.0
+            },
+            {
+                "title": "What Royal Caribbean Earnings Tell Us About the Run-Up in Fuel Costs",
+                "link": "https://finance.yahoo.com/m/3c6f0030-2081-3f1b-8f47-72fd2cd6dd6b/what-royal-caribbean-earnings.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:23",
+                "description": "The cruise-line operator beats Wall Street’s third-quarter earnings target and raises its full-year guidance.",
+                "_timestamp": 1793107380.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Royal Caribbean reported strong third-quarter earnings and raised full-year guidance [Yahoo Finance Oil]. Simultaneously, Bitcoin and broader risk assets face downside pressure due to an oil surge, renewed geopolitical tensions, AI bubble fears, and tightening global liquidity [Yahoo Finance Oil].",
-            "Uncertainties": "The exact scale and duration of the oil surge and its secondary effects on broader inflation and monetary policy tightening remain unquantified.",
-            "Macro_Context": "Rising geopolitical tensions and oil price surges are impacting global risk sentiment and liquidity, causing headwinds for risk assets while driving safe-haven demand.",
+            "Facts": "Royal Caribbean beat Q3 earnings targets and raised its full-year guidance despite rising fuel costs [Yahoo Finance Oil]. Meanwhile, global markets are reacting to fluctuating oil prices, geopolitical tensions, and tightening global liquidity, which are weighing on broader risk appetite and putting pressure on risk assets like Bitcoin [Yahoo Finance Oil].",
+            "Uncertainties": "The exact trajectory of geopolitical tensions, oil price volatility, and the severity of tightening global liquidity remain unconfirmed.",
+            "Macro_Context": "Macroeconomic conditions are characterized by fluctuating energy and oil costs, geopolitical tensions, and tightening global liquidity that influence cross-asset risk sentiment.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
+            "XAU_Impact": "Bullish",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Past_Price_Action_Cause": "XAU/USD dipped to a low near 3994.930 before staging a robust recovery toward 4029.785 and 4035.225, aligning with safe-haven inflows driven by geopolitical tensions and oil-related risk-off pressures.",
-            "Orderflow_Price_Target": "4045.000"
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "XAU/USD consolidated near the 4000-4015 region during early Asian and European trading before experiencing a steady upward push toward 4029.785, aligning with easing oil prices and safe-haven demand amid broader risk-off pressures in risk assets.",
+            "Orderflow_Price_Target": "4065.00"
         }
     },
     {
@@ -304,6 +379,40 @@
             "Probability_Percent": 65,
             "Past_Price_Action_Cause": "XAU/USD consolidated near the 3995-4005 region during early European trading before rallying past 4029 as ongoing geopolitical risks and elevated energy prices drove safe-haven inflows.",
             "Orderflow_Price_Target": "4045.000"
+        }
+    },
+    {
+        "main_date": "2026-10-27 12:39",
+        "_timestamp": 1793108280.0,
+        "articles": [
+            {
+                "title": "Microsoft Corp.’s (MSFT) AI Strategy Gains Revenue Momentum",
+                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-corp-msft-ai-strategy-105819898.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 12:39",
+                "description": "Fred Alger Management, an investment management company, released its “Alger Spectra Fund” third-quarter 2026 investor letter. The letter can be downloaded here. During the third quarter of 2026, U.S. equities delivered modest gains, with the S&amp;P 500 advancing 2%. Despite robust corporate earnings and resilient consumer spending, market breadth remained weak as 60% of S&amp;P […]",
+                "_timestamp": 1793104759.0
+            },
+            {
+                "title": "Pre-Markets Up on Rotation Back into AI",
+                "link": "https://finance.yahoo.com/technology/ai/articles/pre-markets-rotation-back-ai-133800793.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-27 13:38",
+                "description": "Meanwhile, Durable Goods and Case-Shiller home prices came in higher than expected.",
+                "_timestamp": 1793108280.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Fred Alger Management released its Q3 2026 investor letter highlighting Microsoft's AI revenue momentum, while broader equity pre-markets rose due to a rotation back into AI, despite stronger-than-expected Durable Goods and Case-Shiller home price data [Yahoo Finance Oil].",
+            "Uncertainties": "The sustainability of the equity market rotation into AI and its direct signaling for safe-haven assets remain ambiguous given conflicting strong economic data.",
+            "Macro_Context": "U.S. equities delivered modest gains in Q3 2026, supported by resilient consumer spending and robust corporate earnings, while recent macroeconomic prints for Durable Goods and home prices came in higher than expected.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "XAU/USD consolidated and dipped below 4000 before recovering above 4048, exhibiting minor volatility that weakly correlates with equity market rotations into AI and mixed macroeconomic prints.",
+            "Orderflow_Price_Target": "4027.500"
         }
     },
     {
@@ -443,32 +552,6 @@
         }
     },
     {
-        "main_date": "2026-10-27 12:39",
-        "_timestamp": 1793104759.0,
-        "articles": [
-            {
-                "title": "Microsoft Corp.’s (MSFT) AI Strategy Gains Revenue Momentum",
-                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-corp-msft-ai-strategy-105819898.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-27 12:39",
-                "description": "Fred Alger Management, an investment management company, released its “Alger Spectra Fund” third-quarter 2026 investor letter. The letter can be downloaded here. During the third quarter of 2026, U.S. equities delivered modest gains, with the S&amp;P 500 advancing 2%. Despite robust corporate earnings and resilient consumer spending, market breadth remained weak as 60% of S&amp;P […]",
-                "_timestamp": 1793104759.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Fred Alger Management released its Q3 2026 Alger Spectra Fund investor letter, highlighting that Microsoft Corp.'s (MSFT) AI strategy is gaining revenue momentum amid a modest 2% gain for the S&P 500 and weak market breadth [Yahoo Finance Oil].",
-            "Uncertainties": "The provided news focuses on broader equity performance and tech sector revenue momentum rather than direct drivers for precious metals, leaving specific macroeconomic triggers for gold unconfirmed.",
-            "Macro_Context": "U.S. equities delivered modest gains with resilient consumer spending and robust corporate earnings, though market breadth remained weak as a significant portion of the S&P 500 lagged.",
-            "Impact_Timing": "Past",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "N/A",
-            "Orderflow_Price_Target": "4045.000"
-        }
-    },
-    {
         "main_date": "2026-10-27 12:04",
         "_timestamp": 1793102640.0,
         "articles": [
@@ -517,48 +600,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "N/A",
-            "Orderflow_Price_Target": "4045.000"
-        }
-    },
-    {
-        "main_date": "2026-10-27 11:00",
-        "_timestamp": 1793098830.0,
-        "articles": [
-            {
-                "title": "Oil choppy as Houthi attacks offset push to ease Mideast conflict",
-                "link": "https://www.investing.com/news/commodities-news/oil-extends-losses-as-iran-mediation-efforts-ease-escalation-fears-4973997",
-                "source": "Investing.com",
-                "date": "2026-10-27 11:00",
-                "description": "",
-                "_timestamp": 1793098830.0
-            },
-            {
-                "title": "Oil rises as hopes for diplomacy offset impact of renewed Houthi attacks",
-                "link": "https://www.investing.com/news/commodities-news/oil-eases-on-middle-east-diplomacy-hopes-saudi-attacks-keep-supply-worries-alive-4974185",
-                "source": "Investing.com",
-                "date": "2026-10-27 10:43",
-                "description": "",
-                "_timestamp": 1793097817.0
-            },
-            {
-                "title": "OPEC+ oil producers set to keep output targets steady at Sunday meeting, sources say",
-                "link": "https://www.investing.com/news/commodities-news/opec-oil-producers-set-to-keep-output-targets-steady-at-sunday-meeting-sources-say-4974571",
-                "source": "Investing.com",
-                "date": "2026-10-27 09:30",
-                "description": "",
-                "_timestamp": 1793093421.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Oil prices remain choppy and sensitive as renewed Houthi attacks offset diplomatic efforts to ease Middle East conflicts [Investing.com]. Simultaneously, sources indicate that OPEC+ oil producers are set to maintain their output targets steady at their upcoming Sunday meeting [Investing.com]. These geopolitical and supply factors impact broader commodity trends and inflation expectations.",
-            "Uncertainties": "The exact duration and escalation level of the Houthi attacks remain unpredictable, and the final official outcome of the upcoming OPEC+ ministerial meeting could deviate from current source leaks.",
-            "Macro_Context": "Ongoing geopolitical tensions in the Middle East combined with steady OPEC+ production policies create persistent supply-side risks for energy markets, influencing global inflation hedging and safe-haven flows into gold.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Gold prices initially experienced mild downward pressure towards the 3994 level during early European hours before recovering sharply above 4029 as safe-haven demand reacted to Middle Eastern geopolitical risks.",
             "Orderflow_Price_Target": "4045.000"
         }
     },

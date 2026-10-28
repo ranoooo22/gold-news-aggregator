@@ -253,7 +253,7 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
     for attempt in range(1, max_retries + 1):
         try:
             response = client.models.generate_content(
-                model='gemini-2.5-flash',
+                model='gemini-3.5-flash-lite',
                 contents=prompt
             )
             raw_text = response.text.strip()

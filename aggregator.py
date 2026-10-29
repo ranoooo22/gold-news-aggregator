@@ -82,39 +82,73 @@ def fetch_new_articles(existing_urls):
             
     return articles
 
-def fetch_oanda_orderbook():
+def get_clustered_orderbook(bin_size=5.0, range_pct=0.03):
+    """
+    Hilfsfunktion: Gruppiert benachbarte Orderbuch-Level (Buckets) in $5-Zonen 
+    zusammen und addiert die Volumen-Prozentsätze.
+    """
     if not OANDA_API_KEY:
-        return "Keine OANDA API-Daten verfügbar (Key fehlt)."
+        return None, [], "Keine OANDA API-Daten verfügbar (Key fehlt)."
+        
     url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
-    headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
+    headers = {
+        "Authorization": f"Bearer {OANDA_API_KEY}",
+        "Accept-Datetime-Format": "UNIX"
+    }
     
     try:
         response = requests.get(url, headers=headers, timeout=10)
-        if response.status_code == 200:
-            data = response.json()
-            orderbook = data.get("orderBook", {})
-            current_price = float(orderbook.get("price", "0"))
+        if response.status_code != 200:
+            return None, [], f"API Fehler: {response.status_code} - {response.text}"
             
-            buckets = orderbook.get("buckets", [])
-            valid_buckets = []
-            
-            for b in buckets:
-                try:
-                    p = float(b.get("price", 0))
-                    if current_price > 0 and abs(p - current_price) / current_price <= 0.03:
-                        valid_buckets.append(b)
-                except ValueError:
-                    continue
+        data = response.json()
+        orderbook = data.get("orderBook", {})
+        current_price = float(orderbook.get("price", "0"))
+        buckets = orderbook.get("buckets", [])
+        
+        clusters = {}
+        for b in buckets:
+            try:
+                p = float(b.get("price", 0))
+                # Nur Level innerhalb des Radius (z.B. 3% vom Spot)
+                if current_price > 0 and abs(p - current_price) / current_price <= range_pct:
+                    long_vol = float(b.get("longCountPercent", 0))
+                    short_vol = float(b.get("shortCountPercent", 0))
+                    total_vol = long_vol + short_vol
                     
-            valid_buckets.sort(key=lambda x: float(x.get("longCountPercent", 0)) + float(x.get("shortCountPercent", 0)), reverse=True)
-            
-            liquidity_info = f"Current XAU/USD Price: {current_price}\nRetail Liquidity Zones (Top 5 Clusters near current price):\n"
-            for b in valid_buckets[:5]:
-                liquidity_info += f"- Price: {b.get('price')} | Buy Orders: {b.get('longCountPercent')}% | Sell Orders: {b.get('shortCountPercent')}%\n"
-            return liquidity_info
-        return f"OANDA API Fehler: {response.status_code}"
+                    # Runden auf die nächste Zone (Binning, hier in 5-Dollar-Schritten)
+                    cluster_price = round(p / bin_size) * bin_size
+                    
+                    if cluster_price not in clusters:
+                        clusters[cluster_price] = {"price": cluster_price, "volume": 0.0, "long": 0.0, "short": 0.0}
+                        
+                    # Volumen-Prozentsätze addieren
+                    clusters[cluster_price]["volume"] += total_vol
+                    clusters[cluster_price]["long"] += long_vol
+                    clusters[cluster_price]["short"] += short_vol
+            except ValueError:
+                continue
+                
+        # In Liste umwandeln und nach dem akkumulierten Gesamtvolumen absteigend sortieren
+        sorted_clusters = list(clusters.values())
+        sorted_clusters.sort(key=lambda x: x["volume"], reverse=True)
+        
+        # Gebe Spotpreis, die Top 5 aggregierten Zonen und None (als Error) zurück
+        return current_price, sorted_clusters[:5], None
+        
     except Exception as e:
-        return f"OANDA Verbindungsfehler: {e}"
+        return None, [], f"Verbindungsfehler: {e}"
+
+def fetch_oanda_orderbook():
+    current_price, top_clusters, error = get_clustered_orderbook(bin_size=5.0, range_pct=0.03)
+    if error:
+        return error
+        
+    # Die aggregierten Zonen für den Gemini-Prompt aufbereiten
+    liquidity_info = f"Current XAU/USD Price: {current_price}\nRetail Liquidity Zones (Top 5 Clusters near current price):\n"
+    for c in top_clusters:
+        liquidity_info += f"- Price Zone: ~{c['price']} | Total Vol: {c['volume']:.2f}% | Buy Orders: {c['long']:.2f}% | Sell Orders: {c['short']:.2f}%\n"
+    return liquidity_info
 
 def fetch_oanda_price_history():
     if not OANDA_API_KEY:
@@ -143,7 +177,6 @@ def update_market_data():
     
     market_data = {"candles": [], "orderbook": []}
     
-    # UNIX-Format direkt von OANDA anfordern (verhindert Datums-Parsing-Fehler)
     headers = {
         "Authorization": f"Bearer {OANDA_API_KEY}",
         "Accept-Datetime-Format": "UNIX"
@@ -154,7 +187,6 @@ def update_market_data():
         res_c = requests.get(url_candles, headers=headers, timeout=10)
         if res_c.status_code == 200:
             for c in res_c.json().get("candles", []):
-                # Auch die laufende Kerze (complete=False) einbeziehen, damit der Live-Kurs sich bewegt!
                 market_data["candles"].append({
                     "time": int(float(c["time"])),
                     "open": float(c["mid"]["o"]),
@@ -168,38 +200,21 @@ def update_market_data():
     except Exception as e:
         print(f"Fehler beim Laden der H4-Kerzen: {e}")
 
+    # Die neuen aggregierten Zonen für den Chart (Frontend) bereitstellen
     try:
-        url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
-        res_ob = requests.get(url_ob, headers=headers, timeout=10)
-        if res_ob.status_code == 200:
-            orderbook = res_ob.json().get("orderBook", {})
-            current_price = float(orderbook.get("price", "0"))
-            buckets = orderbook.get("buckets", [])
-            valid_buckets = []
-            
-            for b in buckets:
-                try:
-                    p = float(b.get("price", 0))
-                    if current_price > 0 and abs(p - current_price) / current_price <= 0.03:
-                        valid_buckets.append(b)
-                except ValueError:
-                    continue
-            
-            valid_buckets.sort(key=lambda x: float(x.get("longCountPercent", 0)) + float(x.get("shortCountPercent", 0)), reverse=True)
-            
-            for b in valid_buckets[:5]:
+        current_price, top_clusters, error = get_clustered_orderbook(bin_size=5.0, range_pct=0.03)
+        if not error:
+            for c in top_clusters:
                 market_data["orderbook"].append({
-                    "price": float(b.get("price")),
-                    "volume": float(b.get("longCountPercent", 0)) + float(b.get("shortCountPercent", 0))
+                    "price": float(c["price"]),
+                    "volume": float(c["volume"])
                 })
-            print(f"Erfolgreich {len(market_data['orderbook'])} Orderbuch-Cluster geladen.")
+            print(f"Erfolgreich {len(market_data['orderbook'])} aggregierte Orderbuch-Zonen geladen.")
         else:
-            print(f"OANDA Orderbuch API Fehler: {res_ob.status_code} - {res_ob.text}")
+            print(f"Fehler beim Orderbuch-Laden: {error}")
     except Exception as e:
-        print(f"Fehler beim Laden der Orderbuch-Level: {e}")
+        print(f"Fehler bei der Orderbuch-Aggregation: {e}")
 
-    # Sicherheits-Check: Falls Kerzen fehlschlagen, alte Kerzen aus bestehender Datei retten, 
-    # aber deutlich im Log warnen!
     if not market_data["candles"] and os.path.exists("market_data.json"):
         print("WARNUNG: Keine neuen Kerzen erhalten! Behalte bisherige Kerzen bei.")
         try:

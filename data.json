@@ -1,33 +1,7 @@
 [
     {
-        "main_date": "2026-10-30 17:22",
-        "_timestamp": 1793380949.0,
-        "articles": [
-            {
-                "title": "Exchange-Traded Funds Lower as US Equities Decline After Midday Friday",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-lower-us-172229310.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 17:22",
-                "description": "Broad Market Indicators Broad-market exchange-traded funds IWM and IVV fell. Actively traded I",
-                "_timestamp": 1793380949.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "US equities declined after midday on Friday, leading to broader market exchange-traded funds such as IWM and IVV falling [Yahoo Finance Oil].",
-            "Uncertainties": "The specific catalysts driving the broad US equity sell-off remain unspecified in the brief report.",
-            "Macro_Context": "Broader risk-off sentiment in US equities as broader market indices and ETFs retreat on Friday afternoon.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "XAU/USD experienced a sharp downward correction over the last 24 hours from near 4022 down to 3890.88, which may attract safe-haven buying following broader equity market declines.",
-            "Orderflow_Price_Target": "3950.00"
-        }
-    },
-    {
         "main_date": "2026-10-28 20:32",
-        "_timestamp": 1793380620.0,
+        "_timestamp": 1793381112.0,
         "articles": [
             {
                 "title": "Gold ETF vs. physical gold: Which investment is better for you?",
@@ -180,19 +154,79 @@
                 "date": "2026-10-30 15:57",
                 "description": "Precious metals were on the decline despite an uptick in market volatility.",
                 "_timestamp": 1793375835.0
+            },
+            {
+                "title": "Goldman Sachs Revises China Jewelry Stocks Amid Gold Price Retreat",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-revises-china-jewelry-172512898.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 17:25",
+                "description": "Investing.com -- Goldman Sachs has updated its outlook on China jewelry stocks following gold's decline from its January peak of $5,595 per ounce to current levels around $4,041 per ounce. The investment bank warns of mounting earnings downside risk for companies in the sector across fiscal years 2027 and potentially 2028 if spot prices remain at current levels.",
+                "_timestamp": 1793381112.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Gold prices declined significantly, dropping below the $4,000 threshold to approximately $3,890.88, driven by stronger US inflation figures, expectations of further interest rate increases by the Federal Reserve, and rising energy prices amid Middle East tensions [Yahoo Finance Gold].",
-            "Uncertainties": "The exact timing and scale of potential future Federal Reserve rate hikes remain unconfirmed, alongside the actual trajectory of geopolitical conflicts in the Middle East and upcoming US midterm election results [Yahoo Finance Gold].",
-            "Macro_Context": "Persistent inflation concerns and elevated energy prices are forcing the Federal Reserve to maintain or consider tightening monetary policy, which weighs heavily on non-yielding precious metals while strengthening rate expectations [Yahoo Finance Gold].",
+            "Facts": "Gold prices fell sharply, dropping below the key psychological level of $4,000 to approximately $3,883.40. The decline was driven by stronger U.S. inflation figures, concerns over potential additional monetary tightening and interest rate increases by the Federal Reserve, and mounting geopolitical tensions in the Middle East [Yahoo Finance Gold].",
+            "Uncertainties": "It remains unclear whether the Federal Reserve will definitively raise interest rates further before the end of the year, how severe the escalating Middle East conflict and upcoming U.S. midterm elections will become, and if gold will recapture its traditional safe-haven appeal.",
+            "Macro_Context": "Persistent inflation concerns, expectations of continued or further monetary tightening by the Federal Reserve, elevated energy prices driven by geopolitical tensions in the Middle East, and broader market shifts influencing commodities and the U.S. dollar.",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
+            "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 75,
-            "Past_Price_Action_Cause": "The 24h price action shows a continuous, steep decline from above $4,010 down toward the $3,890 level, directly aligning with news reports of gold falling below $4,000 due to mounting inflation and rate hike concerns [Yahoo Finance Gold].",
+            "Probability_Percent": 68,
+            "Past_Price_Action_Cause": "The 24h price action shows a continuous, steep downward trend from above $4,000 down to current levels near $3,883.40, directly aligning with reports of heavy selling pressure triggered by sticky U.S. inflation, hawkish Fed rate expectations, and a breakdown of safe-haven flows.",
             "Orderflow_Price_Target": "3850.00"
+        }
+    },
+    {
+        "main_date": "2026-10-30 17:22",
+        "_timestamp": 1793380949.0,
+        "articles": [
+            {
+                "title": "Exchange-Traded Funds Lower as US Equities Decline After Midday Friday",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-lower-us-172229310.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 17:22",
+                "description": "Broad Market Indicators Broad-market exchange-traded funds IWM and IVV fell. Actively traded I",
+                "_timestamp": 1793380949.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "US equities declined after midday on Friday, leading to broader market exchange-traded funds such as IWM and IVV falling [Yahoo Finance Oil].",
+            "Uncertainties": "The specific catalysts driving the broad US equity sell-off remain unspecified in the brief report.",
+            "Macro_Context": "Broader risk-off sentiment in US equities as broader market indices and ETFs retreat on Friday afternoon.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "XAU/USD experienced a sharp downward correction over the last 24 hours from near 4022 down to 3890.88, which may attract safe-haven buying following broader equity market declines.",
+            "Orderflow_Price_Target": "3950.00"
+        }
+    },
+    {
+        "main_date": "2026-10-30 17:16",
+        "_timestamp": 1793380583.0,
+        "articles": [
+            {
+                "title": "Serbia’s NIS oil company gets US sanctions waiver until Dec. 11 - Local TV",
+                "link": "https://www.investing.com/news/commodities-news/serbias-nis-oil-company-gets-us-sanctions-waiver-until-dec-11--local-tv-93CH-4988442",
+                "source": "Investing.com",
+                "date": "2026-10-30 17:16",
+                "description": "",
+                "_timestamp": 1793380583.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Serbia's NIS oil company has been granted a US sanctions waiver until December 11, according to local TV reports [Investing.com]. This temporary relief alleviates immediate supply disruption concerns in the regional energy market, reducing geopolitical risk premiums tied to European energy bottlenecks.",
+            "Uncertainties": "It remains unclear whether the waiver will be extended past December 11, and the broader secondary impacts on regional refining margins and supply chain stability are not fully quantified.",
+            "Macro_Context": "Energy sanctions and geopolitical waivers directly influence inflationary expectations and currency safe-haven flows. Easing energy restrictions can suppress immediate commodity-driven inflation fears, which typically weighs on precious metals.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold experienced a sharp downward correction over the past 24 hours, dropping from above 4020 down to the 3883 area. This aggressive sell-off is primarily driven by broader macro positioning and profit-taking rather than this specific localized NIS waiver news.",
+            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -227,6 +261,112 @@
             "Probability_Percent": 65,
             "Past_Price_Action_Cause": "The 24h price action shows a steep sell-off from above 4020 down to the 3890 region, directly aligning with the reported 3% drop and GLD hitting 52-week lows due to heavy long liquidation.",
             "Orderflow_Price_Target": "3950.00"
+        }
+    },
+    {
+        "main_date": "2026-10-29 07:11",
+        "_timestamp": 1793379060.0,
+        "articles": [
+            {
+                "title": "Crude Oil WTI flags in bull pattern near $101.50: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/crude-oil-wti-consolidates-below-10350-resistance-live-levels-93CH-4971501",
+                "source": "Investing.com",
+                "date": "2026-10-29 07:11",
+                "description": "",
+                "_timestamp": 1793257912.0
+            },
+            {
+                "title": "Brent Oil consolidates between SMA(20) and 109 support: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/brent-oil-tests-cloud-support-after-parabolic-top-live-levels-93CH-4971503",
+                "source": "Investing.com",
+                "date": "2026-10-29 07:11",
+                "description": "",
+                "_timestamp": 1793257908.0
+            },
+            {
+                "title": "London Gas Oil tests 200 SMA/38.2% Fib confluence: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/london-gas-oil-consolidates-in-triangle-at-key-support-live-levels-93CH-4971507",
+                "source": "Investing.com",
+                "date": "2026-10-29 07:11",
+                "description": "",
+                "_timestamp": 1793257908.0
+            },
+            {
+                "title": "Gold bear flag 80% complete near $4100 resistance: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/gold-breaks-below-4000-in-descending-channel-live-levels-93CH-4971505",
+                "source": "Investing.com",
+                "date": "2026-10-29 07:11",
+                "description": "",
+                "_timestamp": 1793257905.0
+            },
+            {
+                "title": "BC-Crude Oil Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-140018609.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 14:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Thursday, October 29.Light Sweet Crude (NYMX)1,000 bbl.",
+                "_timestamp": 1793282418.0
+            },
+            {
+                "title": "BC-OILS",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-oils-190019762.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 19:00",
+                "description": "NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Thursday:Open High Low Settle Chg.'s open int 1,898,788 down 1,905  HEATING OIL  42,000 gal, cents per gal  Nov 26 477.",
+                "_timestamp": 1793300419.0
+            },
+            {
+                "title": "Bloomberg Commodity Index 2027 Target Weights Announced",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bloomberg-commodity-index-2027-target-210000920.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 21:00",
+                "description": "Bloomberg announced the 2027 target weights and composition for the Bloomberg Commodity Index (\"BCOM\"). Launched in 1998, with historical information dating back to 1960, BCOM is a widely tracked benchmark for the commodities market. As of January 2027, BCOM will remain composed of 25 exchange traded contracts on physical commodities. The new target weights will take effect during the January 2027 roll period.",
+                "_timestamp": 1793307600.0
+            },
+            {
+                "title": "Bloomberg Commodity Index 2027 Target Weights Announced",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bloomberg-commodity-index-2027-target-210000920.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 21:00",
+                "description": "Bloomberg announced the 2027 target weights and composition for the Bloomberg Commodity Index (\"BCOM\"). Launched in 1998, with historical information dating back to 1960, BCOM is a widely tracked benchmark for the commodities market. As of January 2027, BCOM will remain composed of 25 exchange traded contracts on physical commodities. The new target weights will take effect during the January 2027 roll period.",
+                "_timestamp": 1793307600.0
+            },
+            {
+                "title": "Natural Gas flags bearish near 38.2% Fib: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/natural-gas-rebounds-from-oversold-into-sma-resistance-live-levels-93CH-4971506",
+                "source": "Investing.com",
+                "date": "2026-10-30 07:10",
+                "description": "",
+                "_timestamp": 1793344246.0
+            },
+            {
+                "title": "BC-Crude Oil Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-140023816.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 14:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Friday, October 30.Light Sweet Crude (NYMX)1,000 bbl.",
+                "_timestamp": 1793368823.0
+            },
+            {
+                "title": "Oil Traders Brace for a Wild Week as Brent Approaches $120",
+                "link": "https://finance.yahoo.com/energy/articles/oil-traders-brace-wild-week-165100085.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 16:51",
+                "description": "Brent crude is trading near $118 per barrel, putting oil prices on track for a 13–14% monthly gain amid escalating Middle East tensions.",
+                "_timestamp": 1793379060.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Gold is showing a technical bear flag pattern near $4100 resistance [Investing.com], while crude oil prices are surging due to escalating Middle East tensions with Brent trading near $118 per barrel [Yahoo Finance Oil]. Bloomberg announced the 2027 target weights and composition for the Bloomberg Commodity Index [Yahoo Finance Gold].",
+            "Uncertainties": "The exact geopolitical outcome in the Middle East and whether the oil price surge will trigger prolonged stagflationary pressures impacting central bank rate decisions.",
+            "Macro_Context": "Crude oil is experiencing strong bullish momentum with monthly gains near 13-14% driven by geopolitical risks, while gold experiences heavy downward pressure, breaking key technical levels despite broader commodity index realignments.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 80,
+            "Past_Price_Action_Cause": "The 24h price action shows a sharp decline in XAU/USD from near 4022 down to 3896 and currently testing 3883, aligning directly with the reported gold bear flag pattern formation and heavy selling pressure near resistance.",
+            "Orderflow_Price_Target": "3850.00"
         }
     },
     {
@@ -1467,104 +1607,6 @@
             "Probability_Percent": 65,
             "Past_Price_Action_Cause": "The strong downward price action over the last 24 hours, dropping from above 4018 down to 3898.325, reflects aggressive selling pressure and heavy sell-side liquidity clusters above the current market price.",
             "Orderflow_Price_Target": "3850.00"
-        }
-    },
-    {
-        "main_date": "2026-10-29 07:11",
-        "_timestamp": 1793368823.0,
-        "articles": [
-            {
-                "title": "Crude Oil WTI flags in bull pattern near $101.50: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/crude-oil-wti-consolidates-below-10350-resistance-live-levels-93CH-4971501",
-                "source": "Investing.com",
-                "date": "2026-10-29 07:11",
-                "description": "",
-                "_timestamp": 1793257912.0
-            },
-            {
-                "title": "Brent Oil consolidates between SMA(20) and 109 support: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/brent-oil-tests-cloud-support-after-parabolic-top-live-levels-93CH-4971503",
-                "source": "Investing.com",
-                "date": "2026-10-29 07:11",
-                "description": "",
-                "_timestamp": 1793257908.0
-            },
-            {
-                "title": "London Gas Oil tests 200 SMA/38.2% Fib confluence: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/london-gas-oil-consolidates-in-triangle-at-key-support-live-levels-93CH-4971507",
-                "source": "Investing.com",
-                "date": "2026-10-29 07:11",
-                "description": "",
-                "_timestamp": 1793257908.0
-            },
-            {
-                "title": "Gold bear flag 80% complete near $4100 resistance: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/gold-breaks-below-4000-in-descending-channel-live-levels-93CH-4971505",
-                "source": "Investing.com",
-                "date": "2026-10-29 07:11",
-                "description": "",
-                "_timestamp": 1793257905.0
-            },
-            {
-                "title": "BC-Crude Oil Futures",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-140018609.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 14:00",
-                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Thursday, October 29.Light Sweet Crude (NYMX)1,000 bbl.",
-                "_timestamp": 1793282418.0
-            },
-            {
-                "title": "BC-OILS",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-oils-190019762.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 19:00",
-                "description": "NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Thursday:Open High Low Settle Chg.'s open int 1,898,788 down 1,905  HEATING OIL  42,000 gal, cents per gal  Nov 26 477.",
-                "_timestamp": 1793300419.0
-            },
-            {
-                "title": "Bloomberg Commodity Index 2027 Target Weights Announced",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bloomberg-commodity-index-2027-target-210000920.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 21:00",
-                "description": "Bloomberg announced the 2027 target weights and composition for the Bloomberg Commodity Index (\"BCOM\"). Launched in 1998, with historical information dating back to 1960, BCOM is a widely tracked benchmark for the commodities market. As of January 2027, BCOM will remain composed of 25 exchange traded contracts on physical commodities. The new target weights will take effect during the January 2027 roll period.",
-                "_timestamp": 1793307600.0
-            },
-            {
-                "title": "Bloomberg Commodity Index 2027 Target Weights Announced",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bloomberg-commodity-index-2027-target-210000920.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 21:00",
-                "description": "Bloomberg announced the 2027 target weights and composition for the Bloomberg Commodity Index (\"BCOM\"). Launched in 1998, with historical information dating back to 1960, BCOM is a widely tracked benchmark for the commodities market. As of January 2027, BCOM will remain composed of 25 exchange traded contracts on physical commodities. The new target weights will take effect during the January 2027 roll period.",
-                "_timestamp": 1793307600.0
-            },
-            {
-                "title": "Natural Gas flags bearish near 38.2% Fib: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/natural-gas-rebounds-from-oversold-into-sma-resistance-live-levels-93CH-4971506",
-                "source": "Investing.com",
-                "date": "2026-10-30 07:10",
-                "description": "",
-                "_timestamp": 1793344246.0
-            },
-            {
-                "title": "BC-Crude Oil Futures",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-140023816.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 14:00",
-                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Friday, October 30.Light Sweet Crude (NYMX)1,000 bbl.",
-                "_timestamp": 1793368823.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Gold technical reports indicate a bear flag pattern 80% complete near $4100 resistance [Investing.com], while crude oil, natural gas, and broader commodity indices (BCOM) have announced target weights and live technical levels [Investing.com, Yahoo Finance]. Gold prices experienced a steady downward trajectory over the past 24 hours, dropping from above 4026 down to the 3920 level.",
-            "Uncertainties": "The exact macro triggers for the aggressive selling pressure in gold during the past 24 hours are not explicitly detailed outside of technical pattern completions.",
-            "Macro_Context": "Broader commodity markets are consolidating with upcoming index adjustments for BCOM 2027 target weights while energy and precious metals test key technical levels.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 75,
-            "Past_Price_Action_Cause": "The continuous downward price action from 4026 to 3920 aligns directly with the technical reports highlighting an active gold bear flag pattern nearing completion near resistance.",
-            "Orderflow_Price_Target": "3900.00"
         }
     },
     {

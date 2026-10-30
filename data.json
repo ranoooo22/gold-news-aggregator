@@ -1,7 +1,57 @@
 [
     {
+        "main_date": "2026-10-29 10:45",
+        "_timestamp": 1793377020.0,
+        "articles": [
+            {
+                "title": "Jim Cramer tells investors to fear losses, not taxes. Here are a few ways to build a portfolio you can trust",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-tells-investors-fear-104500647.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 10:45",
+                "description": "Is he right?",
+                "_timestamp": 1793270700.0
+            },
+            {
+                "title": "Cash, CDs, or ETFs? The New Race for Low-Risk Returns.",
+                "link": "https://www.fool.com/investing/2026/10/29/cash-cds-or-etfs-the-new-race-for-low-risk-returns/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 18:27",
+                "description": "When it comes to protecting your money, your best bet may be one you haven't considered.",
+                "_timestamp": 1793298430.0
+            },
+            {
+                "title": "'Worrisome': Jim Cramer warns chip stocks have gone 'parabolic' — here are the defensive moves he's making now",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/worrisome-jim-cramer-warns-chip-101500680.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 10:15",
+                "description": "Here's why Cramer is getting cautious on chip stocks and what he’s telling tech investors to do.",
+                "_timestamp": 1793355300.0
+            },
+            {
+                "title": "Jim Cramer has a new way of thinking about the biggest tech stocks",
+                "link": "https://www.thestreet.com/investing/stocks/jim-cramer-has-a-new-way-of-thinking-about-the-biggest-tech-stocks?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 16:17",
+                "description": "Jim Cramer has a framework for the biggest names in tech. It changes how you think about owning them.",
+                "_timestamp": 1793377020.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Jim Cramer published commentary advising investors to fear losses over taxes and warning that tech and chip stocks have gone parabolic, pushing investors toward defensive portfolios and low-risk returns such as cash, CDs, or ETFs [Yahoo Finance Gold, Yahoo Finance Oil]. Meanwhile, XAU/USD experienced a sharp sell-off over the past 24 hours, dropping from around 4022 down to 3896.5.",
+            "Uncertainties": "It remains unconfirmed whether institutional rotation out of risk assets is directly fueling safe-haven flows or if broader macro factors and liquidations are driving the current gold sell-off.",
+            "Macro_Context": "Investors are reassessing risk exposure amid warnings of parabolic moves in tech sectors, shifting focus toward capital preservation, low-risk yields, and defensive asset reallocation.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 60,
+            "Past_Price_Action_Cause": "The recent steep price drop in XAU/USD to the 3890 liquidity zone has heavily tested retail buy orders, creating potential conditions for a mean-reversion bounce as buyers step into high-concentration buy clusters near 3890-3885.",
+            "Orderflow_Price_Target": "3950.00"
+        }
+    },
+    {
         "main_date": "2026-10-29 08:02",
-        "_timestamp": 1793376301.0,
+        "_timestamp": 1793376926.0,
         "articles": [
             {
                 "title": "TotalEnergies profit hits record on high oil prices",
@@ -202,19 +252,35 @@
                 "date": "2026-10-30 14:40",
                 "description": "The market knew earnings would be stellar, but the energy major still managed to beat Wall Street’s sky-high targets.",
                 "_timestamp": 1793371200.0
+            },
+            {
+                "title": "3 Energy Stocks Income Investors Are Watching After BP Profit Shock",
+                "link": "https://finance.yahoo.com/energy/articles/3-energy-stocks-income-investors-161526431.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 16:15",
+                "description": "Oil markets just received a jolt of fresh information, with BP reporting a near-quadrupling of profit to an underlying replacement cost profit of $8.5b and refinery margins boosted by Iran war related disruptions to Middle East fuel exports. That kind of earnings shock can quickly reshape where dividend income and balance sheet strength cluster in the energy sector. This article highlights three high-dividend, cash-rich stocks exposed to the same forces as BP and explains how the news...",
+                "_timestamp": 1793376926.0
+            },
+            {
+                "title": "EOG Resources Gears Up to Report Q3 Earnings: What's in the Cards?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/eog-resources-gears-report-q3-151200723.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 15:12",
+                "description": "EOG gears up for Q3 earnings, with higher oil prices, rising production volumes and low-cost operations expected to support strong year-over-year growth.",
+                "_timestamp": 1793373120.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Major energy companies such as TotalEnergies, PetroChina, Shell, Chevron, and ExxonMobil reported record or surging Q3 profits driven by elevated oil and gas prices [Yahoo Finance Oil]. Furthermore, an attack on an oil tanker in the Strait of Hormuz pushed oil prices up by more than 2% amid ongoing Middle East conflict and geopolitical supply risks [Yahoo Finance Oil].",
-            "Uncertainties": "The exact duration of the Strait of Hormuz supply disruptions and whether refining margins and elevated oil prices can remain sustained over the longer term against mounting operational costs.",
-            "Macro_Context": "Ongoing geopolitical tensions and conflicts in the Middle East, specifically around critical energy chokepoints like the Strait of Hormuz, are keeping global hydrocarbon supplies tight, fueling persistent inflationary pressures and driving robust earnings across the energy sector.",
+            "Facts": "Major global energy companies including TotalEnergies, PetroChina, Shell, Chevron, and BP reported record or near-record third-quarter profits driven by elevated oil and gas prices [Yahoo Finance Oil]. These price surges are heavily tied to ongoing geopolitical conflicts in the Middle East, including disruptions stemming from the Iran war and an attack on an oil tanker in the Strait of Hormuz [Yahoo Finance Oil]. Meanwhile, gold and resource stocks faced cost squeezes and mixed earnings pressures [Yahoo Finance Gold], alongside a broader macroeconomic environment featuring persistent inflation and recent Federal Reserve rate hikes [Yahoo Finance Oil].",
+            "Uncertainties": "The exact duration of geopolitical supply risks in the Middle East remains unpredictable, as does the long-term sustainability of peak refining margins and high oil prices amid rising operational costs.",
+            "Macro_Context": "Elevated energy prices driven by Middle Eastern conflicts are sustaining inflationary pressures globally, intersecting with tight monetary policy, high interest rates, and strong corporate earnings in the energy sector.",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bearish",
             "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "XAU/USD experienced a sharp downward trend over the past 24 hours, falling from near 4018 down to 3898, reflecting broad risk sentiment adjustments and capital rotation towards surging energy commodities amidst escalating supply shocks.",
-            "Orderflow_Price_Target": "3890.00"
+            "Past_Price_Action_Cause": "The 24h price action shows a significant and sharp decline in XAU/USD from near 4022 down to 3896.50. This aligns with persistent inflation expectations driven by high energy costs, higher interest rate/Fed trajectory concerns, and risk-off liquidations impacting precious metals while energy assets outperform.",
+            "Orderflow_Price_Target": "3885.00"
         }
     },
     {
@@ -614,6 +680,224 @@
         }
     },
     {
+        "main_date": "2026-10-28 22:30",
+        "_timestamp": 1793374260.0,
+        "articles": [
+            {
+                "title": "Kinross Gold (KGC) Beats Q3 Earnings Estimates",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/kinross-gold-kgc-beats-q3-223008585.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-28 22:30",
+                "description": "Kinross Gold (KGC) delivered earnings and revenue surprises of +8.70% and -14.71%, respectively, for the quarter ended September 2026. Do the numbers hold clues to what lies ahead for the stock?",
+                "_timestamp": 1793226608.0
+            },
+            {
+                "title": "Agnico Eagle Mines (AEM) Q3 Earnings and Revenues Beat Estimates",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/agnico-eagle-mines-aem-q3-223003714.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-28 22:30",
+                "description": "Agnico (AEM) delivered earnings and revenue surprises of +5.67% and +0.89%, respectively, for the quarter ended September 2026. Do the numbers hold clues to what lies ahead for the stock?",
+                "_timestamp": 1793226603.0
+            },
+            {
+                "title": "Alamos Gold: Q3 Earnings Snapshot",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/alamos-gold-q3-earnings-snapshot-211717225.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-28 21:17",
+                "description": "TORONTO (AP) — TORONTO (AP) — Alamos Gold Inc. (AGI) on Wednesday reported third-quarter earnings of $165.",
+                "_timestamp": 1793222237.0
+            },
+            {
+                "title": "Kinross Gold: Q3 Earnings Snapshot",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/kinross-gold-q3-earnings-snapshot-211457940.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-28 21:14",
+                "description": "TORONTO (AP) — TORONTO (AP) — Kinross Gold Corp. (KGC) on Wednesday reported third-quarter earnings of $583.",
+                "_timestamp": 1793222097.0
+            },
+            {
+                "title": "Agnico: Q3 Earnings Snapshot",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/agnico-q3-earnings-snapshot-210843630.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-28 21:08",
+                "description": "TORONTO (AP) — TORONTO (AP) — Agnico Eagle Mines Ltd. (AEM) on Wednesday reported third-quarter profit of $1.",
+                "_timestamp": 1793221723.0
+            },
+            {
+                "title": "Kinross declares quarterly dividend",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/kinross-declares-quarterly-dividend-210000219.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-28 21:00",
+                "description": "TORONTO, Oct. 28, 2026 (GLOBE NEWSWIRE) -- Kinross Gold Corporation (TSX: K; NYSE: KGC) (the “Company”) today announced that the Company’s Board of Directors has declared a dividend of US$0.04 per common share for the third quarter of 2026. The dividend is payable on December 3, 2026, to shareholders of record as of the close of business on November 19, 2026. This dividend qualifies as an “eligible dividend” for Canadian income tax purposes while dividends paid to shareholders outside Canada (no",
+                "_timestamp": 1793221200.0
+            },
+            {
+                "title": "Eldorado Gold Reports Q3 2026 Financial and Operational Results and Updates 2026 Guidance; Skouries and McIlvenna Bay Advancing Toward Commercial Production",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/eldorado-gold-reports-q3-2026-210100019.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-28 21:01",
+                "description": "(All amounts expressed in U.S. dollars unless otherwise noted) VANCOUVER, British Columbia, Oct. 28, 2026 (GLOBE NEWSWIRE) -- Eldorado Gold Corporation (“Eldorado”, \"Eldorado Gold\" or “the Company”) today reports the Company’s financial and operational results for the third quarter of 2026. For further information, please see the Company’s Consolidated Financial Statements and Management’s Discussion and Analysis (\"MD&amp;A\") filed on SEDAR+ at www.sedarplus.com under the Company’s profile. Third Qu",
+                "_timestamp": 1793221260.0
+            },
+            {
+                "title": "What Clean Harbors (CLH) Said on Its Q3 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-clean-harbors-clh-said-on-its-q3-earnings-call-2026-10-29/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 07:04",
+                "description": "Clean Harbors (NYSE:CLH) reported record third-quarter revenue and adjusted EBITDA, raising its full-year outlook as strong emergency-response activity, continued demand for environmental services and favorable base-oil market conditions lifted both operating segments. The company also announced a",
+                "_timestamp": 1793257463.0
+            },
+            {
+                "title": "Chevron (CVX) to report earnings tomorrow: here is what to expect",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/chevron-cvx-report-earnings-tomorrow-044634946.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 04:46",
+                "description": "Integrated energy company Chevron (NYSE:CVX) will be reporting earnings this Friday before the bell. Here’s what to expect.",
+                "_timestamp": 1793249194.0
+            },
+            {
+                "title": "Hycroft Mining Holding (HYMC) Looks Pricey Following Wider Losses And Leadership Changes",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/hycroft-mining-holding-hymc-looks-091643887.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 09:16",
+                "description": "Hycroft Mining Holding (HYMC) just paired a wider quarterly loss with a reshuffle in senior leadership, a combination that puts both its recent financial performance and longer term execution plans under closer investor scrutiny. At a share price of $17.44, Hycroft Mining Holding has shrugged off the recent 11% one month and 13.1% three month share price declines, posting a 3.2% one day gain and 1.81% seven day share price return. The 1 year total shareholder return of 123.02% and very large...",
+                "_timestamp": 1793265403.0
+            },
+            {
+                "title": "Repsol beats estimates as buyback and dividend boost lifts shares",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/repsol-beats-estimates-buyback-dividend-110013747.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 11:00",
+                "description": "Investing.com -- Repsol SA (OTC:REPYY) reported third-quarter adjusted net income that exceeded analyst expectations and announced increased shareholder returns, sending shares up 2.9% as the Spanish energy company delivered on multiple fronts.",
+                "_timestamp": 1793271613.0
+            },
+            {
+                "title": "Equinox Gold Stock Looks Like a Diamond in the Rough",
+                "link": "https://finance.yahoo.com/m/cd06aab0-760d-39ab-921d-5a56674dc2c8/equinox-gold-stock-looks-like.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 12:01",
+                "description": "The company has quietly transformed its operations. The stock is a buy.",
+                "_timestamp": 1793275260.0
+            },
+            {
+                "title": "SPX Technologies (SPXC): Core HVAC and Detection Strengths Outshine AI Sentiment Volatility",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/spx-technologies-spxc-core-hvac-134539825.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 13:45",
+                "description": "Conestoga Capital Advisors, an asset management company, released its third-quarter 2026 investor letter. The letter can be downloaded here. In 2026, Small Caps initially outperformed but faced challenges in the third quarter, marked by the Russell 2000 Growth Index’s -9.4% decline versus the S&amp;P 500’s +2.3% rise. Factors such as rising Treasury yields and higher oil […]",
+                "_timestamp": 1793281539.0
+            },
+            {
+                "title": "Rising Backlogs and Scale Support Cavco Industries’ (CVCO) Long-Term Growth Thesis",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/rising-backlogs-scale-support-cavco-133728601.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 13:37",
+                "description": "Conestoga Capital Advisors, an asset management company, released its third-quarter 2026 investor letter. The letter can be downloaded here. In 2026, Small Caps initially outperformed but faced challenges in the third quarter, marked by the Russell 2000 Growth Index’s -9.4% decline versus the S&amp;P 500’s +2.3% rise. Factors such as rising Treasury yields and higher oil […]",
+                "_timestamp": 1793281048.0
+            },
+            {
+                "title": "TSX slips as gold miners tumble on earnings, US inflation data",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-slips-gold-miners-tumble-160010055.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 16:00",
+                "description": "Investing.com -- Canada’s main stock index edged lower on Thursday as falling gold prices and disappointing mining earnings weighed on materials shares, while investors assessed U.S. inflation data and stronger-than-expected economic growth.",
+                "_timestamp": 1793289610.0
+            },
+            {
+                "title": "Lockheed Martin (LMT): Selling After Strong Performance and a Favorable Gain",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/lockheed-martin-lmt-selling-strong-140234641.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 14:02",
+                "description": "Matrix Asset Advisors, an asset management company, released its Q3 2026 investor letter. The letter can be downloaded here. U.S. equities increased by 2.30% in Q3 and 12.75% year-to-date through September 30, despite challenges including volatility, high oil prices, inflation, and elevated interest rates. The Federal Reserve’s short-term rates rose to 3.75%–4.00%, with the 10-year […]",
+                "_timestamp": 1793282554.0
+            },
+            {
+                "title": "Nike (NKE): Prolonged Turnaround Timelines Prompt Portfolio Realignment",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nike-nke-prolonged-turnaround-timelines-135928168.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 13:59",
+                "description": "Matrix Asset Advisors, an asset management company, released its Q3 2026 investor letter. The letter can be downloaded here. U.S. equities increased by 2.30% in Q3 and 12.75% year-to-date through September 30, despite challenges including volatility, high oil prices, inflation, and elevated interest rates. The Federal Reserve’s short-term rates rose to 3.75%–4.00%, with the 10-year […]",
+                "_timestamp": 1793282368.0
+            },
+            {
+                "title": "Xerox Holdings Corporation Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-xerox-holdings-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 16:58",
+                "description": "Moby summary of Xerox Holdings Corporation's Q3 2026 earnings call",
+                "_timestamp": 1793293106.0
+            },
+            {
+                "title": "Buenaventura Announces Third Quarter and Nine-Month 2026 Results",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/buenaventura-announces-third-quarter-nine-004500394.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 00:45",
+                "description": "LIMA, Peru, October 30, 2026--Compañía de Minas Buenaventura S.A.A. (\"Buenaventura\" or \"the Company\") (NYSE: BVN; Lima Stock Exchange: BUE.LM), Peru’s largest publicly-traded precious metals mining company, today announced results for the third quarter (3Q26) and nine months ended September 30, 2026 (9M26). Financial results are prepared in accordance with International Financial Reporting Standards (IFRS), except for certain non-IFRS financial measures identified herein. All amounts are stated",
+                "_timestamp": 1793321100.0
+            },
+            {
+                "title": "Capstone Copper Q3 adjusted profit rises on metal prices; output slumps",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/capstone-copper-q3-adjusted-profit-221609306.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 22:16",
+                "description": "Investing.com -- Capstone Copper reported higher third-quarter adjusted profit on Thursday as copper, gold and silver prices climbed, but said operational setbacks, particularly at its Pinto Valley mine in Arizona, would push full-year copper output to the bottom of its forecast range.",
+                "_timestamp": 1793312169.0
+            },
+            {
+                "title": "Kinross Gold (TSX:K) Stock Q3 Results Highlight Cash Flow And Project Risk",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/kinross-gold-tsx-k-stock-221300017.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 22:13",
+                "description": "Kinross Gold shareholders came into this earnings print on the back foot, with the stock down about 12% over the past month and 5% over the past week, closing today at CA$30.16. Q3 2026 results landed with a clear headline. The miner generated about US$1.8b in revenue over the last three quarters and converted a large share of that into profit, leaving its trailing net margin near 38%. The market has treated Kinross Gold like a short term story. The numbers just released, along with the multi...",
+                "_timestamp": 1793311980.0
+            },
+            {
+                "title": "FTAI Aviation Ltd. Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ftai-aviation-ltd-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 22:28",
+                "description": "Moby summary of FTAI Aviation Ltd.'s Q3 2026 earnings call",
+                "_timestamp": 1793312896.0
+            },
+            {
+                "title": "TotalEnergies SE Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-totalenergies-se-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 21:12",
+                "description": "Moby summary of TotalEnergies SE's Q3 2026 earnings call",
+                "_timestamp": 1793308346.0
+            },
+            {
+                "title": "Colgate-Palmolive Lifts Full-Year Earnings Growth Outlook Following Third-Quarter Beat",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/colgate-palmolive-lifts-full-earnings-143355575.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 14:33",
+                "description": "Colgate-Palmolive (CL) raised its full-year earnings growth outlook on Friday as the consumer produc",
+                "_timestamp": 1793370835.0
+            },
+            {
+                "title": "5 Non-Ferrous Metal Mining Stocks to Watch in a Challenging Industry",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/5-non-ferrous-metal-mining-153100018.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 15:31",
+                "description": "Despite the Zacks Mining - Non Ferrous industry's weak near-term outlook, stocks like SCCO, FCX, FQVLF, LUNMF and LEU are worth keeping an eye on given their growth potential.",
+                "_timestamp": 1793374260.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Canada's main stock index edged lower as falling gold prices and disappointing mining earnings weighed on materials shares, while investors assessed U.S. inflation data and stronger-than-expected economic growth [Yahoo Finance Gold]. Major gold miners like Kinross Gold, Agnico Eagle, and Alamos Gold reported Q3 earnings and production results, while broader macroeconomic pressure including stronger-than-expected economic growth and US inflation data drove a sharp sell-off in gold prices.",
+            "Uncertainties": "The exact extent to which the recent liquidation in gold is driven by profit-taking versus systematic institutional repositioning following U.S. inflation and growth data.",
+            "Macro_Context": "Stronger-than-expected U.S. economic growth and inflation data are fueling rising Treasury yields and shifting market expectations regarding Federal Reserve interest rates, placing downward pressure on non-yielding assets like gold.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 68,
+            "Past_Price_Action_Cause": "The 24h price action shows a persistent downward trend from above 4020 down to the 3896.50 level, directly aligning with the reported drop in gold prices, falling mining shares, and strong macroeconomic data releases weighing on bullion.",
+            "Orderflow_Price_Target": "3885.00"
+        }
+    },
+    {
         "main_date": "2026-10-28 19:32",
         "_timestamp": 1793372418.0,
         "articles": [
@@ -847,216 +1131,6 @@
             "Probability_Percent": 65,
             "Past_Price_Action_Cause": "The strong downward price action in XAU/USD over the last 24 hours—dropping from around 4018 to 3898—aligns with broader macroeconomic pressures including persistent inflation concerns and hawkish rate environment headwinds highlighted in recent market commentary.",
             "Orderflow_Price_Target": "3890.00"
-        }
-    },
-    {
-        "main_date": "2026-10-28 22:30",
-        "_timestamp": 1793370835.0,
-        "articles": [
-            {
-                "title": "Kinross Gold (KGC) Beats Q3 Earnings Estimates",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/kinross-gold-kgc-beats-q3-223008585.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-28 22:30",
-                "description": "Kinross Gold (KGC) delivered earnings and revenue surprises of +8.70% and -14.71%, respectively, for the quarter ended September 2026. Do the numbers hold clues to what lies ahead for the stock?",
-                "_timestamp": 1793226608.0
-            },
-            {
-                "title": "Agnico Eagle Mines (AEM) Q3 Earnings and Revenues Beat Estimates",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/agnico-eagle-mines-aem-q3-223003714.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-28 22:30",
-                "description": "Agnico (AEM) delivered earnings and revenue surprises of +5.67% and +0.89%, respectively, for the quarter ended September 2026. Do the numbers hold clues to what lies ahead for the stock?",
-                "_timestamp": 1793226603.0
-            },
-            {
-                "title": "Alamos Gold: Q3 Earnings Snapshot",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/alamos-gold-q3-earnings-snapshot-211717225.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-28 21:17",
-                "description": "TORONTO (AP) — TORONTO (AP) — Alamos Gold Inc. (AGI) on Wednesday reported third-quarter earnings of $165.",
-                "_timestamp": 1793222237.0
-            },
-            {
-                "title": "Kinross Gold: Q3 Earnings Snapshot",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/kinross-gold-q3-earnings-snapshot-211457940.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-28 21:14",
-                "description": "TORONTO (AP) — TORONTO (AP) — Kinross Gold Corp. (KGC) on Wednesday reported third-quarter earnings of $583.",
-                "_timestamp": 1793222097.0
-            },
-            {
-                "title": "Agnico: Q3 Earnings Snapshot",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/agnico-q3-earnings-snapshot-210843630.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-28 21:08",
-                "description": "TORONTO (AP) — TORONTO (AP) — Agnico Eagle Mines Ltd. (AEM) on Wednesday reported third-quarter profit of $1.",
-                "_timestamp": 1793221723.0
-            },
-            {
-                "title": "Kinross declares quarterly dividend",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/kinross-declares-quarterly-dividend-210000219.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-28 21:00",
-                "description": "TORONTO, Oct. 28, 2026 (GLOBE NEWSWIRE) -- Kinross Gold Corporation (TSX: K; NYSE: KGC) (the “Company”) today announced that the Company’s Board of Directors has declared a dividend of US$0.04 per common share for the third quarter of 2026. The dividend is payable on December 3, 2026, to shareholders of record as of the close of business on November 19, 2026. This dividend qualifies as an “eligible dividend” for Canadian income tax purposes while dividends paid to shareholders outside Canada (no",
-                "_timestamp": 1793221200.0
-            },
-            {
-                "title": "Eldorado Gold Reports Q3 2026 Financial and Operational Results and Updates 2026 Guidance; Skouries and McIlvenna Bay Advancing Toward Commercial Production",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/eldorado-gold-reports-q3-2026-210100019.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-28 21:01",
-                "description": "(All amounts expressed in U.S. dollars unless otherwise noted) VANCOUVER, British Columbia, Oct. 28, 2026 (GLOBE NEWSWIRE) -- Eldorado Gold Corporation (“Eldorado”, \"Eldorado Gold\" or “the Company”) today reports the Company’s financial and operational results for the third quarter of 2026. For further information, please see the Company’s Consolidated Financial Statements and Management’s Discussion and Analysis (\"MD&amp;A\") filed on SEDAR+ at www.sedarplus.com under the Company’s profile. Third Qu",
-                "_timestamp": 1793221260.0
-            },
-            {
-                "title": "What Clean Harbors (CLH) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-clean-harbors-clh-said-on-its-q3-earnings-call-2026-10-29/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 07:04",
-                "description": "Clean Harbors (NYSE:CLH) reported record third-quarter revenue and adjusted EBITDA, raising its full-year outlook as strong emergency-response activity, continued demand for environmental services and favorable base-oil market conditions lifted both operating segments. The company also announced a",
-                "_timestamp": 1793257463.0
-            },
-            {
-                "title": "Chevron (CVX) to report earnings tomorrow: here is what to expect",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/chevron-cvx-report-earnings-tomorrow-044634946.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 04:46",
-                "description": "Integrated energy company Chevron (NYSE:CVX) will be reporting earnings this Friday before the bell. Here’s what to expect.",
-                "_timestamp": 1793249194.0
-            },
-            {
-                "title": "Hycroft Mining Holding (HYMC) Looks Pricey Following Wider Losses And Leadership Changes",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/hycroft-mining-holding-hymc-looks-091643887.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 09:16",
-                "description": "Hycroft Mining Holding (HYMC) just paired a wider quarterly loss with a reshuffle in senior leadership, a combination that puts both its recent financial performance and longer term execution plans under closer investor scrutiny. At a share price of $17.44, Hycroft Mining Holding has shrugged off the recent 11% one month and 13.1% three month share price declines, posting a 3.2% one day gain and 1.81% seven day share price return. The 1 year total shareholder return of 123.02% and very large...",
-                "_timestamp": 1793265403.0
-            },
-            {
-                "title": "Repsol beats estimates as buyback and dividend boost lifts shares",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/repsol-beats-estimates-buyback-dividend-110013747.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 11:00",
-                "description": "Investing.com -- Repsol SA (OTC:REPYY) reported third-quarter adjusted net income that exceeded analyst expectations and announced increased shareholder returns, sending shares up 2.9% as the Spanish energy company delivered on multiple fronts.",
-                "_timestamp": 1793271613.0
-            },
-            {
-                "title": "Equinox Gold Stock Looks Like a Diamond in the Rough",
-                "link": "https://finance.yahoo.com/m/cd06aab0-760d-39ab-921d-5a56674dc2c8/equinox-gold-stock-looks-like.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 12:01",
-                "description": "The company has quietly transformed its operations. The stock is a buy.",
-                "_timestamp": 1793275260.0
-            },
-            {
-                "title": "SPX Technologies (SPXC): Core HVAC and Detection Strengths Outshine AI Sentiment Volatility",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/spx-technologies-spxc-core-hvac-134539825.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 13:45",
-                "description": "Conestoga Capital Advisors, an asset management company, released its third-quarter 2026 investor letter. The letter can be downloaded here. In 2026, Small Caps initially outperformed but faced challenges in the third quarter, marked by the Russell 2000 Growth Index’s -9.4% decline versus the S&amp;P 500’s +2.3% rise. Factors such as rising Treasury yields and higher oil […]",
-                "_timestamp": 1793281539.0
-            },
-            {
-                "title": "Rising Backlogs and Scale Support Cavco Industries’ (CVCO) Long-Term Growth Thesis",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/rising-backlogs-scale-support-cavco-133728601.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 13:37",
-                "description": "Conestoga Capital Advisors, an asset management company, released its third-quarter 2026 investor letter. The letter can be downloaded here. In 2026, Small Caps initially outperformed but faced challenges in the third quarter, marked by the Russell 2000 Growth Index’s -9.4% decline versus the S&amp;P 500’s +2.3% rise. Factors such as rising Treasury yields and higher oil […]",
-                "_timestamp": 1793281048.0
-            },
-            {
-                "title": "TSX slips as gold miners tumble on earnings, US inflation data",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/tsx-slips-gold-miners-tumble-160010055.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 16:00",
-                "description": "Investing.com -- Canada’s main stock index edged lower on Thursday as falling gold prices and disappointing mining earnings weighed on materials shares, while investors assessed U.S. inflation data and stronger-than-expected economic growth.",
-                "_timestamp": 1793289610.0
-            },
-            {
-                "title": "Lockheed Martin (LMT): Selling After Strong Performance and a Favorable Gain",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/lockheed-martin-lmt-selling-strong-140234641.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 14:02",
-                "description": "Matrix Asset Advisors, an asset management company, released its Q3 2026 investor letter. The letter can be downloaded here. U.S. equities increased by 2.30% in Q3 and 12.75% year-to-date through September 30, despite challenges including volatility, high oil prices, inflation, and elevated interest rates. The Federal Reserve’s short-term rates rose to 3.75%–4.00%, with the 10-year […]",
-                "_timestamp": 1793282554.0
-            },
-            {
-                "title": "Nike (NKE): Prolonged Turnaround Timelines Prompt Portfolio Realignment",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nike-nke-prolonged-turnaround-timelines-135928168.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 13:59",
-                "description": "Matrix Asset Advisors, an asset management company, released its Q3 2026 investor letter. The letter can be downloaded here. U.S. equities increased by 2.30% in Q3 and 12.75% year-to-date through September 30, despite challenges including volatility, high oil prices, inflation, and elevated interest rates. The Federal Reserve’s short-term rates rose to 3.75%–4.00%, with the 10-year […]",
-                "_timestamp": 1793282368.0
-            },
-            {
-                "title": "Xerox Holdings Corporation Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-xerox-holdings-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 16:58",
-                "description": "Moby summary of Xerox Holdings Corporation's Q3 2026 earnings call",
-                "_timestamp": 1793293106.0
-            },
-            {
-                "title": "Buenaventura Announces Third Quarter and Nine-Month 2026 Results",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/buenaventura-announces-third-quarter-nine-004500394.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 00:45",
-                "description": "LIMA, Peru, October 30, 2026--Compañía de Minas Buenaventura S.A.A. (\"Buenaventura\" or \"the Company\") (NYSE: BVN; Lima Stock Exchange: BUE.LM), Peru’s largest publicly-traded precious metals mining company, today announced results for the third quarter (3Q26) and nine months ended September 30, 2026 (9M26). Financial results are prepared in accordance with International Financial Reporting Standards (IFRS), except for certain non-IFRS financial measures identified herein. All amounts are stated",
-                "_timestamp": 1793321100.0
-            },
-            {
-                "title": "Capstone Copper Q3 adjusted profit rises on metal prices; output slumps",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/capstone-copper-q3-adjusted-profit-221609306.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 22:16",
-                "description": "Investing.com -- Capstone Copper reported higher third-quarter adjusted profit on Thursday as copper, gold and silver prices climbed, but said operational setbacks, particularly at its Pinto Valley mine in Arizona, would push full-year copper output to the bottom of its forecast range.",
-                "_timestamp": 1793312169.0
-            },
-            {
-                "title": "Kinross Gold (TSX:K) Stock Q3 Results Highlight Cash Flow And Project Risk",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/kinross-gold-tsx-k-stock-221300017.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 22:13",
-                "description": "Kinross Gold shareholders came into this earnings print on the back foot, with the stock down about 12% over the past month and 5% over the past week, closing today at CA$30.16. Q3 2026 results landed with a clear headline. The miner generated about US$1.8b in revenue over the last three quarters and converted a large share of that into profit, leaving its trailing net margin near 38%. The market has treated Kinross Gold like a short term story. The numbers just released, along with the multi...",
-                "_timestamp": 1793311980.0
-            },
-            {
-                "title": "FTAI Aviation Ltd. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ftai-aviation-ltd-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 22:28",
-                "description": "Moby summary of FTAI Aviation Ltd.'s Q3 2026 earnings call",
-                "_timestamp": 1793312896.0
-            },
-            {
-                "title": "TotalEnergies SE Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-totalenergies-se-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 21:12",
-                "description": "Moby summary of TotalEnergies SE's Q3 2026 earnings call",
-                "_timestamp": 1793308346.0
-            },
-            {
-                "title": "Colgate-Palmolive Lifts Full-Year Earnings Growth Outlook Following Third-Quarter Beat",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/colgate-palmolive-lifts-full-earnings-143355575.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 14:33",
-                "description": "Colgate-Palmolive (CL) raised its full-year earnings growth outlook on Friday as the consumer produc",
-                "_timestamp": 1793370835.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Gold prices experienced a sharp downward movement over the past 24 hours, falling from near 4018 to test levels around 3898. News reports indicate that Canada's main stock index edged lower as falling gold prices and disappointing mining earnings weighed on materials shares, alongside assessments of U.S. inflation data and stronger-than-expected economic growth [Yahoo Finance Gold].",
-            "Uncertainties": "The precise magnitude of institutional liquidations versus algorithmic stop-hunts triggered around the $3,950 and $3,900 retail support zones remains unconfirmed.",
-            "Macro_Context": "Stronger-than-expected U.S. economic growth and ongoing inflation data assessments are influencing broader market sentiment, impacting precious metals alongside rising yields and shifting rate expectations.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "The heavy selling pressure and continuous hourly declines from 4018 down to 3898 directly align with negative sentiment in gold mining equities and broader macroeconomic pressures from U.S. inflation and growth data.",
-            "Orderflow_Price_Target": "3850.00"
         }
     },
     {
@@ -2172,48 +2246,6 @@
         }
     },
     {
-        "main_date": "2026-10-29 10:45",
-        "_timestamp": 1793355300.0,
-        "articles": [
-            {
-                "title": "Jim Cramer tells investors to fear losses, not taxes. Here are a few ways to build a portfolio you can trust",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-tells-investors-fear-104500647.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 10:45",
-                "description": "Is he right?",
-                "_timestamp": 1793270700.0
-            },
-            {
-                "title": "Cash, CDs, or ETFs? The New Race for Low-Risk Returns.",
-                "link": "https://www.fool.com/investing/2026/10/29/cash-cds-or-etfs-the-new-race-for-low-risk-returns/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 18:27",
-                "description": "When it comes to protecting your money, your best bet may be one you haven't considered.",
-                "_timestamp": 1793298430.0
-            },
-            {
-                "title": "'Worrisome': Jim Cramer warns chip stocks have gone 'parabolic' — here are the defensive moves he's making now",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/worrisome-jim-cramer-warns-chip-101500680.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 10:15",
-                "description": "Here's why Cramer is getting cautious on chip stocks and what he’s telling tech investors to do.",
-                "_timestamp": 1793355300.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Market commentators like Jim Cramer are raising concerns over parabolic moves in chip stocks and advising investors to focus on defensive positioning and risk management [Yahoo Finance Gold]. Concurrently, investors are searching for low-risk returns across cash, CDs, and ETFs [Yahoo Finance Oil].",
-            "Uncertainties": "The specific portfolio allocations of institutional investors and the exact trigger for the ongoing liquidation in precious metals remain unconfirmed.",
-            "Macro_Context": "Broader financial markets are experiencing defensive repositioning, risk aversion regarding high-flying technology sectors, and a rotation into low-risk yield alternatives.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Gold experienced a sharp downward trajectory over the past 24 hours, dropping from above 4020 down towards the 3920-3907 range, reflecting aggressive liquidation and risk-off selling pressure.",
-            "Orderflow_Price_Target": "3900.00"
-        }
-    },
-    {
         "main_date": "2026-10-30 07:10",
         "_timestamp": 1793344228.0,
         "articles": [
@@ -2337,58 +2369,6 @@
             "Macro_Context": "Corporate sustainability reporting and renewable energy initiatives highlight ongoing global trends in corporate social responsibility, though they lack direct relevance to near-term monetary policy or precious metals demand.",
             "Impact_Timing": "Present",
             "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "N/A",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-10-29 16:56",
-        "_timestamp": 1793292997.0,
-        "articles": [
-            {
-                "title": "First Solar (FSLR) Faces Interest Rate Pressure Despite Strong Margins and Backlog, Ariel Global Fund Says",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/first-solar-fslr-faces-interest-165637469.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 16:56",
-                "description": "Ariel Investments, an investment management company, released its “Ariel Global Fund” Q3 2026 investor letter. The Fund declined in the third quarter of 2026 as renewed geopolitical tensions, higher oil prices, and elevated interest rates contributed to uneven performance across global markets. The Fund’s Investor Class returned -1.98%, underperforming the MSCI ACWI Index, which gained […]",
-                "_timestamp": 1793292997.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Ariel Investments released its Q3 2026 investor letter for the Ariel Global Fund, noting that renewed geopolitical tensions, higher oil prices, and elevated interest rates contributed to uneven market performance and a fund decline [Yahoo Finance Oil].",
-            "Uncertainties": "The specific quantitative breakdown of the macroeconomic impact on precious metals remains broad, as the report focuses on equity fund performance and broader market headwinds.",
-            "Macro_Context": "Persistent elevated interest rates, elevated oil prices, and ongoing geopolitical tensions continue to weigh on global markets, creating a volatile macroeconomic environment.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "Gold prices declined over the past 24 hours from around 4075 to near 4012, aligning with macroeconomic pressures such as elevated interest rate expectations and risk-off liquidity dynamics.",
-            "Orderflow_Price_Target": "3990.00"
-        }
-    },
-    {
-        "main_date": "2026-10-29 16:43",
-        "_timestamp": 1793292210.0,
-        "articles": [
-            {
-                "title": "National Bank of Ukraine lifts key rate to 16.5% as war risks fuel inflation",
-                "link": "https://finance.yahoo.com/economy/policy/articles/national-bank-ukraine-lifts-key-164330816.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 16:43",
-                "description": "Investing.com -- The National Bank of Ukraine raised its benchmark discount rate by 50 basis points to 16.5% on Thursday, moving to anchor deteriorating inflation expectations as war-related logistical disruptions and higher energy costs accelerate price pressures. The decision, effective October 30, aims to preserve the attractiveness of domestic hryvnia assets, stabilize the foreign exchange market, and cushion the economy against mounting external and domestic risks.",
-                "_timestamp": 1793292210.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "The National Bank of Ukraine raised its benchmark discount rate by 50 basis points to 16.5% on Thursday to anchor deteriorating inflation expectations driven by war-related logistical disruptions and higher energy costs [Yahoo Finance Oil].",
-            "Uncertainties": "The exact extent of future fiscal adjustments and the prolonged trajectory of the conflict remain difficult to predict.",
-            "Macro_Context": "Central banks in emerging and frontier Europe are tightening monetary policy to combat persistent inflation pressures stemming from geopolitical conflicts and rising energy costs.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "N/A",

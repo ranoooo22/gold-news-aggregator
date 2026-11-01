@@ -49,6 +49,7 @@
             padding: 14px;
             font-family: "JetBrains Mono", Consolas, monospace;
             font-size: 0.85em;
+            overflow: hidden;
         }
 
         .dom-header {
@@ -111,6 +112,7 @@
         .dom-table {
             width: 100%;
             border-collapse: collapse;
+            table-layout: fixed;
         }
         .dom-table th {
             color: #64748b;
@@ -122,36 +124,22 @@
         .dom-table th:first-child { text-align: left; }
 
         .dom-row {
-            position: relative;
-            height: 18px;
-            line-height: 18px;
+            height: 20px;
+            line-height: 20px;
         }
         .dom-cell {
             padding: 1px 4px;
             text-align: right;
-            position: relative;
-            z-index: 2;
+            white-space: nowrap;
         }
         .dom-cell:first-child { text-align: left; }
 
-        .dom-bar {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            z-index: 1;
-            opacity: 0.25;
-            transition: width 0.1s ease-out;
-        }
-
         .bid-price { color: #34d399; font-weight: 600; }
         .ask-price { color: #f87171; font-weight: 600; }
-        .bid-bar { background-color: #10b981; }
-        .ask-bar { background-color: #ef4444; }
 
         .whale-wall {
-            border: 1px solid #a855f7 !important;
-            background-color: rgba(168, 85, 247, 0.22) !important;
+            outline: 1px solid #a855f7;
+            background-color: rgba(168, 85, 247, 0.25) !important;
             font-weight: bold;
         }
 
@@ -365,7 +353,7 @@
 
                 const maxQty = Math.max(...allQtys, 0.01);
 
-                // Render Asks (Verkäufer) - absteigend sortiert (höchste oben)
+                // Render Asks (Verkäufer) - absteigend sortiert
                 const asksBody = document.getElementById('asks-body');
                 asksBody.innerHTML = '';
                 const sortedAsks = [...topAsks].reverse();
@@ -377,8 +365,10 @@
 
                     const row = document.createElement('tr');
                     row.className = `dom-row ${isWhale ? 'whale-wall' : ''}`;
+                    if (!isWhale) {
+                        row.style.background = `linear-gradient(to left, rgba(239, 68, 68, 0.25) ${barWidth}%, transparent ${barWidth}%)`;
+                    }
                     row.innerHTML = `
-                        <div class="dom-bar ask-bar" style="width: ${barWidth}%;"></div>
                         <td class="dom-cell ask-price">${item.price.toFixed(2)}</td>
                         <td class="dom-cell">${item.qty.toFixed(3)} ${isWhale ? '🐳' : ''}</td>
                         <td class="dom-cell">$${totalUSD}</td>
@@ -402,8 +392,10 @@
 
                     const row = document.createElement('tr');
                     row.className = `dom-row ${isWhale ? 'whale-wall' : ''}`;
+                    if (!isWhale) {
+                        row.style.background = `linear-gradient(to left, rgba(16, 185, 129, 0.25) ${barWidth}%, transparent ${barWidth}%)`;
+                    }
                     row.innerHTML = `
-                        <div class="dom-bar bid-bar" style="width: ${barWidth}%;"></div>
                         <td class="dom-cell bid-price">${item.price.toFixed(2)}</td>
                         <td class="dom-cell">${item.qty.toFixed(3)} ${isWhale ? '🐳' : ''}</td>
                         <td class="dom-cell">$${totalUSD}</td>

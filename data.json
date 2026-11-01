@@ -1,49 +1,7 @@
 [
     {
-        "main_date": "2026-10-31 16:42",
-        "_timestamp": 1793481265.0,
-        "articles": [
-            {
-                "title": "OPEC+ set to keep production targets unchanged in December, source says",
-                "link": "https://www.investing.com/news/commodities-news/opec-set-to-keep-production-targets-unchanged-in-december-source-says-4989301",
-                "source": "Investing.com",
-                "date": "2026-10-31 16:42",
-                "description": "",
-                "_timestamp": 1793464939.0
-            },
-            {
-                "title": "OPEC+ set to hold December oil output steady, Reuters reports",
-                "link": "https://www.investing.com/news/commodities-news/opec-set-to-hold-december-oil-output-steady-4989332",
-                "source": "Investing.com",
-                "date": "2026-10-31 20:44",
-                "description": "",
-                "_timestamp": 1793479465.0
-            },
-            {
-                "title": "OPEC+ set to hold December oil output steady, Reuters reports",
-                "link": "https://finance.yahoo.com/energy/articles/opec-set-hold-december-oil-211425680.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-31 21:14",
-                "description": "Investing.com -- OPEC+ members have agreed in principle to maintain their December oil production targets, as the alliance is expected to hold off on further supply policy changes until next year, Reuters reported on Saturday, citing three people familiar with the matter.",
-                "_timestamp": 1793481265.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "OPEC+ members have agreed in principle to maintain their December oil production targets, holding off on further supply policy changes until next year, according to reports citing three people familiar with the matter [Investing.com, Reuters, Yahoo Finance Oil].",
-            "Uncertainties": "Whether all member states will strictly adhere to the quotas and how broader macroeconomic trends will impact oil demand moving forward remains unconfirmed.",
-            "Macro_Context": "Stable oil production targets suggest predictable energy supply conditions, influencing broader inflationary expectations and commodity market sentiment.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "N/A",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "2026-10-28 22:30",
-        "_timestamp": 1793481205.0,
+        "_timestamp": 1793518260.0,
         "articles": [
             {
                 "title": "Kinross Gold (KGC) Beats Q3 Earnings Estimates",
@@ -276,362 +234,244 @@
                 "date": "2026-10-31 21:13",
                 "description": "AI heavyweights are pouring an estimated $828b into data centers and chips this year, and that spending shock is shaking confidence in many growth stories. When capital floods into one corner of the market, other assets can get ignored. That is where elite, low-cost gold producers come in. This article highlights three high quality gold miners with robust finances that many investors are overlooking right now. The three elite gold stocks below are just a starter pack. The full screen surfaced...",
                 "_timestamp": 1793481205.0
+            },
+            {
+                "title": "Viper Energy (VNOM) Q3 earnings report preview: what to look for",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/viper-energy-vnom-q3-earnings-064300964.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-01 06:43",
+                "description": "Mineral and royalty company Viper Energy (NASDAQ:VNOM) will be reporting earnings this Monday afternoon. Here’s what to expect.",
+                "_timestamp": 1793515380.0
+            },
+            {
+                "title": "Black Stone Minerals (BSM) Q3 earnings: what to expect",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/black-stone-minerals-bsm-q3-073100499.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-01 07:31",
+                "description": "Mineral rights owner Black Stone Minerals (NYSE:BSM) will be reporting results this Monday after market hours. Here’s what you need to know.",
+                "_timestamp": 1793518260.0
+            },
+            {
+                "title": "Vitesse Energy earnings: what to look for from VTS",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/vitesse-energy-earnings-look-vts-052300424.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-01 05:23",
+                "description": "Oil and gas producer Vitesse Energy (NYSE:VTS) will be announcing earnings results this Monday after market close. Here’s what investors should know.",
+                "_timestamp": 1793510580.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Gold prices experienced a sharp downward correction over the last 24 hours, falling from near 4020.57 down to 3875.64. Concurrently, reports indicated a broad wave of Q3 earnings reports from major miners like Kinross Gold, Agnico Eagle, and Buenaventura showing solid results, while broader markets reacted to stronger-than-expected US economic growth and inflation data [Yahoo Finance Gold]. Furthermore, China reported a sharp increase in its strategic mineral reserves [Yahoo Finance Gold].",
-            "Uncertainties": "The exact extent to which profit-taking versus institutional liquidation drove the sudden drop below 3900 remains unconfirmed.",
-            "Macro_Context": "Stronger-than-expected U.S. economic growth and ongoing inflation assessments have pushed Treasury yields higher, increasing the opportunity cost of holding non-yielding precious metals like gold and strengthening broader economic sentiment away from safe-havens.",
+            "Facts": "Gold prices and mining equities experienced downward pressure due to disappointing mining earnings and stronger-than-expected US economic and inflation data [Yahoo Finance Gold]. Additionally, China reported a sharp increase in its strategic mineral and gold reserves following a nationwide reassessment [Yahoo Finance Gold].",
+            "Uncertainties": "The full extent of China's newly reported mineral reserves impact on global market supply dynamics remains unconfirmed.",
+            "Macro_Context": "Stronger US economic growth, resilient inflation prints, and rising Treasury yields have weighed on precious metals, shifting near-term sentiment bearish for gold.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bearish",
             "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "The 24h price action shows a consistent, sharp sell-off from 4020 down to 3875, aligning with macroeconomic reports highlighting robust U.S. economic growth, inflation data, and heavy materials sector pressure as noted in the news.",
+            "Past_Price_Action_Cause": "The 24h price action shows a steady downward trend from above 4020 down to 3875.65, which aligns directly with the reported mining sector headwinds, falling gold prices, and strong US macroeconomic data pressuring gold.",
             "Orderflow_Price_Target": "3850.00"
         }
     },
     {
-        "main_date": "2026-10-29 08:02",
-        "_timestamp": 1793480900.0,
+        "main_date": "2026-11-01 07:00",
+        "_timestamp": 1793516422.0,
         "articles": [
             {
-                "title": "TotalEnergies profit hits record on high oil prices",
-                "link": "https://finance.yahoo.com/energy/articles/totalenergies-profit-hits-record-high-080216298.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 08:02",
-                "description": "French oil and gas giant TotalEnergies said Thursday that its net profit hit a new record in the third quarter as the war in the Middle East pushed up hydrocarbon prices.The company had already reported a strong rise in its bottom line in the preceding two quarters, similarly driven by soaring oil and gas prices as well as its trading activities.",
-                "_timestamp": 1793260936.0
-            },
-            {
-                "title": "Petrochina shares rise as Q3 profit surges on strong oil prices",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/petrochina-shares-rise-q3-profit-052644553.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 05:26",
-                "description": "Investing.com-- PetroChina’s Hong Kong-listed shares rose on Thursday after the company reported a sharp rise in third-quarter profit, as elevated oil and gas prices tied to the ongoing Middle East conflict boosted earnings well ahead of expectations.",
-                "_timestamp": 1793251604.0
-            },
-            {
-                "title": "3 Refining Stocks With Pricing Power as Fuel Bottlenecks Tighten",
-                "link": "https://finance.yahoo.com/energy/articles/3-refining-stocks-pricing-power-021221789.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 02:12",
-                "description": "Fuel markets have been hit by refinery outages, military risk and years of underinvestment, creating a world where crude is available but turning it into usable diesel and gasoline has become the real choke point. That squeeze can reward certain integrated oil and refining stocks while leaving others exposed. This article walks through three global refiners that are closely tied to this storyline and what that might mean for your portfolio decisions. The stocks highlighted below are just a...",
-                "_timestamp": 1793239941.0
-            },
-            {
-                "title": "Petrobras Oil and Gas Output Jumps 11.7% to Record High in Q3",
-                "link": "https://finance.yahoo.com/energy/articles/petrobras-oil-gas-output-jumps-010500840.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 01:05",
-                "description": "Petrobras reported record oil and gas production of 3.512 million barrels of oil equivalent per day in the third quarter of 2026, up 11.7% year over year, as output from its Brazilian pre-salt operations continued to expand.",
-                "_timestamp": 1793235900.0
-            },
-            {
-                "title": "Shell posts second-highest profit ever after oil price surge",
-                "link": "https://uk.finance.yahoo.com/news/shell-posts-second-highest-profit-112536798.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 11:25",
-                "description": "Shell recorded its second-highest profit ever after the Iran war pushed up oil and gas prices.",
-                "_timestamp": 1793273136.0
-            },
-            {
-                "title": "Calgary energy producer Whitecap reports spiking revenues, profits on high oil prices",
-                "link": "https://financialpost.com/commodities/energy/oil-gas/calgary-energy-producer-whitecap-reports-spiking-revenues-profits-high-oil-prices?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 11:22",
-                "description": "Oil prices did much of the work for the company's third-quarter performance",
-                "_timestamp": 1793272979.0
-            },
-            {
-                "title": "Shell posts second-highest profit ever after oil price surge",
-                "link": "https://www.telegraph.co.uk/business/2026/10/29/shell-posts-second-highest-profit-ever-oil-price-surge/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 11:25",
-                "description": "Shell recorded its second-highest profit ever after the Iran war pushed up oil and gas prices.",
-                "_timestamp": 1793273136.0
-            },
-            {
-                "title": "Canadian resource stocks face a cost squeeze despite resilient earnings",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/canadian-stocks-face-cost-squeeze-160210254.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 16:02",
-                "description": "Investing.com -- Canadian resource companies delivered mixed third-quarter results, with stronger earnings at several gold miners and improving cash flow at copper producer First Quantum Minerals offset by rising costs, working-capital pressures and uneven production performance.",
-                "_timestamp": 1793289730.0
-            },
-            {
-                "title": "Robust Demand Across BioPharma and NGS Applications Elevates Twist Bioscience Corp.’s (TWST) Growth Profile",
-                "link": "https://finance.yahoo.com/healthcare/articles/robust-demand-across-biopharma-ngs-151546343.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 15:15",
-                "description": "Conestoga Capital Advisors, an asset management company, released its third-quarter 2026 investor letter. The letter can be downloaded here. Conestoga Capital Advisors released its third-quarter 2026 investor letter, outlining a shifting macroeconomic backdrop for small-cap equities. After a strong start to 2026, 3Q26 headwinds—including elevated oil prices, persistent inflation, and a September Fed rate hike—drove a 9.4% […]",
-                "_timestamp": 1793286946.0
-            },
-            {
-                "title": "APA Gears Up to Report Q3 Earnings: Here's How It Will Fare",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/apa-gears-report-q3-earnings-150000386.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 15:00",
-                "description": "APA Corporation is set to report Q3 2026 results, with higher oil prices potentially boosting revenues, while rising operating expenses could pressure earnings.",
-                "_timestamp": 1793286000.0
-            },
-            {
-                "title": "These IBD 50 Energy Stocks Show Gigantic Earnings Growth",
-                "link": "https://finance.yahoo.com/m/4726d84d-d5fb-3269-b458-89e2fccc09d2/these-ibd-50-energy-stocks.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 14:19",
-                "description": "Energy-related stocks now dominate the IBD 50, along with technology. The energy sector is up more than 11% this month, beating all other S&amp;P 500 sectors.",
-                "_timestamp": 1793283551.0
-            },
-            {
-                "title": "Sector Update: Energy Stocks Mixed in Afternoon Trading",
-                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-mixed-afternoon-181353108.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 18:13",
-                "description": "Energy stocks were mixed Thursday afternoon, with the NYSE Energy Sector Index up 0.1% and the State",
-                "_timestamp": 1793297633.0
-            },
-            {
-                "title": "Chevron Hit a Record High. Friday’s Report Has to Show Where the Oil-Spike Cash Went",
-                "link": "https://www.tikr.com/blog/chevron-hit-a-record-high-fridays-report-has-to-show-where-the-oil-spike-cash-went?ref=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 17:26",
-                "description": "Key TakeawaysChevron just hit a record high ahead of its third-quarter report on Friday, and Brent crude averaged $114 a barrel in September. The second quarter showed the oil spike turning into cash, and Friday’s real test is how much of that cash Chevron sends back to shareholders.",
-                "_timestamp": 1793294801.0
-            },
-            {
-                "title": "Energy Leader Dorian LPG Positioned To Hit Buy Point Ahead Of Earnings Results",
-                "link": "https://finance.yahoo.com/m/36b7bd89-d659-3041-b36e-72de97f1c26b/energy-leader-dorian-lpg.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 17:20",
-                "description": "Energy leader Dorian stock is approaching a new buy point ahead of the company's earnings report set for next week.",
-                "_timestamp": 1793294403.0
-            },
-            {
-                "title": "Sector Update: Energy Stocks Higher Late Afternoon",
-                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-higher-afternoon-195730175.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 19:57",
-                "description": "Energy stocks were higher late Thursday afternoon, with the NYSE Energy Sector Index rising 0.4% and",
-                "_timestamp": 1793303850.0
-            },
-            {
-                "title": "Shell Stock Surges on Record Refining Results. Don’t Expect It to Last.",
-                "link": "https://finance.yahoo.com/m/8feb4398-2733-33d6-b4f9-ccb89404035d/shell-stock-surges-on-record.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 19:05",
-                "description": "Shell and TotalEnergies reported record results from refining, but there are pressures mounting. What oil prices and operational costs are doing to margins.",
-                "_timestamp": 1793300700.0
-            },
-            {
-                "title": "Whitecap Profits Surge 60% as Ottawa's Tax Break Promises Another $400 Million",
-                "link": "https://finance.yahoo.com/energy/articles/whitecap-profits-surge-60-ottawas-212824717.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-29 21:28",
-                "description": "Canadian oil and gas producer Whitecap Resources (TSX: WCP) reported a nearly 60% increase in third-quarter profit as elevated crude prices boosted earnings",
-                "_timestamp": 1793309304.0
-            },
-            {
-                "title": "3 Canadian Energy Stocks With Net Margins Over 12%",
-                "link": "https://finance.yahoo.com/energy/articles/3-canadian-energy-stocks-net-061226748.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 06:12",
-                "description": "Oil prices are on track for a fourth straight monthly gain as conflict around the Strait of Hormuz keeps supply risks in focus. That keeps attention firmly on Canadian oil and gas producers, which often sit at the crossroads of energy security and global pricing. This article highlights three stocks from our Canadian oil and gas screener that investors can study if they want targeted exposure to this theme. The three Canadian oil and gas stocks below are just a sample, and the full screen...",
-                "_timestamp": 1793340746.0
-            },
-            {
-                "title": "What Teck Resources (TECK) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-teck-resources-teck-said-on-its-q3-earnings-call-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 14:14",
-                "description": "Teck Resources (NYSE:TECK) reported sharply higher third-quarter earnings and operating cash flow as record copper prices, increased copper production and lower processing charges offset severe weather disruptions across parts of its copper portfolio. Adjusted EBITDA doubled from a year earlier to",
-                "_timestamp": 1793369686.0
-            },
-            {
-                "title": "Canada Commodities: Oil Prices Jump More Than 2% Following Tanker Attack in Strait of Hormuz",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-jump-135715843.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 13:57",
-                "description": "Oil prices rose on Friday morning after an attack on an oil tanker in the Strait of Hormuz left the",
-                "_timestamp": 1793368635.0
-            },
-            {
-                "title": "PBF Energy Q3 Earnings Call Highlights",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-pbf-energy-q3-earnings-call-highlights-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 14:14",
-                "description": "PBF Energy (NYSE:PBF) reported third-quarter adjusted net income of $12.78 per share and adjusted EBITDA of approximately $2.3 billion, as tight refined-product supplies and firm demand supported strong market conditions. The company also continued to reduce leverage, cutting net debt by more than $",
-                "_timestamp": 1793369686.0
-            },
-            {
-                "title": "Chevron earnings beat estimates as revenue jumps 36% to $67.8 billion",
-                "link": "https://www.proactiveinvestors.com/companies/news/1101005/chevron-earnings-beat-estimates-as-revenue-jumps-36-to-67-8-billion-1101005.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 13:15",
-                "description": "Chevron Corporation (NYSE:CVX, XETRA:CHV) reported third-quarter adjusted earnings of $10.4 billion, or $5.28 per share, beating analysts’ expectations as higher refining margins and stronger oil realizations helped drive a sharp increase in revenue. Higher oil price realizations and stronger...",
-                "_timestamp": 1793366100.0
-            },
-            {
-                "title": "Energy stocks are surging: Can the rally last?",
-                "link": "https://finance.yahoo.com/video/energy-stocks-are-surging-can-the-rally-last-141815208.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 14:18",
-                "description": "Energy stocks are outperforming the broader market, with oil giants Chevron (CVX), ExxonMobil (XOM), and BP (BP) reporting strong profits. The 8:30 hosts Jake Conley and Julie Hyman break down what's fueling the sector's momentum and why oil prices could remain elevated for longer.",
-                "_timestamp": 1793369895.0
-            },
-            {
-                "title": "Exxon’s Refineries Out-Earned Its Oil Wells Last Quarter For the First Time in 6 Years. Here’s What That Says About Where the Profit Is Coming From.",
-                "link": "https://www.fool.com/investing/2026/10/30/exxon-s-refineries-out-earned-its-oil-wells-last-quarter-for-the-first-time-in-6-years-here-s-what-that-says-about-where-the-profit-is-coming-from/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 16:05",
-                "description": "Exxon's refineries were money-printing machines during the third quarter.",
-                "_timestamp": 1793376301.0
-            },
-            {
-                "title": "Chevron Beats Sky-High Targets as Oil Prices Surge",
-                "link": "https://finance.yahoo.com/m/3423b978-cd1f-3d63-9200-04d7e0b7050c/chevron-beats-sky-high.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 14:40",
-                "description": "The market knew earnings would be stellar, but the energy major still managed to beat Wall Street’s sky-high targets.",
-                "_timestamp": 1793371200.0
-            },
-            {
-                "title": "3 Energy Stocks Income Investors Are Watching After BP Profit Shock",
-                "link": "https://finance.yahoo.com/energy/articles/3-energy-stocks-income-investors-161526431.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 16:15",
-                "description": "Oil markets just received a jolt of fresh information, with BP reporting a near-quadrupling of profit to an underlying replacement cost profit of $8.5b and refinery margins boosted by Iran war related disruptions to Middle East fuel exports. That kind of earnings shock can quickly reshape where dividend income and balance sheet strength cluster in the energy sector. This article highlights three high-dividend, cash-rich stocks exposed to the same forces as BP and explains how the news...",
-                "_timestamp": 1793376926.0
-            },
-            {
-                "title": "EOG Resources Gears Up to Report Q3 Earnings: What's in the Cards?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/eog-resources-gears-report-q3-151200723.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 15:12",
-                "description": "EOG gears up for Q3 earnings, with higher oil prices, rising production volumes and low-cost operations expected to support strong year-over-year growth.",
-                "_timestamp": 1793373120.0
-            },
-            {
-                "title": "Sector Update: Energy Stocks Gain Friday Afternoon",
-                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-gain-friday-175824843.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 17:58",
-                "description": "Energy stocks were higher Friday afternoon, with the NYSE Energy Sector Index rising 1.3% and the St",
-                "_timestamp": 1793383104.0
-            },
-            {
-                "title": "Exxon And Chevron Refine Their Way To Record Highs",
-                "link": "https://app.moby.co/home/news/news-exxon-and-chevron-refine-their-way-to-record-highs?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 17:08",
-                "description": "Every tanker hit in Hormuz is another good day for a Gulf Coast refinery",
-                "_timestamp": 1793380085.0
-            },
-            {
-                "title": "Imperial Oil Limited Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-imperial-oil-limited-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 21:27",
-                "description": "Moby summary of Imperial Oil Limited's Q3 2026 earnings call",
-                "_timestamp": 1793395649.0
-            },
-            {
-                "title": "Sector Update: Energy Stocks Gain Late Afternoon",
-                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-gain-afternoon-195710565.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 19:57",
-                "description": "Energy stocks were higher late Friday afternoon, with the NYSE Energy Sector Index rising 1.2% and t",
-                "_timestamp": 1793390230.0
-            },
-            {
-                "title": "Indian Founder Led Growth Stocks To Watch In October 2026",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/indian-founder-led-growth-stocks-221708852.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 22:17",
-                "description": "Oil traders are bracing for a wild week as Brent crude edges toward $120, and that kind of energy price anxiety often pulls attention back to growth stories closer to home. Indian fast growing companies, where founders and executives still own a meaningful stake, can give investors a way to focus on businesses that management clearly believes in. This article highlights three such high conviction stocks from our insider backed growth list. The three stocks highlighted here offer a compelling...",
-                "_timestamp": 1793398628.0
-            },
-            {
-                "title": "Is Shell (LSE:SHEL) Reasonable After Stronger Cash Flow And Buybacks?",
-                "link": "https://finance.yahoo.com/energy/articles/shell-lse-shel-reasonable-stronger-201809340.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 20:18",
-                "description": "Shell has ridden a powerful wave in energy markets, yet with the stock up 191.4% over the past 5 years, the key issue for you now is whether that price is still grounded in the cash it can generate. Recent spikes in oil prices, high refining margins and fresh capital returns have sharpened the focus on what the company’s future cash flows are really worth today. A 191.4% gain over 5 years puts real pressure on the question of whether Shell’s current share price can still be explained by its...",
-                "_timestamp": 1793391489.0
-            },
-            {
-                "title": "As Winter Energy Costs Climb, More Canadians Turn to Solar Generators for Home Power",
-                "link": "https://finance.yahoo.com/energy/articles/winter-energy-costs-climb-more-221600327.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 22:16",
-                "description": "Jackery sees growing interest in solar generators as households look for quiet, clean power they can count on this season OTTAWA, Ontario, Oct. 30, 2026 (GLOBE NEWSWIRE) -- Heating season is here, and Canadians are watching their energy bills closely. On Oct. 3, furnace oil in St. John's cost $2.16 per litre, almost a dollar more than on the same day in 2025. With global oil markets volatile, more households are looking for power they can make themselves. Jackery, a global leader in solar genera",
-                "_timestamp": 1793398560.0
-            },
-            {
-                "title": "Coal supply is struggling to keep pace with demand",
-                "link": "https://www.investing.com/news/commodities-news/coal-supply-is-struggling-to-keep-pace-with-demand-4989174",
+                "title": "Bangladesh forms wage board as garment protests turn violent",
+                "link": "https://www.investing.com/news/commodities-news/bangladesh-to-form-wage-board-after-garment-protests-shut-factories-4989374",
                 "source": "Investing.com",
-                "date": "2026-10-31 07:58",
+                "date": "2026-11-01 07:00",
                 "description": "",
-                "_timestamp": 1793433508.0
-            },
-            {
-                "title": "Chevron Leads 3 Top Energy Stocks To Watch",
-                "link": "https://finance.yahoo.com/energy/articles/chevron-leads-3-top-energy-080922894.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-31 08:09",
-                "description": "Refining profits have surged as fuel supplies tightened worldwide, putting big integrated oil and gas groups back in the spotlight. When refinery outages, closures and disrupted trade routes squeeze fuel availability, scale and diversification can matter for investors hunting for resilient cash flow. This article walks through three leading stocks from a global oil and gas screener that aim to capture that theme and explains what to watch before you commit capital. The three stocks below are...",
-                "_timestamp": 1793434162.0
-            },
-            {
-                "title": "Imperial Oil Stock Record Downstream Earnings What's Changed",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/imperial-oil-stock-record-downstream-141302765.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-31 14:13",
-                "description": "Imperial Oil reported record third quarter 2026 earnings, with CAD 2,454 million in net income on CAD 16,205 million in sales and an unchanged quarterly dividend of CAD 0.87 per share payable on January 1, 2027. The company generated much stronger profit despite lower crude oil volumes, helped by downstream strength and growing renewable diesel output, while still dealing with pipeline related production disruptions. We will now look at how Imperial Oil's investment narrative intersects with...",
-                "_timestamp": 1793455982.0
-            },
-            {
-                "title": "Thor Explorations And 2 Canadian Penny Stocks To Watch",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/thor-explorations-2-canadian-penny-171150486.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-31 17:11",
-                "description": "AI enthusiasm in big tech has cooled as investors question heavy spending on data centers and chips. That pullback has shifted attention to smaller Canadian companies where every dollar is watched closely and balance sheets matter. Financially disciplined penny stocks can offer exposure to early stage growth, with tighter cost control and less hype. This article highlights three financially healthier Canadian penny stocks from our screener that may be worth a closer look. The three stocks...",
-                "_timestamp": 1793466710.0
-            },
-            {
-                "title": "BW Energy (OB:BWE) Stock Catches A Q3 Earnings Squeeze",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/bw-energy-ob-bwe-stock-151625884.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-31 15:16",
-                "description": "BW Energy just reported Q3 2026 numbers that flipped the script on recent optimism. The company moved from earlier quarterly profits to a small net loss of about US$0.7 million on revenue of US$73.2 million, even as the stock closed at NOK54.4 after a weak week and month. Traders have been punishing the shares, yet the real shock is the profit squeeze, with earnings hit by lower realized oil prices and a heavy tax bill. Price action looks more like a verdict on emotion than a clean read of...",
-                "_timestamp": 1793459785.0
-            },
-            {
-                "title": "Saturn Oil & Gas (TSX:SOIL) Stock May Trade Below Fair Value Despite Corex Deal",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/saturn-oil-gas-tsx-soil-210820495.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-31 21:08",
-                "description": "Saturn Oil & Gas has delivered a year to date return that is very large, so the obvious question is whether that kind of share price change still lines up with what the business is earning. With the stock now trading around C$9.45, investors are asking if Saturn Oil & Gas' current earnings profile can carry that valuation. The share price is up about 284.1% year to date. This puts the focus squarely on whether the earnings behind the move are strong enough to support it. The planned C$302...",
-                "_timestamp": 1793480900.0
+                "_timestamp": 1793516422.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Major global energy companies, including Chevron, Shell, TotalEnergies, and PetroChina, reported record or sharply higher Q3 2026 profits driven by elevated oil and gas prices [Yahoo Finance Oil]. Furthermore, geopolitical tensions and disruptions, such as an attack on an oil tanker in the Strait of Hormuz and ongoing conflicts involving Iran and the Middle East, have pushed oil prices higher and tightened fuel supplies [Yahoo Finance Oil].",
-            "Uncertainties": "The exact duration of the Middle East conflict, the immediate impact on broader global supply chains, and whether central banks will be forced to keep interest rates elevated due to persistent energy-driven inflation.",
-            "Macro_Context": "Ongoing geopolitical conflicts in the Middle East have severely constrained energy supplies, maintaining elevated crude oil and refining margins. This environment fuels inflationary pressures globally, prompting cautious monetary policy stances.",
+            "Facts": "Bangladesh has formed a wage board following violent garment worker protests [Investing.com]. This news reflects localized labor unrest and economic adjustments in Bangladesh's textile sector, but it has no direct systemic or macroeconomic impact on global gold markets or monetary policy.",
+            "Uncertainties": "The long-term impact on apparel supply chains and whether the protests will escalate or disrupt broader industrial output remains unclear.",
+            "Macro_Context": "Local labor disputes in emerging market garment sectors generally lack the magnitude to influence global macroeconomic variables, inflation indices, or safe-haven asset flows.",
+            "Impact_Timing": "Present",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-10-29 07:47",
+        "_timestamp": 1793512980.0,
+        "articles": [
+            {
+                "title": "ACG Metals says it expects full production from Gediktepe in Q1 2027",
+                "link": "https://www.proactiveinvestors.com/companies/news/1100902/acg-metals-says-it-expects-full-production-from-gediktepe-in-q1-2027-1100902.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 07:47",
+                "description": "ACG Metals Ltd (LSE:ACG, OTC:ACGAF) told investors it expects full commercial sulphide production at Gediktepe in the first quarter of 2027, after expanding tailings storage and water management works, and has also raised its gold-equivalent oxide output forecast. Heavy rainfall and the...",
+                "_timestamp": 1793260020.0
+            },
+            {
+                "title": "Emerita Announces Positive IBW Pre-Feasibility Study Results Highlighting US$776 Million After-Tax NPV (8%), 23.51% IRR and 21-Year Mine Life",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/emerita-announces-positive-ibw-pre-200200269.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 20:02",
+                "description": "Iberian Belt West Project Pre-Feasibility Study HighlightsInitial Probable Mineral Reserve of 23.4 million tonnes at 2.30% zinc, 1.13% lead, 0.45% copper, 53 g/t silver, 1.07 g/t goldUpdated Mineral Resource Estimate reflects a 37% increase in Indicated tonnage and a 46% increase in Inferred tonnage compared to the 2025 MREAfter-tax NPV (8%) of US$776 million and IRR of 23.51% in real termsAfter-tax payback period of 1.9 years from the start of production Initial capital cost of US$567 million..",
+                "_timestamp": 1793304120.0
+            },
+            {
+                "title": "What Alamos Gold (AGI) Said on Its Q3 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-alamos-gold-agi-said-on-its-q3-earnings-call-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 06:14",
+                "description": "Alamos Gold (NYSE:AGI) reported third-quarter 2026 gold production of 119,000 ounces, with record output from the Island Gold District offsetting lower planned production at Young-Davidson. The company said it expects a 26% increase in consolidated production in the fourth quarter, driven by higher",
+                "_timestamp": 1793340854.0
+            },
+            {
+                "title": "What Agnico Eagle Mines (AEM) Said on Its Q3 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-agnico-eagle-mines-aem-said-on-its-q3-earnings-call-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 06:14",
+                "description": "Agnico Eagle Mines (NYSE:AEM) reported third-quarter 2026 gold production of 814,000 ounces and free cash flow of $852 million, while reaffirming that it expects to meet the lower end of its annual production guidance and the upper end of its cost guidance. President and CEO Ammar Al-Joundi said pr",
+                "_timestamp": 1793340852.0
+            },
+            {
+                "title": "EQT (EQT) Deal Sparks Fresh Marcellus And Utica Takeover Talk",
+                "link": "https://finance.yahoo.com/energy/articles/eqt-eqt-deal-sparks-fresh-051711434.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 05:17",
+                "description": "EQT (NYSE:EQT) has ignited fresh M&amp;A talk in the Marcellus/Utica gas basin after agreeing to acquire Range Resources. Analysts are now flagging Antero Resources, CNX Resources, and Seneca Resources as potential next deal targets in the region. Commentary around EQT's move frames the Range Resources transaction as a possible opening step toward wider basin consolidation. EQT's purchase of Range Resources is one headline, yet the wider Marcellus and Utica consolidation story runs deeper. Check...",
+                "_timestamp": 1793337431.0
+            },
+            {
+                "title": "What Eldorado Gold (EGO) Said on Its Q3 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-eldorado-gold-ego-said-on-its-q3-earnings-call-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 08:14",
+                "description": "Eldorado Gold (NYSE:EGO) reported third-quarter 2026 results marked by higher realized gold prices, continued investment in its Skouries and McIlvenna Bay projects, and revised production guidance following slower-than-expected ramp-ups at those new operations. President and Chief Executive Officer",
+                "_timestamp": 1793348065.0
+            },
+            {
+                "title": "AEM Q3 Earnings Call Highlights Growth Plans and Cost Pressures",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/aem-q3-earnings-call-highlights-130000774.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 13:00",
+                "description": "Agnico Eagle targets up to 30% production growth over the next decade while advancing key mining projects, managing rising costs and sustaining shareholder returns.",
+                "_timestamp": 1793365200.0
+            },
+            {
+                "title": "Largo Reports Q3 2026 Production and Sales Results Reflecting Vanadium Diversification with First Production of Copper, Gold and Platinum Group Metals; Advances Commercial Bank Debt Restructuring",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/largo-reports-q3-2026-production-105100345.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 10:51",
+                "description": "All amounts expressed are in U.S. dollars, denoted by \"$\".Q3 2026 and Nine-Month HighlightsVanadium production: 2,093 tonnes of vanadium pentoxide (\"V₂O₅\") in Q3 2026 vs 2,636 tonnes in Q3 2025 following a strategy to reduce inventories and refocus on high-margin products. Year-to-date 2026 V2O5 production at 7,609 tonnes increased 23% year over year. Q3 2026 sales at 2,428 tonnes remained stable vs 2,417 tonnes in Q3 2025. This reflects Largo pursuing a conscious strategy of reducing inventory.",
+                "_timestamp": 1793357460.0
+            },
+            {
+                "title": "ExxonMobil (NYSE:XOM) reports sales below analyst estimates in Q3 2026 earnings",
+                "link": "https://finance.yahoo.com/energy/articles/exxonmobil-nyse-xom-reports-sales-134031502.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 13:40",
+                "description": "Integrated energy company ExxonMobil (NYSE:XOM) fell short of the market’s revenue expectations in Q3 2026, but revenue rose 29.6% year on year to $110.5 billion. Its GAAP profit of $3.72 per share was 7% below analysts’ consensus estimates.",
+                "_timestamp": 1793367631.0
+            },
+            {
+                "title": "ExxonMobil earnings climb to $15.4 billion as refining margins strengthen",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101001/exxonmobil-earnings-climb-to-15-4-billion-as-refining-margins-strengthen-1101001.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 12:30",
+                "description": "Exxon Mobil Corp (NYSE:XOM, XETRA:XONA) reported third-quarter earnings of $15.4 billion, up from $14.5 billion in the previous quarter, as stronger refining margins and operational performance helped offset weaker upstream results. The US oil major reported GAAP earnings of $3.72 per share,...",
+                "_timestamp": 1793363400.0
+            },
+            {
+                "title": "Largo Begins Copper, Gold and PGM Production in Q3 2026, Revises Vanadium Guidance",
+                "link": "https://investorshub.advfn.com/market-news/article/38983/largo-begins-copper-gold-and-pgm-production-in-q3-2026-revises-vanadium-guidance?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 14:16",
+                "description": "Largo Inc. (NASDAQ:LGO) reported its first production of copper, gold, platinum and palladium concentrates during the third quarter of 2026, marking a significant step in diversifying output from its Maracás Menchen Mine in Brazil.",
+                "_timestamp": 1793369797.0
+            },
+            {
+                "title": "Cartier Files on SEDAR+ the NI 43-101 Technical Report of the updated Preliminary Economic Assessment for the Cadillac Project: After-tax NPV5% of C$1.0 billion and after-tax IRR of 26.6% at US$3,600/oz gold price",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/cartier-files-sedar-ni-43-191700518.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 19:17",
+                "description": "Average annual production of 100 koz of gold over a 16.2-year mine life – After-tax NPV5% of C$1,565 M and after-tax IRR of 37.3% at spot gold of US$4,300/oz - NPV5% to initial capital ratio of 3.6x. Highlights Robust Economics After-tax NPV5% of C$1,001 M and after-tax IRR of 26.6% at a base case gold price of US$3,600/oz and an exchange rate of 1.38 C$/US$.At a spot gold price of US$4,300/oz, after-tax NPV5% increases to C$1,565 M and after-tax IRR increases to 37.3%.After-tax payback of 4.3 y",
+                "_timestamp": 1793387820.0
+            },
+            {
+                "title": "Eastman Chemical (EMN) Gets $375 Million DOE Grant Reinstated For Recycling Expansion",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/eastman-chemical-emn-gets-375-021236977.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-31 02:12",
+                "description": "Eastman Chemical (NYSE: EMN) received a reinstated US$375 million grant from the U.S. Department of Energy to expand circular recycling operations. The funding supports wider deployment of Eastman's methanolysis technology and upgrades to underused recycling assets in the United States. The grant targets domestic recycled plastics infrastructure, aligning with federal priorities around advanced recycling and a more circular plastics supply chain. Eastman's reinstated US$375 million...",
+                "_timestamp": 1793412756.0
+            },
+            {
+                "title": "ExxonMobil Plans $20 Billion of 2027 Buybacks. Here’s How Its CEO Answered the $60 Oil Question",
+                "link": "https://www.tikr.com/blog/exxonmobil-plans-20-billion-of-2027-buybacks-heres-how-its-ceo-answered-the-60-oil-question?ref=yahoofinance&tlnk=yf-261031-jvr25hxp&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-31 07:18",
+                "description": "Key Stats for ExxonMobil StockCurrent Price: $187. 25Street Target: ~$179NTM Dividend Yield: ~2.",
+                "_timestamp": 1793431091.0
+            },
+            {
+                "title": "EXE Q3 deep dive: Integration, new CEO, and commercial expansion define the quarter",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/exe-q3-deep-dive-integration-031529843.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-31 03:15",
+                "description": "Natural gas producer Expand Energy (NASDAQ:EXE) reported revenue ahead of Wall Street’s expectations in Q3 2026, with sales up 11.6% year on year to $2.81 billion. Its non-GAAP profit of $1.46 per share was 10.8% above analysts’ consensus estimates.",
+                "_timestamp": 1793416529.0
+            },
+            {
+                "title": "What ExxonMobil (XOM) Said on Its Q3 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-exxonmobil-xom-said-on-its-q3-earnings-call-2026-10-31/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-31 07:14",
+                "description": "ExxonMobil (NYSE:XOM) reported third-quarter GAAP earnings of $15.4 billion and cash flow from operations of $25.7 billion, as higher prices and constrained supplies for refined products supported results amid ongoing conflict in the Middle East. Chairman and Chief Executive Officer Darren Woods sa",
+                "_timestamp": 1793430844.0
+            },
+            {
+                "title": "Alamos Gold's 2027 Outlook: Production Set to Jump as an $835 Million Expansion Wraps Up",
+                "link": "https://www.fool.com/coverage/moneyball/2026/10/31/alamos-gold-s-2027-outlook-production-set-to-jump-as-an-usd835-million-expansion-wraps-up/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-31 19:16",
+                "description": "This under-the-radar gold mining stock boasts a Superscore of 87 from our Hidden Gems Primary database, part of The Motley Fool's Moneyball Database system. Here's why.",
+                "_timestamp": 1793474170.0
+            },
+            {
+                "title": "Caledonia Mining’s 2027 Outlook: $150 Million Raised for Bilboes and a Dividend That Keeps Paying Through the Turbulence",
+                "link": "https://www.fool.com/coverage/moneyball/2026/10/31/caledonia-mining-s-2027-outlook-usd150-million-raised-for-bilboes-and-a-dividend-that-keeps-paying-through-the-turbulence/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-31 19:11",
+                "description": "This under-the-radar gold mining stock boasts a Superscore of 79 from our Hidden Gems Primary database, part of The Motley Fool's Moneyball Database system. Here's why.",
+                "_timestamp": 1793473906.0
+            },
+            {
+                "title": "Diamondback Energy (FANG) reports Q3: everything you need to know ahead of earnings",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/diamondback-energy-fang-reports-q3-060300346.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-01 06:03",
+                "description": "Oil and gas producer Diamondback Energy (NASDAQ:FANG) will be reporting earnings this Monday after market hours. Here’s what to expect.",
+                "_timestamp": 1793512980.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Gold miners such as Agnico Eagle, Alamos Gold, and Eldorado Gold reported strong Q3 2026 earnings, increased production guidance for upcoming quarters, and advanced major expansion projects, while ExxonMobil reported robust Q3 earnings driven by refining margins despite missing some revenue estimates [Yahoo Finance Gold, Yahoo Finance Oil].",
+            "Uncertainties": "The exact trajectory of geopolitical tensions in the Middle East and how sustained cost pressures will impact net margins for broader mining and energy operations remain uncertain [Yahoo Finance Oil, Yahoo Finance Gold].",
+            "Macro_Context": "Corporate earnings season for the mining and energy sectors highlights robust production and solid cash flows, while broader commodity pricing faces short-term volatility.",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bearish",
             "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "XAU/USD experienced a sharp downward trend over the past 24 hours, dropping from around 4020.56 down to 3875.65. This persistent selling pressure aligns with stronger macroeconomic data, surging equity energy sectors, and risk-off or inflation-driven re-pricing that favors liquidity and dampens non-yielding asset demand.",
+            "Past_Price_Action_Cause": "The 24h price action shows a persistent downward trend in XAU/USD, dropping from above 4020 down to the 3875 level, which correlates with profit-taking and technical selling despite positive corporate updates from major gold producers.",
             "Orderflow_Price_Target": "3850.00"
         }
     },
     {
         "main_date": "2026-10-29 07:36",
-        "_timestamp": 1793475204.0,
+        "_timestamp": 1793506704.0,
         "articles": [
             {
                 "title": "Oil prices fall as peace hopes offset fears of growing Middle East conflict",
@@ -1032,18 +872,432 @@
                 "date": "2026-10-31 19:33",
                 "description": "",
                 "_timestamp": 1793475204.0
+            },
+            {
+                "title": "3 Integrated Oil Majors Whose Cash Flow Outlook Just Got Clearer",
+                "link": "https://finance.yahoo.com/energy/articles/3-integrated-oil-majors-whose-041824843.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-01 04:18",
+                "description": "Oil markets are finally catching their breath. OPEC+ is holding December output targets steady while still keeping meaningful cuts in place through 2026, which gives you clearer sight lines on energy-linked cash flows than at any point in the past year. That stability creates a window where sentiment can reset before the next supply surprise. This article walks through three integrated oil and gas majors that are exposed to this news and explains how that backdrop could help or hurt their...",
+                "_timestamp": 1793506704.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Facts": "Gold prices fell toward $4,040 and eventually dropped significantly toward $3,875 amid a firmer US dollar environment, ongoing macroeconomic uncertainty following the Federal Reserve's decision to hold interest rates steady without clear signals on future tightening, and fluctuating geopolitical risk premiums driven by Middle East tensions [Yahoo Finance Gold, Investing.com].",
-            "Uncertainties": "The exact timing and trajectory of upcoming U.S. inflation data releases, the potential for formal peace breakthroughs versus military escalations involving Iran, and how central bank policy will react to elevated energy costs remain unconfirmed [Yahoo Finance Gold].",
-            "Macro_Context": "Persistent geopolitical tensions in the Middle East have driven oil and European gas prices higher, fueling inflation concerns. Meanwhile, the Federal Reserve has maintained steady interest rates, creating volatility as markets weigh tightening paths against macroeconomic risks [Yahoo Finance Gold, Investing.com].",
+            "Facts": "Gold prices fell toward $4,040 and eventually down to $3,875.65 as the Federal Reserve held interest rates steady with limited clarity on its next move, while geopolitical tensions in the Middle East and rising oil prices dominated macroeconomic discussions [Yahoo Finance Gold, Investing.com].",
+            "Uncertainties": "The exact timeline of upcoming U.S. inflation readings and the ultimate trajectory of Middle East conflicts and U.S.-Iran diplomacy remain uncertain [Investing.com].",
+            "Macro_Context": "The Federal Reserve is holding rates steady while awaiting crucial inflation data, and surging energy costs are driving inflationary pressures globally, affecting currency and commodity movements [Yahoo Finance Gold, Investing.com].",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bearish",
             "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Gold experienced a sharp downward trend over the past 24 hours, falling from around 4020.56 down to 3875.64. This price action strongly aligns with the reported cautious Fed stance, a firmer U.S. dollar, and shifting risk dynamics that pressured precious metals.",
+            "Past_Price_Action_Cause": "Gold experienced a sharp downward trajectory over the past 24 hours, dropping from above $4,020 down to $3,875.65, aligning with hawkish Fed rate decisions, uncertainty surrounding inflation data, and broad dollar resilience.",
+            "Orderflow_Price_Target": "3850.00"
+        }
+    },
+    {
+        "main_date": "2026-11-01 02:13",
+        "_timestamp": 1793499231.0,
+        "articles": [
+            {
+                "title": "Ulta Beauty (ULTA) Opens First Qatar Stores As Global Growth Moves Up A Gear",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/ulta-beauty-ulta-opens-first-021351375.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-01 02:13",
+                "description": "Ulta Beauty (NasdaqGS:ULTA) has opened its first stores in Qatar, marking its initial physical expansion beyond the US market. The retailer is working with Kuwait based Alshaya Group to roll out a broader store network across the Middle East region. Management has signalled plans for additional locations in multiple Gulf markets following the Qatar launch. Ulta Beauty's Qatar entry and wider Middle East rollout come alongside other trends in the business that recent research highlights. Our...",
+                "_timestamp": 1793499231.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Ulta Beauty has opened its first stores in Qatar in partnership with Alshaya Group, marking its initial physical expansion outside the US market with plans for broader Gulf region growth [Yahoo Finance Gold].",
+            "Uncertainties": "The provided news is about corporate retail expansion in the Middle East and has no direct macroeconomic or geopolitical correlation to gold markets.",
+            "Macro_Context": "Broader macro conditions are currently dominated by a strong downward price correction in gold over the past 24 hours, dropping from above 4020 down to the 3875 range.",
+            "Impact_Timing": "Present",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-10-31 16:42",
+        "_timestamp": 1793481265.0,
+        "articles": [
+            {
+                "title": "OPEC+ set to keep production targets unchanged in December, source says",
+                "link": "https://www.investing.com/news/commodities-news/opec-set-to-keep-production-targets-unchanged-in-december-source-says-4989301",
+                "source": "Investing.com",
+                "date": "2026-10-31 16:42",
+                "description": "",
+                "_timestamp": 1793464939.0
+            },
+            {
+                "title": "OPEC+ set to hold December oil output steady, Reuters reports",
+                "link": "https://www.investing.com/news/commodities-news/opec-set-to-hold-december-oil-output-steady-4989332",
+                "source": "Investing.com",
+                "date": "2026-10-31 20:44",
+                "description": "",
+                "_timestamp": 1793479465.0
+            },
+            {
+                "title": "OPEC+ set to hold December oil output steady, Reuters reports",
+                "link": "https://finance.yahoo.com/energy/articles/opec-set-hold-december-oil-211425680.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-31 21:14",
+                "description": "Investing.com -- OPEC+ members have agreed in principle to maintain their December oil production targets, as the alliance is expected to hold off on further supply policy changes until next year, Reuters reported on Saturday, citing three people familiar with the matter.",
+                "_timestamp": 1793481265.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "OPEC+ members have agreed in principle to maintain their December oil production targets, holding off on further supply policy changes until next year, according to reports citing three people familiar with the matter [Investing.com, Reuters, Yahoo Finance Oil].",
+            "Uncertainties": "Whether all member states will strictly adhere to the quotas and how broader macroeconomic trends will impact oil demand moving forward remains unconfirmed.",
+            "Macro_Context": "Stable oil production targets suggest predictable energy supply conditions, influencing broader inflationary expectations and commodity market sentiment.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "N/A",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-10-29 08:02",
+        "_timestamp": 1793480900.0,
+        "articles": [
+            {
+                "title": "TotalEnergies profit hits record on high oil prices",
+                "link": "https://finance.yahoo.com/energy/articles/totalenergies-profit-hits-record-high-080216298.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 08:02",
+                "description": "French oil and gas giant TotalEnergies said Thursday that its net profit hit a new record in the third quarter as the war in the Middle East pushed up hydrocarbon prices.The company had already reported a strong rise in its bottom line in the preceding two quarters, similarly driven by soaring oil and gas prices as well as its trading activities.",
+                "_timestamp": 1793260936.0
+            },
+            {
+                "title": "Petrochina shares rise as Q3 profit surges on strong oil prices",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/petrochina-shares-rise-q3-profit-052644553.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 05:26",
+                "description": "Investing.com-- PetroChina’s Hong Kong-listed shares rose on Thursday after the company reported a sharp rise in third-quarter profit, as elevated oil and gas prices tied to the ongoing Middle East conflict boosted earnings well ahead of expectations.",
+                "_timestamp": 1793251604.0
+            },
+            {
+                "title": "3 Refining Stocks With Pricing Power as Fuel Bottlenecks Tighten",
+                "link": "https://finance.yahoo.com/energy/articles/3-refining-stocks-pricing-power-021221789.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 02:12",
+                "description": "Fuel markets have been hit by refinery outages, military risk and years of underinvestment, creating a world where crude is available but turning it into usable diesel and gasoline has become the real choke point. That squeeze can reward certain integrated oil and refining stocks while leaving others exposed. This article walks through three global refiners that are closely tied to this storyline and what that might mean for your portfolio decisions. The stocks highlighted below are just a...",
+                "_timestamp": 1793239941.0
+            },
+            {
+                "title": "Petrobras Oil and Gas Output Jumps 11.7% to Record High in Q3",
+                "link": "https://finance.yahoo.com/energy/articles/petrobras-oil-gas-output-jumps-010500840.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 01:05",
+                "description": "Petrobras reported record oil and gas production of 3.512 million barrels of oil equivalent per day in the third quarter of 2026, up 11.7% year over year, as output from its Brazilian pre-salt operations continued to expand.",
+                "_timestamp": 1793235900.0
+            },
+            {
+                "title": "Shell posts second-highest profit ever after oil price surge",
+                "link": "https://uk.finance.yahoo.com/news/shell-posts-second-highest-profit-112536798.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 11:25",
+                "description": "Shell recorded its second-highest profit ever after the Iran war pushed up oil and gas prices.",
+                "_timestamp": 1793273136.0
+            },
+            {
+                "title": "Calgary energy producer Whitecap reports spiking revenues, profits on high oil prices",
+                "link": "https://financialpost.com/commodities/energy/oil-gas/calgary-energy-producer-whitecap-reports-spiking-revenues-profits-high-oil-prices?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 11:22",
+                "description": "Oil prices did much of the work for the company's third-quarter performance",
+                "_timestamp": 1793272979.0
+            },
+            {
+                "title": "Shell posts second-highest profit ever after oil price surge",
+                "link": "https://www.telegraph.co.uk/business/2026/10/29/shell-posts-second-highest-profit-ever-oil-price-surge/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 11:25",
+                "description": "Shell recorded its second-highest profit ever after the Iran war pushed up oil and gas prices.",
+                "_timestamp": 1793273136.0
+            },
+            {
+                "title": "Canadian resource stocks face a cost squeeze despite resilient earnings",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/canadian-stocks-face-cost-squeeze-160210254.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-29 16:02",
+                "description": "Investing.com -- Canadian resource companies delivered mixed third-quarter results, with stronger earnings at several gold miners and improving cash flow at copper producer First Quantum Minerals offset by rising costs, working-capital pressures and uneven production performance.",
+                "_timestamp": 1793289730.0
+            },
+            {
+                "title": "Robust Demand Across BioPharma and NGS Applications Elevates Twist Bioscience Corp.’s (TWST) Growth Profile",
+                "link": "https://finance.yahoo.com/healthcare/articles/robust-demand-across-biopharma-ngs-151546343.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 15:15",
+                "description": "Conestoga Capital Advisors, an asset management company, released its third-quarter 2026 investor letter. The letter can be downloaded here. Conestoga Capital Advisors released its third-quarter 2026 investor letter, outlining a shifting macroeconomic backdrop for small-cap equities. After a strong start to 2026, 3Q26 headwinds—including elevated oil prices, persistent inflation, and a September Fed rate hike—drove a 9.4% […]",
+                "_timestamp": 1793286946.0
+            },
+            {
+                "title": "APA Gears Up to Report Q3 Earnings: Here's How It Will Fare",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/apa-gears-report-q3-earnings-150000386.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 15:00",
+                "description": "APA Corporation is set to report Q3 2026 results, with higher oil prices potentially boosting revenues, while rising operating expenses could pressure earnings.",
+                "_timestamp": 1793286000.0
+            },
+            {
+                "title": "These IBD 50 Energy Stocks Show Gigantic Earnings Growth",
+                "link": "https://finance.yahoo.com/m/4726d84d-d5fb-3269-b458-89e2fccc09d2/these-ibd-50-energy-stocks.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 14:19",
+                "description": "Energy-related stocks now dominate the IBD 50, along with technology. The energy sector is up more than 11% this month, beating all other S&amp;P 500 sectors.",
+                "_timestamp": 1793283551.0
+            },
+            {
+                "title": "Sector Update: Energy Stocks Mixed in Afternoon Trading",
+                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-mixed-afternoon-181353108.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 18:13",
+                "description": "Energy stocks were mixed Thursday afternoon, with the NYSE Energy Sector Index up 0.1% and the State",
+                "_timestamp": 1793297633.0
+            },
+            {
+                "title": "Chevron Hit a Record High. Friday’s Report Has to Show Where the Oil-Spike Cash Went",
+                "link": "https://www.tikr.com/blog/chevron-hit-a-record-high-fridays-report-has-to-show-where-the-oil-spike-cash-went?ref=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 17:26",
+                "description": "Key TakeawaysChevron just hit a record high ahead of its third-quarter report on Friday, and Brent crude averaged $114 a barrel in September. The second quarter showed the oil spike turning into cash, and Friday’s real test is how much of that cash Chevron sends back to shareholders.",
+                "_timestamp": 1793294801.0
+            },
+            {
+                "title": "Energy Leader Dorian LPG Positioned To Hit Buy Point Ahead Of Earnings Results",
+                "link": "https://finance.yahoo.com/m/36b7bd89-d659-3041-b36e-72de97f1c26b/energy-leader-dorian-lpg.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 17:20",
+                "description": "Energy leader Dorian stock is approaching a new buy point ahead of the company's earnings report set for next week.",
+                "_timestamp": 1793294403.0
+            },
+            {
+                "title": "Sector Update: Energy Stocks Higher Late Afternoon",
+                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-higher-afternoon-195730175.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 19:57",
+                "description": "Energy stocks were higher late Thursday afternoon, with the NYSE Energy Sector Index rising 0.4% and",
+                "_timestamp": 1793303850.0
+            },
+            {
+                "title": "Shell Stock Surges on Record Refining Results. Don’t Expect It to Last.",
+                "link": "https://finance.yahoo.com/m/8feb4398-2733-33d6-b4f9-ccb89404035d/shell-stock-surges-on-record.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 19:05",
+                "description": "Shell and TotalEnergies reported record results from refining, but there are pressures mounting. What oil prices and operational costs are doing to margins.",
+                "_timestamp": 1793300700.0
+            },
+            {
+                "title": "Whitecap Profits Surge 60% as Ottawa's Tax Break Promises Another $400 Million",
+                "link": "https://finance.yahoo.com/energy/articles/whitecap-profits-surge-60-ottawas-212824717.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-29 21:28",
+                "description": "Canadian oil and gas producer Whitecap Resources (TSX: WCP) reported a nearly 60% increase in third-quarter profit as elevated crude prices boosted earnings",
+                "_timestamp": 1793309304.0
+            },
+            {
+                "title": "3 Canadian Energy Stocks With Net Margins Over 12%",
+                "link": "https://finance.yahoo.com/energy/articles/3-canadian-energy-stocks-net-061226748.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 06:12",
+                "description": "Oil prices are on track for a fourth straight monthly gain as conflict around the Strait of Hormuz keeps supply risks in focus. That keeps attention firmly on Canadian oil and gas producers, which often sit at the crossroads of energy security and global pricing. This article highlights three stocks from our Canadian oil and gas screener that investors can study if they want targeted exposure to this theme. The three Canadian oil and gas stocks below are just a sample, and the full screen...",
+                "_timestamp": 1793340746.0
+            },
+            {
+                "title": "What Teck Resources (TECK) Said on Its Q3 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-teck-resources-teck-said-on-its-q3-earnings-call-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-30 14:14",
+                "description": "Teck Resources (NYSE:TECK) reported sharply higher third-quarter earnings and operating cash flow as record copper prices, increased copper production and lower processing charges offset severe weather disruptions across parts of its copper portfolio. Adjusted EBITDA doubled from a year earlier to",
+                "_timestamp": 1793369686.0
+            },
+            {
+                "title": "Canada Commodities: Oil Prices Jump More Than 2% Following Tanker Attack in Strait of Hormuz",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-jump-135715843.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 13:57",
+                "description": "Oil prices rose on Friday morning after an attack on an oil tanker in the Strait of Hormuz left the",
+                "_timestamp": 1793368635.0
+            },
+            {
+                "title": "PBF Energy Q3 Earnings Call Highlights",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-pbf-energy-q3-earnings-call-highlights-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 14:14",
+                "description": "PBF Energy (NYSE:PBF) reported third-quarter adjusted net income of $12.78 per share and adjusted EBITDA of approximately $2.3 billion, as tight refined-product supplies and firm demand supported strong market conditions. The company also continued to reduce leverage, cutting net debt by more than $",
+                "_timestamp": 1793369686.0
+            },
+            {
+                "title": "Chevron earnings beat estimates as revenue jumps 36% to $67.8 billion",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101005/chevron-earnings-beat-estimates-as-revenue-jumps-36-to-67-8-billion-1101005.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 13:15",
+                "description": "Chevron Corporation (NYSE:CVX, XETRA:CHV) reported third-quarter adjusted earnings of $10.4 billion, or $5.28 per share, beating analysts’ expectations as higher refining margins and stronger oil realizations helped drive a sharp increase in revenue. Higher oil price realizations and stronger...",
+                "_timestamp": 1793366100.0
+            },
+            {
+                "title": "Energy stocks are surging: Can the rally last?",
+                "link": "https://finance.yahoo.com/video/energy-stocks-are-surging-can-the-rally-last-141815208.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 14:18",
+                "description": "Energy stocks are outperforming the broader market, with oil giants Chevron (CVX), ExxonMobil (XOM), and BP (BP) reporting strong profits. The 8:30 hosts Jake Conley and Julie Hyman break down what's fueling the sector's momentum and why oil prices could remain elevated for longer.",
+                "_timestamp": 1793369895.0
+            },
+            {
+                "title": "Exxon’s Refineries Out-Earned Its Oil Wells Last Quarter For the First Time in 6 Years. Here’s What That Says About Where the Profit Is Coming From.",
+                "link": "https://www.fool.com/investing/2026/10/30/exxon-s-refineries-out-earned-its-oil-wells-last-quarter-for-the-first-time-in-6-years-here-s-what-that-says-about-where-the-profit-is-coming-from/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 16:05",
+                "description": "Exxon's refineries were money-printing machines during the third quarter.",
+                "_timestamp": 1793376301.0
+            },
+            {
+                "title": "Chevron Beats Sky-High Targets as Oil Prices Surge",
+                "link": "https://finance.yahoo.com/m/3423b978-cd1f-3d63-9200-04d7e0b7050c/chevron-beats-sky-high.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 14:40",
+                "description": "The market knew earnings would be stellar, but the energy major still managed to beat Wall Street’s sky-high targets.",
+                "_timestamp": 1793371200.0
+            },
+            {
+                "title": "3 Energy Stocks Income Investors Are Watching After BP Profit Shock",
+                "link": "https://finance.yahoo.com/energy/articles/3-energy-stocks-income-investors-161526431.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 16:15",
+                "description": "Oil markets just received a jolt of fresh information, with BP reporting a near-quadrupling of profit to an underlying replacement cost profit of $8.5b and refinery margins boosted by Iran war related disruptions to Middle East fuel exports. That kind of earnings shock can quickly reshape where dividend income and balance sheet strength cluster in the energy sector. This article highlights three high-dividend, cash-rich stocks exposed to the same forces as BP and explains how the news...",
+                "_timestamp": 1793376926.0
+            },
+            {
+                "title": "EOG Resources Gears Up to Report Q3 Earnings: What's in the Cards?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/eog-resources-gears-report-q3-151200723.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 15:12",
+                "description": "EOG gears up for Q3 earnings, with higher oil prices, rising production volumes and low-cost operations expected to support strong year-over-year growth.",
+                "_timestamp": 1793373120.0
+            },
+            {
+                "title": "Sector Update: Energy Stocks Gain Friday Afternoon",
+                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-gain-friday-175824843.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 17:58",
+                "description": "Energy stocks were higher Friday afternoon, with the NYSE Energy Sector Index rising 1.3% and the St",
+                "_timestamp": 1793383104.0
+            },
+            {
+                "title": "Exxon And Chevron Refine Their Way To Record Highs",
+                "link": "https://app.moby.co/home/news/news-exxon-and-chevron-refine-their-way-to-record-highs?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 17:08",
+                "description": "Every tanker hit in Hormuz is another good day for a Gulf Coast refinery",
+                "_timestamp": 1793380085.0
+            },
+            {
+                "title": "Imperial Oil Limited Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-imperial-oil-limited-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 21:27",
+                "description": "Moby summary of Imperial Oil Limited's Q3 2026 earnings call",
+                "_timestamp": 1793395649.0
+            },
+            {
+                "title": "Sector Update: Energy Stocks Gain Late Afternoon",
+                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-gain-afternoon-195710565.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 19:57",
+                "description": "Energy stocks were higher late Friday afternoon, with the NYSE Energy Sector Index rising 1.2% and t",
+                "_timestamp": 1793390230.0
+            },
+            {
+                "title": "Indian Founder Led Growth Stocks To Watch In October 2026",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/indian-founder-led-growth-stocks-221708852.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 22:17",
+                "description": "Oil traders are bracing for a wild week as Brent crude edges toward $120, and that kind of energy price anxiety often pulls attention back to growth stories closer to home. Indian fast growing companies, where founders and executives still own a meaningful stake, can give investors a way to focus on businesses that management clearly believes in. This article highlights three such high conviction stocks from our insider backed growth list. The three stocks highlighted here offer a compelling...",
+                "_timestamp": 1793398628.0
+            },
+            {
+                "title": "Is Shell (LSE:SHEL) Reasonable After Stronger Cash Flow And Buybacks?",
+                "link": "https://finance.yahoo.com/energy/articles/shell-lse-shel-reasonable-stronger-201809340.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 20:18",
+                "description": "Shell has ridden a powerful wave in energy markets, yet with the stock up 191.4% over the past 5 years, the key issue for you now is whether that price is still grounded in the cash it can generate. Recent spikes in oil prices, high refining margins and fresh capital returns have sharpened the focus on what the company’s future cash flows are really worth today. A 191.4% gain over 5 years puts real pressure on the question of whether Shell’s current share price can still be explained by its...",
+                "_timestamp": 1793391489.0
+            },
+            {
+                "title": "As Winter Energy Costs Climb, More Canadians Turn to Solar Generators for Home Power",
+                "link": "https://finance.yahoo.com/energy/articles/winter-energy-costs-climb-more-221600327.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-30 22:16",
+                "description": "Jackery sees growing interest in solar generators as households look for quiet, clean power they can count on this season OTTAWA, Ontario, Oct. 30, 2026 (GLOBE NEWSWIRE) -- Heating season is here, and Canadians are watching their energy bills closely. On Oct. 3, furnace oil in St. John's cost $2.16 per litre, almost a dollar more than on the same day in 2025. With global oil markets volatile, more households are looking for power they can make themselves. Jackery, a global leader in solar genera",
+                "_timestamp": 1793398560.0
+            },
+            {
+                "title": "Coal supply is struggling to keep pace with demand",
+                "link": "https://www.investing.com/news/commodities-news/coal-supply-is-struggling-to-keep-pace-with-demand-4989174",
+                "source": "Investing.com",
+                "date": "2026-10-31 07:58",
+                "description": "",
+                "_timestamp": 1793433508.0
+            },
+            {
+                "title": "Chevron Leads 3 Top Energy Stocks To Watch",
+                "link": "https://finance.yahoo.com/energy/articles/chevron-leads-3-top-energy-080922894.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-31 08:09",
+                "description": "Refining profits have surged as fuel supplies tightened worldwide, putting big integrated oil and gas groups back in the spotlight. When refinery outages, closures and disrupted trade routes squeeze fuel availability, scale and diversification can matter for investors hunting for resilient cash flow. This article walks through three leading stocks from a global oil and gas screener that aim to capture that theme and explains what to watch before you commit capital. The three stocks below are...",
+                "_timestamp": 1793434162.0
+            },
+            {
+                "title": "Imperial Oil Stock Record Downstream Earnings What's Changed",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/imperial-oil-stock-record-downstream-141302765.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-31 14:13",
+                "description": "Imperial Oil reported record third quarter 2026 earnings, with CAD 2,454 million in net income on CAD 16,205 million in sales and an unchanged quarterly dividend of CAD 0.87 per share payable on January 1, 2027. The company generated much stronger profit despite lower crude oil volumes, helped by downstream strength and growing renewable diesel output, while still dealing with pipeline related production disruptions. We will now look at how Imperial Oil's investment narrative intersects with...",
+                "_timestamp": 1793455982.0
+            },
+            {
+                "title": "Thor Explorations And 2 Canadian Penny Stocks To Watch",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/thor-explorations-2-canadian-penny-171150486.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-10-31 17:11",
+                "description": "AI enthusiasm in big tech has cooled as investors question heavy spending on data centers and chips. That pullback has shifted attention to smaller Canadian companies where every dollar is watched closely and balance sheets matter. Financially disciplined penny stocks can offer exposure to early stage growth, with tighter cost control and less hype. This article highlights three financially healthier Canadian penny stocks from our screener that may be worth a closer look. The three stocks...",
+                "_timestamp": 1793466710.0
+            },
+            {
+                "title": "BW Energy (OB:BWE) Stock Catches A Q3 Earnings Squeeze",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/bw-energy-ob-bwe-stock-151625884.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-31 15:16",
+                "description": "BW Energy just reported Q3 2026 numbers that flipped the script on recent optimism. The company moved from earlier quarterly profits to a small net loss of about US$0.7 million on revenue of US$73.2 million, even as the stock closed at NOK54.4 after a weak week and month. Traders have been punishing the shares, yet the real shock is the profit squeeze, with earnings hit by lower realized oil prices and a heavy tax bill. Price action looks more like a verdict on emotion than a clean read of...",
+                "_timestamp": 1793459785.0
+            },
+            {
+                "title": "Saturn Oil & Gas (TSX:SOIL) Stock May Trade Below Fair Value Despite Corex Deal",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/saturn-oil-gas-tsx-soil-210820495.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-10-31 21:08",
+                "description": "Saturn Oil & Gas has delivered a year to date return that is very large, so the obvious question is whether that kind of share price change still lines up with what the business is earning. With the stock now trading around C$9.45, investors are asking if Saturn Oil & Gas' current earnings profile can carry that valuation. The share price is up about 284.1% year to date. This puts the focus squarely on whether the earnings behind the move are strong enough to support it. The planned C$302...",
+                "_timestamp": 1793480900.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Major global energy companies, including Chevron, Shell, TotalEnergies, and PetroChina, reported record or sharply higher Q3 2026 profits driven by elevated oil and gas prices [Yahoo Finance Oil]. Furthermore, geopolitical tensions and disruptions, such as an attack on an oil tanker in the Strait of Hormuz and ongoing conflicts involving Iran and the Middle East, have pushed oil prices higher and tightened fuel supplies [Yahoo Finance Oil].",
+            "Uncertainties": "The exact duration of the Middle East conflict, the immediate impact on broader global supply chains, and whether central banks will be forced to keep interest rates elevated due to persistent energy-driven inflation.",
+            "Macro_Context": "Ongoing geopolitical conflicts in the Middle East have severely constrained energy supplies, maintaining elevated crude oil and refining margins. This environment fuels inflationary pressures globally, prompting cautious monetary policy stances.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "XAU/USD experienced a sharp downward trend over the past 24 hours, dropping from around 4020.56 down to 3875.65. This persistent selling pressure aligns with stronger macroeconomic data, surging equity energy sectors, and risk-off or inflation-driven re-pricing that favors liquidity and dampens non-yielding asset demand.",
             "Orderflow_Price_Target": "3850.00"
         }
     },
@@ -1079,168 +1333,6 @@
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "N/A",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-10-29 07:47",
-        "_timestamp": 1793474170.0,
-        "articles": [
-            {
-                "title": "ACG Metals says it expects full production from Gediktepe in Q1 2027",
-                "link": "https://www.proactiveinvestors.com/companies/news/1100902/acg-metals-says-it-expects-full-production-from-gediktepe-in-q1-2027-1100902.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 07:47",
-                "description": "ACG Metals Ltd (LSE:ACG, OTC:ACGAF) told investors it expects full commercial sulphide production at Gediktepe in the first quarter of 2027, after expanding tailings storage and water management works, and has also raised its gold-equivalent oxide output forecast. Heavy rainfall and the...",
-                "_timestamp": 1793260020.0
-            },
-            {
-                "title": "Emerita Announces Positive IBW Pre-Feasibility Study Results Highlighting US$776 Million After-Tax NPV (8%), 23.51% IRR and 21-Year Mine Life",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/emerita-announces-positive-ibw-pre-200200269.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-29 20:02",
-                "description": "Iberian Belt West Project Pre-Feasibility Study HighlightsInitial Probable Mineral Reserve of 23.4 million tonnes at 2.30% zinc, 1.13% lead, 0.45% copper, 53 g/t silver, 1.07 g/t goldUpdated Mineral Resource Estimate reflects a 37% increase in Indicated tonnage and a 46% increase in Inferred tonnage compared to the 2025 MREAfter-tax NPV (8%) of US$776 million and IRR of 23.51% in real termsAfter-tax payback period of 1.9 years from the start of production Initial capital cost of US$567 million..",
-                "_timestamp": 1793304120.0
-            },
-            {
-                "title": "What Alamos Gold (AGI) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-alamos-gold-agi-said-on-its-q3-earnings-call-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 06:14",
-                "description": "Alamos Gold (NYSE:AGI) reported third-quarter 2026 gold production of 119,000 ounces, with record output from the Island Gold District offsetting lower planned production at Young-Davidson. The company said it expects a 26% increase in consolidated production in the fourth quarter, driven by higher",
-                "_timestamp": 1793340854.0
-            },
-            {
-                "title": "What Agnico Eagle Mines (AEM) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-agnico-eagle-mines-aem-said-on-its-q3-earnings-call-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 06:14",
-                "description": "Agnico Eagle Mines (NYSE:AEM) reported third-quarter 2026 gold production of 814,000 ounces and free cash flow of $852 million, while reaffirming that it expects to meet the lower end of its annual production guidance and the upper end of its cost guidance. President and CEO Ammar Al-Joundi said pr",
-                "_timestamp": 1793340852.0
-            },
-            {
-                "title": "EQT (EQT) Deal Sparks Fresh Marcellus And Utica Takeover Talk",
-                "link": "https://finance.yahoo.com/energy/articles/eqt-eqt-deal-sparks-fresh-051711434.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 05:17",
-                "description": "EQT (NYSE:EQT) has ignited fresh M&amp;A talk in the Marcellus/Utica gas basin after agreeing to acquire Range Resources. Analysts are now flagging Antero Resources, CNX Resources, and Seneca Resources as potential next deal targets in the region. Commentary around EQT's move frames the Range Resources transaction as a possible opening step toward wider basin consolidation. EQT's purchase of Range Resources is one headline, yet the wider Marcellus and Utica consolidation story runs deeper. Check...",
-                "_timestamp": 1793337431.0
-            },
-            {
-                "title": "What Eldorado Gold (EGO) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-eldorado-gold-ego-said-on-its-q3-earnings-call-2026-10-30/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 08:14",
-                "description": "Eldorado Gold (NYSE:EGO) reported third-quarter 2026 results marked by higher realized gold prices, continued investment in its Skouries and McIlvenna Bay projects, and revised production guidance following slower-than-expected ramp-ups at those new operations. President and Chief Executive Officer",
-                "_timestamp": 1793348065.0
-            },
-            {
-                "title": "AEM Q3 Earnings Call Highlights Growth Plans and Cost Pressures",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/aem-q3-earnings-call-highlights-130000774.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 13:00",
-                "description": "Agnico Eagle targets up to 30% production growth over the next decade while advancing key mining projects, managing rising costs and sustaining shareholder returns.",
-                "_timestamp": 1793365200.0
-            },
-            {
-                "title": "Largo Reports Q3 2026 Production and Sales Results Reflecting Vanadium Diversification with First Production of Copper, Gold and Platinum Group Metals; Advances Commercial Bank Debt Restructuring",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/largo-reports-q3-2026-production-105100345.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 10:51",
-                "description": "All amounts expressed are in U.S. dollars, denoted by \"$\".Q3 2026 and Nine-Month HighlightsVanadium production: 2,093 tonnes of vanadium pentoxide (\"V₂O₅\") in Q3 2026 vs 2,636 tonnes in Q3 2025 following a strategy to reduce inventories and refocus on high-margin products. Year-to-date 2026 V2O5 production at 7,609 tonnes increased 23% year over year. Q3 2026 sales at 2,428 tonnes remained stable vs 2,417 tonnes in Q3 2025. This reflects Largo pursuing a conscious strategy of reducing inventory.",
-                "_timestamp": 1793357460.0
-            },
-            {
-                "title": "ExxonMobil (NYSE:XOM) reports sales below analyst estimates in Q3 2026 earnings",
-                "link": "https://finance.yahoo.com/energy/articles/exxonmobil-nyse-xom-reports-sales-134031502.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 13:40",
-                "description": "Integrated energy company ExxonMobil (NYSE:XOM) fell short of the market’s revenue expectations in Q3 2026, but revenue rose 29.6% year on year to $110.5 billion. Its GAAP profit of $3.72 per share was 7% below analysts’ consensus estimates.",
-                "_timestamp": 1793367631.0
-            },
-            {
-                "title": "ExxonMobil earnings climb to $15.4 billion as refining margins strengthen",
-                "link": "https://www.proactiveinvestors.com/companies/news/1101001/exxonmobil-earnings-climb-to-15-4-billion-as-refining-margins-strengthen-1101001.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-30 12:30",
-                "description": "Exxon Mobil Corp (NYSE:XOM, XETRA:XONA) reported third-quarter earnings of $15.4 billion, up from $14.5 billion in the previous quarter, as stronger refining margins and operational performance helped offset weaker upstream results. The US oil major reported GAAP earnings of $3.72 per share,...",
-                "_timestamp": 1793363400.0
-            },
-            {
-                "title": "Largo Begins Copper, Gold and PGM Production in Q3 2026, Revises Vanadium Guidance",
-                "link": "https://investorshub.advfn.com/market-news/article/38983/largo-begins-copper-gold-and-pgm-production-in-q3-2026-revises-vanadium-guidance?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 14:16",
-                "description": "Largo Inc. (NASDAQ:LGO) reported its first production of copper, gold, platinum and palladium concentrates during the third quarter of 2026, marking a significant step in diversifying output from its Maracás Menchen Mine in Brazil.",
-                "_timestamp": 1793369797.0
-            },
-            {
-                "title": "Cartier Files on SEDAR+ the NI 43-101 Technical Report of the updated Preliminary Economic Assessment for the Cadillac Project: After-tax NPV5% of C$1.0 billion and after-tax IRR of 26.6% at US$3,600/oz gold price",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/cartier-files-sedar-ni-43-191700518.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-30 19:17",
-                "description": "Average annual production of 100 koz of gold over a 16.2-year mine life – After-tax NPV5% of C$1,565 M and after-tax IRR of 37.3% at spot gold of US$4,300/oz - NPV5% to initial capital ratio of 3.6x. Highlights Robust Economics After-tax NPV5% of C$1,001 M and after-tax IRR of 26.6% at a base case gold price of US$3,600/oz and an exchange rate of 1.38 C$/US$.At a spot gold price of US$4,300/oz, after-tax NPV5% increases to C$1,565 M and after-tax IRR increases to 37.3%.After-tax payback of 4.3 y",
-                "_timestamp": 1793387820.0
-            },
-            {
-                "title": "Eastman Chemical (EMN) Gets $375 Million DOE Grant Reinstated For Recycling Expansion",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/eastman-chemical-emn-gets-375-021236977.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-31 02:12",
-                "description": "Eastman Chemical (NYSE: EMN) received a reinstated US$375 million grant from the U.S. Department of Energy to expand circular recycling operations. The funding supports wider deployment of Eastman's methanolysis technology and upgrades to underused recycling assets in the United States. The grant targets domestic recycled plastics infrastructure, aligning with federal priorities around advanced recycling and a more circular plastics supply chain. Eastman's reinstated US$375 million...",
-                "_timestamp": 1793412756.0
-            },
-            {
-                "title": "ExxonMobil Plans $20 Billion of 2027 Buybacks. Here’s How Its CEO Answered the $60 Oil Question",
-                "link": "https://www.tikr.com/blog/exxonmobil-plans-20-billion-of-2027-buybacks-heres-how-its-ceo-answered-the-60-oil-question?ref=yahoofinance&tlnk=yf-261031-jvr25hxp&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-31 07:18",
-                "description": "Key Stats for ExxonMobil StockCurrent Price: $187. 25Street Target: ~$179NTM Dividend Yield: ~2.",
-                "_timestamp": 1793431091.0
-            },
-            {
-                "title": "EXE Q3 deep dive: Integration, new CEO, and commercial expansion define the quarter",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/exe-q3-deep-dive-integration-031529843.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-31 03:15",
-                "description": "Natural gas producer Expand Energy (NASDAQ:EXE) reported revenue ahead of Wall Street’s expectations in Q3 2026, with sales up 11.6% year on year to $2.81 billion. Its non-GAAP profit of $1.46 per share was 10.8% above analysts’ consensus estimates.",
-                "_timestamp": 1793416529.0
-            },
-            {
-                "title": "What ExxonMobil (XOM) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-exxonmobil-xom-said-on-its-q3-earnings-call-2026-10-31/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-10-31 07:14",
-                "description": "ExxonMobil (NYSE:XOM) reported third-quarter GAAP earnings of $15.4 billion and cash flow from operations of $25.7 billion, as higher prices and constrained supplies for refined products supported results amid ongoing conflict in the Middle East. Chairman and Chief Executive Officer Darren Woods sa",
-                "_timestamp": 1793430844.0
-            },
-            {
-                "title": "Alamos Gold's 2027 Outlook: Production Set to Jump as an $835 Million Expansion Wraps Up",
-                "link": "https://www.fool.com/coverage/moneyball/2026/10/31/alamos-gold-s-2027-outlook-production-set-to-jump-as-an-usd835-million-expansion-wraps-up/?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-31 19:16",
-                "description": "This under-the-radar gold mining stock boasts a Superscore of 87 from our Hidden Gems Primary database, part of The Motley Fool's Moneyball Database system. Here's why.",
-                "_timestamp": 1793474170.0
-            },
-            {
-                "title": "Caledonia Mining’s 2027 Outlook: $150 Million Raised for Bilboes and a Dividend That Keeps Paying Through the Turbulence",
-                "link": "https://www.fool.com/coverage/moneyball/2026/10/31/caledonia-mining-s-2027-outlook-usd150-million-raised-for-bilboes-and-a-dividend-that-keeps-paying-through-the-turbulence/?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-10-31 19:11",
-                "description": "This under-the-radar gold mining stock boasts a Superscore of 79 from our Hidden Gems Primary database, part of The Motley Fool's Moneyball Database system. Here's why.",
-                "_timestamp": 1793473906.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Gold miners such as Agnico Eagle, Alamos Gold, and Eldorado Gold reported their Q3 2026 earnings, showcasing solid production, cost management, and future expansion outlooks pointing towards increased output heading into 2027 [Yahoo Finance Gold]. Concurrently, corporate updates from junior miners and energy firms highlighted ongoing sector developments and steady production timelines [Yahoo Finance Gold, Yahoo Finance Oil].",
-            "Uncertainties": "Uncertainty remains regarding the exact trajectory of broader macroeconomic factors, ongoing geopolitical conflicts influencing energy and safe-haven assets, and whether mining supply expansions will fully materialize on schedule.",
-            "Macro_Context": "The broader macroeconomic environment features fluctuating commodity markets, corporate earnings reports reflecting resilient operational performance despite cost pressures, and ongoing geopolitical tensions supporting safe-haven demand.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "The 24h price action shows a significant downward trend in XAU/USD, falling from around 4020 down to the 3875 level, aligning with strong corporate earnings reports and positive forward production guidance from major gold miners which alleviate acute physical supply scarcity fears.",
-            "Orderflow_Price_Target": "3850.00"
         }
     },
     {

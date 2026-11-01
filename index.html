@@ -1,268 +1,793 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial & Gold News Aggregator</title>
-    <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f8; color: #333; margin: 0; padding: 0; }
-        
-        /* Tab Navigation */
-        .tab-nav { display: flex; justify-content: space-around; background: #fff; padding: 10px 0; border-bottom: 1px solid #e2e8f0; margin-bottom: 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        .tab-btn { background: none; border: none; font-size: 1em; font-weight: bold; color: #64748b; cursor: pointer; padding: 12px 20px; border-radius: 6px; transition: all 0.2s; width: 45%; }
-        .tab-btn.active { color: #1e293b; background: #f1f5f9; box-shadow: inset 0 -2px 0 #3b82f6; }
-        .tab-content { display: none; padding: 0 20px; }
-        .tab-content.active { display: block; }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gold (XAUUSD) Terminal – DOM & Global/Regional News Aggregator</title>
+  <style>
+    :root {
+      --bg-main: #0b0e14;
+      --bg-panel: #131722;
+      --bg-panel-alt: #1e222d;
+      --border: #2a2e39;
+      --text-main: #d1d4dc;
+      --text-muted: #787b86;
+      --gold: #f5c542;
+      --green: #26a69a;
+      --red: #ef5350;
+      --blue: #2962ff;
+    }
 
-        h1 { text-align: center; color: #1e293b; margin: 20px 0; }
-        
-        /* Controls & Cards */
-        #controls { max-width: 800px; margin: 0 auto 20px auto; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
-        select { padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1; background-color: #fff; font-size: 0.95em; cursor: pointer; outline: none; }
-        #chart-container { max-width: 800px; height: 450px; margin: 0 auto 30px auto; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); overflow: hidden; }
-        #news-container { max-width: 800px; margin: 0 auto; }
-        
-        .news-card { background-color: #fff; border-radius: 8px; border-left: 6px solid #eab308; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        
-        .date-header { color: #888; font-size: 0.9em; margin-bottom: 15px; }
-        .summary-box { background-color: #f8f9fa; border-radius: 6px; padding: 15px; margin-bottom: 20px; border: 1px solid #eef0f2; }
-        .summary-label { font-weight: bold; margin-bottom: 10px; }
-        .structured-data { margin-bottom: 12px; line-height: 1.5; }
-        .outlook-box { padding: 12px; background-color: #fff; border-left: 4px solid #d4af37; font-size: 0.95em; margin-top: 10px; }
-        .reported-by-label { color: #64748b; font-weight: bold; font-size: 0.85em; text-transform: uppercase; margin-bottom: 15px; }
-        .source-item { display: flex; align-items: flex-start; margin-bottom: 10px; }
-        .source-badge { background-color: #e2e8f0; color: #1e293b; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; margin-right: 15px; white-space: nowrap; min-width: 100px; text-align: center; }
-        .source-link { color: #3b82f6; text-decoration: none; line-height: 1.4; }
-    </style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
+      padding: 14px;
+      line-height: 1.45;
+    }
+
+    /* TOP BAR */
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 18px;
+      margin-bottom: 14px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--gold);
+      letter-spacing: 0.5px;
+    }
+
+    .brand-badge {
+      background: rgba(245, 197, 66, 0.15);
+      color: var(--gold);
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(245, 197, 66, 0.3);
+    }
+
+    .top-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 12px;
+    }
+
+    /* WORKSPACE: CHART + DOM */
+    .trading-workspace {
+      display: flex;
+      gap: 14px;
+      height: 540px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 1024px) {
+      .trading-workspace {
+        flex-direction: column;
+        height: auto;
+      }
+      .chart-container {
+        height: 450px;
+      }
+      .dom-panel {
+        width: 100% !important;
+        height: 480px;
+      }
+    }
+
+    .chart-container {
+      flex: 1;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* DOM PANEL */
+    .dom-panel {
+      width: 330px;
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      user-select: none;
+    }
+
+    .dom-header {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+    }
+
+    .dom-status {
+      font-size: 10px;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(38, 166, 154, 0.15);
+      color: var(--green);
+    }
+
+    .imbalance-container {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .imbalance-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .imbalance-bar {
+      height: 6px;
+      background: var(--red);
+      border-radius: 3px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .imbalance-fill-bid {
+      background: var(--green);
+      height: 100%;
+      transition: width 0.15s ease;
+    }
+
+    .dom-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 6px 12px;
+      color: var(--text-muted);
+      font-size: 11px;
+      border-bottom: 1px solid var(--bg-panel-alt);
+    }
+
+    .dom-columns span:not(:first-child) {
+      text-align: right;
+    }
+
+    .dom-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    .dom-row {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 2px 12px;
+      line-height: 1.35;
+      z-index: 1;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .dom-row span:not(:first-child) {
+      text-align: right;
+    }
+
+    .dom-depth-bg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: width 0.1s ease;
+    }
+
+    .ask-row .price { color: var(--red); }
+    .ask-row .dom-depth-bg { background: rgba(239, 83, 80, 0.16); }
+
+    .bid-row .price { color: var(--green); }
+    .bid-row .dom-depth-bg { background: rgba(38, 166, 154, 0.16); }
+
+    .whale-wall {
+      font-weight: 700;
+      background: rgba(245, 197, 66, 0.12);
+    }
+
+    .whale-wall .size::before {
+      content: "🐳 ";
+      font-size: 10px;
+    }
+
+    .dom-spread-box {
+      padding: 7px 12px;
+      background: var(--bg-panel-alt);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+    }
+
+    .mid-price {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .spread-val {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    /* NEWS AGGREGATOR SECTION */
+    .news-section {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .news-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+
+    .filter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tab-btn {
+      background: var(--bg-panel-alt);
+      color: var(--text-main);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn:hover {
+      border-color: var(--gold);
+    }
+
+    .tab-btn.active {
+      background: rgba(245, 197, 66, 0.18);
+      color: var(--gold);
+      border-color: var(--gold);
+      font-weight: 600;
+    }
+
+    .toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 12px;
+    }
+
+    .toggle-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      color: var(--text-main);
+    }
+
+    .refresh-btn {
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 12px;
+    }
+
+    .news-card {
+      background: var(--bg-panel-alt);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 12px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.1s ease, border-color 0.15s ease;
+    }
+
+    .news-card:hover {
+      border-color: #434857;
+    }
+
+    .news-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+      margin-bottom: 8px;
+      gap: 6px;
+    }
+
+    .source-tag {
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.07);
+      color: #fff;
+    }
+
+    .region-badge {
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 10px;
+    }
+
+    .region-west { background: rgba(41, 98, 255, 0.18); color: #82b1ff; }
+    .region-gulf { background: rgba(38, 166, 154, 0.18); color: #80cbc4; }
+    .region-iran { background: rgba(239, 83, 80, 0.18); color: #ff8a80; }
+    .region-israel { background: rgba(171, 71, 188, 0.18); color: #ce93d8; }
+    .region-mena { background: rgba(245, 197, 66, 0.18); color: var(--gold); }
+
+    .news-title {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #ffffff;
+      text-decoration: none;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .news-title:hover {
+      color: var(--gold);
+    }
+
+    .news-bias {
+      font-size: 11px;
+      color: var(--text-muted);
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+      padding-top: 6px;
+      margin-top: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="tab-nav">
-        <button class="tab-btn active" onclick="switchTab(event, 'chart-tab')">📊 Chart & Orders</button>
-        <button class="tab-btn" onclick="switchTab(event, 'news-tab')">📰 News Analyse</button>
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="brand">
+      <span>⚡ XAU/USD QUANT & GEOPOLITICAL TERMINAL</span>
+      <span class="brand-badge">Multi-Perspective Feeds + Live DOM</span>
     </div>
-
-    <h1>Financial & Gold Aggregator</h1>
-
-    <!-- CHART TAB -->
-    <div id="chart-tab" class="tab-content active">
-        <div id="chart-container"></div>
+    <div class="top-controls">
+      <span id="last-updated-text" style="color: var(--text-muted);">Feeds laden...</span>
     </div>
+  </header>
 
-    <!-- NEWS TAB -->
-    <div id="news-tab" class="tab-content">
-        <div id="controls">
-            <select id="filter-impact" onchange="renderNews()">
-                <option value="all">All Impacts</option>
-                <option value="Bullish">Bullish</option>
-                <option value="Bearish">Bearish</option>
-                <option value="Neutral">Neutral</option>
-            </select>
-            <select id="filter-type" onchange="renderNews()">
-                <option value="all">All News Types</option>
-                <option value="cluster">Connected Clusters</option>
-                <option value="single">Single Articles</option>
-            </select>
-            <select id="filter-relevance" onchange="renderNews()">
-                <option value="all">Alle News (Gesamt)</option>
-                <option value="tradeable">🔥 Nur Handels-Setups (&ge; 67%)</option>
-            </select>
-            <select id="sort-by" onchange="renderNews()">
-                <option value="newest">Sort: Newest First</option>
-                <option value="probability">Sort: Highest Probability</option>
-            </select>
+  <!-- HAUPTBEREICH: LINKS TRADINGVIEW CHART | RECHTS BINANCE PAXG LIVE-DOM -->
+  <section class="trading-workspace">
+    <!-- LINKS: TradingView Chart -->
+    <div class="chart-container" id="tv_chart_container"></div>
+
+    <!-- RECHTS: Live Depth of Market (DOM) -->
+    <div class="dom-panel">
+      <div class="dom-header">
+        <span>GOLD DOM (PAXG/USDT)</span>
+        <span class="dom-status" id="dom-conn-status">CONNECTING...</span>
+      </div>
+
+      <div class="imbalance-container">
+        <div class="imbalance-labels">
+          <span style="color: var(--green);" id="bid-pct">50% Bids</span>
+          <span style="color: var(--red);" id="ask-pct">50% Asks</span>
         </div>
-        <div id="news-container">
-            <p style="text-align:center;">Lade News...</p>
+        <div class="imbalance-bar">
+          <div class="imbalance-fill-bid" id="imbalance-fill" style="width: 50%;"></div>
         </div>
+      </div>
+
+      <div class="dom-columns">
+        <span>Preis (USD)</span>
+        <span>Menge (oz)</span>
+        <span>Kumuliert ($)</span>
+      </div>
+
+      <div class="dom-list" id="dom-asks"></div>
+
+      <div class="dom-spread-box">
+        <span class="mid-price" id="dom-mid-price">---.--</span>
+        <span class="spread-val" id="dom-spread">Spread: --</span>
+      </div>
+
+      <div class="dom-list" id="dom-bids"></div>
+    </div>
+  </section>
+
+  <!-- UNTEN: NEWS AGGREGATOR MIT WESTLICHEN & REGIONALEN NAHOST-QUELLEN -->
+  <section class="news-section">
+    <div class="news-toolbar">
+      <div class="filter-tabs" id="category-tabs">
+        <button class="tab-btn active" data-filter="ALL">Alle Quellen</button>
+        <button class="tab-btn" data-filter="Western Finance">Westliche Finanzmedien</button>
+        <button class="tab-btn" data-filter="Regional Finance">Golf-Finanzen (Zawya / Arab News)</button>
+        <button class="tab-btn" data-filter="Geopolitics">Nahost Vor-Ort (Iran / Israel / Katar)</button>
+      </div>
+
+      <div class="toolbar-right">
+        <label class="toggle-label" title="Filtert Lokalpolitik/Sport heraus und zeigt nur Gold-, Öl-, Zins- und Militär-relevante Schlagzeilen">
+          <input type="checkbox" id="impact-filter-toggle" checked />
+          <span>Nur Gold/Öl/Konflikt-Impact filtern</span>
+        </label>
+        <button class="refresh-btn" id="refresh-news-btn">↻ Feeds aktualisieren</button>
+      </div>
     </div>
 
-    <script>
-        let allClusters = [];
+    <div class="news-grid" id="news-grid">
+      <p style="color: var(--text-muted);">Lade internationale und regionale Feeds...</p>
+    </div>
+  </section>
 
-        function switchTab(event, tabId) {
-            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById(tabId).classList.add('active');
-            event.currentTarget.classList.add('active');
+  <!-- 1. TRADINGVIEW WIDGET SCRIPT -->
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script>
+    new TradingView.widget({
+      "autosize": true,
+      "symbol": "OANDA:XAUUSD",
+      "interval": "15",
+      "timezone": "Europe/Zurich",
+      "theme": "dark",
+      "style": "1",
+      "locale": "de_DE",
+      "toolbar_bg": "#131722",
+      "enable_publishing": false,
+      "hide_side_toolbar": false,
+      "allow_symbol_change": true,
+      "studies": ["Volume@tv-basicstudies"],
+      "container_id": "tv_chart_container"
+    });
+  </script>
 
-            if (tabId === 'chart-tab') {
-                loadChart();
-            } else if (tabId === 'news-tab') {
-                loadNews();
-            }
-        }
+  <!-- 2. LIVE ORDERBOOK (DOM) VIA BINANCE WEBSOCKET -->
+  <script>
+    (function initGoldDOM() {
+      const LEVELS = 12;
+      const WHALE_MULTIPLIER = 3.2;
 
-        async function loadChart() {
-            const container = document.getElementById('chart-container');
-            try {
-                const response = await fetch('market_data.json?t=' + new Date().getTime());
-                if (!response.ok) {
-                    container.innerHTML = `<p style="text-align:center; padding: 20px;">HTTP Error: ${response.status}</p>`;
-                    return;
-                }
-                const data = await response.json();
-                
-                if (!data.candles || data.candles.length === 0) return;
+      const asksContainer = document.getElementById('dom-asks');
+      const bidsContainer = document.getElementById('dom-bids');
+      const midPriceEl = document.getElementById('dom-mid-price');
+      const spreadEl = document.getElementById('dom-spread');
+      const bidPctEl = document.getElementById('bid-pct');
+      const askPctEl = document.getElementById('ask-pct');
+      const imbalanceFillEl = document.getElementById('imbalance-fill');
+      const statusEl = document.getElementById('dom-conn-status');
 
-                let sortedCandles = data.candles.sort((a, b) => a.time - b.time);
-                let uniqueCandles = [];
-                let lastTime = 0;
-                sortedCandles.forEach(c => {
-                    if (c.time > lastTime) {
-                        uniqueCandles.push(c);
-                        lastTime = c.time;
-                    }
-                });
+      function connectWebSocket() {
+        const ws = new WebSocket('wss://stream.binance.com:9443/ws/paxgusdt@depth20@100ms');
 
-                container.innerHTML = '';
-                const chart = LightweightCharts.createChart(container, {
-                    width: container.clientWidth,
-                    height: 450,
-                    layout: { backgroundColor: '#ffffff', textColor: '#333' },
-                    grid: { vertLines: { color: '#f0f3fa' }, horzLines: { color: '#f0f3fa' } },
-                    timeScale: { timeVisible: true }
-                });
+        ws.onopen = () => {
+          statusEl.textContent = 'LIVE (100ms)';
+          statusEl.style.color = '#26a69a';
+        };
 
-                const candleSeries = chart.addCandlestickSeries({
-                    upColor: '#26a69a', downColor: '#ef5350', borderVisible: false, wickUpColor: '#26a69a', wickDownColor: '#ef5350'
-                });
-                
-                candleSeries.setData(uniqueCandles);
+        ws.onmessage = (event) => {
+          const data = JSON.parse(event.data);
+          if (!data.bids || !data.asks) return;
+          renderOrderBook(data.bids, data.asks);
+        };
 
-                if (data.orderbook) {
-                    data.orderbook.forEach((level, index) => {
-                        candleSeries.createPriceLine({
-                            price: level.price,
-                            color: '#eab308',
-                            lineWidth: 2,
-                            lineStyle: LightweightCharts.LineStyle.Dashed,
-                            axisLabelVisible: true,
-                            title: `L${index + 1} (${level.volume.toFixed(2)}%)`
-                        });
-                    });
-                }
-            } catch (error) {
-                container.innerHTML = `<p style="color:red; font-weight:bold; padding: 20px;">Chart Ladefehler: ${error.message}</p>`;
-            }
-        }
+        ws.onclose = () => {
+          statusEl.textContent = 'RECONNECTING...';
+          statusEl.style.color = '#ff9800';
+          setTimeout(connectWebSocket, 2500);
+        };
 
-        async function loadNews() {
-            const container = document.getElementById('news-container');
-            try {
-                const response = await fetch('data.json?t=' + new Date().getTime());
-                if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
-                const textData = await response.text();
-                
-                try {
-                    allClusters = JSON.parse(textData);
-                } catch (e) {
-                    container.innerHTML = `<p style="color:red; text-align:center;"><b>Syntax-Fehler in data.json!</b></p>`;
-                    return;
-                }
-                renderNews();
-            } catch (error) {
-                container.innerHTML = `<p style="color:red; text-align:center;">Fehler beim Laden: ${error.message}</p>`;
-            }
-        }
+        ws.onerror = () => ws.close();
+      }
 
-        function renderNews() {
-            const container = document.getElementById('news-container');
-            container.innerHTML = '';
-            
-            const filterImpact = document.getElementById('filter-impact').value;
-            const filterType = document.getElementById('filter-type').value;
-            const filterRelevance = document.getElementById('filter-relevance').value;
-            const sortBy = document.getElementById('sort-by').value;
+      function renderOrderBook(rawBids, rawAsks) {
+        const bids = rawBids.slice(0, LEVELS).map(([p, q]) => ({ price: parseFloat(p), qty: parseFloat(q) }));
+        const asks = rawAsks.slice(0, LEVELS).map(([p, q]) => ({ price: parseFloat(p), qty: parseFloat(q) }));
+        if (!bids.length || !asks.length) return;
 
-            let filtered = allClusters.filter(cluster => {
-                if (filterType === 'cluster' && cluster.articles.length <= 1) return false;
-                if (filterType === 'single' && cluster.articles.length > 1) return false;
-                
-                if (filterImpact !== 'all') {
-                    const impact = cluster.summary?.XAUUSD_Impact || '';
-                    if (!impact.toLowerCase().includes(filterImpact.toLowerCase())) return false;
-                }
+        let totalBidQty = 0;
+        let totalAskQty = 0;
 
-                if (filterRelevance === 'tradeable') {
-                    const prob = parseInt(cluster.summary?.Probability_Percent || 0);
-                    const impact = cluster.summary?.XAUUSD_Impact || '';
-                    const isTradeableImpact = impact.includes('Bullish') || impact.includes('Bearish');
-                    if (prob < 67 || !isTradeableImpact) return false;
-                }
-
-                return true;
-            });
-
-            if (sortBy === 'probability') {
-                filtered.sort((a, b) => {
-                    const probA = parseInt(a.summary?.Probability_Percent || 0);
-                    const probB = parseInt(b.summary?.Probability_Percent || 0);
-                    return probB - probA;
-                });
-            } else {
-                filtered.sort((a, b) => (b._timestamp || 0) - (a._timestamp || 0));
-            }
-
-            if (filtered.length === 0) {
-                container.innerHTML = '<p style="text-align:center;">No matching news found.</p>';
-                return;
-            }
-
-            filtered.forEach(cluster => {
-                const card = document.createElement('div');
-                card.className = 'news-card';
-
-                let summaryHTML = "";
-                if (typeof cluster.summary === 'object' && cluster.summary !== null) {
-                    summaryHTML = `
-                        <div class="structured-data">
-                            <strong>Facts:</strong> ${cluster.summary.Facts || '-'}<br><br>
-                            <strong>Macro Context:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
-                            <strong>Uncertainties:</strong> ${cluster.summary.Uncertainties || '-'}
-                        </div>
-                        <div class="outlook-box">
-                            <strong>XAUUSD Impact:</strong> ${cluster.summary.XAUUSD_Impact || '-'} (${cluster.summary.Probability_Percent || '0'}%)<br>
-                            <strong>Timeframe:</strong> ${cluster.summary.Timeframe || '-'}<br>
-                            <strong>Timing:</strong> ${cluster.summary.Impact_Timing || '-'}<br>
-                            <strong>Price Action Cause (Last 24h):</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}<br>
-                            <strong>Price Target:</strong> ${cluster.summary.Orderflow_Price_Target || '-'}
-                        </div>
-                    `;
-                } else {
-                    summaryHTML = `<div class="structured-data">${cluster.summary || 'Summary missing.'}</div>`;
-                }
-
-                let sourcesHTML = cluster.articles.map(article => `
-                    <div class="source-item">
-                        <span class="source-badge">${article.source}</span>
-                        <a href="${article.link}" target="_blank" class="source-link">${article.title}</a>
-                    </div>
-                `).join('');
-
-                card.innerHTML = `
-                    <div class="date-header">${cluster.main_date || 'Unbekannt'}</div>
-                    <div class="summary-box">
-                        <div class="summary-label">Summary:</div>
-                        ${summaryHTML}
-                    </div>
-                    <div class="reported-by-label">REPORTED BY (${cluster.articles.length} Source${cluster.articles.length > 1 ? 's' : ''}):</div>
-                    ${sourcesHTML}
-                `;
-                container.appendChild(card);
-            });
-        }
-
-        document.addEventListener("visibilitychange", function() {
-            if (document.visibilityState === 'visible') {
-                loadChart();
-                loadNews();
-            }
+        bids.forEach(b => {
+          totalBidQty += b.qty;
+          b.cumUsd = totalBidQty * b.price;
         });
 
-        loadChart();
-        loadNews();
-    </script>
+        asks.forEach(a => {
+          totalAskQty += a.qty;
+          a.cumUsd = totalAskQty * a.price;
+        });
+
+        const avgOrderQty = (totalBidQty + totalAskQty) / (bids.length + asks.length);
+        const maxCumQty = Math.max(totalBidQty, totalAskQty, 1);
+
+        const totalVolume = totalBidQty + totalAskQty;
+        const bidRatio = totalVolume > 0 ? Math.round((totalBidQty / totalVolume) * 100) : 50;
+        const askRatio = 100 - bidRatio;
+
+        bidPctEl.textContent = `${bidRatio}% Bids (${totalBidQty.toFixed(1)} oz)`;
+        askPctEl.textContent = `${askRatio}% Asks (${totalAskQty.toFixed(1)} oz)`;
+        imbalanceFillEl.style.width = `${bidRatio}%`;
+
+        const bestBid = bids[0].price;
+        const bestAsk = asks[0].price;
+        const midPrice = (bestBid + bestAsk) / 2;
+        const spread = bestAsk - bestBid;
+
+        midPriceEl.textContent = midPrice.toFixed(2);
+        spreadEl.textContent = `Spread: $${spread.toFixed(2)}`;
+
+        const asksReversed = [...asks].reverse();
+        asksContainer.innerHTML = asksReversed.map(a => {
+          const depthWidth = Math.min(((a.cumUsd / (maxCumQty * midPrice)) * 100), 100);
+          const isWhale = a.qty >= avgOrderQty * WHALE_MULTIPLIER;
+          return `
+            <div class="dom-row ask-row ${isWhale ? 'whale-wall' : ''}">
+              <div class="dom-depth-bg" style="width: ${depthWidth}%;"></div>
+              <span class="price">${a.price.toFixed(2)}</span>
+              <span class="size">${a.qty.toFixed(3)}</span>
+              <span>${formatUsd(a.cumUsd)}</span>
+            </div>
+          `;
+        }).join('');
+
+        bidsContainer.innerHTML = bids.map(b => {
+          const depthWidth = Math.min(((b.cumUsd / (maxCumQty * midPrice)) * 100), 100);
+          const isWhale = b.qty >= avgOrderQty * WHALE_MULTIPLIER;
+          return `
+            <div class="dom-row bid-row ${isWhale ? 'whale-wall' : ''}">
+              <div class="dom-depth-bg" style="width: ${depthWidth}%;"></div>
+              <span class="price">${b.price.toFixed(2)}</span>
+              <span class="size">${b.qty.toFixed(3)}</span>
+              <span>${formatUsd(b.cumUsd)}</span>
+            </div>
+          `;
+        }).join('');
+      }
+
+      function formatUsd(val) {
+        if (val >= 1000000) return (val / 1000000).toFixed(2) + 'M';
+        if (val >= 1000) return (val / 1000).toFixed(1) + 'K';
+        return val.toFixed(0);
+      }
+
+      connectWebSocket();
+    })();
+  </script>
+
+  <!-- 3. MULTI-PERSPECTIVE NEWS AGGREGATOR (WEST + NAHOST VOR ORT) -->
+  <script>
+    const FEEDS = [
+      // --- WESTLICHE FINANZMEDIEN ---
+      {
+        name: "Investing.com (Commodities)",
+        region: "West / Global",
+        regionClass: "region-west",
+        category: "Western Finance",
+        url: "https://www.investing.com/rss/news_11.rss",
+        bias_note: "Fokus: Globale Rohstoffmärkte & US-Makro"
+      },
+      {
+        name: "Kitco Gold News",
+        region: "USA / Kanada",
+        regionClass: "region-west",
+        category: "Western Finance",
+        url: "https://www.kitco.com/rss/KitcoNews.xml",
+        bias_note: "Fokus: Edelmetalle, Fed & Minen-Sektor"
+      },
+
+      // --- GOLF-FINANZEN (Das "Investing.com" des Nahen Ostens) ---
+      {
+        name: "Zawya (Middle East Markets)",
+        region: "VAE / Golf",
+        regionClass: "region-gulf",
+        category: "Regional Finance",
+        url: "https://www.zawya.com/en/rss",
+        bias_note: "Golf-Ökonomie, Öl & institutionelle Flüsse"
+      },
+      {
+        name: "Arab News (Economy & Oil)",
+        region: "Saudi-Arabien",
+        regionClass: "region-gulf",
+        category: "Regional Finance",
+        url: "https://www.arabnews.com/cat/4/rss.xml",
+        bias_note: "Saudische Perspektive auf OPEC+ & Energie"
+      },
+
+      // --- GEOPOLITIK VOR ORT (Nahost, Iran, Israel, Katar) ---
+      {
+        name: "Al Jazeera English",
+        region: "Katar / Nahost",
+        regionClass: "region-mena",
+        category: "Geopolitics",
+        url: "https://www.aljazeera.com/xml/rss/all.xml",
+        bias_note: "Direkte Vor-Ort-Korrespondenten im Nahen Osten"
+      },
+      {
+        name: "Middle East Eye",
+        region: "Nahost Fokus",
+        regionClass: "region-mena",
+        category: "Geopolitics",
+        url: "https://www.middleeasteye.net/rss",
+        bias_note: "Fokus: Rotes Meer, Jemen, Levante & Diplomatie"
+      },
+      {
+        name: "Tehran Times",
+        region: "Iran",
+        regionClass: "region-iran",
+        category: "Geopolitics",
+        url: "https://www.tehrantimes.com/rss",
+        bias_note: "Offizielle iranische Staatslinie & Militär-Statements"
+      },
+      {
+        name: "Mehr News Agency",
+        region: "Iran",
+        regionClass: "region-iran",
+        category: "Geopolitics",
+        url: "https://en.mehrnews.com/rss",
+        bias_note: "Direkte Meldungen aus Teheran"
+      },
+      {
+        name: "The Times of Israel",
+        region: "Israel",
+        regionClass: "region-israel",
+        category: "Geopolitics",
+        url: "https://www.timesofisrael.com/feed/",
+        bias_note: "Israelische Sicherheits- und Militärperspektive"
+      }
+    ];
+
+    const MARKET_KEYWORDS = [
+      "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy",
+      "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", "idf",
+      "missile", "strike", "attack", "drone", "sanction", "nuclear", "irgc",
+      "escalat", "retaliat", "war", "truce", "ceasefire", "fed", "inflation",
+      "rate", "central bank", "brics", "dollar", "treasury", "tariff", "saudi"
+    ];
+
+    let allArticles = [];
+    let activeCategory = "ALL";
+
+    function isMarketRelevant(title, description = "") {
+      const text = (title + " " + description).toLowerCase();
+      return MARKET_KEYWORDS.some(kw => text.includes(kw));
+    }
+
+    // Holt RSS-Feed über rss2json oder allorigins Fallback (CORS-frei für GitHub Pages)
+    async function fetchFeed(feed) {
+      const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`;
+      try {
+        const res = await fetch(proxyUrl);
+        const data = await res.json();
+        if (data.status === "ok" && data.items) {
+          return data.items.slice(0, 10).map(item => ({
+            title: item.title,
+            link: item.link,
+            pubDate: new Date(item.pubDate || Date.now()),
+            description: item.description || "",
+            sourceName: feed.name,
+            region: feed.region,
+            regionClass: feed.regionClass,
+            category: feed.category,
+            bias_note: feed.bias_note
+          }));
+        }
+      } catch (e) {
+        console.warn(`Feed-Fehler bei ${feed.name}:`, e);
+      }
+      return [];
+    }
+
+    async function loadAllFeeds() {
+      const grid = document.getElementById("news-grid");
+      const statusText = document.getElementById("last-updated-text");
+      statusText.textContent = "Aktualisiere Feeds...";
+
+      const results = await Promise.all(FEEDS.map(fetchFeed));
+      allArticles = results.flat().sort((a, b) => b.pubDate - a.pubDate);
+
+      const now = new Date().toLocaleTimeString("de-CH", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+      statusText.textContent = `Letztes Update: ${now} Uhr (${allArticles.length} Artikel geladen)`;
+
+      renderArticles();
+    }
+
+    function renderArticles() {
+      const grid = document.getElementById("news-grid");
+      const onlyImpact = document.getElementById("impact-filter-toggle").checked;
+
+      const filtered = allArticles.filter(art => {
+        const matchesCat = activeCategory === "ALL" || art.category === activeCategory;
+        // Westliche Gold-Feeds immer durchlassen, Geopolitik/Regional nach Keywords filtern
+        const matchesImpact = !onlyImpact || art.category === "Western Finance" || isMarketRelevant(art.title, art.description);
+        return matchesCat && matchesImpact;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = `<p style="color: var(--text-muted);">Keine passenden Meldungen für diesen Filter gefunden. Deaktiviere testweise den Keyword-Filter oben rechts.</p>`;
+        return;
+      }
+
+      grid.innerHTML = filtered.slice(0, 36).map(art => {
+        const timeStr = isNaN(art.pubDate) ? "" : art.pubDate.toLocaleString("de-CH", {
+          day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit"
+        });
+        return `
+          <article class="news-card">
+            <div>
+              <div class="news-meta">
+                <span class="source-tag">${art.sourceName}</span>
+                <span class="region-badge ${art.regionClass}">${art.region}</span>
+              </div>
+              <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="news-title">
+                ${art.title}
+              </a>
+            </div>
+            <div class="news-bias">
+              <span>${art.bias_note}</span>
+              <span>${timeStr}</span>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    // Event-Listener für Tabs & Filter
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        activeCategory = btn.getAttribute("data-filter");
+        renderArticles();
+      });
+    });
+
+    document.getElementById("impact-filter-toggle").addEventListener("change", renderArticles);
+    document.getElementById("refresh-news-btn").addEventListener("click", loadAllFeeds);
+
+    // Initialer Start + Auto-Refresh alle 3 Minuten
+    loadAllFeeds();
+    setInterval(loadAllFeeds, 180000);
+  </script>
 </body>
 </html>

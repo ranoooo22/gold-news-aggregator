@@ -18,140 +18,15 @@
         h1 { text-align: center; color: #1e293b; margin: 20px 0 5px 0; }
         .sub-header { text-align: center; color: #64748b; font-size: 0.9em; margin-bottom: 20px; }
         
-        /* Grid Layout: Chart + Live DOM */
-        .market-grid {
-            max-width: 1280px;
-            margin: 0 auto 30px auto;
-            display: grid;
-            grid-template-columns: 1fr 360px;
-            gap: 20px;
-            align-items: start;
-        }
-
-        @media (max-width: 1024px) {
-            .market-grid { grid-template-columns: 1fr; }
-        }
-
+        /* Chart Container */
         #chart-container {
-            height: 520px;
+            max-width: 900px;
+            height: 480px;
+            margin: 0 auto 30px auto;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             overflow: hidden;
-        }
-
-        /* Live DOM Panel */
-        .dom-panel {
-            background-color: #0f172a;
-            color: #e2e8f0;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-            padding: 14px;
-            font-family: "JetBrains Mono", Consolas, monospace;
-            font-size: 0.85em;
-            overflow: hidden;
-        }
-
-        .dom-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #334155;
-            padding-bottom: 8px;
-            margin-bottom: 10px;
-        }
-
-        .dom-header-title {
-            font-weight: bold;
-            color: #f8fafc;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .pulse-dot {
-            width: 8px;
-            height: 8px;
-            background-color: #22c55e;
-            border-radius: 50%;
-            display: inline-block;
-            box-shadow: 0 0 8px #22c55e;
-            animation: pulse 1.5s infinite;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 1; }
-            50% { opacity: 0.3; }
-            100% { opacity: 1; }
-        }
-
-        /* Imbalance Bar */
-        .imbalance-wrap {
-            margin-bottom: 10px;
-            background: #1e293b;
-            border-radius: 4px;
-            padding: 6px 8px;
-        }
-        .imbalance-label {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.8em;
-            margin-bottom: 4px;
-        }
-        .imbalance-track {
-            height: 6px;
-            border-radius: 3px;
-            display: flex;
-            overflow: hidden;
-            background-color: #334155;
-        }
-        .imbalance-bid { background-color: #10b981; height: 100%; transition: width 0.2s; }
-        .imbalance-ask { background-color: #ef4444; height: 100%; transition: width 0.2s; }
-
-        /* DOM Table */
-        .dom-table {
-            width: 100%;
-            border-collapse: collapse;
-            table-layout: fixed;
-        }
-        .dom-table th {
-            color: #64748b;
-            font-size: 0.75em;
-            text-align: right;
-            padding: 2px 4px;
-            font-weight: normal;
-        }
-        .dom-table th:first-child { text-align: left; }
-
-        .dom-row {
-            height: 20px;
-            line-height: 20px;
-        }
-        .dom-cell {
-            padding: 1px 4px;
-            text-align: right;
-            white-space: nowrap;
-        }
-        .dom-cell:first-child { text-align: left; }
-
-        .bid-price { color: #34d399; font-weight: 600; }
-        .ask-price { color: #f87171; font-weight: 600; }
-
-        .whale-wall {
-            outline: 1px solid #a855f7;
-            background-color: rgba(168, 85, 247, 0.25) !important;
-            font-weight: bold;
-        }
-
-        .spread-row {
-            text-align: center;
-            color: #94a3b8;
-            background-color: #1e293b;
-            padding: 4px 0;
-            margin: 4px 0;
-            border-radius: 3px;
-            font-size: 0.8em;
-            font-weight: 600;
         }
 
         /* Controls & Cards */
@@ -191,56 +66,16 @@
 <body>
 
     <div class="tab-nav">
-        <button class="tab-btn active" onclick="switchTab(event, 'chart-tab')">📊 Chart & Live DOM</button>
+        <button class="tab-btn active" onclick="switchTab(event, 'chart-tab')">📊 Chart & Orders</button>
         <button class="tab-btn" onclick="switchTab(event, 'news-tab')">📰 News Analyse</button>
     </div>
 
     <h1>Financial & Gold Aggregator</h1>
     <div class="sub-header">Multi-Sourced Intelligence: Global Macro & Middle East Regional Orderflow</div>
 
-    <!-- CHART & LIVE DOM TAB -->
+    <!-- CHART TAB -->
     <div id="chart-tab" class="tab-content active">
-        <div class="market-grid">
-            <div id="chart-container"></div>
-            
-            <!-- Live L2 DOM (Binance PAXG 1:1 Spot Gold Stream) -->
-            <div class="dom-panel">
-                <div class="dom-header">
-                    <span class="dom-header-title">
-                        <span class="pulse-dot"></span> Live DOM: PAXG / XAU
-                    </span>
-                    <span style="color:#94a3b8; font-size:0.75em;">100ms L2 Stream</span>
-                </div>
-
-                <div class="imbalance-wrap">
-                    <div class="imbalance-label">
-                        <span style="color:#34d399;" id="bid-imb-label">Bids: 50%</span>
-                        <span style="color:#f87171;" id="ask-imb-label">Asks: 50%</span>
-                    </div>
-                    <div class="imbalance-track">
-                        <div id="imbalance-bid" class="imbalance-bid" style="width: 50%;"></div>
-                        <div id="imbalance-ask" class="imbalance-ask" style="width: 50%;"></div>
-                    </div>
-                </div>
-
-                <table class="dom-table">
-                    <thead>
-                        <tr>
-                            <th>Preis (USD)</th>
-                            <th>Menge (Oz)</th>
-                            <th>Summe ($)</th>
-                        </tr>
-                    </thead>
-                    <tbody id="asks-body"></tbody>
-                </table>
-
-                <div id="spread-box" class="spread-row">Spread: --</div>
-
-                <table class="dom-table">
-                    <tbody id="bids-body"></tbody>
-                </table>
-            </div>
-        </div>
+        <div id="chart-container"></div>
     </div>
 
     <!-- NEWS TAB -->
@@ -265,7 +100,6 @@
                 <option value="newest">Sort: Newest First</option>
                 <option value="probability">Sort: Highest Probability</option>
             </select>
-            <!-- Modul 3: Keyword Impact Filter -->
             <label class="filter-checkbox-wrap">
                 <input type="checkbox" id="filter-keywords" onchange="renderNews()" checked>
                 <span>🎯 Nur geopolitische Impact-Keywords</span>
@@ -279,7 +113,7 @@
     <script>
         let allClusters = [];
 
-        // Modul 3: Relevanz-Keywords
+        // Relevanz-Keywords
         const IMPACT_KEYWORDS = [
             "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
             "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
@@ -288,7 +122,7 @@
             "inflation", "rate", "central bank", "brics", "dollar", "treasury", "tariff", "saudi"
         ];
 
-        // Modul 2: Quellenzuordnungen & Bias-Hinweise
+        // Quellenzuordnungen & Bias-Hinweise
         const SOURCE_META = {
             "Zawya": { region: "Middle East", bias: "Golf-Ökonomie / VAE" },
             "Arab News": { region: "Middle East", bias: "Saudi-Arabien / OPEC+ Fokus" },
@@ -314,102 +148,7 @@
         }
 
         // ==========================================
-        // 1. LIVE L2 ORDERBUCH (BINANCE WEBSOCKET)
-        // ==========================================
-        let domWs = null;
-
-        function initLiveDOM() {
-            if (domWs) {
-                domWs.close();
-            }
-            domWs = new WebSocket("wss://stream.binance.com:9443/ws/paxgusdt@depth20@100ms");
-
-            domWs.onmessage = (event) => {
-                const data = JSON.parse(event.data);
-                if (!data.bids || !data.asks) return;
-
-                const topBids = data.bids.slice(0, 12).map(b => ({ price: parseFloat(b[0]), qty: parseFloat(b[1]) }));
-                const topAsks = data.asks.slice(0, 12).map(a => ({ price: parseFloat(a[0]), qty: parseFloat(a[1]) }));
-
-                // Volumenberechnungen & Imbalance
-                let totalBidVol = 0;
-                let totalAskVol = 0;
-                topBids.forEach(b => totalBidVol += (b.price * b.qty));
-                topAsks.forEach(a => totalAskVol += (a.price * a.qty));
-
-                const combinedVol = totalBidVol + totalAskVol;
-                const bidRatio = combinedVol > 0 ? (totalBidVol / combinedVol) * 100 : 50;
-                const askRatio = combinedVol > 0 ? (totalAskVol / combinedVol) * 100 : 50;
-
-                document.getElementById('bid-imb-label').innerText = `Bids: ${bidRatio.toFixed(1)}%`;
-                document.getElementById('ask-imb-label').innerText = `Asks: ${askRatio.toFixed(1)}%`;
-                document.getElementById('imbalance-bid').style.width = `${bidRatio}%`;
-                document.getElementById('imbalance-ask').style.width = `${askRatio}%`;
-
-                // Whale-Wall-Schwelle: > 3.2-fache des Durchschnittsvolumens
-                const allQtys = [...topBids.map(b => b.qty), ...topAsks.map(a => a.qty)];
-                const avgQty = allQtys.reduce((sum, q) => sum + q, 0) / (allQtys.length || 1);
-                const whaleThreshold = avgQty * 3.2;
-
-                const maxQty = Math.max(...allQtys, 0.01);
-
-                // Render Asks (Verkäufer) - absteigend sortiert
-                const asksBody = document.getElementById('asks-body');
-                asksBody.innerHTML = '';
-                const sortedAsks = [...topAsks].reverse();
-
-                sortedAsks.forEach(item => {
-                    const totalUSD = (item.price * item.qty).toLocaleString('de-CH', { maximumFractionDigits: 0 });
-                    const isWhale = item.qty >= whaleThreshold;
-                    const barWidth = Math.min(100, (item.qty / maxQty) * 100);
-
-                    const row = document.createElement('tr');
-                    row.className = `dom-row ${isWhale ? 'whale-wall' : ''}`;
-                    if (!isWhale) {
-                        row.style.background = `linear-gradient(to left, rgba(239, 68, 68, 0.25) ${barWidth}%, transparent ${barWidth}%)`;
-                    }
-                    row.innerHTML = `
-                        <td class="dom-cell ask-price">${item.price.toFixed(2)}</td>
-                        <td class="dom-cell">${item.qty.toFixed(3)} ${isWhale ? '🐳' : ''}</td>
-                        <td class="dom-cell">$${totalUSD}</td>
-                    `;
-                    asksBody.appendChild(row);
-                });
-
-                // Spread
-                const bestBid = topBids[0]?.price || 0;
-                const bestAsk = topAsks[0]?.price || 0;
-                const spread = (bestAsk - bestBid).toFixed(2);
-                document.getElementById('spread-box').innerText = `Spread: $${spread} | Mid: ${((bestBid + bestAsk) / 2).toFixed(2)}`;
-
-                // Render Bids (Käufer) - fallend
-                const bidsBody = document.getElementById('bids-body');
-                bidsBody.innerHTML = '';
-                topBids.forEach(item => {
-                    const totalUSD = (item.price * item.qty).toLocaleString('de-CH', { maximumFractionDigits: 0 });
-                    const isWhale = item.qty >= whaleThreshold;
-                    const barWidth = Math.min(100, (item.qty / maxQty) * 100);
-
-                    const row = document.createElement('tr');
-                    row.className = `dom-row ${isWhale ? 'whale-wall' : ''}`;
-                    if (!isWhale) {
-                        row.style.background = `linear-gradient(to left, rgba(16, 185, 129, 0.25) ${barWidth}%, transparent ${barWidth}%)`;
-                    }
-                    row.innerHTML = `
-                        <td class="dom-cell bid-price">${item.price.toFixed(2)}</td>
-                        <td class="dom-cell">${item.qty.toFixed(3)} ${isWhale ? '🐳' : ''}</td>
-                        <td class="dom-cell">$${totalUSD}</td>
-                    `;
-                    bidsBody.appendChild(row);
-                });
-            };
-
-            domWs.onerror = () => console.log("Binance DOM WebSocket Reconnect...");
-            domWs.onclose = () => setTimeout(initLiveDOM, 3000);
-        }
-
-        // ==========================================
-        // 2. CHART LADEN
+        // 1. CHART LADEN
         // ==========================================
         async function loadChart() {
             const container = document.getElementById('chart-container');
@@ -435,7 +174,7 @@
                 container.innerHTML = '';
                 const chart = LightweightCharts.createChart(container, {
                     width: container.clientWidth,
-                    height: 520,
+                    height: 480,
                     layout: { backgroundColor: '#ffffff', textColor: '#333' },
                     grid: { vertLines: { color: '#f0f3fa' }, horzLines: { color: '#f0f3fa' } },
                     timeScale: { timeVisible: true }
@@ -465,7 +204,7 @@
         }
 
         // ==========================================
-        // 3. NEWS ANALYSE & FILTER
+        // 2. NEWS ANALYSE & FILTER
         // ==========================================
         async function loadNews() {
             const container = document.getElementById('news-container');
@@ -617,7 +356,6 @@
         // Start
         loadChart();
         loadNews();
-        initLiveDOM();
     </script>
 </body>
 </html>

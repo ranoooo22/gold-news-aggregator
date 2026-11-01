@@ -1,793 +1,631 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gold (XAUUSD) Terminal – DOM & Global/Regional News Aggregator</title>
-  <style>
-    :root {
-      --bg-main: #0b0e14;
-      --bg-panel: #131722;
-      --bg-panel-alt: #1e222d;
-      --border: #2a2e39;
-      --text-main: #d1d4dc;
-      --text-muted: #787b86;
-      --gold: #f5c542;
-      --green: #26a69a;
-      --red: #ef5350;
-      --blue: #2962ff;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial & Gold News Aggregator</title>
+    <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f8; color: #333; margin: 0; padding: 0; }
+        
+        /* Tab Navigation */
+        .tab-nav { display: flex; justify-content: space-around; background: #fff; padding: 10px 0; border-bottom: 1px solid #e2e8f0; margin-bottom: 20px; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .tab-btn { background: none; border: none; font-size: 1em; font-weight: bold; color: #64748b; cursor: pointer; padding: 12px 20px; border-radius: 6px; transition: all 0.2s; width: 45%; }
+        .tab-btn.active { color: #1e293b; background: #f1f5f9; box-shadow: inset 0 -2px 0 #3b82f6; }
+        .tab-content { display: none; padding: 0 20px; }
+        .tab-content.active { display: block; }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        h1 { text-align: center; color: #1e293b; margin: 20px 0 5px 0; }
+        .sub-header { text-align: center; color: #64748b; font-size: 0.9em; margin-bottom: 20px; }
+        
+        /* Grid Layout: Chart + Live DOM */
+        .market-grid {
+            max-width: 1280px;
+            margin: 0 auto 30px auto;
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            align-items: start;
+        }
 
-    body {
-      background-color: var(--bg-main);
-      color: var(--text-main);
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace;
-      padding: 14px;
-      line-height: 1.45;
-    }
+        @media (max-width: 1024px) {
+            .market-grid { grid-template-columns: 1fr; }
+        }
 
-    /* TOP BAR */
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 12px 18px;
-      margin-bottom: 14px;
-    }
+        #chart-container {
+            height: 520px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 700;
-      font-size: 16px;
-      color: var(--gold);
-      letter-spacing: 0.5px;
-    }
+        /* Live DOM Panel */
+        .dom-panel {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            padding: 14px;
+            font-family: "JetBrains Mono", Consolas, monospace;
+            font-size: 0.85em;
+        }
 
-    .brand-badge {
-      background: rgba(245, 197, 66, 0.15);
-      color: var(--gold);
-      font-size: 11px;
-      padding: 3px 8px;
-      border-radius: 4px;
-      border: 1px solid rgba(245, 197, 66, 0.3);
-    }
+        .dom-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
 
-    .top-controls {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 12px;
-    }
+        .dom-header-title {
+            font-weight: bold;
+            color: #f8fafc;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
 
-    /* WORKSPACE: CHART + DOM */
-    .trading-workspace {
-      display: flex;
-      gap: 14px;
-      height: 540px;
-      margin-bottom: 16px;
-    }
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #22c55e;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px #22c55e;
+            animation: pulse 1.5s infinite;
+        }
 
-    @media (max-width: 1024px) {
-      .trading-workspace {
-        flex-direction: column;
-        height: auto;
-      }
-      .chart-container {
-        height: 450px;
-      }
-      .dom-panel {
-        width: 100% !important;
-        height: 480px;
-      }
-    }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.3; }
+            100% { opacity: 1; }
+        }
 
-    .chart-container {
-      flex: 1;
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-    }
+        /* Imbalance Bar */
+        .imbalance-wrap {
+            margin-bottom: 10px;
+            background: #1e293b;
+            border-radius: 4px;
+            padding: 6px 8px;
+        }
+        .imbalance-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+            margin-bottom: 4px;
+        }
+        .imbalance-track {
+            height: 6px;
+            border-radius: 3px;
+            display: flex;
+            overflow: hidden;
+            background-color: #334155;
+        }
+        .imbalance-bid { background-color: #10b981; height: 100%; transition: width 0.2s; }
+        .imbalance-ask { background-color: #ef4444; height: 100%; transition: width 0.2s; }
 
-    /* DOM PANEL */
-    .dom-panel {
-      width: 330px;
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      display: flex;
-      flex-direction: column;
-      font-size: 12px;
-      user-select: none;
-    }
+        /* DOM Table */
+        .dom-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .dom-table th {
+            color: #64748b;
+            font-size: 0.75em;
+            text-align: right;
+            padding: 2px 4px;
+            font-weight: normal;
+        }
+        .dom-table th:first-child { text-align: left; }
 
-    .dom-header {
-      padding: 10px 12px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 600;
-    }
+        .dom-row {
+            position: relative;
+            height: 18px;
+            line-height: 18px;
+        }
+        .dom-cell {
+            padding: 1px 4px;
+            text-align: right;
+            position: relative;
+            z-index: 2;
+        }
+        .dom-cell:first-child { text-align: left; }
 
-    .dom-status {
-      font-size: 10px;
-      padding: 2px 6px;
-      border-radius: 4px;
-      background: rgba(38, 166, 154, 0.15);
-      color: var(--green);
-    }
+        .dom-bar {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            opacity: 0.25;
+            transition: width 0.1s ease-out;
+        }
 
-    .imbalance-container {
-      padding: 8px 12px;
-      border-bottom: 1px solid var(--border);
-    }
+        .bid-price { color: #34d399; font-weight: 600; }
+        .ask-price { color: #f87171; font-weight: 600; }
+        .bid-bar { background-color: #10b981; }
+        .ask-bar { background-color: #ef4444; }
 
-    .imbalance-labels {
-      display: flex;
-      justify-content: space-between;
-      font-size: 11px;
-      margin-bottom: 4px;
-      font-weight: 600;
-    }
+        .whale-wall {
+            border: 1px solid #a855f7 !important;
+            background-color: rgba(168, 85, 247, 0.22) !important;
+            font-weight: bold;
+        }
 
-    .imbalance-bar {
-      height: 6px;
-      background: var(--red);
-      border-radius: 3px;
-      overflow: hidden;
-      display: flex;
-    }
+        .spread-row {
+            text-align: center;
+            color: #94a3b8;
+            background-color: #1e293b;
+            padding: 4px 0;
+            margin: 4px 0;
+            border-radius: 3px;
+            font-size: 0.8em;
+            font-weight: 600;
+        }
 
-    .imbalance-fill-bid {
-      background: var(--green);
-      height: 100%;
-      transition: width 0.15s ease;
-    }
+        /* Controls & Cards */
+        #controls { max-width: 900px; margin: 0 auto 20px auto; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; align-items: center; }
+        select { padding: 9px; border-radius: 6px; border: 1px solid #cbd5e1; background-color: #fff; font-size: 0.9em; cursor: pointer; outline: none; }
+        
+        .filter-checkbox-wrap {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: #fff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #cbd5e1;
+            font-size: 0.9em;
+            color: #334155;
+            cursor: pointer;
+            user-select: none;
+        }
+        .filter-checkbox-wrap input { cursor: pointer; accent-color: #eab308; }
 
-    .dom-columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding: 6px 12px;
-      color: var(--text-muted);
-      font-size: 11px;
-      border-bottom: 1px solid var(--bg-panel-alt);
-    }
-
-    .dom-columns span:not(:first-child) {
-      text-align: right;
-    }
-
-    .dom-list {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      overflow: hidden;
-    }
-
-    .dom-row {
-      position: relative;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      padding: 2px 12px;
-      line-height: 1.35;
-      z-index: 1;
-      font-variant-numeric: tabular-nums;
-    }
-
-    .dom-row span:not(:first-child) {
-      text-align: right;
-    }
-
-    .dom-depth-bg {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      z-index: -1;
-      transition: width 0.1s ease;
-    }
-
-    .ask-row .price { color: var(--red); }
-    .ask-row .dom-depth-bg { background: rgba(239, 83, 80, 0.16); }
-
-    .bid-row .price { color: var(--green); }
-    .bid-row .dom-depth-bg { background: rgba(38, 166, 154, 0.16); }
-
-    .whale-wall {
-      font-weight: 700;
-      background: rgba(245, 197, 66, 0.12);
-    }
-
-    .whale-wall .size::before {
-      content: "🐳 ";
-      font-size: 10px;
-    }
-
-    .dom-spread-box {
-      padding: 7px 12px;
-      background: var(--bg-panel-alt);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 700;
-    }
-
-    .mid-price {
-      font-size: 14px;
-      color: #ffffff;
-    }
-
-    .spread-val {
-      font-size: 11px;
-      color: var(--text-muted);
-      font-weight: 400;
-    }
-
-    /* NEWS AGGREGATOR SECTION */
-    .news-section {
-      background: var(--bg-panel);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 16px;
-    }
-
-    .news-toolbar {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 16px;
-    }
-
-    .filter-tabs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .tab-btn {
-      background: var(--bg-panel-alt);
-      color: var(--text-main);
-      border: 1px solid var(--border);
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 12px;
-      cursor: pointer;
-      transition: all 0.15s ease;
-    }
-
-    .tab-btn:hover {
-      border-color: var(--gold);
-    }
-
-    .tab-btn.active {
-      background: rgba(245, 197, 66, 0.18);
-      color: var(--gold);
-      border-color: var(--gold);
-      font-weight: 600;
-    }
-
-    .toolbar-right {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      font-size: 12px;
-    }
-
-    .toggle-label {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      cursor: pointer;
-      color: var(--text-main);
-    }
-
-    .refresh-btn {
-      background: var(--blue);
-      color: #fff;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    .news-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 12px;
-    }
-
-    .news-card {
-      background: var(--bg-panel-alt);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 12px 14px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.1s ease, border-color 0.15s ease;
-    }
-
-    .news-card:hover {
-      border-color: #434857;
-    }
-
-    .news-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 11px;
-      margin-bottom: 8px;
-      gap: 6px;
-    }
-
-    .source-tag {
-      font-weight: 700;
-      padding: 2px 6px;
-      border-radius: 4px;
-      background: rgba(255, 255, 255, 0.07);
-      color: #fff;
-    }
-
-    .region-badge {
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-weight: 600;
-      font-size: 10px;
-    }
-
-    .region-west { background: rgba(41, 98, 255, 0.18); color: #82b1ff; }
-    .region-gulf { background: rgba(38, 166, 154, 0.18); color: #80cbc4; }
-    .region-iran { background: rgba(239, 83, 80, 0.18); color: #ff8a80; }
-    .region-israel { background: rgba(171, 71, 188, 0.18); color: #ce93d8; }
-    .region-mena { background: rgba(245, 197, 66, 0.18); color: var(--gold); }
-
-    .news-title {
-      font-size: 13.5px;
-      font-weight: 600;
-      color: #ffffff;
-      text-decoration: none;
-      margin-bottom: 8px;
-      display: block;
-    }
-
-    .news-title:hover {
-      color: var(--gold);
-    }
-
-    .news-bias {
-      font-size: 11px;
-      color: var(--text-muted);
-      border-top: 1px dashed rgba(255, 255, 255, 0.08);
-      padding-top: 6px;
-      margin-top: 6px;
-      display: flex;
-      justify-content: space-between;
-    }
-  </style>
+        #news-container { max-width: 900px; margin: 0 auto; }
+        .news-card { background-color: #fff; border-radius: 8px; border-left: 6px solid #eab308; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .date-header { color: #888; font-size: 0.9em; margin-bottom: 15px; }
+        .summary-box { background-color: #f8f9fa; border-radius: 6px; padding: 15px; margin-bottom: 20px; border: 1px solid #eef0f2; }
+        .summary-label { font-weight: bold; margin-bottom: 10px; }
+        .structured-data { margin-bottom: 12px; line-height: 1.5; }
+        .outlook-box { padding: 12px; background-color: #fff; border-left: 4px solid #d4af37; font-size: 0.95em; margin-top: 10px; }
+        .reported-by-label { color: #64748b; font-weight: bold; font-size: 0.85em; text-transform: uppercase; margin-bottom: 15px; }
+        .source-item { display: flex; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 6px; }
+        .source-badge { background-color: #e2e8f0; color: #1e293b; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; white-space: nowrap; text-align: center; }
+        .regional-badge { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .bias-note { font-size: 0.75em; color: #64748b; font-style: italic; margin-left: 4px; }
+        .source-link { color: #3b82f6; text-decoration: none; line-height: 1.4; }
+    </style>
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="topbar">
-    <div class="brand">
-      <span>⚡ XAU/USD QUANT & GEOPOLITICAL TERMINAL</span>
-      <span class="brand-badge">Multi-Perspective Feeds + Live DOM</span>
-    </div>
-    <div class="top-controls">
-      <span id="last-updated-text" style="color: var(--text-muted);">Feeds laden...</span>
-    </div>
-  </header>
-
-  <!-- HAUPTBEREICH: LINKS TRADINGVIEW CHART | RECHTS BINANCE PAXG LIVE-DOM -->
-  <section class="trading-workspace">
-    <!-- LINKS: TradingView Chart -->
-    <div class="chart-container" id="tv_chart_container"></div>
-
-    <!-- RECHTS: Live Depth of Market (DOM) -->
-    <div class="dom-panel">
-      <div class="dom-header">
-        <span>GOLD DOM (PAXG/USDT)</span>
-        <span class="dom-status" id="dom-conn-status">CONNECTING...</span>
-      </div>
-
-      <div class="imbalance-container">
-        <div class="imbalance-labels">
-          <span style="color: var(--green);" id="bid-pct">50% Bids</span>
-          <span style="color: var(--red);" id="ask-pct">50% Asks</span>
-        </div>
-        <div class="imbalance-bar">
-          <div class="imbalance-fill-bid" id="imbalance-fill" style="width: 50%;"></div>
-        </div>
-      </div>
-
-      <div class="dom-columns">
-        <span>Preis (USD)</span>
-        <span>Menge (oz)</span>
-        <span>Kumuliert ($)</span>
-      </div>
-
-      <div class="dom-list" id="dom-asks"></div>
-
-      <div class="dom-spread-box">
-        <span class="mid-price" id="dom-mid-price">---.--</span>
-        <span class="spread-val" id="dom-spread">Spread: --</span>
-      </div>
-
-      <div class="dom-list" id="dom-bids"></div>
-    </div>
-  </section>
-
-  <!-- UNTEN: NEWS AGGREGATOR MIT WESTLICHEN & REGIONALEN NAHOST-QUELLEN -->
-  <section class="news-section">
-    <div class="news-toolbar">
-      <div class="filter-tabs" id="category-tabs">
-        <button class="tab-btn active" data-filter="ALL">Alle Quellen</button>
-        <button class="tab-btn" data-filter="Western Finance">Westliche Finanzmedien</button>
-        <button class="tab-btn" data-filter="Regional Finance">Golf-Finanzen (Zawya / Arab News)</button>
-        <button class="tab-btn" data-filter="Geopolitics">Nahost Vor-Ort (Iran / Israel / Katar)</button>
-      </div>
-
-      <div class="toolbar-right">
-        <label class="toggle-label" title="Filtert Lokalpolitik/Sport heraus und zeigt nur Gold-, Öl-, Zins- und Militär-relevante Schlagzeilen">
-          <input type="checkbox" id="impact-filter-toggle" checked />
-          <span>Nur Gold/Öl/Konflikt-Impact filtern</span>
-        </label>
-        <button class="refresh-btn" id="refresh-news-btn">↻ Feeds aktualisieren</button>
-      </div>
+    <div class="tab-nav">
+        <button class="tab-btn active" onclick="switchTab(event, 'chart-tab')">📊 Chart & Live DOM</button>
+        <button class="tab-btn" onclick="switchTab(event, 'news-tab')">📰 News Analyse</button>
     </div>
 
-    <div class="news-grid" id="news-grid">
-      <p style="color: var(--text-muted);">Lade internationale und regionale Feeds...</p>
-    </div>
-  </section>
+    <h1>Financial & Gold Aggregator</h1>
+    <div class="sub-header">Multi-Sourced Intelligence: Global Macro & Middle East Regional Orderflow</div>
 
-  <!-- 1. TRADINGVIEW WIDGET SCRIPT -->
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script>
-    new TradingView.widget({
-      "autosize": true,
-      "symbol": "OANDA:XAUUSD",
-      "interval": "15",
-      "timezone": "Europe/Zurich",
-      "theme": "dark",
-      "style": "1",
-      "locale": "de_DE",
-      "toolbar_bg": "#131722",
-      "enable_publishing": false,
-      "hide_side_toolbar": false,
-      "allow_symbol_change": true,
-      "studies": ["Volume@tv-basicstudies"],
-      "container_id": "tv_chart_container"
-    });
-  </script>
+    <!-- CHART & LIVE DOM TAB -->
+    <div id="chart-tab" class="tab-content active">
+        <div class="market-grid">
+            <div id="chart-container"></div>
+            
+            <!-- Live L2 DOM (Binance PAXG 1:1 Spot Gold Stream) -->
+            <div class="dom-panel">
+                <div class="dom-header">
+                    <span class="dom-header-title">
+                        <span class="pulse-dot"></span> Live DOM: PAXG / XAU
+                    </span>
+                    <span style="color:#94a3b8; font-size:0.75em;">100ms L2 Stream</span>
+                </div>
 
-  <!-- 2. LIVE ORDERBOOK (DOM) VIA BINANCE WEBSOCKET -->
-  <script>
-    (function initGoldDOM() {
-      const LEVELS = 12;
-      const WHALE_MULTIPLIER = 3.2;
+                <div class="imbalance-wrap">
+                    <div class="imbalance-label">
+                        <span style="color:#34d399;" id="bid-imb-label">Bids: 50%</span>
+                        <span style="color:#f87171;" id="ask-imb-label">Asks: 50%</span>
+                    </div>
+                    <div class="imbalance-track">
+                        <div id="imbalance-bid" class="imbalance-bid" style="width: 50%;"></div>
+                        <div id="imbalance-ask" class="imbalance-ask" style="width: 50%;"></div>
+                    </div>
+                </div>
 
-      const asksContainer = document.getElementById('dom-asks');
-      const bidsContainer = document.getElementById('dom-bids');
-      const midPriceEl = document.getElementById('dom-mid-price');
-      const spreadEl = document.getElementById('dom-spread');
-      const bidPctEl = document.getElementById('bid-pct');
-      const askPctEl = document.getElementById('ask-pct');
-      const imbalanceFillEl = document.getElementById('imbalance-fill');
-      const statusEl = document.getElementById('dom-conn-status');
+                <table class="dom-table">
+                    <thead>
+                        <tr>
+                            <th>Preis (USD)</th>
+                            <th>Menge (Oz)</th>
+                            <th>Summe ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="asks-body"></tbody>
+                </table>
 
-      function connectWebSocket() {
-        const ws = new WebSocket('wss://stream.binance.com:9443/ws/paxgusdt@depth20@100ms');
+                <div id="spread-box" class="spread-row">Spread: --</div>
 
-        ws.onopen = () => {
-          statusEl.textContent = 'LIVE (100ms)';
-          statusEl.style.color = '#26a69a';
-        };
-
-        ws.onmessage = (event) => {
-          const data = JSON.parse(event.data);
-          if (!data.bids || !data.asks) return;
-          renderOrderBook(data.bids, data.asks);
-        };
-
-        ws.onclose = () => {
-          statusEl.textContent = 'RECONNECTING...';
-          statusEl.style.color = '#ff9800';
-          setTimeout(connectWebSocket, 2500);
-        };
-
-        ws.onerror = () => ws.close();
-      }
-
-      function renderOrderBook(rawBids, rawAsks) {
-        const bids = rawBids.slice(0, LEVELS).map(([p, q]) => ({ price: parseFloat(p), qty: parseFloat(q) }));
-        const asks = rawAsks.slice(0, LEVELS).map(([p, q]) => ({ price: parseFloat(p), qty: parseFloat(q) }));
-        if (!bids.length || !asks.length) return;
-
-        let totalBidQty = 0;
-        let totalAskQty = 0;
-
-        bids.forEach(b => {
-          totalBidQty += b.qty;
-          b.cumUsd = totalBidQty * b.price;
-        });
-
-        asks.forEach(a => {
-          totalAskQty += a.qty;
-          a.cumUsd = totalAskQty * a.price;
-        });
-
-        const avgOrderQty = (totalBidQty + totalAskQty) / (bids.length + asks.length);
-        const maxCumQty = Math.max(totalBidQty, totalAskQty, 1);
-
-        const totalVolume = totalBidQty + totalAskQty;
-        const bidRatio = totalVolume > 0 ? Math.round((totalBidQty / totalVolume) * 100) : 50;
-        const askRatio = 100 - bidRatio;
-
-        bidPctEl.textContent = `${bidRatio}% Bids (${totalBidQty.toFixed(1)} oz)`;
-        askPctEl.textContent = `${askRatio}% Asks (${totalAskQty.toFixed(1)} oz)`;
-        imbalanceFillEl.style.width = `${bidRatio}%`;
-
-        const bestBid = bids[0].price;
-        const bestAsk = asks[0].price;
-        const midPrice = (bestBid + bestAsk) / 2;
-        const spread = bestAsk - bestBid;
-
-        midPriceEl.textContent = midPrice.toFixed(2);
-        spreadEl.textContent = `Spread: $${spread.toFixed(2)}`;
-
-        const asksReversed = [...asks].reverse();
-        asksContainer.innerHTML = asksReversed.map(a => {
-          const depthWidth = Math.min(((a.cumUsd / (maxCumQty * midPrice)) * 100), 100);
-          const isWhale = a.qty >= avgOrderQty * WHALE_MULTIPLIER;
-          return `
-            <div class="dom-row ask-row ${isWhale ? 'whale-wall' : ''}">
-              <div class="dom-depth-bg" style="width: ${depthWidth}%;"></div>
-              <span class="price">${a.price.toFixed(2)}</span>
-              <span class="size">${a.qty.toFixed(3)}</span>
-              <span>${formatUsd(a.cumUsd)}</span>
+                <table class="dom-table">
+                    <tbody id="bids-body"></tbody>
+                </table>
             </div>
-          `;
-        }).join('');
+        </div>
+    </div>
 
-        bidsContainer.innerHTML = bids.map(b => {
-          const depthWidth = Math.min(((b.cumUsd / (maxCumQty * midPrice)) * 100), 100);
-          const isWhale = b.qty >= avgOrderQty * WHALE_MULTIPLIER;
-          return `
-            <div class="dom-row bid-row ${isWhale ? 'whale-wall' : ''}">
-              <div class="dom-depth-bg" style="width: ${depthWidth}%;"></div>
-              <span class="price">${b.price.toFixed(2)}</span>
-              <span class="size">${b.qty.toFixed(3)}</span>
-              <span>${formatUsd(b.cumUsd)}</span>
-            </div>
-          `;
-        }).join('');
-      }
+    <!-- NEWS TAB -->
+    <div id="news-tab" class="tab-content">
+        <div id="controls">
+            <select id="filter-impact" onchange="renderNews()">
+                <option value="all">All Impacts</option>
+                <option value="Bullish">Bullish</option>
+                <option value="Bearish">Bearish</option>
+                <option value="Neutral">Neutral</option>
+            </select>
+            <select id="filter-region" onchange="renderNews()">
+                <option value="all">Alle Medien (Global & Nahost)</option>
+                <option value="regional">🕌 Nur Vor-Ort / Golf-Region</option>
+                <option value="western">🏛️ Nur Westliche Leitmedien</option>
+            </select>
+            <select id="filter-relevance" onchange="renderNews()">
+                <option value="all">Alle News (Gesamt)</option>
+                <option value="tradeable">🔥 Nur Handels-Setups (&ge; 67%)</option>
+            </select>
+            <select id="sort-by" onchange="renderNews()">
+                <option value="newest">Sort: Newest First</option>
+                <option value="probability">Sort: Highest Probability</option>
+            </select>
+            <!-- Modul 3: Keyword Impact Filter -->
+            <label class="filter-checkbox-wrap">
+                <input type="checkbox" id="filter-keywords" onchange="renderNews()" checked>
+                <span>🎯 Nur geopolitische Impact-Keywords</span>
+            </label>
+        </div>
+        <div id="news-container">
+            <p style="text-align:center;">Lade News...</p>
+        </div>
+    </div>
 
-      function formatUsd(val) {
-        if (val >= 1000000) return (val / 1000000).toFixed(2) + 'M';
-        if (val >= 1000) return (val / 1000).toFixed(1) + 'K';
-        return val.toFixed(0);
-      }
+    <script>
+        let allClusters = [];
 
-      connectWebSocket();
-    })();
-  </script>
+        // Modul 3: Relevanz-Keywords
+        const IMPACT_KEYWORDS = [
+            "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
+            "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
+            "idf", "missile", "strike", "attack", "drone", "sanction", "nuclear", 
+            "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "fed", 
+            "inflation", "rate", "central bank", "brics", "dollar", "treasury", "tariff", "saudi"
+        ];
 
-  <!-- 3. MULTI-PERSPECTIVE NEWS AGGREGATOR (WEST + NAHOST VOR ORT) -->
-  <script>
-    const FEEDS = [
-      // --- WESTLICHE FINANZMEDIEN ---
-      {
-        name: "Investing.com (Commodities)",
-        region: "West / Global",
-        regionClass: "region-west",
-        category: "Western Finance",
-        url: "https://www.investing.com/rss/news_11.rss",
-        bias_note: "Fokus: Globale Rohstoffmärkte & US-Makro"
-      },
-      {
-        name: "Kitco Gold News",
-        region: "USA / Kanada",
-        regionClass: "region-west",
-        category: "Western Finance",
-        url: "https://www.kitco.com/rss/KitcoNews.xml",
-        bias_note: "Fokus: Edelmetalle, Fed & Minen-Sektor"
-      },
+        // Modul 2: Quellenzuordnungen & Bias-Hinweise
+        const SOURCE_META = {
+            "Zawya": { region: "Middle East", bias: "Golf-Ökonomie / VAE" },
+            "Arab News": { region: "Middle East", bias: "Saudi-Arabien / OPEC+ Fokus" },
+            "Al Jazeera English": { region: "Middle East", bias: "Katar / Pan-Arabische Sicht" },
+            "Middle East Eye": { region: "Middle East", bias: "Nahost-Analysen / Rotes Meer" },
+            "Tehran Times": { region: "Middle East", bias: "Iran (Staatliche Linie)" },
+            "Mehr News Agency": { region: "Middle East", bias: "Iran (Direktquelle Teheran)" },
+            "The Times of Israel": { region: "Middle East", bias: "Israelische Perspektive" },
+            "Saba News Agency": { region: "Middle East", bias: "Jemen (Houthi-geführte Medien)" }
+        };
 
-      // --- GOLF-FINANZEN (Das "Investing.com" des Nahen Ostens) ---
-      {
-        name: "Zawya (Middle East Markets)",
-        region: "VAE / Golf",
-        regionClass: "region-gulf",
-        category: "Regional Finance",
-        url: "https://www.zawya.com/en/rss",
-        bias_note: "Golf-Ökonomie, Öl & institutionelle Flüsse"
-      },
-      {
-        name: "Arab News (Economy & Oil)",
-        region: "Saudi-Arabien",
-        regionClass: "region-gulf",
-        category: "Regional Finance",
-        url: "https://www.arabnews.com/cat/4/rss.xml",
-        bias_note: "Saudische Perspektive auf OPEC+ & Energie"
-      },
+        function switchTab(event, tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
 
-      // --- GEOPOLITIK VOR ORT (Nahost, Iran, Israel, Katar) ---
-      {
-        name: "Al Jazeera English",
-        region: "Katar / Nahost",
-        regionClass: "region-mena",
-        category: "Geopolitics",
-        url: "https://www.aljazeera.com/xml/rss/all.xml",
-        bias_note: "Direkte Vor-Ort-Korrespondenten im Nahen Osten"
-      },
-      {
-        name: "Middle East Eye",
-        region: "Nahost Fokus",
-        regionClass: "region-mena",
-        category: "Geopolitics",
-        url: "https://www.middleeasteye.net/rss",
-        bias_note: "Fokus: Rotes Meer, Jemen, Levante & Diplomatie"
-      },
-      {
-        name: "Tehran Times",
-        region: "Iran",
-        regionClass: "region-iran",
-        category: "Geopolitics",
-        url: "https://www.tehrantimes.com/rss",
-        bias_note: "Offizielle iranische Staatslinie & Militär-Statements"
-      },
-      {
-        name: "Mehr News Agency",
-        region: "Iran",
-        regionClass: "region-iran",
-        category: "Geopolitics",
-        url: "https://en.mehrnews.com/rss",
-        bias_note: "Direkte Meldungen aus Teheran"
-      },
-      {
-        name: "The Times of Israel",
-        region: "Israel",
-        regionClass: "region-israel",
-        category: "Geopolitics",
-        url: "https://www.timesofisrael.com/feed/",
-        bias_note: "Israelische Sicherheits- und Militärperspektive"
-      }
-    ];
-
-    const MARKET_KEYWORDS = [
-      "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy",
-      "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", "idf",
-      "missile", "strike", "attack", "drone", "sanction", "nuclear", "irgc",
-      "escalat", "retaliat", "war", "truce", "ceasefire", "fed", "inflation",
-      "rate", "central bank", "brics", "dollar", "treasury", "tariff", "saudi"
-    ];
-
-    let allArticles = [];
-    let activeCategory = "ALL";
-
-    function isMarketRelevant(title, description = "") {
-      const text = (title + " " + description).toLowerCase();
-      return MARKET_KEYWORDS.some(kw => text.includes(kw));
-    }
-
-    // Holt RSS-Feed über rss2json oder allorigins Fallback (CORS-frei für GitHub Pages)
-    async function fetchFeed(feed) {
-      const proxyUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feed.url)}`;
-      try {
-        const res = await fetch(proxyUrl);
-        const data = await res.json();
-        if (data.status === "ok" && data.items) {
-          return data.items.slice(0, 10).map(item => ({
-            title: item.title,
-            link: item.link,
-            pubDate: new Date(item.pubDate || Date.now()),
-            description: item.description || "",
-            sourceName: feed.name,
-            region: feed.region,
-            regionClass: feed.regionClass,
-            category: feed.category,
-            bias_note: feed.bias_note
-          }));
+            if (tabId === 'chart-tab') {
+                loadChart();
+            } else if (tabId === 'news-tab') {
+                loadNews();
+            }
         }
-      } catch (e) {
-        console.warn(`Feed-Fehler bei ${feed.name}:`, e);
-      }
-      return [];
-    }
 
-    async function loadAllFeeds() {
-      const grid = document.getElementById("news-grid");
-      const statusText = document.getElementById("last-updated-text");
-      statusText.textContent = "Aktualisiere Feeds...";
+        // ==========================================
+        // 1. LIVE L2 ORDERBUCH (BINANCE WEBSOCKET)
+        // ==========================================
+        let domWs = null;
 
-      const results = await Promise.all(FEEDS.map(fetchFeed));
-      allArticles = results.flat().sort((a, b) => b.pubDate - a.pubDate);
+        function initLiveDOM() {
+            if (domWs) {
+                domWs.close();
+            }
+            domWs = new WebSocket("wss://stream.binance.com:9443/ws/paxgusdt@depth20@100ms");
 
-      const now = new Date().toLocaleTimeString("de-CH", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
-      statusText.textContent = `Letztes Update: ${now} Uhr (${allArticles.length} Artikel geladen)`;
+            domWs.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                if (!data.bids || !data.asks) return;
 
-      renderArticles();
-    }
+                const topBids = data.bids.slice(0, 12).map(b => ({ price: parseFloat(b[0]), qty: parseFloat(b[1]) }));
+                const topAsks = data.asks.slice(0, 12).map(a => ({ price: parseFloat(a[0]), qty: parseFloat(a[1]) }));
 
-    function renderArticles() {
-      const grid = document.getElementById("news-grid");
-      const onlyImpact = document.getElementById("impact-filter-toggle").checked;
+                // Volumenberechnungen & Imbalance
+                let totalBidVol = 0;
+                let totalAskVol = 0;
+                topBids.forEach(b => totalBidVol += (b.price * b.qty));
+                topAsks.forEach(a => totalAskVol += (a.price * a.qty));
 
-      const filtered = allArticles.filter(art => {
-        const matchesCat = activeCategory === "ALL" || art.category === activeCategory;
-        // Westliche Gold-Feeds immer durchlassen, Geopolitik/Regional nach Keywords filtern
-        const matchesImpact = !onlyImpact || art.category === "Western Finance" || isMarketRelevant(art.title, art.description);
-        return matchesCat && matchesImpact;
-      });
+                const combinedVol = totalBidVol + totalAskVol;
+                const bidRatio = combinedVol > 0 ? (totalBidVol / combinedVol) * 100 : 50;
+                const askRatio = combinedVol > 0 ? (totalAskVol / combinedVol) * 100 : 50;
 
-      if (filtered.length === 0) {
-        grid.innerHTML = `<p style="color: var(--text-muted);">Keine passenden Meldungen für diesen Filter gefunden. Deaktiviere testweise den Keyword-Filter oben rechts.</p>`;
-        return;
-      }
+                document.getElementById('bid-imb-label').innerText = `Bids: ${bidRatio.toFixed(1)}%`;
+                document.getElementById('ask-imb-label').innerText = `Asks: ${askRatio.toFixed(1)}%`;
+                document.getElementById('imbalance-bid').style.width = `${bidRatio}%`;
+                document.getElementById('imbalance-ask').style.width = `${askRatio}%`;
 
-      grid.innerHTML = filtered.slice(0, 36).map(art => {
-        const timeStr = isNaN(art.pubDate) ? "" : art.pubDate.toLocaleString("de-CH", {
-          day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit"
+                // Whale-Wall-Schwelle: > 3.2-fache des Durchschnittsvolumens
+                const allQtys = [...topBids.map(b => b.qty), ...topAsks.map(a => a.qty)];
+                const avgQty = allQtys.reduce((sum, q) => sum + q, 0) / (allQtys.length || 1);
+                const whaleThreshold = avgQty * 3.2;
+
+                const maxQty = Math.max(...allQtys, 0.01);
+
+                // Render Asks (Verkäufer) - absteigend sortiert (höchste oben)
+                const asksBody = document.getElementById('asks-body');
+                asksBody.innerHTML = '';
+                const sortedAsks = [...topAsks].reverse();
+
+                sortedAsks.forEach(item => {
+                    const totalUSD = (item.price * item.qty).toLocaleString('de-CH', { maximumFractionDigits: 0 });
+                    const isWhale = item.qty >= whaleThreshold;
+                    const barWidth = Math.min(100, (item.qty / maxQty) * 100);
+
+                    const row = document.createElement('tr');
+                    row.className = `dom-row ${isWhale ? 'whale-wall' : ''}`;
+                    row.innerHTML = `
+                        <div class="dom-bar ask-bar" style="width: ${barWidth}%;"></div>
+                        <td class="dom-cell ask-price">${item.price.toFixed(2)}</td>
+                        <td class="dom-cell">${item.qty.toFixed(3)} ${isWhale ? '🐳' : ''}</td>
+                        <td class="dom-cell">$${totalUSD}</td>
+                    `;
+                    asksBody.appendChild(row);
+                });
+
+                // Spread
+                const bestBid = topBids[0]?.price || 0;
+                const bestAsk = topAsks[0]?.price || 0;
+                const spread = (bestAsk - bestBid).toFixed(2);
+                document.getElementById('spread-box').innerText = `Spread: $${spread} | Mid: ${((bestBid + bestAsk) / 2).toFixed(2)}`;
+
+                // Render Bids (Käufer) - fallend
+                const bidsBody = document.getElementById('bids-body');
+                bidsBody.innerHTML = '';
+                topBids.forEach(item => {
+                    const totalUSD = (item.price * item.qty).toLocaleString('de-CH', { maximumFractionDigits: 0 });
+                    const isWhale = item.qty >= whaleThreshold;
+                    const barWidth = Math.min(100, (item.qty / maxQty) * 100);
+
+                    const row = document.createElement('tr');
+                    row.className = `dom-row ${isWhale ? 'whale-wall' : ''}`;
+                    row.innerHTML = `
+                        <div class="dom-bar bid-bar" style="width: ${barWidth}%;"></div>
+                        <td class="dom-cell bid-price">${item.price.toFixed(2)}</td>
+                        <td class="dom-cell">${item.qty.toFixed(3)} ${isWhale ? '🐳' : ''}</td>
+                        <td class="dom-cell">$${totalUSD}</td>
+                    `;
+                    bidsBody.appendChild(row);
+                });
+            };
+
+            domWs.onerror = () => console.log("Binance DOM WebSocket Reconnect...");
+            domWs.onclose = () => setTimeout(initLiveDOM, 3000);
+        }
+
+        // ==========================================
+        // 2. CHART LADEN
+        // ==========================================
+        async function loadChart() {
+            const container = document.getElementById('chart-container');
+            try {
+                const response = await fetch('market_data.json?t=' + new Date().getTime());
+                if (!response.ok) {
+                    container.innerHTML = `<p style="text-align:center; padding: 20px;">HTTP Error: ${response.status}</p>`;
+                    return;
+                }
+                const data = await response.json();
+                if (!data.candles || data.candles.length === 0) return;
+
+                let sortedCandles = data.candles.sort((a, b) => a.time - b.time);
+                let uniqueCandles = [];
+                let lastTime = 0;
+                sortedCandles.forEach(c => {
+                    if (c.time > lastTime) {
+                        uniqueCandles.push(c);
+                        lastTime = c.time;
+                    }
+                });
+
+                container.innerHTML = '';
+                const chart = LightweightCharts.createChart(container, {
+                    width: container.clientWidth,
+                    height: 520,
+                    layout: { backgroundColor: '#ffffff', textColor: '#333' },
+                    grid: { vertLines: { color: '#f0f3fa' }, horzLines: { color: '#f0f3fa' } },
+                    timeScale: { timeVisible: true }
+                });
+
+                const candleSeries = chart.addCandlestickSeries({
+                    upColor: '#26a69a', downColor: '#ef5350', borderVisible: false, wickUpColor: '#26a69a', wickDownColor: '#ef5350'
+                });
+                
+                candleSeries.setData(uniqueCandles);
+
+                if (data.orderbook) {
+                    data.orderbook.forEach((level, index) => {
+                        candleSeries.createPriceLine({
+                            price: level.price,
+                            color: '#eab308',
+                            lineWidth: 2,
+                            lineStyle: LightweightCharts.LineStyle.Dashed,
+                            axisLabelVisible: true,
+                            title: `OANDA L${index + 1} (${level.volume.toFixed(2)}%)`
+                        });
+                    });
+                }
+            } catch (error) {
+                container.innerHTML = `<p style="color:red; font-weight:bold; padding: 20px;">Chart Ladefehler: ${error.message}</p>`;
+            }
+        }
+
+        // ==========================================
+        // 3. NEWS ANALYSE & FILTER
+        // ==========================================
+        async function loadNews() {
+            const container = document.getElementById('news-container');
+            try {
+                const response = await fetch('data.json?t=' + new Date().getTime());
+                if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
+                const textData = await response.text();
+                
+                try {
+                    allClusters = JSON.parse(textData);
+                } catch (e) {
+                    container.innerHTML = `<p style="color:red; text-align:center;"><b>Syntax-Fehler in data.json!</b></p>`;
+                    return;
+                }
+                renderNews();
+            } catch (error) {
+                container.innerHTML = `<p style="color:red; text-align:center;">Fehler beim Laden: ${error.message}</p>`;
+            }
+        }
+
+        function containsImpactKeyword(cluster) {
+            const textToScan = [
+                cluster.summary?.Facts || '',
+                cluster.summary?.Macro_Context || '',
+                ...cluster.articles.map(a => `${a.title} ${a.description}`)
+            ].join(' ').toLowerCase();
+
+            return IMPACT_KEYWORDS.some(kw => textToScan.includes(kw));
+        }
+
+        function renderNews() {
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+            
+            const filterImpact = document.getElementById('filter-impact').value;
+            const filterRegion = document.getElementById('filter-region').value;
+            const filterRelevance = document.getElementById('filter-relevance').value;
+            const sortBy = document.getElementById('sort-by').value;
+            const requireKeywords = document.getElementById('filter-keywords').checked;
+
+            let filtered = allClusters.filter(cluster => {
+                // Keyword Impact Filter
+                if (requireKeywords && !containsImpactKeyword(cluster)) {
+                    return false;
+                }
+
+                // Impact-Richtung (Bullish/Bearish/Neutral)
+                if (filterImpact !== 'all') {
+                    const impact = cluster.summary?.XAUUSD_Impact || '';
+                    if (!impact.toLowerCase().includes(filterImpact.toLowerCase())) return false;
+                }
+
+                // Regionale Herkunft filtern
+                if (filterRegion !== 'all') {
+                    const hasRegionalSource = cluster.articles.some(a => {
+                        const meta = SOURCE_META[a.source] || {};
+                        return meta.region === "Middle East";
+                    });
+
+                    if (filterRegion === 'regional' && !hasRegionalSource) return false;
+                    if (filterRegion === 'western' && hasRegionalSource) return false;
+                }
+
+                // Relevanz-Schwelle (>= 67%)
+                if (filterRelevance === 'tradeable') {
+                    const prob = parseInt(cluster.summary?.Probability_Percent || 0);
+                    const impact = cluster.summary?.XAUUSD_Impact || '';
+                    const isTradeableImpact = impact.includes('Bullish') || impact.includes('Bearish');
+                    if (prob < 67 || !isTradeableImpact) return false;
+                }
+
+                return true;
+            });
+
+            if (sortBy === 'probability') {
+                filtered.sort((a, b) => {
+                    const probA = parseInt(a.summary?.Probability_Percent || 0);
+                    const probB = parseInt(b.summary?.Probability_Percent || 0);
+                    return probB - probA;
+                });
+            } else {
+                filtered.sort((a, b) => (b._timestamp || 0) - (a._timestamp || 0));
+            }
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<p style="text-align:center; padding: 30px;">Keine passenden News für diesen Filter gefunden.</p>';
+                return;
+            }
+
+            filtered.forEach(cluster => {
+                const card = document.createElement('div');
+                card.className = 'news-card';
+
+                let summaryHTML = "";
+                if (typeof cluster.summary === 'object' && cluster.summary !== null) {
+                    summaryHTML = `
+                        <div class="structured-data">
+                            <strong>Facts:</strong> ${cluster.summary.Facts || '-'}<br><br>
+                            <strong>Macro Context:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
+                            <strong>Uncertainties:</strong> ${cluster.summary.Uncertainties || '-'}
+                        </div>
+                        <div class="outlook-box">
+                            <strong>XAUUSD Impact:</strong> ${cluster.summary.XAUUSD_Impact || '-'} (${cluster.summary.Probability_Percent || '0'}%)<br>
+                            <strong>Timeframe:</strong> ${cluster.summary.Timeframe || '-'}<br>
+                            <strong>Timing:</strong> ${cluster.summary.Impact_Timing || '-'}<br>
+                            <strong>Price Action Cause (Last 24h):</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}<br>
+                            <strong>Price Target:</strong> ${cluster.summary.Orderflow_Price_Target || '-'}
+                        </div>
+                    `;
+                } else {
+                    summaryHTML = `<div class="structured-data">${cluster.summary || 'Summary missing.'}</div>`;
+                }
+
+                let sourcesHTML = cluster.articles.map(article => {
+                    const meta = SOURCE_META[article.source];
+                    const isRegional = meta && meta.region === "Middle East";
+                    const badgeClass = isRegional ? "source-badge regional-badge" : "source-badge";
+                    const biasText = meta ? `<span class="bias-note">(${meta.bias})</span>` : '';
+
+                    return `
+                        <div class="source-item">
+                            <span class="${badgeClass}">${article.source}</span>
+                            ${biasText}
+                            <a href="${article.link}" target="_blank" class="source-link">${article.title}</a>
+                        </div>
+                    `;
+                }).join('');
+
+                card.innerHTML = `
+                    <div class="date-header">${cluster.main_date || 'Unbekannt'}</div>
+                    <div class="summary-box">
+                        <div class="summary-label">Summary:</div>
+                        ${summaryHTML}
+                    </div>
+                    <div class="reported-by-label">REPORTED BY (${cluster.articles.length} Source${cluster.articles.length > 1 ? 's' : ''}):</div>
+                    ${sourcesHTML}
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        document.addEventListener("visibilitychange", function() {
+            if (document.visibilityState === 'visible') {
+                loadChart();
+                loadNews();
+            }
         });
-        return `
-          <article class="news-card">
-            <div>
-              <div class="news-meta">
-                <span class="source-tag">${art.sourceName}</span>
-                <span class="region-badge ${art.regionClass}">${art.region}</span>
-              </div>
-              <a href="${art.link}" target="_blank" rel="noopener noreferrer" class="news-title">
-                ${art.title}
-              </a>
-            </div>
-            <div class="news-bias">
-              <span>${art.bias_note}</span>
-              <span>${timeStr}</span>
-            </div>
-          </article>
-        `;
-      }).join("");
-    }
 
-    // Event-Listener für Tabs & Filter
-    document.querySelectorAll(".tab-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
-        activeCategory = btn.getAttribute("data-filter");
-        renderArticles();
-      });
-    });
-
-    document.getElementById("impact-filter-toggle").addEventListener("change", renderArticles);
-    document.getElementById("refresh-news-btn").addEventListener("click", loadAllFeeds);
-
-    // Initialer Start + Auto-Refresh alle 3 Minuten
-    loadAllFeeds();
-    setInterval(loadAllFeeds, 180000);
-  </script>
+        // Start
+        loadChart();
+        loadNews();
+        initLiveDOM();
+    </script>
 </body>
 </html>

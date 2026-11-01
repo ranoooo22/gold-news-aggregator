@@ -18,12 +18,35 @@ else:
     client = None
     print("WARNUNG: GEMINI_API_KEY nicht gefunden.")
 
+# Globale & Regionale RSS-Feeds
 FEEDS = {
+    # Westliche Leitmedien
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
     "Investing.com": "https://www.investing.com/rss/news_11.rss",
     "Yahoo Finance Gold": "https://finance.yahoo.com/rss/headline?s=GC=F",
-    "Yahoo Finance Oil": "https://finance.yahoo.com/rss/headline?s=CL=F"
+    "Yahoo Finance Oil": "https://finance.yahoo.com/rss/headline?s=CL=F",
+    
+    # Regional Finance & Energie (Golfregion)
+    "Zawya": "https://www.zawya.com/en/rss",
+    "Arab News": "https://www.arabnews.com/cat/4/rss.xml",
+    
+    # Vor-Ort Geopolitik (Nahost, Iran, Israel, Jemen)
+    "Al Jazeera English": "https://www.aljazeera.com/xml/rss/all.xml",
+    "Middle East Eye": "https://www.middleeasteye.net/rss",
+    "Tehran Times": "https://www.tehrantimes.com/rss",
+    "Mehr News Agency": "https://en.mehrnews.com/rss",
+    "The Times of Israel": "https://www.timesofisrael.com/feed/",
+    "Saba News Agency": "https://www.saba.ye/en/rss"
 }
+
+# Relevanz-Keywords für Rohstoffe & Geopolitik
+IMPACT_KEYWORDS = [
+    "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
+    "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
+    "idf", "missile", "strike", "attack", "drone", "sanction", "nuclear", 
+    "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "fed", 
+    "inflation", "rate", "central bank", "brics", "dollar", "treasury", "tariff", "saudi"
+]
 
 DATA_FILE = "data.json"
 SIMILARITY_THRESHOLD = 0.35
@@ -52,6 +75,15 @@ def fetch_new_articles(existing_urls):
                 if link in existing_urls:
                     continue 
                 
+                raw_desc = entry.get("summary", entry.get("description", ""))
+                clean_desc = clean_html(raw_desc).strip()
+                title = entry.title
+
+                # Pre-Filtering: Nur Artikel mit Markt- oder Geopolitikbezug aufnehmen
+                full_text = f"{title} {clean_desc}".lower()
+                if not any(kw in full_text for kw in IMPACT_KEYWORDS):
+                    continue
+
                 pub_dt = None
                 if hasattr(entry, "published_parsed") and entry.published_parsed:
                     try:
@@ -66,11 +98,9 @@ def fetch_new_articles(existing_urls):
                     continue
 
                 pub_date_str = pub_dt.strftime("%Y-%m-%d %H:%M")
-                raw_desc = entry.get("summary", entry.get("description", ""))
-                clean_desc = clean_html(raw_desc).strip()
                 
                 articles.append({
-                    "title": entry.title,
+                    "title": title,
                     "link": link,
                     "source": source,
                     "date": pub_date_str,
@@ -82,73 +112,39 @@ def fetch_new_articles(existing_urls):
             
     return articles
 
-def get_clustered_orderbook(bin_size=5.0, range_pct=0.03):
-    """
-    Hilfsfunktion: Gruppiert benachbarte Orderbuch-Level (Buckets) in $5-Zonen 
-    zusammen und addiert die Volumen-Prozentsätze.
-    """
+def fetch_oanda_orderbook():
     if not OANDA_API_KEY:
-        return None, [], "Keine OANDA API-Daten verfügbar (Key fehlt)."
-        
+        return "Keine OANDA API-Daten verfügbar (Key fehlt)."
     url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
-    headers = {
-        "Authorization": f"Bearer {OANDA_API_KEY}",
-        "Accept-Datetime-Format": "UNIX"
-    }
+    headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
     
     try:
         response = requests.get(url, headers=headers, timeout=10)
-        if response.status_code != 200:
-            return None, [], f"API Fehler: {response.status_code} - {response.text}"
+        if response.status_code == 200:
+            data = response.json()
+            orderbook = data.get("orderBook", {})
+            current_price = float(orderbook.get("price", "0"))
             
-        data = response.json()
-        orderbook = data.get("orderBook", {})
-        current_price = float(orderbook.get("price", "0"))
-        buckets = orderbook.get("buckets", [])
-        
-        clusters = {}
-        for b in buckets:
-            try:
-                p = float(b.get("price", 0))
-                # Nur Level innerhalb des Radius (z.B. 3% vom Spot)
-                if current_price > 0 and abs(p - current_price) / current_price <= range_pct:
-                    long_vol = float(b.get("longCountPercent", 0))
-                    short_vol = float(b.get("shortCountPercent", 0))
-                    total_vol = long_vol + short_vol
+            buckets = orderbook.get("buckets", [])
+            valid_buckets = []
+            
+            for b in buckets:
+                try:
+                    p = float(b.get("price", 0))
+                    if current_price > 0 and abs(p - current_price) / current_price <= 0.03:
+                        valid_buckets.append(b)
+                except ValueError:
+                    continue
                     
-                    # Runden auf die nächste Zone (Binning, hier in 5-Dollar-Schritten)
-                    cluster_price = round(p / bin_size) * bin_size
-                    
-                    if cluster_price not in clusters:
-                        clusters[cluster_price] = {"price": cluster_price, "volume": 0.0, "long": 0.0, "short": 0.0}
-                        
-                    # Volumen-Prozentsätze addieren
-                    clusters[cluster_price]["volume"] += total_vol
-                    clusters[cluster_price]["long"] += long_vol
-                    clusters[cluster_price]["short"] += short_vol
-            except ValueError:
-                continue
-                
-        # In Liste umwandeln und nach dem akkumulierten Gesamtvolumen absteigend sortieren
-        sorted_clusters = list(clusters.values())
-        sorted_clusters.sort(key=lambda x: x["volume"], reverse=True)
-        
-        # Gebe Spotpreis, die Top 5 aggregierten Zonen und None (als Error) zurück
-        return current_price, sorted_clusters[:5], None
-        
+            valid_buckets.sort(key=lambda x: float(x.get("longCountPercent", 0)) + float(x.get("shortCountPercent", 0)), reverse=True)
+            
+            liquidity_info = f"Current XAU/USD Price: {current_price}\nRetail Liquidity Zones (Top 5 Clusters near current price):\n"
+            for b in valid_buckets[:5]:
+                liquidity_info += f"- Price: {b.get('price')} | Buy Orders: {b.get('longCountPercent')}% | Sell Orders: {b.get('shortCountPercent')}%\n"
+            return liquidity_info
+        return f"OANDA API Fehler: {response.status_code}"
     except Exception as e:
-        return None, [], f"Verbindungsfehler: {e}"
-
-def fetch_oanda_orderbook():
-    current_price, top_clusters, error = get_clustered_orderbook(bin_size=5.0, range_pct=0.03)
-    if error:
-        return error
-        
-    # Die aggregierten Zonen für den Gemini-Prompt aufbereiten
-    liquidity_info = f"Current XAU/USD Price: {current_price}\nRetail Liquidity Zones (Top 5 Clusters near current price):\n"
-    for c in top_clusters:
-        liquidity_info += f"- Price Zone: ~{c['price']} | Total Vol: {c['volume']:.2f}% | Buy Orders: {c['long']:.2f}% | Sell Orders: {c['short']:.2f}%\n"
-    return liquidity_info
+        return f"OANDA Verbindungsfehler: {e}"
 
 def fetch_oanda_price_history():
     if not OANDA_API_KEY:
@@ -177,6 +173,7 @@ def update_market_data():
     
     market_data = {"candles": [], "orderbook": []}
     
+    # UNIX-Zeitstempel direkt abrufen
     headers = {
         "Authorization": f"Bearer {OANDA_API_KEY}",
         "Accept-Datetime-Format": "UNIX"
@@ -200,21 +197,37 @@ def update_market_data():
     except Exception as e:
         print(f"Fehler beim Laden der H4-Kerzen: {e}")
 
-    # Die neuen aggregierten Zonen für den Chart (Frontend) bereitstellen
     try:
-        current_price, top_clusters, error = get_clustered_orderbook(bin_size=5.0, range_pct=0.03)
-        if not error:
-            for c in top_clusters:
+        url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
+        res_ob = requests.get(url_ob, headers=headers, timeout=10)
+        if res_ob.status_code == 200:
+            orderbook = res_ob.json().get("orderBook", {})
+            current_price = float(orderbook.get("price", "0"))
+            buckets = orderbook.get("buckets", [])
+            valid_buckets = []
+            
+            for b in buckets:
+                try:
+                    p = float(b.get("price", 0))
+                    if current_price > 0 and abs(p - current_price) / current_price <= 0.03:
+                        valid_buckets.append(b)
+                except ValueError:
+                    continue
+            
+            valid_buckets.sort(key=lambda x: float(x.get("longCountPercent", 0)) + float(x.get("shortCountPercent", 0)), reverse=True)
+            
+            for b in valid_buckets[:5]:
                 market_data["orderbook"].append({
-                    "price": float(c["price"]),
-                    "volume": float(c["volume"])
+                    "price": float(b.get("price")),
+                    "volume": float(b.get("longCountPercent", 0)) + float(b.get("shortCountPercent", 0))
                 })
-            print(f"Erfolgreich {len(market_data['orderbook'])} aggregierte Orderbuch-Zonen geladen.")
+            print(f"Erfolgreich {len(market_data['orderbook'])} Orderbuch-Cluster geladen.")
         else:
-            print(f"Fehler beim Orderbuch-Laden: {error}")
+            print(f"OANDA Orderbuch API Fehler: {res_ob.status_code} - {res_ob.text}")
     except Exception as e:
-        print(f"Fehler bei der Orderbuch-Aggregation: {e}")
+        print(f"Fehler beim Laden der Orderbuch-Level: {e}")
 
+    # Fallback-Schutz für bestehende Daten
     if not market_data["candles"] and os.path.exists("market_data.json"):
         print("WARNUNG: Keine neuen Kerzen erhalten! Behalte bisherige Kerzen bei.")
         try:
@@ -268,7 +281,7 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
     for attempt in range(1, max_retries + 1):
         try:
             response = client.models.generate_content(
-                model='gemini-3.5-flash-lite',
+                model='gemini-2.5-flash',
                 contents=prompt
             )
             raw_text = response.text.strip()

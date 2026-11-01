@@ -1,5 +1,21 @@
 [
     {
+        "main_date": "2026-11-01 21:20",
+        "_timestamp": 1793568002.0,
+        "articles": [
+            {
+                "title": "Trump says he had good talk with Netanyahu",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-had-good-talk-netanyahu",
+                "source": "Middle East Eye",
+                "date": "2026-11-01 21:20",
+                "description": "Trump says he had good talk with Netanyahu\n\n    \n    \n\n        \n    \n                US President Donald Trump said on Sunday that he spoke with Israeli Prime Minister Benjamin Netanyahu.\n\n\"Just had a very good talk with him,\" Trump said of the conversation, which took place on Saturday.\n\nOne of the topics of conversation was&nbsp;Iran, Trump said.",
+                "_timestamp": 1793568002.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
         "main_date": "2026-10-28 22:30",
         "_timestamp": 1793567007.0,
         "articles": [
@@ -542,16 +558,16 @@
                 "_timestamp": 1793564303.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Facts": "Tensions in the Middle East escalate as Iranian military officials warn of an offensive doctrine and prolonged conflict following US President Donald Trump's remarks about targeting remaining Iranian sites [Middle East Eye]. Simultaneously, Houthis renewed strike threats against Saudi Aramco and civil aviation [Middle East Eye], while a Qatari LNG tanker was struck by unidentified projectiles in the Gulf [Middle East Eye]. Despite active indirect mediation in Doha regarding a conditional two-day reopening of the Strait of Hormuz, Iranian parliamentary leaders dismissed diplomatic breakthroughs [Middle East Eye, Mehr News Agency].",
-            "Uncertainties": "Whether the US will execute threatened military strikes following the November midterm elections, and whether Qatari mediation can secure an agreement to reopen the Strait of Hormuz.",
-            "Macro_Context": "Energy supply disruption risks in the Persian Gulf combined with heightened US-Iran military friction drive safe-haven demand and stagflationary pressures across global capital markets.",
+            "Facts": "Geopolitical hostilities between the US, Israel, and Iran are escalating sharply amid the looming threat of renewed military strikes following US midterm elections. The IRGC Navy announced that two oil tankers exploded after hitting mines in the Strait of Hormuz, while Qatar and Saudi Arabia condemned separate missile/drone attacks on an LNG carrier in the Gulf [Middle East Eye]. Simultaneously, Yemen's Houthis renewed offensive threats against Saudi Aramco facilities and aviation following Saudi air raids on Hodeidah [Middle East Eye]. Although Iranian officials and Qatari mediators are holding consultations in Doha, Iranian leadership affirmed a doctrinal shift toward offensive deterrence with no geographical limits, stating Tehran will not bow to US demands [Middle East Eye, Tehran Times, Mehr News Agency].",
+            "Uncertainties": "Whether indirect negotiations mediated by Qatar can produce a viable diplomatic framework to reopen the Strait of Hormuz; whether the US will follow through on military offensive threats immediately after midterm elections; the extent of immediate disruption to global crude flows through the Persian Gulf.",
+            "Macro_Context": "Severe energy supply shock risks originating from maritime chokepoint closures (Strait of Hormuz and Red Sea) combined with stagflationary pressures and intense safe-haven demand across global capital markets.",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Past_Price_Action_Cause": "The prior 24h selloff from 4020 to 3875 reflected initial optimism surrounding Iranian-Qatari diplomatic negotiations and potential Hormuz reopening before aggressive rhetoric and tanker strikes renewed escalation fears.",
+            "Probability_Percent": 80,
+            "Past_Price_Action_Cause": "The previous 24-hour decline from 4021 to 3875 reflected aggressive profit-taking and temporary market optimism surrounding preliminary diplomatic meetings in Doha; however, subsequent reports of tanker mine explosions and renewed military escalation directly invalidate the de-escalation narrative, setting up a sharp mean-reversion rally.",
             "Orderflow_Price_Target": "3948.50"
         }
     },

@@ -128,7 +128,7 @@ def get_clustered_oanda_zones(zone_width=10.0):
             for b in ob_data.get("buckets", []):
                 try:
                     p = float(b.get("price", 0))
-                    if current_price > 0 and abs(p - current_price) / current_price <= 0.04:
+                    if current_price > 0 and abs(p - current_price) / current_price <= 0.20:
                         combined_buckets[p] = {
                             "long": float(b.get("longCountPercent", 0)),
                             "short": float(b.get("shortCountPercent", 0))
@@ -147,7 +147,7 @@ def get_clustered_oanda_zones(zone_width=10.0):
             for b in pb_data.get("buckets", []):
                 try:
                     p = float(b.get("price", 0))
-                    if current_price > 0 and abs(p - current_price) / current_price <= 0.04:
+                    if current_price > 0 and abs(p - current_price) / current_price <= 0.20:
                         if p not in combined_buckets:
                             combined_buckets[p] = {"long": 0.0, "short": 0.0}
                         combined_buckets[p]["long"] += float(b.get("longCountPercent", 0))

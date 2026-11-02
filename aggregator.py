@@ -185,7 +185,7 @@ def get_clustered_oanda_zones(zone_width=10.0):
             })
 
     clustered_list.sort(key=lambda x: x["volume"], reverse=True)
-    return current_price, clustered_list[:5]
+    return current_price, clustered_list[:10]
 
 def fetch_oanda_orderbook(top_zones_cache=None):
     if top_zones_cache is not None:

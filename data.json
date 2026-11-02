@@ -1,5 +1,48 @@
 [
     {
+        "main_date": "2026-11-02 22:05 (updated)",
+        "_timestamp": 1793657149.0,
+        "articles": [
+            {
+                "title": "VIDEO: Fire breaks out at ind. facilities in Saudi’s Dammam",
+                "link": "https://en.mehrnews.com/news/249074/VIDEO-Fire-break-out-at-ind-facilities-in-Saudi-s-Dammam",
+                "source": "Mehr News Agency",
+                "date": "2026-11-01 11:57",
+                "description": "TEHRAN, Nov. 01 (MNA) – A major fire erupted at an industrial facility in Dammam, eastern Saudi Arabia, following a reported Yemeni attack.",
+                "_timestamp": 1793534270.0
+            },
+            {
+                "title": "VIDEO: Large crater after business jet crash in Florida",
+                "link": "https://en.mehrnews.com/news/249093/VIDEO-Large-crater-after-business-jet-crash-in-Florida",
+                "source": "Mehr News Agency",
+                "date": "2026-11-02 05:57",
+                "description": "TEHRAN, Nov. 02 (MNA) – Close-up footage shows the large crater from the business jet crash that killed 9 people in Greenacres, Florida.",
+                "_timestamp": 1793599078.0
+            },
+            {
+                "title": "Explosions heard on Qeshm Island, Bandar Lengeh",
+                "link": "https://en.mehrnews.com/news/249117/Explosions-heard-on-Qeshm-Island-Bandar-Lengeh",
+                "source": "Mehr News Agency",
+                "date": "2026-11-02 22:05",
+                "description": "TEHRAN, Nov. 03 (MNA) – Local Iranian media reported hearing of explosions on Iran’s southern Qeshm Island and Bandar Lengeh on Moday night.",
+                "_timestamp": 1793657149.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "A major fire broke out at an industrial facility in Dammam, Saudi Arabia, following a reported Yemeni attack [Mehr News Agency]. Separately, explosions were reported on Iran's Qeshm Island and Bandar Lengeh [Mehr News Agency]. These geopolitical tensions in the Middle East heighten safe-haven demand.",
+            "Uncertainties": "The full extent of damage to Saudi industrial facilities and the precise origin or nature of the explosions on Iranian islands remain unconfirmed.",
+            "Macro_Context": "Escalating geopolitical conflicts in the Middle East increase risks to global energy supplies and regional stability, prompting flows into safe-haven assets like gold.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 75,
+            "Past_Price_Action_Cause": "Gold prices surged sharply from around 3901 up to highs near 3967 during the session, directly correlating with growing Middle Eastern security concerns and safe-haven buying.",
+            "Orderflow_Price_Target": "3979.94"
+        },
+        "original_date": "2026-11-01 11:57"
+    },
+    {
         "main_date": "2026-11-02 21:57 (updated)",
         "_timestamp": 1793656622.0,
         "articles": [
@@ -4966,40 +5009,6 @@
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "N/A",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-01 11:57",
-        "_timestamp": 1793599078.0,
-        "articles": [
-            {
-                "title": "VIDEO: Fire breaks out at ind. facilities in Saudi’s Dammam",
-                "link": "https://en.mehrnews.com/news/249074/VIDEO-Fire-break-out-at-ind-facilities-in-Saudi-s-Dammam",
-                "source": "Mehr News Agency",
-                "date": "2026-11-01 11:57",
-                "description": "TEHRAN, Nov. 01 (MNA) – A major fire erupted at an industrial facility in Dammam, eastern Saudi Arabia, following a reported Yemeni attack.",
-                "_timestamp": 1793534270.0
-            },
-            {
-                "title": "VIDEO: Large crater after business jet crash in Florida",
-                "link": "https://en.mehrnews.com/news/249093/VIDEO-Large-crater-after-business-jet-crash-in-Florida",
-                "source": "Mehr News Agency",
-                "date": "2026-11-02 05:57",
-                "description": "TEHRAN, Nov. 02 (MNA) – Close-up footage shows the large crater from the business jet crash that killed 9 people in Greenacres, Florida.",
-                "_timestamp": 1793599078.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "A major fire broke out at an industrial facility in Dammam, eastern Saudi Arabia, following a reported Yemeni attack [Mehr News Agency]. Additionally, a business jet crashed in Greenacres, Florida, resulting in 9 fatalities [Mehr News Agency].",
-            "Uncertainties": "The full extent of the structural damage to Saudi oil or industrial infrastructure and potential supply chain disruptions remain unconfirmed. The cause of the business jet crash in Florida is still under investigation.",
-            "Macro_Context": "Geopolitical tensions in the Middle East involving Saudi Arabia and Yemen create potential risks for energy supplies and safe-haven asset demand, while domestic accidents in the US bear localized impacts.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "XAU/USD rallied sharply over the last 24 hours from around 3898 up to 3969.64, aligning with safe-haven inflows driven by escalating Middle Eastern geopolitical tensions and infrastructure attacks.",
-            "Orderflow_Price_Target": "3979.78"
         }
     },
     {

@@ -146,7 +146,7 @@
         <div class="chart-legend">
             <strong>Gruene Linie (BUY):</strong> Netto-Kaufliquiditaet &nbsp;|&nbsp;
             <strong>Rote Linie (SELL):</strong> Netto-Verkaufliquiditaet &nbsp;|&nbsp;
-            <strong>OVERLAP [OANDA+PAXG]:</strong> Bestaetigte Zone in beiden Orderbuechern (dicke Linie)
+            <strong>OVERLAP [OANDA+COMEX]:</strong> Bestaetigte Zone in beiden Maerkten (dicke Linie)
         </div>
         <div class="overlap-box" id="overlap-legend">
             Lade Orderbuch-Quellen...
@@ -284,7 +284,7 @@
                 candleSeries.setData(uniqueCandles);
 
                 if (data.orderbook && data.orderbook.length > 0) {
-                    let detailsHTML = "<strong>Aktive Order-Zonen & Quellen-Ueberschneidung:</strong><br>";
+                    let detailsHTML = "<strong>Aktive Order-Zonen & Quellen-Ueberschneidung (OANDA + Yahoo COMEX):</strong><br>";
                     data.orderbook.forEach((level, index) => {
                         const isBuyDom = level.dominance === "BUY";
                         const lineColor = isBuyDom ? '#16a34a' : '#dc2626';
@@ -302,8 +302,8 @@
                         });
 
                         const oVol = level.oanda_vol !== undefined ? `${level.oanda_vol}%` : '-';
-                        const pVol = level.paxg_vol !== undefined ? `${level.paxg_vol}%` : '-';
-                        detailsHTML += `L${index + 1} bei <strong>$${level.price.toFixed(2)}</strong> (${level.dominance}): Gesamt ${level.volume.toFixed(2)}% [OANDA: ${oVol} | Binance PAXG: ${pVol}] ${isOverlap ? '-> <strong>UEBERSCHNEIDUNG</strong>' : ''}<br>`;
+                        const cVol = level.comex_vol !== undefined ? `${level.comex_vol}%` : '-';
+                        detailsHTML += `L${index + 1} bei <strong>$${level.price.toFixed(2)}</strong> (${level.dominance}): Gesamt ${level.volume.toFixed(2)}% [OANDA: ${oVol} | COMEX Futures: ${cVol}] ${isOverlap ? '-> <strong>UEBERSCHNEIDUNG</strong>' : ''}<br>`;
                     });
                     overlapBox.innerHTML = detailsHTML;
                 } else {

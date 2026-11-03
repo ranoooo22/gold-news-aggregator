@@ -109,71 +109,53 @@ def fetch_new_articles(existing_urls):
                     articles.append(a)
     return articles
 
-def fetch_binance_paxg_zones(oanda_price, zone_width=10.0):
-    """Ruft ohne Login das tiefe PAXG/USDT Orderbuch von Binance ab, normiert es auf den XAU/USD Kurs und clustert in 10$-Zonen."""
-    paxg_zones = {}
+def fetch_yahoo_futures_zones(oanda_price, zone_width=10.0):
+    """Ruft die Gold-Futures Historie von Yahoo Finance (COMEX GC=F) ab und gewichtet Preis-Volumen-Cluster."""
+    comex_zones = {}
     try:
-        url = "https://api.binance.com/api/v3/depth?symbol=PAXGUSDT&limit=1000"
-        res = requests.get(url, timeout=8)
+        url = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=5d&interval=1h"
+        headers = {"User-Agent": "Mozilla/5.0"}
+        res = requests.get(url, headers=headers, timeout=8)
         if res.status_code != 200:
-            return paxg_zones
+            return comex_zones
             
         data = res.json()
-        bids = data.get("bids", [])
-        asks = data.get("asks", [])
-        if not bids or not asks:
-            return paxg_zones
-
-        best_bid = float(bids[0][0])
-        best_ask = float(asks[0][0])
-        paxg_mid = (best_bid + best_ask) / 2.0
-
-        # Preisdifferenz (Basis) zwischen PAXG und OANDA Spot-Gold ausgleichen
-        basis_offset = (oanda_price - paxg_mid) if oanda_price > 0 else 0.0
-        ref_price = oanda_price if oanda_price > 0 else paxg_mid
-
-        raw_entries = []
-        total_oz = 0.0
-
-        for p_str, q_str in bids:
-            adj_p = float(p_str) + basis_offset
-            q = float(q_str)
-            if abs(adj_p - ref_price) / ref_price <= 0.20:
-                raw_entries.append((adj_p, q, 0.0))
-                total_oz += q
-
-        for p_str, q_str in asks:
-            adj_p = float(p_str) + basis_offset
-            q = float(q_str)
-            if abs(adj_p - ref_price) / ref_price <= 0.20:
-                raw_entries.append((adj_p, 0.0, q))
-                total_oz += q
-
-        if total_oz <= 0:
-            return paxg_zones
-
-        # Auf 100% Gesamtvolumen normieren, damit die Gewichtung zu OANDA passt
-        for adj_p, b_oz, a_oz in raw_entries:
-            zone_key = round(adj_p / zone_width) * zone_width
-            if zone_key not in paxg_zones:
-                paxg_zones[zone_key] = {"long": 0.0, "short": 0.0, "total": 0.0, "weighted_price_sum": 0.0}
+        result = data.get("chart", {}).get("result", [])
+        if not result:
+            return comex_zones
             
-            b_pct = (b_oz / total_oz) * 100.0
-            a_pct = (a_oz / total_oz) * 100.0
-            tot_pct = b_pct + a_pct
-
-            paxg_zones[zone_key]["long"] += b_pct
-            paxg_zones[zone_key]["short"] += a_pct
-            paxg_zones[zone_key]["total"] += tot_pct
-            paxg_zones[zone_key]["weighted_price_sum"] += adj_p * tot_pct
-
+        indicators = result[0].get("indicators", {}).get("quote", [{}])[0]
+        closes = indicators.get("close", [])
+        volumes = indicators.get("volume", [])
+        
+        raw_entries = []
+        total_vol = 0.0
+        
+        for c, v in zip(closes, volumes):
+            if c is not None and v is not None and v > 0:
+                if oanda_price > 0 and abs(c - oanda_price) / oanda_price <= 0.20:
+                    raw_entries.append((c, float(v)))
+                    total_vol += float(v)
+                    
+        if total_vol <= 0:
+            return comex_zones
+            
+        for p, v in raw_entries:
+            zone_key = round(p / zone_width) * zone_width
+            if zone_key not in comex_zones:
+                comex_zones[zone_key] = {"total": 0.0, "weighted_price_sum": 0.0}
+            
+            vol_pct = (v / total_vol) * 100.0
+            comex_zones[zone_key]["total"] += vol_pct
+            comex_zones[zone_key]["weighted_price_sum"] += p * vol_pct
+            
     except Exception as e:
-        print(f"Hinweis: Binance PAXG Orderbuch nicht erreichbar ({e})")
-
-    return paxg_zones
+        print(f"Hinweis: Yahoo Finance Futures nicht erreichbar ({e})")
+        
+    return comex_zones
 
 def get_clustered_oanda_zones(zone_width=10.0):
-    """Kombiniert OANDA (OrderBook + PositionBook) und Binance (PAXG Depth) im 20%-Radius und markiert Overlaps."""
+    """Kombiniert OANDA (OrderBook + PositionBook) und Yahoo Finance Futures im 20%-Radius."""
     if not OANDA_API_KEY:
         return 0.0, [], {"long_pct": 50.0, "short_pct": 50.0}
         
@@ -240,14 +222,13 @@ def get_clustered_oanda_zones(zone_width=10.0):
     if not combined_buckets or current_price == 0:
         return 0.0, [], sentiment
 
-    # OANDA in 10$-Zonen clustern
     zones = {}
     for p, vols in combined_buckets.items():
         zone_key = round(p / zone_width) * zone_width
         if zone_key not in zones:
             zones[zone_key] = {
                 "long": 0.0, "short": 0.0, "total": 0.0, "weighted_price_sum": 0.0,
-                "oanda_vol": 0.0, "paxg_vol": 0.0
+                "oanda_vol": 0.0, "comex_vol": 0.0
             }
         
         tot = vols["long"] + vols["short"]
@@ -257,26 +238,24 @@ def get_clustered_oanda_zones(zone_width=10.0):
         zones[zone_key]["oanda_vol"] += tot
         zones[zone_key]["weighted_price_sum"] += p * tot
 
-    # Zweite Quelle: Binance PAXG Orderbuch abrufen und mit OANDA-Zonen verschmelzen
-    paxg_zones = fetch_binance_paxg_zones(current_price, zone_width=zone_width)
-    for z_key, p_data in paxg_zones.items():
-        # PAXG mit Faktor 0.25 gewichten, damit einzelne Krypto-Maker-Walls OANDA nicht komplett verzerren
-        weight = 0.25
-        scaled_long = p_data["long"] * weight
-        scaled_short = p_data["short"] * weight
-        scaled_tot = p_data["total"] * weight
+    # Zweite Quelle: Yahoo Finance COMEX Futures einbinden
+    comex_zones = fetch_yahoo_futures_zones(current_price, zone_width=zone_width)
+    for z_key, f_data in comex_zones.items():
+        weight = 0.20
+        scaled_tot = f_data["total"] * weight
 
         if z_key not in zones:
             zones[z_key] = {
                 "long": 0.0, "short": 0.0, "total": 0.0, "weighted_price_sum": 0.0,
-                "oanda_vol": 0.0, "paxg_vol": 0.0
+                "oanda_vol": 0.0, "comex_vol": 0.0
             }
 
-        zones[z_key]["long"] += scaled_long
-        zones[z_key]["short"] += scaled_short
+        # Futures-Volumen gleichmäßig auf Long/Short aufteilen, um Dominanz nicht zu verfälschen
+        zones[z_key]["long"] += scaled_tot / 2.0
+        zones[z_key]["short"] += scaled_tot / 2.0
         zones[z_key]["total"] += scaled_tot
-        zones[z_key]["paxg_vol"] += p_data["total"]
-        zones[z_key]["weighted_price_sum"] += p_data["weighted_price_sum"] * weight
+        zones[z_key]["comex_vol"] += f_data["total"]
+        zones[z_key]["weighted_price_sum"] += f_data["weighted_price_sum"] * weight
 
     above_zones = []
     below_zones = []
@@ -288,13 +267,13 @@ def get_clustered_oanda_zones(zone_width=10.0):
             dominance = "BUY" if net_diff >= 0 else "SELL"
             
             has_oanda = z_data["oanda_vol"] >= 0.5
-            has_paxg = z_data["paxg_vol"] >= 0.8
-            is_overlap = has_oanda and has_paxg
+            has_comex = z_data["comex_vol"] >= 0.5
+            is_overlap = has_oanda and has_comex
 
             if is_overlap:
-                sources_label = "OANDA+PAXG"
-            elif has_paxg and not has_oanda:
-                sources_label = "PAXG"
+                sources_label = "OANDA+COMEX"
+            elif has_comex and not has_oanda:
+                sources_label = "COMEX Futures"
             else:
                 sources_label = "OANDA"
 
@@ -305,7 +284,7 @@ def get_clustered_oanda_zones(zone_width=10.0):
                 "short": round(z_data["short"], 2),
                 "volume": round(z_data["total"], 2),
                 "oanda_vol": round(z_data["oanda_vol"], 2),
-                "paxg_vol": round(z_data["paxg_vol"], 2),
+                "comex_vol": round(z_data["comex_vol"], 2),
                 "net": net_diff,
                 "dominance": dominance,
                 "overlap": is_overlap,
@@ -336,15 +315,15 @@ def fetch_oanda_orderbook(top_zones_cache=None):
     liquidity_info = (
         f"Current XAU/USD Price: {current_price}\n"
         f"Global OANDA Retail Positioning (Contrarian Indicator): {sentiment['long_pct']}% Long vs. {sentiment['short_pct']}% Short\n"
-        f"Combined Multi-Source Liquidity Zones ($10 Clustered OANDA + Binance PAXG within 20% radius):\n"
+        f"Combined Multi-Source Liquidity Zones ($10 Clustered OANDA + Yahoo COMEX Futures within 20% radius):\n"
     )
     for z in top_zones:
         pos_label = "ABOVE price" if z["price"] >= current_price else "BELOW price"
         role_hint = "Buy-Stop/Long Magnet" if z["dominance"] == "BUY" else "Sell-Limit/Short Wall"
-        overlap_tag = "OVERLAP [OANDA+PAXG]" if z.get("overlap") else f"[{z.get('sources', 'OANDA')}]"
+        overlap_tag = "OVERLAP [OANDA+COMEX]" if z.get("overlap") else f"[{z.get('sources', 'OANDA')}]"
         liquidity_info += (
             f"- Zone at {z['price']} ({pos_label}) {overlap_tag} | Combined Vol: {z['volume']}% "
-            f"(OANDA: {z.get('oanda_vol', 0)}%, PAXG: {z.get('paxg_vol', 0)}% | Net {z['dominance']} Dominance [{role_hint}])\n"
+            f"(OANDA: {z.get('oanda_vol', 0)}%, COMEX: {z.get('comex_vol', 0)}% | Net {z['dominance']} Dominance [{role_hint}])\n"
         )
     return liquidity_info
 
@@ -603,7 +582,7 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
                 "price": z["price"],
                 "volume": z["volume"],
                 "oanda_vol": z.get("oanda_vol", 0),
-                "paxg_vol": z.get("paxg_vol", 0),
+                "comex_vol": z.get("comex_vol", 0),
                 "long": z["long"],
                 "short": z["short"],
                 "net": z["net"],
@@ -633,10 +612,10 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
     
     news_data = "\n".join([f"Source: [{a['source']}]\nDate: {a['date']}\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in articles_in_cluster])
     
-    prompt = f"""You are a senior quantitative gold & macro strategist. Analyze these news reports, the 24h price & ATR volatility metrics, cross-asset macro correlations (USD, 10Y Bonds, Brent Oil), and multi-source orderflow liquidity (OANDA + Binance PAXG). Output ONLY a valid JSON object without markdown blocks. Write all values in English!
+    prompt = f"""You are a senior quantitative gold & macro strategist. Analyze these news reports, the 24h price & ATR volatility metrics, cross-asset macro correlations (USD, 10Y Bonds, Brent Oil), and multi-source orderflow liquidity (OANDA + Yahoo COMEX Futures). Output ONLY a valid JSON object without markdown blocks. Write all values in English!
     
     CRITICAL RULE 1 - 'PRICED-IN' EXHAUSTION CHECK:
-    - Check the '4h Move vs. Daily ATR Ratio' in the Volatility Metrics below.
+    - Check the '4h Move vs. Daily ATR Ratio' in market volatility metrics below.
     - If XAU/USD has ALREADY moved by >= 1.2x of the Estimated Daily ATR in the direction of the news over the last 4-12 hours, you MUST downgrade 'XAUUSD_Impact' to 'Neutral' (or lower 'Probability_Percent' below 55) and set 'Impact_Timing' to 'Past (Already Priced In)'. Never chase an exhausted spike!
 
     CRITICAL RULE 2 - MACRO HEADWIND CHECK:
@@ -644,7 +623,7 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
     - If USD is strengthening sharply AND Treasury yields are rising (bond prices falling), reduce Bullish Gold probabilities by 15-20% unless the geopolitical shock is severe.
 
     CRITICAL RULE 3 - 'Orderflow_Price_Target' & MULTI-SOURCE CONFLUENCE:
-    - Look at the 'Current XAU/USD Price' and the 'Combined Multi-Source Liquidity Zones' below. Prefer zones marked with 'OVERLAP [OANDA+PAXG]' as primary price targets.
+    - Look at the 'Current XAU/USD Price' and the 'Combined Multi-Source Liquidity Zones' below. Prefer zones marked with 'OVERLAP [OANDA+COMEX]' as primary price targets.
     - If 'XAUUSD_Impact' is 'Bullish', the 'Orderflow_Price_Target' (Take Profit) MUST be a numerical price strictly HIGHER than the Current XAU/USD Price. Never output a level below current price for a Bullish signal!
     - If 'XAUUSD_Impact' is 'Bearish', the 'Orderflow_Price_Target' (Take Profit) MUST be a numerical price strictly LOWER than the Current XAU/USD Price. Never output a level above current price for a Bearish signal!
     - If 'XAUUSD_Impact' is 'Neutral', write 'N/A'.
@@ -707,7 +686,7 @@ def main():
         except Exception:
             existing_data = []
 
-    print("Lade Multi-Source Order-Zonen (OANDA + PAXG), Volatilität (ATR) & Makro-Korrelationen...")
+    print("Lade Multi-Source Order-Zonen (OANDA + COMEX Futures), Volatilität (ATR) & Makro-Korrelationen...")
     oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0)
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     macro_context_str, macro_summary = fetch_macro_context()

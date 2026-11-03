@@ -51,7 +51,8 @@ IMPACT_KEYWORDS = [
 ]
 
 DATA_FILE = "data.json"
-SIMILARITY_THRESHOLD = 0.35
+STATS_FILE = "performance_stats.json"
+SIMILARITY_THRESHOLD = 0.54
 
 def clean_html(raw_html):
     cleanr = re.compile('<.*?>')
@@ -109,9 +110,9 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def get_clustered_oanda_zones(zone_width=10.0):
-    """Kombiniert OANDA OrderBook & PositionBook und bündelt sie in 10$-Liquiditätszonen."""
+    """Kombiniert OANDA OrderBook & PositionBook im 20%-Radius, bestimmt Käufer-/Verkäufer-Dominanz & Retail-Sentiment."""
     if not OANDA_API_KEY:
-        return 0.0, []
+        return 0.0, [], {"long_pct": 50.0, "short_pct": 50.0}
         
     headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
     url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
@@ -119,6 +120,8 @@ def get_clustered_oanda_zones(zone_width=10.0):
     
     current_price = 0.0
     combined_buckets = {}
+    total_pos_long = 0.0
+    total_pos_short = 0.0
     
     try:
         res_ob = requests.get(url_ob, headers=headers, timeout=10)
@@ -147,18 +150,32 @@ def get_clustered_oanda_zones(zone_width=10.0):
             for b in pb_data.get("buckets", []):
                 try:
                     p = float(b.get("price", 0))
+                    l_pct = float(b.get("longCountPercent", 0))
+                    s_pct = float(b.get("shortCountPercent", 0))
+                    total_pos_long += l_pct
+                    total_pos_short += s_pct
+                    
                     if current_price > 0 and abs(p - current_price) / current_price <= 0.20:
                         if p not in combined_buckets:
                             combined_buckets[p] = {"long": 0.0, "short": 0.0}
-                        combined_buckets[p]["long"] += float(b.get("longCountPercent", 0))
-                        combined_buckets[p]["short"] += float(b.get("shortCountPercent", 0))
+                        combined_buckets[p]["long"] += l_pct
+                        combined_buckets[p]["short"] += s_pct
                 except ValueError:
                     continue
     except Exception as e:
         print(f"Fehler bei OANDA positionBook: {e}")
 
+    pos_sum = total_pos_long + total_pos_short
+    if pos_sum > 0:
+        sentiment = {
+            "long_pct": round((total_pos_long / pos_sum) * 100, 1),
+            "short_pct": round((total_pos_short / pos_sum) * 100, 1)
+        }
+    else:
+        sentiment = {"long_pct": 50.0, "short_pct": 50.0}
+
     if not combined_buckets or current_price == 0:
-        return 0.0, []
+        return 0.0, [], sentiment
 
     zones = {}
     for p, vols in combined_buckets.items():
@@ -172,61 +189,279 @@ def get_clustered_oanda_zones(zone_width=10.0):
         zones[zone_key]["total"] += tot
         zones[zone_key]["weighted_price_sum"] += p * tot
 
-    clustered_list = []
+    above_zones = []
+    below_zones = []
+
     for z_key, z_data in zones.items():
         if z_data["total"] > 0:
             vwap_price = round(z_data["weighted_price_sum"] / z_data["total"], 2)
-            clustered_list.append({
+            net_diff = round(z_data["long"] - z_data["short"], 2)
+            dominance = "BUY" if net_diff >= 0 else "SELL"
+            
+            zone_obj = {
                 "price": vwap_price,
                 "zone_center": z_key,
                 "long": round(z_data["long"], 2),
                 "short": round(z_data["short"], 2),
-                "volume": round(z_data["total"], 2)
-            })
+                "volume": round(z_data["total"], 2),
+                "net": net_diff,
+                "dominance": dominance
+            }
+            if vwap_price >= current_price:
+                above_zones.append(zone_obj)
+            else:
+                below_zones.append(zone_obj)
 
-    clustered_list.sort(key=lambda x: x["volume"], reverse=True)
-    return current_price, clustered_list[:10]
+    above_zones.sort(key=lambda x: x["volume"], reverse=True)
+    below_zones.sort(key=lambda x: x["volume"], reverse=True)
+
+    selected_zones = above_zones[:3] + below_zones[:3]
+    selected_zones.sort(key=lambda x: x["price"], reverse=True)
+
+    return current_price, selected_zones, sentiment
 
 def fetch_oanda_orderbook(top_zones_cache=None):
     if top_zones_cache is not None:
-        current_price, top_zones = top_zones_cache
+        current_price, top_zones, sentiment = top_zones_cache
     else:
-        current_price, top_zones = get_clustered_oanda_zones(zone_width=10.0)
+        current_price, top_zones, sentiment = get_clustered_oanda_zones(zone_width=10.0)
         
     if not top_zones:
         return "Keine OANDA API-Daten verfügbar."
         
-    liquidity_info = f"Current XAU/USD Price: {current_price}\nCombined Liquidity Zones ($10 Clustered OrderBook + PositionBook):\n"
+    liquidity_info = (
+        f"Current XAU/USD Price: {current_price}\n"
+        f"Global OANDA Retail Positioning (Contrarian Indicator): {sentiment['long_pct']}% Long vs. {sentiment['short_pct']}% Short\n"
+        f"Combined Liquidity Zones ($10 Clustered OrderBook + PositionBook within 20% radius):\n"
+    )
     for z in top_zones:
-        liquidity_info += f"- Zone around {z['price']} | Combined Volume: {z['volume']}% (Buy/Long: {z['long']}% | Sell/Short: {z['short']}%)\n"
+        pos_label = "ABOVE price" if z["price"] >= current_price else "BELOW price"
+        role_hint = "Buy-Stop/Long Magnet" if z["dominance"] == "BUY" else "Sell-Limit/Short Wall"
+        liquidity_info += (
+            f"- Zone at {z['price']} ({pos_label}) | Total Vol: {z['volume']}% "
+            f"(Buy/Long: {z['long']}% vs Sell/Short: {z['short']}% -> Net {z['dominance']} Dominance [{role_hint}])\n"
+        )
     return liquidity_info
 
-def fetch_oanda_price_history():
+def fetch_oanda_price_and_volatility():
     if not OANDA_API_KEY:
-        return "Keine Preisdaten verfügbar."
-    url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=24&granularity=H1"
-    headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
+        return "Keine Preisdaten verfügbar.", [], {}
+    url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=30&granularity=H1&price=M"
+    headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
     try:
         response = requests.get(url, headers=headers, timeout=10)
-        if response.status_code == 200:
-            candles = response.json().get("candles", [])
-            history = "XAU/USD H1 Price History (Last 24h):\n"
-            for c in candles:
-                if c.get("complete"):
-                    time_str = c.get("time")[:16].replace("T", " ")
-                    close_price = c.get("mid", {}).get("c")
-                    history += f"- {time_str} UTC: {close_price}\n"
-            return history
-        return "OANDA Candle API Fehler"
-    except Exception as e:
-        return f"OANDA Candle Fehler: {e}"
+        if response.status_code != 200:
+            return "OANDA Candle API Fehler", [], {}
+            
+        raw_candles = response.json().get("candles", [])
+        parsed = []
+        for c in raw_candles:
+            if c.get("complete") or c == raw_candles[-1]:
+                ts = float(c.get("time", 0))
+                dt_str = datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M")
+                parsed.append({
+                    "ts": ts,
+                    "dt_str": dt_str,
+                    "o": float(c["mid"]["o"]),
+                    "h": float(c["mid"]["h"]),
+                    "l": float(c["mid"]["l"]),
+                    "c": float(c["mid"]["c"])
+                })
+        
+        if len(parsed) < 15:
+            return "Zu wenige H1-Kerzen verfügbar.", parsed, {}
 
-def update_market_data(top_zones_cache=None):
+        trs = []
+        for i in range(1, len(parsed)):
+            h = parsed[i]["h"]
+            l = parsed[i]["l"]
+            prev_c = parsed[i - 1]["c"]
+            tr = max(h - l, abs(h - prev_c), abs(l - prev_c))
+            trs.append(tr)
+        
+        atr_14_h1 = sum(trs[-14:]) / 14.0
+        est_daily_atr = round(atr_14_h1 * 3.8, 2)
+
+        curr_c = parsed[-1]["c"]
+        c_4h_ago = parsed[-5]["c"] if len(parsed) >= 5 else parsed[0]["c"]
+        c_24h_ago = parsed[-25]["c"] if len(parsed) >= 25 else parsed[0]["c"]
+
+        change_4h = round(curr_c - c_4h_ago, 2)
+        change_24h = round(curr_c - c_24h_ago, 2)
+        ratio_4h = round(abs(change_4h) / est_daily_atr, 2) if est_daily_atr > 0 else 0.0
+
+        vol_metrics = {
+            "current_price": curr_c,
+            "atr_h1": round(atr_14_h1, 2),
+            "est_daily_atr": est_daily_atr,
+            "change_4h": change_4h,
+            "change_24h": change_24h,
+            "move_to_daily_atr_ratio": ratio_4h
+        }
+
+        history_str = (
+            f"XAU/USD Volatility & Priced-In Metrics:\n"
+            f"- Current Price: ${curr_c}\n"
+            f"- 4h Price Change: ${change_4h:+.2f} | 24h Price Change: ${change_24h:+.2f}\n"
+            f"- H1 ATR(14): ${atr_14_h1:.2f} | Estimated Daily ATR: ${est_daily_atr:.2f}\n"
+            f"- 4h Move vs. Daily ATR Ratio: {ratio_4h}x (WARNING: If >= 1.2x in the direction of the news, the move is likely ALREADY PRICED IN!)\n\n"
+            f"XAU/USD H1 Price History (Last 24h):\n"
+        )
+        for c in parsed[-24:]:
+            history_str += f"- {c['dt_str']} UTC: Open {c['o']}, High {c['h']}, Low {c['l']}, Close {c['c']}\n"
+
+        return history_str, parsed, vol_metrics
+    except Exception as e:
+        return f"OANDA Candle Fehler: {e}", [], {}
+
+def fetch_macro_context():
+    if not OANDA_API_KEY:
+        return "Keine Makro-Korrelationsdaten verfügbar.", {}
+        
+    instruments = {
+        "EUR_USD": "EUR/USD (Inverse USD Proxy)",
+        "USB10Y_USD": "US 10Y Treasury Bond Price (Inverse Yield Proxy)",
+        "BCO_USD": "Brent Crude Oil (USD)"
+    }
+    headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
+    macro_lines = ["Cross-Asset Macro Context (24h Change):"]
+    macro_summary = {}
+
+    for instr, label in instruments.items():
+        try:
+            url = f"https://api-fxpractice.oanda.com/v3/instruments/{instr}/candles?count=24&granularity=H1&price=M"
+            res = requests.get(url, headers=headers, timeout=8)
+            if res.status_code == 200:
+                candles = res.json().get("candles", [])
+                if len(candles) >= 2:
+                    first_c = float(candles[0]["mid"]["c"])
+                    last_c = float(candles[-1]["mid"]["c"])
+                    pct_change = round(((last_c - first_c) / first_c) * 100, 2) if first_c > 0 else 0.0
+                    macro_summary[instr] = {"price": last_c, "change_24h_pct": pct_change}
+                    
+                    if instr == "EUR_USD":
+                        dxy_dir = "USD Strengthening (Headwind for Gold)" if pct_change < -0.15 else ("USD Weakening (Tailwind for Gold)" if pct_change > 0.15 else "USD Flat")
+                        macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%) -> {dxy_dir}")
+                    elif instr == "USB10Y_USD":
+                        yield_dir = "Bond Prices Down / Yields Rising (Headwind for Gold)" if pct_change < -0.20 else ("Bond Prices Up / Yields Falling (Tailwind for Gold)" if pct_change > 0.20 else "Yields Stable")
+                        macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%) -> {yield_dir}")
+                    else:
+                        macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%)")
+        except Exception as e:
+            print(f"Makro-Abruf Fehler bei {instr}: {e}")
+
+    return "\n".join(macro_lines), macro_summary
+
+def evaluate_clusters(all_clusters, h1_candles):
+    stats = {
+        "total_evaluated": 0,
+        "hits": 0,
+        "misses": 0,
+        "win_rate": 0.0,
+        "active_signals": 0,
+        "history": {}
+    }
+    if os.path.exists(STATS_FILE):
+        try:
+            with open(STATS_FILE, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+                if isinstance(loaded, dict):
+                    stats.update(loaded)
+        except Exception:
+            pass
+
+    if not h1_candles:
+        return stats
+
+    now_ts = datetime.now().timestamp()
+
+    for cluster in all_clusters:
+        summary = cluster.get("summary")
+        if not isinstance(summary, dict):
+            continue
+
+        impact = summary.get("XAUUSD_Impact", "")
+        prob = int(summary.get("Probability_Percent", 0) or 0)
+        target_raw = str(summary.get("Orderflow_Price_Target", "")).replace("$", "").replace(",", "").strip()
+
+        try:
+            target_price = float(target_raw)
+        except ValueError:
+            continue
+
+        if prob < 67 or not ("Bullish" in impact or "Bearish" in impact):
+            continue
+
+        cluster_id = cluster["articles"][0]["link"] if cluster.get("articles") else str(cluster.get("_timestamp"))
+        cluster_ts = float(cluster.get("_timestamp", 0))
+
+        if cluster_id in stats["history"] and stats["history"][cluster_id]["status"] == "HIT":
+            cluster["eval_status"] = "HIT"
+            continue
+
+        relevant_candles = [c for c in h1_candles if c["ts"] + 3600 >= cluster_ts]
+        hit_achieved = False
+
+        for c in relevant_candles:
+            if "Bullish" in impact and c["h"] >= target_price:
+                hit_achieved = True
+                break
+            elif "Bearish" in impact and c["l"] <= target_price:
+                hit_achieved = True
+                break
+
+        if hit_achieved:
+            cluster["eval_status"] = "HIT"
+            stats["history"][cluster_id] = {
+                "status": "HIT",
+                "impact": impact,
+                "target": target_price,
+                "date": cluster.get("main_date", "")
+            }
+        else:
+            age_hours = (now_ts - cluster_ts) / 3600.0
+            if age_hours >= 20.0:
+                cluster["eval_status"] = "MISS"
+                stats["history"][cluster_id] = {
+                    "status": "MISS",
+                    "impact": impact,
+                    "target": target_price,
+                    "date": cluster.get("main_date", "")
+                }
+            else:
+                cluster["eval_status"] = "ACTIVE"
+
+    hits = sum(1 for v in stats["history"].values() if v.get("status") == "HIT")
+    misses = sum(1 for v in stats["history"].values() if v.get("status") == "MISS")
+    total_eval = hits + misses
+    active_count = sum(1 for c in all_clusters if c.get("eval_status") == "ACTIVE")
+
+    stats["hits"] = hits
+    stats["misses"] = misses
+    stats["total_evaluated"] = total_eval
+    stats["win_rate"] = round((hits / total_eval) * 100, 1) if total_eval > 0 else 0.0
+    stats["active_signals"] = active_count
+
+    try:
+        with open(STATS_FILE, "w", encoding="utf-8") as f:
+            json.dump(stats, f, indent=4, ensure_ascii=False)
+    except Exception as e:
+        print(f"Fehler beim Speichern von {STATS_FILE}: {e}")
+
+    return stats
+
+def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None):
     if not OANDA_API_KEY:
         print("WARNUNG: Kein OANDA_API_KEY vorhanden, überspringe Chart-Update.")
         return
     
-    market_data = {"candles": [], "orderbook": []}
+    market_data = {
+        "candles": [],
+        "orderbook": [],
+        "sentiment": {"long_pct": 50.0, "short_pct": 50.0},
+        "macro": macro_summary or {},
+        "volatility": vol_metrics or {}
+    }
     
     headers = {
         "Authorization": f"Bearer {OANDA_API_KEY}",
@@ -253,14 +488,19 @@ def update_market_data(top_zones_cache=None):
 
     try:
         if top_zones_cache is not None:
-            _, top_zones = top_zones_cache
+            _, top_zones, sentiment = top_zones_cache
         else:
-            _, top_zones = get_clustered_oanda_zones(zone_width=10.0)
+            _, top_zones, sentiment = get_clustered_oanda_zones(zone_width=10.0)
             
+        market_data["sentiment"] = sentiment
         for z in top_zones:
             market_data["orderbook"].append({
                 "price": z["price"],
-                "volume": z["volume"]
+                "volume": z["volume"],
+                "long": z["long"],
+                "short": z["short"],
+                "net": z["net"],
+                "dominance": z["dominance"]
             })
         print(f"Erfolgreich {len(market_data['orderbook'])} kombinierte Order-Zonen geladen.")
     except Exception as e:
@@ -278,18 +518,26 @@ def update_market_data(top_zones_cache=None):
     with open("market_data.json", "w", encoding="utf-8") as f:
         json.dump(market_data, f)
 
-def generate_summary(articles_in_cluster, orderbook_data, price_history_data, max_retries=2):
+def generate_summary(articles_in_cluster, orderbook_data, price_history_data, macro_context_str, max_retries=2):
     if not client:
         return None
     
     news_data = "\n".join([f"Source: [{a['source']}]\nDate: {a['date']}\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in articles_in_cluster])
     
-    prompt = f"""You are a quantitative financial analyst. Analyze these news reports, the past 24h price action, and current liquidity. Output ONLY a valid JSON object without markdown blocks. Write all values in English!
+    prompt = f"""You are a senior quantitative gold & macro strategist. Analyze these news reports, the 24h price & ATR volatility metrics, cross-asset macro correlations (USD, 10Y Bonds, Brent Oil), and OANDA orderflow liquidity. Output ONLY a valid JSON object without markdown blocks. Write all values in English!
     
-    CRITICAL RULE FOR 'Orderflow_Price_Target':
-    - Look at the 'Current XAU/USD Price' in the Order Book data below.
-    - If 'XAUUSD_Impact' is 'Bullish', the 'Orderflow_Price_Target' (Take Profit) MUST be a numerical price strictly HIGHER than the Current XAU/USD Price. Never output a support level below current price for a Bullish signal!
-    - If 'XAUUSD_Impact' is 'Bearish', the 'Orderflow_Price_Target' (Take Profit) MUST be a numerical price strictly LOWER than the Current XAU/USD Price. Never output a resistance level above current price for a Bearish signal!
+    CRITICAL RULE 1 - 'PRICED-IN' EXHAUSTION CHECK:
+    - Check the '4h Move vs. Daily ATR Ratio' in the Volatility Metrics below.
+    - If XAU/USD has ALREADY moved by >= 1.2x of the Estimated Daily ATR in the direction of the news over the last 4-12 hours, you MUST downgrade 'XAUUSD_Impact' to 'Neutral' (or lower 'Probability_Percent' below 55) and set 'Impact_Timing' to 'Past (Already Priced In)'. Never chase an exhausted spike!
+
+    CRITICAL RULE 2 - MACRO HEADWIND CHECK:
+    - Compare the news with the 'Cross-Asset Macro Context' (EUR/USD as inverse USD proxy and USB10Y_USD as inverse Treasury Yield proxy).
+    - If USD is strengthening sharply AND Treasury yields are rising (bond prices falling), reduce Bullish Gold probabilities by 15-20% unless the geopolitical shock is severe.
+
+    CRITICAL RULE 3 - 'Orderflow_Price_Target' & LIQUIDITY MAGNETS:
+    - Look at the 'Current XAU/USD Price' and the 'Combined Liquidity Zones' below.
+    - If 'XAUUSD_Impact' is 'Bullish', the 'Orderflow_Price_Target' (Take Profit) MUST be a numerical price strictly HIGHER than the Current XAU/USD Price (ideally aligning with an ABOVE zone). Never output a level below current price for a Bullish signal!
+    - If 'XAUUSD_Impact' is 'Bearish', the 'Orderflow_Price_Target' (Take Profit) MUST be a numerical price strictly LOWER than the Current XAU/USD Price (ideally aligning with a BELOW zone). Never output a level above current price for a Bearish signal!
     - If 'XAUUSD_Impact' is 'Neutral', write 'N/A'.
     - Format the target strictly as a clean number (e.g., '4035.50').
 
@@ -297,22 +545,25 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
     {{
         "Facts": "Detailed summary of core facts and WHY it happened. Include [Source].",
         "Uncertainties": "What is unclear, speculative, or unconfirmed?",
-        "Macro_Context": "Macro-economic context.",
-        "Impact_Timing": "Past, Present, or Future",
+        "Macro_Context": "Explain how USD, 10Y Yields, Brent Oil, and OANDA Retail Sentiment interact with this news.",
+        "Impact_Timing": "Future, Present, or Past (Already Priced In)",
         "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
         "Probability_Percent": <Integer 0 to 100>,
-        "Past_Price_Action_Cause": "Explain briefly if and how these specific news events align with the provided 24h price action. Write 'N/A' if no clear correlation.",
-        "Orderflow_Price_Target": "Exact numerical Take-Profit target following the CRITICAL RULE above."
+        "Past_Price_Action_Cause": "Explain how the 4h/24h price change and ATR ratio align with this news and whether it is already priced in.",
+        "Orderflow_Price_Target": "Exact numerical Take-Profit target following CRITICAL RULE 3."
     }}
 
     News Reports:
     {news_data}
     
-    24h Price History:
+    Cross-Asset Macro Context:
+    {macro_context_str}
+
+    24h Price History & ATR Volatility:
     {price_history_data}
 
-    Current Order Book:
+    Current Order Book & Retail Sentiment:
     {orderbook_data}
     """
     
@@ -347,6 +598,13 @@ def main():
         except Exception:
             existing_data = []
 
+    print("Lade OANDA Order-Zonen, Volatilität (ATR) & Makro-Korrelationen...")
+    oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0)
+    price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
+    macro_context_str, macro_summary = fetch_macro_context()
+
+    evaluate_clusters(existing_data, h1_candles)
+
     now = datetime.now()
     cutoff_timestamp = (now - timedelta(hours=24)).timestamp()
     
@@ -360,11 +618,8 @@ def main():
     print("Suche parallel nach neuen Artikeln...")
     new_articles = fetch_new_articles(existing_urls)
     
-    print("Lade OANDA Order-Zonen & Preishistorie...")
-    oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0)
-    
     if new_articles:
-        print(f"{len(new_articles)} neue Artikel gefunden. Clustere...")
+        print(f"{len(new_articles)} neue Artikel gefunden. Clustere (Threshold: {SIMILARITY_THRESHOLD})...")
         
         cluster_embeddings = []
         for cluster in valid_clusters:
@@ -383,18 +638,14 @@ def main():
                     best_match_idx = i
                     
             if highest_sim > SIMILARITY_THRESHOLD and best_match_idx != -1:
-                # Artikel zu bestehendem Cluster hinzufügen
                 target_cluster = valid_clusters[best_match_idx]
                 target_cluster["articles"].append(article)
                 
-                # Neuesten Artikel im Cluster bestimmen
                 newest_article = max(target_cluster["articles"], key=lambda x: x["_timestamp"])
                 
-                # Ursprungsdatum einmalig festhalten (Fallback für alte Cluster ohne original_date)
                 if "original_date" not in target_cluster:
                     target_cluster["original_date"] = target_cluster.get("main_date", newest_article["date"])
                 
-                # Anderer Tag als Ursprung -> (updated) markieren
                 if newest_article["date"][:10] != target_cluster["original_date"][:10]:
                     target_cluster["main_date"] = f"{newest_article['date']} (updated)"
                 else:
@@ -419,29 +670,28 @@ def main():
     else:
         print("Keine neuen Artikel gefunden.")
 
-    # Hauptsortierung: nach dem neuesten _timestamp absteigend
     valid_clusters.sort(key=lambda x: float(x.get("_timestamp", 0)), reverse=True)
     
     pending_clusters = [c for c in valid_clusters if c.get("needs_update", False)]
     if pending_clusters:
-        price_history_data = fetch_oanda_price_history()
         orderbook_data = fetch_oanda_orderbook(top_zones_cache=oanda_zones_cache)
         
         for idx, cluster in enumerate(pending_clusters, 1):
             print(f"Erstelle analytische Zusammenfassung ({idx}/{len(pending_clusters)}): {cluster['articles'][0]['title'][:60]}...")
-            summary = generate_summary(cluster["articles"], orderbook_data, price_history_data)
+            summary = generate_summary(cluster["articles"], orderbook_data, price_history_data, macro_context_str)
             
             if summary:
                 cluster["summary"] = summary
                 cluster["needs_update"] = False
-                # 4 Sekunden Pause hält uns sicher unter dem Free-Tier-Limit von 15 Anfragen pro Minute (RPM)
                 time.sleep(4)
+
+    evaluate_clusters(valid_clusters, h1_candles)
             
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
         
-    print("Aktualisiere Chart-Daten...")
-    update_market_data(top_zones_cache=oanda_zones_cache)
+    print("Aktualisiere Chart- & Makro-Daten...")
+    update_market_data(top_zones_cache=oanda_zones_cache, macro_summary=macro_summary, vol_metrics=vol_metrics)
     print("Update abgeschlossen.")
 
 if __name__ == "__main__":

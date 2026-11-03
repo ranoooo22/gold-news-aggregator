@@ -1,5 +1,405 @@
 [
     {
+        "main_date": "2026-11-03 15:01",
+        "original_date": "2026-11-03 15:01",
+        "_timestamp": 1793718080.0,
+        "articles": [
+            {
+                "title": "Apple stock falls, chip stocks rebound as oil extends decline: AlphaCheck",
+                "link": "https://finance.yahoo.com/markets/article/apple-stock-falls-chip-stocks-rebound-as-oil-extends-decline-alphacheck-150120677.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 15:01",
+                "description": "Stocks rebounded on Monday following a brutal sell-off in tech.",
+                "_timestamp": 1793718080.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Equities rebounded on Monday following a brutal tech sell-off, while Apple stock fell and chip stocks rebounded as oil extended its decline [Yahoo Finance Oil].",
+            "Uncertainties": "The underlying driver for the sustained oil decline and the broader tech sector stabilization remains speculative without broader macroeconomic policy or earnings context.",
+            "Macro_Context": "EUR/USD is flat (-0.09%) indicating a stable USD, while US 10Y Treasury bond prices are falling (yields rising), acting as a fundamental headwind for non-yielding gold. Brent crude is down 2.51%, reducing inflationary pressures. OANDA retail positioning heavily favors longs at 71.4%, signaling a contrarian bearish setup.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 60,
+            "Past_Price_Action_Cause": "Gold experienced a sharp 4-hour recovery (+33.08) but remains down over the 24h period (-25.38). The 4h move vs daily ATR ratio is 0.53x, meaning the bounce is not fully exhausted by ATR rules, but rising yields and strong retail long sentiment create downward pressure.",
+            "Orderflow_Price_Target": "3930.17"
+        }
+    },
+    {
+        "main_date": "2026-11-03 14:52",
+        "original_date": "2026-11-03 14:52",
+        "_timestamp": 1793717531.0,
+        "articles": [
+            {
+                "title": "Trump says 'not looking to kill lots of people' in Iran",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-not-looking-kill-lots-people-iran",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 14:52",
+                "description": "Trump says 'not looking to kill lots of people' in Iran\n\n    \n    \n\n        \n    \n                US President Donald Trump has said that he is \"not looking to kill lots of people\" in Iran, following what he described as a \"minor attack\" on Qeshm Island rather than a resumption of war.\n\n\"Look, I'm not looking to, you know, kill lots of people, but if we have to, we'll have to,\" Trump told Fox News.\n\n\"We have them totally where we want. We could finish them off, or we could be nice and let thousands of people live that would get killed in a war,\" he said.",
+                "_timestamp": 1793717531.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "US President Donald Trump stated in an interview with Fox News that he is 'not looking to kill lots of people' in Iran, characterizing a recent event on Qeshm Island as a 'minor attack' rather than an escalation toward full-scale war [Middle East Eye].",
+            "Uncertainties": "The exact nature and scale of the 'minor attack' on Qeshm Island remain unconfirmed by independent military sources, and Iran's official response to Trump's remarks is still pending.",
+            "Macro_Context": "EUR/USD is relatively flat (-0.09%) indicating a steady US Dollar, while US 10Y Treasury bond prices are down (yields rising), presenting a slight macro headwind for non-yielding gold. Brent crude is down 2.51%, reflecting easing immediate war risk premiums. OANDA retail sentiment remains heavily long at 71.4%, favoring a contrarian downward bias.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 60,
+            "Past_Price_Action_Cause": "XAU/USD experienced a sharp spike up to near 3971 earlier in the session following initial headlines, but has since retreated to 3939 as the market interprets Trump's comments as de-escalatory, easing geopolitical risk premiums.",
+            "Orderflow_Price_Target": "3930.17"
+        }
+    },
+    {
+        "main_date": "2026-11-03 14:52",
+        "original_date": "2026-11-03 14:52",
+        "_timestamp": 1793717526.0,
+        "articles": [
+            {
+                "title": "Iran rejects diplomacy that is based on coersion, blackmail",
+                "link": "https://en.mehrnews.com/news/249144/Iran-rejects-diplomacy-that-is-based-on-imposition-blackmail",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 14:52",
+                "description": "TEHRAN, Nov. 03 (MNA) –  Iranian Foreign Ministry Spokesman Esmaeil Baghaei says Iran has not abandoned diplomacy while it rejects the one that is based on bullying and balckmail.",
+                "_timestamp": 1793717526.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Iranian Foreign Ministry Spokesman Esmaeil Baghaei stated that Iran has not abandoned diplomacy while firmly rejecting any form of diplomacy based on coercion and blackmail [Mehr News Agency].",
+            "Uncertainties": "Specific diplomatic channels or nations involved in these talks remain undisclosed, and whether this rhetoric signals an imminent escalation or a standard posturing stance is unconfirmed.",
+            "Macro_Context": "The USD remains relatively flat with EUR/USD down 0.09%, while US 10Y Treasury bond prices are falling (yields rising), acting as a macroeconomic headwind for non-yielding gold. Brent crude oil prices dropped 2.51%. OANDA retail sentiment shows heavy net-long positioning (71.4% long), suggesting contrarian downside pressure.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The 4h price change shows a $+33.08 move with a 4h move vs. daily ATR ratio of 0.53x, indicating recent intraday volatility reacting to geopolitical headlines, but remaining below the threshold of an exhausted move.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-11-03 14:43",
+        "original_date": "2026-11-03 14:43",
+        "_timestamp": 1793717019.0,
+        "articles": [
+            {
+                "title": "French judges open war crimes probe into Israeli strike that killed seven in Beirut",
+                "link": "https://www.middleeasteye.net/news/french-judges-open-war-crimes-probe-israeli-strike-killed-seven-beirut",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 14:43",
+                "description": "French judges open war crimes probe into Israeli strike that killed seven in Beirut\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE and agencies\n on \nTue, 11/03/2026 - 11:10\n\n        \n      \n    \n      \n    \n                The investigation follows a complaint by Franco-Lebanese artist Ali Cherri, whose parents and five other civilians were killed in a November 2024 strike on a residential building\n                      \n                  \n                  \n\n  \n\n\n                  A resident carries a birdcage past a building destroyed by Israeli bombing in Beirut’s southern suburb of Shiyah, following a ceasefire between Israel and Hezbollah, 29 November 2024 (Ibrahim Amro/AFP)\n                  Off\n                  Two French judges have opened a judicial investigation into a suspected war crime involving an Israeli air strike on a residential building in Beirut in November 2024 that killed seven civilians, including the parents of Franco-Lebanese artist Ali Cherri.\n\nThe probe was launched following a complaint made by Cherri and the International Federation for Human Rights (FIDH) in April.&nbsp;\n\nIt marks the first time an Israeli army alleged crime in Lebanon has been investigated by the French judiciary since the start of its military operations in October 2023, FIDH and Cherri's lawyer told AFP.\n\n“For almost two years, I have been fighting [...] to ensure that the Israeli bombing that killed my parents and five other civilians does not go unpunished,” Cherri told AFP.\n\nHe said the opening of the investigation was “a huge step forward for my family and me, even though we know that the road to justice will still be long and difficult”.\n  \n    \n\n\n\n  \n\n\n\n“What happened to my parents is not an isolated case. Beyond my personal story and the memory of my parents, this fight is also about the dignity of all civilian victims,” he said.\n\n\n  \n\n  'Beirut Fragments' captures the horror Israel keeps inflicting on Lebanon\n    Read More »\n\n\n“I hope that this investigation will help to break the impunity enjoyed by Israeli officials responsible for attacks against civilians in Lebanon and Palestine.”\n\nOn 27 November 2024, hours before a ceasefire between Israel and Hezbollah came into effect, Israeli forces conducted an air strike on a 12-storey residential building in Beirut’s Noueiri district.\n\nSeven civilians, including Cherri’s parents, were killed in the attack, which destroyed three floors of the building.&nbsp;&nbsp;\n\nThe French investigation is based on research done by Amnesty International and the investigation group Forensic Architecture into the circumstances surrounding the incident.\n\nIn a report published in April, Amnesty said its researchers found no evidence of a military target in the vicinity of the residential building at the time of the strike.\n\nThe organisation said the attack took place at about 5.30pm, around 10 and a half hours before the ceasefire came into effect.&nbsp;\n\nAmnesty reported finding evidence of a US-manufactured GBU-39 precision-guided bomb at the site, stating there is a \"reasonable basis\" to suspect a breach of international humanitarian law. The group called for the strike to be investigated as a possible war crime.\n\nLimited scope\n\nThe French National Anti-Terrorism Prosecutor’s Office (Pnat), which oversees matters involving war crimes, asked for judicial investigations to be opened in September, an AFP source close to the case said.\n\nProsecutors had identified “serious and consistent” indications that the alleged offences had been committed, the report said.&nbsp;\n\n\n  \n\n  South Lebanon: 'It's torture, they are razing our lives before our eyes'\n    Read More »\n\n\nThe investigation was opened on the basis of allegations of deliberately directing an attack against civilian property, which could amount to a war crime under French law.\n\nCherri's lawyer Clemence Bectarte said the inquiry was intended to establish what happened during the bombing and determine responsibility.\n\n“To our knowledge, this is the very first judicial investigation opened into the crimes committed by the Israeli army in Lebanon since October 2023,” she said in a statement published by FIDH.\n\nCherri holds French and Lebanese nationality; the French proceedings will focus on the bombing of his apartment, making the scope of the case limited.&nbsp;\n\nFIDH stated that French courts lacked jurisdiction over the events leading to the deaths of non-French nationals.&nbsp;Cherri was therefore unable to bring a complaint for homicide over his parents’ deaths, his lawyer told AFP. The investigation instead concerns the alleged deliberate attack on civilian property.\n\nThe Pnat has also opened preliminary investigations into allegations of torture and war crimes related to the interception by Israeli forces of humanitarian flotillas heading to Gaza in 2025 and 2026, AFP said.\n\nAt the end of 2025, the prosecutor's office also asked a Paris investigating judge to open a war crimes investigation into the deaths of two French children in an Israeli bombing in Gaza in October 2023.&nbsp;\n\nHowever, sources close to the case said that charges of genocide and crimes against humanity were ruled out by the prosecutors.\n\n                  Israel's war on Lebanon\n                   \n                  News\n        \n    Post Date Override\n              0\n          \n  \n    Update Date\n              Mon, 05/04/2020 - 21:19\n\n          \n  \n    Update Date Override\n              0",
+                "_timestamp": 1793717019.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "French judges have officially opened a judicial investigation into a suspected war crime involving an Israeli air strike on a residential building in Beirut in November 2024 that killed seven civilians, marking the first time an alleged Israeli army crime in Lebanon has been investigated by the French judiciary [Middle East Eye].",
+            "Uncertainties": "The scope of the investigation is legally limited to French nationals and property damage (the apartment of Franco-Lebanese artist Ali Cherri), meaning broader war crimes or genocide charges were excluded by prosecutors.",
+            "Macro_Context": "US 10-year Treasury bond prices are falling (yields rising), acting as a fundamental headwind for non-yielding gold, while Brent crude oil trades lower (-2.51%) reflecting a lack of broader supply-disruption fears. OANDA retail positioning heavily favors longs at 71.4%, leaning contrarian bearish.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The 4h price change shows a $+33.08 upward reaction and the 4h move vs Daily ATR ratio stands at 0.53x. While the headline describes a legal escalation, geopolitical headlines of this nature regarding past strikes carry limited immediate macroeconomic shock value and fail to drive sustained trend continuation against rising yields.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-11-03 14:30",
+        "original_date": "2026-11-03 14:30",
+        "_timestamp": 1793716224.0,
+        "articles": [
+            {
+                "title": "From Italy to Canada, how the UK’s Palestine Action group went global",
+                "link": "https://www.aljazeera.com/news/2026/11/3/from-italy-to-canada-how-the-uks-palestine-action-group-went-global?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-03 14:30",
+                "description": "The banned UK group, which targets Israel&#039;s war machine, has inspired activists in Europe and beyond.",
+                "_timestamp": 1793716224.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Al Jazeera reports that the UK's Palestine Action group, a banned organization targeting Israel's military supply chain, has expanded and inspired activists globally across Europe and Canada [Al Jazeera English].",
+            "Uncertainties": "The direct macroeconomic or immediate geopolitical escalation impact on major nation-states and commodity trade routes remains unquantified.",
+            "Macro_Context": "The US dollar is relatively flat against the EUR, but US 10-year Treasury bond prices are down (yields rising), acting as a fundamental headwind for non-yielding gold. Brent crude is down 2.51%. OANDA retail sentiment is heavily long at 71.4%, favoring a contrarian bearish or range-bound bias.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The 4h price change shows a $+33.08 move and the 4h vs daily ATR ratio is 0.53x, reflecting some recent upward volatility, but the news itself is structural/social rather than a direct monetary or major geopolitical shock, resulting in a neutral stance.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-11-03 14:28",
+        "original_date": "2026-11-03 14:28",
+        "_timestamp": 1793716105.0,
+        "articles": [
+            {
+                "title": "Veeva Systems (VEEV): Turning Industry Expertise into Growth",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/veeva-systems-veev-turning-industry-142825862.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 14:28",
+                "description": "Riverbridge Partners, an investment management company, released its Q3 2026 investor letter for “Riverbridge All Cap Growth Strategy.” The letter can be downloaded here. The Russell 3000 Growth Index was nearly flat in Q3 2026, masking a shift away from AI infrastructure and consumer stocks amid concerns about sustainability, inflation, and oil prices. Riverbridge All […]",
+                "_timestamp": 1793716105.0
+            },
+            {
+                "title": "Intuitive Surgical (ISRG) Drives Better Outcomes and Lower Care Costs",
+                "link": "https://finance.yahoo.com/healthcare/articles/intuitive-surgical-isrg-drives-better-142635109.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 14:26",
+                "description": "Riverbridge Partners, an investment management company, released its Q3 2026 investor letter for “Riverbridge All Cap Growth Strategy.” The letter can be downloaded here. The Russell 3000 Growth Index was nearly flat in Q3 2026, masking a shift away from AI infrastructure and consumer stocks amid concerns about sustainability, inflation, and oil prices. Riverbridge All […]",
+                "_timestamp": 1793715995.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Riverbridge Partners released its Q3 2026 investor letter for the Riverbridge All Cap Growth Strategy, noting that the Russell 3000 Growth Index was nearly flat due to a sector rotation away from AI infrastructure and consumer stocks caused by ongoing concerns over inflation, sustainability, and oil prices [Yahoo Finance Oil].",
+            "Uncertainties": "The specific direct macroeconomic triggers for the broader equity market shifts and their persistence remain unquantified beyond general concerns about inflation and oil prices.",
+            "Macro_Context": "EUR/USD is relatively flat (-0.09%), showing a steady USD. US 10Y Treasury bond prices are falling (-0.21%), implying rising yields which act as a traditional headwind for non-yielding gold. Brent crude is down 2.51%. OANDA retail sentiment is heavily long at 71.4%, leaning contrarian bearish.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold experienced a strong intraday bounce with a 4h price change of +$33.08, but the ratio of 0.53x against the daily ATR indicates moderate volatility without an extreme exhaustion spike, while the news itself focuses on equity market letters rather than direct gold drivers.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-11-03 14:19",
+        "original_date": "2026-11-03 14:19",
+        "_timestamp": 1793715568.0,
+        "articles": [
+            {
+                "title": "Rollins (ROL) Misses Quarterly Estimates and Trims Full-Year Organic Growth Outlook",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/rollins-rol-misses-quarterly-estimates-141928105.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 14:19",
+                "description": "Riverbridge Partners, an investment management company, released its Q3 2026 investor letter for “Riverbridge All Cap Growth Strategy.” The letter can be downloaded here. The Russell 3000 Growth Index was nearly flat in Q3 2026, masking a shift away from AI infrastructure and consumer stocks amid concerns about sustainability, inflation, and oil prices. Riverbridge All […]",
+                "_timestamp": 1793715568.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Riverbridge Partners released its Q3 2026 investor letter noting that the Russell 3000 Growth Index was nearly flat due to a shift away from AI infrastructure and consumer stocks amid sustainability, inflation, and oil price concerns [Yahoo Finance Oil].",
+            "Uncertainties": "The direct macroeconomic impact of Rollins' earnings miss on broader asset classes and gold remains ambiguous, as the report focuses on equity strategy and sector rotation rather than systemic monetary policy shifts.",
+            "Macro_Context": "EUR/USD is relatively flat (-0.09%), indicating a stable US Dollar, while US 10Y Treasury bond prices are falling (yields rising) and Brent Crude is down 2.51%. The rising yields present a structural headwind for non-yielding gold, countered slightly by equity market caution.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "The 4h price change shows a $+33.08 move, but the overall 24h change is $-25.38, reflecting intraday volatility without a directional trend tied directly to this equity-focused report. The 4h move vs daily ATR ratio is 0.53x, meaning recent swings are contained.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-11-03 14:17",
+        "original_date": "2026-11-03 08:18",
+        "_timestamp": 1793715467.0,
+        "articles": [
+            {
+                "title": "Oil rises as peace prospects dim after US hits Iran’s Qeshm Island",
+                "link": "https://www.investing.com/news/commodities-news/oil-rises-after-report-of-us-strike-on-irans-qeshm-island-4993342",
+                "source": "Investing.com",
+                "date": "2026-11-03 08:18",
+                "description": "",
+                "_timestamp": 1793693914.0
+            },
+            {
+                "title": "Crude Oil WTI trapped between 200 SMA and cloud: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/crude-oil-wti-consolidates-at-cloud-support-near-101-live-93CH-4990026",
+                "source": "Investing.com",
+                "date": "2026-11-03 07:10",
+                "description": "",
+                "_timestamp": 1793689827.0
+            },
+            {
+                "title": "London Gas Oil tests resistance cluster at $1440-1460: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/london-gas-oil-consolidates-below-key-mas-live-levels-93CH-4990029",
+                "source": "Investing.com",
+                "date": "2026-11-03 07:10",
+                "description": "",
+                "_timestamp": 1793689824.0
+            },
+            {
+                "title": "Brent Oil breaks below cloud after Double Top: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/brent-oil-breaks-below-ichimoku-cloud-at-110-live-levels-93CH-4990027",
+                "source": "Investing.com",
+                "date": "2026-11-03 07:10",
+                "description": "",
+                "_timestamp": 1793689811.0
+            },
+            {
+                "title": "Gold holds near $3,950 as Iran peace hopes ease oil, U.S. vote in focus",
+                "link": "https://www.investing.com/news/commodities-news/gold-holds-near-3950-as-iran-peace-hopes-ease-oil-us-vote-in-focus-4993318",
+                "source": "Investing.com",
+                "date": "2026-11-03 06:10",
+                "description": "",
+                "_timestamp": 1793686247.0
+            },
+            {
+                "title": "Gold holds near $3,950 as Iran peace hopes ease oil, U.S. vote in focus",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-holds-near-3-950-013615439.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 01:36",
+                "description": "Investing.com -- Gold prices fell on Tuesday, giving back ground after earlier rebound as renewed selling across precious metals kept bullion under pressure, with spot gold slipping below $3,950 an ounce.",
+                "_timestamp": 1793669775.0
+            },
+            {
+                "title": "Stocks mostly down on AI concerns as oil prices bounce after plunge",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-mostly-down-ai-concerns-025549205.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 08:22",
+                "description": "Asian stock markets struggled Tuesday following another AI-fuelled tech selloff on Wall Street that overshadowed a possible breakthrough in talks to end the Middle East war.After a tough run last week, the selling continued at the start of this week with losses in Asian giants followed by their US counterparts on Wall Street where the Nasdaq ended 1.1 percent off.",
+                "_timestamp": 1793694146.0
+            },
+            {
+                "title": "Australian, Chinese airline stocks jump as oil prices plunge more than 7%",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/australian-chinese-airline-stocks-jump-054914130.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 05:49",
+                "description": "Investing.com -- Airline stocks in Australia and China rallied on Tuesday as a sharp overnight decline in oil prices eased concerns over aviation fuel costs, offering relief to carriers that have faced mounting pressure from elevated energy prices.",
+                "_timestamp": 1793684954.0
+            },
+            {
+                "title": "Tech losses weigh on global markets ahead of US midterm elections, while oil prices rise",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/asian-shares-mixed-tech-losses-035100041.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 03:51",
+                "description": "HONG KONG (AP) — World shares fell and U. futures also declined Tuesday as investors awaited the outcome of the U.",
+                "_timestamp": 1793677860.0
+            },
+            {
+                "title": "Saudi Aramco profits jump 35% despite attacks on oil facilities",
+                "link": "https://www.euronews.com/2026/11/03/saudi-aramco-profits-jump-35-despite-attacks-on-oil-facilities?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 07:11",
+                "description": "Higher oil prices and a joint venture sale lifted the Saudi giant’s earnings, even as disrupted exports and prolonged conflict weighed on the kingdom’s economy.View on euronews",
+                "_timestamp": 1793689896.0
+            },
+            {
+                "title": "Aramco shares flat as Q3 profit meets expectations, output rebounds",
+                "link": "https://finance.yahoo.com/energy/articles/aramco-q3-profit-rises-more-061301506.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 06:13",
+                "description": "Investing.com -- Saudi Aramco shares were little changed on Tuesday, last down 0.08%, after the world’s largest oil company reported third-quarter profit that was broadly in line with expectations as a rebound in output and exports offset lower realised prices.",
+                "_timestamp": 1793686381.0
+            },
+            {
+                "title": "3 Oil And Gas Stocks With Cash Flow Tied To Higher Energy Prices",
+                "link": "https://finance.yahoo.com/energy/articles/3-oil-gas-stocks-cash-081013039.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 08:10",
+                "description": "Oil markets have snapped back into the spotlight after Saudi Aramco posted a 34.6% YoY jump in Q3 profit, while conflict and shipping disruptions tighten supply and keep geopolitics front and center. That mix of fatter sector earnings and higher risk has real consequences for portfolios. This article walks through three global integrated majors most exposed to these headlines and explains how the current backdrop could help or hurt each stock. The three stocks below are a first pass. The full...",
+                "_timestamp": 1793693413.0
+            },
+            {
+                "title": "Can the world withstand another winter of war?",
+                "link": "https://www.middleeasteye.net/opinion/can-world-withstand-another-winter-war",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 08:15",
+                "description": "Can the world withstand another winter of war?\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMarco Carnelos\n on \nMon, 11/02/2026 - 17:47\n\n        \n      \n    \n      \n    \n                Amid ongoing conflicts in Ukraine and Iran, economic pressures are soaring around the globe\n                      \n                  \n                  \n\n  \n\n\n                  High gas prices are displayed at a Shell station in Burbank, California, on 11 May 2026 (Mario Tama/Getty Images/AFP)\n                  Off\n                  Almost five years after the Russian invasion of Ukraine scrambled Europe’s energy map, another war has delivered a second shock.&nbsp;\n\nSince the US-Israeli war on Iran began this past February, the Strait of Hormuz, through which about a fifth of the world’s oil normally flows, has been closed or contested, while Ukraine’s drone campaign against Russian refineries has removed more fuel from an overstretched market.&nbsp;\n\nIncreased energy prices feed inflation, forcing central banks to tighten monetary policy, while fiscal anxiety pushes up sovereign bond yields, inflating debt service. The final squeeze arrives in supply chains and households, and then in the streets and at the ballot boxes.\n\nIn other words, it is a perfect storm - the mother of all perfect storms.&nbsp;\n\nWe are seeing a clear example of historian Adam Tooze’s polycrisis concept: a situation where multiple, distinct crises overlap, amplifying their collective effects.\n  \n    \n\n\n\n  \n\n\n\nThe Iran war is the larger shock. Within days of its start, Brent crude jumped almost 19 percent to nearly $111 a barrel, from about $70 before the war. Washington called it “a very small price to pay” for security.&nbsp;\n\nAfter some ups and downs over the summer, oil was at $117 late last month. The International Energy Agency has called it the worst energy crisis in history. Even EU chief Ursula von der Leyen, the queen of denial, acknowledged “a regional conflict with unintended consequences”.&nbsp;\n\nTalks and periods of ceasefire have not normalised energy flows. The EU Commission has warned of a prolonged supply shock, which could involve forced cuts to fuel consumption before winter.\n\nWeak point\n\nTo make a bad situation worse, the Houthis’ control over Yemen’s Red Sea shores has endangered another chokepoint, the Bab el-Mandeb Strait, with serious repercussions for maritime logistics.\n\nCompounding this, Ukraine’s attacks on Russian refineries have pushed Moscow into unprecedented export bans at the worst possible time, with the Iran war having already drained inventories.&nbsp;\n\nEurope no longer buys Russian diesel directly, but Russia’s former customers now compete for the same alternative cargoes. Hormuz drives most of the disruption, and the Russia-Ukraine war compounds it; together, they strike at the same weak point - a European continent that imports almost all of its fossil fuels.\n\n\nGovernments in Paris, Rome and elsewhere have less fiscal space to compensate the public - and the combination of austerity and inflation is historically combustible\n\n\nThe inevitable outcome has been inflation in the EU, which reached 3.8 percent in September, up from 3.2 percent in August - significantly higher than the rate of 2.6 percent a year prior.&nbsp;Food prices have also soared, fuelling widespread public anger in European cities.&nbsp;\n\nThe European Central Bank’s president, Christine Lagarde, warned this summer that “the full inflationary impact of the energy shock has yet to play out”.&nbsp;\n\nRaising interest rates against a supply shock does nothing for commodity supplies, but it increases financing costs at exactly the moment when governments are being asked to cushion households.\n\nThe bond market has noticed, with the yield on 30-year US Treasury bonds exceeding five percent this year, as national debt rose past $40 trillion and annual interest payments over $1 trillion for the first time.\n\nIn the UK, 30-year yields recently hit six percent, the first time a G7 member had faced such rates since the 2012 eurozone crisis.&nbsp;\n\nFrance is at the epicentre of this crisis. Its bond yields stood at 4.85 percent in mid-October, near their highest levels in more than two decades, with EU officials urging Paris to present a credible budget.\n\nFrench debt service is projected at about €59 billion ($66bn) this year, compared with roughly €30 billion for Germany, and Italy must roll over debt worth 17 percent of GDP in 2026.\n  \n    \n\n\n\n  \n\n\n\nRatchet turning\n\nThis is not yet a replay of the 2011 economic crisis. Earlier in the war, analysts noted that Italian, Spanish and Greek yields stood below their 2022-23 peaks, because those countries had cut primary deficits.&nbsp;\n\nIt’s important to note that debt offices feel higher yields only as maturing paper is replaced - so the bill grows with every auction, rather than arriving all at once.&nbsp;\n\nIn economic jargon, it’s a ratchet, and each turn leaves less budgetary room for governments to offer the relief that angry households are demanding - even as these same governments continue to spend billions on arming Ukraine and launching unprecedented weapons procurement programmes.&nbsp;\n\n\n\nDire social consequences arrived last month. In France, hundreds of thousands of people joined demonstrations that began as student protests over education, and widened into cost-of-living grievances. In Belgium, police clashed with protesters in Brussels, while tens of thousands of people marched in Lisbon, Portugal, over living costs, low wages and housing. Large and violent demonstrations were also reported in Italy.&nbsp;\n\nThere does not seem to be a single Europe-wide movement, or at least not yet. Situations and demands differ by country, but ongoing economic shocks have served as an accelerant.&nbsp;\n\nFrance’s presidential election and Italy’s general election are both due next year, while Spain faces a snap election this month. EU governments are weighing support for vulnerable households, but disputes over the €2 trillion EU budget risk blocking decisions.&nbsp;\n\nWith debt service rising, governments in Paris, Rome and elsewhere have less fiscal space to compensate the public - and the combination of austerity and inflation is historically combustible.\n\nUS midterms\n\nThe same energy shocks are now testing Donald Trump in Tuesday’s midterm elections, with the US president’s approval rating at a record low. About seven in 10 Americans say gasoline has become unaffordable, with the national average price above $4 a gallon for a record 158 days this year.&nbsp;\n\nTrump’s partial or total defeat - losing only the House, or losing both the House and the Senate - could trigger another constitutional crisis, like the one that occurred on 6 January 2021, with Trump and his supporters refusing to accept a negative result.&nbsp;\n\nThis all seems like a single feedback loop, rather than separate crises. A war of choice against Iran, backed by a US naval blockade, disrupts the Gulf; the price is paid first by importers in Europe and Asia, and then by American drivers; central banks respond with higher rates; bond markets reprice the debts of the most exposed states; and governments with shrinking fiscal space face electorates that have lost patience.&nbsp;\n\n\n  \n\n  The resilience of the world economy is built on illusion - it's time the West woke up\n    Read More »\n\n\nThe irony is that two crises aimed at inflicting a strategic defeat, and ideally regime change, in both Russia and Iran, have blown up in the faces of western liberal democracies, which are facing unbearable and dangerous costs.&nbsp;\n\nWhile Treasury Secretary Scott Bessent has unsuccessfully tried to reduce US bond yields, further fuelling investors’ concerns, Trump has been scrambling to find a way to end the conflict in Ukraine, aiming to better focus on his war against Iran after the midterms. It is not clear yet whether Russia, Iran, and above all China will allow him such room for maneuver.&nbsp;\n\nSeveral crucial issues must now be monitored closely for developments, including the outcome of Israel’s elections, which resulted in a deadlock last week; will the incoming government continue to bamboozle the US into waging an unnecessary war against Iran?\n\nOngoing European economic negotiations will also be vital to watch, alongside the outcome of Tuesday’s US midterm vote and the impacts on markets and investments. In addition, what happens next in relation to the chokepoints at Hormuz and Bab el-Mandeb will be crucial: if commodity flows normalise, prices could drop within months, and the storm may lose its force.&nbsp;\n\nIf not, winter will be the next stress test - and it is fast approaching.\n\nThe views expressed in this article belong to the author and do not necessarily reflect the editorial policy of Middle East Eye.\n\n                  Economy\n                  Opinion\n        \n    Post Date Override\n              0\n          \n  \n    Update Date\n              Mon, 05/04/2020 - 21:29\n\n          \n  \n    Update Date Override\n              0",
+                "_timestamp": 1793693708.0
+            },
+            {
+                "title": "Oil prices rise after report of US aggression",
+                "link": "https://en.mehrnews.com/news/249119/Oil-prices-rise-after-report-of-US-aggression",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 03:40",
+                "description": "TEHRAN, Nov. 03 (MNA) – Oil prices rose in early trade on Tuesday following a report that the US has launched drones toward Iran’s Qeshm Island.",
+                "_timestamp": 1793677259.0
+            },
+            {
+                "title": "Goldman lifts natural gas price forecasts on supply, weather uncertainty",
+                "link": "https://www.investing.com/news/commodities-news/goldman-lifts-natural-gas-price-forecasts-on-supply-weather-uncertainty-4994177",
+                "source": "Investing.com",
+                "date": "2026-11-03 10:09",
+                "description": "",
+                "_timestamp": 1793700561.0
+            },
+            {
+                "title": "Saudi Aramco Profit Beats Expectations as Oil Prices Soar",
+                "link": "https://finance.yahoo.com/energy/articles/saudi-aramco-profit-beats-expectations-094500766.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 09:45",
+                "description": "Saudi Aramco's third-quarter adjusted profit rose 9% to $31.2 billion as higher oil prices and surging refining margins offset supply disruptions.",
+                "_timestamp": 1793699100.0
+            },
+            {
+                "title": "Oil rises after reported U.S. strike on Iran’s Qeshm Island dents peace hopes",
+                "link": "https://www.investing.com/news/commodities-news/oil-rises-after-reported-us-strike-on-irans-qeshm-island-4993349",
+                "source": "Investing.com",
+                "date": "2026-11-03 10:41",
+                "description": "",
+                "_timestamp": 1793702473.0
+            },
+            {
+                "title": "Oil Prices Rebound as US Strike on Iran’s Qeshm Island Dims Prospects for Peace Agreement",
+                "link": "https://investorshub.advfn.com/market-news/article/39110/oil-prices-rebound-as-us-strike-on-irans-qeshm-island-dims-prospects-for-peace-agreement?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 10:09",
+                "description": "Oil prices climbed more than $1 per barrel on Tuesday, 3 November, as renewed military activity in the Middle East and comments from Iranian officials reduced expectations of an imminent agreement to end the conflict involving Iran, the United States and Israel. US West Texas Intermediate (WTI) crude futures rose $1.",
+                "_timestamp": 1793700586.0
+            },
+            {
+                "title": "What Republican or Democratic Success Means for Oil Prices",
+                "link": "https://finance.yahoo.com/m/0530bf87-581a-3f34-882c-08e8e5dbf913/what-republican-or-democratic.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 09:25",
+                "description": "If Republicans retain control of Congress, that could mean more upside risks to oil prices as the U.S. administration would face fewer political obstacles in carrying out foreign policy, said Ipek Ozkardeskaya, senior analyst at Swissquote.",
+                "_timestamp": 1793697933.0
+            },
+            {
+                "title": "Nordic American Tankers Ltd (NYSE: NAT) – Very strong market continues",
+                "link": "https://finance.yahoo.com/energy/articles/nordic-american-tankers-ltd-nyse-110700949.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 11:07",
+                "description": "Tuesday, November 3, 2026 Dear Shareholders and Investors, We are pleased to inform you that the very strong market for our ships continue. We enter into contracts at historically high level, which have not been seen earlier. Now the price of oil goes down. This in an advantage for Nordic American. The lower the oil price, the higher oil consumption. In the final analysis, the most important element in tanker economics is the concept of ton mile. The longer distance oil is being transported, the",
+                "_timestamp": 1793704020.0
+            },
+            {
+                "title": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks",
+                "link": "https://finance.yahoo.com/energy/articles/higher-oil-prices-boost-saudi-110249565.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 11:02",
+                "description": "FRANKFURT, Germany (AP) — Majority state-owned oil company Saudi Aramco on Tuesday reported a 35% increase in third-quarter net profit as earnings were boosted by higher oil prices and the sale of its stake in a Malaysian refining and petrochemical company.9 billion in the year-earlier quarter.",
+                "_timestamp": 1793703769.0
+            },
+            {
+                "title": "Goldman Raises Oil Price Forecast for December as War Risks Cloud 2027 Outlook",
+                "link": "https://www.ibtimes.com/goldman-sachs-raises-oil-price-forecasts-geopolitical-risks-3809286?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 11:22",
+                "description": "The investment bank now expects Brent crude, the international benchmark, to reach $105 a barrel in December, up from its previous forecast of $90.",
+                "_timestamp": 1793704921.0
+            },
+            {
+                "title": "Stock Market Today: Dow Futures Plunge 323 Points, Apple Sinks, and Iran Strikes Send Oil Soaring",
+                "link": "https://247wallst.com/investing/2026/11/03/stock-market-today-dow-futures-plunge-323-points-apple-sinks-and-iran-strikes-send-oil-soaring/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 14:17",
+                "description": "Apple's margin warning and a reported strike on Iranian soil are pulling markets in opposite directions this morning, and the combination is raising questions about whether the AI trade can survive the crossfire.",
+                "_timestamp": 1793715467.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Oil prices surged following reports that the US launched a drone strike on Iran's Qeshm Island, dimming prospects for peace in the Middle East and driving renewed geopolitical risk [Investing.com]. Simultaneously, global markets are grappling with tech selloffs and US midterm election uncertainty [Yahoo Finance Oil].",
+            "Uncertainties": "The full scope of retaliatory measures from Iran, the definitive impact on the Strait of Hormuz logistics, and the exact outcome of the US midterm elections remain unconfirmed and fluid.",
+            "Macro_Context": "US 10-year Treasury yields are rising (bond prices falling), creating a standard macro headwind for precious metals. Meanwhile, Brent crude is volatile, and retail positioning on OANDA heavily favors longs at 71.4%, signaling contrarian downside risk.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "The 4h move shows a recent recovery of +$33.08 with an ATR ratio of 0.53x, indicating the move is not yet exhausted and has room to develop following the fresh geopolitical headlines.",
+            "Orderflow_Price_Target": "3970.60"
+        }
+    },
+    {
         "main_date": "2026-11-03 14:17",
         "original_date": "2026-11-03 12:38",
         "_timestamp": 1793715449.0,
@@ -59,6 +459,33 @@
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "Gold experienced a strong 4h upside move of +$42.04 reaching the $3947 area, but the news itself is general corporate commentary rather than a fresh fundamental driver for gold, resulting in a neutral stance.",
             "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-11-03 14:13",
+        "original_date": "2026-11-03 14:13",
+        "_timestamp": 1793715188.0,
+        "articles": [
+            {
+                "title": "3 Founder Led Growth Stocks With Up To 28% Earnings Growth",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-founder-led-growth-stocks-141308810.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 14:13",
+                "description": "Oil prices have jumped after reports of a US strike on Iran’s Qeshm Island, reminding investors how quickly energy costs and inflation fears can flare up. In periods like this, growing businesses where insiders hold substantial stakes can look appealing, because leadership has meaningful skin in the game. This article walks through three such fast expanding, owner led stocks from our screener and explains why they might deserve a closer look now. The three stocks highlighted here offer a...",
+                "_timestamp": 1793715188.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Oil prices jumped following reports of a US strike on Iran’s Qeshm Island, which escalated geopolitical tensions and revived inflation and energy cost fears [Yahoo Finance Oil].",
+            "Uncertainties": "The full extent of potential retaliatory measures by Iran, sustained impacts on Middle Eastern shipping lanes, and official confirmation of long-term supply disruptions remain unconfirmed.",
+            "Macro_Context": "The USD remains relatively flat while US 10Y Treasury yields are rising (bond prices falling), acting as a fundamental headwind for non-yielding gold. OANDA retail positioning heavily favors longs at 71.4%, creating a contrarian downside bias.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "XAU/USD experienced a strong +$33.08 upward surge in the last 4 hours corresponding with the headline, but the 4h move vs Daily ATR ratio is at 0.53x, meaning the move is not yet technically exhausted past the 1.2x threshold.",
+            "Orderflow_Price_Target": "3970.60"
         }
     },
     {
@@ -242,6 +669,164 @@
             "Probability_Percent": 55,
             "Past_Price_Action_Cause": "XAU/USD experienced a sharp upward move over the last 4 hours (+$50.01) amid regional security headlines involving Saudi Arabia. The 4h move vs Daily ATR ratio is 0.82x, indicating strong momentum without fully exhausting the daily range threshold.",
             "Orderflow_Price_Target": "3979.41"
+        }
+    },
+    {
+        "main_date": "2026-11-03 13:36",
+        "original_date": "2026-11-03 13:36",
+        "_timestamp": 1793712960.0,
+        "articles": [
+            {
+                "title": "What Nvidia and Apple’s Tug-of-War Says About the AI Trade",
+                "link": "https://finance.yahoo.com/m/47d8035e-21f3-344d-ac1b-f31a2e69504d/what-nvidia-and-apple%E2%80%99s.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 13:36",
+                "description": "The world’s two largest companies are about to trade places again following Apple’s so-so revenue guidance.",
+                "_timestamp": 1793712960.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Apple's so-so revenue guidance is sparking a tug-of-war with Nvidia as both companies trade places as the world's largest corporation, highlighting shifts in the broader AI trade sentiment [Source: Yahoo Finance Oil].",
+            "Uncertainties": "Whether Apple's guidance points to a broader tech sector slowdown or just company-specific supply/demand headwinds remains unconfirmed, and the direct transmission mechanism to precious metals is weak.",
+            "Macro_Context": "EUR/USD is relatively flat (-0.09%), showing a steady US Dollar, while US 10Y Treasury bond prices are falling (yields rising), creating a traditional headwind for non-yielding gold. Brent crude is down 2.51%. OANDA retail positioning heavily favors longs at 71.4%, signaling a contrarian bearish setup.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The recent 4h price action shows a sharp fluctuation following corporate tech headlines, but the fundamental news is stock-specific rather than macroeconomic, keeping gold primarily driven by yield dynamics and retail positioning rather than corporate tug-of-wars.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "2026-11-03 13:30",
+        "original_date": "2026-11-03 07:10",
+        "_timestamp": 1793712603.0,
+        "articles": [
+            {
+                "title": "Gold consolidates in downtrend, eyes $3,980 resistance: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/gold-in-oversold-freefall-tests-key-support-live-levels-93CH-4990025",
+                "source": "Investing.com",
+                "date": "2026-11-03 07:10",
+                "description": "",
+                "_timestamp": 1793689808.0
+            },
+            {
+                "title": "Nevada Sunrise Metals: A dawning gold and copper growth story",
+                "link": "https://investorshub.advfn.com/market-news/article/38916/nevada-sunrise-metals-a-dawning-gold-and-copper-growth-story?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 08:00",
+                "description": "From a bird’s eye view, investing in commodities carries two primary value propositions, one tied to psychology, the other to industrial utility, each of which can support long-term portfolio growth. From a psychological perspective, commodities offer the potential to protect your portfolio from inflation and geopolitical instability, with gold differentiating itself as the asset of choice for these purposes thanks to its scarcity and millennia-spanning association with luxury.",
+                "_timestamp": 1793692800.0
+            },
+            {
+                "title": "Where Does i-80 Gold (TSX:IAU) Valuation Sit As Q3 2026 Results Raise New Questions?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/where-does-80-gold-tsx-070714062.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 07:07",
+                "description": "Why the latest i-80 Gold earnings matter for shareholders i-80 Gold (TSX:IAU) has just put fresh numbers on the table, releasing third quarter 2026 results that combine higher reported sales with a deeper net loss and ongoing mine development spending. Recent trading has been choppy. The share price has slid to CA$1.93, with a 1 month share price return of down 16.09% and a 7 day share price return of down 6.76%. However, the 1 year total shareholder return of 46.21% signals that longer term...",
+                "_timestamp": 1793689634.0
+            },
+            {
+                "title": "i-80 Gold (TSX:IAU) Keeps Archimedes On Track For Year End 2026 Production",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/80-gold-tsx-iau-keeps-051223502.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 05:12",
+                "description": "i-80 Gold (TSX:IAU) reaffirmed that first underground mining production from the Archimedes project is targeted by year-end 2026. The company declared maiden mineral reserves at its Granite Creek property, providing a new reserve base for the Nevada portfolio. Management outlined an updated development strategy that prioritizes Archimedes and Granite Creek within the broader project pipeline. The Archimedes start-up and new Granite Creek reserves matter, but investors should weigh them...",
+                "_timestamp": 1793682743.0
+            },
+            {
+                "title": "Is B2Gold (TSX:BTO) Still Cheap Based On Its Earnings?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/b2gold-tsx-bto-still-cheap-012014111.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 01:20",
+                "description": "B2Gold has given long term holders a strong 63.1% gain over the past three years, yet that rise leaves a simple question for anyone looking at the ticker today. Is the current share price, around C$6.68 at the last close, adequately grounded in the mining group’s earnings profile? The 63.1% return over three years puts real weight on whether the earnings that supported that journey can still justify today’s valuation. The business depends heavily on converting gold production into consistent...",
+                "_timestamp": 1793668814.0
+            },
+            {
+                "title": "Is Equinox Gold (TSX:EQX) Reasonable, Or Are Earnings Looking Stretched?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/equinox-gold-tsx-eqx-reasonable-231313873.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-02 23:13",
+                "description": "Equinox Gold has given long term holders a striking 3 year run, yet the recent pullback and shifting sector mood raise a sharper question about whether the current share price lines up with the earnings that support it. With gold miners under pressure since the Iran conflict and gold prices softening, investors are again asking how much earnings power this stock is really pricing in. Over the past 3 years Equinox Gold has delivered a 114.0% return, which puts a lot of accumulated optimism on...",
+                "_timestamp": 1793661193.0
+            },
+            {
+                "title": "i-80 Gold Reports Third Quarter 2026 Results; Archimedes Underground on Track to Begin Production Mining by Year-End",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/80-gold-reports-third-quarter-225300243.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-02 22:53",
+                "description": "i-80 GOLD CORP. (NYSE:IAUX) (TSX:IAU) (\"i-80 Gold\" or the \"Company\") reports its financial and operating results, as well as development highlights, for the three and nine months ended September 30, 2026.",
+                "_timestamp": 1793659980.0
+            },
+            {
+                "title": "Central Banks Buy Gold at Fastest Pace Since 2024, WGC Says",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/central-banks-buy-gold-fastest-060000481.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 06:00",
+                "description": "Central banks bought gold at the fastest pace since the end of 2024 in the third quarter, even as the metal faced pressure from higher oil prices and interest rates.",
+                "_timestamp": 1793685600.0
+            },
+            {
+                "title": "Central Banks Buy Gold at Fastest Pace Since 2024, WGC Says",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/central-banks-buy-gold-fastest-060000481.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 06:00",
+                "description": "Central banks bought gold at the fastest pace since the end of 2024 in the third quarter, even as the metal faced pressure from higher oil prices and interest rates.",
+                "_timestamp": 1793685600.0
+            },
+            {
+                "title": "Gold Falls Below $3,950 as Precious Metals Weaken Ahead of US Midterm Elections",
+                "link": "https://investorshub.advfn.com/market-news/article/39112/gold-falls-below-3950-as-precious-metals-weaken-ahead-of-us-midterm-elections?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 10:14",
+                "description": "Gold prices declined on Tuesday as renewed selling across precious metals erased part of the previous session’s recovery, while investors assessed developments in US-Iran peace negotiations, inflation expectations and the upcoming US midterm elections. Spot gold fell 0.",
+                "_timestamp": 1793700860.0
+            },
+            {
+                "title": "Heliostar Metals Stock And The Road To 500,000 Ounces Of Gold",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/heliostar-metals-stock-road-500-115702833.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 11:57",
+                "description": "This gold mining stock is not just targeting growth, but a tenfold increase in production.",
+                "_timestamp": 1793707022.0
+            },
+            {
+                "title": "Gold price today, Tuesday, November 3, 2026: Gold prices open below $4,000 for the second straight day",
+                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-tuesday-november-3-2026-gold-prices-open-below-4000-for-the-second-straight-day-123207114.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 12:32",
+                "description": "Gold futures opened at $3,960.50 per troy ounce on Tuesday, November 3, 2026, down 0.2% from Monday's closing price. Gold slipped further in early trading to $3,910.60 as of 7:20 a.m. ET.",
+                "_timestamp": 1793709127.0
+            },
+            {
+                "title": "Gold price today, Tuesday, November 3, 2026: Gold prices open below $4,000 for the second straight day",
+                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-tuesday-november-3-2026-gold-prices-open-below-4000-for-the-second-straight-day-123207114.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 12:32",
+                "description": "Gold futures opened at $3,960.50 per troy ounce on Tuesday, November 3, 2026, down 0.2% from Monday's closing price. Gold slipped further in early trading to $3,910.60 as of 7:20 a.m. ET.",
+                "_timestamp": 1793709127.0
+            },
+            {
+                "title": "Is It Worth Investing in Gold.com (GOLD) Based on Wall Street's Bullish Views?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-gold-com-gold-133003746.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 13:30",
+                "description": "According to the average brokerage recommendation (ABR), one should invest in Gold.com (GOLD). It is debatable whether this highly sought-after metric is effective because Wall Street analysts' recommendations tend to be overly optimistic. Would it be worth investing in the stock?",
+                "_timestamp": 1793712603.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Facts": "Central banks purchased gold at the fastest pace since the end of 2024 during the third quarter, according to the World Gold Council [Yahoo Finance Gold]. Meanwhile, spot gold prices pulled back below $3,950 and $4,000 amid profit-taking, ongoing US-Iran peace negotiations, and positioning ahead of the US midterm elections [Yahoo Finance Gold]. Mining companies such as i-80 Gold and Equinox Gold reported mixed operational results and production guidance updates [Yahoo Finance Gold].",
+            "Uncertainties": "The exact timing and outcome of US-Iran peace negotiations and the macroeconomic impact of the upcoming US midterm elections remain unpredictable.",
+            "Macro_Context": "US 10-year Treasury bond prices fell (yields rose), serving as a headwind for non-yielding gold, while the USD remained relatively flat against the EUR proxy. Brent crude oil dropped 2.51%. OANDA retail sentiment is heavily long at 71.4%, indicating contrarian downside vulnerability or liquidity hunting toward lower clusters.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The 4h price action shows a recent recovery bounce of +$33.08, but the 4h move vs. daily ATR ratio is 0.53x, meaning it is not exhausted yet, though prices are consolidating near $3,944 after testing lows near $3,897.",
+            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -667,129 +1252,6 @@
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "The regional security incident in Pakistan is localized and carries negligible global macroeconomic spillover, resulting in zero systemic impact on gold pricing.",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-03 12:32",
-        "original_date": "2026-11-03 07:10",
-        "_timestamp": 1793709127.0,
-        "articles": [
-            {
-                "title": "Gold consolidates in downtrend, eyes $3,980 resistance: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/gold-in-oversold-freefall-tests-key-support-live-levels-93CH-4990025",
-                "source": "Investing.com",
-                "date": "2026-11-03 07:10",
-                "description": "",
-                "_timestamp": 1793689808.0
-            },
-            {
-                "title": "Nevada Sunrise Metals: A dawning gold and copper growth story",
-                "link": "https://investorshub.advfn.com/market-news/article/38916/nevada-sunrise-metals-a-dawning-gold-and-copper-growth-story?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 08:00",
-                "description": "From a bird’s eye view, investing in commodities carries two primary value propositions, one tied to psychology, the other to industrial utility, each of which can support long-term portfolio growth. From a psychological perspective, commodities offer the potential to protect your portfolio from inflation and geopolitical instability, with gold differentiating itself as the asset of choice for these purposes thanks to its scarcity and millennia-spanning association with luxury.",
-                "_timestamp": 1793692800.0
-            },
-            {
-                "title": "Where Does i-80 Gold (TSX:IAU) Valuation Sit As Q3 2026 Results Raise New Questions?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/where-does-80-gold-tsx-070714062.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 07:07",
-                "description": "Why the latest i-80 Gold earnings matter for shareholders i-80 Gold (TSX:IAU) has just put fresh numbers on the table, releasing third quarter 2026 results that combine higher reported sales with a deeper net loss and ongoing mine development spending. Recent trading has been choppy. The share price has slid to CA$1.93, with a 1 month share price return of down 16.09% and a 7 day share price return of down 6.76%. However, the 1 year total shareholder return of 46.21% signals that longer term...",
-                "_timestamp": 1793689634.0
-            },
-            {
-                "title": "i-80 Gold (TSX:IAU) Keeps Archimedes On Track For Year End 2026 Production",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/80-gold-tsx-iau-keeps-051223502.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 05:12",
-                "description": "i-80 Gold (TSX:IAU) reaffirmed that first underground mining production from the Archimedes project is targeted by year-end 2026. The company declared maiden mineral reserves at its Granite Creek property, providing a new reserve base for the Nevada portfolio. Management outlined an updated development strategy that prioritizes Archimedes and Granite Creek within the broader project pipeline. The Archimedes start-up and new Granite Creek reserves matter, but investors should weigh them...",
-                "_timestamp": 1793682743.0
-            },
-            {
-                "title": "Is B2Gold (TSX:BTO) Still Cheap Based On Its Earnings?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/b2gold-tsx-bto-still-cheap-012014111.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 01:20",
-                "description": "B2Gold has given long term holders a strong 63.1% gain over the past three years, yet that rise leaves a simple question for anyone looking at the ticker today. Is the current share price, around C$6.68 at the last close, adequately grounded in the mining group’s earnings profile? The 63.1% return over three years puts real weight on whether the earnings that supported that journey can still justify today’s valuation. The business depends heavily on converting gold production into consistent...",
-                "_timestamp": 1793668814.0
-            },
-            {
-                "title": "Is Equinox Gold (TSX:EQX) Reasonable, Or Are Earnings Looking Stretched?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/equinox-gold-tsx-eqx-reasonable-231313873.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-02 23:13",
-                "description": "Equinox Gold has given long term holders a striking 3 year run, yet the recent pullback and shifting sector mood raise a sharper question about whether the current share price lines up with the earnings that support it. With gold miners under pressure since the Iran conflict and gold prices softening, investors are again asking how much earnings power this stock is really pricing in. Over the past 3 years Equinox Gold has delivered a 114.0% return, which puts a lot of accumulated optimism on...",
-                "_timestamp": 1793661193.0
-            },
-            {
-                "title": "i-80 Gold Reports Third Quarter 2026 Results; Archimedes Underground on Track to Begin Production Mining by Year-End",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/80-gold-reports-third-quarter-225300243.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-02 22:53",
-                "description": "i-80 GOLD CORP. (NYSE:IAUX) (TSX:IAU) (\"i-80 Gold\" or the \"Company\") reports its financial and operating results, as well as development highlights, for the three and nine months ended September 30, 2026.",
-                "_timestamp": 1793659980.0
-            },
-            {
-                "title": "Central Banks Buy Gold at Fastest Pace Since 2024, WGC Says",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/central-banks-buy-gold-fastest-060000481.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 06:00",
-                "description": "Central banks bought gold at the fastest pace since the end of 2024 in the third quarter, even as the metal faced pressure from higher oil prices and interest rates.",
-                "_timestamp": 1793685600.0
-            },
-            {
-                "title": "Central Banks Buy Gold at Fastest Pace Since 2024, WGC Says",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/central-banks-buy-gold-fastest-060000481.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 06:00",
-                "description": "Central banks bought gold at the fastest pace since the end of 2024 in the third quarter, even as the metal faced pressure from higher oil prices and interest rates.",
-                "_timestamp": 1793685600.0
-            },
-            {
-                "title": "Gold Falls Below $3,950 as Precious Metals Weaken Ahead of US Midterm Elections",
-                "link": "https://investorshub.advfn.com/market-news/article/39112/gold-falls-below-3950-as-precious-metals-weaken-ahead-of-us-midterm-elections?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 10:14",
-                "description": "Gold prices declined on Tuesday as renewed selling across precious metals erased part of the previous session’s recovery, while investors assessed developments in US-Iran peace negotiations, inflation expectations and the upcoming US midterm elections. Spot gold fell 0.",
-                "_timestamp": 1793700860.0
-            },
-            {
-                "title": "Heliostar Metals Stock And The Road To 500,000 Ounces Of Gold",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/heliostar-metals-stock-road-500-115702833.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 11:57",
-                "description": "This gold mining stock is not just targeting growth, but a tenfold increase in production.",
-                "_timestamp": 1793707022.0
-            },
-            {
-                "title": "Gold price today, Tuesday, November 3, 2026: Gold prices open below $4,000 for the second straight day",
-                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-tuesday-november-3-2026-gold-prices-open-below-4000-for-the-second-straight-day-123207114.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 12:32",
-                "description": "Gold futures opened at $3,960.50 per troy ounce on Tuesday, November 3, 2026, down 0.2% from Monday's closing price. Gold slipped further in early trading to $3,910.60 as of 7:20 a.m. ET.",
-                "_timestamp": 1793709127.0
-            },
-            {
-                "title": "Gold price today, Tuesday, November 3, 2026: Gold prices open below $4,000 for the second straight day",
-                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-tuesday-november-3-2026-gold-prices-open-below-4000-for-the-second-straight-day-123207114.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 12:32",
-                "description": "Gold futures opened at $3,960.50 per troy ounce on Tuesday, November 3, 2026, down 0.2% from Monday's closing price. Gold slipped further in early trading to $3,910.60 as of 7:20 a.m. ET.",
-                "_timestamp": 1793709127.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Gold prices traded below $4,000, sliding further into the $3,900-$3,950 range amid renewed selling pressure across precious metals ahead of the US midterm elections and ongoing US-Iran peace negotiations assessments [Yahoo Finance Gold]. Meanwhile, the World Gold Council (WGC) reported that central banks purchased gold at the fastest pace since late 2024 during Q3 [Yahoo Finance Gold].",
-            "Uncertainties": "The exact outcome and timing of the US midterm elections, the final terms of US-Iran peace developments, and whether retail long liquidation at 71.1% will accelerate the downside toward lower liquidity magnets.",
-            "Macro_Context": "The US dollar is strengthening (EUR/USD down 0.29%), creating a direct headwind for gold. Treasury yields are relatively stable, and Brent crude is lower by 3.45%, reducing energy-driven inflation fears. OANDA retail sentiment remains heavily long at 71.1%, signaling a contrarian downward vulnerability.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 62,
-            "Past_Price_Action_Cause": "The 4h/24h price action shows gold recovering slightly to $3934.85 with a 4h move vs daily ATR ratio of 0.47x, indicating the move is not yet exhausted but ongoing under strong macro headwinds and heavy retail long positioning.",
-            "Orderflow_Price_Target": "3909.23"
         }
     },
     {
@@ -1478,201 +1940,6 @@
             "Probability_Percent": 40,
             "Past_Price_Action_Cause": "The news regarding biosphere reserves is non-financial and irrelevant to precious metals pricing. Gold's recent price action shows a corrective drift downwards from earlier highs, with a 4h move vs daily ATR ratio of 0.02x, indicating normal minor market fluctuations completely unrelated to the report.",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-03 11:22",
-        "original_date": "2026-11-03 08:18",
-        "_timestamp": 1793704921.0,
-        "articles": [
-            {
-                "title": "Oil rises as peace prospects dim after US hits Iran’s Qeshm Island",
-                "link": "https://www.investing.com/news/commodities-news/oil-rises-after-report-of-us-strike-on-irans-qeshm-island-4993342",
-                "source": "Investing.com",
-                "date": "2026-11-03 08:18",
-                "description": "",
-                "_timestamp": 1793693914.0
-            },
-            {
-                "title": "Crude Oil WTI trapped between 200 SMA and cloud: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/crude-oil-wti-consolidates-at-cloud-support-near-101-live-93CH-4990026",
-                "source": "Investing.com",
-                "date": "2026-11-03 07:10",
-                "description": "",
-                "_timestamp": 1793689827.0
-            },
-            {
-                "title": "London Gas Oil tests resistance cluster at $1440-1460: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/london-gas-oil-consolidates-below-key-mas-live-levels-93CH-4990029",
-                "source": "Investing.com",
-                "date": "2026-11-03 07:10",
-                "description": "",
-                "_timestamp": 1793689824.0
-            },
-            {
-                "title": "Brent Oil breaks below cloud after Double Top: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/brent-oil-breaks-below-ichimoku-cloud-at-110-live-levels-93CH-4990027",
-                "source": "Investing.com",
-                "date": "2026-11-03 07:10",
-                "description": "",
-                "_timestamp": 1793689811.0
-            },
-            {
-                "title": "Gold holds near $3,950 as Iran peace hopes ease oil, U.S. vote in focus",
-                "link": "https://www.investing.com/news/commodities-news/gold-holds-near-3950-as-iran-peace-hopes-ease-oil-us-vote-in-focus-4993318",
-                "source": "Investing.com",
-                "date": "2026-11-03 06:10",
-                "description": "",
-                "_timestamp": 1793686247.0
-            },
-            {
-                "title": "Gold holds near $3,950 as Iran peace hopes ease oil, U.S. vote in focus",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-holds-near-3-950-013615439.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 01:36",
-                "description": "Investing.com -- Gold prices fell on Tuesday, giving back ground after earlier rebound as renewed selling across precious metals kept bullion under pressure, with spot gold slipping below $3,950 an ounce.",
-                "_timestamp": 1793669775.0
-            },
-            {
-                "title": "Stocks mostly down on AI concerns as oil prices bounce after plunge",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-mostly-down-ai-concerns-025549205.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 08:22",
-                "description": "Asian stock markets struggled Tuesday following another AI-fuelled tech selloff on Wall Street that overshadowed a possible breakthrough in talks to end the Middle East war.After a tough run last week, the selling continued at the start of this week with losses in Asian giants followed by their US counterparts on Wall Street where the Nasdaq ended 1.1 percent off.",
-                "_timestamp": 1793694146.0
-            },
-            {
-                "title": "Australian, Chinese airline stocks jump as oil prices plunge more than 7%",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/australian-chinese-airline-stocks-jump-054914130.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 05:49",
-                "description": "Investing.com -- Airline stocks in Australia and China rallied on Tuesday as a sharp overnight decline in oil prices eased concerns over aviation fuel costs, offering relief to carriers that have faced mounting pressure from elevated energy prices.",
-                "_timestamp": 1793684954.0
-            },
-            {
-                "title": "Tech losses weigh on global markets ahead of US midterm elections, while oil prices rise",
-                "link": "https://finance.yahoo.com/markets/world-indices/articles/asian-shares-mixed-tech-losses-035100041.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 03:51",
-                "description": "HONG KONG (AP) — World shares fell and U. futures also declined Tuesday as investors awaited the outcome of the U.",
-                "_timestamp": 1793677860.0
-            },
-            {
-                "title": "Saudi Aramco profits jump 35% despite attacks on oil facilities",
-                "link": "https://www.euronews.com/2026/11/03/saudi-aramco-profits-jump-35-despite-attacks-on-oil-facilities?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 07:11",
-                "description": "Higher oil prices and a joint venture sale lifted the Saudi giant’s earnings, even as disrupted exports and prolonged conflict weighed on the kingdom’s economy.View on euronews",
-                "_timestamp": 1793689896.0
-            },
-            {
-                "title": "Aramco shares flat as Q3 profit meets expectations, output rebounds",
-                "link": "https://finance.yahoo.com/energy/articles/aramco-q3-profit-rises-more-061301506.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 06:13",
-                "description": "Investing.com -- Saudi Aramco shares were little changed on Tuesday, last down 0.08%, after the world’s largest oil company reported third-quarter profit that was broadly in line with expectations as a rebound in output and exports offset lower realised prices.",
-                "_timestamp": 1793686381.0
-            },
-            {
-                "title": "3 Oil And Gas Stocks With Cash Flow Tied To Higher Energy Prices",
-                "link": "https://finance.yahoo.com/energy/articles/3-oil-gas-stocks-cash-081013039.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 08:10",
-                "description": "Oil markets have snapped back into the spotlight after Saudi Aramco posted a 34.6% YoY jump in Q3 profit, while conflict and shipping disruptions tighten supply and keep geopolitics front and center. That mix of fatter sector earnings and higher risk has real consequences for portfolios. This article walks through three global integrated majors most exposed to these headlines and explains how the current backdrop could help or hurt each stock. The three stocks below are a first pass. The full...",
-                "_timestamp": 1793693413.0
-            },
-            {
-                "title": "Can the world withstand another winter of war?",
-                "link": "https://www.middleeasteye.net/opinion/can-world-withstand-another-winter-war",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 08:15",
-                "description": "Can the world withstand another winter of war?\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMarco Carnelos\n on \nMon, 11/02/2026 - 17:47\n\n        \n      \n    \n      \n    \n                Amid ongoing conflicts in Ukraine and Iran, economic pressures are soaring around the globe\n                      \n                  \n                  \n\n  \n\n\n                  High gas prices are displayed at a Shell station in Burbank, California, on 11 May 2026 (Mario Tama/Getty Images/AFP)\n                  Off\n                  Almost five years after the Russian invasion of Ukraine scrambled Europe’s energy map, another war has delivered a second shock.&nbsp;\n\nSince the US-Israeli war on Iran began this past February, the Strait of Hormuz, through which about a fifth of the world’s oil normally flows, has been closed or contested, while Ukraine’s drone campaign against Russian refineries has removed more fuel from an overstretched market.&nbsp;\n\nIncreased energy prices feed inflation, forcing central banks to tighten monetary policy, while fiscal anxiety pushes up sovereign bond yields, inflating debt service. The final squeeze arrives in supply chains and households, and then in the streets and at the ballot boxes.\n\nIn other words, it is a perfect storm - the mother of all perfect storms.&nbsp;\n\nWe are seeing a clear example of historian Adam Tooze’s polycrisis concept: a situation where multiple, distinct crises overlap, amplifying their collective effects.\n  \n    \n\n\n\n  \n\n\n\nThe Iran war is the larger shock. Within days of its start, Brent crude jumped almost 19 percent to nearly $111 a barrel, from about $70 before the war. Washington called it “a very small price to pay” for security.&nbsp;\n\nAfter some ups and downs over the summer, oil was at $117 late last month. The International Energy Agency has called it the worst energy crisis in history. Even EU chief Ursula von der Leyen, the queen of denial, acknowledged “a regional conflict with unintended consequences”.&nbsp;\n\nTalks and periods of ceasefire have not normalised energy flows. The EU Commission has warned of a prolonged supply shock, which could involve forced cuts to fuel consumption before winter.\n\nWeak point\n\nTo make a bad situation worse, the Houthis’ control over Yemen’s Red Sea shores has endangered another chokepoint, the Bab el-Mandeb Strait, with serious repercussions for maritime logistics.\n\nCompounding this, Ukraine’s attacks on Russian refineries have pushed Moscow into unprecedented export bans at the worst possible time, with the Iran war having already drained inventories.&nbsp;\n\nEurope no longer buys Russian diesel directly, but Russia’s former customers now compete for the same alternative cargoes. Hormuz drives most of the disruption, and the Russia-Ukraine war compounds it; together, they strike at the same weak point - a European continent that imports almost all of its fossil fuels.\n\n\nGovernments in Paris, Rome and elsewhere have less fiscal space to compensate the public - and the combination of austerity and inflation is historically combustible\n\n\nThe inevitable outcome has been inflation in the EU, which reached 3.8 percent in September, up from 3.2 percent in August - significantly higher than the rate of 2.6 percent a year prior.&nbsp;Food prices have also soared, fuelling widespread public anger in European cities.&nbsp;\n\nThe European Central Bank’s president, Christine Lagarde, warned this summer that “the full inflationary impact of the energy shock has yet to play out”.&nbsp;\n\nRaising interest rates against a supply shock does nothing for commodity supplies, but it increases financing costs at exactly the moment when governments are being asked to cushion households.\n\nThe bond market has noticed, with the yield on 30-year US Treasury bonds exceeding five percent this year, as national debt rose past $40 trillion and annual interest payments over $1 trillion for the first time.\n\nIn the UK, 30-year yields recently hit six percent, the first time a G7 member had faced such rates since the 2012 eurozone crisis.&nbsp;\n\nFrance is at the epicentre of this crisis. Its bond yields stood at 4.85 percent in mid-October, near their highest levels in more than two decades, with EU officials urging Paris to present a credible budget.\n\nFrench debt service is projected at about €59 billion ($66bn) this year, compared with roughly €30 billion for Germany, and Italy must roll over debt worth 17 percent of GDP in 2026.\n  \n    \n\n\n\n  \n\n\n\nRatchet turning\n\nThis is not yet a replay of the 2011 economic crisis. Earlier in the war, analysts noted that Italian, Spanish and Greek yields stood below their 2022-23 peaks, because those countries had cut primary deficits.&nbsp;\n\nIt’s important to note that debt offices feel higher yields only as maturing paper is replaced - so the bill grows with every auction, rather than arriving all at once.&nbsp;\n\nIn economic jargon, it’s a ratchet, and each turn leaves less budgetary room for governments to offer the relief that angry households are demanding - even as these same governments continue to spend billions on arming Ukraine and launching unprecedented weapons procurement programmes.&nbsp;\n\n\n\nDire social consequences arrived last month. In France, hundreds of thousands of people joined demonstrations that began as student protests over education, and widened into cost-of-living grievances. In Belgium, police clashed with protesters in Brussels, while tens of thousands of people marched in Lisbon, Portugal, over living costs, low wages and housing. Large and violent demonstrations were also reported in Italy.&nbsp;\n\nThere does not seem to be a single Europe-wide movement, or at least not yet. Situations and demands differ by country, but ongoing economic shocks have served as an accelerant.&nbsp;\n\nFrance’s presidential election and Italy’s general election are both due next year, while Spain faces a snap election this month. EU governments are weighing support for vulnerable households, but disputes over the €2 trillion EU budget risk blocking decisions.&nbsp;\n\nWith debt service rising, governments in Paris, Rome and elsewhere have less fiscal space to compensate the public - and the combination of austerity and inflation is historically combustible.\n\nUS midterms\n\nThe same energy shocks are now testing Donald Trump in Tuesday’s midterm elections, with the US president’s approval rating at a record low. About seven in 10 Americans say gasoline has become unaffordable, with the national average price above $4 a gallon for a record 158 days this year.&nbsp;\n\nTrump’s partial or total defeat - losing only the House, or losing both the House and the Senate - could trigger another constitutional crisis, like the one that occurred on 6 January 2021, with Trump and his supporters refusing to accept a negative result.&nbsp;\n\nThis all seems like a single feedback loop, rather than separate crises. A war of choice against Iran, backed by a US naval blockade, disrupts the Gulf; the price is paid first by importers in Europe and Asia, and then by American drivers; central banks respond with higher rates; bond markets reprice the debts of the most exposed states; and governments with shrinking fiscal space face electorates that have lost patience.&nbsp;\n\n\n  \n\n  The resilience of the world economy is built on illusion - it's time the West woke up\n    Read More »\n\n\nThe irony is that two crises aimed at inflicting a strategic defeat, and ideally regime change, in both Russia and Iran, have blown up in the faces of western liberal democracies, which are facing unbearable and dangerous costs.&nbsp;\n\nWhile Treasury Secretary Scott Bessent has unsuccessfully tried to reduce US bond yields, further fuelling investors’ concerns, Trump has been scrambling to find a way to end the conflict in Ukraine, aiming to better focus on his war against Iran after the midterms. It is not clear yet whether Russia, Iran, and above all China will allow him such room for maneuver.&nbsp;\n\nSeveral crucial issues must now be monitored closely for developments, including the outcome of Israel’s elections, which resulted in a deadlock last week; will the incoming government continue to bamboozle the US into waging an unnecessary war against Iran?\n\nOngoing European economic negotiations will also be vital to watch, alongside the outcome of Tuesday’s US midterm vote and the impacts on markets and investments. In addition, what happens next in relation to the chokepoints at Hormuz and Bab el-Mandeb will be crucial: if commodity flows normalise, prices could drop within months, and the storm may lose its force.&nbsp;\n\nIf not, winter will be the next stress test - and it is fast approaching.\n\nThe views expressed in this article belong to the author and do not necessarily reflect the editorial policy of Middle East Eye.\n\n                  Economy\n                  Opinion\n        \n    Post Date Override\n              0\n          \n  \n    Update Date\n              Mon, 05/04/2020 - 21:29\n\n          \n  \n    Update Date Override\n              0",
-                "_timestamp": 1793693708.0
-            },
-            {
-                "title": "Oil prices rise after report of US aggression",
-                "link": "https://en.mehrnews.com/news/249119/Oil-prices-rise-after-report-of-US-aggression",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 03:40",
-                "description": "TEHRAN, Nov. 03 (MNA) – Oil prices rose in early trade on Tuesday following a report that the US has launched drones toward Iran’s Qeshm Island.",
-                "_timestamp": 1793677259.0
-            },
-            {
-                "title": "Goldman lifts natural gas price forecasts on supply, weather uncertainty",
-                "link": "https://www.investing.com/news/commodities-news/goldman-lifts-natural-gas-price-forecasts-on-supply-weather-uncertainty-4994177",
-                "source": "Investing.com",
-                "date": "2026-11-03 10:09",
-                "description": "",
-                "_timestamp": 1793700561.0
-            },
-            {
-                "title": "Saudi Aramco Profit Beats Expectations as Oil Prices Soar",
-                "link": "https://finance.yahoo.com/energy/articles/saudi-aramco-profit-beats-expectations-094500766.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 09:45",
-                "description": "Saudi Aramco's third-quarter adjusted profit rose 9% to $31.2 billion as higher oil prices and surging refining margins offset supply disruptions.",
-                "_timestamp": 1793699100.0
-            },
-            {
-                "title": "Oil rises after reported U.S. strike on Iran’s Qeshm Island dents peace hopes",
-                "link": "https://www.investing.com/news/commodities-news/oil-rises-after-reported-us-strike-on-irans-qeshm-island-4993349",
-                "source": "Investing.com",
-                "date": "2026-11-03 10:41",
-                "description": "",
-                "_timestamp": 1793702473.0
-            },
-            {
-                "title": "Oil Prices Rebound as US Strike on Iran’s Qeshm Island Dims Prospects for Peace Agreement",
-                "link": "https://investorshub.advfn.com/market-news/article/39110/oil-prices-rebound-as-us-strike-on-irans-qeshm-island-dims-prospects-for-peace-agreement?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 10:09",
-                "description": "Oil prices climbed more than $1 per barrel on Tuesday, 3 November, as renewed military activity in the Middle East and comments from Iranian officials reduced expectations of an imminent agreement to end the conflict involving Iran, the United States and Israel. US West Texas Intermediate (WTI) crude futures rose $1.",
-                "_timestamp": 1793700586.0
-            },
-            {
-                "title": "What Republican or Democratic Success Means for Oil Prices",
-                "link": "https://finance.yahoo.com/m/0530bf87-581a-3f34-882c-08e8e5dbf913/what-republican-or-democratic.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 09:25",
-                "description": "If Republicans retain control of Congress, that could mean more upside risks to oil prices as the U.S. administration would face fewer political obstacles in carrying out foreign policy, said Ipek Ozkardeskaya, senior analyst at Swissquote.",
-                "_timestamp": 1793697933.0
-            },
-            {
-                "title": "Nordic American Tankers Ltd (NYSE: NAT) – Very strong market continues",
-                "link": "https://finance.yahoo.com/energy/articles/nordic-american-tankers-ltd-nyse-110700949.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 11:07",
-                "description": "Tuesday, November 3, 2026 Dear Shareholders and Investors, We are pleased to inform you that the very strong market for our ships continue. We enter into contracts at historically high level, which have not been seen earlier. Now the price of oil goes down. This in an advantage for Nordic American. The lower the oil price, the higher oil consumption. In the final analysis, the most important element in tanker economics is the concept of ton mile. The longer distance oil is being transported, the",
-                "_timestamp": 1793704020.0
-            },
-            {
-                "title": "Higher oil prices boost Saudi Aramco profits despite disruption from attacks",
-                "link": "https://finance.yahoo.com/energy/articles/higher-oil-prices-boost-saudi-110249565.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 11:02",
-                "description": "FRANKFURT, Germany (AP) — Majority state-owned oil company Saudi Aramco on Tuesday reported a 35% increase in third-quarter net profit as earnings were boosted by higher oil prices and the sale of its stake in a Malaysian refining and petrochemical company.9 billion in the year-earlier quarter.",
-                "_timestamp": 1793703769.0
-            },
-            {
-                "title": "Goldman Raises Oil Price Forecast for December as War Risks Cloud 2027 Outlook",
-                "link": "https://www.ibtimes.com/goldman-sachs-raises-oil-price-forecasts-geopolitical-risks-3809286?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 11:22",
-                "description": "The investment bank now expects Brent crude, the international benchmark, to reach $105 a barrel in December, up from its previous forecast of $90.",
-                "_timestamp": 1793704921.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Oil prices rose following reports that the US launched drones toward Iran's Qeshm Island, dimming peace prospects and raising supply disruption concerns. Simultaneously, Saudi Aramco reported a strong Q3 profit beat driven by higher oil prices, while global markets faced pressure from ongoing geopolitical conflicts and US midterm election uncertainties [Investing.com, Yahoo Finance Oil].",
-            "Uncertainties": "The exact extent of military escalation around the Strait of Hormuz and Bab el-Mandeb chokepoints remains fluid, alongside the direct policy outcomes of the US midterm elections and how they might alter foreign policy and energy strategies.",
-            "Macro_Context": "The US dollar is strengthening (EUR/USD down 0.31%), which acts as a traditional headwind for gold, while 10-year Treasury yields remain relatively stable. Brent oil remains elevated despite a slight 24h pullback. OANDA retail positioning shows heavy long bias (70.5%), increasing vulnerability to long liquidations.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "Gold has pulled back toward the $3,905 area after failing to sustain earlier highs above $3,960. The 4h ATR ratio is low (0.02x), showing the immediate move is not overextended, but broader precious metals selling and USD strength are currently keeping bullion under pressure.",
-            "Orderflow_Price_Target": "3879.62"
         }
     },
     {

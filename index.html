@@ -15,18 +15,44 @@
         .tab-content { display: none; padding: 0 20px; }
         .tab-content.active { display: block; }
 
-        h1 { text-align: center; color: #1e293b; margin: 20px 0 5px 0; }
-        .sub-header { text-align: center; color: #64748b; font-size: 0.9em; margin-bottom: 20px; }
+        h1 { text-align: center; color: #1e293b; margin: 15px 0 5px 0; }
+        .sub-header { text-align: center; color: #64748b; font-size: 0.9em; margin-bottom: 15px; }
+
+        /* Top Macro & Performance Bar */
+        .intel-bar {
+            max-width: 900px;
+            margin: 0 auto 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .intel-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 10px 14px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+            border-top: 3px solid #3b82f6;
+            font-size: 0.85em;
+        }
+        .intel-title { color: #64748b; font-weight: bold; text-transform: uppercase; font-size: 0.75em; margin-bottom: 4px; }
+        .intel-value { font-weight: 700; color: #1e293b; font-size: 1.05em; }
         
         /* Chart Container */
         #chart-container {
             max-width: 900px;
             height: 480px;
-            margin: 0 auto 30px auto;
+            margin: 0 auto 15px auto;
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             overflow: hidden;
+        }
+        .chart-legend {
+            max-width: 900px;
+            margin: 0 auto 25px auto;
+            text-align: center;
+            font-size: 0.82em;
+            color: #64748b;
         }
 
         /* Controls & Cards */
@@ -50,7 +76,16 @@
 
         #news-container { max-width: 900px; margin: 0 auto; }
         .news-card { background-color: #fff; border-radius: 8px; border-left: 6px solid #eab308; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .date-header { color: #888; font-size: 0.9em; margin-bottom: 15px; }
+        .card-top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 8px; }
+        .date-header { color: #888; font-size: 0.9em; }
+        
+        /* Evaluation Badges */
+        .eval-badge { padding: 4px 10px; border-radius: 12px; font-size: 0.78em; font-weight: bold; }
+        .eval-hit { background-color: #dcfce7; color: #166534; border: 1px solid #86efac; }
+        .eval-active { background-color: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
+        .eval-miss { background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+        .eval-pricedin { background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+
         .summary-box { background-color: #f8f9fa; border-radius: 6px; padding: 15px; margin-bottom: 20px; border: 1px solid #eef0f2; }
         .summary-label { font-weight: bold; margin-bottom: 10px; }
         .structured-data { margin-bottom: 12px; line-height: 1.5; }
@@ -71,11 +106,35 @@
     </div>
 
     <h1>Financial & Gold Aggregator</h1>
-    <div class="sub-header">Multi-Sourced Intelligence: Global Macro & Middle East Regional Orderflow</div>
+    <div class="sub-header">Multi-Sourced Intelligence: Global Macro, ATR Exhaustion & Orderflow Dominance</div>
+
+    <!-- TOP INTEL BAR (Sentiment, Macro, Volatility, Winrate) -->
+    <div class="intel-bar">
+        <div class="intel-card" style="border-top-color: #10b981;">
+            <div class="intel-title">OANDA Retail Sentiment</div>
+            <div class="intel-value" id="ui-sentiment">Lade...</div>
+        </div>
+        <div class="intel-card" style="border-top-color: #f59e0b;">
+            <div class="intel-title">4h Change / Tages-ATR</div>
+            <div class="intel-value" id="ui-volatility">Lade...</div>
+        </div>
+        <div class="intel-card" style="border-top-color: #6366f1;">
+            <div class="intel-title">Makro (24h: EUR/USD | 10Y | Öl)</div>
+            <div class="intel-value" id="ui-macro">Lade...</div>
+        </div>
+        <div class="intel-card" style="border-top-color: #ec4899;">
+            <div class="intel-title">KI-Trefferquote (&ge;67% Setups)</div>
+            <div class="intel-value" id="ui-winrate">Lade...</div>
+        </div>
+    </div>
 
     <!-- CHART TAB -->
     <div id="chart-tab" class="tab-content active">
         <div id="chart-container"></div>
+        <div class="chart-legend">
+            🟢 <strong>Grüne Linie (Netto-BUY Zone):</strong> Überhang an Kauforders / Long-Liquidität &nbsp;|&nbsp;
+            🔴 <strong>Rote Linie (Netto-SELL Zone):</strong> Überhang an Verkaufsorders / Widerstandsmauer
+        </div>
     </div>
 
     <!-- NEWS TAB -->
@@ -113,7 +172,6 @@
     <script>
         let allClusters = [];
 
-        // Relevanz-Keywords
         const IMPACT_KEYWORDS = [
             "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
             "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
@@ -122,7 +180,6 @@
             "inflation", "rate", "central bank", "brics", "dollar", "treasury", "tariff", "saudi"
         ];
 
-        // Quellenzuordnungen & Bias-Hinweise
         const SOURCE_META = {
             "Zawya": { region: "Middle East", bias: "Golf-Ökonomie / VAE" },
             "Arab News": { region: "Middle East", bias: "Saudi-Arabien / OPEC+ Fokus" },
@@ -148,7 +205,7 @@
         }
 
         // ==========================================
-        // 1. CHART LADEN
+        // 1. CHART & MAKRO-LEISTE LADEN
         // ==========================================
         async function loadChart() {
             const container = document.getElementById('chart-container');
@@ -159,6 +216,32 @@
                     return;
                 }
                 const data = await response.json();
+
+                // Sentiment Anzeige aktualisieren
+                if (data.sentiment) {
+                    document.getElementById('ui-sentiment').innerHTML = 
+                        `<span style="color:#16a34a;">${data.sentiment.long_pct}% Long</span> / <span style="color:#dc2626;">${data.sentiment.short_pct}% Short</span>`;
+                }
+
+                // Volatilität & ATR Anzeige aktualisieren
+                if (data.volatility && data.volatility.est_daily_atr) {
+                    const chg = data.volatility.change_4h || 0;
+                    const ratio = data.volatility.move_to_daily_atr_ratio || 0;
+                    const warn = ratio >= 1.2 ? " ⚠️ (Reif)" : "";
+                    document.getElementById('ui-volatility').innerText = 
+                        `${chg >= 0 ? '+' : ''}$${chg} | ATR: $${data.volatility.est_daily_atr} (${ratio}x${warn})`;
+                } else {
+                    document.getElementById('ui-volatility').innerText = "N/A";
+                }
+
+                // Makro-Korrelationen anzeigen
+                if (data.macro) {
+                    const eur = data.macro.EUR_USD ? `${data.macro.EUR_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.EUR_USD.change_24h_pct}%` : '--';
+                    const us10 = data.macro.USB10Y_USD ? `${data.macro.USB10Y_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.USB10Y_USD.change_24h_pct}%` : '--';
+                    const bco = data.macro.BCO_USD ? `${data.macro.BCO_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.BCO_USD.change_24h_pct}%` : '--';
+                    document.getElementById('ui-macro').innerText = `${eur} | ${us10} | ${bco}`;
+                }
+
                 if (!data.candles || data.candles.length === 0) return;
 
                 let sortedCandles = data.candles.sort((a, b) => a.time - b.time);
@@ -188,13 +271,17 @@
 
                 if (data.orderbook) {
                     data.orderbook.forEach((level, index) => {
+                        const isBuyDom = level.dominance === "BUY";
+                        const lineColor = isBuyDom ? '#16a34a' : '#dc2626';
+                        const domTag = level.dominance ? ` ${level.dominance}` : '';
+
                         candleSeries.createPriceLine({
                             price: level.price,
-                            color: '#eab308',
+                            color: lineColor,
                             lineWidth: 2,
                             lineStyle: LightweightCharts.LineStyle.Dashed,
                             axisLabelVisible: true,
-                            title: `OANDA L${index + 1} (${level.volume.toFixed(2)}%)`
+                            title: `L${index + 1}${domTag} (${level.volume.toFixed(2)}%)`
                         });
                     });
                 }
@@ -204,7 +291,30 @@
         }
 
         // ==========================================
-        // 2. NEWS ANALYSE & FILTER
+        // 2. PERFORMANCE STATS LADEN
+        // ==========================================
+        async function loadStats() {
+            try {
+                const res = await fetch('performance_stats.json?t=' + new Date().getTime());
+                if (!res.ok) {
+                    document.getElementById('ui-winrate').innerText = "Noch keine Daten";
+                    return;
+                }
+                const stats = await res.json();
+                if (stats.total_evaluated > 0) {
+                    document.getElementById('ui-winrate').innerText = 
+                        `${stats.win_rate}% (${stats.hits} Hits / ${stats.total_evaluated} Eval | ${stats.active_signals} Aktiv)`;
+                } else {
+                    document.getElementById('ui-winrate').innerText = 
+                        `0 Eval (${stats.active_signals || 0} Signale aktiv)`;
+                }
+            } catch (e) {
+                document.getElementById('ui-winrate').innerText = "In Kalibrierung...";
+            }
+        }
+
+        // ==========================================
+        // 3. NEWS ANALYSE & FILTER
         // ==========================================
         async function loadNews() {
             const container = document.getElementById('news-container');
@@ -246,18 +356,15 @@
             const requireKeywords = document.getElementById('filter-keywords').checked;
 
             let filtered = allClusters.filter(cluster => {
-                // Keyword Impact Filter
                 if (requireKeywords && !containsImpactKeyword(cluster)) {
                     return false;
                 }
 
-                // Impact-Richtung (Bullish/Bearish/Neutral)
                 if (filterImpact !== 'all') {
                     const impact = cluster.summary?.XAUUSD_Impact || '';
                     if (!impact.toLowerCase().includes(filterImpact.toLowerCase())) return false;
                 }
 
-                // Regionale Herkunft filtern
                 if (filterRegion !== 'all') {
                     const hasRegionalSource = cluster.articles.some(a => {
                         const meta = SOURCE_META[a.source] || {};
@@ -268,7 +375,6 @@
                     if (filterRegion === 'western' && hasRegionalSource) return false;
                 }
 
-                // Relevanz-Schwelle (>= 67%)
                 if (filterRelevance === 'tradeable') {
                     const prob = parseInt(cluster.summary?.Probability_Percent || 0);
                     const impact = cluster.summary?.XAUUSD_Impact || '';
@@ -298,19 +404,32 @@
                 const card = document.createElement('div');
                 card.className = 'news-card';
 
+                // Status-Badge für Trefferquote oder Priced-In
+                let evalBadgeHTML = '';
+                const timing = cluster.summary?.Impact_Timing || '';
+                if (cluster.eval_status === 'HIT') {
+                    evalBadgeHTML = `<span class="eval-badge eval-hit">✅ Target Hit (${cluster.summary?.Orderflow_Price_Target})</span>`;
+                } else if (cluster.eval_status === 'ACTIVE') {
+                    evalBadgeHTML = `<span class="eval-badge eval-active">⏳ Signal Aktiv (Ziel: ${cluster.summary?.Orderflow_Price_Target})</span>`;
+                } else if (cluster.eval_status === 'MISS') {
+                    evalBadgeHTML = `<span class="eval-badge eval-miss">❌ Ziel nicht erreicht</span>`;
+                } else if (timing.toLowerCase().includes('priced in') || timing.toLowerCase().includes('past')) {
+                    evalBadgeHTML = `<span class="eval-badge eval-pricedin">⚠️ Bereits eingepreist</span>`;
+                }
+
                 let summaryHTML = "";
                 if (typeof cluster.summary === 'object' && cluster.summary !== null) {
                     summaryHTML = `
                         <div class="structured-data">
                             <strong>Facts:</strong> ${cluster.summary.Facts || '-'}<br><br>
-                            <strong>Macro Context:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
+                            <strong>Macro & Sentiment Context:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
                             <strong>Uncertainties:</strong> ${cluster.summary.Uncertainties || '-'}
                         </div>
                         <div class="outlook-box">
                             <strong>XAUUSD Impact:</strong> ${cluster.summary.XAUUSD_Impact || '-'} (${cluster.summary.Probability_Percent || '0'}%)<br>
                             <strong>Timeframe:</strong> ${cluster.summary.Timeframe || '-'}<br>
                             <strong>Timing:</strong> ${cluster.summary.Impact_Timing || '-'}<br>
-                            <strong>Price Action Cause (Last 24h):</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}<br>
+                            <strong>ATR & Price Action Check (24h):</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}<br>
                             <strong>Price Target:</strong> ${cluster.summary.Orderflow_Price_Target || '-'}
                         </div>
                     `;
@@ -334,7 +453,10 @@
                 }).join('');
 
                 card.innerHTML = `
-                    <div class="date-header">${cluster.main_date || 'Unbekannt'}</div>
+                    <div class="card-top-row">
+                        <div class="date-header">${cluster.main_date || 'Unbekannt'}</div>
+                        ${evalBadgeHTML}
+                    </div>
                     <div class="summary-box">
                         <div class="summary-label">Summary:</div>
                         ${summaryHTML}
@@ -349,12 +471,14 @@
         document.addEventListener("visibilitychange", function() {
             if (document.visibilityState === 'visible') {
                 loadChart();
+                loadStats();
                 loadNews();
             }
         });
 
         // Start
         loadChart();
+        loadStats();
         loadNews();
     </script>
 </body>

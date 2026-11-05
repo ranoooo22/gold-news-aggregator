@@ -1,8 +1,488 @@
 [
     {
-        "main_date": "Erstmeldung: 2026-11-05 04:23 | Letztes Update: 2026-11-05 12:30",
+        "main_date": "Erstmeldung: 2026-11-05 13:26",
+        "original_date": "2026-11-05 13:26",
+        "_timestamp": 1793885160.0,
+        "articles": [
+            {
+                "title": "Bank of England Raises Rates for First Time Since Start of Iran War",
+                "link": "https://www.wsj.com/economy/central-banking/bank-of-england-raises-rates-for-first-time-since-start-of-iran-war-f6353d96?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 13:26",
+                "description": "The conflict has lifted energy prices, though they have fallen since the midterms raised hopes for an end to the war.",
+                "_timestamp": 1793885160.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 ~13:26 UTC (approx. 14 minutes ago)",
+            "Facts": "The Bank of England raised interest rates for the first time since the start of the Iran war, reacting to elevated energy prices driven by the conflict, though energy prices have recently declined following midterms raising hopes for an end to the war [Yahoo Finance Oil].",
+            "Uncertainties": "The exact magnitude of the rate hike and the duration of the central bank's tightening cycle remain unspecified.",
+            "Macro_Context": "EUR/USD is down 0.26% indicating a strengthening USD, acting as a headwind for gold. US 10Y Treasury bond prices are stable (-0.02%), while Brent Crude has dropped significantly (-5.18%), easing broader inflation anxieties.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold has experienced a substantial 24h gain of +$78.18, but the 4h price change is minimal (-$2.08) with a 0.03x ATR ratio, showing consolidation near $4121.78. The BoE rate hike tied to past energy shocks is largely absorbed, keeping the near-term reaction neutral.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-02 17:35 | Letztes Update: 2026-11-05 13:25",
+        "original_date": "2026-11-02 17:35",
+        "_timestamp": 1793885104.0,
+        "articles": [
+            {
+                "title": "Yemeni government forces claim gains in Lahij",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-gains-yemens",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 04:52",
+                "description": "Yemeni government forces claim gains in Lahij\n\n    \n    \n\n        \n    \n                The internationally recognised Yemeni government says its troops have recaptured positions from Houthi forces in Lahij governorate, located south-west of the country.\n\n\"Our armed forces have succeeded in recapturing positions in the al-Khazzan al-Ahmar area on the al-Nusayrah front in the al-Sawalihah sub-district of the al-Maqatirah district in northern Lahij governorate, and have repelled the terrorist Houthi militias\" the government forces' media centre said.",
+                "_timestamp": 1793681557.0
+            },
+            {
+                "title": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-army-says-it-launched-nearly-1000-operations-against-houthi",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 03:11",
+                "description": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day\n\n    \n    \n\n        \n    \n                The Yemeni army said that it launched 951 operations targeting Houthi positions over the past 24 hours as part of Operation Dawn of Yemen.\n\nArmy spokesperson Majed al-Nuzaili claimed in a post on X that the operations had \"neutralized\" around 332 Houthi field commanders and fighters.\n\nMoreover, the army claimed to have destroyed or damaged 56&nbsp;vehicles, pieces of equipment and weapons across several fronts, including Al-Jawf, Marib and Al-Bayda.",
+                "_timestamp": 1793675518.0
+            },
+            {
+                "title": "Yemeni government forces launch strikes on Houthi positions west of Taiz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-launch-strikes-houthi-positions-west-taiz",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 02:17",
+                "description": "Yemeni government forces launch strikes on Houthi positions west of Taiz\n\n    \n    \n\n        \n    \n                Forces belonging to Yemen’s internationally recognised government have carried out air strikes against Houthi positions west of Taiz.\n\nThe military spokesperson said that&nbsp;warplanes targeted the movement's military vehicles in the Jabal Habashi area, resulting in the killing of Houthi fighters.&nbsp;\n\nMeanwhile, Houthi-affiliated media reported that a strike north of Taiz targeted a plastic shoe factory, killing three and injuring eight others.&nbsp;",
+                "_timestamp": 1793672237.0
+            },
+            {
+                "title": "Israeli forces push into Quneitra, Syrian media report",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-occupation-push-quneitra-syria-syrian-media-report",
+                "source": "Middle East Eye",
+                "date": "2026-11-02 22:51",
+                "description": "Israeli forces push into Quneitra, Syrian media report\n\n    \n    \n\n        \n    \n                Israeli forces advanced into the village of al-Asbah in rural southern Quneitra with five military vehicles, Syria TV reported.\n\nAccording to Sijil, a Syrian initiative tracking Israeli violations in the country, Israeli forces committed seven violations on Monday before the latest incursion, including other incursions, checkpoints, and aircraft overflights.",
+                "_timestamp": 1793659900.0
+            },
+            {
+                "title": "Israeli forces raid multiple West Bank towns, local sources report",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
+                "source": "Middle East Eye",
+                "date": "2026-11-02 22:31",
+                "description": "Israeli forces raid multiple West Bank towns, local sources report\n\n    \n    \n\n        \n    \n                Israeli forces launched raids on several towns in the occupied West Bank late on Monday, local sources reported.\n\nAmong them are the towns of Qabatiya, south of Jenin, and the city of Qalqilya.",
+                "_timestamp": 1793658667.0
+            },
+            {
+                "title": "397 attacks on West Bankers in Oct, highest monthly total in 20 years: UN",
+                "link": "https://www.tehrantimes.com/news/531764/397-attacks-on-West-Bankers-in-Oct-highest-monthly-total-in",
+                "source": "Tehran Times",
+                "date": "2026-11-02 17:35",
+                "description": "Israeli settler attacks in the occupied West Bank reached an unprecedented level in October, with the number of incidents causing injuries or property damage exceeding all monthly totals recorded since the United Nations began monitoring them in 2006.",
+                "_timestamp": 1793640930.0
+            },
+            {
+                "title": "Saudi strikes martyr 17, wound 59 in Yemen",
+                "link": "https://en.mehrnews.com/news/249125/Saudi-strikes-martyr-17-wound-59-in-Yemen",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 04:41",
+                "description": "TEHRAN, Nov. 03 (MNA) – At least 17 Yemeni civilians were martyred and 59 wounded, most of them children, in Saudi airstrikes over the past 24 hours, Yemen's Health Ministry said.",
+                "_timestamp": 1793680901.0
+            },
+            {
+                "title": "Who are Yemen’s Giants Brigades and who do they fight for?",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/who-are-yemens-giants-brigades-and-who-do-they-fight",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 02:35",
+                "description": "Who are Yemen’s Giants Brigades and who do they fight for?\n\n    \n    \n\n        \n    \n                Yemen’s Giants Brigades have emerged as one of the most powerful forces fighting the Houthis.\n\nBuilt with UAE backing and rooted in Yemen’s southern movement, they are now fighting alongside Saudi-backed government forces in a major new offensive.\n\nSo who are the Giants Brigades, who do they actually fight for and what does their rise tell us about Yemen’s war?",
+                "_timestamp": 1793759739.0
+            },
+            {
+                "title": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/reports-strikes-saudi-led-coalition-yemens-al-bayda",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 04:10",
+                "description": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda \n\n    \n    \n\n        \n    \n                Saudi-led coalition forces have reportedly launched four air strikes in central Yemen's city of al-Bayda, according to Houthi-affiliated media.&nbsp;\n\nShelling was also reported in the&nbsp;Ghamr district of the Saada governorate.",
+                "_timestamp": 1793765431.0
+            },
+            {
+                "title": "Yemeni government forces claim control of strategic al-Jawf mountain range",
+                "link": "https://www.aljazeera.com/news/2026/11/4/yemeni-government-forces-claim-control-of-strategic-al-jawf-mountain-range?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-04 14:08",
+                "description": "The advance on al-Dahida heights, a strategic highland, comes as fighting escalates in al-Dhalea, Lahij and Taiz.",
+                "_timestamp": 1793801298.0
+            },
+            {
+                "title": "Yemeni military announces 3 ops. deep inside Saudi Arabia",
+                "link": "https://en.mehrnews.com/news/249169/Yemeni-military-announces-3-ops-deep-inside-Saudi-Arabia",
+                "source": "Mehr News Agency",
+                "date": "2026-11-04 14:04",
+                "description": "TEHRAN, Nov. 04 (MNA) –  The spokesman for the Yemeni armed forces announced three successful drone and missile operations deep inside Saudi Arabia on Wednesday.",
+                "_timestamp": 1793801053.0
+            },
+            {
+                "title": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-hits-yemen-reportedly-kill-20-people-over-past-day",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 02:00",
+                "description": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day\n\n    \n    \n\n        \n    \n                Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of&nbsp;al-Jawf, al-Bayda, Saada, and Taiz, according to&nbsp;Houthi-affiliated media.",
+                "_timestamp": 1793844008.0
+            },
+            {
+                "title": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-attack-kills-four-people-yemeni-government-forces-make-gains-al",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 23:36",
+                "description": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz\n\n    \n    \n\n        \n    \n                A ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday.\n\nYemen’s Saudi-backed government's state media reported that four others, also from the same family, were injured after their home was targeted by Houthi fighters, and number of homes nearby were also damaged.\n\nYemeni government forces said in a statement on X that they have made territorial gains in al-Jawf province, seizing several Houthi positions, and&nbsp;repelled Houthi attempts to recapture lost positions in Taiz governorate, according to a Yemeni military spokesperson.\n\n\nFootage showing the armed forces targeting Houthis terrorist militia personnel in Taiz, as part of operation Dawn of Yemen https://t.co/dWZBmGHBBo\n— Yemen Army Media (@Yemenarmyeng) November 4, 2026",
+                "_timestamp": 1793835399.0
+            },
+            {
+                "title": "A month after Yemen government offensive began, war of attrition takes hold",
+                "link": "https://www.aljazeera.com/news/2026/11/5/a-month-after-yemen-government-offensive-began-war-of-attrition-takes-hold?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-05 09:58",
+                "description": "The Houthis suffer losses but also inflict pain on government forces and Saudi Arabia.",
+                "_timestamp": 1793872698.0
+            },
+            {
+                "title": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-air-strikes-reported-sanaa-clashes-lahj-governorate",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 13:25",
+                "description": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate\n\n    \n    \n\n        \n    \n                Houthi affiliated media is reporting air strikes targeting the Hamdan district in Sanaa.\n\nMilitary spokesman Yahya Saree said 12 people, including six children, were killed in Saudi strikes in Yemen on Wednesday, most in Taiz province.\n\nSaudi Arabia carried out 104 air strikes and missile attacks in Sanaa, Al-Jawf, Al-Bayda, Saada, Amran, Marib, Taiz and Lahij, the Ansar Allah spokesperson said.&nbsp;\n\nMeanwhile, Al Jazeera reports clashes between government forces and the Houthis on the al-Maqatra front, in the Lahij governorate.\n\nAccording to the report, government forces claim to have&nbsp;“neutralised” military vehicles and personnel in the skirmishes.\n\nAl Jazeera also reports an escalating humanitarian crisis in Taiz, where civilians are dying as a result of shelling and the ongoing siege.",
+                "_timestamp": 1793885104.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 13:25 UTC (Ongoing / Breaking within last 1 hour)",
+            "Facts": "Recent escalation in Yemen involving Saudi-led coalition air strikes targeting Sanaa, Al-Jawf, Al-Bayda, Saada, and Lahij, along with Houthi retaliatory strikes and clashes with Yemeni government forces as the offensive reaches its one-month mark [Middle East Eye, Al Jazeera English].",
+            "Uncertainties": "The exact scale of infrastructure damage to oil facilities and the potential for a wider regional spillover involving direct attacks on major energy shipping lanes remain uncertain.",
+            "Macro_Context": "EUR/USD is lower (-0.26%) indicating a strengthening USD, which acts as a direct headwind for gold. US 10Y Treasury bond prices are relatively stable, while Brent crude oil dropped significantly (-5.18%), easing broader energy-driven inflationary pressures.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "XAU/USD has already rallied strongly over the past 24 hours (+[$78.18]), but the current 4h price change is minimal (-$2.08) and the 4h move vs daily ATR ratio is a low 0.03x. While the Middle East conflict updates are ongoing, the immediate price reaction has matured and macroeconomic headwinds (stronger USD, plunging oil prices) are capping further unilateral upside, leading to a neutral near-term consolidation stance.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 13:20",
+        "original_date": "2026-11-05 13:20",
+        "_timestamp": 1793884800.0,
+        "articles": [
+            {
+                "title": "Warren Buffett trusts 2 ‘solid’ assets for his grandkids — both could pay out for years. Build generational riches now",
+                "link": "https://finance.yahoo.com/real-estate/articles/warren-buffett-trusts-2-solid-132000586.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 13:20",
+                "description": "Some of the investments he has spoken most glowingly about aren’t stocks.",
+                "_timestamp": 1793884800.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 13:20 UTC (approx. 21 minutes ago)",
+            "Facts": "Yahoo Finance published an article discussing Warren Buffett's preferred long-term generational wealth assets, which traditionally include gold or productive tangible assets [Yahoo Finance Gold].",
+            "Uncertainties": "The article is generic financial media commentary rather than breaking market-moving news or policy announcements.",
+            "Macro_Context": "EUR/USD is down 0.26% indicating a strengthening US Dollar (a headwind for gold), US 10Y Treasury yields are stable, and Brent crude is sharply lower (-5.18%), pointing to a risk-off or deflationary broader commodity tone.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Gold has gained $78.18 over the past 24 hours driven by broader technical momentum and market flows, whereas the news report is merely general editorial commentary published moments ago and has no direct causal impact.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 01:14 | Letztes Update: 2026-11-05 13:13",
+        "original_date": "2026-11-05 01:14",
+        "_timestamp": 1793884394.0,
+        "articles": [
+            {
+                "title": "3 Australian Undervalued Stocks Trading At Least 44% Below Fair Value",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-australian-undervalued-stocks-trading-011454258.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 01:14",
+                "description": "Australia just watched its oldest department store, David Jones, fall into administration, a reminder that steady cash coming in and disciplined spending matter more than glossy brand stories. When markets start questioning business models, investors often pay closer attention to companies that generate solid cash but trade below what those cash flows imply. This article walks through three Australian stocks that screen as potentially undervalued on that basis. The stocks covered below are...",
+                "_timestamp": 1793841294.0
+            },
+            {
+                "title": "Top 3 Australian Quality Stocks To Watch In November 2026",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/top-3-australian-quality-stocks-111402390.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 11:14",
+                "description": "Stronger corporate earnings are keeping global interest rates higher for longer, which makes weak balance sheets far more painful. Australian investors who favour solid profits, sensible debt levels and robust return on equity increasingly look to companies that can carry that burden without breaking a sweat. This article walks through three stocks that pass a strict quality filter built for exactly this kind of rate-driven market. The three examples below are just a sample of what screens...",
+                "_timestamp": 1793877242.0
+            },
+            {
+                "title": "3 Australian Defensive Stocks With ROE Over 20%",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-australian-defensive-stocks-roe-131314771.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 13:13",
+                "description": "Higher rates from the Bank of England have reminded investors that borrowing costs can rise and stay there. When money is no longer cheap, balance sheet strength matters far more. That is where low risk Australian leaders with solid finances come in. This article walks through a group of these steadier stocks and highlights three standouts that may help anchor a portfolio built for rougher cycles. The stocks covered below are just a starter set from this Low Risk Leaders idea, and the full...",
+                "_timestamp": 1793884394.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 01:14 UTC to 13:13 UTC (Ongoing / Breaking within last 12h)",
+            "Facts": "The provided news articles discuss general equity market commentary focusing on Australian stocks, department store administration, corporate earnings, and defensive low-risk stock picks amid higher global interest rates [Yahoo Finance Gold]. None of the articles cover macroeconomic drivers directly impacting spot gold (XAU/USD).",
+            "Uncertainties": "There are no direct geopolitical shocks or monetary policy announcements in the text; the news is exclusively stock-specific and equity-focused commentary.",
+            "Macro_Context": "EUR/USD has declined (-0.26%), indicating a strengthening USD which acts as a headwind for gold. US 10Y Treasury bond prices are relatively stable (-0.02%), while Brent Crude Oil is down significantly (-5.18%), pointing to a softer commodity complex overall.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "XAU/USD has experienced a prior upward move of roughly $78 over 24 hours, but the current news reports contain no fresh catalysts for gold, meaning the recent price action is unrelated to these specific equity articles and current momentum is flat.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 13:01",
+        "original_date": "2026-11-05 13:01",
+        "_timestamp": 1793883718.0,
+        "articles": [
+            {
+                "title": "Germany: Lawyers demand judge recusal in Ulm 5 trial after Israeli arms expert barred",
+                "link": "https://www.middleeasteye.net/news/lawyers-demand-judges-recusal-after-she-refuses-hear-expert-testimony-israeli-arms-company-ulm",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 13:01",
+                "description": "Germany: Lawyers demand judge recusal in Ulm 5 trial after Israeli arms expert barred\n\n    \n    \n\n          \n      \n      \n        Submitted by \nKatherine Hearst\n on \nThu, 11/05/2026 - 09:31\n\n        \n      \n    \n      \n    \n                Witness blocked at trial of activists alleged to have damaged Elbit Systems site developing technology used in Gaza\n                      \n                  \n                  \n\n  \n\n\n                  A protester waves a Palestinian flag outside an Elbit Systems building in Germany (Image: Shut Elbit Down Deutschland)\n                  Off\n                  A German court has rejected applications by defence lawyers to hear expert witnesses in an ongoing trial of five activists alleged to have broken into an Israeli-owned arms factory.\n\nDaniel Tatlow-Devally, Zo Hailu, Crow Tricks, Vi Kovarbasic and Leandra Rollo, who are from Germany, Spain, Ireland and the UK, were arrested on 8 September following an alleged break-in on the premises of Israeli arms firm Elbit Systems in the southwestern German city of Ulm.\n\nKnown as the “Ulm Five”, the group is accused of damaging the building's glass facade and smashing office equipment, including computers, screens and telephones.\n\nThey have been held for over a year in pretrial detention.\n\nDefence lawyers told Middle East Eye that the court has either not responded to or rejected applications to hear from expert witnesses who could give testimony on the arms company’s role in Israel’s genocide in Gaza.\n  \n    \n\n\n\n  \n\n\n\nThe legal team resorted to presenting two witnesses in person, as, under German law, a court is obliged to hear evidence from witnesses summoned by the defence if they filed an application to do so.\n\nHowever, the court can reject the application if it deems the evidence to be inadmissible.\n\nOn 14 October the defence presented weapons expert Dr Shir Hever, who could speak about the connection between the technology developed at the Ulm site and Israel’s onslaught on Gaza.\n\nAfter a day of deliberations the judge rejected the application, on the basis that the software developed at the laboratory had no connection with Israel’s offensive in Gaza.\n\n\n  \n\n  Germany: Trial of 'Ulm Five' protesters accused of Elbit break-in postponed\n    Read More »\n\n\nThe court then rejected another expert witness, international law expert Professor Isabel Feichtner, who was presented to give evidence on the genocide on 16 October.\n\nDefence lawyer Benjamin Düsberg, who represents Tatlow-Devally, described the decision as “absurd”.\n\n“The court has heard absolutely no evidence until now on this topic, so they just cannot know. And the expert was actually there to explain this connection,” he told MEE.\n\nHe added that, as a result, the defence team is submitting an application to demand Judge Kathrin Lauchstadt's recusal on the grounds of bias.\n\nSpeaking to reporters outside the court on Friday, Dusberg rejected the proceedings as “a pure show trial”.\n\nThe activists are alleged to have damaged the Tactical Data Links (TDL) laboratory housed at Elbit’s Ulm site.\n\nAlso speaking at the press conference, Hever explained that TDL is a network which allows Israeli soldiers to communicate and to share locations of targets. That information is then sent to a cloud called the Nimbus Project – produced by Amazon and Google – and then analysed by AI in order to generate mass targets.\n\n\n'The witnesses either seem to all suffer from the identical amnesia or refuse to testify by invoking the limitations on their authorisation to testify'\n\n– Nina&nbsp;Oner, defence lawyer\n\n\n“So the way that this genocide is happening in Gaza is indeed unprecedented because it can produce targets on an industrial scale,” Hever explained.\n\n“This is why the action of the five was justified,” Düsberg said, emphasising that the laboratory had “been extremely important for the conduct of this war”.\n\nHe stressed the fact that the defendants had targeted “precisely the laboratory where the technology is developed, must be taken into consideration”.\n\nDüsberg added: “The court said, 'We assume there is no connection', but without knowing anything, and they cannot, because none of their witnesses could say anything about the technical questions of the production in Ulm.”&nbsp;\n\nStuttgart's regional court told MEE in response to a request for comment that it does not comment on “the conduct of the proceedings by the presiding judge, or the behaviour of those involved in the trial”.\n\nThe court confirmed that the two witnesses presented by the defence had been rejected, and that “no decisions have yet been made” on the remaining evidence applications submitted by the team.\n\nCollective amnesia\n\nDefence lawyers and defendants’ family members told MEE that successive police witnesses had told the court they were instructed by the prosecution not to investigate Elbit Systems’ activities in relation to Israel’s genocide in Gaza.\n\nAccording to Mimi Tatlow-Golden, Tatlow-Devally’s mother, one police officer, Mr Herold, who was tasked with investigating Elbit’s finances, told the court that he had noted that 38 percent of Elbit’s profits went abroad.\n\n\n  \n\n  Jury refuses to convict seven Palestine Action defendants over Elbit raid\n    Read More »\n\n\n“He was asked if he looked to see where that was going and he said no. So he said, 'Oh, anyway, I'm not a technical expert on weapons, and I don't know anything about this. It's not my area,'” Tatlow-Golden told MEE.\n\nUnder German law, the public prosecutor is obligated to investigate both incriminating and exculpatory circumstances.\n\nDefence lawyers said that police witnesses called by the prosecution were unable to answer questions in cross-examination, citing memory loss or confidentiality.\n\n“Whenever we get to the really interesting questions, the witnesses either seem to all suffer from the identical amnesia or refuse to testify by invoking the limitations on their authorisation to testify,” lawyer Nina Oner, who represents Hailu, told MEE.\n\nOn 25 August the court heard evidence from an investigating officer from the Stuttgart State Criminal Police Office (LKA), Ms Jager. She was tasked with processing the defendants at the Ulm-Mitte police station on 8 September, where they were being held following their arrest.\n\nTatlow-Golden said that Jager told the court that she could not recall any details relating to her interactions with the defendants.&nbsp;\n  \n    \n\n\n\n  \n\n\n\n“I’ve never seen anything like it. She couldn’t remember anything,” Tatlow-Golden told MEE. “She didn’t remember what the conditions were like. She didn't remember whether they asked for lawyers, or anything like that. She didn’t remember what time anything happened. She just kept not remembering.\n\n\n'She didn't remember whether they asked for lawyers… She didn’t remember what time anything happened. She just kept not remembering'\n\n– Defendant's mother, on police officer\n\n\n“And I can only imagine that the reason that she claims not to remember anything is because she was the one who was in charge at the police station where they were held when they were supposed to have been read their rights,” Tatlow-Golden said, adding that this did not happen for 12 hours and that the five were denied access to their lawyers and contact with family.\n\nLKA told MEE in response to a request for comment that it does not comment on ongoing investigations.\n\nTatlow-Golden said that Jager could also not recall multiple attempts by the defendants’ lawyers to speak with their clients. Tatlow-Devally identified Jäger as the officer that he had kept asking to allow him a call to his lawyer and his father.\n\n\"Daniel's evidence was that Ms Jäger would just say 'later',\" Tatlow-Golden said.\n\nOner said that the defence team had repeatedly asked police witnesses about the involvement of the interior ministry or German intelligence services in the investigation.\n\n“Usually we get the answer that basically this is confidential information, and they cannot answer our questions,” Onèr told MEE.\n\n“We have been told by the witnesses that there have been meetings with the prosecutor, and that other people were involved, but we were not told who these other people were, and the only logical reason why that would be is because that is German intelligence services,” she added.\n\n                  Israel's genocide in Gaza\n                   \n                  News\n        \n    Post Date Override\n              0\n          \n  \n    Update Date\n              Mon, 05/04/2020 - 21:19\n\n          \n  \n    Update Date Override\n              0",
+                "_timestamp": 1793883718.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 13:01 UTC (Article publication; underlying trial legal filings occurred on 2026-10-14 to 2026-10-16, approx. 3 weeks ago).",
+            "Facts": "Lawyers representing the 'Ulm Five' (activists on trial in Germany for breaking into an Israeli-owned Elbit Systems arms facility) demanded the recusal of Judge Kathrin Lauchstadt after she rejected expert witness testimony from an Israeli arms expert and an international law expert concerning Elbit's technology and its connection to the Gaza conflict [Middle East Eye].",
+            "Uncertainties": "Whether the court will grant the judge recusal request, how the trial proceedings will evolve, and whether broader geopolitical tensions or legal challenges will emerge from this domestic German case.",
+            "Macro_Context": "The US dollar is experiencing a modest strengthening (EUR/USD down 0.26%), Treasury yields are stable, and Brent crude is lower (-5.18%), creating a slight macro headwind for precious metals. Global retail sentiment on OANDA remains heavily long at 71.9%, flashing a contrarian bearish caution flag.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Gold has seen a substantial prior move higher over the last 24 hours (+.18), but the 4h price change is minimal ($-2.08) with a 4h ATR ratio of 0.03x. The news regarding a German courtroom legal motion is local/niche legal commentary with negligible direct impact on global macroeconomic liquidity or physical gold supply-demand balances, and it represents follow-up reporting on past events.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 13:00",
+        "original_date": "2026-11-05 13:00",
+        "_timestamp": 1793883600.0,
+        "articles": [
+            {
+                "title": "Northern Discovery Metals Completes Acquisition of the Cibola Copper-Gold Project in British Columbia",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/northern-discovery-metals-completes-acquisition-130000598.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 13:00",
+                "description": "CALGARY, Alberta, Nov. 05, 2026 (GLOBE NEWSWIRE) -- Northern Discovery Metals Inc. (CSE: NOR) (FSE: M1V0) (“Northern Discovery” or the “Company”) is pleased to announce, further to its news release dated October 8, 2026, that it has completed the acquisition (the “Acquisition”), from Orogen Royalties Inc. (“Orogen”), of a 100% interest in the Cibola copper-gold project (“Cibola” or the “Property”) located in British Columbia, pursuant to a purchase agreement dated October 7, 2026 between the Com",
+                "_timestamp": 1793883600.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 13:00 UTC (approx. 42 minutes ago)",
+            "Facts": "Northern Discovery Metals announced the completion of its 100% interest acquisition of the Cibola copper-gold project in British Columbia from Orogen Royalties Inc., following initial agreements made in October 2026 [Yahoo Finance Gold].",
+            "Uncertainties": "The corporate acquisition is specific to a junior mining company and has no immediate quantitative or fundamental impact on global physical gold supply or macroeconomic XAU/USD valuations.",
+            "Macro_Context": "EUR/USD is down 0.26% indicating a strengthening USD which acts as a headwind for gold, while US 10Y Treasury yields remain relatively stable. OANDA retail positioning shows heavy long bias at 71.9%, serving as a contrarian bearish factor.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "The recent 24h price increase of $+78.18 is driven by broader macroeconomic trends rather than this minor corporate mining acquisition, which carries negligible weight for spot gold markets.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-04 07:15 | Letztes Update: 2026-11-05 12:59",
+        "original_date": "2026-11-04 07:15",
+        "_timestamp": 1793883595.0,
+        "articles": [
+            {
+                "title": "Israeli forces raid homes after advancing into south western Syrian town",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-homes-after-advancing-south-western-syrian-town",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 07:15",
+                "description": "Israeli forces raid homes after advancing into south western Syrian town\n\n    \n    \n\n        \n    \n                Israeli forces have advanced into the town of Jabata al-Khashab with four military vehicles in the northern Quneitra, located in south western Syria.\n\nSyrian state television reported that the troops conducted home searches.",
+                "_timestamp": 1793776533.0
+            },
+            {
+                "title": "Israeli settlers seize eight homes in occupied West Bank village west of Jericho",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-seize-eight-homes-occupied-west-bank-village-west",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 17:06",
+                "description": "Israeli settlers seize eight homes in occupied West Bank village west of Jericho\n\n    \n    \n\n        \n    \n                Israeli settlers seized eight Palestinian homes on Wednesday in the village of al-Duyuk al-Tahta, west of Jericho, in the occupied West Bank, Wafa news reported.\n\nPalestinian security sources told Wafa that the settlers, accompanied by their families, stormed the eight homes, which were empty at the time of the raid, and smashed their doors, remaining inside the property.\n\nIsraeli forces also stormed Jericho and its refugee camps on Wednesday evening, deploying military vehicles along the city’s streets, according to Wafa.\n\nThey also reported that Israeli soldiers raided the area surrounding the Thabet Thabet Governmental Hospital in Tulkarm, in the occupied West Bank, and&nbsp;ransacked the home of Mohammed Ibrahim Shahada, secretary of Fatah in Tulkarm refugee camp on Wednesday.",
+                "_timestamp": 1793811991.0
+            },
+            {
+                "title": "Israeli forces demolish five West Bank buildings and displace over 100 Palestinians",
+                "link": "https://www.middleeasteye.net/news/israeli-forces-demolish-five-west-bank-buildings-and-displace-over-100-palestinians",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 12:59",
+                "description": "Israeli forces demolish five West Bank buildings and displace over 100 Palestinians\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMohammed Turkman\n on \nThu, 11/05/2026 - 12:24\n\n        \n      \n    \n      \n    \n                Residents of Biddu say troops gave them no warning before razing their homes, as Palestinian officials report a sharp rise in demolitions across Jerusalem and its suburbs\n                      \n                  \n                  \n\n  \n\n\n                  A Palestinian man stands amid the rubble of five residential buildings demolished by Israeli forces in Biddu, occupied West Bank, on 5 November 2026 (Mohammed Turkman/MEE)\n                  Off\n                  Israeli forces demolished five Palestinian residential buildings in the occupied West Bank on Thursday without warning, displacing more than 100 people.\n\nTroops raided the town of Biddu, northwest of Jerusalem, in the early morning, forcing residents of 12 apartments out before demolishing them.\n\nResidents said soldiers fired stun grenades and tear gas at homeowners, preventing them from retrieving their belongings before the demolitions began.\n\nAhmad Abu Eid, the owner of one of the homes, said Israeli forces raided the town without warning and began demolishing the buildings. He said the properties belonged to him, his sons and his daughter.\n\nSoldiers prevented the family from removing the contents of their homes and gave them insufficient time to evacuate. As a result, they lost access to their furniture, clothes and personal belongings.\n  \n    \n\n\n\n  \n\n\n\nAbu Eid's son, Salman, was a former prisoner released under last year's prisoner exchange deal and deported to Egypt. Abu Eid believes the demolitions were an act of retaliation linked to his son's release.\n\n\"What has happened to us is what happens to all Palestinians. We have no other land, and we will endure whatever they do to us,\" he told Middle East Eye.\n\nIsraeli soldiers cited the absence of building permits as the reason for the demolitions. The homes were located in Area C of the occupied West Bank.\n\n\n  \n\n  New ‘Nakba’ in Jerusalem: Israel steps up Silwan demolitions near Al-Aqsa\n    Read More »\n\n\nThe West Bank was divided into Areas A, B and C under the 1995 Oslo agreement. Area A falls under the Palestinian Authority's administrative and security control, while Area B is under PA administrative control and Israeli security control. Area C remains under Israeli administrative and security control.&nbsp;\n\nIsraeli forces frequently demolish Palestinian homes and other structures across the West Bank, citing the lack of building permits, particularly in Area C. However, Palestinians are almost never granted the permits required to build legally.\n\nThe PA’s Jerusalem Governorate office described the demolitions and displacement as a dangerous escalation aimed at undermining the Palestinian presence on the outskirts of Jerusalem, and a violation of international law.\n\nIt warned of the consequences for Palestinian families, many of whom have been displaced and deprived of their homes.\n\nUptick in Jerusalem demolitions\n\nSalem Abu Eid, a member of Biddu municipal council, said that two of the demolished homes were not subject to judicial demolition orders, despite legal challenges filed with Israeli courts.\n\nHe told MEE the demolitions affected a residential complex housing nine Palestinian families.\n\nAccording to Abu Eid, Israeli authorities had previously issued stop-construction notices, rather than demolition orders, for more than 20 homes in the town.\n\nHe said homeowners had filed objections with the Israeli Civil Administration in Beit El, with several lawyers currently handling the cases.\n\n\"The last demolition in the town took place several months ago, targeting a structure built of wood and tile, alongside the bulldozing of what is known as the municipal park,\" he added.\n\n  \n  \n      \n\n\n\n    Israeli bulldozers arrived early in the morning without warning, forcing residents from their homes without sufficient time to retrieve their belongings (Mohammed Turkman/MEE)\n  \n\n\n\n\n\n\n  \n    \n\n\n\n  \n\n\n\n\n\n\n\n\n\nAbu Eid said Israel justifies the demolitions by citing the absence of building permits, claiming the properties are located in Area C or near the separation wall. However, he pointed out that the nearest of the targeted homes is about 700 metres from the wall.\n\nHe called for greater support for affected families, stronger Palestinian solidarity, and assistance for those who had lost their homes.\n\n\"We urge official authorities to compensate the families for their lost homes and property, and to assist in providing alternative housing or constructing new homes for them even if in different locations,\" said Eid.\n\nThe Jerusalem Governorate office has recorded a significant increase in demolitions and land-clearing operations in Jerusalem and its surrounding areas this year.\n  \n    \n\n\n\n  \n\n\n\nDuring the first nine months of 2026, it documented 427 operations, including 66 cases of forced self-demolition, in which Palestinians were compelled to tear down their own homes; 294 demolitions carried out using Israeli machinery; and 32 land-levelling operations.\n\nIn October alone, the office recorded a further 44 demolition and land-levelling operations, bringing the total number documented between January and the end of October to 471.\n\nThe figures cover homes, other structures and land, and are not limited to residential properties.\n\n                  Occupation\n            \n              Fayha Shalash\n          \n        \n              Ramallah, occupied Palestine\n          \n              Biddu\n                  News\n        \n    Post Date Override\n              0\n          \n  \n    Update Date\n              Mon, 05/04/2020 - 21:19\n\n          \n  \n    Update Date Override\n              0",
+                "_timestamp": 1793883595.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 12:24 UTC (~1.5 hours ago relative to 2026-11-05 13:42 UTC)",
+            "Facts": "Israeli forces demolished five Palestinian residential buildings in Biddu, northwest of Jerusalem, displacing over 100 people without prior warning [Middle East Eye]. Additionally, Israeli forces advanced into Jabata al-Khashab in southwestern Syria and settlers seized homes in the West Bank [Middle East Eye].",
+            "Uncertainties": "Whether these localized escalations will trigger a broader regional military conflict involving external state actors remains unconfirmed.",
+            "Macro_Context": "The US dollar is strengthening (EUR/USD -0.26%), 10Y yields are relatively stable, and Brent crude is sharply lower (-5.18%), presenting mild macro headwinds for precious metals despite ongoing geopolitical friction.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "XAU/USD has risen significantly over the past 24 hours (+78.18), but the 4h move vs daily ATR ratio is modest at 0.03x, indicating the immediate spike has cooled off and the ongoing fundamental geopolitical news flow provides mild support without being fully exhausted.",
+            "Orderflow_Price_Target": "4130.3"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-04 08:06 | Letztes Update: 2026-11-05 12:56",
+        "original_date": "2026-11-04 08:06",
+        "_timestamp": 1793883410.0,
+        "articles": [
+            {
+                "title": "US animosity with Iran proved to be ‘civilizational’: MP",
+                "link": "https://en.mehrnews.com/news/249159/US-animosity-with-Iran-proved-to-be-civilizational-MP",
+                "source": "Mehr News Agency",
+                "date": "2026-11-04 08:06",
+                "description": "TEHRAN, Nov. 04 (MNA) – Deputy Speaker of the Iranian Parliament Ali Nikzad says that the documents obtained from the ‘Den of Espionage’ [the then US Embassy] proved that the US’s enmity towards the Iranian nation is a civilizational hostility.",
+                "_timestamp": 1793779582.0
+            },
+            {
+                "title": "Iran’s Khamenei says US hostility will persist regardless of party in power",
+                "link": "https://www.investing.com/news/commodities-news/irans-khamenei-says-us-hostility-will-persist-regardless-of-party-in-power-4998286",
+                "source": "Investing.com",
+                "date": "2026-11-04 11:00",
+                "description": "",
+                "_timestamp": 1793790027.0
+            },
+            {
+                "title": "Iran’s Khamenei says US election results will not end hostility towards Tehran",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-khamenei-says-us-election-results-will-not-end-hostility-towards",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 11:28",
+                "description": "Iran’s Khamenei says US election results will not end hostility towards Tehran\n\n    \n    \n\n        \n    \n                Iran’s Supreme Leader Mojtaba Khamenei says Washington will continue its confrontation with Tehran despite the Democrats’ sweeping midterm victories.\n\nIn a message carried by state news agency IRNA, he rejected suggestions that “factional shifts” would “dissuade it from its hostility towards the Iranian nation”.\n\nHe said Washington seeks the “unconditional surrender of the Iranian nation”.\n\nReferring to the US-Israeli war on Iran, Khamenei said the US had “suffered an irreversible decline” after a “self-made scandal”, adding that “the process of its collapse has accelerated”.",
+                "_timestamp": 1793791693.0
+            },
+            {
+                "title": "Iran hails US voters rejecting war while Khamenei warns hostility won’t end",
+                "link": "https://www.aljazeera.com/news/2026/11/4/iran-hails-us-voters-rejecting-war-while-khamenei-warns-hostility-wont-end?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-04 13:26",
+                "description": "Iranian officials see Republican midterm losses in a positive light, but supreme leader says US policy will not shift.",
+                "_timestamp": 1793798804.0
+            },
+            {
+                "title": "Iran defence spokesperson says US vote exposes failure of Trump’s war policies",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-defence-spokesperson-says-us-vote-exposes-failure-trumps-war",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 14:54",
+                "description": "Iran defence spokesperson says US vote exposes failure of Trump’s war policies\n\n    \n    \n\n        \n    \n                Iran’s Defence Ministry spokesperson General Reza Talaeinik has portrayed the US midterm election results as further evidence that Trump and Netanyahu’s policies have failed.\n\nWriting on social media, he called it an opportunity to “revisit the crimes of global arrogance, especially America, and to renew our pledge to resist interventionism”.\n\n“Today, with the failure of Trump and Netanyahu’s warmongering policies becoming more apparent and the trend of their hegemony’s collapse in the world, the steadfastness of the Iranian nation is more than ever inspiring to free nations,” he wrote.\n\nHis comments follow a warning from Supreme Leader Mojtaba Khamenei that Tehran cannot trust Washington and that changes in US political leadership will not end its hostility towards Iran.",
+                "_timestamp": 1793804050.0
+            },
+            {
+                "title": "\"Immediate, Effective, with No Geographical Limitation\"",
+                "link": "https://www.tehrantimes.com/news/531829/Immediate-Effective-with-No-Geographical-Limitation",
+                "source": "Tehran Times",
+                "date": "2026-11-04 13:51",
+                "description": "Ayatollah Seyed Mojtaba Khamenei, the Leader and Commander-in-Chief of the Armed Forces, held a meeting with senior commanders of the Iranian Armed Forces, in which he laid out Iran’s doctrine for responding to any renewed military or terrorist aggression.\n\nAyatollah Khamenei outlines Iran’s response strategy to a possible next enemy attack in a meeting with senior military commanders.",
+                "_timestamp": 1793800283.0
+            },
+            {
+                "title": "Iranian leaders welcome US midterms, but Trump may still attack",
+                "link": "https://www.aljazeera.com/news/2026/11/4/iranian-leaders-welcome-us-midterms-but-trump-may-still-attack?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-04 15:13",
+                "description": "Tehran views midterm results as a rejection of Trump&#039;s &#039;war on Iran&#039;, signalling US frustration with foreign policy.",
+                "_timestamp": 1793805180.0
+            },
+            {
+                "title": "US hegemony crumbling; Iran will never surrender",
+                "link": "https://www.tehrantimes.com/news/531836/US-hegemony-crumbling-Iran-will-never-surrender",
+                "source": "Tehran Times",
+                "date": "2026-11-04 16:08",
+                "description": "TEHRAN — Leader of the Islamic Revolution Ayatollah Seyyed Mojtaba Hosseini Khamenei has said that the United States has suffered an irreversible decline in both its military capabilities and international soft power, stating that recent developments in the Persian Gulf have exposed the limits of American power and accelerated the erosion of its global hegemony.",
+                "_timestamp": 1793808536.0
+            },
+            {
+                "title": "Photos: Iran marks US embassy takeover with rallies against US, Israel",
+                "link": "https://www.aljazeera.com/gallery/2026/11/4/photos-iran-marks-us-embassy-takeover-with-rallies-against-america-israel?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-04 16:37",
+                "description": "Tehran rallies see slogans, flag burnings and claims of US-Israeli defeats amid historic embassy takeover anniversary.",
+                "_timestamp": 1793810269.0
+            },
+            {
+                "title": "Baqaei: Attacking Iran brings defeat, not victory",
+                "link": "https://www.tehrantimes.com/news/531844/Baqaei-Attacking-Iran-brings-defeat-not-victory",
+                "source": "Tehran Times",
+                "date": "2026-11-04 17:11",
+                "description": "TEHRAN – Iranian Foreign Ministry Spokesperson Esmaeil Baqaei has warned US officials that their military aggression against Iran has exposed the failure of Washington’s strategic calculations, stressing that further hostility will only bring more serious consequences for the United States.",
+                "_timestamp": 1793812288.0
+            },
+            {
+                "title": "The impact of US elections on Iran",
+                "link": "https://www.tehrantimes.com/news/531843/The-impact-of-US-elections-on-Iran",
+                "source": "Tehran Times",
+                "date": "2026-11-04 17:09",
+                "description": "Donya-e-Eqtesad discussed the possible impact of American elections on the future of relations between Tehran and Washington. The newspaper argued that even a strong Democratic performance in congressional elections would not necessarily prevent Donald Trump from pursuing a tough policy toward Iran. According to the analysis, the significance of the elections extends beyond determining the balance of power in Congress.",
+                "_timestamp": 1793812165.0
+            },
+            {
+                "title": "Iran war live: Khamenei says US hostility will persist after midterms",
+                "link": "https://www.aljazeera.com/news/liveblog/2026/11/5/iran-war-live-trump-admits-war-caused-election-loss-but-had-to-do-it?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-05 00:00",
+                "description": "Iran&#039;s supreme leader says US hostility will persist regardless of the midterm election results.",
+                "_timestamp": 1793836800.0
+            },
+            {
+                "title": "Trump brought regime change to U.S. by launching Iran war",
+                "link": "https://en.mehrnews.com/news/249172/Trump-brought-regime-change-in-U-S-by-launching-Iran-war",
+                "source": "Mehr News Agency",
+                "date": "2026-11-05 04:01",
+                "description": "TEHRAN, Nov. 05 (MNA) – The Iran war has triggered a form of “regime change” in the United States, Arshin Adib-Moghaddam tells Mehr News Agency, pointing to the political consequences of the war for Donald Trump.",
+                "_timestamp": 1793851271.0
+            },
+            {
+                "title": "Iran, Gaza, Ukraine: What will US midterm results mean for these conflicts?",
+                "link": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-05 11:32",
+                "description": "Despite wins, Democrats lack the two-thirds majority needed to overturn a presidential veto and push through a law.",
+                "_timestamp": 1793878360.0
+            },
+            {
+                "title": "Iran’s victory in the United States",
+                "link": "https://en.mehrnews.com/news/249184/Iran-s-victory-in-the-United-States",
+                "source": "Mehr News Agency",
+                "date": "2026-11-05 12:56",
+                "description": "TEHRAN, Nov. 05 (MNA) – In the 2026 U.S. midterm elections, held on Tuesday, November 3, the Republican Party suffered a heavy defeat, and the Democrats gained control of Congress—both the House of Representatives and the Senate.",
+                "_timestamp": 1793883410.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-03 to 2026-11-05 (Ongoing comments over the last 12-48h relative to 2026-11-05 13:42 UTC)",
+            "Facts": "Iranian leadership, including Supreme Leader Mojtaba Khamenei and senior defense officials, stated that the U.S. midterm election results—which saw Democrats gain control of Congress—will not alter Washington's hostile posture or confrontational policies toward Iran. Officials also criticized U.S.-Israeli warmongering and outlined doctrines for immediate response to aggression [Mehr News Agency, Middle East Eye, Al Jazeera English].",
+            "Uncertainties": "Whether the shift in U.S. congressional power will actually restrict the executive branch's capacity for military escalation, or if it remains purely rhetorical posturing from Tehran.",
+            "Macro_Context": "EUR/USD declined slightly (-0.26%), reflecting mild USD strengthening which serves as a headwind for gold. Brent crude plunged over 5%, reducing inflationary/geopolitical energy premiums. OANDA retail sentiment is heavily net-long at 71.9%, signaling a contrarian bearish risk for immediate upside continuation.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "Gold experienced a strong rally over the past 24 hours (+ $78.18), but the 4h move vs daily ATR ratio is a minimal 0.03x, indicating consolidation after a spike. The geopolitical statements regarding U.S. elections and Iranian posture are recurring rhetoric without an immediate, new military kinetic strike. Thus, the geopolitical risk premium is largely priced in, and gold is consolidating near the $4120 resistance zone.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 04:23 | Letztes Update: 2026-11-05 12:42",
         "original_date": "2026-11-05 04:23",
-        "_timestamp": 1793881800.0,
+        "_timestamp": 1793882565.0,
         "articles": [
             {
                 "title": "XOM Stock Is Up 43% In 2026: Wall Street Is Split On The Oil Major Following Q3 Results",
@@ -19,18 +499,79 @@
                 "date": "2026-11-05 12:30",
                 "description": "InPlay Oil Corp. (TSX: IPO) (TASE: IPO) (OTCQX: IPOOF) (\"InPlay\" or the \"Company\") is pleased to announce its financial and operating results for the three and nine months ended September 30, 2026, together with preliminary 2027 production and capital guidance. InPlay's unaudited interim financial statements and notes, and Management's Discussion and Analysis (\"MD&amp;A\") for the three and nine months ended September 30, 2026 will be available at \"www.sedarplus.ca\" and the Company's website at \"www.",
                 "_timestamp": 1793881800.0
+            },
+            {
+                "title": "ConocoPhillips (NYSE:COP) delivers impressive Q3 2026",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/conocophillips-nyse-cop-delivers-impressive-124245049.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 12:42",
+                "description": "Oil and gas producer ConocoPhillips (NYSE:COP) reported Q3 2026 results beating Wall Street’s revenue expectations, with revenue up 29.2% year on year to $20.06 billion. Its GAAP profit of $3.34 per share was 11% above analysts’ consensus estimates.",
+                "_timestamp": 1793882565.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 04:23 to 12:42 UTC (approx. 1 to 9 hours ago relative to 2026-11-05 13:42 UTC)",
+            "Facts": "Recent corporate earnings and operational updates from major energy companies (ExxonMobil, InPlay Oil, and ConocoPhillips) indicate strong third-quarter 2026 results and forward guidance, with ConocoPhillips beating revenue and earnings expectations [Yahoo Finance Oil]. These reports highlight robust corporate earnings within the energy sector rather than any direct macroeconomic shock to precious metals.",
+            "Uncertainties": "Whether broader equity market performance and energy sector results will induce spillover into broader commodity indices or alter Federal Reserve rate expectations.",
+            "Macro_Context": "The US dollar is strengthening (EUR/USD down 0.26%), 10-year Treasury yields remain relatively stable, and Brent crude oil has dropped sharply by 5.18%. This macro configuration presents a slight headwind for gold due to USD strength and sliding oil prices, while high OANDA retail long positioning (71.9% long) creates a contrarian downward bias.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "XAU/USD rallied earlier in the Asian session toward the 4146 area but has since consolidated around 4120. Because the fundamental catalysts are sector-specific oil earnings rather than direct gold drivers, and given the lack of sustained momentum over the past 4 hours, the impact is neutral and largely digested by current levels.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 02:03 | Letztes Update: 2026-11-05 12:30",
+        "original_date": "2026-11-05 02:03",
+        "_timestamp": 1793881805.0,
+        "articles": [
+            {
+                "title": "Gold extends rally above $4,100 as dollar, Treasury yields fall after U.S. vote",
+                "link": "https://www.investing.com/news/commodities-news/gold-extends-rally-above-4100-as-dollar-treasury-yields-fall-after-us-vote-5002012",
+                "source": "Investing.com",
+                "date": "2026-11-05 02:03",
+                "description": "",
+                "_timestamp": 1793844199.0
+            },
+            {
+                "title": "Gold extends rally above $4,100 as dollar, Treasury yields fall after U.S. vote",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-extends-rally-above-4-023319282.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 02:33",
+                "description": "Investing.com -- Gold prices held above $4,100 an ounce on Thursday as a Democratic sweep in the U.S. midterm elections sent the dollar and Treasury yields lower and President Donald Trump played down the prospect of renewed military strikes against Iran.",
+                "_timestamp": 1793845999.0
+            },
+            {
+                "title": "Gold Prices Rise as Weaker Dollar and Treasury Yields Follow US Midterm Elections",
+                "link": "https://investorshub.advfn.com/market-news/article/39313/gold-prices-rise-as-weaker-dollar-and-treasury-yields-follow-us-midterm-elections?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 10:37",
+                "description": "Gold prices advanced on Thursday as the US dollar and Treasury yields declined following the Democratic Party’s victory in the US midterm elections, while investors assessed the outlook for the conflict with Iran and upcoming US employment data. At 04:50 ET (09:50 GMT), spot gold increased 1.",
+                "_timestamp": 1793875034.0
+            },
+            {
+                "title": "Gold, Silver Add $1 Trillion After US Midterm Results: 4 ETFs to Trade As Rally Heats Up",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-silver-add-1-trillion-123005944.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 12:30",
+                "description": "Gold and silver are extending their rally after Democrats won control of both chambers of Congress in the U.S. midterm elections, sending precious metals sharply higher and putting leveraged commodity ETFs in focus. According to The Kobeissi Letter, the two...",
+                "_timestamp": 1793881805.0
             }
         ],
         "needs_update": true,
         "summary": {
-            "Facts": "ExxonMobil (XOM) stock has gained over 43% in 2026, putting it on track for its best year since 2022, while Wall Street remains split on the oil major following its Q3 results [Yahoo Finance Oil].",
-            "Uncertainties": "Whether broader energy sector performance will directly spill over into sustained precious metals demand or broader commodity volatility.",
-            "Macro_Context": "EUR/USD is down slightly by 0.16% indicating minor USD strengthening, US 10Y Treasury bond prices are up 0.35% (yields falling), and Brent Crude oil is down 8.47%. The falling yields provide a tailwind for gold, while dollar strength and plunging oil prices exert cross-asset headwinds.",
+            "Event_Timestamp": "2026-11-04 ~12:00 to 2026-11-05 10:37 UTC (approx. 2 to 24 hours ago)",
+            "Facts": "Gold prices extended their rally above $4,100 an ounce as a Democratic sweep in the U.S. midterm elections led to a softer U.S. dollar and lower Treasury yields. Additionally, President Donald Trump played down the prospect of renewed military strikes against Iran, while investors awaited upcoming U.S. employment data [Investing.com, Yahoo Finance Gold].",
+            "Uncertainties": "The exact legislative implications of the Democratic midterm sweep on future fiscal spending and whether upcoming U.S. employment data will trigger a hawkish repricing of Federal Reserve rate expectations.",
+            "Macro_Context": "EUR/USD declined slightly by -0.35% indicating a minor intraday bounce in the USD (acting as a headwind), while US 10Y Treasury bond prices remained stable and Brent crude oil dropped significantly by -5.18%, reflecting easing geopolitical risk premiums regarding Iran.",
             "Impact_Timing": "Past (Already Priced In)",
             "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "Gold has seen a strong 24-hour gain of +$99.67, but the recent 4h move shows a minor retracement (-$18.47) and a low ATR ratio of 0.26x. The corporate oil news is largely isolated to equities and has minimal direct transmission to gold flow dynamics.",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "XAU/USD rallied aggressively over the last 24 hours by over $78, but the recent 4-hour price change has turned slightly negative ($-6.98) with an ATR ratio of 0.09x, showing that the post-election and geopolitical relief rally has largely matured and is currently consolidating.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -272,16 +813,17 @@
                 "_timestamp": 1793881680.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Facts": "Multiple junior mining and resource companies released updates on drilling programs, resource expansions, and project advancements across Canada, Australia, and Papua New Guinea [Yahoo Finance Gold]. Notable announcements include high-grade gold-antimony intercepts by Canagold, resource expansions by Kirkland Lake Discoveries and Riversgold, and a PFS delivery by West Red Lake Gold.",
-            "Uncertainties": "Micro-level drilling and resource exploration updates do not directly impact macroeconomic gold valuations or near-term monetary policy expectations.",
-            "Macro_Context": "EUR/USD is higher (+0.23%) indicating mild USD weakness, and US 10Y Treasury bond prices are rising (yields falling), providing a supportive macroeconomic tailwind for non-yielding bullion. Brent Crude is lower (-8.96%), reflecting a lack of immediate energy-driven inflation pressure.",
+            "Event_Timestamp": "Ongoing / Breaking within last 24h (Latest reports across multiple junior mining exploration projects published continuously through Nov 3-5, 2026, relative to 2026-11-05 13:43 UTC).",
+            "Facts": "Multiple junior mining and exploration companies released ongoing drill assays and resource updates between November 3 and November 5, 2026. Highlights include Sitka Gold intersecting 41.7m of 2.20 g/t gold from surface at the RC Gold Project [Yahoo Finance Gold], Snowline Gold receiving the 2027 Bill Dennis Award for its Valley gold discovery [Yahoo Finance Gold], and West Red Lake Gold announcing an integrated PFS for Madsen and Rowan delivering a C$764M post-tax NPV [Yahoo Finance Gold]. These represent standard corporate exploration updates and resource announcements rather than macro-driven systemic shocks.",
+            "Uncertainties": "Whether the broader junior mining exploration results will translate into economic commercial production given prevailing capital expenditure constraints and broader market liquidity conditions.",
+            "Macro_Context": "EUR/USD is down 0.26% reflecting a modest USD strengthening headwind for gold, while US 10Y Treasury yields remain relatively stable. Brent Crude dropped sharply by 5.18%. Global OANDA retail positioning is heavily net long at 71.9%, serving as a contrarian bearish overhang alongside overhead sell-limit liquidity walls.",
             "Impact_Timing": "Past (Already Priced In)",
             "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold has surged strongly over the past 24 hours (+$202.89) to $4138.235, driven by broader macro positioning and technical momentum. While the 4h move vs Daily ATR ratio is 1.01x (just below the strict 1.2x exhaustion threshold), the incoming news consists entirely of micro-level corporate mining announcements rather than macro catalysts, making the current price action independent of these reports.",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Gold prices have drifted higher over the past 24 hours (+ $78.18) driven by broader structural trends, but the corporate drill results and exploration news flow are recurring micro-level events that lack systemic macro impact. Furthermore, retail sentiment is extremely crowded on the long side (71.9%), limiting fresh bullish continuation without a new macro catalyst.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -433,8 +975,19 @@
                 "_timestamp": 1793880000.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 12:00 UTC (~1.7 hours ago)",
+            "Facts": "Opawica Explorations Inc. announced the commencement of the tender process for soliciting bids from diamond drilling contractors for a 10,000-metre drill program at its Arrowhead copper-gold-zinc-VMS project in Abitibi, Quebec [Yahoo Finance Gold].",
+            "Uncertainties": "Specific contractor selection, exact start date of drilling operations, and future assay results remain unknown.",
+            "Macro_Context": "EUR/USD is lower at 1.12196 (-0.26%), indicating a strengthening USD which acts as a headwind for gold. US 10Y Treasury yields are stable, while Brent crude oil has declined significantly by 5.18%. OANDA retail sentiment is heavily long at 71.9%, presenting a contrarian bearish indicator.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "The corporate mining update from Opawica is micro-level news for a junior explorer and has no direct macroeconomic impact on the broader XAU/USD market. Furthermore, gold has already undergone a substantial prior upward move (+78.18 over 24h), and the 4h move vs daily ATR ratio is minimal (0.03x), leaving this company-specific announcement largely irrelevant to macro spot gold pricing.",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "Erstmeldung: 2026-11-05 12:00",
@@ -450,8 +1003,47 @@
                 "_timestamp": 1793880000.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 12:00 UTC (approx. 2 hours ago)",
+            "Facts": "Cartier Silver announced high-grade drill results from its Gonalbert Property in Southern Bolivia, confirming a polymetallic vein system with significant silver, lead, and zinc grades [Source: Yahoo Finance Gold].",
+            "Uncertainties": "The economic viability, resource estimation scale, and commercial extraction feasibility of the Gonalbert Property remain unverified at this early drilling stage.",
+            "Macro_Context": "The US dollar is strengthening (EUR/USD down 0.26%), Treasury yields are stable, and Brent crude is declining sharply (-5.18%), creating a mixed-to-negative macro environment for gold. OANDA retail sentiment remains heavily long at 71.9%.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "The news regarding a micro-cap mining company drill result is company-specific micro news with zero direct impact on macro gold spot prices. Furthermore, retail sentiment is extremely long (71.9%), and macro conditions show USD strength.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 12:00",
+        "original_date": "2026-11-05 12:00",
+        "_timestamp": 1793880000.0,
+        "articles": [
+            {
+                "title": "5 Reasons Why Oil Prices May Stay Strong in 2027",
+                "link": "https://finance.yahoo.com/energy/articles/5-reasons-why-oil-prices-120000841.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 12:00",
+                "description": "Oil prices may stay elevated in 2027 despite weaker demand. Here are five reasons and a few ETFs to watch.",
+                "_timestamp": 1793880000.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 12:00 UTC (approx. 2h ago)",
+            "Facts": "Yahoo Finance published a general forward-looking commentary outlining five structural reasons why oil prices might remain strong heading into 2027 despite weaker demand projections [Yahoo Finance Oil].",
+            "Uncertainties": "The article is long-term speculative commentary rather than an immediate supply shock or macroeconomic catalyst impacting current gold price action.",
+            "Macro_Context": "EUR/USD is down 0.26% reflecting USD strengthening, US 10Y Treasury yields are stable, and Brent Crude oil has dropped 5.18%. The broader macroeconomic tape exhibits USD strength, which acts as a traditional headwind for gold, while the specific news item on 2027 oil prices has negligible direct impact on current precious metals pricing.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "XAU/USD has risen significantly over the past 24 hours (+>78 USD) driven by broader market dynamics, but the specific news report is merely a retrospective or long-term analytical piece published 2 hours ago. With retail positioning heavily long (71.9%) and no new immediate shock, the news itself presents no direct directional catalyst.",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "Erstmeldung: 2026-11-05 11:51",
@@ -683,137 +1275,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-04 08:06 | Letztes Update: 2026-11-05 11:32",
-        "original_date": "2026-11-04 08:06",
-        "_timestamp": 1793878360.0,
-        "articles": [
-            {
-                "title": "US animosity with Iran proved to be ‘civilizational’: MP",
-                "link": "https://en.mehrnews.com/news/249159/US-animosity-with-Iran-proved-to-be-civilizational-MP",
-                "source": "Mehr News Agency",
-                "date": "2026-11-04 08:06",
-                "description": "TEHRAN, Nov. 04 (MNA) – Deputy Speaker of the Iranian Parliament Ali Nikzad says that the documents obtained from the ‘Den of Espionage’ [the then US Embassy] proved that the US’s enmity towards the Iranian nation is a civilizational hostility.",
-                "_timestamp": 1793779582.0
-            },
-            {
-                "title": "Iran’s Khamenei says US hostility will persist regardless of party in power",
-                "link": "https://www.investing.com/news/commodities-news/irans-khamenei-says-us-hostility-will-persist-regardless-of-party-in-power-4998286",
-                "source": "Investing.com",
-                "date": "2026-11-04 11:00",
-                "description": "",
-                "_timestamp": 1793790027.0
-            },
-            {
-                "title": "Iran’s Khamenei says US election results will not end hostility towards Tehran",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-khamenei-says-us-election-results-will-not-end-hostility-towards",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 11:28",
-                "description": "Iran’s Khamenei says US election results will not end hostility towards Tehran\n\n    \n    \n\n        \n    \n                Iran’s Supreme Leader Mojtaba Khamenei says Washington will continue its confrontation with Tehran despite the Democrats’ sweeping midterm victories.\n\nIn a message carried by state news agency IRNA, he rejected suggestions that “factional shifts” would “dissuade it from its hostility towards the Iranian nation”.\n\nHe said Washington seeks the “unconditional surrender of the Iranian nation”.\n\nReferring to the US-Israeli war on Iran, Khamenei said the US had “suffered an irreversible decline” after a “self-made scandal”, adding that “the process of its collapse has accelerated”.",
-                "_timestamp": 1793791693.0
-            },
-            {
-                "title": "Iran hails US voters rejecting war while Khamenei warns hostility won’t end",
-                "link": "https://www.aljazeera.com/news/2026/11/4/iran-hails-us-voters-rejecting-war-while-khamenei-warns-hostility-wont-end?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 13:26",
-                "description": "Iranian officials see Republican midterm losses in a positive light, but supreme leader says US policy will not shift.",
-                "_timestamp": 1793798804.0
-            },
-            {
-                "title": "Iran defence spokesperson says US vote exposes failure of Trump’s war policies",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-defence-spokesperson-says-us-vote-exposes-failure-trumps-war",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 14:54",
-                "description": "Iran defence spokesperson says US vote exposes failure of Trump’s war policies\n\n    \n    \n\n        \n    \n                Iran’s Defence Ministry spokesperson General Reza Talaeinik has portrayed the US midterm election results as further evidence that Trump and Netanyahu’s policies have failed.\n\nWriting on social media, he called it an opportunity to “revisit the crimes of global arrogance, especially America, and to renew our pledge to resist interventionism”.\n\n“Today, with the failure of Trump and Netanyahu’s warmongering policies becoming more apparent and the trend of their hegemony’s collapse in the world, the steadfastness of the Iranian nation is more than ever inspiring to free nations,” he wrote.\n\nHis comments follow a warning from Supreme Leader Mojtaba Khamenei that Tehran cannot trust Washington and that changes in US political leadership will not end its hostility towards Iran.",
-                "_timestamp": 1793804050.0
-            },
-            {
-                "title": "\"Immediate, Effective, with No Geographical Limitation\"",
-                "link": "https://www.tehrantimes.com/news/531829/Immediate-Effective-with-No-Geographical-Limitation",
-                "source": "Tehran Times",
-                "date": "2026-11-04 13:51",
-                "description": "Ayatollah Seyed Mojtaba Khamenei, the Leader and Commander-in-Chief of the Armed Forces, held a meeting with senior commanders of the Iranian Armed Forces, in which he laid out Iran’s doctrine for responding to any renewed military or terrorist aggression.\n\nAyatollah Khamenei outlines Iran’s response strategy to a possible next enemy attack in a meeting with senior military commanders.",
-                "_timestamp": 1793800283.0
-            },
-            {
-                "title": "Iranian leaders welcome US midterms, but Trump may still attack",
-                "link": "https://www.aljazeera.com/news/2026/11/4/iranian-leaders-welcome-us-midterms-but-trump-may-still-attack?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 15:13",
-                "description": "Tehran views midterm results as a rejection of Trump&#039;s &#039;war on Iran&#039;, signalling US frustration with foreign policy.",
-                "_timestamp": 1793805180.0
-            },
-            {
-                "title": "US hegemony crumbling; Iran will never surrender",
-                "link": "https://www.tehrantimes.com/news/531836/US-hegemony-crumbling-Iran-will-never-surrender",
-                "source": "Tehran Times",
-                "date": "2026-11-04 16:08",
-                "description": "TEHRAN — Leader of the Islamic Revolution Ayatollah Seyyed Mojtaba Hosseini Khamenei has said that the United States has suffered an irreversible decline in both its military capabilities and international soft power, stating that recent developments in the Persian Gulf have exposed the limits of American power and accelerated the erosion of its global hegemony.",
-                "_timestamp": 1793808536.0
-            },
-            {
-                "title": "Photos: Iran marks US embassy takeover with rallies against US, Israel",
-                "link": "https://www.aljazeera.com/gallery/2026/11/4/photos-iran-marks-us-embassy-takeover-with-rallies-against-america-israel?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 16:37",
-                "description": "Tehran rallies see slogans, flag burnings and claims of US-Israeli defeats amid historic embassy takeover anniversary.",
-                "_timestamp": 1793810269.0
-            },
-            {
-                "title": "Baqaei: Attacking Iran brings defeat, not victory",
-                "link": "https://www.tehrantimes.com/news/531844/Baqaei-Attacking-Iran-brings-defeat-not-victory",
-                "source": "Tehran Times",
-                "date": "2026-11-04 17:11",
-                "description": "TEHRAN – Iranian Foreign Ministry Spokesperson Esmaeil Baqaei has warned US officials that their military aggression against Iran has exposed the failure of Washington’s strategic calculations, stressing that further hostility will only bring more serious consequences for the United States.",
-                "_timestamp": 1793812288.0
-            },
-            {
-                "title": "The impact of US elections on Iran",
-                "link": "https://www.tehrantimes.com/news/531843/The-impact-of-US-elections-on-Iran",
-                "source": "Tehran Times",
-                "date": "2026-11-04 17:09",
-                "description": "Donya-e-Eqtesad discussed the possible impact of American elections on the future of relations between Tehran and Washington. The newspaper argued that even a strong Democratic performance in congressional elections would not necessarily prevent Donald Trump from pursuing a tough policy toward Iran. According to the analysis, the significance of the elections extends beyond determining the balance of power in Congress.",
-                "_timestamp": 1793812165.0
-            },
-            {
-                "title": "Iran war live: Khamenei says US hostility will persist after midterms",
-                "link": "https://www.aljazeera.com/news/liveblog/2026/11/5/iran-war-live-trump-admits-war-caused-election-loss-but-had-to-do-it?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-05 00:00",
-                "description": "Iran&#039;s supreme leader says US hostility will persist regardless of the midterm election results.",
-                "_timestamp": 1793836800.0
-            },
-            {
-                "title": "Trump brought regime change to U.S. by launching Iran war",
-                "link": "https://en.mehrnews.com/news/249172/Trump-brought-regime-change-in-U-S-by-launching-Iran-war",
-                "source": "Mehr News Agency",
-                "date": "2026-11-05 04:01",
-                "description": "TEHRAN, Nov. 05 (MNA) – The Iran war has triggered a form of “regime change” in the United States, Arshin Adib-Moghaddam tells Mehr News Agency, pointing to the political consequences of the war for Donald Trump.",
-                "_timestamp": 1793851271.0
-            },
-            {
-                "title": "Iran, Gaza, Ukraine: What will US midterm results mean for these conflicts?",
-                "link": "https://www.aljazeera.com/news/2026/11/5/iran-gaza-ukraine-what-will-us-midterm-results-mean-for-these-conflicts?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-05 11:32",
-                "description": "Despite wins, Democrats lack the two-thirds majority needed to overturn a presidential veto and push through a law.",
-                "_timestamp": 1793878360.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Facts": "Iranian Supreme Leader Ayatollah Seyed Mojtaba Khamenei and other senior officials stated that US hostility toward Iran is civilizational and will persist regardless of US midterm election results or party changes in Washington. Khamenei also announced a doctrine for responding to any renewed military or terrorist aggression with no geographical limitations [Tehran Times, Middle East Eye, Al Jazeera English].",
-            "Uncertainties": "Whether Iran's stated doctrine of unconstrained response will translate into immediate kinetic escalation in the Persian Gulf, and how the Trump administration will react to these statements.",
-            "Macro_Context": "EUR/USD is down 0.16% indicating a minor USD strengthening headwind, while US 10Y Treasury bond prices are up 0.35% (falling yields), acting as a tailwind for gold. Brent crude is sharply lower (-8.47%), removing energy-driven inflationary pressures, but geopolitical safe-haven demand overrides energy weakness.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "Gold has rallied roughly +$99.67 over the last 24 hours, but the 4h move vs. daily ATR ratio is currently 0.26x (well below the 1.2x threshold). This indicates the ongoing geopolitical tensions are actively driving fresh safe-haven flows rather than being fully exhausted or priced in.",
-            "Orderflow_Price_Target": "4131.0"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-04 11:55 | Letztes Update: 2026-11-05 11:17",
         "original_date": "2026-11-04 11:55",
         "_timestamp": 1793877438.0,
@@ -914,42 +1375,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 48,
             "Past_Price_Action_Cause": "XAU/USD rallied aggressively over the past 24 hours (+ $88.84) to highs near $4135, driven by election fallout and geopolitical pricing. However, with the 4h move vs daily ATR ratio at a low 0.15x and recent hourly gains stabilizing, the immediate political commentary has been largely digested by the market.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 01:14 | Letztes Update: 2026-11-05 11:14",
-        "original_date": "2026-11-05 01:14",
-        "_timestamp": 1793877242.0,
-        "articles": [
-            {
-                "title": "3 Australian Undervalued Stocks Trading At Least 44% Below Fair Value",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/3-australian-undervalued-stocks-trading-011454258.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 01:14",
-                "description": "Australia just watched its oldest department store, David Jones, fall into administration, a reminder that steady cash coming in and disciplined spending matter more than glossy brand stories. When markets start questioning business models, investors often pay closer attention to companies that generate solid cash but trade below what those cash flows imply. This article walks through three Australian stocks that screen as potentially undervalued on that basis. The stocks covered below are...",
-                "_timestamp": 1793841294.0
-            },
-            {
-                "title": "Top 3 Australian Quality Stocks To Watch In November 2026",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/top-3-australian-quality-stocks-111402390.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 11:14",
-                "description": "Stronger corporate earnings are keeping global interest rates higher for longer, which makes weak balance sheets far more painful. Australian investors who favour solid profits, sensible debt levels and robust return on equity increasingly look to companies that can carry that burden without breaking a sweat. This article walks through three stocks that pass a strict quality filter built for exactly this kind of rate-driven market. The three examples below are just a sample of what screens...",
-                "_timestamp": 1793877242.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 ~01:14 to 11:14 UTC (Ongoing / Breaking within last 10 hours)",
-            "Facts": "Yahoo Finance published articles focusing on Australian quality stocks and corporate earnings amid higher global interest rates, following the administration filing of David Jones [Yahoo Finance Gold].",
-            "Uncertainties": "The macroeconomic impact of Australian retail restructuring on global bullion markets remains negligible and purely thematic regarding interest rates.",
-            "Macro_Context": "The US dollar is strengthening (EUR/USD down 0.36%) acting as a headwind, while US 10Y Treasury prices are rising and Brent crude has dropped sharply (-6.10%), creating mixed macro signals for gold.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "XAU/USD has experienced a strong overnight rally reaching above $4135, but the news reports provided are equity-market specific commentary unrelated to direct gold supply/demand shocks, making the news irrelevant to current price action.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -1332,16 +1757,17 @@
                 "_timestamp": 1793875544.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Facts": "Asian stocks displayed a mixed performance as a severe semiconductor sell-off triggered a trading curb (sidecar) on South Korea's KOSPI index. This regional tech weakness was partially counterbalanced by support from a steep drop in Brent crude oil prices following Democratic victories in the U.S. midterm elections [Yahoo Finance Oil].",
-            "Uncertainties": "The broader economic implications of the U.S. midterm election outcome on future fiscal spending, regulatory paths for tech and energy sectors, and the exact contagion risk of the Asian semiconductor rout to global equity markets remain unconfirmed.",
-            "Macro_Context": "EUR/USD is down 0.16% indicating slight USD strengthening (a headwind for gold), while US 10Y Treasury bond prices are up 0.35% indicating falling yields (a tailwind for gold). Brent crude has plummeted by 8.47%, lowering inflation expectations. Global OANDA retail positioning is heavily net long at 72.3%, suggesting a contrarian downside bias.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Event_Timestamp": "2026-11-05 ~04:24 UTC (approx. 9 hours ago)",
+            "Facts": "Asian stock markets experienced turbulent trading sessions characterized by a sharp semiconductor sell-off that triggered a trading halt in South Korea's KOSPI index, alongside a steep decline in crude oil prices following U.S. midterm election outcomes [Yahoo Finance Oil].",
+            "Uncertainties": "The full extent of the fallout from the semiconductor sector rout and the specific legislative impacts of the U.S. midterm election results remain to be fully quantified.",
+            "Macro_Context": "The USD is moderately strengthening (EUR/USD -0.26%), presenting a headwind for gold, while U.S. 10Y yields remain stable and Brent crude has dropped significantly by 5.18%. OANDA retail positioning heavily favors longs at 71.9%, acting as a contrarian indicator.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD has experienced strong upward momentum over the last 24 hours, gaining approximately $99.67 to reach current levels near $4122.30. However, the 4h move vs daily ATR ratio is 0.26x, indicating that the immediate impulse has stabilized and the broader equity and oil news creates conflicting cross-currents rather than a directional breakout.",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Gold already experienced a major prior expansion higher over the last 24 hours (+$78.18), but the recent 4h price action shows consolidation (-$2.08) with a low 4h-to-Daily ATR ratio of 0.03x. The current Asian equity and chip rout news has already been absorbed by broader market risk dynamics.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -1359,8 +1785,19 @@
                 "_timestamp": 1793875500.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 10:45 UTC (~3 hours ago relative to 2026-11-05 13:44 UTC).",
+            "Facts": "Salazar Resources reported that Silvercorp Metals, the operator of the Curipamba-El Domo copper-gold project, updated the construction budget to US$298.2 million with Silvercorp-funded construction reaching US$90.9 million to date, targeting production in November 2027 [Yahoo Finance Gold].",
+            "Uncertainties": "Potential future cost overruns or macroeconomic shifts impacting the November 2027 production target and broader copper-gold supply dynamics.",
+            "Macro_Context": "EUR/USD is down 0.26% reflecting USD strengthening, which acts as a traditional headwind for gold, while US 10Y yields remain stable. Brent Crude is lower by 5.18%. OANDA retail sentiment is heavily long at 71.9%, providing a contrarian bearish undertow against aggressive upward continuation.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "The recent corporate press release is micro-level mining news specific to a single project and has negligible macro-driven momentum for spot XAU/USD. Furthermore, current price action shows consolidation well below earlier daily highs with an ATR ratio of 0.03x for the last 4h, indicating the prior 24h expansion (+US$78.18) is fully digested.",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "Erstmeldung: 2026-11-05 10:44",
@@ -1415,50 +1852,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 20,
             "Past_Price_Action_Cause": "The news is a micro-level corporate agriculture story with no direct macroeconomic transmission to gold. Gold's recent price action is driven by broader macroeconomic factors rather than this specific headline, rendering the event functionally neutral and already detached from gold price discovery.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 02:03 | Letztes Update: 2026-11-05 10:37",
-        "original_date": "2026-11-05 02:03",
-        "_timestamp": 1793875034.0,
-        "articles": [
-            {
-                "title": "Gold extends rally above $4,100 as dollar, Treasury yields fall after U.S. vote",
-                "link": "https://www.investing.com/news/commodities-news/gold-extends-rally-above-4100-as-dollar-treasury-yields-fall-after-us-vote-5002012",
-                "source": "Investing.com",
-                "date": "2026-11-05 02:03",
-                "description": "",
-                "_timestamp": 1793844199.0
-            },
-            {
-                "title": "Gold extends rally above $4,100 as dollar, Treasury yields fall after U.S. vote",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-extends-rally-above-4-023319282.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 02:33",
-                "description": "Investing.com -- Gold prices held above $4,100 an ounce on Thursday as a Democratic sweep in the U.S. midterm elections sent the dollar and Treasury yields lower and President Donald Trump played down the prospect of renewed military strikes against Iran.",
-                "_timestamp": 1793845999.0
-            },
-            {
-                "title": "Gold Prices Rise as Weaker Dollar and Treasury Yields Follow US Midterm Elections",
-                "link": "https://investorshub.advfn.com/market-news/article/39313/gold-prices-rise-as-weaker-dollar-and-treasury-yields-follow-us-midterm-elections?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 10:37",
-                "description": "Gold prices advanced on Thursday as the US dollar and Treasury yields declined following the Democratic Party’s victory in the US midterm elections, while investors assessed the outlook for the conflict with Iran and upcoming US employment data. At 04:50 ET (09:50 GMT), spot gold increased 1.",
-                "_timestamp": 1793875034.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-04 ~12:00 to 2026-11-05 10:37 UTC (approx. 2 to 24 hours ago)",
-            "Facts": "Gold prices extended their rally above $4,100 an ounce as a Democratic sweep in the U.S. midterm elections led to a softer U.S. dollar and lower Treasury yields. Additionally, President Donald Trump played down the prospect of renewed military strikes against Iran, while investors awaited upcoming U.S. employment data [Investing.com, Yahoo Finance Gold].",
-            "Uncertainties": "The exact legislative implications of the Democratic midterm sweep on future fiscal spending and whether upcoming U.S. employment data will trigger a hawkish repricing of Federal Reserve rate expectations.",
-            "Macro_Context": "EUR/USD declined slightly by -0.35% indicating a minor intraday bounce in the USD (acting as a headwind), while US 10Y Treasury bond prices remained stable and Brent crude oil dropped significantly by -5.18%, reflecting easing geopolitical risk premiums regarding Iran.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 45,
-            "Past_Price_Action_Cause": "XAU/USD rallied aggressively over the last 24 hours by over $78, but the recent 4-hour price change has turned slightly negative ($-6.98) with an ATR ratio of 0.09x, showing that the post-election and geopolitical relief rally has largely matured and is currently consolidating.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -1740,138 +2133,6 @@
             "Probability_Percent": 48,
             "Past_Price_Action_Cause": "Gold has seen a strong 24h advance of +$88.84, but the 4h move vs daily ATR ratio is modest at 0.15x. The geopolitical rhetoric from Iran is ongoing and fresh within the last 2 hours, but lacks immediate physical supply disruptions, keeping the immediate price impact neutral to consolidative near current levels.",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-02 17:35 | Letztes Update: 2026-11-05 09:58",
-        "original_date": "2026-11-02 17:35",
-        "_timestamp": 1793872698.0,
-        "articles": [
-            {
-                "title": "Yemeni government forces claim gains in Lahij",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-gains-yemens",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 04:52",
-                "description": "Yemeni government forces claim gains in Lahij\n\n    \n    \n\n        \n    \n                The internationally recognised Yemeni government says its troops have recaptured positions from Houthi forces in Lahij governorate, located south-west of the country.\n\n\"Our armed forces have succeeded in recapturing positions in the al-Khazzan al-Ahmar area on the al-Nusayrah front in the al-Sawalihah sub-district of the al-Maqatirah district in northern Lahij governorate, and have repelled the terrorist Houthi militias\" the government forces' media centre said.",
-                "_timestamp": 1793681557.0
-            },
-            {
-                "title": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-army-says-it-launched-nearly-1000-operations-against-houthi",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 03:11",
-                "description": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day\n\n    \n    \n\n        \n    \n                The Yemeni army said that it launched 951 operations targeting Houthi positions over the past 24 hours as part of Operation Dawn of Yemen.\n\nArmy spokesperson Majed al-Nuzaili claimed in a post on X that the operations had \"neutralized\" around 332 Houthi field commanders and fighters.\n\nMoreover, the army claimed to have destroyed or damaged 56&nbsp;vehicles, pieces of equipment and weapons across several fronts, including Al-Jawf, Marib and Al-Bayda.",
-                "_timestamp": 1793675518.0
-            },
-            {
-                "title": "Yemeni government forces launch strikes on Houthi positions west of Taiz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-launch-strikes-houthi-positions-west-taiz",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 02:17",
-                "description": "Yemeni government forces launch strikes on Houthi positions west of Taiz\n\n    \n    \n\n        \n    \n                Forces belonging to Yemen’s internationally recognised government have carried out air strikes against Houthi positions west of Taiz.\n\nThe military spokesperson said that&nbsp;warplanes targeted the movement's military vehicles in the Jabal Habashi area, resulting in the killing of Houthi fighters.&nbsp;\n\nMeanwhile, Houthi-affiliated media reported that a strike north of Taiz targeted a plastic shoe factory, killing three and injuring eight others.&nbsp;",
-                "_timestamp": 1793672237.0
-            },
-            {
-                "title": "Israeli forces push into Quneitra, Syrian media report",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-occupation-push-quneitra-syria-syrian-media-report",
-                "source": "Middle East Eye",
-                "date": "2026-11-02 22:51",
-                "description": "Israeli forces push into Quneitra, Syrian media report\n\n    \n    \n\n        \n    \n                Israeli forces advanced into the village of al-Asbah in rural southern Quneitra with five military vehicles, Syria TV reported.\n\nAccording to Sijil, a Syrian initiative tracking Israeli violations in the country, Israeli forces committed seven violations on Monday before the latest incursion, including other incursions, checkpoints, and aircraft overflights.",
-                "_timestamp": 1793659900.0
-            },
-            {
-                "title": "Israeli forces raid multiple West Bank towns, local sources report",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
-                "source": "Middle East Eye",
-                "date": "2026-11-02 22:31",
-                "description": "Israeli forces raid multiple West Bank towns, local sources report\n\n    \n    \n\n        \n    \n                Israeli forces launched raids on several towns in the occupied West Bank late on Monday, local sources reported.\n\nAmong them are the towns of Qabatiya, south of Jenin, and the city of Qalqilya.",
-                "_timestamp": 1793658667.0
-            },
-            {
-                "title": "397 attacks on West Bankers in Oct, highest monthly total in 20 years: UN",
-                "link": "https://www.tehrantimes.com/news/531764/397-attacks-on-West-Bankers-in-Oct-highest-monthly-total-in",
-                "source": "Tehran Times",
-                "date": "2026-11-02 17:35",
-                "description": "Israeli settler attacks in the occupied West Bank reached an unprecedented level in October, with the number of incidents causing injuries or property damage exceeding all monthly totals recorded since the United Nations began monitoring them in 2006.",
-                "_timestamp": 1793640930.0
-            },
-            {
-                "title": "Saudi strikes martyr 17, wound 59 in Yemen",
-                "link": "https://en.mehrnews.com/news/249125/Saudi-strikes-martyr-17-wound-59-in-Yemen",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 04:41",
-                "description": "TEHRAN, Nov. 03 (MNA) – At least 17 Yemeni civilians were martyred and 59 wounded, most of them children, in Saudi airstrikes over the past 24 hours, Yemen's Health Ministry said.",
-                "_timestamp": 1793680901.0
-            },
-            {
-                "title": "Who are Yemen’s Giants Brigades and who do they fight for?",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/who-are-yemens-giants-brigades-and-who-do-they-fight",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 02:35",
-                "description": "Who are Yemen’s Giants Brigades and who do they fight for?\n\n    \n    \n\n        \n    \n                Yemen’s Giants Brigades have emerged as one of the most powerful forces fighting the Houthis.\n\nBuilt with UAE backing and rooted in Yemen’s southern movement, they are now fighting alongside Saudi-backed government forces in a major new offensive.\n\nSo who are the Giants Brigades, who do they actually fight for and what does their rise tell us about Yemen’s war?",
-                "_timestamp": 1793759739.0
-            },
-            {
-                "title": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/reports-strikes-saudi-led-coalition-yemens-al-bayda",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 04:10",
-                "description": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda \n\n    \n    \n\n        \n    \n                Saudi-led coalition forces have reportedly launched four air strikes in central Yemen's city of al-Bayda, according to Houthi-affiliated media.&nbsp;\n\nShelling was also reported in the&nbsp;Ghamr district of the Saada governorate.",
-                "_timestamp": 1793765431.0
-            },
-            {
-                "title": "Yemeni government forces claim control of strategic al-Jawf mountain range",
-                "link": "https://www.aljazeera.com/news/2026/11/4/yemeni-government-forces-claim-control-of-strategic-al-jawf-mountain-range?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 14:08",
-                "description": "The advance on al-Dahida heights, a strategic highland, comes as fighting escalates in al-Dhalea, Lahij and Taiz.",
-                "_timestamp": 1793801298.0
-            },
-            {
-                "title": "Yemeni military announces 3 ops. deep inside Saudi Arabia",
-                "link": "https://en.mehrnews.com/news/249169/Yemeni-military-announces-3-ops-deep-inside-Saudi-Arabia",
-                "source": "Mehr News Agency",
-                "date": "2026-11-04 14:04",
-                "description": "TEHRAN, Nov. 04 (MNA) –  The spokesman for the Yemeni armed forces announced three successful drone and missile operations deep inside Saudi Arabia on Wednesday.",
-                "_timestamp": 1793801053.0
-            },
-            {
-                "title": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-hits-yemen-reportedly-kill-20-people-over-past-day",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 02:00",
-                "description": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day\n\n    \n    \n\n        \n    \n                Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of&nbsp;al-Jawf, al-Bayda, Saada, and Taiz, according to&nbsp;Houthi-affiliated media.",
-                "_timestamp": 1793844008.0
-            },
-            {
-                "title": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-attack-kills-four-people-yemeni-government-forces-make-gains-al",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 23:36",
-                "description": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz\n\n    \n    \n\n        \n    \n                A ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday.\n\nYemen’s Saudi-backed government's state media reported that four others, also from the same family, were injured after their home was targeted by Houthi fighters, and number of homes nearby were also damaged.\n\nYemeni government forces said in a statement on X that they have made territorial gains in al-Jawf province, seizing several Houthi positions, and&nbsp;repelled Houthi attempts to recapture lost positions in Taiz governorate, according to a Yemeni military spokesperson.\n\n\nFootage showing the armed forces targeting Houthis terrorist militia personnel in Taiz, as part of operation Dawn of Yemen https://t.co/dWZBmGHBBo\n— Yemen Army Media (@Yemenarmyeng) November 4, 2026",
-                "_timestamp": 1793835399.0
-            },
-            {
-                "title": "A month after Yemen government offensive began, war of attrition takes hold",
-                "link": "https://www.aljazeera.com/news/2026/11/5/a-month-after-yemen-government-offensive-began-war-of-attrition-takes-hold?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-05 09:58",
-                "description": "The Houthis suffer losses but also inflict pain on government forces and Saudi Arabia.",
-                "_timestamp": 1793872698.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 ~09:58 UTC (Ongoing / Breaking within last 2h)",
-            "Facts": "A month into the renewed Yemeni government offensive supported by the Saudi-led coalition, a war of attrition has taken hold, marked by ongoing clashes, airstrikes, and ballistic missile attacks across provinces including Taiz, al-Jawf, al-Bayda, and Saada, resulting in dozens of casualties [Al Jazeera English, Middle East Eye].",
-            "Uncertainties": "The full extent of military casualties, long-term stability of captured strategic highlands, and potential for broader regional spillover involving deeper strikes inside Saudi Arabia remain unconfirmed.",
-            "Macro_Context": "EUR/USD is down 0.36% (USD strengthening), acting as a minor headwind for gold, while US 10Y Treasury bond prices are rising (yields falling) to provide a supportive tailwind. Brent crude has dropped significantly by 6.10%, reducing broader energy-driven inflationary risks.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "XAU/USD has risen sharply over the last 24 hours, but the 4h move vs daily ATR ratio remains manageable at 0.15x, indicating room for further upside liquidity seeking before exhaustion.",
-            "Orderflow_Price_Target": "4149.45"
         }
     },
     {
@@ -5852,41 +6113,6 @@
         }
     },
     {
-        "main_date": "2026-11-04 17:06",
-        "original_date": "2026-11-04 07:15",
-        "_timestamp": 1793811991.0,
-        "articles": [
-            {
-                "title": "Israeli forces raid homes after advancing into south western Syrian town",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-homes-after-advancing-south-western-syrian-town",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 07:15",
-                "description": "Israeli forces raid homes after advancing into south western Syrian town\n\n    \n    \n\n        \n    \n                Israeli forces have advanced into the town of Jabata al-Khashab with four military vehicles in the northern Quneitra, located in south western Syria.\n\nSyrian state television reported that the troops conducted home searches.",
-                "_timestamp": 1793776533.0
-            },
-            {
-                "title": "Israeli settlers seize eight homes in occupied West Bank village west of Jericho",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-seize-eight-homes-occupied-west-bank-village-west",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 17:06",
-                "description": "Israeli settlers seize eight homes in occupied West Bank village west of Jericho\n\n    \n    \n\n        \n    \n                Israeli settlers seized eight Palestinian homes on Wednesday in the village of al-Duyuk al-Tahta, west of Jericho, in the occupied West Bank, Wafa news reported.\n\nPalestinian security sources told Wafa that the settlers, accompanied by their families, stormed the eight homes, which were empty at the time of the raid, and smashed their doors, remaining inside the property.\n\nIsraeli forces also stormed Jericho and its refugee camps on Wednesday evening, deploying military vehicles along the city’s streets, according to Wafa.\n\nThey also reported that Israeli soldiers raided the area surrounding the Thabet Thabet Governmental Hospital in Tulkarm, in the occupied West Bank, and&nbsp;ransacked the home of Mohammed Ibrahim Shahada, secretary of Fatah in Tulkarm refugee camp on Wednesday.",
-                "_timestamp": 1793811991.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Israeli forces advanced into Jabata al-Khashab in northern Quneitra, southwestern Syria, conducting home searches, while separately Israeli settlers seized eight homes in the occupied West Bank village of al-Duyuk al-Tahta, accompanied by raids in Jericho and Tulkarm [Middle East Eye].",
-            "Uncertainties": "Whether these localized military and settler actions will escalate into a broader regional conflict involving external state actors remains unconfirmed.",
-            "Macro_Context": "EUR/USD is higher (+0.37%) indicating a weaker USD, and US 10Y Treasury bond prices are rising (yields falling), both providing a tailwind for gold. Brent crude is down significantly (-8.99%), showing limited broader energy market panic, while OANDA retail sentiment is heavily long at 72.2%.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 56,
-            "Past_Price_Action_Cause": "XAU/USD has risen strongly by $139.86 over the last 24 hours, but the 4h move vs. daily ATR ratio is 0.26x, indicating that the immediate momentum is modest relative to daily range capacity and the geopolitical risk premium is actively being absorbed.",
-            "Orderflow_Price_Target": "4078.82"
-        }
-    },
-    {
         "main_date": "2026-11-04 17:05",
         "original_date": "2026-11-04 17:05",
         "_timestamp": 1793811945.0,
@@ -6859,146 +7085,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "Gold has seen a substantial rally over the last 24 hours (+$92.62) but the 4h move vs daily ATR ratio is currently 0.06x, indicating immediate momentum has slowed down while broader geopolitical tensions remain factored into the baseline.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-04 13:37 (updated)",
-        "original_date": "2026-11-03 16:34",
-        "_timestamp": 1793799433.0,
-        "articles": [
-            {
-                "title": "London tourism Expo turns into anti-Zionist event",
-                "link": "https://en.mehrnews.com/news/249147/London-tourism-Expo-turns-into-anti-Zionist-event",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 16:34",
-                "description": "TEHRAN, Nov. 03 (MNA) –  A group of British anti-war activists on Tuesday staged a protest in front of the Zionsit regime's pavilion at World Travel Market expo in London, voicing their opposition to the regime’s brutal crimes.",
-                "_timestamp": 1793723696.0
-            },
-            {
-                "title": "Police urged to investigate London event advertising settlement-linked Israeli agency",
-                "link": "https://www.middleeasteye.net/news/police-urged-investigate-london-event-advertising-settlement-linked-israeli-agency",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 13:08",
-                "description": "Police urged to investigate London event advertising settlement-linked Israeli agency\n\n    \n    \n\n          \n      \n      \n        Submitted by \nImran Mulla\n on \nWed, 11/04/2026 - 11:23\n\n        \n      \n    \n      \n    \n                Activists protested at the World Travel Market event, which began on Tuesday and is advertising the Jerusalem Development Authority\n                      \n                  \n                  \n\n  \n\n\n                  A line of police wait to move in as protesters gather around the corner in support of the Palestine Action activist group outside the Supreme Court in central London on 4 November 2026 (AFP)\n                  Off\n                  The Metropolitan Police have been urged to investigate the participation of an Israeli agency involved in the construction of illegal settlements at an international travel event in London.\n\nMEE&nbsp;revealed&nbsp;last week that the&nbsp;World Travel Market (WTM) event this week, which faced a pro-Palestine protest on Tuesday and will continue until Thursday, was set to feature a stand run by the Israeli government's tourist office.\n\nThe International Centre of Justice for Palestinians (ICJP, a UK-based legal group, sent a letter to the Met Police's war crimes team on Tuesday demanding the \"urgent investigation and consideration of preventative measures in relation to the reported participation of the Jerusalem Development Authority (JDA), through its tourism platform iTravelJerusalem, at World Travel Market (WTM) London\".\n\nActivists with the Palestine Solidarity Campaign (PSC) protested next to Israel's stand on Tuesday, holding a banner reading \"Every settlement is a war crime\".\n\nVideo footage showed two activists being physically removed from the event by security guards.\n  \n    \n\n\n\n  \n\n\n\nRyvka Barnard, the deputy director of the PSC, told MEE: \"The Israeli state's presence at the World Travel Market in London is an utter disgrace.&nbsp;\n\n\"In September, when the foreign secretary acknowledged that Israel's occupation is illegal, he said he would ban the advertising of illegal settlements. But that's exactly what's happening here.&nbsp;\n\n\"This is now a test for the Labour government. Will it stick to its word, intervene to shut down this stall and call for criminal investigations into its organisers, or will it reveal that those were just empty words?\"\n\nWill it stick to its word, intervene to shut down this stall and call for criminal investigations into its organisers, or will it reveal that those were just empty words?\"\n\nThe&nbsp;Israeli stand&nbsp;is shared by numerous Israeli companies and organisations, including \"iTravelJerusalem\", which promotes tourism in Israeli-occupied East Jerusalem and is managed by the&nbsp;Jerusalem Development Authority (JDA).\n\nThe JDA, a statutory agency of the Israeli government and the Jerusalem municipality, carries out development initiatives across Jerusalem and&nbsp;has been heavily involved in the construction and expansion of illegal Israeli settlements on occupied Palestinian territory.\n\nSince 2023 the JDA has a contract with Finn Partners, a global marketing agency, to advertise Jerusalem as a tourism destination in Britain.\n  \n    \n\n\n\n  \n\n\n\n'These circumstances warrant urgent investigation'\n\nThe ICJP's letter to the Met Police, seen by MEE, says: \"Of particular concern is the commercial relationship between the JDA and WTM London... including the possibility that the organisers may receive exhibition fees or derive other financial benefits from the participation of an agency reportedly implicated in settlement related activities.\n\n\"We consider that these circumstances warrant urgent investigation into potential offences.\"\n\nMEE has asked the Met Police and WTM for comment.\n\n\n  \n\n  Exclusive: London event advertises Israeli agency building illegal settlements\n    Read More »\n\n\nThis comes after 15 MPs wrote to the&nbsp;British government on Monday calling for \"urgent action\" on the event.\n\nThe MPs demanded&nbsp;that the government \"contact the organisers of WTM London and require the removal of exhibitors and promotional material where their participation would facilitate or promote illegal Israeli settlements\".\n\nLast month, the British government recognised Israel's occupation of Palestinian territory as illegal and announced comprehensive sanctions on Israeli settlements.\n\nAccording to a 2025 report by the Office of the European Union Representative for the West Bank and Gaza Strip, the JDA planned&nbsp;\"for the eviction of the Umm Haroun compound - home to approximately 40 Palestinian families - and the construction of a 320-unit settlement\" in the Sheikh Jarrah neighbourhood.&nbsp;\n\nIn 2020, a JDA project to build a cable car in Jerusalem, which would involve&nbsp;the uprooting of trees and displacement of infrastructure including water, sewage and telecommunications, was approved by the Israeli government.\n\nThe JDA also plans&nbsp;to build a large settlement housing project next to the Palestinian community of Beit Safafa in East Jerusalem.\n\nHussam Zomlot, the Palestinian ambassador to Britain, said&nbsp;in response to MEE's report last Thursday:&nbsp;\"Next week Israeli companies guilty of ethnic cleansing will be platformed at [WTM London].\"\n\nZomlot added: \"The UK government must now turn their words into action: enforce these commitments and ensure those complicit in illegal occupation and settlements face real consequences.\"\n\n                  UK Politics\n                   \n                  News\n        \n    Post Date Override\n              0\n          \n  \n    Update Date\n              Mon, 05/04/2020 - 21:19\n\n          \n  \n    Update Date Override\n              0",
-                "_timestamp": 1793797731.0
-            },
-            {
-                "title": "Police urged to investigate London event advertising settlement-linked Israeli agency",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/police-urged-investigate-london-event-advertising-settlement-linked",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 13:37",
-                "description": "Police urged to investigate London event advertising settlement-linked Israeli agency\n\n    \n    \n\n        \n    \n                The Metropolitan Police have been urged to investigate the participation of an&nbsp;Israeli&nbsp;agency involved in the construction of illegal settlements at an international travel event in London.\n\nMEE&nbsp;revealed&nbsp;last week that the&nbsp;World Travel Market&nbsp;(WTM) event this week, which faced a pro-Palestine&nbsp;protest on Tuesday and will continue until Thursday, was set to feature a&nbsp;stand&nbsp;run by the Israeli government's tourist office.\n\nThe International Centre of Justice for Palestinians (ICJP, a&nbsp;UK-based legal group, sent a letter to the Met Police's war crimes team on Tuesday demanding the \"urgent investigation and consideration of preventative measures in relation to the reported participation of the Jerusalem Development Authority (JDA), through its tourism platform iTravelJerusalem, at World Travel Market (WTM) London\".\n\nActivists with the Palestine Solidarity Campaign (PSC) protested next to Israel's stand on Tuesday,&nbsp;holding&nbsp;a banner reading \"Every settlement is a war crime\".\n\nRead more:&nbsp;Police urged to investigate London event advertising settlement-linked Israeli agency",
-                "_timestamp": 1793799433.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Protests and legal pressure by activists (including the Palestine Solidarity Campaign and the International Centre of Justice for Palestinians) occurred against the presence of the Jerusalem Development Authority (JDA) and settlement-linked tourism platforms at the World Travel Market expo in London [Mehr News Agency, Middle East Eye].",
-            "Uncertainties": "Whether the UK Metropolitan Police or the Labour government will take formal legal action or intervene against the Israeli agency's promotional stand.",
-            "Macro_Context": "EUR/USD is higher by 0.47% (reflecting USD weakness), while 10Y Treasury yields remain stable and Brent Crude drops by 2.42%. The geopolitical news adds mild safe-haven undertones, though broader macroeconomic factors and prior momentum are the primary drivers.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "XAU/USD has risen significantly over the past 24 hours (+92.62 USD), but the recent 4h price change is minimal (-$4.52) with an ATR ratio of 0.06x. The geopolitical headline regarding London expo protests is localized and has minor direct impact on macroeconomic gold pricing, resulting in a neutral stance.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-04 13:30 (updated)",
-        "original_date": "2026-11-03 16:52",
-        "_timestamp": 1793799000.0,
-        "articles": [
-            {
-                "title": "Five Metals Producers Trade Higher as Gold, Silver and Copper Futures Pull Back",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/five-metals-producers-trade-higher-165200576.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 16:52",
-                "description": "US Metal News News Commentary - Gold and silver futures gave back part of Monday's gains on Tuesday morning, Election Day in the United States, and copper futures fell by more than their Monday advance, yet several metals producers with fresh quarterly numbers or project studies traded higher, among them a Brazil-focused copper miner, a zinc miner and smelter, an aluminum products maker, a Canadian steel plate producer and a Newfoundland-focused gold company. Active Companies from around the mar",
-                "_timestamp": 1793724720.0
-            },
-            {
-                "title": "Precious metals rally propels miners to top of FTSE 100",
-                "link": "https://www.proactiveinvestors.com/companies/news/1101212/precious-metals-rally-propels-miners-to-top-of-ftse-100-1101212.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 10:00",
-                "description": "Precious metals producers and mainstream miners climbed to the top of the FTSE 100 as stronger gold, silver and copper prices boosted the resources sector. Fresnillo gained 3.6%, and Endeavour Mining rose 3.5% as gold jumped 2.9% to around $4,054 an ounce and silver surged 4.4% to about...",
-                "_timestamp": 1793786400.0
-            },
-            {
-                "title": "Permits, Project Financing and Quarterly Results Put U.S. Mining Supply Chains in Focus",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/permits-project-financing-quarterly-results-133000666.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 13:30",
-                "description": "US Metal News News Commentary - Gold futures pushed back above $4,000 an ounce in overnight trading on Wednesday, with December gold at $4,033.50, up $93.10 or 2.36%, as of approximately 2:39 a.m. ET, according to CME Group delayed quotes. December silver gained more, rising 4.10% to $51.795 an ounce, while December copper was little changed at $6.4015 a pound. Away from the price board, the past two weeks brought a run of project and earnings news across U.S. metals supply chains, from a constr",
-                "_timestamp": 1793799000.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Gold futures surpassed $4,000 an ounce, with December gold trading up significantly by over $93 (2.36%) to around $4,033.50 to $4,054 in overnight and morning trading on Tuesday and Wednesday during the U.S. election period [Yahoo Finance Gold]. Stronger precious metals pricing and robust performance by mining stocks boosted the resources sector on international exchanges like the FTSE 100 [Yahoo Finance Gold].",
-            "Uncertainties": "The sustainability of the parabolic momentum above $4,000 amid heavy retail long positioning (72.2% long on OANDA) and potential profit-taking following election-related volatility remains to be seen.",
-            "Macro_Context": "EUR/USD is strengthening (+0.20%), pointing to a weaker US Dollar which acts as a tailwind for gold. US 10Y Treasury bond prices are rising (+0.34%, yields falling), providing a supportive interest rate environment for non-yielding bullion. Brent Crude Oil fell significantly (-8.36%), showing mixed cross-asset signals but overridden by currency and Treasury yield dynamics.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "The 24h price change shows a substantial rally of +$134.40 with the 4h move vs daily ATR ratio at 0.19x, indicating that while a major move has occurred, it is not excessively exhausted in the immediate 4h window, allowing room for continued upside toward near-term liquidity clusters.",
-            "Orderflow_Price_Target": "4070.94"
-        }
-    },
-    {
-        "main_date": "2026-11-04 13:29",
-        "original_date": "2026-11-04 13:29",
-        "_timestamp": 1793798940.0,
-        "articles": [
-            {
-                "title": "Chevron Advances Iraq Oilfield Deal, Expands Growth Prospects",
-                "link": "https://finance.yahoo.com/energy/articles/chevron-advances-iraq-oilfield-deal-132900779.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 13:29",
-                "description": "CVX advances Iraq oilfield talks, reaching key terms for West Qurna 2 and pursuing Nasiriyah and four exploration blocks to expand its upstream growth opportunities.",
-                "_timestamp": 1793798940.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Chevron has advanced talks regarding an Iraq oilfield deal, reaching key terms for West Qurna 2 and pursuing Nasiriyah along with four exploration blocks to expand its upstream growth opportunities [Yahoo Finance Oil].",
-            "Uncertainties": "The exact financial terms, final government approval timelines, and potential operational risks within Iraq remain unconfirmed.",
-            "Macro_Context": "EUR/USD is higher (+0.47%), indicating USD weakness which acts as a tailwind for gold. US 10Y Treasury bond prices are stable. Brent crude oil prices are falling (-2.42%), reflecting increased global oil supply prospects which weigh on energy-driven inflation expectations.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold has seen a strong 24h advance of +$92.62, but the latest 4h price change is minimal (-$4.52) with an ATR ratio of 0.06x. The corporate oil deal news is micro-level and sector-specific, having little direct or immediate transmission to gold pricing dynamics.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-04 13:00",
-        "original_date": "2026-11-04 13:00",
-        "_timestamp": 1793797200.0,
-        "articles": [
-            {
-                "title": "Sidney Resources Secures Federal Approval for Historic Gold and Silver Ore Mobilization",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/sidney-resources-secures-federal-approval-130000015.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 13:00",
-                "description": "Company advances multiple Warren District development initiatives as a nearly two-year federal review concludes, progressing its 25,000-tonne Ocean Partners offtake strategy, completing 70% of MSHA corrective items, and moving Unity and Lucky Ben forwardWARREN, ID / ACCESS Newswire / November 4, 2026 / Sidney Resources Corporation (OTCID:SDRC) (\"Sidney Resources\" or the \"Company\"), a U.-based mineral exploration and development company focused on advancing gold and silver assets within Idaho's h",
-                "_timestamp": 1793797200.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Sidney Resources Corporation secured federal approval for historic gold and silver ore mobilization, advancing development initiatives in Idaho's Warren District after a nearly two-year review, progressing its offtake strategy and corrective items [Yahoo Finance Gold].",
-            "Uncertainties": "The exact financial impact, commercial viability, and precise production volume timeline of the mobilized ore remain to be fully quantified.",
-            "Macro_Context": "EUR/USD is higher (+0.61%) indicating a weaker US Dollar, providing a tailwind for gold. US 10Y Treasury yields are stable while Brent crude is lower. OANDA retail sentiment is heavily long at 72.2%, acting as a contrarian headwind.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold has surged over $105 in the last 24 hours, driven by broader macro factors rather than this specific micro-cap company news, which is company-specific and has a negligible impact on global macroeconomic gold pricing.",
             "Orderflow_Price_Target": "N/A"
         }
     }

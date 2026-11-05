@@ -1,8 +1,25 @@
 [
     {
-        "main_date": "Erstmeldung: 2026-11-05 15:16",
+        "main_date": "Erstmeldung: 2026-11-05 15:50",
+        "original_date": "2026-11-05 15:50",
+        "_timestamp": 1793893809.0,
+        "articles": [
+            {
+                "title": "Rezaei delivers Leader's message to Putin in Moscow",
+                "link": "https://en.mehrnews.com/news/249188/Rezaei-delivers-Leader-s-message-to-Putin-in-Moscow",
+                "source": "Mehr News Agency",
+                "date": "2026-11-05 15:50",
+                "description": "TEHRAN, Nov. 05 (MNA) – Iran's Mohsen Rezaei delivered a message from Leader the Leader of the Islamic Revolution to Russian President Vladimir Putin during a meeting in Moscow.",
+                "_timestamp": 1793893809.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:16 | Letztes Update: 2026-11-05 15:46",
         "original_date": "2026-11-05 15:16",
-        "_timestamp": 1793891779.0,
+        "_timestamp": 1793893561.0,
         "articles": [
             {
                 "title": "Stock Market Today: Nasdaq Craters 3% As Chips Sell Off; Arm Misses Key Metric (Live Coverage)",
@@ -11,9 +28,17 @@
                 "date": "2026-11-05 15:16",
                 "description": "The Dow Jones index rises Thursday after the postelection rally. Cava and Dutch Bros plunge on earnings.",
                 "_timestamp": 1793891779.0
+            },
+            {
+                "title": "AMD Tumbles 13%, NVIDIA Slides 7% as AI Regulation Fears Hit Chip Stocks; Intel Sinks 8%",
+                "link": "https://247wallst.com/investing/2026/11/05/amd-tumbles-13-nvidia-slides-7-as-ai-regulation-fears-hit-chip-stocks-intel-sinks-8/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:46",
+                "description": "Political risk is outweighing strong earnings across the AI chip trade, and Advanced Micro Devices (NASDAQ:AMD) is taking the hardest hit. AMD stock is at $424.36, down 13% in morning trading. The slide comes days after the chipmaker reported a quarter that CEO Lisa Su said “was the largest and most profitable in our history.” […]",
+                "_timestamp": 1793893561.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Event_Timestamp": "2026-11-05 ~15:16 UTC (approx. 21 minutes ago)",
             "Facts": "The Nasdaq dropped 3% during live coverage due to a semiconductor sell-off and a key earnings miss by Arm [Yahoo Finance Oil].",
@@ -24,6 +49,654 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 45,
             "Past_Price_Action_Cause": "XAU/USD has experienced a retracement over the last 4 hours (-$30.99) after reaching earlier highs near $4146. The tech sector equity sell-off provides mixed cross-currents without triggering a broad safe-haven panic in gold, keeping the move neutral relative to the daily ATR.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:45",
+        "original_date": "2026-11-05 15:45",
+        "_timestamp": 1793893506.0,
+        "articles": [
+            {
+                "title": "AppLovin’s Surge Is a Rare Bright Spot for Growth ETF Holders",
+                "link": "https://247wallst.com/investing/etf/2026/11/05/applovins-surge-is-a-rare-bright-spot-for-growth-etf-holders/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:45",
+                "description": "AppLovin (NASDAQ:APP) was trading at $358.28 shortly after 10 a.m. ET Thursday. That is a 31.84% gain in the regular session from $271.75, and it raises the company’s market value to roughly $110.3 billion. Most of tech is falling at the same time. AI and data center stocks are slipping for a second day as […]",
+                "_timestamp": 1793893506.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 15:45 UTC (Article published approx. 12 minutes ago relative to 2026-11-05 15:57 UTC).",
+            "Facts": "AppLovin (NASDAQ:APP) surged 31.84% during the regular session to $358.28, reaching a market value of roughly $110.3 billion. Meanwhile, the broader tech sector, specifically AI and data center stocks, experienced a second day of downward pressure [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether the tech sector weakness will trigger broader equity margin calls and force systemic liquidity liquidations across asset classes, including gold.",
+            "Macro_Context": "The USD remains relatively flat with EUR/USD up 0.09%, while US 10Y Treasury bond prices are rising (yields falling), providing a supportive tailwind for gold. However, the Nasdaq 100 is suffering a severe -5.84% sell-off, signaling risk-off sentiment and acute margin-call risks that have contributed to recent intraday pullbacks in XAU/USD. OANDA retail positioning remains heavily long at 71.8%, favoring a contrarian bearish or consolidation bias.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Gold recently pulled back from intraday highs near $4146 down to $4083.4 alongside the sharp tech sell-off, reflecting short-term liquidity squeezes and profit-taking. As the move shows digestion of recent volatility without a singular dominant macro catalyst driving a persistent directional trend, the setup is neutral.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:43",
+        "original_date": "2026-11-05 15:43",
+        "_timestamp": 1793893382.0,
+        "articles": [
+            {
+                "title": "Oracle Has Incredible News for Intel Stock Investors",
+                "link": "https://www.fool.com/investing/2026/11/05/oracle-has-incredible-news-for-intel-stock-investors/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:43",
+                "description": "Intel's AI chip business has gained impressive momentum, and its collaboration with Oracle should help sustain this segment's impressive growth.",
+                "_timestamp": 1793893382.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 15:43 UTC (approx. 14 minutes ago)",
+            "Facts": "Intel's AI chip business has gained impressive momentum, and its collaboration with Oracle should help sustain this segment's impressive growth, according to recent corporate updates reported by Yahoo Finance Nasdaq [Yahoo Finance Nasdaq].",
+            "Uncertainties": "The exact financial revenue impact, delivery timelines, and scale of the Oracle-Intel AI collaboration remain unspecified.",
+            "Macro_Context": "The broader macro environment shows a severe tech sector selloff with the Nasdaq 100 dropping 5.84%, while US 10Y Treasury bond prices are rising (yielding lower rates), providing a tailwind for gold. However, equity market weakness has sparked localized liquidity shifts, while OANDA retail sentiment is heavily long at 71.8%.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "The news regarding Intel and Oracle is company-specific micro-news for the tech sector and has no direct macroeconomic transmission channel to drive XAU/USD. Furthermore, gold has pulled back $50.12 in the last 4 hours, and retail positioning remains heavily lopsided.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:42",
+        "original_date": "2026-11-05 15:42",
+        "_timestamp": 1793893333.0,
+        "articles": [
+            {
+                "title": "Anthropic Just Paid a News Publisher for the First Time, and It Was AP",
+                "link": "https://247wallst.com/investing/2026/11/05/anthropic-just-paid-a-news-publisher-for-the-first-time-and-it-was-ap/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:42",
+                "description": "For years, Anthropic bet that fair use covered its training needs while rivals wrote checks. Then Election Night changed the pitch. Is this a one-off for an IPO-bound AI lab, or the start of a bill publishers like News Corp and the Times have been waiting on?",
+                "_timestamp": 1793893333.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 15:42 UTC (Breaking within last 15 minutes)",
+            "Facts": "Anthropic has paid a news publisher (Associated Press) for the first time for training data usage, marking a shift away from relying solely on fair use arguments [Yahoo Finance Nasdaq].",
+            "Uncertainties": "It remains unclear whether this payment is a one-off arrangement ahead of a potential Anthropic IPO or the beginning of a broader trend where major AI labs compensate news publishers like News Corp and the NY Times.",
+            "Macro_Context": "The broader macro environment features a severe Nasdaq 100 tech selloff (-5.84%), falling US 10Y Treasury yields (bond prices up +0.49%), flat USD (EUR/USD +0.09%), and plunging oil. The tech sector weakness creates cross-asset margin-call liquidation risks and safe-haven flows, while OANDA retail positioning is heavily long at 71.8%.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "XAU/USD experienced an earlier rally peaking above $4146 before pulling back sharply over the last 4 hours (-$50.12), currently trading near $4083-$4105. The corporate AI news regarding Anthropic has negligible direct bearing on gold's monetary fundamentals.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:38",
+        "original_date": "2026-11-05 15:38",
+        "_timestamp": 1793893080.0,
+        "articles": [
+            {
+                "title": "Port Announces PortCon - the First AI Software Factory Summit",
+                "link": "https://finance.yahoo.com/technology/ai/articles/port-announces-portcon-first-ai-153800616.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:38",
+                "description": "Port, the open AI Software Factory platform, today announced The AI Software Factory Summit, taking place Nov. 17-18, 2026 at SHACK15 in San Francisco. The event features AI software factory use cases and insights from leading technology companies, including NVIDIA, GitHub, SpaceX, Uber and Expedia. Attendees will see how these teams run AI in production and learn what has worked, what hasn't, and how to build and scale their own factories.",
+                "_timestamp": 1793893080.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:34",
+        "original_date": "2026-11-05 15:34",
+        "_timestamp": 1793892862.0,
+        "articles": [
+            {
+                "title": "BC-Most Active Stocks",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/bc-most-active-stocks-153422188.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:34",
+                "description": "NEW YORK (AP) — prices for the Nasdaq composite, NYSE and NYSE American listed most active stocks. Nasdaq most active stocks:Stock Name Volume High Low Last Change  Lakewood Amedex Biotherap.",
+                "_timestamp": 1793892862.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:33",
+        "original_date": "2026-11-05 15:33",
+        "_timestamp": 1793892823.0,
+        "articles": [
+            {
+                "title": "This Is the Number That Could Change Nvidia Stock’s Outlook for 2027",
+                "link": "https://247wallst.com/investing/2026/11/05/this-is-the-number-that-could-change-nvidia-stocks-outlook-for-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:33",
+                "description": "Wall Street already sees big upside in Nvidia, but one specific price target for 2027 reframes the entire investment case. The math behind it is simpler and more compelling than most investors expect.",
+                "_timestamp": 1793892823.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-04 18:30 | Letztes Update: 2026-11-05 15:30",
+        "original_date": "2026-11-04 18:30",
+        "_timestamp": 1793892600.0,
+        "articles": [
+            {
+                "title": "SMX -- Good Intentions Don't Count; Measured Plastic Does",
+                "link": "https://finance.yahoo.com/economy/articles/smx-good-intentions-dont-count-183000307.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 18:30",
+                "description": "NEW YORK CITY, NY / ACCESS Newswire / November 4, 2026 / The economics of plastic have turned recycling from an act of corporate responsibility into a financial imperative. SMX sits at the center of that shift, providing the authentication and traceability technology that allows recycled plastic to function as a trusted industrial material.",
+                "_timestamp": 1793817000.0
+            },
+            {
+                "title": "Good Intentions Don't Count; Measured Plastic Does",
+                "link": "https://finance.yahoo.com/economy/articles/good-intentions-dont-count-measured-153000301.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 15:30",
+                "description": "NEW YORK CITY, NY / ACCESS Newswire / November 5, 2026 / The economics of plastic have turned recycling from an act of corporate responsibility into a financial imperative. SMX sits at the center of that shift, providing the authentication and traceability technology that allows recycled plastic to function as a trusted industrial material.",
+                "_timestamp": 1793892600.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Facts": "The provided news report from Yahoo Finance Oil discusses corporate plastic recycling economics and industrial traceability technology via SMX. This micro-level corporate news has no direct connection to macroeconomic gold drivers, monetary policy, or precious metals demand [Yahoo Finance Oil].",
+            "Uncertainties": "Whether this corporate update on plastic recycling technology impacts broader commodity indexes or has any spillover into industrial precious metals usage remains entirely unconfirmed and speculative.",
+            "Macro_Context": "EUR/USD is higher by 0.27% (signifying a weaker USD) and US 10Y Bond prices are up 0.38% (signifying falling yields), both acting as tailwinds for gold. Meanwhile, Brent crude is down sharply by 8.67%. Retail sentiment on OANDA is heavily long at 72.1%, presenting a contrarian headwind. However, the news item itself is entirely irrelevant to gold fundamentals.",
+            "Impact_Timing": "Present",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "XAU/USD has gained $134.11 over the past 24 hours driven by broader macro positioning and Treasury yield movements, completely independent of the unrelated corporate plastic recycling news report.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:29",
+        "original_date": "2026-11-05 15:29",
+        "_timestamp": 1793892562.0,
+        "articles": [
+            {
+                "title": "Why Sandisk Stock Keeps Going Down",
+                "link": "https://www.fool.com/investing/2026/11/05/why-sandisk-stock-keeps-going-down/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:29",
+                "description": "Sandisk soared as the AI revolution took off. But will competition from China bring it all crashing down?",
+                "_timestamp": 1793892562.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:28",
+        "original_date": "2026-11-05 15:28",
+        "_timestamp": 1793892514.0,
+        "articles": [
+            {
+                "title": "Why Wingstop Rallied in October",
+                "link": "https://www.fool.com/investing/2026/11/05/why-wingstop-rallied-in-october/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:28",
+                "description": "A market rotation out of technology and into other sectors helped, and even a mediocre earnings report wasn't enough to keep Wingstop down.",
+                "_timestamp": 1793892514.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:28",
+        "original_date": "2026-11-05 15:28",
+        "_timestamp": 1793892480.0,
+        "articles": [
+            {
+                "title": "Human Augmentation - Global Strategic Business Report: Capitalize on an 18.8% CAGR to Secure the US$716.4 Billion 2030 Market as Apple, Amazon, Cyberdyne and Ekso Bionics Disrupt the Value Chain",
+                "link": "https://finance.yahoo.com/technology/ai/articles/human-augmentation-global-strategic-business-152800707.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:28",
+                "description": "Target wearables, AI-enabled assistive technologies, and healthcare, industrial and defense applications; use tariff and regional insights to optimize sourcing and uncover revenue opportunities.Dublin, Nov. 05, 2026 (GLOBE NEWSWIRE) -- \"Human Augmentation - Global Strategic Business Report\" has been added to ResearchAndMarkets.com's offering. The global human augmentation market, valued at US$255.2 billion in 2024, is projected to reach US$716.4 billion by 2030, expanding at a compound annual gr",
+                "_timestamp": 1793892480.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-04 23:38 | Letztes Update: 2026-11-05 15:24",
+        "original_date": "2026-11-04 23:38",
+        "_timestamp": 1793892287.0,
+        "articles": [
+            {
+                "title": "Qualcomm slides 9% after earnings, leading postelection chip stock sell-off",
+                "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 15:24",
+                "description": "Qualcomm slid Thursday morning after its Q4 earnings report as chip stocks face continued post-election pressure.",
+                "_timestamp": 1793892287.0
+            },
+            {
+                "title": "Qualcomm stock drops 7% on weak earnings forecast as memory shortage weighs on smartphone sales",
+                "link": "https://www.cnbc.com/2026/11/04/qualcomm-qcom-earnings-report-q4-2026.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-04 23:38",
+                "description": "Qualcomm delivered better-than-expected results but issued a weak earnings forecast.",
+                "_timestamp": 1793835491.0
+            },
+            {
+                "title": "SK hynix Sinks 9% as Qualcomm’s 26% Handset Plunge Deepens Memory Chip Rout",
+                "link": "https://www.tikr.com/blog/sk-hynix-sinks-9-as-qualcomms-26-handset-plunge-deepens-memory-chip-rout?ref=yahoofinance&tlnk=yf-261105-5324ff3r&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:08",
+                "description": "Key TakeawaysSK hynix shares fell 9% after Qualcomm reported a 26% drop in handset chip sales as memory costs push phone prices up. Conventional DRAM, the kind phones use, drove SK hynix’s 2026 price gains.",
+                "_timestamp": 1793891313.0
+            },
+            {
+                "title": "Sandisk Sinks 14%, Micron Down 10% as a Top Phone Chipmaker Blames Weak Sales on “Industry-Wide Memory Dynamics”",
+                "link": "https://www.tikr.com/blog/sandisk-sinks-14-micron-down-10-as-a-top-phone-chipmaker-blames-weak-sales-on-industry-wide-memory-dynamics?ref=yahoofinance&tlnk=yf-261105-8gc35pvp&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:09",
+                "description": "Key TakeawaysSandisk fell 14% today after a top phone chipmaker said its handset chip revenue dropped 26%, citing memory prices. That report confirms what Sandisk’s own phone and PC numbers already showed.",
+                "_timestamp": 1793891381.0
+            },
+            {
+                "title": "Arm Stock Plunges -- Smartphone Business Delivers a Major Disappointment",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/arm-stock-plunges-smartphone-business-150511881.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:05",
+                "description": "Arm Stock Tumbles as Memory Crunch Hits Apple and Android Chip Demand",
+                "_timestamp": 1793891111.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 ~15:00 UTC (approx. 1 hour ago)",
+            "Facts": "Qualcomm reported Q4 earnings with a weak guidance forecast and a 26% drop in handset chip sales due to memory constraints, triggering a broad post-election chip stock sell-off [CNBC Tech & AI, Yahoo Finance]. SK hynix (-9%), Sandisk (-14%), Micron (-10%), and Arm also tumbled amid supply and pricing pressures [Yahoo Finance Nasdaq].",
+            "Uncertainties": "The broader macroeconomic impact of the chip sector weakness on broader equities and whether the correction will prompt a lasting defensive rotation into safe-haven assets.",
+            "Macro_Context": "The Nasdaq 100 experienced a steep sell-off (-5.84%), indicating aggressive risk-off behavior and potential margin liquidation risks. However, US 10Y Treasury bond prices rose (yields falling) acting as a tailwind, while the USD remained flat (EUR/USD +0.09%). OANDA retail sentiment is heavily long at 71.8%.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "XAU/USD spiked earlier to highs near $4146 before pulling back sharply over the last 4 hours by $-50.12, reflecting high volatility from cross-asset liquidations and tech sector deleveraging. The immediate reaction is mixed, requiring neutrality as the market digests the tech fallout.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:15 | Letztes Update: 2026-11-05 15:22",
+        "original_date": "2026-11-05 15:15",
+        "_timestamp": 1793892120.0,
+        "articles": [
+            {
+                "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
+                "link": "https://www.fool.com/investing/2026/11/05/nvidia-vs-taiwan-semiconductor-the-ai-revolution-i/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:22",
+                "description": "These semiconductor giants are among the biggest beneficiaries of the AI chip boom, and they are expected to sustain solid growth levels over the long run.",
+                "_timestamp": 1793892120.0
+            },
+            {
+                "title": "Amazon and Google Could Outperform Nvidia as AI Trade Enters New Phase, Says Joseph Carlson",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62926393/amazon-google-nvidia?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:15",
+                "description": "Amazon (NASDAQ:AMZN) and Alphabet (NASDAQ:GOOGL) could outperform Nvidia (NASDAQ:NVDA) as AI investors shift from companies selling the hardware to those turning it into revenue, YouTube investor Joseph Carlson argues. A day after Democrats swept Congress and data-center critics won key...",
+                "_timestamp": 1793891708.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-02 21:53 | Letztes Update: 2026-11-05 15:18",
+        "original_date": "2026-11-02 21:53",
+        "_timestamp": 1793891908.0,
+        "articles": [
+            {
+                "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
+                "link": "https://en.mehrnews.com/news/249120/IRGC-downs-55th-US-MQ-9-over-Strait-of-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 03:45",
+                "description": "TEHRAN, Nov. 03 (MNA) – A US MQ-9 drone was intercepted and destroyed over the eastern Strait of Hormuz by IRGC air defenses, the 55th such drone downed, the Islamic Revolution Guard Corps said.",
+                "_timestamp": 1793677510.0
+            },
+            {
+                "title": "Iran captures two US MQM-170 drones over Qeshm Island",
+                "link": "https://en.mehrnews.com/news/249118/Iran-captures-two-US-MQM-170-drones-over-Qeshm-Island",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 03:34",
+                "description": "TEHRAN, Nov. 03 (MNA) – Two US MQM-170 reconnaissance drones were grounded over southern Qeshm Island by the Islamic Revolution Guard Corps Aerospace Force's advanced electronic warfare systems.",
+                "_timestamp": 1793676894.0
+            },
+            {
+                "title": "Explosions heard on Qeshm Island, Bandar Lengeh",
+                "link": "https://en.mehrnews.com/news/249117/Explosions-heard-on-Qeshm-Island-Bandar-Lengeh",
+                "source": "Mehr News Agency",
+                "date": "2026-11-02 22:05",
+                "description": "TEHRAN, Nov. 03 (MNA) – Local Iranian media reported hearing of explosions on Iran’s southern Qeshm Island and Bandar Lengeh on Moday night.",
+                "_timestamp": 1793657149.0
+            },
+            {
+                "title": "IRGC says downed two US drones near Strait of Hormuz",
+                "link": "https://en.mehrnews.com/news/249116/IRGC-says-downed-two-US-drones-near-Strait-of-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-02 21:53",
+                "description": "TEHRAN, Nov. 03 (MNA) – IRGC Aeospace Force says to have downed two American MQM-170 drones using electronic warfare near Qeshm Island in the Strait of Hormuz.",
+                "_timestamp": 1793656399.0
+            },
+            {
+                "title": "European gas surges as U.S. strikes Iran’s Qeshm Island",
+                "link": "https://www.investing.com/news/commodities-news/european-gas-surges-as-us-strikes-irans-qeshm-island-4993864",
+                "source": "Investing.com",
+                "date": "2026-11-03 09:48",
+                "description": "",
+                "_timestamp": 1793699325.0
+            },
+            {
+                "title": "US hits Qeshm Island, Pezeshkian signals more diplomacy: Iran war latest",
+                "link": "https://www.aljazeera.com/news/2026/11/3/us-hits-qeshm-island-pezeshkian-signals-more-diplomacy-iran-war-latest?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-03 10:40",
+                "description": "With the first US attack on Qeshm Island since June, Iran and the US are on parallel tracks towards both peace and war.",
+                "_timestamp": 1793702434.0
+            },
+            {
+                "title": "US conducts series of ‘defensive strikes’ against Iran",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/3/us-conducts-series-of-defensive-strikes-against-iran?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-03 10:39",
+                "description": "The US has carried out a series of ‘defensive strikes’ on Iranian locations near Hormuz, with explosions heard on Qeshm.",
+                "_timestamp": 1793702376.0
+            },
+            {
+                "title": "IRGC claims three tankers exploded after hitting naval mines in Hormuz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-three-tankers-exploded-after-hitting-naval-mines-hormuz",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 11:10",
+                "description": "IRGC claims three tankers exploded after hitting naval mines in Hormuz\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard (IRGC) has said that three tankers have exploded after a collision with naval mines in the Strait of Hormuz. The IRGC said the tankers were trying to cross the Strait without permission from Tehran.\n\nIt added that the ships had turned off their geolocation tracking systems as they crossed the southern part of the Strait. There are no reports of any casualties as yet.",
+                "_timestamp": 1793704252.0
+            },
+            {
+                "title": "3 rankers exploded after hitting naval mines in Hormuz: IRGC",
+                "link": "https://en.mehrnews.com/news/249137/3-rankers-exploded-after-hitting-naval-mines-in-Hormuz-IRGC",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 11:59",
+                "description": "TEHRAN, Nov. 03 (MNA) – The Public Relations Department of the Islamic Revolutionary Guards Corps (IRGC) said on Tuesday that three tankers were exploded after hitting mines while using unauthorized passage routes in Hormuz.",
+                "_timestamp": 1793707183.0
+            },
+            {
+                "title": "2 more US drones downed in south of Iran over Bandar-e Khamir",
+                "link": "https://en.mehrnews.com/news/249140/2-more-US-drones-downed-in-south-of-Iran-over-Bandar-e-Khamir",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 12:29",
+                "description": "TEHRAN, Nov. 03 (MNA) – Two American LUCAS drones were destroyed in the skies over Bandar-e Khamir by fire from the IRGC’s Imam Sajjad (AS) Air Defense unit, operating within the integrated air defense network.",
+                "_timestamp": 1793708951.0
+            },
+            {
+                "title": "Three oil tankers explode and catch fire in Strait of Hormuz: IRGC Navy",
+                "link": "https://www.tehrantimes.com/news/531802/Three-oil-tankers-explode-and-catch-fire-in-Strait-of-Hormuz",
+                "source": "Tehran Times",
+                "date": "2026-11-03 16:34",
+                "description": "TEHRAN – Three oil tankers exploded and caught fire after entering an unauthorized route through the Strait of Hormuz and striking sea mines, the Islamic Revolution Guards Corps (IRGC) Navy said on Tuesday.",
+                "_timestamp": 1793723681.0
+            },
+            {
+                "title": "IRGC says 4 oil tankers destroyed, 56th US drone downed",
+                "link": "https://en.mehrnews.com/news/249151/IRGC-says-4-oil-tankers-destroyed-56th-US-drone-downed",
+                "source": "Mehr News Agency",
+                "date": "2026-11-04 04:27",
+                "description": "TEHRAN, Nov. 04 (MNA) – Four violating oil tankers struck mines and were destroyed in the southern Strait of Hormuz, two other vessels were stopped, and a 56th US MQ-9 drone was downed, the Islamic Revolution Guard Corps said.",
+                "_timestamp": 1793766436.0
+            },
+            {
+                "title": "Iran's IRGC says four tankers ablaze after hitting mines in Hormuz Strait",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-hormuz-strait",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 06:20",
+                "description": "Iran's IRGC says four tankers ablaze after hitting mines in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran’s &nbsp;Islamic Revolutionary Guard Corps (IRGC) said four \"rogue\"&nbsp;oil tankers were destroyed after htting&nbsp;naval mines while trying to traverse a route in the Strait of Hormuz that is considered&nbsp;prohibited.\n\nThe incident occurred south of the waterway, with the statement adding that IRGC forces also&nbsp;intercepted two other vessels.",
+                "_timestamp": 1793773253.0
+            },
+            {
+                "title": "Iran Says Four Oil Tankers Destroyed by Mines Near Strait of Hormuz",
+                "link": "https://finance.yahoo.com/energy/articles/iran-says-four-oil-tankers-101500149.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 10:15",
+                "description": "Iran claims four oil tankers were destroyed by naval mines near the Strait of Hormuz as escalating maritime security threats disrupt Middle Eastern oil exports.",
+                "_timestamp": 1793787300.0
+            },
+            {
+                "title": "Morning update",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-661",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 07:48",
+                "description": "Morning update \n\n    \n    \n\n        \n    \n                Good morning Middle East Eye readers,\n\nHere are the latest developments:&nbsp;\n\n\n\t\n\tIran's Islamic Revolutionary Guard Corps (IRGC) announced that two oil tankers and a tugboat caught fire in the Strait of Hormuz.&nbsp;According to the statement, the separate incidents occurred after the vessels were attempting to pass through an \"unauthorised route\".\n\t\n\t\n\tSouth Korea's anti-piracy Cheonghae unit will expand its operations into waters nearby the Strait of Hormuz, according to a report by the Yonhap News Agency citing the Korean Defence Ministry. The government is set to submit a motion to parliament to extend the period of the unit's deployment to the region, which is expected to expire at the end of this year.&nbsp;\n\t\n\t\n\tIsraeli president Isaac Herzog warned prime minister Benjamin Netanyahu other senior officials of a \"highly explosive and dangerous reality\" in the West Bank amid increasing settler violence.&nbsp;Herzog said that the elections in Israel, the US and the Palestinian Authority - which the latter has since been postponed - alongside the olive harvest season are set to \"create a highly explosive and dangerous reality\".\n\t\n\t\n\tThe US sanctioned two individuals and another entity accused of aiding Iran in sourcing man-portable air-defense systems (MANPADS).&nbsp;The statement said that sanctions \"close off more of the channels Tehran uses to try to rebuild its arsenal and raise the risk for third-country brokers and suppliers\".\n\t\n\t\n\tA ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday. Meanwhile, Houthi-affiliated media reported that Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of al-Jawf, al-Bayda, Saada, and Taiz.",
+                "_timestamp": 1793864938.0
+            },
+            {
+                "title": "Iran’s IRGC says two tankers, tugboat were ablaze in Hormuz Strait",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-two-tankers-tugboat-were-ablaze-hormuz-strait",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 04:58",
+                "description": "Iran’s IRGC says two tankers, tugboat were ablaze in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard Corps (IRGC)&nbsp;announced that&nbsp;two oil tankers and a tugboat caught fire in the Strait of Hormuz.&nbsp;\n\nAccording to the statement, the separate incidents occurred after the vessels were attempting to&nbsp;pass through an \"unauthorised route\",&nbsp;\n\nOne large oil tanker was passing through what the IRGC described as an \"illegal southern passageway\", hitting a mine and catching fire.&nbsp;\n\nAnother supertanker, leaving eastern section of the waterway, was caught in a massive fire. A tugboat that was deployed to extinguish the blaze subsequently burst into flames.\n\n\"The US regime, which imposes very heavy insurance costs on American taxpayers and its allies in the region by insisting and inciting vessels to violate and pass through mined passages, would not have suffered these heavy losses and a disgraceful electoral defeat if it had had some foresight, instead of paying these costs by releasing Iran's frozen credits, which are not less than half of these costs that have been made so far,\" the statement added, referring to the nationwide Democrats' sweep during the midterm elections.\n\n\"Attempting to break the law in the Strait of Hormuz will not result in anything other than more financial losses and greater political defeats for the US.\"",
+                "_timestamp": 1793854698.0
+            },
+            {
+                "title": "IRGC reports tanker explosions in Hormuz, US drone seizures",
+                "link": "https://en.mehrnews.com/news/249182/IRGC-reports-tanker-explosions-in-Hormuz-US-drone-seizures",
+                "source": "Mehr News Agency",
+                "date": "2026-11-05 04:25",
+                "description": "TEHRAN, Nov. 05 (MNA) – The Islamic Revolution Guard Corps said two oil tankers and a tugboat caught fire after crossing an unauthorized route in the Strait of Hormuz overnight, and its electronic warfare units captured two Lucas drones intact.",
+                "_timestamp": 1793852707.0
+            },
+            {
+                "title": "Another violating oil tanker catches fire in Strait of Hormuz",
+                "link": "https://en.mehrnews.com/news/249187/Another-violating-oil-tanker-catches-fire-in-Strait-of-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-05 10:41",
+                "description": "TEHRAN, Nov. 05 (MNA) – Iran's Army Navy said a violating tanker caught fire after hitting a naval mine in an unsafe area east of the Strait of Hormuz early today.",
+                "_timestamp": 1793875304.0
+            },
+            {
+                "title": "Iranian navy reports tanker on fire in Strait of Hormuz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-navy-reports-tanker-fire-strait-hormuz",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 11:35",
+                "description": "Iranian navy reports tanker on fire in Strait of Hormuz\n\n    \n    \n\n        \n    \n                The Iranian navy reports that an \"offending tanker\" attempting to cross an \"unsafe area\" in the Strait of Hormuz has caught fire after hitting a mine.\n\nIn comments carried by Iran's semi-official Tasnim news agency, the Iranian authorities said that the vessel had halted its journey after the collision, adding that the tanker&nbsp;had “turned off its detection and navigation systems”.\n\nThe statement warned that Tehran is&nbsp;“announcing to ship owners for the umpteenth time that the Strait of Hormuz is unsafe and closed to illegal vessels that intend to transit without coordination”.",
+                "_timestamp": 1793878533.0
+            },
+            {
+                "title": "Tankers hit in Hormuz as Iran keeps up pressure after US vote",
+                "link": "https://www.investing.com/news/commodities-news/tankers-hit-in-hormuz-as-iran-keeps-up-pressure-after-us-vote-5005038",
+                "source": "Investing.com",
+                "date": "2026-11-05 15:18",
+                "description": "",
+                "_timestamp": 1793891908.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 ~10:41 UTC (Ongoing / Breaking within last 2h)",
+            "Facts": "Iran's Army Navy and the IRGC reported that another violating oil tanker caught fire after striking a naval mine in an unsafe area east of the Strait of Hormuz [Mehr News Agency, 2026-11-05 10:41 UTC]. This follows ongoing naval escalations, including multiple tanker explosions and drone interceptions over recent days [Middle East Eye, 2026-11-05 04:58 UTC].",
+            "Uncertainties": "The full scale of supply disruptions through the Strait of Hormuz and potential direct military retaliation by the United States remain uncertain.",
+            "Macro_Context": "EUR/USD is down 0.35% (USD strengthening), US 10Y Treasury bond prices are stable, and Brent crude oil prices dropped 5.18%. While a stronger USD acts as a headwind for gold, escalating physical supply route threats and naval mine incidents in the Strait of Hormuz sustain safe-haven safe-flows into precious metals.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Gold experienced an upward impulse reaching highs above $4146 earlier today following continuous Hormuz Strait disruptions. With the 4h move vs Daily ATR ratio at 0.09x, the immediate impulsive phase has cooled, but ongoing breaking maritime incidents continue to provide structural support toward upper liquidity magnets.",
+            "Orderflow_Price_Target": "4139.29"
+        },
+        "eval_status": "ACTIVE"
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:17",
+        "original_date": "2026-11-05 15:17",
+        "_timestamp": 1793891849.0,
+        "articles": [
+            {
+                "title": "Will Earnings Beat Change Newmont Stock Narrative",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/earnings-beat-change-newmont-stock-151729340.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 15:17",
+                "description": "Newmont Corporation reported third quarter 2026 sales of US$6,363 million and net income of US$2,475 million, alongside updated production guidance and a declared US$0.26 quarterly dividend. The combination of stronger profitability, lower cost guidance and reaffirmed gold output targets highlights how Newmont is working to tighten its operating discipline while still returning cash to shareholders. We will now look at how Newmont's stronger third quarter earnings and lower cost guidance...",
+                "_timestamp": 1793891849.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:17",
+        "original_date": "2026-11-05 15:17",
+        "_timestamp": 1793891848.0,
+        "articles": [
+            {
+                "title": "Learn Why The Bull Case For Resideo Technologies (REZI) Could Change Following Apple HomeView Update",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/learn-why-bull-case-resideo-151728521.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:17",
+                "description": "Resideo Technologies reported that in October 2026 it announced a software update planned for early 2027 that will let existing Honeywell Home ElitePRO, X7S and X8S thermostats support Apple's new Adaptive Temperature Control and Clean Energy Guidance features through HomeView, without new hardware or extra installation work. The move extends Resideo Technologies' existing installed base into Apple's latest smart home ecosystem while keeping hardware in place. This approach concentrates...",
+                "_timestamp": 1793891848.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-03 16:25 | Letztes Update: 2026-11-05 15:12",
+        "original_date": "2026-11-03 16:25",
+        "_timestamp": 1793891535.0,
+        "articles": [
+            {
+                "title": "Devon Energy to Report Q3 Earnings: Buy, Sell or Hold the Stock?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/devon-energy-report-q3-earnings-162500109.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 16:25",
+                "description": "DVN heads into Q3 earnings with rising estimates, strong production prospects and Coterra merger synergies.",
+                "_timestamp": 1793723100.0
+            },
+            {
+                "title": "What Just Happened To Devon Energy Stock?",
+                "link": "https://www.trefis.com/stock/dvn/articles/622217/what-just-happened-to-devon-energy-stock/2026-11-03?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 18:09",
+                "description": "For questions about this article or underlying research, email help@trefis.com.",
+                "_timestamp": 1793729355.0
+            },
+            {
+                "title": "What's in Store for These 4 Energy Stocks in Q3 Earnings?",
+                "link": "https://finance.yahoo.com/energy/articles/whats-store-4-energy-stocks-130500125.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 13:05",
+                "description": "Canadian Natural, ConocoPhillips, TC Energy and Targa Resources are set to report their third-quarter earnings tomorrow.",
+                "_timestamp": 1793797500.0
+            },
+            {
+                "title": "Chord Energy (NASDAQ:CHRD) reports Q3 2026 earnings",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/chord-energy-nasdaq-chrd-reports-212937135.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 21:29",
+                "description": "Oil and gas producer Chord Energy (NASDAQ:CHRD) beat Wall Street’s revenue expectations in Q3 2026, with revenue up 30% year on year to $1.71 billion. Its GAAP profit of $3.29 per share was 43.1% below analysts’ consensus estimates.",
+                "_timestamp": 1793827777.0
+            },
+            {
+                "title": "Diversified Energy: Q3 Earnings Snapshot",
+                "link": "https://finance.yahoo.com/energy/articles/diversified-energy-q3-earnings-snapshot-232447781.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 23:24",
+                "description": "(AP) — Diversified Energy (DEC) on Wednesday reported a loss of $202.The Birmingham, Alabama-based company said it had a loss of $2.",
+                "_timestamp": 1793834687.0
+            },
+            {
+                "title": "Barrick Mining to Post Q3 Earnings: What's in the Offing for the Stock?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/barrick-mining-post-q3-earnings-135600378.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 13:56",
+                "description": "Barrick Mining is set to report Q3 earnings, with higher gold prices and production expected to drive growth despite rising costs.",
+                "_timestamp": 1793886960.0
+            },
+            {
+                "title": "Comstock Resources Reports 9% Production Growth as Q3 Earnings Miss Estimates",
+                "link": "https://investorshub.advfn.com/market-news/article/39392/comstock-resources-reports-9-production-growth-as-q3-earnings-miss-estimates?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 15:12",
+                "description": "Comstock Resources, Inc. (NYSE:CRK) reported third-quarter 2026 adjusted earnings of $0.",
+                "_timestamp": 1793891535.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Facts": "Energy sector news reports covering corporate earnings and production updates for firms like Devon Energy, Chord Energy, and Diversified Energy [Yahoo Finance Oil]. Simultaneously, XAU/USD experienced significant upside momentum, reaching a price of $4138.235 driven by broader macroeconomic shifts.",
+            "Uncertainties": "Specific drivers linking the corporate energy earnings to the aggressive upward spike in spot gold remain unconfirmed by direct macroeconomic policy announcements.",
+            "Macro_Context": "EUR/USD is strengthening (+0.23%), reflecting a weaker USD which acts as a tailwind for gold. US 10Y Treasury bond prices are up (+0.31%), indicating falling yields, which also supports non-yielding assets like gold. Brent Crude is lower (-8.96%), yet gold continues to rally due to bond and currency dynamics, despite heavy retail long positioning (72.4% long on OANDA).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 60,
+            "Past_Price_Action_Cause": "XAU/USD has risen by +$202.89 over the last 24h, with a 4h move vs Daily ATR ratio at 1.01x, staying just below the 1.2x exhaustion threshold, allowing room for continued momentum toward immediate liquidity overhead.",
+            "Orderflow_Price_Target": "4141.34"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 04:23 | Letztes Update: 2026-11-05 15:11",
+        "original_date": "2026-11-05 04:23",
+        "_timestamp": 1793891477.0,
+        "articles": [
+            {
+                "title": "XOM Stock Is Up 43% In 2026: Wall Street Is Split On The Oil Major Following Q3 Results",
+                "link": "https://stocktwits.com/news-articles/markets/equity/xom-stock-is-up-43-in-2026-wall-street-is-split-on-the-oil-major-following-q3-results/cNG13IER9EX?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 04:23",
+                "description": "XOM stock has gained more than 43% this year, putting it on track for its best year since 2022.",
+                "_timestamp": 1793852590.0
+            },
+            {
+                "title": "InPlay Oil Corp. Announces Third Quarter 2026 Financial and Operating Results and Preliminary 2027 Guidance Highlighted by 15% Per Share Growth in Oil Production",
+                "link": "https://finance.yahoo.com/news/inplay-oil-corp-announces-third-123000687.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 12:30",
+                "description": "InPlay Oil Corp. (TSX: IPO) (TASE: IPO) (OTCQX: IPOOF) (\"InPlay\" or the \"Company\") is pleased to announce its financial and operating results for the three and nine months ended September 30, 2026, together with preliminary 2027 production and capital guidance. InPlay's unaudited interim financial statements and notes, and Management's Discussion and Analysis (\"MD&amp;A\") for the three and nine months ended September 30, 2026 will be available at \"www.sedarplus.ca\" and the Company's website at \"www.",
+                "_timestamp": 1793881800.0
+            },
+            {
+                "title": "ConocoPhillips (NYSE:COP) delivers impressive Q3 2026",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/conocophillips-nyse-cop-delivers-impressive-124245049.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 12:42",
+                "description": "Oil and gas producer ConocoPhillips (NYSE:COP) reported Q3 2026 results beating Wall Street’s revenue expectations, with revenue up 29.2% year on year to $20.06 billion. Its GAAP profit of $3.34 per share was 11% above analysts’ consensus estimates.",
+                "_timestamp": 1793882565.0
+            },
+            {
+                "title": "ConocoPhillips Reports Higher Q3 Earnings as Oil Prices Support Profit Growth",
+                "link": "https://investorshub.advfn.com/market-news/article/39390/conocophillips-reports-higher-q3-earnings-as-oil-prices-support-profit-growth?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 15:11",
+                "description": "ConocoPhillips (NYSE:COP) reported third-quarter 2026 adjusted earnings of $3. 27 per share, exceeding analysts’ expectations of $2.",
+                "_timestamp": 1793891477.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 04:23 to 12:42 UTC (approx. 1 to 9 hours ago relative to 2026-11-05 13:42 UTC)",
+            "Facts": "Recent corporate earnings and operational updates from major energy companies (ExxonMobil, InPlay Oil, and ConocoPhillips) indicate strong third-quarter 2026 results and forward guidance, with ConocoPhillips beating revenue and earnings expectations [Yahoo Finance Oil]. These reports highlight robust corporate earnings within the energy sector rather than any direct macroeconomic shock to precious metals.",
+            "Uncertainties": "Whether broader equity market performance and energy sector results will induce spillover into broader commodity indices or alter Federal Reserve rate expectations.",
+            "Macro_Context": "The US dollar is strengthening (EUR/USD down 0.26%), 10-year Treasury yields remain relatively stable, and Brent crude oil has dropped sharply by 5.18%. This macro configuration presents a slight headwind for gold due to USD strength and sliding oil prices, while high OANDA retail long positioning (71.9% long) creates a contrarian downward bias.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "XAU/USD rallied earlier in the Asian session toward the 4146 area but has since consolidated around 4120. Because the fundamental catalysts are sector-specific oil earnings rather than direct gold drivers, and given the lack of sustained momentum over the past 4 hours, the impact is neutral and largely digested by current levels.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -388,6 +1061,23 @@
         }
     },
     {
+        "main_date": "Erstmeldung: 2026-11-05 15:04",
+        "original_date": "2026-11-05 15:04",
+        "_timestamp": 1793891067.0,
+        "articles": [
+            {
+                "title": "SpaceX and Tesla stocks extend their slide as chip stocks drop: AlphaCheck",
+                "link": "https://finance.yahoo.com/markets/article/spacex-tesla-shares-extend-declines-semiconductor-stocks-drop-alphacheck-150427180.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 15:04",
+                "description": "Stocks bounced on Wednesday after Democrats' sweeping mid-term elections.",
+                "_timestamp": 1793891067.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
         "main_date": "Erstmeldung: 2026-11-03 15:00 | Letztes Update: 2026-11-05 15:01",
         "original_date": "2026-11-03 15:00",
         "_timestamp": 1793890902.0,
@@ -517,6 +1207,23 @@
         "summary": null
     },
     {
+        "main_date": "Erstmeldung: 2026-11-05 14:49",
+        "original_date": "2026-11-05 14:49",
+        "_timestamp": 1793890140.0,
+        "articles": [
+            {
+                "title": "This is the secret sauce for the economy — and it’s showing up in faster U.S. growth",
+                "link": "https://www.marketwatch.com/story/this-is-the-secret-sauce-for-the-economy-and-its-showing-up-in-faster-u-s-growth-fb78ce21?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-05 14:49",
+                "description": "Americans are unhappy about the economy, they’re worried about artificial intelligence and they took their frustration out on Republicans in the U.S. midterm elections.",
+                "_timestamp": 1793890140.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
         "main_date": "Erstmeldung: 2026-11-05 14:47",
         "original_date": "2026-11-05 14:47",
         "_timestamp": 1793890066.0,
@@ -596,6 +1303,23 @@
             "Past_Price_Action_Cause": "Gold experienced a strong rally earlier in the session hitting highs near $4146 before pulling back to $4102. The current news represents speculative commentary on Iranian leadership rather than a fresh physical escalation or breakthrough, leaving the market in a neutral consolidation phase.",
             "Orderflow_Price_Target": "N/A"
         }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 14:33",
+        "original_date": "2026-11-05 14:33",
+        "_timestamp": 1793889212.0,
+        "articles": [
+            {
+                "title": "Here's what the Democratic election rout could mean for the U.S. economy",
+                "link": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+                "source": "CNBC Economy",
+                "date": "2026-11-05 14:33",
+                "description": "The biggest forces shaping the economy aren't going to change just because the party in power did.",
+                "_timestamp": 1793889212.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     },
     {
         "main_date": "Erstmeldung: 2026-11-02 22:53 | Letztes Update: 2026-11-05 14:24",
@@ -912,8 +1636,19 @@
                 "_timestamp": 1793888010.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 14:13 UTC (approx. 2 hours ago relative to reference time 2026-11-05 16:03 UTC)",
+            "Facts": "The UK government banned Palestinian-American designer and activist Mo Hamzeh from entering the country to speak at a charity fundraiser for Gaza in London, after cancelling his Electronic Travel Authorisation (ETA) citing that his presence is 'not conducive to the public good' following pressure from advocacy groups like UK Lawyers for Israel [Middle East Eye].",
+            "Uncertainties": "Whether Hamzeh's impending legal challenge will force any expedited review or temporary injunction from UK courts, and if this specific UK domestic immigration decision will trigger wider regional diplomatic protests.",
+            "Macro_Context": "The broader cross-asset landscape shows a severe Tech/AI sell-off (Nasdaq 100 down -5.84%), falling Brent crude prices (-4.09%), and lower US Treasury yields (10Y bond prices up +0.49%), while EUR/USD remains relatively flat. High retail long positioning in gold (71.8%) and a sharp recent pullback from session highs indicate profit-taking or margin liquidation pressures overriding isolated geopolitical headlines.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Gold experienced an intraday spike earlier in the session toward $4146 before pulling back sharply below $4085 (-$50.12 in the last 4 hours). This localized geopolitical news item concerning a UK visa ban lacks systemic macroeconomic heft to dictate global bullion flows, and price action reflects broader cross-asset technical retracement rather than direct safe-haven momentum.",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "Erstmeldung: 2026-11-05 14:11",
@@ -942,6 +1677,23 @@
             "Past_Price_Action_Cause": "Gold has seen a recent pullback from intraday highs above 4146 down to 4102.53, and the news represents backward-looking quarterly commentary with no direct new macro shock.",
             "Orderflow_Price_Target": "N/A"
         }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 14:10",
+        "original_date": "2026-11-05 14:10",
+        "_timestamp": 1793887800.0,
+        "articles": [
+            {
+                "title": "PARR Q3 Earnings Call Highlights Refining Strength and Growth Plans",
+                "link": "https://finance.yahoo.com/energy/articles/parr-q3-earnings-call-highlights-141000368.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 14:10",
+                "description": "Par Pacific's Q3 earnings surge on strong refining margins and operational gains, while higher throughput, renewable diesel growth and liquidity bolster its outlook.",
+                "_timestamp": 1793887800.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     },
     {
         "main_date": "Erstmeldung: 2026-11-05 14:04",
@@ -1399,73 +2151,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-03 16:25 | Letztes Update: 2026-11-05 13:56",
-        "original_date": "2026-11-03 16:25",
-        "_timestamp": 1793886960.0,
-        "articles": [
-            {
-                "title": "Devon Energy to Report Q3 Earnings: Buy, Sell or Hold the Stock?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/devon-energy-report-q3-earnings-162500109.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 16:25",
-                "description": "DVN heads into Q3 earnings with rising estimates, strong production prospects and Coterra merger synergies.",
-                "_timestamp": 1793723100.0
-            },
-            {
-                "title": "What Just Happened To Devon Energy Stock?",
-                "link": "https://www.trefis.com/stock/dvn/articles/622217/what-just-happened-to-devon-energy-stock/2026-11-03?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 18:09",
-                "description": "For questions about this article or underlying research, email help@trefis.com.",
-                "_timestamp": 1793729355.0
-            },
-            {
-                "title": "What's in Store for These 4 Energy Stocks in Q3 Earnings?",
-                "link": "https://finance.yahoo.com/energy/articles/whats-store-4-energy-stocks-130500125.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 13:05",
-                "description": "Canadian Natural, ConocoPhillips, TC Energy and Targa Resources are set to report their third-quarter earnings tomorrow.",
-                "_timestamp": 1793797500.0
-            },
-            {
-                "title": "Chord Energy (NASDAQ:CHRD) reports Q3 2026 earnings",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/chord-energy-nasdaq-chrd-reports-212937135.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 21:29",
-                "description": "Oil and gas producer Chord Energy (NASDAQ:CHRD) beat Wall Street’s revenue expectations in Q3 2026, with revenue up 30% year on year to $1.71 billion. Its GAAP profit of $3.29 per share was 43.1% below analysts’ consensus estimates.",
-                "_timestamp": 1793827777.0
-            },
-            {
-                "title": "Diversified Energy: Q3 Earnings Snapshot",
-                "link": "https://finance.yahoo.com/energy/articles/diversified-energy-q3-earnings-snapshot-232447781.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 23:24",
-                "description": "(AP) — Diversified Energy (DEC) on Wednesday reported a loss of $202.The Birmingham, Alabama-based company said it had a loss of $2.",
-                "_timestamp": 1793834687.0
-            },
-            {
-                "title": "Barrick Mining to Post Q3 Earnings: What's in the Offing for the Stock?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/barrick-mining-post-q3-earnings-135600378.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 13:56",
-                "description": "Barrick Mining is set to report Q3 earnings, with higher gold prices and production expected to drive growth despite rising costs.",
-                "_timestamp": 1793886960.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Facts": "Energy sector news reports covering corporate earnings and production updates for firms like Devon Energy, Chord Energy, and Diversified Energy [Yahoo Finance Oil]. Simultaneously, XAU/USD experienced significant upside momentum, reaching a price of $4138.235 driven by broader macroeconomic shifts.",
-            "Uncertainties": "Specific drivers linking the corporate energy earnings to the aggressive upward spike in spot gold remain unconfirmed by direct macroeconomic policy announcements.",
-            "Macro_Context": "EUR/USD is strengthening (+0.23%), reflecting a weaker USD which acts as a tailwind for gold. US 10Y Treasury bond prices are up (+0.31%), indicating falling yields, which also supports non-yielding assets like gold. Brent Crude is lower (-8.96%), yet gold continues to rally due to bond and currency dynamics, despite heavy retail long positioning (72.4% long on OANDA).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "XAU/USD has risen by +$202.89 over the last 24h, with a 4h move vs Daily ATR ratio at 1.01x, staying just below the 1.2x exhaustion threshold, allowing room for continued momentum toward immediate liquidity overhead.",
-            "Orderflow_Price_Target": "4141.34"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-03 16:07 | Letztes Update: 2026-11-05 13:48",
         "original_date": "2026-11-03 16:07",
         "_timestamp": 1793886524.0,
@@ -1583,6 +2268,57 @@
         "eval_status": "ACTIVE"
     },
     {
+        "main_date": "Erstmeldung: 2026-11-05 13:44",
+        "original_date": "2026-11-05 13:44",
+        "_timestamp": 1793886285.0,
+        "articles": [
+            {
+                "title": "OpenAI pledges to halt NDAs in new data center policy proposal after election rebuke",
+                "link": "https://www.cnbc.com/2026/11/05/openai-to-pay-for-data-center-power-after-election-shows-ai-concern.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 13:44",
+                "description": "OpenAI pledged to solicit community input around AI data centers, publish construction plans and protect ratepayers.",
+                "_timestamp": 1793886285.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 13:41",
+        "original_date": "2026-11-05 13:41",
+        "_timestamp": 1793886070.0,
+        "articles": [
+            {
+                "title": "Markets cool after the monster midterm rally with Musk's stocks under pressure",
+                "link": "https://www.cnbc.com/2026/11/05/markets-cool-midterm-musk-stocks-under-pressure.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 13:41",
+                "description": "Futures are mixed and oil settles after a sharp sell-off",
+                "_timestamp": 1793886070.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 13:34",
+        "original_date": "2026-11-05 13:34",
+        "_timestamp": 1793885654.0,
+        "articles": [
+            {
+                "title": "Chinese AI lab Moonshot turned to Europe for Nvidia Blackwell access amid U.S. China curbs, sources tell CNBC",
+                "link": "https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 13:34",
+                "description": "Moonshot AI has sought leasing agreements with neoclouds for advanced chips in Europe, as U.S. export controls restrict their import to China.",
+                "_timestamp": 1793885654.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
         "main_date": "Erstmeldung: 2026-11-05 13:28",
         "original_date": "2026-11-05 13:28",
         "_timestamp": 1793885292.0,
@@ -1611,8 +2347,8 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 13:26",
-        "original_date": "2026-11-05 13:26",
+        "main_date": "Erstmeldung: 2026-11-05 12:37 | Letztes Update: 2026-11-05 13:26",
+        "original_date": "2026-11-05 12:37",
         "_timestamp": 1793885160.0,
         "articles": [
             {
@@ -1622,9 +2358,17 @@
                 "date": "2026-11-05 13:26",
                 "description": "The conflict has lifted energy prices, though they have fallen since the midterms raised hopes for an end to the war.",
                 "_timestamp": 1793885160.0
+            },
+            {
+                "title": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
+                "link": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
+                "source": "CNBC Economy",
+                "date": "2026-11-05 12:37",
+                "description": "One policymaker voted to raise the bank's key interest rate to 4.25%.",
+                "_timestamp": 1793882277.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Event_Timestamp": "2026-11-05 ~13:26 UTC (approx. 14 minutes ago)",
             "Facts": "The Bank of England raised interest rates for the first time since the start of the Iran war, reacting to elevated energy prices driven by the conflict, though energy prices have recently declined following midterms raising hopes for an end to the war [Yahoo Finance Oil].",
@@ -1881,6 +2625,34 @@
     {
         "main_date": "Erstmeldung: 2026-11-05 13:00",
         "original_date": "2026-11-05 13:00",
+        "_timestamp": 1793883601.0,
+        "articles": [
+            {
+                "title": "Voters rejected AI data centers over resource concerns. Here's why measuring water usage is hard",
+                "link": "https://www.cnbc.com/2026/11/05/meta-spacex-ai-data-centers-use-millions-of-gallons-of-water-a-day.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 13:00",
+                "description": "AI data centers are facing national outcry for draining local water and power supply. The truth about how they use water to stay cool is far more complicated.",
+                "_timestamp": 1793883601.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 13:00 UTC (approx. 3h ago relative to 2026-11-05 16:06 UTC)",
+            "Facts": "Voters have increasingly rejected AI data center developments due to acute concerns over local resource depletion, specifically regarding heavy local water and power consumption. Quantifying real-time cooling water usage remains technically complex for operators [CNBC Tech & AI].",
+            "Uncertainties": "The exact regulatory fallout, regional legislative bans, and the extent to which major cloud providers will be forced to slow down AI infrastructure build-outs remain unconfirmed.",
+            "Macro_Context": "The USD remains relatively flat with EUR/USD up slightly (+0.09%). US 10-year Treasury bond prices are rising (+0.49%, yields falling), providing a traditional tailwind for non-yielding bullion. Meanwhile, the Nasdaq 100 is suffering a severe tech/AI selloff (-5.84%), which introduces broad market risk aversion and cross-asset margin liquidation pressures, counterbalanced by safe-haven inflows.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "XAU/USD experienced an intraday high near $4146 before pulling back sharply by over $50 in recent hours, testing levels around $4083. While tech-sector headwinds and data center pushback highlight structural tech vulnerabilities, the immediate price action reflects a sharp correction from daily highs and crowded retail long positioning (71.8% long), keeping the bias neutral rather than chasing directional momentum.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 13:00",
+        "original_date": "2026-11-05 13:00",
         "_timestamp": 1793883600.0,
         "articles": [
             {
@@ -2087,50 +2859,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 45,
             "Past_Price_Action_Cause": "Gold experienced a strong rally over the past 24 hours (+ $78.18), but the 4h move vs daily ATR ratio is a minimal 0.03x, indicating consolidation after a spike. The geopolitical statements regarding U.S. elections and Iranian posture are recurring rhetoric without an immediate, new military kinetic strike. Thus, the geopolitical risk premium is largely priced in, and gold is consolidating near the $4120 resistance zone.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 04:23 | Letztes Update: 2026-11-05 12:42",
-        "original_date": "2026-11-05 04:23",
-        "_timestamp": 1793882565.0,
-        "articles": [
-            {
-                "title": "XOM Stock Is Up 43% In 2026: Wall Street Is Split On The Oil Major Following Q3 Results",
-                "link": "https://stocktwits.com/news-articles/markets/equity/xom-stock-is-up-43-in-2026-wall-street-is-split-on-the-oil-major-following-q3-results/cNG13IER9EX?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 04:23",
-                "description": "XOM stock has gained more than 43% this year, putting it on track for its best year since 2022.",
-                "_timestamp": 1793852590.0
-            },
-            {
-                "title": "InPlay Oil Corp. Announces Third Quarter 2026 Financial and Operating Results and Preliminary 2027 Guidance Highlighted by 15% Per Share Growth in Oil Production",
-                "link": "https://finance.yahoo.com/news/inplay-oil-corp-announces-third-123000687.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 12:30",
-                "description": "InPlay Oil Corp. (TSX: IPO) (TASE: IPO) (OTCQX: IPOOF) (\"InPlay\" or the \"Company\") is pleased to announce its financial and operating results for the three and nine months ended September 30, 2026, together with preliminary 2027 production and capital guidance. InPlay's unaudited interim financial statements and notes, and Management's Discussion and Analysis (\"MD&amp;A\") for the three and nine months ended September 30, 2026 will be available at \"www.sedarplus.ca\" and the Company's website at \"www.",
-                "_timestamp": 1793881800.0
-            },
-            {
-                "title": "ConocoPhillips (NYSE:COP) delivers impressive Q3 2026",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/conocophillips-nyse-cop-delivers-impressive-124245049.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 12:42",
-                "description": "Oil and gas producer ConocoPhillips (NYSE:COP) reported Q3 2026 results beating Wall Street’s revenue expectations, with revenue up 29.2% year on year to $20.06 billion. Its GAAP profit of $3.34 per share was 11% above analysts’ consensus estimates.",
-                "_timestamp": 1793882565.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 04:23 to 12:42 UTC (approx. 1 to 9 hours ago relative to 2026-11-05 13:42 UTC)",
-            "Facts": "Recent corporate earnings and operational updates from major energy companies (ExxonMobil, InPlay Oil, and ConocoPhillips) indicate strong third-quarter 2026 results and forward guidance, with ConocoPhillips beating revenue and earnings expectations [Yahoo Finance Oil]. These reports highlight robust corporate earnings within the energy sector rather than any direct macroeconomic shock to precious metals.",
-            "Uncertainties": "Whether broader equity market performance and energy sector results will induce spillover into broader commodity indices or alter Federal Reserve rate expectations.",
-            "Macro_Context": "The US dollar is strengthening (EUR/USD down 0.26%), 10-year Treasury yields remain relatively stable, and Brent crude oil has dropped sharply by 5.18%. This macro configuration presents a slight headwind for gold due to USD strength and sliding oil prices, while high OANDA retail long positioning (71.9% long) creates a contrarian downward bias.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "XAU/USD rallied earlier in the Asian session toward the 4146 area but has since consolidated around 4120. Because the fundamental catalysts are sector-specific oil earnings rather than direct gold drivers, and given the lack of sustained momentum over the past 4 hours, the impact is neutral and largely digested by current levels.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -2707,179 +3435,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-02 21:53 | Letztes Update: 2026-11-05 11:35",
-        "original_date": "2026-11-02 21:53",
-        "_timestamp": 1793878533.0,
-        "articles": [
-            {
-                "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
-                "link": "https://en.mehrnews.com/news/249120/IRGC-downs-55th-US-MQ-9-over-Strait-of-Hormuz",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 03:45",
-                "description": "TEHRAN, Nov. 03 (MNA) – A US MQ-9 drone was intercepted and destroyed over the eastern Strait of Hormuz by IRGC air defenses, the 55th such drone downed, the Islamic Revolution Guard Corps said.",
-                "_timestamp": 1793677510.0
-            },
-            {
-                "title": "Iran captures two US MQM-170 drones over Qeshm Island",
-                "link": "https://en.mehrnews.com/news/249118/Iran-captures-two-US-MQM-170-drones-over-Qeshm-Island",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 03:34",
-                "description": "TEHRAN, Nov. 03 (MNA) – Two US MQM-170 reconnaissance drones were grounded over southern Qeshm Island by the Islamic Revolution Guard Corps Aerospace Force's advanced electronic warfare systems.",
-                "_timestamp": 1793676894.0
-            },
-            {
-                "title": "Explosions heard on Qeshm Island, Bandar Lengeh",
-                "link": "https://en.mehrnews.com/news/249117/Explosions-heard-on-Qeshm-Island-Bandar-Lengeh",
-                "source": "Mehr News Agency",
-                "date": "2026-11-02 22:05",
-                "description": "TEHRAN, Nov. 03 (MNA) – Local Iranian media reported hearing of explosions on Iran’s southern Qeshm Island and Bandar Lengeh on Moday night.",
-                "_timestamp": 1793657149.0
-            },
-            {
-                "title": "IRGC says downed two US drones near Strait of Hormuz",
-                "link": "https://en.mehrnews.com/news/249116/IRGC-says-downed-two-US-drones-near-Strait-of-Hormuz",
-                "source": "Mehr News Agency",
-                "date": "2026-11-02 21:53",
-                "description": "TEHRAN, Nov. 03 (MNA) – IRGC Aeospace Force says to have downed two American MQM-170 drones using electronic warfare near Qeshm Island in the Strait of Hormuz.",
-                "_timestamp": 1793656399.0
-            },
-            {
-                "title": "European gas surges as U.S. strikes Iran’s Qeshm Island",
-                "link": "https://www.investing.com/news/commodities-news/european-gas-surges-as-us-strikes-irans-qeshm-island-4993864",
-                "source": "Investing.com",
-                "date": "2026-11-03 09:48",
-                "description": "",
-                "_timestamp": 1793699325.0
-            },
-            {
-                "title": "US hits Qeshm Island, Pezeshkian signals more diplomacy: Iran war latest",
-                "link": "https://www.aljazeera.com/news/2026/11/3/us-hits-qeshm-island-pezeshkian-signals-more-diplomacy-iran-war-latest?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-03 10:40",
-                "description": "With the first US attack on Qeshm Island since June, Iran and the US are on parallel tracks towards both peace and war.",
-                "_timestamp": 1793702434.0
-            },
-            {
-                "title": "US conducts series of ‘defensive strikes’ against Iran",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/3/us-conducts-series-of-defensive-strikes-against-iran?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-03 10:39",
-                "description": "The US has carried out a series of ‘defensive strikes’ on Iranian locations near Hormuz, with explosions heard on Qeshm.",
-                "_timestamp": 1793702376.0
-            },
-            {
-                "title": "IRGC claims three tankers exploded after hitting naval mines in Hormuz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-three-tankers-exploded-after-hitting-naval-mines-hormuz",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 11:10",
-                "description": "IRGC claims three tankers exploded after hitting naval mines in Hormuz\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard (IRGC) has said that three tankers have exploded after a collision with naval mines in the Strait of Hormuz. The IRGC said the tankers were trying to cross the Strait without permission from Tehran.\n\nIt added that the ships had turned off their geolocation tracking systems as they crossed the southern part of the Strait. There are no reports of any casualties as yet.",
-                "_timestamp": 1793704252.0
-            },
-            {
-                "title": "3 rankers exploded after hitting naval mines in Hormuz: IRGC",
-                "link": "https://en.mehrnews.com/news/249137/3-rankers-exploded-after-hitting-naval-mines-in-Hormuz-IRGC",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 11:59",
-                "description": "TEHRAN, Nov. 03 (MNA) – The Public Relations Department of the Islamic Revolutionary Guards Corps (IRGC) said on Tuesday that three tankers were exploded after hitting mines while using unauthorized passage routes in Hormuz.",
-                "_timestamp": 1793707183.0
-            },
-            {
-                "title": "2 more US drones downed in south of Iran over Bandar-e Khamir",
-                "link": "https://en.mehrnews.com/news/249140/2-more-US-drones-downed-in-south-of-Iran-over-Bandar-e-Khamir",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 12:29",
-                "description": "TEHRAN, Nov. 03 (MNA) – Two American LUCAS drones were destroyed in the skies over Bandar-e Khamir by fire from the IRGC’s Imam Sajjad (AS) Air Defense unit, operating within the integrated air defense network.",
-                "_timestamp": 1793708951.0
-            },
-            {
-                "title": "Three oil tankers explode and catch fire in Strait of Hormuz: IRGC Navy",
-                "link": "https://www.tehrantimes.com/news/531802/Three-oil-tankers-explode-and-catch-fire-in-Strait-of-Hormuz",
-                "source": "Tehran Times",
-                "date": "2026-11-03 16:34",
-                "description": "TEHRAN – Three oil tankers exploded and caught fire after entering an unauthorized route through the Strait of Hormuz and striking sea mines, the Islamic Revolution Guards Corps (IRGC) Navy said on Tuesday.",
-                "_timestamp": 1793723681.0
-            },
-            {
-                "title": "IRGC says 4 oil tankers destroyed, 56th US drone downed",
-                "link": "https://en.mehrnews.com/news/249151/IRGC-says-4-oil-tankers-destroyed-56th-US-drone-downed",
-                "source": "Mehr News Agency",
-                "date": "2026-11-04 04:27",
-                "description": "TEHRAN, Nov. 04 (MNA) – Four violating oil tankers struck mines and were destroyed in the southern Strait of Hormuz, two other vessels were stopped, and a 56th US MQ-9 drone was downed, the Islamic Revolution Guard Corps said.",
-                "_timestamp": 1793766436.0
-            },
-            {
-                "title": "Iran's IRGC says four tankers ablaze after hitting mines in Hormuz Strait",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-hormuz-strait",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 06:20",
-                "description": "Iran's IRGC says four tankers ablaze after hitting mines in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran’s &nbsp;Islamic Revolutionary Guard Corps (IRGC) said four \"rogue\"&nbsp;oil tankers were destroyed after htting&nbsp;naval mines while trying to traverse a route in the Strait of Hormuz that is considered&nbsp;prohibited.\n\nThe incident occurred south of the waterway, with the statement adding that IRGC forces also&nbsp;intercepted two other vessels.",
-                "_timestamp": 1793773253.0
-            },
-            {
-                "title": "Iran Says Four Oil Tankers Destroyed by Mines Near Strait of Hormuz",
-                "link": "https://finance.yahoo.com/energy/articles/iran-says-four-oil-tankers-101500149.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 10:15",
-                "description": "Iran claims four oil tankers were destroyed by naval mines near the Strait of Hormuz as escalating maritime security threats disrupt Middle Eastern oil exports.",
-                "_timestamp": 1793787300.0
-            },
-            {
-                "title": "Morning update",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-661",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 07:48",
-                "description": "Morning update \n\n    \n    \n\n        \n    \n                Good morning Middle East Eye readers,\n\nHere are the latest developments:&nbsp;\n\n\n\t\n\tIran's Islamic Revolutionary Guard Corps (IRGC) announced that two oil tankers and a tugboat caught fire in the Strait of Hormuz.&nbsp;According to the statement, the separate incidents occurred after the vessels were attempting to pass through an \"unauthorised route\".\n\t\n\t\n\tSouth Korea's anti-piracy Cheonghae unit will expand its operations into waters nearby the Strait of Hormuz, according to a report by the Yonhap News Agency citing the Korean Defence Ministry. The government is set to submit a motion to parliament to extend the period of the unit's deployment to the region, which is expected to expire at the end of this year.&nbsp;\n\t\n\t\n\tIsraeli president Isaac Herzog warned prime minister Benjamin Netanyahu other senior officials of a \"highly explosive and dangerous reality\" in the West Bank amid increasing settler violence.&nbsp;Herzog said that the elections in Israel, the US and the Palestinian Authority - which the latter has since been postponed - alongside the olive harvest season are set to \"create a highly explosive and dangerous reality\".\n\t\n\t\n\tThe US sanctioned two individuals and another entity accused of aiding Iran in sourcing man-portable air-defense systems (MANPADS).&nbsp;The statement said that sanctions \"close off more of the channels Tehran uses to try to rebuild its arsenal and raise the risk for third-country brokers and suppliers\".\n\t\n\t\n\tA ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday. Meanwhile, Houthi-affiliated media reported that Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of al-Jawf, al-Bayda, Saada, and Taiz.",
-                "_timestamp": 1793864938.0
-            },
-            {
-                "title": "Iran’s IRGC says two tankers, tugboat were ablaze in Hormuz Strait",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-two-tankers-tugboat-were-ablaze-hormuz-strait",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 04:58",
-                "description": "Iran’s IRGC says two tankers, tugboat were ablaze in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard Corps (IRGC)&nbsp;announced that&nbsp;two oil tankers and a tugboat caught fire in the Strait of Hormuz.&nbsp;\n\nAccording to the statement, the separate incidents occurred after the vessels were attempting to&nbsp;pass through an \"unauthorised route\",&nbsp;\n\nOne large oil tanker was passing through what the IRGC described as an \"illegal southern passageway\", hitting a mine and catching fire.&nbsp;\n\nAnother supertanker, leaving eastern section of the waterway, was caught in a massive fire. A tugboat that was deployed to extinguish the blaze subsequently burst into flames.\n\n\"The US regime, which imposes very heavy insurance costs on American taxpayers and its allies in the region by insisting and inciting vessels to violate and pass through mined passages, would not have suffered these heavy losses and a disgraceful electoral defeat if it had had some foresight, instead of paying these costs by releasing Iran's frozen credits, which are not less than half of these costs that have been made so far,\" the statement added, referring to the nationwide Democrats' sweep during the midterm elections.\n\n\"Attempting to break the law in the Strait of Hormuz will not result in anything other than more financial losses and greater political defeats for the US.\"",
-                "_timestamp": 1793854698.0
-            },
-            {
-                "title": "IRGC reports tanker explosions in Hormuz, US drone seizures",
-                "link": "https://en.mehrnews.com/news/249182/IRGC-reports-tanker-explosions-in-Hormuz-US-drone-seizures",
-                "source": "Mehr News Agency",
-                "date": "2026-11-05 04:25",
-                "description": "TEHRAN, Nov. 05 (MNA) – The Islamic Revolution Guard Corps said two oil tankers and a tugboat caught fire after crossing an unauthorized route in the Strait of Hormuz overnight, and its electronic warfare units captured two Lucas drones intact.",
-                "_timestamp": 1793852707.0
-            },
-            {
-                "title": "Another violating oil tanker catches fire in Strait of Hormuz",
-                "link": "https://en.mehrnews.com/news/249187/Another-violating-oil-tanker-catches-fire-in-Strait-of-Hormuz",
-                "source": "Mehr News Agency",
-                "date": "2026-11-05 10:41",
-                "description": "TEHRAN, Nov. 05 (MNA) – Iran's Army Navy said a violating tanker caught fire after hitting a naval mine in an unsafe area east of the Strait of Hormuz early today.",
-                "_timestamp": 1793875304.0
-            },
-            {
-                "title": "Iranian navy reports tanker on fire in Strait of Hormuz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-navy-reports-tanker-fire-strait-hormuz",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 11:35",
-                "description": "Iranian navy reports tanker on fire in Strait of Hormuz\n\n    \n    \n\n        \n    \n                The Iranian navy reports that an \"offending tanker\" attempting to cross an \"unsafe area\" in the Strait of Hormuz has caught fire after hitting a mine.\n\nIn comments carried by Iran's semi-official Tasnim news agency, the Iranian authorities said that the vessel had halted its journey after the collision, adding that the tanker&nbsp;had “turned off its detection and navigation systems”.\n\nThe statement warned that Tehran is&nbsp;“announcing to ship owners for the umpteenth time that the Strait of Hormuz is unsafe and closed to illegal vessels that intend to transit without coordination”.",
-                "_timestamp": 1793878533.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 ~10:41 UTC (Ongoing / Breaking within last 2h)",
-            "Facts": "Iran's Army Navy and the IRGC reported that another violating oil tanker caught fire after striking a naval mine in an unsafe area east of the Strait of Hormuz [Mehr News Agency, 2026-11-05 10:41 UTC]. This follows ongoing naval escalations, including multiple tanker explosions and drone interceptions over recent days [Middle East Eye, 2026-11-05 04:58 UTC].",
-            "Uncertainties": "The full scale of supply disruptions through the Strait of Hormuz and potential direct military retaliation by the United States remain uncertain.",
-            "Macro_Context": "EUR/USD is down 0.35% (USD strengthening), US 10Y Treasury bond prices are stable, and Brent crude oil prices dropped 5.18%. While a stronger USD acts as a headwind for gold, escalating physical supply route threats and naval mine incidents in the Strait of Hormuz sustain safe-haven safe-flows into precious metals.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Gold experienced an upward impulse reaching highs above $4146 earlier today following continuous Hormuz Strait disruptions. With the 4h move vs Daily ATR ratio at 0.09x, the immediate impulsive phase has cooled, but ongoing breaking maritime incidents continue to provide structural support toward upper liquidity magnets.",
-            "Orderflow_Price_Target": "4139.29"
-        },
-        "eval_status": "ACTIVE"
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-05 11:34",
         "original_date": "2026-11-05 11:34",
         "_timestamp": 1793878469.0,
@@ -3036,6 +3591,34 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 40,
             "Past_Price_Action_Cause": "Gold has already risen $88.84 over the past 24 hours due to prior momentum, but the specific news report is just a standard retail finance article published 30 minutes ago without fresh macroeconomic catalysts, making its direct impact neutral and negligible.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 11:01",
+        "original_date": "2026-11-05 11:01",
+        "_timestamp": 1793876499.0,
+        "articles": [
+            {
+                "title": "How the midterms could fuel the K-shaped AI trade",
+                "link": "https://www.cnbc.com/2026/11/05/ai-data-centers-midterms-capacity.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 11:01",
+                "description": "U.S. midterm results could slow data center development, raising the value of existing AI capacity while increasing pressure on debt-funded neoclouds.",
+                "_timestamp": 1793876499.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 11:01 UTC (approx. 5 hours ago relative to reference time)",
+            "Facts": "U.S. midterm election analysis indicates potential policy shifts that could slow down data center development. This dynamic increases the relative valuation of existing AI infrastructure while placing severe financial pressure on debt-funded neocloud providers [Source: CNBC Tech & AI].",
+            "Uncertainties": "The exact legislative outcomes of the midterms remain fluid, and the direct timeline for how regulatory or permitting slowdowns will impact enterprise AI spending is unquantified.",
+            "Macro_Context": "The Nasdaq 100 is experiencing a severe sell-off (-5.84%), signaling risk-off sentiment and potential margin-call liquidations across tech assets. US 10Y Treasury bond prices are rising (yields falling), providing a supportive tailwind for gold. Concurrently, high retail long positioning on OANDA (71.8%) suggests contrarian vulnerability.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "XAU/USD saw a strong rally earlier in the session touching highs near $4146, but has retraced sharply over the last 4 hours (-$50.12) as tech sector liquidations and profit-taking interact with the market. The macro cross-currents between falling yields and tech sell-off liquidation neutralize immediate directional momentum.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -3850,6 +4433,51 @@
         }
     },
     {
+        "main_date": "Erstmeldung: 2026-11-05 08:07",
+        "original_date": "2026-11-05 08:07",
+        "_timestamp": 1793866063.0,
+        "articles": [
+            {
+                "title": "From tanks to drones: South Korea’s defense firms face a new battlefield test",
+                "link": "https://www.cnbc.com/2026/11/05/south-korea-defense-weapon-war-stocks-fall.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 08:07",
+                "description": "South Korean defense stocks rode a wave of global rearmament for the past two years, but they have plunged in 2026.",
+                "_timestamp": 1793866063.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 08:00",
+        "original_date": "2026-11-05 08:00",
+        "_timestamp": 1793865645.0,
+        "articles": [
+            {
+                "title": "Analysis-Trump’s political humbling signals short-term gain, long-term pain for China",
+                "link": "https://www.investing.com/news/commodities-news/analysistrumps-political-humbling-signals-shortterm-gain-longterm-pain-for-china-5002472",
+                "source": "Investing.com",
+                "date": "2026-11-05 08:00",
+                "description": "",
+                "_timestamp": 1793865645.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 08:00 UTC (approx. 8 hours ago relative to reference time)",
+            "Facts": "An analysis report published by Investing.com discusses the implications of political developments surrounding Donald Trump, characterizing them as a political humbling that creates short-term gains but long-term pain for China [Investing.com].",
+            "Uncertainties": "Specific policy implementations, retaliatory measures by Beijing, and the exact legislative timeline remain speculative.",
+            "Macro_Context": "The USD remains relatively flat (EUR/USD +0.09%), while US 10Y Treasury bond prices are rising (yields falling, providing a tailwind for gold). The Nasdaq 100 is suffering a sharp sell-off (-5.84%), indicating severe risk-off sentiment or potential margin liquidation pressures, while Brent Crude is down 4.09%. Retail positioning is heavily long at 71.8% on OANDA.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "Gold experienced a strong earlier session surge toward the $4146 area followed by a sharp pullback of over $50 in the last 4 hours (current price around $4083.4). Given that the news is general geopolitical commentary rather than a fresh physical shock, and retail positioning is heavily long with recent volatility absorbing prior moves, the immediate geopolitical angle is already baked into recent price action.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "2026-11-05 07:54",
         "original_date": "2026-11-05 07:54",
         "_timestamp": 1793865262.0,
@@ -4381,6 +5009,34 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "XAU/USD has gained $99.67 over the last 24 hours, currently trading near $4122.30. The 4h move vs. daily ATR ratio is 0.26x, showing steady consolidation after the recent upward push, largely driven by broader macro positioning rather than this specific oil/equity commentary.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 03:53",
+        "original_date": "2026-11-05 03:53",
+        "_timestamp": 1793850798.0,
+        "articles": [
+            {
+                "title": "Inside the chip talent war: Trade secrets and rising Chinese rivals",
+                "link": "https://www.cnbc.com/2026/11/05/semiconductor-china-korea-talents-rivalry.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 03:53",
+                "description": "Growing competition for semiconductor talent is fueling a battle over trade secrets as Chinese chipmakers gain ground.",
+                "_timestamp": 1793850798.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 03:53 UTC (approx. 12 hours ago relative to reference time)",
+            "Facts": "Growing competition for semiconductor talent is fueling a battle over trade secrets as Chinese chipmakers gain ground [CNBC Tech & AI].",
+            "Uncertainties": "Specific corporate targets, legal actions, or direct regulatory interventions remain unspecified in the report.",
+            "Macro_Context": "The Nasdaq 100 is experiencing a severe tech selloff (-5.84%), which increases acute margin-call risks across broader asset classes and creates short-term liquidation pressure on gold. Simultaneously, lower 10Y yields provide a supportive backdrop, while USD remains stable.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "Gold experienced a sharp surge earlier in the session followed by a pullback (-$50.12 in the last 4h down to $4083.4), driven by cross-asset tech liquidations and initial safe-haven flows. The chip talent news is a background structural theme rather than an immediate fresh catalyst, and current price action reflects digestion and margin-driven volatility.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -5195,6 +5851,34 @@
         }
     },
     {
+        "main_date": "Erstmeldung: 2026-11-05 00:14",
+        "original_date": "2026-11-05 00:14",
+        "_timestamp": 1793837687.0,
+        "articles": [
+            {
+                "title": "Snap shares fall over 10% on third-quarter revenue miss",
+                "link": "https://www.cnbc.com/2026/11/04/snap-q3-earnings-report-2026.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 00:14",
+                "description": "Snap misses on revenue and daily active users in third-quarter earnings reported Wednesday.",
+                "_timestamp": 1793837687.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-04 ~22:00 UTC (approx. 18 hours ago)",
+            "Facts": "Snap reported its third-quarter earnings on Wednesday, missing expectations on both revenue and daily active users, causing its shares to fall by over 10% [Source: CNBC Tech & AI].",
+            "Uncertainties": "Whether the weakness in Snap's advertising revenue and user growth points to a broader systemic contraction in digital advertising or remains an idiosyncratic issue limited to Snap's platform.",
+            "Macro_Context": "The Nasdaq 100 experienced a severe tech selloff (-5.84%), while US 10Y Treasury bond prices rose (yields falling), providing a supportive backdrop for safe-haven assets. However, retail positioning in XAU/USD remains heavily skewed long (71.8%), introducing risks of long liquidation despite favorable macro bond dynamics.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "The equity earnings report from Snap is an idiosyncratic tech micro-event that has already been absorbed by markets alongside the broader tech selloff. With the 4-hour price action showing a pullback from recent highs and retail sentiment heavily long, the immediate impulse has matured and is largely priced in.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "2026-11-05 00:00 (updated)",
         "original_date": "2026-11-04 22:30",
         "_timestamp": 1793836800.0,
@@ -5335,6 +6019,51 @@
         }
     },
     {
+        "main_date": "Erstmeldung: 2026-11-04 23:18",
+        "original_date": "2026-11-04 23:18",
+        "_timestamp": 1793834336.0,
+        "articles": [
+            {
+                "title": "Jim Cramer warns investors may be reading too much into Wall Street's post-election rally",
+                "link": "https://www.cnbc.com/2026/11/04/cramer-midterms-ai-stocks.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-04 23:18",
+                "description": "Cramer warned that Wall Street may be getting ahead of itself following the midterm elections.",
+                "_timestamp": 1793834336.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-04 23:18 UTC (approx. 17 hours ago relative to reference time)",
+            "Facts": "Jim Cramer issued a public warning on CNBC Tech & AI advising investors that Wall Street might be getting excessively exuberant and reading too much into the post-election equity rally [CNBC Tech & AI].",
+            "Uncertainties": "The specific sectors most vulnerable beyond general equities, the reaction timeline of retail versus institutional capital, and whether broader market pullbacks will trigger contagion across asset classes remain uncertain.",
+            "Macro_Context": "The USD is relatively flat (EUR/USD +0.09%), while US 10Y Treasury bond prices are rising (+0.49%) reflecting falling yields—traditionally a tailwind for non-yielding gold. Simultaneously, the Nasdaq 100 has suffered a steep 5.84% correction, signaling a severe risk-off tech selloff that increases the risk of broader margin-call liquidations. Brent crude is down 4.09%. Global OANDA retail sentiment remains heavily long at 71.8%, favoring a contrarian bearish setup or liquidity sweeps below current prices.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "The underlying commentary from Jim Cramer was published nearly 17 hours ago, making it stale relative to the current reference time. Furthermore, XAU/USD has experienced recent intraday volatility and a pullback from higher levels, absorbing initial market reactions. Given the event's age and lack of fresh catalytic escalation, the commentary is fully priced in.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-04 23:02",
+        "original_date": "2026-11-04 23:02",
+        "_timestamp": 1793833359.0,
+        "articles": [
+            {
+                "title": "Figma sinks after earnings beat as company prioritizes long-term growth with AI changes",
+                "link": "https://www.cnbc.com/2026/11/04/figma-fig-q3-earnings-report-2026.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-04 23:02",
+                "description": "Figma is letting clients use more artificial intelligence features for the same price. The company would like the move to boost results in the long term.",
+                "_timestamp": 1793833359.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
         "main_date": "2026-11-04 22:49",
         "original_date": "2026-11-04 22:49",
         "_timestamp": 1793832552.0,
@@ -5359,6 +6088,41 @@
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "Gold has seen a strong 24h rally (+131.87), but the 4h move vs daily ATR ratio is low (0.02x), showing consolidation following prior momentum rather than a direct reaction to domestic midterm election commentary.",
             "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-04 18:51 | Letztes Update: 2026-11-04 22:46",
+        "original_date": "2026-11-04 18:51",
+        "_timestamp": 1793832403.0,
+        "articles": [
+            {
+                "title": "Democrats’ Big Win Sets Up a Debt Ceiling Fight. What the Election Means for Bonds.",
+                "link": "https://finance.yahoo.com/m/14dbcca7-fe7f-309a-b6c8-3367ae10c6ec/democrats%E2%80%99-big-win-sets-up-a.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 18:51",
+                "description": "Worries about increased federal spending are already showing up in the market.",
+                "_timestamp": 1793818260.0
+            },
+            {
+                "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
+                "link": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
+                "source": "CNBC Economy",
+                "date": "2026-11-04 22:46",
+                "description": "The next debt-ceiling confrontation could reverse Washington's traditional political roles, raising the possibility of spending concessions, market volatility and a damaging default.",
+                "_timestamp": 1793832403.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Facts": "Democrats secured a significant victory in the election, setting the stage for an upcoming debt ceiling political battle and raising concerns regarding increased federal spending and its impact on government bonds [Yahoo Finance Gold].",
+            "Uncertainties": "The exact legislative compromises, the magnitude of future spending increases, and the precise timeline and severity of the upcoming debt ceiling deadlock remain unconfirmed.",
+            "Macro_Context": "The US dollar is weakening slightly (EUR/USD +0.27%) and 10-year Treasury bond prices are rising (yields falling, +0.38%), both providing supportive tailwinds for non-yielding assets like gold. Brent crude is down sharply (-8.67%), reflecting broader risk dynamics.",
+            "Impact_Timing": "Future",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 60,
+            "Past_Price_Action_Cause": "XAU/USD has risen significantly over the last 24 hours (+$134.11), but the 4h move vs daily ATR ratio is currently at 0.21x, indicating that the immediate momentum is not yet exhausted and further upside room exists.",
+            "Orderflow_Price_Target": "4069.96"
         }
     },
     {
@@ -5468,6 +6232,23 @@
             "Past_Price_Action_Cause": "Gold has rallied strongly by over $130 in the last 24 hours due to broader technical momentum and macroeconomic bond tailwinds, but the specific news regarding Sudanese factories is a localized geopolitical/economic report that has no meaningful impact on global gold price action.",
             "Orderflow_Price_Target": "N/A"
         }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-04 22:29",
+        "original_date": "2026-11-04 22:29",
+        "_timestamp": 1793831391.0,
+        "articles": [
+            {
+                "title": "Voters rebuff data centers in every ballot measure except one during the 2026 midterms",
+                "link": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-04 22:29",
+                "description": "Voters in the states at the heart of the AI data center boom pushed back on the buildout on Election Night.",
+                "_timestamp": 1793831391.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     },
     {
         "main_date": "2026-11-04 22:27",
@@ -5936,6 +6717,23 @@
         }
     },
     {
+        "main_date": "Erstmeldung: 2026-11-04 19:37",
+        "original_date": "2026-11-04 19:37",
+        "_timestamp": 1793821063.0,
+        "articles": [
+            {
+                "title": "Hyperscalers and Apple surge after election results remove investor uncertainty",
+                "link": "https://www.cnbc.com/2026/11/04/apple-and-other-big-tech-stocks-surge-after-2026-midterm-elections.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-04 19:37",
+                "description": "Apple, Amazon, Google, Meta and Microsoft stock was up after the midterms, while stocks tied to Trump advisor Elon Musk and data centers fell on Wednesday.",
+                "_timestamp": 1793821063.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
         "main_date": "2026-11-04 19:36",
         "original_date": "2026-11-04 19:36",
         "_timestamp": 1793820999.0,
@@ -6068,33 +6866,6 @@
         }
     },
     {
-        "main_date": "2026-11-04 18:51",
-        "original_date": "2026-11-04 18:51",
-        "_timestamp": 1793818260.0,
-        "articles": [
-            {
-                "title": "Democrats’ Big Win Sets Up a Debt Ceiling Fight. What the Election Means for Bonds.",
-                "link": "https://finance.yahoo.com/m/14dbcca7-fe7f-309a-b6c8-3367ae10c6ec/democrats%E2%80%99-big-win-sets-up-a.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 18:51",
-                "description": "Worries about increased federal spending are already showing up in the market.",
-                "_timestamp": 1793818260.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Democrats secured a significant victory in the election, setting the stage for an upcoming debt ceiling political battle and raising concerns regarding increased federal spending and its impact on government bonds [Yahoo Finance Gold].",
-            "Uncertainties": "The exact legislative compromises, the magnitude of future spending increases, and the precise timeline and severity of the upcoming debt ceiling deadlock remain unconfirmed.",
-            "Macro_Context": "The US dollar is weakening slightly (EUR/USD +0.27%) and 10-year Treasury bond prices are rising (yields falling, +0.38%), both providing supportive tailwinds for non-yielding assets like gold. Brent crude is down sharply (-8.67%), reflecting broader risk dynamics.",
-            "Impact_Timing": "Future",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "XAU/USD has risen significantly over the last 24 hours (+$134.11), but the 4h move vs daily ATR ratio is currently at 0.21x, indicating that the immediate momentum is not yet exhausted and further upside room exists.",
-            "Orderflow_Price_Target": "4069.96"
-        }
-    },
-    {
         "main_date": "2026-11-04 18:50",
         "original_date": "2026-11-04 18:50",
         "_timestamp": 1793818251.0,
@@ -6153,33 +6924,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "Gold has seen a strong upward trend over the last 24 hours driven by broader macro positioning, yielding a current price around $4062. The 4h move vs Daily ATR ratio is 0.21x, indicating moderate recent movement not yet exhausted. However, the specific news about domestic UK protest arrests is a localized legal and social story with zero material impact on gold fundamentals, meaning it is not the primary driver of price action.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-04 18:30",
-        "original_date": "2026-11-04 18:30",
-        "_timestamp": 1793817000.0,
-        "articles": [
-            {
-                "title": "SMX -- Good Intentions Don't Count; Measured Plastic Does",
-                "link": "https://finance.yahoo.com/economy/articles/smx-good-intentions-dont-count-183000307.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 18:30",
-                "description": "NEW YORK CITY, NY / ACCESS Newswire / November 4, 2026 / The economics of plastic have turned recycling from an act of corporate responsibility into a financial imperative. SMX sits at the center of that shift, providing the authentication and traceability technology that allows recycled plastic to function as a trusted industrial material.",
-                "_timestamp": 1793817000.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "The provided news report from Yahoo Finance Oil discusses corporate plastic recycling economics and industrial traceability technology via SMX. This micro-level corporate news has no direct connection to macroeconomic gold drivers, monetary policy, or precious metals demand [Yahoo Finance Oil].",
-            "Uncertainties": "Whether this corporate update on plastic recycling technology impacts broader commodity indexes or has any spillover into industrial precious metals usage remains entirely unconfirmed and speculative.",
-            "Macro_Context": "EUR/USD is higher by 0.27% (signifying a weaker USD) and US 10Y Bond prices are up 0.38% (signifying falling yields), both acting as tailwinds for gold. Meanwhile, Brent crude is down sharply by 8.67%. Retail sentiment on OANDA is heavily long at 72.1%, presenting a contrarian headwind. However, the news item itself is entirely irrelevant to gold fundamentals.",
-            "Impact_Timing": "Present",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD has gained $134.11 over the past 24 hours driven by broader macro positioning and Treasury yield movements, completely independent of the unrelated corporate plastic recycling news report.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -6917,76 +7661,6 @@
             "Probability_Percent": 40,
             "Past_Price_Action_Cause": "XAU/USD has experienced a massive 24h rally of +$134.40 driven by broader macroeconomic factors and safe-haven flows, but the 4h move vs daily ATR ratio is currently 0.19x. This specific domestic UK legal headline regarding school definitions of antisemitism has negligible direct impact on global monetary policy, Treasury yields, or safe-haven bullion demand, and thus carries no causal weight in the recent price surge.",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-04 15:51",
-        "original_date": "2026-11-04 15:51",
-        "_timestamp": 1793807492.0,
-        "articles": [
-            {
-                "title": "Democratic voters celebrate El-Sayed’s Michigan win in election ‘blue wave’",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/4/democratic-voters-celebrate-el-sayeds-michigan-win-in-election-blue?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 15:51",
-                "description": "Democratic voters danced as they celebrated Abdul El-Sayed’s victory in Michigan.",
-                "_timestamp": 1793807492.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Abdul El-Sayed secured a victory in Michigan during state elections, celebrated by Democratic voters as part of a broader 'blue wave' [Al Jazeera English].",
-            "Uncertainties": "The macroeconomic and federal legislative implications of this specific state-level election result on national gold demand or monetary policy are highly indirect and negligible.",
-            "Macro_Context": "EUR/USD is higher (+0.20%) indicating a weaker USD, and US 10Y Treasury bond prices are rising (yields falling), providing a favorable cross-asset tailwind for gold. However, retail positioning remains heavily net long at 72.2%, acting as a contrarian headwind.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "XAU/USD has risen significantly over the past 24 hours (+$134.40), but the 4h move vs daily ATR ratio is only 0.19x, showing short-term consolidation rather than exhaustion. This price action is driven by broader macro positioning and safe-haven flows rather than local state election news.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-04 15:45",
-        "original_date": "2026-11-04 14:48",
-        "_timestamp": 1793807157.0,
-        "articles": [
-            {
-                "title": "JPMorgan, HSBC say oil supplies are recovering from Middle East disruption",
-                "link": "https://www.investing.com/news/commodities-news/jpmorgan-says-rising-exports-weak-demand-push-global-oil-market-into-surplus-4999413",
-                "source": "Investing.com",
-                "date": "2026-11-04 14:48",
-                "description": "",
-                "_timestamp": 1793803726.0
-            },
-            {
-                "title": "Has the global oil market returned to surplus? JPMorgan thinks so",
-                "link": "https://www.investing.com/news/commodities-news/has-the-global-oil-market-returned-to-surplus-jpmorgan-thinks-so-5000230",
-                "source": "Investing.com",
-                "date": "2026-11-04 15:15",
-                "description": "",
-                "_timestamp": 1793805357.0
-            },
-            {
-                "title": "Has the global oil market returned to surplus? JPMorgan thinks so",
-                "link": "https://finance.yahoo.com/energy/articles/global-oil-market-returned-surplus-154557322.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 15:45",
-                "description": "Investing.com -- The global oil market has returned to a surplus after months of supply disruptions linked to the U.S.-Israeli war with Iran, with recovering Middle Eastern exports and rising production in Latin America bringing more crude back into circulation, JPMorgan said.",
-                "_timestamp": 1793807157.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "JPMorgan and HSBC reported that global oil supplies are recovering from Middle East disruptions, with JPMorgan specifically stating that the global oil market has returned to a surplus due to recovering Middle Eastern exports and rising Latin American production [Investing.com, Yahoo Finance Oil].",
-            "Uncertainties": "The durability of the oil market surplus remains uncertain given potential geopolitical escalations in the Middle East, as well as the exact pace of ongoing export recoveries.",
-            "Macro_Context": "EUR/USD is higher (+0.20%) indicating USD weakness, and US 10Y Treasury bond prices are up (+0.34%) indicating falling yields, both providing strong macroeconomic tailwinds for gold. Meanwhile, Brent crude oil prices dropped sharply (-8.36%), reflecting the easing of supply fears and aligning with the reported market surplus.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "Gold has seen a strong 24h gain of +$134.40 pushing price to $4062.16, while the 4h move vs. daily ATR ratio is at 0.19x, indicating the current momentum is well below exhaustion thresholds and the recent rally still has room to progress towards nearby liquidity clusters.",
-            "Orderflow_Price_Target": "4070.94"
         }
     }
 ]

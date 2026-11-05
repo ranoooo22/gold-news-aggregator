@@ -1,5 +1,57 @@
 [
     {
+        "main_date": "Erstmeldung: 2026-11-05 19:27 | Letztes Update: 2026-11-05 23:25",
+        "original_date": "2026-11-05 19:27",
+        "_timestamp": 1793921104.0,
+        "articles": [
+            {
+                "title": "AI demand isn't going anywhere, but volatility lies ahead",
+                "link": "https://finance.yahoo.com/video/ai-demand-isnt-going-anywhere-but-volatility-lies-ahead-194213515.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:42",
+                "description": "Host and \"The Buy Side\" author Turney Duff and his panel of experts weigh in on the effect of the blue wave following the midterm election results.Today's panel includes Hennion & Walsh CIO Kevin Mahn, Neostellar Principal Willy Lee, Grenadilla Advisory Founder and CEO Anna Rathbun, and Futurum Chief Market Strategist Shay Boloor.",
+                "_timestamp": 1793907733.0
+            },
+            {
+                "title": "The AI Trade Selloff Is Crushing Industrial Stocks. What Caterpillar’s Valuation Tells Us.",
+                "link": "https://finance.yahoo.com/m/a69385ba-7bed-307d-82ea-55b8e8f0fb7a/the-ai-trade-selloff-is.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:27",
+                "description": "The market clearly believes that a Democratic Congress means less AI spending. We ask two very hard questions. Will you like our answers?",
+                "_timestamp": 1793906820.0
+            },
+            {
+                "title": "Jim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash",
+                "link": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-sell-off.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 23:17",
+                "description": "Cramer warned that the sell-off in AI stocks likely has further to run.",
+                "_timestamp": 1793920671.0
+            },
+            {
+                "title": "Jim Cramer explains why no AI stock seems safe from the market carnage",
+                "link": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-data-center-uncertainty.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 23:25",
+                "description": "CNBC’s Jim Cramer said AI stocks are becoming increasingly difficult to value.",
+                "_timestamp": 1793921104.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 ~19:30 UTC (approx. 1.5h ago)",
+            "Facts": "Financial panels and expert discussions on Yahoo Finance Nasdaq analyzed the market implications of a 'blue wave' midterm election outcome, highlighting its perceived impact on reducing AI spending and pressurizing industrial-tech valuations [Yahoo Finance Nasdaq].",
+            "Uncertainties": "The exact legislative feasibility and scope of policy shifts regarding future AI infrastructure spending under the new political configuration remain speculative.",
+            "Macro_Context": "The Nasdaq 100 experienced a severe selloff (-6.97%), indicating heavy risk-off sentiment and potential margin-call liquidation dynamics, while US 10Y Treasury bond prices rose (+0.42% / falling yields), providing a supportive backdrop for safe-haven assets. Brent oil traded higher (+3.30%), and retail sentiment remains heavily long at 71.8%.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold spiked earlier in the session alongside falling bond yields, reaching a peak near $4146 before consolidating down to $4091. The current price action shows digestion of the sharp tech equity rout and political news, making a neutral stance prudent until clear orderflow liquidity breakout occurs.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "Erstmeldung: 2026-11-04 22:06 | Letztes Update: 2026-11-05 23:24",
         "original_date": "2026-11-04 22:06",
         "_timestamp": 1793921055.0,
@@ -269,48 +321,21 @@
         "summary": null
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 19:27 | Letztes Update: 2026-11-05 23:17",
-        "original_date": "2026-11-05 19:27",
-        "_timestamp": 1793920671.0,
+        "main_date": "Erstmeldung: 2026-11-05 23:17",
+        "original_date": "2026-11-05 23:17",
+        "_timestamp": 1793920631.0,
         "articles": [
             {
-                "title": "AI demand isn't going anywhere, but volatility lies ahead",
-                "link": "https://finance.yahoo.com/video/ai-demand-isnt-going-anywhere-but-volatility-lies-ahead-194213515.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:42",
-                "description": "Host and \"The Buy Side\" author Turney Duff and his panel of experts weigh in on the effect of the blue wave following the midterm election results.Today's panel includes Hennion & Walsh CIO Kevin Mahn, Neostellar Principal Willy Lee, Grenadilla Advisory Founder and CEO Anna Rathbun, and Futurum Chief Market Strategist Shay Boloor.",
-                "_timestamp": 1793907733.0
-            },
-            {
-                "title": "The AI Trade Selloff Is Crushing Industrial Stocks. What Caterpillar’s Valuation Tells Us.",
-                "link": "https://finance.yahoo.com/m/a69385ba-7bed-307d-82ea-55b8e8f0fb7a/the-ai-trade-selloff-is.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:27",
-                "description": "The market clearly believes that a Democratic Congress means less AI spending. We ask two very hard questions. Will you like our answers?",
-                "_timestamp": 1793906820.0
-            },
-            {
-                "title": "Jim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash",
-                "link": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-sell-off.html",
-                "source": "CNBC Tech & AI",
+                "title": "3 Canadian Penny Stocks With Net Margins Up To 67%",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-canadian-penny-stocks-net-231711639.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
                 "date": "2026-11-05 23:17",
-                "description": "Cramer warned that the sell-off in AI stocks likely has further to run.",
-                "_timestamp": 1793920671.0
+                "description": "Canada’s latest federal budget puts real money behind infrastructure, capital attraction, and AI related jobs. That points attention toward smaller Canadian businesses that already keep their balance sheets in decent shape. When bigger tech and growth stories swing wildly, financially healthier penny stocks can offer a different way to target upside without relying on heavy debt. This article breaks down three such Canadian penny stocks on that theme. The three stocks highlighted here offer a...",
+                "_timestamp": 1793920631.0
             }
         ],
         "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 ~19:30 UTC (approx. 1.5h ago)",
-            "Facts": "Financial panels and expert discussions on Yahoo Finance Nasdaq analyzed the market implications of a 'blue wave' midterm election outcome, highlighting its perceived impact on reducing AI spending and pressurizing industrial-tech valuations [Yahoo Finance Nasdaq].",
-            "Uncertainties": "The exact legislative feasibility and scope of policy shifts regarding future AI infrastructure spending under the new political configuration remain speculative.",
-            "Macro_Context": "The Nasdaq 100 experienced a severe selloff (-6.97%), indicating heavy risk-off sentiment and potential margin-call liquidation dynamics, while US 10Y Treasury bond prices rose (+0.42% / falling yields), providing a supportive backdrop for safe-haven assets. Brent oil traded higher (+3.30%), and retail sentiment remains heavily long at 71.8%.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold spiked earlier in the session alongside falling bond yields, reaching a peak near $4146 before consolidating down to $4091. The current price action shows digestion of the sharp tech equity rout and political news, making a neutral stance prudent until clear orderflow liquidity breakout occurs.",
-            "Orderflow_Price_Target": "N/A"
-        }
+        "summary": null
     },
     {
         "main_date": "Erstmeldung: 2026-11-05 22:30 | Letztes Update: 2026-11-05 23:15",
@@ -700,6 +725,23 @@
             "Past_Price_Action_Cause": "Gold experienced an early session surge towards the $4,146 area earlier in the day but has since retreated back near $4,091, showing exhaustion and minimal 4h ATR movement ratio (0.16x). Given that geopolitical friction in Israel and Gaza has been ongoing and largely digested by markets, the recent spikes are already priced in, leaving gold range-bound near liquidity clusters.",
             "Orderflow_Price_Target": "N/A"
         }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 23:11",
+        "original_date": "2026-11-05 23:11",
+        "_timestamp": 1793920291.0,
+        "articles": [
+            {
+                "title": "Riley Exploration Permian Inc (REPX) (Q3 2026) Earnings Call Highlights: Oil Production Surges ...",
+                "link": "https://finance.yahoo.com/energy/articles/riley-exploration-permian-inc-repx-231131895.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 23:11",
+                "description": "Riley Exploration Permian Inc (REPX) posted record oil output above 25,000 barrels per day, cut debt by $28 million, and unveiled a two-rig 2027 plan targeting 30-40% production growth.",
+                "_timestamp": 1793920291.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     },
     {
         "main_date": "Erstmeldung: 2026-11-04 09:34 | Letztes Update: 2026-11-05 23:06",
@@ -9420,33 +9462,6 @@
             "Probability_Percent": 60,
             "Past_Price_Action_Cause": "Gold has surged by over $200 in the past 24 hours, currently trading near $4138.24. The 4h move vs Daily ATR ratio is 1.01x, meaning the momentum is strong and approaching exhaustion limits but has not yet breached the 1.2x threshold that would mandate an immediate priced-in downgrade.",
             "Orderflow_Price_Target": "4159.48"
-        }
-    },
-    {
-        "main_date": "2026-11-04 23:34",
-        "original_date": "2026-11-04 23:34",
-        "_timestamp": 1793835287.0,
-        "articles": [
-            {
-                "title": "Giant banner of Trump, Vance and Netanyahu burnt at Tehran rally",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/4/giant-banner-of-trump-vance-and-netanyahu-burnt-at-tehran-rally?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 23:34",
-                "description": "A giant banner depicting US President Donald Trump and Israel’s Prime Minister Benjamin Netanyahu was burnt in Tehran",
-                "_timestamp": 1793835287.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "A giant banner depicting US President Donald Trump, Vice President JD Vance, and Israeli Prime Minister Benjamin Netanyahu was burnt during a public rally in Tehran, escalating visible geopolitical rhetoric and tensions between Iran and Western-Israeli allies [Al Jazeera English].",
-            "Uncertainties": "Whether this symbolic act of burning banners translates into any direct military escalation, cyber retaliation, or immediate disruptions to regional energy flows remains entirely speculative.",
-            "Macro_Context": "EUR/USD is higher by 0.23% indicating a softer USD, and US 10-year Treasury bond prices are rising (yields falling), both providing a supportive macro environment for safe-haven assets. Brent Crude Oil fell significantly by 8.96%, reflecting subdued energy market fears despite geopolitical headlines. OANDA retail sentiment is heavily long at 72.4%, acting as a contrarian headwind.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "XAU/USD has surged by over $200 in the last 24 hours, with the 4h move vs Daily ATR ratio resting at 1.01x, indicating that while volatility is elevated and geopolitical headlines are supportive, the immediate aggressive upside momentum is cooling down into consolidation near the 4138 level.",
-            "Orderflow_Price_Target": "N/A"
         }
     }
 ]

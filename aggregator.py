@@ -400,7 +400,7 @@ def fetch_oanda_price_and_volatility():
             f"- Current Price: ${curr_c}\n"
             f"- 4h Price Change: ${change_4h:+.2f} | 24h Price Change: ${change_24h:+.2f}\n"
             f"- H1 ATR(14): ${atr_14_h1:.2f} | Estimated Daily ATR: ${est_daily_atr:.2f}\n"
-            f"- 4h Move vs. Daily ATR Ratio: {ratio_4h}x (WARNING: If >= 1.2x in the direction of the news, the move is likely ALREADY PRICED IN!)\n\n"
+            f"- 4h Move vs. Daily ATR Ratio: {ratio_4h}x (Note: If >= 1.2x in the direction of the news, significant parts of the move may already be priced in)\n\n"
             f"XAU/USD H1 Price History (Last 24h):\n"
         )
         for c in parsed[-24:]:
@@ -551,6 +551,22 @@ def evaluate_clusters(all_clusters, h1_candles):
 
     return stats
 
+def format_performance_memory(stats):
+    """Bereitet das historische Performance-Gedächtnis aus performance_stats.json für den KI-Agenten auf."""
+    if not stats or stats.get("total_evaluated", 0) == 0:
+        return "Historical Track Record: No completed 20h signal evaluations yet (System in initial calibration phase)."
+    
+    history_items = list(stats.get("history", {}).values())
+    recent_items = history_items[-5:]
+    recent_str = ", ".join([f"[{item.get('impact')} -> Target ${item.get('target')}: {item.get('status')}]" for item in recent_items])
+    
+    return (
+        f"Historical Signal Track Record (Self-Calibration Memory):\n"
+        f"- Total Evaluated (>=67% setups): {stats['total_evaluated']} | Hits: {stats['hits']} | Misses: {stats['misses']} | Win Rate: {stats['win_rate']}%\n"
+        f"- Last {len(recent_items)} Completed Setups: {recent_str}\n"
+        f"- Calibration Instruction: Use this track record to avoid overconfidence. Explain objectively in 'Historical_Calibration' whether current market conditions (ATR exhaustion, macro headwinds) resemble past hits or misses."
+    )
+
 def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None):
     if not OANDA_API_KEY:
         print("WARNUNG: Kein OANDA_API_KEY vorhanden, überspringe Chart-Update.")
@@ -623,55 +639,58 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
     with open("market_data.json", "w", encoding="utf-8") as f:
         json.dump(market_data, f)
 
-def generate_summary(articles_in_cluster, orderbook_data, price_history_data, macro_context_str, max_retries=2):
+def generate_summary(articles_in_cluster, orderbook_data, price_history_data, macro_context_str, perf_memory_str, max_retries=2):
     if not client:
         return None
     
     now_utc_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     news_data = "\n".join([f"Source: [{a['source']}]\nArticle Published Date: {a['date']} UTC\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in articles_in_cluster])
     
-    prompt = f"""You are a senior quantitative gold, macro & tech-equity strategist. Analyze these news reports, the 24h price & ATR volatility metrics, cross-asset macro correlations (USD, 10Y Bonds, Nasdaq 100 Tech/AI, Brent Oil), and multi-source orderflow liquidity (OANDA + Yahoo COMEX Futures). Output ONLY a valid JSON object without markdown blocks. Write all values in English!
+    prompt = f"""You are an objective, two-stage Intelligence & Calibration Agent for a manual Gold (XAU/USD) & Macro trader.
+    Your job is NOT to hide or dismiss seemingly minor news, because the human trader uses this terminal as a comprehensive intelligence feed. Even niche geopolitical, regional, or tech/macro reports must be thoroughly contextualized!
+    Output ONLY a valid JSON object without markdown blocks. Write all values in English!
     
     Current Reference Time: {now_utc_str}
 
-    CRITICAL RULE 0 - ACTUAL EVENT TIME vs. ARTICLE PUBLICATION TIME:
-    - Determine when the underlying physical event, earnings release, strike, or official announcement ACTUALLY happened based on the text and article dates relative to 'Current Reference Time' ({now_utc_str}).
-    - State this clearly in 'Event_Timestamp' (e.g., '2026-11-04 ~18:00 UTC (approx. 16h ago)' or 'Breaking within last 2h').
-    - If the actual core incident occurred more than 12 hours ago and the latest articles are merely follow-up commentary, summaries, or retrospective analyses without a fresh escalation, you MUST downgrade 'XAUUSD_Impact' to 'Neutral' (or lower 'Probability_Percent' below 50) and set 'Impact_Timing' to 'Past (Already Priced In)'.
+    --- AGENT ROLE 1: OBJECTIVE INTELLIGENCE & CONTEXTUALIZER ---
+    1. ACTUAL EVENT TIME: Determine when the underlying physical event, earnings release, strike, or announcement ACTUALLY happened relative to 'Current Reference Time' ({now_utc_str}) and state it in 'Event_Timestamp'.
+    2. DEEP FACTS & REGIONAL/TECH CONTEXT: Summarize all core facts, numbers, and background details thoroughly in 'Facts' (include [Source] tags). Explain how different sources frame the event.
+    3. BALANCED PRO/CONTRA ARGUMENTS:
+       - In 'Bull_Case': What specific aspects of this news + current macro/orderflow support higher Gold prices?
+       - In 'Bear_Case': What counter-arguments, macro headwinds (e.g., strong USD, rising yields, tech risk-on rotation, or margin-call liquidation risk), or priced-in exhaustion speak against a Gold rally (or favor a drop)?
 
-    CRITICAL RULE 1 - 'PRICED-IN' EXHAUSTION CHECK:
-    - Check the '4h Move vs. Daily ATR Ratio' in market volatility metrics below.
-    - If XAU/USD has ALREADY moved by >= 1.2x of the Estimated Daily ATR in the direction of the news over the last 4-12 hours, you MUST downgrade 'XAUUSD_Impact' to 'Neutral' (or lower 'Probability_Percent' below 55) and set 'Impact_Timing' to 'Past (Already Priced In)'. Never chase an exhausted spike!
-
-    CRITICAL RULE 2 - MACRO, TECH/AI & LIQUIDATION CHECK:
-    - Compare the news with the 'Cross-Asset Macro & Tech Context' (EUR/USD, USB10Y_USD, NAS100_USD, BCO_USD).
-    - If news is about Tech/AI stocks (e.g., Nvidia, Nasdaq, Semiconductors) or global economic data: evaluate both capital rotation (strong Tech rally drains safe-haven flows from Gold; weak economy/recession boosts Fed rate-cut bets and helps Gold) AND acute Margin-Call risks (an abrupt Nasdaq crash >2% can cause temporary forced liquidation in Gold before safe-haven buying resumes).
-    - If USD is strengthening sharply AND Treasury yields are rising, reduce Bullish Gold probabilities by 15-20% unless the geopolitical shock is severe.
-
-    CRITICAL RULE 3 - 'Orderflow_Price_Target' & MULTI-SOURCE CONFLUENCE:
-    - Look at the 'Current XAU/USD Price' and the 'Combined Multi-Source Liquidity Zones' below. Prefer zones marked with 'OVERLAP [OANDA+COMEX]' as primary price targets.
-    - If 'XAUUSD_Impact' is 'Bullish', the 'Orderflow_Price_Target' (Take Profit) MUST be a numerical price strictly HIGHER than the Current XAU/USD Price. Never output a level below current price for a Bullish signal!
-    - If 'XAUUSD_Impact' is 'Bearish', the 'Orderflow_Price_Target' (Take Profit) MUST be a numerical price strictly LOWER than the Current XAU/USD Price. Never output a level above current price for a Bearish signal!
-    - If 'XAUUSD_Impact' is 'Neutral', write 'N/A'.
-    - Format the target strictly as a clean number (e.g., '4035.50').
+    --- AGENT ROLE 2: CALIBRATION & RISK AUDITOR (WITH PERFORMANCE MEMORY) ---
+    1. HISTORICAL CALIBRATION: Review the 'Historical Signal Track Record' below. In 'Historical_Calibration', write a candid 1-2 sentence audit comparing this setup to past hits/misses, ATR exhaustion ('4h Move vs. Daily ATR Ratio'), and event age (>12h old follow-up articles are usually already priced in).
+    2. DIRECTION & PROBABILITY: Provide your best calibrated directional bias ('Bullish', 'Bearish', or 'Neutral') and 'Probability_Percent' (0-100). If the event is >12h old without fresh escalation or the 4h move is already >=1.2x Daily ATR, set 'Impact_Timing' to 'Past (Already Priced In)'.
+    3. ORDERFLOW PRICE TARGET:
+       - Look at 'Current XAU/USD Price' and 'Combined Multi-Source Liquidity Zones' (prefer 'OVERLAP [OANDA+COMEX]').
+       - If 'Bullish', output a numerical price strictly HIGHER than Current XAU/USD Price.
+       - If 'Bearish', output a numerical price strictly LOWER than Current XAU/USD Price.
+       - If 'Neutral', write 'N/A'. Format strictly as a clean number (e.g., '4035.50').
 
     Required JSON structure:
     {{
         "Event_Timestamp": "Exact or estimated date/time when the real-world event occurred and how many hours ago relative to {now_utc_str}.",
-        "Facts": "Detailed summary of core facts and WHY it happened. Include [Source].",
+        "Facts": "Comprehensive, unfiltered summary of all core facts, numbers, and WHY it matters. Include [Source].",
         "Uncertainties": "What is unclear, speculative, or unconfirmed?",
-        "Macro_Context": "Explain how USD, 10Y Yields, Nasdaq 100 (Tech/AI sentiment), Brent Oil, and OANDA Retail Sentiment interact with this news.",
+        "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, and OANDA Retail Sentiment interact with this news.",
+        "Bull_Case": "Arguments and catalysts supporting a Bullish XAU/USD reaction.",
+        "Bear_Case": "Counter-arguments, priced-in risks, or macro headwinds supporting a Bearish/muted XAU/USD reaction.",
+        "Historical_Calibration": "Candid calibration note referencing the Historical Signal Track Record, ATR exhaustion ratio, and event age.",
         "Impact_Timing": "Future, Present, or Past (Already Priced In)",
         "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
         "Probability_Percent": <Integer 0 to 100>,
-        "Past_Price_Action_Cause": "Explain how the 4h/24h price change, event age, and ATR ratio align with this news and whether it is already priced in.",
-        "Orderflow_Price_Target": "Exact numerical Take-Profit target following CRITICAL RULE 3."
+        "Past_Price_Action_Cause": "How the 4h/24h price change and ATR ratio align with this news.",
+        "Orderflow_Price_Target": "Exact numerical Take-Profit target or 'N/A'."
     }}
 
     News Reports:
     {news_data}
     
+    Historical Signal Track Record (Memory):
+    {perf_memory_str}
+
     Cross-Asset Macro & Tech Context:
     {macro_context_str}
 
@@ -718,7 +737,9 @@ def main():
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     macro_context_str, macro_summary = fetch_macro_context()
 
-    evaluate_clusters(existing_data, h1_candles)
+    # Bestehende Signale auswerten und Performance-Gedächtnis für den Agenten erzeugen
+    current_stats = evaluate_clusters(existing_data, h1_candles)
+    perf_memory_str = format_performance_memory(current_stats)
 
     now = datetime.now()
     cutoff_timestamp = (now - timedelta(hours=24)).timestamp()
@@ -792,8 +813,14 @@ def main():
         orderbook_data = fetch_oanda_orderbook(top_zones_cache=oanda_zones_cache)
         
         for idx, cluster in enumerate(pending_clusters, 1):
-            print(f"Erstelle analytische Zusammenfassung ({idx}/{len(pending_clusters)}): {cluster['articles'][0]['title'][:60]}...")
-            summary = generate_summary(cluster["articles"], orderbook_data, price_history_data, macro_context_str)
+            print(f"Agent analysiert & kalibriert ({idx}/{len(pending_clusters)}): {cluster['articles'][0]['title'][:60]}...")
+            summary = generate_summary(
+                cluster["articles"],
+                orderbook_data,
+                price_history_data,
+                macro_context_str,
+                perf_memory_str
+            )
             
             if summary:
                 cluster["summary"] = summary

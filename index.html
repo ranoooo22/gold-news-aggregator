@@ -35,7 +35,7 @@
             font-size: 0.85em;
         }
         .intel-title { color: #64748b; font-weight: bold; text-transform: uppercase; font-size: 0.75em; margin-bottom: 4px; }
-        .intel-value { font-weight: 700; color: #1e293b; font-size: 1.05em; }
+        .intel-value { font-weight: 700; color: #1e293b; font-size: 1.02em; }
         
         /* Chart Container */
         #chart-container {
@@ -116,6 +116,7 @@
         .source-item { display: flex; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 6px; }
         .source-badge { background-color: #e2e8f0; color: #1e293b; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; white-space: nowrap; text-align: center; }
         .regional-badge { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+        .tech-badge { background-color: #e0e7ff; color: #1e40af; border: 1px solid #c7d2fe; }
         .bias-note { font-size: 0.75em; color: #64748b; font-style: italic; margin-left: 4px; }
         .source-link { color: #3b82f6; text-decoration: none; line-height: 1.4; }
     </style>
@@ -128,7 +129,7 @@
     </div>
 
     <h1>Financial & Gold Aggregator</h1>
-    <div class="sub-header">Multi-Sourced Intelligence: Global Macro, ATR Exhaustion & Orderflow Confluence</div>
+    <div class="sub-header">Multi-Sourced Intelligence: Geopolitics, Tech/AI Stocks, Macro & Orderflow Confluence</div>
 
     <!-- TOP INTEL BAR -->
     <div class="intel-bar">
@@ -141,7 +142,7 @@
             <div class="intel-value" id="ui-volatility">Lade...</div>
         </div>
         <div class="intel-card" style="border-top-color: #6366f1;">
-            <div class="intel-title">Makro (24h: EUR/USD | 10Y | Oel)</div>
+            <div class="intel-title">Makro (EUR | 10Y | NAS100 | Oel)</div>
             <div class="intel-value" id="ui-macro">Lade...</div>
         </div>
         <div class="intel-card" style="border-top-color: #ec4899;">
@@ -173,9 +174,10 @@
                 <option value="Neutral">Neutral</option>
             </select>
             <select id="filter-region" onchange="renderNews()">
-                <option value="all">Alle Medien (Global & Nahost)</option>
+                <option value="all">Alle Medien (Global, Tech & Nahost)</option>
                 <option value="regional">Nur Vor-Ort / Golf-Region</option>
-                <option value="western">Nur Westliche Leitmedien</option>
+                <option value="tech_macro">Nur Tech / AI & Weltwirtschaft</option>
+                <option value="western">Nur Klassische Rohstoff-Medien</option>
             </select>
             <select id="filter-relevance" onchange="renderNews()">
                 <option value="all">Alle News (Gesamt)</option>
@@ -187,7 +189,7 @@
             </select>
             <label class="filter-checkbox-wrap">
                 <input type="checkbox" id="filter-keywords" onchange="renderNews()" checked>
-                <span>Nur geopolitische Impact-Keywords</span>
+                <span>Nur Impact-Keywords (Geopolitik, Makro & Tech/AI)</span>
             </label>
         </div>
         <div id="news-container">
@@ -202,8 +204,13 @@
             "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
             "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
             "idf", "missile", "strike", "attack", "drone", "sanction", "nuclear", 
-            "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "fed", 
-            "inflation", "rate", "central bank", "brics", "dollar", "treasury", "tariff", "saudi"
+            "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "saudi",
+            "fed", "inflation", "rate", "central bank", "brics", "dollar", "treasury", 
+            "tariff", "recession", "gdp", "unemployment", "payroll", "cpi", "pmi", 
+            "stimulus", "china", "default", "liquidity", "debt", "yield",
+            "nvidia", "nvda", "nasdaq", "s&p", "semiconductor", "chip", "taiwan", 
+            "tsmc", "artificial intelligence", "ai ", "big tech", "microsoft", "apple",
+            "earnings", "selloff", "sell-off", "crash", "bubble", "rout", "margin"
         ];
 
         const SOURCE_META = {
@@ -214,7 +221,11 @@
             "Tehran Times": { region: "Middle East", bias: "Iran (Staatliche Linie)" },
             "Mehr News Agency": { region: "Middle East", bias: "Iran (Direktquelle Teheran)" },
             "The Times of Israel": { region: "Middle East", bias: "Israelische Perspektive" },
-            "Saba News Agency": { region: "Middle East", bias: "Jemen (Houthi-gefuehrte Medien)" }
+            "Saba News Agency": { region: "Middle East", bias: "Jemen (Houthi-gefuehrte Medien)" },
+            "CNBC Tech & AI": { region: "Tech & Macro", bias: "US Tech / AI & Halbleiter" },
+            "CNBC Economy": { region: "Tech & Macro", bias: "Weltwirtschaft / Fed / Zinsen" },
+            "Yahoo Finance Nasdaq": { region: "Tech & Macro", bias: "Nasdaq 100 / Big Tech Aktien" },
+            "MarketWatch Macro": { region: "Tech & Macro", bias: "Wall Street / US-Konjunktur" }
         };
 
         function switchTab(event, tabId) {
@@ -262,8 +273,9 @@
                 if (data.macro) {
                     const eur = data.macro.EUR_USD ? `${data.macro.EUR_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.EUR_USD.change_24h_pct}%` : '--';
                     const us10 = data.macro.USB10Y_USD ? `${data.macro.USB10Y_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.USB10Y_USD.change_24h_pct}%` : '--';
+                    const nas = data.macro.NAS100_USD ? `${data.macro.NAS100_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.NAS100_USD.change_24h_pct}%` : '--';
                     const bco = data.macro.BCO_USD ? `${data.macro.BCO_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.BCO_USD.change_24h_pct}%` : '--';
-                    document.getElementById('ui-macro').innerText = `${eur} | ${us10} | ${bco}`;
+                    document.getElementById('ui-macro').innerText = `${eur} | ${us10} | ${nas} | ${bco}`;
                 }
 
                 if (!data.candles || data.candles.length === 0) return;
@@ -404,9 +416,14 @@
                         const meta = SOURCE_META[a.source] || {};
                         return meta.region === "Middle East";
                     });
+                    const hasTechMacroSource = cluster.articles.some(a => {
+                        const meta = SOURCE_META[a.source] || {};
+                        return meta.region === "Tech & Macro";
+                    });
 
                     if (filterRegion === 'regional' && !hasRegionalSource) return false;
-                    if (filterRegion === 'western' && hasRegionalSource) return false;
+                    if (filterRegion === 'tech_macro' && !hasTechMacroSource) return false;
+                    if (filterRegion === 'western' && (hasRegionalSource || hasTechMacroSource)) return false;
                 }
 
                 if (filterRelevance === 'tradeable') {
@@ -459,7 +476,7 @@
                         </div>
                         <div class="structured-data">
                             <strong>Facts:</strong> ${cluster.summary.Facts || '-'}<br><br>
-                            <strong>Macro & Sentiment Context:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
+                            <strong>Macro, Tech & Sentiment Context:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
                             <strong>Uncertainties:</strong> ${cluster.summary.Uncertainties || '-'}
                         </div>
                         <div class="outlook-box">
@@ -476,8 +493,12 @@
 
                 let sourcesHTML = cluster.articles.map(article => {
                     const meta = SOURCE_META[article.source];
-                    const isRegional = meta && meta.region === "Middle East";
-                    const badgeClass = isRegional ? "source-badge regional-badge" : "source-badge";
+                    let badgeClass = "source-badge";
+                    if (meta && meta.region === "Middle East") {
+                        badgeClass = "source-badge regional-badge";
+                    } else if (meta && meta.region === "Tech & Macro") {
+                        badgeClass = "source-badge tech-badge";
+                    }
                     const biasText = meta ? `<span class="bias-note">(${meta.bias})</span>` : '';
 
                     return `

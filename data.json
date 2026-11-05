@@ -1,94 +1,113 @@
 [
     {
-        "main_date": "Erstmeldung: 2026-11-05 22:00 | Letztes Update: 2026-11-05 22:22",
-        "original_date": "2026-11-05 22:00",
-        "_timestamp": 1793917332.0,
+        "main_date": "Erstmeldung: 2026-11-05 22:53",
+        "original_date": "2026-11-05 22:53",
+        "_timestamp": 1793919204.0,
         "articles": [
             {
-                "title": "Magnificent 7 loses $1 trillion. The most eye-popping stats from Thursday's tech stock plunge",
-                "link": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-05 22:22",
-                "description": "Here are the most breathtaking statistics from the major stock sell-off on Thursday.",
-                "_timestamp": 1793917332.0
-            },
-            {
-                "title": "Tech stocks log worst day since 2020 as carnage comes to the AI trade",
-                "link": "https://www.marketwatch.com/story/tech-stocks-log-worst-day-since-2020-as-carnage-comes-to-the-ai-trade-56109845?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-05 22:00",
-                "description": "The S&amp;P 500 lost an estimated $2.9 trillion in market capitalization, the largest one-day loss of market value on record.",
-                "_timestamp": 1793916000.0
+                "title": "Berkshire After Buffett: Steady Hands, Big Bets In The Greg Abel Era",
+                "link": "https://finance.yahoo.com/m/6d694ac8-80af-35c3-ba67-7647c94d58da/berkshire-after-buffett%3A.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:53",
+                "description": "Berkshire Hathaway's new CEO Greg Abel remains a mystery, but is gradually emerging from Warren Buffett's long shadow.",
+                "_timestamp": 1793919204.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Event_Timestamp": "2026-11-05 22:00 UTC, approximately 24 minutes ago relative to the reference time.",
-            "Facts": "The S&P 500 suffered its largest one-day loss of market capitalization on record, shedding an estimated $2.9 trillion [Source: MarketWatch Macro]. Simultaneously, the Magnificent 7 tech stocks lost $1 trillion in a historic plunge, marking the tech sector's worst day since 2020 as severe carnage hit the AI trade [Source: CNBC Tech & AI].",
-            "Uncertainties": "Whether the equity market carnage will trigger widespread systemic liquidity squeezes or margin calls that force institutional liquidation across all asset classes, including safe-haven precious metals.",
-            "Macro_Context": "The Nasdaq 100 experienced a severe risk-off selloff, down 7.03% to 26531.0, while Brent Crude spiked 4.89% to 102.358. OANDA retail sentiment in Gold is heavily skewed long at 71.8%.",
-            "Bull_Case": "A historic equity market crash and destruction of tech valuations (-7.03% on Nasdaq) typically trigger classic safe-haven flows into physical assets and Gold as institutional investors seek capital preservation away from equity risk.",
-            "Bear_Case": "Extreme equity market sell-offs can cause broad-based margin calls, forcing institutional traders to liquidate winning or safe-haven assets like Gold to cover equity margin deficits, leading to a sharp liquidity-driven flush before any safe-haven bid takes hold.",
-            "Historical_Calibration": "The system is in its initial calibration phase with no prior 20h evaluations. Given that the extreme tech rout is unfolding in real-time, initial volatility may favor sharp liquidity liquidations rather than a clean safe-haven rally.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Event_Timestamp": "2026-11-05 22:53 UTC, roughly 10 minutes ago relative to the current reference time.",
+            "Facts": "Berkshire Hathaway's new CEO, Greg Abel, is gradually stepping out of Warren Buffett's shadow and shaping the conglomerate's future trajectory [Yahoo Finance Nasdaq]. The commentary highlights his steady leadership approach and large-scale capital allocation strategies in the post-Buffett era.",
+            "Uncertainties": "The specific nature or magnitude of upcoming big bets by Greg Abel remains unconfirmed, as does any direct short-term impact on macro commodity flows or corporate treasury management regarding physical assets.",
+            "Macro_Context": "The Nasdaq 100 is suffering a severe tech selloff (-6.62% to 26546.3), indicating aggressive risk-off flows and potential margin-call liquidations across broader equities, while Brent Crude remains elevated (+4.79% to 102.252), signaling persistent inflationary energy pressures. OANDA retail sentiment heavily favors longs at 71.8%.",
+            "Bull_Case": "Broader corporate leadership transitions at major holding firms like Berkshire occur against a backdrop of severe tech sector weakness (-6.62%), potentially driving institutional capital out of equities and into defensive macro hedges or safe havens like gold.",
+            "Bear_Case": "This is a company-specific leadership profile feature rather than a direct macroeconomic catalyst for precious metals. Furthermore, severe equity liquidations can occasionally trigger forced margin-call liquidations in gold, and retail positioning remains heavily crowded on the long side (71.8%).",
+            "Historical_Calibration": "This is a niche corporate governance/leadership article published minutes ago with negligible direct relevance to XAU/USD orderflow. The 4h move vs Daily ATR ratio is low at 0.2x, but the news itself lacks any direct monetary or geopolitical driver to move gold prices.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "The market is reacting in real-time to historic equity and AI trade liquidations, creating cross-asset volatility where safe-haven demand competes with potential margin-call liquidation pressures.",
+            "Past_Price_Action_Cause": "Gold has pulled back slightly over the past 4 hours (-$16.47) down to $4088.225, correcting from earlier highs as part of standard intraday consolidation amidst broader cross-asset volatility.",
             "Orderflow_Price_Target": "N/A"
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 16:00 | Letztes Update: 2026-11-05 22:21",
-        "original_date": "2026-11-05 16:00",
-        "_timestamp": 1793917260.0,
+        "main_date": "Erstmeldung: 2026-11-05 22:01 | Letztes Update: 2026-11-05 22:50",
+        "original_date": "2026-11-05 22:01",
+        "_timestamp": 1793919010.0,
         "articles": [
             {
-                "title": "IREN stock plunges 18% as Microsoft raises concerns over data center delays",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-stock-plunges-18-microsoft-162134051.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:21",
-                "description": "Investing.com -- IREN Ltd. shares plunged 18% Thursday amid a broad technology selloff, with a Bloomberg report highlighting growing concerns at Microsoft over delays and execution risks among its neocloud partners.",
-                "_timestamp": 1793895694.0
+                "title": "Cardinal Energy Ltd. Announces Third Quarter 2026 Operating and Financial Results",
+                "link": "https://finance.yahoo.com/energy/articles/cardinal-energy-ltd-announces-third-220100827.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 22:01",
+                "description": "Calgary, Alberta--(Newsfile Corp. - November 5, 2026) - Cardinal Energy Ltd. (TSX: CJ) (\"Cardinal\" or the \"Company\") is pleased to announce its operating and financial results for the third quarter ended September 30, 2026.FINANCIAL AND OPERATING HIGHLIGHTS FROM THE THIRD QUARTER OF 2026Third quarter 2026 production of 25,127 boe/d increased 21% compared to the same period in 2025 due to crude oil production additions from the Reford steam-assisted gravity drainage (\"SAGD\") project;Adjusted...",
+                "_timestamp": 1793916060.0
             },
             {
-                "title": "IREN Sinks 20% on Report It’s Behind Microsoft’s AI Spending Delay Ahead of Earnings",
-                "link": "https://www.tikr.com/blog/iren-sinks-20-on-report-its-behind-microsofts-ai-spending-delay-ahead-of-earnings?ref=yahoofinance&tlnk=yf-261105-qr7pp429&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:00",
-                "description": "Key TakeawaysIREN is down 20% on a report tying delays at its Childress, Texas, data center to Microsoft’s lower AI spending last quarter. Microsoft’s Childress contract should bring in about $1.",
-                "_timestamp": 1793894421.0
-            },
-            {
-                "title": "Here’s what’s driving Iren’s stock higher after a brutal selloff",
-                "link": "https://www.marketwatch.com/story/heres-whats-driving-irens-stock-higher-after-a-brutal-selloff-0ced09b0?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-05 22:21",
-                "description": "Iren announced a new cloud-computing deal and noted that much of its backlog is tied to “investment-grade counterparties.”",
-                "_timestamp": 1793917260.0
+                "title": "Cardinal Energy earnings surge 323% as Reford expansion drives production growth",
+                "link": "https://finance.yahoo.com/energy/articles/cardinal-energy-earnings-surge-323-225010850.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 22:50",
+                "description": "Investing.com -- Cardinal Energy reported a sharp increase in third-quarter earnings and cash flow on Thursday, supported by higher oil production from its Reford 1 thermal project and stronger crude prices, while continued debt reduction strengthened its balance sheet.",
+                "_timestamp": 1793919010.0
             }
         ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "The underlying event (IREN stock plunge due to Microsoft data center delays) occurred on 2026-11-05 between 16:00 UTC and 22:21 UTC, roughly 0 to 6 hours ago relative to the current reference time of 2026-11-05 22:24 UTC.",
-            "Facts": "IREN Ltd. shares plunged 18% to 20% on November 5, 2026, following reports from Bloomberg and Yahoo Finance that Microsoft raised concerns over data center delays and execution risks among its neocloud partners [Yahoo Finance Nasdaq]. Specifically, delays at IREN's Childress, Texas, data center were tied to Microsoft's lower AI spending metrics [Yahoo Finance Nasdaq]. Later in the day, MarketWatch reported a partial rebound as Iren announced a new cloud-computing deal, emphasizing that its backlog is tied to 'investment-grade counterparties' [MarketWatch Macro].",
-            "Uncertainties": "It remains unconfirmed whether Microsoft will permanently scale back its infrastructure commitments or if these delays are merely temporary construction hiccups. The financial material impact on IREN's broader revenue backlog is still speculative.",
-            "Macro_Context": "The broader technology sector experienced a severe selloff, with the Nasdaq 100 dropping 7.03% to 26531.0, while Brent Crude surged 4.89% to 102.358. This tech rout creates a dual-edged environment for Gold (XAU/USD): risk-off contagion and potential margin-call liquidations across equities versus safe-haven flows. Global OANDA retail sentiment heavily leans 71.8% long, acting as a contrarian headwind.",
-            "Bull_Case": "Severe weakness in the tech sector (-7.03% Nasdaq drop) sparks risk-off contagion and safe-haven flows into physical precious metals. Furthermore, equity margin-call liquidations can prompt institutional portfolio rebalancing into liquid safe-havens like Gold, driving prices toward overhead liquidity clusters such as 4121.12 or 4131.21.",
-            "Bear_Case": "A severe equity market selloff (-7.03% Nasdaq) often triggers forced margin-call liquidations where institutions sell liquid assets like Gold to cover losses in equities. Additionally, strong retail long positioning at 71.8% increases the probability of a flush toward downside liquidity zones (e.g., 4058.85).",
-            "Historical_Calibration": "The system is in its initial calibration phase with no completed prior signal evaluations. Given the fresh 6-hour event window coinciding with a massive -7.03% tech selloff, market volatility is high, though retail crowding heavily long warrants caution.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "The equity market rout (-7.03% Nasdaq) and subsequent tech partner project delays create cross-asset volatility, directly interacting with heavy retail long positioning (71.8%) around the current 4088.225 price handle.",
-            "Orderflow_Price_Target": "N/A"
-        }
+        "needs_update": true,
+        "summary": null
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 17:54 | Letztes Update: 2026-11-05 22:13",
+        "main_date": "Erstmeldung: 2026-11-05 22:30 | Letztes Update: 2026-11-05 22:48",
+        "original_date": "2026-11-05 22:30",
+        "_timestamp": 1793918914.0,
+        "articles": [
+            {
+                "title": "WW International, Inc. Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-ww-international-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:48",
+                "description": "Moby summary of WW International, Inc.'s Q3 2026 earnings call",
+                "_timestamp": 1793918914.0
+            },
+            {
+                "title": "Xeris Biopharma Holdings, Inc. Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-xeris-biopharma-holdings-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:47",
+                "description": "Moby summary of Xeris Biopharma Holdings, Inc.'s Q3 2026 earnings call",
+                "_timestamp": 1793918856.0
+            },
+            {
+                "title": "Advanced Drainage Systems, Inc. Q2 2027 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-advanced-drainage-systems-inc-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:44",
+                "description": "Moby summary of Advanced Drainage Systems, Inc.'s Q2 2027 earnings call",
+                "_timestamp": 1793918696.0
+            },
+            {
+                "title": "Viatris Inc. Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-viatris-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:41",
+                "description": "Moby summary of Viatris Inc.'s Q3 2026 earnings call",
+                "_timestamp": 1793918472.0
+            },
+            {
+                "title": "Palvella Therapeutics, Inc. Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-palvella-therapeutics-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:30",
+                "description": "Moby summary of Palvella Therapeutics, Inc.'s Q3 2026 earnings call",
+                "_timestamp": 1793917845.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 17:54 | Letztes Update: 2026-11-05 22:46",
         "original_date": "2026-11-05 17:54",
-        "_timestamp": 1793916804.0,
+        "_timestamp": 1793918794.0,
         "articles": [
             {
                 "title": "Lamar Advertising Company Q3 2026 Earnings Call Summary",
@@ -217,15 +236,246 @@
                 "date": "2026-11-05 21:57",
                 "description": "Moby summary of First Advantage Corporation's Q3 2026 earnings call",
                 "_timestamp": 1793915846.0
+            },
+            {
+                "title": "The Wendy's Company Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-the-wendys-company-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:46",
+                "description": "Moby summary of The Wendy's Company's Q3 2026 earnings call",
+                "_timestamp": 1793918794.0
             }
         ],
         "needs_update": true,
         "summary": null
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 14:32 | Letztes Update: 2026-11-05 22:09",
+        "main_date": "Erstmeldung: 2026-11-05 16:29 | Letztes Update: 2026-11-05 22:45",
+        "original_date": "2026-11-05 16:29",
+        "_timestamp": 1793918702.0,
+        "articles": [
+            {
+                "title": "Bitcoin Erases Election Rally as AI Stocks Plunge, $428 Million in Crypto Longs Get Wiped Out",
+                "link": "https://decrypt.co/382612/bitcoin-erases-election-rally-ai-stocks-plunge-428-million-crypto-longs?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:29",
+                "description": "Bitcoin plunged nearly 5% as AI stocks sank, Democratic midterm wins raised fresh policy questions, and forced liquidations erased a Wednesday rally that had been fueled partly by short covering.",
+                "_timestamp": 1793896151.0
+            },
+            {
+                "title": "AI stocks plunge after US election, driving down markets",
+                "link": "https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-05 17:56",
+                "description": "Tech stocks lead US market slide as investors weigh impact of midterm election results on AI industry.",
+                "_timestamp": 1793901377.0
+            },
+            {
+                "title": "Bitcoin, stocks crash in steepest selloff since Liberation Day",
+                "link": "https://www.thestreet.com/crypto/markets/bitcoin-stocks-crash-as-markets-erase-post-election-rally?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 20:21",
+                "description": "The post-election rally lasted one day before markets turned sharply lower.",
+                "_timestamp": 1793910085.0
+            },
+            {
+                "title": "Crypto Market Today, Nov. 5: Bitcoin Erases Post-Election Rally as Wall Street Suffers Worst Day in 18 Months",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/05/crypto-market-today-nov-5-bitcoin-erases-post-election-rally-as-wall-street-suffers-worst-day-in-18-months/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:45",
+                "description": "Wednesday's crypto recovery proved short-lived as a widespread tech sell-off spilled into digital assets.",
+                "_timestamp": 1793918702.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-03 16:25 | Letztes Update: 2026-11-05 22:41",
+        "original_date": "2026-11-03 16:25",
+        "_timestamp": 1793918499.0,
+        "articles": [
+            {
+                "title": "Devon Energy to Report Q3 Earnings: Buy, Sell or Hold the Stock?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/devon-energy-report-q3-earnings-162500109.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 16:25",
+                "description": "DVN heads into Q3 earnings with rising estimates, strong production prospects and Coterra merger synergies.",
+                "_timestamp": 1793723100.0
+            },
+            {
+                "title": "What Just Happened To Devon Energy Stock?",
+                "link": "https://www.trefis.com/stock/dvn/articles/622217/what-just-happened-to-devon-energy-stock/2026-11-03?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 18:09",
+                "description": "For questions about this article or underlying research, email help@trefis.com.",
+                "_timestamp": 1793729355.0
+            },
+            {
+                "title": "What's in Store for These 4 Energy Stocks in Q3 Earnings?",
+                "link": "https://finance.yahoo.com/energy/articles/whats-store-4-energy-stocks-130500125.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 13:05",
+                "description": "Canadian Natural, ConocoPhillips, TC Energy and Targa Resources are set to report their third-quarter earnings tomorrow.",
+                "_timestamp": 1793797500.0
+            },
+            {
+                "title": "Chord Energy (NASDAQ:CHRD) reports Q3 2026 earnings",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/chord-energy-nasdaq-chrd-reports-212937135.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 21:29",
+                "description": "Oil and gas producer Chord Energy (NASDAQ:CHRD) beat Wall Street’s revenue expectations in Q3 2026, with revenue up 30% year on year to $1.71 billion. Its GAAP profit of $3.29 per share was 43.1% below analysts’ consensus estimates.",
+                "_timestamp": 1793827777.0
+            },
+            {
+                "title": "Diversified Energy: Q3 Earnings Snapshot",
+                "link": "https://finance.yahoo.com/energy/articles/diversified-energy-q3-earnings-snapshot-232447781.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 23:24",
+                "description": "(AP) — Diversified Energy (DEC) on Wednesday reported a loss of $202.The Birmingham, Alabama-based company said it had a loss of $2.",
+                "_timestamp": 1793834687.0
+            },
+            {
+                "title": "Barrick Mining to Post Q3 Earnings: What's in the Offing for the Stock?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/barrick-mining-post-q3-earnings-135600378.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 13:56",
+                "description": "Barrick Mining is set to report Q3 earnings, with higher gold prices and production expected to drive growth despite rising costs.",
+                "_timestamp": 1793886960.0
+            },
+            {
+                "title": "Comstock Resources Reports 9% Production Growth as Q3 Earnings Miss Estimates",
+                "link": "https://investorshub.advfn.com/market-news/article/39392/comstock-resources-reports-9-production-growth-as-q3-earnings-miss-estimates?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 15:12",
+                "description": "Comstock Resources, Inc. (NYSE:CRK) reported third-quarter 2026 adjusted earnings of $0.",
+                "_timestamp": 1793891535.0
+            },
+            {
+                "title": "CRGY Q3 Earnings Beat on Higher Oil Prices and Production",
+                "link": "https://finance.yahoo.com/energy/articles/crgy-q3-earnings-beat-higher-163600754.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 16:36",
+                "description": "Crescent Energy's Q3 earnings surge 113.9% as oil prices and production increase, while Permian synergies and a $3.85 billion Devon deal shape its next steps.",
+                "_timestamp": 1793896560.0
+            },
+            {
+                "title": "Petrobras to Report Q3 Earnings: What's in the Cards for the Stock?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/petrobras-report-q3-earnings-whats-163800371.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 16:38",
+                "description": "PBR gears up for Q3 earnings with record oil production, robust refined-product sales and exports, while rising costs and oil price volatility pose risks.",
+                "_timestamp": 1793896680.0
+            },
+            {
+                "title": "Granite Ridge Resources (NYSE:GRNT) reports bullish Q3 2026, stock jumps 10.2%",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/granite-ridge-resources-nyse-grnt-220417453.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 22:04",
+                "description": "Oil and gas company Granite Ridge Resources (NYSE:GRNT) beat Wall Street’s revenue expectations in Q3 2026, with revenue up 57.3% year on year to $177.2 million. Its non-GAAP profit of $0.17 per share was 38.8% above analysts’ consensus estimates.",
+                "_timestamp": 1793916257.0
+            },
+            {
+                "title": "Devon Energy (NYSE:DVN) misses Q3 2026 sales expectations",
+                "link": "https://finance.yahoo.com/energy/articles/devon-energy-nyse-dvn-misses-224139154.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 22:41",
+                "description": "Oil and gas producer Devon Energy (NYSE:DVN) fell short of the market’s revenue expectations in Q3 2026, but revenue rose 59.5% year on year to $6.86 billion. Its non-GAAP profit of $1.42 per share was 8% above analysts’ consensus estimates.",
+                "_timestamp": 1793918499.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Facts": "Energy sector news reports covering corporate earnings and production updates for firms like Devon Energy, Chord Energy, and Diversified Energy [Yahoo Finance Oil]. Simultaneously, XAU/USD experienced significant upside momentum, reaching a price of $4138.235 driven by broader macroeconomic shifts.",
+            "Uncertainties": "Specific drivers linking the corporate energy earnings to the aggressive upward spike in spot gold remain unconfirmed by direct macroeconomic policy announcements.",
+            "Macro_Context": "EUR/USD is strengthening (+0.23%), reflecting a weaker USD which acts as a tailwind for gold. US 10Y Treasury bond prices are up (+0.31%), indicating falling yields, which also supports non-yielding assets like gold. Brent Crude is lower (-8.96%), yet gold continues to rally due to bond and currency dynamics, despite heavy retail long positioning (72.4% long on OANDA).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 60,
+            "Past_Price_Action_Cause": "XAU/USD has risen by +$202.89 over the last 24h, with a 4h move vs Daily ATR ratio at 1.01x, staying just below the 1.2x exhaustion threshold, allowing room for continued momentum toward immediate liquidity overhead.",
+            "Orderflow_Price_Target": "4141.34"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 21:05 | Letztes Update: 2026-11-05 22:40",
+        "original_date": "2026-11-05 21:05",
+        "_timestamp": 1793918401.0,
+        "articles": [
+            {
+                "title": "IonQ Wants to Be the Nvidia of Quantum. Its Latest Numbers Back Up the Swagger.",
+                "link": "https://finance.yahoo.com/m/daf77303-800e-3e89-88c8-ad99c3913f9c/ionq-wants-to-be-the-nvidia.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 21:05",
+                "description": "IonQ CEO Niccolo de Masi envisions the company as a cornerstone of U.S. dominance in quantum technology.",
+                "_timestamp": 1793912700.0
+            },
+            {
+                "title": "Why IonQ Stock Just Fell 10.5% Today",
+                "link": "https://www.fool.com/investing/2026/11/05/why-ionq-stock-just-fell-10-5-today/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:40",
+                "description": "IonQ stock got hit hard in Thursday's AI and chip rout, a reminder that quantum stocks can get swept up in a big AI sell-off.",
+                "_timestamp": 1793918401.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 22:31 | Letztes Update: 2026-11-05 22:37",
+        "original_date": "2026-11-05 22:31",
+        "_timestamp": 1793918239.0,
+        "articles": [
+            {
+                "title": "Tapestry, Inc. Q1 2027 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-tapestry-inc-q1-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:37",
+                "description": "Moby summary of Tapestry, Inc.'s Q1 2027 earnings call",
+                "_timestamp": 1793918239.0
+            },
+            {
+                "title": "Teleflex Incorporated Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-teleflex-incorporated-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:35",
+                "description": "Moby summary of Teleflex Incorporated's Q3 2026 earnings call",
+                "_timestamp": 1793918107.0
+            },
+            {
+                "title": "Shake Shack Inc. Q3 2026 Earnings Call Summary",
+                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-shake-shack-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:31",
+                "description": "Moby summary of Shake Shack Inc.'s Q3 2026 earnings call",
+                "_timestamp": 1793917865.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 22:35",
+        "original_date": "2026-11-05 22:35",
+        "_timestamp": 1793918126.0,
+        "articles": [
+            {
+                "title": "Trump says Iran 'not doing anything' on nuclear programme without US approval",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-not-doing-anything-nuclear-program-without-us-approval",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 22:35",
+                "description": "Trump says Iran 'not doing anything' on nuclear programme without US approval\n\n    \n    \n\n        \n    \n                US President Donald Trump on Thursday said&nbsp;Iran&nbsp;could not do anything regarding its nuclear programme without US approval.\n\n\"They're not doing anything without our approval,\" Trump told reporters in the Oval Office in response to a question regarding a set of proposals made to&nbsp;Iran&nbsp;by mediators about the future of its nuclear programme.",
+                "_timestamp": 1793918126.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 14:32 | Letztes Update: 2026-11-05 22:33",
         "original_date": "2026-11-05 14:32",
-        "_timestamp": 1793916578.0,
+        "_timestamp": 1793918019.0,
         "articles": [
             {
                 "title": "Stock Market Today: Nasdaq Craters 3% As Chips Sell Off; Arm Misses Key Metric (Live Coverage)",
@@ -466,6 +716,22 @@
                 "date": "2026-11-05 21:44",
                 "description": "Some see another buying opportunity. Others fear the worst isn’t over. A market rout is testing the instincts of a generation raised on quick rebounds.",
                 "_timestamp": 1793915040.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 5: Nasdaq Suffers Worst Day in 18 Months as AI Trade Comes Under Fire",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/05/stock-market-today-nov-5-nasdaq-suffers-worst-day-in-18-months-as-ai-trade-comes-under-fire/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 22:15",
+                "description": "Wall Street's worst session since early 2025 hit semiconductors hardest as midterm-driven regulatory worries rattled investors.",
+                "_timestamp": 1793916902.0
+            },
+            {
+                "title": "Update: Nasdaq Enters Correction Territory, Dow Plunges Over 1,800 Points as Investors Dump Big Tech",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-enters-correction-territory-dow-223339396.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:33",
+                "description": "(Updates with index/price moves, macroeconomic data, and company/geopolitical news from the first pa",
+                "_timestamp": 1793918019.0
             }
         ],
         "needs_update": true,
@@ -482,6 +748,220 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "Gold experienced an earlier push toward the $4,146 area before pulling back alongside broader liquidity adjustments, currently consolidating around $4,089 as traders weigh safe-haven demand against margin-call liquidation risks.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:58 | Letztes Update: 2026-11-05 22:31",
+        "original_date": "2026-11-05 15:58",
+        "_timestamp": 1793917861.0,
+        "articles": [
+            {
+                "title": "Are Big Tech stock buybacks officially dead?",
+                "link": "https://finance.yahoo.com/video/are-big-tech-stock-buybacks-officially-dead-155848546.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:58",
+                "description": "As hyperscalers Alphabet  (GOOGL, GOOG), Amazon (AMZN), Meta (META), and Microsoft  (MSFT) pour billions into AI data centers, stock buybacks appear to be taking a back seat. Repurchases reportedly fell to $4.4 billion in the third quarter, a 90% drop from previous quarters. Yahoo Finance Executive Editor and Sozzi Unleashed host Brian Sozzi examines whether Big Tech's massive AI spending spree is coming at the expense of shareholder returns. Yahoo Finance Executive Editor and host Sozzi Unleashed takes a closer look.",
+                "_timestamp": 1793894328.0
+            },
+            {
+                "title": "Big Tech's massive AI spending is causing another problem for investors",
+                "link": "https://finance.yahoo.com/technology/article/big-techs-massive-ai-spending-is-causing-another-problem-for-investors-171909548.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 17:19",
+                "description": "The Big Tech buyback may be on ice for now.",
+                "_timestamp": 1793899149.0
+            },
+            {
+                "title": "Why SpaceX Stock Is Still Going Down",
+                "link": "https://www.fool.com/investing/2026/11/05/why-spacex-stock-is-still-going-down/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 17:03",
+                "description": "SpaceX becomes a victim of the \"sell-AI trade.\"",
+                "_timestamp": 1793898215.0
+            },
+            {
+                "title": "SpaceX Stock Is Still Falling. It Trades At Apple’s Valuation.",
+                "link": "https://finance.yahoo.com/m/12c89445-f84d-308c-a32e-1b9535c6322f/spacex-stock-is-still.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:29",
+                "description": "China Renaissance initiates coverage of SpaceX with a Buy rating and a $194.20 price target,",
+                "_timestamp": 1793906940.0
+            },
+            {
+                "title": "Why Rocket Lab Stock Dropped Today",
+                "link": "https://www.fool.com/investing/2026/11/05/why-rocket-lab-stock-dropped-today/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:31",
+                "description": "Rocket Lab isn't an AI company, but the post-election sell-off in AI stocks is dragging it down anyway because it's viewed as speculative and high-risk.",
+                "_timestamp": 1793917861.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 ~15:58 to 19:29 UTC (approx. 2 to 5 hours ago)",
+            "Facts": "Big Tech companies including Alphabet, Amazon, Meta, and Microsoft have significantly reduced their stock buybacks (dropping 90% to $4.4 billion in Q3) as capital is heavily redirected toward AI data center investments [Yahoo Finance Nasdaq]. Meanwhile, SpaceX stock continues to face downward pressure amid a broader 'sell-AI trade' and valuation adjustments, despite China Renaissance initiating coverage with a Buy rating and a $194.20 price target [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether the heavy capital expenditure on AI infrastructure will yield sustainable multi-year revenue growth or if it marks a peak capital allocation cycle that will permanently impair shareholder return programs like buybacks.",
+            "Macro_Context": "The Nasdaq 100 is undergoing a severe sell-off (-6.97%), signaling risk-off sentiment and a potential tech sector correction. While a plunging tech sector can trigger acute margin-call liquidations in safe havens like Gold, falling Treasury yields (US 10Y Bond Price +0.42%) and rising Brent Crude (+3.30%) offer a supportive backdrop. However, high OANDA retail long positioning (71.8% long) suggests caution against chasing immediate upside without a confirmed liquidity sweep.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Gold experienced an earlier session peak around $4,146 before pulling back to test current levels near $4,091. The 4h move vs. daily ATR ratio of 0.16x indicates that the immediate intraday impulse has cooled, leaving room for a potential measured continuation as broader tech sector weakness redirects capital toward defensive safe havens.",
+            "Orderflow_Price_Target": "4121.01"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 22:00 | Letztes Update: 2026-11-05 22:22",
+        "original_date": "2026-11-05 22:00",
+        "_timestamp": 1793917332.0,
+        "articles": [
+            {
+                "title": "Magnificent 7 loses $1 trillion. The most eye-popping stats from Thursday's tech stock plunge",
+                "link": "https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 22:22",
+                "description": "Here are the most breathtaking statistics from the major stock sell-off on Thursday.",
+                "_timestamp": 1793917332.0
+            },
+            {
+                "title": "Tech stocks log worst day since 2020 as carnage comes to the AI trade",
+                "link": "https://www.marketwatch.com/story/tech-stocks-log-worst-day-since-2020-as-carnage-comes-to-the-ai-trade-56109845?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-05 22:00",
+                "description": "The S&amp;P 500 lost an estimated $2.9 trillion in market capitalization, the largest one-day loss of market value on record.",
+                "_timestamp": 1793916000.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 22:00 UTC, approximately 24 minutes ago relative to the reference time.",
+            "Facts": "The S&P 500 suffered its largest one-day loss of market capitalization on record, shedding an estimated $2.9 trillion [Source: MarketWatch Macro]. Simultaneously, the Magnificent 7 tech stocks lost $1 trillion in a historic plunge, marking the tech sector's worst day since 2020 as severe carnage hit the AI trade [Source: CNBC Tech & AI].",
+            "Uncertainties": "Whether the equity market carnage will trigger widespread systemic liquidity squeezes or margin calls that force institutional liquidation across all asset classes, including safe-haven precious metals.",
+            "Macro_Context": "The Nasdaq 100 experienced a severe risk-off selloff, down 7.03% to 26531.0, while Brent Crude spiked 4.89% to 102.358. OANDA retail sentiment in Gold is heavily skewed long at 71.8%.",
+            "Bull_Case": "A historic equity market crash and destruction of tech valuations (-7.03% on Nasdaq) typically trigger classic safe-haven flows into physical assets and Gold as institutional investors seek capital preservation away from equity risk.",
+            "Bear_Case": "Extreme equity market sell-offs can cause broad-based margin calls, forcing institutional traders to liquidate winning or safe-haven assets like Gold to cover equity margin deficits, leading to a sharp liquidity-driven flush before any safe-haven bid takes hold.",
+            "Historical_Calibration": "The system is in its initial calibration phase with no prior 20h evaluations. Given that the extreme tech rout is unfolding in real-time, initial volatility may favor sharp liquidity liquidations rather than a clean safe-haven rally.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The market is reacting in real-time to historic equity and AI trade liquidations, creating cross-asset volatility where safe-haven demand competes with potential margin-call liquidation pressures.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:00 | Letztes Update: 2026-11-05 22:21",
+        "original_date": "2026-11-05 16:00",
+        "_timestamp": 1793917260.0,
+        "articles": [
+            {
+                "title": "IREN stock plunges 18% as Microsoft raises concerns over data center delays",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-stock-plunges-18-microsoft-162134051.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:21",
+                "description": "Investing.com -- IREN Ltd. shares plunged 18% Thursday amid a broad technology selloff, with a Bloomberg report highlighting growing concerns at Microsoft over delays and execution risks among its neocloud partners.",
+                "_timestamp": 1793895694.0
+            },
+            {
+                "title": "IREN Sinks 20% on Report It’s Behind Microsoft’s AI Spending Delay Ahead of Earnings",
+                "link": "https://www.tikr.com/blog/iren-sinks-20-on-report-its-behind-microsofts-ai-spending-delay-ahead-of-earnings?ref=yahoofinance&tlnk=yf-261105-qr7pp429&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:00",
+                "description": "Key TakeawaysIREN is down 20% on a report tying delays at its Childress, Texas, data center to Microsoft’s lower AI spending last quarter. Microsoft’s Childress contract should bring in about $1.",
+                "_timestamp": 1793894421.0
+            },
+            {
+                "title": "Here’s what’s driving Iren’s stock higher after a brutal selloff",
+                "link": "https://www.marketwatch.com/story/heres-whats-driving-irens-stock-higher-after-a-brutal-selloff-0ced09b0?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-05 22:21",
+                "description": "Iren announced a new cloud-computing deal and noted that much of its backlog is tied to “investment-grade counterparties.”",
+                "_timestamp": 1793917260.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Event_Timestamp": "The underlying event (IREN stock plunge due to Microsoft data center delays) occurred on 2026-11-05 between 16:00 UTC and 22:21 UTC, roughly 0 to 6 hours ago relative to the current reference time of 2026-11-05 22:24 UTC.",
+            "Facts": "IREN Ltd. shares plunged 18% to 20% on November 5, 2026, following reports from Bloomberg and Yahoo Finance that Microsoft raised concerns over data center delays and execution risks among its neocloud partners [Yahoo Finance Nasdaq]. Specifically, delays at IREN's Childress, Texas, data center were tied to Microsoft's lower AI spending metrics [Yahoo Finance Nasdaq]. Later in the day, MarketWatch reported a partial rebound as Iren announced a new cloud-computing deal, emphasizing that its backlog is tied to 'investment-grade counterparties' [MarketWatch Macro].",
+            "Uncertainties": "It remains unconfirmed whether Microsoft will permanently scale back its infrastructure commitments or if these delays are merely temporary construction hiccups. The financial material impact on IREN's broader revenue backlog is still speculative.",
+            "Macro_Context": "The broader technology sector experienced a severe selloff, with the Nasdaq 100 dropping 7.03% to 26531.0, while Brent Crude surged 4.89% to 102.358. This tech rout creates a dual-edged environment for Gold (XAU/USD): risk-off contagion and potential margin-call liquidations across equities versus safe-haven flows. Global OANDA retail sentiment heavily leans 71.8% long, acting as a contrarian headwind.",
+            "Bull_Case": "Severe weakness in the tech sector (-7.03% Nasdaq drop) sparks risk-off contagion and safe-haven flows into physical precious metals. Furthermore, equity margin-call liquidations can prompt institutional portfolio rebalancing into liquid safe-havens like Gold, driving prices toward overhead liquidity clusters such as 4121.12 or 4131.21.",
+            "Bear_Case": "A severe equity market selloff (-7.03% Nasdaq) often triggers forced margin-call liquidations where institutions sell liquid assets like Gold to cover losses in equities. Additionally, strong retail long positioning at 71.8% increases the probability of a flush toward downside liquidity zones (e.g., 4058.85).",
+            "Historical_Calibration": "The system is in its initial calibration phase with no completed prior signal evaluations. Given the fresh 6-hour event window coinciding with a massive -7.03% tech selloff, market volatility is high, though retail crowding heavily long warrants caution.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The equity market rout (-7.03% Nasdaq) and subsequent tech partner project delays create cross-asset volatility, directly interacting with heavy retail long positioning (71.8%) around the current 4088.225 price handle.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 04:23 | Letztes Update: 2026-11-05 22:14",
+        "original_date": "2026-11-05 04:23",
+        "_timestamp": 1793916892.0,
+        "articles": [
+            {
+                "title": "XOM Stock Is Up 43% In 2026: Wall Street Is Split On The Oil Major Following Q3 Results",
+                "link": "https://stocktwits.com/news-articles/markets/equity/xom-stock-is-up-43-in-2026-wall-street-is-split-on-the-oil-major-following-q3-results/cNG13IER9EX?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 04:23",
+                "description": "XOM stock has gained more than 43% this year, putting it on track for its best year since 2022.",
+                "_timestamp": 1793852590.0
+            },
+            {
+                "title": "InPlay Oil Corp. Announces Third Quarter 2026 Financial and Operating Results and Preliminary 2027 Guidance Highlighted by 15% Per Share Growth in Oil Production",
+                "link": "https://finance.yahoo.com/news/inplay-oil-corp-announces-third-123000687.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 12:30",
+                "description": "InPlay Oil Corp. (TSX: IPO) (TASE: IPO) (OTCQX: IPOOF) (\"InPlay\" or the \"Company\") is pleased to announce its financial and operating results for the three and nine months ended September 30, 2026, together with preliminary 2027 production and capital guidance. InPlay's unaudited interim financial statements and notes, and Management's Discussion and Analysis (\"MD&amp;A\") for the three and nine months ended September 30, 2026 will be available at \"www.sedarplus.ca\" and the Company's website at \"www.",
+                "_timestamp": 1793881800.0
+            },
+            {
+                "title": "ConocoPhillips (NYSE:COP) delivers impressive Q3 2026",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/conocophillips-nyse-cop-delivers-impressive-124245049.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 12:42",
+                "description": "Oil and gas producer ConocoPhillips (NYSE:COP) reported Q3 2026 results beating Wall Street’s revenue expectations, with revenue up 29.2% year on year to $20.06 billion. Its GAAP profit of $3.34 per share was 11% above analysts’ consensus estimates.",
+                "_timestamp": 1793882565.0
+            },
+            {
+                "title": "ConocoPhillips Reports Higher Q3 Earnings as Oil Prices Support Profit Growth",
+                "link": "https://investorshub.advfn.com/market-news/article/39390/conocophillips-reports-higher-q3-earnings-as-oil-prices-support-profit-growth?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 15:11",
+                "description": "ConocoPhillips (NYSE:COP) reported third-quarter 2026 adjusted earnings of $3. 27 per share, exceeding analysts’ expectations of $2.",
+                "_timestamp": 1793891477.0
+            },
+            {
+                "title": "Baytex Reports Third Quarter 2026 Results; Announces Increased 2026 Capital Plan, 2027 Guidance and Accelerated Three-Year Growth Outlook",
+                "link": "https://finance.yahoo.com/energy/articles/baytex-reports-third-quarter-2026-220300003.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 22:03",
+                "description": "Calgary, Alberta--(Newsfile Corp. - November 5, 2026) - Baytex Energy Corp. (TSX: BTE) (NYSE: BTE) (\"Baytex\" or the \"Company\") reports its operating and financial results for the three and nine months ended September 30, 2026 (all amounts are in Canadian dollars unless otherwise noted).\"Third-quarter results were highlighted by strong safety performance, record Duvernay production and continued execution across our heavy oil portfolio,\" said Chad Lundberg, President and Chief Executive Officer..",
+                "_timestamp": 1793916180.0
+            },
+            {
+                "title": "Is ExxonMobil Holdings (XOM) Rethinking Its Portfolio With An Infineum Exit?",
+                "link": "https://finance.yahoo.com/energy/articles/exxonmobil-holdings-xom-rethinking-portfolio-221452458.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 22:14",
+                "description": "ExxonMobil Holdings (NYSE:XOM) and Shell are reported to be exploring a sale of their joint venture Infineum International Limited. Advisors are said to be actively engaged on the potential transaction, which is reported to carry a multi billion dollar valuation. The possible Infineum divestment highlights only one piece of ExxonMobil's wider portfolio and risk profile. Our analysis turns up 1 major warning sign for ExxonMobil Holdings as well. For a wider view on income opportunities...",
+                "_timestamp": 1793916892.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 04:23 to 12:42 UTC (approx. 1 to 9 hours ago relative to 2026-11-05 13:42 UTC)",
+            "Facts": "Recent corporate earnings and operational updates from major energy companies (ExxonMobil, InPlay Oil, and ConocoPhillips) indicate strong third-quarter 2026 results and forward guidance, with ConocoPhillips beating revenue and earnings expectations [Yahoo Finance Oil]. These reports highlight robust corporate earnings within the energy sector rather than any direct macroeconomic shock to precious metals.",
+            "Uncertainties": "Whether broader equity market performance and energy sector results will induce spillover into broader commodity indices or alter Federal Reserve rate expectations.",
+            "Macro_Context": "The US dollar is strengthening (EUR/USD down 0.26%), 10-year Treasury yields remain relatively stable, and Brent crude oil has dropped sharply by 5.18%. This macro configuration presents a slight headwind for gold due to USD strength and sliding oil prices, while high OANDA retail long positioning (71.9% long) creates a contrarian downward bias.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "XAU/USD rallied earlier in the Asian session toward the 4146 area but has since consolidated around 4120. Because the fundamental catalysts are sector-specific oil earnings rather than direct gold drivers, and given the lack of sustained momentum over the past 4 hours, the impact is neutral and largely digested by current levels.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -630,165 +1110,6 @@
         "summary": null
     },
     {
-        "main_date": "Erstmeldung: 2026-11-03 16:25 | Letztes Update: 2026-11-05 22:04",
-        "original_date": "2026-11-03 16:25",
-        "_timestamp": 1793916257.0,
-        "articles": [
-            {
-                "title": "Devon Energy to Report Q3 Earnings: Buy, Sell or Hold the Stock?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/devon-energy-report-q3-earnings-162500109.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 16:25",
-                "description": "DVN heads into Q3 earnings with rising estimates, strong production prospects and Coterra merger synergies.",
-                "_timestamp": 1793723100.0
-            },
-            {
-                "title": "What Just Happened To Devon Energy Stock?",
-                "link": "https://www.trefis.com/stock/dvn/articles/622217/what-just-happened-to-devon-energy-stock/2026-11-03?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 18:09",
-                "description": "For questions about this article or underlying research, email help@trefis.com.",
-                "_timestamp": 1793729355.0
-            },
-            {
-                "title": "What's in Store for These 4 Energy Stocks in Q3 Earnings?",
-                "link": "https://finance.yahoo.com/energy/articles/whats-store-4-energy-stocks-130500125.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 13:05",
-                "description": "Canadian Natural, ConocoPhillips, TC Energy and Targa Resources are set to report their third-quarter earnings tomorrow.",
-                "_timestamp": 1793797500.0
-            },
-            {
-                "title": "Chord Energy (NASDAQ:CHRD) reports Q3 2026 earnings",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/chord-energy-nasdaq-chrd-reports-212937135.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 21:29",
-                "description": "Oil and gas producer Chord Energy (NASDAQ:CHRD) beat Wall Street’s revenue expectations in Q3 2026, with revenue up 30% year on year to $1.71 billion. Its GAAP profit of $3.29 per share was 43.1% below analysts’ consensus estimates.",
-                "_timestamp": 1793827777.0
-            },
-            {
-                "title": "Diversified Energy: Q3 Earnings Snapshot",
-                "link": "https://finance.yahoo.com/energy/articles/diversified-energy-q3-earnings-snapshot-232447781.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 23:24",
-                "description": "(AP) — Diversified Energy (DEC) on Wednesday reported a loss of $202.The Birmingham, Alabama-based company said it had a loss of $2.",
-                "_timestamp": 1793834687.0
-            },
-            {
-                "title": "Barrick Mining to Post Q3 Earnings: What's in the Offing for the Stock?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/barrick-mining-post-q3-earnings-135600378.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 13:56",
-                "description": "Barrick Mining is set to report Q3 earnings, with higher gold prices and production expected to drive growth despite rising costs.",
-                "_timestamp": 1793886960.0
-            },
-            {
-                "title": "Comstock Resources Reports 9% Production Growth as Q3 Earnings Miss Estimates",
-                "link": "https://investorshub.advfn.com/market-news/article/39392/comstock-resources-reports-9-production-growth-as-q3-earnings-miss-estimates?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 15:12",
-                "description": "Comstock Resources, Inc. (NYSE:CRK) reported third-quarter 2026 adjusted earnings of $0.",
-                "_timestamp": 1793891535.0
-            },
-            {
-                "title": "CRGY Q3 Earnings Beat on Higher Oil Prices and Production",
-                "link": "https://finance.yahoo.com/energy/articles/crgy-q3-earnings-beat-higher-163600754.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 16:36",
-                "description": "Crescent Energy's Q3 earnings surge 113.9% as oil prices and production increase, while Permian synergies and a $3.85 billion Devon deal shape its next steps.",
-                "_timestamp": 1793896560.0
-            },
-            {
-                "title": "Petrobras to Report Q3 Earnings: What's in the Cards for the Stock?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/petrobras-report-q3-earnings-whats-163800371.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 16:38",
-                "description": "PBR gears up for Q3 earnings with record oil production, robust refined-product sales and exports, while rising costs and oil price volatility pose risks.",
-                "_timestamp": 1793896680.0
-            },
-            {
-                "title": "Granite Ridge Resources (NYSE:GRNT) reports bullish Q3 2026, stock jumps 10.2%",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/granite-ridge-resources-nyse-grnt-220417453.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 22:04",
-                "description": "Oil and gas company Granite Ridge Resources (NYSE:GRNT) beat Wall Street’s revenue expectations in Q3 2026, with revenue up 57.3% year on year to $177.2 million. Its non-GAAP profit of $0.17 per share was 38.8% above analysts’ consensus estimates.",
-                "_timestamp": 1793916257.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Facts": "Energy sector news reports covering corporate earnings and production updates for firms like Devon Energy, Chord Energy, and Diversified Energy [Yahoo Finance Oil]. Simultaneously, XAU/USD experienced significant upside momentum, reaching a price of $4138.235 driven by broader macroeconomic shifts.",
-            "Uncertainties": "Specific drivers linking the corporate energy earnings to the aggressive upward spike in spot gold remain unconfirmed by direct macroeconomic policy announcements.",
-            "Macro_Context": "EUR/USD is strengthening (+0.23%), reflecting a weaker USD which acts as a tailwind for gold. US 10Y Treasury bond prices are up (+0.31%), indicating falling yields, which also supports non-yielding assets like gold. Brent Crude is lower (-8.96%), yet gold continues to rally due to bond and currency dynamics, despite heavy retail long positioning (72.4% long on OANDA).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "XAU/USD has risen by +$202.89 over the last 24h, with a 4h move vs Daily ATR ratio at 1.01x, staying just below the 1.2x exhaustion threshold, allowing room for continued momentum toward immediate liquidity overhead.",
-            "Orderflow_Price_Target": "4141.34"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 04:23 | Letztes Update: 2026-11-05 22:03",
-        "original_date": "2026-11-05 04:23",
-        "_timestamp": 1793916180.0,
-        "articles": [
-            {
-                "title": "XOM Stock Is Up 43% In 2026: Wall Street Is Split On The Oil Major Following Q3 Results",
-                "link": "https://stocktwits.com/news-articles/markets/equity/xom-stock-is-up-43-in-2026-wall-street-is-split-on-the-oil-major-following-q3-results/cNG13IER9EX?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 04:23",
-                "description": "XOM stock has gained more than 43% this year, putting it on track for its best year since 2022.",
-                "_timestamp": 1793852590.0
-            },
-            {
-                "title": "InPlay Oil Corp. Announces Third Quarter 2026 Financial and Operating Results and Preliminary 2027 Guidance Highlighted by 15% Per Share Growth in Oil Production",
-                "link": "https://finance.yahoo.com/news/inplay-oil-corp-announces-third-123000687.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 12:30",
-                "description": "InPlay Oil Corp. (TSX: IPO) (TASE: IPO) (OTCQX: IPOOF) (\"InPlay\" or the \"Company\") is pleased to announce its financial and operating results for the three and nine months ended September 30, 2026, together with preliminary 2027 production and capital guidance. InPlay's unaudited interim financial statements and notes, and Management's Discussion and Analysis (\"MD&amp;A\") for the three and nine months ended September 30, 2026 will be available at \"www.sedarplus.ca\" and the Company's website at \"www.",
-                "_timestamp": 1793881800.0
-            },
-            {
-                "title": "ConocoPhillips (NYSE:COP) delivers impressive Q3 2026",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/conocophillips-nyse-cop-delivers-impressive-124245049.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 12:42",
-                "description": "Oil and gas producer ConocoPhillips (NYSE:COP) reported Q3 2026 results beating Wall Street’s revenue expectations, with revenue up 29.2% year on year to $20.06 billion. Its GAAP profit of $3.34 per share was 11% above analysts’ consensus estimates.",
-                "_timestamp": 1793882565.0
-            },
-            {
-                "title": "ConocoPhillips Reports Higher Q3 Earnings as Oil Prices Support Profit Growth",
-                "link": "https://investorshub.advfn.com/market-news/article/39390/conocophillips-reports-higher-q3-earnings-as-oil-prices-support-profit-growth?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 15:11",
-                "description": "ConocoPhillips (NYSE:COP) reported third-quarter 2026 adjusted earnings of $3. 27 per share, exceeding analysts’ expectations of $2.",
-                "_timestamp": 1793891477.0
-            },
-            {
-                "title": "Baytex Reports Third Quarter 2026 Results; Announces Increased 2026 Capital Plan, 2027 Guidance and Accelerated Three-Year Growth Outlook",
-                "link": "https://finance.yahoo.com/energy/articles/baytex-reports-third-quarter-2026-220300003.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 22:03",
-                "description": "Calgary, Alberta--(Newsfile Corp. - November 5, 2026) - Baytex Energy Corp. (TSX: BTE) (NYSE: BTE) (\"Baytex\" or the \"Company\") reports its operating and financial results for the three and nine months ended September 30, 2026 (all amounts are in Canadian dollars unless otherwise noted).\"Third-quarter results were highlighted by strong safety performance, record Duvernay production and continued execution across our heavy oil portfolio,\" said Chad Lundberg, President and Chief Executive Officer..",
-                "_timestamp": 1793916180.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 04:23 to 12:42 UTC (approx. 1 to 9 hours ago relative to 2026-11-05 13:42 UTC)",
-            "Facts": "Recent corporate earnings and operational updates from major energy companies (ExxonMobil, InPlay Oil, and ConocoPhillips) indicate strong third-quarter 2026 results and forward guidance, with ConocoPhillips beating revenue and earnings expectations [Yahoo Finance Oil]. These reports highlight robust corporate earnings within the energy sector rather than any direct macroeconomic shock to precious metals.",
-            "Uncertainties": "Whether broader equity market performance and energy sector results will induce spillover into broader commodity indices or alter Federal Reserve rate expectations.",
-            "Macro_Context": "The US dollar is strengthening (EUR/USD down 0.26%), 10-year Treasury yields remain relatively stable, and Brent crude oil has dropped sharply by 5.18%. This macro configuration presents a slight headwind for gold due to USD strength and sliding oil prices, while high OANDA retail long positioning (71.9% long) creates a contrarian downward bias.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "XAU/USD rallied earlier in the Asian session toward the 4146 area but has since consolidated around 4120. Because the fundamental catalysts are sector-specific oil earnings rather than direct gold drivers, and given the lack of sustained momentum over the past 4 hours, the impact is neutral and largely digested by current levels.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-05 04:42 | Letztes Update: 2026-11-05 22:01",
         "original_date": "2026-11-05 04:42",
         "_timestamp": 1793916060.0,
@@ -830,23 +1151,6 @@
             "Past_Price_Action_Cause": "XAU/USD has gained $99.67 over the last 24 hours, currently trading near $4122.30. The 4h move vs. daily ATR ratio is 0.26x, showing steady consolidation after the recent upward push, largely driven by broader macro positioning rather than this specific oil/equity commentary.",
             "Orderflow_Price_Target": "N/A"
         }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 22:01",
-        "original_date": "2026-11-05 22:01",
-        "_timestamp": 1793916060.0,
-        "articles": [
-            {
-                "title": "Cardinal Energy Ltd. Announces Third Quarter 2026 Operating and Financial Results",
-                "link": "https://finance.yahoo.com/energy/articles/cardinal-energy-ltd-announces-third-220100827.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 22:01",
-                "description": "Calgary, Alberta--(Newsfile Corp. - November 5, 2026) - Cardinal Energy Ltd. (TSX: CJ) (\"Cardinal\" or the \"Company\") is pleased to announce its operating and financial results for the third quarter ended September 30, 2026.FINANCIAL AND OPERATING HIGHLIGHTS FROM THE THIRD QUARTER OF 2026Third quarter 2026 production of 25,127 boe/d increased 21% compared to the same period in 2025 due to crude oil production additions from the Reford steam-assisted gravity drainage (\"SAGD\") project;Adjusted...",
-                "_timestamp": 1793916060.0
-            }
-        ],
-        "needs_update": true,
-        "summary": null
     },
     {
         "main_date": "Erstmeldung: 2026-11-05 18:59 | Letztes Update: 2026-11-05 22:00",
@@ -2037,23 +2341,6 @@
         "_timestamp": 1793912700.0,
         "articles": [
             {
-                "title": "IonQ Wants to Be the Nvidia of Quantum. Its Latest Numbers Back Up the Swagger.",
-                "link": "https://finance.yahoo.com/m/daf77303-800e-3e89-88c8-ad99c3913f9c/ionq-wants-to-be-the-nvidia.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 21:05",
-                "description": "IonQ CEO Niccolo de Masi envisions the company as a cornerstone of U.S. dominance in quantum technology.",
-                "_timestamp": 1793912700.0
-            }
-        ],
-        "needs_update": true,
-        "summary": null
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 21:05",
-        "original_date": "2026-11-05 21:05",
-        "_timestamp": 1793912700.0,
-        "articles": [
-            {
                 "title": "10x Genomics Reports Third Quarter 2026 Financial Results",
                 "link": "https://finance.yahoo.com/healthcare/articles/10x-genomics-reports-third-quarter-210500999.html?.tsrc=rss",
                 "source": "Yahoo Finance Nasdaq",
@@ -2352,39 +2639,6 @@
             "Past_Price_Action_Cause": "XAU/USD showed strong upward momentum earlier in the day reaching peaks above $4146 before pulling back to consolidate near $4091.71. The 4h move vs daily ATR ratio is 0.16x, indicating room for continuation without an exhausted move.",
             "Orderflow_Price_Target": "4121.01"
         }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 16:29 | Letztes Update: 2026-11-05 20:21",
-        "original_date": "2026-11-05 16:29",
-        "_timestamp": 1793910085.0,
-        "articles": [
-            {
-                "title": "Bitcoin Erases Election Rally as AI Stocks Plunge, $428 Million in Crypto Longs Get Wiped Out",
-                "link": "https://decrypt.co/382612/bitcoin-erases-election-rally-ai-stocks-plunge-428-million-crypto-longs?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:29",
-                "description": "Bitcoin plunged nearly 5% as AI stocks sank, Democratic midterm wins raised fresh policy questions, and forced liquidations erased a Wednesday rally that had been fueled partly by short covering.",
-                "_timestamp": 1793896151.0
-            },
-            {
-                "title": "AI stocks plunge after US election, driving down markets",
-                "link": "https://www.aljazeera.com/economy/2026/11/5/ai-stocks-plunge-after-election-driving-down-us-markets?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-05 17:56",
-                "description": "Tech stocks lead US market slide as investors weigh impact of midterm election results on AI industry.",
-                "_timestamp": 1793901377.0
-            },
-            {
-                "title": "Bitcoin, stocks crash in steepest selloff since Liberation Day",
-                "link": "https://www.thestreet.com/crypto/markets/bitcoin-stocks-crash-as-markets-erase-post-election-rally?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 20:21",
-                "description": "The post-election rally lasted one day before markets turned sharply lower.",
-                "_timestamp": 1793910085.0
-            }
-        ],
-        "needs_update": true,
-        "summary": null
     },
     {
         "main_date": "Erstmeldung: 2026-11-05 15:15 | Letztes Update: 2026-11-05 20:20",
@@ -3277,58 +3531,6 @@
             "Probability_Percent": 40,
             "Past_Price_Action_Cause": "The article is a high-level opinion piece on longer-term fiscal issues with no new physical shocks. Gold has experienced normal intraday retracements with a low ATR ratio impact (0.16x), meaning this specific commentary carries no direct near-term directional catalyst.",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 15:58 | Letztes Update: 2026-11-05 19:29",
-        "original_date": "2026-11-05 15:58",
-        "_timestamp": 1793906940.0,
-        "articles": [
-            {
-                "title": "Are Big Tech stock buybacks officially dead?",
-                "link": "https://finance.yahoo.com/video/are-big-tech-stock-buybacks-officially-dead-155848546.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:58",
-                "description": "As hyperscalers Alphabet  (GOOGL, GOOG), Amazon (AMZN), Meta (META), and Microsoft  (MSFT) pour billions into AI data centers, stock buybacks appear to be taking a back seat. Repurchases reportedly fell to $4.4 billion in the third quarter, a 90% drop from previous quarters. Yahoo Finance Executive Editor and Sozzi Unleashed host Brian Sozzi examines whether Big Tech's massive AI spending spree is coming at the expense of shareholder returns. Yahoo Finance Executive Editor and host Sozzi Unleashed takes a closer look.",
-                "_timestamp": 1793894328.0
-            },
-            {
-                "title": "Big Tech's massive AI spending is causing another problem for investors",
-                "link": "https://finance.yahoo.com/technology/article/big-techs-massive-ai-spending-is-causing-another-problem-for-investors-171909548.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:19",
-                "description": "The Big Tech buyback may be on ice for now.",
-                "_timestamp": 1793899149.0
-            },
-            {
-                "title": "Why SpaceX Stock Is Still Going Down",
-                "link": "https://www.fool.com/investing/2026/11/05/why-spacex-stock-is-still-going-down/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:03",
-                "description": "SpaceX becomes a victim of the \"sell-AI trade.\"",
-                "_timestamp": 1793898215.0
-            },
-            {
-                "title": "SpaceX Stock Is Still Falling. It Trades At Apple’s Valuation.",
-                "link": "https://finance.yahoo.com/m/12c89445-f84d-308c-a32e-1b9535c6322f/spacex-stock-is-still.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:29",
-                "description": "China Renaissance initiates coverage of SpaceX with a Buy rating and a $194.20 price target,",
-                "_timestamp": 1793906940.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 ~15:58 to 19:29 UTC (approx. 2 to 5 hours ago)",
-            "Facts": "Big Tech companies including Alphabet, Amazon, Meta, and Microsoft have significantly reduced their stock buybacks (dropping 90% to $4.4 billion in Q3) as capital is heavily redirected toward AI data center investments [Yahoo Finance Nasdaq]. Meanwhile, SpaceX stock continues to face downward pressure amid a broader 'sell-AI trade' and valuation adjustments, despite China Renaissance initiating coverage with a Buy rating and a $194.20 price target [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the heavy capital expenditure on AI infrastructure will yield sustainable multi-year revenue growth or if it marks a peak capital allocation cycle that will permanently impair shareholder return programs like buybacks.",
-            "Macro_Context": "The Nasdaq 100 is undergoing a severe sell-off (-6.97%), signaling risk-off sentiment and a potential tech sector correction. While a plunging tech sector can trigger acute margin-call liquidations in safe havens like Gold, falling Treasury yields (US 10Y Bond Price +0.42%) and rising Brent Crude (+3.30%) offer a supportive backdrop. However, high OANDA retail long positioning (71.8% long) suggests caution against chasing immediate upside without a confirmed liquidity sweep.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "Gold experienced an earlier session peak around $4,146 before pulling back to test current levels near $4,091. The 4h move vs. daily ATR ratio of 0.16x indicates that the immediate intraday impulse has cooled, leaving room for a potential measured continuation as broader tech sector weakness redirects capital toward defensive safe havens.",
-            "Orderflow_Price_Target": "4121.01"
         }
     },
     {
@@ -5506,6 +5708,23 @@
                 "date": "2026-11-05 16:59",
                 "description": "Nvidia is losing the most in S&amp;P 500 stocks by value in Thursday's market rout, on track for a fifth straight week of losses.",
                 "_timestamp": 1793897952.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:58",
+        "original_date": "2026-11-05 16:58",
+        "_timestamp": 1793897915.0,
+        "articles": [
+            {
+                "title": "Figma sinks after earnings beat as company prioritizes long-term growth with AI changes",
+                "link": "https://www.cnbc.com/2026/11/04/figma-fig-q3-earnings-report-2026.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 16:58",
+                "description": "Figma is letting clients use more artificial intelligence features for the same price. The company would like the move to boost results in the long term.",
+                "_timestamp": 1793897915.0
             }
         ],
         "needs_update": true,
@@ -9057,237 +9276,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 40,
             "Past_Price_Action_Cause": "The underlying commentary from Jim Cramer was published nearly 17 hours ago, making it stale relative to the current reference time. Furthermore, XAU/USD has experienced recent intraday volatility and a pullback from higher levels, absorbing initial market reactions. Given the event's age and lack of fresh catalytic escalation, the commentary is fully priced in.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-04 23:02",
-        "original_date": "2026-11-04 23:02",
-        "_timestamp": 1793833359.0,
-        "articles": [
-            {
-                "title": "Figma sinks after earnings beat as company prioritizes long-term growth with AI changes",
-                "link": "https://www.cnbc.com/2026/11/04/figma-fig-q3-earnings-report-2026.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-04 23:02",
-                "description": "Figma is letting clients use more artificial intelligence features for the same price. The company would like the move to boost results in the long term.",
-                "_timestamp": 1793833359.0
-            }
-        ],
-        "needs_update": true,
-        "summary": null
-    },
-    {
-        "main_date": "2026-11-04 22:49",
-        "original_date": "2026-11-04 22:49",
-        "_timestamp": 1793832552.0,
-        "articles": [
-            {
-                "title": "Bernie Sanders hails ‘progressive victories’ across the US",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/bernie-sanders-hails-progressive-victories-across-us",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 22:49",
-                "description": "Bernie Sanders hails ‘progressive victories’ across the US\n\n    \n    \n\n        \n    \n                Independent Bernie Sanders on Wednesday celebrated \"some of the greatest progressive victories in modern American history\" during the recent US midterm elections.\n\nHe congratulated Democratic candidates he worked to get elected, including Michigan Senator Abdul El-Sayed, and US House representatives&nbsp;Will Lawrence,&nbsp;Adam Hamawy and&nbsp;Melat Kiros - many of whom ran on an explicitly anti-war and pro-Palestinian ticket.&nbsp;\n\n\"All across the country, in rural and urban areas, Americans said NO to oligarchy, and YES to an agenda that fights for the working class,\" Sanders wrote in a post on X.\n\n\nLast night saw some of the greatest progressive victories in modern American history. All across the country, in rural and urban areas, Americans said NO to oligarchy, and YES to an agenda that fights for the working class. Congratulations to the following candidates: U.S. SENATE Abdul El-Sayed (MI) Peggy Flanagan (MN) Troy Jackson (ME) U.S. HOUSE Bob Brooks (PA-7) Rebecca Cooke (WI-3) Sam Forstag (MT-1) Adam Hamawy (NJ-12) Melat Kiros (CO-1) Brad Lander (NY-10) Will Lawrence (MI-7) Donavan McKinney (MI-13) Brian Poindexter (OH-7) Analilia Mejía (NJ-11) Claire Valdez (NY-07) Randy Villegas (CA-22) Aisha Wahab (CA-14)\n— Bernie Sanders (@BernieSanders) November 4, 2026",
-                "_timestamp": 1793832552.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Independent Senator Bernie Sanders celebrated progressive and anti-war victories during recent US midterm elections, highlighting wins by progressive Democratic candidates across multiple states [Middle East Eye].",
-            "Uncertainties": "The broader legislative impact of these specific congressional and senate victories remains uncertain, as does their immediate translation into federal policy shifts.",
-            "Macro_Context": "The USD remains flat while US 10-year Treasury bond yields are falling (bond prices up), providing a general macro tailwind for gold. OANDA retail positioning shows heavy long bias (72.0%), acting as a contrarian indicator against aggressive chasing.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold has seen a strong 24h rally (+131.87), but the 4h move vs daily ATR ratio is low (0.02x), showing consolidation following prior momentum rather than a direct reaction to domestic midterm election commentary.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-04 18:51 | Letztes Update: 2026-11-04 22:46",
-        "original_date": "2026-11-04 18:51",
-        "_timestamp": 1793832403.0,
-        "articles": [
-            {
-                "title": "Democrats’ Big Win Sets Up a Debt Ceiling Fight. What the Election Means for Bonds.",
-                "link": "https://finance.yahoo.com/m/14dbcca7-fe7f-309a-b6c8-3367ae10c6ec/democrats%E2%80%99-big-win-sets-up-a.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 18:51",
-                "description": "Worries about increased federal spending are already showing up in the market.",
-                "_timestamp": 1793818260.0
-            },
-            {
-                "title": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
-                "link": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
-                "source": "CNBC Economy",
-                "date": "2026-11-04 22:46",
-                "description": "The next debt-ceiling confrontation could reverse Washington's traditional political roles, raising the possibility of spending concessions, market volatility and a damaging default.",
-                "_timestamp": 1793832403.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Facts": "Democrats secured a significant victory in the election, setting the stage for an upcoming debt ceiling political battle and raising concerns regarding increased federal spending and its impact on government bonds [Yahoo Finance Gold].",
-            "Uncertainties": "The exact legislative compromises, the magnitude of future spending increases, and the precise timeline and severity of the upcoming debt ceiling deadlock remain unconfirmed.",
-            "Macro_Context": "The US dollar is weakening slightly (EUR/USD +0.27%) and 10-year Treasury bond prices are rising (yields falling, +0.38%), both providing supportive tailwinds for non-yielding assets like gold. Brent crude is down sharply (-8.67%), reflecting broader risk dynamics.",
-            "Impact_Timing": "Future",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "XAU/USD has risen significantly over the last 24 hours (+$134.11), but the 4h move vs daily ATR ratio is currently at 0.21x, indicating that the immediate momentum is not yet exhausted and further upside room exists.",
-            "Orderflow_Price_Target": "4069.96"
-        }
-    },
-    {
-        "main_date": "2026-11-04 22:45",
-        "original_date": "2026-11-04 22:45",
-        "_timestamp": 1793832324.0,
-        "articles": [
-            {
-                "title": "Democratic Socialists of America see record wins in US midterm elections",
-                "link": "https://www.aljazeera.com/news/2026/11/4/democratic-socialists-of-america-see-record-wins-in-us-midterm-elections?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 22:45",
-                "description": "The left-wing movement has won support for its views on issues like the war in Gaza and universal healthcare.",
-                "_timestamp": 1793832324.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "According to Al Jazeera English, the Democratic Socialists of America (DSA) achieved record wins in US midterm elections, securing increased legislative and political support for progressive platforms such as universal healthcare and stances regarding the war in Gaza.",
-            "Uncertainties": "The exact breakdown of congressional seats won, how much legislative leverage these candidates will hold in Washington, and whether this shift will directly disrupt federal fiscal and foreign policy remain to be seen.",
-            "Macro_Context": "The US dollar is flat (EUR/USD +0.15%), 10-year Treasury bond prices are rising (yields falling) acting as a mild tailwind for gold, and Brent crude oil has experienced a steep drop (-9.57%). Retail sentiment is heavily long at 72.0%, posing a contrarian headwind, though cross-asset bond dynamics support gold holding its elevated levels.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "XAU/USD has risen significantly over the past 24 hours (+$131.87) due to broader market momentum, but the recent 4h move is negligible (+0.02x ATR ratio), indicating that while a major leg up has occurred, the specific midterm election outcome is still being digested without triggering an immediate fresh directional breakout.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-04 22:40",
-        "original_date": "2026-11-04 22:40",
-        "_timestamp": 1793832001.0,
-        "articles": [
-            {
-                "title": "Why Opendoor Stock Jumped 13.8% Today",
-                "link": "https://www.fool.com/investing/2026/11/04/why-opendoor-stock-jumped-13-8-today/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 22:40",
-                "description": "Opendoor jumped as a Democratic sweep pushed oil and Treasury yields lower, but this is a rate-sensitive stock with a model I'm still skeptical of.",
-                "_timestamp": 1793832001.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Opendoor stock jumped 13.8% driven by a broader market reaction where a Democratic sweep pushed oil prices and Treasury yields lower [Yahoo Finance Oil]. Simultaneously, XAU/USD experienced a strong 24h gain of +$131.87, supported by falling Treasury yields and lower Brent crude prices.",
-            "Uncertainties": "The specific long-term sustainability of Opendoor's real estate business model remains questioned, and political developments regarding the sweep are still unfolding.",
-            "Macro_Context": "EUR/USD is flat (+0.15%), US 10Y Treasury bond prices are up (+0.36%, meaning yields are falling), providing a strong tailwind for gold. Brent crude oil dropped sharply by 9.57%, reducing inflationary pressures and supporting precious metals. Global OANDA retail sentiment is 72.0% long, showing strong retail bullish bias.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "XAU/USD has rallied significantly over the past 24 hours (+$131.87), but the 4h move vs daily ATR ratio is low at 0.02x, indicating that while a large daily move occurred earlier, the immediate 4-hour window shows consolidation rather than exhaustion, leaving room to test upper liquidity clusters.",
-            "Orderflow_Price_Target": "4070.19"
-        }
-    },
-    {
-        "main_date": "2026-11-04 22:39",
-        "original_date": "2026-11-04 22:39",
-        "_timestamp": 1793831994.0,
-        "articles": [
-            {
-                "title": "Permian Resources (NYSE:PR) delivers impressive Q3 2026",
-                "link": "https://finance.yahoo.com/energy/articles/permian-resources-nyse-pr-delivers-223954446.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 22:39",
-                "description": "Oil and gas producer Permian Resources (NYSE:PR) announced better-than-expected revenue in Q3 2026, with revenue up 48.1% year on year to $1.96 billion. Its non-GAAP profit of $0.69 per share was 13.7% above analysts’ consensus estimates.",
-                "_timestamp": 1793831994.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Permian Resources (NYSE:PR) announced strong Q3 2026 financial results, reporting revenue of $1.96 billion (up 48.1% year-on-year) and a non-GAAP profit of $0.69 per share, beating analyst consensus estimates by 13.7% [Yahoo Finance Oil].",
-            "Uncertainties": "The broader macroeconomic impact of corporate earnings within the US oil and gas sector on broader commodities and precious metals remains indirect.",
-            "Macro_Context": "EUR/USD is higher (+0.16%) indicating a slightly weaker USD, and US 10Y Treasury bond prices are up (+0.38%, yields falling), both acting as tailwinds for gold. Brent crude is down sharply (-9.57%), reflecting broader energy market dynamics that do not directly drive safe-haven gold demand.",
-            "Impact_Timing": "Neutral",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold has rallied significantly over the past 24 hours (+$131.69) driven by broader macro flows and liquidity, but the 4h move vs daily ATR ratio is minimal (0.02x). Corporate earnings from a single oil and gas producer have negligible direct correlation to XAU/USD price action.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-04 22:31",
-        "original_date": "2026-11-04 22:31",
-        "_timestamp": 1793831469.0,
-        "articles": [
-            {
-                "title": "Sudan factories struggle to restart after devastating wartime losses",
-                "link": "https://www.aljazeera.com/news/2026/11/4/sudan-factories-struggle-to-restart-after-devastating-wartime-losses?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 22:31",
-                "description": "War has left Sudanese workers jobless and consumers facing higher prices as factories struggle to reopen.",
-                "_timestamp": 1793831469.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "War in Sudan has left factories struggling to restart, resulting in devastating wartime losses, jobless workers, and higher consumer prices [Al Jazeera English].",
-            "Uncertainties": "The macroeconomic relevance of Sudan's manufacturing sector to global gold demand or broader international trade is negligible, meaning this is localized news with no direct transmission mechanism to global bullion pricing.",
-            "Macro_Context": "The USD remains relatively flat (EUR/USD +0.15%), 10Y Treasury yields are falling (bond prices up +0.36%), providing a mild macroeconomic tailwind for gold, while Brent oil is down sharply (-9.57%). Global retail positioning on OANDA is heavily long at 72.0%, acting as a contrarian bearish headwind.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "Gold has rallied strongly by over $130 in the last 24 hours due to broader technical momentum and macroeconomic bond tailwinds, but the specific news regarding Sudanese factories is a localized geopolitical/economic report that has no meaningful impact on global gold price action.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-04 22:29",
-        "original_date": "2026-11-04 22:29",
-        "_timestamp": 1793831391.0,
-        "articles": [
-            {
-                "title": "Voters rebuff data centers in every ballot measure except one during the 2026 midterms",
-                "link": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-04 22:29",
-                "description": "Voters in the states at the heart of the AI data center boom pushed back on the buildout on Election Night.",
-                "_timestamp": 1793831391.0
-            }
-        ],
-        "needs_update": true,
-        "summary": null
-    },
-    {
-        "main_date": "2026-11-04 22:27",
-        "original_date": "2026-11-04 22:27",
-        "_timestamp": 1793831220.0,
-        "articles": [
-            {
-                "title": "SURGE ENERGY INC. ANNOUNCES THIRD QUARTER FINANCIAL & OPERATING RESULTS; OPERATIONS UPDATE; 2027 CAPITAL AND OPERATING BUDGET; BASE DIVIDEND INCREASE",
-                "link": "https://finance.yahoo.com/energy/articles/surge-energy-inc-announces-third-222700156.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 22:27",
-                "description": "Surge Energy Inc. (\"Surge\" or the \"Company\") (TSX: SGY) announces its financial and operating results for the quarter ended September 30, 2026, an operations update, and the Company's board of directors (the \"Board\") approved 2027 capital and operating budget guidance. Surge also anticipates increasing the Company's annual base dividend by approximately six percent, from $0.52 to $0.55 per share, effective for the November 15, 2026 dividend announcement, and payable on December 15, 2026.",
-                "_timestamp": 1793831220.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Surge Energy Inc. announced its financial and operating results for the third quarter of 2026, provided an operations update, approved its 2027 capital and operating budget guidance, and increased its annual base dividend by roughly six percent from $0.52 to $0.55 per share [Yahoo Finance Oil].",
-            "Uncertainties": "The corporate update is specific to Surge Energy Inc. and has no direct macroeconomic or monetary policy implications for gold prices.",
-            "Macro_Context": "EUR/USD is higher (+0.22%) and US 10Y Treasury bond prices are rising (+0.42%, indicating falling yields), both acting as tailwinds for gold. Brent crude oil is down significantly (-9.57%). Global OANDA retail positioning shows 72.0% long, pointing to elevated retail bullishness.",
-            "Impact_Timing": "Present",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "The news regarding Surge Energy is a company-specific microeconomic earnings and dividend update with zero direct impact on gold markets. Gold's recent 24h gain is driven by broader macro cross-asset flows rather than this headline.",
             "Orderflow_Price_Target": "N/A"
         }
     }

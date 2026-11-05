@@ -108,6 +108,39 @@
             margin-bottom: 12px;
         }
 
+        .pro-con-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 10px;
+            margin: 12px 0;
+        }
+        .bull-box {
+            background-color: #f0fdf4;
+            border-left: 3px solid #16a34a;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            line-height: 1.45;
+        }
+        .bear-box {
+            background-color: #fef2f2;
+            border-left: 3px solid #dc2626;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            line-height: 1.45;
+        }
+        .calibration-box {
+            background-color: #eff6ff;
+            border-left: 3px solid #3b82f6;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 0.88em;
+            color: #1e3a8a;
+            margin-top: 10px;
+            line-height: 1.45;
+        }
+
         .summary-box { background-color: #f8f9fa; border-radius: 6px; padding: 15px; margin-bottom: 20px; border: 1px solid #eef0f2; }
         .summary-label { font-weight: bold; margin-bottom: 10px; }
         .structured-data { margin-bottom: 12px; line-height: 1.5; }
@@ -129,7 +162,7 @@
     </div>
 
     <h1>Financial & Gold Aggregator</h1>
-    <div class="sub-header">Multi-Sourced Intelligence: Geopolitics, Tech/AI Stocks, Macro & Orderflow Confluence</div>
+    <div class="sub-header">Objective Intelligence Terminal: Geopolitics, Tech/AI Stocks, Macro & Calibration Memory</div>
 
     <!-- TOP INTEL BAR -->
     <div class="intel-bar">
@@ -168,7 +201,7 @@
     <div id="news-tab" class="tab-content">
         <div id="controls">
             <select id="filter-impact" onchange="renderNews()">
-                <option value="all">All Impacts</option>
+                <option value="all">Alle Richtungen (Ungefiltert)</option>
                 <option value="Bullish">Bullish</option>
                 <option value="Bearish">Bearish</option>
                 <option value="Neutral">Neutral</option>
@@ -180,16 +213,16 @@
                 <option value="western">Nur Klassische Rohstoff-Medien</option>
             </select>
             <select id="filter-relevance" onchange="renderNews()">
-                <option value="all">Alle News (Gesamt)</option>
-                <option value="tradeable">Nur Handels-Setups (&ge; 67%)</option>
+                <option value="all">Alle News (Kompletter Feed)</option>
+                <option value="tradeable">Nur High-Conviction (&ge; 67%)</option>
             </select>
             <select id="sort-by" onchange="renderNews()">
                 <option value="newest">Sort: Newest First</option>
                 <option value="probability">Sort: Highest Probability</option>
             </select>
             <label class="filter-checkbox-wrap">
-                <input type="checkbox" id="filter-keywords" onchange="renderNews()" checked>
-                <span>Nur Impact-Keywords (Geopolitik, Makro & Tech/AI)</span>
+                <input type="checkbox" id="filter-keywords" onchange="renderNews()">
+                <span>Strenger Keyword-Filter</span>
             </label>
         </div>
         <div id="news-container">
@@ -470,21 +503,28 @@
                 let summaryHTML = "";
                 if (typeof cluster.summary === 'object' && cluster.summary !== null) {
                     const eventTime = cluster.summary.Event_Timestamp || 'Nicht explizit im Text genannt (siehe Erstmeldung)';
+                    const bullCase = cluster.summary.Bull_Case ? `<div class="bull-box"><strong>Bull Case (Pro Gold):</strong><br>${cluster.summary.Bull_Case}</div>` : '';
+                    const bearCase = cluster.summary.Bear_Case ? `<div class="bear-box"><strong>Bear Case (Contra / Risiken):</strong><br>${cluster.summary.Bear_Case}</div>` : '';
+                    const proConSection = (bullCase || bearCase) ? `<div class="pro-con-grid">${bullCase}${bearCase}</div>` : '';
+                    const calibSection = cluster.summary.Historical_Calibration ? `<div class="calibration-box"><strong>Agent Calibration & Track-Record Check:</strong> ${cluster.summary.Historical_Calibration}</div>` : '';
+
                     summaryHTML = `
                         <div class="event-time-banner">
                             <strong>Realer Ereigniszeitpunkt (Day/Time of Happening):</strong> ${eventTime}
                         </div>
                         <div class="structured-data">
-                            <strong>Facts:</strong> ${cluster.summary.Facts || '-'}<br><br>
-                            <strong>Macro, Tech & Sentiment Context:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
+                            <strong>Facts & Context:</strong> ${cluster.summary.Facts || '-'}<br><br>
+                            <strong>Macro, Tech & Sentiment Interplay:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
                             <strong>Uncertainties:</strong> ${cluster.summary.Uncertainties || '-'}
                         </div>
+                        ${proConSection}
+                        ${calibSection}
                         <div class="outlook-box">
-                            <strong>XAUUSD Impact:</strong> ${cluster.summary.XAUUSD_Impact || '-'} (${cluster.summary.Probability_Percent || '0'}%)<br>
+                            <strong>XAUUSD Tendenz:</strong> ${cluster.summary.XAUUSD_Impact || '-'} (${cluster.summary.Probability_Percent || '0'}%)<br>
                             <strong>Timeframe:</strong> ${cluster.summary.Timeframe || '-'}<br>
                             <strong>Timing:</strong> ${cluster.summary.Impact_Timing || '-'}<br>
                             <strong>ATR & Price Action Check (24h):</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}<br>
-                            <strong>Price Target:</strong> ${cluster.summary.Orderflow_Price_Target || '-'}
+                            <strong>Orderflow Zone / Target:</strong> ${cluster.summary.Orderflow_Price_Target || '-'}
                         </div>
                     `;
                 } else {
@@ -516,7 +556,7 @@
                         ${evalBadgeHTML}
                     </div>
                     <div class="summary-box">
-                        <div class="summary-label">Summary:</div>
+                        <div class="summary-label">Intelligence Summary:</div>
                         ${summaryHTML}
                     </div>
                     <div class="reported-by-label">REPORTED BY (${cluster.articles.length} Source${cluster.articles.length > 1 ? 's' : ''}):</div>

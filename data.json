@@ -1,42 +1,44 @@
 [
     {
-        "main_date": "Erstmeldung: 2026-11-05 16:09",
-        "original_date": "2026-11-05 16:09",
-        "_timestamp": 1793894940.0,
+        "main_date": "Erstmeldung: 2026-11-05 10:44 | Letztes Update: 2026-11-05 16:36",
+        "original_date": "2026-11-05 10:44",
+        "_timestamp": 1793896606.0,
         "articles": [
             {
-                "title": "Boost Run Announces Date of Third Quarter 2026 Financial Results Conference Call",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/boost-run-announces-date-third-210500115.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:09",
-                "description": "NORTHBROOK, Ill., November 05, 2026--Boost Run, Inc. (Nasdaq: BRUN), an NVIDIA Preferred Cloud Partner operating in adherence with NVIDIA Reference Architecture standards, plans to release its financial results for the third quarter ended September 30, 2026, pre-market on Thursday, November 12, 2026. The company plans to host a conference call at 9:00 a.m. Eastern Time to discuss its third quarter 2026 results.",
-                "_timestamp": 1793894940.0
+                "title": "Saudi-led coalition says it intercepted a Houthi-fired missile in the Medina region",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-intercepted-houthis-fired-missile-medina",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 10:44",
+                "description": "Saudi-led coalition says it intercepted a Houthi-fired missile in the Medina region\n\n    \n    \n\n        \n    \n                The Saudi-led military coalition said on Thursday it had intercepted a missile fired by the Houthis towards the Medina region.\n\n“Interception and destruction of a ballistic missile fired by the Houthi terrorist militia in the Medina region,” the coalition spokesman Colonel Turki Al-Malki said.\n\nEarlier, Saudi Arabia's civil defence issued an alert for the Yanbu Governorate near the Red Sea in Medina province.",
+                "_timestamp": 1793875453.0
+            },
+            {
+                "title": "Saudi coalition says it intercepted missile fired at Medina",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-coalition-says-it-intercepted-missile-fired-medina",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 16:36",
+                "description": "Saudi coalition says it intercepted missile fired at Medina\n\n    \n    \n\n        \n    \n                The Saudi-led coalition fighting Yemen's Houthis on Thursday said it intercepted a ballistic missile fired by the group at the Medina region, home to one of Islam's&nbsp;holiest cities.\n\nThe announcement came just minutes after the kingdom's civil defence agency warned of potential danger in the area near the strategic port of Yanbu.\n\nIt was unclear if the two events were connected.&nbsp;\n\n\"Air defence intercepted and destroyed a ballistic missile launched by the terrorist Houthi militia toward the Medina region,\" coalition spokesman Turki al-Malki said in a post on X.\n\nThe Houthis rejected any suggestion they were targeting the city, saying such accusations were a \"blatant and grave falsehood\".\n\n\"Our operations target only its oil facilities and military bases,\" the group said in a statement.&nbsp;",
+                "_timestamp": 1793896606.0
             }
         ],
         "needs_update": true,
-        "summary": null
+        "summary": {
+            "Event_Timestamp": "2026-11-05 ~10:00 UTC (approx. 1.5h ago)",
+            "Facts": "The Saudi-led military coalition intercepted and destroyed a ballistic missile fired by Houthi militia toward the Medina region, with civil defence issuing alerts near Yanbu Governorate [Middle East Eye].",
+            "Uncertainties": "Extent of any debris damage on the ground or potential follow-up retaliatory strikes remain unconfirmed.",
+            "Macro_Context": "EUR/USD is dropping (-0.36%, USD strengthening acting as a headwind), while US 10Y Treasury bond prices are rising (+0.26%, yields falling as a tailwind). Brent crude is down sharply (-6.10%), reflecting subdued broader energy fear premiums despite regional missile interceptions.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "XAU/USD has rallied strongly over the past 24 hours (+ $88.84) driven by broader safe-haven flows, with the current 4h move remaining modest relative to daily ATR (0.15x), indicating room for continuation toward immediate liquidity clusters.",
+            "Orderflow_Price_Target": "4140.05"
+        }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 16:07",
-        "original_date": "2026-11-05 16:07",
-        "_timestamp": 1793894846.0,
-        "articles": [
-            {
-                "title": "Hilton CEO: Nasdaq a 'better home' for the hospitality company",
-                "link": "https://finance.yahoo.com/video/hilton-ceo-nasdaq-a-better-home-for-the-hospitality-company-160726073.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:07",
-                "description": "Hilton (HLT) CEO Chris Nassetta joins Yahoo Finance Executive Editor Brian Sozzi to discuss the company's move to Nasdaq (NQ=F) as a bet on innovation and growth, citing AI agents as a way to enhance physical and digital guest experiences.",
-                "_timestamp": 1793894846.0
-            }
-        ],
-        "needs_update": true,
-        "summary": null
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 14:32 | Letztes Update: 2026-11-05 16:06",
+        "main_date": "Erstmeldung: 2026-11-05 14:32 | Letztes Update: 2026-11-05 16:34",
         "original_date": "2026-11-05 14:32",
-        "_timestamp": 1793894760.0,
+        "_timestamp": 1793896453.0,
         "articles": [
             {
                 "title": "Stock Market Today: Nasdaq Craters 3% As Chips Sell Off; Arm Misses Key Metric (Live Coverage)",
@@ -93,6 +95,46 @@
                 "date": "2026-11-05 16:06",
                 "description": "Wall Street is digesting the prospect of a slower AI buildout in the wake of the midterm election results.",
                 "_timestamp": 1793894760.0
+            },
+            {
+                "title": "Chip stocks get slaughtered as Wall Street heads for its worst post-midterm day since 1896",
+                "link": "https://finance.yahoo.com/markets/article/chip-stocks-get-slaughtered-as-wall-street-heads-for-its-worst-post-midterm-day-since-1896-163413900.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 16:34",
+                "description": "More than $2 trillion is gone from the S&amp;P 500 as memory, chip, and AI infrastructure stocks lead a reversal of Wednesday's midterm rally.",
+                "_timestamp": 1793896453.0
+            },
+            {
+                "title": "Chip stocks hammered as political shift raises AI infrastructure concerns",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101316/chip-stocks-hammered-as-political-shift-raises-ai-infrastructure-concerns-1101316.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:23",
+                "description": "Chip stocks plunged on Thursday, with Nvidia, Micron and AMD leading a sharp selloff that dragged the Nasdaq Composite down nearly 5% as investors reassessed the outlook for AI infrastructure spending and regulation. The Nasdaq fell 1,211 points, or 4.71%, putting it more than 10% below last...",
+                "_timestamp": 1793895780.0
+            },
+            {
+                "title": "Chip stocks get slaughtered as Wall Street heads for its worst post-midterm day since 1896",
+                "link": "https://finance.yahoo.com/markets/article/chip-stocks-get-slaughtered-as-wall-street-heads-for-its-worst-post-midterm-day-since-1896-163413900.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:34",
+                "description": "More than $2 trillion is gone from the S&amp;P 500 as memory, chip, and AI infrastructure stocks lead a reversal of Wednesday's midterm rally.",
+                "_timestamp": 1793896453.0
+            },
+            {
+                "title": "Why Micron Stock Keeps Going Down",
+                "link": "https://www.fool.com/investing/2026/11/05/why-micron-stock-keeps-going-down/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:13",
+                "description": "Micron motored higher as the AI revolution took off. But will competition from China bring it all crashing down?",
+                "_timestamp": 1793895199.0
+            },
+            {
+                "title": "Micron stock declines 12% as chip sell-off deepens",
+                "link": "https://finance.yahoo.com/markets/article/micron-declines-12-as-chip-sell-off-deepens-163137019.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:31",
+                "description": "Micron led the chip sector lower on Thursday amid a heavy sell-of",
+                "_timestamp": 1793896297.0
             }
         ],
         "needs_update": true,
@@ -110,6 +152,306 @@
         }
     },
     {
+        "main_date": "Erstmeldung: 2026-11-05 14:15 | Letztes Update: 2026-11-05 16:33",
+        "original_date": "2026-11-05 14:15",
+        "_timestamp": 1793896406.0,
+        "articles": [
+            {
+                "title": "Joint List says it will back Eisenkot to form Israel’s next government",
+                "link": "https://www.aljazeera.com/news/2026/11/5/joint-list-says-it-will-back-eisenkot-to-form-israels-next-government?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-05 14:15",
+                "description": "Arab-led parties won a record 19 seats in Israel&#039;s 120-seat parliament in last week&#039;s general election.",
+                "_timestamp": 1793888152.0
+            },
+            {
+                "title": "Arab-led Joint List says it will back Eisenkot to form Israel's next government",
+                "link": "https://www.middleeasteye.net/news/arab-led-joint-list-says-it-will-back-eisenkot-form-israels-next-government",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 15:59",
+                "description": "Arab-led Joint List says it will back Eisenkot to form Israel's next government\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nThu, 11/05/2026 - 15:25\n\n        \n      \n    \n      \n    \n                Alliance’s endorsement gives opposition leader Gadi Eisenkot the backing of 67 lawmakers in the 120-seat Knesset\n                      \n                  \n                  \n\n  \n\n\n                  Yousef Jabareen (centre), leader of Israel's Arab-led Joint List political alliance, celebrates as the first exit polls are announced during Israel's election last week (Ahmad Gharabli/AFP)\n                  Off\n                  The Arab-led Joint List has said it will back Israeli opposition leader Gadi Eisenkot to form a new government, dealing a heavy blow to Prime Minister Benjamin Netanyahu's efforts to remain in power.\n\nThe Joint List announced on Thursday that it would \"recommend that Gadi Eisenkot be tasked with forming the government\", bringing the total number of lawmakers backing him to 67 in the 120-seat Knesset.\n\nThe decision follows Wednesday's endorsement by Ra'am, another Arab-led party, whose eight lawmakers also backed Eisenkot.\n\nThe two parties together secured a record 19 seats in last week's general election, giving them a potentially decisive role in determining who forms Israel's next government.\n\nNetanyahu's right-wing bloc won 53 seats in the 27 October election, while the opposition alliance led by Eisenkot secured 48. A majority in parliament requires 61 seats.\n  \n    \n\n\n\n  \n\n\n\nThe results left both camps short of the numbers needed to govern independently, making the support of Arab-led parties and smaller political factions crucial to the coalition negotiations.\n\nThe Joint List said its unanimous decision reflected public demands to prevent Netanyahu and his government from returning to power.\n\nIt also said the endorsement was intended to widen the gap between Eisenkot and Netanyahu and strengthen the chances of replacing the incumbent government.\n\nThe alliance, which comprises three Arab-led factions, said its decision came despite the opposition's failure to sufficiently challenge Netanyahu's political direction, incitement against Arab citizens and attempts to undermine the legitimacy of their electoral choices.\n\nHowever, the endorsements do not necessarily mean the Arab parties will join an Eisenkot-led government.\n\n\n  \n\n  How an election defeat triggered a carnival of racism against Palestinians\n    Read More »\n\n\nThe Joint List has said it is prepared to support an opposition government from outside the governing coalition, rather than take ministerial positions.\n\nIts leaders have opposed joining a government while Israel continues its occupation of Palestinian territory.\n\nEisenkot and his opposition partners have also faced divisions over cooperation with Arab-led parties.&nbsp;\n\nThe opposition bloc has set conditions for potential partners, including recognising Israel as a Jewish state, supporting military conscription and condemning Hamas.\n\nSome opposition figures have rejected relying on Arab lawmakers, while others have argued that their support is essential to ending Netanyahu's rule.\n\nEisenkot, 66, has repeatedly rejected the idea of a Palestinian state alongside Israel.\n\nWhile serving as army chief between 2015 and 2019, he publicly advocated for closer ties with Saudi Arabia, saying the two countries should work together to counter&nbsp;Iran's influence in the region.\n\nHe also said Israel would be willing to share intelligence with Riyadh to confront Tehran.\n\n                  Israeli Elections\n                   \n                  News\n        \n    Post Date Override\n              0\n          \n  \n    Update Date\n              Mon, 05/04/2020 - 21:19\n\n          \n  \n    Update Date Override\n              0",
+                "_timestamp": 1793894343.0
+            },
+            {
+                "title": "Arab-led Joint List says it will back Eisenkot to form Israel's next government",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/arab-led-joint-list-says-it-will-back-eisenkot-form-israels-next",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 16:33",
+                "description": "Arab-led Joint List says it will back Eisenkot to form Israel's next government\n\n    \n    \n\n        \n    \n                The Arab-led Joint List has said it will back&nbsp;Israeli&nbsp;opposition leader Gadi Eisenkot to form a new government, dealing a heavy blow to Prime Minister Benjamin Netanyahu's efforts to remain in power.\n\nThe Joint List announced on Thursday that it would \"recommend that Gadi Eisenkot be tasked with forming the government\", bringing the total number of lawmakers backing him to 67 in the 120-seat Knesset.\n\nThe decision follows Wednesday's endorsement by Ra'am, another Arab-led party, whose eight lawmakers also backed Eisenkot.\n\nThe two parties together secured a record 19 seats in last week's general election, giving them a potentially decisive role in determining who forms Israel's next government.\n\nRead more:&nbsp;Arab-led Joint List says it will back Eisenkot to form Israel's next government\n\n  \n  \n      \n\n\n\n    Yousef Jabareen (centre), leader of Israel's Arab-led Joint List political alliance, celebrates as the first exit polls are announced during Israel's election last week (Ahmad Gharabli/AFP)",
+                "_timestamp": 1793896406.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 14:15 UTC (approx. 40 minutes ago)",
+            "Facts": "The Joint List, an Arab-led political alliance, announced it will back MK Yair Golan / Eisenkot to form Israel's next government following last week's general election where Arab-led parties won a record 19 seats. [Al Jazeera English]",
+            "Uncertainties": "Whether this coalition backing will successfully lead to a stable governing majority or face severe right-wing opposition and parliamentary hurdles.",
+            "Macro_Context": "US 10Y Treasury bond prices are rising (+0.33%), indicating falling yields which act as a tailwind for gold. OANDA retail positioning remains heavily long (72.1%), serving as a contrarian bearish cross-current.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "Gold has experienced a retracement over the last 4 hours (-$19.23) after testing highs above $4145 earlier in the session. The political development in Israel is localized and secondary to broader macro and technical consolidation, leading to a neutral near-term outlook.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-04 23:38 | Letztes Update: 2026-11-05 16:25",
+        "original_date": "2026-11-04 23:38",
+        "_timestamp": 1793895900.0,
+        "articles": [
+            {
+                "title": "Qualcomm slides 9% after earnings, leading postelection chip stock sell-off",
+                "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 15:24",
+                "description": "Qualcomm slid Thursday morning after its Q4 earnings report as chip stocks face continued post-election pressure.",
+                "_timestamp": 1793892287.0
+            },
+            {
+                "title": "Qualcomm stock drops 7% on weak earnings forecast as memory shortage weighs on smartphone sales",
+                "link": "https://www.cnbc.com/2026/11/04/qualcomm-qcom-earnings-report-q4-2026.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-04 23:38",
+                "description": "Qualcomm delivered better-than-expected results but issued a weak earnings forecast.",
+                "_timestamp": 1793835491.0
+            },
+            {
+                "title": "SK hynix Sinks 9% as Qualcomm’s 26% Handset Plunge Deepens Memory Chip Rout",
+                "link": "https://www.tikr.com/blog/sk-hynix-sinks-9-as-qualcomms-26-handset-plunge-deepens-memory-chip-rout?ref=yahoofinance&tlnk=yf-261105-5324ff3r&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:08",
+                "description": "Key TakeawaysSK hynix shares fell 9% after Qualcomm reported a 26% drop in handset chip sales as memory costs push phone prices up. Conventional DRAM, the kind phones use, drove SK hynix’s 2026 price gains.",
+                "_timestamp": 1793891313.0
+            },
+            {
+                "title": "Sandisk Sinks 14%, Micron Down 10% as a Top Phone Chipmaker Blames Weak Sales on “Industry-Wide Memory Dynamics”",
+                "link": "https://www.tikr.com/blog/sandisk-sinks-14-micron-down-10-as-a-top-phone-chipmaker-blames-weak-sales-on-industry-wide-memory-dynamics?ref=yahoofinance&tlnk=yf-261105-8gc35pvp&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:09",
+                "description": "Key TakeawaysSandisk fell 14% today after a top phone chipmaker said its handset chip revenue dropped 26%, citing memory prices. That report confirms what Sandisk’s own phone and PC numbers already showed.",
+                "_timestamp": 1793891381.0
+            },
+            {
+                "title": "Arm Stock Plunges -- Smartphone Business Delivers a Major Disappointment",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/arm-stock-plunges-smartphone-business-150511881.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:05",
+                "description": "Arm Stock Tumbles as Memory Crunch Hits Apple and Android Chip Demand",
+                "_timestamp": 1793891111.0
+            },
+            {
+                "title": "Qualcomm profits hit by supply costs, US jobs data, and a return of the bulls after the midterms",
+                "link": "https://finance.yahoo.com/video/qualcomm-profits-hit-by-supply-costs-us-jobs-data-and-a-return-of-the-bulls-after-the-midterms-144628233.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 14:46",
+                "description": "The 8:30 Hosts Pras Subramanian, Brooke DiPalma, and Interactive Brokers Chief Strategist Steve Sosnick break down the latest market headlines, including earnings for Qualcomm (QCOM) and ARM (ARM), Silicon Valley confronting a new landscape of AI infrastructure, and the OpenAI (OPAI.PVT) President Greg Brockman stating the company is ready to go public in 2027.",
+                "_timestamp": 1793889988.0
+            },
+            {
+                "title": "Two Days Before Today's Selloff, Data Put Global September Chip Sales Up 146.8% Year to Year",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/two-days-todays-selloff-data-162500958.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:25",
+                "description": "Equity Insider News Commentary - Semiconductor stocks are having a hard session. As of 10:34 a.m. ET, the PHLX Semiconductor Index (SOX) stood at 9,419.27, down 8.27% from Wednesday's close of 10,268.65. Stocks dip sometimes, and perspective helps: based on daily closing prices, the index was still about 33.0% above where it finished 2025 (7,083.13) and about 31.0% above its level one year ago (7,190.27 on Nov. 5, 2025). Underneath the share prices sits a fresh stack of demand data, put on the r",
+                "_timestamp": 1793895900.0
+            },
+            {
+                "title": "A Sharp Pullback in Chip Stocks Meets Fresh Records in Four of Five Recent Earnings Reports",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/sharp-pullback-chip-stocks-meets-161400314.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:14",
+                "description": "Market Updates News Commentary - Semiconductor stocks are taking the brunt of a lower market this morning. As of 10:18 a.m. ET, the PHLX Semiconductor Index (SOX) was down 826.18 points, or 8.05%, at 9,442.47, a steeper decline than the Nasdaq Composite (down 3.74%) or the S&amp;P 500 (down 2.21%). Even after today's move, the index stood about 33% above where it finished 2025, based on daily closing prices, and the quarterly reports published over the past two weeks by the five chip and data storag",
+                "_timestamp": 1793895240.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 ~15:00 UTC (approx. 1 hour ago)",
+            "Facts": "Qualcomm reported Q4 earnings with a weak guidance forecast and a 26% drop in handset chip sales due to memory constraints, triggering a broad post-election chip stock sell-off [CNBC Tech & AI, Yahoo Finance]. SK hynix (-9%), Sandisk (-14%), Micron (-10%), and Arm also tumbled amid supply and pricing pressures [Yahoo Finance Nasdaq].",
+            "Uncertainties": "The broader macroeconomic impact of the chip sector weakness on broader equities and whether the correction will prompt a lasting defensive rotation into safe-haven assets.",
+            "Macro_Context": "The Nasdaq 100 experienced a steep sell-off (-5.84%), indicating aggressive risk-off behavior and potential margin liquidation risks. However, US 10Y Treasury bond prices rose (yields falling) acting as a tailwind, while the USD remained flat (EUR/USD +0.09%). OANDA retail sentiment is heavily long at 71.8%.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "XAU/USD spiked earlier to highs near $4146 before pulling back sharply over the last 4 hours by $-50.12, reflecting high volatility from cross-asset liquidations and tech sector deleveraging. The immediate reaction is mixed, requiring neutrality as the market digests the tech fallout.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:00 | Letztes Update: 2026-11-05 16:21",
+        "original_date": "2026-11-05 16:00",
+        "_timestamp": 1793895694.0,
+        "articles": [
+            {
+                "title": "IREN stock plunges 18% as Microsoft raises concerns over data center delays",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-stock-plunges-18-microsoft-162134051.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:21",
+                "description": "Investing.com -- IREN Ltd. shares plunged 18% Thursday amid a broad technology selloff, with a Bloomberg report highlighting growing concerns at Microsoft over delays and execution risks among its neocloud partners.",
+                "_timestamp": 1793895694.0
+            },
+            {
+                "title": "IREN Sinks 20% on Report It’s Behind Microsoft’s AI Spending Delay Ahead of Earnings",
+                "link": "https://www.tikr.com/blog/iren-sinks-20-on-report-its-behind-microsofts-ai-spending-delay-ahead-of-earnings?ref=yahoofinance&tlnk=yf-261105-qr7pp429&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:00",
+                "description": "Key TakeawaysIREN is down 20% on a report tying delays at its Childress, Texas, data center to Microsoft’s lower AI spending last quarter. Microsoft’s Childress contract should bring in about $1.",
+                "_timestamp": 1793894421.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 05:07 | Letztes Update: 2026-11-05 16:15",
+        "original_date": "2026-11-05 05:07",
+        "_timestamp": 1793895311.0,
+        "articles": [
+            {
+                "title": "Cenovus Energy Inc (CVE) (Q3 2026) Earnings Call Highlights: Record $6. ...",
+                "link": "https://finance.yahoo.com/energy/articles/cenovus-energy-inc-cve-q3-050708079.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 05:07",
+                "description": "Cenovus Energy Inc (CVE) posted record quarterly operating margin and adjusted funds flow on the back of record oil sands output, cut net debt to $3 billion, and returned $1.9 billion to shareholders.",
+                "_timestamp": 1793855228.0
+            },
+            {
+                "title": "CVE Q3 Earnings Call Highlights Production Growth and Expansion Plans",
+                "link": "https://finance.yahoo.com/energy/articles/cve-q3-earnings-call-highlights-140000466.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 14:00",
+                "description": "Cenovus Energy's Q3 production topped 1 million BOE/d on oil sands strength, as lower operating costs, refining gains and major expansion projects fuel growth.",
+                "_timestamp": 1793887200.0
+            },
+            {
+                "title": "What Deutsche Telekom (DTE) Said on Its Q3 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-deutsche-telekom-dte-said-on-its-q3-earnings-call-2026-11-05/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:15",
+                "description": "Deutsche Telekom (ETR:DTE) raised its 2026 earnings and cash flow outlook after an increase in guidance from T-Mobile US, while proposing a higher dividend and up to EUR 2 billion in share buybacks for 2027. The telecommunications group said third-quarter organic service revenue rose 4% year over y",
+                "_timestamp": 1793895311.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "2026-11-05 14:00 UTC (approx. 1h 40m ago)",
+            "Facts": "Cenovus Energy Inc (CVE) reported strong Q3 2026 earnings with production topping 1 million BOE/d, record operating margins, adjusted funds flow, and debt reduction. [Yahoo Finance Oil]",
+            "Uncertainties": "Company-specific corporate earnings reports have minimal direct transmission to precious metals macro pricing, beyond general equity sentiment.",
+            "Macro_Context": "EUR/USD is flat (+0.04%), US 10Y Treasury bond prices are slightly higher (yields falling, minor tailwind for gold), and Brent Crude is down (-3.74%), reflecting weak energy markets despite individual corporate production records. OANDA retail positioning is balanced at 50% long and 50% short.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "The news consists of corporate oil earnings reports which have no material impact on gold fundamentals. Gold's recent price action is driven by broader macroeconomic and yield dynamics rather than individual energy sector updates.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 04:42 | Letztes Update: 2026-11-05 16:14",
+        "original_date": "2026-11-05 04:42",
+        "_timestamp": 1793895254.0,
+        "articles": [
+            {
+                "title": "3 Canadian Dividend Stocks With Yields Over 3%",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-canadian-dividend-stocks-yields-044248133.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 04:42",
+                "description": "Global oil prices recently fell after the US midterm elections, taking some heat out of inflation and interest rate worries. For Australian dividend stocks, that kind of relief can make steady cash payouts feel even more valuable, as investors hunt for income they can see and touch. This article highlights three higher yielding local dividend payers with at least 3% yields and a focus on coverage, growth and consistency. The three stocks highlighted here offer a compelling starting point if...",
+                "_timestamp": 1793853768.0
+            },
+            {
+                "title": "Top 3 Canadian Insider Growth Stocks To Watch In November 2026",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/top-3-canadian-insider-growth-161414331.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 16:14",
+                "description": "Higher interest rates from central banks such as the Bank of England are keeping money markets on edge, and growth stories are no longer given a free pass. Investors hunting for Canadian opportunities are paying closer attention to businesses where insiders have serious skin in the game and are pushing for expansion. This article highlights three fast growing, tightly held Canadian stocks from our screener that fit that profile. The three stocks highlighted here offer a compelling starting...",
+                "_timestamp": 1793895254.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Facts": "Global oil prices recently experienced a pullback following the US midterm elections, reducing immediate inflation and interest rate pressures. This broad macroeconomic shift indirectly influences income-seeking behaviors and regional asset valuations. Source: [Yahoo Finance Oil]",
+            "Uncertainties": "The direct transmission mechanism between Canadian/Australian dividend equities and spot gold pricing is weak, leaving the exact short-term directional catalyst for precious metals unconfirmed by this specific report.",
+            "Macro_Context": "EUR/USD is down 0.16% indicating slight USD strengthening, while US 10Y Treasury bond prices are up 0.35% (falling yields), acting as a supportive tailwind for gold. Brent oil dropped significantly (-8.47%), which alleviates energy-driven inflation and trims global inflationary hedges.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "XAU/USD has gained $99.67 over the last 24 hours, currently trading near $4122.30. The 4h move vs. daily ATR ratio is 0.26x, showing steady consolidation after the recent upward push, largely driven by broader macro positioning rather than this specific oil/equity commentary.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:13",
+        "original_date": "2026-11-05 16:13",
+        "_timestamp": 1793895235.0,
+        "articles": [
+            {
+                "title": "Market Chatter: Microsoft Declines Texas Data Center Contract Extension With Nscale, Tightening Data Center Oversight",
+                "link": "https://finance.yahoo.com/technology/articles/market-chatter-microsoft-declines-texas-161355924.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:13",
+                "description": "Microsoft (MSFT) declined to extend a contract at a Texas data center with Nscale ahead of the start",
+                "_timestamp": 1793895235.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:13",
+        "original_date": "2026-11-05 16:13",
+        "_timestamp": 1793895215.0,
+        "articles": [
+            {
+                "title": "Micron Sinks 13% as Chip Rout Deepens and $4.5 Billion Taiwan Plant Stalls",
+                "link": "https://www.tikr.com/blog/micron-sinks-13-as-chip-rout-deepens-and-4-5-billion-taiwan-plant-stalls?ref=yahoofinance&tlnk=yf-261105-4j94c4wf&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:13",
+                "description": "Key TakeawaysMicron fell 13% on a phone chipmaker’s memory-cost warning and a reported pause at a $4. 5 billion Taiwan plant.",
+                "_timestamp": 1793895215.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:09",
+        "original_date": "2026-11-05 16:09",
+        "_timestamp": 1793894940.0,
+        "articles": [
+            {
+                "title": "Boost Run Announces Date of Third Quarter 2026 Financial Results Conference Call",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/boost-run-announces-date-third-210500115.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:09",
+                "description": "NORTHBROOK, Ill., November 05, 2026--Boost Run, Inc. (Nasdaq: BRUN), an NVIDIA Preferred Cloud Partner operating in adherence with NVIDIA Reference Architecture standards, plans to release its financial results for the third quarter ended September 30, 2026, pre-market on Thursday, November 12, 2026. The company plans to host a conference call at 9:00 a.m. Eastern Time to discuss its third quarter 2026 results.",
+                "_timestamp": 1793894940.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:07",
+        "original_date": "2026-11-05 16:07",
+        "_timestamp": 1793894846.0,
+        "articles": [
+            {
+                "title": "Hilton CEO: Nasdaq a 'better home' for the hospitality company",
+                "link": "https://finance.yahoo.com/video/hilton-ceo-nasdaq-a-better-home-for-the-hospitality-company-160726073.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:07",
+                "description": "Hilton (HLT) CEO Chris Nassetta joins Yahoo Finance Executive Editor Brian Sozzi to discuss the company's move to Nasdaq (NQ=F) as a bet on innovation and growth, citing AI agents as a way to enhance physical and digital guest experiences.",
+                "_timestamp": 1793894846.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
         "main_date": "Erstmeldung: 2026-11-05 16:05",
         "original_date": "2026-11-05 16:05",
         "_timestamp": 1793894709.0,
@@ -121,6 +463,40 @@
                 "date": "2026-11-05 16:05",
                 "description": "Goldman Sachs, Apollo Global look to sell portions of $40 billion GPU deal with SpaceX. Cathie Wood buys the dip amid AI retreat.",
                 "_timestamp": 1793894709.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:05",
+        "original_date": "2026-11-05 16:05",
+        "_timestamp": 1793894700.0,
+        "articles": [
+            {
+                "title": "With Only 1 Word, The Fed Just Sent an Important Message to Investors",
+                "link": "https://www.fool.com/investing/2026/11/05/with-1-word-fed-sent-important-message-investors/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:05",
+                "description": "Upgrading the assessment of economic activity from \"solid\" to \"strong\" changes the outlook.",
+                "_timestamp": 1793894700.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:03",
+        "original_date": "2026-11-05 16:03",
+        "_timestamp": 1793894625.0,
+        "articles": [
+            {
+                "title": "Prediction: Tesla’s Next Act Could Be Its Most Important Yet",
+                "link": "https://247wallst.com/investing/2026/11/05/prediction-teslas-next-act-could-be-its-most-important-yet/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:03",
+                "description": "Tesla is trading near its highest valuation in years while earnings are under serious pressure, and the gap between what the stock promises and what it delivers right now has never been wider. Whether Robotaxi and Optimus close that gap determines everything.",
+                "_timestamp": 1793894625.0
             }
         ],
         "needs_update": true,
@@ -159,42 +535,6 @@
         ],
         "needs_update": true,
         "summary": null
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 14:15 | Letztes Update: 2026-11-05 15:59",
-        "original_date": "2026-11-05 14:15",
-        "_timestamp": 1793894343.0,
-        "articles": [
-            {
-                "title": "Joint List says it will back Eisenkot to form Israel’s next government",
-                "link": "https://www.aljazeera.com/news/2026/11/5/joint-list-says-it-will-back-eisenkot-to-form-israels-next-government?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-05 14:15",
-                "description": "Arab-led parties won a record 19 seats in Israel&#039;s 120-seat parliament in last week&#039;s general election.",
-                "_timestamp": 1793888152.0
-            },
-            {
-                "title": "Arab-led Joint List says it will back Eisenkot to form Israel's next government",
-                "link": "https://www.middleeasteye.net/news/arab-led-joint-list-says-it-will-back-eisenkot-form-israels-next-government",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 15:59",
-                "description": "Arab-led Joint List says it will back Eisenkot to form Israel's next government\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nThu, 11/05/2026 - 15:25\n\n        \n      \n    \n      \n    \n                Alliance’s endorsement gives opposition leader Gadi Eisenkot the backing of 67 lawmakers in the 120-seat Knesset\n                      \n                  \n                  \n\n  \n\n\n                  Yousef Jabareen (centre), leader of Israel's Arab-led Joint List political alliance, celebrates as the first exit polls are announced during Israel's election last week (Ahmad Gharabli/AFP)\n                  Off\n                  The Arab-led Joint List has said it will back Israeli opposition leader Gadi Eisenkot to form a new government, dealing a heavy blow to Prime Minister Benjamin Netanyahu's efforts to remain in power.\n\nThe Joint List announced on Thursday that it would \"recommend that Gadi Eisenkot be tasked with forming the government\", bringing the total number of lawmakers backing him to 67 in the 120-seat Knesset.\n\nThe decision follows Wednesday's endorsement by Ra'am, another Arab-led party, whose eight lawmakers also backed Eisenkot.\n\nThe two parties together secured a record 19 seats in last week's general election, giving them a potentially decisive role in determining who forms Israel's next government.\n\nNetanyahu's right-wing bloc won 53 seats in the 27 October election, while the opposition alliance led by Eisenkot secured 48. A majority in parliament requires 61 seats.\n  \n    \n\n\n\n  \n\n\n\nThe results left both camps short of the numbers needed to govern independently, making the support of Arab-led parties and smaller political factions crucial to the coalition negotiations.\n\nThe Joint List said its unanimous decision reflected public demands to prevent Netanyahu and his government from returning to power.\n\nIt also said the endorsement was intended to widen the gap between Eisenkot and Netanyahu and strengthen the chances of replacing the incumbent government.\n\nThe alliance, which comprises three Arab-led factions, said its decision came despite the opposition's failure to sufficiently challenge Netanyahu's political direction, incitement against Arab citizens and attempts to undermine the legitimacy of their electoral choices.\n\nHowever, the endorsements do not necessarily mean the Arab parties will join an Eisenkot-led government.\n\n\n  \n\n  How an election defeat triggered a carnival of racism against Palestinians\n    Read More »\n\n\nThe Joint List has said it is prepared to support an opposition government from outside the governing coalition, rather than take ministerial positions.\n\nIts leaders have opposed joining a government while Israel continues its occupation of Palestinian territory.\n\nEisenkot and his opposition partners have also faced divisions over cooperation with Arab-led parties.&nbsp;\n\nThe opposition bloc has set conditions for potential partners, including recognising Israel as a Jewish state, supporting military conscription and condemning Hamas.\n\nSome opposition figures have rejected relying on Arab lawmakers, while others have argued that their support is essential to ending Netanyahu's rule.\n\nEisenkot, 66, has repeatedly rejected the idea of a Palestinian state alongside Israel.\n\nWhile serving as army chief between 2015 and 2019, he publicly advocated for closer ties with Saudi Arabia, saying the two countries should work together to counter&nbsp;Iran's influence in the region.\n\nHe also said Israel would be willing to share intelligence with Riyadh to confront Tehran.\n\n                  Israeli Elections\n                   \n                  News\n        \n    Post Date Override\n              0\n          \n  \n    Update Date\n              Mon, 05/04/2020 - 21:19\n\n          \n  \n    Update Date Override\n              0",
-                "_timestamp": 1793894343.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 14:15 UTC (approx. 40 minutes ago)",
-            "Facts": "The Joint List, an Arab-led political alliance, announced it will back MK Yair Golan / Eisenkot to form Israel's next government following last week's general election where Arab-led parties won a record 19 seats. [Al Jazeera English]",
-            "Uncertainties": "Whether this coalition backing will successfully lead to a stable governing majority or face severe right-wing opposition and parliamentary hurdles.",
-            "Macro_Context": "US 10Y Treasury bond prices are rising (+0.33%), indicating falling yields which act as a tailwind for gold. OANDA retail positioning remains heavily long (72.1%), serving as a contrarian bearish cross-current.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 45,
-            "Past_Price_Action_Cause": "Gold has experienced a retracement over the last 4 hours (-$19.23) after testing highs above $4145 earlier in the session. The political development in Israel is localized and secondary to broader macro and technical consolidation, leading to a neutral near-term outlook.",
-            "Orderflow_Price_Target": "N/A"
-        }
     },
     {
         "main_date": "Erstmeldung: 2026-11-05 15:58",
@@ -524,6 +864,266 @@
         "summary": null
     },
     {
+        "main_date": "Erstmeldung: 2026-11-03 12:00 | Letztes Update: 2026-11-05 15:33",
+        "original_date": "2026-11-03 12:00",
+        "_timestamp": 1793892824.0,
+        "articles": [
+            {
+                "title": "NexGold Intersects 4.16 g/t Gold over 7.0 Metres, 2.84 g/t Gold over 7.0 Metres and 1.94 g/t Gold over 9.0 Metres in RC Infill Drill Program at the Goldboro Gold Project, Nova Scotia",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/nexgold-intersects-4-16-g-120000431.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 12:00",
+                "description": "TORONTO, Nov. 03, 2026 (GLOBE NEWSWIRE) -- NexGold Mining Corp. (TSXV: NEXG; OTCQX: NXGCF) (“NexGold” or the “Company”) is pleased to provide additional results from its recently completed detailed Reverse Circulation Infill Drill Program (“RC Infill Drill Program”) at the Company’s Goldboro Gold Project in Nova Scotia (“Goldboro Project”). The RC Infill Drill Program, which consisted of 36,239 metres, was designed to infill specific areas of the Goldboro Mineral Resource within the planned West",
+                "_timestamp": 1793707200.0
+            },
+            {
+                "title": "Canagold Drills 79.3 g/t Gold (Au) and 8.76% Antimony (Sb) over 1.96 m; Within 4.62 m Averaging 37.7 g/t Au and 4.57% Sb",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/canagold-drills-79-3-g-120000823.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 12:00",
+                "description": "HIGHLIGHTSAssay results received from four additional holes include:37.7 grams per tonne (\"g/t\") gold (\"Au\") and 4.57% antimony (\"Sb\") over 4.62 m from 489 m down hole in NP26-10A, including:79.3 g/t Au and 8.76% Sb over 1.96m, and145.7 g/t Au and 18.57% Sb over 0.66m21.1g/t Au and 0.66% Sb over 9.44m from 250.4 m down hole in NP26-11, including:37.2 g/t Au and 1.29% Sb over 4.88 m and42.3 g/t Au and 5.81% Sb over 0.84 mVancouver, British Columbia--(Newsfile Corp. - November 3, 2026) - Canagold.",
+                "_timestamp": 1793707200.0
+            },
+            {
+                "title": "Thunder Gold Intersects Continuous Gold Mineralization Averaging 0.456 g/t Au Over 451.5 Metres at Tower Mountain, Ontario",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/thunder-gold-intersects-continuous-gold-123000095.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 12:30",
+                "description": "Thunder Bay, Ontario--(Newsfile Corp. - November 3, 2026) - Thunder Gold Corp. (TSXV: TGOL) (FSE: Z25) (OTCQB: TGOLF) (\"Thunder Gold\" or the \"Company\") is pleased to announce the following infill diamond drill results from the Company's flagship Tower Mountain Property, 40 kilometres west of Thunder Bay, Ontario.Highlights: TM26-222 intersected 0.456 g/t Au over 451.5 metres from 60.0 metres;Gold mineralization starts at 60.0 metres and is continuous to 511.5 metres;Includes intervals of 0.880..",
+                "_timestamp": 1793709000.0
+            },
+            {
+                "title": "Kirkland Lake Discoveries expands Mirado West gold zone beyond 1.1 kilometres",
+                "link": "https://finance.yahoo.com/video/kirkland-lake-discoveries-expands-mirado-163430106.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 16:34",
+                "description": "Kirkland Lake Discoveries CEO Stefan Sklepowicz joined Steve Darling from Proactive to announce new diamond drilling results from four step-out holes at the Mirado West Zone, part of the company's KL South property in Kirkland Lake, Ontario. Sklepowicz told Proactive that the latest results have expanded the mineralized footprint of Mirado West to more than 1,100 metres of strike length, highlighting a system that hosts both high-grade gold veins and broad zones of bulk-tonnage mineralization. The drilling has intersected gold from less than 10 metres below surface to depths approaching 480 metres downhole, with the mineralized corridor remaining open in multiple directions. One of the standout results came from step-out hole KLM26-048, which intersected 10.53 grams per tonne gold over 9.20 metres, including a particularly high-grade interval of 31.93 g/t gold over 3.00 metres. The same hole also encountered a broad zone of bulk-tonnage mineralization at depth, returning 0.64 g/t gold over 68.00 metres, including a higher-grade section of 1.25 g/t gold over 26.50 metres. The company said the results demonstrate the potential for high-grade gold shoots to occur alongside wider, continuous zones of mineralization, providing opportunities to build both grade and potential resource volume. Additional step-out holes also returned repeated wide gold intervals, including zones measuring approximately 16 to 26 metres, supporting the company's interpretation that mineralization extends across a substantial corridor. Sklepowicz said the combination of high-grade intervals and broader mineralized zones is particularly encouraging, pointing to a system with the potential to host multiple styles of gold mineralization. Mirado West is located immediately adjacent to the Mirado South and Mirado North zones along the same structural trend. The expansion of Mirado West to more than 1.1 kilometres of strike length alongside Mirado South strengthens the company's view that these neighbouring zones could form part of a much larger, district-scale gold system. The company believes the broader corridor could contain multiple high-grade shoots surrounded by extensive mineralized envelopes, with the latest drilling providing further evidence of its potential scale. #proactiveinvestors #kirklandlakediscoveries #tsxv #kldc #otcqb #klklf #mining #Gold #GoldExploration #MiradoWest #KLSouth #KirklandLake #OntarioMining #HighGradeGold #GoldDrilling #MineralExploration #CanadianMining #JuniorMining",
+                "_timestamp": 1793723670.0
+            },
+            {
+                "title": "Ameriwest advances Oregon copper-gold project with historic core resampling",
+                "link": "https://finance.yahoo.com/video/ameriwest-advances-oregon-copper-gold-191123588.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 19:11",
+                "description": "Ameriwest Critical Metals CEO David Watkinson joined Steve Darling from Proactive to discuss the company's efforts to advance the Bornite copper-gold-silver project in Oregon, including the reassessment of historic drill core, plans for an updated technical report and opportunities for additional exploration. Watkinson explained that the Bornite project was previously owned by Plexus Resources during the 1990s, when a pre-feasibility study and other technical work were completed. Ameriwest has since recovered a substantial portion of the historic drill core and transported it to Reno, Nevada, where the material is being logged and selected intervals resampled. The company has released results from the first three holes in a seven-hole resampling program. Watkins said the initial findings are generally consistent with historical results, with copper grades appearing somewhat higher and gold and silver values also showing improvements in several intervals. Additional assay results are expected as the remaining samples are processed, providing further information to compare against the original drilling data. The resampling initiative is designed to verify the historical exploration results and support the preparation of an updated technical report compliant with NI 43-101 standards. Ameriwest is targeting completion of that report in the first quarter of 2027. Alongside the technical work, the company is beginning the permitting process for additional confirmation drilling, which could take place next summer. A key focus is evaluating the potential of the project's breccia pipe deposit. Historical work identified a high-grade outer shell with grades exceeding 3% copper equivalent, while Ameriwest is also investigating whether the lower-grade interior portion of the structure could support economic mining under current metal price conditions. Watkinson said the company is undertaking technical studies to determine whether the interior of the breccia pipe could have mining potential, emphasizing that the work is intended to test that geological and economic concept. Ameriwest is also considering geophysical surveys to investigate whether additional breccia pipes may exist elsewhere in the area. The work could help identify extensions of the known mineralization at depth and investigate the possibility of a deeper feeder system. With historic core resampling underway, an updated technical report planned and permitting preparations beginning, Ameriwest is working to establish a clearer picture of the Bornite project's mineral potential and identify the next steps toward advancing the Oregon asset. #proactiveinvestors #ameriwestcriticalmetals #cse #awcm #otc #awlif #CopperExploration #GoldExploration #SilverExploration #BonnetProject #OregonMining #CriticalMetals #CopperMining #MineralExploration #MiningStocks #JuniorMining #NI43101",
+                "_timestamp": 1793733083.0
+            },
+            {
+                "title": "Trans Canada Gold Advances Phase 2-Drilling at the Harrison Lake District Scale Gold Project and Awaits PhotonAssay Results From Phase 1-Drilling",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/trans-canada-gold-advances-phase-214500561.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 21:45",
+                "description": "VANCOUVER, BC / ACCESS Newswire / November 3, 2026 / (TSXV:TTG)(OTCQB:TTGXF) (\"Trans Canada\" or the \"Company\"), is pleased to announce that the Company has successfully completed its most recent financing raising over $2.2 million dollars required to advance Phase-2 underground drilling and proposed exploration work on Bear Mountain at the Harrison Lake Gold Project located in Southwestern B.",
+                "_timestamp": 1793742300.0
+            },
+            {
+                "title": "Riversgold expands Northern Zone footprint 15-fold with strategic Kalgoorlie acquisition",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101182/riversgold-expands-northern-zone-footprint-15-fold-with-strategic-kalgoorlie-acquisition-1101182.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 23:27",
+                "description": "Riversgold Ltd (ASX:RGL, FRA:RGV, OTC:RVSGF) has struck a binding agreement to acquire a 100% interest in a 12-square-kilometre exploration licence surrounding its Northern Zone Gold Project near Kalgoorlie, expanding the immediate project footprint by around 15 times. The company will...",
+                "_timestamp": 1793748420.0
+            },
+            {
+                "title": "Lightning Minerals' Warby tungsten targets advance toward maiden drilling",
+                "link": "https://finance.yahoo.com/video/lightning-minerals-warby-tungsten-targets-042622870.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 04:26",
+                "description": "Lightning Minerals Ltd managing director Troy Brice talked with Proactive about the completion of an expanded Phase 3 soil sampling program at the Warby Tungsten Project in North Queensland and the work now underway to refine targets for a maiden drill campaign. Brice said tungsten had emerged rapidly as an exploration focus at Warby after the company initially targeted gold at the project. The latest program comprised an additional 220 soil samples collected at 25-metre intervals along lines about 125 metres apart, adding greater detail to the company’s geological dataset. Brice also highlighted the discovery of further historical workings and visible wolframite during field activities. “Every time we go there, we find more, see more, it de-risks it for us, and we get more excited about the prospect,” he said. Lightning Minerals plans to combine the Phase 3 assay results with LiDAR surveying and petrological analysis being undertaken by the University of New South Wales. These datasets will help improve understanding of the controls on mineralisation and support the ranking of potential drill targets for 2027. He also provided an update on the company’s nearby gold exploration, where a Phase 2 drilling campaign was nearing completion, with assay results expected to provide the next important dataset. Visit Proactive’s YouTube channel for more interviews and company updates. If you found the video useful, give it a like, subscribe to the channel and enable notifications so you do not miss future content. #LightningMinerals #WarbyTungsten #Tungsten #CriticalMinerals #ASXL1M #MineralExploration #MiningExploration #QueenslandMining #GoldExploration #CopperExploration #Drilling #Wolframite #LiDAR #InvestorNews #ProactiveInvestors",
+                "_timestamp": 1793766382.0
+            },
+            {
+                "title": "Barton Gold begins scoping study for Challenger mine feed",
+                "link": "https://www.mining-technology.com/news/barton-gold-scoping-study-challenger-mine/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 08:40",
+                "description": "The decision follows a recent JORC resource update showing underground resources rose to 230,000oz at 3.65g/t gold.",
+                "_timestamp": 1793781619.0
+            },
+            {
+                "title": "Independence Gold Reports Additional Gold-Silver Intersections and Gives an Exploration Update at the 3Ts Project, BC",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/independence-gold-reports-additional-gold-100000328.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 10:00",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 4, 2026) - Independence Gold Corp. (TSXV: IGO) (OTCQB: IEGCF) (FSE: 625) (the \"Company\") is pleased to announce additional gold and silver results from the Ian, Dixie and Goofy veins at its wholly-owned 3Ts Gold and Silver Project. Situated approximately 185 kilometres southwest of Prince George, British Columbia, the 3Ts Project comprises thirty-one mineral claims covering approximately 35,486 hectares in the Nechako Plateau region. The...",
+                "_timestamp": 1793786400.0
+            },
+            {
+                "title": "A2GOLD COMPLETES INITIAL TARGET PENTE RC DRILLING AT EASTSIDE GOLD-SILVER PROJECT",
+                "link": "https://finance.yahoo.com/news/a2gold-completes-initial-target-pente-113000877.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 11:30",
+                "description": "A2Gold Corp. (\"A2Gold\" or the \"Company\") (TSXV: AUAU) (OTCQX: AUXXF) is pleased to announce the completion of an initial RC drill program at Target Pente at the Company's flagship Eastside Gold-Silver Project (\"Eastside\" or the \"Project\") near Tonopah, Nevada.",
+                "_timestamp": 1793791800.0
+            },
+            {
+                "title": "Snowline Gold Receives PDAC’s Bill Dennis Award for Valley Gold Discovery",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/snowline-gold-receives-pdac-bill-110000854.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 11:00",
+                "description": "VANCOUVER, British Columbia, Nov. 04, 2026 (GLOBE NEWSWIRE) -- SNOWLINE GOLD CORP. (TSX: SGD) (OTCQB: SNWGF) (the “Company” or “Snowline”) is pleased to announce that it has been named as recipient of the 2027 Bill Dennis Award by the Prospectors & Developers Association of Canada (\"PDAC\") in recognition of the discovery of the Valley gold deposit (“Valley”) at its Rogue Project in Canada's Yukon Territory. Considered one of the industry's highest honours for mineral exploration achievement, the",
+                "_timestamp": 1793790000.0
+            },
+            {
+                "title": "West Red Lake Gold Announces Integrated PFS Delivering C$764 Million Post-Tax NPV and Annual Gold Production of 100,000 Ounces Once Rowan Enters Production",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/west-red-lake-gold-announces-103000899.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 10:30",
+                "description": "VANCOUVER, British Columbia, Nov. 04, 2026 (GLOBE NEWSWIRE) -- West Red Lake Gold Mines Ltd. (“West Red Lake Gold” or “WRLG” or the “Company”) (TSXV: WRLG) (OTCQX: WRLGF) is pleased to announce the results of an integrated Red Lake pre-feasibility study (the “Integrated PFS”), prepared in accordance with National Instrument 43-101- Standards of Disclosure for Mineral Projects (“NI 43-101”), for the Company’s 100% owned Madsen Mine (the “Madsen Mine” or “Madsen”) and Rowan Project (“Rowan”) in th",
+                "_timestamp": 1793788200.0
+            },
+            {
+                "title": "Scottie Resources Hits 6.0 g/t Gold over 21.20 m and 14.4 g/t Gold over 8.00 m at Blueberry Contact Zone",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/scottie-resources-hits-6-0-123000532.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 12:30",
+                "description": "Broad, High-Grade Gold Intercepts Continue to Demonstrate High Grade Continuity and Expansion Potential at the Blueberry Contact ZoneVancouver, British Columbia--(Newsfile Corp. - November 4, 2026) - Scottie Resources Corp. (TSXV: SCOT) (OTCQB: SCTSF) (FSE: SR80) (\"Scottie\" or the \"Company\") is pleased to report additional high-grade gold intercepts from its 2026 drilling at the Blueberry Contact Zone within the Scottie Gold Mine Project. The road-accessible Scottie Gold Mine Project, which...",
+                "_timestamp": 1793795400.0
+            },
+            {
+                "title": "Great Pacific Gold Provides Wild Dog Drilling Update as Exploration Advances to Elamaraka",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/great-pacific-gold-provides-wild-123000267.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 12:30",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 4, 2026) - Great Pacific Gold Corp. (TSXV: GPAC) (OTCQX: GPGCF) (FSE: 0B3) (\"Great Pacific Gold\", \"GPAC\" or the \"Company\") provides an update on diamond drilling and regional exploration at its flagship Wild Dog Project (the \"Project\") in East New Britain Province, Papua New Guinea.The Company has completed 16 diamond drill holes totalling approximately 3,600 metres at Magiabe and Mengmut during the current drilling phase, bringing...",
+                "_timestamp": 1793795400.0
+            },
+            {
+                "title": "High-Grade Gold Near Surface at Duquesne West Including 7.0 g/t over 24.8 m",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/high-grade-gold-near-surface-144300048.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 14:43",
+                "description": "TORONTO, Nov. 04, 2026 (GLOBE NEWSWIRE) -- GLOBEX MINING ENTERPRISES INC. (GMX – Toronto Stock Exchange, G1MN – Frankfurt, Stuttgart, Berlin, Munich, Tradegate, Lang & Schwarz, LS Exchange, TTMzero, Düsseldorf and Quotrix Düsseldorf Stock Exchanges and GLBXF – OTCQX International in the US) is pleased to announce that Emperor Metals Inc. (Emperor) have reported results from six drill holes from their 2026 drill campaign at the Duquesne West Project, which is under option from Duparquet Assets Lt",
+                "_timestamp": 1793803380.0
+            },
+            {
+                "title": "Emperor Hits High-Grade Gold near Surface",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/emperor-hits-high-grade-gold-133000116.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 13:30",
+                "description": "Drilling Returns 24.8 m at 7.0 g/t gold, 8.4 m at 8.7 g/t gold and 18.9 m at 4.0 g/t goldEdmonton, Alberta--(Newsfile Corp. - November 4, 2026) - Emperor Metals Inc. (\"Emperor\") (CSE: AUOZ) (OTCQB: EMAUF) (FSE: 9NH) is pleased to report final assay results from six new drillholes from its 2026 exploration campaign at the Duquesne West Project. The program currently integrates more than 20,479 metres (m) of new drilling with 8,000 m of targeted historical core resampling, with the resumption of..",
+                "_timestamp": 1793799000.0
+            },
+            {
+                "title": "NSJ Antimony Corp (NSJ) (9PZ0) Announces Completion of First Phase Drilling Program",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/nsj-antimony-corp-nsj-9pz0-142900422.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 14:29",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 4, 2026) - NSJ Antimony Corp. (CSE: NSJ) (FSE: 9PZ0) (the \"Company\" or \"NSJ\") announces completion of the first phase of drilling at its Antimony 2.0 project in New Brunswick, Canada.Highlights11 drill holes completed, with 3,469 metres of NQ drilling.Two areas of anomalous antimony and gold soil results tested.Core logging and sample selection underway.Drilling and next stepsThe drilling aimed to test for mineralization in bedrock...",
+                "_timestamp": 1793802540.0
+            },
+            {
+                "title": "Great Red Lake Gold adds Ontario copper project to keep exploration moving year-round",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101242/great-red-lake-gold-adds-ontario-copper-project-to-keep-exploration-moving-year-round-1101242.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 17:30",
+                "description": "Great Red Lake Gold Corp. (CSE:RLGC) is betting that a copper project in Ontario can help solve a problem common to junior miners: keeping exploration moving when winter shuts down fieldwork. The company has secured an option to acquire up to 100% of the Bilton-Brown project, where...",
+                "_timestamp": 1793813400.0
+            },
+            {
+                "title": "Perpetua Announces New Gold Discovery at Stibnite Gold Project & Continued High Grades from Clark Tunnel Fault Zone",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/perpetua-announces-gold-discovery-stibnite-215300207.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 21:53",
+                "description": "Perpetua Resources Corp. (Nasdaq: PPTA) (TSX: PPTA) (\"Perpetua Resources,\" \"Perpetua,\" or the \"Company\") today provided an update on exploration activities at the Company's Stibnite Gold Project (the \"Project\") in central Idaho. The 2026 Exploration Drilling Program is now complete with over 16,000 meters of core drilling across the Project. The program's objectives included upgrading in-pit and near-pit inferred resources, extending mineralization along strike, testing key underground targets,",
+                "_timestamp": 1793829180.0
+            },
+            {
+                "title": "Horizon Gold: Gum Creek infrastructure gives 2.3Moz redevelopment a head start",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101258/horizon-gold-gum-creek-infrastructure-gives-2-3moz-redevelopment-a-head-start-1101258.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 00:09",
+                "description": "Horizon Gold Ltd (ASX:HRN, OTC:HZGLF, FRA:HO0) is approaching development of its Gum Creek Gold Project with an advantage many emerging gold producers do not have: much of the physical framework of a mining operation is already there. The 100%-owned Western Australian project is not a...",
+                "_timestamp": 1793837340.0
+            },
+            {
+                "title": "Pacific Empire Minerals Corp. Completes 2026 Diamond Drill Program at its Trident and Pinnacle Copper-Gold Properties",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/pacific-empire-minerals-corp-completes-123000769.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 12:30",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - Pacific Empire Minerals Corp. (TSXV: PEMC) (\"Pacific Empire\", \"PEMC\" or the \"Company\"), a British Columbia copper-gold explorer, is pleased to announce the completion of its 2026 diamond drill program at its Trident and Pinnacle properties (the \"Program\"), located in the Quesnel Terrane of north-central British Columbia. The Company completed 14 diamond drill holes totalling 4,548.5 metres: eight holes (2,410.6 metres) at Trident",
+                "_timestamp": 1793881800.0
+            },
+            {
+                "title": "Au Gold Corp Samples 40 g/t and 22 g/t Gold from the Harvey's Reef Complex Defining Additional High-Priority Drill Targets and Engages Prestige Drilling at the Havelock Gold-Antimony Project",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/au-gold-corp-samples-40-123000154.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 12:30",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - Au Gold Corp (TSXV: AUGC) (the \"Company\" or \"AUGC\") is pleased to provide a target development update for the Havelock Gold-Antimony project in Victoria, Australia.Highlights:Harvey's Reef (north) - Select grab samples returned 22 and 3.5 grams per tonne (\"g/t\") gold from historic mining waste piles.Harvey's Reef (central and south) - Surface grab samples from shallow workings along trend 600 m south returned 25, 16, and 16 g/t..",
+                "_timestamp": 1793881800.0
+            },
+            {
+                "title": "Sitka Gold Drills 41.7 Metres of 2.20 g/t Gold from Surface, Including 1.2 Metres of 53.10 g/t Gold, Within 74.8 Metres of 1.31 g/t Gold, Confirming High-Grade Mineralization at the Contact Zone, RC Gold Project, Yukon",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/sitka-gold-drills-41-7-123000922.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 12:30",
+                "description": "Drilling confirms and expands significant gold mineralization at the Contact and Bear Paw targetsDrill Hole DDRCCC-26-162 intersected 74.8 m of 1.31 g/t gold from surface, including 41.7 m of 2.20 g/t gold and 1.2 m of 53.10 g/t gold, at the Contact Zone Drill hole DDRCCC-26-160 intersected 48.6 m of 1.18 g/t gold, including 1.8 m of 4.27 g/t gold, at the Bear Paw Zone Drilling continues to outline and define broad intervals of reduced intrusion related gold style mineralization along with...",
+                "_timestamp": 1793881800.0
+            },
+            {
+                "title": "Renegade Gold Identifies New Gold Targets Along the LP-Uchi Corridor in Red Lake",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/renegade-gold-identifies-gold-targets-122000637.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 12:20",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - Renegade Gold Inc. (TSXV: RAGE) (OTCQB: RENGF) (FSE: 0700) (\"Renegade\" or the \"Company\") is pleased to report results from its 2026 first-pass till and soil geochemical sampling at the LP-Uchi Project, located approximately 50 km east of Red Lake, Ontario. The program identified multiple new, multi-km gold anomalies along the LP fault corridor, defining several targets for follow-up exploration.These results build upon the...",
+                "_timestamp": 1793881200.0
+            },
+            {
+                "title": "Gold Terra Announces 6.61 g/t Gold over 7.35 Metres Including 31.6 g/t Gold over 1.1 Metres on the Campbell Shear Zone 103N Extension, Con Mine, Yellowknife, NWT",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-terra-announces-6-61-120000025.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 12:00",
+                "description": "VANCOUVER, BC / ACCESS Newswire / November 5, 2026 / . (TSXV:YGT)(Frankfurt:TX0)(OTCQB:YGTFF) (\"Gold Terra\" or the \"Company\") is pleased to announce initial drill results on Zone 103N, considered by Gold Terra to be the northern extension of the Campbell Shear within the historical Con Mine and part of the Con Mine Option (\"CMO\").",
+                "_timestamp": 1793880000.0
+            },
+            {
+                "title": "Graycliff Reports High Grade Gold Results in All Five New Drill Holes",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/graycliff-reports-high-grade-gold-120000298.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 12:00",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - Graycliff Exploration Limited (CSE: GRAY) (OTCQB: GRYCF) (FSE: GE0) (\"Graycliff\" or the \"Company\") is pleased to provide additional high-grade gold assay results from its ongoing exploration drilling campaign at its 100-per-cent-owned Shakespeare gold project located near Sudbury, Ontario.The fourth large core (HQ) metallurgical drill hole, Hole D-26, and all four subsequent drill holes, Holes J-62-26 through J-65-26, intersected",
+                "_timestamp": 1793880000.0
+            },
+            {
+                "title": "American Pacific Discovers New Gold Zone 800 Metres from Historical Mine Areas at Madison Copper-Gold Project, Montana",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/american-pacific-discovers-gold-zone-120000467.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 12:00",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - American Pacific Mining Corp. (CSE: USGD) (OTCQX: USGDF) (FSE: 1QC) (WKN: A422L8) (\"American Pacific\" or the \"Company\") is pleased to report assay results from four exploration holes testing separate targets at its 100%-owned Madison Copper-Gold Project in Montana (\"Madison\" or the \"Project\"). Gold mineralization was intersected in all three reverse circulation (\"RC\") holes (M26RC-01, M26RC-02, M26RC-03), while core-hole M26C-03.",
+                "_timestamp": 1793880000.0
+            },
+            {
+                "title": "Silver Bow Mining Intersects 312.7 g/t AgEq Over 11.2 m including 462.7 g/t AgEq Over 3.6 m at the Rainbow Block",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/silver-bow-mining-intersects-312-122800604.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 12:28",
+                "description": "Emily Vein mineralization intersected in two drill holes; SBM26-05 also returns680.8 g/t AgEq over 1.3 m from the Rainbow Vein BUTTE, Mont., Nov. 05, 2026 (GLOBE NEWSWIRE) -- Silver Bow Mining Corp. (NYSE American: SBMT) (\"Silver Bow Mining\" or the \"Company\") is pleased to announce its first assay results from the Emily Vein, located approximately 245 meters (800 feet) north of the Badger Vein at its Rainbow Block Project in Butte, Montana. Drilling intersected high-grade silver-gold-zinc-lead m",
+                "_timestamp": 1793881680.0
+            },
+            {
+                "title": "1911 Gold reports more underground drilling progress at True North ahead of potential 2027 restart",
+                "link": "https://finance.yahoo.com/video/1911-gold-reports-more-underground-153344666.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 15:33",
+                "description": "1911 Gold Corporation CEO Shaun Heinrichs joined Steve Darling from Proactive to discuss additional assay results from the company's ongoing underground infill and delineation drilling program at the True North Gold Project in Manitoba, where exploration is focused on strengthening mineral resources targeted for the early years of a potential mine restart. Heinrichs told Proactive that the latest drilling continues to support the company's work towards a potential restart decision in 2027. The program is designed to improve confidence in existing resources at the L10 Zone, which is accessible from Level 16, where underground development is advancing to provide access for planned test mining and bulk sampling activities in 2026 and 2027. The L10 Zone is situated at the intersection of the Shoreline Basalt unit and the regional east-west, steeply north-dipping L10 Shear Zone. Gold mineralization occurs in several vein styles, including generally northwest-trending extensional stockwork and breccia veins, as well as east-west-oriented, steeply north-dipping shear veins. The latest underground infill drilling was designed to evaluate the continuity of gold mineralization, confirm vein geometry and better understand grade distribution within the V-1020 and V-1010 veins. The company is also using the results to support the potential conversion of Inferred Mineral Resources to the Indicated category in areas identified for development and mining during the early years of the Preliminary Economic Assessment mine plan. Drilling was conducted on nominal 30-metre spacing, with the latest results covering 30 drill holes totalling 6,483 metres. All holes intersected the modelled veins, with every hole returning significant results except UG16-26-101. Heinrichs said preliminary overall results from the program were in line with expectations for the V-1020 vein, while results from the V-1010 vein were lower than anticipated. The company believes the ongoing work is an important part of reducing geologic al uncertainty and improving confidence in the mineral resources that would support an eventual return to production. #proactiveinvestors #1911goldcorporation #1911gold #tsxv #aumb #otcqx #aumbf #TrueNorthProject #Gold #GoldMining #ManitobaMining #GoldExploration #UndergroundDrilling #InfillDrilling #MineralResources #MineRestart #CanadianMining #JuniorMining",
+                "_timestamp": 1793892824.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "Ongoing / Breaking within last 24h (Latest reports across multiple junior mining exploration projects published continuously through Nov 3-5, 2026, relative to 2026-11-05 13:43 UTC).",
+            "Facts": "Multiple junior mining and exploration companies released ongoing drill assays and resource updates between November 3 and November 5, 2026. Highlights include Sitka Gold intersecting 41.7m of 2.20 g/t gold from surface at the RC Gold Project [Yahoo Finance Gold], Snowline Gold receiving the 2027 Bill Dennis Award for its Valley gold discovery [Yahoo Finance Gold], and West Red Lake Gold announcing an integrated PFS for Madsen and Rowan delivering a C$764M post-tax NPV [Yahoo Finance Gold]. These represent standard corporate exploration updates and resource announcements rather than macro-driven systemic shocks.",
+            "Uncertainties": "Whether the broader junior mining exploration results will translate into economic commercial production given prevailing capital expenditure constraints and broader market liquidity conditions.",
+            "Macro_Context": "EUR/USD is down 0.26% reflecting a modest USD strengthening headwind for gold, while US 10Y Treasury yields remain relatively stable. Brent Crude dropped sharply by 5.18%. Global OANDA retail positioning is heavily net long at 71.9%, serving as a contrarian bearish overhang alongside overhead sell-limit liquidity walls.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Gold prices have drifted higher over the past 24 hours (+ $78.18) driven by broader structural trends, but the corporate drill results and exploration news flow are recurring micro-level events that lack systemic macro impact. Furthermore, retail sentiment is extremely crowded on the long side (71.9%), limiting fresh bullish continuation without a new macro catalyst.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "Erstmeldung: 2026-11-05 15:33",
         "original_date": "2026-11-05 15:33",
         "_timestamp": 1793892823.0,
@@ -608,66 +1208,6 @@
         ],
         "needs_update": true,
         "summary": null
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-04 23:38 | Letztes Update: 2026-11-05 15:24",
-        "original_date": "2026-11-04 23:38",
-        "_timestamp": 1793892287.0,
-        "articles": [
-            {
-                "title": "Qualcomm slides 9% after earnings, leading postelection chip stock sell-off",
-                "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-05 15:24",
-                "description": "Qualcomm slid Thursday morning after its Q4 earnings report as chip stocks face continued post-election pressure.",
-                "_timestamp": 1793892287.0
-            },
-            {
-                "title": "Qualcomm stock drops 7% on weak earnings forecast as memory shortage weighs on smartphone sales",
-                "link": "https://www.cnbc.com/2026/11/04/qualcomm-qcom-earnings-report-q4-2026.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-04 23:38",
-                "description": "Qualcomm delivered better-than-expected results but issued a weak earnings forecast.",
-                "_timestamp": 1793835491.0
-            },
-            {
-                "title": "SK hynix Sinks 9% as Qualcomm’s 26% Handset Plunge Deepens Memory Chip Rout",
-                "link": "https://www.tikr.com/blog/sk-hynix-sinks-9-as-qualcomms-26-handset-plunge-deepens-memory-chip-rout?ref=yahoofinance&tlnk=yf-261105-5324ff3r&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:08",
-                "description": "Key TakeawaysSK hynix shares fell 9% after Qualcomm reported a 26% drop in handset chip sales as memory costs push phone prices up. Conventional DRAM, the kind phones use, drove SK hynix’s 2026 price gains.",
-                "_timestamp": 1793891313.0
-            },
-            {
-                "title": "Sandisk Sinks 14%, Micron Down 10% as a Top Phone Chipmaker Blames Weak Sales on “Industry-Wide Memory Dynamics”",
-                "link": "https://www.tikr.com/blog/sandisk-sinks-14-micron-down-10-as-a-top-phone-chipmaker-blames-weak-sales-on-industry-wide-memory-dynamics?ref=yahoofinance&tlnk=yf-261105-8gc35pvp&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:09",
-                "description": "Key TakeawaysSandisk fell 14% today after a top phone chipmaker said its handset chip revenue dropped 26%, citing memory prices. That report confirms what Sandisk’s own phone and PC numbers already showed.",
-                "_timestamp": 1793891381.0
-            },
-            {
-                "title": "Arm Stock Plunges -- Smartphone Business Delivers a Major Disappointment",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/arm-stock-plunges-smartphone-business-150511881.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:05",
-                "description": "Arm Stock Tumbles as Memory Crunch Hits Apple and Android Chip Demand",
-                "_timestamp": 1793891111.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 ~15:00 UTC (approx. 1 hour ago)",
-            "Facts": "Qualcomm reported Q4 earnings with a weak guidance forecast and a 26% drop in handset chip sales due to memory constraints, triggering a broad post-election chip stock sell-off [CNBC Tech & AI, Yahoo Finance]. SK hynix (-9%), Sandisk (-14%), Micron (-10%), and Arm also tumbled amid supply and pricing pressures [Yahoo Finance Nasdaq].",
-            "Uncertainties": "The broader macroeconomic impact of the chip sector weakness on broader equities and whether the correction will prompt a lasting defensive rotation into safe-haven assets.",
-            "Macro_Context": "The Nasdaq 100 experienced a steep sell-off (-5.84%), indicating aggressive risk-off behavior and potential margin liquidation risks. However, US 10Y Treasury bond prices rose (yields falling) acting as a tailwind, while the USD remained flat (EUR/USD +0.09%). OANDA retail sentiment is heavily long at 71.8%.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD spiked earlier to highs near $4146 before pulling back sharply over the last 4 hours by $-50.12, reflecting high volatility from cross-asset liquidations and tech sector deleveraging. The immediate reaction is mixed, requiring neutrality as the market digests the tech fallout.",
-            "Orderflow_Price_Target": "N/A"
-        }
     },
     {
         "main_date": "Erstmeldung: 2026-11-02 21:53 | Letztes Update: 2026-11-05 15:18",
@@ -2035,42 +2575,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 05:07 | Letztes Update: 2026-11-05 14:00",
-        "original_date": "2026-11-05 05:07",
-        "_timestamp": 1793887200.0,
-        "articles": [
-            {
-                "title": "Cenovus Energy Inc (CVE) (Q3 2026) Earnings Call Highlights: Record $6. ...",
-                "link": "https://finance.yahoo.com/energy/articles/cenovus-energy-inc-cve-q3-050708079.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 05:07",
-                "description": "Cenovus Energy Inc (CVE) posted record quarterly operating margin and adjusted funds flow on the back of record oil sands output, cut net debt to $3 billion, and returned $1.9 billion to shareholders.",
-                "_timestamp": 1793855228.0
-            },
-            {
-                "title": "CVE Q3 Earnings Call Highlights Production Growth and Expansion Plans",
-                "link": "https://finance.yahoo.com/energy/articles/cve-q3-earnings-call-highlights-140000466.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 14:00",
-                "description": "Cenovus Energy's Q3 production topped 1 million BOE/d on oil sands strength, as lower operating costs, refining gains and major expansion projects fuel growth.",
-                "_timestamp": 1793887200.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 14:00 UTC (approx. 1h 40m ago)",
-            "Facts": "Cenovus Energy Inc (CVE) reported strong Q3 2026 earnings with production topping 1 million BOE/d, record operating margins, adjusted funds flow, and debt reduction. [Yahoo Finance Oil]",
-            "Uncertainties": "Company-specific corporate earnings reports have minimal direct transmission to precious metals macro pricing, beyond general equity sentiment.",
-            "Macro_Context": "EUR/USD is flat (+0.04%), US 10Y Treasury bond prices are slightly higher (yields falling, minor tailwind for gold), and Brent Crude is down (-3.74%), reflecting weak energy markets despite individual corporate production records. OANDA retail positioning is balanced at 50% long and 50% short.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "The news consists of corporate oil earnings reports which have no material impact on gold fundamentals. Gold's recent price action is driven by broader macroeconomic and yield dynamics rather than individual energy sector updates.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-02 17:15 | Letztes Update: 2026-11-05 13:56",
         "original_date": "2026-11-02 17:15",
         "_timestamp": 1793887019.0,
@@ -3181,258 +3685,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-03 12:00 | Letztes Update: 2026-11-05 12:30",
-        "original_date": "2026-11-03 12:00",
-        "_timestamp": 1793881800.0,
-        "articles": [
-            {
-                "title": "NexGold Intersects 4.16 g/t Gold over 7.0 Metres, 2.84 g/t Gold over 7.0 Metres and 1.94 g/t Gold over 9.0 Metres in RC Infill Drill Program at the Goldboro Gold Project, Nova Scotia",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/nexgold-intersects-4-16-g-120000431.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 12:00",
-                "description": "TORONTO, Nov. 03, 2026 (GLOBE NEWSWIRE) -- NexGold Mining Corp. (TSXV: NEXG; OTCQX: NXGCF) (“NexGold” or the “Company”) is pleased to provide additional results from its recently completed detailed Reverse Circulation Infill Drill Program (“RC Infill Drill Program”) at the Company’s Goldboro Gold Project in Nova Scotia (“Goldboro Project”). The RC Infill Drill Program, which consisted of 36,239 metres, was designed to infill specific areas of the Goldboro Mineral Resource within the planned West",
-                "_timestamp": 1793707200.0
-            },
-            {
-                "title": "Canagold Drills 79.3 g/t Gold (Au) and 8.76% Antimony (Sb) over 1.96 m; Within 4.62 m Averaging 37.7 g/t Au and 4.57% Sb",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/canagold-drills-79-3-g-120000823.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 12:00",
-                "description": "HIGHLIGHTSAssay results received from four additional holes include:37.7 grams per tonne (\"g/t\") gold (\"Au\") and 4.57% antimony (\"Sb\") over 4.62 m from 489 m down hole in NP26-10A, including:79.3 g/t Au and 8.76% Sb over 1.96m, and145.7 g/t Au and 18.57% Sb over 0.66m21.1g/t Au and 0.66% Sb over 9.44m from 250.4 m down hole in NP26-11, including:37.2 g/t Au and 1.29% Sb over 4.88 m and42.3 g/t Au and 5.81% Sb over 0.84 mVancouver, British Columbia--(Newsfile Corp. - November 3, 2026) - Canagold.",
-                "_timestamp": 1793707200.0
-            },
-            {
-                "title": "Thunder Gold Intersects Continuous Gold Mineralization Averaging 0.456 g/t Au Over 451.5 Metres at Tower Mountain, Ontario",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/thunder-gold-intersects-continuous-gold-123000095.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 12:30",
-                "description": "Thunder Bay, Ontario--(Newsfile Corp. - November 3, 2026) - Thunder Gold Corp. (TSXV: TGOL) (FSE: Z25) (OTCQB: TGOLF) (\"Thunder Gold\" or the \"Company\") is pleased to announce the following infill diamond drill results from the Company's flagship Tower Mountain Property, 40 kilometres west of Thunder Bay, Ontario.Highlights: TM26-222 intersected 0.456 g/t Au over 451.5 metres from 60.0 metres;Gold mineralization starts at 60.0 metres and is continuous to 511.5 metres;Includes intervals of 0.880..",
-                "_timestamp": 1793709000.0
-            },
-            {
-                "title": "Kirkland Lake Discoveries expands Mirado West gold zone beyond 1.1 kilometres",
-                "link": "https://finance.yahoo.com/video/kirkland-lake-discoveries-expands-mirado-163430106.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 16:34",
-                "description": "Kirkland Lake Discoveries CEO Stefan Sklepowicz joined Steve Darling from Proactive to announce new diamond drilling results from four step-out holes at the Mirado West Zone, part of the company's KL South property in Kirkland Lake, Ontario. Sklepowicz told Proactive that the latest results have expanded the mineralized footprint of Mirado West to more than 1,100 metres of strike length, highlighting a system that hosts both high-grade gold veins and broad zones of bulk-tonnage mineralization. The drilling has intersected gold from less than 10 metres below surface to depths approaching 480 metres downhole, with the mineralized corridor remaining open in multiple directions. One of the standout results came from step-out hole KLM26-048, which intersected 10.53 grams per tonne gold over 9.20 metres, including a particularly high-grade interval of 31.93 g/t gold over 3.00 metres. The same hole also encountered a broad zone of bulk-tonnage mineralization at depth, returning 0.64 g/t gold over 68.00 metres, including a higher-grade section of 1.25 g/t gold over 26.50 metres. The company said the results demonstrate the potential for high-grade gold shoots to occur alongside wider, continuous zones of mineralization, providing opportunities to build both grade and potential resource volume. Additional step-out holes also returned repeated wide gold intervals, including zones measuring approximately 16 to 26 metres, supporting the company's interpretation that mineralization extends across a substantial corridor. Sklepowicz said the combination of high-grade intervals and broader mineralized zones is particularly encouraging, pointing to a system with the potential to host multiple styles of gold mineralization. Mirado West is located immediately adjacent to the Mirado South and Mirado North zones along the same structural trend. The expansion of Mirado West to more than 1.1 kilometres of strike length alongside Mirado South strengthens the company's view that these neighbouring zones could form part of a much larger, district-scale gold system. The company believes the broader corridor could contain multiple high-grade shoots surrounded by extensive mineralized envelopes, with the latest drilling providing further evidence of its potential scale. #proactiveinvestors #kirklandlakediscoveries #tsxv #kldc #otcqb #klklf #mining #Gold #GoldExploration #MiradoWest #KLSouth #KirklandLake #OntarioMining #HighGradeGold #GoldDrilling #MineralExploration #CanadianMining #JuniorMining",
-                "_timestamp": 1793723670.0
-            },
-            {
-                "title": "Ameriwest advances Oregon copper-gold project with historic core resampling",
-                "link": "https://finance.yahoo.com/video/ameriwest-advances-oregon-copper-gold-191123588.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 19:11",
-                "description": "Ameriwest Critical Metals CEO David Watkinson joined Steve Darling from Proactive to discuss the company's efforts to advance the Bornite copper-gold-silver project in Oregon, including the reassessment of historic drill core, plans for an updated technical report and opportunities for additional exploration. Watkinson explained that the Bornite project was previously owned by Plexus Resources during the 1990s, when a pre-feasibility study and other technical work were completed. Ameriwest has since recovered a substantial portion of the historic drill core and transported it to Reno, Nevada, where the material is being logged and selected intervals resampled. The company has released results from the first three holes in a seven-hole resampling program. Watkins said the initial findings are generally consistent with historical results, with copper grades appearing somewhat higher and gold and silver values also showing improvements in several intervals. Additional assay results are expected as the remaining samples are processed, providing further information to compare against the original drilling data. The resampling initiative is designed to verify the historical exploration results and support the preparation of an updated technical report compliant with NI 43-101 standards. Ameriwest is targeting completion of that report in the first quarter of 2027. Alongside the technical work, the company is beginning the permitting process for additional confirmation drilling, which could take place next summer. A key focus is evaluating the potential of the project's breccia pipe deposit. Historical work identified a high-grade outer shell with grades exceeding 3% copper equivalent, while Ameriwest is also investigating whether the lower-grade interior portion of the structure could support economic mining under current metal price conditions. Watkinson said the company is undertaking technical studies to determine whether the interior of the breccia pipe could have mining potential, emphasizing that the work is intended to test that geological and economic concept. Ameriwest is also considering geophysical surveys to investigate whether additional breccia pipes may exist elsewhere in the area. The work could help identify extensions of the known mineralization at depth and investigate the possibility of a deeper feeder system. With historic core resampling underway, an updated technical report planned and permitting preparations beginning, Ameriwest is working to establish a clearer picture of the Bornite project's mineral potential and identify the next steps toward advancing the Oregon asset. #proactiveinvestors #ameriwestcriticalmetals #cse #awcm #otc #awlif #CopperExploration #GoldExploration #SilverExploration #BonnetProject #OregonMining #CriticalMetals #CopperMining #MineralExploration #MiningStocks #JuniorMining #NI43101",
-                "_timestamp": 1793733083.0
-            },
-            {
-                "title": "Trans Canada Gold Advances Phase 2-Drilling at the Harrison Lake District Scale Gold Project and Awaits PhotonAssay Results From Phase 1-Drilling",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/trans-canada-gold-advances-phase-214500561.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 21:45",
-                "description": "VANCOUVER, BC / ACCESS Newswire / November 3, 2026 / (TSXV:TTG)(OTCQB:TTGXF) (\"Trans Canada\" or the \"Company\"), is pleased to announce that the Company has successfully completed its most recent financing raising over $2.2 million dollars required to advance Phase-2 underground drilling and proposed exploration work on Bear Mountain at the Harrison Lake Gold Project located in Southwestern B.",
-                "_timestamp": 1793742300.0
-            },
-            {
-                "title": "Riversgold expands Northern Zone footprint 15-fold with strategic Kalgoorlie acquisition",
-                "link": "https://www.proactiveinvestors.com/companies/news/1101182/riversgold-expands-northern-zone-footprint-15-fold-with-strategic-kalgoorlie-acquisition-1101182.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 23:27",
-                "description": "Riversgold Ltd (ASX:RGL, FRA:RGV, OTC:RVSGF) has struck a binding agreement to acquire a 100% interest in a 12-square-kilometre exploration licence surrounding its Northern Zone Gold Project near Kalgoorlie, expanding the immediate project footprint by around 15 times. The company will...",
-                "_timestamp": 1793748420.0
-            },
-            {
-                "title": "Lightning Minerals' Warby tungsten targets advance toward maiden drilling",
-                "link": "https://finance.yahoo.com/video/lightning-minerals-warby-tungsten-targets-042622870.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 04:26",
-                "description": "Lightning Minerals Ltd managing director Troy Brice talked with Proactive about the completion of an expanded Phase 3 soil sampling program at the Warby Tungsten Project in North Queensland and the work now underway to refine targets for a maiden drill campaign. Brice said tungsten had emerged rapidly as an exploration focus at Warby after the company initially targeted gold at the project. The latest program comprised an additional 220 soil samples collected at 25-metre intervals along lines about 125 metres apart, adding greater detail to the company’s geological dataset. Brice also highlighted the discovery of further historical workings and visible wolframite during field activities. “Every time we go there, we find more, see more, it de-risks it for us, and we get more excited about the prospect,” he said. Lightning Minerals plans to combine the Phase 3 assay results with LiDAR surveying and petrological analysis being undertaken by the University of New South Wales. These datasets will help improve understanding of the controls on mineralisation and support the ranking of potential drill targets for 2027. He also provided an update on the company’s nearby gold exploration, where a Phase 2 drilling campaign was nearing completion, with assay results expected to provide the next important dataset. Visit Proactive’s YouTube channel for more interviews and company updates. If you found the video useful, give it a like, subscribe to the channel and enable notifications so you do not miss future content. #LightningMinerals #WarbyTungsten #Tungsten #CriticalMinerals #ASXL1M #MineralExploration #MiningExploration #QueenslandMining #GoldExploration #CopperExploration #Drilling #Wolframite #LiDAR #InvestorNews #ProactiveInvestors",
-                "_timestamp": 1793766382.0
-            },
-            {
-                "title": "Barton Gold begins scoping study for Challenger mine feed",
-                "link": "https://www.mining-technology.com/news/barton-gold-scoping-study-challenger-mine/?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 08:40",
-                "description": "The decision follows a recent JORC resource update showing underground resources rose to 230,000oz at 3.65g/t gold.",
-                "_timestamp": 1793781619.0
-            },
-            {
-                "title": "Independence Gold Reports Additional Gold-Silver Intersections and Gives an Exploration Update at the 3Ts Project, BC",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/independence-gold-reports-additional-gold-100000328.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 10:00",
-                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 4, 2026) - Independence Gold Corp. (TSXV: IGO) (OTCQB: IEGCF) (FSE: 625) (the \"Company\") is pleased to announce additional gold and silver results from the Ian, Dixie and Goofy veins at its wholly-owned 3Ts Gold and Silver Project. Situated approximately 185 kilometres southwest of Prince George, British Columbia, the 3Ts Project comprises thirty-one mineral claims covering approximately 35,486 hectares in the Nechako Plateau region. The...",
-                "_timestamp": 1793786400.0
-            },
-            {
-                "title": "A2GOLD COMPLETES INITIAL TARGET PENTE RC DRILLING AT EASTSIDE GOLD-SILVER PROJECT",
-                "link": "https://finance.yahoo.com/news/a2gold-completes-initial-target-pente-113000877.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 11:30",
-                "description": "A2Gold Corp. (\"A2Gold\" or the \"Company\") (TSXV: AUAU) (OTCQX: AUXXF) is pleased to announce the completion of an initial RC drill program at Target Pente at the Company's flagship Eastside Gold-Silver Project (\"Eastside\" or the \"Project\") near Tonopah, Nevada.",
-                "_timestamp": 1793791800.0
-            },
-            {
-                "title": "Snowline Gold Receives PDAC’s Bill Dennis Award for Valley Gold Discovery",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/snowline-gold-receives-pdac-bill-110000854.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 11:00",
-                "description": "VANCOUVER, British Columbia, Nov. 04, 2026 (GLOBE NEWSWIRE) -- SNOWLINE GOLD CORP. (TSX: SGD) (OTCQB: SNWGF) (the “Company” or “Snowline”) is pleased to announce that it has been named as recipient of the 2027 Bill Dennis Award by the Prospectors & Developers Association of Canada (\"PDAC\") in recognition of the discovery of the Valley gold deposit (“Valley”) at its Rogue Project in Canada's Yukon Territory. Considered one of the industry's highest honours for mineral exploration achievement, the",
-                "_timestamp": 1793790000.0
-            },
-            {
-                "title": "West Red Lake Gold Announces Integrated PFS Delivering C$764 Million Post-Tax NPV and Annual Gold Production of 100,000 Ounces Once Rowan Enters Production",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/west-red-lake-gold-announces-103000899.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 10:30",
-                "description": "VANCOUVER, British Columbia, Nov. 04, 2026 (GLOBE NEWSWIRE) -- West Red Lake Gold Mines Ltd. (“West Red Lake Gold” or “WRLG” or the “Company”) (TSXV: WRLG) (OTCQX: WRLGF) is pleased to announce the results of an integrated Red Lake pre-feasibility study (the “Integrated PFS”), prepared in accordance with National Instrument 43-101- Standards of Disclosure for Mineral Projects (“NI 43-101”), for the Company’s 100% owned Madsen Mine (the “Madsen Mine” or “Madsen”) and Rowan Project (“Rowan”) in th",
-                "_timestamp": 1793788200.0
-            },
-            {
-                "title": "Scottie Resources Hits 6.0 g/t Gold over 21.20 m and 14.4 g/t Gold over 8.00 m at Blueberry Contact Zone",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/scottie-resources-hits-6-0-123000532.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 12:30",
-                "description": "Broad, High-Grade Gold Intercepts Continue to Demonstrate High Grade Continuity and Expansion Potential at the Blueberry Contact ZoneVancouver, British Columbia--(Newsfile Corp. - November 4, 2026) - Scottie Resources Corp. (TSXV: SCOT) (OTCQB: SCTSF) (FSE: SR80) (\"Scottie\" or the \"Company\") is pleased to report additional high-grade gold intercepts from its 2026 drilling at the Blueberry Contact Zone within the Scottie Gold Mine Project. The road-accessible Scottie Gold Mine Project, which...",
-                "_timestamp": 1793795400.0
-            },
-            {
-                "title": "Great Pacific Gold Provides Wild Dog Drilling Update as Exploration Advances to Elamaraka",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/great-pacific-gold-provides-wild-123000267.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 12:30",
-                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 4, 2026) - Great Pacific Gold Corp. (TSXV: GPAC) (OTCQX: GPGCF) (FSE: 0B3) (\"Great Pacific Gold\", \"GPAC\" or the \"Company\") provides an update on diamond drilling and regional exploration at its flagship Wild Dog Project (the \"Project\") in East New Britain Province, Papua New Guinea.The Company has completed 16 diamond drill holes totalling approximately 3,600 metres at Magiabe and Mengmut during the current drilling phase, bringing...",
-                "_timestamp": 1793795400.0
-            },
-            {
-                "title": "High-Grade Gold Near Surface at Duquesne West Including 7.0 g/t over 24.8 m",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/high-grade-gold-near-surface-144300048.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 14:43",
-                "description": "TORONTO, Nov. 04, 2026 (GLOBE NEWSWIRE) -- GLOBEX MINING ENTERPRISES INC. (GMX – Toronto Stock Exchange, G1MN – Frankfurt, Stuttgart, Berlin, Munich, Tradegate, Lang & Schwarz, LS Exchange, TTMzero, Düsseldorf and Quotrix Düsseldorf Stock Exchanges and GLBXF – OTCQX International in the US) is pleased to announce that Emperor Metals Inc. (Emperor) have reported results from six drill holes from their 2026 drill campaign at the Duquesne West Project, which is under option from Duparquet Assets Lt",
-                "_timestamp": 1793803380.0
-            },
-            {
-                "title": "Emperor Hits High-Grade Gold near Surface",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/emperor-hits-high-grade-gold-133000116.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 13:30",
-                "description": "Drilling Returns 24.8 m at 7.0 g/t gold, 8.4 m at 8.7 g/t gold and 18.9 m at 4.0 g/t goldEdmonton, Alberta--(Newsfile Corp. - November 4, 2026) - Emperor Metals Inc. (\"Emperor\") (CSE: AUOZ) (OTCQB: EMAUF) (FSE: 9NH) is pleased to report final assay results from six new drillholes from its 2026 exploration campaign at the Duquesne West Project. The program currently integrates more than 20,479 metres (m) of new drilling with 8,000 m of targeted historical core resampling, with the resumption of..",
-                "_timestamp": 1793799000.0
-            },
-            {
-                "title": "NSJ Antimony Corp (NSJ) (9PZ0) Announces Completion of First Phase Drilling Program",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/nsj-antimony-corp-nsj-9pz0-142900422.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 14:29",
-                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 4, 2026) - NSJ Antimony Corp. (CSE: NSJ) (FSE: 9PZ0) (the \"Company\" or \"NSJ\") announces completion of the first phase of drilling at its Antimony 2.0 project in New Brunswick, Canada.Highlights11 drill holes completed, with 3,469 metres of NQ drilling.Two areas of anomalous antimony and gold soil results tested.Core logging and sample selection underway.Drilling and next stepsThe drilling aimed to test for mineralization in bedrock...",
-                "_timestamp": 1793802540.0
-            },
-            {
-                "title": "Great Red Lake Gold adds Ontario copper project to keep exploration moving year-round",
-                "link": "https://www.proactiveinvestors.com/companies/news/1101242/great-red-lake-gold-adds-ontario-copper-project-to-keep-exploration-moving-year-round-1101242.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 17:30",
-                "description": "Great Red Lake Gold Corp. (CSE:RLGC) is betting that a copper project in Ontario can help solve a problem common to junior miners: keeping exploration moving when winter shuts down fieldwork. The company has secured an option to acquire up to 100% of the Bilton-Brown project, where...",
-                "_timestamp": 1793813400.0
-            },
-            {
-                "title": "Perpetua Announces New Gold Discovery at Stibnite Gold Project & Continued High Grades from Clark Tunnel Fault Zone",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/perpetua-announces-gold-discovery-stibnite-215300207.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 21:53",
-                "description": "Perpetua Resources Corp. (Nasdaq: PPTA) (TSX: PPTA) (\"Perpetua Resources,\" \"Perpetua,\" or the \"Company\") today provided an update on exploration activities at the Company's Stibnite Gold Project (the \"Project\") in central Idaho. The 2026 Exploration Drilling Program is now complete with over 16,000 meters of core drilling across the Project. The program's objectives included upgrading in-pit and near-pit inferred resources, extending mineralization along strike, testing key underground targets,",
-                "_timestamp": 1793829180.0
-            },
-            {
-                "title": "Horizon Gold: Gum Creek infrastructure gives 2.3Moz redevelopment a head start",
-                "link": "https://www.proactiveinvestors.com/companies/news/1101258/horizon-gold-gum-creek-infrastructure-gives-2-3moz-redevelopment-a-head-start-1101258.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 00:09",
-                "description": "Horizon Gold Ltd (ASX:HRN, OTC:HZGLF, FRA:HO0) is approaching development of its Gum Creek Gold Project with an advantage many emerging gold producers do not have: much of the physical framework of a mining operation is already there. The 100%-owned Western Australian project is not a...",
-                "_timestamp": 1793837340.0
-            },
-            {
-                "title": "Pacific Empire Minerals Corp. Completes 2026 Diamond Drill Program at its Trident and Pinnacle Copper-Gold Properties",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/pacific-empire-minerals-corp-completes-123000769.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 12:30",
-                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - Pacific Empire Minerals Corp. (TSXV: PEMC) (\"Pacific Empire\", \"PEMC\" or the \"Company\"), a British Columbia copper-gold explorer, is pleased to announce the completion of its 2026 diamond drill program at its Trident and Pinnacle properties (the \"Program\"), located in the Quesnel Terrane of north-central British Columbia. The Company completed 14 diamond drill holes totalling 4,548.5 metres: eight holes (2,410.6 metres) at Trident",
-                "_timestamp": 1793881800.0
-            },
-            {
-                "title": "Au Gold Corp Samples 40 g/t and 22 g/t Gold from the Harvey's Reef Complex Defining Additional High-Priority Drill Targets and Engages Prestige Drilling at the Havelock Gold-Antimony Project",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/au-gold-corp-samples-40-123000154.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 12:30",
-                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - Au Gold Corp (TSXV: AUGC) (the \"Company\" or \"AUGC\") is pleased to provide a target development update for the Havelock Gold-Antimony project in Victoria, Australia.Highlights:Harvey's Reef (north) - Select grab samples returned 22 and 3.5 grams per tonne (\"g/t\") gold from historic mining waste piles.Harvey's Reef (central and south) - Surface grab samples from shallow workings along trend 600 m south returned 25, 16, and 16 g/t..",
-                "_timestamp": 1793881800.0
-            },
-            {
-                "title": "Sitka Gold Drills 41.7 Metres of 2.20 g/t Gold from Surface, Including 1.2 Metres of 53.10 g/t Gold, Within 74.8 Metres of 1.31 g/t Gold, Confirming High-Grade Mineralization at the Contact Zone, RC Gold Project, Yukon",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/sitka-gold-drills-41-7-123000922.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 12:30",
-                "description": "Drilling confirms and expands significant gold mineralization at the Contact and Bear Paw targetsDrill Hole DDRCCC-26-162 intersected 74.8 m of 1.31 g/t gold from surface, including 41.7 m of 2.20 g/t gold and 1.2 m of 53.10 g/t gold, at the Contact Zone Drill hole DDRCCC-26-160 intersected 48.6 m of 1.18 g/t gold, including 1.8 m of 4.27 g/t gold, at the Bear Paw Zone Drilling continues to outline and define broad intervals of reduced intrusion related gold style mineralization along with...",
-                "_timestamp": 1793881800.0
-            },
-            {
-                "title": "Renegade Gold Identifies New Gold Targets Along the LP-Uchi Corridor in Red Lake",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/renegade-gold-identifies-gold-targets-122000637.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 12:20",
-                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - Renegade Gold Inc. (TSXV: RAGE) (OTCQB: RENGF) (FSE: 0700) (\"Renegade\" or the \"Company\") is pleased to report results from its 2026 first-pass till and soil geochemical sampling at the LP-Uchi Project, located approximately 50 km east of Red Lake, Ontario. The program identified multiple new, multi-km gold anomalies along the LP fault corridor, defining several targets for follow-up exploration.These results build upon the...",
-                "_timestamp": 1793881200.0
-            },
-            {
-                "title": "Gold Terra Announces 6.61 g/t Gold over 7.35 Metres Including 31.6 g/t Gold over 1.1 Metres on the Campbell Shear Zone 103N Extension, Con Mine, Yellowknife, NWT",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-terra-announces-6-61-120000025.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 12:00",
-                "description": "VANCOUVER, BC / ACCESS Newswire / November 5, 2026 / . (TSXV:YGT)(Frankfurt:TX0)(OTCQB:YGTFF) (\"Gold Terra\" or the \"Company\") is pleased to announce initial drill results on Zone 103N, considered by Gold Terra to be the northern extension of the Campbell Shear within the historical Con Mine and part of the Con Mine Option (\"CMO\").",
-                "_timestamp": 1793880000.0
-            },
-            {
-                "title": "Graycliff Reports High Grade Gold Results in All Five New Drill Holes",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/graycliff-reports-high-grade-gold-120000298.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 12:00",
-                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - Graycliff Exploration Limited (CSE: GRAY) (OTCQB: GRYCF) (FSE: GE0) (\"Graycliff\" or the \"Company\") is pleased to provide additional high-grade gold assay results from its ongoing exploration drilling campaign at its 100-per-cent-owned Shakespeare gold project located near Sudbury, Ontario.The fourth large core (HQ) metallurgical drill hole, Hole D-26, and all four subsequent drill holes, Holes J-62-26 through J-65-26, intersected",
-                "_timestamp": 1793880000.0
-            },
-            {
-                "title": "American Pacific Discovers New Gold Zone 800 Metres from Historical Mine Areas at Madison Copper-Gold Project, Montana",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/american-pacific-discovers-gold-zone-120000467.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 12:00",
-                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 5, 2026) - American Pacific Mining Corp. (CSE: USGD) (OTCQX: USGDF) (FSE: 1QC) (WKN: A422L8) (\"American Pacific\" or the \"Company\") is pleased to report assay results from four exploration holes testing separate targets at its 100%-owned Madison Copper-Gold Project in Montana (\"Madison\" or the \"Project\"). Gold mineralization was intersected in all three reverse circulation (\"RC\") holes (M26RC-01, M26RC-02, M26RC-03), while core-hole M26C-03.",
-                "_timestamp": 1793880000.0
-            },
-            {
-                "title": "Silver Bow Mining Intersects 312.7 g/t AgEq Over 11.2 m including 462.7 g/t AgEq Over 3.6 m at the Rainbow Block",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/silver-bow-mining-intersects-312-122800604.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 12:28",
-                "description": "Emily Vein mineralization intersected in two drill holes; SBM26-05 also returns680.8 g/t AgEq over 1.3 m from the Rainbow Vein BUTTE, Mont., Nov. 05, 2026 (GLOBE NEWSWIRE) -- Silver Bow Mining Corp. (NYSE American: SBMT) (\"Silver Bow Mining\" or the \"Company\") is pleased to announce its first assay results from the Emily Vein, located approximately 245 meters (800 feet) north of the Badger Vein at its Rainbow Block Project in Butte, Montana. Drilling intersected high-grade silver-gold-zinc-lead m",
-                "_timestamp": 1793881680.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "Ongoing / Breaking within last 24h (Latest reports across multiple junior mining exploration projects published continuously through Nov 3-5, 2026, relative to 2026-11-05 13:43 UTC).",
-            "Facts": "Multiple junior mining and exploration companies released ongoing drill assays and resource updates between November 3 and November 5, 2026. Highlights include Sitka Gold intersecting 41.7m of 2.20 g/t gold from surface at the RC Gold Project [Yahoo Finance Gold], Snowline Gold receiving the 2027 Bill Dennis Award for its Valley gold discovery [Yahoo Finance Gold], and West Red Lake Gold announcing an integrated PFS for Madsen and Rowan delivering a C$764M post-tax NPV [Yahoo Finance Gold]. These represent standard corporate exploration updates and resource announcements rather than macro-driven systemic shocks.",
-            "Uncertainties": "Whether the broader junior mining exploration results will translate into economic commercial production given prevailing capital expenditure constraints and broader market liquidity conditions.",
-            "Macro_Context": "EUR/USD is down 0.26% reflecting a modest USD strengthening headwind for gold, while US 10Y Treasury yields remain relatively stable. Brent Crude dropped sharply by 5.18%. Global OANDA retail positioning is heavily net long at 71.9%, serving as a contrarian bearish overhang alongside overhead sell-limit liquidity walls.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "Gold prices have drifted higher over the past 24 hours (+ $78.18) driven by broader structural trends, but the corporate drill results and exploration news flow are recurring micro-level events that lack systemic macro impact. Furthermore, retail sentiment is extremely crowded on the long side (71.9%), limiting fresh bullish continuation without a new macro catalyst.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-05 12:30",
         "original_date": "2026-11-05 12:30",
         "_timestamp": 1793881800.0,
@@ -3882,34 +4134,6 @@
             "Probability_Percent": 40,
             "Past_Price_Action_Cause": "The recent corporate press release is micro-level mining news specific to a single project and has negligible macro-driven momentum for spot XAU/USD. Furthermore, current price action shows consolidation well below earlier daily highs with an ATR ratio of 0.03x for the last 4h, indicating the prior 24h expansion (+US$78.18) is fully digested.",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 10:44",
-        "original_date": "2026-11-05 10:44",
-        "_timestamp": 1793875453.0,
-        "articles": [
-            {
-                "title": "Saudi-led coalition says it intercepted a Houthi-fired missile in the Medina region",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-intercepted-houthis-fired-missile-medina",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 10:44",
-                "description": "Saudi-led coalition says it intercepted a Houthi-fired missile in the Medina region\n\n    \n    \n\n        \n    \n                The Saudi-led military coalition said on Thursday it had intercepted a missile fired by the Houthis towards the Medina region.\n\n“Interception and destruction of a ballistic missile fired by the Houthi terrorist militia in the Medina region,” the coalition spokesman Colonel Turki Al-Malki said.\n\nEarlier, Saudi Arabia's civil defence issued an alert for the Yanbu Governorate near the Red Sea in Medina province.",
-                "_timestamp": 1793875453.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 ~10:00 UTC (approx. 1.5h ago)",
-            "Facts": "The Saudi-led military coalition intercepted and destroyed a ballistic missile fired by Houthi militia toward the Medina region, with civil defence issuing alerts near Yanbu Governorate [Middle East Eye].",
-            "Uncertainties": "Extent of any debris damage on the ground or potential follow-up retaliatory strikes remain unconfirmed.",
-            "Macro_Context": "EUR/USD is dropping (-0.36%, USD strengthening acting as a headwind), while US 10Y Treasury bond prices are rising (+0.26%, yields falling as a tailwind). Brent crude is down sharply (-6.10%), reflecting subdued broader energy fear premiums despite regional missile interceptions.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "XAU/USD has rallied strongly over the past 24 hours (+ $88.84) driven by broader safe-haven flows, with the current 4h move remaining modest relative to daily ATR (0.15x), indicating room for continuation toward immediate liquidity clusters.",
-            "Orderflow_Price_Target": "4140.05"
         }
     },
     {
@@ -5181,33 +5405,6 @@
             "Probability_Percent": 56,
             "Past_Price_Action_Cause": "Gold has gained $95.37 over the last 24 hours, driven by broader geopolitical developments and macro tailwinds. The 4h move vs Daily ATR ratio is 0.21x, indicating that while a strong rally has occurred, short-term momentum is not yet overly exhausted and room remains for testing immediate liquidity zones.",
             "Orderflow_Price_Target": "4139.54"
-        }
-    },
-    {
-        "main_date": "2026-11-05 04:42",
-        "original_date": "2026-11-05 04:42",
-        "_timestamp": 1793853768.0,
-        "articles": [
-            {
-                "title": "3 Canadian Dividend Stocks With Yields Over 3%",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/3-canadian-dividend-stocks-yields-044248133.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 04:42",
-                "description": "Global oil prices recently fell after the US midterm elections, taking some heat out of inflation and interest rate worries. For Australian dividend stocks, that kind of relief can make steady cash payouts feel even more valuable, as investors hunt for income they can see and touch. This article highlights three higher yielding local dividend payers with at least 3% yields and a focus on coverage, growth and consistency. The three stocks highlighted here offer a compelling starting point if...",
-                "_timestamp": 1793853768.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Global oil prices recently experienced a pullback following the US midterm elections, reducing immediate inflation and interest rate pressures. This broad macroeconomic shift indirectly influences income-seeking behaviors and regional asset valuations. Source: [Yahoo Finance Oil]",
-            "Uncertainties": "The direct transmission mechanism between Canadian/Australian dividend equities and spot gold pricing is weak, leaving the exact short-term directional catalyst for precious metals unconfirmed by this specific report.",
-            "Macro_Context": "EUR/USD is down 0.16% indicating slight USD strengthening, while US 10Y Treasury bond prices are up 0.35% (falling yields), acting as a supportive tailwind for gold. Brent oil dropped significantly (-8.47%), which alleviates energy-driven inflation and trims global inflationary hedges.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD has gained $99.67 over the last 24 hours, currently trading near $4122.30. The 4h move vs. daily ATR ratio is 0.26x, showing steady consolidation after the recent upward push, largely driven by broader macro positioning rather than this specific oil/equity commentary.",
-            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -7700,84 +7897,6 @@
             "Probability_Percent": 45,
             "Past_Price_Action_Cause": "XAU/USD has risen strongly over the past 24 hours (+$134.40) to $4062.16, but the specific Canadian trade surplus news is micro-economic regional data and has no direct causal relationship with the broader macro gold rally.",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "2026-11-04 16:35",
-        "original_date": "2026-11-04 16:35",
-        "_timestamp": 1793810100.0,
-        "articles": [
-            {
-                "title": "RELX (RELX) Exit: Generative AI Headwinds Prompt Portfolio Sale",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/relx-relx-exit-generative-ai-163500662.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 16:35",
-                "description": "Hennessy Fund released its Q3 2026 investor letter for the “Hennessy Focus Fund”. During the third quarter, U.S. equity markets were characterized by a concentration in mega-cap technology stocks, overshadowing broader market performance. The letter can be downloaded here. Rising long-term interest rates from a “higher for longer” Federal Reserve policy, coupled with increasing crude […]",
-                "_timestamp": 1793810100.0
-            },
-            {
-                "title": "Reevaluating CDW Corp. (CDW): Moving On from a “Good But Not Great” Business",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/reevaluating-cdw-corp-cdw-moving-163051376.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 16:30",
-                "description": "Hennessy Fund released its Q3 2026 investor letter for the “Hennessy Focus Fund”. During the third quarter, U.S. equity markets were characterized by a concentration in mega-cap technology stocks, overshadowing broader market performance. The letter can be downloaded here. Rising long-term interest rates from a “higher for longer” Federal Reserve policy, coupled with increasing crude […]",
-                "_timestamp": 1793809851.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Hennessy Fund released its Q3 2026 investor letter for the Hennessy Focus Fund, noting that U.S. equity markets in Q3 were dominated by mega-cap technology stocks while highlighting generative AI headwinds leading to a portfolio sale of RELX (RELX) and a reassessment of CDW Corp. (CDW) amidst rising long-term interest rates from 'higher for longer' Federal Reserve policy and fluctuating crude oil prices [Yahoo Finance Oil].",
-            "Uncertainties": "The broader macroeconomic impact of corporate portfolio shifts away from legacy tech/publishing and how persistent high interest rates will affect overall equity valuations remain speculative.",
-            "Macro_Context": "EUR/USD is higher (+0.20%), indicating mild USD weakness, while US 10Y Treasury bond prices are up (+0.34%, yields falling), providing a supportive macro backdrop for gold. Brent crude oil fell significantly (-8.36%), easing inflationary pressures. OANDA retail positioning is heavily long at 72.2%, acting as a contrarian headwinds indicator, but orderflow liquidity zones show prominent overlap clusters above and below current prices.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 56,
-            "Past_Price_Action_Cause": "XAU/USD has risen strongly over the past 24 hours (+$134.40) but the 4h move vs Daily ATR ratio sits at a modest 0.19x, indicating that despite a strong daily uptrend, the immediate 4-hour price action is not excessively overextended or fully priced in for ongoing momentum.",
-            "Orderflow_Price_Target": "4070.94"
-        }
-    },
-    {
-        "main_date": "2026-11-04 16:15",
-        "original_date": "2026-11-04 06:57",
-        "_timestamp": 1793808959.0,
-        "articles": [
-            {
-                "title": "VIDEO: Iranians mark Natl. Day of Fighting Global Arrogance",
-                "link": "https://en.mehrnews.com/news/249157/VIDEO-Iranians-mark-Natl-Day-of-Fighting-Global-Arrogance",
-                "source": "Mehr News Agency",
-                "date": "2026-11-04 06:57",
-                "description": "TEHRAN, Nov. 04 (MNA) – People from various walks of life in various cities of the country took to the streets to mark the National Day of Fighting the Global Arrogance.",
-                "_timestamp": 1793775455.0
-            },
-            {
-                "title": "Iran marks Natl. Day of Fighting Global Arrogance amid threat",
-                "link": "https://en.mehrnews.com/news/249154/Iran-marks-Natl-Day-of-Fighting-Global-Arrogance-amid-threat",
-                "source": "Mehr News Agency",
-                "date": "2026-11-04 06:22",
-                "description": "TEHRAN, Nov. 04 (MNA) – Iranians from all walks of life are taking to the streets across the country to mark the National Day of Fighting Global Arrogance, amid renewed threats of military aggression by the United States.",
-                "_timestamp": 1793773321.0
-            },
-            {
-                "title": "Iran's Students’ Day rallies resound with defiance: ‘pledge to martyrs, battle against arrogance’",
-                "link": "https://www.tehrantimes.com/news/531837/Iran-s-students-day-rallies-resound-with-defiance-pledge-to",
-                "source": "Tehran Times",
-                "date": "2026-11-04 16:15",
-                "description": "TEHRAN — In a powerful display of national unity, defiance and unwavering resolve, millions of Iranians took to the streets across the country on Wednesday, November 4, marking Students’ Day and the National Day of Fighting Global Arrogance. From the capital to cities and towns across the country, the rallies carried a message of remembrance, resistance and national pride, as participants renewed their pledge to the martyrs under the slogan: “Pledge to the Martyrs; Battle Against Arrogance.”",
-                "_timestamp": 1793808959.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Facts": "Millions of Iranians took to the streets across Iran to mark Students' Day and the National Day of Fighting Global Arrogance, amidst renewed threats of military aggression by the United States [Mehr News Agency, Tehran Times].",
-            "Uncertainties": "Whether the renewed US threats will materialize into actual military escalation or remain purely rhetorical.",
-            "Macro_Context": "EUR/USD is strengthening (+0.20%) indicating USD weakness, and US 10Y Treasury bond prices are rising (yields falling), both of which act as tailwinds for gold. Brent crude oil dropped significantly (-8.36%), showing broader commodity deflation, but geopolitical risk in the Middle East continues to provide safe-haven support for precious metals. Global OANDA retail sentiment is heavily long at 72.2%, suggesting potential contrarian headwinds.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "XAU/USD has risen significantly over the past 24 hours (+$134.40), but the 4h move vs daily ATR ratio is currently at 0.19x, indicating that the immediate momentum is moderate and not yet fully exhausted or overextended on a short-term basis.",
-            "Orderflow_Price_Target": "4070.94"
         }
     }
 ]

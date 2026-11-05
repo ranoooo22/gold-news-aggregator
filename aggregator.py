@@ -21,13 +21,19 @@ else:
 
 MODEL_NAME = "gemini-3.5-flash-lite"
 
-# Globale & Regionale RSS-Feeds
+# Globale, Regionale & Tech/Makro RSS-Feeds
 FEEDS = {
-    # Westliche Leitmedien
+    # Westliche Rohstoff- & Finanzmedien
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
     "Investing.com": "https://www.investing.com/rss/news_11.rss",
     "Yahoo Finance Gold": "https://finance.yahoo.com/rss/headline?s=GC=F",
     "Yahoo Finance Oil": "https://finance.yahoo.com/rss/headline?s=CL=F",
+    
+    # Tech, AI & Weltwirtschaft (Global Macro & Equities)
+    "CNBC Tech & AI": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910",
+    "CNBC Economy": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
+    "Yahoo Finance Nasdaq": "https://finance.yahoo.com/rss/headline?s=%5EIXIC,NVDA,MSFT,AAPL,TSM",
+    "MarketWatch Macro": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
     
     # Regional Finance & Energie (Golfregion)
     "Zawya": "https://www.zawya.com/en/rss",
@@ -43,11 +49,19 @@ FEEDS = {
 }
 
 IMPACT_KEYWORDS = [
+    # Rohstoffe & Geopolitik
     "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
     "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
     "idf", "missile", "strike", "attack", "drone", "sanction", "nuclear", 
-    "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "fed", 
-    "inflation", "rate", "central bank", "brics", "dollar", "treasury", "tariff", "saudi"
+    "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "saudi",
+    # Makro, Zinsen & Weltwirtschaft
+    "fed", "inflation", "rate", "central bank", "brics", "dollar", "treasury", 
+    "tariff", "recession", "gdp", "unemployment", "payroll", "cpi", "pmi", 
+    "stimulus", "china", "default", "liquidity", "debt", "yield",
+    # Tech, AI & Aktienmarkt-Schocks
+    "nvidia", "nvda", "nasdaq", "s&p", "semiconductor", "chip", "taiwan", 
+    "tsmc", "artificial intelligence", "ai ", "big tech", "microsoft", "apple",
+    "earnings", "selloff", "sell-off", "crash", "bubble", "rout", "margin"
 ]
 
 DATA_FILE = "data.json"
@@ -101,7 +115,7 @@ def fetch_single_feed(source_url):
 
 def fetch_new_articles(existing_urls):
     articles = []
-    with ThreadPoolExecutor(max_workers=12) as executor:
+    with ThreadPoolExecutor(max_workers=16) as executor:
         results = executor.map(fetch_single_feed, FEEDS.items())
         for feed_articles in results:
             for a in feed_articles:
@@ -397,16 +411,18 @@ def fetch_oanda_price_and_volatility():
         return f"OANDA Candle Fehler: {e}", [], {}
 
 def fetch_macro_context():
+    """Holt 24h-Veränderungen für USD Proxy (EUR_USD), 10Y Bonds (USB10Y_USD), Brent Öl (BCO_USD) & Nasdaq 100 (NAS100_USD)."""
     if not OANDA_API_KEY:
         return "Keine Makro-Korrelationsdaten verfügbar.", {}
         
     instruments = {
         "EUR_USD": "EUR/USD (Inverse USD Proxy)",
         "USB10Y_USD": "US 10Y Treasury Bond Price (Inverse Yield Proxy)",
+        "NAS100_USD": "Nasdaq 100 Tech/AI Index (Risk-On/Off & Margin Proxy)",
         "BCO_USD": "Brent Crude Oil (USD)"
     }
     headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
-    macro_lines = ["Cross-Asset Macro Context (24h Change):"]
+    macro_lines = ["Cross-Asset Macro & Tech Context (24h Change):"]
     macro_summary = {}
 
     for instr, label in instruments.items():
@@ -427,6 +443,9 @@ def fetch_macro_context():
                     elif instr == "USB10Y_USD":
                         yield_dir = "Bond Prices Down / Yields Rising (Headwind for Gold)" if pct_change < -0.20 else ("Bond Prices Up / Yields Falling (Tailwind for Gold)" if pct_change > 0.20 else "Yields Stable")
                         macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%) -> {yield_dir}")
+                    elif instr == "NAS100_USD":
+                        tech_dir = "Severe Tech Selloff (Watch for Margin-Call Liquidation OR Safe-Haven Rotation)" if pct_change <= -1.5 else ("Strong Tech/AI Risk-On Rally (Capital rotating into Equities)" if pct_change >= 1.2 else "Tech Equities Moderate")
+                        macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%) -> {tech_dir}")
                     else:
                         macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%)")
         except Exception as e:
@@ -611,22 +630,23 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
     now_utc_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
     news_data = "\n".join([f"Source: [{a['source']}]\nArticle Published Date: {a['date']} UTC\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in articles_in_cluster])
     
-    prompt = f"""You are a senior quantitative gold & macro strategist. Analyze these news reports, the 24h price & ATR volatility metrics, cross-asset macro correlations (USD, 10Y Bonds, Brent Oil), and multi-source orderflow liquidity (OANDA + Yahoo COMEX Futures). Output ONLY a valid JSON object without markdown blocks. Write all values in English!
+    prompt = f"""You are a senior quantitative gold, macro & tech-equity strategist. Analyze these news reports, the 24h price & ATR volatility metrics, cross-asset macro correlations (USD, 10Y Bonds, Nasdaq 100 Tech/AI, Brent Oil), and multi-source orderflow liquidity (OANDA + Yahoo COMEX Futures). Output ONLY a valid JSON object without markdown blocks. Write all values in English!
     
     Current Reference Time: {now_utc_str}
 
     CRITICAL RULE 0 - ACTUAL EVENT TIME vs. ARTICLE PUBLICATION TIME:
-    - Determine when the underlying physical event, strike, or official announcement ACTUALLY happened based on the text and article dates relative to 'Current Reference Time' ({now_utc_str}).
-    - State this clearly in 'Event_Timestamp' (e.g., '2026-11-04 ~18:00 UTC (approx. 16h ago)' or 'Ongoing / Breaking within last 2h').
+    - Determine when the underlying physical event, earnings release, strike, or official announcement ACTUALLY happened based on the text and article dates relative to 'Current Reference Time' ({now_utc_str}).
+    - State this clearly in 'Event_Timestamp' (e.g., '2026-11-04 ~18:00 UTC (approx. 16h ago)' or 'Breaking within last 2h').
     - If the actual core incident occurred more than 12 hours ago and the latest articles are merely follow-up commentary, summaries, or retrospective analyses without a fresh escalation, you MUST downgrade 'XAUUSD_Impact' to 'Neutral' (or lower 'Probability_Percent' below 50) and set 'Impact_Timing' to 'Past (Already Priced In)'.
 
     CRITICAL RULE 1 - 'PRICED-IN' EXHAUSTION CHECK:
     - Check the '4h Move vs. Daily ATR Ratio' in market volatility metrics below.
     - If XAU/USD has ALREADY moved by >= 1.2x of the Estimated Daily ATR in the direction of the news over the last 4-12 hours, you MUST downgrade 'XAUUSD_Impact' to 'Neutral' (or lower 'Probability_Percent' below 55) and set 'Impact_Timing' to 'Past (Already Priced In)'. Never chase an exhausted spike!
 
-    CRITICAL RULE 2 - MACRO HEADWIND CHECK:
-    - Compare the news with the 'Cross-Asset Macro Context' (EUR/USD as inverse USD proxy and USB10Y_USD as inverse Treasury Yield proxy).
-    - If USD is strengthening sharply AND Treasury yields are rising (bond prices falling), reduce Bullish Gold probabilities by 15-20% unless the geopolitical shock is severe.
+    CRITICAL RULE 2 - MACRO, TECH/AI & LIQUIDATION CHECK:
+    - Compare the news with the 'Cross-Asset Macro & Tech Context' (EUR/USD, USB10Y_USD, NAS100_USD, BCO_USD).
+    - If news is about Tech/AI stocks (e.g., Nvidia, Nasdaq, Semiconductors) or global economic data: evaluate both capital rotation (strong Tech rally drains safe-haven flows from Gold; weak economy/recession boosts Fed rate-cut bets and helps Gold) AND acute Margin-Call risks (an abrupt Nasdaq crash >2% can cause temporary forced liquidation in Gold before safe-haven buying resumes).
+    - If USD is strengthening sharply AND Treasury yields are rising, reduce Bullish Gold probabilities by 15-20% unless the geopolitical shock is severe.
 
     CRITICAL RULE 3 - 'Orderflow_Price_Target' & MULTI-SOURCE CONFLUENCE:
     - Look at the 'Current XAU/USD Price' and the 'Combined Multi-Source Liquidity Zones' below. Prefer zones marked with 'OVERLAP [OANDA+COMEX]' as primary price targets.
@@ -640,7 +660,7 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
         "Event_Timestamp": "Exact or estimated date/time when the real-world event occurred and how many hours ago relative to {now_utc_str}.",
         "Facts": "Detailed summary of core facts and WHY it happened. Include [Source].",
         "Uncertainties": "What is unclear, speculative, or unconfirmed?",
-        "Macro_Context": "Explain how USD, 10Y Yields, Brent Oil, and OANDA Retail Sentiment interact with this news.",
+        "Macro_Context": "Explain how USD, 10Y Yields, Nasdaq 100 (Tech/AI sentiment), Brent Oil, and OANDA Retail Sentiment interact with this news.",
         "Impact_Timing": "Future, Present, or Past (Already Priced In)",
         "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
@@ -652,7 +672,7 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
     News Reports:
     {news_data}
     
-    Cross-Asset Macro Context:
+    Cross-Asset Macro & Tech Context:
     {macro_context_str}
 
     24h Price History & ATR Volatility:
@@ -693,7 +713,7 @@ def main():
         except Exception:
             existing_data = []
 
-    print("Lade Multi-Source Order-Zonen (OANDA + COMEX Futures), Volatilität (ATR) & Makro-Korrelationen...")
+    print("Lade Multi-Source Order-Zonen (OANDA + COMEX Futures), Volatilität (ATR) & Makro/Tech-Korrelationen...")
     oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0)
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     macro_context_str, macro_summary = fetch_macro_context()
@@ -710,7 +730,7 @@ def main():
         for a in c.get("articles", []):
             existing_urls.add(a["link"])
 
-    print("Suche parallel nach neuen Artikeln...")
+    print("Suche parallel nach neuen Artikeln (Geopolitik, Rohstoffe, Tech/AI & Weltwirtschaft)...")
     new_articles = fetch_new_articles(existing_urls)
     
     if new_articles:
@@ -744,7 +764,7 @@ def main():
                 if newest_article["date"] != target_cluster["original_date"]:
                     target_cluster["main_date"] = f"Erstmeldung: {target_cluster['original_date']} | Letztes Update: {newest_article['date']}"
                 else:
-                    target_cluster["main_date"] = newest_article["date"]
+                    target_cluster["main_date"] = f"Erstmeldung: {newest_article['date']}"
 
                 target_cluster["_timestamp"] = newest_article["_timestamp"]
                 target_cluster["needs_update"] = True

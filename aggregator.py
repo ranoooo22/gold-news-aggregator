@@ -238,7 +238,6 @@ def get_clustered_oanda_zones(zone_width=10.0):
         zones[zone_key]["oanda_vol"] += tot
         zones[zone_key]["weighted_price_sum"] += p * tot
 
-    # Zweite Quelle: Yahoo Finance COMEX Futures einbinden
     comex_zones = fetch_yahoo_futures_zones(current_price, zone_width=zone_width)
     for z_key, f_data in comex_zones.items():
         weight = 0.20
@@ -250,7 +249,6 @@ def get_clustered_oanda_zones(zone_width=10.0):
                 "oanda_vol": 0.0, "comex_vol": 0.0
             }
 
-        # Futures-Volumen gleichmäßig auf Long/Short aufteilen, um Dominanz nicht zu verfälschen
         zones[z_key]["long"] += scaled_tot / 2.0
         zones[z_key]["short"] += scaled_tot / 2.0
         zones[z_key]["total"] += scaled_tot
@@ -610,10 +608,18 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
     if not client:
         return None
     
-    news_data = "\n".join([f"Source: [{a['source']}]\nDate: {a['date']}\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in articles_in_cluster])
+    now_utc_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    news_data = "\n".join([f"Source: [{a['source']}]\nArticle Published Date: {a['date']} UTC\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in articles_in_cluster])
     
     prompt = f"""You are a senior quantitative gold & macro strategist. Analyze these news reports, the 24h price & ATR volatility metrics, cross-asset macro correlations (USD, 10Y Bonds, Brent Oil), and multi-source orderflow liquidity (OANDA + Yahoo COMEX Futures). Output ONLY a valid JSON object without markdown blocks. Write all values in English!
     
+    Current Reference Time: {now_utc_str}
+
+    CRITICAL RULE 0 - ACTUAL EVENT TIME vs. ARTICLE PUBLICATION TIME:
+    - Determine when the underlying physical event, strike, or official announcement ACTUALLY happened based on the text and article dates relative to 'Current Reference Time' ({now_utc_str}).
+    - State this clearly in 'Event_Timestamp' (e.g., '2026-11-04 ~18:00 UTC (approx. 16h ago)' or 'Ongoing / Breaking within last 2h').
+    - If the actual core incident occurred more than 12 hours ago and the latest articles are merely follow-up commentary, summaries, or retrospective analyses without a fresh escalation, you MUST downgrade 'XAUUSD_Impact' to 'Neutral' (or lower 'Probability_Percent' below 50) and set 'Impact_Timing' to 'Past (Already Priced In)'.
+
     CRITICAL RULE 1 - 'PRICED-IN' EXHAUSTION CHECK:
     - Check the '4h Move vs. Daily ATR Ratio' in market volatility metrics below.
     - If XAU/USD has ALREADY moved by >= 1.2x of the Estimated Daily ATR in the direction of the news over the last 4-12 hours, you MUST downgrade 'XAUUSD_Impact' to 'Neutral' (or lower 'Probability_Percent' below 55) and set 'Impact_Timing' to 'Past (Already Priced In)'. Never chase an exhausted spike!
@@ -631,6 +637,7 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
 
     Required JSON structure:
     {{
+        "Event_Timestamp": "Exact or estimated date/time when the real-world event occurred and how many hours ago relative to {now_utc_str}.",
         "Facts": "Detailed summary of core facts and WHY it happened. Include [Source].",
         "Uncertainties": "What is unclear, speculative, or unconfirmed?",
         "Macro_Context": "Explain how USD, 10Y Yields, Brent Oil, and OANDA Retail Sentiment interact with this news.",
@@ -638,7 +645,7 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
         "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
         "Probability_Percent": <Integer 0 to 100>,
-        "Past_Price_Action_Cause": "Explain how the 4h/24h price change and ATR ratio align with this news and whether it is already priced in.",
+        "Past_Price_Action_Cause": "Explain how the 4h/24h price change, event age, and ATR ratio align with this news and whether it is already priced in.",
         "Orderflow_Price_Target": "Exact numerical Take-Profit target following CRITICAL RULE 3."
     }}
 
@@ -729,13 +736,13 @@ def main():
                 target_cluster = valid_clusters[best_match_idx]
                 target_cluster["articles"].append(article)
                 
+                oldest_article = min(target_cluster["articles"], key=lambda x: x["_timestamp"])
                 newest_article = max(target_cluster["articles"], key=lambda x: x["_timestamp"])
                 
-                if "original_date" not in target_cluster:
-                    target_cluster["original_date"] = target_cluster.get("main_date", newest_article["date"])
+                target_cluster["original_date"] = oldest_article["date"]
                 
-                if newest_article["date"][:10] != target_cluster["original_date"][:10]:
-                    target_cluster["main_date"] = f"{newest_article['date']} (updated)"
+                if newest_article["date"] != target_cluster["original_date"]:
+                    target_cluster["main_date"] = f"Erstmeldung: {target_cluster['original_date']} | Letztes Update: {newest_article['date']}"
                 else:
                     target_cluster["main_date"] = newest_article["date"]
 
@@ -746,7 +753,7 @@ def main():
                 cluster_embeddings[best_match_idx] = model.encode(updated_text)
             else:
                 new_cluster = {
-                    "main_date": article["date"],
+                    "main_date": f"Erstmeldung: {article['date']}",
                     "original_date": article["date"],
                     "_timestamp": article["_timestamp"],
                     "articles": [article],

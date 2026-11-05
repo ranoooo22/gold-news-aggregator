@@ -19,7 +19,7 @@ else:
     client = None
     print("WARNUNG: GEMINI_API_KEY nicht gefunden.")
 
-MODEL_NAME = "gemini-2.5-pro"
+MODEL_NAME = "gemini-3.1-pro-preview"
 
 # Globale, Regionale & Tech/Makro RSS-Feeds
 FEEDS = {

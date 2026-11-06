@@ -19,7 +19,17 @@ else:
     client = None
     print("WARNUNG: GEMINI_API_KEY nicht gefunden.")
 
-MODEL_NAME = "gemini-3.1-pro-preview"
+# Automatische Fallback-Kette (nur Modelle mit aktivem Free-Tier-Kontingent)
+FALLBACK_MODELS = [
+    "gemini-2.5-flash",
+    "gemini-2.5-flash-lite",
+    "gemini-2.0-flash",
+    "gemini-3.5-flash-lite"
+]
+
+# Maximal 8 KI-Analysen pro 15-Minuten-Durchlauf (verhindert 9-Minuten-Staus & Rate-Limits)
+# Übrige Cluster werden sofort als Roh-News angezeigt und im nächsten Lauf analysiert.
+MAX_AI_CALLS_PER_RUN = 8
 
 # Globale, Regionale & Tech/Makro RSS-Feeds
 FEEDS = {
@@ -106,7 +116,7 @@ def fetch_single_feed(source_url):
                 "link": entry.link,
                 "source": source,
                 "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
-                "description": clean_desc,
+                "description": clean_desc[:500],
                 "_timestamp": pub_dt.timestamp()
             })
     except Exception as e:
@@ -400,11 +410,12 @@ def fetch_oanda_price_and_volatility():
             f"- Current Price: ${curr_c}\n"
             f"- 4h Price Change: ${change_4h:+.2f} | 24h Price Change: ${change_24h:+.2f}\n"
             f"- H1 ATR(14): ${atr_14_h1:.2f} | Estimated Daily ATR: ${est_daily_atr:.2f}\n"
-            f"- 4h Move vs. Daily ATR Ratio: {ratio_4h}x (Note: If >= 1.2x in the direction of the news, significant parts of the move may already be priced in)\n\n"
-            f"XAU/USD H1 Price History (Last 24h):\n"
+            f"- 4h Move vs. Daily ATR Ratio: {ratio_4h}x (If >= 1.2x in the direction of the news, significant parts of the move may already be priced in)\n\n"
+            f"XAU/USD Recent H1 Candles (Last 12h):\n"
         )
-        for c in parsed[-24:]:
-            history_str += f"- {c['dt_str']} UTC: Open {c['o']}, High {c['h']}, Low {c['l']}, Close {c['c']}\n"
+        # Auf die letzten 12 Stunden gekürzt, um Input-Tokens zu sparen
+        for c in parsed[-12:]:
+            history_str += f"- {c['dt_str']} UTC: O {c['o']}, H {c['h']}, L {c['l']}, C {c['c']}\n"
 
         return history_str, parsed, vol_metrics
     except Exception as e:
@@ -564,7 +575,7 @@ def format_performance_memory(stats):
         f"Historical Signal Track Record (Self-Calibration Memory):\n"
         f"- Total Evaluated (>=67% setups): {stats['total_evaluated']} | Hits: {stats['hits']} | Misses: {stats['misses']} | Win Rate: {stats['win_rate']}%\n"
         f"- Last {len(recent_items)} Completed Setups: {recent_str}\n"
-        f"- Calibration Instruction: Use this track record to avoid overconfidence. Explain objectively in 'Historical_Calibration' whether current market conditions (ATR exhaustion, macro headwinds) resemble past hits or misses."
+        f"- Calibration Instruction: Use this track record to avoid overconfidence. Explain objectively in 'Historical_Calibration' whether current market conditions resemble past hits or misses."
     )
 
 def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None):
@@ -639,12 +650,14 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
     with open("market_data.json", "w", encoding="utf-8") as f:
         json.dump(market_data, f)
 
-def generate_summary(articles_in_cluster, orderbook_data, price_history_data, macro_context_str, perf_memory_str, max_retries=2):
+def generate_summary(articles_in_cluster, orderbook_data, price_history_data, macro_context_str, perf_memory_str):
     if not client:
         return None
     
     now_utc_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-    news_data = "\n".join([f"Source: [{a['source']}]\nArticle Published Date: {a['date']} UTC\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in articles_in_cluster])
+    # Maximal die 5 neuesten Artikel pro Cluster übergeben, um Token-Limits zu schonen
+    recent_articles = sorted(articles_in_cluster, key=lambda x: x.get("_timestamp", 0), reverse=True)[:5]
+    news_data = "\n".join([f"Source: [{a['source']}]\nArticle Published Date: {a['date']} UTC\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in recent_articles])
     
     prompt = f"""You are an objective, two-stage Intelligence & Calibration Agent for a manual Gold (XAU/USD) & Macro trader.
     Your job is NOT to hide or dismiss seemingly minor news, because the human trader uses this terminal as a comprehensive intelligence feed. Even niche geopolitical, regional, or tech/macro reports must be thoroughly contextualized!
@@ -701,10 +714,11 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
     {orderbook_data}
     """
     
-    for attempt in range(1, max_retries + 1):
+    # Rotiert sofort durch alle kostenlosen Flash-Modelle, falls eines 429/503 meldet
+    for model_name in FALLBACK_MODELS:
         try:
             response = client.models.generate_content(
-                model=MODEL_NAME,
+                model=model_name,
                 contents=prompt
             )
             raw_text = response.text.strip()
@@ -713,11 +727,14 @@ def generate_summary(articles_in_cluster, orderbook_data, price_history_data, ma
             elif raw_text.startswith("```"):
                 raw_text = raw_text[3:-3].strip()
                 
-            return json.loads(raw_text)
+            parsed_json = json.loads(raw_text)
+            print(f" -> Erfolgreich analysiert mit {model_name}")
+            return parsed_json
         except Exception as e:
-            print(f"Gemini API Versuch {attempt}/{max_retries} ({MODEL_NAME}) fehlgeschlagen: {e}")
-            if attempt < max_retries:
-                time.sleep(4)
+            err_msg = str(e).splitlines()[0][:110]
+            print(f" -> {model_name} übersprungen ({err_msg}) - wechsle sofort zum nächsten Modell...")
+            time.sleep(1)
+            
     return None
 
 def main():
@@ -737,7 +754,6 @@ def main():
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     macro_context_str, macro_summary = fetch_macro_context()
 
-    # Bestehende Signale auswerten und Performance-Gedächtnis für den Agenten erzeugen
     current_stats = evaluate_clusters(existing_data, h1_candles)
     perf_memory_str = format_performance_memory(current_stats)
 
@@ -799,7 +815,7 @@ def main():
                     "_timestamp": article["_timestamp"],
                     "articles": [article],
                     "needs_update": True,
-                    "summary": None
+                    "summary": "Analyse folgt im naechsten 15-Minuten-Zyklus (Rate-Limit-Schutz aktiv)..."
                 }
                 valid_clusters.append(new_cluster)
                 cluster_embeddings.append(article_emb)
@@ -808,12 +824,17 @@ def main():
 
     valid_clusters.sort(key=lambda x: float(x.get("_timestamp", 0)), reverse=True)
     
+    # Neueste unanalysierte Cluster zuerst abarbeiten, gedeckelt auf MAX_AI_CALLS_PER_RUN
     pending_clusters = [c for c in valid_clusters if c.get("needs_update", False)]
     if pending_clusters:
+        batch_to_process = pending_clusters[:MAX_AI_CALLS_PER_RUN]
+        remaining_count = len(pending_clusters) - len(batch_to_process)
+        print(f"Verarbeite {len(batch_to_process)} von {len(pending_clusters)} offenen Clustern in diesem Lauf (Rest folgt im naechsten Zyklus)...")
+        
         orderbook_data = fetch_oanda_orderbook(top_zones_cache=oanda_zones_cache)
         
-        for idx, cluster in enumerate(pending_clusters, 1):
-            print(f"Agent analysiert & kalibriert ({idx}/{len(pending_clusters)}): {cluster['articles'][0]['title'][:60]}...")
+        for idx, cluster in enumerate(batch_to_process, 1):
+            print(f"Agent analysiert & kalibriert ({idx}/{len(batch_to_process)}): {cluster['articles'][0]['title'][:60]}...")
             summary = generate_summary(
                 cluster["articles"],
                 orderbook_data,
@@ -826,6 +847,9 @@ def main():
                 cluster["summary"] = summary
                 cluster["needs_update"] = False
                 time.sleep(4)
+            else:
+                print(" -> Alle Modelle vorübergehend ausgelastet. Breche KI-Schleife für diesen Lauf ab, um Zeit zu sparen.")
+                break
 
     evaluate_clusters(valid_clusters, h1_candles)
             

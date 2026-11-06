@@ -20,7 +20,6 @@ else:
     client = None
     print("WARNUNG: GEMINI_API_KEY nicht gefunden.")
 
-# Breite Modell-Kette (inkl. spezifischer Versions-Endungen mit eigenen Quoten-Töpfen)
 FALLBACK_MODELS = [
     "gemini-2.5-flash",
     "gemini-2.5-flash-lite",
@@ -32,12 +31,9 @@ FALLBACK_MODELS = [
     "gemini-3.5-flash-lite"
 ]
 
-# Durch das neue Batching analysiert 1 API-Call bis zu 6 Cluster gleichzeitig!
-# Mit maximal 2 Batch-Calls schaffen wir also 12 komplette Cluster pro Lauf.
 BATCH_SIZE = 6
 MAX_BATCH_CALLS_PER_RUN = 2
 
-# Globale, Regionale & Tech/Makro RSS-Feeds
 FEEDS = {
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
     "Investing.com": "https://www.investing.com/rss/news_11.rss",
@@ -129,13 +125,15 @@ def fetch_new_articles(existing_urls):
                     articles.append(a)
     return articles
 
-def fetch_yahoo_futures_zones(oanda_price, zone_width=10.0):
+def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
+    """Ruft die Gold-Futures Historie von Yahoo Finance (COMEX GC=F) ab und gewichtet Preis-Volumen-Cluster."""
     comex_zones = {}
     try:
         url = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=5d&interval=1h"
         headers = {"User-Agent": "Mozilla/5.0"}
         res = requests.get(url, headers=headers, timeout=8)
         if res.status_code != 200:
+            print(f"Yahoo COMEX Status-Code: {res.status_code}")
             return comex_zones
             
         data = res.json()
@@ -147,13 +145,17 @@ def fetch_yahoo_futures_zones(oanda_price, zone_width=10.0):
         closes = indicators.get("close", [])
         volumes = indicators.get("volume", [])
         
+        valid_closes = [float(c) for c in closes if c is not None]
+        if reference_price <= 0 and valid_closes:
+            reference_price = valid_closes[-1]
+            
         raw_entries = []
         total_vol = 0.0
         
         for c, v in zip(closes, volumes):
             if c is not None and v is not None and v > 0:
-                if oanda_price > 0 and abs(c - oanda_price) / oanda_price <= 0.20:
-                    raw_entries.append((c, float(v)))
+                if reference_price > 0 and abs(c - reference_price) / reference_price <= 0.20:
+                    raw_entries.append((float(c), float(v)))
                     total_vol += float(v)
                     
         if total_vol <= 0:
@@ -173,60 +175,80 @@ def fetch_yahoo_futures_zones(oanda_price, zone_width=10.0):
         
     return comex_zones
 
-def get_clustered_oanda_zones(zone_width=10.0):
-    if not OANDA_API_KEY:
-        return 0.0, [], {"long_pct": 50.0, "short_pct": 50.0}
-        
-    headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
-    url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
-    url_pb = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/positionBook"
-    
-    current_price = 0.0
+def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
+    """Kombiniert OANDA (OrderBook + PositionBook) und Yahoo Finance Futures mit Retry & Preis-Backup."""
+    current_price = float(fallback_price) if fallback_price else 0.0
     combined_buckets = {}
     total_pos_long = 0.0
     total_pos_short = 0.0
     
-    try:
-        res_ob = requests.get(url_ob, headers=headers, timeout=10)
-        if res_ob.status_code == 200:
-            ob_data = res_ob.json().get("orderBook", {})
-            current_price = float(ob_data.get("price", 0))
-            for b in ob_data.get("buckets", []):
-                try:
-                    p = float(b.get("price", 0))
-                    if current_price > 0 and abs(p - current_price) / current_price <= 0.20:
-                        combined_buckets[p] = {
-                            "long": float(b.get("longCountPercent", 0)),
-                            "short": float(b.get("shortCountPercent", 0))
-                        }
-                except ValueError:
-                    continue
-    except Exception as e:
-        print(f"Fehler bei OANDA orderBook: {e}")
+    if OANDA_API_KEY:
+        headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
+        url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
+        url_pb = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/positionBook"
+        
+        # 1. OANDA OrderBook mit bis zu 2 Versuchen abrufen
+        for attempt in range(2):
+            try:
+                res_ob = requests.get(url_ob, headers=headers, timeout=12)
+                if res_ob.status_code == 200:
+                    ob_data = res_ob.json().get("orderBook", {})
+                    ob_price = float(ob_data.get("price", 0))
+                    if ob_price > 0:
+                        current_price = ob_price
+                    buckets = ob_data.get("buckets", [])
+                    for b in buckets:
+                        try:
+                            p = float(b.get("price", 0))
+                            if current_price > 0 and abs(p - current_price) / current_price <= 0.20:
+                                combined_buckets[p] = {
+                                    "long": float(b.get("longCountPercent", 0)),
+                                    "short": float(b.get("shortCountPercent", 0))
+                                }
+                        except ValueError:
+                            continue
+                    print(f"OANDA OrderBook geladen: {len(combined_buckets)} Preis-Buckets im 20%-Radius.")
+                    break
+                else:
+                    print(f"OANDA orderBook Status {res_ob.status_code} (Versuch {attempt+1}/2): {res_ob.text[:120]}")
+                    time.sleep(2)
+            except Exception as e:
+                print(f"Fehler bei OANDA orderBook (Versuch {attempt+1}/2): {e}")
+                time.sleep(2)
 
-    try:
-        res_pb = requests.get(url_pb, headers=headers, timeout=10)
-        if res_pb.status_code == 200:
-            pb_data = res_pb.json().get("positionBook", {})
-            if current_price == 0:
-                current_price = float(pb_data.get("price", 0))
-            for b in pb_data.get("buckets", []):
-                try:
-                    p = float(b.get("price", 0))
-                    l_pct = float(b.get("longCountPercent", 0))
-                    s_pct = float(b.get("shortCountPercent", 0))
-                    total_pos_long += l_pct
-                    total_pos_short += s_pct
-                    
-                    if current_price > 0 and abs(p - current_price) / current_price <= 0.20:
-                        if p not in combined_buckets:
-                            combined_buckets[p] = {"long": 0.0, "short": 0.0}
-                        combined_buckets[p]["long"] += l_pct
-                        combined_buckets[p]["short"] += s_pct
-                except ValueError:
-                    continue
-    except Exception as e:
-        print(f"Fehler bei OANDA positionBook: {e}")
+        # 2. OANDA PositionBook mit bis zu 2 Versuchen abrufen
+        for attempt in range(2):
+            try:
+                res_pb = requests.get(url_pb, headers=headers, timeout=12)
+                if res_pb.status_code == 200:
+                    pb_data = res_pb.json().get("positionBook", {})
+                    pb_price = float(pb_data.get("price", 0))
+                    if current_price == 0 and pb_price > 0:
+                        current_price = pb_price
+                    buckets = pb_data.get("buckets", [])
+                    for b in buckets:
+                        try:
+                            p = float(b.get("price", 0))
+                            l_pct = float(b.get("longCountPercent", 0))
+                            s_pct = float(b.get("shortCountPercent", 0))
+                            total_pos_long += l_pct
+                            total_pos_short += s_pct
+                            
+                            if current_price > 0 and abs(p - current_price) / current_price <= 0.20:
+                                if p not in combined_buckets:
+                                    combined_buckets[p] = {"long": 0.0, "short": 0.0}
+                                combined_buckets[p]["long"] += l_pct
+                                combined_buckets[p]["short"] += s_pct
+                        except ValueError:
+                            continue
+                    print(f"OANDA PositionBook geladen (Gesamt-Buckets: {len(combined_buckets)}).")
+                    break
+                else:
+                    print(f"OANDA positionBook Status {res_pb.status_code} (Versuch {attempt+1}/2): {res_pb.text[:120]}")
+                    time.sleep(2)
+            except Exception as e:
+                print(f"Fehler bei OANDA positionBook (Versuch {attempt+1}/2): {e}")
+                time.sleep(2)
 
     pos_sum = total_pos_long + total_pos_short
     if pos_sum > 0:
@@ -236,9 +258,6 @@ def get_clustered_oanda_zones(zone_width=10.0):
         }
     else:
         sentiment = {"long_pct": 50.0, "short_pct": 50.0}
-
-    if not combined_buckets or current_price == 0:
-        return 0.0, [], sentiment
 
     zones = {}
     for p, vols in combined_buckets.items():
@@ -256,9 +275,10 @@ def get_clustered_oanda_zones(zone_width=10.0):
         zones[zone_key]["oanda_vol"] += tot
         zones[zone_key]["weighted_price_sum"] += p * tot
 
+    # Zweite Quelle: Yahoo Finance COMEX Futures wird jetzt IMMER abgerufen (auch wenn OANDA OrderBook mal leer war)
     comex_zones = fetch_yahoo_futures_zones(current_price, zone_width=zone_width)
     for z_key, f_data in comex_zones.items():
-        weight = 0.20
+        weight = 0.20 if combined_buckets else 1.0
         scaled_tot = f_data["total"] * weight
 
         if z_key not in zones:
@@ -273,6 +293,9 @@ def get_clustered_oanda_zones(zone_width=10.0):
         zones[z_key]["comex_vol"] += f_data["total"]
         zones[z_key]["weighted_price_sum"] += f_data["weighted_price_sum"] * weight
 
+    if not zones or current_price == 0:
+        return current_price, [], sentiment
+
     above_zones = []
     below_zones = []
 
@@ -280,7 +303,12 @@ def get_clustered_oanda_zones(zone_width=10.0):
         if z_data["total"] > 0:
             vwap_price = round(z_data["weighted_price_sum"] / z_data["total"], 2)
             net_diff = round(z_data["long"] - z_data["short"], 2)
-            dominance = "BUY" if net_diff >= 0 else "SELL"
+            
+            # Falls nur COMEX-Daten vorliegen, oberhalb als SELL-Widerstand und unterhalb als BUY-Support werten
+            if z_data["oanda_vol"] == 0:
+                dominance = "SELL" if vwap_price >= current_price else "BUY"
+            else:
+                dominance = "BUY" if net_diff >= 0 else "SELL"
             
             has_oanda = z_data["oanda_vol"] >= 0.5
             has_comex = z_data["comex_vol"] >= 0.5
@@ -551,10 +579,8 @@ def format_performance_memory(stats):
     )
 
 def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_summary):
-    """Erstellt sofort lokal eine strukturierte Analyse aus RSS-Text + OANDA/Makro-Daten, falls alle KI-Server 503/429 melden."""
     articles = cluster.get("articles", [])
     oldest = min(articles, key=lambda x: x.get("_timestamp", 0)) if articles else {}
-    newest = max(articles, key=lambda x: x.get("_timestamp", 0)) if articles else {}
     age_h = round((datetime.now().timestamp() - float(oldest.get("_timestamp", datetime.now().timestamp()))) / 3600.0, 1)
 
     facts_list = []
@@ -594,11 +620,11 @@ def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_
     return {
         "Event_Timestamp": f"Erstmeldung: {oldest.get('date', 'Unbekannt')} UTC (vor ca. {age_h}h)",
         "Facts": facts_str,
-        "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
+        "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
         "Macro_Context": f"24h Makro-Umfeld: EUR/USD {eur_chg:+.2f}%, Nasdaq-100 {nas_chg:+.2f}%, Brent Oil {bco_chg:+.2f}% | OANDA Sentiment: {sentiment['long_pct']}% Long / {sentiment['short_pct']}% Short.",
         "Bull_Case": f"Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei ${min(above_z):.2f}." if above_z else "Geopolitische/Makro-Risikopraemie beachten.",
         "Bear_Case": f"Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei ${max(below_z):.2f}. 4h-ATR-Ratio steht bei {atr_ratio}x." if below_z else f"4h-ATR-Ratio steht bei {atr_ratio}x.",
-        "Historical_Calibration": f"Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: {age_h}h.",
+        "Historical_Calibration": f"Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: {age_h}h.",
         "Impact_Timing": "Past (Already Priced In)" if (age_h > 12 or atr_ratio >= 1.2) else "Present",
         "Timeframe": "Hours/Days",
         "XAUUSD_Impact": impact,
@@ -608,7 +634,6 @@ def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_
     }
 
 def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data, macro_context_str, perf_memory_str):
-    """Analysiert bis zu 6 Cluster gleichzeitig in EINEM einzigen API-Aufruf (spart 85% Requests & verhindert 429/503)."""
     if not client or not clusters_batch:
         return {}
     
@@ -676,7 +701,6 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
                 
             parsed_list = json.loads(raw_text)
             if isinstance(parsed_list, dict):
-                # Falls das Modell das Array in ein einzelnes Dict verpackt hat
                 for v in parsed_list.values():
                     if isinstance(v, list):
                         parsed_list = v
@@ -702,12 +726,20 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
         print("WARNUNG: Kein OANDA_API_KEY vorhanden, überspringe Chart-Update.")
         return
     
+    old_market_data = {}
+    if os.path.exists("market_data.json"):
+        try:
+            with open("market_data.json", "r", encoding="utf-8") as f:
+                old_market_data = json.load(f)
+        except Exception:
+            old_market_data = {}
+
     market_data = {
         "candles": [],
         "orderbook": [],
         "sentiment": {"long_pct": 50.0, "short_pct": 50.0},
-        "macro": macro_summary or {},
-        "volatility": vol_metrics or {}
+        "macro": macro_summary or old_market_data.get("macro", {}),
+        "volatility": vol_metrics or old_market_data.get("volatility", {})
     }
     
     headers = {
@@ -757,14 +789,16 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
     except Exception as e:
         print(f"Fehler beim Laden der Orderbuch-Zonen: {e}")
 
-    if not market_data["candles"] and os.path.exists("market_data.json"):
+    if not market_data["candles"] and old_market_data.get("candles"):
         print("WARNUNG: Keine neuen Kerzen erhalten! Behalte bisherige Kerzen bei.")
-        try:
-            with open("market_data.json", "r", encoding="utf-8") as f:
-                old_data = json.load(f)
-                market_data["candles"] = old_data.get("candles", [])
-        except Exception:
-            pass
+        market_data["candles"] = old_market_data["candles"]
+
+    # Schutz: Falls beide Quellen kurzzeitig ausfallen, bisherige Zonen beibehalten statt leere Liste zu speichern
+    if not market_data["orderbook"] and old_market_data.get("orderbook"):
+        print("WARNUNG: Keine neuen Order-Zonen erhalten! Behalte bisherige Zonen bei.")
+        market_data["orderbook"] = old_market_data["orderbook"]
+        if market_data["sentiment"]["long_pct"] == 50.0 and old_market_data.get("sentiment"):
+            market_data["sentiment"] = old_market_data["sentiment"]
 
     with open("market_data.json", "w", encoding="utf-8") as f:
         json.dump(market_data, f)
@@ -781,9 +815,12 @@ def main():
         except Exception:
             existing_data = []
 
-    print("Lade Multi-Source Order-Zonen (OANDA + COMEX Futures), Volatilität (ATR) & Makro/Tech-Korrelationen...")
-    oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0)
+    print("Lade Volatilität (ATR), Multi-Source Order-Zonen (OANDA + COMEX Futures) & Makro/Tech-Korrelationen...")
+    # Zuerst Kerzen & aktuellen Preis holen, damit wir ein sicheres Preis-Backup für die Order-Zonen haben!
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
+    candle_fallback_price = vol_metrics.get("current_price", 0.0)
+    
+    oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0, fallback_price=candle_fallback_price)
     macro_context_str, macro_summary = fetch_macro_context()
 
     current_stats = evaluate_clusters(existing_data, h1_candles)
@@ -856,7 +893,6 @@ def main():
 
     valid_clusters.sort(key=lambda x: float(x.get("_timestamp", 0)), reverse=True)
     
-    # Alle Cluster sammeln, die ein KI-Update brauchen oder zuvor nur einen Platzhalter-String hatten
     pending_clusters = [
         c for c in valid_clusters 
         if c.get("needs_update", False) or not isinstance(c.get("summary"), dict)
@@ -886,12 +922,11 @@ def main():
             if b_idx < total_batches - 1 and batch_results:
                 time.sleep(3)
 
-    # 100%-Garantie: Jedes Cluster, das noch kein valides Summary-Objekt hat, erhält sofort die strukturierte lokale Auswertung!
     fallback_count = 0
     for c in valid_clusters:
         if not isinstance(c.get("summary"), dict):
             c["summary"] = build_local_fallback_summary(c, oanda_zones_cache, vol_metrics, macro_summary)
-            c["needs_update"] = True  # Bleibt markiert, damit Gemini es beim nächsten freien Lauf veredelt
+            c["needs_update"] = True
             fallback_count += 1
             
     if fallback_count > 0:

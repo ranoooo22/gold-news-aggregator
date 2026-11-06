@@ -13,20 +13,21 @@
                 "_timestamp": 1793975400.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 14:30 UTC (vor ca. 0.1h)",
-            "Facts": "[Yahoo Finance Nasdaq] AI in Virtual Medical Assistants Market to Worth USD 8.85 Billion by 2030, at a CAGR of 36.6%– MarketsandMarkets™ - Delray Beach, FL, Nov. 06, 2026 (GLOBE NEWSWIRE) -- MarketsandMarkets™ projects the global AI in virtual medical assistants market to grow from ",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 -1.54%, Brent Oil +1.38% | OANDA Sentiment: 71.1% Long / 28.9% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4039.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4020.80. 4h-ATR-Ratio steht bei 0.43x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.1h.",
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-06 14:30 UTC (~0.2 hours ago relative to reference time)",
+            "Facts": "MarketsandMarkets projects the global AI in virtual medical assistants market to grow from USD 1.86 billion in 2025 to USD 8.85 billion by 2030 at a 36.6% CAGR, driven by workforce shortages and natural language processing advancements [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Long-term projections are highly speculative and prone to shifting enterprise IT budgets and regulatory changes in healthcare technology.",
+            "Macro_Context": "Nasdaq 100 is down 1.03% amid a broader tech sell-off, showing a decoupling of niche long-term industry projections from immediate risk-off sentiment hitting equities.",
+            "Bull_Case": "Sustained enterprise spending on software efficiency could eventually stabilize tech valuations, reducing broader deflationary asset shocks.",
+            "Bear_Case": "Micro-level optimistic forecasts offer zero immediate support to commodities or gold when macro risk-off and stronger jobs data dominate liquidity flows.",
+            "Historical_Calibration": "No completed 20h evaluations. Event is brand new, but sector-specific long-term research reports carry negligible weight against immediate macroeconomic realities and high daily ATR.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Weeks/Months",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-30.71 (0.43x der geschaetzten Tages-ATR).",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold's 4h drop of $26.76 is entirely disconnected from minor niche sector market reports, reflecting broader risk-off liquidation.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -44,20 +45,21 @@
                 "_timestamp": 1793975096.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 14:24 UTC (vor ca. 0.2h)",
-            "Facts": "[Yahoo Finance Nasdaq] Not One Analyst Rates Amazon a Sell. Is Wall Street Right? - Nearly every analyst loves Amazon, yet Jim Cramer calls big tech a millstone and the spending keeps climbing. One number in the next earnings report could decide whether the crowded bullish consensus",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 -1.54%, Brent Oil +1.38% | OANDA Sentiment: 71.1% Long / 28.9% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4039.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4020.80. 4h-ATR-Ratio steht bei 0.43x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.2h.",
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-06 14:24 UTC (~0.3 hours ago relative to reference time)",
+            "Facts": "Amazon faces unanimous analyst buy ratings, but Jim Cramer questions big tech viability amidst escalating AI spending and upcoming earnings reports [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether Amazon's upcoming earnings will justify heavy capital expenditures or trigger a broader mega-cap tech correction.",
+            "Macro_Context": "Nasdaq 100 is down 1.03%, reflecting a cautious tech environment where high valuations and massive AI spending are facing increased scrutiny.",
+            "Bull_Case": "Strong mega-cap earnings could spark a relief rally in equities, curbing safe-haven bids in gold.",
+            "Bear_Case": "Disappointing earnings from big tech leaders like Amazon could accelerate the tech-led equity sell-off, spilling over into broader asset liquidations.",
+            "Historical_Calibration": "No completed 20h evaluations. Stock-specific commentary has minimal direct transmission to gold unless triggering systemic market-wide margin calls.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-30.71 (0.43x der geschaetzten Tages-ATR).",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold's decline reflects broad macroeconomic shifts rather than single-stock analyst sentiment.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -99,18 +101,22 @@
                 "_timestamp": 1793975021.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "2026-11-05 16:00 to 19:21 UTC (Breaking within the last 5 hours)",
-            "Facts": "Wall Street analysts and market panels are questioning the timing and viability of the Anthropic IPO amid a severe market rout and escalating scrutiny over AI infrastructure costs [MarketWatch Macro, Yahoo Finance Nasdaq]. Tech equities are under heavy pressure, exemplified by a nearly 7% decline in the Nasdaq 100 [Cross-Asset Context].",
-            "Uncertainties": "The exact timing, valuation adjustment, or potential postponement of the Anthropic IPO remain speculative, alongside the broader contagion risk to high-multiple technology shares heading into upcoming major earnings like Nvidia on November 17.",
-            "Macro_Context": "The Nasdaq 100 experienced a sharp 6.97% selloff, signaling extreme risk-off sentiment and potential margin-call liquidation dynamics. Meanwhile, US 10Y bond prices rose (+0.42%), pushing yields lower and offering a traditional safe-haven tailwind. Global OANDA retail positioning sits heavily long at 71.8%, favoring contrarian downside risk or a shakeout of leveraged longs.",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-05 16:00 to 2026-11-06 14:23 UTC (~0.3 to 22.6 hours ago)",
+            "Facts": "Anthropic's $1.5T valuation faces pushback from major investors amid a turbulent AI market sell-off and battered Wall Street conditions, complicating its looming IPO plans [Yahoo Finance Nasdaq, MarketWatch Macro].",
+            "Uncertainties": "Whether Anthropic can proceed with its IPO at the targeted valuation or will be forced to reprice or delay amid deteriorating market sentiment.",
+            "Macro_Context": "Nasdaq 100 is down 1.03% and retail positioning in gold is 71.0% long, as investors rotate out of overvalued AI assets and reassess risk.",
+            "Bull_Case": "Failure of major speculative tech IPOs like Anthropic underscores the bursting of tech bubbles, driving capital toward traditional safe havens like gold.",
+            "Bear_Case": "Capitulation in private market tech valuations could cause broader market liquidity crunches, forcing leveraged funds to liquidate gold holdings to cover equity margin calls.",
+            "Historical_Calibration": "No completed 20h evaluations. Ongoing narrative weight is moderate for equities but secondary for immediate gold spot positioning.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "XAU/USD has experienced an intraday retracement after testing higher levels earlier in the session, with the 4h move vs Daily ATR ratio at 0.16x showing subdued short-term momentum. The market is digesting the broader tech rout and liquidity adjustments without a clear directional breakout.",
-            "Orderflow_Price_Target": "N/A"
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "The ongoing tech sector correction and IPO headwinds align with a fragile risk environment, though gold has pulled back due to immediate USD/rate pressures.",
+            "Orderflow_Price_Target": "4050.44"
         }
     },
     {
@@ -127,20 +133,21 @@
                 "_timestamp": 1793974904.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 14:21 UTC (vor ca. 0.3h)",
-            "Facts": "[Yahoo Finance Nasdaq] Market Chatter: TSMC Mulls Expanding Into Advanced Memory Chip Production - Taiwan Semiconductor Manufacturing (TSM) is weighing whether to expand into the advanced memory chip",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 -1.54%, Brent Oil +1.38% | OANDA Sentiment: 71.1% Long / 28.9% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4039.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4020.80. 4h-ATR-Ratio steht bei 0.43x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.3h.",
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-06 14:21 UTC (~0.3 hours ago relative to reference time)",
+            "Facts": "Taiwan Semiconductor Manufacturing (TSMC) is weighing expansion into advanced memory chip production to capture shifting semiconductor demand [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Capital expenditure costs, execution timelines, and competitive dynamics against existing memory giants.",
+            "Macro_Context": "Nasdaq 100 is down 1.03%, reflecting a downbeat sentiment across hardware and tech supply chains.",
+            "Bull_Case": "Expansion into advanced memory highlights resilient long-term foundational demand for semiconductors, potentially easing tech sector panic over time.",
+            "Bear_Case": "Increased capital expenditure requirements during a market downturn could pressure semiconductor profit margins and equity prices.",
+            "Historical_Calibration": "No completed 20h evaluations. Supply-side micro-news for a single semiconductor foundry has negligible direct impact on spot gold prices.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Weeks/Months",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-30.71 (0.43x der geschaetzten Tages-ATR).",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold's 4h price drop is driven by macroeconomic data (jobs report) and liquidity shifts rather than semiconductor foundry strategies.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -182,21 +189,22 @@
                 "_timestamp": 1793974558.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 19:46 UTC (vor ca. 10.7h)",
-            "Facts": "[Yahoo Finance Oil] Stock Market Today: Dow Down 1,500 Points As Volatility Spikes; Expedia Posts A Soft Outlook (Live Coverage) - The Dow Jones index rises Thursday after the postelection rally. Cava and Dutch Bros plunge on earnings. | [Yahoo Finance Nasdaq] Stock Market Today: Dow Down 1,500 Points As Volatility Spikes; Expedia Posts A Soft Outlook (Live Coverage) - The Dow Jones index rises Thursday after the postelection rally. Cava and Dutch Bros plunge on earnings.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 10.7h.",
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-05 19:46 to 2026-11-06 14:15 UTC (~0.4 hours ago relative to reference time)",
+            "Facts": "The Dow Jones index slides 500 points (following a 1,500-point drop volatility spike) driven by a surprise strong October jobs report, while Nvidia leads a partial tech rebound [Yahoo Finance Oil/Nasdaq].",
+            "Uncertainties": "Whether the strong jobs report will force the Federal Reserve into a more aggressive stance, cementing higher-for-longer rate fears.",
+            "Macro_Context": "EUR/USD is down 0.72% (strong USD proxy), US 10Y Bond Price is down 0.08%, and Nasdaq is down 1.03%, confirming a powerful risk-off, strong-dollar macro regime that directly pressures gold.",
+            "Bull_Case": "Extreme equity volatility and a 500-point Dow slide can occasionally trigger safe-haven inflows if currency-driven pressure abates.",
+            "Bear_Case": "A surprise strong jobs report fuels higher yields and a surging US dollar (EUR/USD -0.72%), severely punishing non-yielding bullion and triggering long liquidations from the 71.0% OANDA long crowd.",
+            "Historical_Calibration": "No completed 20h evaluations. Major macro data releases dictate immediate price action; gold's 4h drop of $26.76 directly reflects this employment surprise and dollar strength.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4039.78"
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Strong October jobs report sparked equity sell-offs, US dollar strength (EUR/USD down 0.72%), and gold liquidation, explaining the 4h drop of $26.76 and daily drop of $88.29.",
+            "Orderflow_Price_Target": "4020.63"
         }
     },
     {
@@ -221,21 +229,22 @@
                 "_timestamp": 1793974443.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 14:14 UTC (vor ca. 0.4h)",
-            "Facts": "[Yahoo Finance Gold] Elite British Growth Stocks To Own In November 2026 - Global markets are under pressure as investors question how long strong earnings can hold up when producer costs rise faster than consumer prices. That kind of squeeze tends to reward businesses that manage | [Yahoo Finance Gold] Ramelius Resources And 2 Australian Growth Stocks To Own - Record profit margins are starting to feel the squeeze as producer costs outpace consumer prices, which puts pressure on companies that cannot easily pass higher expenses through. That kind of margin s",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 -1.54%, Brent Oil +1.38% | OANDA Sentiment: 71.1% Long / 28.9% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4039.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4020.80. 4h-ATR-Ratio steht bei 0.43x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.4h.",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-06 14:14 to 2026-11-06 14:15 UTC (~0.4 hours ago relative to reference time)",
+            "Facts": "Global markets face pressure as producer costs outpace consumer prices, squeezing profit margins and prompting investors to target robust growth stocks in the UK and Australia (including Ramelius Resources) [Yahoo Finance Gold].",
+            "Uncertainties": "Whether margin compression will broaden into systemic corporate earnings downgrades globally.",
+            "Macro_Context": "Brent Crude is up 1.02% to $100.56, contributing to rising producer costs and input price pressures globally, while broader equities adjust to margin squeezes.",
+            "Bull_Case": "Persistent margin squeeze and rising input costs (oil at $100.56) underscore structural inflation, historically boosting gold's appeal as an inflation hedge.",
+            "Bear_Case": "Initial margin compression forces risk-off liquidations across all risk assets and commodities to raise cash, overriding inflation-hedge demand in the short term.",
+            "Historical_Calibration": "No completed 20h evaluations. Stock-picker articles carry low direct weight, but the underlying macro theme of rising producer costs and $100+ oil is deeply relevant to gold's structural cost pressures.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
             "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-30.71 (0.43x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4039.72"
+            "Past_Price_Action_Cause": "While oil strength ($100.56) supports long-term commodity value, the immediate price action is dominated by the strong jobs report and USD surge.",
+            "Orderflow_Price_Target": "4050.44"
         }
     },
     {
@@ -821,22 +830,22 @@
                 "_timestamp": 1793973902.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-06 12:03 UTC (ranging from 0.2 to 2 hours ago relative to reference time)",
-            "Facts": "Semiconductor stocks reached 7-year valuation lows following a steep Nasdaq sell-off (-4.27% over 24h, intraday drops exceeding 5.5%). The market bloodbath is attributed to US midterm election results fueling fears that Democrats will accelerate regulatory crackdowns on AI and data center expansions. Upcoming October jobs report looms over markets.",
-            "Uncertainties": "Whether the tech equity rout will trigger broader systemic margin calls that force institutional liquidation across all asset classes, including gold.",
-            "Macro_Context": "Nasdaq 100 is down 4.27%, reflecting severe risk-off sentiment in tech/AI. US 10Y Bond prices are up (+0.29%, implying lower yields), while EUR/USD is weaker (-0.40%). OANDA retail positioning is heavily long gold (71.5%).",
-            "Bull_Case": "Extreme tech stock liquidations and growth fears can trigger broad safe-haven capital flows into gold as a non-yielding risk hedge, combined with falling Treasury yields.",
-            "Bear_Case": "A severe equity market crash often triggers aggressive cash-raising and margin-call liquidations, where institutional investors sell liquid assets like gold to cover equity losses.",
-            "Historical_Calibration": "No completed 20h evaluations yet. Fresh panic-selling in tech creates heightened volatility, increasing the odds of sweeping orderbook sweeps.",
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-06 14:05 UTC (Approx. 35 minutes ago)",
+            "Facts": "AMD jumped 8%, while Intel and NVIDIA climbed 5% in pre-market/early trading as chip stocks bounced from their worst sell-off since 2020. The prior session wiped out $1.5 trillion in market value amid regulation fears, hedge fund profit-taking, and capex slowdown concerns, though contrarian buyers are now stepping in [Yahoo Finance Nasdaq, MarketWatch Macro].",
+            "Uncertainties": "Whether the bounce represents a durable market bottom or a dead-cat bounce driven by short-covering, and whether political/regulatory fears surrounding AI are fully realized.",
+            "Macro_Context": "Nasdaq 100 is down 1.03%, reflecting broader tech strain. Risk-off equity sentiment typically drives safe-haven flows, but aggressive equity liquidations can trigger broad-based margin calls, indirectly boosting USD and weighing on XAU/USD.",
+            "Bull_Case": "Persistent tech volatility and equity contagion erode confidence in risk assets, boosting safe-haven demand for physical gold.",
+            "Bear_Case": "Chip stock stabilization curbs panic selling, stabilizing general risk sentiment and limiting safe-haven demand for gold while keeping liquidity locked in equities.",
+            "Historical_Calibration": "No completed 20h evaluations. 4h move/daily ATR ratio is 0.37x, indicating mild corrective movement relative to daily range ($71.64). Event is very fresh (35m ago).",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Severe Nasdaq contraction (-4.27%) and macroeconomic uncertainty ahead of the jobs report increase safe-haven appeal, supporting gold's elevated trading structure.",
-            "Orderflow_Price_Target": "4078.97"
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold's 4h drop of $26.76 aligns with general liquidity adjustments and equity margin liquidations despite safe-haven narratives.",
+            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -933,22 +942,22 @@
                 "_timestamp": 1793973810.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Event_Timestamp": "2026-11-06 10:40 UTC (approx. 25 minutes ago relative to 2026-11-06 11:05 UTC)",
-            "Facts": "Nvidia shares experienced their worst day since January 2025, triggering a $450 billion rout due to AI fears and Texas data center restrictions putting the AI boom at risk [Yahoo Finance Nasdaq]. While some analysts view the pullback as a buying opportunity before November 17 [Yahoo Finance Nasdaq], profitability and pricing power concerns are growing across the tech sector [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the Texas data center restrictions will expand to other states or federal jurisdictions, and if the correction in AI leaders will trigger broader contagion across risk assets.",
-            "Macro_Context": "Massive tech rout directly fuels Nasdaq correction and panic, increasing safe-haven inflows while simultaneously prompting broad-based equity liquidations that can cause sudden liquidity demands impacting precious metals.",
-            "Bull_Case": "Severe tech stock crash and market correction drive panic-driven safe-haven capital flows out of equities and into Gold.",
-            "Bear_Case": "Broad equity market liquidations can force institutional investors to sell winning positions like Gold to cover margin calls in equities.",
-            "Historical_Calibration": "With no prior completed track record and high volatility, equity routs introduce short-term cross-asset liquidity shocks.",
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-06 14:03 UTC (Approx. 37 minutes ago)",
+            "Facts": "NVIDIA suffered its worst day since January 2025, triggering a $450 billion rout driven by AI fears and Texas data center restrictions that put the AI boom at risk. Memory and alternative AI stocks are also under sharp scrutiny ahead of key November 17 catalysts [Yahoo Finance Nasdaq].",
+            "Uncertainties": "The full scope of Texas data center restrictions and whether regulatory headwinds will spread to other major tech jurisdictions.",
+            "Macro_Context": "Nasdaq 100 down 1.03%. Massive mega-cap tech liquidations create systemic cross-asset volatility, increasing cash-raising behavior that can pressure gold via forced liquidation.",
+            "Bull_Case": "Severe regulatory blows to the cornerstone of the modern equity bull market undermine risk appetite, driving long-term institutional capital toward safe-haven assets like gold.",
+            "Bear_Case": "Panic selling in tech causes broad-based liquidity crunches where institutional funds sell liquid assets like gold to cover equity and derivative margin calls.",
+            "Historical_Calibration": "No completed 20h evaluations. ATR exhaustion ratio at 0.37x. Fresh event requiring monitoring for systemic contagion.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Tech sector sell-off correlates with heightened market volatility and flight to safety.",
-            "Orderflow_Price_Target": "4070.00"
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Tech rout and margin liquidations have pressured gold over the last 24h ($-88.29), though underlying safe-haven attributes provide underlying support.",
+            "Orderflow_Price_Target": "4050.44"
         }
     },
     {
@@ -965,20 +974,21 @@
                 "_timestamp": 1793973600.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 14:00 UTC (vor ca. 0.6h)",
-            "Facts": "[Yahoo Finance Nasdaq] Compass Therapeutics Presents Novel Mechanism of Action Data for CTX-10726 (PD-1 x VEGF-A Bispecific Antibody) at the SITC 2026 Annual Meeting - CTX-10726, a PD-1 x VEGF-A bispecific antibody discovered and engineered at Compass, exhibits a unique mechanism of",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 -1.54%, Brent Oil +1.38% | OANDA Sentiment: 71.1% Long / 28.9% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4039.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4020.80. 4h-ATR-Ratio steht bei 0.43x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.6h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-06 14:00 UTC (Approx. 40 minutes ago)",
+            "Facts": "Compass Therapeutics presented novel mechanism of action data for CTX-10726 (a PD-1 x VEGF-A bispecific antibody) at the SITC 2026 Annual Meeting, showcasing unique VEGF-A-dependent cleavage of PD-1 receptors on T cells [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Clinical trial efficacy in human trials and broader commercialization timelines.",
+            "Macro_Context": "Micro-cap/biotech corporate announcements have zero macro correlation with global monetary policy, USD, or XAU/USD price action.",
+            "Bull_Case": "None for gold.",
+            "Bear_Case": "None for gold.",
+            "Historical_Calibration": "No completed 20h evaluations. Event is company-specific and irrelevant to macro precious metals trading.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-30.71 (0.43x der geschaetzten Tages-ATR).",
+            "Probability_Percent": 0,
+            "Past_Price_Action_Cause": "Completely disconnected from XAU/USD price action.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -1020,22 +1030,22 @@
                 "_timestamp": 1793973427.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-05 to 2026-11-06 09:32 UTC (approx. 0.4 to 12 hours ago)",
-            "Facts": "U.S. stocks suffered a historic rout on Thursday following midterm election results that raised questions about the artificial intelligence boom, with the S&P 500 and Nasdaq down over 3% and 5% [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the post-election tech rout will morph into a prolonged systemic bear market or a temporary liquidity flush.",
-            "Macro_Context": "Nasdaq 100 is down -4.49%, EUR/USD is down -0.50%, and US 10Y Bond prices are up +0.33% as capital flees equities for safety.",
-            "Bull_Case": "Severe equity market liquidations and tech sector crashes drive institutional capital toward safe-haven gold and government bonds.",
-            "Bear_Case": "Broad market liquidations can trigger margin calls across all asset classes, causing institutional investors to sell gold to cover equity losses.",
-            "Historical_Calibration": "Major equity crashes frequently cause initial cross-asset liquidation friction in gold before safe-haven inflows dominate.",
+            "Event_Timestamp": "2026-11-06 13:57 UTC (Approx. 43 minutes ago)",
+            "Facts": "U.S. stocks experienced their worst second day after a midterm election in nearly a century. A post-election rally vanished instantly, the market's fear gauge (VIX) jumped nearly 70%, and midterm results raised severe questions about the durability of the AI boom and potential political gridlock or policy shifts [Yahoo Finance Nasdaq].",
+            "Uncertainties": "How legislative dynamics following the midterm elections will affect federal spending, corporate taxes, and regulatory enforcement.",
+            "Macro_Context": "Nasdaq down 1.03%, EUR/USD down 0.72% (strong USD), Brent oil up 1.02%. Massive surge in market fear combined with a strengthening USD creates cross-currents for gold.",
+            "Bull_Case": "Unprecedented post-midterm stock crash and surging fear gauge elevate systemic risk premiums, driving safe-haven inflows into gold.",
+            "Bear_Case": "Simultaneous surge in USD demand (EUR/USD -0.72%) acts as a direct headwind for dollar-denominated gold, capping safe-haven gains.",
+            "Historical_Calibration": "No completed 20h evaluations. High-impact macro sentiment driver. ATR ratio at 0.37x leaves ample room for volatility expansion.",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Directly correlates with the safe-haven demand driving gold's recent 4h bounce of +$33.28 despite broader macro crosscurrents.",
-            "Orderflow_Price_Target": "4090.23"
+            "Probability_Percent": 58,
+            "Past_Price_Action_Cause": "Post-election political and equity shock contributed to broader market repositioning and recent gold drawdowns.",
+            "Orderflow_Price_Target": "4059.36"
         }
     },
     {
@@ -1220,22 +1230,22 @@
                 "_timestamp": 1793973335.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
-            "Event_Timestamp": "2026-11-06 09:19 UTC (approx. 23 minutes ago)",
-            "Facts": "Stock futures wobble as Wall Street braces for the critical U.S. jobs report following an artificial intelligence trade meltdown and midterm election surprises that altered trade, tax, and Iran policy outlooks [Yahoo Finance Nasdaq, Yahoo Finance Oil].",
-            "Uncertainties": "The outcome of the upcoming U.S. employment report and its implications for Federal Reserve monetary policy easing.",
-            "Macro_Context": "EUR/USD is down -0.47% and Brent Crude is at $99.802 (+1.61%), setting a stagflationary macro backdrop ahead of high-impact labor market data.",
-            "Bull_Case": "A softer-than-expected jobs report would revive Fed rate-cut expectations, driving down yields and triggering a powerful rally in Gold.",
-            "Bear_Case": "A hotter-than-expected payrolls print could spike U.S. yields and the USD, triggering a sharp flush of leveraged long gold positions.",
-            "Historical_Calibration": "No completed 20h evaluations yet. Pre-NFP positioning creates high-tension consolidation where ATR exhaustion ($76.99 est. daily) can expand rapidly.",
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-06 13:55 UTC (Approx. 45 minutes ago)",
+            "Facts": "US equity futures are mixed pre-bell as traders buy the dip following the post-election tech stock rout. Markets are closely assessing the political fallout of Democratic gains in the midterms while awaiting the upcoming October employment figures that will dictate Federal Reserve rate decisions [Yahoo Finance Oil/Nasdaq].",
+            "Uncertainties": "The upcoming jobs report print and whether employment data will force a hawkish or dovish Fed pivot amid tech sector turbulence.",
+            "Macro_Context": "Sets up a high-stakes fundamental inflection point. Strong USD (EUR/USD -0.72%) and falling bond prices (US 10Y price 107.096) suggest sticky yields ahead of the jobs report.",
+            "Bull_Case": "A softer-than-expected jobs report would weaken the USD, drop yields, and trigger a sharp relief rally in gold from current lows.",
+            "Bear_Case": "A hot jobs report would cement Fed hawkishness, driving yields higher and pressuring non-yielding gold further.",
+            "Historical_Calibration": "No completed 20h evaluations. Pre-data positioning phase. ATR ratio 0.37x indicates market is coiling before employment data release.",
             "Impact_Timing": "Future",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 57,
-            "Past_Price_Action_Cause": "Markets are positioning ahead of the jobs report while digesting the fallout from the AI rout, supporting defensive demand.",
-            "Orderflow_Price_Target": "4121.04"
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Consolidation and cautious positioning ahead of top-tier labor market data explain the muted immediate 4h momentum.",
+            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -1436,24 +1446,24 @@
                 "_timestamp": 1793973248.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-06 07:58 UTC (~2 hours ago relative to 2026-11-06 10:06 UTC)",
-            "Facts": "Iran's IRGC navy announced that two oil tankers caught fire after striking mines in the Strait of Hormuz, alongside reports of two US MQM-170 reconnaissance drones downed over Qeshm Island [Middle East Eye, Mehr News Agency]. This follows multiple tanker incidents and heightened US-Iran tensions [Al Jazeera English, Investing.com].",
-            "Uncertainties": "The full extent of maritime navigation restrictions in the Strait of Hormuz and the potential for direct military escalation between the US and Iran.",
-            "Macro_Context": "Strait of Hormuz disruptions directly threaten global energy supplies, driving Brent Crude higher ($100.068) and triggering safe-haven demand across commodities.",
-            "Bull_Case": "Actual physical disruption of oil tankers via naval mines in a critical chokepoint creates severe supply panic, driving intense safe-haven demand for gold.",
-            "Bear_Case": "Diplomatic intervention or containment by naval patrols could de-escalate maritime panic, prompting a quick retracement in risk premiums.",
-            "Historical_Calibration": "No completed 20h evaluations yet. Direct kinetic actions in oil shipping lanes represent Tier-1 geopolitical catalysts for gold and oil.",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-06 13:54 UTC (Approx. 46 minutes ago)",
+            "Facts": "Iran's IRGC navy announced that two additional oil tankers caught fire after striking naval mines in the Strait of Hormuz, following earlier reports of multiple tankers and a tugboat ablaze and US reconnaissance drones downed over Qeshm Island [Mehr News Agency, Middle East Eye, Al Jazeera].",
+            "Uncertainties": "The scale of potential military escalation, freedom of navigation blockades in the Strait of Hormuz, and prospective retaliation by Western forces.",
+            "Macro_Context": "Brent Crude oil is up 1.02% at $100.56, reflecting immediate supply disruption fears in a critical energy chokepoint. Geopolitical risk premium directly underpins safe-haven assets.",
+            "Bull_Case": "Active military conflict and maritime disruptions in the Strait of Hormuz threaten global energy supplies, triggering immediate safe-haven and inflation-hedge buying in gold.",
+            "Bear_Case": "If diplomatic interventions or containment measures prevent broader military escalation, the geopolitical risk premium in gold can unwind quickly.",
+            "Historical_Calibration": "No completed 20h evaluations. Active geopolitical flashpoint with high escalation potential. ATR exhaustion at 0.37x provides significant headroom for rapid upside repricing.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 70,
-            "Past_Price_Action_Cause": "Direct kinetic escalation in the Strait of Hormuz acts as a primary catalyst for safe-haven flows and oil spikes.",
-            "Orderflow_Price_Target": "4080.00"
+            "Probability_Percent": 68,
+            "Past_Price_Action_Cause": " Middle East kinetic escalation provides a structural floor, offsetting broader equity liquidation pressures on gold.",
+            "Orderflow_Price_Target": "4069.92"
         },
-        "eval_status": "HIT"
+        "eval_status": "ACTIVE"
     },
     {
         "main_date": "Erstmeldung: 2026-11-06 13:53",

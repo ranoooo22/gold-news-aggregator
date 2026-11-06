@@ -1,5 +1,1030 @@
 [
     {
+        "main_date": "Erstmeldung: 2026-11-06 08:58 | Letztes Update: 2026-11-06 17:48",
+        "original_date": "2026-11-06 08:58",
+        "_timestamp": 1793987324.0,
+        "articles": [
+            {
+                "title": "FTSE 100 today: Stocks slump as global tech rout deepens",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-slump-085808736.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 08:58",
+                "description": "Investing.com -- British stocks fell on Friday as a global tech rout over AI investment worries after the U.S. midterms spread to Europe.",
+                "_timestamp": 1793955488.0
+            },
+            {
+                "title": "FTSE 100 slumps in AI rout",
+                "link": "https://uk.finance.yahoo.com/news/ftse-100-slumps-ai-rout-174844828.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:48",
+                "description": "The FTSE 100 fell sharply on Friday as a tech sell-off on Wall Street spread across the world.",
+                "_timestamp": 1793987324.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-06 17:48 UTC (About 4 minutes ago relative to reference time)",
+            "Facts": "The FTSE 100 fell sharply on Friday, extending a global tech sell-off and risk-off sentiment triggered by AI investment concerns and political shifts following U.S. midterms [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether the European and UK equity sell-off will accelerate contagion into broader global credit and banking systems.",
+            "Macro_Context": "EUR/USD is down -0.74% (strong USD), while Nasdaq 100 is up +0.33%. Global equity contagion increases safe-haven demand, interacting with strong USD pressure on XAU/USD.",
+            "Bull_Case": "Spillover of global equity rout and risk aversion drives institutional safe-haven flows directly into physical gold.",
+            "Bear_Case": "Strong USD proxy (EUR/USD -0.74%) creates heavy downward pressure on dollar-denominated gold, offsetting safety bids.",
+            "Historical_Calibration": "No completed 20h evaluations yet; fresh news item showing immediate ongoing market stress.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "XAU/USD at 4057.83 navigates between opposing forces of risk-off safe-haven demand and a stronger US Dollar.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:47",
+        "original_date": "2026-11-06 17:47",
+        "_timestamp": 1793987220.0,
+        "articles": [
+            {
+                "title": "What’s next for your portfolio after the decline in Big Tech stocks?",
+                "link": "https://www.marketwatch.com/story/whats-next-for-your-portfolio-after-the-decline-in-big-tech-stocks-2873452f?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-06 17:47",
+                "description": "Also in Weekend Reads: Ideas for generating investment income, new tax brackets, buying a home with cash and advice from the Moneyist.",
+                "_timestamp": 1793987220.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-06 17:47 UTC (About 5 minutes ago relative to reference time)",
+            "Facts": "MarketWatch published weekend advice for portfolio adjustments following the decline in Big Tech stocks, covering investment income and tax strategies [MarketWatch Macro].",
+            "Uncertainties": "General retail investor positioning changes and long-term rebalancing intent.",
+            "Macro_Context": "Reflects retail and portfolio-level anxiety amidst the Nasdaq 100's volatile environment (+0.33% 24h change) and sliding bond prices.",
+            "Bull_Case": "Investors rotating out of equities into hard assets and commodities for portfolio hedging.",
+            "Bear_Case": "Purely educational weekend reading material with no direct macroeconomic or liquidity shock value.",
+            "Historical_Calibration": "No completed 20h evaluations yet; editorial content carries minimal direct impulse.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Steady consolidation near current levels as macro commentary remains secondary to hard data.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 16:52 | Letztes Update: 2026-11-06 17:46",
+        "original_date": "2026-11-06 16:52",
+        "_timestamp": 1793987202.0,
+        "articles": [
+            {
+                "title": "NVIDIA Stocks Rebound 6.78% as Lawmakers Call Jensen Huang to Closed-Door Briefing",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-rebound-6-78-165211819.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 16:52",
+                "description": "Three House chairmen want Huang to explain his ties to a reported Chinese intelligence asset by November 18.",
+                "_timestamp": 1793983931.0
+            },
+            {
+                "title": "Nvidia Stock, Other AI Names Rebound After Sell-Off",
+                "link": "https://finance.yahoo.com/m/870e9d6a-dbbb-3380-9680-17f32e5017a1/nvidia-stock%2C-other-ai-names.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:46",
+                "description": "Nvidia and other chip stocks exposed to the AI data center buildout rebounded on Friday after a hard sell-off.",
+                "_timestamp": 1793987202.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-06 17:46 UTC (About 6 minutes ago relative to reference time)",
+            "Facts": "Nvidia and other AI chip stocks rebounded 6.78% on Friday despite three House chairmen calling CEO Jensen Huang to a closed-door briefing by November 18 regarding ties to a Chinese intelligence asset [Yahoo Finance Nasdaq].",
+            "Uncertainties": "The political fallout and specific outcome of the upcoming November 18 congressional briefing for Nvidia.",
+            "Macro_Context": "Nasdaq 100 up +0.33%, showing resilience in tech despite regulatory and geopolitical headwinds, weakening safe-haven gold appeal.",
+            "Bull_Case": "Regulatory scrutiny and geopolitical tensions surrounding tech supply chains elevate systemic risk, benefiting gold as an ultimate hedge.",
+            "Bear_Case": "Stock rebound and risk-on sentiment recovery reduce safe-haven flows, capping gold upside.",
+            "Historical_Calibration": "No completed 20h evaluations yet; news is breaking and highly dynamic.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Equity bounce eases immediate panic selling, limiting aggressive safe-haven chasing in gold.",
+            "Orderflow_Price_Target": "4050.71"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 18:59 | Letztes Update: 2026-11-06 17:45",
+        "original_date": "2026-11-05 18:59",
+        "_timestamp": 1793987126.0,
+        "articles": [
+            {
+                "title": "As Nvidia’s stock heads for a bear market, bargain hunters see a golden buying opportunity",
+                "link": "https://www.marketwatch.com/story/as-nvidias-stock-heads-for-a-bear-market-bargain-hunters-see-a-golden-buying-opportunity-1a5917e6?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-05 18:59",
+                "description": "Portfolio managers say chip demand should be resilient even in a period of political uncertainty.",
+                "_timestamp": 1793905140.0
+            },
+            {
+                "title": "Historically Bullish Signal Emerges for Nvidia Stock",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/historically-bullish-signal-emerges-nvidia-193737196.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:37",
+                "description": "History says you should \"buy the dip\" on NVDA",
+                "_timestamp": 1793907457.0
+            },
+            {
+                "title": "Is Nvidia Still a Millionaire-Maker Stock?",
+                "link": "https://www.fool.com/investing/2026/11/05/is-nvidia-still-a-millionaire-maker-stock/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 21:11",
+                "description": "Nvidia looks like it can keep beating the S&amp;P 500, but if you're looking for it to deliver another 10x return (or more) like it has in the past, you may want to dial back your expectations.",
+                "_timestamp": 1793913060.0
+            },
+            {
+                "title": "Nvidia Stock Is Down Nearly 24% Ahead of Earnings: Is It a Buy?",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62956559/nvidia-stock-selloff?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:00",
+                "description": "Nvidia Corp. (NASDAQ:NVDA) plunged more than 8% Thursday, extending its decline since Oct. 6 to nearly 24% and wiping approximately $1.4 trillion off its market value just 12 days before earnings. The latest selloff comes as Democrats’ midterm election victories...",
+                "_timestamp": 1793916008.0
+            },
+            {
+                "title": "GE Vernova Has Something Nvidia Needs Under a Democratic Congress",
+                "link": "https://247wallst.com/investing/2026/11/06/ge-vernova-has-something-nvidia-needs-under-a-democratic-congress/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:45",
+                "description": "Industrial stocks are sliding on fears of a Democratic sweep, yet one power equipment maker keeps stacking orders while its stock gets cheaper. This investor sees the selloff as a buying window, and the reasons go beyond politics.",
+                "_timestamp": 1793987126.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-06 17:45 UTC (About 7 minutes ago relative to reference time)",
+            "Facts": "Nvidia is down nearly 24% since October 6, wiping out $1.4 trillion in market value ahead of earnings, exacerbated by Democratic midterm victories and industrial rotation fears [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether upcoming earnings will validate or break the massive AI infrastructure valuation thesis.",
+            "Macro_Context": "Tech/AI correction interacts with broader political shifts under a Democratic Congress, influencing risk sentiment and institutional asset allocation.",
+            "Bull_Case": "Extended tech sector unwinding sparks systemic contagion, driving safe-haven capital into XAU/USD.",
+            "Bear_Case": "Losses are localized to the tech sector with capital potentially rotating into other cyclical or defensive market segments rather than gold.",
+            "Historical_Calibration": "No completed 20h evaluations yet; multi-day accumulation of tech rout narrative.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 58,
+            "Past_Price_Action_Cause": "Persistent equity tech weakness underpins underlying defensive demand for gold near the 4057 level.",
+            "Orderflow_Price_Target": "4070.29"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:36",
+        "original_date": "2026-11-06 17:36",
+        "_timestamp": 1793986560.0,
+        "articles": [
+            {
+                "title": "Treasury Yields Rise on Strong Jobs Data",
+                "link": "https://www.wsj.com/finance/investing/u-s-treasurys-little-changed-markets-await-employment-data-88f3f2b6?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:36",
+                "description": "Treasury yields rose on robust U.S. labor data and ahead of next week’s inflation reports, while safe-haven buying kept borrowing costs near recent lows in Germany.",
+                "_timestamp": 1793986560.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-06 17:36 UTC (About 16 minutes ago relative to reference time)",
+            "Facts": "Treasury yields rose on robust U.S. labor data ahead of next week's inflation reports, while safe-haven German yields stayed near recent lows [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Exact magnitude of next week's upcoming U.S. inflation data prints.",
+            "Macro_Context": "US 10Y Bond Price is down 0.13% (implying higher yields), and EUR/USD is down -0.74% (strong USD). Higher yields and a strong dollar are direct headwinds for non-yielding gold.",
+            "Bull_Case": "Strong labor data fuels stagflation fears or preemptive hedging against upcoming inflation prints, supporting gold.",
+            "Bear_Case": "Rising yields and a surging US dollar increase the opportunity cost of holding gold, driving prices lower toward support walls.",
+            "Historical_Calibration": "No completed 20h evaluations yet; standard macro data reaction loop.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Strong labor data and rising yields weigh on XAU/USD, pressuring price toward the 4050.71 sell-limit wall.",
+            "Orderflow_Price_Target": "4050.71"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:34",
+        "original_date": "2026-11-06 17:34",
+        "_timestamp": 1793986481.0,
+        "articles": [
+            {
+                "title": "State Pension Funds Have at Least $578 Billion Riding on Tumbling AI Stocks",
+                "link": "https://247wallst.com/investing/2026/11/06/state-pension-funds-have-at-least-578-billion-riding-on-tumbling-ai-stocks/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:34",
+                "description": "A nonprofit just tallied how much teachers, firefighters, and other public retirees have riding on AI, and the next day the market flinched. Who ends up covering the gap if the bet goes wrong?",
+                "_timestamp": 1793986481.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-06 17:34 UTC (About 18 minutes ago relative to reference time)",
+            "Facts": "State pension funds have at least $578 Billion exposed to tumbling AI stocks, raising systemic funding and retiree solvency questions following the recent market drop [Yahoo Finance Nasdaq].",
+            "Uncertainties": "The degree of actual realized losses versus unrealized drawdowns for public pension portfolios.",
+            "Macro_Context": "Broad equity vulnerability intersects with institutional risk management, increasing macro systemic anxiety.",
+            "Bull_Case": "Institutional systemic risk concerns prompt defensive reallocations into precious metals to protect institutional capital pools.",
+            "Bear_Case": "Pension fund losses remain contained or force liquidation across all asset classes, including gold, to meet margin calls.",
+            "Historical_Calibration": "No completed 20h evaluations yet; structural institutional risk headline.",
+            "Impact_Timing": "Future",
+            "Timeframe": "Weeks/Months",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Long-term structural risk narrative supports underlying gold bids against macro headwinds.",
+            "Orderflow_Price_Target": "4078.41"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 15:15 | Letztes Update: 2026-11-06 17:33",
+        "original_date": "2026-11-05 15:15",
+        "_timestamp": 1793986387.0,
+        "articles": [
+            {
+                "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
+                "link": "https://www.fool.com/investing/2026/11/05/nvidia-vs-taiwan-semiconductor-the-ai-revolution-i/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:22",
+                "description": "These semiconductor giants are among the biggest beneficiaries of the AI chip boom, and they are expected to sustain solid growth levels over the long run.",
+                "_timestamp": 1793892120.0
+            },
+            {
+                "title": "Amazon and Google Could Outperform Nvidia as AI Trade Enters New Phase, Says Joseph Carlson",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62926393/amazon-google-nvidia?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:15",
+                "description": "Amazon (NASDAQ:AMZN) and Alphabet (NASDAQ:GOOGL) could outperform Nvidia (NASDAQ:NVDA) as AI investors shift from companies selling the hardware to those turning it into revenue, YouTube investor Joseph Carlson argues. A day after Democrats swept Congress and data-center critics won key...",
+                "_timestamp": 1793891708.0
+            },
+            {
+                "title": "NVDA vs AMD: which stock has the better bounce setup",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvda-vs-amd-stock-better-155640375.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:56",
+                "description": "Investing.com -- The better tactical bounce candidate is NVIDIA Corporation (NVDA), not because its trend is healthy, but because Advanced Micro Devices Inc (AMD) is showing heavier damage and volatility.",
+                "_timestamp": 1793894200.0
+            },
+            {
+                "title": "Not Nvidia. Not Micron. This Dutch Company Controls a Key Bottleneck of AI Chip Production.",
+                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-micron-this-dutch-company-controls/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 17:57",
+                "description": "ASML makes the only machines that can print the world's most advanced chips, and its customers are already asking for delivery slots in 2029 and 2030.",
+                "_timestamp": 1793901420.0
+            },
+            {
+                "title": "Not Nvidia. Not AMD. 2 Chip Stocks I'd Buy Before the End of the Year.",
+                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-amd-2-chip-stocks-id-buy-in-2026/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 18:33",
+                "description": "Micron and Taiwan Semiconductor are key suppliers to the computing unit designers.",
+                "_timestamp": 1793903580.0
+            },
+            {
+                "title": "Advanced Micro Devices vs. Taiwan Semiconductor Manufacturing: The AI Sell-Off Is Exposing a Critical Difference Investors Shouldn't Ignore for 2027",
+                "link": "https://www.fool.com/coverage/better-buy/2026/11/05/advanced-micro-devices-vs-taiwan-semiconductor-manufacturing-the-ai-sell-off-is-exposing-a-critical-difference-investors-shouldn-t-ignore-for-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 20:20",
+                "description": "For investors looking toward 2027, profitability and pricing power could matter more than ever.",
+                "_timestamp": 1793910002.0
+            },
+            {
+                "title": "Prediction: These Will Be Nvidia's and Palantir's Stock Prices by 2027 (Hint: Only 1 Is a Buy)",
+                "link": "https://www.fool.com/investing/2026/11/05/prediction-these-will-be-nvidias-and-palantirs-sto/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:46",
+                "description": "Nvidia and Palantir are two popular AI picks, but only one makes sense right now.",
+                "_timestamp": 1793907960.0
+            },
+            {
+                "title": "Should You Buy Nvidia Stock Before Nov. 17?",
+                "link": "https://www.fool.com/investing/2026/11/05/should-you-buy-nvidia-stock-before-nov-17/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 02:20",
+                "description": "The AI chip maker is trading at a discount.",
+                "_timestamp": 1793931600.0
+            },
+            {
+                "title": "Should You Buy Nvidia Before Nov. 17? The Evidence is Piling Up and Here’s What It Shows.",
+                "link": "https://www.fool.com/investing/2026/11/06/should-you-buy-nvidia-before-nov-17-the-evidence-is-piling-up-and-here-s-what-it-shows/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 09:25",
+                "description": "Investing in Nvidia has been a sure bet in recent years.",
+                "_timestamp": 1793957102.0
+            },
+            {
+                "title": "Nvidia Shares Suffer Worst Day Since January 2025 -- AI Fears Trigger $450 Billion Rout",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-shares-suffer-worst-day-104000765.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 10:40",
+                "description": "Nvidia Stock Plunges as Texas Data Center Restrictions Put AI Boom at Risk",
+                "_timestamp": 1793961600.0
+            },
+            {
+                "title": "Nvidia Isn’t the Only AI Stock That Could Surprise Wall Street in 2027",
+                "link": "https://247wallst.com/investing/2026/11/06/nvidia-isnt-the-only-ai-stock-that-could-surprise-wall-street-in-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 14:03",
+                "description": "Memory chips were once the dullest corner of semiconductors, yet one stock has tripled while trading at a fraction of the market's earnings multiple. Wall Street and the market disagree sharply on what comes next, and the gap could close fast.",
+                "_timestamp": 1793973810.0
+            },
+            {
+                "title": "Forget Nvidia. Here’s the Company Behind the Chips",
+                "link": "https://247wallst.com/investing/2026/11/06/forget-nvidia-heres-the-company-behind-the-chips/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:03",
+                "description": "Every AI chip from Nvidia and Broadcom runs through one company's fabs, yet that company trades at a fraction of the valuation its customers command. The gap raises a question worth answering before the market closes it.",
+                "_timestamp": 1793984581.0
+            },
+            {
+                "title": "NVIDIA Corporation (NVDA) Is Taking AI Beyond Chips: Here’s What Could Drive Its Next Growth Phase",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-corporation-nvda-taking-ai-173307195.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:33",
+                "description": "Liontrust Investment Partners recently released its “GF Global Innovation Fund” Q3 2026 investor letter. A copy of the letter can be downloaded here. The Fund returned -3.0% in the third quarter of 2026, underperforming the MSCI AC World Index, which gained 1.6%. However, the Fund remained ahead year to date, returning 17.9% compared with 13.0% […]",
+                "_timestamp": 1793986387.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-06 10:40 to 17:33 UTC (approx. 0.5 to 7 hours ago relative to 2026-11-06 17:53 UTC)",
+            "Facts": "NVIDIA (NVDA) suffered its worst day since January 2025, triggering a $450 billion tech rout and AI sector crash due to fears surrounding Texas data center restrictions and broader AI boom risks. Liontrust Q3 2026 letter and Morningstar/Yahoo reports highlight chip valuation gaps and supply chain dependencies. [Yahoo Finance Nasdaq]",
+            "Uncertainties": "The full extent of regulatory and infrastructure restrictions on Texas data centers and whether broader semiconductor demand will contract or merely rotate to alternative foundries and memory chip makers.",
+            "Macro_Context": "Nasdaq 100 is up slightly (+0.33%) despite the NVDA rout, reflecting sector rotation. Brent crude is firm (+0.48%). US 10Y bond yields are lower (price up +0.13%), showing safe-haven flows supporting bonds while equity tech volatility encourages risk-off hedging.",
+            "Bull_Case": "A major tech stock rout and AI sector correction sparks systemic risk aversion, driving safe-haven capital directly into precious metals like gold, pushing XAU/USD higher toward nearby liquidity pools.",
+            "Bear_Case": "The sell-off remains isolated to high-flying AI stocks with capital rotating into other tech or healthcare sectors, leaving overall market liquidity intact and preventing a sustained safe-haven flight to gold.",
+            "Historical_Calibration": "No completed 20h evaluations exist yet; therefore, the calibration relies strictly on the immediate high-impact risk-off cross-asset correlation where tech sell-offs intermittently trigger safe-haven gold bids.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 62,
+            "Past_Price_Action_Cause": "Current gold price at 4057.83 sits directly beneath heavy liquidity zones as market participants digest tech sector volatility and safe-haven demand.",
+            "Orderflow_Price_Target": "4059.93"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:33",
+        "original_date": "2026-11-06 17:33",
+        "_timestamp": 1793986380.0,
+        "articles": [
+            {
+                "title": "AMD, Nvidia and Intel diverge as Morningstar resets the scorecard",
+                "link": "https://www.thestreet.com/markets/amd-nvidia-and-intel-diverge-as-morningstar-resets-the-scorecard?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:33",
+                "description": "Morningstar’s latest estimates put AMD, Nvidia and Intel on different paths.",
+                "_timestamp": 1793986380.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-06 17:33 UTC (approx. 0.5 hours ago relative to 2026-11-06 17:53 UTC)",
+            "Facts": "Morningstar released a scorecard reset diverging the outlooks for AMD, Nvidia, and Intel following recent semiconductor market turbulence and regulatory pressures. [Yahoo Finance Nasdaq]",
+            "Uncertainties": "How individual semiconductor firms will navigate changing margin profiles, chip architectures, and competitive pressures over the upcoming quarters.",
+            "Macro_Context": "Tech/AI sector divergence directly impacts the Nasdaq 100 (+0.33%), while broader macro drivers like EUR/USD (-0.74%) and US 10Y bond yields dictate the macro backdrop for commodities.",
+            "Bull_Case": "Analyst downgrades and sector restructuring increase equity market fragility, prompting institutional rebalancing out of equities and into safe-haven gold.",
+            "Bear_Case": "This is a stock-specific equity re-rating rather than a macroeconomic shock, resulting in negligible spillover into precious metals.",
+            "Historical_Calibration": "Without historical track record benchmarks for this sequence, impact is evaluated as moderate-low given its equity-specific nature.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Stock-specific analyst scorecards have limited direct correlation with spot gold price action absent broader market panics.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-02 17:35 | Letztes Update: 2026-11-06 17:28",
+        "original_date": "2026-11-02 17:35",
+        "_timestamp": 1793986119.0,
+        "articles": [
+            {
+                "title": "Yemeni government forces claim gains in Lahij",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-gains-yemens",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 04:52",
+                "description": "Yemeni government forces claim gains in Lahij\n\n    \n    \n\n        \n    \n                The internationally recognised Yemeni government says its troops have recaptured positions from Houthi forces in Lahij governorate, located south-west of the country.\n\n\"Our armed forces have succeeded in recapturing positions in the al-Khazzan al-Ahmar area on the al-Nusayrah front in the al-Sawalihah sub-district of the al-Maqatirah district in northern Lahij governorate, and have repelled the terrorist Houthi militias\" the government forces' media centre said.",
+                "_timestamp": 1793681557.0
+            },
+            {
+                "title": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-army-says-it-launched-nearly-1000-operations-against-houthi",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 03:11",
+                "description": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day\n\n    \n    \n\n        \n    \n                The Yemeni army said that it launched 951 operations targeting Houthi positions over the past 24 hours as part of Operation Dawn of Yemen.\n\nArmy spokesperson Majed al-Nuzaili claimed in a post on X that the operations had \"neutralized\" around 332 Houthi field commanders and fighters.\n\nMoreover, the army claimed to have destroyed or damaged 56&nbsp;vehicles, pieces of equipment and weapons across several fronts, including Al-Jawf, Marib and Al-Bayda.",
+                "_timestamp": 1793675518.0
+            },
+            {
+                "title": "Yemeni government forces launch strikes on Houthi positions west of Taiz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-launch-strikes-houthi-positions-west-taiz",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 02:17",
+                "description": "Yemeni government forces launch strikes on Houthi positions west of Taiz\n\n    \n    \n\n        \n    \n                Forces belonging to Yemen’s internationally recognised government have carried out air strikes against Houthi positions west of Taiz.\n\nThe military spokesperson said that&nbsp;warplanes targeted the movement's military vehicles in the Jabal Habashi area, resulting in the killing of Houthi fighters.&nbsp;\n\nMeanwhile, Houthi-affiliated media reported that a strike north of Taiz targeted a plastic shoe factory, killing three and injuring eight others.&nbsp;",
+                "_timestamp": 1793672237.0
+            },
+            {
+                "title": "Israeli forces push into Quneitra, Syrian media report",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-occupation-push-quneitra-syria-syrian-media-report",
+                "source": "Middle East Eye",
+                "date": "2026-11-02 22:51",
+                "description": "Israeli forces push into Quneitra, Syrian media report\n\n    \n    \n\n        \n    \n                Israeli forces advanced into the village of al-Asbah in rural southern Quneitra with five military vehicles, Syria TV reported.\n\nAccording to Sijil, a Syrian initiative tracking Israeli violations in the country, Israeli forces committed seven violations on Monday before the latest incursion, including other incursions, checkpoints, and aircraft overflights.",
+                "_timestamp": 1793659900.0
+            },
+            {
+                "title": "Israeli forces raid multiple West Bank towns, local sources report",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
+                "source": "Middle East Eye",
+                "date": "2026-11-02 22:31",
+                "description": "Israeli forces raid multiple West Bank towns, local sources report\n\n    \n    \n\n        \n    \n                Israeli forces launched raids on several towns in the occupied West Bank late on Monday, local sources reported.\n\nAmong them are the towns of Qabatiya, south of Jenin, and the city of Qalqilya.",
+                "_timestamp": 1793658667.0
+            },
+            {
+                "title": "397 attacks on West Bankers in Oct, highest monthly total in 20 years: UN",
+                "link": "https://www.tehrantimes.com/news/531764/397-attacks-on-West-Bankers-in-Oct-highest-monthly-total-in",
+                "source": "Tehran Times",
+                "date": "2026-11-02 17:35",
+                "description": "Israeli settler attacks in the occupied West Bank reached an unprecedented level in October, with the number of incidents causing injuries or property damage exceeding all monthly totals recorded since the United Nations began monitoring them in 2006.",
+                "_timestamp": 1793640930.0
+            },
+            {
+                "title": "Saudi strikes martyr 17, wound 59 in Yemen",
+                "link": "https://en.mehrnews.com/news/249125/Saudi-strikes-martyr-17-wound-59-in-Yemen",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 04:41",
+                "description": "TEHRAN, Nov. 03 (MNA) – At least 17 Yemeni civilians were martyred and 59 wounded, most of them children, in Saudi airstrikes over the past 24 hours, Yemen's Health Ministry said.",
+                "_timestamp": 1793680901.0
+            },
+            {
+                "title": "Who are Yemen’s Giants Brigades and who do they fight for?",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/who-are-yemens-giants-brigades-and-who-do-they-fight",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 02:35",
+                "description": "Who are Yemen’s Giants Brigades and who do they fight for?\n\n    \n    \n\n        \n    \n                Yemen’s Giants Brigades have emerged as one of the most powerful forces fighting the Houthis.\n\nBuilt with UAE backing and rooted in Yemen’s southern movement, they are now fighting alongside Saudi-backed government forces in a major new offensive.\n\nSo who are the Giants Brigades, who do they actually fight for and what does their rise tell us about Yemen’s war?",
+                "_timestamp": 1793759739.0
+            },
+            {
+                "title": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/reports-strikes-saudi-led-coalition-yemens-al-bayda",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 04:10",
+                "description": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda \n\n    \n    \n\n        \n    \n                Saudi-led coalition forces have reportedly launched four air strikes in central Yemen's city of al-Bayda, according to Houthi-affiliated media.&nbsp;\n\nShelling was also reported in the&nbsp;Ghamr district of the Saada governorate.",
+                "_timestamp": 1793765431.0
+            },
+            {
+                "title": "Yemeni government forces claim control of strategic al-Jawf mountain range",
+                "link": "https://www.aljazeera.com/news/2026/11/4/yemeni-government-forces-claim-control-of-strategic-al-jawf-mountain-range?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-04 14:08",
+                "description": "The advance on al-Dahida heights, a strategic highland, comes as fighting escalates in al-Dhalea, Lahij and Taiz.",
+                "_timestamp": 1793801298.0
+            },
+            {
+                "title": "Yemeni military announces 3 ops. deep inside Saudi Arabia",
+                "link": "https://en.mehrnews.com/news/249169/Yemeni-military-announces-3-ops-deep-inside-Saudi-Arabia",
+                "source": "Mehr News Agency",
+                "date": "2026-11-04 14:04",
+                "description": "TEHRAN, Nov. 04 (MNA) –  The spokesman for the Yemeni armed forces announced three successful drone and missile operations deep inside Saudi Arabia on Wednesday.",
+                "_timestamp": 1793801053.0
+            },
+            {
+                "title": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-hits-yemen-reportedly-kill-20-people-over-past-day",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 02:00",
+                "description": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day\n\n    \n    \n\n        \n    \n                Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of&nbsp;al-Jawf, al-Bayda, Saada, and Taiz, according to&nbsp;Houthi-affiliated media.",
+                "_timestamp": 1793844008.0
+            },
+            {
+                "title": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-attack-kills-four-people-yemeni-government-forces-make-gains-al",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 23:36",
+                "description": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz\n\n    \n    \n\n        \n    \n                A ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday.\n\nYemen’s Saudi-backed government's state media reported that four others, also from the same family, were injured after their home was targeted by Houthi fighters, and number of homes nearby were also damaged.\n\nYemeni government forces said in a statement on X that they have made territorial gains in al-Jawf province, seizing several Houthi positions, and&nbsp;repelled Houthi attempts to recapture lost positions in Taiz governorate, according to a Yemeni military spokesperson.\n\n\nFootage showing the armed forces targeting Houthis terrorist militia personnel in Taiz, as part of operation Dawn of Yemen https://t.co/dWZBmGHBBo\n— Yemen Army Media (@Yemenarmyeng) November 4, 2026",
+                "_timestamp": 1793835399.0
+            },
+            {
+                "title": "A month after Yemen government offensive began, war of attrition takes hold",
+                "link": "https://www.aljazeera.com/news/2026/11/5/a-month-after-yemen-government-offensive-began-war-of-attrition-takes-hold?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-05 09:58",
+                "description": "The Houthis suffer losses but also inflict pain on government forces and Saudi Arabia.",
+                "_timestamp": 1793872698.0
+            },
+            {
+                "title": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-air-strikes-reported-sanaa-clashes-lahj-governorate",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 13:25",
+                "description": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate\n\n    \n    \n\n        \n    \n                Houthi affiliated media is reporting air strikes targeting the Hamdan district in Sanaa.\n\nMilitary spokesman Yahya Saree said 12 people, including six children, were killed in Saudi strikes in Yemen on Wednesday, most in Taiz province.\n\nSaudi Arabia carried out 104 air strikes and missile attacks in Sanaa, Al-Jawf, Al-Bayda, Saada, Amran, Marib, Taiz and Lahij, the Ansar Allah spokesperson said.&nbsp;\n\nMeanwhile, Al Jazeera reports clashes between government forces and the Houthis on the al-Maqatra front, in the Lahij governorate.\n\nAccording to the report, government forces claim to have&nbsp;“neutralised” military vehicles and personnel in the skirmishes.\n\nAl Jazeera also reports an escalating humanitarian crisis in Taiz, where civilians are dying as a result of shelling and the ongoing siege.",
+                "_timestamp": 1793885104.0
+            },
+            {
+                "title": "Saudi attacks on Yemen kill nine, including children",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attacks-yemen-kill-nine-including-children",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 07:13",
+                "description": "Saudi attacks on Yemen kill nine, including children\n\n    \n    \n\n        \n    \n                Saudi attacks on Thursday across Yemen killed nine civilians, including three children, the&nbsp;Sanaa-based&nbsp;Health Ministry announced early on Friday.&nbsp;\n\nAccording to the statement, 14 others were wounded in the attacks.&nbsp;",
+                "_timestamp": 1793949234.0
+            },
+            {
+                "title": "Yemen urges Arab states to deter Houthi attacks, foreign minister says",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-urges-arab-states-deter-houthi-attacks-foreign-minister-says",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 09:53",
+                "description": "Yemen urges Arab states to deter Houthi attacks, foreign minister says\n\n    \n    \n\n        \n    \n                Yemen’s foreign minister Afrah al-Zouba has urged Arab states to push for measures to deter Houthi attacks during a meeting with Arab ambassadors in Berlin.\n\nZouba told the envoys about the impact of the attacks on civilians, particularly in Taiz, which she said remained under siege, and raised the detention of UN staff and humanitaria",
+                "_timestamp": 1793958796.0
+            },
+            {
+                "title": "More than 30 killed or wounded in air strikes on Yemeni market, Houthis say",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/more-30-killed-or-wounded-air-strikes-yemen-market-houthis-say",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 11:25",
+                "description": "More than 30 killed or wounded in air strikes on Yemeni market, Houthis say\n\n    \n    \n\n        \n    \n                Air strikes on a market in Yemen’s Taiz province have killed or wounded more than 30 people, according to the Houthi-run Al-Masirah TV.\n\nThe channel said the toll from Friday morning’s attack was preliminary, with searches for missing people still under way as aircraft continued to fly overhead.\n\nIt reported three strikes on the m",
+                "_timestamp": 1793964347.0
+            },
+            {
+                "title": "Yemen's government says its forces recaptured villages and districts in Taiz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-recapture-villages-and-districts-taiz-government-says",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 13:04",
+                "description": "Yemen's government says its forces recaptured villages and districts in Taiz\n\n    \n    \n\n        \n    \n                Yemeni government forces, backed by Saudi Arabia, say they have recaptured several areas in Taiz province, including the villages of al-Nidani and al-Sarari, large parts of Sanamat district and the Rabat al-Qarn area.\n\nThe forces said 37 Houthi fighters had been killed or wounded in the fighting. The Houthis, who control large pa",
+                "_timestamp": 1793970254.0
+            },
+            {
+                "title": "Syria sends military advisers to Saudi Arabia amid Houthi attacks, sources say",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/syria-sends-military-advisers-saudi-arabia-amid-houthi-attacks-sources",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 16:55",
+                "description": "Syria sends military advisers to Saudi Arabia amid Houthi attacks, sources say\n\n    \n    \n\n        \n    \n                Syria has sent a limited number of military personnel to Saudi Arabia to provide advice and training as the kingdom comes under attack from Yemen’s Houthis, Reuters reported, citing two Syrian military sources and a senior US official.\n\nThe US official said Syrian advisers and training teams were travelling to Saudi Arabia to t",
+                "_timestamp": 1793984148.0
+            },
+            {
+                "title": "Houthis and Yemeni government blame each other for Taiz market attack that killed 30",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-and-yemeni-government-blame-each-other-taiz-market-attack-killed",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 17:28",
+                "description": "Houthis and Yemeni government blame each other for Taiz market attack that killed 30\n\n    \n    \n\n        \n    \n                Yemen’s Houthis and the internationally recognised government have blamed each other for a deadly attack on a market in Taiz province earlier on Friday.\n\nThe Houthis said Saudi aircraft carried out the strikes, while the government accused the group of firing a ballistic missile at the market and called the attack a “war ",
+                "_timestamp": 1793986119.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-06 11:25 to 17:28 UTC (approx. 0.5 to 6.5 hours ago relative to 2026-11-06 17:53 UTC)",
+            "Facts": "Yemeni Houthi forces and the Saudi-backed internationally recognized government traded blame for a deadly market attack in Taiz province that killed 30. Simultaneously, Syria sent military advisers to Saudi Arabia to assist against Houthi attacks, while government forces recaptured several districts in Taiz. [Middle East Eye]",
+            "Uncertainties": "The potential for direct military escalation involving regional powers like Saudi Arabia and external advisers, and the risk of widened shipping or energy supply disruptions in the Arabian Peninsula.",
+            "Macro_Context": "Brent Crude Oil is trading higher at 100.03 (+0.48%), reflecting underlying geopolitical risk premiums in the Middle East. Safe-haven demand driven by regional conflict directly supports gold.",
+            "Bull_Case": "Escalating military conflict in Yemen involving regional actors and potential threats to energy infrastructure drives a strong geopolitical risk premium into safe-haven assets like gold.",
+            "Bear_Case": "The conflict remains localized within Yemen and Saudi border regions without causing broader disruptions to global trade or energy supplies, muting sustained safe-haven flows.",
+            "Historical_Calibration": "Geopolitical flare-ups in the Middle East historically provide a reliable short-term bid for gold, calibrated here against current order book liquidity clusters.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Escalating regional hostilities reinforce geopolitical risk premia, aligning with steady gold resilience near current levels.",
+            "Orderflow_Price_Target": "4070.29"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:28",
+        "original_date": "2026-11-06 17:28",
+        "_timestamp": 1793986101.0,
+        "articles": [
+            {
+                "title": "What the AI stock crash cost your 401(k) for every $1,000 invested",
+                "link": "https://finance.yahoo.com/markets/article/what-the-ai-stock-crash-cost-your-401k-for-every-1000-invested-172821837.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:28",
+                "description": "Thursday's AI stock crash cost a basic S&amp;P 500 index fund about a nickel on the dollar, while chip stocks lost nearly a third of their value.",
+                "_timestamp": 1793986101.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-06 17:28 UTC (approx. 0.5 hours ago relative to 2026-11-06 17:53 UTC)",
+            "Facts": "Analysis reveals that Thursday's AI stock crash cost a basic S&P 500 index fund about a nickel on the dollar, while chip stocks lost nearly a third of their value, impacting retail 401(k) retirement accounts. [Yahoo Finance Nasdaq]",
+            "Uncertainties": "Whether retail wealth destruction in retirement accounts will lead to broader consumer retrenchment or aggregate demand slowdowns.",
+            "Macro_Context": "Occurs amid ongoing tech sector volatility (Nasdaq 100 +0.33%) and a strong US Dollar (EUR/USD -0.74%), creating cross-currents between equity liquidations and safe-haven demand.",
+            "Bull_Case": "Widespread wealth erosion in retirement accounts denting consumer confidence and prompting flight-to-safety asset reallocation into physical and bullion-backed gold.",
+            "Bear_Case": "Losses are contained within institutional and growth-oriented retail portfolios, causing no immediate macroeconomic spillover or monetary policy shifts.",
+            "Historical_Calibration": "Retirement fund impact reports summarize past volatility rather than driving fresh instantaneous order flow, limiting immediate impulse magnitude.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Reflects the post-mortem of the recent AI crash, supporting baseline safe-haven demand without triggering aggressive immediate spikes.",
+            "Orderflow_Price_Target": "4059.93"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 18:34 | Letztes Update: 2026-11-06 17:24",
+        "original_date": "2026-11-05 18:34",
+        "_timestamp": 1793985840.0,
+        "articles": [
+            {
+                "title": "Prediction: A Stock Market Crash Is Coming. Here Are 3 Safe Stocks to Buy Now That Could Help You Protect and Grow Your Wealth.",
+                "link": "https://www.fool.com/investing/2026/11/05/prediction-stock-market-crash-safe-stocks-to-buy/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 18:34",
+                "description": "The current bull market may be nearing its end.",
+                "_timestamp": 1793903659.0
+            },
+            {
+                "title": "3 High-Yield Healthcare Stocks to Buy With $1,000 and Hold Through Any Market",
+                "link": "https://www.fool.com/investing/2026/11/06/3-high-yield-healthcare-stocks-to-buy-with-1000-an/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:24",
+                "description": "They are so much more than just dividend stocks.",
+                "_timestamp": 1793985840.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-05 18:34 to 2026-11-06 17:24 UTC (approx. 24 to 24 hours ago relative to 2026-11-06 17:53 UTC)",
+            "Facts": "Financial commentary highlights high-yield healthcare stocks and defensive asset allocation strategies as predictions mount that the broader stock market bull market may be ending and a crash is approaching. [Yahoo Finance Nasdaq]",
+            "Uncertainties": "Timing and catalyst for any potential broader market correction versus continued bull market momentum.",
+            "Macro_Context": "Reflects late-cycle defensive positioning, aligning with safe-haven demand dynamics where investors seek non-correlated assets like gold.",
+            "Bull_Case": "Growing market consensus regarding an impending equity crash accelerates capital rotation toward defensive assets and precious metals.",
+            "Bear_Case": "Defensive rotation favors high-yield dividend equities and healthcare rather than non-yielding bullion, dampening direct inflows into gold.",
+            "Historical_Calibration": "General crash commentary is a persistent background fixture in financial media and carries lower immediate signal weight without a direct macro catalyst.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Defensive commentary has been largely absorbed by the market, resulting in range-bound gold price action.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:23",
+        "original_date": "2026-11-06 17:23",
+        "_timestamp": 1793985793.0,
+        "articles": [
+            {
+                "title": "Apple Is “the Anti-AI Large Cap Tech Trade,” Says Josh Brown. Now It’s Capping AI Spending",
+                "link": "https://www.tikr.com/blog/apple-is-the-anti-ai-large-cap-tech-trade-says-josh-brown-now-its-capping-ai-spending?ref=yahoofinance&tlnk=yf-261106-5rx9fr6v&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:23",
+                "description": "Key TakeawaysApple closed at a record on Nov. 4, worth about $5.",
+                "_timestamp": 1793985793.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-06 17:23 UTC (approx. 0.5 hours ago relative to 2026-11-06 17:53 UTC)",
+            "Facts": "Apple closed at a record high on Nov. 4, worth about $5 trillion, with analyst Josh Brown calling it 'the Anti-AI Large Cap Tech Trade' as Apple caps its AI spending. [Yahoo Finance Nasdaq]",
+            "Uncertainties": "Whether Apple's defensive tech profile can continue to decouple from broader semiconductor and AI sector sell-offs.",
+            "Macro_Context": "Apple's outperformance supports the Nasdaq 100 (+0.33%) and contrasts with the NVDA rout, demonstrating intra-sector rotation rather than macro risk-off.",
+            "Bull_Case": "Massive mega-cap tech concentration in Apple highlights extreme market divergences, encouraging institutional hedging via gold.",
+            "Bear_Case": "Apple's strength sustains overall equity market stability and risk appetite, reducing the urgency for safe-haven flows into gold.",
+            "Historical_Calibration": "Mega-cap stock records act as equity-specific phenomena with minimal direct influence on XAU/USD price dynamics.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Apple's record highs have offset broader tech panic, keeping gold anchored near the 4057 level.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:22",
+        "original_date": "2026-11-06 17:22",
+        "_timestamp": 1793985746.0,
+        "articles": [
+            {
+                "title": "Apple, Meta, Musk Face New Threat From Democrats",
+                "link": "https://finance.yahoo.com/technology/articles/apple-meta-musk-face-threat-172226280.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:22",
+                "description": "Political relationships are becoming a potentially costly corporate liability.",
+                "_timestamp": 1793985746.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "Erstmeldung: 2026-11-06 17:22 UTC (vor ca. 0.5h)",
+            "Facts": "[Yahoo Finance Nasdaq] Apple, Meta, Musk Face New Threat From Democrats - Political relationships are becoming a potentially costly corporate liability.",
+            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
+            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 +0.33%, Brent Oil +0.48% | OANDA Sentiment: 71.4% Long / 28.6% Short.",
+            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4059.93.",
+            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4050.71. 4h-ATR-Ratio steht bei 0x.",
+            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.5h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+0.00 (0x der geschaetzten Tages-ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:19",
+        "original_date": "2026-11-06 17:19",
+        "_timestamp": 1793985540.0,
+        "articles": [
+            {
+                "title": "The S&P 500 could be dangerously exposed to AI. Here are some simple alternatives.",
+                "link": "https://www.marketwatch.com/story/the-s-p-500-has-become-a-big-ai-bet-here-are-some-simple-alternatives-3c7574a4?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-06 17:19",
+                "description": "The large-cap index is nowhere near as diversified as you think.",
+                "_timestamp": 1793985540.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "Erstmeldung: 2026-11-06 17:19 UTC (vor ca. 0.6h)",
+            "Facts": "[MarketWatch Macro] The S&P 500 could be dangerously exposed to AI. Here are some simple alternatives. - The large-cap index is nowhere near as diversified as you think.",
+            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
+            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 +0.33%, Brent Oil +0.48% | OANDA Sentiment: 71.4% Long / 28.6% Short.",
+            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4059.93.",
+            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4050.71. 4h-ATR-Ratio steht bei 0x.",
+            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.6h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+0.00 (0x der geschaetzten Tages-ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 23:50 | Letztes Update: 2026-11-06 17:17",
+        "original_date": "2026-11-05 23:50",
+        "_timestamp": 1793985422.0,
+        "articles": [
+            {
+                "title": "Cloudflare’s stock mounts a big comeback after fastest sales surge in nearly 4 years",
+                "link": "https://www.marketwatch.com/story/cloudflares-stock-mounts-a-big-comeback-after-fastest-sales-surge-in-nearly-4-years-d80d994d?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-05 23:50",
+                "description": "Demand for automated AI protection is on the rise — and manifesting in Cloudflare’s earnings results.",
+                "_timestamp": 1793922600.0
+            },
+            {
+                "title": "Why Cloudflare Stock Opened 17% Higher Today",
+                "link": "https://www.fool.com/investing/2026/11/06/why-cloudflare-stock-opened-17-higher-today/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:17",
+                "description": "The web infrastructure giant crushed third-quarter earnings estimates as it begins monetizing the incoming wave of autonomous AI agents.",
+                "_timestamp": 1793985422.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "Erstmeldung: 2026-11-05 23:50 UTC (vor ca. 6.6h)",
+            "Facts": "[MarketWatch Macro] Cloudflare’s stock mounts a big comeback after fastest sales surge in nearly 4 years - Demand for automated AI protection is on the rise — and manifesting in Cloudflare’s earnings results.",
+            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
+            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
+            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
+            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
+            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 6.6h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
+            "Orderflow_Price_Target": "4039.78"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:16",
+        "original_date": "2026-11-06 17:16",
+        "_timestamp": 1793985415.0,
+        "articles": [
+            {
+                "title": "Michael Burry Takes Profits on Major AI Bear Bet",
+                "link": "https://finance.yahoo.com/markets/options/articles/michael-burry-takes-profits-major-171655168.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:16",
+                "description": "Burry sold 25% of his SMH puts but says the remaining position is still very large.",
+                "_timestamp": 1793985415.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "Erstmeldung: 2026-11-06 17:16 UTC (vor ca. 0.6h)",
+            "Facts": "[Yahoo Finance Nasdaq] Michael Burry Takes Profits on Major AI Bear Bet - Burry sold 25% of his SMH puts but says the remaining position is still very large.",
+            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
+            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 +0.33%, Brent Oil +0.48% | OANDA Sentiment: 71.4% Long / 28.6% Short.",
+            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4059.93.",
+            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4050.71. 4h-ATR-Ratio steht bei 0x.",
+            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.6h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+0.00 (0x der geschaetzten Tages-ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:14",
+        "original_date": "2026-11-06 17:14",
+        "_timestamp": 1793985297.0,
+        "articles": [
+            {
+                "title": "Fifth Third Bancorp Eyes Texas Growth and AI Gains After Comerica Integration",
+                "link": "https://www.marketbeat.com/instant-alerts/event-fifth-third-bancorp-eyes-texas-growth-and-ai-gains-after-comerica-integration-2026-11-06/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:14",
+                "description": "Fifth Third Bancorp (NASDAQ:FITB) sees opportunities to grow in Texas and deepen commercial banking relationships following its integration of Comerica, while investing in artificial intelligence to improve employee productivity and customer services, executives said at an investor event. Chief Fin",
+                "_timestamp": 1793985297.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "Erstmeldung: 2026-11-06 17:14 UTC (vor ca. 0.6h)",
+            "Facts": "[Yahoo Finance Nasdaq] Fifth Third Bancorp Eyes Texas Growth and AI Gains After Comerica Integration - Fifth Third Bancorp (NASDAQ:FITB) sees opportunities to grow in Texas and deepen commercial banking relationships following its integration of Comerica, while investing in artifici",
+            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
+            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 +0.33%, Brent Oil +0.48% | OANDA Sentiment: 71.4% Long / 28.6% Short.",
+            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4059.93.",
+            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4050.71. 4h-ATR-Ratio steht bei 0x.",
+            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.6h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+0.00 (0x der geschaetzten Tages-ATR).",
+            "Orderflow_Price_Target": "4059.93"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-05 16:00 | Letztes Update: 2026-11-06 17:13",
+        "original_date": "2026-11-05 16:00",
+        "_timestamp": 1793985225.0,
+        "articles": [
+            {
+                "title": "IREN stock plunges 18% as Microsoft raises concerns over data center delays",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-stock-plunges-18-microsoft-162134051.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:21",
+                "description": "Investing.com -- IREN Ltd. shares plunged 18% Thursday amid a broad technology selloff, with a Bloomberg report highlighting growing concerns at Microsoft over delays and execution risks among its neocloud partners.",
+                "_timestamp": 1793895694.0
+            },
+            {
+                "title": "IREN Sinks 20% on Report It’s Behind Microsoft’s AI Spending Delay Ahead of Earnings",
+                "link": "https://www.tikr.com/blog/iren-sinks-20-on-report-its-behind-microsofts-ai-spending-delay-ahead-of-earnings?ref=yahoofinance&tlnk=yf-261105-qr7pp429&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 16:00",
+                "description": "Key TakeawaysIREN is down 20% on a report tying delays at its Childress, Texas, data center to Microsoft’s lower AI spending last quarter. Microsoft’s Childress contract should bring in about $1.",
+                "_timestamp": 1793894421.0
+            },
+            {
+                "title": "Here’s what’s driving Iren’s stock higher after a brutal selloff",
+                "link": "https://www.marketwatch.com/story/heres-whats-driving-irens-stock-higher-after-a-brutal-selloff-0ced09b0?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-05 22:21",
+                "description": "Iren announced a new cloud-computing deal and noted that much of its backlog is tied to “investment-grade counterparties.”",
+                "_timestamp": 1793917260.0
+            },
+            {
+                "title": "IREN (IREN) Draws Tighter Oversight On Neocloud Data Center Projects",
+                "link": "https://finance.yahoo.com/technology/ai/articles/iren-iren-draws-tighter-oversight-232125190.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 23:21",
+                "description": "Microsoft has tightened oversight of neocloud data center projects with partner IREN (NasdaqGS:IREN) after recent delivery issues. The tech giant has declined contract extensions on certain neocloud builds, citing project delays and higher than expected costs. IREN is reported to have faced operational setbacks at its Texas facility, including an incident that disrupted local data center activity. Microsoft's decision to refuse neocloud extensions and the Texas site incident is only one...",
+                "_timestamp": 1793920885.0
+            },
+            {
+                "title": "Update: Iren Fiscal Q1 Swings to Loss, Revenue Falls; Microsoft AI Infrastructure Deliveries Delayed",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-fiscal-q1-swings-loss-101234907.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 10:12",
+                "description": "(Updates with information on Microsoft delivery delays in the headline and the fifth to seventh para",
+                "_timestamp": 1793959954.0
+            },
+            {
+                "title": "IREN Shares Surge 18% After Strong AI Cloud Revenue Growth and Better-Than-Expected Quarterly Results",
+                "link": "https://investorshub.advfn.com/market-news/article/39419/iren-shares-surge-18-after-strong-ai-cloud-revenue-growth-and-better-than-expected-quarterly-results?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 11:10",
+                "description": "IREN Ltd (NASDAQ:IREN) shares jumped 18. 1% in premarket trading on Friday after the artificial intelligence infrastructure company reported fiscal first-quarter 2027 results that exceeded Wall Street expectations, helping the stock recover from a sharp decline in the previous session.",
+                "_timestamp": 1793963416.0
+            },
+            {
+                "title": "IREN Says New AI Cloud Customers Are Prepaying 90% of the Chips",
+                "link": "https://247wallst.com/investing/2026/11/06/iren-says-new-ai-cloud-customers-are-prepaying-90-of-the-chips/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:13",
+                "description": "A customer just agreed to fund nearly all of IREN's chips upfront, yet cash is draining and debt is climbing fast. Why would anyone pay that much early, and what does it reveal about the $6 billion gap still unfunded?",
+                "_timestamp": 1793985225.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "The underlying event (IREN stock plunge due to Microsoft data center delays) occurred on 2026-11-05 between 16:00 UTC and 22:21 UTC, roughly 0 to 6 hours ago relative to the current reference time of 2026-11-05 22:24 UTC.",
+            "Facts": "IREN Ltd. shares plunged 18% to 20% on November 5, 2026, following reports from Bloomberg and Yahoo Finance that Microsoft raised concerns over data center delays and execution risks among its neocloud partners [Yahoo Finance Nasdaq]. Specifically, delays at IREN's Childress, Texas, data center were tied to Microsoft's lower AI spending metrics [Yahoo Finance Nasdaq]. Later in the day, MarketWatch reported a partial rebound as Iren announced a new cloud-computing deal, emphasizing that its backlog is tied to 'investment-grade counterparties' [MarketWatch Macro].",
+            "Uncertainties": "It remains unconfirmed whether Microsoft will permanently scale back its infrastructure commitments or if these delays are merely temporary construction hiccups. The financial material impact on IREN's broader revenue backlog is still speculative.",
+            "Macro_Context": "The broader technology sector experienced a severe selloff, with the Nasdaq 100 dropping 7.03% to 26531.0, while Brent Crude surged 4.89% to 102.358. This tech rout creates a dual-edged environment for Gold (XAU/USD): risk-off contagion and potential margin-call liquidations across equities versus safe-haven flows. Global OANDA retail sentiment heavily leans 71.8% long, acting as a contrarian headwind.",
+            "Bull_Case": "Severe weakness in the tech sector (-7.03% Nasdaq drop) sparks risk-off contagion and safe-haven flows into physical precious metals. Furthermore, equity margin-call liquidations can prompt institutional portfolio rebalancing into liquid safe-havens like Gold, driving prices toward overhead liquidity clusters such as 4121.12 or 4131.21.",
+            "Bear_Case": "A severe equity market selloff (-7.03% Nasdaq) often triggers forced margin-call liquidations where institutions sell liquid assets like Gold to cover losses in equities. Additionally, strong retail long positioning at 71.8% increases the probability of a flush toward downside liquidity zones (e.g., 4058.85).",
+            "Historical_Calibration": "The system is in its initial calibration phase with no completed prior signal evaluations. Given the fresh 6-hour event window coinciding with a massive -7.03% tech selloff, market volatility is high, though retail crowding heavily long warrants caution.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The equity market rout (-7.03% Nasdaq) and subsequent tech partner project delays create cross-asset volatility, directly interacting with heavy retail long positioning (71.8%) around the current 4088.225 price handle.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 08:35 | Letztes Update: 2026-11-06 17:12",
+        "original_date": "2026-11-06 08:35",
+        "_timestamp": 1793985122.0,
+        "articles": [
+            {
+                "title": "Palantir and AMD Just Reported Earnings. History Says This Will Happen to Both Stocks Next.",
+                "link": "https://www.fool.com/investing/2026/11/06/palantir-and-amd-just-reported-earnings-history-sa/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 08:35",
+                "description": "Both stocks are trading at pricey premiums on a forward P/E basis.",
+                "_timestamp": 1793954100.0
+            },
+            {
+                "title": "Palantir Stock Is Down 19% From Its Highs. Time to Buy the Dip?",
+                "link": "https://www.fool.com/investing/2026/11/06/palantir-stock-is-down-19-from-its-highs-time-to-b/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 10:20",
+                "description": "The stock continues to slide despite posting strong Q3 earnings.",
+                "_timestamp": 1793960400.0
+            },
+            {
+                "title": "The Biggest Takeaway From Palantir Technologies’ Latest Quarterly Report Is a Potential Warning Sign Investors Shouldn’t Miss",
+                "link": "https://www.fool.com/investing/2026/11/06/the-biggest-takeaway-from-palantir-technologies-latest-quarterly-report-is-a-potential-warning-sign-investors-shouldn-t-miss/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:12",
+                "description": "Palantir reported incredible growth last quarter, but the slowdown in contract value growth seems like a red flag.",
+                "_timestamp": 1793985122.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-06 08:35 to 10:20 UTC (approx. 3 to 5 hours ago)",
+            "Facts": "Palantir stock is down 19% from its highs despite strong Q3 earnings, trading at pricey forward P/E multiples alongside AMD [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether tech valuations have bottomed or if high-multiple AI stocks face deeper valuation contractions.",
+            "Macro_Context": "Palantir's 19% pullback fits cleanly into the broader Nasdaq 100 slump (-4.58%), highlighting ongoing valuation compression in high-beta tech equities.",
+            "Bull_Case": "Ongoing tech sector valuation compression (Palantir down 19%, Nasdaq down 4.58%) can trigger broader risk-off liquidation, driving capital into safe-haven assets like gold.",
+            "Bear_Case": "Tech earnings and dip-buying discussions remain isolated to equity markets without triggering systemic macro panic that benefits precious metals.",
+            "Historical_Calibration": "No completed 20h evaluations. Fresh equity sector commentary has minor indirect spillover to macro sentiment.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Palantir's 19% correction reflects aggressive tech de-risking (-4.58% Nasdaq), supporting safe-haven diversification into gold.",
+            "Orderflow_Price_Target": "4069.98"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 13:53 | Letztes Update: 2026-11-06 17:08",
+        "original_date": "2026-11-06 13:53",
+        "_timestamp": 1793984886.0,
+        "articles": [
+            {
+                "title": "Apple Is Borrowing $7.5 Billion, Its First Bond Sale Since 2025",
+                "link": "https://247wallst.com/investing/2026/11/06/apple-is-borrowing-7-5-billion-its-first-bond-sale-since-2025/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 13:53",
+                "description": "Apple is sitting on a mountain of cash, yet it just went to the bond market anyway. The reason points to a shift in strategy, and a trade-off shareholders paying a premium for the stock may not love.",
+                "_timestamp": 1793973215.0
+            },
+            {
+                "title": "Apple Stocks Edge Lower as $7.5 Billion Bond Sale Prices Across Seven Tranches",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/apple-stocks-edge-lower-7-170806326.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:08",
+                "description": "Apple priced fixed coupons from 4.65% to 5.35%, plus floating notes, its first bond deal since 2025.",
+                "_timestamp": 1793984886.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "Erstmeldung: 2026-11-06 13:53 UTC (vor ca. 0.7h)",
+            "Facts": "[Yahoo Finance Nasdaq] Apple Is Borrowing $7.5 Billion, Its First Bond Sale Since 2025 - Apple is sitting on a mountain of cash, yet it just went to the bond market anyway. The reason points to a shift in strategy, and a trade-off shareholders paying a premium for the stock may not ",
+            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
+            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 -1.54%, Brent Oil +1.38% | OANDA Sentiment: 71.1% Long / 28.9% Short.",
+            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4039.72.",
+            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4020.80. 4h-ATR-Ratio steht bei 0.43x.",
+            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.7h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-30.71 (0.43x der geschaetzten Tages-ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "Erstmeldung: 2026-11-06 12:34 | Letztes Update: 2026-11-06 17:07",
         "original_date": "2026-11-06 12:34",
         "_timestamp": 1793984855.0,
@@ -37,6 +1062,37 @@
             "Probability_Percent": 55,
             "Past_Price_Action_Cause": "Current 4h gain of $+15.40 reflects routine intraday volatility and safe-haven accumulation rather than a direct reaction to this specific headline.",
             "Orderflow_Price_Target": "4078.5"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 17:06",
+        "original_date": "2026-11-06 17:06",
+        "_timestamp": 1793984799.0,
+        "articles": [
+            {
+                "title": "Stock Market Suffers Ugly Losses In Election Week; Apple, Palantir Led Key Earnings: Weekly Review",
+                "link": "https://finance.yahoo.com/m/802dbe86-5db0-31e8-a3aa-6f0e1336c90e/stock-market-suffers-ugly.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:06",
+                "description": "The stock market suffered ugly losses this past week, especially in Thursday's day two election reaction. Apple, Palantir led big earnings.",
+                "_timestamp": 1793984799.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "Erstmeldung: 2026-11-06 17:06 UTC (vor ca. 0.8h)",
+            "Facts": "[Yahoo Finance Nasdaq] Stock Market Suffers Ugly Losses In Election Week; Apple, Palantir Led Key Earnings: Weekly Review - The stock market suffered ugly losses this past week, especially in Thursday's day two election reaction. Apple, Palantir led big earnings.",
+            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
+            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 +0.33%, Brent Oil +0.48% | OANDA Sentiment: 71.4% Long / 28.6% Short.",
+            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4059.93.",
+            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4050.71. 4h-ATR-Ratio steht bei 0x.",
+            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.8h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+0.00 (0x der geschaetzten Tages-ATR).",
+            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -264,126 +1320,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 15:15 | Letztes Update: 2026-11-06 17:03",
-        "original_date": "2026-11-05 15:15",
-        "_timestamp": 1793984581.0,
-        "articles": [
-            {
-                "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
-                "link": "https://www.fool.com/investing/2026/11/05/nvidia-vs-taiwan-semiconductor-the-ai-revolution-i/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:22",
-                "description": "These semiconductor giants are among the biggest beneficiaries of the AI chip boom, and they are expected to sustain solid growth levels over the long run.",
-                "_timestamp": 1793892120.0
-            },
-            {
-                "title": "Amazon and Google Could Outperform Nvidia as AI Trade Enters New Phase, Says Joseph Carlson",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62926393/amazon-google-nvidia?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:15",
-                "description": "Amazon (NASDAQ:AMZN) and Alphabet (NASDAQ:GOOGL) could outperform Nvidia (NASDAQ:NVDA) as AI investors shift from companies selling the hardware to those turning it into revenue, YouTube investor Joseph Carlson argues. A day after Democrats swept Congress and data-center critics won key...",
-                "_timestamp": 1793891708.0
-            },
-            {
-                "title": "NVDA vs AMD: which stock has the better bounce setup",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvda-vs-amd-stock-better-155640375.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:56",
-                "description": "Investing.com -- The better tactical bounce candidate is NVIDIA Corporation (NVDA), not because its trend is healthy, but because Advanced Micro Devices Inc (AMD) is showing heavier damage and volatility.",
-                "_timestamp": 1793894200.0
-            },
-            {
-                "title": "Not Nvidia. Not Micron. This Dutch Company Controls a Key Bottleneck of AI Chip Production.",
-                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-micron-this-dutch-company-controls/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:57",
-                "description": "ASML makes the only machines that can print the world's most advanced chips, and its customers are already asking for delivery slots in 2029 and 2030.",
-                "_timestamp": 1793901420.0
-            },
-            {
-                "title": "Not Nvidia. Not AMD. 2 Chip Stocks I'd Buy Before the End of the Year.",
-                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-amd-2-chip-stocks-id-buy-in-2026/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 18:33",
-                "description": "Micron and Taiwan Semiconductor are key suppliers to the computing unit designers.",
-                "_timestamp": 1793903580.0
-            },
-            {
-                "title": "Advanced Micro Devices vs. Taiwan Semiconductor Manufacturing: The AI Sell-Off Is Exposing a Critical Difference Investors Shouldn't Ignore for 2027",
-                "link": "https://www.fool.com/coverage/better-buy/2026/11/05/advanced-micro-devices-vs-taiwan-semiconductor-manufacturing-the-ai-sell-off-is-exposing-a-critical-difference-investors-shouldn-t-ignore-for-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 20:20",
-                "description": "For investors looking toward 2027, profitability and pricing power could matter more than ever.",
-                "_timestamp": 1793910002.0
-            },
-            {
-                "title": "Prediction: These Will Be Nvidia's and Palantir's Stock Prices by 2027 (Hint: Only 1 Is a Buy)",
-                "link": "https://www.fool.com/investing/2026/11/05/prediction-these-will-be-nvidias-and-palantirs-sto/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:46",
-                "description": "Nvidia and Palantir are two popular AI picks, but only one makes sense right now.",
-                "_timestamp": 1793907960.0
-            },
-            {
-                "title": "Should You Buy Nvidia Stock Before Nov. 17?",
-                "link": "https://www.fool.com/investing/2026/11/05/should-you-buy-nvidia-stock-before-nov-17/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 02:20",
-                "description": "The AI chip maker is trading at a discount.",
-                "_timestamp": 1793931600.0
-            },
-            {
-                "title": "Should You Buy Nvidia Before Nov. 17? The Evidence is Piling Up and Here’s What It Shows.",
-                "link": "https://www.fool.com/investing/2026/11/06/should-you-buy-nvidia-before-nov-17-the-evidence-is-piling-up-and-here-s-what-it-shows/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 09:25",
-                "description": "Investing in Nvidia has been a sure bet in recent years.",
-                "_timestamp": 1793957102.0
-            },
-            {
-                "title": "Nvidia Shares Suffer Worst Day Since January 2025 -- AI Fears Trigger $450 Billion Rout",
-                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-shares-suffer-worst-day-104000765.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 10:40",
-                "description": "Nvidia Stock Plunges as Texas Data Center Restrictions Put AI Boom at Risk",
-                "_timestamp": 1793961600.0
-            },
-            {
-                "title": "Nvidia Isn’t the Only AI Stock That Could Surprise Wall Street in 2027",
-                "link": "https://247wallst.com/investing/2026/11/06/nvidia-isnt-the-only-ai-stock-that-could-surprise-wall-street-in-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 14:03",
-                "description": "Memory chips were once the dullest corner of semiconductors, yet one stock has tripled while trading at a fraction of the market's earnings multiple. Wall Street and the market disagree sharply on what comes next, and the gap could close fast.",
-                "_timestamp": 1793973810.0
-            },
-            {
-                "title": "Forget Nvidia. Here’s the Company Behind the Chips",
-                "link": "https://247wallst.com/investing/2026/11/06/forget-nvidia-heres-the-company-behind-the-chips/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:03",
-                "description": "Every AI chip from Nvidia and Broadcom runs through one company's fabs, yet that company trades at a fraction of the valuation its customers command. The gap raises a question worth answering before the market closes it.",
-                "_timestamp": 1793984581.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Event_Timestamp": "2026-11-06 17:03 UTC (approx. 0 hours ago relative to 2026-11-06 17:10 UTC)",
-            "Facts": "Semiconductor markets face severe turbulence following Nvidia's worst day since January 2025 resulting in a $450 billion rout, triggered by Texas data center restrictions and broader AI boom fears [Yahoo Finance Nasdaq]. Concurrently, attention is drawn to critical upstream foundry and memory chip suppliers trading at deep valuation discounts relative to their downstream AI customers.",
-            "Uncertainties": "Whether data center restrictions will expand beyond Texas to other states, permanently capping the hyper-scaling velocity of the AI infrastructure buildout.",
-            "Macro_Context": "The Nasdaq 100 is up +0.99% (27103.1), showing a modest rebound after a massive $2.5 trillion rout, while 10Y Bond Prices sit at 107.299 (-0.22%). Tech sector volatility heavily influences overall market liquidity and risk appetite.",
-            "Bull_Case": "A prolonged correction in high-flying tech and AI equities can spark safe-haven reallocation from equities into precious metals, bolstering Gold.",
-            "Bear_Case": "If the tech rout stabilizes and buyers step in to buy the dip in Nvidia and related chipmakers, risk-on sentiment returns, depressing safe-haven demand for Gold.",
-            "Historical_Calibration": "No completed evaluations. ATR exhaustion ratio (0.26x) indicates subdued recent momentum relative to daily capacity despite extreme equity volatility.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Massive tech liquidations earlier in the week forced margin calls across asset classes, contributing to Gold's 24h pullback (-$67.34) before stabilizing.",
-            "Orderflow_Price_Target": "4078.5"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-06 03:49 | Letztes Update: 2026-11-06 16:58",
         "original_date": "2026-11-06 03:49",
         "_timestamp": 1793984336.0,
@@ -557,221 +1493,6 @@
             "Probability_Percent": 65,
             "Past_Price_Action_Cause": "Directly explains the 24h drop of $-67.34 in XAU/USD, driven by strong employment data boosting yields and triggering massive liquidations across equities and commodities.",
             "Orderflow_Price_Target": "4059.63"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-02 17:35 | Letztes Update: 2026-11-06 16:55",
-        "original_date": "2026-11-02 17:35",
-        "_timestamp": 1793984148.0,
-        "articles": [
-            {
-                "title": "Yemeni government forces claim gains in Lahij",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-gains-yemens",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 04:52",
-                "description": "Yemeni government forces claim gains in Lahij\n\n    \n    \n\n        \n    \n                The internationally recognised Yemeni government says its troops have recaptured positions from Houthi forces in Lahij governorate, located south-west of the country.\n\n\"Our armed forces have succeeded in recapturing positions in the al-Khazzan al-Ahmar area on the al-Nusayrah front in the al-Sawalihah sub-district of the al-Maqatirah district in northern Lahij governorate, and have repelled the terrorist Houthi militias\" the government forces' media centre said.",
-                "_timestamp": 1793681557.0
-            },
-            {
-                "title": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-army-says-it-launched-nearly-1000-operations-against-houthi",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 03:11",
-                "description": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day\n\n    \n    \n\n        \n    \n                The Yemeni army said that it launched 951 operations targeting Houthi positions over the past 24 hours as part of Operation Dawn of Yemen.\n\nArmy spokesperson Majed al-Nuzaili claimed in a post on X that the operations had \"neutralized\" around 332 Houthi field commanders and fighters.\n\nMoreover, the army claimed to have destroyed or damaged 56&nbsp;vehicles, pieces of equipment and weapons across several fronts, including Al-Jawf, Marib and Al-Bayda.",
-                "_timestamp": 1793675518.0
-            },
-            {
-                "title": "Yemeni government forces launch strikes on Houthi positions west of Taiz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-launch-strikes-houthi-positions-west-taiz",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 02:17",
-                "description": "Yemeni government forces launch strikes on Houthi positions west of Taiz\n\n    \n    \n\n        \n    \n                Forces belonging to Yemen’s internationally recognised government have carried out air strikes against Houthi positions west of Taiz.\n\nThe military spokesperson said that&nbsp;warplanes targeted the movement's military vehicles in the Jabal Habashi area, resulting in the killing of Houthi fighters.&nbsp;\n\nMeanwhile, Houthi-affiliated media reported that a strike north of Taiz targeted a plastic shoe factory, killing three and injuring eight others.&nbsp;",
-                "_timestamp": 1793672237.0
-            },
-            {
-                "title": "Israeli forces push into Quneitra, Syrian media report",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-occupation-push-quneitra-syria-syrian-media-report",
-                "source": "Middle East Eye",
-                "date": "2026-11-02 22:51",
-                "description": "Israeli forces push into Quneitra, Syrian media report\n\n    \n    \n\n        \n    \n                Israeli forces advanced into the village of al-Asbah in rural southern Quneitra with five military vehicles, Syria TV reported.\n\nAccording to Sijil, a Syrian initiative tracking Israeli violations in the country, Israeli forces committed seven violations on Monday before the latest incursion, including other incursions, checkpoints, and aircraft overflights.",
-                "_timestamp": 1793659900.0
-            },
-            {
-                "title": "Israeli forces raid multiple West Bank towns, local sources report",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
-                "source": "Middle East Eye",
-                "date": "2026-11-02 22:31",
-                "description": "Israeli forces raid multiple West Bank towns, local sources report\n\n    \n    \n\n        \n    \n                Israeli forces launched raids on several towns in the occupied West Bank late on Monday, local sources reported.\n\nAmong them are the towns of Qabatiya, south of Jenin, and the city of Qalqilya.",
-                "_timestamp": 1793658667.0
-            },
-            {
-                "title": "397 attacks on West Bankers in Oct, highest monthly total in 20 years: UN",
-                "link": "https://www.tehrantimes.com/news/531764/397-attacks-on-West-Bankers-in-Oct-highest-monthly-total-in",
-                "source": "Tehran Times",
-                "date": "2026-11-02 17:35",
-                "description": "Israeli settler attacks in the occupied West Bank reached an unprecedented level in October, with the number of incidents causing injuries or property damage exceeding all monthly totals recorded since the United Nations began monitoring them in 2006.",
-                "_timestamp": 1793640930.0
-            },
-            {
-                "title": "Saudi strikes martyr 17, wound 59 in Yemen",
-                "link": "https://en.mehrnews.com/news/249125/Saudi-strikes-martyr-17-wound-59-in-Yemen",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 04:41",
-                "description": "TEHRAN, Nov. 03 (MNA) – At least 17 Yemeni civilians were martyred and 59 wounded, most of them children, in Saudi airstrikes over the past 24 hours, Yemen's Health Ministry said.",
-                "_timestamp": 1793680901.0
-            },
-            {
-                "title": "Who are Yemen’s Giants Brigades and who do they fight for?",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/who-are-yemens-giants-brigades-and-who-do-they-fight",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 02:35",
-                "description": "Who are Yemen’s Giants Brigades and who do they fight for?\n\n    \n    \n\n        \n    \n                Yemen’s Giants Brigades have emerged as one of the most powerful forces fighting the Houthis.\n\nBuilt with UAE backing and rooted in Yemen’s southern movement, they are now fighting alongside Saudi-backed government forces in a major new offensive.\n\nSo who are the Giants Brigades, who do they actually fight for and what does their rise tell us about Yemen’s war?",
-                "_timestamp": 1793759739.0
-            },
-            {
-                "title": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/reports-strikes-saudi-led-coalition-yemens-al-bayda",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 04:10",
-                "description": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda \n\n    \n    \n\n        \n    \n                Saudi-led coalition forces have reportedly launched four air strikes in central Yemen's city of al-Bayda, according to Houthi-affiliated media.&nbsp;\n\nShelling was also reported in the&nbsp;Ghamr district of the Saada governorate.",
-                "_timestamp": 1793765431.0
-            },
-            {
-                "title": "Yemeni government forces claim control of strategic al-Jawf mountain range",
-                "link": "https://www.aljazeera.com/news/2026/11/4/yemeni-government-forces-claim-control-of-strategic-al-jawf-mountain-range?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 14:08",
-                "description": "The advance on al-Dahida heights, a strategic highland, comes as fighting escalates in al-Dhalea, Lahij and Taiz.",
-                "_timestamp": 1793801298.0
-            },
-            {
-                "title": "Yemeni military announces 3 ops. deep inside Saudi Arabia",
-                "link": "https://en.mehrnews.com/news/249169/Yemeni-military-announces-3-ops-deep-inside-Saudi-Arabia",
-                "source": "Mehr News Agency",
-                "date": "2026-11-04 14:04",
-                "description": "TEHRAN, Nov. 04 (MNA) –  The spokesman for the Yemeni armed forces announced three successful drone and missile operations deep inside Saudi Arabia on Wednesday.",
-                "_timestamp": 1793801053.0
-            },
-            {
-                "title": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-hits-yemen-reportedly-kill-20-people-over-past-day",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 02:00",
-                "description": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day\n\n    \n    \n\n        \n    \n                Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of&nbsp;al-Jawf, al-Bayda, Saada, and Taiz, according to&nbsp;Houthi-affiliated media.",
-                "_timestamp": 1793844008.0
-            },
-            {
-                "title": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-attack-kills-four-people-yemeni-government-forces-make-gains-al",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 23:36",
-                "description": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz\n\n    \n    \n\n        \n    \n                A ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday.\n\nYemen’s Saudi-backed government's state media reported that four others, also from the same family, were injured after their home was targeted by Houthi fighters, and number of homes nearby were also damaged.\n\nYemeni government forces said in a statement on X that they have made territorial gains in al-Jawf province, seizing several Houthi positions, and&nbsp;repelled Houthi attempts to recapture lost positions in Taiz governorate, according to a Yemeni military spokesperson.\n\n\nFootage showing the armed forces targeting Houthis terrorist militia personnel in Taiz, as part of operation Dawn of Yemen https://t.co/dWZBmGHBBo\n— Yemen Army Media (@Yemenarmyeng) November 4, 2026",
-                "_timestamp": 1793835399.0
-            },
-            {
-                "title": "A month after Yemen government offensive began, war of attrition takes hold",
-                "link": "https://www.aljazeera.com/news/2026/11/5/a-month-after-yemen-government-offensive-began-war-of-attrition-takes-hold?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-05 09:58",
-                "description": "The Houthis suffer losses but also inflict pain on government forces and Saudi Arabia.",
-                "_timestamp": 1793872698.0
-            },
-            {
-                "title": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-air-strikes-reported-sanaa-clashes-lahj-governorate",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 13:25",
-                "description": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate\n\n    \n    \n\n        \n    \n                Houthi affiliated media is reporting air strikes targeting the Hamdan district in Sanaa.\n\nMilitary spokesman Yahya Saree said 12 people, including six children, were killed in Saudi strikes in Yemen on Wednesday, most in Taiz province.\n\nSaudi Arabia carried out 104 air strikes and missile attacks in Sanaa, Al-Jawf, Al-Bayda, Saada, Amran, Marib, Taiz and Lahij, the Ansar Allah spokesperson said.&nbsp;\n\nMeanwhile, Al Jazeera reports clashes between government forces and the Houthis on the al-Maqatra front, in the Lahij governorate.\n\nAccording to the report, government forces claim to have&nbsp;“neutralised” military vehicles and personnel in the skirmishes.\n\nAl Jazeera also reports an escalating humanitarian crisis in Taiz, where civilians are dying as a result of shelling and the ongoing siege.",
-                "_timestamp": 1793885104.0
-            },
-            {
-                "title": "Saudi attacks on Yemen kill nine, including children",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attacks-yemen-kill-nine-including-children",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 07:13",
-                "description": "Saudi attacks on Yemen kill nine, including children\n\n    \n    \n\n        \n    \n                Saudi attacks on Thursday across Yemen killed nine civilians, including three children, the&nbsp;Sanaa-based&nbsp;Health Ministry announced early on Friday.&nbsp;\n\nAccording to the statement, 14 others were wounded in the attacks.&nbsp;",
-                "_timestamp": 1793949234.0
-            },
-            {
-                "title": "Yemen urges Arab states to deter Houthi attacks, foreign minister says",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-urges-arab-states-deter-houthi-attacks-foreign-minister-says",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 09:53",
-                "description": "Yemen urges Arab states to deter Houthi attacks, foreign minister says\n\n    \n    \n\n        \n    \n                Yemen’s foreign minister Afrah al-Zouba has urged Arab states to push for measures to deter Houthi attacks during a meeting with Arab ambassadors in Berlin.\n\nZouba told the envoys about the impact of the attacks on civilians, particularly in Taiz, which she said remained under siege, and raised the detention of UN staff and humanitaria",
-                "_timestamp": 1793958796.0
-            },
-            {
-                "title": "More than 30 killed or wounded in air strikes on Yemeni market, Houthis say",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/more-30-killed-or-wounded-air-strikes-yemen-market-houthis-say",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 11:25",
-                "description": "More than 30 killed or wounded in air strikes on Yemeni market, Houthis say\n\n    \n    \n\n        \n    \n                Air strikes on a market in Yemen’s Taiz province have killed or wounded more than 30 people, according to the Houthi-run Al-Masirah TV.\n\nThe channel said the toll from Friday morning’s attack was preliminary, with searches for missing people still under way as aircraft continued to fly overhead.\n\nIt reported three strikes on the m",
-                "_timestamp": 1793964347.0
-            },
-            {
-                "title": "Yemen's government says its forces recaptured villages and districts in Taiz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-recapture-villages-and-districts-taiz-government-says",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 13:04",
-                "description": "Yemen's government says its forces recaptured villages and districts in Taiz\n\n    \n    \n\n        \n    \n                Yemeni government forces, backed by Saudi Arabia, say they have recaptured several areas in Taiz province, including the villages of al-Nidani and al-Sarari, large parts of Sanamat district and the Rabat al-Qarn area.\n\nThe forces said 37 Houthi fighters had been killed or wounded in the fighting. The Houthis, who control large pa",
-                "_timestamp": 1793970254.0
-            },
-            {
-                "title": "Syria sends military advisers to Saudi Arabia amid Houthi attacks, sources say",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/syria-sends-military-advisers-saudi-arabia-amid-houthi-attacks-sources",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 16:55",
-                "description": "Syria sends military advisers to Saudi Arabia amid Houthi attacks, sources say\n\n    \n    \n\n        \n    \n                Syria has sent a limited number of military personnel to Saudi Arabia to provide advice and training as the kingdom comes under attack from Yemen’s Houthis, Reuters reported, citing two Syrian military sources and a senior US official.\n\nThe US official said Syrian advisers and training teams were travelling to Saudi Arabia to t",
-                "_timestamp": 1793984148.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 5,
-            "Event_Timestamp": "2026-11-05 13:25 UTC to 2026-11-06 11:25 UTC (ranging from 1.5 to 24 hours ago relative to 2026-11-06 13:03 UTC)",
-            "Facts": "Middle East Eye reports intensive Saudi-led airstrikes and escalating ground clashes across multiple Yemeni provinces (including Taiz and Sanaa), resulting in over 30 casualties at a market and prompting Yemeni diplomatic appeals to Arab states for deterrence.",
-            "Uncertainties": "The potential for wider regional retaliation impacting key energy shipping lanes in the Red Sea and Bab-el-Mandeb strait.",
-            "Macro_Context": "Directly supports Brent Crude Oil strength (+1.17% to 100.844) due to supply disruption risks in the Arabian Peninsula, while reinforcing safe-haven demand for Gold.",
-            "Bull_Case": "Active escalation of the Saudi-Yemen conflict alongside Red Sea trade route threats enhances risk premiums, driving gold toward upper liquidity resistance clusters.",
-            "Bear_Case": "Localized regional conflicts have become recurring baseline events and may fail to generate sustained upside momentum if broader markets shrug them off.",
-            "Historical_Calibration": "Reinforces the active risk profile, aligning with robust baseline performance (100% win rate) while respecting current ATR exhaustion metrics.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Contributes to the underlying geopolitical risk premium supporting energy prices and safe-haven assets.",
-            "Orderflow_Price_Target": "4078.81"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 16:52",
-        "original_date": "2026-11-06 16:52",
-        "_timestamp": 1793983931.0,
-        "articles": [
-            {
-                "title": "NVIDIA Stocks Rebound 6.78% as Lawmakers Call Jensen Huang to Closed-Door Briefing",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-rebound-6-78-165211819.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 16:52",
-                "description": "Three House chairmen want Huang to explain his ties to a reported Chinese intelligence asset by November 18.",
-                "_timestamp": 1793983931.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 16:52 UTC (vor ca. 0.3h)",
-            "Facts": "[Yahoo Finance Nasdaq] NVIDIA Stocks Rebound 6.78% as Lawmakers Call Jensen Huang to Closed-Door Briefing - Three House chairmen want Huang to explain his ties to a reported Chinese intelligence asset by November 18.",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.67%, Nasdaq-100 +0.99%, Brent Oil +0.58% | OANDA Sentiment: 71.5% Long / 28.5% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.45.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.63. 4h-ATR-Ratio steht bei 0.26x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.3h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+15.40 (0.26x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -2170,6 +2891,14 @@
                 "date": "2026-11-06 15:48",
                 "description": "Analysts warn of further volatility ahead, though there are two new factors that work in the AI trade’s favor.",
                 "_timestamp": 1793980080.0
+            },
+            {
+                "title": "AI meltdown: Nvidia and Qualcomm drop more than 9%, pushing Nasdaq to worst day since April 2025",
+                "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 21:16",
+                "description": "Companies tied to the AI buildout are all selling off as concerns mount about a slowdown following the midterm elections.",
+                "_timestamp": 1793913399.0
             }
         ],
         "needs_update": true,
@@ -3004,6 +3733,45 @@
         }
     },
     {
+        "main_date": "Erstmeldung: 2026-11-06 15:12 | Letztes Update: 2026-11-06 16:10",
+        "original_date": "2026-11-06 15:12",
+        "_timestamp": 1793981401.0,
+        "articles": [
+            {
+                "title": "Howard Marks Bought Barrick Mining. A Big Fund Cut Its Stake 63%. Who’s Right?",
+                "link": "https://www.tikr.com/blog/howard-marks-oaktree-barrick-mining-stock-13f?ref=yahoofinance&tlnk=yf-261106-g9mchpr7&.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 15:12",
+                "description": "Key TakeawaysHoward Marks’ Oaktree added 22% to its Barrick Mining (B) stake in Q2, while a fund with $6. 2 billion in US stocks cut its stake by 63%.",
+                "_timestamp": 1793977962.0
+            },
+            {
+                "title": "Why Barrick Mining (B) Could Beat Earnings Estimates Again",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/why-barrick-mining-b-could-161001294.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 16:10",
+                "description": "Barrick Mining (B) has an impressive earnings surprise history and currently possesses the right combination of the two key ingredients for a likely beat in its next quarterly report.",
+                "_timestamp": 1793981401.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "Erstmeldung: 2026-11-06 15:12 UTC (vor ca. 1.8h)",
+            "Facts": "[Yahoo Finance Gold] Howard Marks Bought Barrick Mining. A Big Fund Cut Its Stake 63%. Who’s Right? - Key TakeawaysHoward Marks’ Oaktree added 22% to its Barrick Mining (B) stake in Q2, while a fund with $6. 2 billion in US stocks cut its stake by 63%.",
+            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
+            "Macro_Context": "24h Makro-Umfeld: EUR/USD +0.00%, Nasdaq-100 +0.46%, Brent Oil +0.00% | OANDA Sentiment: 71.4% Long / 28.6% Short.",
+            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4059.75.",
+            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4050.95. 4h-ATR-Ratio steht bei 0x.",
+            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 1.8h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+0.00 (0x der geschaetzten Tages-ATR).",
+            "Orderflow_Price_Target": "4059.75"
+        }
+    },
+    {
         "main_date": "Erstmeldung: 2026-11-06 16:05",
         "original_date": "2026-11-06 16:05",
         "_timestamp": 1793981117.0,
@@ -3745,37 +4513,6 @@
             "Probability_Percent": 60,
             "Past_Price_Action_Cause": "Strong oil prices reinforce macro inflation concerns, supporting gold against deeper retracements.",
             "Orderflow_Price_Target": "4070.75"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 15:12",
-        "original_date": "2026-11-06 15:12",
-        "_timestamp": 1793977962.0,
-        "articles": [
-            {
-                "title": "Howard Marks Bought Barrick Mining. A Big Fund Cut Its Stake 63%. Who’s Right?",
-                "link": "https://www.tikr.com/blog/howard-marks-oaktree-barrick-mining-stock-13f?ref=yahoofinance&tlnk=yf-261106-g9mchpr7&.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 15:12",
-                "description": "Key TakeawaysHoward Marks’ Oaktree added 22% to its Barrick Mining (B) stake in Q2, while a fund with $6. 2 billion in US stocks cut its stake by 63%.",
-                "_timestamp": 1793977962.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 15:12 UTC (vor ca. 1.8h)",
-            "Facts": "[Yahoo Finance Gold] Howard Marks Bought Barrick Mining. A Big Fund Cut Its Stake 63%. Who’s Right? - Key TakeawaysHoward Marks’ Oaktree added 22% to its Barrick Mining (B) stake in Q2, while a fund with $6. 2 billion in US stocks cut its stake by 63%.",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD +0.00%, Nasdaq-100 +0.46%, Brent Oil +0.00% | OANDA Sentiment: 71.4% Long / 28.6% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4059.75.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4050.95. 4h-ATR-Ratio steht bei 0x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 1.8h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+0.00 (0x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4059.75"
         }
     },
     {
@@ -5095,37 +5832,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "Consolidation and cautious positioning ahead of top-tier labor market data explain the muted immediate 4h momentum.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 13:53",
-        "original_date": "2026-11-06 13:53",
-        "_timestamp": 1793973215.0,
-        "articles": [
-            {
-                "title": "Apple Is Borrowing $7.5 Billion, Its First Bond Sale Since 2025",
-                "link": "https://247wallst.com/investing/2026/11/06/apple-is-borrowing-7-5-billion-its-first-bond-sale-since-2025/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 13:53",
-                "description": "Apple is sitting on a mountain of cash, yet it just went to the bond market anyway. The reason points to a shift in strategy, and a trade-off shareholders paying a premium for the stock may not love.",
-                "_timestamp": 1793973215.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 13:53 UTC (vor ca. 0.7h)",
-            "Facts": "[Yahoo Finance Nasdaq] Apple Is Borrowing $7.5 Billion, Its First Bond Sale Since 2025 - Apple is sitting on a mountain of cash, yet it just went to the bond market anyway. The reason points to a shift in strategy, and a trade-off shareholders paying a premium for the stock may not ",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.74%, Nasdaq-100 -1.54%, Brent Oil +1.38% | OANDA Sentiment: 71.1% Long / 28.9% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4039.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4020.80. 4h-ATR-Ratio steht bei 0.43x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.7h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-30.71 (0.43x der geschaetzten Tages-ATR).",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -7183,77 +7889,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 16:00 | Letztes Update: 2026-11-06 11:10",
-        "original_date": "2026-11-05 16:00",
-        "_timestamp": 1793963416.0,
-        "articles": [
-            {
-                "title": "IREN stock plunges 18% as Microsoft raises concerns over data center delays",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-stock-plunges-18-microsoft-162134051.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:21",
-                "description": "Investing.com -- IREN Ltd. shares plunged 18% Thursday amid a broad technology selloff, with a Bloomberg report highlighting growing concerns at Microsoft over delays and execution risks among its neocloud partners.",
-                "_timestamp": 1793895694.0
-            },
-            {
-                "title": "IREN Sinks 20% on Report It’s Behind Microsoft’s AI Spending Delay Ahead of Earnings",
-                "link": "https://www.tikr.com/blog/iren-sinks-20-on-report-its-behind-microsofts-ai-spending-delay-ahead-of-earnings?ref=yahoofinance&tlnk=yf-261105-qr7pp429&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:00",
-                "description": "Key TakeawaysIREN is down 20% on a report tying delays at its Childress, Texas, data center to Microsoft’s lower AI spending last quarter. Microsoft’s Childress contract should bring in about $1.",
-                "_timestamp": 1793894421.0
-            },
-            {
-                "title": "Here’s what’s driving Iren’s stock higher after a brutal selloff",
-                "link": "https://www.marketwatch.com/story/heres-whats-driving-irens-stock-higher-after-a-brutal-selloff-0ced09b0?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-05 22:21",
-                "description": "Iren announced a new cloud-computing deal and noted that much of its backlog is tied to “investment-grade counterparties.”",
-                "_timestamp": 1793917260.0
-            },
-            {
-                "title": "IREN (IREN) Draws Tighter Oversight On Neocloud Data Center Projects",
-                "link": "https://finance.yahoo.com/technology/ai/articles/iren-iren-draws-tighter-oversight-232125190.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 23:21",
-                "description": "Microsoft has tightened oversight of neocloud data center projects with partner IREN (NasdaqGS:IREN) after recent delivery issues. The tech giant has declined contract extensions on certain neocloud builds, citing project delays and higher than expected costs. IREN is reported to have faced operational setbacks at its Texas facility, including an incident that disrupted local data center activity. Microsoft's decision to refuse neocloud extensions and the Texas site incident is only one...",
-                "_timestamp": 1793920885.0
-            },
-            {
-                "title": "Update: Iren Fiscal Q1 Swings to Loss, Revenue Falls; Microsoft AI Infrastructure Deliveries Delayed",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-fiscal-q1-swings-loss-101234907.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 10:12",
-                "description": "(Updates with information on Microsoft delivery delays in the headline and the fifth to seventh para",
-                "_timestamp": 1793959954.0
-            },
-            {
-                "title": "IREN Shares Surge 18% After Strong AI Cloud Revenue Growth and Better-Than-Expected Quarterly Results",
-                "link": "https://investorshub.advfn.com/market-news/article/39419/iren-shares-surge-18-after-strong-ai-cloud-revenue-growth-and-better-than-expected-quarterly-results?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 11:10",
-                "description": "IREN Ltd (NASDAQ:IREN) shares jumped 18. 1% in premarket trading on Friday after the artificial intelligence infrastructure company reported fiscal first-quarter 2027 results that exceeded Wall Street expectations, helping the stock recover from a sharp decline in the previous session.",
-                "_timestamp": 1793963416.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "The underlying event (IREN stock plunge due to Microsoft data center delays) occurred on 2026-11-05 between 16:00 UTC and 22:21 UTC, roughly 0 to 6 hours ago relative to the current reference time of 2026-11-05 22:24 UTC.",
-            "Facts": "IREN Ltd. shares plunged 18% to 20% on November 5, 2026, following reports from Bloomberg and Yahoo Finance that Microsoft raised concerns over data center delays and execution risks among its neocloud partners [Yahoo Finance Nasdaq]. Specifically, delays at IREN's Childress, Texas, data center were tied to Microsoft's lower AI spending metrics [Yahoo Finance Nasdaq]. Later in the day, MarketWatch reported a partial rebound as Iren announced a new cloud-computing deal, emphasizing that its backlog is tied to 'investment-grade counterparties' [MarketWatch Macro].",
-            "Uncertainties": "It remains unconfirmed whether Microsoft will permanently scale back its infrastructure commitments or if these delays are merely temporary construction hiccups. The financial material impact on IREN's broader revenue backlog is still speculative.",
-            "Macro_Context": "The broader technology sector experienced a severe selloff, with the Nasdaq 100 dropping 7.03% to 26531.0, while Brent Crude surged 4.89% to 102.358. This tech rout creates a dual-edged environment for Gold (XAU/USD): risk-off contagion and potential margin-call liquidations across equities versus safe-haven flows. Global OANDA retail sentiment heavily leans 71.8% long, acting as a contrarian headwind.",
-            "Bull_Case": "Severe weakness in the tech sector (-7.03% Nasdaq drop) sparks risk-off contagion and safe-haven flows into physical precious metals. Furthermore, equity margin-call liquidations can prompt institutional portfolio rebalancing into liquid safe-havens like Gold, driving prices toward overhead liquidity clusters such as 4121.12 or 4131.21.",
-            "Bear_Case": "A severe equity market selloff (-7.03% Nasdaq) often triggers forced margin-call liquidations where institutions sell liquid assets like Gold to cover losses in equities. Additionally, strong retail long positioning at 71.8% increases the probability of a flush toward downside liquidity zones (e.g., 4058.85).",
-            "Historical_Calibration": "The system is in its initial calibration phase with no completed prior signal evaluations. Given the fresh 6-hour event window coinciding with a massive -7.03% tech selloff, market volatility is high, though retail crowding heavily long warrants caution.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "The equity market rout (-7.03% Nasdaq) and subsequent tech partner project delays create cross-asset volatility, directly interacting with heavy retail long positioning (71.8%) around the current 4088.225 price handle.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-06 11:08",
         "original_date": "2026-11-06 11:08",
         "_timestamp": 1793963324.0,
@@ -7811,46 +8446,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-06 08:35 | Letztes Update: 2026-11-06 10:20",
-        "original_date": "2026-11-06 08:35",
-        "_timestamp": 1793960400.0,
-        "articles": [
-            {
-                "title": "Palantir and AMD Just Reported Earnings. History Says This Will Happen to Both Stocks Next.",
-                "link": "https://www.fool.com/investing/2026/11/06/palantir-and-amd-just-reported-earnings-history-sa/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 08:35",
-                "description": "Both stocks are trading at pricey premiums on a forward P/E basis.",
-                "_timestamp": 1793954100.0
-            },
-            {
-                "title": "Palantir Stock Is Down 19% From Its Highs. Time to Buy the Dip?",
-                "link": "https://www.fool.com/investing/2026/11/06/palantir-stock-is-down-19-from-its-highs-time-to-b/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 10:20",
-                "description": "The stock continues to slide despite posting strong Q3 earnings.",
-                "_timestamp": 1793960400.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Event_Timestamp": "2026-11-06 08:35 to 10:20 UTC (approx. 3 to 5 hours ago)",
-            "Facts": "Palantir stock is down 19% from its highs despite strong Q3 earnings, trading at pricey forward P/E multiples alongside AMD [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether tech valuations have bottomed or if high-multiple AI stocks face deeper valuation contractions.",
-            "Macro_Context": "Palantir's 19% pullback fits cleanly into the broader Nasdaq 100 slump (-4.58%), highlighting ongoing valuation compression in high-beta tech equities.",
-            "Bull_Case": "Ongoing tech sector valuation compression (Palantir down 19%, Nasdaq down 4.58%) can trigger broader risk-off liquidation, driving capital into safe-haven assets like gold.",
-            "Bear_Case": "Tech earnings and dip-buying discussions remain isolated to equity markets without triggering systemic macro panic that benefits precious metals.",
-            "Historical_Calibration": "No completed 20h evaluations. Fresh equity sector commentary has minor indirect spillover to macro sentiment.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "Palantir's 19% correction reflects aggressive tech de-risking (-4.58% Nasdaq), supporting safe-haven diversification into gold.",
-            "Orderflow_Price_Target": "4069.98"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-06 10:20",
         "original_date": "2026-11-06 10:20",
         "_timestamp": 1793960400.0,
@@ -8376,38 +8971,6 @@
             "XAUUSD_Impact": "Bullish",
             "Probability_Percent": 55,
             "Past_Price_Action_Cause": "Reinforces the broader geopolitical risk environment contributing to current gold price elevation.",
-            "Orderflow_Price_Target": "4078.95"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 08:58",
-        "original_date": "2026-11-06 08:58",
-        "_timestamp": 1793955488.0,
-        "articles": [
-            {
-                "title": "FTSE 100 today: Stocks slump as global tech rout deepens",
-                "link": "https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-slump-085808736.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 08:58",
-                "description": "Investing.com -- British stocks fell on Friday as a global tech rout over AI investment worries after the U.S. midterms spread to Europe.",
-                "_timestamp": 1793955488.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-06 08:58 UTC (approx. 58 minutes ago relative to 2026-11-06 09:56 UTC)",
-            "Facts": "British stocks and European markets fell sharply on Friday, mirroring a global tech rout driven by escalating AI investment worries following the U.S. midterms. [Yahoo Finance Nasdaq]",
-            "Uncertainties": "The full extent of institutional de-risking and margin calls spreading from equity markets to other asset classes.",
-            "Macro_Context": "Aligned with Nasdaq 100 plunging -4.49%, EUR/USD dropping -0.50%, and broad equity liquidation. This severe risk-off environment in equities heavily impacts cross-asset liquidity.",
-            "Bull_Case": "A severe global tech and equity rout (-4.49% Nasdaq drop) frequently triggers cross-asset margin liquidation where institutional investors sell gold to cover equity losses, OR drives safe-haven inflows depending on the liquidity crunch phase. In traditional setups, risk-off equity drops often boost gold as the ultimate liquidity store.",
-            "Bear_Case": "Liquidity crunches in equities can force broad-based liquidations where gold is sold alongside stocks to raise cash.",
-            "Historical_Calibration": "A -4.49% Nasdaq drop is a major macro shock. Gold is currently trading at $4073.45 with high volatility; equity market contagion can cause aggressive two-way sweeps through liquidity zones.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Equity market turmoil and tech routs create safe-haven demand that supports gold's resilience despite broader dollar strength.",
             "Orderflow_Price_Target": "4078.95"
         }
     },
@@ -10458,37 +11021,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 23:50",
-        "original_date": "2026-11-05 23:50",
-        "_timestamp": 1793922600.0,
-        "articles": [
-            {
-                "title": "Cloudflare’s stock mounts a big comeback after fastest sales surge in nearly 4 years",
-                "link": "https://www.marketwatch.com/story/cloudflares-stock-mounts-a-big-comeback-after-fastest-sales-surge-in-nearly-4-years-d80d994d?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-05 23:50",
-                "description": "Demand for automated AI protection is on the rise — and manifesting in Cloudflare’s earnings results.",
-                "_timestamp": 1793922600.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 23:50 UTC (vor ca. 6.6h)",
-            "Facts": "[MarketWatch Macro] Cloudflare’s stock mounts a big comeback after fastest sales surge in nearly 4 years - Demand for automated AI protection is on the rise — and manifesting in Cloudflare’s earnings results.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 6.6h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4039.78"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-05 22:30 | Letztes Update: 2026-11-05 23:49",
         "original_date": "2026-11-05 22:30",
         "_timestamp": 1793922558.0,
@@ -11628,61 +12160,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 18:59 | Letztes Update: 2026-11-05 22:00",
-        "original_date": "2026-11-05 18:59",
-        "_timestamp": 1793916008.0,
-        "articles": [
-            {
-                "title": "As Nvidia’s stock heads for a bear market, bargain hunters see a golden buying opportunity",
-                "link": "https://www.marketwatch.com/story/as-nvidias-stock-heads-for-a-bear-market-bargain-hunters-see-a-golden-buying-opportunity-1a5917e6?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-05 18:59",
-                "description": "Portfolio managers say chip demand should be resilient even in a period of political uncertainty.",
-                "_timestamp": 1793905140.0
-            },
-            {
-                "title": "Historically Bullish Signal Emerges for Nvidia Stock",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/historically-bullish-signal-emerges-nvidia-193737196.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:37",
-                "description": "History says you should \"buy the dip\" on NVDA",
-                "_timestamp": 1793907457.0
-            },
-            {
-                "title": "Is Nvidia Still a Millionaire-Maker Stock?",
-                "link": "https://www.fool.com/investing/2026/11/05/is-nvidia-still-a-millionaire-maker-stock/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 21:11",
-                "description": "Nvidia looks like it can keep beating the S&amp;P 500, but if you're looking for it to deliver another 10x return (or more) like it has in the past, you may want to dial back your expectations.",
-                "_timestamp": 1793913060.0
-            },
-            {
-                "title": "Nvidia Stock Is Down Nearly 24% Ahead of Earnings: Is It a Buy?",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62956559/nvidia-stock-selloff?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:00",
-                "description": "Nvidia Corp. (NASDAQ:NVDA) plunged more than 8% Thursday, extending its decline since Oct. 6 to nearly 24% and wiping approximately $1.4 trillion off its market value just 12 days before earnings. The latest selloff comes as Democrats’ midterm election victories...",
-                "_timestamp": 1793916008.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "The news articles regarding Nvidia's stock movement and buy-the-dip commentary were published between 2026-11-05 18:59 UTC and 21:11 UTC, roughly 0.5 to 2.5 hours ago relative to the reference time of 2026-11-05 21:34 UTC.",
-            "Facts": "MarketWatch and Yahoo Finance report that Nvidia's stock is sliding toward a bear market territory, prompting portfolio managers and analysts to view it as a 'golden buying opportunity' and highlighting historical buy-the-dip signals [MarketWatch Macro, Yahoo Finance Nasdaq]. While some commentators argue that chip demand remains resilient despite political uncertainty, others caution that future returns may moderate compared to past explosive growth [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the tech equity sell-off will deepen and trigger widespread forced margin liquidations affecting broader asset classes like gold, or if it represents a localized rotation.",
-            "Macro_Context": "The Nasdaq 100 experienced a severe tech selloff down 6.91%, creating massive risk-off pressure and potential margin-call liquidation risks. Simultaneously, US 10Y Treasury bond prices rose (+0.41%), pointing to falling yields which act as a traditional tailwind for non-yielding bullion, while Brent crude oil advanced 3.85%. OANDA retail sentiment is heavily long at 71.8%, acting as a contrarian bearish indicator.",
-            "Bull_Case": "Falling US 10Y yields provide a supportive macro backdrop for gold. Furthermore, acute tech sector distress and equity market turbulence can occasionally spur safe-haven demand or liquidity reallocation into precious metals.",
-            "Bear_Case": "A severe 6.91% plunge in the Nasdaq 100 introduces acute margin-call liquidation risk across asset classes, which can force institutional investors to liquidate profitable gold positions to cover equity margin deficits. Coupled with 71.8% retail long positioning, downside pressure remains significant.",
-            "Historical_Calibration": "The system is in its initial calibration phase with no completed 20h track record. The 4h move vs. daily ATR ratio is 0.18x, showing modest immediate momentum relative to daily range, but the broader equity turmoil sets up heightened conditional volatility.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 58,
-            "Past_Price_Action_Cause": "Gold has pulled back slightly by -$14.80 over the last 4 hours to $4089.89, reflecting initial cross-asset liquidity strain and margin-call dynamics from the severe tech sell-off.",
-            "Orderflow_Price_Target": "4077.70"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-05 21:42",
         "original_date": "2026-11-05 21:42",
         "_timestamp": 1793914950.0,
@@ -12756,34 +13233,6 @@
         }
     },
     {
-        "main_date": "Erstmeldung: 2026-11-05 18:34",
-        "original_date": "2026-11-05 18:34",
-        "_timestamp": 1793903659.0,
-        "articles": [
-            {
-                "title": "Prediction: A Stock Market Crash Is Coming. Here Are 3 Safe Stocks to Buy Now That Could Help You Protect and Grow Your Wealth.",
-                "link": "https://www.fool.com/investing/2026/11/05/prediction-stock-market-crash-safe-stocks-to-buy/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 18:34",
-                "description": "The current bull market may be nearing its end.",
-                "_timestamp": 1793903659.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 18:34 UTC (approx. 35 minutes ago)",
-            "Facts": "Yahoo Finance published an opinion-style report warning that the current bull market may be nearing its end and advising investors to look for safe stocks to protect and grow wealth [Yahoo Finance Nasdaq].",
-            "Uncertainties": "The article is generic commentary regarding a potential future stock market crash rather than reporting an actual hard economic event, major corporate bankruptcy, or immediate systemic crisis.",
-            "Macro_Context": "US 10-year Treasury bond prices are rising (+0.42%) indicating falling yields which provide a supportive tailwind for gold. Meanwhile, the Nasdaq 100 experienced a severe sell-off (-6.97%), signaling risk-off sentiment. However, retail positioning on OANDA is heavily long (71.8%), introducing a contrarian headwinds risk.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "Gold peaked earlier in the session near $4146 before pulling back to current levels around $4091. The news article published at 18:34 UTC is standard ongoing retail commentary about market corrections and does not represent an unpriced catalyst, making its immediate impact negligible.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-05 18:30",
         "original_date": "2026-11-05 18:30",
         "_timestamp": 1793903400.0,
@@ -13000,362 +13449,6 @@
             "Probability_Percent": 48,
             "Past_Price_Action_Cause": "Gold has seen mixed intraday volatility with a slight pullback over the last 4 hours (-$12.98) after earlier failing to sustain peaks above $4140. The 4h ATR ratio of 0.16x shows no extreme exhaustion, but the equities-led tech rout introduces cross-currents of safe-haven demand versus short-term margin liquidation.",
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 17:45",
-        "original_date": "2026-11-05 17:45",
-        "_timestamp": 1793900734.0,
-        "articles": [
-            {
-                "title": "Chevron Has Become Very Interesting Again Following the Midterms",
-                "link": "https://247wallst.com/investing/2026/11/05/chevron-has-become-very-interesting-again-following-the-midterms/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:45",
-                "description": "A political shock sent oil tumbling and dragged Chevron down with it, yet the company just posted record-setting cash flow and seven straight earnings beats. Two risks could still unravel the rebound, and one of them starts in Texas.",
-                "_timestamp": 1793900734.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 17:45 UTC (vor ca. 12.7h)",
-            "Facts": "[Yahoo Finance Nasdaq] Chevron Has Become Very Interesting Again Following the Midterms - A political shock sent oil tumbling and dragged Chevron down with it, yet the company just posted record-setting cash flow and seven straight earnings beats. Two risks could still unravel the r",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 12.7h.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 17:45",
-        "original_date": "2026-11-05 17:45",
-        "_timestamp": 1793900724.0,
-        "articles": [
-            {
-                "title": "Buy Alphabet for The Limted Downside Floor if The Coiled Spring Asymmetry Doesn’t Pique Your Interest",
-                "link": "https://247wallst.com/investing/2026/11/05/buy-alphabet-for-the-limted-downside-floor-if-the-coiled-spring-asymmetry-doesnt-pique-your-interest/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:45",
-                "description": "Alphabet stock sank 16% in a month, and one investor keeps buying every dip. Two scenarios, one of them involving a $175 billion spending binge, explain why he thinks the downside is already priced in.",
-                "_timestamp": 1793900724.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 17:45 UTC (vor ca. 12.7h)",
-            "Facts": "[Yahoo Finance Nasdaq] Buy Alphabet for The Limted Downside Floor if The Coiled Spring Asymmetry Doesn’t Pique Your Interest - Alphabet stock sank 16% in a month, and one investor keeps buying every dip. Two scenarios, one of them involving a $175 billion spending binge, explain why",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 12.7h.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 17:37",
-        "original_date": "2026-11-05 17:37",
-        "_timestamp": 1793900231.0,
-        "articles": [
-            {
-                "title": "2 Safe Haven Assets Are Winning Within the Carnage",
-                "link": "https://finance.yahoo.com/m/79b55d7a-a364-3c4a-87f6-e2a8a0539490/2-safe-haven-assets-are.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 17:37",
-                "description": "The stock market selloff was extreme and volatility was surging.",
-                "_timestamp": 1793900231.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 17:37 UTC (vor ca. 12.9h)",
-            "Facts": "[Yahoo Finance Gold] 2 Safe Haven Assets Are Winning Within the Carnage - The stock market selloff was extreme and volatility was surging.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 12.9h.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4050.72"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 17:31",
-        "original_date": "2026-11-05 17:31",
-        "_timestamp": 1793899892.0,
-        "articles": [
-            {
-                "title": "Why Dutch Bros Stock Crashed Today",
-                "link": "https://www.fool.com/investing/2026/11/05/why-dutch-bros-stock-crashed-today/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:31",
-                "description": "Dutch Bros beat on earnings and beat on sales. Then investors sold it.",
-                "_timestamp": 1793899892.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 17:31 UTC (vor ca. 12.9h)",
-            "Facts": "[Yahoo Finance Nasdaq] Why Dutch Bros Stock Crashed Today - Dutch Bros beat on earnings and beat on sales. Then investors sold it.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 12.9h.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4050.72"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 17:26",
-        "original_date": "2026-11-05 17:26",
-        "_timestamp": 1793899561.0,
-        "articles": [
-            {
-                "title": "Sick of Swings? Same… But History Is on Our Side",
-                "link": "https://www.fool.com/investing/2026/11/05/sick-of-swings-same-but-history-is-on-our-side/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:26",
-                "description": "The Nasdaq is falling again after Wednesday's rally. If the past month's swings have worn on you, here's how we're thinking about them.",
-                "_timestamp": 1793899561.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 17:26 UTC (vor ca. 13.0h)",
-            "Facts": "[Yahoo Finance Nasdaq] Sick of Swings? Same… But History Is on Our Side - The Nasdaq is falling again after Wednesday's rally. If the past month's swings have worn on you, here's how we're thinking about them.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 13.0h.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4039.78"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 17:23",
-        "original_date": "2026-11-05 17:23",
-        "_timestamp": 1793899435.0,
-        "articles": [
-            {
-                "title": "ICJ is due to rule on the Rohingya genocide case. Here's what you need to know",
-                "link": "https://www.middleeasteye.net/news/icj-rule-rohingya-genocide-case-imminently-heres-what-you-need-know",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 17:23",
-                "description": "ICJ is due to rule on the Rohingya genocide case. Here's what you need to know\n\n    \n    \n\n          \n      \n      \n        Submitted by \nSondos Asem\n on \nThu, 11/05/2026 - 11:06\n\n        \n      \n    \n      \n    \n                UN's top court sets 19 November as date for landmark judgment in case brought by Gambia against Myanmar \n                      \n                  \n                  \n\n  \n\n\n                  \n\n\n\n\n                  Off\n                  The International Court of Justice (ICJ) will rule on whether Myanmar committed genocide against the Rohingya, in a judgment that could see the court hold a state responsible for genocide for the first time.\n\nOfficials announced on Tuesday that the court's president, Judge Yuji Iwasawa, would read the judgment at a public sitting at the Peace Palace in The Hague at 10am local time on 19 November.&nbsp;\n\nThe ruling will be final and binding, with no right of appeal.\n\nSeveral governments have already described the violence as genocide, including the US and Canada.\n\nLegal experts say they expect the outcome to have consequences for other ICJ cases involving allegations of genocide, most pressingly South Africa's case against Israel over its war against Palestinians in Gaza, where the confirmed death toll has reached almost 75,000 people.\n  \n    \n\n\n\n  \n\n\n\nThe case, brought by the Gambia in 2019, concerns the Myanmar military's 2017 violence in Rakhine State, which drove more than 700,000 Rohingya into neighbouring Bangladesh and involved widely documented massacres and rapes.&nbsp;\n\nAbout 1.2 million Rohingya, a predominantly Muslim minority, now live in camps around Cox's Bazar, the world's largest refugee settlement.\n\nMyanmar has denied committing genocide, saying its forces were responding to insurgents from the Arakan Rohingya Salvation Army (Arsa), whose attacks on police posts in August 2017 killed 12 security personnel.\n\nAntonia Mulvey, an international human rights lawyer who investigated sexual violence against the Rohingya for the UN in 2017, told Middle East Eye's Expert Witness Podcast that horrific sexual violence was central to the Gambia's argument that genocide took place.\n\n\"One individual said to me, 'I was lucky, I was only raped by three men,'\" said Mulvey, whose organisation, Legal Action Worldwide, now represents Rohingya witnesses in the case.\n\n\"They would rape women and girls in public, in front of their family members, in front of their children, in communal areas.&nbsp;I heard of mass gang rapes, sometimes up to 40 women and girls at the time.\"\n\nWhat is the case about?\n\nThe Gambia accuses Myanmar of breaching the 1948 Genocide Convention during its campaign against the Rohingya from 25 August 2017.&nbsp;\n  \n    \n\n\n\n  \n\n\n\nThe operations were carried out under Min Aung Hlaing, then the military's commander-in-chief.&nbsp;\n\nMyanmar at the time had a civilian government led by Aung San Suu Kyi, but the military-drafted constitution left the armed forces outside its control.\n\n  \n\n\n\n\nIn February 2021, Min Aung Hlaing overthrew Suu Kyi's government in a coup, and in April this year he stepped down as army chief.\n\nHe was later elected president by a parliament dominated by military-backed lawmakers, following elections organised by the junta.\n\nRohingya fled mass killings, rape and the burning of villages during what the military described as \"clearance operations\".\n\nThe case is a dispute between states, so the court will decide whether Myanmar as a state is responsible, not whether any individual is guilty.&nbsp;\n\nA finding against Myanmar would arguably add to international pressure on Min Aung Hlaing, whose move to the presidency is widely perceived as a bid for international legitimacy.\n\nHow did it start?\n\nIn 2018, the UN Independent International Fact-Finding Mission on Myanmar concluded that there was sufficient information to infer genocidal intent and recommended that senior military officials be investigated and prosecuted for genocide.\n  \n    \n\n\n\n  \n\n\n\nOn 11 November 2019, the Gambia filed its case at the ICJ with the backing of the Organisation of Islamic Cooperation (OIC).&nbsp;\n\n\n  \n\n  The Rohingya case that could redefine the law on genocide\n    Read More »\n\n\nIt was the first time a state not directly affected had brought a genocide case before the court.&nbsp;\n\nThe west African country relied on the principle that every state party to the 1948 Genocide Convention has a common interest in seeing it upheld.\n\nIn December 2019, Aung San Suu Kyi, then Myanmar's civilian leader, appeared at the court to deny the allegations.&nbsp;\n\nIn January 2020, after finding “a real and imminent risk of irreparable prejudice to the rights” of the Rohingya under the Genocide Convention, the court ordered Myanmar to prevent genocidal acts and preserve evidence.\n\nThe court rejected Myanmar's objections to its jurisdiction in July 2022, and heard the merits of the case from 12-29 January 2026, including closed-door testimony from Rohingya witnesses.\n\nEleven states have intervened: Belgium, Canada, Democratic Republic of the Congo, Denmark, France, Germany, the Republic of Ireland, the Maldives, the Netherlands, Slovenia and the United Kingdom.\n\nMike Becker, an assistant professor of international human rights law at Trinity College Dublin and a former associate legal officer at the ICJ, told MEE the judgment would be the first merits judgment in a case with large-scale intervention by third states.\n\n\"Cases like the Gambia v Myanmar have arguably sought to transform the role and function of the ICJ in contemporary affairs. The outcome here may determine whether that trend will continue,\" Becker said.\n\nWhat are the arguments?\n\nThe Gambia argued that genocidal intent is the only reasonable inference to be drawn from the Myanmar military's conduct.&nbsp;\n\nIt relied on four acts listed in the convention: killing; causing serious bodily or mental harm; inflicting conditions of life calculated to destroy the group; and measures intended to prevent births.\n\nMulvey said the Gambia pointed to around 10,000 killings, which she described as a conservative estimate, and to decades of restrictions on Rohingya marriage, births, movement and access to healthcare.\n\nMyanmar denies genocide. It argues the operations were a counterterrorism response to Arsa, that there is no direct evidence of intent, and that the UN fact-finding mission's reports should not be given evidentiary weight.\n\nMyanmar has submitted 12 reports on its compliance with the 2020 order. The Gambia has said these give \"no reason to conclude\" that Myanmar complied.\n\nWhy is sexual violence central?\n\nMulvey said she documented a consistent pattern across the townships of Maungdaw, Buthidaung and Rathedaung, in which soldiers surrounded villages, opened fire, set homes alight and then selected women and girls for rape.\n\nShe said survivors described gang rapes carried out in public and in front of their families, women held in military camps for weeks, mutilation, and soldiers telling them: \"We will kill you by raping you.\"\n\nOne woman told Mulvey she had been eight months pregnant when she was hanged from a tree and raped by nine men, most of them soldiers. Her unborn child died. Her account was included in the fact-finding mission's report and later read out at the ICJ.\n\nThe International Criminal Tribunal for Rwanda ruled in 1998 that rape can constitute genocide. The ICJ has accepted the principle, but has never found a state responsible on that basis.\n\nMulvey said such a finding would be \"a landmark decision\".\n\n\"It was the scale and the brutality of the sexual violence that we didn't see in previous cases before the International Court of Justice, such as before Bosnia and Croatia,\" she said.\n\nWhy does it matter under international law?\n\nThe judgment will be only the third time the ICJ has ruled on the merits of a genocide case, and the first in more than a decade.\n\nIn 2007, the court found that genocide was committed at Srebrenica but held Serbia responsible only for failing to prevent and punish it.\n\n\n'It was the scale and the brutality of the sexual violence that we didn't see in previous cases before the International Court of Justice'\n\n– Antonia Mulvey, human rights lawyer\n\n\nIn 2015, it found that genocide had not been proven in Croatia's case against Serbia.\n\nFurthermore, how the court applies the “only reasonable inference” test is expected to be a central legal question addressed by the judgment.\n\nThe test governs how genocidal intent, meaning the intent to destroy a group in whole or in part, can be proven when there is no direct evidence of it, such as an explicit order or policy document.\n\nThe Gambia argues that the scale, pattern and brutality of the 2017 operations meet that test.&nbsp;\n\nIt points to the mass killings, the systematic rape of women and girls, and decades of discriminatory policies against the Rohingya.\n\n“Here we don’t have a physical document that shows that, but it was the whole pattern that we saw,” Mulvey said.\n\nMyanmar argues that other reasonable inferences can be drawn, chiefly that its forces were conducting counterterrorism operations against Arsa.\n\nAt the January hearings, its counsel also argued that the military’s aim was to drive the Rohingya out of the country, not to destroy them.\n\nChris Sidoti, a former member of the UN fact-finding mission on Myanmar, told MEE that&nbsp;the ruling would also show how the court approaches establishing facts and the weight given to reports from UN human rights mechanisms.\n\n\"The International Court of Justice is not a fact-finding tribunal. It doesn't have an investigative arm, and mostly it makes decisions that are purely legal questions,\" said Sidoti, who now sits on the UN Commission of Inquiry on Palestine and Israel. \"Here it's got a fact-finding task ahead of it.\"\n\nWill the ICJ lower the genocide threshold?\n\nIn October, US Ambassador to the UN Mike Waltz accused Navi Pillay, the Nobel Peace laureate and the ad hoc judge appointed by the Gambia, of \"tipping the scales\", saying she intended to lower the threshold for proving genocide so it could be used against America and its allies.\n\nMulvey rejected the claim as \"misleading\".\n\n\"The Gambia is very clear in its submissions; they are not asking the court to lower the threshold [for genocide]. Rather, they are saying the threshold has been met,\" she said.\n\nWhat do the victims want?\n\nRohingya survivors want the court to find Myanmar responsible for genocide and to order the return of their land and property, compensation and prosecutions.&nbsp;\n\nAbove all, they want citizenship, which they are denied under Myanmar's 1982 citizenship law, said Mulvey.&nbsp;\n\nIf the court finds Myanmar responsible, it will also find that Myanmar must make reparation to the Rohingya, though it may defer the question of remedies to a later phase, Becker said.\n\nThe remedy the court orders \"could be groundbreaking, especially if the ICJ requires Myanmar to undertake domestic reforms to guarantee basic rights of citizenship and non-discrimination to the Rohingya\", he said.\n\n\"Decades on, they don't forget what has happened to them or to their families,\" Mulvey said. \"At the very minimum, they want recognition.\"\n\nWhat happens next?\n\nMyanmar is bound to comply with the judgment. If it does not, the Gambia can refer the matter to the UN Security Council, which has never used its power to enforce an ICJ ruling.\n\nBecker said enforcement may prove impossible while the military remains in power, but \"compliance with the ICJ judgment may become the price of readmission to the international community\".&nbsp;\n\nA finding against Myanmar could also increase pressure on other states to disengage from the ICJ, he said.\n\nMyanmar has been embroiled in civil war since the 2021 coup, and the Arakan Army, an ethnic armed group, now controls most of Rakhine State.\n\nSeparately, the prosecutor of the International Criminal Court applied in November 2024 for an arrest warrant for Min Aung Hlaing, then the military's commander-in-chief, over the deportation and persecution of the Rohingya. Judges have not publicly ruled on the request.\n\n“We want to see that arrest warrant issued, and also that arrest warrants are requested for other senior members of the Myanmar military,” Mulvey said.\n\nIn February 2025, a court in Argentina ordered arrest warrants for 25 Myanmar officials, including Min Aung Hlaing and Aung San Suu Kyi, in a case brought under the legal principle that atrocity crimes can be prosecuted anywhere.&nbsp;\n\nBecause the court relies on precedents as part of its sources, the case will have implications on the other genocide-related cases pending before the ICJ: Ukraine v Russia, South Africa v Israel, Nicaragua v Germany and the Democratic Republic of the Congo v Rwanda.\n\n                  Rohingya\n                   \n                  News\n                      \n                  \n                  \n\n  \n\n\n        \n    Post Date Override\n              0\n          \n  \n    Update Date\n              Mon, 05/04/2020 - 21:19\n\n          \n  \n    Update Date Override\n              0",
-                "_timestamp": 1793899435.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 17:23 UTC (vor ca. 13.1h)",
-            "Facts": "[Middle East Eye] ICJ is due to rule on the Rohingya genocide case. Here's what you need to know - ICJ is due to rule on the Rohingya genocide case. Here's what you need to know\n\n    \n    \n\n          \n      \n      \n        Submitted by \nSondos Asem\n on \nThu, 11/05/2026 - 11:06\n",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 13.1h.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4050.72"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-04 23:38 | Letztes Update: 2026-11-05 17:14",
-        "original_date": "2026-11-04 23:38",
-        "_timestamp": 1793898884.0,
-        "articles": [
-            {
-                "title": "Qualcomm slides 9% after earnings, leading postelection chip stock sell-off",
-                "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-05 15:24",
-                "description": "Qualcomm slid Thursday morning after its Q4 earnings report as chip stocks face continued post-election pressure.",
-                "_timestamp": 1793892287.0
-            },
-            {
-                "title": "Qualcomm stock drops 7% on weak earnings forecast as memory shortage weighs on smartphone sales",
-                "link": "https://www.cnbc.com/2026/11/04/qualcomm-qcom-earnings-report-q4-2026.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-04 23:38",
-                "description": "Qualcomm delivered better-than-expected results but issued a weak earnings forecast.",
-                "_timestamp": 1793835491.0
-            },
-            {
-                "title": "SK hynix Sinks 9% as Qualcomm’s 26% Handset Plunge Deepens Memory Chip Rout",
-                "link": "https://www.tikr.com/blog/sk-hynix-sinks-9-as-qualcomms-26-handset-plunge-deepens-memory-chip-rout?ref=yahoofinance&tlnk=yf-261105-5324ff3r&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:08",
-                "description": "Key TakeawaysSK hynix shares fell 9% after Qualcomm reported a 26% drop in handset chip sales as memory costs push phone prices up. Conventional DRAM, the kind phones use, drove SK hynix’s 2026 price gains.",
-                "_timestamp": 1793891313.0
-            },
-            {
-                "title": "Sandisk Sinks 14%, Micron Down 10% as a Top Phone Chipmaker Blames Weak Sales on “Industry-Wide Memory Dynamics”",
-                "link": "https://www.tikr.com/blog/sandisk-sinks-14-micron-down-10-as-a-top-phone-chipmaker-blames-weak-sales-on-industry-wide-memory-dynamics?ref=yahoofinance&tlnk=yf-261105-8gc35pvp&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:09",
-                "description": "Key TakeawaysSandisk fell 14% today after a top phone chipmaker said its handset chip revenue dropped 26%, citing memory prices. That report confirms what Sandisk’s own phone and PC numbers already showed.",
-                "_timestamp": 1793891381.0
-            },
-            {
-                "title": "Arm Stock Plunges -- Smartphone Business Delivers a Major Disappointment",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/arm-stock-plunges-smartphone-business-150511881.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:05",
-                "description": "Arm Stock Tumbles as Memory Crunch Hits Apple and Android Chip Demand",
-                "_timestamp": 1793891111.0
-            },
-            {
-                "title": "Qualcomm profits hit by supply costs, US jobs data, and a return of the bulls after the midterms",
-                "link": "https://finance.yahoo.com/video/qualcomm-profits-hit-by-supply-costs-us-jobs-data-and-a-return-of-the-bulls-after-the-midterms-144628233.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 14:46",
-                "description": "The 8:30 Hosts Pras Subramanian, Brooke DiPalma, and Interactive Brokers Chief Strategist Steve Sosnick break down the latest market headlines, including earnings for Qualcomm (QCOM) and ARM (ARM), Silicon Valley confronting a new landscape of AI infrastructure, and the OpenAI (OPAI.PVT) President Greg Brockman stating the company is ready to go public in 2027.",
-                "_timestamp": 1793889988.0
-            },
-            {
-                "title": "Two Days Before Today's Selloff, Data Put Global September Chip Sales Up 146.8% Year to Year",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/two-days-todays-selloff-data-162500958.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:25",
-                "description": "Equity Insider News Commentary - Semiconductor stocks are having a hard session. As of 10:34 a.m. ET, the PHLX Semiconductor Index (SOX) stood at 9,419.27, down 8.27% from Wednesday's close of 10,268.65. Stocks dip sometimes, and perspective helps: based on daily closing prices, the index was still about 33.0% above where it finished 2025 (7,083.13) and about 31.0% above its level one year ago (7,190.27 on Nov. 5, 2025). Underneath the share prices sits a fresh stack of demand data, put on the r",
-                "_timestamp": 1793895900.0
-            },
-            {
-                "title": "A Sharp Pullback in Chip Stocks Meets Fresh Records in Four of Five Recent Earnings Reports",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/sharp-pullback-chip-stocks-meets-161400314.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:14",
-                "description": "Market Updates News Commentary - Semiconductor stocks are taking the brunt of a lower market this morning. As of 10:18 a.m. ET, the PHLX Semiconductor Index (SOX) was down 826.18 points, or 8.05%, at 9,442.47, a steeper decline than the Nasdaq Composite (down 3.74%) or the S&amp;P 500 (down 2.21%). Even after today's move, the index stood about 33% above where it finished 2025, based on daily closing prices, and the quarterly reports published over the past two weeks by the five chip and data storag",
-                "_timestamp": 1793895240.0
-            },
-            {
-                "title": "What 3.4% GDP Growth and a 4.2% Jobless Rate Say About a Hard Day on Wall Street",
-                "link": "https://finance.yahoo.com/news/3-4-gdp-growth-4-163400882.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:34",
-                "description": "American News Group News Commentary - U.S. stocks were sharply lower on Thursday morning. As of 11:02 a.m. ET, the S&amp;P 500 was down 3.39% at 7,427.97, the Nasdaq Composite was down 5.08% at 24,430.26 and the Dow Jones Industrial Average was down 2.37% at 52,093.82, each measured against Wednesday's close. It is one session. The most recent official readings on output and jobs, along with the latest quarterly reports from large companies in payments, restaurants, medical technology, aerospace and",
-                "_timestamp": 1793896440.0
-            },
-            {
-                "title": "Qualcomm Says December Won’t Be Its Biggest Quarter Anymore as Apple Walks Away",
-                "link": "https://247wallst.com/investing/2026/11/05/qualcomm-says-december-wont-be-its-biggest-quarter-anymore-as-apple-walks-away/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:14",
-                "description": "Qualcomm has known for years that Apple would leave, and now the CFO says it will rewrite the company's calendar. Can automotive and AI data centers fill the gap before the next earnings report tests the story?",
-                "_timestamp": 1793898884.0
-            },
-            {
-                "title": "Top Midday Stories: Nasdaq Composite Enters Correction Territory; Qualcomm Fiscal Q4 EPS, Revenue Fall YoY",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-nasdaq-composite-165143483.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:51",
-                "description": "All three major US stock indexes were sharply lower in late-morning trading, with the Nasdaq Composi",
-                "_timestamp": 1793897503.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 ~15:00 UTC (approx. 1 hour ago)",
-            "Facts": "Qualcomm reported Q4 earnings with a weak guidance forecast and a 26% drop in handset chip sales due to memory constraints, triggering a broad post-election chip stock sell-off [CNBC Tech & AI, Yahoo Finance]. SK hynix (-9%), Sandisk (-14%), Micron (-10%), and Arm also tumbled amid supply and pricing pressures [Yahoo Finance Nasdaq].",
-            "Uncertainties": "The broader macroeconomic impact of the chip sector weakness on broader equities and whether the correction will prompt a lasting defensive rotation into safe-haven assets.",
-            "Macro_Context": "The Nasdaq 100 experienced a steep sell-off (-5.84%), indicating aggressive risk-off behavior and potential margin liquidation risks. However, US 10Y Treasury bond prices rose (yields falling) acting as a tailwind, while the USD remained flat (EUR/USD +0.09%). OANDA retail sentiment is heavily long at 71.8%.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD spiked earlier to highs near $4146 before pulling back sharply over the last 4 hours by $-50.12, reflecting high volatility from cross-asset liquidations and tech sector deleveraging. The immediate reaction is mixed, requiring neutrality as the market digests the tech fallout.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 17:13",
-        "original_date": "2026-11-05 17:13",
-        "_timestamp": 1793898821.0,
-        "articles": [
-            {
-                "title": "Microsoft Just Walked Away From a Huge AI Deal",
-                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-just-walked-away-huge-171341855.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:13",
-                "description": "The setback lands as Nscale prepares for a potentially $35 billion IPO.",
-                "_timestamp": 1793898821.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 17:13 UTC (vor ca. 13.2h)",
-            "Facts": "[Yahoo Finance Nasdaq] Microsoft Just Walked Away From a Huge AI Deal - The setback lands as Nscale prepares for a potentially $35 billion IPO.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 13.2h.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4039.78"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 17:12",
-        "original_date": "2026-11-05 17:12",
-        "_timestamp": 1793898759.0,
-        "articles": [
-            {
-                "title": "Evercore Names 5 Tech Stocks to Own After Blue Wave",
-                "link": "https://finance.yahoo.com/technology/articles/evercore-names-5-tech-stocks-171239665.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:12",
-                "description": "Tighter data-center rules could shift money toward less infrastructure-dependent names.",
-                "_timestamp": 1793898759.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 17:12 UTC (vor ca. 13.3h)",
-            "Facts": "[Yahoo Finance Nasdaq] Evercore Names 5 Tech Stocks to Own After Blue Wave - Tighter data-center rules could shift money toward less infrastructure-dependent names.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 13.3h.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4050.72"
         }
     }
 ]

@@ -8,6 +8,7 @@ from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
 from sentence_transformers import SentenceTransformer, util
 from google import genai
+from google.genai import types
 
 # --- KONFIGURATION ---
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -19,37 +20,35 @@ else:
     client = None
     print("WARNUNG: GEMINI_API_KEY nicht gefunden.")
 
-# Automatische Fallback-Kette (nur Modelle mit aktivem Free-Tier-Kontingent)
+# Breite Modell-Kette (inkl. spezifischer Versions-Endungen mit eigenen Quoten-Töpfen)
 FALLBACK_MODELS = [
     "gemini-2.5-flash",
     "gemini-2.5-flash-lite",
     "gemini-2.0-flash",
+    "gemini-2.0-flash-001",
+    "gemini-2.0-flash-lite",
+    "gemini-2.0-flash-lite-001",
+    "gemini-1.5-flash",
     "gemini-3.5-flash-lite"
 ]
 
-# Maximal 8 KI-Analysen pro 15-Minuten-Durchlauf (verhindert 9-Minuten-Staus & Rate-Limits)
-# Übrige Cluster werden sofort als Roh-News angezeigt und im nächsten Lauf analysiert.
-MAX_AI_CALLS_PER_RUN = 8
+# Durch das neue Batching analysiert 1 API-Call bis zu 6 Cluster gleichzeitig!
+# Mit maximal 2 Batch-Calls schaffen wir also 12 komplette Cluster pro Lauf.
+BATCH_SIZE = 6
+MAX_BATCH_CALLS_PER_RUN = 2
 
 # Globale, Regionale & Tech/Makro RSS-Feeds
 FEEDS = {
-    # Westliche Rohstoff- & Finanzmedien
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
     "Investing.com": "https://www.investing.com/rss/news_11.rss",
     "Yahoo Finance Gold": "https://finance.yahoo.com/rss/headline?s=GC=F",
     "Yahoo Finance Oil": "https://finance.yahoo.com/rss/headline?s=CL=F",
-    
-    # Tech, AI & Weltwirtschaft (Global Macro & Equities)
     "CNBC Tech & AI": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910",
     "CNBC Economy": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
     "Yahoo Finance Nasdaq": "https://finance.yahoo.com/rss/headline?s=%5EIXIC,NVDA,MSFT,AAPL,TSM",
     "MarketWatch Macro": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
-    
-    # Regional Finance & Energie (Golfregion)
     "Zawya": "https://www.zawya.com/en/rss",
     "Arab News": "https://www.arabnews.com/cat/4/rss.xml",
-    
-    # Vor-Ort Geopolitik (Nahost, Iran, Israel, Jemen)
     "Al Jazeera English": "https://www.aljazeera.com/xml/rss/all.xml",
     "Middle East Eye": "https://www.middleeasteye.net/rss",
     "Tehran Times": "https://www.tehrantimes.com/rss",
@@ -59,16 +58,13 @@ FEEDS = {
 }
 
 IMPACT_KEYWORDS = [
-    # Rohstoffe & Geopolitik
     "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
     "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
     "idf", "missile", "strike", "attack", "drone", "sanction", "nuclear", 
     "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "saudi",
-    # Makro, Zinsen & Weltwirtschaft
     "fed", "inflation", "rate", "central bank", "brics", "dollar", "treasury", 
     "tariff", "recession", "gdp", "unemployment", "payroll", "cpi", "pmi", 
     "stimulus", "china", "default", "liquidity", "debt", "yield",
-    # Tech, AI & Aktienmarkt-Schocks
     "nvidia", "nvda", "nasdaq", "s&p", "semiconductor", "chip", "taiwan", 
     "tsmc", "artificial intelligence", "ai ", "big tech", "microsoft", "apple",
     "earnings", "selloff", "sell-off", "crash", "bubble", "rout", "margin"
@@ -116,7 +112,7 @@ def fetch_single_feed(source_url):
                 "link": entry.link,
                 "source": source,
                 "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
-                "description": clean_desc[:500],
+                "description": clean_desc[:450],
                 "_timestamp": pub_dt.timestamp()
             })
     except Exception as e:
@@ -134,7 +130,6 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def fetch_yahoo_futures_zones(oanda_price, zone_width=10.0):
-    """Ruft die Gold-Futures Historie von Yahoo Finance (COMEX GC=F) ab und gewichtet Preis-Volumen-Cluster."""
     comex_zones = {}
     try:
         url = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=5d&interval=1h"
@@ -179,7 +174,6 @@ def fetch_yahoo_futures_zones(oanda_price, zone_width=10.0):
     return comex_zones
 
 def get_clustered_oanda_zones(zone_width=10.0):
-    """Kombiniert OANDA (OrderBook + PositionBook) und Yahoo Finance Futures im 20%-Radius."""
     if not OANDA_API_KEY:
         return 0.0, [], {"long_pct": 50.0, "short_pct": 50.0}
         
@@ -336,16 +330,16 @@ def fetch_oanda_orderbook(top_zones_cache=None):
         
     liquidity_info = (
         f"Current XAU/USD Price: {current_price}\n"
-        f"Global OANDA Retail Positioning (Contrarian Indicator): {sentiment['long_pct']}% Long vs. {sentiment['short_pct']}% Short\n"
-        f"Combined Multi-Source Liquidity Zones ($10 Clustered OANDA + Yahoo COMEX Futures within 20% radius):\n"
+        f"Global OANDA Retail Positioning: {sentiment['long_pct']}% Long vs. {sentiment['short_pct']}% Short\n"
+        f"Combined Multi-Source Liquidity Zones ($10 Clustered OANDA + Yahoo COMEX Futures):\n"
     )
     for z in top_zones:
         pos_label = "ABOVE price" if z["price"] >= current_price else "BELOW price"
         role_hint = "Buy-Stop/Long Magnet" if z["dominance"] == "BUY" else "Sell-Limit/Short Wall"
         overlap_tag = "OVERLAP [OANDA+COMEX]" if z.get("overlap") else f"[{z.get('sources', 'OANDA')}]"
         liquidity_info += (
-            f"- Zone at {z['price']} ({pos_label}) {overlap_tag} | Combined Vol: {z['volume']}% "
-            f"(OANDA: {z.get('oanda_vol', 0)}%, COMEX: {z.get('comex_vol', 0)}% | Net {z['dominance']} Dominance [{role_hint}])\n"
+            f"- Zone at {z['price']} ({pos_label}) {overlap_tag} | Vol: {z['volume']}% "
+            f"(Net {z['dominance']} [{role_hint}])\n"
         )
     return liquidity_info
 
@@ -407,29 +401,21 @@ def fetch_oanda_price_and_volatility():
 
         history_str = (
             f"XAU/USD Volatility & Priced-In Metrics:\n"
-            f"- Current Price: ${curr_c}\n"
-            f"- 4h Price Change: ${change_4h:+.2f} | 24h Price Change: ${change_24h:+.2f}\n"
-            f"- H1 ATR(14): ${atr_14_h1:.2f} | Estimated Daily ATR: ${est_daily_atr:.2f}\n"
-            f"- 4h Move vs. Daily ATR Ratio: {ratio_4h}x (If >= 1.2x in the direction of the news, significant parts of the move may already be priced in)\n\n"
-            f"XAU/USD Recent H1 Candles (Last 12h):\n"
+            f"- Current Price: ${curr_c} | 4h Change: ${change_4h:+.2f} | 24h Change: ${change_24h:+.2f}\n"
+            f"- H1 ATR(14): ${atr_14_h1:.2f} | Est. Daily ATR: ${est_daily_atr:.2f} | 4h Move/Daily ATR Ratio: {ratio_4h}x\n"
         )
-        # Auf die letzten 12 Stunden gekürzt, um Input-Tokens zu sparen
-        for c in parsed[-12:]:
-            history_str += f"- {c['dt_str']} UTC: O {c['o']}, H {c['h']}, L {c['l']}, C {c['c']}\n"
-
         return history_str, parsed, vol_metrics
     except Exception as e:
         return f"OANDA Candle Fehler: {e}", [], {}
 
 def fetch_macro_context():
-    """Holt 24h-Veränderungen für USD Proxy (EUR_USD), 10Y Bonds (USB10Y_USD), Brent Öl (BCO_USD) & Nasdaq 100 (NAS100_USD)."""
     if not OANDA_API_KEY:
         return "Keine Makro-Korrelationsdaten verfügbar.", {}
         
     instruments = {
         "EUR_USD": "EUR/USD (Inverse USD Proxy)",
-        "USB10Y_USD": "US 10Y Treasury Bond Price (Inverse Yield Proxy)",
-        "NAS100_USD": "Nasdaq 100 Tech/AI Index (Risk-On/Off & Margin Proxy)",
+        "USB10Y_USD": "US 10Y Bond Price (Inverse Yield Proxy)",
+        "NAS100_USD": "Nasdaq 100 Tech/AI Index",
         "BCO_USD": "Brent Crude Oil (USD)"
     }
     headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
@@ -447,18 +433,7 @@ def fetch_macro_context():
                     last_c = float(candles[-1]["mid"]["c"])
                     pct_change = round(((last_c - first_c) / first_c) * 100, 2) if first_c > 0 else 0.0
                     macro_summary[instr] = {"price": last_c, "change_24h_pct": pct_change}
-                    
-                    if instr == "EUR_USD":
-                        dxy_dir = "USD Strengthening (Headwind for Gold)" if pct_change < -0.15 else ("USD Weakening (Tailwind for Gold)" if pct_change > 0.15 else "USD Flat")
-                        macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%) -> {dxy_dir}")
-                    elif instr == "USB10Y_USD":
-                        yield_dir = "Bond Prices Down / Yields Rising (Headwind for Gold)" if pct_change < -0.20 else ("Bond Prices Up / Yields Falling (Tailwind for Gold)" if pct_change > 0.20 else "Yields Stable")
-                        macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%) -> {yield_dir}")
-                    elif instr == "NAS100_USD":
-                        tech_dir = "Severe Tech Selloff (Watch for Margin-Call Liquidation OR Safe-Haven Rotation)" if pct_change <= -1.5 else ("Strong Tech/AI Risk-On Rally (Capital rotating into Equities)" if pct_change >= 1.2 else "Tech Equities Moderate")
-                        macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%) -> {tech_dir}")
-                    else:
-                        macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%)")
+                    macro_lines.append(f"- {label}: {last_c} ({pct_change:+.2f}%)")
         except Exception as e:
             print(f"Makro-Abruf Fehler bei {instr}: {e}")
 
@@ -563,20 +538,164 @@ def evaluate_clusters(all_clusters, h1_candles):
     return stats
 
 def format_performance_memory(stats):
-    """Bereitet das historische Performance-Gedächtnis aus performance_stats.json für den KI-Agenten auf."""
     if not stats or stats.get("total_evaluated", 0) == 0:
-        return "Historical Track Record: No completed 20h signal evaluations yet (System in initial calibration phase)."
+        return "Historical Track Record: No completed 20h evaluations yet."
     
     history_items = list(stats.get("history", {}).values())
     recent_items = history_items[-5:]
-    recent_str = ", ".join([f"[{item.get('impact')} -> Target ${item.get('target')}: {item.get('status')}]" for item in recent_items])
+    recent_str = ", ".join([f"[{item.get('impact')} -> ${item.get('target')}: {item.get('status')}]" for item in recent_items])
     
     return (
-        f"Historical Signal Track Record (Self-Calibration Memory):\n"
-        f"- Total Evaluated (>=67% setups): {stats['total_evaluated']} | Hits: {stats['hits']} | Misses: {stats['misses']} | Win Rate: {stats['win_rate']}%\n"
-        f"- Last {len(recent_items)} Completed Setups: {recent_str}\n"
-        f"- Calibration Instruction: Use this track record to avoid overconfidence. Explain objectively in 'Historical_Calibration' whether current market conditions resemble past hits or misses."
+        f"Track Record: {stats['total_evaluated']} evaluated | Win Rate: {stats['win_rate']}% ({stats['hits']} Hits, {stats['misses']} Misses). "
+        f"Recent: {recent_str}"
     )
+
+def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_summary):
+    """Erstellt sofort lokal eine strukturierte Analyse aus RSS-Text + OANDA/Makro-Daten, falls alle KI-Server 503/429 melden."""
+    articles = cluster.get("articles", [])
+    oldest = min(articles, key=lambda x: x.get("_timestamp", 0)) if articles else {}
+    newest = max(articles, key=lambda x: x.get("_timestamp", 0)) if articles else {}
+    age_h = round((datetime.now().timestamp() - float(oldest.get("_timestamp", datetime.now().timestamp()))) / 3600.0, 1)
+
+    facts_list = []
+    for a in articles[:4]:
+        desc = a.get("description", "").strip()
+        snippet = f"{a['title']} - {desc}" if desc and desc.lower() != a['title'].lower() else a['title']
+        facts_list.append(f"[{a['source']}] {snippet[:260]}")
+    facts_str = " | ".join(facts_list)
+
+    full_text = " ".join([f"{a.get('title','')} {a.get('description','')}" for a in articles]).lower()
+    bull_kws = ["attack", "strike", "missile", "escalat", "war", "inflation", "recession", "cut", "crisis", "selloff", "crash", "sanction", "houthi", "iran"]
+    bear_kws = ["truce", "ceasefire", "peace", "deal", "strong dollar", "rate hike", "surge", "rally"]
+
+    bull_hits = sum(1 for k in bull_kws if k in full_text)
+    bear_hits = sum(1 for k in bear_kws if k in full_text)
+
+    curr_price, top_zones, sentiment = oanda_zones_cache if oanda_zones_cache else (0.0, [], {"long_pct": 50, "short_pct": 50})
+    above_z = [z["price"] for z in top_zones if z["price"] > curr_price]
+    below_z = [z["price"] for z in top_zones if z["price"] < curr_price]
+
+    if bull_hits > bear_hits:
+        impact = "Bullish"
+        target = f"{min(above_z):.2f}" if above_z else "N/A"
+    elif bear_hits > bull_hits:
+        impact = "Bearish"
+        target = f"{max(below_z):.2f}" if below_z else "N/A"
+    else:
+        impact = "Neutral"
+        target = "N/A"
+
+    eur_chg = macro_summary.get("EUR_USD", {}).get("change_24h_pct", 0)
+    nas_chg = macro_summary.get("NAS100_USD", {}).get("change_24h_pct", 0)
+    bco_chg = macro_summary.get("BCO_USD", {}).get("change_24h_pct", 0)
+    atr_ratio = vol_metrics.get("move_to_daily_atr_ratio", 0)
+    chg_4h = vol_metrics.get("change_4h", 0)
+
+    return {
+        "Event_Timestamp": f"Erstmeldung: {oldest.get('date', 'Unbekannt')} UTC (vor ca. {age_h}h)",
+        "Facts": facts_str,
+        "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
+        "Macro_Context": f"24h Makro-Umfeld: EUR/USD {eur_chg:+.2f}%, Nasdaq-100 {nas_chg:+.2f}%, Brent Oil {bco_chg:+.2f}% | OANDA Sentiment: {sentiment['long_pct']}% Long / {sentiment['short_pct']}% Short.",
+        "Bull_Case": f"Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei ${min(above_z):.2f}." if above_z else "Geopolitische/Makro-Risikopraemie beachten.",
+        "Bear_Case": f"Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei ${max(below_z):.2f}. 4h-ATR-Ratio steht bei {atr_ratio}x." if below_z else f"4h-ATR-Ratio steht bei {atr_ratio}x.",
+        "Historical_Calibration": f"Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: {age_h}h.",
+        "Impact_Timing": "Past (Already Priced In)" if (age_h > 12 or atr_ratio >= 1.2) else "Present",
+        "Timeframe": "Hours/Days",
+        "XAUUSD_Impact": impact,
+        "Probability_Percent": 55 if impact != "Neutral" else 40,
+        "Past_Price_Action_Cause": f"4h XAU/USD Bewegung: ${chg_4h:+.2f} ({atr_ratio}x der geschaetzten Tages-ATR).",
+        "Orderflow_Price_Target": target
+    }
+
+def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data, macro_context_str, perf_memory_str):
+    """Analysiert bis zu 6 Cluster gleichzeitig in EINEM einzigen API-Aufruf (spart 85% Requests & verhindert 429/503)."""
+    if not client or not clusters_batch:
+        return {}
+    
+    now_utc_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    
+    clusters_input = []
+    for idx, c in enumerate(clusters_batch):
+        recent_arts = sorted(c["articles"], key=lambda x: x.get("_timestamp", 0), reverse=True)[:4]
+        arts_text = "\n".join([f"  * [{a['source']}] ({a['date']} UTC): {a['title']} — {a['description']}" for a in recent_arts])
+        clusters_input.append(f"=== CLUSTER_ID: {idx} ===\n{arts_text}")
+        
+    all_clusters_str = "\n\n".join(clusters_input)
+    
+    prompt = f"""You are an objective Intelligence & Calibration Agent for a manual Gold (XAU/USD) & Macro trader.
+    Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, and orderbook context below.
+    Do NOT hide or dismiss minor news—thoroughly contextualize every cluster!
+    Output ONLY a valid JSON array of {len(clusters_batch)} objects (one object per CLUSTER_ID). Write all values in English!
+
+    Current Reference Time: {now_utc_str}
+
+    Shared Market & Orderbook Context:
+    {perf_memory_str}
+    {macro_context_str}
+    {price_history_data}
+    {orderbook_data}
+
+    News Clusters to Analyze:
+    {all_clusters_str}
+
+    Required JSON output format (MUST be a JSON Array containing one object for each CLUSTER_ID from 0 to {len(clusters_batch)-1}):
+    [
+      {{
+        "Cluster_ID": 0,
+        "Event_Timestamp": "Exact or estimated date/time when the real-world event occurred and how many hours ago relative to {now_utc_str}.",
+        "Facts": "Comprehensive, unfiltered summary of all core facts, numbers, and WHY it matters. Include [Source].",
+        "Uncertainties": "What is unclear, speculative, or unconfirmed?",
+        "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, and OANDA Retail Sentiment interact with this news.",
+        "Bull_Case": "Arguments and catalysts supporting a Bullish XAU/USD reaction.",
+        "Bear_Case": "Counter-arguments, priced-in risks, or macro headwinds supporting a Bearish/muted XAU/USD reaction.",
+        "Historical_Calibration": "Candid calibration note referencing the Historical Track Record, ATR exhaustion ratio, and event age.",
+        "Impact_Timing": "Future, Present, or Past (Already Priced In)",
+        "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
+        "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
+        "Probability_Percent": 60,
+        "Past_Price_Action_Cause": "How the 4h/24h price change and ATR ratio align with this news.",
+        "Orderflow_Price_Target": "Exact numerical Take-Profit target from the Liquidity Zones (strictly > current price for Bullish, < current price for Bearish, or 'N/A' for Neutral)."
+      }}
+    ]
+    """
+    
+    for model_name in FALLBACK_MODELS:
+        try:
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json"
+                )
+            )
+            raw_text = response.text.strip()
+            if raw_text.startswith("```json"):
+                raw_text = raw_text[7:-3].strip()
+            elif raw_text.startswith("```"):
+                raw_text = raw_text[3:-3].strip()
+                
+            parsed_list = json.loads(raw_text)
+            if isinstance(parsed_list, dict):
+                # Falls das Modell das Array in ein einzelnes Dict verpackt hat
+                for v in parsed_list.values():
+                    if isinstance(v, list):
+                        parsed_list = v
+                        break
+                        
+            if isinstance(parsed_list, list) and len(parsed_list) > 0:
+                result_map = {}
+                for i, item in enumerate(parsed_list):
+                    if isinstance(item, dict):
+                        cid = item.get("Cluster_ID", i)
+                        result_map[cid] = item
+                print(f" -> Batch ({len(result_map)} Cluster) auf einen Schlag erfolgreich analysiert mit {model_name}!")
+                return result_map
+        except Exception as e:
+            err_msg = str(e).splitlines()[0][:110]
+            print(f" -> {model_name} nicht verfügbar ({err_msg}) - probiere nächstes Modell...")
+            time.sleep(1.5)
+            
+    return {}
 
 def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None):
     if not OANDA_API_KEY:
@@ -649,93 +768,6 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
 
     with open("market_data.json", "w", encoding="utf-8") as f:
         json.dump(market_data, f)
-
-def generate_summary(articles_in_cluster, orderbook_data, price_history_data, macro_context_str, perf_memory_str):
-    if not client:
-        return None
-    
-    now_utc_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-    # Maximal die 5 neuesten Artikel pro Cluster übergeben, um Token-Limits zu schonen
-    recent_articles = sorted(articles_in_cluster, key=lambda x: x.get("_timestamp", 0), reverse=True)[:5]
-    news_data = "\n".join([f"Source: [{a['source']}]\nArticle Published Date: {a['date']} UTC\nHeadline: {a['title']}\nDetails: {a['description']}\n" for a in recent_articles])
-    
-    prompt = f"""You are an objective, two-stage Intelligence & Calibration Agent for a manual Gold (XAU/USD) & Macro trader.
-    Your job is NOT to hide or dismiss seemingly minor news, because the human trader uses this terminal as a comprehensive intelligence feed. Even niche geopolitical, regional, or tech/macro reports must be thoroughly contextualized!
-    Output ONLY a valid JSON object without markdown blocks. Write all values in English!
-    
-    Current Reference Time: {now_utc_str}
-
-    --- AGENT ROLE 1: OBJECTIVE INTELLIGENCE & CONTEXTUALIZER ---
-    1. ACTUAL EVENT TIME: Determine when the underlying physical event, earnings release, strike, or announcement ACTUALLY happened relative to 'Current Reference Time' ({now_utc_str}) and state it in 'Event_Timestamp'.
-    2. DEEP FACTS & REGIONAL/TECH CONTEXT: Summarize all core facts, numbers, and background details thoroughly in 'Facts' (include [Source] tags). Explain how different sources frame the event.
-    3. BALANCED PRO/CONTRA ARGUMENTS:
-       - In 'Bull_Case': What specific aspects of this news + current macro/orderflow support higher Gold prices?
-       - In 'Bear_Case': What counter-arguments, macro headwinds (e.g., strong USD, rising yields, tech risk-on rotation, or margin-call liquidation risk), or priced-in exhaustion speak against a Gold rally (or favor a drop)?
-
-    --- AGENT ROLE 2: CALIBRATION & RISK AUDITOR (WITH PERFORMANCE MEMORY) ---
-    1. HISTORICAL CALIBRATION: Review the 'Historical Signal Track Record' below. In 'Historical_Calibration', write a candid 1-2 sentence audit comparing this setup to past hits/misses, ATR exhaustion ('4h Move vs. Daily ATR Ratio'), and event age (>12h old follow-up articles are usually already priced in).
-    2. DIRECTION & PROBABILITY: Provide your best calibrated directional bias ('Bullish', 'Bearish', or 'Neutral') and 'Probability_Percent' (0-100). If the event is >12h old without fresh escalation or the 4h move is already >=1.2x Daily ATR, set 'Impact_Timing' to 'Past (Already Priced In)'.
-    3. ORDERFLOW PRICE TARGET:
-       - Look at 'Current XAU/USD Price' and 'Combined Multi-Source Liquidity Zones' (prefer 'OVERLAP [OANDA+COMEX]').
-       - If 'Bullish', output a numerical price strictly HIGHER than Current XAU/USD Price.
-       - If 'Bearish', output a numerical price strictly LOWER than Current XAU/USD Price.
-       - If 'Neutral', write 'N/A'. Format strictly as a clean number (e.g., '4035.50').
-
-    Required JSON structure:
-    {{
-        "Event_Timestamp": "Exact or estimated date/time when the real-world event occurred and how many hours ago relative to {now_utc_str}.",
-        "Facts": "Comprehensive, unfiltered summary of all core facts, numbers, and WHY it matters. Include [Source].",
-        "Uncertainties": "What is unclear, speculative, or unconfirmed?",
-        "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, and OANDA Retail Sentiment interact with this news.",
-        "Bull_Case": "Arguments and catalysts supporting a Bullish XAU/USD reaction.",
-        "Bear_Case": "Counter-arguments, priced-in risks, or macro headwinds supporting a Bearish/muted XAU/USD reaction.",
-        "Historical_Calibration": "Candid calibration note referencing the Historical Signal Track Record, ATR exhaustion ratio, and event age.",
-        "Impact_Timing": "Future, Present, or Past (Already Priced In)",
-        "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
-        "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
-        "Probability_Percent": <Integer 0 to 100>,
-        "Past_Price_Action_Cause": "How the 4h/24h price change and ATR ratio align with this news.",
-        "Orderflow_Price_Target": "Exact numerical Take-Profit target or 'N/A'."
-    }}
-
-    News Reports:
-    {news_data}
-    
-    Historical Signal Track Record (Memory):
-    {perf_memory_str}
-
-    Cross-Asset Macro & Tech Context:
-    {macro_context_str}
-
-    24h Price History & ATR Volatility:
-    {price_history_data}
-
-    Current Order Book & Retail Sentiment:
-    {orderbook_data}
-    """
-    
-    # Rotiert sofort durch alle kostenlosen Flash-Modelle, falls eines 429/503 meldet
-    for model_name in FALLBACK_MODELS:
-        try:
-            response = client.models.generate_content(
-                model=model_name,
-                contents=prompt
-            )
-            raw_text = response.text.strip()
-            if raw_text.startswith("```json"):
-                raw_text = raw_text[7:-3].strip()
-            elif raw_text.startswith("```"):
-                raw_text = raw_text[3:-3].strip()
-                
-            parsed_json = json.loads(raw_text)
-            print(f" -> Erfolgreich analysiert mit {model_name}")
-            return parsed_json
-        except Exception as e:
-            err_msg = str(e).splitlines()[0][:110]
-            print(f" -> {model_name} übersprungen ({err_msg}) - wechsle sofort zum nächsten Modell...")
-            time.sleep(1)
-            
-    return None
 
 def main():
     print("Lade Embeddings-Modell...")
@@ -815,7 +847,7 @@ def main():
                     "_timestamp": article["_timestamp"],
                     "articles": [article],
                     "needs_update": True,
-                    "summary": "Analyse folgt im naechsten 15-Minuten-Zyklus (Rate-Limit-Schutz aktiv)..."
+                    "summary": None
                 }
                 valid_clusters.append(new_cluster)
                 cluster_embeddings.append(article_emb)
@@ -824,32 +856,46 @@ def main():
 
     valid_clusters.sort(key=lambda x: float(x.get("_timestamp", 0)), reverse=True)
     
-    # Neueste unanalysierte Cluster zuerst abarbeiten, gedeckelt auf MAX_AI_CALLS_PER_RUN
-    pending_clusters = [c for c in valid_clusters if c.get("needs_update", False)]
+    # Alle Cluster sammeln, die ein KI-Update brauchen oder zuvor nur einen Platzhalter-String hatten
+    pending_clusters = [
+        c for c in valid_clusters 
+        if c.get("needs_update", False) or not isinstance(c.get("summary"), dict)
+    ]
+    
     if pending_clusters:
-        batch_to_process = pending_clusters[:MAX_AI_CALLS_PER_RUN]
-        remaining_count = len(pending_clusters) - len(batch_to_process)
-        print(f"Verarbeite {len(batch_to_process)} von {len(pending_clusters)} offenen Clustern in diesem Lauf (Rest folgt im naechsten Zyklus)...")
-        
         orderbook_data = fetch_oanda_orderbook(top_zones_cache=oanda_zones_cache)
+        total_batches = min(MAX_BATCH_CALLS_PER_RUN, (len(pending_clusters) + BATCH_SIZE - 1) // BATCH_SIZE)
         
-        for idx, cluster in enumerate(batch_to_process, 1):
-            print(f"Agent analysiert & kalibriert ({idx}/{len(batch_to_process)}): {cluster['articles'][0]['title'][:60]}...")
-            summary = generate_summary(
-                cluster["articles"],
+        for b_idx in range(total_batches):
+            batch_slice = pending_clusters[b_idx * BATCH_SIZE : (b_idx + 1) * BATCH_SIZE]
+            print(f"Starte KI-Batch-Analyse {b_idx + 1}/{total_batches} ({len(batch_slice)} Cluster gleichzeitig in 1 Aufruf)...")
+            
+            batch_results = generate_batch_summaries(
+                batch_slice,
                 orderbook_data,
                 price_history_data,
                 macro_context_str,
                 perf_memory_str
             )
             
-            if summary:
-                cluster["summary"] = summary
-                cluster["needs_update"] = False
-                time.sleep(4)
-            else:
-                print(" -> Alle Modelle vorübergehend ausgelastet. Breche KI-Schleife für diesen Lauf ab, um Zeit zu sparen.")
-                break
+            for idx_in_batch, cluster in enumerate(batch_slice):
+                if idx_in_batch in batch_results:
+                    cluster["summary"] = batch_results[idx_in_batch]
+                    cluster["needs_update"] = False
+            
+            if b_idx < total_batches - 1 and batch_results:
+                time.sleep(3)
+
+    # 100%-Garantie: Jedes Cluster, das noch kein valides Summary-Objekt hat, erhält sofort die strukturierte lokale Auswertung!
+    fallback_count = 0
+    for c in valid_clusters:
+        if not isinstance(c.get("summary"), dict):
+            c["summary"] = build_local_fallback_summary(c, oanda_zones_cache, vol_metrics, macro_summary)
+            c["needs_update"] = True  # Bleibt markiert, damit Gemini es beim nächsten freien Lauf veredelt
+            fallback_count += 1
+            
+    if fallback_count > 0:
+        print(f"Info: {fallback_count} Cluster wurden sofort mit der lokalen Echtzeit-Zusammenfassung gefüllt (kein Informationsverlust).")
 
     evaluate_clusters(valid_clusters, h1_candles)
             

@@ -1390,21 +1390,22 @@
                 "_timestamp": 1793949860.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 02:33 UTC (vor ca. 3.9h)",
-            "Facts": "[Yahoo Finance Nasdaq] Japan’s Nikkei nears bear market as AI rout batters tech valuations - Investing.com-- Japan's Nikkei 225 index approached bear-market territory on Friday, as a deepening global selloff in artificial intelligence and semiconductor stocks triggered another wave ",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 3.9h.",
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-06 02:33 to 08:41 UTC (approx. 1.5 to 8 hours ago relative to 2026-11-06 10:05 UTC)",
+            "Facts": "Global tech stocks and Asian indices (including Japan's Nikkei 225 nearing bear market territory) experienced a severe rout driven by fears of US AI regulation, data centre expansion limits, and fallout from US midterm elections [Al Jazeera English, Yahoo Finance Nasdaq].",
+            "Uncertainties": "The precise scope of future US regulatory curbs on artificial intelligence and whether central banks will intervene to stem equity liquidations.",
+            "Macro_Context": "Nasdaq 100 plunged -4.60%, triggering severe equity liquidations and risk-off sentiment. USD strengthened slightly via safe-haven demand (EUR/USD down -0.44%), while Brent oil rose +1.27%.",
+            "Bull_Case": "Extreme equity market distress and risk-off contagion can drive safe-haven capital inflows into physical gold (XAU/USD) as a hedge against equity market instability.",
+            "Bear_Case": "A broad equity sell-off can trigger forced margin liquidations across all asset classes, causing institutional investors to sell gold to cover equity margin calls, leading to a temporary sharp drop in XAU/USD.",
+            "Historical_Calibration": "No completed 20h evaluations yet; ATR exhaustion ratio is neutral, but ongoing equity rout creates high volatility windows suitable for tactical trading.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
             "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4050.72"
+            "Past_Price_Action_Cause": "Nasdaq collapse (-4.60%) correlates with heightened market anxiety and safe-haven demand, though cross-asset liquidation friction applies.",
+            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -1437,20 +1438,21 @@
                 "_timestamp": 1793954424.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-05 15:04 UTC (vor ca. 15.4h)",
-            "Facts": "[Yahoo Finance Oil] SpaceX and Tesla stocks extend their slide as chip stocks drop: AlphaCheck - Stocks bounced on Wednesday after Democrats' sweeping mid-term elections.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.44%, Nasdaq-100 -4.70%, Brent Oil +5.90% | OANDA Sentiment: 71.3% Long / 28.7% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4050.72.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4039.78. 4h-ATR-Ratio steht bei 0.16x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 15.4h.",
-            "Impact_Timing": "Past (Already Priced In)",
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-05 15:04 to 2026-11-06 08:40 UTC (approx. 1.5 to 19 hours ago relative to 2026-11-06 10:05 UTC)",
+            "Facts": "European shares slid 1% on Friday following a violent overnight Wall Street sell-off that pushed the Nasdaq into correction territory; STOXX 600 overtook S&P 500 in YTD gains [Yahoo Finance Oil, Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether European equities will decouple from US tech weakness or experience deeper contagion.",
+            "Macro_Context": "Global equities are under intense pressure. Nasdaq 100 down -4.60%, EUR/USD down -0.44% reflecting USD liquidity preference during equity stress.",
+            "Bull_Case": "Broad European equity drag increases systemic risk perceptions, boosting demand for safe-haven assets like gold.",
+            "Bear_Case": "Stronger US Dollar proxy (EUR/USD drop) exerts direct downward pressure on USD-denominated gold prices.",
+            "Historical_Calibration": "No completed 20h evaluations yet; event age is very fresh (<24h).",
+            "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Equities sell-off drives cross-asset volatility, but competing dollar strength keeps gold range-bound.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -1620,17 +1622,21 @@
                 "_timestamp": 1793954185.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "2026-11-03 to 2026-11-05 (Ongoing comments over the last 12-48h relative to 2026-11-05 13:42 UTC)",
-            "Facts": "Iranian leadership, including Supreme Leader Mojtaba Khamenei and senior defense officials, stated that the U.S. midterm election results—which saw Democrats gain control of Congress—will not alter Washington's hostile posture or confrontational policies toward Iran. Officials also criticized U.S.-Israeli warmongering and outlined doctrines for immediate response to aggression [Mehr News Agency, Middle East Eye, Al Jazeera English].",
-            "Uncertainties": "Whether the shift in U.S. congressional power will actually restrict the executive branch's capacity for military escalation, or if it remains purely rhetorical posturing from Tehran.",
-            "Macro_Context": "EUR/USD declined slightly (-0.26%), reflecting mild USD strengthening which serves as a headwind for gold. Brent crude plunged over 5%, reducing inflationary/geopolitical energy premiums. OANDA retail sentiment is heavily net-long at 71.9%, signaling a contrarian bearish risk for immediate upside continuation.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 45,
-            "Past_Price_Action_Cause": "Gold experienced a strong rally over the past 24 hours (+ $78.18), but the 4h move vs daily ATR ratio is a minimal 0.03x, indicating consolidation after a spike. The geopolitical statements regarding U.S. elections and Iranian posture are recurring rhetoric without an immediate, new military kinetic strike. Thus, the geopolitical risk premium is largely priced in, and gold is consolidating near the $4120 resistance zone.",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-06 00:00 to 08:36 UTC (approx. 1.5 to 10 hours ago relative to 2026-11-06 10:05 UTC)",
+            "Facts": "Following widespread midterm election defeats, US President Donald Trump threatened that the US may have to 'destroy the rest' of Iran, claiming it will take 25 years to rebuild after the US-Israeli war, raising severe geopolitical escalation risks [Mehr News Agency, Middle East Eye, Al Jazeera English].",
+            "Uncertainties": "Whether Trump's rhetoric will translate into immediate military action or remain political posturing following electoral defeat.",
+            "Macro_Context": "Geopolitical tension directly supports Brent Crude Oil (+1.27% to 100.068 USD) and enhances safe-haven flows into Gold (XAU/USD).",
+            "Bull_Case": "Direct military threats in the Middle East heighten geopolitical risk premiums, providing a strong structural catalyst for safe-haven buying in Gold.",
+            "Bear_Case": "Markets may become desensitized to political rhetoric if diplomatic channels or regional allies manage to de-escalate tensions quickly.",
+            "Historical_Calibration": "No completed 20h evaluations yet; geopolitical news carries high intraday momentum and sudden volatility spikes.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 70,
+            "Past_Price_Action_Cause": "Escalating Middle East rhetoric aligns with rising oil prices (+1.27%) and supports safe-haven demand.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -1648,21 +1654,22 @@
                 "_timestamp": 1793954100.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 08:35 UTC (vor ca. 1.1h)",
-            "Facts": "[Yahoo Finance Nasdaq] Palantir and AMD Just Reported Earnings. History Says This Will Happen to Both Stocks Next. - Both stocks are trading at pricey premiums on a forward P/E basis.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.47%, Nasdaq-100 -4.32%, Brent Oil +1.61% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4079.08.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4070.07. 4h-ATR-Ratio steht bei 0.4x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 1.1h.",
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-06 08:35 UTC (approx. 1.5 hours ago relative to 2026-11-06 10:05 UTC)",
+            "Facts": "Palantir and AMD reported earnings, highlighting that both stocks are trading at pricey premiums on a forward P/E basis [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Individual stock valuation reactions and their contagion effect on broader tech sentiment.",
+            "Macro_Context": "Contributes to the broader -4.60% Nasdaq tech sell-off and overall risk aversion in equities.",
+            "Bull_Case": "Tech earnings disappointments compound the broader tech rout, driving capital into alternative safe havens like gold.",
+            "Bear_Case": "Corporate earnings are micro-level events with limited direct transmission to precious metals unless triggering broader systemic credit events.",
+            "Historical_Calibration": "No completed 20h evaluations yet; low direct impact on XAU/USD.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+30.53 (0.4x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4079.08"
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Micro earnings priced into the ongoing tech sector contraction.",
+            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -1679,21 +1686,22 @@
                 "_timestamp": 1793953977.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 08:32 UTC (vor ca. 1.2h)",
-            "Facts": "[Al Jazeera English] UK jailing of Indian sailor over Russia sanctions sets off ‘perfect storm’ - Captain Ajay Pant was in international waters when his allegedly &#039;shadow&#039; tanker was captured by British soldiers.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.47%, Nasdaq-100 -4.32%, Brent Oil +1.61% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4079.08.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4070.07. 4h-ATR-Ratio steht bei 0.4x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 1.2h.",
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-06 08:32 UTC (approx. 1.5 hours ago relative to 2026-11-06 10:05 UTC)",
+            "Facts": "UK jailing of Indian sailor Captain Ajay Pant after his alleged 'shadow' tanker was captured by British soldiers in international waters sets off a diplomatic and maritime trade 'perfect storm' [Al Jazeera English].",
+            "Uncertainties": "Potential retaliation from India or shipping disruptions in key maritime corridors.",
+            "Macro_Context": "Adds to maritime trade friction and supply chain concerns, aligning with higher Brent crude prices (+1.27%).",
+            "Bull_Case": "Maritime enforcement actions and trade friction increase supply chain vulnerabilities and geopolitical risk, supporting gold.",
+            "Bear_Case": "Localized maritime dispute with limited macroeconomic transmission to global monetary policy or bullion demand.",
+            "Historical_Calibration": "No completed 20h evaluations yet; minor news item with localized impact.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+30.53 (0.4x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4079.08"
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Contributes marginally to overall geopolitical risk premium alongside Middle East tensions.",
+            "Orderflow_Price_Target": "N/A"
         }
     },
     {
@@ -1710,20 +1718,21 @@
                 "_timestamp": 1793953862.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 08:31 UTC (vor ca. 1.2h)",
-            "Facts": "[Yahoo Finance Nasdaq] Compass (COMP) Q3 2026 Earnings Call Transcript - Record profit and cash flow, but management flagged a weaker Q4 ahead.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.47%, Nasdaq-100 -4.32%, Brent Oil +1.61% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4079.08.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4070.07. 4h-ATR-Ratio steht bei 0.4x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 1.2h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-06 08:31 UTC (approx. 1.5 hours ago relative to 2026-11-06 10:05 UTC)",
+            "Facts": "Compass (COMP) released its Q3 2026 earnings transcript showing record profit and cash flow, though management flagged a weaker Q4 ahead [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Real estate sector resilience heading into year-end.",
+            "Macro_Context": "Micro-level corporate housing data with negligible impact on macroeconomic gold pricing.",
+            "Bull_Case": "None for gold.",
+            "Bear_Case": "None for gold.",
+            "Historical_Calibration": "No completed 20h evaluations yet; irrelevant to XAU/USD trading.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+30.53 (0.4x der geschaetzten Tages-ATR).",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Isolated equity earnings report with zero correlation to macro precious metals flow.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -1989,18 +1998,22 @@
                 "_timestamp": 1793952863.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "2026-11-04 ~12:00 UTC (approx. 27h ago)",
-            "Facts": "Gold prices advanced above $3,975 and subsequently tested levels towards $4,134 per troy ounce following the Democratic Party's victory in both chambers of Congress during the U.S. midterm elections, which exerted downward pressure on the U.S. dollar and lifted bullion [Yahoo Finance Gold]. Additionally, the World Gold Council reported strong third-quarter central bank buying [Yahoo Finance Gold].",
-            "Uncertainties": "The sustainability of the post-election rally amid high retail positioning and shifting fiscal policy expectations in a Democratic-led Congress remains to be fully seen.",
-            "Macro_Context": "U.S. 10Y Treasury bond prices rose (+0.33%), indicating falling yields which serve as a supportive tailwind for non-yielding bullion. The U.S. dollar weakened following the midterm election results, bolstering gold prices. OANDA retail sentiment remains heavily long at 72.1%, acting as a contrarian headwind.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "The major surge driven by the U.S. midterm election results occurred over the past 24-48 hours, lifting prices past $4,100. With the 4h Move vs. Daily ATR ratio at a modest 0.24x, immediate impulse momentum has stabilized as the market consolidates recent gains.",
-            "Orderflow_Price_Target": "N/A"
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-06 08:14 UTC (~2 hours ago relative to 2026-11-06 10:06 UTC)",
+            "Facts": "Goldman Sachs lowered its year-end gold price forecast, citing a hawkish shift by the Federal Reserve while maintaining a longer-term constructive view based on central bank buying [Yahoo Finance Gold]. Separately, Allied Gold (TSX:AAUC) reported a Q3 profit swing with 5% higher production and plans for 2027 shareholder returns [Yahoo Finance Gold]. Gold recently rebounded above $4,000 for its best day since August [Yahoo Finance Gold].",
+            "Uncertainties": "The exact timing and terminal rate of the Fed's hawkish shift remain subject to upcoming inflation and employment data. The extent to which Goldman's revision impacts broader institutional positioning is uncertain given strong retail and central bank demand.",
+            "Macro_Context": "With EUR/USD down 0.44% and Nasdaq 100 plunging 4.60%, broader risk-off sentiment and a firmer USD create a challenging macro matrix for non-yielding assets, though safe-haven demand counters this.",
+            "Bull_Case": "Sustained central bank gold purchases and safe-haven buying amid surging geopolitical tensions can offset hawkish Fed pressures and keep gold elevated above $4,000.",
+            "Bear_Case": "Goldman's downward revision reflecting a hawkish Fed shift, combined with a stronger USD proxy (EUR/USD lower) and risk-off liquidations, can trigger profit-taking after the recent surge.",
+            "Historical_Calibration": "No completed 20h evaluations yet. Fresh morning news intersecting with a major tech sell-off and geopolitical stress requires careful monitoring of volatility exhaustion.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Gold's recent surge above $4,000 faces immediate headwinds from institutional downward revisions (Goldman Sachs) and a stronger dollar context.",
+            "Orderflow_Price_Target": "3950.00"
         },
         "eval_status": "HIT"
     },
@@ -2146,17 +2159,21 @@
                 "_timestamp": 1793952814.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "2026-11-04 ~12:14 UTC (approx. 33 hours ago, following the US midterm elections and Democratic sweep)",
-            "Facts": "Democrats secured a landslide victory in the US midterm elections, capturing control of both houses of Congress and dealing a heavy defeat to President Donald Trump's administration [Yahoo Finance Oil]. The political shift removed key uncertainty regarding the Iran war and energy policies, sparking a sharp plunge in crude oil prices [Yahoo Finance Oil] and boosting broader equity markets initially before diverging [Yahoo Finance Oil].",
-            "Uncertainties": "The exact legislative speed and scope of the newly empowered Democratic Congress, the duration and ultimate resolution of the Middle East conflict, and whether the severe tech stock sell-off will trigger broader financial contagion.",
-            "Macro_Context": "US 10Y Treasury bond prices are rising (yields falling) by +0.42%, providing a supportive environment for gold. Simultaneously, the Nasdaq 100 is down sharply by -6.97%, reflecting a severe tech/AI correction that introduces acute margin-call and forced-liquidation risks across asset classes, countering safe-haven flows. Brent crude oil dropped significantly over the 3-day window, easing inflation pressures and shifting rate-cut expectations.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-06 08:13 UTC (~2 hours ago relative to 2026-11-06 10:06 UTC)",
+            "Facts": "Oil prices rebounded toward $100 (Brent Crude at 100.068, +1.27%) following a 12% weekly drop, driven by renewed Middle East tanker attacks and fallout from the US midterms where a Democratic sweep rattled energy stocks [Yahoo Finance Oil, Yahoo Finance Nasdaq]. US equities ended lower as mega-cap tech fell and energy costs rose [Yahoo Finance Oil].",
+            "Uncertainties": "The political implications of the US midterms on energy policy and the durability of the oil price rebound in the face of broader equity liquidations.",
+            "Macro_Context": "Brent Crude trading above $100 feeds inflationary pulses, pressuring the Nasdaq 100 (-4.60%) and creating complex cross-asset dynamics where rising energy costs support commodity-linked safe havens.",
+            "Bull_Case": "Escalating energy prices and Middle East supply risks drive severe inflation concerns, prompting safe-haven capital inflows into gold.",
+            "Bear_Case": "Spiking oil prices exacerbate Federal Reserve hawkishness to combat inflation, strengthening the USD and penalizing non-yielding precious metals.",
+            "Historical_Calibration": "No completed 20h evaluations yet. High correlation between energy shocks and macro volatility requires tracking spillover effects into gold.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "XAU/USD experienced its primary impulsive surge around 24 hours ago (peaking near $4146.92) following the initial midterm election results. With the 4h price change sitting at $-12.98 and the daily move largely digested, the initial geopolitical and election shock is past and already priced in.",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Crude rebound to $100 creates cross-currents of inflation fears versus tighter monetary policy expectations.",
             "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "ACTIVE"
@@ -2207,18 +2224,22 @@
                 "_timestamp": 1793952012.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "2026-11-05 ~10:00 UTC (approx. 1.5h ago)",
-            "Facts": "The Saudi-led military coalition intercepted and destroyed a ballistic missile fired by Houthi militia toward the Medina region, with civil defence issuing alerts near Yanbu Governorate [Middle East Eye].",
-            "Uncertainties": "Extent of any debris damage on the ground or potential follow-up retaliatory strikes remain unconfirmed.",
-            "Macro_Context": "EUR/USD is dropping (-0.36%, USD strengthening acting as a headwind), while US 10Y Treasury bond prices are rising (+0.26%, yields falling as a tailwind). Brent crude is down sharply (-6.10%), reflecting subdued broader energy fear premiums despite regional missile interceptions.",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-06 08:05 UTC (~2 hours ago relative to 2026-11-06 10:06 UTC)",
+            "Facts": "The Saudi-led coalition intercepted and destroyed two ballistic missiles fired by Yemen's Houthis toward Saudi Arabia's Najran, following previous missile interceptions near Medina and Yanbu [Middle East Eye, Al Jazeera English]. The Houthis denied targeting civilian or holy sites, claiming operations target military bases and oil facilities [Middle East Eye].",
+            "Uncertainties": "Direct attribution and whether future strikes will successfully breach air defenses or impact critical energy infrastructure.",
+            "Macro_Context": "Geopolitical friction in the Middle East directly supports Brent Crude (+1.27% near $100) and underpins safe-haven demand, offsetting negative pressures from a strong USD and weak tech equities (-4.60%).",
+            "Bull_Case": "Continuous missile exchanges and threats to regional energy infrastructure elevate systemic risk, triggering immediate flight-to-safety flows into gold.",
+            "Bear_Case": "Markets may become desensitized to frequent interceptions by air defenses if actual supply disruptions remain contained.",
+            "Historical_Calibration": "No completed 20h evaluations yet. Geopolitical headlines provide persistent intraday volatility floors for gold.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "XAU/USD has rallied strongly over the past 24 hours (+ $88.84) driven by broader safe-haven flows, with the current 4h move remaining modest relative to daily ATR (0.15x), indicating room for continuation toward immediate liquidity clusters.",
-            "Orderflow_Price_Target": "4140.05"
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Escorts geopolitical risk premium, directly supporting safe-haven assets despite macro headwinds.",
+            "Orderflow_Price_Target": "4050.00"
         }
     },
     {
@@ -2411,18 +2432,22 @@
                 "_timestamp": 1793951894.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "2026-11-03 to 2026-11-05 (Ongoing maritime escalations in the Strait of Hormuz, with the latest tanker incidents reported on 2026-11-05 18:47 UTC, approx. 2 hours ago relative to reference time)",
-            "Facts": "The IRGC and Iranian Navy reported that multiple oil tankers and a tugboat caught fire after hitting naval mines in the Strait of Hormuz following unauthorized transit through unsafe areas. Simultaneously, ongoing drone shootdowns and US defensive strikes on Qeshm Island have escalated geopolitical tensions [Mehr News Agency, Al Jazeera English, Middle East Eye].",
-            "Uncertainties": "The exact scope of damage to global energy supply chains remains fluid, alongside potential US military retaliation following the drone interceptions and tanker explosions.",
-            "Macro_Context": "US 10-year Treasury bond prices are rallying (yields falling) acting as a tailwind for gold, while Brent crude has surged 3.30% due to Middle East supply disruptions. The Nasdaq 100 experienced a severe 6.97% sell-off, creating cross-asset margin-call liquidation pressures that temporarily weighed on gold before safe-haven demand absorbed the selling. OANDA retail positioning is heavily long at 71.8%, suggesting caution against chasing immediate upside breakouts.",
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-06 07:58 UTC (~2 hours ago relative to 2026-11-06 10:06 UTC)",
+            "Facts": "Iran's IRGC navy announced that two oil tankers caught fire after striking mines in the Strait of Hormuz, alongside reports of two US MQM-170 reconnaissance drones downed over Qeshm Island [Middle East Eye, Mehr News Agency]. This follows multiple tanker incidents and heightened US-Iran tensions [Al Jazeera English, Investing.com].",
+            "Uncertainties": "The full extent of maritime navigation restrictions in the Strait of Hormuz and the potential for direct military escalation between the US and Iran.",
+            "Macro_Context": "Strait of Hormuz disruptions directly threaten global energy supplies, driving Brent Crude higher ($100.068) and triggering safe-haven demand across commodities.",
+            "Bull_Case": "Actual physical disruption of oil tankers via naval mines in a critical chokepoint creates severe supply panic, driving intense safe-haven demand for gold.",
+            "Bear_Case": "Diplomatic intervention or containment by naval patrols could de-escalate maritime panic, prompting a quick retracement in risk premiums.",
+            "Historical_Calibration": "No completed 20h evaluations yet. Direct kinetic actions in oil shipping lanes represent Tier-1 geopolitical catalysts for gold and oil.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "Gold spiked earlier in response to the escalating Middle East tensions but has pulled back modestly over the last 4 hours (4h move vs daily ATR ratio is 0.16x, avoiding exhaustion). The ongoing maritime crisis in the Strait of Hormuz and declining bond yields provide fundamental support for a move toward upper liquidity clusters.",
-            "Orderflow_Price_Target": "4121.01"
+            "Probability_Percent": 70,
+            "Past_Price_Action_Cause": "Direct kinetic escalation in the Strait of Hormuz acts as a primary catalyst for safe-haven flows and oil spikes.",
+            "Orderflow_Price_Target": "4080.00"
         },
         "eval_status": "ACTIVE"
     },
@@ -2440,21 +2465,22 @@
                 "_timestamp": 1793951400.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 07:50 UTC (vor ca. 1.9h)",
-            "Facts": "[Yahoo Finance Nasdaq] Inflation Just Hit 3.7%. History Says to Own Companies That Can Do This 1 Thing. - Businesses that possess this valuable characteristic can better navigate the current environment.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.47%, Nasdaq-100 -4.32%, Brent Oil +1.61% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4079.08.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4070.07. 4h-ATR-Ratio steht bei 0.4x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 1.9h.",
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-06 07:50 UTC (~2 hours ago relative to data reference)",
+            "Facts": "Inflation reports indicate a reading of 3.7%, prompting analytical focus on companies capable of navigating sticky inflationary environments [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Sector-specific transmission lags and the broader macroeconomic policy response from central banks.",
+            "Macro_Context": "An inflation print of 3.7% reinforces fears of sticky price pressures, aligning with hawkish Fed rhetoric and supporting higher nominal yields that weigh on non-yielding gold.",
+            "Bull_Case": "Persistent inflation above central bank targets highlights gold's traditional role as an ultimate inflation hedge.",
+            "Bear_Case": "An inflation rate of 3.7% forces central banks to maintain restrictive monetary stances, elevating real yields and depressing gold prices.",
+            "Historical_Calibration": "No completed 20h evaluations yet. Macro inflation metrics form the structural background for central bank policy expectations.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+30.53 (0.4x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4079.08"
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Sticky inflation figures sustain high interest rate expectations, creating headwinds for gold rallies.",
+            "Orderflow_Price_Target": "3960.00"
         }
     },
     {
@@ -2471,21 +2497,22 @@
                 "_timestamp": 1793950204.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 07:30 UTC (vor ca. 2.2h)",
-            "Facts": "[Al Jazeera English] Lebanese pack bags and stock up amid fears of new Israeli escalation - Lebanese who lived through two Israeli escalations are stocking up and packing bags in case of a third.",
-            "Uncertainties": "Direkte Auswertung aus den Primärquellen (KI-Tiefenanalyse wird automatisch nachgeladen, sobald die Gemini-API wieder frei ist).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.47%, Nasdaq-100 -4.32%, Brent Oil +1.61% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4079.08.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4070.07. 4h-ATR-Ratio steht bei 0.4x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv (Gemini-Server aktuell ausgelastet). Ereignis-Alter: 2.2h.",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-06 07:30 UTC (~2 hours ago relative to data reference)",
+            "Facts": "Civilians in Lebanon are packing bags and stocking up supplies amid growing fears of a new Israeli military escalation following previous conflicts [Al Jazeera English].",
+            "Uncertainties": "The timing, scale, and formal military scope of any potential cross-border escalation.",
+            "Macro_Context": "Regional spillover risks in the Levant complement Persian Gulf tensions, amplifying overall Middle East risk premiums and supporting safe-haven assets.",
+            "Bull_Case": "Widening regional conflict fears increase systemic risk aversion globally, boosting safe-haven inflows into gold.",
+            "Bear_Case": "Local civilian precautionary measures may remain localized without triggering broader international market panic.",
+            "Historical_Calibration": "No completed 20h evaluations yet. Contributes to the cumulative geopolitical risk premium supporting precious metals.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+30.53 (0.4x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4079.08"
+            "Probability_Percent": 60,
+            "Past_Price_Action_Cause": "Fears of a wider Levantine escalation add to the multi-front geopolitical risk premium underpinning gold.",
+            "Orderflow_Price_Target": "4035.00"
         }
     },
     {
@@ -11476,42 +11503,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 48,
             "Past_Price_Action_Cause": "XAU/USD has gained $88.84 over the last 24 hours, but the 4h move vs. daily ATR ratio sits at a modest 0.15x, indicating that while a strong move occurred earlier during the Asian session, immediate momentum has normalized. The latest macro data points present a mixed picture of falling yields and lower oil prices countering slight USD strength, rendering the immediate directional bias neutral.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-04 17:01 | Letztes Update: 2026-11-05 10:01",
-        "original_date": "2026-11-04 17:01",
-        "_timestamp": 1793872871.0,
-        "articles": [
-            {
-                "title": "Iran protests IMO’s biased reports on maritime security",
-                "link": "https://www.tehrantimes.com/news/531841/Iran-protests-IMO-s-biased-reports-on-maritime-security",
-                "source": "Tehran Times",
-                "date": "2026-11-04 17:01",
-                "description": "TEHRAN – Iran has criticized 'biased and incomplete reporting' by the International Maritime Organization (IMO) on the maritime security crisis, stressing that the protection of seafarers must be impartial and that the hardships facing Iranian crews should not be overlooked.",
-                "_timestamp": 1793811700.0
-            },
-            {
-                "title": "Iran demands IMO condemn US naval blockade",
-                "link": "https://en.mehrnews.com/news/249181/Iran-demands-IMO-condemn-US-naval-blockade",
-                "source": "Mehr News Agency",
-                "date": "2026-11-05 10:01",
-                "description": "TEHRAN, Nov. 05 (MNA) – Iran told the IMO Council that US and Israeli claims on Hormuz shipping are baseless and politically motivated, and demanded the council condemn the US naval blockade of Iranian ports as aggression under UN Resolution 3314.",
-                "_timestamp": 1793872871.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Event_Timestamp": "2026-11-05 10:01 UTC (approx. 1.5 hours ago)",
-            "Facts": "Iran has criticized the International Maritime Organization (IMO) for biased reporting on maritime security and formally demanded that the IMO Council condemn a US naval blockade of Iranian ports as aggression under UN Resolution 3314 [Mehr News Agency, Tehran Times].",
-            "Uncertainties": "Whether the IMO Council will take any formal stance or if this rhetoric will escalate into physical disruptions in the Strait of Hormuz.",
-            "Macro_Context": "EUR/USD is dropping (-0.36%, indicating USD strength which is a headwind for gold), US 10Y Bond prices are ticking up (+0.26%, yielding lower interest rates which acts as a tailwind), and Brent Crude Oil is falling (-6.10%), reflecting subdued energy-driven inflation fears. OANDA retail positioning is heavily long at 72.3%.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "Gold has seen a strong 24h advance of +$88.84, but the 4h move vs daily ATR ratio is modest at 0.15x. The geopolitical rhetoric from Iran is ongoing and fresh within the last 2 hours, but lacks immediate physical supply disruptions, keeping the immediate price impact neutral to consolidative near current levels.",
             "Orderflow_Price_Target": "N/A"
         }
     }

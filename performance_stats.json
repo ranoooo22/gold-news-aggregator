@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 37,
+    "total_evaluated": 43,
     "hits": 15,
-    "misses": 22,
-    "win_rate": 40.5,
-    "active_signals": 87,
+    "misses": 28,
+    "win_rate": 34.9,
+    "active_signals": 83,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "ACTIVE",
@@ -316,7 +316,7 @@
             "impact": "Bullish",
             "prob": 55,
             "entry_price": 4070.59,
-            "target": 4078.23,
+            "target": 4078.3,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -458,7 +458,7 @@
             "headline": "Jeenius CEO: AI's Next Frontier Is the World It Can't Yet Reach",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
-            "prob": 52,
+            "prob": 55,
             "entry_price": 4070.59,
             "target": 4059.97,
             "max_dd_usd": 0.0,
@@ -732,7 +732,7 @@
             "impact": "Bullish",
             "prob": 52,
             "entry_price": 4070.59,
-            "target": 4078.21,
+            "target": 4078.3,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -918,7 +918,7 @@
             "fail_reason": ""
         },
         "https://stocktwits.com/news-articles/markets/cryptocurrency/van-eck-ceo-warns-next-us-financial-crisis-will-start-in-washington-urges-investors-to-hold-real-assets-like-gold-and-bitcoin/cNGVSI9R9IW?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "VanEck CEO Warns Next US Financial Crisis Will Start In Washington, Urges Investors To Hol",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -931,10 +931,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794022509.0,
             "date": "Erstmeldung: 2026-11-07 03:35",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/technology/articles/microsoft-msft-pulling-back-key-031936381.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Microsoft (MSFT) Is Pulling Back From Key Neocloud Data Center Deals",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -947,10 +947,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794021576.0,
             "date": "Erstmeldung: 2026-11-07 03:19",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.94 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/canadian-natural-resources-tsx-cnq-231600341.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Canadian Natural Resources (TSX:CNQ) Q3 Results Mask A One Off Profit Boost",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -963,10 +963,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794021037.0,
             "date": "Erstmeldung: 2026-11-06 23:16 | Letztes Update: 2026-11-07 03:10",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/us-urges-citizens-across-middle-east-exercise-heightened-caution": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US urges citizens across Middle East to exercise 'heightened caution'",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -979,10 +979,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794021033.0,
             "date": "Erstmeldung: 2026-11-07 03:10",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-knocked-out-iranian-little-bit-anti-aircraft-device": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Trump says US knocked out Iranian 'little bit of anti-aircraft device'",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -995,10 +995,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794019987.0,
             "date": "Erstmeldung: 2026-11-07 02:53",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/iren-stock-plunges-18-microsoft-162134051.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "IREN stock plunges 18% as Microsoft raises concerns over data center delays",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -1011,7 +1011,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794017952.0,
             "date": "Erstmeldung: 2026-11-05 16:00 | Letztes Update: 2026-11-07 02:19",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.13 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/7/eu-prosecutor-office-investigates-fatal-train-crash-in-spain?traffic_source=rss": {
             "status": "MISS",
@@ -1987,6 +1987,38 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794076935.0,
             "date": "Erstmeldung: 2026-11-07 18:40 | Letztes Update: 2026-11-07 18:42",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/crypto/articles/robert-kiyosaki-says-why-worry-223009735.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Robert Kiyosaki Says 'Why Worry?' as He Eyes Buying Bitcoin, Gold, Silver in Next Crash",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bullish",
+            "prob": 51,
+            "entry_price": 4070.59,
+            "target": 4078.3,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794090609.0,
+            "date": "First Reported: 2026-11-07 22:30 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/devon-energy-stock-other-oil-221413315.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Devon Energy Stock And Other Oil Producers Facing Inflation Pressure",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bullish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4078.3,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794089653.0,
+            "date": "First Reported: 2026-11-07 22:14 UTC",
             "fail_reason": ""
         }
     }

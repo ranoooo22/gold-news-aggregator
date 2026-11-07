@@ -179,7 +179,7 @@
             <div class="intel-value" id="ui-macro">Lade...</div>
         </div>
         <div class="intel-card" style="border-top-color: #ec4899;">
-            <div class="intel-title">KI-Trefferquote (&ge;67% Setups)</div>
+            <div class="intel-title">KI-Trefferquote (&gt;50% Setups)</div>
             <div class="intel-value" id="ui-winrate">Lade...</div>
         </div>
     </div>
@@ -214,6 +214,7 @@
             </select>
             <select id="filter-relevance" onchange="renderNews()">
                 <option value="all">Alle News (Kompletter Feed)</option>
+                <option value="directional">Alle gerichteten Setups (&gt; 50%)</option>
                 <option value="tradeable">Nur High-Conviction (&ge; 67%)</option>
             </select>
             <select id="sort-by" onchange="renderNews()">
@@ -459,7 +460,12 @@
                     if (filterRegion === 'western' && (hasRegionalSource || hasTechMacroSource)) return false;
                 }
 
-                if (filterRelevance === 'tradeable') {
+                if (filterRelevance === 'directional') {
+                    const prob = parseInt(cluster.summary?.Probability_Percent || 0);
+                    const impact = cluster.summary?.XAUUSD_Impact || '';
+                    const isDir = impact.includes('Bullish') || impact.includes('Bearish');
+                    if (prob <= 50 || !isDir) return false;
+                } else if (filterRelevance === 'tradeable') {
                     const prob = parseInt(cluster.summary?.Probability_Percent || 0);
                     const impact = cluster.summary?.XAUUSD_Impact || '';
                     const isTradeableImpact = impact.includes('Bullish') || impact.includes('Bearish');
@@ -490,12 +496,14 @@
 
                 let evalBadgeHTML = '';
                 const timing = cluster.summary?.Impact_Timing || '';
+                const ddText = cluster.max_dd_usd !== undefined ? ` | Max DD: -$${Number(cluster.max_dd_usd).toFixed(2)}` : '';
+                
                 if (cluster.eval_status === 'HIT') {
-                    evalBadgeHTML = `<span class="eval-badge eval-hit">[TARGET HIT: ${cluster.summary?.Orderflow_Price_Target}]</span>`;
+                    evalBadgeHTML = `<span class="eval-badge eval-hit">[TARGET HIT: ${cluster.summary?.Orderflow_Price_Target}${ddText}]</span>`;
                 } else if (cluster.eval_status === 'ACTIVE') {
-                    evalBadgeHTML = `<span class="eval-badge eval-active">[AKTIV | Ziel: ${cluster.summary?.Orderflow_Price_Target}]</span>`;
+                    evalBadgeHTML = `<span class="eval-badge eval-active">[AKTIV | Ziel: ${cluster.summary?.Orderflow_Price_Target}${ddText}]</span>`;
                 } else if (cluster.eval_status === 'MISS') {
-                    evalBadgeHTML = `<span class="eval-badge eval-miss">[ZIEL NICHT ERREICHT]</span>`;
+                    evalBadgeHTML = `<span class="eval-badge eval-miss">[ZIEL NICHT ERREICHT${ddText}]</span>`;
                 } else if (timing.toLowerCase().includes('priced in') || timing.toLowerCase().includes('past')) {
                     evalBadgeHTML = `<span class="eval-badge eval-pricedin">[BEREITS EINGEPREIST]</span>`;
                 }

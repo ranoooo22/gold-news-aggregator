@@ -1,5 +1,695 @@
 [
     {
+        "main_date": "Erstmeldung: 2026-11-07 17:56",
+        "original_date": "2026-11-07 17:56",
+        "_timestamp": 1794074163.0,
+        "articles": [
+            {
+                "title": "Israel continues demolitions and bombardment in southern Lebanon",
+                "link": "https://www.tehrantimes.com/news/531910/Israel-continues-demolitions-and-bombardment-in-southern-Lebanon",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:56",
+                "description": "TEHRAN — Israeli engineering units detonated structures in the southern town of Bani Hayyan on Saturday, while artillery crews shelled the outskirts of Wadi al-Hujair, capping another day of heavy military operations across southern Lebanon that lay bare the vacuity of Washington’s diplomatic posturing.",
+                "_timestamp": 1794074163.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-07 17:56 UTC (approx. 14 minutes ago)",
+            "Facts": "Israeli engineering units detonated structures in Bani Hayyan and artillery shelled Wadi al-Hujair in southern Lebanon, highlighting ongoing military escalation despite diplomatic efforts [Tehran Times].",
+            "Uncertainties": "Whether the military operations will expand into a wider regional escalation or remain contained to localized border skirmishes.",
+            "Macro_Context": "EUR/USD down 0.70%, US 10Y yields stable/lower, and Brent Crude down 0.95%. Retail sentiment is 71.7% long. Geopolitical tensions in Lebanon provide a persistent safe-haven bid for gold.",
+            "Bull_Case": "Persistent Middle East conflict drives safe-haven demand, pushing gold toward immediate buy-stop liquidity clusters above current prices.",
+            "Bear_Case": "Market fatigue regarding localized border strikes and strong inverse macro headwinds (falling crude oil prices and a stronger USD proxy environment) could neutralize safe-haven flows.",
+            "Historical_Calibration": "Drawing on lessons from past geopolitical setups (e.g., Iranian/Lebanese tensions hitting targets when volatility aligns), a modest probability is assigned with a conservative target to manage drawdown risk against a 0.17x ATR ratio.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "The 4h change of +$10.47 reflects immediate safe-haven absorption of Middle East headlines despite a broader 24h correction (-$28.39).",
+            "Orderflow_Price_Target": "4070.76"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:55",
+        "original_date": "2026-11-07 17:55",
+        "_timestamp": 1794074149.0,
+        "articles": [
+            {
+                "title": "US-Israel military aid: End of dependence, or a new chapter?",
+                "link": "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:55",
+                "description": "TEHRAN – On November 3, President Trump said the U.S. would end what he described as approximately $4 billion in annual aid to Israel by the end of the year.",
+                "_timestamp": 1794074149.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-07 17:55 UTC (approx. 15 minutes ago)",
+            "Facts": "President Trump stated on November 3 that the U.S. would end approx. $4 billion in annual aid to Israel by the end of the year [Tehran Times].",
+            "Uncertainties": "Whether the policy will face congressional pushback or be fully implemented as stated by the end of the year.",
+            "Macro_Context": "Geopolitical realignment impacts safe-haven assets. With global retail positioning heavily long at 71.7%, policy shifts regarding US-Israel relations add a layer of fundamental uncertainty.",
+            "Bull_Case": "Uncertainty surrounding shifts in US foreign and military aid policies to the Middle East enhances geopolitical risk premiums, supporting gold.",
+            "Bear_Case": "The announcement was made on November 3 and is largely priced in, while strong macro pressures (such as Nasdaq outperformance and USD strength) cap upside.",
+            "Historical_Calibration": "Re-evaluating past misses like the AEOI nuclear site setup where targets were overly ambitious, this setup utilizes a tight target respecting current ATR constraints.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Priced into the broader weekly geopolitical sentiment baseline, supporting gold's recent 4h recovery of +$10.47.",
+            "Orderflow_Price_Target": "4078.3"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:55",
+        "original_date": "2026-11-07 17:55",
+        "_timestamp": 1794074119.0,
+        "articles": [
+            {
+                "title": "Bahrain’s Shia leader urges peaceful defense of tortured defendants facing mass trial",
+                "link": "https://www.tehrantimes.com/news/531909/Bahrain-s-Shia-leader-urges-peaceful-defense-of-tortured-defendants",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:55",
+                "description": "TEHRAN — Sheikh Isa Qassim, the senior Shia cleric whom Bahrain’s rulers stripped of his citizenship in 2016, urged the public on Friday to stand peacefully behind 60 clerics awaiting a court verdict on November 8, and warned the monarchy that a case built on “fabricated and defamatory accusations” could carry grave consequences.",
+                "_timestamp": 1794074119.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-07 17:55 UTC (approx. 15 minutes ago)",
+            "Facts": "Bahraini Shia leader Sheikh Isa Qassim urged peaceful defense of 60 clerics facing mass trials on November 8, warning of grave consequences [Tehran Times].",
+            "Uncertainties": "The severity of the Bahraini monarchy's response and whether protests will remain peaceful or escalate.",
+            "Macro_Context": "Internal Persian Gulf political stability affects regional risk perception, interacting with Brent crude (-0.95%) and broader safe-haven flows.",
+            "Bull_Case": "Domestic unrest in Gulf states adds to the cumulative mosaic of Middle Eastern geopolitical risk, supporting gold.",
+            "Bear_Case": "Localized domestic judicial events in Bahrain historically have a minimal direct transmission mechanism to global bullion prices compared to central bank or macro data.",
+            "Historical_Calibration": "Reflecting on previous track records, localized domestic political disputes carry lower systemic weight for gold volatility; hence, neutral positioning is warranted.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Has negligible direct impact on the current 4h/24h price trajectory.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:54",
+        "original_date": "2026-11-07 17:54",
+        "_timestamp": 1794074077.0,
+        "articles": [
+            {
+                "title": "Trump answers midterm defeat by elevating the ‘extremist’ architect of his rejected agenda",
+                "link": "https://www.tehrantimes.com/news/531912/Trump-answers-midterm-defeat-by-elevating-the-extremist-architect",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:54",
+                "description": "TEHRAN — Just days after Republicans lost control of Congress in Tuesday’s elections, President Donald Trump appointed Stephen Miller as White House Chief of Staff on Friday. Miller, key architect of the administration’s immigration and deportation strategy, replaces Susie Wiles and officially begins his duties on Monday.",
+                "_timestamp": 1794074077.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-07 17:54 UTC (approx. 16 minutes ago)",
+            "Facts": "Following midterm defeat, President Trump appointed Stephen Miller as White House Chief of Staff, replacing Susie Wiles, effective Monday [Tehran Times].",
+            "Uncertainties": "The legislative and administrative friction Miller's appointment will bring to Washington policy execution.",
+            "Macro_Context": "U.S. political shifts influence fiscal policy expectations, dollar sentiment, and treasury yields (10Y price at 107.235).",
+            "Bull_Case": "Domestic U.S. political volatility and shifts in administration personnel can create policy uncertainty, supporting safe-haven assets.",
+            "Bear_Case": "Domestic political appointments are standard structural changes that do not immediately alter macroeconomic fundamentals or Fed monetary policy.",
+            "Historical_Calibration": "Purely domestic political appointments in the US rarely generate immediate directional impulses for gold without concurrent macroeconomic data releases.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "No direct link to gold's recent price action; markets are more focused on tech equities and broader yields.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-02 17:35 | Letztes Update: 2026-11-07 17:54",
+        "original_date": "2026-11-02 17:35",
+        "_timestamp": 1794074056.0,
+        "articles": [
+            {
+                "title": "Yemeni government forces claim gains in Lahij",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-gains-yemens",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 04:52",
+                "description": "Yemeni government forces claim gains in Lahij\n\n    \n    \n\n        \n    \n                The internationally recognised Yemeni government says its troops have recaptured positions from Houthi forces in Lahij governorate, located south-west of the country.\n\n\"Our armed forces have succeeded in recapturing positions in the al-Khazzan al-Ahmar area on the al-Nusayrah front in the al-Sawalihah sub-district of the al-Maqatirah district in northern Lahij governorate, and have repelled the terrorist Houthi militias\" the government forces' media centre said.",
+                "_timestamp": 1793681557.0
+            },
+            {
+                "title": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-army-says-it-launched-nearly-1000-operations-against-houthi",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 03:11",
+                "description": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day\n\n    \n    \n\n        \n    \n                The Yemeni army said that it launched 951 operations targeting Houthi positions over the past 24 hours as part of Operation Dawn of Yemen.\n\nArmy spokesperson Majed al-Nuzaili claimed in a post on X that the operations had \"neutralized\" around 332 Houthi field commanders and fighters.\n\nMoreover, the army claimed to have destroyed or damaged 56&nbsp;vehicles, pieces of equipment and weapons across several fronts, including Al-Jawf, Marib and Al-Bayda.",
+                "_timestamp": 1793675518.0
+            },
+            {
+                "title": "Yemeni government forces launch strikes on Houthi positions west of Taiz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-launch-strikes-houthi-positions-west-taiz",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 02:17",
+                "description": "Yemeni government forces launch strikes on Houthi positions west of Taiz\n\n    \n    \n\n        \n    \n                Forces belonging to Yemen’s internationally recognised government have carried out air strikes against Houthi positions west of Taiz.\n\nThe military spokesperson said that&nbsp;warplanes targeted the movement's military vehicles in the Jabal Habashi area, resulting in the killing of Houthi fighters.&nbsp;\n\nMeanwhile, Houthi-affiliated media reported that a strike north of Taiz targeted a plastic shoe factory, killing three and injuring eight others.&nbsp;",
+                "_timestamp": 1793672237.0
+            },
+            {
+                "title": "Israeli forces push into Quneitra, Syrian media report",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-occupation-push-quneitra-syria-syrian-media-report",
+                "source": "Middle East Eye",
+                "date": "2026-11-02 22:51",
+                "description": "Israeli forces push into Quneitra, Syrian media report\n\n    \n    \n\n        \n    \n                Israeli forces advanced into the village of al-Asbah in rural southern Quneitra with five military vehicles, Syria TV reported.\n\nAccording to Sijil, a Syrian initiative tracking Israeli violations in the country, Israeli forces committed seven violations on Monday before the latest incursion, including other incursions, checkpoints, and aircraft overflights.",
+                "_timestamp": 1793659900.0
+            },
+            {
+                "title": "Israeli forces raid multiple West Bank towns, local sources report",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
+                "source": "Middle East Eye",
+                "date": "2026-11-02 22:31",
+                "description": "Israeli forces raid multiple West Bank towns, local sources report\n\n    \n    \n\n        \n    \n                Israeli forces launched raids on several towns in the occupied West Bank late on Monday, local sources reported.\n\nAmong them are the towns of Qabatiya, south of Jenin, and the city of Qalqilya.",
+                "_timestamp": 1793658667.0
+            },
+            {
+                "title": "397 attacks on West Bankers in Oct, highest monthly total in 20 years: UN",
+                "link": "https://www.tehrantimes.com/news/531764/397-attacks-on-West-Bankers-in-Oct-highest-monthly-total-in",
+                "source": "Tehran Times",
+                "date": "2026-11-02 17:35",
+                "description": "Israeli settler attacks in the occupied West Bank reached an unprecedented level in October, with the number of incidents causing injuries or property damage exceeding all monthly totals recorded since the United Nations began monitoring them in 2006.",
+                "_timestamp": 1793640930.0
+            },
+            {
+                "title": "Saudi strikes martyr 17, wound 59 in Yemen",
+                "link": "https://en.mehrnews.com/news/249125/Saudi-strikes-martyr-17-wound-59-in-Yemen",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 04:41",
+                "description": "TEHRAN, Nov. 03 (MNA) – At least 17 Yemeni civilians were martyred and 59 wounded, most of them children, in Saudi airstrikes over the past 24 hours, Yemen's Health Ministry said.",
+                "_timestamp": 1793680901.0
+            },
+            {
+                "title": "Who are Yemen’s Giants Brigades and who do they fight for?",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/who-are-yemens-giants-brigades-and-who-do-they-fight",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 02:35",
+                "description": "Who are Yemen’s Giants Brigades and who do they fight for?\n\n    \n    \n\n        \n    \n                Yemen’s Giants Brigades have emerged as one of the most powerful forces fighting the Houthis.\n\nBuilt with UAE backing and rooted in Yemen’s southern movement, they are now fighting alongside Saudi-backed government forces in a major new offensive.\n\nSo who are the Giants Brigades, who do they actually fight for and what does their rise tell us about Yemen’s war?",
+                "_timestamp": 1793759739.0
+            },
+            {
+                "title": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/reports-strikes-saudi-led-coalition-yemens-al-bayda",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 04:10",
+                "description": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda \n\n    \n    \n\n        \n    \n                Saudi-led coalition forces have reportedly launched four air strikes in central Yemen's city of al-Bayda, according to Houthi-affiliated media.&nbsp;\n\nShelling was also reported in the&nbsp;Ghamr district of the Saada governorate.",
+                "_timestamp": 1793765431.0
+            },
+            {
+                "title": "Yemeni government forces claim control of strategic al-Jawf mountain range",
+                "link": "https://www.aljazeera.com/news/2026/11/4/yemeni-government-forces-claim-control-of-strategic-al-jawf-mountain-range?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-04 14:08",
+                "description": "The advance on al-Dahida heights, a strategic highland, comes as fighting escalates in al-Dhalea, Lahij and Taiz.",
+                "_timestamp": 1793801298.0
+            },
+            {
+                "title": "Yemeni military announces 3 ops. deep inside Saudi Arabia",
+                "link": "https://en.mehrnews.com/news/249169/Yemeni-military-announces-3-ops-deep-inside-Saudi-Arabia",
+                "source": "Mehr News Agency",
+                "date": "2026-11-04 14:04",
+                "description": "TEHRAN, Nov. 04 (MNA) –  The spokesman for the Yemeni armed forces announced three successful drone and missile operations deep inside Saudi Arabia on Wednesday.",
+                "_timestamp": 1793801053.0
+            },
+            {
+                "title": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-hits-yemen-reportedly-kill-20-people-over-past-day",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 02:00",
+                "description": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day\n\n    \n    \n\n        \n    \n                Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of&nbsp;al-Jawf, al-Bayda, Saada, and Taiz, according to&nbsp;Houthi-affiliated media.",
+                "_timestamp": 1793844008.0
+            },
+            {
+                "title": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-attack-kills-four-people-yemeni-government-forces-make-gains-al",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 23:36",
+                "description": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz\n\n    \n    \n\n        \n    \n                A ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday.\n\nYemen’s Saudi-backed government's state media reported that four others, also from the same family, were injured after their home was targeted by Houthi fighters, and number of homes nearby were also damaged.\n\nYemeni government forces said in a statement on X that they have made territorial gains in al-Jawf province, seizing several Houthi positions, and&nbsp;repelled Houthi attempts to recapture lost positions in Taiz governorate, according to a Yemeni military spokesperson.\n\n\nFootage showing the armed forces targeting Houthis terrorist militia personnel in Taiz, as part of operation Dawn of Yemen https://t.co/dWZBmGHBBo\n— Yemen Army Media (@Yemenarmyeng) November 4, 2026",
+                "_timestamp": 1793835399.0
+            },
+            {
+                "title": "A month after Yemen government offensive began, war of attrition takes hold",
+                "link": "https://www.aljazeera.com/news/2026/11/5/a-month-after-yemen-government-offensive-began-war-of-attrition-takes-hold?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-05 09:58",
+                "description": "The Houthis suffer losses but also inflict pain on government forces and Saudi Arabia.",
+                "_timestamp": 1793872698.0
+            },
+            {
+                "title": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-air-strikes-reported-sanaa-clashes-lahj-governorate",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 13:25",
+                "description": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate\n\n    \n    \n\n        \n    \n                Houthi affiliated media is reporting air strikes targeting the Hamdan district in Sanaa.\n\nMilitary spokesman Yahya Saree said 12 people, including six children, were killed in Saudi strikes in Yemen on Wednesday, most in Taiz province.\n\nSaudi Arabia carried out 104 air strikes and missile attacks in Sanaa, Al-Jawf, Al-Bayda, Saada, Amran, Marib, Taiz and Lahij, the Ansar Allah spokesperson said.&nbsp;\n\nMeanwhile, Al Jazeera reports clashes between government forces and the Houthis on the al-Maqatra front, in the Lahij governorate.\n\nAccording to the report, government forces claim to have&nbsp;“neutralised” military vehicles and personnel in the skirmishes.\n\nAl Jazeera also reports an escalating humanitarian crisis in Taiz, where civilians are dying as a result of shelling and the ongoing siege.",
+                "_timestamp": 1793885104.0
+            },
+            {
+                "title": "Saudi attacks on Yemen kill nine, including children",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attacks-yemen-kill-nine-including-children",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 07:13",
+                "description": "Saudi attacks on Yemen kill nine, including children\n\n    \n    \n\n        \n    \n                Saudi attacks on Thursday across Yemen killed nine civilians, including three children, the&nbsp;Sanaa-based&nbsp;Health Ministry announced early on Friday.&nbsp;\n\nAccording to the statement, 14 others were wounded in the attacks.&nbsp;",
+                "_timestamp": 1793949234.0
+            },
+            {
+                "title": "Yemen urges Arab states to deter Houthi attacks, foreign minister says",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-urges-arab-states-deter-houthi-attacks-foreign-minister-says",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 09:53",
+                "description": "Yemen urges Arab states to deter Houthi attacks, foreign minister says\n\n    \n    \n\n        \n    \n                Yemen’s foreign minister Afrah al-Zouba has urged Arab states to push for measures to deter Houthi attacks during a meeting with Arab ambassadors in Berlin.\n\nZouba told the envoys about the impact of the attacks on civilians, particularly in Taiz, which she said remained under siege, and raised the detention of UN staff and humanitaria",
+                "_timestamp": 1793958796.0
+            },
+            {
+                "title": "More than 30 killed or wounded in air strikes on Yemeni market, Houthis say",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/more-30-killed-or-wounded-air-strikes-yemen-market-houthis-say",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 11:25",
+                "description": "More than 30 killed or wounded in air strikes on Yemeni market, Houthis say\n\n    \n    \n\n        \n    \n                Air strikes on a market in Yemen’s Taiz province have killed or wounded more than 30 people, according to the Houthi-run Al-Masirah TV.\n\nThe channel said the toll from Friday morning’s attack was preliminary, with searches for missing people still under way as aircraft continued to fly overhead.\n\nIt reported three strikes on the m",
+                "_timestamp": 1793964347.0
+            },
+            {
+                "title": "Yemen's government says its forces recaptured villages and districts in Taiz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-recapture-villages-and-districts-taiz-government-says",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 13:04",
+                "description": "Yemen's government says its forces recaptured villages and districts in Taiz\n\n    \n    \n\n        \n    \n                Yemeni government forces, backed by Saudi Arabia, say they have recaptured several areas in Taiz province, including the villages of al-Nidani and al-Sarari, large parts of Sanamat district and the Rabat al-Qarn area.\n\nThe forces said 37 Houthi fighters had been killed or wounded in the fighting. The Houthis, who control large pa",
+                "_timestamp": 1793970254.0
+            },
+            {
+                "title": "Syria sends military advisers to Saudi Arabia amid Houthi attacks, sources say",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/syria-sends-military-advisers-saudi-arabia-amid-houthi-attacks-sources",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 16:55",
+                "description": "Syria sends military advisers to Saudi Arabia amid Houthi attacks, sources say\n\n    \n    \n\n        \n    \n                Syria has sent a limited number of military personnel to Saudi Arabia to provide advice and training as the kingdom comes under attack from Yemen’s Houthis, Reuters reported, citing two Syrian military sources and a senior US official.\n\nThe US official said Syrian advisers and training teams were travelling to Saudi Arabia to t",
+                "_timestamp": 1793984148.0
+            },
+            {
+                "title": "Houthis and Yemeni government blame each other for Taiz market attack that killed 30",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-and-yemeni-government-blame-each-other-taiz-market-attack-killed",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 17:28",
+                "description": "Houthis and Yemeni government blame each other for Taiz market attack that killed 30\n\n    \n    \n\n        \n    \n                Yemen’s Houthis and the internationally recognised government have blamed each other for a deadly attack on a market in Taiz province earlier on Friday.\n\nThe Houthis said Saudi aircraft carried out the strikes, while the government accused the group of firing a ballistic missile at the market and called the attack a “war ",
+                "_timestamp": 1793986119.0
+            },
+            {
+                "title": "Yemeni gov’t forces, Houthis trade blame for deadly strikes on Taiz market",
+                "link": "https://www.aljazeera.com/news/2026/11/6/yemeni-govt-forces-houthis-trade-blame-for-deadly-strikes-on-taiz-market?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-06 18:09",
+                "description": "The attack on al-Hadara market in Taiz governorate&#039;s al-Waziiya district killed at least 30 people, Houthi rebels say.",
+                "_timestamp": 1793988589.0
+            },
+            {
+                "title": "Yemen's Houthis granting ships safe passage via email: Report",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-houthis-granting-ships-safe-passage-email-report",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 20:48",
+                "description": "Yemen's Houthis granting ships safe passage via email: Report\n\n    \n    \n\n        \n    \n                Yemen’s Houthis are controlling maritime transit of the Red Sea through a system under which vessels can request safe passage via email, the Wall Street Journal reported Friday.\n\nThe Houthis, who control swaths of Yemen, declared a maritime blockade of Saudi Arabia earlier this year, after which some ships began contacting them before transitin",
+                "_timestamp": 1793998086.0
+            },
+            {
+                "title": "Dozens killed as humanitarian crisis mounts in Yemen: What next for war?",
+                "link": "https://www.aljazeera.com/news/2026/11/7/dozens-killed-as-humanitarian-crisis-mounts-in-yemen-what-next-for-war?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-07 11:59",
+                "description": "Government forces reclaim key territories in Taiz and Lahij but face setbacks under Houthi resistance in certain areas.",
+                "_timestamp": 1794052766.0
+            },
+            {
+                "title": "Yemeni government forces claim attack on Houthi positions in al-Misrakh,  while Saudi attacks on Bani Hashih kill at least 15",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-attack-houthi-positions-al-misrakh-while",
+                "source": "Middle East Eye",
+                "date": "2026-11-07 11:33",
+                "description": "Yemeni government forces claim attack on Houthi positions in al-Misrakh,  while Saudi attacks on Bani Hashih kill at least 15\n\n    \n    \n\n        \n    \n                Yemeni government forces have claimed three air attacks on Houthi positions in the al-Misrakh district of the Taiz governorate.\n\nThe city of Taiz- which is government-held- has been subject to an ongoing Houthi siege. The blockade has triggered a spiralling humanitarian crisis in t",
+                "_timestamp": 1794051184.0
+            },
+            {
+                "title": "Houthi media says 11 killed in Saudi strikes on Yemen's Sanaa province",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-media-says-11-killed-saudi-strikes-yemens-sanaa-province",
+                "source": "Middle East Eye",
+                "date": "2026-11-07 10:38",
+                "description": "Houthi media says 11 killed in Saudi strikes on Yemen's Sanaa province\n\n    \n    \n\n        \n    \n                Houthi media said on Saturday that Saudi strikes killed 11 people, including women and children, in Yemen's Sanaa province, following the return of the country's dormant civil war.\n\n\"Martyrdom of 11 citizens, among them women and children, in Saudi enemy airstrikes\" on homes in the Al-Shariyah area of Sanaa province, the Iran-backed Ho",
+                "_timestamp": 1794047893.0
+            },
+            {
+                "title": "Death toll in Yemen's Bani Hashish reaches 22",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-yemens-bani-hashish-reaches-22",
+                "source": "Middle East Eye",
+                "date": "2026-11-07 12:48",
+                "description": "Death toll in Yemen's Bani Hashish reaches 22\n\n    \n    \n\n        \n    \n                The death toll from Saudi attacks on Yemen's Bani Hashish has risen to 22, the Houthi-run health ministry is reporting.\n\nIn a statement, the ministry said that most of those killed in air strikes on the district al-Shariyah area were women and children,&nbsp; confirming that some 30 others were wounded, including a camerman for the Houthi-affiliated al-Masirah",
+                "_timestamp": 1794055729.0
+            },
+            {
+                "title": "Houthis report 25 killed in Yemen strikes",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/7/houthis-report-25-killed-in-yemen-strikes?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-07 17:39",
+                "description": "Yemen’s Houthis say at least 25 people have been killed and 30 injured in air strikes.",
+                "_timestamp": 1794073163.0
+            },
+            {
+                "title": "Yemeni military coducts 6 operations deep inside Saudi Arabia",
+                "link": "https://en.mehrnews.com/news/249222/Yemeni-military-coducts-6-operations-deep-inside-Saudi-Arabia",
+                "source": "Mehr News Agency",
+                "date": "2026-11-07 17:54",
+                "description": "TEHRAN, Nov. 07 (MNA) – The Yemeni armed forces targeted strategic sites in Saudi Arabia in their latest missile and drone operations, the armed forces spokesman said on Saturday.",
+                "_timestamp": 1794074056.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-07 17:54 UTC (approx. 16 minutes ago)",
+            "Facts": "Yemeni armed forces conducted 6 operations deep inside Saudi Arabia using missiles and drones, amid reports of rising casualties from air strikes in Bani Hashish [Mehr News, Al Jazeera, MEE].",
+            "Uncertainties": "The extent of damage to strategic Saudi infrastructure and potential Saudi retaliatory actions.",
+            "Macro_Context": "Brent Crude is down 0.95% to $100.47 despite escalation, showing muted energy supply disruption fear so far, while gold acts as a direct geopolitical risk hedge.",
+            "Bull_Case": "Direct military strikes involving Saudi Arabia and Yemen threaten regional energy and shipping corridors, elevating safe-haven gold demand.",
+            "Bear_Case": "Crude oil prices falling (-0.95%) indicate that energy markets are currently dismissing supply shock risks, limiting sustained gold momentum.",
+            "Historical_Calibration": "Learning from past geopolitical signals, high-impact regional military strikes provide reliable short-term safe-haven impetus if kept within sensible target ranges relative to ATR.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 58,
+            "Past_Price_Action_Cause": "Contributes to the +$10.47 4h rebound as safe-haven bids step in following reports of deep strikes in Saudi Arabia.",
+            "Orderflow_Price_Target": "4078.3"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:53 | Letztes Update: 2026-11-07 17:54",
+        "original_date": "2026-11-07 17:53",
+        "_timestamp": 1794074043.0,
+        "articles": [
+            {
+                "title": "TMoCA cinematheque to show French documentary about Iran",
+                "link": "https://www.tehrantimes.com/news/531890/TMoCA-cinematheque-to-show-French-documentary-about-Iran",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:54",
+                "description": "TEHRAN – Concurrent with the exhibition “In Search of Iran: In the Collection of the Tehran Museum of Contemporary Art,” a program titled “In Search of Iran in Cinema” will be held at the museum’s cinematheque.",
+                "_timestamp": 1794074043.0
+            },
+            {
+                "title": "Photo exhibition of 19th Mehr Muharram contest opens in Semnan",
+                "link": "https://www.tehrantimes.com/news/531891/Photo-exhibition-of-19th-Mehr-Muharram-contest-opens-in-Semnan",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:53",
+                "description": "TEHRAN – The photo exhibition for the 19th International Digital Media Contest of Mehr Muharram, featuring works by photographers from Iran and 12 other countries, launched in Semnan on Saturday, November 7.",
+                "_timestamp": 1794074018.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-07 17:54 UTC (approx. 16 minutes ago)",
+            "Facts": "TMoCA cinematheque in Iran announced film programs featuring French documentaries, and Semnan opened a photo exhibition for the 19th Mehr Muharram contest [Tehran Times].",
+            "Uncertainties": "None; purely cultural events.",
+            "Macro_Context": "Cultural and artistic news has zero transmission to global macroeconomic indicators, USD, yields, or gold order flow.",
+            "Bull_Case": "None.",
+            "Bear_Case": "None.",
+            "Historical_Calibration": "Cultural news items consistently lack market relevance and are classified as neutral noise.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 10,
+            "Past_Price_Action_Cause": "Irrelevant to price action.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:53",
+        "original_date": "2026-11-07 17:53",
+        "_timestamp": 1794073981.0,
+        "articles": [
+            {
+                "title": "Mehr Media Group CEO proposes international cooperation on AI in journalism at Beijing summit",
+                "link": "https://www.tehrantimes.com/news/531900/Mehr-Media-Group-CEO-proposes-international-cooperation-on-AI",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:53",
+                "description": "TEHRAN- Mohammad Mahdi Rahmati, CEO of Mehr Media Group, has proposed the establishment of an international working group for cooperation and knowledge-sharing on artificial intelligence in journalism, as well as joint investment in developing an open-source AI-powered editorial management system, during the 7th World Media Summit in Beijing.",
+                "_timestamp": 1794073981.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-07 17:53 UTC (~0.3 hours ago relative to 2026-11-07 18:11 UTC)",
+            "Facts": "Mehr Media Group CEO Mohammad Mahdi Rahmati proposed an international working group for AI in journalism and joint investment in an open-source AI editorial management system during the 7th World Media Summit in Beijing [Tehran Times].",
+            "Uncertainties": "Whether concrete commercial or state-level tech agreements will emerge from this proposal remains speculative.",
+            "Macro_Context": "Nasdaq 100 is strong (+1.81%) driven by AI infrastructure momentum, while EUR/USD drops (-0.70%) supporting the dollar. This tech/media cooperative proposal has negligible direct macro impact on precious metals or global inflation.",
+            "Bull_Case": "Global technology cooperation narratives marginally lift high-tech sentiment, though this has virtually no direct bearing on safe-haven gold flows.",
+            "Bear_Case": "Localized media/AI panel discussions carry zero macro weight, leaving gold exposed to broader dollar strength and yield dynamics.",
+            "Historical_Calibration": "Drawing on lessons from past low-impact geopolitical and cultural news, setting a directional bias here would lead to an unbacked trade. Given the lack of direct market drivers, Neutral is the correct calibration.",
+            "Impact_Timing": "Present",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Current 4h gold gain ($+10.47) and 24h decline ($-28.39) reflect wider rate/macro flows rather than media summit proposals.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:52",
+        "original_date": "2026-11-07 17:52",
+        "_timestamp": 1794073955.0,
+        "articles": [
+            {
+                "title": "Industry, mining, trade minister visits, inaugurates industrial units in Ardabil province",
+                "link": "https://www.tehrantimes.com/news/531905/Industry-mining-trade-minister-visits-inaugurates-industrial",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:52",
+                "description": "TEHRAN- The Minister of Industry, Mining and Trade traveled to Ardabil province on Saturday to visit several production projects and also inaugurate an industrial unit.",
+                "_timestamp": 1794073955.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-07 17:52 UTC (~0.3 hours ago relative to 2026-11-07 18:11 UTC)",
+            "Facts": "Iran's Minister of Industry, Mining and Trade visited Ardabil province to review production projects and inaugurate a new industrial unit [Tehran Times].",
+            "Uncertainties": "Specific capacity outputs and economic scale of the inaugurated industrial unit are not detailed.",
+            "Macro_Context": "Domestic industrial development in Iran operates independently of global commodity pricing. Broad macro trends show a firm USD (-0.70% EUR/USD) and a positive Nasdaq (+1.81%).",
+            "Bull_Case": "Domestic production growth highlights economic resilience against sanctions, but offers no safe-haven catalyst for XAU/USD.",
+            "Bear_Case": "Purely local domestic industrial news has zero transmission mechanism to international gold liquidity or safe-haven demand.",
+            "Historical_Calibration": "Similar to past localized industrial updates, this represents background reporting with no actionable signal track record value. Neutral posture avoids forced bets.",
+            "Impact_Timing": "Present",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 35,
+            "Past_Price_Action_Cause": "Price action is dictated by macroeconomic liquidations and bond pricing rather than domestic provincial factory inaugurations.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:51",
+        "original_date": "2026-11-07 17:51",
+        "_timestamp": 1794073880.0,
+        "articles": [
+            {
+                "title": "Iran pavilion opens at China International Import Expo in Shanghai",
+                "link": "https://www.tehrantimes.com/news/531903/Iran-pavilion-opens-at-China-International-Import-Expo-in-Shanghai",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:51",
+                "description": "TEHRAN- The Assistant to the Head of the Organization and Director-General of the East and Subcontinent Office of the Iran Trade Promotion Organization announced the establishment of the national and commercial pavilion of the Islamic Republic of Iran, with the authorization of the Iran Trade Promotion Organization, at the China International Import Expo (CIIE) in Shanghai.",
+                "_timestamp": 1794073880.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-07 17:51 UTC (~0.3 hours ago relative to 2026-11-07 18:11 UTC)",
+            "Facts": "Iran established its national and commercial pavilion at the China International Import Expo (CIIE) in Shanghai, coordinated by the Iran Trade Promotion Organization [Tehran Times].",
+            "Uncertainties": "The exact total value of trade contracts or bilateral export agreements signed at the expo is unquantified.",
+            "Macro_Context": "Sino-Iranian trade connectivity operates outside Western financial channels. Brent crude oil is down (-0.95%) and USD is firmer, dampening commodity upside.",
+            "Bull_Case": "Expansion of non-oil trade channels with China reinforces regional economic integration, keeping regional geopolitical risk premiums steady.",
+            "Bear_Case": "Routine trade expo participation is standard diplomatic/commercial activity that fails to disrupt global liquidity or currency valuations.",
+            "Historical_Calibration": "Trade expos lack the urgency or supply-shock attributes required for high-probability setups. Keeping a neutral stance prevents unnecessary drawdown exposure.",
+            "Impact_Timing": "Present",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Gold's 4h bounce (+0.26%) stems from technical mean reversion after recent 24-hour selling rather than trade fair announcements.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:51",
+        "original_date": "2026-11-07 17:51",
+        "_timestamp": 1794073876.0,
+        "articles": [
+            {
+                "title": "Meta chief strategy officer Dave Wehner leaves to join AI infrastructure startup Fireworks as CFO",
+                "link": "https://www.cnbc.com/2026/11/07/dave-wehner-meta-fireworks-cfo.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-07 17:51",
+                "description": "Dave Wehner, Meta’s chief strategy officer, is leaving the company to become CFO of Fireworks, the AI infrastructure startup valued at $17.5 billion in July.",
+                "_timestamp": 1794073876.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-07 17:51 UTC (~0.3 hours ago relative to 2026-11-07 18:11 UTC)",
+            "Facts": "Dave Wehner, Meta’s chief strategy officer, is leaving to become CFO of AI infrastructure startup Fireworks, which was valued at $17.5 billion in July [CNBC Tech & AI].",
+            "Uncertainties": "Long-term valuation trajectory of Fireworks and Meta's internal replacement strategy.",
+            "Macro_Context": "Directly aligns with the Nasdaq 100 Tech/AI Index surge (+1.81%). Strong risk-on sentiment in equities typically competes with non-yielding safe-haven assets like gold.",
+            "Bull_Case": "Massive private AI infrastructure funding demonstrates ongoing structural tech growth, indirectly supporting broad risk asset sentiment.",
+            "Bear_Case": "Robust equity and tech sector performance draws institutional capital away from defensive safe havens, applying mild downward pressure on gold.",
+            "Historical_Calibration": "Corporate executive moves in the tech sector impact equities rather than precious metals. Treating this as neutral avoids misinterpreting equity flows for gold direction.",
+            "Impact_Timing": "Present",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "Gold is consolidating at $4070.59 while tech equities rally, showing a divergence between risk-on equities and precious metals.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:50",
+        "original_date": "2026-11-07 17:50",
+        "_timestamp": 1794073842.0,
+        "articles": [
+            {
+                "title": "CBI governor emphasizes support for rebuilding gas industry",
+                "link": "https://www.tehrantimes.com/news/531902/CBI-governor-emphasizes-support-for-rebuilding-gas-industry",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:50",
+                "description": "TEHRAN- The Governor of the Central Bank of Iran (CBI) during a visit to South Pars, emphasized financing the reconstruction of damaged facilities and restoring one-third of the country’s gas production.",
+                "_timestamp": 1794073842.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-07 17:50 UTC (~0.4 hours ago relative to 2026-11-07 18:11 UTC)",
+            "Facts": "The Governor of the Central Bank of Iran (CBI) visited South Pars to emphasize financing the reconstruction of damaged facilities to restore one-third of the country's gas production [Tehran Times].",
+            "Uncertainties": "Timeline for complete financing disbursement and operational execution of the repairs.",
+            "Macro_Context": "Energy infrastructure rehabilitation directly affects regional supply perceptions. Brent Crude is down (-0.95%), yet energy security issues in the Middle East historically underpin safe-haven demand.",
+            "Bull_Case": "Focus on critical energy infrastructure damage and repair highlights ongoing geopolitical and economic vulnerabilities in key energy corridors, prompting safe-haven bids into gold.",
+            "Bear_Case": "With Brent crude dropping 0.95% and broader markets pricing in ample supply, oil/energy-linked geopolitical fears may be temporarily muted.",
+            "Historical_Calibration": "Past geopolitical news (e.g., Iranian infrastructure and tensions) has shown mixed results; while some hit targets quickly, others expired due to overly ambitious targets or low signal-to-ATR ratios. Given retail positioning is heavily long (71.7%), aiming for the immediate Buy-Stop zone at 4078.30 aligns well with current volatility ($15.82 H1 ATR).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h price action shows a recovery of $+10.47, indicating buyers stepping in near the $4060 support band.",
+            "Orderflow_Price_Target": "4078.3"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 17:49",
+        "original_date": "2026-11-07 17:49",
+        "_timestamp": 1794073758.0,
+        "articles": [
+            {
+                "title": "Country’s dam reserves up 57%",
+                "link": "https://www.tehrantimes.com/news/531901/Country-s-dam-reserves-up-57",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:49",
+                "description": "TEHRAN- The water volume in the country’s dam reservoirs reached 22.58 billion cubic meters, indicating a 30 percent growth compared with last year.",
+                "_timestamp": 1794073758.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-07 17:49 UTC (~0.4 hours ago relative to 2026-11-07 18:11 UTC)",
+            "Facts": "Iran's water volume in dam reservoirs reached 22.58 billion cubic meters, representing a 30% growth compared to last year and a 57% overall reserve metric [Tehran Times].",
+            "Uncertainties": "Regional distribution equity and long-term climate precipitation sustainability.",
+            "Macro_Context": "Agricultural and hydrological improvements bolster domestic resource stability, reducing localized resource-scarcity inflation pressures.",
+            "Bull_Case": "Ample water reserves alleviate severe agricultural stress, lowering domestic supply-shock risks.",
+            "Bear_Case": "Strong domestic water reserves remove a potential catalyst for resource-scarcity panic or localized food inflation spikes.",
+            "Historical_Calibration": "Environmental and infrastructural data points of this nature carry zero macro significance for international gold trading. A neutral stance prevents false signals.",
+            "Impact_Timing": "Present",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 30,
+            "Past_Price_Action_Cause": "Price movement remains entirely tethered to global bond yields, dollar strength, and macro liquidity rather than reservoir levels.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-07 07:22 | Letztes Update: 2026-11-07 17:48",
+        "original_date": "2026-11-07 07:22",
+        "_timestamp": 1794073697.0,
+        "articles": [
+            {
+                "title": "IRGC to roll out new missile city, aerospace achievements",
+                "link": "https://en.mehrnews.com/news/249210/IRGC-to-roll-out-new-missile-city-aerospace-achievements",
+                "source": "Mehr News Agency",
+                "date": "2026-11-07 09:07",
+                "description": "TEHRAN, Nov. 07 (MNA) – A spokesperson for the Islamic Revolutionary Guards Corps (IRGC) has said that IRGC Aerospace Force will unveil a new underground missile city and several other military achievements.",
+                "_timestamp": 1794042460.0
+            },
+            {
+                "title": "Restrictions on range of Iranian missiles lifted: IRGC spox",
+                "link": "https://en.mehrnews.com/news/249207/Advancing-air-defense-sys-IRGC-Aerospace-s-key-achievements",
+                "source": "Mehr News Agency",
+                "date": "2026-11-07 07:22",
+                "description": "TEHRAN, Nov. 07 (MNA) – Emphasizing that range of missiles' limitations have been lifted for Iran, a spokesperson for the Islamic Revolutionary Guards Corps (IRGC) has stated Iran will show its capabilities to respond to threats in the battlefield.",
+                "_timestamp": 1794036131.0
+            },
+            {
+                "title": "Iran’s IRGC says building underground sites for weapons production, storage",
+                "link": "https://www.aljazeera.com/news/2026/11/7/irans-irgc-says-building-underground-sites-for-weapons-production-storage?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-07 15:34",
+                "description": "IRGC says underground military complexes allow missile production to continue even under heavy bombardment.",
+                "_timestamp": 1794065698.0
+            },
+            {
+                "title": "IRGC spokesman announces lifting of restrictions on Iranian missiles",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-spokesman-announces-lifting-restrictions-iranian-missiles",
+                "source": "Middle East Eye",
+                "date": "2026-11-07 14:40",
+                "description": "IRGC spokesman announces lifting of restrictions on Iranian missiles \n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guards has said that it has lifted restrictions on the range of Iran's missiles.\n\nIRGC spokesman,&nbsp;Brigadier General Hossein Mohebbi reportedly made the comments at a press conference on Saturday, in response to question regarding the country's supreme leader, Mojtaba Khamenei's warning to the US against",
+                "_timestamp": 1794062447.0
+            },
+            {
+                "title": "IRGC to unveil new underground missile city, vows uninterrupted weapons production",
+                "link": "https://www.tehrantimes.com/news/531921/IRGC-to-unveil-new-underground-missile-city-vows-uninterrupted",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:48",
+                "description": "TEHRAN – The spokesperson for Iran’s Islamic Revolution Guard Corps (IRGC) has announced plans to unveil a new underground missile production complex and several other military achievements, while stressing that the country’s weapons manufacturing and development programs will continue uninterrupted, even under enemy bombardment.",
+                "_timestamp": 1794073697.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-07 15:34 UTC (0.7 hours ago)",
+            "Facts": "Iran's IRGC announced the lifting of restrictions on missile ranges and showcased underground missile cities capable of surviving heavy bombardment [Al Jazeera English, Middle East Eye, Mehr News Agency].",
+            "Uncertainties": "The exact operational readiness of these new underground complexes and the nature of any impending US or Israeli countermeasures.",
+            "Macro_Context": "Geopolitical escalation directly supports safe-haven demand. Brent crude's decline (-0.95%) indicates the market has not yet priced in an immediate supply disruption, but gold responds strongly to direct military escalation headlines.",
+            "Bull_Case": "Heightened military escalation in the Middle East triggers aggressive safe-haven buying, pushing gold toward nearby liquidity clusters above the current price.",
+            "Bear_Case": "Markets may become desensitized to recurring rhetoric from the IRGC if diplomatic channels or quiet negotiations continue in parallel.",
+            "Historical_Calibration": "Past geopolitical setups (like the Zaporizhia strike signals) hit targets successfully when regional friction escalates, though targets must be kept close to account for ATR limits.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 62,
+            "Past_Price_Action_Cause": "Supports the 4-hour rebound of +$10.47 off daily lows as safe-haven bids return.",
+            "Orderflow_Price_Target": "4078.27"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
         "main_date": "Erstmeldung: 2026-11-07 17:45",
         "original_date": "2026-11-07 17:45",
         "_timestamp": 1794073507.0,
@@ -64,6 +754,104 @@
             "Past_Price_Action_Cause": "Neutral stance aligns with long-term structural discourse rather than active H1 price discovery.",
             "Orderflow_Price_Target": "N/A"
         }
+    },
+    {
+        "main_date": "Erstmeldung: 2026-11-06 05:56 | Letztes Update: 2026-11-07 17:35",
+        "original_date": "2026-11-06 05:56",
+        "_timestamp": 1794072900.0,
+        "articles": [
+            {
+                "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62966566/stock-market-will-sp-500-open-up-or-down-today-74?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-06 05:56",
+                "description": "U.S. stock futures are mixed early Friday as Wall Street awaits the critical October nonfarm payrolls report and tech shares attempt to rebound from their worst session since 2020. The Polymarket traders, a Polygon (CRYPTO: POL) based prediction platform, are...",
+                "_timestamp": 1793944568.0
+            },
+            {
+                "title": "S&P 500 Posts Weekly Drop as Energy, Technology Slide in Election Aftermath",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-weekly-drop-214616427.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-06 21:46",
+                "description": "The Standard & Poor's 500 index fell 2.7% this week, led by declines in energy and technology stocks",
+                "_timestamp": 1794001576.0
+            },
+            {
+                "title": "The S&P 500 Just Fell More Than 4% in a Day From Near Its Record. Here's What Happened Next in 2 Similar Situations Since 1950.",
+                "link": "https://www.fool.com/investing/2026/11/06/the-s-and-p-500-just-fell-more-than-4-in-a-day-from-near-its-record-here-s-what-happened-next-in-2-similar-situations-since-1950/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 02:43",
+                "description": "The only two close matches are 1955 and 1989. A year later, they were nothing alike.",
+                "_timestamp": 1794019382.0
+            },
+            {
+                "title": "The S&P 500 Is Up 75% In 3 Years. Priced In Gold, It Is Down 14%. Which Is Real?",
+                "link": "https://www.trefis.com/stock/nvda/articles/623129/the-s-p-500-is-up-75-in-3-years-priced-in-gold-it-is-down-14-which-is-real/2026-11-07?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-07 09:14",
+                "description": "Part of our series on building a mix that lasts. Start here: is 60/40 dead.",
+                "_timestamp": 1794042894.0
+            },
+            {
+                "title": "Tech stocks are now cheaper than the S&P 500 for the first time since 2017 — here's what history says comes next: Chart of the Day",
+                "link": "https://finance.yahoo.com/markets/article/tech-stocks-are-now-cheaper-than-the-sp-500-for-the-first-time-since-2017--heres-what-history-says-comes-next-chart-of-the-day-130131812.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 13:01",
+                "description": "Chip stocks lost nearly 30% in five weeks, but the typical S&amp;P 500 stock barely moved, and tech now trades below the market's valuation for the first time since 2017.",
+                "_timestamp": 1794056491.0
+            },
+            {
+                "title": "Democrats Just Swept Congress. Here's What History Says the S&P 500 Does Next.",
+                "link": "https://www.fool.com/investing/2026/11/07/democrats-just-swept-congress-heres-what-history-s/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 14:20",
+                "description": "Will a divided government be the undoing of the bull market?",
+                "_timestamp": 1794061200.0
+            },
+            {
+                "title": "Is a Stock Market Crash Coming in 2026? Here's What Decades of History Suggest.",
+                "link": "https://www.fool.com/investing/2026/11/07/is-a-stock-market-crash-coming-in-2026-heres-what/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 14:22",
+                "description": "Will history repeat itself?",
+                "_timestamp": 1794061320.0
+            },
+            {
+                "title": "The S&P 500 Just Had Its Worst Week Since the April 2025 Tariff Crash",
+                "link": "https://247wallst.com/investing/2026/11/07/the-sp-500-just-had-its-worst-week-since-the-april-2025-tariff-crash/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 17:33",
+                "description": "A fourth straight weekly loss looks bad, but the S&amp;P 500's record rests on a technicality, and the real damage hit one corner of the market. With CPI and NVIDIA earnings looming, your index fund may own more of that risk than you think.",
+                "_timestamp": 1794072819.0
+            },
+            {
+                "title": "This Dividend King Yielding 2X the S&P 500 Looks Like a Buy in November.",
+                "link": "https://www.fool.com/investing/2026/11/07/this-dividend-king-yielding-2x-the-sp-500-looks/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 17:35",
+                "description": "Buy for the yield, stay for the potential comeback with this home improvement retailer's shares.",
+                "_timestamp": 1794072900.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-07 17:33 UTC (approx. 0.2 hours ago)",
+            "Facts": "The S&P 500 recorded its worst week since the April 2025 tariff crash with a fourth straight weekly loss, while chip stocks lost nearly 30% in five weeks, pushing tech valuations below the broader market for the first time since 2017 [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether the tech sector valuation correction will morph into broader systemic liquidation or trigger aggressive Federal Reserve policy interventions.",
+            "Macro_Context": "Nasdaq 100 is up +1.81% over 24h despite broader weekly losses, while equity volatility intersects with bond yields (US 10Y down -0.18%) and dollar strength (EUR/USD -0.70%).",
+            "Bull_Case": "Broader equity market turbulence and tech valuation stress increase institutional demand for alternative safe-haven stores of value like gold.",
+            "Bear_Case": "If equity liquidations trigger a severe cash crunch, gold can experience forced liquidation alongside stocks.",
+            "Historical_Calibration": "Equities sell-offs historically generate mixed cross-asset gold responses; maintaining measured targets to respect ATR limits.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Equity drawdown angst underpins safe-haven demand, aligning with the current 4h positive momentum.",
+            "Orderflow_Price_Target": "4078.23"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "Erstmeldung: 2026-11-07 14:25 | Letztes Update: 2026-11-07 17:33",
@@ -416,96 +1204,6 @@
             "XAUUSD_Impact": "Bullish",
             "Probability_Percent": 60,
             "Past_Price_Action_Cause": "Directly supports the +$10.47 4h price recovery as traders price in immediate physical risk.",
-            "Orderflow_Price_Target": "4078.23"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 05:56 | Letztes Update: 2026-11-07 17:33",
-        "original_date": "2026-11-06 05:56",
-        "_timestamp": 1794072819.0,
-        "articles": [
-            {
-                "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62966566/stock-market-will-sp-500-open-up-or-down-today-74?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-06 05:56",
-                "description": "U.S. stock futures are mixed early Friday as Wall Street awaits the critical October nonfarm payrolls report and tech shares attempt to rebound from their worst session since 2020. The Polymarket traders, a Polygon (CRYPTO: POL) based prediction platform, are...",
-                "_timestamp": 1793944568.0
-            },
-            {
-                "title": "S&P 500 Posts Weekly Drop as Energy, Technology Slide in Election Aftermath",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-weekly-drop-214616427.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-06 21:46",
-                "description": "The Standard & Poor's 500 index fell 2.7% this week, led by declines in energy and technology stocks",
-                "_timestamp": 1794001576.0
-            },
-            {
-                "title": "The S&P 500 Just Fell More Than 4% in a Day From Near Its Record. Here's What Happened Next in 2 Similar Situations Since 1950.",
-                "link": "https://www.fool.com/investing/2026/11/06/the-s-and-p-500-just-fell-more-than-4-in-a-day-from-near-its-record-here-s-what-happened-next-in-2-similar-situations-since-1950/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 02:43",
-                "description": "The only two close matches are 1955 and 1989. A year later, they were nothing alike.",
-                "_timestamp": 1794019382.0
-            },
-            {
-                "title": "The S&P 500 Is Up 75% In 3 Years. Priced In Gold, It Is Down 14%. Which Is Real?",
-                "link": "https://www.trefis.com/stock/nvda/articles/623129/the-s-p-500-is-up-75-in-3-years-priced-in-gold-it-is-down-14-which-is-real/2026-11-07?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-07 09:14",
-                "description": "Part of our series on building a mix that lasts. Start here: is 60/40 dead.",
-                "_timestamp": 1794042894.0
-            },
-            {
-                "title": "Tech stocks are now cheaper than the S&P 500 for the first time since 2017 — here's what history says comes next: Chart of the Day",
-                "link": "https://finance.yahoo.com/markets/article/tech-stocks-are-now-cheaper-than-the-sp-500-for-the-first-time-since-2017--heres-what-history-says-comes-next-chart-of-the-day-130131812.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 13:01",
-                "description": "Chip stocks lost nearly 30% in five weeks, but the typical S&amp;P 500 stock barely moved, and tech now trades below the market's valuation for the first time since 2017.",
-                "_timestamp": 1794056491.0
-            },
-            {
-                "title": "Democrats Just Swept Congress. Here's What History Says the S&P 500 Does Next.",
-                "link": "https://www.fool.com/investing/2026/11/07/democrats-just-swept-congress-heres-what-history-s/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 14:20",
-                "description": "Will a divided government be the undoing of the bull market?",
-                "_timestamp": 1794061200.0
-            },
-            {
-                "title": "Is a Stock Market Crash Coming in 2026? Here's What Decades of History Suggest.",
-                "link": "https://www.fool.com/investing/2026/11/07/is-a-stock-market-crash-coming-in-2026-heres-what/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 14:22",
-                "description": "Will history repeat itself?",
-                "_timestamp": 1794061320.0
-            },
-            {
-                "title": "The S&P 500 Just Had Its Worst Week Since the April 2025 Tariff Crash",
-                "link": "https://247wallst.com/investing/2026/11/07/the-sp-500-just-had-its-worst-week-since-the-april-2025-tariff-crash/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 17:33",
-                "description": "A fourth straight weekly loss looks bad, but the S&amp;P 500's record rests on a technicality, and the real damage hit one corner of the market. With CPI and NVIDIA earnings looming, your index fund may own more of that risk than you think.",
-                "_timestamp": 1794072819.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-07 17:33 UTC (approx. 0.2 hours ago)",
-            "Facts": "The S&P 500 recorded its worst week since the April 2025 tariff crash with a fourth straight weekly loss, while chip stocks lost nearly 30% in five weeks, pushing tech valuations below the broader market for the first time since 2017 [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the tech sector valuation correction will morph into broader systemic liquidation or trigger aggressive Federal Reserve policy interventions.",
-            "Macro_Context": "Nasdaq 100 is up +1.81% over 24h despite broader weekly losses, while equity volatility intersects with bond yields (US 10Y down -0.18%) and dollar strength (EUR/USD -0.70%).",
-            "Bull_Case": "Broader equity market turbulence and tech valuation stress increase institutional demand for alternative safe-haven stores of value like gold.",
-            "Bear_Case": "If equity liquidations trigger a severe cash crunch, gold can experience forced liquidation alongside stocks.",
-            "Historical_Calibration": "Equities sell-offs historically generate mixed cross-asset gold responses; maintaining measured targets to respect ATR limits.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "Equity drawdown angst underpins safe-haven demand, aligning with the current 4h positive momentum.",
             "Orderflow_Price_Target": "4078.23"
         },
         "eval_status": "ACTIVE",
@@ -2714,64 +3412,6 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "Erstmeldung: 2026-11-07 07:22 | Letztes Update: 2026-11-07 15:34",
-        "original_date": "2026-11-07 07:22",
-        "_timestamp": 1794065698.0,
-        "articles": [
-            {
-                "title": "IRGC to roll out new missile city, aerospace achievements",
-                "link": "https://en.mehrnews.com/news/249210/IRGC-to-roll-out-new-missile-city-aerospace-achievements",
-                "source": "Mehr News Agency",
-                "date": "2026-11-07 09:07",
-                "description": "TEHRAN, Nov. 07 (MNA) – A spokesperson for the Islamic Revolutionary Guards Corps (IRGC) has said that IRGC Aerospace Force will unveil a new underground missile city and several other military achievements.",
-                "_timestamp": 1794042460.0
-            },
-            {
-                "title": "Restrictions on range of Iranian missiles lifted: IRGC spox",
-                "link": "https://en.mehrnews.com/news/249207/Advancing-air-defense-sys-IRGC-Aerospace-s-key-achievements",
-                "source": "Mehr News Agency",
-                "date": "2026-11-07 07:22",
-                "description": "TEHRAN, Nov. 07 (MNA) – Emphasizing that range of missiles' limitations have been lifted for Iran, a spokesperson for the Islamic Revolutionary Guards Corps (IRGC) has stated Iran will show its capabilities to respond to threats in the battlefield.",
-                "_timestamp": 1794036131.0
-            },
-            {
-                "title": "Iran’s IRGC says building underground sites for weapons production, storage",
-                "link": "https://www.aljazeera.com/news/2026/11/7/irans-irgc-says-building-underground-sites-for-weapons-production-storage?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-07 15:34",
-                "description": "IRGC says underground military complexes allow missile production to continue even under heavy bombardment.",
-                "_timestamp": 1794065698.0
-            },
-            {
-                "title": "IRGC spokesman announces lifting of restrictions on Iranian missiles",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-spokesman-announces-lifting-restrictions-iranian-missiles",
-                "source": "Middle East Eye",
-                "date": "2026-11-07 14:40",
-                "description": "IRGC spokesman announces lifting of restrictions on Iranian missiles \n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guards has said that it has lifted restrictions on the range of Iran's missiles.\n\nIRGC spokesman,&nbsp;Brigadier General Hossein Mohebbi reportedly made the comments at a press conference on Saturday, in response to question regarding the country's supreme leader, Mojtaba Khamenei's warning to the US against",
-                "_timestamp": 1794062447.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-07 15:34 UTC (0.7 hours ago)",
-            "Facts": "Iran's IRGC announced the lifting of restrictions on missile ranges and showcased underground missile cities capable of surviving heavy bombardment [Al Jazeera English, Middle East Eye, Mehr News Agency].",
-            "Uncertainties": "The exact operational readiness of these new underground complexes and the nature of any impending US or Israeli countermeasures.",
-            "Macro_Context": "Geopolitical escalation directly supports safe-haven demand. Brent crude's decline (-0.95%) indicates the market has not yet priced in an immediate supply disruption, but gold responds strongly to direct military escalation headlines.",
-            "Bull_Case": "Heightened military escalation in the Middle East triggers aggressive safe-haven buying, pushing gold toward nearby liquidity clusters above the current price.",
-            "Bear_Case": "Markets may become desensitized to recurring rhetoric from the IRGC if diplomatic channels or quiet negotiations continue in parallel.",
-            "Historical_Calibration": "Past geopolitical setups (like the Zaporizhia strike signals) hit targets successfully when regional friction escalates, though targets must be kept close to account for ATR limits.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 62,
-            "Past_Price_Action_Cause": "Supports the 4-hour rebound of +$10.47 off daily lows as safe-haven bids return.",
-            "Orderflow_Price_Target": "4078.27"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 0.0
-    },
-    {
         "main_date": "Erstmeldung: 2026-11-07 15:28",
         "original_date": "2026-11-07 15:28",
         "_timestamp": 1794065287.0,
@@ -4755,248 +5395,6 @@
             "Probability_Percent": 55,
             "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
             "Orderflow_Price_Target": "4070.75"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-02 17:35 | Letztes Update: 2026-11-07 12:48",
-        "original_date": "2026-11-02 17:35",
-        "_timestamp": 1794055729.0,
-        "articles": [
-            {
-                "title": "Yemeni government forces claim gains in Lahij",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-gains-yemens",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 04:52",
-                "description": "Yemeni government forces claim gains in Lahij\n\n    \n    \n\n        \n    \n                The internationally recognised Yemeni government says its troops have recaptured positions from Houthi forces in Lahij governorate, located south-west of the country.\n\n\"Our armed forces have succeeded in recapturing positions in the al-Khazzan al-Ahmar area on the al-Nusayrah front in the al-Sawalihah sub-district of the al-Maqatirah district in northern Lahij governorate, and have repelled the terrorist Houthi militias\" the government forces' media centre said.",
-                "_timestamp": 1793681557.0
-            },
-            {
-                "title": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-army-says-it-launched-nearly-1000-operations-against-houthi",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 03:11",
-                "description": "Yemeni army says it launched nearly 1,000 operations against Houthi targets over past day\n\n    \n    \n\n        \n    \n                The Yemeni army said that it launched 951 operations targeting Houthi positions over the past 24 hours as part of Operation Dawn of Yemen.\n\nArmy spokesperson Majed al-Nuzaili claimed in a post on X that the operations had \"neutralized\" around 332 Houthi field commanders and fighters.\n\nMoreover, the army claimed to have destroyed or damaged 56&nbsp;vehicles, pieces of equipment and weapons across several fronts, including Al-Jawf, Marib and Al-Bayda.",
-                "_timestamp": 1793675518.0
-            },
-            {
-                "title": "Yemeni government forces launch strikes on Houthi positions west of Taiz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-launch-strikes-houthi-positions-west-taiz",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 02:17",
-                "description": "Yemeni government forces launch strikes on Houthi positions west of Taiz\n\n    \n    \n\n        \n    \n                Forces belonging to Yemen’s internationally recognised government have carried out air strikes against Houthi positions west of Taiz.\n\nThe military spokesperson said that&nbsp;warplanes targeted the movement's military vehicles in the Jabal Habashi area, resulting in the killing of Houthi fighters.&nbsp;\n\nMeanwhile, Houthi-affiliated media reported that a strike north of Taiz targeted a plastic shoe factory, killing three and injuring eight others.&nbsp;",
-                "_timestamp": 1793672237.0
-            },
-            {
-                "title": "Israeli forces push into Quneitra, Syrian media report",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-occupation-push-quneitra-syria-syrian-media-report",
-                "source": "Middle East Eye",
-                "date": "2026-11-02 22:51",
-                "description": "Israeli forces push into Quneitra, Syrian media report\n\n    \n    \n\n        \n    \n                Israeli forces advanced into the village of al-Asbah in rural southern Quneitra with five military vehicles, Syria TV reported.\n\nAccording to Sijil, a Syrian initiative tracking Israeli violations in the country, Israeli forces committed seven violations on Monday before the latest incursion, including other incursions, checkpoints, and aircraft overflights.",
-                "_timestamp": 1793659900.0
-            },
-            {
-                "title": "Israeli forces raid multiple West Bank towns, local sources report",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-multiple-west-bank-towns-local-sources-report",
-                "source": "Middle East Eye",
-                "date": "2026-11-02 22:31",
-                "description": "Israeli forces raid multiple West Bank towns, local sources report\n\n    \n    \n\n        \n    \n                Israeli forces launched raids on several towns in the occupied West Bank late on Monday, local sources reported.\n\nAmong them are the towns of Qabatiya, south of Jenin, and the city of Qalqilya.",
-                "_timestamp": 1793658667.0
-            },
-            {
-                "title": "397 attacks on West Bankers in Oct, highest monthly total in 20 years: UN",
-                "link": "https://www.tehrantimes.com/news/531764/397-attacks-on-West-Bankers-in-Oct-highest-monthly-total-in",
-                "source": "Tehran Times",
-                "date": "2026-11-02 17:35",
-                "description": "Israeli settler attacks in the occupied West Bank reached an unprecedented level in October, with the number of incidents causing injuries or property damage exceeding all monthly totals recorded since the United Nations began monitoring them in 2006.",
-                "_timestamp": 1793640930.0
-            },
-            {
-                "title": "Saudi strikes martyr 17, wound 59 in Yemen",
-                "link": "https://en.mehrnews.com/news/249125/Saudi-strikes-martyr-17-wound-59-in-Yemen",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 04:41",
-                "description": "TEHRAN, Nov. 03 (MNA) – At least 17 Yemeni civilians were martyred and 59 wounded, most of them children, in Saudi airstrikes over the past 24 hours, Yemen's Health Ministry said.",
-                "_timestamp": 1793680901.0
-            },
-            {
-                "title": "Who are Yemen’s Giants Brigades and who do they fight for?",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/who-are-yemens-giants-brigades-and-who-do-they-fight",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 02:35",
-                "description": "Who are Yemen’s Giants Brigades and who do they fight for?\n\n    \n    \n\n        \n    \n                Yemen’s Giants Brigades have emerged as one of the most powerful forces fighting the Houthis.\n\nBuilt with UAE backing and rooted in Yemen’s southern movement, they are now fighting alongside Saudi-backed government forces in a major new offensive.\n\nSo who are the Giants Brigades, who do they actually fight for and what does their rise tell us about Yemen’s war?",
-                "_timestamp": 1793759739.0
-            },
-            {
-                "title": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/reports-strikes-saudi-led-coalition-yemens-al-bayda",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 04:10",
-                "description": "Reports of strikes by Saudi-led coalition on Yemen’s al-Bayda \n\n    \n    \n\n        \n    \n                Saudi-led coalition forces have reportedly launched four air strikes in central Yemen's city of al-Bayda, according to Houthi-affiliated media.&nbsp;\n\nShelling was also reported in the&nbsp;Ghamr district of the Saada governorate.",
-                "_timestamp": 1793765431.0
-            },
-            {
-                "title": "Yemeni government forces claim control of strategic al-Jawf mountain range",
-                "link": "https://www.aljazeera.com/news/2026/11/4/yemeni-government-forces-claim-control-of-strategic-al-jawf-mountain-range?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-04 14:08",
-                "description": "The advance on al-Dahida heights, a strategic highland, comes as fighting escalates in al-Dhalea, Lahij and Taiz.",
-                "_timestamp": 1793801298.0
-            },
-            {
-                "title": "Yemeni military announces 3 ops. deep inside Saudi Arabia",
-                "link": "https://en.mehrnews.com/news/249169/Yemeni-military-announces-3-ops-deep-inside-Saudi-Arabia",
-                "source": "Mehr News Agency",
-                "date": "2026-11-04 14:04",
-                "description": "TEHRAN, Nov. 04 (MNA) –  The spokesman for the Yemeni armed forces announced three successful drone and missile operations deep inside Saudi Arabia on Wednesday.",
-                "_timestamp": 1793801053.0
-            },
-            {
-                "title": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-hits-yemen-reportedly-kill-20-people-over-past-day",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 02:00",
-                "description": "Saudi-led coalition hits in Yemen reportedly kill 20 people over past day\n\n    \n    \n\n        \n    \n                Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of&nbsp;al-Jawf, al-Bayda, Saada, and Taiz, according to&nbsp;Houthi-affiliated media.",
-                "_timestamp": 1793844008.0
-            },
-            {
-                "title": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-attack-kills-four-people-yemeni-government-forces-make-gains-al",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 23:36",
-                "description": "Houthi attack kills four people as Yemeni government forces make gains in al-Jawf and Taiz\n\n    \n    \n\n        \n    \n                A ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday.\n\nYemen’s Saudi-backed government's state media reported that four others, also from the same family, were injured after their home was targeted by Houthi fighters, and number of homes nearby were also damaged.\n\nYemeni government forces said in a statement on X that they have made territorial gains in al-Jawf province, seizing several Houthi positions, and&nbsp;repelled Houthi attempts to recapture lost positions in Taiz governorate, according to a Yemeni military spokesperson.\n\n\nFootage showing the armed forces targeting Houthis terrorist militia personnel in Taiz, as part of operation Dawn of Yemen https://t.co/dWZBmGHBBo\n— Yemen Army Media (@Yemenarmyeng) November 4, 2026",
-                "_timestamp": 1793835399.0
-            },
-            {
-                "title": "A month after Yemen government offensive began, war of attrition takes hold",
-                "link": "https://www.aljazeera.com/news/2026/11/5/a-month-after-yemen-government-offensive-began-war-of-attrition-takes-hold?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-05 09:58",
-                "description": "The Houthis suffer losses but also inflict pain on government forces and Saudi Arabia.",
-                "_timestamp": 1793872698.0
-            },
-            {
-                "title": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-air-strikes-reported-sanaa-clashes-lahj-governorate",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 13:25",
-                "description": "Yemen: Saudi air strikes reported in Sanaa, clashes in Lahij governorate\n\n    \n    \n\n        \n    \n                Houthi affiliated media is reporting air strikes targeting the Hamdan district in Sanaa.\n\nMilitary spokesman Yahya Saree said 12 people, including six children, were killed in Saudi strikes in Yemen on Wednesday, most in Taiz province.\n\nSaudi Arabia carried out 104 air strikes and missile attacks in Sanaa, Al-Jawf, Al-Bayda, Saada, Amran, Marib, Taiz and Lahij, the Ansar Allah spokesperson said.&nbsp;\n\nMeanwhile, Al Jazeera reports clashes between government forces and the Houthis on the al-Maqatra front, in the Lahij governorate.\n\nAccording to the report, government forces claim to have&nbsp;“neutralised” military vehicles and personnel in the skirmishes.\n\nAl Jazeera also reports an escalating humanitarian crisis in Taiz, where civilians are dying as a result of shelling and the ongoing siege.",
-                "_timestamp": 1793885104.0
-            },
-            {
-                "title": "Saudi attacks on Yemen kill nine, including children",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-attacks-yemen-kill-nine-including-children",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 07:13",
-                "description": "Saudi attacks on Yemen kill nine, including children\n\n    \n    \n\n        \n    \n                Saudi attacks on Thursday across Yemen killed nine civilians, including three children, the&nbsp;Sanaa-based&nbsp;Health Ministry announced early on Friday.&nbsp;\n\nAccording to the statement, 14 others were wounded in the attacks.&nbsp;",
-                "_timestamp": 1793949234.0
-            },
-            {
-                "title": "Yemen urges Arab states to deter Houthi attacks, foreign minister says",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemen-urges-arab-states-deter-houthi-attacks-foreign-minister-says",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 09:53",
-                "description": "Yemen urges Arab states to deter Houthi attacks, foreign minister says\n\n    \n    \n\n        \n    \n                Yemen’s foreign minister Afrah al-Zouba has urged Arab states to push for measures to deter Houthi attacks during a meeting with Arab ambassadors in Berlin.\n\nZouba told the envoys about the impact of the attacks on civilians, particularly in Taiz, which she said remained under siege, and raised the detention of UN staff and humanitaria",
-                "_timestamp": 1793958796.0
-            },
-            {
-                "title": "More than 30 killed or wounded in air strikes on Yemeni market, Houthis say",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/more-30-killed-or-wounded-air-strikes-yemen-market-houthis-say",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 11:25",
-                "description": "More than 30 killed or wounded in air strikes on Yemeni market, Houthis say\n\n    \n    \n\n        \n    \n                Air strikes on a market in Yemen’s Taiz province have killed or wounded more than 30 people, according to the Houthi-run Al-Masirah TV.\n\nThe channel said the toll from Friday morning’s attack was preliminary, with searches for missing people still under way as aircraft continued to fly overhead.\n\nIt reported three strikes on the m",
-                "_timestamp": 1793964347.0
-            },
-            {
-                "title": "Yemen's government says its forces recaptured villages and districts in Taiz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-forces-recapture-villages-and-districts-taiz-government-says",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 13:04",
-                "description": "Yemen's government says its forces recaptured villages and districts in Taiz\n\n    \n    \n\n        \n    \n                Yemeni government forces, backed by Saudi Arabia, say they have recaptured several areas in Taiz province, including the villages of al-Nidani and al-Sarari, large parts of Sanamat district and the Rabat al-Qarn area.\n\nThe forces said 37 Houthi fighters had been killed or wounded in the fighting. The Houthis, who control large pa",
-                "_timestamp": 1793970254.0
-            },
-            {
-                "title": "Syria sends military advisers to Saudi Arabia amid Houthi attacks, sources say",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/syria-sends-military-advisers-saudi-arabia-amid-houthi-attacks-sources",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 16:55",
-                "description": "Syria sends military advisers to Saudi Arabia amid Houthi attacks, sources say\n\n    \n    \n\n        \n    \n                Syria has sent a limited number of military personnel to Saudi Arabia to provide advice and training as the kingdom comes under attack from Yemen’s Houthis, Reuters reported, citing two Syrian military sources and a senior US official.\n\nThe US official said Syrian advisers and training teams were travelling to Saudi Arabia to t",
-                "_timestamp": 1793984148.0
-            },
-            {
-                "title": "Houthis and Yemeni government blame each other for Taiz market attack that killed 30",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-and-yemeni-government-blame-each-other-taiz-market-attack-killed",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 17:28",
-                "description": "Houthis and Yemeni government blame each other for Taiz market attack that killed 30\n\n    \n    \n\n        \n    \n                Yemen’s Houthis and the internationally recognised government have blamed each other for a deadly attack on a market in Taiz province earlier on Friday.\n\nThe Houthis said Saudi aircraft carried out the strikes, while the government accused the group of firing a ballistic missile at the market and called the attack a “war ",
-                "_timestamp": 1793986119.0
-            },
-            {
-                "title": "Yemeni gov’t forces, Houthis trade blame for deadly strikes on Taiz market",
-                "link": "https://www.aljazeera.com/news/2026/11/6/yemeni-govt-forces-houthis-trade-blame-for-deadly-strikes-on-taiz-market?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-06 18:09",
-                "description": "The attack on al-Hadara market in Taiz governorate&#039;s al-Waziiya district killed at least 30 people, Houthi rebels say.",
-                "_timestamp": 1793988589.0
-            },
-            {
-                "title": "Yemen's Houthis granting ships safe passage via email: Report",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-houthis-granting-ships-safe-passage-email-report",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 20:48",
-                "description": "Yemen's Houthis granting ships safe passage via email: Report\n\n    \n    \n\n        \n    \n                Yemen’s Houthis are controlling maritime transit of the Red Sea through a system under which vessels can request safe passage via email, the Wall Street Journal reported Friday.\n\nThe Houthis, who control swaths of Yemen, declared a maritime blockade of Saudi Arabia earlier this year, after which some ships began contacting them before transitin",
-                "_timestamp": 1793998086.0
-            },
-            {
-                "title": "Dozens killed as humanitarian crisis mounts in Yemen: What next for war?",
-                "link": "https://www.aljazeera.com/news/2026/11/7/dozens-killed-as-humanitarian-crisis-mounts-in-yemen-what-next-for-war?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-07 11:59",
-                "description": "Government forces reclaim key territories in Taiz and Lahij but face setbacks under Houthi resistance in certain areas.",
-                "_timestamp": 1794052766.0
-            },
-            {
-                "title": "Yemeni government forces claim attack on Houthi positions in al-Misrakh,  while Saudi attacks on Bani Hashih kill at least 15",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-attack-houthi-positions-al-misrakh-while",
-                "source": "Middle East Eye",
-                "date": "2026-11-07 11:33",
-                "description": "Yemeni government forces claim attack on Houthi positions in al-Misrakh,  while Saudi attacks on Bani Hashih kill at least 15\n\n    \n    \n\n        \n    \n                Yemeni government forces have claimed three air attacks on Houthi positions in the al-Misrakh district of the Taiz governorate.\n\nThe city of Taiz- which is government-held- has been subject to an ongoing Houthi siege. The blockade has triggered a spiralling humanitarian crisis in t",
-                "_timestamp": 1794051184.0
-            },
-            {
-                "title": "Houthi media says 11 killed in Saudi strikes on Yemen's Sanaa province",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/houthi-media-says-11-killed-saudi-strikes-yemens-sanaa-province",
-                "source": "Middle East Eye",
-                "date": "2026-11-07 10:38",
-                "description": "Houthi media says 11 killed in Saudi strikes on Yemen's Sanaa province\n\n    \n    \n\n        \n    \n                Houthi media said on Saturday that Saudi strikes killed 11 people, including women and children, in Yemen's Sanaa province, following the return of the country's dormant civil war.\n\n\"Martyrdom of 11 citizens, among them women and children, in Saudi enemy airstrikes\" on homes in the Al-Shariyah area of Sanaa province, the Iran-backed Ho",
-                "_timestamp": 1794047893.0
-            },
-            {
-                "title": "Death toll in Yemen's Bani Hashish reaches 22",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/death-toll-yemens-bani-hashish-reaches-22",
-                "source": "Middle East Eye",
-                "date": "2026-11-07 12:48",
-                "description": "Death toll in Yemen's Bani Hashish reaches 22\n\n    \n    \n\n        \n    \n                The death toll from Saudi attacks on Yemen's Bani Hashish has risen to 22, the Houthi-run health ministry is reporting.\n\nIn a statement, the ministry said that most of those killed in air strikes on the district al-Shariyah area were women and children,&nbsp; confirming that some 30 others were wounded, including a camerman for the Houthi-affiliated al-Masirah",
-                "_timestamp": 1794055729.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Event_Timestamp": "2026-11-07 12:48 UTC (approx. 39 minutes ago relative to reference time)",
-            "Facts": "The death toll from Saudi-led coalition air strikes on Yemen's Bani Hashish and Sanaa province has risen to at least 22, with 30 others wounded, according to the Houthi-run health ministry [Middle East Eye, Al Jazeera English]. Meanwhile, Yemeni government forces claimed attacks on Houthi positions in al-Misrakh, Taiz, amid a dormant civil war reigniting [Middle East Eye].",
-            "Uncertainties": "Exact military targets versus civilian casualties, escalation velocity, and whether Saudi ground forces will directly enter the conflict.",
-            "Macro_Context": "Geopolitical escalation in the Middle East directly drives safe-haven safe flows into Gold, offsetting mixed oil performance (Brent down 0.95% to $100.47).",
-            "Bull_Case": "Renewed Middle East warfare increases systemic geopolitical risk premiums, prompting safe-haven bids for XAU/USD toward nearby buy-stops.",
-            "Bear_Case": "Regional Yemeni conflicts are often localized and have historically limited spillover into global macroeconomic or financial conduits unless Hormuz or major oil infrastructure is directly threatened.",
-            "Historical_Calibration": "Track record shows 0% win rate on recent bullish setups, suggesting caution. Given the minor escalation scale, immediate follow-through may be muted relative to the $60.10 daily ATR.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Gold's 4h move of +$10.47 reflects mild safe-haven inflows digesting ongoing Middle East friction alongside broader positioning.",
-            "Orderflow_Price_Target": "4078.2"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -11844,405 +12242,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 40,
             "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-13.48 (0.16x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 18:09",
-        "original_date": "2026-11-06 18:09",
-        "_timestamp": 1793988555.0,
-        "articles": [
-            {
-                "title": "Chuck Schumer dismisses opposition to his leadership from progressive Democrats",
-                "link": "https://www.middleeasteye.net/news/chuck-schumer-dismisses-opposition-to-leadership-from-progressive-democrats",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 18:09",
-                "description": "Chuck Schumer dismisses opposition to his leadership from progressive Democrats \n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nFri, 11/06/2026 - 17:26\n\n        \n      \n    \n      \n    \n                Schumer says one of his most important Senate jobs is protecting US taxpayer aid to Israel \n                      \n                  \n                  \n\n  \n\n\n                  US Senate Minority Leader Chuck Schumer (D-N",
-                "_timestamp": 1793988555.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 18:09 UTC (vor ca. 2.5h)",
-            "Facts": "[Middle East Eye] Chuck Schumer dismisses opposition to his leadership from progressive Democrats - Chuck Schumer dismisses opposition to his leadership from progressive Democrats \n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nFri, 11/06/2026 - 17:26",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.72%, Nasdaq-100 +1.54%, Brent Oil -0.34% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.83. 4h-ATR-Ratio steht bei 0.05x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 2.5h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-3.18 (0.05x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 18:08",
-        "original_date": "2026-11-06 18:08",
-        "_timestamp": 1793988514.0,
-        "articles": [
-            {
-                "title": "US forces retreated 1,000 km from Iran’s borders",
-                "link": "https://en.mehrnews.com/news/249199/US-forces-retreated-1-000-km-from-Iran-s-borders",
-                "source": "Mehr News Agency",
-                "date": "2026-11-06 18:08",
-                "description": "TEHRAN, Nov. 06 (MNA) – he head of the advisory group to the IRGC commander said US forces have moved their naval vessels and equipment more than 1,000 kilometers away from Iran’s borders during recent wars.",
-                "_timestamp": 1793988514.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 18:08 UTC (vor ca. 2.5h)",
-            "Facts": "[Mehr News Agency] US forces retreated 1,000 km from Iran’s borders - TEHRAN, Nov. 06 (MNA) – he head of the advisory group to the IRGC commander said US forces have moved their naval vessels and equipment more than 1,000 kilometers away from Iran’s borders during recent wars.",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.72%, Nasdaq-100 +1.54%, Brent Oil -0.34% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.83. 4h-ATR-Ratio steht bei 0.05x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 2.5h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-3.18 (0.05x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4070.77"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 19.12
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-05 17:54 | Letztes Update: 2026-11-06 17:53",
-        "original_date": "2026-11-05 17:54",
-        "_timestamp": 1793987602.0,
-        "articles": [
-            {
-                "title": "Lamar Advertising Company Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-lamar-advertising-company-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 18:00",
-                "description": "Moby summary of Lamar Advertising Company's Q3 2026 earnings call",
-                "_timestamp": 1793901655.0
-            },
-            {
-                "title": "Primo Brands Corporation Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-primo-brands-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:58",
-                "description": "Moby summary of Primo Brands Corporation's Q3 2026 earnings call",
-                "_timestamp": 1793901521.0
-            },
-            {
-                "title": "KVH Industries, Inc. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-kvh-industries-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:54",
-                "description": "Moby summary of KVH Industries, Inc.'s Q3 2026 earnings call",
-                "_timestamp": 1793901297.0
-            },
-            {
-                "title": "Lincoln National Corporation Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-lincoln-national-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:54",
-                "description": "Moby summary of Lincoln National Corporation's Q3 2026 earnings call",
-                "_timestamp": 1793901296.0
-            },
-            {
-                "title": "Verisk Analytics, Inc. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-verisk-analytics-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 18:25",
-                "description": "Moby summary of Verisk Analytics, Inc.'s Q3 2026 earnings call",
-                "_timestamp": 1793903134.0
-            },
-            {
-                "title": "Millicom International Cellular S.A. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-millicom-international-cellular-sa-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 18:15",
-                "description": "Moby summary of Millicom International Cellular S.A.'s Q3 2026 earnings call",
-                "_timestamp": 1793902529.0
-            },
-            {
-                "title": "Unity Software Inc. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-unity-software-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 18:14",
-                "description": "Moby summary of Unity Software Inc.'s Q3 2026 earnings call",
-                "_timestamp": 1793902458.0
-            },
-            {
-                "title": "Hudson Pacific Properties, Inc. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-hudson-pacific-properties-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:13",
-                "description": "Moby summary of Hudson Pacific Properties, Inc.'s Q3 2026 earnings call",
-                "_timestamp": 1793916804.0
-            },
-            {
-                "title": "Canada Goose Holdings Inc. Q2 2027 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-canada-goose-holdings-inc-q2-2027-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:11",
-                "description": "Moby summary of Canada Goose Holdings Inc.'s Q2 2027 earnings call",
-                "_timestamp": 1793916709.0
-            },
-            {
-                "title": "Genius Sports Limited Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-genius-sports-limited-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:09",
-                "description": "Moby summary of Genius Sports Limited's Q3 2026 earnings call",
-                "_timestamp": 1793916572.0
-            },
-            {
-                "title": "The GEO Group, Inc. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-the-geo-group-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:07",
-                "description": "Moby summary of The GEO Group, Inc.'s Q3 2026 earnings call",
-                "_timestamp": 1793916479.0
-            },
-            {
-                "title": "Cummins Inc. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-cummins-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:06",
-                "description": "Moby summary of Cummins Inc.'s Q3 2026 earnings call",
-                "_timestamp": 1793916397.0
-            },
-            {
-                "title": "GigaCloud Technology Inc. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-gigacloud-technology-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:05",
-                "description": "Moby summary of GigaCloud Technology Inc.'s Q3 2026 earnings call",
-                "_timestamp": 1793916322.0
-            },
-            {
-                "title": "Americold Realty Trust, Inc. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-americold-realty-trust-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:02",
-                "description": "Moby summary of Americold Realty Trust, Inc.'s Q3 2026 earnings call",
-                "_timestamp": 1793916147.0
-            },
-            {
-                "title": "ACM Research, Inc. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-acm-research-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 21:58",
-                "description": "Moby summary of ACM Research, Inc.'s Q3 2026 earnings call",
-                "_timestamp": 1793915928.0
-            },
-            {
-                "title": "First Advantage Corporation Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-first-advantage-corporation-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 21:57",
-                "description": "Moby summary of First Advantage Corporation's Q3 2026 earnings call",
-                "_timestamp": 1793915846.0
-            },
-            {
-                "title": "The Wendy's Company Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-the-wendys-company-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:46",
-                "description": "Moby summary of The Wendy's Company's Q3 2026 earnings call",
-                "_timestamp": 1793918794.0
-            },
-            {
-                "title": "BGC Group, Inc Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-bgc-group-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 22:58",
-                "description": "Moby summary of BGC Group, Inc's Q3 2026 earnings call",
-                "_timestamp": 1793919529.0
-            },
-            {
-                "title": "Bentley Systems, Incorporated Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-bentley-systems-incorporated-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 23:03",
-                "description": "Moby summary of Bentley Systems, Incorporated's Q3 2026 earnings call",
-                "_timestamp": 1793919816.0
-            },
-            {
-                "title": "BGC Group, Inc Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-bgc-group-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:58",
-                "description": "Moby summary of BGC Group, Inc's Q3 2026 earnings call",
-                "_timestamp": 1793919529.0
-            },
-            {
-                "title": "Essent Group Ltd. Q3 2026 Earnings Call Summary",
-                "link": "https://app.moby.co/home/research/tools/earningsCalendar/earnings-essent-group-ltd-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:53",
-                "description": "Moby summary of Essent Group Ltd.'s Q3 2026 earnings call",
-                "_timestamp": 1793987602.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Event_Timestamp": "2026-11-05 22:58 to 2026-11-06 17:53 UTC (~0 to 19 hours ago relative to 2026-11-06 18:04 UTC)",
-            "Facts": "Summary reports for Q3 2026 earnings calls were published for Essent Group, Bentley Systems, and BGC Group [Yahoo Finance Nasdaq, Yahoo Finance Oil].",
-            "Uncertainties": "Forward-looking guidance details for individual firms amid broader macroeconomic uncertainty.",
-            "Macro_Context": "Nasdaq 100 is up +0.35% and US 10Y bond yields remain stable. Corporate earnings roundups have no direct correlation with gold spot pricing or macro liquidity flows.",
-            "Bull_Case": "Healthy corporate earnings support broader risk-on sentiment in equities.",
-            "Bear_Case": "Earnings misses or conservative guidance could trigger sector-specific corrections, though irrelevant to gold.",
-            "Historical_Calibration": "No completed 20h evaluations yet. Standard automated earnings summaries carry zero weight for macro gold execution.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "These routine earnings summaries do not drive macro gold trends or account for the current 4h/24h price action.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 17:51",
-        "original_date": "2026-11-06 17:51",
-        "_timestamp": 1793987483.0,
-        "articles": [
-            {
-                "title": "Nine Mile Metals reports high-grade Copper, Zinc and Silver at Wedge Mine",
-                "link": "https://finance.yahoo.com/video/nine-mile-metals-reports-high-175123834.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 17:51",
-                "description": "Nine Mile Metals CEO Patrick Cruickshank joined Steve Darling from Proactive to discuss encouraging assay results from drill hole DDH WD-26-12 at the company's Wedge Mine project in New Brunswick's Bathurst Mining Camp, where drilling has identified two distinct zones of high-grade volcanogenic massive sulphide (VMS) mineralization. Cruickshank told Proactive that the latest hole returned a combination of copper, lead, zinc, silver and gold miner",
-                "_timestamp": 1793987483.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 17:51 UTC (vor ca. 2.8h)",
-            "Facts": "[Yahoo Finance Gold] Nine Mile Metals reports high-grade Copper, Zinc and Silver at Wedge Mine - Nine Mile Metals CEO Patrick Cruickshank joined Steve Darling from Proactive to discuss encouraging assay results from drill hole DDH WD-26-12 at the company's Wedge Mine project in Ne",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.72%, Nasdaq-100 +1.54%, Brent Oil -0.34% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.83. 4h-ATR-Ratio steht bei 0.05x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 2.8h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $-3.18 (0.05x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 12:31 | Letztes Update: 2026-11-06 17:50",
-        "original_date": "2026-11-06 12:31",
-        "_timestamp": 1793987400.0,
-        "articles": [
-            {
-                "title": "The S&P 500’s most reliable dividend stocks are beating the market. Here’s how to play them.",
-                "link": "https://www.marketwatch.com/story/the-s-p-500s-most-reliable-dividend-stocks-are-beating-the-market-heres-how-to-play-them-3b46dc60?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-06 12:31",
-                "description": "The S&amp;P 500 Dividend Aristocrats have been on a tear and held up well during Thursday’s stock-market rout.",
-                "_timestamp": 1793968260.0
-            },
-            {
-                "title": "Meet the High-Yield Dividend Stock Quietly Crushing the S&P 500. Here's Why It Has Room to Run.",
-                "link": "https://www.fool.com/investing/2026/11/06/meet-the-high-yield-dividend-stock-quietly-crushin/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:50",
-                "description": "Altria remains an appealing investment in this turbulent market.",
-                "_timestamp": 1793987400.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-06 12:31 to 17:50 UTC (~0 to 6 hours ago relative to 2026-11-06 18:04 UTC)",
-            "Facts": "Market analyses highlight that S&P 500 Dividend Aristocrats (such as Altria) are outperforming and holding up well during recent stock market volatility [Yahoo Finance Nasdaq, MarketWatch Macro].",
-            "Uncertainties": "Sustainability of dividend yields if broader market compression deepens.",
-            "Macro_Context": "Equities remain resilient with Nasdaq 100 up +0.35%. High-dividend yield rotation indicates defensive positioning within equities rather than a flight to hard assets like gold.",
-            "Bull_Case": "Defensive equity rotation reflects lingering market anxiety, which can occasionally spill over into safe-haven allocations.",
-            "Bear_Case": "Capital staying within equity dividend stocks depresses capital inflows into non-yielding assets like physical gold.",
-            "Historical_Calibration": "No completed 20h evaluations yet. Broad equity commentary has a negligible impact on XAU/USD orderflow.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "General equity market rotation does not explain the recent intraday rebound in gold.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 08:58 | Letztes Update: 2026-11-06 17:48",
-        "original_date": "2026-11-06 08:58",
-        "_timestamp": 1793987324.0,
-        "articles": [
-            {
-                "title": "FTSE 100 today: Stocks slump as global tech rout deepens",
-                "link": "https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-slump-085808736.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 08:58",
-                "description": "Investing.com -- British stocks fell on Friday as a global tech rout over AI investment worries after the U.S. midterms spread to Europe.",
-                "_timestamp": 1793955488.0
-            },
-            {
-                "title": "FTSE 100 slumps in AI rout",
-                "link": "https://uk.finance.yahoo.com/news/ftse-100-slumps-ai-rout-174844828.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:48",
-                "description": "The FTSE 100 fell sharply on Friday as a tech sell-off on Wall Street spread across the world.",
-                "_timestamp": 1793987324.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Event_Timestamp": "2026-11-06 17:48 UTC (About 4 minutes ago relative to reference time)",
-            "Facts": "The FTSE 100 fell sharply on Friday, extending a global tech sell-off and risk-off sentiment triggered by AI investment concerns and political shifts following U.S. midterms [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the European and UK equity sell-off will accelerate contagion into broader global credit and banking systems.",
-            "Macro_Context": "EUR/USD is down -0.74% (strong USD), while Nasdaq 100 is up +0.33%. Global equity contagion increases safe-haven demand, interacting with strong USD pressure on XAU/USD.",
-            "Bull_Case": "Spillover of global equity rout and risk aversion drives institutional safe-haven flows directly into physical gold.",
-            "Bear_Case": "Strong USD proxy (EUR/USD -0.74%) creates heavy downward pressure on dollar-denominated gold, offsetting safety bids.",
-            "Historical_Calibration": "No completed 20h evaluations yet; fresh news item showing immediate ongoing market stress.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "XAU/USD at 4057.83 navigates between opposing forces of risk-off safe-haven demand and a stronger US Dollar.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "Erstmeldung: 2026-11-06 17:47",
-        "original_date": "2026-11-06 17:47",
-        "_timestamp": 1793987220.0,
-        "articles": [
-            {
-                "title": "What’s next for your portfolio after the decline in Big Tech stocks?",
-                "link": "https://www.marketwatch.com/story/whats-next-for-your-portfolio-after-the-decline-in-big-tech-stocks-2873452f?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-06 17:47",
-                "description": "Also in Weekend Reads: Ideas for generating investment income, new tax brackets, buying a home with cash and advice from the Moneyist.",
-                "_timestamp": 1793987220.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-06 17:47 UTC (About 5 minutes ago relative to reference time)",
-            "Facts": "MarketWatch published weekend advice for portfolio adjustments following the decline in Big Tech stocks, covering investment income and tax strategies [MarketWatch Macro].",
-            "Uncertainties": "General retail investor positioning changes and long-term rebalancing intent.",
-            "Macro_Context": "Reflects retail and portfolio-level anxiety amidst the Nasdaq 100's volatile environment (+0.33% 24h change) and sliding bond prices.",
-            "Bull_Case": "Investors rotating out of equities into hard assets and commodities for portfolio hedging.",
-            "Bear_Case": "Purely educational weekend reading material with no direct macroeconomic or liquidity shock value.",
-            "Historical_Calibration": "No completed 20h evaluations yet; editorial content carries minimal direct impulse.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Steady consolidation near current levels as macro commentary remains secondary to hard data.",
             "Orderflow_Price_Target": "N/A"
         }
     }

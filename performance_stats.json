@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 35,
+    "total_evaluated": 37,
     "hits": 15,
-    "misses": 20,
-    "win_rate": 42.9,
-    "active_signals": 84,
+    "misses": 22,
+    "win_rate": 40.5,
+    "active_signals": 87,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "ACTIVE",
@@ -314,9 +314,9 @@
             "headline": "Yemeni government forces claim gains in Lahij",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 58,
+            "prob": 55,
             "entry_price": 4070.59,
-            "target": 4078.3,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -1014,7 +1014,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/7/eu-prosecutor-office-investigates-fatal-train-crash-in-spain?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "EU prosecutor office investigates fatal train crash in Spain",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -1027,10 +1027,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794015219.0,
             "date": "Erstmeldung: 2026-11-07 01:33",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/technology/ai/articles/nvidia-backed-groq-seeks-8-013053376.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Nvidia-backed Groq seeks $8 billion valuation in new funding round - Bloomberg",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -1043,7 +1043,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794015053.0,
             "date": "Erstmeldung: 2026-11-07 01:30",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-there-would-be-no-israel-if-iran-was-allowed-nuclear-weapon": {
             "status": "MISS",
@@ -1907,6 +1907,86 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794078634.0,
             "date": "Erstmeldung: 2026-11-07 19:10",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249225/Iran-s-Zare-named-world-s-best-freestyle-wrestler": {
+            "status": "ACTIVE",
+            "headline": "Zare named world’s best freestyle wrestler by UWW",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.73,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794087322.0,
+            "date": "Erstmeldung: 2026-11-07 21:35",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/us-military-says-it-disabled-cargo-vessel-gulf-oman": {
+            "status": "ACTIVE",
+            "headline": "US military says it disabled cargo vessel in Gulf of Oman",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.73,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794086834.0,
+            "date": "Erstmeldung: 2026-11-07 21:27",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/erdogan-tells-trump-turkey-will-keep-pushing-us-iran-peace": {
+            "status": "ACTIVE",
+            "headline": "Erdogan tells Trump Turkey will keep pushing for US-Iran peace",
+            "source": "Middle East Eye",
+            "impact": "Bearish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4059.95,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794078407.0,
+            "date": "Erstmeldung: 2026-11-07 19:06",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/why-bank-america-td-cowen-184337011.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Here’s Why Bank of America and TD Cowen Backed Away From Marvell (MRVL)",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 51,
+            "entry_price": 4070.59,
+            "target": 4078.23,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794077017.0,
+            "date": "Erstmeldung: 2026-11-07 18:42 | Letztes Update: 2026-11-07 18:43",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/why-morgan-stanley-analyst-meta-184215687.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Here’s Why Morgan Stanley Analyst Meta Marshall Trimmed Cisco (CSCO) to Equal-weight",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 54,
+            "entry_price": 4070.59,
+            "target": 4059.95,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794076935.0,
+            "date": "Erstmeldung: 2026-11-07 18:40 | Letztes Update: 2026-11-07 18:42",
             "fail_reason": ""
         }
     }

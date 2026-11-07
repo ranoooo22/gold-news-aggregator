@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 24,
+    "total_evaluated": 35,
     "hits": 15,
-    "misses": 9,
-    "win_rate": 62.5,
-    "active_signals": 86,
+    "misses": 20,
+    "win_rate": 42.9,
+    "active_signals": 84,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "ACTIVE",
@@ -138,9 +138,9 @@
             "headline": "Gold consolidates in downtrend, eyes $3,980 resistance: Live levels",
             "source": "Investing.com",
             "impact": "Bullish",
-            "prob": 65,
+            "prob": 62,
             "entry_price": 4070.59,
-            "target": 4121.31,
+            "target": 4059.97,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -282,9 +282,9 @@
             "headline": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
             "source": "Mehr News Agency",
             "impact": "Bullish",
-            "prob": 60,
+            "prob": 58,
             "entry_price": 4070.59,
-            "target": 4078.23,
+            "target": 4078.3,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -1046,7 +1046,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-there-would-be-no-israel-if-iran-was-allowed-nuclear-weapon": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Trump says 'there would be no Israel' if Iran was allowed nuclear weapon",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -1059,10 +1059,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794013471.0,
             "date": "Erstmeldung: 2026-11-07 01:04",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.27 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/energy/articles/gas-could-drop-3-65-003006160.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Gas Could Drop to $3.65/Gallon, Says Top Oil Analyst, Citing ‘Very High’ Political Pressur",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -1075,10 +1075,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794011406.0,
             "date": "Erstmeldung: 2026-11-07 00:30",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/7/aje-onl-nf_mtg-warns-white-house-shakeup-sink-republican-2028-061126?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "MTG warns Miller-Wiles shakeup will sink Republican chances in 2028",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -1091,10 +1091,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794010909.0,
             "date": "Erstmeldung: 2026-11-07 00:21",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Chinese AI lab Moonshot turned to Europe for Nvidia Blackwell access amid U.S. China curbs",
             "source": "CNBC Tech & AI",
             "impact": "Bullish",
@@ -1107,10 +1107,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794010552.0,
             "date": "Erstmeldung: 2026-11-05 13:34 | Letztes Update: 2026-11-07 00:15",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4050.72 (Max DD: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/05/why-sandisk-stock-keeps-going-down/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Why Sandisk Stock Keeps Going Down",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -1123,10 +1123,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794008496.0,
             "date": "Erstmeldung: 2026-11-05 15:29 | Letztes Update: 2026-11-06 23:41",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4050.72 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/top-us-senate-democrat-says-iran-war-must-end": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Top US Senate Democrat says Iran war 'must end'",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -1139,10 +1139,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794006442.0,
             "date": "Erstmeldung: 2026-11-04 16:06 | Letztes Update: 2026-11-06 23:07",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.54 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/economy/2026/11/6/us-urges-china-to-honour-busan-trade-deal-commitments?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US urges China to honour Busan trade deal commitments",
             "source": "Al Jazeera English",
             "impact": "Bearish",
@@ -1155,10 +1155,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794006037.0,
             "date": "Erstmeldung: 2026-11-06 23:00",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.96 (Max DD: -$0.00)"
         },
         "https://decrypt.co/382612/bitcoin-erases-election-rally-ai-stocks-plunge-428-million-crypto-longs?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Bitcoin Erases Election Rally as AI Stocks Plunge, $428 Million in Crypto Longs Get Wiped ",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -1171,10 +1171,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794005400.0,
             "date": "Erstmeldung: 2026-11-05 16:29 | Letztes Update: 2026-11-06 22:50",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/real-estate/articles/compass-primed-ai-home-search-223000480.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Compass is primed for AI home search bots, Reffkin says",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -1187,10 +1187,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794004200.0,
             "date": "Erstmeldung: 2026-11-06 22:30",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.96 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/video/chip-rally-may-be-time-for-investors-to-harvest-cash-and-wait-221657650.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Chip rally may be time for investors to 'harvest cash and wait'",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -1203,10 +1203,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794003417.0,
             "date": "Erstmeldung: 2026-11-06 22:16",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.96 (Max DD: -$0.00)"
         },
         "https://www.investing.com/news/commodities-news/oil-rises-on-fresh-tanker-attacks-but-heads-for-steep-weekly-loss-5006219": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Brent posts worst week since April 2020 amid post-midterms hopes for Iran detente",
             "source": "Investing.com",
             "impact": "Bullish",
@@ -1219,7 +1219,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794003336.0,
             "date": "Erstmeldung: 2026-11-06 22:15",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://www.investing.com/news/commodities-news/gold-extends-rally-above-4100-as-dollar-treasury-yields-fall-after-us-vote-5002012": {
             "status": "MISS",
@@ -1763,6 +1763,150 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794073842.0,
             "date": "Erstmeldung: 2026-11-07 17:50",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/7/abdul-el-sayed-slams-trumps-tariff-war-with-canada?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Abdul El-Sayed slams Trump’s tariff war with Canada",
+            "source": "Al Jazeera English",
+            "impact": "Bearish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4059.97,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794084274.0,
+            "date": "Erstmeldung: 2026-11-07 20:44",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-lifts-alert-jazan-home-aramco-refinery-targeted-houthis": {
+            "status": "ACTIVE",
+            "headline": "Saudi Arabia lifts alert in Jazan, home to Aramco refinery targeted by Houthis",
+            "source": "Middle East Eye",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4059.97,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794083218.0,
+            "date": "Erstmeldung: 2026-11-07 20:26",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249223/Rezaei-warns-of-devestating-response-to-any-aggression": {
+            "status": "ACTIVE",
+            "headline": "Rezaei warns of devestating response to any aggression",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4078.3,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794083008.0,
+            "date": "Erstmeldung: 2026-11-07 20:23",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/concentrix-cnxc-ai-migration-tool-201248119.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "What Concentrix (CNXC)'s AI Migration Tool Launch Means For Shareholders",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4059.97,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794082368.0,
+            "date": "Erstmeldung: 2026-11-07 20:12",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/7/more-than-140000-rally-as-new-protests-against-rising-costs-sweep-france?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "More than 140,000 rally as new protests against rising costs sweep France",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4070.77,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794082342.0,
+            "date": "Erstmeldung: 2026-11-07 20:12",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/7/masked-protesters-set-off-firecrackers-and-block-roads-in-albania?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Masked protesters set off firecrackers and block roads in Albania",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.77,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794080959.0,
+            "date": "Erstmeldung: 2026-11-07 19:49",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/7/malaysian-king-warns-against-defying-house-arrest-order-for-ex-pm-najib?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Malaysian king warns against defying house arrest order for ex-PM Najib",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.77,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794079461.0,
+            "date": "Erstmeldung: 2026-11-07 19:24",
+            "fail_reason": ""
+        },
+        "https://www.marketbeat.com/instant-alerts/transcript-mach-natural-resources-q3-earnings-call-highlights-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Mach Natural Resources Q3 Earnings Call Highlights",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.77,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794078857.0,
+            "date": "Erstmeldung: 2026-11-07 19:14",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-sv-latvia-farmers-protest-russian-grain-transit?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Latvian farmers protest over ‘blood grain’ trade with Russia",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.77,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794078634.0,
+            "date": "Erstmeldung: 2026-11-07 19:10",
             "fail_reason": ""
         }
     }

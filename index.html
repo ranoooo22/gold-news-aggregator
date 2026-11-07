@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial & Gold News Aggregator</title>
+    <title>Financial & Gold Intelligence Terminal</title>
     <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f4f5f8; color: #333; margin: 0; padding: 0; }
@@ -20,10 +20,10 @@
 
         /* Top Macro & Performance Bar */
         .intel-bar {
-            max-width: 900px;
+            max-width: 1050px;
             margin: 0 auto 20px auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
             gap: 10px;
         }
         .intel-card {
@@ -34,12 +34,13 @@
             border-top: 3px solid #3b82f6;
             font-size: 0.85em;
         }
-        .intel-title { color: #64748b; font-weight: bold; text-transform: uppercase; font-size: 0.75em; margin-bottom: 4px; }
-        .intel-value { font-weight: 700; color: #1e293b; font-size: 1.02em; }
+        .intel-title { color: #64748b; font-weight: bold; text-transform: uppercase; font-size: 0.74em; margin-bottom: 4px; }
+        .intel-value { font-weight: 700; color: #1e293b; font-size: 1.0em; line-height: 1.35; }
+        .intel-sub { font-size: 0.78em; color: #64748b; font-weight: normal; margin-top: 2px; }
         
         /* Chart Container */
         #chart-container {
-            max-width: 900px;
+            max-width: 1050px;
             height: 480px;
             margin: 0 auto 12px auto;
             background-color: #fff;
@@ -48,7 +49,7 @@
             overflow: hidden;
         }
         .chart-legend {
-            max-width: 900px;
+            max-width: 1050px;
             margin: 0 auto 10px auto;
             text-align: center;
             font-size: 0.82em;
@@ -56,7 +57,7 @@
             line-height: 1.5;
         }
         .overlap-box {
-            max-width: 900px;
+            max-width: 1050px;
             margin: 0 auto 25px auto;
             background: #fff;
             border: 1px solid #e2e8f0;
@@ -65,10 +66,11 @@
             padding: 10px 15px;
             font-size: 0.83em;
             color: #334155;
+            line-height: 1.55;
         }
 
         /* Controls & Cards */
-        #controls { max-width: 900px; margin: 0 auto 20px auto; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; align-items: center; }
+        #controls { max-width: 1050px; margin: 0 auto 20px auto; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; align-items: center; }
         select { padding: 9px; border-radius: 6px; border: 1px solid #cbd5e1; background-color: #fff; font-size: 0.9em; cursor: pointer; outline: none; }
         
         .filter-checkbox-wrap {
@@ -86,7 +88,7 @@
         }
         .filter-checkbox-wrap input { cursor: pointer; accent-color: #eab308; }
 
-        #news-container { max-width: 900px; margin: 0 auto; }
+        #news-container { max-width: 1050px; margin: 0 auto; }
         .news-card { background-color: #fff; border-radius: 8px; border-left: 6px solid #eab308; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
         .card-top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 8px; }
         .date-header { color: #475569; font-size: 0.88em; font-weight: 600; }
@@ -144,7 +146,7 @@
         .summary-box { background-color: #f8f9fa; border-radius: 6px; padding: 15px; margin-bottom: 20px; border: 1px solid #eef0f2; }
         .summary-label { font-weight: bold; margin-bottom: 10px; }
         .structured-data { margin-bottom: 12px; line-height: 1.5; }
-        .outlook-box { padding: 12px; background-color: #fff; border-left: 4px solid #d4af37; font-size: 0.95em; margin-top: 10px; }
+        .outlook-box { padding: 12px; background-color: #fff; border-left: 4px solid #d4af37; font-size: 0.95em; margin-top: 10px; line-height: 1.5; }
         .reported-by-label { color: #64748b; font-weight: bold; font-size: 0.85em; text-transform: uppercase; margin-bottom: 15px; }
         .source-item { display: flex; align-items: flex-start; margin-bottom: 10px; flex-wrap: wrap; gap: 6px; }
         .source-badge { background-color: #e2e8f0; color: #1e293b; padding: 4px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; white-space: nowrap; text-align: center; }
@@ -157,30 +159,35 @@
 <body>
 
     <div class="tab-nav">
-        <button class="tab-btn active" onclick="switchTab(event, 'chart-tab')">Chart & Orders</button>
-        <button class="tab-btn" onclick="switchTab(event, 'news-tab')">News Analyse</button>
+        <button class="tab-btn active" onclick="switchTab(event, 'chart-tab')">Chart & Orderflow</button>
+        <button class="tab-btn" onclick="switchTab(event, 'news-tab')">News Intelligence</button>
     </div>
 
-    <h1>Financial & Gold Aggregator</h1>
-    <div class="sub-header">Objective Intelligence Terminal: Geopolitics, Tech/AI Stocks, Macro & Calibration Memory</div>
+    <h1>Financial & Gold Intelligence Terminal</h1>
+    <div class="sub-header">Objective Intelligence: Geopolitics, Tech/AI Equities, 24/7 XAU/USDT Basis & Orderflow Confluence</div>
 
     <!-- TOP INTEL BAR -->
     <div class="intel-bar">
         <div class="intel-card" style="border-top-color: #10b981;">
             <div class="intel-title">OANDA Retail Sentiment</div>
-            <div class="intel-value" id="ui-sentiment">Lade...</div>
+            <div class="intel-value" id="ui-sentiment">Loading...</div>
+        </div>
+        <div class="intel-card" style="border-top-color: #0ea5e9;">
+            <div class="intel-title">XAU/USDT 24/7 Basis & Gap</div>
+            <div class="intel-value" id="ui-crypto-basis">Loading...</div>
+            <div class="intel-sub" id="ui-crypto-sub"></div>
         </div>
         <div class="intel-card" style="border-top-color: #f59e0b;">
-            <div class="intel-title">4h Change / Tages-ATR</div>
-            <div class="intel-value" id="ui-volatility">Lade...</div>
+            <div class="intel-title">4h Change / Daily ATR</div>
+            <div class="intel-value" id="ui-volatility">Loading...</div>
         </div>
         <div class="intel-card" style="border-top-color: #6366f1;">
-            <div class="intel-title">Makro (EUR | 10Y | NAS100 | Oel)</div>
-            <div class="intel-value" id="ui-macro">Lade...</div>
+            <div class="intel-title">Macro (EUR | 10Y | NAS100 | Oil)</div>
+            <div class="intel-value" id="ui-macro">Loading...</div>
         </div>
         <div class="intel-card" style="border-top-color: #ec4899;">
-            <div class="intel-title">KI-Trefferquote (&gt;50% Setups)</div>
-            <div class="intel-value" id="ui-winrate">Lade...</div>
+            <div class="intel-title">AI Track Record (&gt;50% Setups)</div>
+            <div class="intel-value" id="ui-winrate">Loading...</div>
         </div>
     </div>
 
@@ -188,12 +195,13 @@
     <div id="chart-tab" class="tab-content active">
         <div id="chart-container"></div>
         <div class="chart-legend">
-            <strong>Gruene Linie (BUY):</strong> Netto-Kaufliquiditaet &nbsp;|&nbsp;
-            <strong>Rote Linie (SELL):</strong> Netto-Verkaufliquiditaet &nbsp;|&nbsp;
-            <strong>OVERLAP [OANDA+COMEX]:</strong> Bestaetigte Zone in beiden Maerkten (dicke Linie)
+            <strong>Green Line (BUY):</strong> Net Buy Liquidity &nbsp;|&nbsp;
+            <strong>Red Line (SELL):</strong> Net Sell Liquidity &nbsp;|&nbsp;
+            <strong>Blue Line:</strong> 24/7 XAU/USDT Live Price &nbsp;|&nbsp;
+            <strong>OVERLAP [OANDA+COMEX]:</strong> Confirmed Multi-Market Zone (Solid Bold Line)
         </div>
         <div class="overlap-box" id="overlap-legend">
-            Lade Orderbuch-Quellen...
+            Loading orderflow and basis sources...
         </div>
     </div>
 
@@ -201,21 +209,21 @@
     <div id="news-tab" class="tab-content">
         <div id="controls">
             <select id="filter-impact" onchange="renderNews()">
-                <option value="all">Alle Richtungen (Ungefiltert)</option>
+                <option value="all">All Directions (Unfiltered)</option>
                 <option value="Bullish">Bullish</option>
                 <option value="Bearish">Bearish</option>
                 <option value="Neutral">Neutral</option>
             </select>
             <select id="filter-region" onchange="renderNews()">
-                <option value="all">Alle Medien (Global, Tech & Nahost)</option>
-                <option value="regional">Nur Vor-Ort / Golf-Region</option>
-                <option value="tech_macro">Nur Tech / AI & Weltwirtschaft</option>
-                <option value="western">Nur Klassische Rohstoff-Medien</option>
+                <option value="all">All Media (Global, Tech & Middle East)</option>
+                <option value="regional">Middle East / Gulf Regional Only</option>
+                <option value="tech_macro">Tech / AI & Global Macro Only</option>
+                <option value="western">Classic Commodity Media Only</option>
             </select>
             <select id="filter-relevance" onchange="renderNews()">
-                <option value="all">Alle News (Kompletter Feed)</option>
-                <option value="directional">Alle gerichteten Setups (&gt; 50%)</option>
-                <option value="tradeable">Nur High-Conviction (&ge; 67%)</option>
+                <option value="all">All News (Complete Feed)</option>
+                <option value="directional">Directional Setups Only (&gt; 50%)</option>
+                <option value="tradeable">High-Conviction Only (&ge; 67%)</option>
             </select>
             <select id="sort-by" onchange="renderNews()">
                 <option value="newest">Sort: Newest First</option>
@@ -223,11 +231,11 @@
             </select>
             <label class="filter-checkbox-wrap">
                 <input type="checkbox" id="filter-keywords" onchange="renderNews()">
-                <span>Strenger Keyword-Filter</span>
+                <span>Strict Impact-Keyword Filter</span>
             </label>
         </div>
         <div id="news-container">
-            <p style="text-align:center;">Lade News...</p>
+            <p style="text-align:center;">Loading intelligence feed...</p>
         </div>
     </div>
 
@@ -248,18 +256,18 @@
         ];
 
         const SOURCE_META = {
-            "Zawya": { region: "Middle East", bias: "Golf-Oekonomie / VAE" },
-            "Arab News": { region: "Middle East", bias: "Saudi-Arabien / OPEC+ Fokus" },
-            "Al Jazeera English": { region: "Middle East", bias: "Katar / Pan-Arabische Sicht" },
-            "Middle East Eye": { region: "Middle East", bias: "Nahost-Analysen / Rotes Meer" },
-            "Tehran Times": { region: "Middle East", bias: "Iran (Staatliche Linie)" },
-            "Mehr News Agency": { region: "Middle East", bias: "Iran (Direktquelle Teheran)" },
-            "The Times of Israel": { region: "Middle East", bias: "Israelische Perspektive" },
-            "Saba News Agency": { region: "Middle East", bias: "Jemen (Houthi-gefuehrte Medien)" },
-            "CNBC Tech & AI": { region: "Tech & Macro", bias: "US Tech / AI & Halbleiter" },
-            "CNBC Economy": { region: "Tech & Macro", bias: "Weltwirtschaft / Fed / Zinsen" },
-            "Yahoo Finance Nasdaq": { region: "Tech & Macro", bias: "Nasdaq 100 / Big Tech Aktien" },
-            "MarketWatch Macro": { region: "Tech & Macro", bias: "Wall Street / US-Konjunktur" }
+            "Zawya": { region: "Middle East", bias: "Gulf Economy / UAE" },
+            "Arab News": { region: "Middle East", bias: "Saudi Arabia / OPEC+ Focus" },
+            "Al Jazeera English": { region: "Middle East", bias: "Qatar / Pan-Arab Perspective" },
+            "Middle East Eye": { region: "Middle East", bias: "Middle East / Red Sea Analysis" },
+            "Tehran Times": { region: "Middle East", bias: "Iran (Official State Line)" },
+            "Mehr News Agency": { region: "Middle East", bias: "Iran (Direct Tehran Feed)" },
+            "The Times of Israel": { region: "Middle East", bias: "Israeli Perspective" },
+            "Saba News Agency": { region: "Middle East", bias: "Yemen (Houthi-administered Media)" },
+            "CNBC Tech & AI": { region: "Tech & Macro", bias: "US Tech / AI & Semiconductors" },
+            "CNBC Economy": { region: "Tech & Macro", bias: "Global Macro / Fed / Rates" },
+            "Yahoo Finance Nasdaq": { region: "Tech & Macro", bias: "Nasdaq 100 / Big Tech Equities" },
+            "MarketWatch Macro": { region: "Tech & Macro", bias: "Wall Street / US Economy" }
         };
 
         function switchTab(event, tabId) {
@@ -276,7 +284,7 @@
         }
 
         // ==========================================
-        // 1. CHART & MAKRO-LEISTE LADEN
+        // 1. LOAD CHART, ORDERBOOK & XAU/USDT BASIS
         // ==========================================
         async function loadChart() {
             const container = document.getElementById('chart-container');
@@ -294,10 +302,23 @@
                         `<span style="color:#16a34a;">${data.sentiment.long_pct}% Long</span> / <span style="color:#dc2626;">${data.sentiment.short_pct}% Short</span>`;
                 }
 
+                if (data.crypto_basis && data.crypto_basis.crypto_price) {
+                    const cb = data.crypto_basis;
+                    const spColor = cb.spread_usd > 2 ? '#16a34a' : (cb.spread_usd < -2 ? '#dc2626' : '#334155');
+                    const spSign = cb.spread_usd >= 0 ? '+' : '';
+                    document.getElementById('ui-crypto-basis').innerHTML = 
+                        `$${cb.crypto_price.toFixed(2)} <span style="color:${spColor};">(${spSign}$${cb.spread_usd.toFixed(2)})</span>`;
+                    document.getElementById('ui-crypto-sub').innerText = 
+                        `${cb.regime} via ${cb.source}`;
+                } else {
+                    document.getElementById('ui-crypto-basis').innerText = "N/A";
+                    document.getElementById('ui-crypto-sub').innerText = "";
+                }
+
                 if (data.volatility && data.volatility.est_daily_atr) {
                     const chg = data.volatility.change_4h || 0;
                     const ratio = data.volatility.move_to_daily_atr_ratio || 0;
-                    const warn = ratio >= 1.2 ? " [Reif]" : "";
+                    const warn = ratio >= 1.2 ? " [Exhausted]" : "";
                     document.getElementById('ui-volatility').innerText = 
                         `${chg >= 0 ? '+' : ''}$${chg} | ATR: $${data.volatility.est_daily_atr} (${ratio}x${warn})`;
                 } else {
@@ -339,8 +360,25 @@
                 
                 candleSeries.setData(uniqueCandles);
 
+                let detailsHTML = "";
+
+                // Draw 24/7 XAU/USDT Reference Price Line on Chart
+                if (data.crypto_basis && data.crypto_basis.crypto_price) {
+                    const cb = data.crypto_basis;
+                    const spSign = cb.spread_usd >= 0 ? '+' : '';
+                    candleSeries.createPriceLine({
+                        price: cb.crypto_price,
+                        color: '#0284c7',
+                        lineWidth: 2,
+                        lineStyle: LightweightCharts.LineStyle.Dotted,
+                        axisLabelVisible: true,
+                        title: `24/7 XAU/USDT (${spSign}$${cb.spread_usd.toFixed(2)})`
+                    });
+                    detailsHTML += `<strong>24/7 Crypto-Gold Basis (${cb.source}):</strong> $${cb.crypto_price.toFixed(2)} vs. OANDA Spot $${cb.oanda_price.toFixed(2)} | Spread: <strong>${spSign}$${cb.spread_usd.toFixed(2)} (${spSign}${cb.spread_pct.toFixed(2)}%)</strong> -> <em>${cb.signal}</em><br><hr style="border:none; border-top:1px solid #e2e8f0; margin:8px 0;">`;
+                }
+
                 if (data.orderbook && data.orderbook.length > 0) {
-                    let detailsHTML = "<strong>Aktive Order-Zonen & Quellen-Ueberschneidung (OANDA + Yahoo COMEX):</strong><br>";
+                    detailsHTML += "<strong>Active Liquidity Zones & Multi-Market Confluence (OANDA + Yahoo COMEX):</strong><br>";
                     data.orderbook.forEach((level, index) => {
                         const isBuyDom = level.dominance === "BUY";
                         const lineColor = isBuyDom ? '#16a34a' : '#dc2626';
@@ -359,42 +397,42 @@
 
                         const oVol = level.oanda_vol !== undefined ? `${level.oanda_vol}%` : '-';
                         const cVol = level.comex_vol !== undefined ? `${level.comex_vol}%` : '-';
-                        detailsHTML += `L${index + 1} bei <strong>$${level.price.toFixed(2)}</strong> (${level.dominance}): Gesamt ${level.volume.toFixed(2)}% [OANDA: ${oVol} | COMEX Futures: ${cVol}] ${isOverlap ? '-> <strong>UEBERSCHNEIDUNG</strong>' : ''}<br>`;
+                        detailsHTML += `L${index + 1} at <strong>$${level.price.toFixed(2)}</strong> (${level.dominance}): Combined Vol ${level.volume.toFixed(2)}% [OANDA: ${oVol} | COMEX Futures: ${cVol}] ${isOverlap ? '-> <strong>CONFIRMED OVERLAP</strong>' : ''}<br>`;
                     });
                     overlapBox.innerHTML = detailsHTML;
                 } else {
-                    overlapBox.innerHTML = "Keine Orderbuch-Zonen verfuegbar.";
+                    overlapBox.innerHTML = detailsHTML + "No orderbook zones available.";
                 }
             } catch (error) {
-                container.innerHTML = `<p style="color:red; font-weight:bold; padding: 20px;">Chart Ladefehler: ${error.message}</p>`;
+                container.innerHTML = `<p style="color:red; font-weight:bold; padding: 20px;">Chart Load Error: ${error.message}</p>`;
             }
         }
 
         // ==========================================
-        // 2. PERFORMANCE STATS LADEN
+        // 2. LOAD PERFORMANCE STATS
         // ==========================================
         async function loadStats() {
             try {
                 const res = await fetch('performance_stats.json?t=' + new Date().getTime());
                 if (!res.ok) {
-                    document.getElementById('ui-winrate').innerText = "Noch keine Daten";
+                    document.getElementById('ui-winrate').innerText = "No data yet";
                     return;
                 }
                 const stats = await res.json();
                 if (stats.total_evaluated > 0) {
                     document.getElementById('ui-winrate').innerText = 
-                        `${stats.win_rate}% (${stats.hits} Hits / ${stats.total_evaluated} Eval | ${stats.active_signals} Aktiv)`;
+                        `${stats.win_rate}% (${stats.hits} Hits / ${stats.total_evaluated} Eval | ${stats.active_signals} Active)`;
                 } else {
                     document.getElementById('ui-winrate').innerText = 
-                        `0 Eval (${stats.active_signals || 0} Signale aktiv)`;
+                        `0 Eval (${stats.active_signals || 0} Active Signals)`;
                 }
             } catch (e) {
-                document.getElementById('ui-winrate').innerText = "In Kalibrierung...";
+                document.getElementById('ui-winrate').innerText = "Calibrating...";
             }
         }
 
         // ==========================================
-        // 3. NEWS ANALYSE & FILTER
+        // 3. LOAD & RENDER NEWS INTELLIGENCE
         // ==========================================
         async function loadNews() {
             const container = document.getElementById('news-container');
@@ -406,12 +444,12 @@
                 try {
                     allClusters = JSON.parse(textData);
                 } catch (e) {
-                    container.innerHTML = `<p style="color:red; text-align:center;"><b>Syntax-Fehler in data.json!</b></p>`;
+                    container.innerHTML = `<p style="color:red; text-align:center;"><b>Syntax error in data.json!</b></p>`;
                     return;
                 }
                 renderNews();
             } catch (error) {
-                container.innerHTML = `<p style="color:red; text-align:center;">Fehler beim Laden: ${error.message}</p>`;
+                container.innerHTML = `<p style="color:red; text-align:center;">Error loading news: ${error.message}</p>`;
             }
         }
 
@@ -486,7 +524,7 @@
             }
 
             if (filtered.length === 0) {
-                container.innerHTML = '<p style="text-align:center; padding: 30px;">Keine passenden News fuer diesen Filter gefunden.</p>';
+                container.innerHTML = '<p style="text-align:center; padding: 30px;">No matching news clusters found for the selected filter.</p>';
                 return;
             }
 
@@ -501,34 +539,34 @@
                 if (cluster.eval_status === 'HIT') {
                     evalBadgeHTML = `<span class="eval-badge eval-hit">[TARGET HIT: ${cluster.summary?.Orderflow_Price_Target}${ddText}]</span>`;
                 } else if (cluster.eval_status === 'ACTIVE') {
-                    evalBadgeHTML = `<span class="eval-badge eval-active">[AKTIV | Ziel: ${cluster.summary?.Orderflow_Price_Target}${ddText}]</span>`;
+                    evalBadgeHTML = `<span class="eval-badge eval-active">[ACTIVE | Target: ${cluster.summary?.Orderflow_Price_Target}${ddText}]</span>`;
                 } else if (cluster.eval_status === 'MISS') {
-                    evalBadgeHTML = `<span class="eval-badge eval-miss">[ZIEL NICHT ERREICHT${ddText}]</span>`;
+                    evalBadgeHTML = `<span class="eval-badge eval-miss">[TARGET MISSED${ddText}]</span>`;
                 } else if (timing.toLowerCase().includes('priced in') || timing.toLowerCase().includes('past')) {
-                    evalBadgeHTML = `<span class="eval-badge eval-pricedin">[BEREITS EINGEPREIST]</span>`;
+                    evalBadgeHTML = `<span class="eval-badge eval-pricedin">[ALREADY PRICED IN]</span>`;
                 }
 
                 let summaryHTML = "";
                 if (typeof cluster.summary === 'object' && cluster.summary !== null) {
-                    const eventTime = cluster.summary.Event_Timestamp || 'Nicht explizit im Text genannt (siehe Erstmeldung)';
+                    const eventTime = cluster.summary.Event_Timestamp || 'Not explicitly stated in text (see First Reported timestamp)';
                     const bullCase = cluster.summary.Bull_Case ? `<div class="bull-box"><strong>Bull Case (Pro Gold):</strong><br>${cluster.summary.Bull_Case}</div>` : '';
-                    const bearCase = cluster.summary.Bear_Case ? `<div class="bear-box"><strong>Bear Case (Contra / Risiken):</strong><br>${cluster.summary.Bear_Case}</div>` : '';
+                    const bearCase = cluster.summary.Bear_Case ? `<div class="bear-box"><strong>Bear Case (Contra / Risks):</strong><br>${cluster.summary.Bear_Case}</div>` : '';
                     const proConSection = (bullCase || bearCase) ? `<div class="pro-con-grid">${bullCase}${bearCase}</div>` : '';
                     const calibSection = cluster.summary.Historical_Calibration ? `<div class="calibration-box"><strong>Agent Calibration & Track-Record Check:</strong> ${cluster.summary.Historical_Calibration}</div>` : '';
 
                     summaryHTML = `
                         <div class="event-time-banner">
-                            <strong>Realer Ereigniszeitpunkt (Day/Time of Happening):</strong> ${eventTime}
+                            <strong>Actual Event Time (Day/Time of Happening):</strong> ${eventTime}
                         </div>
                         <div class="structured-data">
                             <strong>Facts & Context:</strong> ${cluster.summary.Facts || '-'}<br><br>
-                            <strong>Macro, Tech & Sentiment Interplay:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
+                            <strong>Macro, Tech, XAU/USDT Basis & Sentiment:</strong> ${cluster.summary.Macro_Context || '-'}<br><br>
                             <strong>Uncertainties:</strong> ${cluster.summary.Uncertainties || '-'}
                         </div>
                         ${proConSection}
                         ${calibSection}
                         <div class="outlook-box">
-                            <strong>XAUUSD Tendenz:</strong> ${cluster.summary.XAUUSD_Impact || '-'} (${cluster.summary.Probability_Percent || '0'}%)<br>
+                            <strong>XAUUSD Bias:</strong> ${cluster.summary.XAUUSD_Impact || '-'} (${cluster.summary.Probability_Percent || '0'}%)<br>
                             <strong>Timeframe:</strong> ${cluster.summary.Timeframe || '-'}<br>
                             <strong>Timing:</strong> ${cluster.summary.Impact_Timing || '-'}<br>
                             <strong>ATR & Price Action Check (24h):</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}<br>
@@ -558,9 +596,13 @@
                     `;
                 }).join('');
 
+                const cleanDateHeader = (cluster.main_date || 'Unknown')
+                    .replace('Erstmeldung:', 'First Reported:')
+                    .replace('Letztes Update:', 'Last Update:');
+
                 card.innerHTML = `
                     <div class="card-top-row">
-                        <div class="date-header">${cluster.main_date || 'Unbekannt'}</div>
+                        <div class="date-header">${cleanDateHeader}</div>
                         ${evalBadgeHTML}
                     </div>
                     <div class="summary-box">
@@ -582,7 +624,7 @@
             }
         });
 
-        // Start
+        // Initialize
         loadChart();
         loadStats();
         loadNews();

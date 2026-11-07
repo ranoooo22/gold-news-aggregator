@@ -34,6 +34,11 @@ FALLBACK_MODELS = [
 BATCH_SIZE = 6
 MAX_BATCH_CALLS_PER_RUN = 2
 
+# Auswertungs-Parameter für das Performance-Gedächtnis
+MIN_EVAL_PROBABILITY = 51       # Prüft alle gerichteten Signale > 50% (ab 51%)
+EVAL_HORIZON_HOURS = 20.0       # Zeitfenster für Zielerreichung
+MAX_DRAWDOWN_ATR_MULT = 1.8     # Weites Notbremse-Limit (1.8x Tages-ATR Gegenbewegung)
+
 FEEDS = {
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
     "Investing.com": "https://www.investing.com/rss/news_11.rss",
@@ -126,7 +131,6 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
-    """Ruft die Gold-Futures Historie von Yahoo Finance (COMEX GC=F) ab und gewichtet Preis-Volumen-Cluster."""
     comex_zones = {}
     try:
         url = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=5d&interval=1h"
@@ -176,7 +180,6 @@ def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
     return comex_zones
 
 def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
-    """Kombiniert OANDA (OrderBook + PositionBook) und Yahoo Finance Futures mit Retry & Preis-Backup."""
     current_price = float(fallback_price) if fallback_price else 0.0
     combined_buckets = {}
     total_pos_long = 0.0
@@ -187,7 +190,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
         url_pb = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/positionBook"
         
-        # 1. OANDA OrderBook mit bis zu 2 Versuchen abrufen
         for attempt in range(2):
             try:
                 res_ob = requests.get(url_ob, headers=headers, timeout=12)
@@ -216,7 +218,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                 print(f"Fehler bei OANDA orderBook (Versuch {attempt+1}/2): {e}")
                 time.sleep(2)
 
-        # 2. OANDA PositionBook mit bis zu 2 Versuchen abrufen
         for attempt in range(2):
             try:
                 res_pb = requests.get(url_pb, headers=headers, timeout=12)
@@ -275,7 +276,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         zones[zone_key]["oanda_vol"] += tot
         zones[zone_key]["weighted_price_sum"] += p * tot
 
-    # Zweite Quelle: Yahoo Finance COMEX Futures wird jetzt IMMER abgerufen (auch wenn OANDA OrderBook mal leer war)
     comex_zones = fetch_yahoo_futures_zones(current_price, zone_width=zone_width)
     for z_key, f_data in comex_zones.items():
         weight = 0.20 if combined_buckets else 1.0
@@ -304,7 +304,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
             vwap_price = round(z_data["weighted_price_sum"] / z_data["total"], 2)
             net_diff = round(z_data["long"] - z_data["short"], 2)
             
-            # Falls nur COMEX-Daten vorliegen, oberhalb als SELL-Widerstand und unterhalb als BUY-Support werten
             if z_data["oanda_vol"] == 0:
                 dominance = "SELL" if vwap_price >= current_price else "BUY"
             else:
@@ -374,7 +373,7 @@ def fetch_oanda_orderbook(top_zones_cache=None):
 def fetch_oanda_price_and_volatility():
     if not OANDA_API_KEY:
         return "Keine Preisdaten verfügbar.", [], {}
-    url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=30&granularity=H1&price=M"
+    url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=48&granularity=H1&price=M"
     headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
     try:
         response = requests.get(url, headers=headers, timeout=10)
@@ -467,7 +466,13 @@ def fetch_macro_context():
 
     return "\n".join(macro_lines), macro_summary
 
-def evaluate_clusters(all_clusters, h1_candles):
+def evaluate_clusters(all_clusters, h1_candles, vol_metrics=None, macro_summary=None):
+    """
+    Prüft alle Signale mit Probability > 50% (ab 51%):
+    - Punkt A: Speichert Headline, Quelle, ATR-Ratio & Makro-Kontext dauerhaft mit.
+    - Punkt B: Trackt den maximalen Drawdown (USD) und nutzt ein weites Notbremse-Limit (1.8x Tages-ATR).
+    - Punkt C: Evaluiert direkt über stats['history'], sodass Signale auch nach >24h nicht verloren gehen.
+    """
     stats = {
         "total_evaluated": 0,
         "hits": 0,
@@ -489,7 +494,16 @@ def evaluate_clusters(all_clusters, h1_candles):
         return stats
 
     now_ts = datetime.now().timestamp()
+    curr_price = (vol_metrics or {}).get("current_price") or h1_candles[-1]["c"]
+    est_daily_atr = (vol_metrics or {}).get("est_daily_atr") or 35.0
+    atr_ratio_now = (vol_metrics or {}).get("move_to_daily_atr_ratio", 0.0)
+    
+    eur_chg = (macro_summary or {}).get("EUR_USD", {}).get("change_24h_pct", 0.0)
+    nas_chg = (macro_summary or {}).get("NAS100_USD", {}).get("change_24h_pct", 0.0)
+    macro_snap_str = f"EUR {eur_chg:+.2f}%, NAS100 {nas_chg:+.2f}%"
 
+    # 1. Neue oder aktualisierte Cluster (>50% Wahrscheinlichkeit) in stats["history"] registrieren
+    cluster_map = {}
     for cluster in all_clusters:
         summary = cluster.get("summary")
         if not isinstance(summary, dict):
@@ -504,52 +518,111 @@ def evaluate_clusters(all_clusters, h1_candles):
         except ValueError:
             continue
 
-        if prob < 67 or not ("Bullish" in impact or "Bearish" in impact):
+        if prob < MIN_EVAL_PROBABILITY or not ("Bullish" in impact or "Bearish" in impact):
             continue
 
         cluster_id = cluster["articles"][0]["link"] if cluster.get("articles") else str(cluster.get("_timestamp"))
-        cluster_ts = float(cluster.get("_timestamp", 0))
+        cluster_map[cluster_id] = cluster
+        cluster_ts = float(cluster.get("_timestamp", now_ts))
 
-        if cluster_id in stats["history"] and stats["history"][cluster_id]["status"] == "HIT":
-            cluster["eval_status"] = "HIT"
-            continue
+        # Startpreis zum Zeitpunkt der Meldung aus den Kerzen bestimmen
+        matching_candles = [c for c in h1_candles if c["ts"] <= cluster_ts]
+        entry_price = matching_candles[-1]["c"] if matching_candles else curr_price
 
-        relevant_candles = [c for c in h1_candles if c["ts"] + 3600 >= cluster_ts]
-        hit_achieved = False
-
-        for c in relevant_candles:
-            if "Bullish" in impact and c["h"] >= target_price:
-                hit_achieved = True
-                break
-            elif "Bearish" in impact and c["l"] <= target_price:
-                hit_achieved = True
-                break
-
-        if hit_achieved:
-            cluster["eval_status"] = "HIT"
+        if cluster_id not in stats["history"]:
+            first_art = cluster["articles"][0] if cluster.get("articles") else {}
             stats["history"][cluster_id] = {
-                "status": "HIT",
-                "impact": impact,
-                "target": target_price,
-                "date": cluster.get("main_date", "")
+                "status": "ACTIVE",
+                "headline": first_art.get("title", "Unbekannt")[:90],
+                "source": first_art.get("source", "News"),
+                "impact": "Bullish" if "Bullish" in impact else "Bearish",
+                "prob": prob,
+                "entry_price": round(entry_price, 2),
+                "target": round(target_price, 2),
+                "max_dd_usd": 0.0,
+                "atr_ratio_at_signal": atr_ratio_now,
+                "daily_atr_at_signal": est_daily_atr,
+                "macro_snapshot": macro_snap_str,
+                "created_ts": cluster_ts,
+                "date": cluster.get("main_date", ""),
+                "fail_reason": ""
             }
         else:
-            age_hours = (now_ts - cluster_ts) / 3600.0
-            if age_hours >= 20.0:
-                cluster["eval_status"] = "MISS"
-                stats["history"][cluster_id] = {
-                    "status": "MISS",
-                    "impact": impact,
-                    "target": target_price,
-                    "date": cluster.get("main_date", "")
-                }
+            # Falls das Cluster durch ein KI-Update ein neues Target bekommen hat, solange es noch ACTIVE ist
+            existing_rec = stats["history"][cluster_id]
+            if existing_rec.get("status") == "ACTIVE":
+                existing_rec["target"] = round(target_price, 2)
+                existing_rec["prob"] = prob
+
+    # 2. Alle in stats["history"] gespeicherten Signale anhand der H1-Kerzen auswerten (unabhängig von data.json!)
+    for sig_id, rec in stats["history"].items():
+        status = rec.get("status", "ACTIVE")
+        
+        # Bereits abgeschlossene Signale nur an das aktuelle Cluster zurückmelden
+        if status in ("HIT", "MISS"):
+            if sig_id in cluster_map:
+                cluster_map[sig_id]["eval_status"] = status
+                cluster_map[sig_id]["max_dd_usd"] = rec.get("max_dd_usd", 0.0)
+            continue
+
+        sig_ts = float(rec.get("created_ts", now_ts))
+        entry_p = float(rec.get("entry_price", curr_price))
+        target_p = float(rec.get("target", 0))
+        imp = rec.get("impact", "Bullish")
+        sig_atr = float(rec.get("daily_atr_at_signal", est_daily_atr)) or 35.0
+        max_allowed_dd = round(sig_atr * MAX_DRAWDOWN_ATR_MULT, 2)
+
+        relevant_candles = [c for c in h1_candles if c["ts"] + 3600 >= sig_ts]
+        hit_achieved = False
+        stopped_out = False
+        worst_dd = float(rec.get("max_dd_usd", 0.0))
+
+        for c in relevant_candles:
+            if imp == "Bullish":
+                dd = round(max(0.0, entry_p - c["l"]), 2)
+                if dd > worst_dd:
+                    worst_dd = dd
+                if dd >= max_allowed_dd:
+                    stopped_out = True
+                    break
+                if c["h"] >= target_p:
+                    hit_achieved = True
+                    break
+            elif imp == "Bearish":
+                dd = round(max(0.0, c["h"] - entry_p), 2)
+                if dd > worst_dd:
+                    worst_dd = dd
+                if dd >= max_allowed_dd:
+                    stopped_out = True
+                    break
+                if c["l"] <= target_p:
+                    hit_achieved = True
+                    break
+
+        rec["max_dd_usd"] = worst_dd
+
+        if hit_achieved:
+            rec["status"] = "HIT"
+            rec["fail_reason"] = f"Target reached (Max Drawdown along the way: -${worst_dd:.2f})"
+        elif stopped_out:
+            rec["status"] = "MISS"
+            rec["fail_reason"] = f"Exceeded catastrophe drawdown limit (-${worst_dd:.2f} >= {MAX_DRAWDOWN_ATR_MULT}x ATR) before target"
+        else:
+            age_hours = (now_ts - sig_ts) / 3600.0
+            if age_hours >= EVAL_HORIZON_HOURS:
+                rec["status"] = "MISS"
+                rec["fail_reason"] = f"20h time limit expired without reaching ${target_p} (Max DD: -${worst_dd:.2f})"
             else:
-                cluster["eval_status"] = "ACTIVE"
+                rec["status"] = "ACTIVE"
+
+        if sig_id in cluster_map:
+            cluster_map[sig_id]["eval_status"] = rec["status"]
+            cluster_map[sig_id]["max_dd_usd"] = worst_dd
 
     hits = sum(1 for v in stats["history"].values() if v.get("status") == "HIT")
     misses = sum(1 for v in stats["history"].values() if v.get("status") == "MISS")
+    active_count = sum(1 for v in stats["history"].values() if v.get("status") == "ACTIVE")
     total_eval = hits + misses
-    active_count = sum(1 for c in all_clusters if c.get("eval_status") == "ACTIVE")
 
     stats["hits"] = hits
     stats["misses"] = misses
@@ -566,16 +639,36 @@ def evaluate_clusters(all_clusters, h1_candles):
     return stats
 
 def format_performance_memory(stats):
+    """Baut aus den detaillierten Kontext-Einträgen (Punkt A + B + C) das Lern-Gedächtnis für den KI-Agenten."""
     if not stats or stats.get("total_evaluated", 0) == 0:
-        return "Historical Track Record: No completed 20h evaluations yet."
+        return f"Historical Track Record (>50% setups): No completed 20h evaluations yet ({stats.get('active_signals', 0)} active setups currently tracked)."
     
-    history_items = list(stats.get("history", {}).values())
-    recent_items = history_items[-5:]
-    recent_str = ", ".join([f"[{item.get('impact')} -> ${item.get('target')}: {item.get('status')}]" for item in recent_items])
+    completed = [v for v in stats.get("history", {}).values() if v.get("status") in ("HIT", "MISS")]
+    recent_items = completed[-6:]
+    
+    details_lines = []
+    for item in recent_items:
+        hl = item.get("headline", "News")[:55]
+        imp = item.get("impact", "")
+        prob = item.get("prob", 0)
+        ent = item.get("entry_price", 0)
+        trg = item.get("target", 0)
+        st = item.get("status", "")
+        dd = item.get("max_dd_usd", 0.0)
+        atr_r = item.get("atr_ratio_at_signal", 0.0)
+        mac = item.get("macro_snapshot", "")
+        reason = item.get("fail_reason", "")
+        details_lines.append(
+            f"  * [{st}] '{hl}...' | {imp} ({prob}%) Entry ${ent} -> Target ${trg} | Max DD: -${dd} | Signal-ATR-Ratio: {atr_r}x | Macro: {mac} | Note: {reason}"
+        )
+    
+    recent_block = "\n".join(details_lines)
     
     return (
-        f"Track Record: {stats['total_evaluated']} evaluated | Win Rate: {stats['win_rate']}% ({stats['hits']} Hits, {stats['misses']} Misses). "
-        f"Recent: {recent_str}"
+        f"Historical Signal Track Record (All directional setups >50% probability):\n"
+        f"- Total Evaluated: {stats['total_evaluated']} | Win Rate: {stats['win_rate']}% ({stats['hits']} Hits, {stats['misses']} Misses) | Currently Active: {stats.get('active_signals', 0)}\n"
+        f"- Last {len(recent_items)} Completed Setups with Context & Drawdown:\n{recent_block}\n"
+        f"- Self-Learning Rule: Analyze WHY past setups hit or missed (e.g., high Signal-ATR-Ratio >1.2x, opposing Macro, or overly distant targets) and explicitly reference these lessons in 'Historical_Calibration'."
     )
 
 def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_summary):
@@ -648,13 +741,14 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
     all_clusters_str = "\n\n".join(clusters_input)
     
     prompt = f"""You are an objective Intelligence & Calibration Agent for a manual Gold (XAU/USD) & Macro trader.
-    Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, and orderbook context below.
+    Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, orderbook, and historical track record context below.
     Do NOT hide or dismiss minor news—thoroughly contextualize every cluster!
+    Note: Every directional forecast ('Bullish' or 'Bearish') with Probability_Percent > 50% will be automatically tracked and evaluated over 20 hours against actual OANDA candles!
     Output ONLY a valid JSON array of {len(clusters_batch)} objects (one object per CLUSTER_ID). Write all values in English!
 
     Current Reference Time: {now_utc_str}
 
-    Shared Market & Orderbook Context:
+    Shared Market, Orderbook & Self-Learning Memory:
     {perf_memory_str}
     {macro_context_str}
     {price_history_data}
@@ -673,7 +767,7 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
         "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, and OANDA Retail Sentiment interact with this news.",
         "Bull_Case": "Arguments and catalysts supporting a Bullish XAU/USD reaction.",
         "Bear_Case": "Counter-arguments, priced-in risks, or macro headwinds supporting a Bearish/muted XAU/USD reaction.",
-        "Historical_Calibration": "Candid calibration note referencing the Historical Track Record, ATR exhaustion ratio, and event age.",
+        "Historical_Calibration": "Candid calibration note referencing specific lessons from the Historical Signal Track Record (e.g., past drawdowns, ATR exhaustion, macro alignment).",
         "Impact_Timing": "Future, Present, or Past (Already Priced In)",
         "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
@@ -793,7 +887,6 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
         print("WARNUNG: Keine neuen Kerzen erhalten! Behalte bisherige Kerzen bei.")
         market_data["candles"] = old_market_data["candles"]
 
-    # Schutz: Falls beide Quellen kurzzeitig ausfallen, bisherige Zonen beibehalten statt leere Liste zu speichern
     if not market_data["orderbook"] and old_market_data.get("orderbook"):
         print("WARNUNG: Keine neuen Order-Zonen erhalten! Behalte bisherige Zonen bei.")
         market_data["orderbook"] = old_market_data["orderbook"]
@@ -816,14 +909,13 @@ def main():
             existing_data = []
 
     print("Lade Volatilität (ATR), Multi-Source Order-Zonen (OANDA + COMEX Futures) & Makro/Tech-Korrelationen...")
-    # Zuerst Kerzen & aktuellen Preis holen, damit wir ein sicheres Preis-Backup für die Order-Zonen haben!
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     candle_fallback_price = vol_metrics.get("current_price", 0.0)
     
     oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0, fallback_price=candle_fallback_price)
     macro_context_str, macro_summary = fetch_macro_context()
 
-    current_stats = evaluate_clusters(existing_data, h1_candles)
+    current_stats = evaluate_clusters(existing_data, h1_candles, vol_metrics=vol_metrics, macro_summary=macro_summary)
     perf_memory_str = format_performance_memory(current_stats)
 
     now = datetime.now()
@@ -932,7 +1024,7 @@ def main():
     if fallback_count > 0:
         print(f"Info: {fallback_count} Cluster wurden sofort mit der lokalen Echtzeit-Zusammenfassung gefüllt (kein Informationsverlust).")
 
-    evaluate_clusters(valid_clusters, h1_candles)
+    evaluate_clusters(valid_clusters, h1_candles, vol_metrics=vol_metrics, macro_summary=macro_summary)
             
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)

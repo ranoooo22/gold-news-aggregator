@@ -1715,22 +1715,22 @@
                 "_timestamp": 1794089559.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-07 11:20 to 20:32 UTC (approx. 0.5 to 9.5 hours ago)",
-            "Facts": "Goldman Sachs cut its gold price forecasts for late 2026 and 2027 due to a hawkish Federal Reserve, while noting speculative selling and liquidation of non-traditional investor positions [Yahoo Finance Gold / Investing.com].",
-            "Uncertainties": "Pace of central bank physical accumulation versus speculative paper liquidation.",
-            "Macro_Context": "EUR/USD is down 0.70%, 10Y yields are firming, and gold dropped by $28.39 over 24h as speculative long liquidation unfolded against OANDA retail positioning of 71.7% long.",
-            "Bull_Case": "Substantial ongoing central bank purchases provide a long-term valuation floor beneath current spot prices.",
-            "Bear_Case": "Hawkish Fed rhetoric, unwinding of speculative positions, and strong equity markets continue to pressure gold downward.",
-            "Historical_Calibration": "Institutional downgrades accompanied by confirmed speculative liquidation match the 24h drop of -$28.39, confirming downside continuation toward key orderbook support walls.",
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-07 14:51 - 22:12 UTC (approx. 2 to 9 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Goldman Sachs lowered its gold price forecasts for late 2026 and 2027 due to a hawkish Federal Reserve and investor liquidation, while DRDGOLD and other gold stocks gained attention amid renewed inflation worries. Speculative selling accelerated in late October, decoupling gold from falling real interest rates [Yahoo Finance Gold, Investing.com, Goldman Sachs].",
+            "Uncertainties": "Whether central bank physical buying can fully offset speculative liquidation and hawkish Fed rate paths.",
+            "Macro_Context": "EUR/USD down -0.70%, US 10Y yields firm, and Brent oil down -0.95%. The 24/7 crypto-gold basis shows a $-10.98 (-0.27%) weekend gap discount. Retail positioning is 71.7% long.",
+            "Bull_Case": "Persistent inflation concerns and strong central bank demand provide a solid floor for gold prices.",
+            "Bear_Case": "Goldman's forecast downgrades, hawkish Fed stance, and accelerating speculative long liquidations create strong headwinds.",
+            "Historical_Calibration": "Our win rate is 34.9% with frequent drawdowns on bearish setups when targeting aggressive levels without macro support. Given the bearish basis spread (-0.27%) and Goldman downgrades, a short-term bearish bias is justified but targets must respect nearby liquidity zones.",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bearish",
             "Probability_Percent": 62,
-            "Past_Price_Action_Cause": "Directly explains the 24h drop of -$28.39 as speculative liquidation meets hawkish Fed expectations.",
-            "Orderflow_Price_Target": "4059.97"
+            "Past_Price_Action_Cause": "Aligns with the 24h drop of -$28.39 in gold and the negative XAU/USDT weekend basis spread of $-10.98.",
+            "Orderflow_Price_Target": "4059.95"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -1749,21 +1749,22 @@
                 "_timestamp": 1794087322.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-07 21:35 UTC (vor ca. 0.3h)",
-            "Facts": "[Mehr News Agency] Zare named world’s best freestyle wrestler by UWW - TEHRAN, Nov. 08 (MNA) –  Iranian heavyweight wrestler Amirhossein Zare has been named the world’s best freestyle wrestler, according to United World Wrestling (UWW).",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.73.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.95. 4h-ATR-Ratio steht bei 0.17x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.3h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4070.73"
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-07 21:35 UTC (approx. 2.3 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Iranian heavyweight wrestler Amirhossein Zare has been named the world's best freestyle wrestler by United World Wrestling (UWW) [Mehr News Agency].",
+            "Uncertainties": "None; this is a purely sports-related cultural announcement.",
+            "Macro_Context": "Zero macro or financial intersection with gold, USD, yields, or energy markets.",
+            "Bull_Case": "None.",
+            "Bear_Case": "None.",
+            "Historical_Calibration": "Irrelevant non-financial news items carry zero directional probability.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 10,
+            "Past_Price_Action_Cause": "No impact on price action.",
+            "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -1782,21 +1783,22 @@
                 "_timestamp": 1794086834.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-07 21:27 UTC (vor ca. 0.4h)",
-            "Facts": "[Middle East Eye] US military says it disabled cargo vessel in Gulf of Oman - US military says it disabled cargo vessel in Gulf of Oman\n\n    \n    \n\n        \n    \n                A US military aircraft fired on and disabled a commercial vessel that tried to break the US naval bl",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.73.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.95. 4h-ATR-Ratio steht bei 0.17x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.4h.",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-07 21:27 UTC (approx. 2.5 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "US Central Command (Centcom) reported that a US military aircraft fired on and disabled a St Kitts and Nevis-flagged cargo vessel in the Gulf of Oman after it tried to break the US naval blockade of Iran following an Iranian port visit [Middle East Eye].",
+            "Uncertainties": "Potential for regional escalation or retaliation by Iranian proxies affecting Middle Eastern shipping lanes and oil supply.",
+            "Macro_Context": "Brent crude oil is down -0.95% to $100.47 despite geopolitical friction, while the XAU/USDT weekend basis trades at a discount of $-10.98 (-0.27%).",
+            "Bull_Case": "Geopolitical escalation in the Gulf of Oman typically triggers safe-haven flows into gold and oil.",
+            "Bear_Case": "Energy markets have shrugged off the event (Brent down -0.95%), and strong US naval control limits immediate supply disruption fears.",
+            "Historical_Calibration": "Geopolitical headlines involving Iran have previously yielded mixed results (some hits, some 20h limit misses when macro/basis opposes). Setting a modest target aligned with the weekend gap is safer.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4070.73"
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Geopolitical risk premium partially supports gold against general USD strength.",
+            "Orderflow_Price_Target": "4078.23"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -3209,20 +3211,21 @@
                 "_timestamp": 1794079380.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-07 19:23 UTC (vor ca. 1.7h)",
-            "Facts": "[Yahoo Finance Nasdaq] Did Apple Just Get a Boost From Democrats? Data Center Moratoriums Could Benefit the iPhone Maker - Competition for this key component in Apple devices could come down.",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.97. 4h-ATR-Ratio steht bei 0.17x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 1.7h.",
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-07 19:23 UTC (approx. 4.5 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Data center moratoriums and changing competitive dynamics could provide a boost to Apple by easing component competition [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Broad regulatory impact on tech sector infrastructure expansion.",
+            "Macro_Context": "Nasdaq 100 is strong (+1.81%), reflecting robust risk-on sentiment in tech assets, which can sometimes divert capital away from non-yielding bullion.",
+            "Bull_Case": "Positive equity sentiment supports overall market stability.",
+            "Bear_Case": "Strong tech performance (+1.81% Nasdaq) reduces safe-haven demand for gold.",
+            "Historical_Calibration": "Tech equity news has negligible direct impact on spot XAU/USD outside of broad risk-on/risk-off sentiment.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
+            "Probability_Percent": 20,
+            "Past_Price_Action_Cause": "Correlates with Nasdaq outperformance rather than precious metals.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -3240,21 +3243,22 @@
                 "_timestamp": 1794078857.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-07 19:14 UTC (vor ca. 1.9h)",
-            "Facts": "[Yahoo Finance Oil] Mach Natural Resources Q3 Earnings Call Highlights - Mach Natural Resources (NYSE:MNR) expects to increase its cash distributions after a period of elevated drilling spending, while shifting its 2027 development program toward oil and waiting for more attracti",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.97. 4h-ATR-Ratio steht bei 0.17x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 1.9h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4070.77"
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-07 19:14 UTC (approx. 4.7 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Mach Natural Resources (NYSE:MNR) reported Q3 earnings, expecting to increase cash distributions while shifting its 2027 development program toward oil production amid 147,000 boe/d output [Yahoo Finance Oil].",
+            "Uncertainties": "Future US shale capex and domestic supply response.",
+            "Macro_Context": "Brent crude is down -0.95% to $100.47, indicating broader weakness in energy commodities.",
+            "Bull_Case": "Higher cash distributions signal healthy corporate cash flows in the energy sector.",
+            "Bear_Case": "Falling Brent crude prices weigh on broader commodity sentiment.",
+            "Historical_Calibration": "Individual upstream oil earnings have minimal direct impact on macro gold pricing.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 25,
+            "Past_Price_Action_Cause": "Reflects micro-level equity performance in the energy patch.",
+            "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -3273,22 +3277,25 @@
                 "_timestamp": 1794078704.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-07 19:11 UTC (vor ca. 1.9h)",
-            "Facts": "[Yahoo Finance Nasdaq] Alphabet (GOOGL) Expands SpaceX Stake to $69 Billion and Deepens AI Ties - Alphabet (NasdaqGS: GOOGL) has expanded its SpaceX stake by nearly 4 million additional shares, lifting the holding’s value to about US$69b. The position has grown from an original US$9",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.97. 4h-ATR-Ratio steht bei 0.17x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 1.9h.",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-07 19:11 UTC (approx. 4.7 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Alphabet (GOOGL) expanded its SpaceX stake by nearly 4 million shares to $69 billion and entered into a monthly agreement with SpaceX for Nvidia GPU access to support Gemini Enterprise AI [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Valuation sustainability of private space and AI infrastructure cross-holdings.",
+            "Macro_Context": "Nasdaq 100 up +1.81%, demonstrating massive AI and tech sector momentum that contrasts with a struggling gold market.",
+            "Bull_Case": "Mega-cap tech expansion highlights robust corporate liquidity and AI infrastructure investments.",
+            "Bear_Case": "Strong risk-on tech momentum diverts institutional capital away from defensive safe-haven assets like gold.",
+            "Historical_Calibration": "Strong tech/AI rallies (Nasdaq +1.81%) frequently correlate with defensive capital outflows from XAU/USD.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 56,
+            "Past_Price_Action_Cause": "Reinforces the divergence between surging tech equities and lagging precious metals.",
+            "Orderflow_Price_Target": "4051.05"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-07 19:10",
@@ -3304,21 +3311,22 @@
                 "_timestamp": 1794078634.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-07 19:10 UTC (vor ca. 1.9h)",
-            "Facts": "[Al Jazeera English] Latvian farmers protest over ‘blood grain’ trade with Russia - Latvian farmers are protesting Russian grain transit, arguing that it helps fund Moscow’s war in Ukraine.",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.97. 4h-ATR-Ratio steht bei 0.17x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 1.9h.",
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-07 19:10 UTC (approx. 5 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Latvian farmers are staging protests over the transit of Russian 'blood grain' through Latvia, arguing that the trade helps finance Moscow’s military operations in Ukraine [Al Jazeera English].",
+            "Uncertainties": "Whether the protests will expand to block major transport corridors or prompt legislative bans by the Latvian government or wider EU bodies.",
+            "Macro_Context": "EUR/USD is down 0.70%, Brent crude is lower by 0.95%, and the Nasdaq is correcting. Regional geopolitical tensions in Eastern Europe provide minor safe-haven backing, but local agricultural protests have limited direct transmission to global bullion liquidity pools.",
+            "Bull_Case": "Localized supply chain disruptions and persistent geopolitical friction in Europe can marginally bolster safe-haven demand for gold.",
+            "Bear_Case": "The impact is strictly regional and localized to agricultural logistics, exerting virtually no influence on dollar liquidity, Treasury yields, or institutional gold flows.",
+            "Historical_Calibration": "Drawing from the track record, minor localized geopolitical news often fails to generate sustained momentum unless backed by broad macro alignment or strong volume. A neutral stance or low-probability directional play is warranted here.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "4070.77"
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "Current 4h/24h gold volatility and the -0.27% crypto-gold basis discount are driven by broader equity unwinds rather than Eastern European agricultural disputes.",
+            "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -3527,23 +3535,25 @@
                 "_timestamp": 1794076860.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-07 05:42 UTC (0.7 hours ago)",
-            "Facts": "Axon stock plummeted to a 2-year low after tumbling on its Q3 report due to a severe revenue miss [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the sell-off in Axon will spark broader contagion or profit-taking across high-multiple growth equities.",
-            "Macro_Context": "Contrasts with the broader Nasdaq 100 strength (+1.81%), indicating isolated single-stock fundamental distress rather than systemic equity failure.",
-            "Bull_Case": "Severe individual stock misses can occasionally trigger broader profit-taking in overextended tech/AI sectors, spurring a rotation into safe-haven gold.",
-            "Bear_Case": "Isolated corporate earnings miss with negligible macro cross-asset transmission; markets continue favoring mega-cap tech.",
-            "Historical_Calibration": "No completed 20h tracks. Single-stock earnings misses have minimal direct correlation with XAU/USD price action.",
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-07 18:41 UTC (approx. 5 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Axon Enterprise (NASDAQ:AXON) was downgraded by Craig Hallum and ranked 8th in a list of overhyped stocks after a severe Q3 revenue miss that sent the stock tumbling to a 2-year low, coinciding with a broader market sell-off that erased $2.3 trillion in market value [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether individual tech/growth stock downgrades will trigger contagion across broader tech indices or remain isolated earnings misses.",
+            "Macro_Context": "The Nasdaq 100 is up 24h (+1.81%) on resilient tech baseline metrics, but experiences intense intraday whiplash. OANDA retail positioning is heavy on the long side (71.7%), amplifying vulnerability to equity liquidations.",
+            "Bull_Case": "Tech equity distress and correction fears can prompt capital rotation into safe-haven assets like gold as investors derisk portfolios.",
+            "Bear_Case": "Micro-level stock downgrades do not automatically dictate macroeconomic safe-haven flows; cash hoarding or dollar strength can dominate instead.",
+            "Historical_Calibration": "Past tracking indicates that equity correction headlines can support gold if broad indices break down, but single-stock earnings misses usually have muted macro transmission.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Priced in exclusively within equities; negligible impact on gold's 4h move/Daily ATR ratio of 0.17x.",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Tech sector volatility and a weekend crypto-gold basis gap of $-10.98 reflect overarching risk-off sentiment in growth sectors.",
+            "Orderflow_Price_Target": "4078.23"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-07 18:33",
@@ -3559,22 +3569,25 @@
                 "_timestamp": 1794076392.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-07 18:33 UTC (vor ca. 2.6h)",
-            "Facts": "[Yahoo Finance Nasdaq] Stocks soared on the Democratic sweep. Less than 24 hours later, the AI trade cracked. - The extraordinary reversal in stocks marked the latest whipsaw in a year of wild swings.",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.97. 4h-ATR-Ratio steht bei 0.17x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 2.6h.",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-07 18:33 UTC (approx. 5 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Stocks soared following a Democratic sweep, but the momentum reversed sharply within 24 hours as the AI trade cracked, marking extreme whipsaw volatility across broader markets [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether the post-election political shift will establish sustained fiscal expansion paths or get entirely overshadowed by tech valuation resets.",
+            "Macro_Context": "Nasdaq 100 gained +1.81% over 24h, US 10Y bond prices slipped (-0.18%), and EUR/USD fell (-0.70%). The strong USD proxy and shifting equity sentiment create cross-currents for gold.",
+            "Bull_Case": "Sharp reversals and systemic equity instability drive defensive capital allocations into gold as a hedge against severe portfolio drawdowns.",
+            "Bear_Case": "Simultaneous strengthening of the US dollar proxy (EUR/USD down 0.70%) can cap gold's upside potential despite equity turbulence.",
+            "Historical_Calibration": "As seen in previous high-volatility equity sessions, rapid market whipsaws can trigger swift tests of nearby liquidity clusters, provided targets are kept conservative relative to the ATR.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 54,
+            "Past_Price_Action_Cause": "The 4h change of $+10.47 reflects immediate safe-haven absorption following the equity crack.",
+            "Orderflow_Price_Target": "4078.23"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-05 15:15 | Last Update: 2026-11-07 18:20",
@@ -3734,23 +3747,25 @@
                 "_timestamp": 1794075600.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-06 19:50 UTC to 2026-11-07 05:06 UTC (approx. 1 to 10 hours ago relative to 2026-11-07 06:24 UTC).",
-            "Facts": "Chip stocks suffered their worst sell-off since 2020, prompting intense scrutiny of Nvidia, Micron, and Dell holdings. Meanwhile, Nvidia is reportedly pouring billions into advanced chip packaging via SPIL to overcome supply bottlenecks [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the tech sector sell-off represents a temporary correction or the start of a broader valuation compression cycle for AI-heavy indices.",
-            "Macro_Context": "Despite the sharp chip sell-off headline, the Nasdaq 100 Tech/AI Index is up +1.81% over 24h, reflecting underlying resilience or rebound buying. Divergence between tech strength and precious metals can influence cross-asset capital rotation.",
-            "Bull_Case": "Spillover panic from tech sell-offs can trigger liquidity liquidations across asset classes, occasionally prompting safe-haven reallocations into gold.",
-            "Bear_Case": "A resilient Nasdaq 100 (+1.81%) and aggressive capital expenditure by tech giants indicate risk-on sentiment remains intact, favoring equities over safe-haven gold.",
-            "Historical_Calibration": "Tech sector volatility has mixed cross-asset correlation with gold unless it triggers broader margin calls across broader institutional portfolios.",
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-07 18:20 UTC (approx. 6 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Chip stocks experienced their worst single-day drop since 2020 amid a massive market sell-off, though analysts maintain long-term bullish price targets and growth cases for Nvidia, Micron, and alternative AI infrastructure plays [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether the semiconductor bloodbath is a temporary consolidation or the onset of a prolonged secular tech bear market.",
+            "Macro_Context": "Nasdaq 100 is up +1.81% over 24h, but recent sessions show extreme turbulence. A strong tech sector pullback heavily influences risk sentiment across all asset classes, impacting crypto-gold basis spreads.",
+            "Bull_Case": "Capitulation in high-flying tech sectors forces institutional rebalancing out of equities and into defensive, hard-asset alternatives like gold.",
+            "Bear_Case": "Dip-buyers quickly stepping into oversold tech names can stabilize risk appetite, mututing safe-haven flows into precious metals.",
+            "Historical_Calibration": "Historical setups demonstrate that broad tech liquidations create transient upside impulses in gold, but targets must account for ongoing macroeconomic USD strength.",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Gold's 4h price action reflects safe-haven geopolitical drivers rather than tech sector capital reallocation.",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 53,
+            "Past_Price_Action_Cause": "Heavy tech sector liquidations have generated safe-haven inflows, pushing the spot price to $4070.59 despite a bearish weekend crypto basis.",
+            "Orderflow_Price_Target": "4078.23"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-07 18:18",
@@ -3766,20 +3781,21 @@
                 "_timestamp": 1794075521.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-07 18:18 UTC (vor ca. 2.8h)",
-            "Facts": "[Yahoo Finance Gold] Earnings Beat Might Change The Case For Investing In Northern Oil and Gas Stock (NOG) - Northern Oil and Gas reported past third quarter 2026 results with revenue of US$345.91 million and a net loss of US$111.81 million, while adjusted figures showed higher re",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.97. 4h-ATR-Ratio steht bei 0.17x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 2.8h.",
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-07 18:18 UTC (approx. 6 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Northern Oil and Gas (NOG) reported Q3 2026 adjusted revenue of $697.69 million and EPS of $1.32, beating analyst expectations, raising production guidance, and continuing shareholder returns through dividends and share repurchases [Yahoo Finance Gold].",
+            "Uncertainties": "Whether individual corporate energy earnings can offset broader crude oil market weakness.",
+            "Macro_Context": "Brent Crude Oil is down 0.95% over 24 hours. Energy sector company performance remains robust despite softening headline commodity price trends.",
+            "Bull_Case": "Strong corporate earnings in the energy space underscore fundamental economic resilience, supporting broader commodity valuations including precious metals.",
+            "Bear_Case": "Lower Brent crude prices (-0.95%) reflect deflationary energy pressures that weigh on broader commodity sentiment and cap gold advances.",
+            "Historical_Calibration": "Corporate earnings reports in specific energy stocks have localized impacts and rarely shift spot gold pricing independently of macro currency and yield trends.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Gold's recent price action is tied to equity correction dynamics and weekend basis positioning rather than individual oil firm earnings.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -3797,22 +3813,25 @@
                 "_timestamp": 1794075287.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-07 18:14 UTC (vor ca. 2.9h)",
-            "Facts": "[Yahoo Finance Gold] Thor Explorations And 2 Other Canadian Penny Stocks To Watch - AI heavy stocks just had a rough week, with a $2.5 trillion hit to the Nasdaq reminding investors what happens when portfolios lean too hard on one story. That kind of shake up puts quietly solid C",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.77.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.97. 4h-ATR-Ratio steht bei 0.17x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 2.9h.",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-07 18:14 UTC (approx. 6 hours ago relative to 2026-11-07 23:55 UTC)",
+            "Facts": "Following a $2.5 trillion hit to the Nasdaq driven by heavy AI stock liquidations, investors are rotating attention toward financially grounded Canadian penny and small-cap stocks like Thor Explorations with healthier balance sheets [Yahoo Finance Gold].",
+            "Uncertainties": "Whether retail and institutional capital will sustainably flow into micro-cap mining and exploration stocks or retreat entirely to cash.",
+            "Macro_Context": "The Nasdaq correction and strong US dollar proxy (EUR/USD -0.70%) create a risk-averse environment where capital flees crowded trades, benefiting undervalued junior miners and physical safe havens.",
+            "Bull_Case": "The exodus from crowded AI trades redirects speculative capital into mining equities and physical gold as alternative defensive plays.",
+            "Bear_Case": "Broader liquidity crunches during equity corrections can induce indiscriminate selling across all risk and asset tiers, including small-cap miners.",
+            "Historical_Calibration": "Reflecting on previous market rotations, capital outflows from tech heavyweights provide minor tailwinds for alternative asset classes, though macro strength in the dollar limits runaway moves.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+10.47 (0.17x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 51,
+            "Past_Price_Action_Cause": "Portfolio reallocations away from overextended tech names support baseline demand for gold assets heading into the weekend close.",
+            "Orderflow_Price_Target": "4078.23"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-07 18:06",
@@ -11260,37 +11279,6 @@
             "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.69.",
             "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.96. 4h-ATR-Ratio steht bei 0x.",
             "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 1.6h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD Bewegung: $+0.00 (0x der geschaetzten Tages-ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-06 23:49",
-        "original_date": "2026-11-06 23:49",
-        "_timestamp": 1794008985.0,
-        "articles": [
-            {
-                "title": "Kumocast.io Launches Free Live Trading Signals and Price Predictions for Forex, Gold, Oil, Indices and Stocks, Refreshed Every 30 Minutes",
-                "link": "https://finance.yahoo.com/markets/currencies/articles/kumocast-io-launches-free-live-234945016.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 23:49",
-                "description": "The new market analysis site turns technical analysis into a clear \"market weather\" view, with a pivot, two targets and an alternative scenario for every market, plus interactive charts and an open accuracy record BELIZE CITY, BELIZE - November 6, 20...",
-                "_timestamp": 1794008985.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "Erstmeldung: 2026-11-06 23:49 UTC (vor ca. 0.6h)",
-            "Facts": "[Yahoo Finance Gold] Kumocast.io Launches Free Live Trading Signals and Price Predictions for Forex, Gold, Oil, Indices and Stocks, Refreshed Every 30 Minutes - The new market analysis site turns technical analysis into a clear \"market weather\" view, with a pivot, two targets and ",
-            "Uncertainties": "Direkte Auswertung aus den Primaerquellen (KI-Tiefenanalyse wird im naechsten freien Zyklus ergaenzt).",
-            "Macro_Context": "24h Makro-Umfeld: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short.",
-            "Bull_Case": "Naechste OANDA/COMEX Liquiditaetszone auf der Oberseite liegt bei $4070.69.",
-            "Bear_Case": "Naechste Unterstuetzungs-/Verkaufszone auf der Unterseite bei $4059.96. 4h-ATR-Ratio steht bei 0x.",
-            "Historical_Calibration": "Lokale Echtzeit-Zusammenfassung aktiv. Ereignis-Alter: 0.6h.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",

@@ -1,8 +1,8 @@
 {
-    "total_evaluated": 21,
+    "total_evaluated": 22,
     "hits": 15,
-    "misses": 6,
-    "win_rate": 71.4,
+    "misses": 7,
+    "win_rate": 68.2,
     "active_signals": 84,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
@@ -42,9 +42,9 @@
             "headline": "Morning update",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 58,
+            "prob": 55,
             "entry_price": 4070.59,
-            "target": 4078.27,
+            "target": 4078.3,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -458,9 +458,9 @@
             "headline": "Jeenius CEO: AI's Next Frontier Is the World It Can't Yet Reach",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
-            "prob": 62,
+            "prob": 52,
             "entry_price": 4070.59,
-            "target": 4059.94,
+            "target": 4059.97,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -826,9 +826,9 @@
             "headline": "Iran's seven conditions essential to reopening Strait of Hormuz: army spokesman",
             "source": "Tehran Times",
             "impact": "Bullish",
-            "prob": 65,
+            "prob": 60,
             "entry_price": 4070.59,
-            "target": 4078.21,
+            "target": 4078.3,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -860,7 +860,7 @@
             "impact": "Bullish",
             "prob": 55,
             "entry_price": 4070.59,
-            "target": 4070.69,
+            "target": 4078.3,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -1162,9 +1162,9 @@
             "headline": "Bitcoin Erases Election Rally as AI Stocks Plunge, $428 Million in Crypto Longs Get Wiped ",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
-            "prob": 65,
+            "prob": 58,
             "entry_price": 4070.59,
-            "target": 4059.63,
+            "target": 4059.97,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -1254,7 +1254,7 @@
             "fail_reason": ""
         },
         "https://www.ibtimes.com/stocks-rebound-nasdaq-correction-jobs-report-3809523?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Stocks See Slight Rebound After Thursday's Rout But Remain Well Below Highs",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -1267,7 +1267,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1793998994.0,
             "date": "Erstmeldung: 2026-11-06 21:03",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4051.08 (Max DD: -$1.74)"
         },
         "https://www.tikr.com/blog/micron-sinks-13-as-chip-rout-deepens-and-4-5-billion-taiwan-plant-stalls?ref=yahoofinance&tlnk=yf-261105-4j94c4wf&.tsrc=rss": {
             "status": "HIT",
@@ -1683,6 +1683,22 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794066840.0,
             "date": "Erstmeldung: 2026-11-05 15:43 | Letztes Update: 2026-11-07 15:54",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/economy/articles/inflation-fears-return-corporate-america-140000593.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Inflation Fears Return as Corporate America Counts the Cost",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.76,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794060000.0,
+            "date": "Erstmeldung: 2026-11-07 14:00",
             "fail_reason": ""
         }
     }

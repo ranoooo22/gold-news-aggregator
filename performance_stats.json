@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 22,
+    "total_evaluated": 24,
     "hits": 15,
-    "misses": 7,
-    "win_rate": 68.2,
-    "active_signals": 84,
+    "misses": 9,
+    "win_rate": 62.5,
+    "active_signals": 83,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "ACTIVE",
@@ -172,7 +172,7 @@
             "impact": "Bullish",
             "prob": 55,
             "entry_price": 4070.59,
-            "target": 4070.76,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -202,9 +202,9 @@
             "headline": "Stock Market: Will S&P 500 Open Up or Down Today?",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
-            "prob": 62,
+            "prob": 55,
             "entry_price": 4070.59,
-            "target": 4077.78,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -282,9 +282,9 @@
             "headline": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
             "source": "Mehr News Agency",
             "impact": "Bullish",
-            "prob": 68,
+            "prob": 60,
             "entry_price": 4070.59,
-            "target": 4078.2,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -1222,7 +1222,7 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/commodities-news/gold-extends-rally-above-4100-as-dollar-treasury-yields-fall-after-us-vote-5002012": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Gold extends rally above $4,100 as dollar, Treasury yields fall after U.S. vote",
             "source": "Investing.com",
             "impact": "Bearish",
@@ -1235,10 +1235,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794001548.0,
             "date": "Erstmeldung: 2026-11-05 02:03 | Letztes Update: 2026-11-06 21:45",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4030.0 (Max DD: -$1.74)"
         },
         "https://247wallst.com/investing/2026/11/06/openai-says-it-will-pay-for-its-data-centers-power-after-the-election-backlash/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "OpenAI Says It Will Pay for Its Data Centers’ Power After the Election Backlash",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -1251,7 +1251,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794001020.0,
             "date": "Erstmeldung: 2026-11-06 13:51 | Letztes Update: 2026-11-06 21:37",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4077.78 (Max DD: -$7.68)"
         },
         "https://www.ibtimes.com/stocks-rebound-nasdaq-correction-jobs-report-3809523?.tsrc=rss": {
             "status": "MISS",
@@ -1699,6 +1699,22 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794060000.0,
             "date": "Erstmeldung: 2026-11-07 14:00",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531919/UN-special-rapporteur-describes-Minab-school-attack-as-war-crime": {
+            "status": "ACTIVE",
+            "headline": "UN special rapporteur describes Minab school attack as war crime: Iranian official",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.73,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794073507.0,
+            "date": "Erstmeldung: 2026-11-07 17:45",
             "fail_reason": ""
         }
     }

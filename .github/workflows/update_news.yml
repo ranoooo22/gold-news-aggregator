@@ -5,22 +5,27 @@ on:
     - cron: '*/15 * * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   update-news:
     runs-on: ubuntu-latest
 
     steps:
       - name: Repository auschecken
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Python einrichten
-        uses: actions/setup-python@v4
+      - name: Python einrichten (mit Pip-Cache)
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
+          cache: 'pip'
 
       - name: Abhängigkeiten installieren
         run: |
           python -m pip install --upgrade pip
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install requests feedparser sentence-transformers google-genai
 
       - name: Aggregator-Skript ausführen
@@ -33,7 +38,8 @@ jobs:
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add data.json market_data.json
-          git commit -m "Auto-update news and market data" || echo "Keine neuen Änderungen zum Committen."
-          git pull --rebase origin main
+          touch data.json market_data.json performance_stats.json
+          git add data.json market_data.json performance_stats.json
+          git diff --staged --quiet || git commit -m "Auto-update news, market data and performance stats"
+          git pull --rebase --autostash origin main
           git push

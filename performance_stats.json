@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 44,
+    "total_evaluated": 47,
     "hits": 15,
-    "misses": 29,
-    "win_rate": 34.1,
-    "active_signals": 87,
+    "misses": 32,
+    "win_rate": 31.9,
+    "active_signals": 89,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "ACTIVE",
@@ -122,9 +122,9 @@
             "headline": "Oil rises as peace prospects dim after US hits Iran’s Qeshm Island",
             "source": "Investing.com",
             "impact": "Bullish",
-            "prob": 65,
+            "prob": 55,
             "entry_price": 4070.59,
-            "target": 4141.34,
+            "target": 4059.97,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -236,7 +236,7 @@
             "impact": "Bearish",
             "prob": 52,
             "entry_price": 4070.59,
-            "target": 4078.27,
+            "target": 4078.3,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -854,7 +854,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249200/Iran-not-let-Trump-flee-region-sans-paying-price-reparation": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran not let Trump flee region sans paying price, reparation",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -867,10 +867,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794027283.0,
             "date": "Erstmeldung: 2026-11-07 04:54",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settler-attacks-west-bank-olive-harvest-hit-record-2006-un-says": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Israeli settler attacks on West Bank olive harvest hit record since 2006, UN says",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -883,10 +883,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794027097.0,
             "date": "Erstmeldung: 2026-11-07 04:51",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/economy/2026/11/7/us-treasury-sanctions-eight-canadian-money-exchange-firms-over-iran-ties?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US Treasury sanctions eight Canadian money exchange firms over Iran ties",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -899,7 +899,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794027046.0,
             "date": "Erstmeldung: 2026-11-07 04:50",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249159/US-animosity-with-Iran-proved-to-be-civilizational-MP": {
             "status": "MISS",
@@ -2099,6 +2099,86 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794075287.0,
             "date": "First Reported: 2026-11-07 18:14",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-sets-task-force-iron-gate-disrupt-irans-weapons-transfers": {
+            "status": "ACTIVE",
+            "headline": "Centcom sets up 'Task Force Iron Gate' to disrupt Iran’s weapons transfers",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4078.3,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794098691.0,
+            "date": "First Reported: 2026-11-08 00:44 UTC",
+            "fail_reason": ""
+        },
+        "https://247wallst.com/investing/2026/11/07/wall-streets-fear-gauge-jumped-more-than-11-points-in-a-day-buffetts-most-famous-rule-says-it-might-be-time-to-get-greedy-heres-where-the-market-has-historically-gone-over-the-next-6-months/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Wall Street’s Fear Gauge Jumped More Than 11 Points In A Day. Buffett’s Most Famous Rule S",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4078.3,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794098581.0,
+            "date": "First Reported: 2026-11-07 10:22 UTC | Last Update: 2026-11-08 00:43 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/rains-flood-gaza-displacement-camps-israeli-authorities-block-entry": {
+            "status": "ACTIVE",
+            "headline": "Rains flood Gaza displacement camps as Israeli authorities block entry of shelter material",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4078.3,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794063286.0,
+            "date": "First Reported: 2026-11-07 11:56 | Last Update: 2026-11-07 14:54",
+            "fail_reason": ""
+        },
+        "https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html": {
+            "status": "ACTIVE",
+            "headline": "America's newest small business owners with no employees are off to a hot start in AI era",
+            "source": "CNBC Tech & AI",
+            "impact": "Bearish",
+            "prob": 54,
+            "entry_price": 4070.59,
+            "target": 4050.99,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794062701.0,
+            "date": "First Reported: 2026-11-07 14:45",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/m/d9b3dc87-0876-3cca-a855-3dc48452a602/market-week-ahead%3A-can-the.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Market Week Ahead: Can The Stock Market Fly With A Lame Duck Congress?",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4050.99,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794062491.0,
+            "date": "First Reported: 2026-11-07 14:41",
             "fail_reason": ""
         }
     }

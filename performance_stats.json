@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 135,
+    "total_evaluated": 137,
     "hits": 15,
-    "misses": 120,
-    "win_rate": 11.1,
-    "active_signals": 55,
+    "misses": 122,
+    "win_rate": 10.9,
+    "active_signals": 54,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -2102,7 +2102,7 @@
             "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-sets-task-force-iron-gate-disrupt-irans-weapons-transfers": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Centcom sets up 'Task Force Iron Gate' to disrupt Iran’s weapons transfers",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -2115,10 +2115,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794098691.0,
             "date": "First Reported: 2026-11-08 00:44 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://247wallst.com/investing/2026/11/07/wall-streets-fear-gauge-jumped-more-than-11-points-in-a-day-buffetts-most-famous-rule-says-it-might-be-time-to-get-greedy-heres-where-the-market-has-historically-gone-over-the-next-6-months/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Wall Street’s Fear Gauge Jumped More Than 11 Points In A Day. Buffett’s Most Famous Rule S",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -2131,7 +2131,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794098581.0,
             "date": "First Reported: 2026-11-07 10:22 UTC | Last Update: 2026-11-08 00:43 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.15 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/rains-flood-gaza-displacement-camps-israeli-authorities-block-entry": {
             "status": "MISS",
@@ -2858,9 +2858,9 @@
             "headline": "Bill Gates Says A $10-an-Hour Robot Could Replace The $20-an-Hour Worker – 'There Is No Pl",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 51,
             "entry_price": 4070.59,
-            "target": 4070.78,
+            "target": 4059.89,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -3034,15 +3034,31 @@
             "headline": "Inflation Data, Constellation Energy, Skydance, Applied Materials, and More to Watch This ",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 52,
             "entry_price": 4070.59,
-            "target": 4070.75,
+            "target": 4078.2,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794164400.0,
             "date": "First Reported: 2026-11-08 19:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html": {
+            "status": "ACTIVE",
+            "headline": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy li",
+            "source": "CNBC Tech & AI",
+            "impact": "Bullish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4078.2,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794169039.0,
+            "date": "First Reported: 2026-11-08 18:18 UTC | Last Update: 2026-11-08 20:17 UTC",
             "fail_reason": ""
         }
     }

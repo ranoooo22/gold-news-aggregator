@@ -1,40 +1,366 @@
 [
     {
-        "main_date": "First Reported: 2026-11-08 18:18 UTC",
-        "original_date": "2026-11-08 18:18",
-        "_timestamp": 1794161910.0,
+        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-08 18:42 UTC",
+        "original_date": "2026-11-05 15:15",
+        "_timestamp": 1794163320.0,
         "articles": [
             {
-                "title": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
-                "link": "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-08 18:18",
-                "description": "Lawmakers want to question Nvidia CEO Jensen Huang following reports about his relationship with an alleged Chinese intelligence asset.",
-                "_timestamp": 1794161910.0
+                "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
+                "link": "https://www.fool.com/investing/2026/11/05/nvidia-vs-taiwan-semiconductor-the-ai-revolution-i/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:22",
+                "description": "These semiconductor giants are among the biggest beneficiaries of the AI chip boom, and they are expected to sustain solid growth levels over the long run.",
+                "_timestamp": 1793892120.0
+            },
+            {
+                "title": "Amazon and Google Could Outperform Nvidia as AI Trade Enters New Phase, Says Joseph Carlson",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62926393/amazon-google-nvidia?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:15",
+                "description": "Amazon (NASDAQ:AMZN) and Alphabet (NASDAQ:GOOGL) could outperform Nvidia (NASDAQ:NVDA) as AI investors shift from companies selling the hardware to those turning it into revenue, YouTube investor Joseph Carlson argues. A day after Democrats swept Congress and data-center critics won key...",
+                "_timestamp": 1793891708.0
+            },
+            {
+                "title": "NVDA vs AMD: which stock has the better bounce setup",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvda-vs-amd-stock-better-155640375.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:56",
+                "description": "Investing.com -- The better tactical bounce candidate is NVIDIA Corporation (NVDA), not because its trend is healthy, but because Advanced Micro Devices Inc (AMD) is showing heavier damage and volatility.",
+                "_timestamp": 1793894200.0
+            },
+            {
+                "title": "Not Nvidia. Not Micron. This Dutch Company Controls a Key Bottleneck of AI Chip Production.",
+                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-micron-this-dutch-company-controls/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 17:57",
+                "description": "ASML makes the only machines that can print the world's most advanced chips, and its customers are already asking for delivery slots in 2029 and 2030.",
+                "_timestamp": 1793901420.0
+            },
+            {
+                "title": "Not Nvidia. Not AMD. 2 Chip Stocks I'd Buy Before the End of the Year.",
+                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-amd-2-chip-stocks-id-buy-in-2026/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 18:33",
+                "description": "Micron and Taiwan Semiconductor are key suppliers to the computing unit designers.",
+                "_timestamp": 1793903580.0
+            },
+            {
+                "title": "Advanced Micro Devices vs. Taiwan Semiconductor Manufacturing: The AI Sell-Off Is Exposing a Critical Difference Investors Shouldn't Ignore for 2027",
+                "link": "https://www.fool.com/coverage/better-buy/2026/11/05/advanced-micro-devices-vs-taiwan-semiconductor-manufacturing-the-ai-sell-off-is-exposing-a-critical-difference-investors-shouldn-t-ignore-for-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 20:20",
+                "description": "For investors looking toward 2027, profitability and pricing power could matter more than ever.",
+                "_timestamp": 1793910002.0
+            },
+            {
+                "title": "Prediction: These Will Be Nvidia's and Palantir's Stock Prices by 2027 (Hint: Only 1 Is a Buy)",
+                "link": "https://www.fool.com/investing/2026/11/05/prediction-these-will-be-nvidias-and-palantirs-sto/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:46",
+                "description": "Nvidia and Palantir are two popular AI picks, but only one makes sense right now.",
+                "_timestamp": 1793907960.0
+            },
+            {
+                "title": "Should You Buy Nvidia Stock Before Nov. 17?",
+                "link": "https://www.fool.com/investing/2026/11/05/should-you-buy-nvidia-stock-before-nov-17/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 02:20",
+                "description": "The AI chip maker is trading at a discount.",
+                "_timestamp": 1793931600.0
+            },
+            {
+                "title": "Should You Buy Nvidia Before Nov. 17? The Evidence is Piling Up and Here’s What It Shows.",
+                "link": "https://www.fool.com/investing/2026/11/06/should-you-buy-nvidia-before-nov-17-the-evidence-is-piling-up-and-here-s-what-it-shows/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 09:25",
+                "description": "Investing in Nvidia has been a sure bet in recent years.",
+                "_timestamp": 1793957102.0
+            },
+            {
+                "title": "Nvidia Shares Suffer Worst Day Since January 2025 -- AI Fears Trigger $450 Billion Rout",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-shares-suffer-worst-day-104000765.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 10:40",
+                "description": "Nvidia Stock Plunges as Texas Data Center Restrictions Put AI Boom at Risk",
+                "_timestamp": 1793961600.0
+            },
+            {
+                "title": "Nvidia Isn’t the Only AI Stock That Could Surprise Wall Street in 2027",
+                "link": "https://247wallst.com/investing/2026/11/06/nvidia-isnt-the-only-ai-stock-that-could-surprise-wall-street-in-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 14:03",
+                "description": "Memory chips were once the dullest corner of semiconductors, yet one stock has tripled while trading at a fraction of the market's earnings multiple. Wall Street and the market disagree sharply on what comes next, and the gap could close fast.",
+                "_timestamp": 1793973810.0
+            },
+            {
+                "title": "Forget Nvidia. Here’s the Company Behind the Chips",
+                "link": "https://247wallst.com/investing/2026/11/06/forget-nvidia-heres-the-company-behind-the-chips/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:03",
+                "description": "Every AI chip from Nvidia and Broadcom runs through one company's fabs, yet that company trades at a fraction of the valuation its customers command. The gap raises a question worth answering before the market closes it.",
+                "_timestamp": 1793984581.0
+            },
+            {
+                "title": "NVIDIA Corporation (NVDA) Is Taking AI Beyond Chips: Here’s What Could Drive Its Next Growth Phase",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-corporation-nvda-taking-ai-173307195.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:33",
+                "description": "Liontrust Investment Partners recently released its “GF Global Innovation Fund” Q3 2026 investor letter. A copy of the letter can be downloaded here. The Fund returned -3.0% in the third quarter of 2026, underperforming the MSCI AC World Index, which gained 1.6%. However, the Fund remained ahead year to date, returning 17.9% compared with 13.0% […]",
+                "_timestamp": 1793986387.0
+            },
+            {
+                "title": "Nvidia Is Reportedly Pouring Billions Into AI's Next Big Bottleneck: Advanced Chip Packaging",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63010319/nvidia-chip-packaging?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 20:30",
+                "description": "Nvidia (NASDAQ:NVDA) is reportedly financing billions of dollars in new factories and equipment to overcome a shortage limiting how many AI chips the industry can produce. The money is going to Taiwan’s Siliconware Precision Industries (SPIL), a subsidiary of ASE...",
+                "_timestamp": 1793997007.0
+            },
+            {
+                "title": "Dell vs. Nvidia: Chip Stocks Just Suffered Their Worst Sell-Off Since 2020. Which Is the Better Buy for 2027?",
+                "link": "https://www.fool.com/coverage/better-buy/2026/11/06/dell-vs-nvidia-chip-stocks-just-suffered-their-worst-sell-off-since-2020-which-is-the-better-buy-for-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 19:50",
+                "description": "Dell's cash flow and NVIDIA's margins tell very different stories, and a sizable valuation gap may matter more than either name suggests.",
+                "_timestamp": 1793994602.0
+            },
+            {
+                "title": "Micron vs. Nvidia: Which AI Stock Is a Better Buy for 2027?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/micron-vs-nvidia-ai-stock-211242383.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 21:12",
+                "description": "Micron (MU) and Nvidia (NVDA) have become major beneficiaries of the AI boom. Nvidia leads in AI chips, while Micron supplies memory used in AI systems. Both companies could benefit from continued spending on data centers in 2027. In terms of price performance, Micron stock has gained 130% year-to-date, while Nvidia stock has fallen about 3%. Still, analysts see room for both stocks to rise. TipRanks data shows Micron has greater forecast upside.",
+                "_timestamp": 1793999562.0
+            },
+            {
+                "title": "A Retiree Who Bought 1,000 Nvidia Shares at $122 Just Watched Chips Have Their Worst Day Since 2020",
+                "link": "https://247wallst.com/investing/2026/11/07/a-retiree-who-bought-1000-nvidia-shares-at-122-just-watched-chips-have-their-worst-day-since-2020/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 05:06",
+                "description": "Chip stocks had their worst day since 2020. Here is what it did to one retiree's 1,000 Nvidia shares, and the case for holding or trimming.",
+                "_timestamp": 1794028012.0
+            },
+            {
+                "title": "Not Nvidia. Not Micron. After the Chip Sell-Off, I'd Buy This AI Stock and Hold It Forever.",
+                "link": "https://www.fool.com/investing/2026/11/07/not-nvidia-not-micron-after-the-chip-sell-off-id-b/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 14:36",
+                "description": "The market is shifting away from chip stocks, but that could create some great opportunities for investors.",
+                "_timestamp": 1794062160.0
+            },
+            {
+                "title": "Nvidia Stock Has More Than 60% Upside According to Analysts' Average Price Target. Should You Buy While the AI Trade Wobbles?",
+                "link": "https://www.fool.com/investing/2026/11/07/nvidia-stock-has-more-than-60-upside-according-to/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 18:20",
+                "description": "Nvidia stock looks cheaper, and its growth prospects are well intact.",
+                "_timestamp": 1794075600.0
+            },
+            {
+                "title": "Why Nvidia at 13 Times Expected Earnings Still Isn’t Cheap",
+                "link": "https://247wallst.com/investing/2026/11/08/why-nvidia-at-13-times-expected-earnings-still-isnt-cheap/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 16:08",
+                "description": "Nvidia's earnings multiple looks like a bargain next to its AI growth, yet a few shaky assumptions could erase that discount fast. Three signals in the upcoming earnings report will show whether the cheapness is real or an illusion.",
+                "_timestamp": 1794154080.0
+            },
+            {
+                "title": "America’s AI Spending Boom Just Crossed a Staggering $1 Trillion Milestone",
+                "link": "https://247wallst.com/investing/2026/11/08/americas-ai-spending-boom-just-crossed-a-staggering-1-trillion-milestone/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 16:15",
+                "description": "Record shipments of AI hardware are pouring into American data centers, yet NVIDIA's stock has dropped more than 21% in a month. What does the import data reveal that the share price refuses to show, and who else profits?",
+                "_timestamp": 1794154533.0
+            },
+            {
+                "title": "This Stock Is a Nearly Guaranteed Winner From the AI Infrastructure Buildout",
+                "link": "https://www.fool.com/investing/2026/11/08/this-stock-is-a-nearly-guaranteed-winner-from-the/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 18:42",
+                "description": "Taiwan Semiconductor is a key supplier to almost every major logic chip designer.",
+                "_timestamp": 1794163320.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
-            "Event_Timestamp": "2026-11-08 18:18 UTC (approx. 0.1 hours ago relative to 2026-11-08 18:26 UTC)",
-            "Facts": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy links, with lawmakers seeking to question him regarding relationships with an alleged Chinese intelligence asset [CNBC Tech & AI].",
-            "Uncertainties": "Whether formal congressional subpoenas will be issued or if this will remain standard political posturing without material financial impact on Nvidia's operations.",
-            "Macro_Context": "Nasdaq 100 is up +1.81%, reflecting tech resilience, but political friction in semis adds headline risk. XAU/USD sits at 4070.59 with a 24/7 XAU/USDT basis spread showing a -0.48% weekend gap ($4050.95 vs $4070.59).",
-            "Bull_Case": "Regulatory or geopolitical friction surrounding major tech leaders can trigger broader equity pullbacks, increasing safe-haven inflows into gold.",
-            "Bear_Case": "The news is isolated to political theater regarding one executive/firm, with tech indices remaining robust (+1.81%), limiting safe-haven demand.",
-            "Historical_Calibration": "Drawing from our 11.3% win rate and recent missed setups where signals failed due to minor macro alignment and tight targets, this single-firm headline lacks cross-market systemic weight to shift gold meaningfully.",
+            "Event_Timestamp": "2026-11-07 to 2026-11-08 (approx. 2 to 26 hours ago relative to 2026-11-08 18:46 UTC)",
+            "Facts": "Nvidia and Taiwan Semiconductor face continued focus as AI infrastructure spending crosses $1 trillion [Yahoo Finance Nasdaq]. Nvidia's stock has pulled back over 21% from recent highs despite massive hardware shipments to U.S. data centers [Yahoo Finance Nasdaq]. Analysts still cite more than 60% upside based on average price targets [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether the recent tech hardware spending boom will translate into sustained margin growth or face saturation and valuation multiple compression.",
+            "Macro_Context": "Nasdaq 100 is up +1.81% over the last 24 hours, showing strong risk-on equity sentiment. A robust equity market typically diminishes safe-haven gold demand, while inverse USD proxy EUR/USD fell -0.70%.",
+            "Bull_Case": "Persistent tech equity volatility and concerns over AI spending sustainability could trigger rotational flows out of equities and into safe-haven assets like gold.",
+            "Bear_Case": "Strong Nasdaq performance (+1.81%) and risk-on equity sentiment directly reduce demand for safe-haven gold, favoring growth assets.",
+            "Historical_Calibration": "Past tech and stock market signals have repeatedly failed due to opposing macro strength in equities (Nasdaq +1.81%) and lack of direct translation to precious metals.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
             "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "The 4h/24h price action (-$28.39 over 24h) reflects broader consolidation rather than single-stock geopolitical noise.",
+            "Past_Price_Action_Cause": "Nasdaq outperformance and strong risk appetite weigh on non-yielding safe-haven assets.",
             "Orderflow_Price_Target": "N/A"
-        }
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-08 18:18 UTC",
+        "main_date": "First Reported: 2026-11-08 18:38 UTC",
+        "original_date": "2026-11-08 18:38",
+        "_timestamp": 1794163102.0,
+        "articles": [
+            {
+                "title": "Iranian military ready to defend with advanced homegrown arms",
+                "link": "https://en.mehrnews.com/news/249252/Iranian-military-ready-to-defend-with-advanced-homegrown-arms",
+                "source": "Mehr News Agency",
+                "date": "2026-11-08 18:38",
+                "description": "TEHRAN, Nov. 08 (MNA) – Deputy Speaker of Iranian Parliament says that the armed forces are well prepared to defend their country with advanced locally-made weapons.",
+                "_timestamp": 1794163102.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-08 18:38 UTC (0.1 hours ago relative to 2026-11-08 18:46 UTC)",
+            "Facts": "The Deputy Speaker of the Iranian Parliament announced that Iranian armed forces are fully prepared to defend the country with advanced homegrown arms [Mehr News Agency].",
+            "Uncertainties": "Specific tactical deployments and whether this rhetorical escalation will translate into immediate kinetic actions or supply disruptions.",
+            "Macro_Context": "Brent Crude oil is down -0.95% to $100.47, reflecting easing immediate fears of a wider war as noted in broader market reports, despite regional rhetoric. XAU/USDT 24/7 basis shows a -0.44% weekend gap.",
+            "Bull_Case": "Middle East rhetoric highlights ongoing geopolitical fragmentation, maintaining a structural geopolitical risk premium under gold.",
+            "Bear_Case": "Markets are becoming desensitized to standard deterrent rhetoric from Iranian officials, especially as oil prices drop -0.95%.",
+            "Historical_Calibration": "Geopolitical rhetoric without active kinetic escalation often results in muted gold responses or fades within the 20-hour window, as seen in past failed geopolitical setups.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Geopolitical posturing provides baseline support, though offset by dropping oil prices.",
+            "Orderflow_Price_Target": "4078.28"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-06 05:56 UTC | Last Update: 2026-11-08 18:35 UTC",
+        "original_date": "2026-11-06 05:56",
+        "_timestamp": 1794162900.0,
+        "articles": [
+            {
+                "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62966566/stock-market-will-sp-500-open-up-or-down-today-74?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-06 05:56",
+                "description": "U.S. stock futures are mixed early Friday as Wall Street awaits the critical October nonfarm payrolls report and tech shares attempt to rebound from their worst session since 2020. The Polymarket traders, a Polygon (CRYPTO: POL) based prediction platform, are...",
+                "_timestamp": 1793944568.0
+            },
+            {
+                "title": "S&P 500 Posts Weekly Drop as Energy, Technology Slide in Election Aftermath",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-weekly-drop-214616427.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-06 21:46",
+                "description": "The Standard & Poor's 500 index fell 2.7% this week, led by declines in energy and technology stocks",
+                "_timestamp": 1794001576.0
+            },
+            {
+                "title": "The S&P 500 Just Fell More Than 4% in a Day From Near Its Record. Here's What Happened Next in 2 Similar Situations Since 1950.",
+                "link": "https://www.fool.com/investing/2026/11/06/the-s-and-p-500-just-fell-more-than-4-in-a-day-from-near-its-record-here-s-what-happened-next-in-2-similar-situations-since-1950/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 02:43",
+                "description": "The only two close matches are 1955 and 1989. A year later, they were nothing alike.",
+                "_timestamp": 1794019382.0
+            },
+            {
+                "title": "The S&P 500 Is Up 75% In 3 Years. Priced In Gold, It Is Down 14%. Which Is Real?",
+                "link": "https://www.trefis.com/stock/nvda/articles/623129/the-s-p-500-is-up-75-in-3-years-priced-in-gold-it-is-down-14-which-is-real/2026-11-07?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-07 09:14",
+                "description": "Part of our series on building a mix that lasts. Start here: is 60/40 dead.",
+                "_timestamp": 1794042894.0
+            },
+            {
+                "title": "Tech stocks are now cheaper than the S&P 500 for the first time since 2017 — here's what history says comes next: Chart of the Day",
+                "link": "https://finance.yahoo.com/markets/article/tech-stocks-are-now-cheaper-than-the-sp-500-for-the-first-time-since-2017--heres-what-history-says-comes-next-chart-of-the-day-130131812.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 13:01",
+                "description": "Chip stocks lost nearly 30% in five weeks, but the typical S&amp;P 500 stock barely moved, and tech now trades below the market's valuation for the first time since 2017.",
+                "_timestamp": 1794056491.0
+            },
+            {
+                "title": "Democrats Just Swept Congress. Here's What History Says the S&P 500 Does Next.",
+                "link": "https://www.fool.com/investing/2026/11/07/democrats-just-swept-congress-heres-what-history-s/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 14:20",
+                "description": "Will a divided government be the undoing of the bull market?",
+                "_timestamp": 1794061200.0
+            },
+            {
+                "title": "Is a Stock Market Crash Coming in 2026? Here's What Decades of History Suggest.",
+                "link": "https://www.fool.com/investing/2026/11/07/is-a-stock-market-crash-coming-in-2026-heres-what/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 14:22",
+                "description": "Will history repeat itself?",
+                "_timestamp": 1794061320.0
+            },
+            {
+                "title": "The S&P 500 Just Had Its Worst Week Since the April 2025 Tariff Crash",
+                "link": "https://247wallst.com/investing/2026/11/07/the-sp-500-just-had-its-worst-week-since-the-april-2025-tariff-crash/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 17:33",
+                "description": "A fourth straight weekly loss looks bad, but the S&amp;P 500's record rests on a technicality, and the real damage hit one corner of the market. With CPI and NVIDIA earnings looming, your index fund may own more of that risk than you think.",
+                "_timestamp": 1794072819.0
+            },
+            {
+                "title": "This Dividend King Yielding 2X the S&P 500 Looks Like a Buy in November.",
+                "link": "https://www.fool.com/investing/2026/11/07/this-dividend-king-yielding-2x-the-sp-500-looks/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 17:35",
+                "description": "Buy for the yield, stay for the potential comeback with this home improvement retailer's shares.",
+                "_timestamp": 1794072900.0
+            },
+            {
+                "title": "Here's Why I'm Still Investing in the S&P 500, Even if a Bear Market Is Coming",
+                "link": "https://www.fool.com/investing/2026/11/08/heres-why-im-still-investing-in-the-sp-500-even-if/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 11:58",
+                "description": "Buying before a market decline feels awful. But waiting indefinitely carries its own risks.",
+                "_timestamp": 1794139080.0
+            },
+            {
+                "title": "Corporate America’s profit numbers are just barely beating Wall Street’s expectations",
+                "link": "https://www.marketwatch.com/story/corporate-americas-profit-numbers-are-just-barely-beating-wall-streets-expectations-eaa67fe2?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-08 15:00",
+                "description": "S&amp;P 500 companies’ earnings are mostly topping analysts’ estimates — but by the narrowest margin in roughly four years.",
+                "_timestamp": 1794150000.0
+            },
+            {
+                "title": "A Stock Market Crash Could Be Life-Changing for Investors Who Have These 3 Things",
+                "link": "https://www.fool.com/investing/2026/11/08/stock-market-crash-life-changing-investors/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 18:35",
+                "description": "Stock market crashes are inevitable, but missing the opportunities they create isn't.",
+                "_timestamp": 1794162900.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-07 to 2026-11-08 (approx. 3 to 31 hours ago relative to 2026-11-08 18:46 UTC)",
+            "Facts": "Corporate America's S&P 500 earnings are beating Wall Street estimates by the narrowest margin in roughly four years [MarketWatch Macro]. Commentary highlights ongoing debates about potential bear markets and stock market crash preparations [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether narrowing corporate profit margins will trigger a broader equity valuation correction.",
+            "Macro_Context": "Nasdaq 100 rose +1.81%, while 10Y US Treasury Bond prices declined -0.18% (yields rising). Retail positioning in gold remains heavily long at 71.7%.",
+            "Bull_Case": "Narrowing corporate earnings beats can introduce sudden equity market jitters, prompting defensive capital reallocation into gold.",
+            "Bear_Case": "Equities remain resilient with the Nasdaq up +1.81%, neutralizing immediate systemic panic.",
+            "Historical_Calibration": "Macro equity commentary frequently fails to trigger immediate gold moves when major tech indices are rallying strongly.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Weeks/Months",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "Mixed equity fundamentals compete with strong tech sector performance.",
+            "Orderflow_Price_Target": "N/A"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-08 18:34 UTC",
         "original_date": "2026-11-02 17:15",
-        "_timestamp": 1794161906.0,
+        "_timestamp": 1794162842.0,
         "articles": [
             {
                 "title": "Morning update",
@@ -531,27 +857,511 @@
                 "date": "2026-11-08 18:18",
                 "description": "TEHRAN, Nov. 08 (MNA) – Foreign Minister Abbas Araghchi says that it is now up to the White House to choose between reaching an aggrement with Iran after stopping confict son all fronts or opt for a war that will end in another defeat for the US.",
                 "_timestamp": 1794161906.0
+            },
+            {
+                "title": "Iran's Araghchi calls on the US to end war 'on all fronts'",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-araghchi-calls-us-end-war-all-fronts",
+                "source": "Middle East Eye",
+                "date": "2026-11-08 18:34",
+                "description": "Iran's Araghchi calls on the US to end war 'on all fronts'\n\n    \n    \n\n        \n    \n                Iranian foreign minister Abbas Aragchi called on the White House to \"meet the requirements\" of Tehran's 2-day proposal and \"end to war on all fronts\" on Wednesday.&nbsp;\n\nIn a post on X, Aragchi wrote that \"American voters have made their choice. Time for the White House to make its own,\" referring to the US President Donald Trump's defeats in the",
+                "_timestamp": 1794162842.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-08 18:18 UTC (approx. 0.1 to 25 hours ago relative to 2026-11-08 18:26 UTC)",
-            "Facts": "Iranian Foreign Minister Abbas Araghchi stated the White House must choose between a deal or a war ending in US defeat [Mehr News Agency]. Meanwhile, Iranian media suggested recent blasts were domestic military activities rather than US strikes, while shipping incidents continue in the Strait of Hormuz [Middle East Eye]. The IRGC also dismissed the US Task Force Iron Gate as wordplay [Middle East Eye].",
-            "Uncertainties": "Whether military friction in the Strait of Hormuz will escalate into a genuine supply-disrupting conflict or remain contained posturing.",
-            "Macro_Context": "Brent Crude Oil fell -0.95% to $100.47, indicating markets currently price out worst-case supply shocks. EUR/USD is down -0.70%, US 10Y yields are slightly lower (107.235, -0.18%), and the 24/7 XAU/USDT basis indicates a -0.48% weekend gap.",
-            "Bull_Case": "Persistent Middle Eastern tensions and threats of conflict keep geopolitical risk premiums alive, supporting safe-haven demand for gold.",
-            "Bear_Case": "Brent crude's decline (-0.95%) and Iranian reports downplaying specific US strikes suggest easing fears of immediate wider war, weighing on oil-linked safe havens.",
-            "Historical_Calibration": "Given the poor win rate (11.3%) and tendency for geopolitical headlines to produce false breakouts without broader liquidity alignment, expecting a sustained directional move solely on rhetoric is risky.",
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-08 09:52 to 18:34 UTC (approx. 0.2 to 9 hours ago relative to 2026-11-08 18:46 UTC)",
+            "Facts": "Iranian Foreign Minister Abbas Araghchi called on the White House to 'end war on all fronts' and meet the requirements of Tehran's proposal following U.S. political shifts [Middle East Eye]. Simultaneously, the IRGC dismissed U.S. economic pressure plans as 'wordplay' [Middle East Eye].",
+            "Uncertainties": "Whether backchannel diplomacy or escalating economic sanctions will prevail between Washington and Tehran.",
+            "Macro_Context": "Brent crude is down -0.95%, and the 24/7 XAU/USDT basis shows a -0.44% discount ($-17.90 gap) pointing to a weekend gap down. Retail sentiment is 71.7% long.",
+            "Bull_Case": "High-level diplomatic brinkmanship and unresolved U.S.-Iran tensions create safe-haven demand and protect gold from deeper corrections.",
+            "Bear_Case": "Direct calls for ending conflicts and negotiations signal a diplomatic pathway, reducing the probability of an immediate catastrophic military escalation.",
+            "Historical_Calibration": "Diplomatic statements paired with falling oil prices (-0.95%) historically fail to sustain bullish gold momentum over 20-hour evaluation windows.",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Gold is consolidating around $4070.59 while digesting weekend geopolitical rhetoric against a backdrop of a -0.48% crypto basis discount.",
-            "Orderflow_Price_Target": "4078.28"
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Conflicting signals between diplomatic overtures and economic blockades balance price action.",
+            "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-08 18:28 UTC",
+        "original_date": "2026-11-02 21:53",
+        "_timestamp": 1794162532.0,
+        "articles": [
+            {
+                "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
+                "link": "https://en.mehrnews.com/news/249120/IRGC-downs-55th-US-MQ-9-over-Strait-of-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 03:45",
+                "description": "TEHRAN, Nov. 03 (MNA) – A US MQ-9 drone was intercepted and destroyed over the eastern Strait of Hormuz by IRGC air defenses, the 55th such drone downed, the Islamic Revolution Guard Corps said.",
+                "_timestamp": 1793677510.0
+            },
+            {
+                "title": "Iran captures two US MQM-170 drones over Qeshm Island",
+                "link": "https://en.mehrnews.com/news/249118/Iran-captures-two-US-MQM-170-drones-over-Qeshm-Island",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 03:34",
+                "description": "TEHRAN, Nov. 03 (MNA) – Two US MQM-170 reconnaissance drones were grounded over southern Qeshm Island by the Islamic Revolution Guard Corps Aerospace Force's advanced electronic warfare systems.",
+                "_timestamp": 1793676894.0
+            },
+            {
+                "title": "Explosions heard on Qeshm Island, Bandar Lengeh",
+                "link": "https://en.mehrnews.com/news/249117/Explosions-heard-on-Qeshm-Island-Bandar-Lengeh",
+                "source": "Mehr News Agency",
+                "date": "2026-11-02 22:05",
+                "description": "TEHRAN, Nov. 03 (MNA) – Local Iranian media reported hearing of explosions on Iran’s southern Qeshm Island and Bandar Lengeh on Moday night.",
+                "_timestamp": 1793657149.0
+            },
+            {
+                "title": "IRGC says downed two US drones near Strait of Hormuz",
+                "link": "https://en.mehrnews.com/news/249116/IRGC-says-downed-two-US-drones-near-Strait-of-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-02 21:53",
+                "description": "TEHRAN, Nov. 03 (MNA) – IRGC Aeospace Force says to have downed two American MQM-170 drones using electronic warfare near Qeshm Island in the Strait of Hormuz.",
+                "_timestamp": 1793656399.0
+            },
+            {
+                "title": "European gas surges as U.S. strikes Iran’s Qeshm Island",
+                "link": "https://www.investing.com/news/commodities-news/european-gas-surges-as-us-strikes-irans-qeshm-island-4993864",
+                "source": "Investing.com",
+                "date": "2026-11-03 09:48",
+                "description": "",
+                "_timestamp": 1793699325.0
+            },
+            {
+                "title": "US hits Qeshm Island, Pezeshkian signals more diplomacy: Iran war latest",
+                "link": "https://www.aljazeera.com/news/2026/11/3/us-hits-qeshm-island-pezeshkian-signals-more-diplomacy-iran-war-latest?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-03 10:40",
+                "description": "With the first US attack on Qeshm Island since June, Iran and the US are on parallel tracks towards both peace and war.",
+                "_timestamp": 1793702434.0
+            },
+            {
+                "title": "US conducts series of ‘defensive strikes’ against Iran",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/3/us-conducts-series-of-defensive-strikes-against-iran?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-03 10:39",
+                "description": "The US has carried out a series of ‘defensive strikes’ on Iranian locations near Hormuz, with explosions heard on Qeshm.",
+                "_timestamp": 1793702376.0
+            },
+            {
+                "title": "IRGC claims three tankers exploded after hitting naval mines in Hormuz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-three-tankers-exploded-after-hitting-naval-mines-hormuz",
+                "source": "Middle East Eye",
+                "date": "2026-11-03 11:10",
+                "description": "IRGC claims three tankers exploded after hitting naval mines in Hormuz\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard (IRGC) has said that three tankers have exploded after a collision with naval mines in the Strait of Hormuz. The IRGC said the tankers were trying to cross the Strait without permission from Tehran.\n\nIt added that the ships had turned off their geolocation tracking systems as they crossed the southern part of the Strait. There are no reports of any casualties as yet.",
+                "_timestamp": 1793704252.0
+            },
+            {
+                "title": "3 rankers exploded after hitting naval mines in Hormuz: IRGC",
+                "link": "https://en.mehrnews.com/news/249137/3-rankers-exploded-after-hitting-naval-mines-in-Hormuz-IRGC",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 11:59",
+                "description": "TEHRAN, Nov. 03 (MNA) – The Public Relations Department of the Islamic Revolutionary Guards Corps (IRGC) said on Tuesday that three tankers were exploded after hitting mines while using unauthorized passage routes in Hormuz.",
+                "_timestamp": 1793707183.0
+            },
+            {
+                "title": "2 more US drones downed in south of Iran over Bandar-e Khamir",
+                "link": "https://en.mehrnews.com/news/249140/2-more-US-drones-downed-in-south-of-Iran-over-Bandar-e-Khamir",
+                "source": "Mehr News Agency",
+                "date": "2026-11-03 12:29",
+                "description": "TEHRAN, Nov. 03 (MNA) – Two American LUCAS drones were destroyed in the skies over Bandar-e Khamir by fire from the IRGC’s Imam Sajjad (AS) Air Defense unit, operating within the integrated air defense network.",
+                "_timestamp": 1793708951.0
+            },
+            {
+                "title": "Three oil tankers explode and catch fire in Strait of Hormuz: IRGC Navy",
+                "link": "https://www.tehrantimes.com/news/531802/Three-oil-tankers-explode-and-catch-fire-in-Strait-of-Hormuz",
+                "source": "Tehran Times",
+                "date": "2026-11-03 16:34",
+                "description": "TEHRAN – Three oil tankers exploded and caught fire after entering an unauthorized route through the Strait of Hormuz and striking sea mines, the Islamic Revolution Guards Corps (IRGC) Navy said on Tuesday.",
+                "_timestamp": 1793723681.0
+            },
+            {
+                "title": "IRGC says 4 oil tankers destroyed, 56th US drone downed",
+                "link": "https://en.mehrnews.com/news/249151/IRGC-says-4-oil-tankers-destroyed-56th-US-drone-downed",
+                "source": "Mehr News Agency",
+                "date": "2026-11-04 04:27",
+                "description": "TEHRAN, Nov. 04 (MNA) – Four violating oil tankers struck mines and were destroyed in the southern Strait of Hormuz, two other vessels were stopped, and a 56th US MQ-9 drone was downed, the Islamic Revolution Guard Corps said.",
+                "_timestamp": 1793766436.0
+            },
+            {
+                "title": "Iran's IRGC says four tankers ablaze after hitting mines in Hormuz Strait",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-hormuz-strait",
+                "source": "Middle East Eye",
+                "date": "2026-11-04 06:20",
+                "description": "Iran's IRGC says four tankers ablaze after hitting mines in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran’s &nbsp;Islamic Revolutionary Guard Corps (IRGC) said four \"rogue\"&nbsp;oil tankers were destroyed after htting&nbsp;naval mines while trying to traverse a route in the Strait of Hormuz that is considered&nbsp;prohibited.\n\nThe incident occurred south of the waterway, with the statement adding that IRGC forces also&nbsp;intercepted two other vessels.",
+                "_timestamp": 1793773253.0
+            },
+            {
+                "title": "Iran Says Four Oil Tankers Destroyed by Mines Near Strait of Hormuz",
+                "link": "https://finance.yahoo.com/energy/articles/iran-says-four-oil-tankers-101500149.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 10:15",
+                "description": "Iran claims four oil tankers were destroyed by naval mines near the Strait of Hormuz as escalating maritime security threats disrupt Middle Eastern oil exports.",
+                "_timestamp": 1793787300.0
+            },
+            {
+                "title": "Morning update",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-661",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 07:48",
+                "description": "Morning update \n\n    \n    \n\n        \n    \n                Good morning Middle East Eye readers,\n\nHere are the latest developments:&nbsp;\n\n\n\t\n\tIran's Islamic Revolutionary Guard Corps (IRGC) announced that two oil tankers and a tugboat caught fire in the Strait of Hormuz.&nbsp;According to the statement, the separate incidents occurred after the vessels were attempting to pass through an \"unauthorised route\".\n\t\n\t\n\tSouth Korea's anti-piracy Cheonghae unit will expand its operations into waters nearby the Strait of Hormuz, according to a report by the Yonhap News Agency citing the Korean Defence Ministry. The government is set to submit a motion to parliament to extend the period of the unit's deployment to the region, which is expected to expire at the end of this year.&nbsp;\n\t\n\t\n\tIsraeli president Isaac Herzog warned prime minister Benjamin Netanyahu other senior officials of a \"highly explosive and dangerous reality\" in the West Bank amid increasing settler violence.&nbsp;Herzog said that the elections in Israel, the US and the Palestinian Authority - which the latter has since been postponed - alongside the olive harvest season are set to \"create a highly explosive and dangerous reality\".\n\t\n\t\n\tThe US sanctioned two individuals and another entity accused of aiding Iran in sourcing man-portable air-defense systems (MANPADS).&nbsp;The statement said that sanctions \"close off more of the channels Tehran uses to try to rebuild its arsenal and raise the risk for third-country brokers and suppliers\".\n\t\n\t\n\tA ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday. Meanwhile, Houthi-affiliated media reported that Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of al-Jawf, al-Bayda, Saada, and Taiz.",
+                "_timestamp": 1793864938.0
+            },
+            {
+                "title": "Iran’s IRGC says two tankers, tugboat were ablaze in Hormuz Strait",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-two-tankers-tugboat-were-ablaze-hormuz-strait",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 04:58",
+                "description": "Iran’s IRGC says two tankers, tugboat were ablaze in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard Corps (IRGC)&nbsp;announced that&nbsp;two oil tankers and a tugboat caught fire in the Strait of Hormuz.&nbsp;\n\nAccording to the statement, the separate incidents occurred after the vessels were attempting to&nbsp;pass through an \"unauthorised route\",&nbsp;\n\nOne large oil tanker was passing through what the IRGC described as an \"illegal southern passageway\", hitting a mine and catching fire.&nbsp;\n\nAnother supertanker, leaving eastern section of the waterway, was caught in a massive fire. A tugboat that was deployed to extinguish the blaze subsequently burst into flames.\n\n\"The US regime, which imposes very heavy insurance costs on American taxpayers and its allies in the region by insisting and inciting vessels to violate and pass through mined passages, would not have suffered these heavy losses and a disgraceful electoral defeat if it had had some foresight, instead of paying these costs by releasing Iran's frozen credits, which are not less than half of these costs that have been made so far,\" the statement added, referring to the nationwide Democrats' sweep during the midterm elections.\n\n\"Attempting to break the law in the Strait of Hormuz will not result in anything other than more financial losses and greater political defeats for the US.\"",
+                "_timestamp": 1793854698.0
+            },
+            {
+                "title": "IRGC reports tanker explosions in Hormuz, US drone seizures",
+                "link": "https://en.mehrnews.com/news/249182/IRGC-reports-tanker-explosions-in-Hormuz-US-drone-seizures",
+                "source": "Mehr News Agency",
+                "date": "2026-11-05 04:25",
+                "description": "TEHRAN, Nov. 05 (MNA) – The Islamic Revolution Guard Corps said two oil tankers and a tugboat caught fire after crossing an unauthorized route in the Strait of Hormuz overnight, and its electronic warfare units captured two Lucas drones intact.",
+                "_timestamp": 1793852707.0
+            },
+            {
+                "title": "Another violating oil tanker catches fire in Strait of Hormuz",
+                "link": "https://en.mehrnews.com/news/249187/Another-violating-oil-tanker-catches-fire-in-Strait-of-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-05 10:41",
+                "description": "TEHRAN, Nov. 05 (MNA) – Iran's Army Navy said a violating tanker caught fire after hitting a naval mine in an unsafe area east of the Strait of Hormuz early today.",
+                "_timestamp": 1793875304.0
+            },
+            {
+                "title": "Iranian navy reports tanker on fire in Strait of Hormuz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-navy-reports-tanker-fire-strait-hormuz",
+                "source": "Middle East Eye",
+                "date": "2026-11-05 11:35",
+                "description": "Iranian navy reports tanker on fire in Strait of Hormuz\n\n    \n    \n\n        \n    \n                The Iranian navy reports that an \"offending tanker\" attempting to cross an \"unsafe area\" in the Strait of Hormuz has caught fire after hitting a mine.\n\nIn comments carried by Iran's semi-official Tasnim news agency, the Iranian authorities said that the vessel had halted its journey after the collision, adding that the tanker&nbsp;had “turned off its detection and navigation systems”.\n\nThe statement warned that Tehran is&nbsp;“announcing to ship owners for the umpteenth time that the Strait of Hormuz is unsafe and closed to illegal vessels that intend to transit without coordination”.",
+                "_timestamp": 1793878533.0
+            },
+            {
+                "title": "Tankers hit in Hormuz as Iran keeps up pressure after US vote",
+                "link": "https://www.investing.com/news/commodities-news/tankers-hit-in-hormuz-as-iran-keeps-up-pressure-after-us-vote-5005038",
+                "source": "Investing.com",
+                "date": "2026-11-05 15:18",
+                "description": "",
+                "_timestamp": 1793891908.0
+            },
+            {
+                "title": "Iran says tankers struck in Hormuz amid fears of new US attack",
+                "link": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-05 18:47",
+                "description": "Iranian forces say five oil tankers and a tugboat have caught fire in several incidents in the Strait of Hormuz.",
+                "_timestamp": 1793904430.0
+            },
+            {
+                "title": "Two other MQM-170 reconnaissance drones downed over Qeshm",
+                "link": "https://en.mehrnews.com/news/249189/Two-other-MQM-170-reconnaissance-drones-downed-over-Qeshm",
+                "source": "Mehr News Agency",
+                "date": "2026-11-06 05:13",
+                "description": "TEHRAN, Nov. 06 (MNA) – The Islamic Revolutionary Guard Corps (IRGC) has announced that two more US MQM-170 reconnaissance drones were brought down over Qeshm Island.",
+                "_timestamp": 1793942001.0
+            },
+            {
+                "title": "IRGC says two oil tankers ablaze after collision with mines in Hormuz Strait",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-two-oil-tankers-ablaze-after-collision-mines-hormuz-strait",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 07:58",
+                "description": "IRGC says two oil tankers ablaze after collision with mines in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran's&nbsp;Islamic Revolutionary Guard Corps (IRGC) navy announced that two&nbsp;oil tankers caught fire after being struck by mines while attempting to transit through the&nbsp;Strait of Hormuz.\n\nThe statement said that the two \"offending\" vessels - \"one in the eastern part of the Strait of Hormuz and the other in the Strait of",
+                "_timestamp": 1793951894.0
+            },
+            {
+                "title": "Two other oil tanker on fire afte hitting mines in Hormuz",
+                "link": "https://en.mehrnews.com/news/249197/Two-other-oil-tanker-on-fire-afte-hitting-mines-in-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-06 13:54",
+                "description": "TEHRAN, Nov. 06 (MNA) – IRGC Navy said Friday that two other oil tankers were halted after striking naval mines in the Strait of Hormuz.",
+                "_timestamp": 1793973248.0
+            },
+            {
+                "title": "IRGC downs two more US MQM-170 reconnaissance drones over Qeshm Island",
+                "link": "https://www.tehrantimes.com/news/531883/IRGC-downs-two-more-US-MQM-170-reconnaissance-drones-over-Qeshm",
+                "source": "Tehran Times",
+                "date": "2026-11-06 16:44",
+                "description": "TEHRAN – The Islamic Revolution Guard Corps (IRGC) says its electronic warfare systems have brought down two more US-made MQM-170 reconnaissance drones over Qeshm Island in southern Iran, bringing the number of such drones intercepted there to six.",
+                "_timestamp": 1793983492.0
+            },
+            {
+                "title": "Two tankers strike mines in Strait of Hormuz: IRGC Navy",
+                "link": "https://www.tehrantimes.com/news/531881/Two-tankers-strike-mines-in-Strait-of-Hormuz-IRGC-Navy",
+                "source": "Tehran Times",
+                "date": "2026-11-06 16:34",
+                "description": "TEHRAN – The Islamic Revolution Guard Corps (IRGC) Navy says two oil tankers attempting to navigate unauthorized routes through the Strait of Hormuz struck mines and caught fire.",
+                "_timestamp": 1793982875.0
+            },
+            {
+                "title": "IRGC says it shot down US MQ-1 drone over Qeshm island",
+                "link": "https://en.mehrnews.com/news/249198/IRGC-says-it-shot-down-US-MQ-1-drone-over-Qeshm-island",
+                "source": "Mehr News Agency",
+                "date": "2026-11-06 17:59",
+                "description": "TEHRAN, Nov. 06 (MNA) – The Islamic Revolution Guards Corps (IRGC) said its air defense systems had intercepted and destroyed a US MQ-1 reconnaissance and combat drone over Qeshm Island in southern Iran.",
+                "_timestamp": 1793987981.0
+            },
+            {
+                "title": "Seafarer killed in Gulf as Iran says ships ablaze in Hormuz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/seafarer-killed-gulf-iran-says-ships-ablaze-hormuz",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 18:16",
+                "description": "Seafarer killed in Gulf as Iran says ships ablaze in Hormuz\n\n    \n    \n\n        \n    \n                A seafarer was killed when a Greek-owned oil tanker was struck by a projectile in the Gulf, its owner said on Friday, as Iran said several tankers had caught fire after hitting mines in the Strait of Hormuz.\n\nThe Marshall Islands-flagged Velos Sapphire was sailing empty to Bahrain when it was hit on Thursday, Athens-based Velos Tankers said in a ",
+                "_timestamp": 1793988978.0
+            },
+            {
+                "title": "Two missiles struck Qeshm Island, Iranian media says",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/two-missiles-struck-qeshm-island-iranian-media-says",
+                "source": "Middle East Eye",
+                "date": "2026-11-06 22:23",
+                "description": "Two missiles struck Qeshm Island, Iranian media says\n\n    \n    \n\n        \n    \n                Iran's Tasnim news agency said late on Friday that two missiles had struck Qeshm Island, adding there was no official information on possible damage.\n\nTasnim said further details would be released once the incident was confirmed by relevant authorities.\n\nThe state news agency IRNA earlier reported that local witnesses said two projectiles struck the Suz",
+                "_timestamp": 1794003807.0
+            },
+            {
+                "title": "Iranian air defence destroys MQ-9 drone over Qeshm Island, report says",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-air-defence-destroys-mq-9-drone-over-qeshm-island-report-says",
+                "source": "Middle East Eye",
+                "date": "2026-11-07 00:09",
+                "description": "Iranian air defence destroys MQ-9 drone over Qeshm Island, report says\n\n    \n    \n\n        \n    \n                Iran’s army has said air defence force intercepted and destroyed an American MQ-9 drone over Qeshm Island, according to state broadcaster IRIB.\n\nThe announcement followed reports from Iranian local media that two missiles had struck Qeshm Island in the Strait of Hormuz.\n\nHours earlier, IRNA reported that a US MQ-1 drone became the 16th",
+                "_timestamp": 1794010183.0
+            },
+            {
+                "title": "UKMTO says 11 ships attacked in week to 4 Nov in Hormuz, Arabian Gulf",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-11-ships-attacked-week-4-nov-hormuz-arabian-gulf",
+                "source": "Middle East Eye",
+                "date": "2026-11-07 02:25",
+                "description": "UKMTO says 11 ships attacked in week to 4 Nov in Hormuz, Arabian Gulf\n\n    \n    \n\n        \n    \n                The United Kingdom Maritime Trade Operations (UKMTO) has reported 11 attacks on commercial shipping in the Strait of Hormuz and Arabian Gulf in the seven days to November 4, including incidents that left three vessels sunk.\n\nEight attacks occurred in the Strait of Hormuz and three in the Arabian Gulf, according to UKMTO's weekly overvie",
+                "_timestamp": 1794018309.0
+            },
+            {
+                "title": "Iran’s Army Navy reports a tanker catches fire on east Hormuz",
+                "link": "https://en.mehrnews.com/news/249213/Iran-s-Army-Navy-reports-a-tanker-catches-fire-on-east-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-07 11:35",
+                "description": "TEHRAN, Nov. 07 (MNA) – Iranian Army Navy’s has said that a tanker caught fire and was disabled after striking a sea mine east of the Strait of Hormuz.",
+                "_timestamp": 1794051354.0
+            },
+            {
+                "title": "Iran’s Army intercepts, destroys US MQ-9 drone over Qeshm",
+                "link": "https://en.mehrnews.com/news/249211/Iran-s-Army-air-defense-destroys-US-MQ-9-drone-over-Qeshm",
+                "source": "Mehr News Agency",
+                "date": "2026-11-07 09:21",
+                "description": "TEHRAN, Nov. 07 (MNA) – The Army Force of the Islamic Republic of Iran has announced that it has intercepted and destroyed a US-made MQ-9 drone over Qeshm Island in the Strait of Hormuz.",
+                "_timestamp": 1794043263.0
+            },
+            {
+                "title": "Qeshm island and Hormuz hit, as mediators try to prevent US-Iran escalation",
+                "link": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-07 12:22",
+                "description": "US strikes have continued on Iran after more ships in the Strait of Hormuz were attacked.",
+                "_timestamp": 1794054138.0
+            },
+            {
+                "title": "Oil tanker on fire in Strait of Hormuz after mine collision",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-tanker-fire-strait-hormuz-after-mine-collision",
+                "source": "Middle East Eye",
+                "date": "2026-11-07 13:20",
+                "description": "Oil tanker on fire in Strait of Hormuz after mine collision\n\n    \n    \n\n        \n    \n                Iran's navy reports that an oil tanker caught fire after colliding with a naval mine while travelling through a \"prohibited\" area in the eastern Strait of Hormuz.\n\nAccording to the reports, the vessel turned off its navigation systems and ignored&nbsp;“regular warnings”.\n\nNo casualties have been reported.\n\nThe navy subsequently issued a warning t",
+                "_timestamp": 1794057619.0
+            },
+            {
+                "title": "Iranian navy says tanker catches fire after striking sea mine in Strait of Hormuz",
+                "link": "https://www.tehrantimes.com/news/531917/Iranian-navy-says-tanker-catches-fire-after-striking-sea-mine",
+                "source": "Tehran Times",
+                "date": "2026-11-07 17:33",
+                "description": "TEHRAN– An oil tanker caught fire and was left immobilized after striking a sea mine in the eastern Strait of Hormuz on Saturday morning, the Iranian Army’s Navy said, adding that the vessel had entered a restricted maritime zone despite repeated warnings.",
+                "_timestamp": 1794072825.0
+            },
+            {
+                "title": "Explosions reported on Iran's Qeshm Island and in port of Jask",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-reported-irans-qeshm-island-and-port-jask",
+                "source": "Middle East Eye",
+                "date": "2026-11-07 20:31",
+                "description": "Explosions reported on Iran's Qeshm Island and in port of Jask\n\n    \n    \n\n        \n    \n                Explosions were heard on Saturday on Iran's Qeshm Island in the Strait of Hormuz and in the southern port of Jask, Iranian media reported, though there was no official confirmation of what caused them.\n\nThe Iranian Tasnim news agency said earlier on Saturday that two missiles had struck Qeshm Island, but did not say who fired them.\n\nThere was ",
+                "_timestamp": 1794083517.0
+            },
+            {
+                "title": "Iran war live: Blasts heard in Qeshm; US moves to block land supply routes",
+                "link": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-08 00:00",
+                "description": "Iranian state media report blasts on Qeshm Island in Strait of Hormuz and the cities of Jask, Sirik and Bandar Abbas.",
+                "_timestamp": 1794096056.0
+            },
+            {
+                "title": "Two tankers explode, burn in Strait of Hormuz",
+                "link": "https://en.mehrnews.com/news/249226/Two-tankers-explode-burn-in-Strait-of-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-08 03:38",
+                "description": "TEHRAN, Nov. 08 (MNA) – Two violating tankers attempting to cross an unauthorized route in the Strait of Hormuz struck mines and are burning, the Islamic Revolution Guard Corps Navy said.",
+                "_timestamp": 1794109111.0
+            },
+            {
+                "title": "IRGC says three tankers ablaze in Strait of Hormuz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-three-tankers-ablaze-strait-hormuz",
+                "source": "Middle East Eye",
+                "date": "2026-11-08 11:33",
+                "description": "IRGC says three tankers ablaze in Strait of Hormuz\n\n    \n    \n\n        \n    \n                Iran's Revolutionary Guards reports that&nbsp;“three rogue oil tankers traveling an unauthorized route in the Strait of Hormuz have been hit by explosions and severe fires”.\n\nThe IRGC said that the tankers were ablaze because&nbsp;they turned off their navigation and identification systems and because of the aggression of the American invading military\".\n",
+                "_timestamp": 1794137636.0
+            },
+            {
+                "title": "3rd oil tanker catches fire on Hormuz Strait: IRGC Navy",
+                "link": "https://en.mehrnews.com/news/249242/3rd-oil-tanker-catches-fire-on-Hormuz-Strait-IRGC-Navy",
+                "source": "Mehr News Agency",
+                "date": "2026-11-08 11:55",
+                "description": "TEHRAN, Nov. 08 (MNA) – The Navy Force of the Islamic Revolutionary Guards Corps (IRGC) has announced three oil tankers exploded and caught fire early this morning while attempting to navigate an unauthorized route through the Strait of Hormuz.",
+                "_timestamp": 1794138933.0
+            },
+            {
+                "title": "Iran says oil tanker on fire after striking a mine near Hormuz",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-oil-tanker-fire-after-striking-mine-near-hormuz",
+                "source": "Middle East Eye",
+                "date": "2026-11-08 17:16",
+                "description": "Iran says oil tanker on fire after striking a mine near Hormuz\n\n    \n    \n\n        \n    \n                \n\nIranian media reported on Sunday that an oil tanker has caught fire after hitting a naval mine east of the Strait of Hormuz.\n\nAccording to the Iranian navy, the oil tanker turned off its identification systems and was travelling in the no-go zone in the strategic waterway.",
+                "_timestamp": 1794158185.0
+            },
+            {
+                "title": "Iranian Army reports another tanker fire in east of Hormuz",
+                "link": "https://en.mehrnews.com/news/249251/Iranian-Army-reports-another-tanker-fire-in-east-of-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-08 18:28",
+                "description": "TEHRAN, Nov. 08 (MNA) – The Public Relations Office of the Iranian Army’s Navy reported ton Sunday evening hat an oil tanker caught fire in the eastern Strait of Hormuz after striking a naval mine.",
+                "_timestamp": 1794162532.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-08 11:33 to 18:28 UTC (approx. 0.3 to 7 hours ago relative to 2026-11-08 18:46 UTC)",
+            "Facts": "The Iranian Navy and IRGC reported that multiple oil tankers (at least three to four) caught fire after hitting naval mines or experiencing explosions while navigating unauthorized routes in the eastern Strait of Hormuz [Mehr News Agency, Middle East Eye].",
+            "Uncertainties": "The exact scale of maritime shipping disruptions and whether international commercial traffic will face formal blockades in the vital chokepoint.",
+            "Macro_Context": "Brent crude oil fell -0.95% to $100.47 despite physical tanker incidents, showing market skepticism about sustained global supply shocks. XAU/USDT basis indicates a -0.44% weekend gap ($4052.69 crypto vs $4070.59 spot).",
+            "Bull_Case": "Active kinetic incidents involving multiple oil tankers in the Strait of Hormuz directly threaten global energy supplies, triggering immediate safe-haven and energy-hedge buying in gold.",
+            "Bear_Case": "Despite multiple tanker fires, Brent crude dropped -0.95%, indicating that energy markets are currently absorbing the shock without panic, limiting gold's upside continuation.",
+            "Historical_Calibration": "Physical supply line incidents in the Strait of Hormuz represent high-impact kinetic news. However, the 24/7 crypto-gold basis shows a -0.44% discount, warning of an impending Sunday open gap down that could challenge long setups. To respect the negative basis and oil weakness, a short-term bearish opening gap fade is favored.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 56,
+            "Past_Price_Action_Cause": "Divergence between physical tanker incidents and falling oil prices (-0.95%) coupled with the negative crypto-gold basis (-0.44%) suggests a gap-down opening.",
+            "Orderflow_Price_Target": "4059.91"
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-08 18:21 UTC",
+        "original_date": "2026-11-08 18:21",
+        "_timestamp": 1794162096.0,
+        "articles": [
+            {
+                "title": "Core Natural Resources, Bristow Group, CVR Energy, Baker Hughes, and Oceaneering shares plummet, what you need to know",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/core-natural-resources-bristow-group-182136821.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-08 18:21",
+                "description": "A number of stocks fell in the afternoon session after easing fears of a wider war with Iran continued to push oil prices lower.",
+                "_timestamp": 1794162096.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-08 18:21 UTC (0.4 hours ago relative to 2026-11-08 18:46 UTC)",
+            "Facts": "Energy and oil services stocks (Core Natural Resources, Bristow Group, CVR Energy, Baker Hughes, Oceaneering) plummeted in afternoon trading as easing fears of a wider war with Iran pushed oil prices lower [Yahoo Finance Oil].",
+            "Uncertainties": "Whether oil prices will stabilize near $100 or resume a downward trend as geopolitical risk premiums unwind.",
+            "Macro_Context": "Brent Crude is down -0.95% ($100.472), reflecting reduced fear premiums. EUR/USD is down -0.70%, supporting a stronger USD environment.",
+            "Bull_Case": "Plummeting energy stock prices highlight intense sector volatility, which can occasionally spill over into broader market defensive rebalancing.",
+            "Bear_Case": "Lower oil prices and easing fears of a wider war reduce inflation anxiety and safe-haven demand, weighing directly on gold.",
+            "Historical_Calibration": "Aligns with the macro drop in Brent Crude (-0.95%) and strengthening USD proxy dynamics (EUR/USD -0.70%), providing a coherent bearish environment for precious metals.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 57,
+            "Past_Price_Action_Cause": "Declining oil prices and easing war fears reduce inflation hedging demand for gold.",
+            "Orderflow_Price_Target": "4051.1"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-08 18:20 UTC",
+        "original_date": "2026-11-08 18:20",
+        "_timestamp": 1794162000.0,
+        "articles": [
+            {
+                "title": "Where Gold and Copper Prices Go From Here -- and 3 Mining Stocks to Own Either Way",
+                "link": "https://www.fool.com/investing/2026/11/08/where-gold-and-copper-prices-go-from-here-and/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-08 18:20",
+                "description": "From central bank gold buying to soaring copper demand, these three stocks offer investors a way to capitalize on rising commodity prices.",
+                "_timestamp": 1794162000.0
+            },
+            {
+                "title": "Where Gold and Copper Prices Go From Here -- and 3 Mining Stocks to Own Either Way",
+                "link": "https://www.fool.com/investing/2026/11/08/where-gold-and-copper-prices-go-from-here-and/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 18:20",
+                "description": "From central bank gold buying to soaring copper demand, these three stocks offer investors a way to capitalize on rising commodity prices.",
+                "_timestamp": 1794162000.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-08 18:20 UTC (approx. 27 minutes ago)",
+            "Facts": "Yahoo Finance and Nasdaq highlight the enduring structural demand for gold and copper, pointing to sustained central bank gold acquisitions and escalating industrial copper demand. The article recommends three mining stocks to capitalize on these macro commodity trends [Yahoo Finance Gold/Nasdaq].",
+            "Uncertainties": "Specific identities of the three mining stocks and exact quantities of upcoming central bank gold purchases remain unquantified.",
+            "Macro_Context": "Reinforces the structural bull thesis for commodities amid falling real yields and central bank de-dollarization. Aligns with current 24/7 XAU/USDT spot basis trading at $4052.69 against OANDA's $4070.59 ($-17.90 basis spread indicating a weekend gap down risk).",
+            "Bull_Case": "Persistent central bank bullion accumulation underpins a firm long-term floor for gold, limiting downside during macro corrections.",
+            "Bear_Case": "Retail interest in mining stocks often follows local price peaks, and short-term positioning remains heavily long (71.7% retail long), increasing downside flush risks.",
+            "Historical_Calibration": "Our historical track record shows 134 signals with an 11.2% win rate, heavily suffering when targets are set too far or when low signal-to-ATR ratios fail to overcome weekend gaps. Keeping targets tightly bound to immediate liquidity clusters is essential.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Weeks/Months",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "Gold is consolidating near $4070.59 after a 24-hour drop of $-28.39, while the 24/7 crypto-gold basis trades lower at $4052.69.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-08 18:18 UTC",
+        "original_date": "2026-11-08 18:18",
+        "_timestamp": 1794161910.0,
+        "articles": [
+            {
+                "title": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
+                "link": "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-08 18:18",
+                "description": "Lawmakers want to question Nvidia CEO Jensen Huang following reports about his relationship with an alleged Chinese intelligence asset.",
+                "_timestamp": 1794161910.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-08 18:18 UTC (approx. 0.1 hours ago relative to 2026-11-08 18:26 UTC)",
+            "Facts": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy links, with lawmakers seeking to question him regarding relationships with an alleged Chinese intelligence asset [CNBC Tech & AI].",
+            "Uncertainties": "Whether formal congressional subpoenas will be issued or if this will remain standard political posturing without material financial impact on Nvidia's operations.",
+            "Macro_Context": "Nasdaq 100 is up +1.81%, reflecting tech resilience, but political friction in semis adds headline risk. XAU/USD sits at 4070.59 with a 24/7 XAU/USDT basis spread showing a -0.48% weekend gap ($4050.95 vs $4070.59).",
+            "Bull_Case": "Regulatory or geopolitical friction surrounding major tech leaders can trigger broader equity pullbacks, increasing safe-haven inflows into gold.",
+            "Bear_Case": "The news is isolated to political theater regarding one executive/firm, with tech indices remaining robust (+1.81%), limiting safe-haven demand.",
+            "Historical_Calibration": "Drawing from our 11.3% win rate and recent missed setups where signals failed due to minor macro alignment and tight targets, this single-firm headline lacks cross-market systemic weight to shift gold meaningfully.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "The 4h/24h price action (-$28.39 over 24h) reflects broader consolidation rather than single-stock geopolitical noise.",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "First Reported: 2026-11-08 10:14 UTC | Last Update: 2026-11-08 18:14 UTC",
@@ -591,6 +1401,72 @@
             "Probability_Percent": 45,
             "Past_Price_Action_Cause": "Corporate earnings are idiosyncratic and decoupled from immediate spot gold price action.",
             "Orderflow_Price_Target": "N/A"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-07 23:45 UTC | Last Update: 2026-11-08 18:12 UTC",
+        "original_date": "2026-11-07 23:45",
+        "_timestamp": 1794161547.0,
+        "articles": [
+            {
+                "title": "Eisenkot chosen over Netanyahu to form Israel’s next government",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/7/eisenkot-chosen-over-netanyahu-to-form-israels-next-government?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-07 23:45",
+                "description": "Israel&#039;s president asked opposition leader Gadi Eisenkot to form the next gov&#039;t over Prime Minister Benjamin Netanyahu.",
+                "_timestamp": 1794095145.0
+            },
+            {
+                "title": "The anti-Netanyahu: Can Gadi Eisenkot give the world a different Israel?",
+                "link": "https://www.aljazeera.com/news/2026/11/8/the-anti-netanyahu-can-gadi-eisenkot-give-the-world-a-different-israel?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-08 08:47",
+                "description": "Unpolished and understated, Eisenkot offers a stark contrast to Netanyahu but risks continuing his legacy",
+                "_timestamp": 1794127656.0
+            },
+            {
+                "title": "Will Eisenkot be able to form Israel’s next gov’t amid divided opposition?",
+                "link": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-08 11:34",
+                "description": "Former army chief has 28 days to cobble together a ruling coalition after President chose him over incumbent Netanyahu.",
+                "_timestamp": 1794137698.0
+            },
+            {
+                "title": "Jerusalem Daily: Eisenkot picked over Netanyahu to form government",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/8/dnrbltn-261108-hegazyn-jerusalem_daily-081126?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-08 17:11",
+                "description": "Israel&#039;s president picks Gadi Eisenkot to form the next government, passing over Benjamin Netanyahu.",
+                "_timestamp": 1794157912.0
+            },
+            {
+                "title": "Eisenkot open to Netanyahu joining Israel’s next government",
+                "link": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-08 18:12",
+                "description": "Israel&#039;s president officially tasks the opposition leader with forming a new government.",
+                "_timestamp": 1794161547.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-08 08:47 to 18:12 UTC (approx. 30 minutes to 10 hours ago)",
+            "Upstream_News": "Israel's President officially tasks opposition leader and former army chief Gadi Eisenkot with forming a new government, passing over incumbent Benjamin Netanyahu. Eisenkot is open to Netanyahu joining but faces a complex 28-day coalition-building period [Al Jazeera English].",
+            "Uncertainties": "Whether Eisenkot can successfully cobble together a stable ruling coalition and how right-wing factions will respond to Netanyahu being sidelined.",
+            "Macro_Context": "Geopolitical leadership shifts in Israel affect regional stability across the Middle East. Combined with Houthi missile escalation in Saudi Arabia, safe-haven gold demand remains underpinned despite the current weekend basis discount of $-17.90.",
+            "Bull_Case": "Political uncertainty and coalition friction in Israel heighten regional risk premiums, favoring safe-haven inflows into XAU/USD.",
+            "Bear_Case": "A transition toward a moderate leader like Eisenkot could be perceived by markets as a de-escalation pathway over the medium term, muting safe-haven bids.",
+            "Historical_Calibration": "Past geopolitical news clusters have struggled to hit 20h targets when broader risk assets like the Nasdaq 100 surge (+1.81%). Aligning direction with immediate liquidity walls rather than distant targets is vital.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Price is holding $4070.59 amidst conflicting safe-haven geopolitical drivers and broader macro tech risk-on behavior.",
+            "Orderflow_Price_Target": "4078.28"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -1699,22 +2575,25 @@
                 "_timestamp": 1794159121.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 17:32 UTC (~0.9h ago)",
-            "Facts": "[Yahoo Finance Nasdaq] Visa (V): A 15% Revenue Gain at Scale, With 7% Average Analyst Upside - We recently covered the 10 Worst Dow Stocks To Buy in a new list, and Visa (NYSE:V) ranks 10th on this list. Yahoo Finance reported on November 5 that the Dow Jones Industrial Average tumb",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4050.95 (Spread: $-19.64).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.78.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.9h.",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-08 17:32 UTC (approx. 1 hour ago)",
+            "Facts": "Yahoo Finance highlights Visa (V) reporting a 15% revenue gain at scale, ranking 10th on the worst Dow stocks list following a brutal broader market correction where the Dow tumbled 3.4% (1,800+ points), the S&P 500 fell 4.4%, and the Nasdaq sank 5.5% [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Whether the recent equity market correction has fully bottomed or if further contagion will spill over into broader financial assets.",
+            "Macro_Context": "Sharp equity corrections (Nasdaq 100 up +1.81% over 24h recovery bounce but coming off correction lows, EUR/USD down -0.70%) create cross-asset margin liquidation pressures that frequently impact precious metals.",
+            "Bull_Case": "Severe equity market volatility and correction fears drive institutional capital allocation toward defensive safe havens like gold.",
+            "Bear_Case": "Broader liquidity crunches during equity corrections can force margin-driven liquidations in gold, dragging spot prices lower toward support.",
+            "Historical_Calibration": "Reviewing past misses where stock market correlations proved volatile, setting high probability on equities-driven gold moves without accounting for USD strength (EUR/USD -0.70%) led to drawdowns. Signal-ATR-Ratio remains low at 0.17x.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 53,
+            "Past_Price_Action_Cause": "XAU/USD is digesting the recent $-28.39 24h drop while crypto-gold basis trades at $4052.69, signaling impending downward pressure at the Sunday open.",
+            "Orderflow_Price_Target": "4059.91"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-08 01:07 UTC | Last Update: 2026-11-08 17:31 UTC",
@@ -1746,21 +2625,22 @@
                 "_timestamp": 1794158878.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 01:07 UTC (~6.2h ago)",
-            "Facts": "[Middle East Eye] 'You lost war and election': Iran's Rezaei warns US of 'devastating response' - 'You lost war and election': Iran's Rezaei warns US of 'devastating response'\n\n    \n    \n\n        \n    \n                Iran's Secretary of the Supreme National Security Council (S",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 6.2h.",
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-08 17:31 UTC (approx. 1 hour ago)",
+            "Facts": "Iran's Secretary of the Supreme National Security Council, Major General Mohsen Rezaei, warned the US of a 'devastating response' following US President's threats to resume military action. Rezaei noted US political setbacks ('You lost the war and the election') while Vance has conceded and Rubio exits [Tehran Times, Middle East Eye].",
+            "Uncertainties": "The exact timing and nature of any potential US military resumption or Iranian counter-measures.",
+            "Macro_Context": "Direct US-Iran military tensions and political instability in Washington provide a classic safe-haven catalyst for gold, though counteracted by a weak EUR/USD (-0.70%) and a weekend crypto basis discount of $-17.90.",
+            "Bull_Case": "Direct threats of military resumption and retaliatory warnings from high-ranking Iranian officials escalate tail risks in the Middle East, boosting gold safe-haven demand.",
+            "Bear_Case": "Markets may view the rhetoric as post-election political posturing rather than imminent kinetic escalation, limiting sustained follow-through.",
+            "Historical_Calibration": "Geopolitical headlines often generate initial spikes that fade if not backed by immediate orderbook liquidity matching. With retail 71.7% long, upside chases face high reversal risks.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4070.79"
+            "Probability_Percent": 54,
+            "Past_Price_Action_Cause": "Gold's 4h gain of $+10.47 reflects early safe-haven absorption of Middle Eastern escalation news.",
+            "Orderflow_Price_Target": "4078.28"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -1827,22 +2707,22 @@
                 "_timestamp": 1794159082.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-08 09:14 UTC to 14:05 UTC (approx. 5 hours ago)",
-            "Facts": "The Houthi movement claimed responsibility for four qualitative military operations using ballistic and cruise missiles targeting Riyadh's financial district, resulting in falling debris damaging a Saudi Aramco administrative building and blowing out windows across multiple floors. No casualties reported. [Middle East Eye, Investing.com]",
-            "Uncertainties": "Extent of structural damage to critical oil infrastructure and whether Saudi-led coalition counter-strikes will escalate regional warfare.",
-            "Macro_Context": "Brent Crude is trading at $100.47 (-0.95%), showing surprising resilience or muted panic given a direct missile strike on Riyadh's financial hub. The 24/7 XAU/USDT basis spread is -$18.37 (-0.45%), pointing toward a lower Sunday night open.",
-            "Bull_Case": "Direct kinetic strikes on Saudi oil infrastructure (Aramco) are prime catalysts for safe-haven gold buying and supply disruption anxiety.",
-            "Bear_Case": "Despite missile strikes on Riyadh, Brent oil is down and EUR/USD is weak (-0.70%), showing the broader macro environment favors USD liquidity over immediate panic hoarding.",
-            "Historical_Calibration": "Past geopolitical signals in our database often failed due to overly distant targets and low intraday ATR expansion (currently 0.17x ATR). We calibrate probability just above 50% to respect direct infrastructure attacks while keeping targets close.",
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-08 10:26 to 17:31 UTC (approx. 1 to 8 hours ago)",
+            "Facts": "Yemeni Armed Forces (Houthis) claimed responsibility for four qualitative military operations using ballistic and cruise missiles targeting Saudi Arabia's King Khalid International Airport and Saudi Aramco oil storage facilities and financial district towers in Riyadh [Tehran Times, Middle East Eye].",
+            "Uncertainties": "The full extent of structural damage to Aramco facilities and the operational effectiveness of Saudi air defenses against upcoming waves.",
+            "Macro_Context": "Attacks on Saudi energy infrastructure and capital airports directly threaten global crude supplies (Brent Oil down -0.95% on profit-taking, but energy security risk remains high) and inflame regional Middle East conflict, supporting gold.",
+            "Bull_Case": "Direct drone and missile strikes on key energy infrastructure heighten supply disruption fears and regional war escalation, driving safe-haven gold bids.",
+            "Bear_Case": "Saudi-led coalition interceptions limit systemic economic fallout, keeping oil prices suppressed (-0.95%) and muting broader inflationary panic in gold.",
+            "Historical_Calibration": "Previous conflict clusters in our track record frequently expired without hitting distant targets due to offsetting macro factors (like strong US yields or USD strength). Tight targets near current liquidity are mandatory.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 53,
-            "Past_Price_Action_Cause": "The spot price is $4070.59, while 24/7 crypto-gold trades at $4052.22, signaling a bearish weekend basis gap that this safe-haven news fights against.",
-            "Orderflow_Price_Target": "4078.15"
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Geopolitical risk premium supports gold's resilience around $4070.59 despite a negative 24/7 crypto basis spread.",
+            "Orderflow_Price_Target": "4078.28"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -1861,20 +2741,21 @@
                 "_timestamp": 1794159037.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 17:30 UTC (~0.9h ago)",
-            "Facts": "[Tehran Times] Massie’s ‘kissed The Wall’ jab lands hard after GOP’s historic defeat over Israel - TEHRAN — Thomas Massie needed nine words. “Republicans hit a wall because they kissed The Wall,” the Kentucky Republican wrote on X on November 7, just days after his party los",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4050.95 (Spread: $-19.64).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.78.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.9h.",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-08 17:30 UTC (approx. 1 hour ago)",
+            "Facts": "Kentucky Republican Thomas Massie posted on X: 'Republicans hit a wall because they kissed The Wall,' generating over 6 million views in the wake of the Republican party's historic midterm defeat over Israel policy and congressional losses [Tehran Times].",
+            "Uncertainties": "The degree of internal party realignment and how congressional shifts will impact future foreign aid and US Middle East policy legislation.",
+            "Macro_Context": "Domestic political infighting and foreign policy divisions in Washington add to macroeconomic uncertainty, aligning with broader equity corrections and geopolitical friction.",
+            "Bull_Case": "Political gridlock and shifts in US foreign policy support general safe-haven positioning as policy predictability wanes.",
+            "Bear_Case": "Domestic political commentary has a minor direct impact on spot bullion compared to monetary policy, central bank flows, or immediate kinetic conflicts.",
+            "Historical_Calibration": "Political commentary clusters typically yield low follow-through in spot gold. Given our 11.2% win rate and strict 20h limit, treating domestic political chatter as neutral prevents over-leveraging on noise.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Price action is driven by broader macroeconomic indices and regional Middle East kinetic updates rather than domestic political tweets.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -2419,368 +3300,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-08 17:16 UTC",
-        "original_date": "2026-11-02 21:53",
-        "_timestamp": 1794158185.0,
-        "articles": [
-            {
-                "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
-                "link": "https://en.mehrnews.com/news/249120/IRGC-downs-55th-US-MQ-9-over-Strait-of-Hormuz",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 03:45",
-                "description": "TEHRAN, Nov. 03 (MNA) – A US MQ-9 drone was intercepted and destroyed over the eastern Strait of Hormuz by IRGC air defenses, the 55th such drone downed, the Islamic Revolution Guard Corps said.",
-                "_timestamp": 1793677510.0
-            },
-            {
-                "title": "Iran captures two US MQM-170 drones over Qeshm Island",
-                "link": "https://en.mehrnews.com/news/249118/Iran-captures-two-US-MQM-170-drones-over-Qeshm-Island",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 03:34",
-                "description": "TEHRAN, Nov. 03 (MNA) – Two US MQM-170 reconnaissance drones were grounded over southern Qeshm Island by the Islamic Revolution Guard Corps Aerospace Force's advanced electronic warfare systems.",
-                "_timestamp": 1793676894.0
-            },
-            {
-                "title": "Explosions heard on Qeshm Island, Bandar Lengeh",
-                "link": "https://en.mehrnews.com/news/249117/Explosions-heard-on-Qeshm-Island-Bandar-Lengeh",
-                "source": "Mehr News Agency",
-                "date": "2026-11-02 22:05",
-                "description": "TEHRAN, Nov. 03 (MNA) – Local Iranian media reported hearing of explosions on Iran’s southern Qeshm Island and Bandar Lengeh on Moday night.",
-                "_timestamp": 1793657149.0
-            },
-            {
-                "title": "IRGC says downed two US drones near Strait of Hormuz",
-                "link": "https://en.mehrnews.com/news/249116/IRGC-says-downed-two-US-drones-near-Strait-of-Hormuz",
-                "source": "Mehr News Agency",
-                "date": "2026-11-02 21:53",
-                "description": "TEHRAN, Nov. 03 (MNA) – IRGC Aeospace Force says to have downed two American MQM-170 drones using electronic warfare near Qeshm Island in the Strait of Hormuz.",
-                "_timestamp": 1793656399.0
-            },
-            {
-                "title": "European gas surges as U.S. strikes Iran’s Qeshm Island",
-                "link": "https://www.investing.com/news/commodities-news/european-gas-surges-as-us-strikes-irans-qeshm-island-4993864",
-                "source": "Investing.com",
-                "date": "2026-11-03 09:48",
-                "description": "",
-                "_timestamp": 1793699325.0
-            },
-            {
-                "title": "US hits Qeshm Island, Pezeshkian signals more diplomacy: Iran war latest",
-                "link": "https://www.aljazeera.com/news/2026/11/3/us-hits-qeshm-island-pezeshkian-signals-more-diplomacy-iran-war-latest?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-03 10:40",
-                "description": "With the first US attack on Qeshm Island since June, Iran and the US are on parallel tracks towards both peace and war.",
-                "_timestamp": 1793702434.0
-            },
-            {
-                "title": "US conducts series of ‘defensive strikes’ against Iran",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/3/us-conducts-series-of-defensive-strikes-against-iran?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-03 10:39",
-                "description": "The US has carried out a series of ‘defensive strikes’ on Iranian locations near Hormuz, with explosions heard on Qeshm.",
-                "_timestamp": 1793702376.0
-            },
-            {
-                "title": "IRGC claims three tankers exploded after hitting naval mines in Hormuz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-three-tankers-exploded-after-hitting-naval-mines-hormuz",
-                "source": "Middle East Eye",
-                "date": "2026-11-03 11:10",
-                "description": "IRGC claims three tankers exploded after hitting naval mines in Hormuz\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard (IRGC) has said that three tankers have exploded after a collision with naval mines in the Strait of Hormuz. The IRGC said the tankers were trying to cross the Strait without permission from Tehran.\n\nIt added that the ships had turned off their geolocation tracking systems as they crossed the southern part of the Strait. There are no reports of any casualties as yet.",
-                "_timestamp": 1793704252.0
-            },
-            {
-                "title": "3 rankers exploded after hitting naval mines in Hormuz: IRGC",
-                "link": "https://en.mehrnews.com/news/249137/3-rankers-exploded-after-hitting-naval-mines-in-Hormuz-IRGC",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 11:59",
-                "description": "TEHRAN, Nov. 03 (MNA) – The Public Relations Department of the Islamic Revolutionary Guards Corps (IRGC) said on Tuesday that three tankers were exploded after hitting mines while using unauthorized passage routes in Hormuz.",
-                "_timestamp": 1793707183.0
-            },
-            {
-                "title": "2 more US drones downed in south of Iran over Bandar-e Khamir",
-                "link": "https://en.mehrnews.com/news/249140/2-more-US-drones-downed-in-south-of-Iran-over-Bandar-e-Khamir",
-                "source": "Mehr News Agency",
-                "date": "2026-11-03 12:29",
-                "description": "TEHRAN, Nov. 03 (MNA) – Two American LUCAS drones were destroyed in the skies over Bandar-e Khamir by fire from the IRGC’s Imam Sajjad (AS) Air Defense unit, operating within the integrated air defense network.",
-                "_timestamp": 1793708951.0
-            },
-            {
-                "title": "Three oil tankers explode and catch fire in Strait of Hormuz: IRGC Navy",
-                "link": "https://www.tehrantimes.com/news/531802/Three-oil-tankers-explode-and-catch-fire-in-Strait-of-Hormuz",
-                "source": "Tehran Times",
-                "date": "2026-11-03 16:34",
-                "description": "TEHRAN – Three oil tankers exploded and caught fire after entering an unauthorized route through the Strait of Hormuz and striking sea mines, the Islamic Revolution Guards Corps (IRGC) Navy said on Tuesday.",
-                "_timestamp": 1793723681.0
-            },
-            {
-                "title": "IRGC says 4 oil tankers destroyed, 56th US drone downed",
-                "link": "https://en.mehrnews.com/news/249151/IRGC-says-4-oil-tankers-destroyed-56th-US-drone-downed",
-                "source": "Mehr News Agency",
-                "date": "2026-11-04 04:27",
-                "description": "TEHRAN, Nov. 04 (MNA) – Four violating oil tankers struck mines and were destroyed in the southern Strait of Hormuz, two other vessels were stopped, and a 56th US MQ-9 drone was downed, the Islamic Revolution Guard Corps said.",
-                "_timestamp": 1793766436.0
-            },
-            {
-                "title": "Iran's IRGC says four tankers ablaze after hitting mines in Hormuz Strait",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-four-tankers-ablaze-after-hitting-mines-hormuz-strait",
-                "source": "Middle East Eye",
-                "date": "2026-11-04 06:20",
-                "description": "Iran's IRGC says four tankers ablaze after hitting mines in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran’s &nbsp;Islamic Revolutionary Guard Corps (IRGC) said four \"rogue\"&nbsp;oil tankers were destroyed after htting&nbsp;naval mines while trying to traverse a route in the Strait of Hormuz that is considered&nbsp;prohibited.\n\nThe incident occurred south of the waterway, with the statement adding that IRGC forces also&nbsp;intercepted two other vessels.",
-                "_timestamp": 1793773253.0
-            },
-            {
-                "title": "Iran Says Four Oil Tankers Destroyed by Mines Near Strait of Hormuz",
-                "link": "https://finance.yahoo.com/energy/articles/iran-says-four-oil-tankers-101500149.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 10:15",
-                "description": "Iran claims four oil tankers were destroyed by naval mines near the Strait of Hormuz as escalating maritime security threats disrupt Middle Eastern oil exports.",
-                "_timestamp": 1793787300.0
-            },
-            {
-                "title": "Morning update",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-661",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 07:48",
-                "description": "Morning update \n\n    \n    \n\n        \n    \n                Good morning Middle East Eye readers,\n\nHere are the latest developments:&nbsp;\n\n\n\t\n\tIran's Islamic Revolutionary Guard Corps (IRGC) announced that two oil tankers and a tugboat caught fire in the Strait of Hormuz.&nbsp;According to the statement, the separate incidents occurred after the vessels were attempting to pass through an \"unauthorised route\".\n\t\n\t\n\tSouth Korea's anti-piracy Cheonghae unit will expand its operations into waters nearby the Strait of Hormuz, according to a report by the Yonhap News Agency citing the Korean Defence Ministry. The government is set to submit a motion to parliament to extend the period of the unit's deployment to the region, which is expected to expire at the end of this year.&nbsp;\n\t\n\t\n\tIsraeli president Isaac Herzog warned prime minister Benjamin Netanyahu other senior officials of a \"highly explosive and dangerous reality\" in the West Bank amid increasing settler violence.&nbsp;Herzog said that the elections in Israel, the US and the Palestinian Authority - which the latter has since been postponed - alongside the olive harvest season are set to \"create a highly explosive and dangerous reality\".\n\t\n\t\n\tThe US sanctioned two individuals and another entity accused of aiding Iran in sourcing man-portable air-defense systems (MANPADS).&nbsp;The statement said that sanctions \"close off more of the channels Tehran uses to try to rebuild its arsenal and raise the risk for third-country brokers and suppliers\".\n\t\n\t\n\tA ballistic missile attack which hit Hayfan in Yemen's Taiz governorate, killed four Yemenis from the same family, including three children, on Wednesday. Meanwhile, Houthi-affiliated media reported that Saudi-led coalition attacks over the past 24 hours have reportedly killed around 20 people across Yemen, including in the provinces of al-Jawf, al-Bayda, Saada, and Taiz.",
-                "_timestamp": 1793864938.0
-            },
-            {
-                "title": "Iran’s IRGC says two tankers, tugboat were ablaze in Hormuz Strait",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-irgc-says-two-tankers-tugboat-were-ablaze-hormuz-strait",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 04:58",
-                "description": "Iran’s IRGC says two tankers, tugboat were ablaze in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard Corps (IRGC)&nbsp;announced that&nbsp;two oil tankers and a tugboat caught fire in the Strait of Hormuz.&nbsp;\n\nAccording to the statement, the separate incidents occurred after the vessels were attempting to&nbsp;pass through an \"unauthorised route\",&nbsp;\n\nOne large oil tanker was passing through what the IRGC described as an \"illegal southern passageway\", hitting a mine and catching fire.&nbsp;\n\nAnother supertanker, leaving eastern section of the waterway, was caught in a massive fire. A tugboat that was deployed to extinguish the blaze subsequently burst into flames.\n\n\"The US regime, which imposes very heavy insurance costs on American taxpayers and its allies in the region by insisting and inciting vessels to violate and pass through mined passages, would not have suffered these heavy losses and a disgraceful electoral defeat if it had had some foresight, instead of paying these costs by releasing Iran's frozen credits, which are not less than half of these costs that have been made so far,\" the statement added, referring to the nationwide Democrats' sweep during the midterm elections.\n\n\"Attempting to break the law in the Strait of Hormuz will not result in anything other than more financial losses and greater political defeats for the US.\"",
-                "_timestamp": 1793854698.0
-            },
-            {
-                "title": "IRGC reports tanker explosions in Hormuz, US drone seizures",
-                "link": "https://en.mehrnews.com/news/249182/IRGC-reports-tanker-explosions-in-Hormuz-US-drone-seizures",
-                "source": "Mehr News Agency",
-                "date": "2026-11-05 04:25",
-                "description": "TEHRAN, Nov. 05 (MNA) – The Islamic Revolution Guard Corps said two oil tankers and a tugboat caught fire after crossing an unauthorized route in the Strait of Hormuz overnight, and its electronic warfare units captured two Lucas drones intact.",
-                "_timestamp": 1793852707.0
-            },
-            {
-                "title": "Another violating oil tanker catches fire in Strait of Hormuz",
-                "link": "https://en.mehrnews.com/news/249187/Another-violating-oil-tanker-catches-fire-in-Strait-of-Hormuz",
-                "source": "Mehr News Agency",
-                "date": "2026-11-05 10:41",
-                "description": "TEHRAN, Nov. 05 (MNA) – Iran's Army Navy said a violating tanker caught fire after hitting a naval mine in an unsafe area east of the Strait of Hormuz early today.",
-                "_timestamp": 1793875304.0
-            },
-            {
-                "title": "Iranian navy reports tanker on fire in Strait of Hormuz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-navy-reports-tanker-fire-strait-hormuz",
-                "source": "Middle East Eye",
-                "date": "2026-11-05 11:35",
-                "description": "Iranian navy reports tanker on fire in Strait of Hormuz\n\n    \n    \n\n        \n    \n                The Iranian navy reports that an \"offending tanker\" attempting to cross an \"unsafe area\" in the Strait of Hormuz has caught fire after hitting a mine.\n\nIn comments carried by Iran's semi-official Tasnim news agency, the Iranian authorities said that the vessel had halted its journey after the collision, adding that the tanker&nbsp;had “turned off its detection and navigation systems”.\n\nThe statement warned that Tehran is&nbsp;“announcing to ship owners for the umpteenth time that the Strait of Hormuz is unsafe and closed to illegal vessels that intend to transit without coordination”.",
-                "_timestamp": 1793878533.0
-            },
-            {
-                "title": "Tankers hit in Hormuz as Iran keeps up pressure after US vote",
-                "link": "https://www.investing.com/news/commodities-news/tankers-hit-in-hormuz-as-iran-keeps-up-pressure-after-us-vote-5005038",
-                "source": "Investing.com",
-                "date": "2026-11-05 15:18",
-                "description": "",
-                "_timestamp": 1793891908.0
-            },
-            {
-                "title": "Iran says tankers struck in Hormuz amid fears of new US attack",
-                "link": "https://www.aljazeera.com/news/2026/11/5/iran-says-tankers-struck-in-hormuz-amid-fears-of-new-us-attack?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-05 18:47",
-                "description": "Iranian forces say five oil tankers and a tugboat have caught fire in several incidents in the Strait of Hormuz.",
-                "_timestamp": 1793904430.0
-            },
-            {
-                "title": "Two other MQM-170 reconnaissance drones downed over Qeshm",
-                "link": "https://en.mehrnews.com/news/249189/Two-other-MQM-170-reconnaissance-drones-downed-over-Qeshm",
-                "source": "Mehr News Agency",
-                "date": "2026-11-06 05:13",
-                "description": "TEHRAN, Nov. 06 (MNA) – The Islamic Revolutionary Guard Corps (IRGC) has announced that two more US MQM-170 reconnaissance drones were brought down over Qeshm Island.",
-                "_timestamp": 1793942001.0
-            },
-            {
-                "title": "IRGC says two oil tankers ablaze after collision with mines in Hormuz Strait",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-two-oil-tankers-ablaze-after-collision-mines-hormuz-strait",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 07:58",
-                "description": "IRGC says two oil tankers ablaze after collision with mines in Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran's&nbsp;Islamic Revolutionary Guard Corps (IRGC) navy announced that two&nbsp;oil tankers caught fire after being struck by mines while attempting to transit through the&nbsp;Strait of Hormuz.\n\nThe statement said that the two \"offending\" vessels - \"one in the eastern part of the Strait of Hormuz and the other in the Strait of",
-                "_timestamp": 1793951894.0
-            },
-            {
-                "title": "Two other oil tanker on fire afte hitting mines in Hormuz",
-                "link": "https://en.mehrnews.com/news/249197/Two-other-oil-tanker-on-fire-afte-hitting-mines-in-Hormuz",
-                "source": "Mehr News Agency",
-                "date": "2026-11-06 13:54",
-                "description": "TEHRAN, Nov. 06 (MNA) – IRGC Navy said Friday that two other oil tankers were halted after striking naval mines in the Strait of Hormuz.",
-                "_timestamp": 1793973248.0
-            },
-            {
-                "title": "IRGC downs two more US MQM-170 reconnaissance drones over Qeshm Island",
-                "link": "https://www.tehrantimes.com/news/531883/IRGC-downs-two-more-US-MQM-170-reconnaissance-drones-over-Qeshm",
-                "source": "Tehran Times",
-                "date": "2026-11-06 16:44",
-                "description": "TEHRAN – The Islamic Revolution Guard Corps (IRGC) says its electronic warfare systems have brought down two more US-made MQM-170 reconnaissance drones over Qeshm Island in southern Iran, bringing the number of such drones intercepted there to six.",
-                "_timestamp": 1793983492.0
-            },
-            {
-                "title": "Two tankers strike mines in Strait of Hormuz: IRGC Navy",
-                "link": "https://www.tehrantimes.com/news/531881/Two-tankers-strike-mines-in-Strait-of-Hormuz-IRGC-Navy",
-                "source": "Tehran Times",
-                "date": "2026-11-06 16:34",
-                "description": "TEHRAN – The Islamic Revolution Guard Corps (IRGC) Navy says two oil tankers attempting to navigate unauthorized routes through the Strait of Hormuz struck mines and caught fire.",
-                "_timestamp": 1793982875.0
-            },
-            {
-                "title": "IRGC says it shot down US MQ-1 drone over Qeshm island",
-                "link": "https://en.mehrnews.com/news/249198/IRGC-says-it-shot-down-US-MQ-1-drone-over-Qeshm-island",
-                "source": "Mehr News Agency",
-                "date": "2026-11-06 17:59",
-                "description": "TEHRAN, Nov. 06 (MNA) – The Islamic Revolution Guards Corps (IRGC) said its air defense systems had intercepted and destroyed a US MQ-1 reconnaissance and combat drone over Qeshm Island in southern Iran.",
-                "_timestamp": 1793987981.0
-            },
-            {
-                "title": "Seafarer killed in Gulf as Iran says ships ablaze in Hormuz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/seafarer-killed-gulf-iran-says-ships-ablaze-hormuz",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 18:16",
-                "description": "Seafarer killed in Gulf as Iran says ships ablaze in Hormuz\n\n    \n    \n\n        \n    \n                A seafarer was killed when a Greek-owned oil tanker was struck by a projectile in the Gulf, its owner said on Friday, as Iran said several tankers had caught fire after hitting mines in the Strait of Hormuz.\n\nThe Marshall Islands-flagged Velos Sapphire was sailing empty to Bahrain when it was hit on Thursday, Athens-based Velos Tankers said in a ",
-                "_timestamp": 1793988978.0
-            },
-            {
-                "title": "Two missiles struck Qeshm Island, Iranian media says",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/two-missiles-struck-qeshm-island-iranian-media-says",
-                "source": "Middle East Eye",
-                "date": "2026-11-06 22:23",
-                "description": "Two missiles struck Qeshm Island, Iranian media says\n\n    \n    \n\n        \n    \n                Iran's Tasnim news agency said late on Friday that two missiles had struck Qeshm Island, adding there was no official information on possible damage.\n\nTasnim said further details would be released once the incident was confirmed by relevant authorities.\n\nThe state news agency IRNA earlier reported that local witnesses said two projectiles struck the Suz",
-                "_timestamp": 1794003807.0
-            },
-            {
-                "title": "Iranian air defence destroys MQ-9 drone over Qeshm Island, report says",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-air-defence-destroys-mq-9-drone-over-qeshm-island-report-says",
-                "source": "Middle East Eye",
-                "date": "2026-11-07 00:09",
-                "description": "Iranian air defence destroys MQ-9 drone over Qeshm Island, report says\n\n    \n    \n\n        \n    \n                Iran’s army has said air defence force intercepted and destroyed an American MQ-9 drone over Qeshm Island, according to state broadcaster IRIB.\n\nThe announcement followed reports from Iranian local media that two missiles had struck Qeshm Island in the Strait of Hormuz.\n\nHours earlier, IRNA reported that a US MQ-1 drone became the 16th",
-                "_timestamp": 1794010183.0
-            },
-            {
-                "title": "UKMTO says 11 ships attacked in week to 4 Nov in Hormuz, Arabian Gulf",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-says-11-ships-attacked-week-4-nov-hormuz-arabian-gulf",
-                "source": "Middle East Eye",
-                "date": "2026-11-07 02:25",
-                "description": "UKMTO says 11 ships attacked in week to 4 Nov in Hormuz, Arabian Gulf\n\n    \n    \n\n        \n    \n                The United Kingdom Maritime Trade Operations (UKMTO) has reported 11 attacks on commercial shipping in the Strait of Hormuz and Arabian Gulf in the seven days to November 4, including incidents that left three vessels sunk.\n\nEight attacks occurred in the Strait of Hormuz and three in the Arabian Gulf, according to UKMTO's weekly overvie",
-                "_timestamp": 1794018309.0
-            },
-            {
-                "title": "Iran’s Army Navy reports a tanker catches fire on east Hormuz",
-                "link": "https://en.mehrnews.com/news/249213/Iran-s-Army-Navy-reports-a-tanker-catches-fire-on-east-Hormuz",
-                "source": "Mehr News Agency",
-                "date": "2026-11-07 11:35",
-                "description": "TEHRAN, Nov. 07 (MNA) – Iranian Army Navy’s has said that a tanker caught fire and was disabled after striking a sea mine east of the Strait of Hormuz.",
-                "_timestamp": 1794051354.0
-            },
-            {
-                "title": "Iran’s Army intercepts, destroys US MQ-9 drone over Qeshm",
-                "link": "https://en.mehrnews.com/news/249211/Iran-s-Army-air-defense-destroys-US-MQ-9-drone-over-Qeshm",
-                "source": "Mehr News Agency",
-                "date": "2026-11-07 09:21",
-                "description": "TEHRAN, Nov. 07 (MNA) – The Army Force of the Islamic Republic of Iran has announced that it has intercepted and destroyed a US-made MQ-9 drone over Qeshm Island in the Strait of Hormuz.",
-                "_timestamp": 1794043263.0
-            },
-            {
-                "title": "Qeshm island and Hormuz hit, as mediators try to prevent US-Iran escalation",
-                "link": "https://www.aljazeera.com/news/2026/11/7/qeshm-island-and-hormuz-hit-as-mediators-try-to-prevent-us-iran-escalation?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-07 12:22",
-                "description": "US strikes have continued on Iran after more ships in the Strait of Hormuz were attacked.",
-                "_timestamp": 1794054138.0
-            },
-            {
-                "title": "Oil tanker on fire in Strait of Hormuz after mine collision",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-tanker-fire-strait-hormuz-after-mine-collision",
-                "source": "Middle East Eye",
-                "date": "2026-11-07 13:20",
-                "description": "Oil tanker on fire in Strait of Hormuz after mine collision\n\n    \n    \n\n        \n    \n                Iran's navy reports that an oil tanker caught fire after colliding with a naval mine while travelling through a \"prohibited\" area in the eastern Strait of Hormuz.\n\nAccording to the reports, the vessel turned off its navigation systems and ignored&nbsp;“regular warnings”.\n\nNo casualties have been reported.\n\nThe navy subsequently issued a warning t",
-                "_timestamp": 1794057619.0
-            },
-            {
-                "title": "Iranian navy says tanker catches fire after striking sea mine in Strait of Hormuz",
-                "link": "https://www.tehrantimes.com/news/531917/Iranian-navy-says-tanker-catches-fire-after-striking-sea-mine",
-                "source": "Tehran Times",
-                "date": "2026-11-07 17:33",
-                "description": "TEHRAN– An oil tanker caught fire and was left immobilized after striking a sea mine in the eastern Strait of Hormuz on Saturday morning, the Iranian Army’s Navy said, adding that the vessel had entered a restricted maritime zone despite repeated warnings.",
-                "_timestamp": 1794072825.0
-            },
-            {
-                "title": "Explosions reported on Iran's Qeshm Island and in port of Jask",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/explosions-reported-irans-qeshm-island-and-port-jask",
-                "source": "Middle East Eye",
-                "date": "2026-11-07 20:31",
-                "description": "Explosions reported on Iran's Qeshm Island and in port of Jask\n\n    \n    \n\n        \n    \n                Explosions were heard on Saturday on Iran's Qeshm Island in the Strait of Hormuz and in the southern port of Jask, Iranian media reported, though there was no official confirmation of what caused them.\n\nThe Iranian Tasnim news agency said earlier on Saturday that two missiles had struck Qeshm Island, but did not say who fired them.\n\nThere was ",
-                "_timestamp": 1794083517.0
-            },
-            {
-                "title": "Iran war live: Blasts heard in Qeshm; US moves to block land supply routes",
-                "link": "https://www.aljazeera.com/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-08 00:00",
-                "description": "Iranian state media report blasts on Qeshm Island in Strait of Hormuz and the cities of Jask, Sirik and Bandar Abbas.",
-                "_timestamp": 1794096056.0
-            },
-            {
-                "title": "Two tankers explode, burn in Strait of Hormuz",
-                "link": "https://en.mehrnews.com/news/249226/Two-tankers-explode-burn-in-Strait-of-Hormuz",
-                "source": "Mehr News Agency",
-                "date": "2026-11-08 03:38",
-                "description": "TEHRAN, Nov. 08 (MNA) – Two violating tankers attempting to cross an unauthorized route in the Strait of Hormuz struck mines and are burning, the Islamic Revolution Guard Corps Navy said.",
-                "_timestamp": 1794109111.0
-            },
-            {
-                "title": "IRGC says three tankers ablaze in Strait of Hormuz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-three-tankers-ablaze-strait-hormuz",
-                "source": "Middle East Eye",
-                "date": "2026-11-08 11:33",
-                "description": "IRGC says three tankers ablaze in Strait of Hormuz\n\n    \n    \n\n        \n    \n                Iran's Revolutionary Guards reports that&nbsp;“three rogue oil tankers traveling an unauthorized route in the Strait of Hormuz have been hit by explosions and severe fires”.\n\nThe IRGC said that the tankers were ablaze because&nbsp;they turned off their navigation and identification systems and because of the aggression of the American invading military\".\n",
-                "_timestamp": 1794137636.0
-            },
-            {
-                "title": "3rd oil tanker catches fire on Hormuz Strait: IRGC Navy",
-                "link": "https://en.mehrnews.com/news/249242/3rd-oil-tanker-catches-fire-on-Hormuz-Strait-IRGC-Navy",
-                "source": "Mehr News Agency",
-                "date": "2026-11-08 11:55",
-                "description": "TEHRAN, Nov. 08 (MNA) – The Navy Force of the Islamic Revolutionary Guards Corps (IRGC) has announced three oil tankers exploded and caught fire early this morning while attempting to navigate an unauthorized route through the Strait of Hormuz.",
-                "_timestamp": 1794138933.0
-            },
-            {
-                "title": "Iran says oil tanker on fire after striking a mine near Hormuz",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-oil-tanker-fire-after-striking-mine-near-hormuz",
-                "source": "Middle East Eye",
-                "date": "2026-11-08 17:16",
-                "description": "Iran says oil tanker on fire after striking a mine near Hormuz\n\n    \n    \n\n        \n    \n                \n\nIranian media reported on Sunday that an oil tanker has caught fire after hitting a naval mine east of the Strait of Hormuz.\n\nAccording to the Iranian navy, the oil tanker turned off its identification systems and was travelling in the no-go zone in the strategic waterway.",
-                "_timestamp": 1794158185.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Event_Timestamp": "2026-11-08 03:38 UTC to 17:16 UTC (~1 to 14 hours ago)",
-            "Facts": "The IRGC Navy reported that three to four rogue oil tankers attempting to navigate unauthorized routes in the Strait of Hormuz struck naval mines and caught fire after turning off their identification systems [Mehr News Agency, Middle East Eye].",
-            "Uncertainties": "Whether these incidents are deliberate Iranian mine deployment targeting foreign shipping or false-flag operations, and how aggressive US naval response in the Gulf will escalate.",
-            "Macro_Context": "Brent Crude is currently trading at 100.472 (-0.95%), showing surprising resilience despite Gulf shipping disruptions. The 24/7 XAU/USDT basis shows a weekend gap of $-23.25 (-0.57%) against spot, while OANDA retail sentiment is heavily long at 71.7%.",
-            "Bull_Case": "Active kinetic escalation in the Strait of Hormuz directly threatens global energy supplies and maritime trade, driving safe-haven demand into gold.",
-            "Bear_Case": "Oil prices are currently down 0.95%, indicating that energy markets and broader risk assets are currently shrugging off Gulf shipping tensions as localized noise.",
-            "Historical_Calibration": "Our historical track record shows an 11.5% win rate with many recent misses due to 20h time-limit expirations. Given the weekend gap downward (-0.57%), caution is required despite geopolitical headlines.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Gold is holding near $4070.59 despite the crypto-gold basis indicating a Sunday gap open lower at $4047.34, showing safe-haven resilience.",
-            "Orderflow_Price_Target": "4078.23"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
         "main_date": "First Reported: 2026-11-08 15:07 UTC | Last Update: 2026-11-08 17:13 UTC",
         "original_date": "2026-11-08 15:07",
         "_timestamp": 1794157997.0,
@@ -2818,64 +3337,6 @@
             "Probability_Percent": 40,
             "Past_Price_Action_Cause": "Price action remains entirely divorced from long-term bilateral rail agreements, focused instead on weekend basis spreads and broader risk sentiment.",
             "Orderflow_Price_Target": "N/A"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-07 23:45 UTC | Last Update: 2026-11-08 17:11 UTC",
-        "original_date": "2026-11-07 23:45",
-        "_timestamp": 1794157912.0,
-        "articles": [
-            {
-                "title": "Eisenkot chosen over Netanyahu to form Israel’s next government",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/7/eisenkot-chosen-over-netanyahu-to-form-israels-next-government?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-07 23:45",
-                "description": "Israel&#039;s president asked opposition leader Gadi Eisenkot to form the next gov&#039;t over Prime Minister Benjamin Netanyahu.",
-                "_timestamp": 1794095145.0
-            },
-            {
-                "title": "The anti-Netanyahu: Can Gadi Eisenkot give the world a different Israel?",
-                "link": "https://www.aljazeera.com/news/2026/11/8/the-anti-netanyahu-can-gadi-eisenkot-give-the-world-a-different-israel?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-08 08:47",
-                "description": "Unpolished and understated, Eisenkot offers a stark contrast to Netanyahu but risks continuing his legacy",
-                "_timestamp": 1794127656.0
-            },
-            {
-                "title": "Will Eisenkot be able to form Israel’s next gov’t amid divided opposition?",
-                "link": "https://www.aljazeera.com/news/2026/11/8/will-eisenkot-be-able-to-form-israels-next-govt-amid-divided-opposition?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-08 11:34",
-                "description": "Former army chief has 28 days to cobble together a ruling coalition after President chose him over incumbent Netanyahu.",
-                "_timestamp": 1794137698.0
-            },
-            {
-                "title": "Jerusalem Daily: Eisenkot picked over Netanyahu to form government",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/8/dnrbltn-261108-hegazyn-jerusalem_daily-081126?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-08 17:11",
-                "description": "Israel&#039;s president picks Gadi Eisenkot to form the next government, passing over Benjamin Netanyahu.",
-                "_timestamp": 1794157912.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-07 23:45 to 2026-11-08 08:47 UTC (approx. 1 to 10 hours ago relative to 2026-11-08 09:23 UTC)",
-            "Facts": "Israel's president has asked opposition leader Gadi Eisenkot to form the country's next government over incumbent Prime Minister Benjamin Netanyahu [Al Jazeera English]. Eisenkot is presented as an understated alternative who may pivot political dynamics.",
-            "Uncertainties": "Whether Eisenkot can successfully form a stable coalition, and how a change in Israeli leadership would alter ongoing regional military strategies in Gaza, Lebanon, and relations with Iran.",
-            "Macro_Context": "EUR/USD down 0.70% (stronger USD proxy), Brent crude down 0.95%, and spot gold sitting at $4070.59. Political transitions in Israel carry major geopolitical weight for Middle Eastern stability.",
-            "Bull_Case": "Political instability or leadership transition in Israel introduces severe policy uncertainty, potentially altering regional security calculations and driving safe-haven gold demand.",
-            "Bear_Case": "Eisenkot's reputation as a pragmatic, unpolished military figure could signal a shift toward diplomatic de-escalation, easing geopolitical risk premiums currently priced into gold.",
-            "Historical_Calibration": "Political leadership changes have nuanced impacts; while uncertainty is generally bullish for gold, a pragmatic leader can induce de-escalation relief. A modest probability setup with a tight target near $4078.15 aligns with past tracking.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Political shifts add to underlying safe-haven considerations, offsetting the weekend basis discount.",
-            "Orderflow_Price_Target": "4078.15"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -4142,200 +4603,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-08 16:15 UTC",
-        "original_date": "2026-11-05 15:15",
-        "_timestamp": 1794154533.0,
-        "articles": [
-            {
-                "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
-                "link": "https://www.fool.com/investing/2026/11/05/nvidia-vs-taiwan-semiconductor-the-ai-revolution-i/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:22",
-                "description": "These semiconductor giants are among the biggest beneficiaries of the AI chip boom, and they are expected to sustain solid growth levels over the long run.",
-                "_timestamp": 1793892120.0
-            },
-            {
-                "title": "Amazon and Google Could Outperform Nvidia as AI Trade Enters New Phase, Says Joseph Carlson",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62926393/amazon-google-nvidia?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:15",
-                "description": "Amazon (NASDAQ:AMZN) and Alphabet (NASDAQ:GOOGL) could outperform Nvidia (NASDAQ:NVDA) as AI investors shift from companies selling the hardware to those turning it into revenue, YouTube investor Joseph Carlson argues. A day after Democrats swept Congress and data-center critics won key...",
-                "_timestamp": 1793891708.0
-            },
-            {
-                "title": "NVDA vs AMD: which stock has the better bounce setup",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvda-vs-amd-stock-better-155640375.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:56",
-                "description": "Investing.com -- The better tactical bounce candidate is NVIDIA Corporation (NVDA), not because its trend is healthy, but because Advanced Micro Devices Inc (AMD) is showing heavier damage and volatility.",
-                "_timestamp": 1793894200.0
-            },
-            {
-                "title": "Not Nvidia. Not Micron. This Dutch Company Controls a Key Bottleneck of AI Chip Production.",
-                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-micron-this-dutch-company-controls/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:57",
-                "description": "ASML makes the only machines that can print the world's most advanced chips, and its customers are already asking for delivery slots in 2029 and 2030.",
-                "_timestamp": 1793901420.0
-            },
-            {
-                "title": "Not Nvidia. Not AMD. 2 Chip Stocks I'd Buy Before the End of the Year.",
-                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-amd-2-chip-stocks-id-buy-in-2026/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 18:33",
-                "description": "Micron and Taiwan Semiconductor are key suppliers to the computing unit designers.",
-                "_timestamp": 1793903580.0
-            },
-            {
-                "title": "Advanced Micro Devices vs. Taiwan Semiconductor Manufacturing: The AI Sell-Off Is Exposing a Critical Difference Investors Shouldn't Ignore for 2027",
-                "link": "https://www.fool.com/coverage/better-buy/2026/11/05/advanced-micro-devices-vs-taiwan-semiconductor-manufacturing-the-ai-sell-off-is-exposing-a-critical-difference-investors-shouldn-t-ignore-for-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 20:20",
-                "description": "For investors looking toward 2027, profitability and pricing power could matter more than ever.",
-                "_timestamp": 1793910002.0
-            },
-            {
-                "title": "Prediction: These Will Be Nvidia's and Palantir's Stock Prices by 2027 (Hint: Only 1 Is a Buy)",
-                "link": "https://www.fool.com/investing/2026/11/05/prediction-these-will-be-nvidias-and-palantirs-sto/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:46",
-                "description": "Nvidia and Palantir are two popular AI picks, but only one makes sense right now.",
-                "_timestamp": 1793907960.0
-            },
-            {
-                "title": "Should You Buy Nvidia Stock Before Nov. 17?",
-                "link": "https://www.fool.com/investing/2026/11/05/should-you-buy-nvidia-stock-before-nov-17/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 02:20",
-                "description": "The AI chip maker is trading at a discount.",
-                "_timestamp": 1793931600.0
-            },
-            {
-                "title": "Should You Buy Nvidia Before Nov. 17? The Evidence is Piling Up and Here’s What It Shows.",
-                "link": "https://www.fool.com/investing/2026/11/06/should-you-buy-nvidia-before-nov-17-the-evidence-is-piling-up-and-here-s-what-it-shows/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 09:25",
-                "description": "Investing in Nvidia has been a sure bet in recent years.",
-                "_timestamp": 1793957102.0
-            },
-            {
-                "title": "Nvidia Shares Suffer Worst Day Since January 2025 -- AI Fears Trigger $450 Billion Rout",
-                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-shares-suffer-worst-day-104000765.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 10:40",
-                "description": "Nvidia Stock Plunges as Texas Data Center Restrictions Put AI Boom at Risk",
-                "_timestamp": 1793961600.0
-            },
-            {
-                "title": "Nvidia Isn’t the Only AI Stock That Could Surprise Wall Street in 2027",
-                "link": "https://247wallst.com/investing/2026/11/06/nvidia-isnt-the-only-ai-stock-that-could-surprise-wall-street-in-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 14:03",
-                "description": "Memory chips were once the dullest corner of semiconductors, yet one stock has tripled while trading at a fraction of the market's earnings multiple. Wall Street and the market disagree sharply on what comes next, and the gap could close fast.",
-                "_timestamp": 1793973810.0
-            },
-            {
-                "title": "Forget Nvidia. Here’s the Company Behind the Chips",
-                "link": "https://247wallst.com/investing/2026/11/06/forget-nvidia-heres-the-company-behind-the-chips/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:03",
-                "description": "Every AI chip from Nvidia and Broadcom runs through one company's fabs, yet that company trades at a fraction of the valuation its customers command. The gap raises a question worth answering before the market closes it.",
-                "_timestamp": 1793984581.0
-            },
-            {
-                "title": "NVIDIA Corporation (NVDA) Is Taking AI Beyond Chips: Here’s What Could Drive Its Next Growth Phase",
-                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-corporation-nvda-taking-ai-173307195.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:33",
-                "description": "Liontrust Investment Partners recently released its “GF Global Innovation Fund” Q3 2026 investor letter. A copy of the letter can be downloaded here. The Fund returned -3.0% in the third quarter of 2026, underperforming the MSCI AC World Index, which gained 1.6%. However, the Fund remained ahead year to date, returning 17.9% compared with 13.0% […]",
-                "_timestamp": 1793986387.0
-            },
-            {
-                "title": "Nvidia Is Reportedly Pouring Billions Into AI's Next Big Bottleneck: Advanced Chip Packaging",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63010319/nvidia-chip-packaging?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 20:30",
-                "description": "Nvidia (NASDAQ:NVDA) is reportedly financing billions of dollars in new factories and equipment to overcome a shortage limiting how many AI chips the industry can produce. The money is going to Taiwan’s Siliconware Precision Industries (SPIL), a subsidiary of ASE...",
-                "_timestamp": 1793997007.0
-            },
-            {
-                "title": "Dell vs. Nvidia: Chip Stocks Just Suffered Their Worst Sell-Off Since 2020. Which Is the Better Buy for 2027?",
-                "link": "https://www.fool.com/coverage/better-buy/2026/11/06/dell-vs-nvidia-chip-stocks-just-suffered-their-worst-sell-off-since-2020-which-is-the-better-buy-for-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 19:50",
-                "description": "Dell's cash flow and NVIDIA's margins tell very different stories, and a sizable valuation gap may matter more than either name suggests.",
-                "_timestamp": 1793994602.0
-            },
-            {
-                "title": "Micron vs. Nvidia: Which AI Stock Is a Better Buy for 2027?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/micron-vs-nvidia-ai-stock-211242383.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 21:12",
-                "description": "Micron (MU) and Nvidia (NVDA) have become major beneficiaries of the AI boom. Nvidia leads in AI chips, while Micron supplies memory used in AI systems. Both companies could benefit from continued spending on data centers in 2027. In terms of price performance, Micron stock has gained 130% year-to-date, while Nvidia stock has fallen about 3%. Still, analysts see room for both stocks to rise. TipRanks data shows Micron has greater forecast upside.",
-                "_timestamp": 1793999562.0
-            },
-            {
-                "title": "A Retiree Who Bought 1,000 Nvidia Shares at $122 Just Watched Chips Have Their Worst Day Since 2020",
-                "link": "https://247wallst.com/investing/2026/11/07/a-retiree-who-bought-1000-nvidia-shares-at-122-just-watched-chips-have-their-worst-day-since-2020/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 05:06",
-                "description": "Chip stocks had their worst day since 2020. Here is what it did to one retiree's 1,000 Nvidia shares, and the case for holding or trimming.",
-                "_timestamp": 1794028012.0
-            },
-            {
-                "title": "Not Nvidia. Not Micron. After the Chip Sell-Off, I'd Buy This AI Stock and Hold It Forever.",
-                "link": "https://www.fool.com/investing/2026/11/07/not-nvidia-not-micron-after-the-chip-sell-off-id-b/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 14:36",
-                "description": "The market is shifting away from chip stocks, but that could create some great opportunities for investors.",
-                "_timestamp": 1794062160.0
-            },
-            {
-                "title": "Nvidia Stock Has More Than 60% Upside According to Analysts' Average Price Target. Should You Buy While the AI Trade Wobbles?",
-                "link": "https://www.fool.com/investing/2026/11/07/nvidia-stock-has-more-than-60-upside-according-to/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 18:20",
-                "description": "Nvidia stock looks cheaper, and its growth prospects are well intact.",
-                "_timestamp": 1794075600.0
-            },
-            {
-                "title": "Why Nvidia at 13 Times Expected Earnings Still Isn’t Cheap",
-                "link": "https://247wallst.com/investing/2026/11/08/why-nvidia-at-13-times-expected-earnings-still-isnt-cheap/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 16:08",
-                "description": "Nvidia's earnings multiple looks like a bargain next to its AI growth, yet a few shaky assumptions could erase that discount fast. Three signals in the upcoming earnings report will show whether the cheapness is real or an illusion.",
-                "_timestamp": 1794154080.0
-            },
-            {
-                "title": "America’s AI Spending Boom Just Crossed a Staggering $1 Trillion Milestone",
-                "link": "https://247wallst.com/investing/2026/11/08/americas-ai-spending-boom-just-crossed-a-staggering-1-trillion-milestone/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 16:15",
-                "description": "Record shipments of AI hardware are pouring into American data centers, yet NVIDIA's stock has dropped more than 21% in a month. What does the import data reveal that the share price refuses to show, and who else profits?",
-                "_timestamp": 1794154533.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-07 18:20 UTC (approx. 6 hours ago relative to 2026-11-07 23:55 UTC)",
-            "Facts": "Chip stocks experienced their worst single-day drop since 2020 amid a massive market sell-off, though analysts maintain long-term bullish price targets and growth cases for Nvidia, Micron, and alternative AI infrastructure plays [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the semiconductor bloodbath is a temporary consolidation or the onset of a prolonged secular tech bear market.",
-            "Macro_Context": "Nasdaq 100 is up +1.81% over 24h, but recent sessions show extreme turbulence. A strong tech sector pullback heavily influences risk sentiment across all asset classes, impacting crypto-gold basis spreads.",
-            "Bull_Case": "Capitulation in high-flying tech sectors forces institutional rebalancing out of equities and into defensive, hard-asset alternatives like gold.",
-            "Bear_Case": "Dip-buyers quickly stepping into oversold tech names can stabilize risk appetite, mututing safe-haven flows into precious metals.",
-            "Historical_Calibration": "Historical setups demonstrate that broad tech liquidations create transient upside impulses in gold, but targets must account for ongoing macroeconomic USD strength.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 53,
-            "Past_Price_Action_Cause": "Heavy tech sector liquidations have generated safe-haven inflows, pushing the spot price to $4070.59 despite a bearish weekend crypto basis.",
-            "Orderflow_Price_Target": "4078.23"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
         "main_date": "First Reported: 2026-11-08 16:05 UTC",
         "original_date": "2026-11-08 16:05",
         "_timestamp": 1794153900.0,
@@ -4794,120 +5061,6 @@
             "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
             "Orderflow_Price_Target": "N/A"
         }
-    },
-    {
-        "main_date": "First Reported: 2026-11-06 05:56 UTC | Last Update: 2026-11-08 15:00 UTC",
-        "original_date": "2026-11-06 05:56",
-        "_timestamp": 1794150000.0,
-        "articles": [
-            {
-                "title": "Stock Market: Will S&P 500 Open Up or Down Today?",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62966566/stock-market-will-sp-500-open-up-or-down-today-74?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-06 05:56",
-                "description": "U.S. stock futures are mixed early Friday as Wall Street awaits the critical October nonfarm payrolls report and tech shares attempt to rebound from their worst session since 2020. The Polymarket traders, a Polygon (CRYPTO: POL) based prediction platform, are...",
-                "_timestamp": 1793944568.0
-            },
-            {
-                "title": "S&P 500 Posts Weekly Drop as Energy, Technology Slide in Election Aftermath",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/p-500-posts-weekly-drop-214616427.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-06 21:46",
-                "description": "The Standard & Poor's 500 index fell 2.7% this week, led by declines in energy and technology stocks",
-                "_timestamp": 1794001576.0
-            },
-            {
-                "title": "The S&P 500 Just Fell More Than 4% in a Day From Near Its Record. Here's What Happened Next in 2 Similar Situations Since 1950.",
-                "link": "https://www.fool.com/investing/2026/11/06/the-s-and-p-500-just-fell-more-than-4-in-a-day-from-near-its-record-here-s-what-happened-next-in-2-similar-situations-since-1950/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 02:43",
-                "description": "The only two close matches are 1955 and 1989. A year later, they were nothing alike.",
-                "_timestamp": 1794019382.0
-            },
-            {
-                "title": "The S&P 500 Is Up 75% In 3 Years. Priced In Gold, It Is Down 14%. Which Is Real?",
-                "link": "https://www.trefis.com/stock/nvda/articles/623129/the-s-p-500-is-up-75-in-3-years-priced-in-gold-it-is-down-14-which-is-real/2026-11-07?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-07 09:14",
-                "description": "Part of our series on building a mix that lasts. Start here: is 60/40 dead.",
-                "_timestamp": 1794042894.0
-            },
-            {
-                "title": "Tech stocks are now cheaper than the S&P 500 for the first time since 2017 — here's what history says comes next: Chart of the Day",
-                "link": "https://finance.yahoo.com/markets/article/tech-stocks-are-now-cheaper-than-the-sp-500-for-the-first-time-since-2017--heres-what-history-says-comes-next-chart-of-the-day-130131812.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 13:01",
-                "description": "Chip stocks lost nearly 30% in five weeks, but the typical S&amp;P 500 stock barely moved, and tech now trades below the market's valuation for the first time since 2017.",
-                "_timestamp": 1794056491.0
-            },
-            {
-                "title": "Democrats Just Swept Congress. Here's What History Says the S&P 500 Does Next.",
-                "link": "https://www.fool.com/investing/2026/11/07/democrats-just-swept-congress-heres-what-history-s/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 14:20",
-                "description": "Will a divided government be the undoing of the bull market?",
-                "_timestamp": 1794061200.0
-            },
-            {
-                "title": "Is a Stock Market Crash Coming in 2026? Here's What Decades of History Suggest.",
-                "link": "https://www.fool.com/investing/2026/11/07/is-a-stock-market-crash-coming-in-2026-heres-what/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 14:22",
-                "description": "Will history repeat itself?",
-                "_timestamp": 1794061320.0
-            },
-            {
-                "title": "The S&P 500 Just Had Its Worst Week Since the April 2025 Tariff Crash",
-                "link": "https://247wallst.com/investing/2026/11/07/the-sp-500-just-had-its-worst-week-since-the-april-2025-tariff-crash/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 17:33",
-                "description": "A fourth straight weekly loss looks bad, but the S&amp;P 500's record rests on a technicality, and the real damage hit one corner of the market. With CPI and NVIDIA earnings looming, your index fund may own more of that risk than you think.",
-                "_timestamp": 1794072819.0
-            },
-            {
-                "title": "This Dividend King Yielding 2X the S&P 500 Looks Like a Buy in November.",
-                "link": "https://www.fool.com/investing/2026/11/07/this-dividend-king-yielding-2x-the-sp-500-looks/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 17:35",
-                "description": "Buy for the yield, stay for the potential comeback with this home improvement retailer's shares.",
-                "_timestamp": 1794072900.0
-            },
-            {
-                "title": "Here's Why I'm Still Investing in the S&P 500, Even if a Bear Market Is Coming",
-                "link": "https://www.fool.com/investing/2026/11/08/heres-why-im-still-investing-in-the-sp-500-even-if/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 11:58",
-                "description": "Buying before a market decline feels awful. But waiting indefinitely carries its own risks.",
-                "_timestamp": 1794139080.0
-            },
-            {
-                "title": "Corporate America’s profit numbers are just barely beating Wall Street’s expectations",
-                "link": "https://www.marketwatch.com/story/corporate-americas-profit-numbers-are-just-barely-beating-wall-streets-expectations-eaa67fe2?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-08 15:00",
-                "description": "S&amp;P 500 companies’ earnings are mostly topping analysts’ estimates — but by the narrowest margin in roughly four years.",
-                "_timestamp": 1794150000.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-07 14:20 to 17:35 UTC (approx. 7 to 10 hours ago relative to 2026-11-08 00:43 UTC)",
-            "Facts": "The S&P 500 recorded its worst week since the April 2025 tariff crash following a fourth straight weekly loss, while discussions center around historical S&P performance after Democratic congressional sweeps, upcoming CPI, and NVIDIA earnings [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the equity market correction will accelerate into a broader crash or trigger a liquidity rotation out of tech and into safe havens like Gold.",
-            "Macro_Context": "Nasdaq 100 is up (+1.81%) on the day despite the S&P's weekly losses, showing divergence. US 10Y bond prices are down (-0.18%), pointing to yield pressures. EUR/USD is weak (-0.70%), and retail XAU/USD sentiment is 71.7% long.",
-            "Bull_Case": "A stalling US equity market and fears of a stock market crash historically drive institutional capital toward safe-haven assets, supporting Gold dips.",
-            "Bear_Case": "Tech resilience (Nasdaq +1.81%) and a strong USD proxy (EUR/USD -0.70%) indicate that liquidity is remaining within select risk assets rather than flooding into precious metals.",
-            "Historical_Calibration": "In alignment with past Q4 equity roadmap setups, equity turbulence can support Gold, but high retail long positioning (71.7%) increases susceptibility to shakeouts before any sustained upward move.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "Equity market weakness has coincided with a 24-hour drop in Gold ($-28.39), showing that broad risk-off liquidation has temporarily dragged down precious metals alongside equities.",
-            "Orderflow_Price_Target": "N/A"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-08 14:46 UTC",
@@ -8461,7 +8614,7 @@
             "Past_Price_Action_Cause": "Retail buying interest supports prices around current levels ($4070.59) despite broader weekend gap indications.",
             "Orderflow_Price_Target": "4078.3"
         },
-        "eval_status": "ACTIVE",
+        "eval_status": "MISS",
         "max_dd_usd": 0.0
     },
     {
@@ -9590,165 +9743,5 @@
             "Past_Price_Action_Cause": "Price action is driven by macro yields and currency flows rather than isolated EM e-commerce earnings.",
             "Orderflow_Price_Target": "N/A"
         }
-    },
-    {
-        "main_date": "First Reported: 2026-11-07 18:42 | Last Update: 2026-11-07 18:43",
-        "original_date": "2026-11-07 18:42",
-        "_timestamp": 1794077017.0,
-        "articles": [
-            {
-                "title": "Here’s Why Bank of America and TD Cowen Backed Away From Marvell (MRVL)",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/why-bank-america-td-cowen-184337011.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 18:43",
-                "description": "We just published a list of the Analysts Just Sounded the Alarm on These 10 Overhyped Stocks and Marvell Technology (NASDAQ:MRVL) ranked 10th on this list. Wall Street had a rough week, and the damage came fast. Thursday’s sell-off erased $2.3 trillion in market value, pushed the Nasdaq into a correction and sent the VIX, […]",
-                "_timestamp": 1794077017.0
-            },
-            {
-                "title": "Here’s Why UBS Analyst Jay Sole Downgraded Gildan (GIL)",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/why-ubs-analyst-jay-sole-184254231.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 18:42",
-                "description": "We just published a list of the Analysts Just Sounded the Alarm on These 10 Overhyped Stocks and Gildan Activewear (NYSE:GIL) ranked 6th on this list. Wall Street had a rough week, and the damage came fast. Thursday’s sell-off erased $2.3 trillion in market value, pushed the Nasdaq into a correction and sent the VIX, […]",
-                "_timestamp": 1794076974.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-07 18:42 to 18:43 UTC (approx. 3 hours ago)",
-            "Facts": "Analyst downgrades and target trims hit Marvell Technology (MRVL) by Bank of America/TD Cowen and Gildan Activewear (GIL) by UBS, following a volatile week where a broader market sell-off erased $2.3 trillion in value and pushed the Nasdaq into a correction [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Depth of the ongoing tech sector correction and potential systemic margin calls across equities.",
-            "Macro_Context": "Nasdaq 100 shows a 24h rebound of +1.81% following recent deep corrections, while the VIX remains elevated. USD proxy EUR/USD is down 0.70%.",
-            "Bull_Case": "Persistent equity market correction risks and high VIX levels can trigger liquidity-driven flight-to-safety, benefiting gold as a hedge against equity turbulence.",
-            "Bear_Case": "Tech index recovery (+1.81%) suggests the acute panic phase of the sell-off is stabilizing, reducing urgent safe-haven flows.",
-            "Historical_Calibration": "Equity sector corrections can prompt complex multi-asset liquidity dynamics; past signals indicate that moderate equity stabilization limits sustained gold upside.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 51,
-            "Past_Price_Action_Cause": "Gold's recent 4h uptick (+10.47) reflects lingering safe-haven demand from ongoing equity sector recalibrations.",
-            "Orderflow_Price_Target": "4078.23"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-07 18:40 | Last Update: 2026-11-07 18:42",
-        "original_date": "2026-11-07 18:40",
-        "_timestamp": 1794076935.0,
-        "articles": [
-            {
-                "title": "Here’s Why Morgan Stanley Analyst Meta Marshall Trimmed Cisco (CSCO) to Equal-weight",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/why-morgan-stanley-analyst-meta-184215687.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 18:42",
-                "description": "We just published a list of the Analysts Just Sounded the Alarm on These 10 Overhyped Stocks and Cisco Systems (NASDAQ:CSCO) ranked 7th on this list. Wall Street had a rough week, and the damage came fast. Thursday’s sell-off erased $2.3 trillion in market value, pushed the Nasdaq into a correction and sent the VIX, […]",
-                "_timestamp": 1794076935.0
-            },
-            {
-                "title": "Here’s Why Lumentum (LITE) Was Downgraded",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/why-lumentum-lite-downgraded-184016295.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 18:40",
-                "description": "We just published a list of the Analysts Just Sounded the Alarm on These 10 Overhyped Stocks and Lumentum Holdings (NASDAQ:LITE) ranked 9th on this list. Wall Street had a rough week, and the damage came fast. Thursday’s sell-off erased $2.3 trillion in market value, pushed the Nasdaq into a correction and sent the VIX, […]",
-                "_timestamp": 1794076816.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Event_Timestamp": "2026-11-07 18:40 to 18:42 UTC (approx. 3 hours ago)",
-            "Facts": "Morgan Stanley trimmed Cisco Systems (CSCO) to Equal-weight and Lumentum Holdings (LITE) was downgraded amid a broader tech sector correction that erased $2.3 trillion in market value and pushed the Nasdaq into correction territory [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether institutional de-risking in mega-cap tech will force broad-based liquidations across other asset classes including commodities.",
-            "Macro_Context": "Nasdaq is rebounding (+1.81%) after sharp losses, while 10Y yields soften (-0.18%). Retail positioning is heavily long (71.7%), increasing downside liquidity risks if equity stabilization triggers long liquidation.",
-            "Bull_Case": "Ongoing analyst downgrades across bellwether tech stocks maintain underlying anxiety, supporting defensive asset allocations into gold.",
-            "Bear_Case": "Broad tech stabilization and a bounce in the Nasdaq 100 reduce panic-driven safe-haven demand, exposing long retail traders to pullbacks toward support.",
-            "Historical_Calibration": "Following rules on macro-alignment, when equities bounce alongside dollar strength, gold upside can be capped. A short-term bearish reversal toward lower liquidity walls is favored.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 54,
-            "Past_Price_Action_Cause": "The 24h drop of -$28.39 in gold demonstrates resilience against equity volatility, but shifting tech sentiment points toward a test of lower support.",
-            "Orderflow_Price_Target": "4059.95"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-07 05:42 | Last Update: 2026-11-07 18:41",
-        "original_date": "2026-11-07 05:42",
-        "_timestamp": 1794076860.0,
-        "articles": [
-            {
-                "title": "Axon Plunged To a 2-Year Low. Here's Why It Could Be a Golden Buying Opportunity",
-                "link": "https://www.fool.com/investing/2026/11/07/axon-plunged-to-a-2-year-low-here-s-why-it-could-be-a-golden-buying-opportunity/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 05:42",
-                "description": "Axon stock tumbled on its Q3 report as it badly missed revenue estimates.",
-                "_timestamp": 1794030124.0
-            },
-            {
-                "title": "Here’s Why Craig Hallum Downgraded Axon (AXON)",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/why-craig-hallum-downgraded-axon-184100986.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 18:41",
-                "description": "We just published a list of the Analysts Just Sounded the Alarm on These 10 Overhyped Stocks and Axon Enterprise (NASDAQ:AXON) ranked 8th on this list. Wall Street had a rough week, and the damage came fast. Thursday’s sell-off erased $2.3 trillion in market value, pushed the Nasdaq into a correction and sent the VIX, […]",
-                "_timestamp": 1794076860.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-07 18:41 UTC (approx. 5 hours ago relative to 2026-11-07 23:55 UTC)",
-            "Facts": "Axon Enterprise (NASDAQ:AXON) was downgraded by Craig Hallum and ranked 8th in a list of overhyped stocks after a severe Q3 revenue miss that sent the stock tumbling to a 2-year low, coinciding with a broader market sell-off that erased $2.3 trillion in market value [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether individual tech/growth stock downgrades will trigger contagion across broader tech indices or remain isolated earnings misses.",
-            "Macro_Context": "The Nasdaq 100 is up 24h (+1.81%) on resilient tech baseline metrics, but experiences intense intraday whiplash. OANDA retail positioning is heavy on the long side (71.7%), amplifying vulnerability to equity liquidations.",
-            "Bull_Case": "Tech equity distress and correction fears can prompt capital rotation into safe-haven assets like gold as investors derisk portfolios.",
-            "Bear_Case": "Micro-level stock downgrades do not automatically dictate macroeconomic safe-haven flows; cash hoarding or dollar strength can dominate instead.",
-            "Historical_Calibration": "Past tracking indicates that equity correction headlines can support gold if broad indices break down, but single-stock earnings misses usually have muted macro transmission.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Tech sector volatility and a weekend crypto-gold basis gap of $-10.98 reflect overarching risk-off sentiment in growth sectors.",
-            "Orderflow_Price_Target": "4078.23"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-07 18:33",
-        "original_date": "2026-11-07 18:33",
-        "_timestamp": 1794076392.0,
-        "articles": [
-            {
-                "title": "Stocks soared on the Democratic sweep. Less than 24 hours later, the AI trade cracked.",
-                "link": "https://finance.yahoo.com/markets/article/stocks-soared-on-the-democratic-sweep-less-than-24-hours-later-the-ai-trade-cracked-183312401.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 18:33",
-                "description": "The extraordinary reversal in stocks marked the latest whipsaw in a year of wild swings.",
-                "_timestamp": 1794076392.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Event_Timestamp": "2026-11-07 18:33 UTC (approx. 5 hours ago relative to 2026-11-07 23:55 UTC)",
-            "Facts": "Stocks soared following a Democratic sweep, but the momentum reversed sharply within 24 hours as the AI trade cracked, marking extreme whipsaw volatility across broader markets [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether the post-election political shift will establish sustained fiscal expansion paths or get entirely overshadowed by tech valuation resets.",
-            "Macro_Context": "Nasdaq 100 gained +1.81% over 24h, US 10Y bond prices slipped (-0.18%), and EUR/USD fell (-0.70%). The strong USD proxy and shifting equity sentiment create cross-currents for gold.",
-            "Bull_Case": "Sharp reversals and systemic equity instability drive defensive capital allocations into gold as a hedge against severe portfolio drawdowns.",
-            "Bear_Case": "Simultaneous strengthening of the US dollar proxy (EUR/USD down 0.70%) can cap gold's upside potential despite equity turbulence.",
-            "Historical_Calibration": "As seen in previous high-volatility equity sessions, rapid market whipsaws can trigger swift tests of nearby liquidity clusters, provided targets are kept conservative relative to the ATR.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 54,
-            "Past_Price_Action_Cause": "The 4h change of $+10.47 reflects immediate safe-haven absorption following the equity crack.",
-            "Orderflow_Price_Target": "4078.23"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
     }
 ]

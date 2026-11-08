@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 133,
+    "total_evaluated": 134,
     "hits": 15,
-    "misses": 118,
-    "win_rate": 11.3,
-    "active_signals": 51,
+    "misses": 119,
+    "win_rate": 11.2,
+    "active_signals": 53,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -1990,7 +1990,7 @@
             "fail_reason": "20h time limit expired without reaching $4059.95 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/crypto/articles/robert-kiyosaki-says-why-worry-223009735.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Robert Kiyosaki Says 'Why Worry?' as He Eyes Buying Bitcoin, Gold, Silver in Next Crash",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -2003,7 +2003,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794090609.0,
             "date": "First Reported: 2026-11-07 22:30 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/energy/articles/devon-energy-stock-other-oil-221413315.html?.tsrc=rss": {
             "status": "MISS",
@@ -2394,9 +2394,9 @@
             "headline": "'You lost war and election': Iran's Rezaei warns US of 'devastating response'",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 54,
             "entry_price": 4070.59,
-            "target": 4070.79,
+            "target": 4078.28,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2410,9 +2410,9 @@
             "headline": "Saudi Aramco building in Riyadh damaged by falling debris in attempted attack, ministry sa",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 53,
+            "prob": 55,
             "entry_price": 4070.59,
-            "target": 4078.15,
+            "target": 4078.28,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2428,7 +2428,7 @@
             "impact": "Bullish",
             "prob": 52,
             "entry_price": 4070.59,
-            "target": 4078.15,
+            "target": 4078.28,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2947,6 +2947,54 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794157225.0,
             "date": "First Reported: 2026-11-08 17:00 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249252/Iranian-military-ready-to-defend-with-advanced-homegrown-arms": {
+            "status": "ACTIVE",
+            "headline": "Iranian military ready to defend with advanced homegrown arms",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4078.28,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794163102.0,
+            "date": "First Reported: 2026-11-08 18:38 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/core-natural-resources-bristow-group-182136821.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Core Natural Resources, Bristow Group, CVR Energy, Baker Hughes, and Oceaneering shares pl",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bearish",
+            "prob": 57,
+            "entry_price": 4070.59,
+            "target": 4051.1,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794162096.0,
+            "date": "First Reported: 2026-11-08 18:21 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/visa-v-15-revenue-gain-173201141.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Visa (V): A 15% Revenue Gain at Scale, With 7% Average Analyst Upside",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4059.91,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794159121.0,
+            "date": "First Reported: 2026-11-08 17:32 UTC",
             "fail_reason": ""
         }
     }

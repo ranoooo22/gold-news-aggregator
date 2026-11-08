@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 134,
+    "total_evaluated": 135,
     "hits": 15,
-    "misses": 119,
-    "win_rate": 11.2,
-    "active_signals": 53,
+    "misses": 120,
+    "win_rate": 11.1,
+    "active_signals": 55,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -2428,7 +2428,7 @@
             "impact": "Bullish",
             "prob": 52,
             "entry_price": 4070.59,
-            "target": 4078.28,
+            "target": 4078.2,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2518,7 +2518,7 @@
             "fail_reason": ""
         },
         "https://www.tikr.com/blog/exxonmobil-is-up-38-in-2026-and-chevron-is-up-39-take-profits-or-hold-on?ref=yahoofinance&tlnk=yf-261108-4f8f2hpw&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "ExxonMobil Is Up 38% in 2026 and Chevron Is Up 39%: Take Profits, or Hold On?",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -2531,7 +2531,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794095159.0,
             "date": "First Reported: 2026-11-07 23:45 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.76 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/3-british-quality-stocks-roe-021445314.html?.tsrc=rss": {
             "status": "ACTIVE",
@@ -2995,6 +2995,54 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794159121.0,
             "date": "First Reported: 2026-11-08 17:32 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/iraq-has-agreed-us-allow-oil-exports-through-hormuz-minister-says": {
+            "status": "ACTIVE",
+            "headline": "Iraq has agreed with the US to allow oil exports through Hormuz, minister says",
+            "source": "Middle East Eye",
+            "impact": "Bearish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4059.89,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794167240.0,
+            "date": "First Reported: 2026-11-08 19:47 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/us-asks-iraq-to-shut-most-iran-border-crossings-iraqi-foreign-minister-says-5010296": {
+            "status": "ACTIVE",
+            "headline": "US asks Iraq to shut most Iran border crossings, Iraqi foreign minister says",
+            "source": "Investing.com",
+            "impact": "Bullish",
+            "prob": 54,
+            "entry_price": 4070.59,
+            "target": 4078.2,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794164778.0,
+            "date": "First Reported: 2026-11-08 19:06 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/m/826f68d8-6715-357e-b04d-885d04102528/inflation-data%2C-constellation.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Inflation Data, Constellation Energy, Skydance, Applied Materials, and More to Watch This ",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794164400.0,
+            "date": "First Reported: 2026-11-08 19:00 UTC",
             "fail_reason": ""
         }
     }

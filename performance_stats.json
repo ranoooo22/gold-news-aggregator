@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 104,
+    "total_evaluated": 115,
     "hits": 15,
-    "misses": 89,
-    "win_rate": 14.4,
-    "active_signals": 59,
+    "misses": 100,
+    "win_rate": 13.0,
+    "active_signals": 56,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -1606,7 +1606,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$12.82)"
         },
         "https://finance.yahoo.com/economy/policy/articles/ecb-lagarde-says-inflation-stay-164342748.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "ECB’s Lagarde says inflation to stay high, sees little reason to alter rate course",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -1619,10 +1619,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794069822.0,
             "date": "Erstmeldung: 2026-11-07 16:43",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/7/israel-builds-90km-network-of-military-roads-across-southern-lebanon?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Israel builds 90km network of military roads across southern Lebanon",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -1635,10 +1635,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794069033.0,
             "date": "Erstmeldung: 2026-11-07 16:30",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.27 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/video/ai-demand-isnt-going-anywhere-but-volatility-lies-ahead-194213515.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "AI demand isn't going anywhere, but volatility lies ahead",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -1651,10 +1651,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794068400.0,
             "date": "Erstmeldung: 2026-11-05 19:27 | Letztes Update: 2026-11-07 16:20",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.27 (Max DD: -$0.00)"
         },
         "https://www.marketwatch.com/story/an-anthropic-ipo-when-the-ai-trade-is-this-turbulent-godspeed-08ca0496?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "An Anthropic IPO when the AI trade is this turbulent? Goodspeed!",
             "source": "MarketWatch Macro",
             "impact": "Bullish",
@@ -1667,10 +1667,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794067105.0,
             "date": "Erstmeldung: 2026-11-05 16:00 | Letztes Update: 2026-11-07 15:58",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.27 (Max DD: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/05/oracle-has-incredible-news-for-intel-stock-investors/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Oracle Has Incredible News for Intel Stock Investors",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -1683,7 +1683,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794066840.0,
             "date": "Erstmeldung: 2026-11-05 15:43 | Letztes Update: 2026-11-07 15:54",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.27 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/economy/articles/inflation-fears-return-corporate-america-140000593.html?.tsrc=rss": {
             "status": "MISS",
@@ -1702,7 +1702,7 @@
             "fail_reason": "20h time limit expired without reaching $4070.76 (Max DD: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531919/UN-special-rapporteur-describes-Minab-school-attack-as-war-crime": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "UN special rapporteur describes Minab school attack as war crime: Iranian official",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -1715,10 +1715,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794073507.0,
             "date": "Erstmeldung: 2026-11-07 17:45",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.73 (Max DD: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531910/Israel-continues-demolitions-and-bombardment-in-southern-Lebanon": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Israel continues demolitions and bombardment in southern Lebanon",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -1731,10 +1731,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794074163.0,
             "date": "Erstmeldung: 2026-11-07 17:56",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.76 (Max DD: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US-Israel military aid: End of dependence, or a new chapter?",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -1747,10 +1747,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794074149.0,
             "date": "Erstmeldung: 2026-11-07 17:55",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531902/CBI-governor-emphasizes-support-for-rebuilding-gas-industry": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "CBI governor emphasizes support for rebuilding gas industry",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -1763,7 +1763,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794073842.0,
             "date": "Erstmeldung: 2026-11-07 17:50",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/7/abdul-el-sayed-slams-trumps-tariff-war-with-canada?traffic_source=rss": {
             "status": "ACTIVE",
@@ -2070,7 +2070,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/05/nvidia-vs-taiwan-semiconductor-the-ai-revolution-i/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Bett",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -2083,10 +2083,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794075600.0,
             "date": "First Reported: 2026-11-05 15:15 | Last Update: 2026-11-07 18:20",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/thor-explorations-2-other-canadian-181447961.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Thor Explorations And 2 Other Canadian Penny Stocks To Watch",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -2099,14 +2099,14 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794075287.0,
             "date": "First Reported: 2026-11-07 18:14",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-sets-task-force-iron-gate-disrupt-irans-weapons-transfers": {
             "status": "ACTIVE",
             "headline": "Centcom sets up 'Task Force Iron Gate' to disrupt Iran’s weapons transfers",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 51,
+            "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.15,
             "max_dd_usd": 0.0,
@@ -2122,9 +2122,9 @@
             "headline": "Wall Street’s Fear Gauge Jumped More Than 11 Points In A Day. Buffett’s Most Famous Rule S",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
-            "prob": 53,
+            "prob": 54,
             "entry_price": 4070.59,
-            "target": 4078.3,
+            "target": 4078.15,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2410,7 +2410,7 @@
             "headline": "Saudi Aramco building in Riyadh damaged by falling debris in attempted attack, ministry sa",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 52,
+            "prob": 53,
             "entry_price": 4070.59,
             "target": 4078.15,
             "max_dd_usd": 0.0,
@@ -2611,6 +2611,134 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794130577.0,
             "date": "First Reported: 2026-11-08 09:36 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/economy/policy/articles/midterm-results-may-add-uncertainty-135000425.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Midterm results may add uncertainty to the Fed’ next rate decision — here are 5 money move",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bearish",
+            "prob": 51,
+            "entry_price": 4070.59,
+            "target": 4059.89,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794145800.0,
+            "date": "First Reported: 2026-11-08 13:50 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/08/the-best-energy-stock-to-buy-with-oil-near-105-isn/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "The Best Energy Stock to Buy With Oil Near $105 Isn't an Oil Producer",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bearish",
+            "prob": 51,
+            "entry_price": 4070.59,
+            "target": 4059.89,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794144900.0,
+            "date": "First Reported: 2026-11-08 13:35 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531938/Iran-girls-futsal-miss-out-on-final-at-2026-YOG": {
+            "status": "ACTIVE",
+            "headline": "Iran girls’ futsal miss out on final at 2026 YOG",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794144241.0,
+            "date": "First Reported: 2026-11-08 13:24 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531944/Iran-s-traditional-water-wisdom-could-help-address-modern-challenges": {
+            "status": "ACTIVE",
+            "headline": "Iran’s traditional water wisdom could help address modern challenges: heritage official",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794144098.0,
+            "date": "First Reported: 2026-11-08 13:21 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531943/Iran-South-Korea-explore-cooperation-in-sustainable-ecotourism": {
+            "status": "ACTIVE",
+            "headline": "Iran, South Korea explore cooperation in sustainable ecotourism",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794143794.0,
+            "date": "First Reported: 2026-11-08 13:16 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/photo/249244/Funeral-for-eight-unidentified-martyrs-in-Hamedan": {
+            "status": "ACTIVE",
+            "headline": "Funeral for eight unidentified martyrs in Hamedan",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794142313.0,
+            "date": "First Reported: 2026-11-08 12:51 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/8/russian-strikes-on-ukraine-leave-hundreds-of-thousands-without-electricity?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Russian strikes on Ukraine leave hundreds of thousands without electricity",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794140417.0,
+            "date": "First Reported: 2026-11-08 12:20 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531937/QS-Asia-University-Ranking-includes-more-Iranian-universities": {
+            "status": "ACTIVE",
+            "headline": "QS Asia University Ranking includes more Iranian universities",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794139215.0,
+            "date": "First Reported: 2026-11-08 12:00 UTC",
             "fail_reason": ""
         }
     }

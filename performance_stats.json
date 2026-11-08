@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 43,
+    "total_evaluated": 44,
     "hits": 15,
-    "misses": 28,
-    "win_rate": 34.9,
-    "active_signals": 88,
+    "misses": 29,
+    "win_rate": 34.1,
+    "active_signals": 87,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "ACTIVE",
@@ -26,9 +26,9 @@
             "headline": "IRGC to roll out new missile city, aerospace achievements",
             "source": "Mehr News Agency",
             "impact": "Bullish",
-            "prob": 62,
+            "prob": 52,
             "entry_price": 4070.59,
-            "target": 4078.27,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -90,9 +90,9 @@
             "headline": "Trump’s Iran war has changed the future of Social Security",
             "source": "MarketWatch Macro",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 51,
             "entry_price": 4070.59,
-            "target": 4070.76,
+            "target": 4070.73,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -282,9 +282,9 @@
             "headline": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
             "source": "Mehr News Agency",
             "impact": "Bullish",
-            "prob": 58,
+            "prob": 65,
             "entry_price": 4070.59,
-            "target": 4078.3,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -316,7 +316,7 @@
             "impact": "Bullish",
             "prob": 55,
             "entry_price": 4070.59,
-            "target": 4078.3,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -902,7 +902,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249159/US-animosity-with-Iran-proved-to-be-civilizational-MP": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US animosity with Iran proved to be ‘civilizational’: MP",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -915,7 +915,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794024463.0,
             "date": "Erstmeldung: 2026-11-04 08:06 | Letztes Update: 2026-11-07 04:07",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.45 (Max DD: -$0.00)"
         },
         "https://stocktwits.com/news-articles/markets/cryptocurrency/van-eck-ceo-warns-next-us-financial-crisis-will-start-in-washington-urges-investors-to-hold-real-assets-like-gold-and-bitcoin/cNGVSI9R9IW?.tsrc=rss": {
             "status": "MISS",

@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 140,
-    "hits": 15,
+    "total_evaluated": 159,
+    "hits": 34,
     "misses": 125,
-    "win_rate": 10.7,
-    "active_signals": 65,
+    "win_rate": 21.4,
+    "active_signals": 48,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -2189,7 +2189,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.23,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2198,7 +2198,7 @@
             "fail_reason": ""
         },
         "https://stocktwits.com/news-articles/markets/equity/ai-buildout-data-center-backlash-nvidia/cNGouhgR9Iq?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "The AI Buildout Has A New Problem, And It’s Not Nvidia — JPMorgan Sounds Alarm",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -2211,7 +2211,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794120313.0,
             "date": "First Reported: 2026-11-08 06:45 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://en.mehrnews.com/news/249233/Multiple-explosions-heard-in-Riyadh-Saudi-Arabia": {
             "status": "ACTIVE",
@@ -2221,7 +2221,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4078.23,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2230,20 +2230,20 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-civil-defence-issues-all-clear-riyadh-minutes-after-danger-alert": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Saudi civil defence issues all clear for Riyadh minutes after danger alert",
             "source": "Middle East Eye",
             "impact": "Bullish",
             "prob": 53,
             "entry_price": 4070.59,
             "target": 4059.91,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794115610.0,
             "date": "First Reported: 2026-11-08 02:09 UTC | Last Update: 2026-11-08 05:26 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.84)"
         },
         "https://en.mehrnews.com/news/249230/Naval-units-ready-to-defend-maritime-borders-incessantly": {
             "status": "ACTIVE",
@@ -2253,7 +2253,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2269,7 +2269,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2285,7 +2285,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2294,20 +2294,20 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-and-qatari-foreign-ministers-discuss-de-escalation-efforts": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Saudi and Qatari foreign ministers discuss de-escalation efforts",
             "source": "Middle East Eye",
             "impact": "Bullish",
             "prob": 54,
             "entry_price": 4070.59,
             "target": 4051.1,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794114215.0,
             "date": "First Reported: 2026-11-08 03:32 UTC | Last Update: 2026-11-08 05:03 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.84)"
         },
         "https://www.aljazeera.com/news/2026/11/8/drone-attack-on-colombian-army-base-kills-three-soldiers-and-wounds-16?traffic_source=rss": {
             "status": "ACTIVE",
@@ -2317,7 +2317,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2326,20 +2326,20 @@
             "fail_reason": ""
         },
         "https://www.thestreet.com/investing/stocks/bofa-tech-stock-midterm-outlook?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Bank of America has unexpected advice for tech stock investors after midterms",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
             "prob": 51,
             "entry_price": 4070.59,
             "target": 4051.1,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794112380.0,
             "date": "First Reported: 2026-11-08 04:33 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.84)"
         },
         "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss": {
             "status": "ACTIVE",
@@ -2349,7 +2349,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2413,7 +2413,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2429,7 +2429,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.2,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2438,7 +2438,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/diamondback-energy-fang-raises-dividend-080848730.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Diamondback Energy (FANG) Raises Dividend While Holding Shale Drilling In Check",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -2451,7 +2451,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794125328.0,
             "date": "First Reported: 2026-11-08 08:08 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://en.mehrnews.com/news/249239/Shooting-in-Poland-leaves-6-killed-16-injured-report": {
             "status": "ACTIVE",
@@ -2461,7 +2461,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.76,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2477,7 +2477,7 @@
             "prob": 53,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2493,7 +2493,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.76,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2509,7 +2509,7 @@
             "prob": 51,
             "entry_price": 4070.59,
             "target": 4070.76,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2557,7 +2557,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2573,7 +2573,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2589,7 +2589,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2598,7 +2598,7 @@
             "fail_reason": ""
         },
         "https://www.tikr.com/blog/coherent-is-up-21-in-a-year-as-ai-goes-from-copper-to-optical-is-it-a-buy?ref=yahoofinance&tlnk=yf-261108-pwgxj43q&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Coherent Is Up 21% in a Year as AI Goes “From Copper to Optical.” Is It a Buy?",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -2611,10 +2611,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794130577.0,
             "date": "First Reported: 2026-11-08 09:36 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://finance.yahoo.com/economy/policy/articles/midterm-results-may-add-uncertainty-135000425.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Midterm results may add uncertainty to the Fed’ next rate decision — here are 5 money move",
             "source": "Yahoo Finance Gold",
             "impact": "Bearish",
@@ -2627,10 +2627,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794145800.0,
             "date": "First Reported: 2026-11-08 13:50 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/08/the-best-energy-stock-to-buy-with-oil-near-105-isn/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "The Best Energy Stock to Buy With Oil Near $105 Isn't an Oil Producer",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -2643,7 +2643,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794144900.0,
             "date": "First Reported: 2026-11-08 13:35 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531938/Iran-girls-futsal-miss-out-on-final-at-2026-YOG": {
             "status": "ACTIVE",
@@ -2653,7 +2653,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.75,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2669,7 +2669,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.75,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2685,7 +2685,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.75,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2701,7 +2701,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.75,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2717,7 +2717,7 @@
             "prob": 54,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2733,7 +2733,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.75,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2742,7 +2742,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/top-3-quality-stocks-watch-091315093.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Top 3 Quality Stocks To Watch In November 2026",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -2755,7 +2755,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794154825.0,
             "date": "First Reported: 2026-11-08 09:13 UTC | Last Update: 2026-11-08 16:20 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/08/this-dividend-king-has-raised-its-payout-through/?.tsrc=rss": {
             "status": "ACTIVE",
@@ -2765,7 +2765,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.75,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2781,7 +2781,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.75,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2797,7 +2797,7 @@
             "prob": 51,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2813,7 +2813,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.23,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2829,7 +2829,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.78,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2845,7 +2845,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.78,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2854,23 +2854,23 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/technology/ai/articles/bill-gates-says-10-hour-160008028.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Bill Gates Says A $10-an-Hour Robot Could Replace The $20-an-Hour Worker – 'There Is No Pl",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
             "prob": 51,
             "entry_price": 4070.59,
             "target": 4059.89,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794153608.0,
             "date": "First Reported: 2026-11-08 16:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.84)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/dht-holdings-dht-stock-trades-180536694.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "DHT Holdings (DHT) stock trades down, here is why",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -2883,7 +2883,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794161136.0,
             "date": "First Reported: 2026-11-08 18:05 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531940/Tehran-theater-program-honors-Bahram-Beyzaie-with-six-staged": {
             "status": "ACTIVE",
@@ -2893,7 +2893,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.78,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2909,7 +2909,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.78,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2925,7 +2925,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.78,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2941,7 +2941,7 @@
             "prob": 55,
             "entry_price": 4070.59,
             "target": 4070.78,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2957,7 +2957,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2982,7 +2982,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/visa-v-15-revenue-gain-173201141.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Visa (V): A 15% Revenue Gain at Scale, With 7% Average Analyst Upside",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -2995,10 +2995,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794159121.0,
             "date": "First Reported: 2026-11-08 17:32 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/iraq-has-agreed-us-allow-oil-exports-through-hormuz-minister-says": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iraq has agreed with the US to allow oil exports through Hormuz, minister says",
             "source": "Middle East Eye",
             "impact": "Bearish",
@@ -3011,7 +3011,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794167240.0,
             "date": "First Reported: 2026-11-08 19:47 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.investing.com/news/commodities-news/us-asks-iraq-to-shut-most-iran-border-crossings-iraqi-foreign-minister-says-5010296": {
             "status": "ACTIVE",
@@ -3021,7 +3021,7 @@
             "prob": 54,
             "entry_price": 4070.59,
             "target": 4078.2,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -3037,7 +3037,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.2,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -3053,7 +3053,7 @@
             "prob": 53,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -3069,7 +3069,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -3078,7 +3078,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/3-indian-growth-stocks-46-211118901.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "3 Indian Growth Stocks With Up To 46% Earnings Growth",
             "source": "Yahoo Finance Gold",
             "impact": "Bearish",
@@ -3091,7 +3091,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794172278.0,
             "date": "First Reported: 2026-11-08 21:11 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/8/could-iraqs-kurdish-region-return-to-two-separate-administrations?traffic_source=rss": {
             "status": "ACTIVE",
@@ -3101,7 +3101,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4070.76,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -3117,7 +3117,7 @@
             "prob": 51,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.77%, NAS100 +1.81%",
@@ -3133,7 +3133,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.77%, NAS100 +1.81%",
@@ -3142,7 +3142,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/08/teslas-fsd-supervised-attach-rate-hit-75-on-new-ve/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Tesla's FSD (Supervised) Attach Rate Hit 75% on New Vehicles. Here's Why That Single Numbe",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -3155,7 +3155,7 @@
             "macro_snapshot": "EUR -0.77%, NAS100 +1.81%",
             "created_ts": 1794150600.0,
             "date": "First Reported: 2026-11-08 15:10 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/08/this-semiconductor-etf-just-had-its-worst-day-sinc/?.tsrc=rss": {
             "status": "ACTIVE",
@@ -3165,7 +3165,7 @@
             "prob": 51,
             "entry_price": 4070.59,
             "target": 4070.75,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.78%, NAS100 +1.81%",
@@ -3174,7 +3174,7 @@
             "fail_reason": ""
         },
         "https://247wallst.com/investing/2026/11/08/in-march-2000-cisco-briefly-became-the-worlds-most-valuable-company-as-its-stock-closed-at-80-06-buyers-that-day-waited-more-than-25-years-for-it-to-close-higher-heres-what-ai-investors-need-t/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "In March 2000, Cisco Briefly Became The World’s Most Valuable Company As Its Stock Closed ",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -3187,7 +3187,7 @@
             "macro_snapshot": "EUR -0.78%, NAS100 +1.81%",
             "created_ts": 1794174941.0,
             "date": "First Reported: 2026-11-08 19:54 UTC | Last Update: 2026-11-08 21:55 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.middleeasteye.net/news/frances-polarised-road-2027-repression-racism-and-rise-far-right": {
             "status": "ACTIVE",
@@ -3197,7 +3197,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.64%, NAS100 +0.79%",
@@ -3213,7 +3213,7 @@
             "prob": 53,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.64%, NAS100 +0.79%",
@@ -3229,7 +3229,7 @@
             "prob": 52,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.64%, NAS100 +0.79%",
@@ -3238,7 +3238,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/hostile-aircraft-alert-false-identification-israeli-military-says": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Israeli military says hostile aircraft alert in north false alarm",
             "source": "Middle East Eye",
             "impact": "Bearish",
@@ -3251,7 +3251,7 @@
             "macro_snapshot": "EUR -0.68%, NAS100 +1.27%",
             "created_ts": 1794113291.0,
             "date": "First Reported: 2026-11-08 04:48 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://en.mehrnews.com/news/249227/Another-maritime-incident-reported-off-UAE-coast": {
             "status": "ACTIVE",
@@ -3261,7 +3261,7 @@
             "prob": 54,
             "entry_price": 4070.59,
             "target": 4078.28,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 10.84,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.68%, NAS100 +1.27%",
@@ -3284,6 +3284,38 @@
             "created_ts": 1794108000.0,
             "date": "First Reported: 2026-11-08 03:20 UTC",
             "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/07/alphabets-15-billion-investment-in-malaysia-data-c/?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Alphabet's $15 Billion Investment in Malaysia Data Centers Shows That Midterm Results Won'",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 54,
+            "entry_price": 4070.59,
+            "target": 4059.91,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 55.98,
+            "macro_snapshot": "EUR -0.65%, NAS100 +1.89%",
+            "created_ts": 1794100800.0,
+            "date": "First Reported: 2026-11-08 01:20 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
+        },
+        "https://www.marketbeat.com/instant-alerts/transcript-what-lundin-gold-lug-said-on-its-q3-earnings-call-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+            "status": "HIT",
+            "headline": "What Lundin Gold (LUG) Said on Its Q3 Earnings Call",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bearish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4059.91,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 55.98,
+            "macro_snapshot": "EUR -0.65%, NAS100 +1.89%",
+            "created_ts": 1794100456.0,
+            "date": "First Reported: 2026-11-08 01:14 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         }
     }
 }

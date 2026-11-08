@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 130,
+    "total_evaluated": 133,
     "hits": 15,
-    "misses": 115,
-    "win_rate": 11.5,
-    "active_signals": 49,
+    "misses": 118,
+    "win_rate": 11.3,
+    "active_signals": 51,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -1910,7 +1910,7 @@
             "fail_reason": "20h time limit expired without reaching $4070.77 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249225/Iran-s-Zare-named-world-s-best-freestyle-wrestler": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Zare named world’s best freestyle wrestler by UWW",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -1923,10 +1923,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794087322.0,
             "date": "Erstmeldung: 2026-11-07 21:35",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.73 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/us-military-says-it-disabled-cargo-vessel-gulf-oman": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US military says it disabled cargo vessel in Gulf of Oman",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -1939,7 +1939,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794086834.0,
             "date": "Erstmeldung: 2026-11-07 21:27",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/erdogan-tells-trump-turkey-will-keep-pushing-us-iran-peace": {
             "status": "MISS",
@@ -2006,7 +2006,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/devon-energy-stock-other-oil-221413315.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Devon Energy Stock And Other Oil Producers Facing Inflation Pressure",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -2019,7 +2019,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794089653.0,
             "date": "First Reported: 2026-11-07 22:14 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/technology/ai/articles/alphabet-googl-expands-spacex-stake-191144041.html?.tsrc=rss": {
             "status": "MISS",
@@ -2867,6 +2867,86 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794153608.0,
             "date": "First Reported: 2026-11-08 16:00 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/dht-holdings-dht-stock-trades-180536694.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "DHT Holdings (DHT) stock trades down, here is why",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4059.91,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794161136.0,
+            "date": "First Reported: 2026-11-08 18:05 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531940/Tehran-theater-program-honors-Bahram-Beyzaie-with-six-staged": {
+            "status": "ACTIVE",
+            "headline": "Tehran theater program honors Bahram Beyzaie with six staged readings",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.78,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794158973.0,
+            "date": "First Reported: 2026-11-08 17:29 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531958/Iran-makes-Trump-pay-the-price": {
+            "status": "ACTIVE",
+            "headline": "Iran makes Trump pay the price",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.78,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794158643.0,
+            "date": "First Reported: 2026-11-08 17:24 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531955/Iran-holds-trial-in-lawsuit-filed-by-100-victims-of-US-Israeli": {
+            "status": "ACTIVE",
+            "headline": "Iran holds trial in lawsuit filed by 100 victims of US-Israeli aggression",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.78,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794158314.0,
+            "date": "First Reported: 2026-11-08 17:18 UTC",
+            "fail_reason": ""
+        },
+        "https://moneylion.com/trending/money/rare-coins-decade-ago-vs-today?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "What Rare Coins Were Worth 10 Years Ago vs. Today",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.78,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794157225.0,
+            "date": "First Reported: 2026-11-08 17:00 UTC",
             "fail_reason": ""
         }
     }

@@ -1,12 +1,12 @@
 {
-    "total_evaluated": 83,
+    "total_evaluated": 104,
     "hits": 15,
-    "misses": 68,
-    "win_rate": 18.1,
-    "active_signals": 75,
+    "misses": 89,
+    "win_rate": 14.4,
+    "active_signals": 59,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Bank of America warns oil could force a Fed interest-rate rethink",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -19,10 +19,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794065820.0,
             "date": "Erstmeldung: 2026-11-07 15:37",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249210/IRGC-to-roll-out-new-missile-city-aerospace-achievements": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "IRGC to roll out new missile city, aerospace achievements",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -35,10 +35,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794065698.0,
             "date": "Erstmeldung: 2026-11-07 07:22 | Letztes Update: 2026-11-07 15:34",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-659": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Morning update",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -51,10 +51,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794065693.0,
             "date": "Erstmeldung: 2026-11-02 17:15 | Letztes Update: 2026-11-07 15:34",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-minister-health-warns-outbreak-disease-storm-battered-gaza": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Palestinian Minister of Health warns of outbreak of disease in storm-battered Gaza",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -67,10 +67,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794065287.0,
             "date": "Erstmeldung: 2026-11-07 15:28",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.27 (Max DD: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/06/palantir-and-amd-just-reported-earnings-history-sa/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Palantir and AMD Just Reported Earnings. History Says This Will Happen to Both Stocks Next",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -83,10 +83,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794064980.0,
             "date": "Erstmeldung: 2026-11-06 08:35 | Letztes Update: 2026-11-07 15:23",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://www.marketwatch.com/story/trumps-iran-war-has-changed-the-future-of-social-security-7a500f9f?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Trump’s Iran war has changed the future of Social Security",
             "source": "MarketWatch Macro",
             "impact": "Bullish",
@@ -99,10 +99,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794064680.0,
             "date": "Erstmeldung: 2026-11-07 15:18",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.73 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/energy/articles/permian-resources-corp-pr-q3-151241779.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Permian Resources Corp (PR) (Q3 2026) Earnings Call Highlights: Record Free Cash Flow, $1.",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -115,10 +115,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794064361.0,
             "date": "Erstmeldung: 2026-11-07 15:12",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.76 (Max DD: -$0.00)"
         },
         "https://www.investing.com/news/commodities-news/oil-rises-after-report-of-us-strike-on-irans-qeshm-island-4993342": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Oil rises as peace prospects dim after US hits Iran’s Qeshm Island",
             "source": "Investing.com",
             "impact": "Bullish",
@@ -131,10 +131,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794064012.0,
             "date": "Erstmeldung: 2026-11-03 01:36 | Letztes Update: 2026-11-07 15:06",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://www.investing.com/news/commodities-news/gold-in-oversold-freefall-tests-key-support-live-levels-93CH-4990025": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Gold consolidates in downtrend, eyes $3,980 resistance: Live levels",
             "source": "Investing.com",
             "impact": "Bullish",
@@ -147,10 +147,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794063106.0,
             "date": "Erstmeldung: 2026-11-02 22:53 | Letztes Update: 2026-11-07 14:51",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.95 (Max DD: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531906/Cham-Jangal-a-hidden-natural-retreat-along-the-Seymareh-river": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Cham-Jangal, a hidden natural retreat along the Seymareh river",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -163,10 +163,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794062438.0,
             "date": "Erstmeldung: 2026-11-07 14:40",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.76 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249219/Iraqis-continue-to-protest-closure-of-border-gate-with-Iran": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iraqis continue to protest closure of border gate with Iran",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -179,10 +179,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794061501.0,
             "date": "Erstmeldung: 2026-11-07 14:25",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/7/iraqs-fm-says-external-parties-using-iraqi-soil-to-attack-neighbours?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iraq’s FM says external parties using Iraqi soil to attack neighbours",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -195,10 +195,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794061488.0,
             "date": "Erstmeldung: 2026-11-07 14:24",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://www.benzinga.com/markets/prediction-markets/26/11/62966566/stock-market-will-sp-500-open-up-or-down-today-74?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Stock Market: Will S&P 500 Open Up or Down Today?",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -211,10 +211,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794061320.0,
             "date": "Erstmeldung: 2026-11-06 05:56 | Letztes Update: 2026-11-07 14:22",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531904/Diwali-celebration-in-Tehran-puts-spotlight-on-Iran-India-ties": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Diwali celebration in Tehran puts spotlight on Iran-India ties",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -227,10 +227,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794061231.0,
             "date": "Erstmeldung: 2026-11-07 14:20",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.76 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/m/38cb0654-6e49-3715-b4e4-f2f830876d7a/stock-market-today%3A-nasdaq.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Stock Market Today: Nasdaq Craters 3% As Chips Sell Off; Arm Misses Key Metric (Live Cover",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -243,10 +243,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794061144.0,
             "date": "Erstmeldung: 2026-11-05 14:32 | Letztes Update: 2026-11-07 14:19",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249216/VIDEO-River-bursts-its-banks-in-Lorestan-after-heavy-rain": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "VIDEO: River bursts its banks in Lorestan after heavy  rain",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -259,10 +259,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794058169.0,
             "date": "Erstmeldung: 2026-11-07 13:03 | Letztes Update: 2026-11-07 13:29",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/7/they-started-bombing-us-with-drones-russian-attacks-unnerve-zaporizhzhia?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "‘They started bombing us with drones’: Russian attacks unnerve Zaporizhzhia",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -275,7 +275,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794057881.0,
             "date": "Erstmeldung: 2026-11-07 13:24",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249120/IRGC-downs-55th-US-MQ-9-over-Strait-of-Hormuz": {
             "status": "MISS",
@@ -1686,7 +1686,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/economy/articles/inflation-fears-return-corporate-america-140000593.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Inflation Fears Return as Corporate America Counts the Cost",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -1699,7 +1699,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794060000.0,
             "date": "Erstmeldung: 2026-11-07 14:00",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.76 (Max DD: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531919/UN-special-rapporteur-describes-Minab-school-attack-as-war-crime": {
             "status": "ACTIVE",
@@ -1930,9 +1930,9 @@
             "headline": "US military says it disabled cargo vessel in Gulf of Oman",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 52,
+            "prob": 56,
             "entry_price": 4070.59,
-            "target": 4078.15,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2134,7 +2134,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/rains-flood-gaza-displacement-camps-israeli-authorities-block-entry": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Rains flood Gaza displacement camps as Israeli authorities block entry of shelter material",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -2147,10 +2147,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794063286.0,
             "date": "First Reported: 2026-11-07 11:56 | Last Update: 2026-11-07 14:54",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.79 (Max DD: -$0.00)"
         },
         "https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "America's newest small business owners with no employees are off to a hot start in AI era",
             "source": "CNBC Tech & AI",
             "impact": "Bearish",
@@ -2163,10 +2163,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794062701.0,
             "date": "First Reported: 2026-11-07 14:45",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4050.99 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/m/d9b3dc87-0876-3cca-a855-3dc48452a602/market-week-ahead%3A-can-the.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Market Week Ahead: Can The Stock Market Fly With A Lame Duck Congress?",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -2179,7 +2179,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794062491.0,
             "date": "First Reported: 2026-11-07 14:41",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4050.99 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249237/IRGC-closely-monitoring-U-S-Scorpion-Strike-Task-Force": {
             "status": "ACTIVE",
@@ -2531,6 +2531,86 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794095159.0,
             "date": "First Reported: 2026-11-07 23:45 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/3-british-quality-stocks-roe-021445314.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "3 British Quality Stocks With ROE Over 27%",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4051.09,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794136398.0,
+            "date": "First Reported: 2026-11-08 02:14 UTC | Last Update: 2026-11-08 11:13 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/08/amd-stock-has-more-than-doubled-in-2026-here-s-how-its-last-8-doubles-played-out-the-next-year/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "AMD Stock Has More Than Doubled in 2026. Here's How Its Last 8 Doubles Played Out the Next",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794133622.0,
+            "date": "First Reported: 2026-11-08 10:27 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketbeat.com/instant-alerts/transcript-ring-energy-q3-earnings-call-highlights-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Ring Energy Q3 Earnings Call Highlights",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794132850.0,
+            "date": "First Reported: 2026-11-08 10:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketbeat.com/instant-alerts/transcript-oceanagold-q3-earnings-call-highlights-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "OceanaGold Q3 Earnings Call Highlights",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794132849.0,
+            "date": "First Reported: 2026-11-08 10:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tikr.com/blog/coherent-is-up-21-in-a-year-as-ai-goes-from-copper-to-optical-is-it-a-buy?ref=yahoofinance&tlnk=yf-261108-pwgxj43q&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Coherent Is Up 21% in a Year as AI Goes “From Copper to Optical.” Is It a Buy?",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4059.91,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794130577.0,
+            "date": "First Reported: 2026-11-08 09:36 UTC",
             "fail_reason": ""
         }
     }

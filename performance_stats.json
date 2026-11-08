@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 137,
+    "total_evaluated": 138,
     "hits": 15,
-    "misses": 122,
+    "misses": 123,
     "win_rate": 10.9,
-    "active_signals": 54,
+    "active_signals": 56,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -2390,7 +2390,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/you-lost-war-and-election-irans-rezaei-warns-us-devastating-response": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "'You lost war and election': Iran's Rezaei warns US of 'devastating response'",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -2403,7 +2403,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794100033.0,
             "date": "First Reported: 2026-11-08 01:07 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.28 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-aramco-building-riyadh-damaged-falling-debris-attempted-attack": {
             "status": "ACTIVE",
@@ -3059,6 +3059,54 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794169039.0,
             "date": "First Reported: 2026-11-08 18:18 UTC | Last Update: 2026-11-08 20:17 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/production-suspended-at-iraqs-khor-mor-gas-field-after-drone-attack-sources-say-5010313": {
+            "status": "ACTIVE",
+            "headline": "Production suspended at Iraq’s Khor Mor gas field after drone attack, sources say",
+            "source": "Investing.com",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4078.28,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794174864.0,
+            "date": "First Reported: 2026-11-08 20:55 UTC | Last Update: 2026-11-08 21:54 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/3-indian-growth-stocks-46-211118901.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "3 Indian Growth Stocks With Up To 46% Earnings Growth",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4059.91,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794172278.0,
+            "date": "First Reported: 2026-11-08 21:11 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/8/could-iraqs-kurdish-region-return-to-two-separate-administrations?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Could Iraq’s Kurdish region return to two separate administrations?",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4070.76,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794171158.0,
+            "date": "First Reported: 2026-11-08 13:06 UTC | Last Update: 2026-11-08 20:52 UTC",
             "fail_reason": ""
         }
     }

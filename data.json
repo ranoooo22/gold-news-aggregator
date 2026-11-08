@@ -8543,21 +8543,21 @@
                 "_timestamp": 1794116736.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-07 19:04 UTC (approx. 3 hours ago)",
-            "Facts": "Protesters gathered in Berlin, Germany, demanding an immediate halt to arms exports and military support for Israel [Al Jazeera English].",
-            "Uncertainties": "Whether European governments will alter policy stance due to domestic street demonstrations.",
-            "Macro_Context": "EUR/USD is under pressure (-0.70%), reflecting euro-area economic concerns. Social protests remain localized without immediate systemic economic impacts.",
-            "Bull_Case": "Civil unrest and political pressure across European capitals highlight enduring geopolitical polarization, keeping underlying safe-haven sentiment alive.",
-            "Bear_Case": "Protests are localized and have failed to alter official defense export policies, rendering the macro impact negligible for precious metals.",
-            "Historical_Calibration": "Social demonstrations without direct policy shifts rarely move macroeconomic asset classes significantly.",
-            "Impact_Timing": "Present",
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-07 19:04 UTC (approx. 28 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "Pro-Palestinian rallies and demonstrations took place in Berlin, Germany, calling for freedom and justice for Palestinians and demanding an end to the arming of Israel [Al Jazeera English, Mehr News Agency].",
+            "Uncertainties": "Local protest scale and potential escalation with law enforcement or counter-protests are unquantified.",
+            "Macro_Context": "EUR/USD is down 0.68% and US equities are bid, meaning geopolitical street protests in Europe have minimal direct transmission to institutional USD flows or 10Y Treasury yields.",
+            "Bull_Case": "Persistent geopolitical demonstrations remind markets of Middle East tensions, supporting safe-haven gold flows.",
+            "Bear_Case": "Protests in Europe are localized and have negligible impact on global monetary policy, energy shocks, or physical bullion demand.",
+            "Historical_Calibration": "Past tracking records show geopolitical headline noise frequently results in missed directional bets when retail sentiment is overwhelmingly long (71.7% long) and price action is muted relative to the daily ATR ($60.10).",
+            "Impact_Timing": "Past (Already Priced In)",
             "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 45,
-            "Past_Price_Action_Cause": "Gold price behavior is dominated by broader US dollar and Treasury yield dynamics rather than European municipal protests.",
+            "Past_Price_Action_Cause": "The 24h drop of $28.39 reflects broader macro consolidation rather than localized European protest headlines.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -8583,21 +8583,22 @@
                 "_timestamp": 1794103798.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 02:09 UTC (~5.2h ago)",
-            "Facts": "[Middle East Eye] Saudi civil defence issues all clear for Riyadh minutes after danger alert - Saudi civil defence issues all clear for Riyadh minutes after danger alert\n\n    \n    \n\n        \n    \n                Saudi Civil Defence authorities issue all clear for Riyadh City, m | [Middle East Eye] Saudi authorities say danger passes in Dammam, al-Ahsa and Abqaiq - Saudi authorities say danger passes in Dammam, al-Ahsa and Abqaiq\n\n    \n    \n\n        \n    \n                The General Directorate of Saudi Civil Defense said the danger in the city of Dammam",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 5.2h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4070.79"
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-08 05:26 UTC (approx. 18 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "Saudi Civil Defence issued all-clear notices for Riyadh, Dammam, al-Ahsa, and Abqaiq following brief 'potential danger' alerts [Middle East Eye].",
+            "Uncertainties": "The exact catalyst for the initial civil defense alert in Saudi Arabia remains unspecified in the initial reports.",
+            "Macro_Context": "Brent Crude is down 2.16% at $99.88, reflecting a lack of severe supply disruption fears as the Saudi authorities rapidly downgraded threats and issued all-clear statements.",
+            "Bull_Case": "Initial security warnings in key Saudi oil regions can trigger knee-jerk safe-haven spikes in gold.",
+            "Bear_Case": "The swift resolution and 'all-clear' announcements neutralize any oil or geopolitical risk premium, weighing on safe-haven assets.",
+            "Historical_Calibration": "Drawing on past track record lessons, short-lived geopolitical scares with rapid de-escalation often trap breakout traders, leading to low hit rates when targeting distant liquidity zones.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 53,
+            "Past_Price_Action_Cause": "Rapid threat clearance prevented any sustained safe-haven bid, aligning with a 4h minor recovery ($+10.47) that stalled below upper liquidity resistance.",
+            "Orderflow_Price_Target": "4059.91"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -8616,21 +8617,22 @@
                 "_timestamp": 1794114868.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 05:14 UTC (~2.1h ago)",
-            "Facts": "[Mehr News Agency] Naval units ready to defend maritime borders incessantly - TEHRAN, Nov. 08 (MNA) – Commander of Iran’s Northern Fleet and the Fourth Naval Zone of Imam Reza (AS) Rear Admiral Mohsen Razzaqi has said naval units' readiness to defend maritime borders around the ",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 2.1h.",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-08 05:14 UTC (approx. 18 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "Commander of Iran's Northern Fleet Rear Admiral Mohsen Razzaqi announced round-the-clock readiness of naval units to defend maritime borders [Mehr News Agency].",
+            "Uncertainties": "Routine military readiness statements versus specific operational deployments are difficult to distinguish.",
+            "Macro_Context": "Oil prices dropping 2.16% and a strong Nasdaq (+1.27%) indicate that markets are currently shrugging off routine Iranian naval posturing.",
+            "Bull_Case": "Heightened naval rhetoric in the Persian Gulf zone supports a baseline geopolitical risk premium for gold.",
+            "Bear_Case": "Routine defensive statements by regional commanders are viewed as standard rhetoric and ignored by major macro desks.",
+            "Historical_Calibration": "With a historical win rate of 10.7% on directional signals, trading standard military posturing without immediate escalation confirmation usually results in time-expiry misses.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4070.79"
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The 0.17x ATR move ratio indicates very low intraday volatility response to routine regional statements.",
+            "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -8649,21 +8651,22 @@
                 "_timestamp": 1794114579.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 05:09 UTC (~2.2h ago)",
-            "Facts": "[Al Jazeera English] Haitians cheer El Salvador’s Bukele amid gang war - Some Haitians have cheered on El Salvadorian troops deployed to fight gangs in the Haitian capital.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 2.2h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4070.79"
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-08 05:09 UTC (approx. 18 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "Haitian citizens expressed support for Salvadoran troop deployments assisting in gang suppression within the Haitian capital [Al Jazeera English].",
+            "Uncertainties": "Long-term efficacy and geopolitical ramifications of foreign security assistance in Haiti.",
+            "Macro_Context": "Localized security interventions in the Caribbean carry zero weight for global USD liquidity, US Treasury yields, or bullion pricing.",
+            "Bull_Case": "International security challenges highlight global instability, marginally aiding safe havens.",
+            "Bear_Case": "Completely localized event with no relevance to global macro assets, central banks, or institutional gold flows.",
+            "Historical_Calibration": "Minor international news items lack the magnitude to drive gold past tight intraday liquidity walls.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Zero correlation with XAU/USD price movement.",
+            "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -8682,21 +8685,22 @@
                 "_timestamp": 1794114368.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 05:06 UTC (~2.2h ago)",
-            "Facts": "[Middle East Eye] Iran executes three men convicted over January 2026 protests - Iran executes three men convicted over January 2026 protests\n\n    \n    \n\n        \n    \n                Iran on Sunday executed three men convicted of taking part in armed unrest during protests in ",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 2.2h.",
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-08 05:06 UTC (approx. 18 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "Iran executed three men convicted of participating in January 2026 armed unrest and carrying out operations linked to Israel and the US [Middle East Eye].",
+            "Uncertainties": "Potential retaliatory domestic or regional responses from opposition groups or foreign intelligence actors.",
+            "Macro_Context": "Occurs alongside broader Middle Eastern de-escalation talks between Saudi Arabia and Qatar, offsetting localized friction.",
+            "Bull_Case": "State executions of individuals linked to the US and Israel heighten state-level tensions, increasing safe-haven demand.",
+            "Bear_Case": "Internal judicial actions within Iran are treated as domestic security matters rather than imminent interstate war catalysts.",
+            "Historical_Calibration": "Internal security executions rarely drive sustained macro gold rallies unless accompanied by direct military escalation.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4070.79"
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Minor upward drift (+ $10.47 over 4h) reflects mild geopolitical friction offsetting prior day drops.",
+            "Orderflow_Price_Target": "4078.28"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -8723,21 +8727,22 @@
                 "_timestamp": 1794114215.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 03:32 UTC (~3.8h ago)",
-            "Facts": "[Middle East Eye] Saudi and Qatari foreign ministers discuss de-escalation efforts - Saudi and Qatari foreign ministers discuss de-escalation efforts\n\n    \n    \n\n        \n    \n                Saudi Arabia's Foreign Minister Prince&nbsp;Faisal bin Farhan&nbsp;discussed “ongoing  | [Mehr News Agency] Saudi Arabia, Qatar hold talks on regional security - TEHRAN, Nov. 08 (MNA) –Saudi Foreign Minister Faisal bin Farhan Al Saud and his Qatari counterpart, Sheikh Mohammed bin Abdulrahman bin Jassim Al Thani, discussed the latest regional developments in a phone",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 3.8h.",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-08 05:03 UTC (approx. 18 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "Saudi Foreign Minister Prince Faisal bin Farhan and Qatari Prime Minister Sheikh Mohammed bin Abdulrahman Al Thani held phone talks discussing regional stability and de-escalation efforts [Middle East Eye, Mehr News Agency].",
+            "Uncertainties": "Specific diplomatic deliverables or joint policy frameworks resulting from the call remain undisclosed.",
+            "Macro_Context": "Directly correlates with falling Brent crude prices (-2.16%) and a stable risk-on equity environment (Nasdaq +1.27%), reducing regional risk premiums.",
+            "Bull_Case": "Diplomatic engagement highlights persistent regional instability requiring ongoing risk management.",
+            "Bear_Case": "Active de-escalation talks between major Gulf powers reduce Middle Eastern war risk premiums, undercutting safe-haven demand for gold.",
+            "Historical_Calibration": "De-escalation headlines in the Middle East historically pressure gold prices as risk premiums deflate; aligning with previous track record misses on high-long retail setups.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4070.79"
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 54,
+            "Past_Price_Action_Cause": "Brent crude weakness and regional diplomacy efforts contribute to a softening commodity complex, capping gold near $4070.59.",
+            "Orderflow_Price_Target": "4051.1"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -8756,21 +8761,22 @@
                 "_timestamp": 1794113797.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 04:56 UTC (~2.4h ago)",
-            "Facts": "[Al Jazeera English] Drone attack on Colombian army base kills three soldiers and wounds 16 - Colombian President de la Espriella says those behind the attack in Santa Rosa del Sur will have ‘nowhere to hide’.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 2.4h.",
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-08 04:56 UTC (approx. 18 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "A drone attack on a Colombian army base in Santa Rosa del Sur killed three soldiers and wounded 16. Colombian President de la Espriella vowed that those behind the attack will have 'nowhere to hide' [Al Jazeera English].",
+            "Uncertainties": "Specific perpetrator groups or broader domestic/international escalation risks remain unconfirmed.",
+            "Macro_Context": "Geopolitical risk events typically support safe-haven assets, though this is a localized domestic conflict. Interacts with a firm US Dollar (EUR/USD -0.68%) and sliding Brent oil (-2.16%). Retail sentiment is 71.7% long.",
+            "Bull_Case": "Spillover of geopolitical violence or generalized safe-haven demand lifts gold towards the nearest liquidity cluster at $4070.76.",
+            "Bear_Case": "Localized Latin American domestic military incidents have negligible impact on global dollar-denominated bullion, leading to muted reaction or price chop.",
+            "Historical_Calibration": "Drawing on the track record where low-volatility geopolitical headlines failed to bridge distant targets due to low Signal-ATR ratios, probability is kept below high thresholds, aligning with a neutral-to-slight-bullish skew.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4070.79"
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Gold's 4h move (+10.47) reflects general stability, ignoring isolated regional flare-ups.",
+            "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -8789,22 +8795,25 @@
                 "_timestamp": 1794113291.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 04:48 UTC (~2.5h ago)",
-            "Facts": "[Middle East Eye] Israeli military says hostile aircraft alert in north false alarm - Israeli military says hostile aircraft alert in north false alarm \n\n    \n    \n\n        \n    \n                Israeli military says hostile aircraft alerts in the north were false identificatio",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 2.5h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-08 04:48 UTC (approx. 18 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "The Israeli military clarified that hostile aircraft alerts in northern Israel (Zar’it and Shomera areas near the Lebanese border) were false identifications, following initial siren reports [Middle East Eye].",
+            "Uncertainties": "Whether any secondary unauthorized infiltrations occurred remains closed off.",
+            "Macro_Context": "De-escalation or false alarm reports in the Middle East remove immediate risk premiums, acting as a headwind for safe-haven gold alongside a strong Nasdaq (+1.27%) and weaker oil (-2.16%).",
+            "Bull_Case": "Persistent high-stakes regional tension keeps a persistent risk floor under gold even if specific alerts turn out to be false.",
+            "Bear_Case": "The immediate elimination of a suspected attack removes safe-haven bid, exposing gold to profit-taking and macro dollar strength.",
+            "Historical_Calibration": "False alarm geopolitics quickly reverse initial safe-haven spikes. Given the track record of 10.7% win rates, avoiding high-probability directional bets on noise is essential.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "The 24h drop of $-28.39 includes the unwinding of false-alarm and weekend geopolitical risk premiums.",
+            "Orderflow_Price_Target": "4059.91"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-08 04:33 UTC",
@@ -8820,21 +8829,22 @@
                 "_timestamp": 1794112380.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 04:33 UTC (~2.8h ago)",
-            "Facts": "[Yahoo Finance Nasdaq] Bank of America has unexpected advice for tech stock investors after midterms - What looked safe suddenly warrants a closer look.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 2.8h.",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-08 04:33 UTC (approx. 19 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "Bank of America issued unexpected advisory notes for tech stock investors following midterms, suggesting safety profiles warrant closer inspection [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Specific asset allocation shifts or institutional rebalancing sizes are not fully detailed.",
+            "Macro_Context": "Ties directly into the Nasdaq 100 strength (+1.27%) and broader equity sentiment, inversely impacting non-yielding gold as capital rotates toward tech.",
+            "Bull_Case": "Uncertainty in equity valuations prompts institutional hedging into precious metals.",
+            "Bear_Case": "BofA commentary highlighting tech resilience or post-midterm clarity drives capital deeper into equities (Nasdaq up +1.27%), starving gold of safe-haven flows.",
+            "Historical_Calibration": "Macro equity notes have consistently failed to trigger immediate gold reactions in past setups unless accompanied by broad market sell-offs.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4070.79"
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 51,
+            "Past_Price_Action_Cause": "Nasdaq's 1.27% surge correlates with gold's recent 24h retracement.",
+            "Orderflow_Price_Target": "4051.1"
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
@@ -8925,22 +8935,22 @@
                 "_timestamp": 1794111570.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-07 21:18 UTC (Approximately 24 hours ago)",
-            "Facts": "Secretary of Iran's Supreme National Security Council, Major General Mohsen Rezaei, met with Russian President Vladimir Putin in Moscow to deliver a direct message from Supreme Leader Ayatollah Khamenei and discuss deepening security, defense cooperation, and rocket launcher deals [Mehr News Agency, Tehran Times, Al Jazeera English].",
-            "Uncertainties": "The precise tactical scope of the military and intelligence sharing pacts agreed upon behind closed doors.",
-            "Macro_Context": "Escalating formal alliances between Russia and Iran reinforce geopolitical fragmentation, supporting defensive assets like gold even as US equities experience tech-driven gains (+1.81%).",
-            "Bull_Case": "Deepening military and security axis between Moscow and Tehran increases the probability of prolonged Middle Eastern and Eastern European friction, underpinning safe-haven gold bids.",
-            "Bear_Case": "Diplomatic talks with Russia may be viewed by western markets as posturing rather than immediate escalation, limiting instantaneous spot gold upside.",
-            "Historical_Calibration": "Like previous Iranian security and geopolitical updates that achieved successful targets within tight ATR margins (0.17x ratio), this structural alliance supports moderate bullish continuation without overextending targets.",
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-07 12:16 to 2026-11-08 04:19 UTC",
+            "Facts": "Iran's ambassador to Moscow Kazem Jalali and SNSC Secretary Mohsen Rezaei met with Russian President Vladimir Putin to discuss security and military cooperation. Tehran reiterated that talks with the US without credible guarantees will not end the conflict [Middle East Eye, Mehr News Agency, Tehran Times].",
+            "Uncertainties": "The precise nature of the guarantees demanded and potential US diplomatic responses.",
+            "Macro_Context": "Deepening Russia-Iran axis and stalled US-Iran diplomacy sustain long-term geopolitical friction. Brent crude is down (-2.16%), showing oil markets are currently discounting immediate supply disruptions.",
+            "Bull_Case": "Hardline stances from Tehran reinforce geopolitical risk premiums, supporting safe-haven gold holdings and pushing price toward the $4078.28 liquidity magnet.",
+            "Bear_Case": "Diplomatic channels remain open despite tough rhetoric; markets are habituated to Iran-Russia posturing, leading to zero net impact.",
+            "Historical_Calibration": "Similar geopolitical messages in the track record (e.g., Iranian warnings to the US) suffered from overextended targets and low follow-through. Keep probability near coin-flip.",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Steady accumulation in gold reflects persistent hedging against expanding geopolitical blocs.",
-            "Orderflow_Price_Target": "4078.30"
+            "Probability_Percent": 53,
+            "Past_Price_Action_Cause": "Ongoing Middle Eastern diplomatic stalemates underpin the 4h recovery (+10.47) from intraday lows.",
+            "Orderflow_Price_Target": "4078.28"
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -8959,22 +8969,25 @@
                 "_timestamp": 1794110006.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 03:53 UTC (~3.5h ago)",
-            "Facts": "[Mehr News Agency] Another maritime incident reported off UAE coast - TEHRAN, Nov. 08 (MNA) – The UK Maritime Trade Operations said it received a report of an incident involving a bulk carrier and military forces about 18 nautical miles east of Khorfakkan, UAE, in the Gulf of Om",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 3.5h.",
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-08 03:53 UTC (approx. 19 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "UK Maritime Trade Operations (UKMTO) reported an incident involving a bulk carrier and military forces 18 nautical miles east of Khorfakkan, UAE, in the Gulf of Oman [Mehr News Agency].",
+            "Uncertainties": "Details on damages, casualties, or whether state military actors were directly involved against commercial shipping.",
+            "Macro_Context": "Chokepoint disruptions in the Gulf of Oman directly impact Middle East shipping lanes, oil transit, and regional risk sentiment. Interacts with weak Brent crude (-2.16%) and strong dollar proxies.",
+            "Bull_Case": " Maritime security threats in key energy corridors elevate Middle East risk premiums, sparking safe-haven buying in gold toward $4078.28.",
+            "Bear_Case": "If the incident is resolved quickly without maritime traffic closure, energy and gold markets shrug off the headline.",
+            "Historical_Calibration": "Maritime incidents often cause fleeting intraday spikes. Past signals failed when targets were placed beyond realistic ATR limits during low-volatility regimes.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 54,
+            "Past_Price_Action_Cause": "Safe-haven bidding following Gulf shipping news helps cushion gold against broader dollar strength.",
+            "Orderflow_Price_Target": "4078.28"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-08 03:20 UTC",
@@ -8998,22 +9011,25 @@
                 "_timestamp": 1794108000.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-08 03:20 UTC (~4.0h ago)",
-            "Facts": "[Yahoo Finance Oil] History Says Energy Led All Sectors in the Last Bear Market. Here's What's Different Now. - Energy stocks have delivered exceptional gains in 2026, but a surprising shift in the oil market could change the outlook for investors. | [Yahoo Finance Nasdaq] History Says Energy Led All Sectors in the Last Bear Market. Here's What's Different Now. - Energy stocks have delivered exceptional gains in 2026, but a surprising shift in the oil market could change the outlook for investors.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.70%, Nasdaq-100 +1.81%, Brent Oil -0.95% | OANDA Sentiment: 71.7% Long / 28.3% Short | 24/7 XAU/USDT: $4056.29 (Spread: $-14.30).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4070.79.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4059.91. 4h-ATR ratio is 0.17x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 4.0h.",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-08 03:20 UTC (approx. 20 hours ago relative to 2026-11-08 23:03 UTC)",
+            "Facts": "Yahoo Finance reports on the exceptional gains of energy stocks in 2026 and highlights a surprising shift in the oil market altering the outlook compared to previous bear market cycles [Yahoo Finance Oil / Nasdaq].",
+            "Uncertainties": "Long-term supply-demand dynamics for crude and broader commodity sector performance.",
+            "Macro_Context": "Brent crude is down 2.16% to $99.886, reflecting easing energy cost pressures that weigh on commodity-driven inflation expectations and reduce gold's inflation-hedge appeal.",
+            "Bull_Case": "Energy sector shifts signal broader commodity volatility, occasionally spilling over into precious metals as alternative stores of value.",
+            "Bear_Case": "Falling oil prices ($99.886, -2.16%) deflate headline inflation metrics, bolstering real yields and strengthening the USD (EUR/USD -0.68%), which exerts direct downward pressure on gold.",
+            "Historical_Calibration": "Energy commentary and falling oil prices strongly correlate with a bearish environment for non-yielding commodities in current macro conditions.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+10.47 (0.17x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Softer oil prices (-2.16%) align with gold's 24h decline of $-28.39 as inflationary impulses moderate.",
+            "Orderflow_Price_Target": "4051.1"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-08 02:50 UTC",

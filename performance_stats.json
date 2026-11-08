@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 47,
+    "total_evaluated": 71,
     "hits": 15,
-    "misses": 32,
-    "win_rate": 31.9,
-    "active_signals": 89,
+    "misses": 56,
+    "win_rate": 21.1,
+    "active_signals": 79,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "ACTIVE",
@@ -470,7 +470,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Palestine weekly: Election deadlock meets West Bank sieges, Gaza killings",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -483,10 +483,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794050286.0,
             "date": "Erstmeldung: 2026-11-02 17:23 | Letztes Update: 2026-11-07 11:18",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/ring-energy-inc-rei-q3-111242577.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Ring Energy Inc (REI) (Q3 2026) Earnings Call Highlights: Resilient Volumes and Improving ",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -499,10 +499,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794049962.0,
             "date": "Erstmeldung: 2026-11-07 11:12",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/7/will-trump-strike-nuclear-sites-again-as-iran-engages-cognitive?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Will Trump strike nuclear sites again as Iran engages ‘cognitive warfare’?",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -515,10 +515,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794049399.0,
             "date": "Erstmeldung: 2026-11-07 07:05 | Letztes Update: 2026-11-07 11:03",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/video/are-big-tech-stock-buybacks-officially-dead-155848546.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Are Big Tech stock buybacks officially dead?",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -531,10 +531,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794048677.0,
             "date": "Erstmeldung: 2026-11-05 15:58 | Letztes Update: 2026-11-07 10:51",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4020.8 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/sports/2026/11/7/india-new-zealand-second-odi-rain-dls-method-win-four-runs?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "India beat New Zealand by four runs via DLS in rain-hit second ODI",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -547,10 +547,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794048654.0,
             "date": "Erstmeldung: 2026-11-07 10:50",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/features/2026/11/7/sudan-war-and-climate-change-sees-parents-struggle-to-feed-their-children?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Sudan war and climate change see parents struggle to feed their children",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -563,10 +563,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794047792.0,
             "date": "Erstmeldung: 2026-11-07 10:36",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/07/billionaire-investor-bill-ackman-warning-market/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Billionaire Investor Bill Ackman Just Issued a Blunt Warning to Wall Street",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -579,10 +579,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794047700.0,
             "date": "Erstmeldung: 2026-11-07 10:35",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/galiano-gold-inc-gau-q3-091352086.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Galiano Gold Inc (GAU) (Q3 2026) Earnings Call Highlights: Record Production, Lower Costs,",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -595,10 +595,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794042832.0,
             "date": "Erstmeldung: 2026-11-07 09:13",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://stocktwits.com/news-articles/markets/equity/peter-schiff-gold-boom-political-shift-threatens-inflation-soaring/cNGVpgIR9Il?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Peter Schiff Predicts Gold Boom, Says Political Shift Threatens To Send Inflation Soaring ",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -611,10 +611,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794040918.0,
             "date": "Erstmeldung: 2026-11-07 08:41",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249209/Border-police-confiscate-smuggled-weapons-in-SE-Iran": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Border police confiscate smuggled weapons in SE Iran",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -627,10 +627,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794039706.0,
             "date": "Erstmeldung: 2026-11-07 08:21",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/energy/articles/geologic-freak-called-smackover-may-080600193.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "A ‘geologic freak’ called the Smackover may end America’s lithium dependence on China, and",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -643,10 +643,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794038760.0,
             "date": "Erstmeldung: 2026-11-07 08:06",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249208/Iran-stresses-legitimate-right-to-defend-natl-sovereignty": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran stresses legitimate right to defend natl. sovereignty",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -659,10 +659,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794038000.0,
             "date": "Erstmeldung: 2026-11-07 07:53",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/crisis-cannot-be-left-unresolved-qatar-pm-says-mediation-efforts": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "'Crisis cannot be left unresolved': Qatar PM says mediation efforts continue",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -675,10 +675,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794037973.0,
             "date": "Erstmeldung: 2026-11-07 03:34 | Letztes Update: 2026-11-07 07:52",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/us-israeli-former-soldier-visit-netherlands-accused-gaza-war-crimes": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US-Israeli former soldier on visit to Netherlands accused of Gaza war crimes",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -691,10 +691,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794037422.0,
             "date": "Erstmeldung: 2026-11-07 07:43",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/hycroft-stock-focus-wider-loss-071151282.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Hycroft Stock In Focus After Wider Loss And Executive Changes",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -707,10 +707,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794035511.0,
             "date": "Erstmeldung: 2026-11-07 07:11",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-denies-reports-us-and-iran-failed-reach-deal-says-talks-continue": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Qatar denies reports US and Iran failed to reach deal, says talks continue",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -723,10 +723,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794035437.0,
             "date": "Erstmeldung: 2026-11-06 23:04 | Letztes Update: 2026-11-07 07:10",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-raid-homes-after-advancing-south-western-syrian-town": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Israeli forces raid homes after advancing into south western Syrian town",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -739,10 +739,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794035169.0,
             "date": "Erstmeldung: 2026-11-04 07:15 | Letztes Update: 2026-11-07 07:06",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/opinions/2026/11/7/how-the-iran-war-helped-democrats-win-the-midterms?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "How the Iran war helped Democrats win the midterms",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -755,10 +755,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794032818.0,
             "date": "Erstmeldung: 2026-11-07 06:26",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://www.marketbeat.com/instant-alerts/transcript-what-international-seaways-insw-said-on-its-q3-earnings-call-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "What International Seaways (INSW) Said on Its Q3 Earnings Call",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -771,10 +771,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794032127.0,
             "date": "Erstmeldung: 2026-11-07 06:15",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://stocktwits.com/news-articles/markets/equity/cathie-wood-ark-invest-buys-goog-amd-nvda-biotech-stocks-sell-crwv-avgo-lly/cNGVV2wR9Ii?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Cathie Wood-Led Ark Loads Up On GOOG, AMD, NVDA And Biotech Stocks — But Sells CRWV, AVGO,",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -787,10 +787,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794031220.0,
             "date": "Erstmeldung: 2026-11-07 06:00",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.94 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-intercepted-houthis-fired-missile-medina": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Saudi-led coalition says it intercepted a Houthi-fired missile in the Medina region",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -803,10 +803,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794030269.0,
             "date": "Erstmeldung: 2026-11-05 10:44 | Letztes Update: 2026-11-07 05:44",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.21 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/iran-will-not-allow-us-rebuild-bases-region-army-spokesman-says": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran will not allow US bases in the region to be rebuilt, army spokesman says",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -819,10 +819,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794029538.0,
             "date": "Erstmeldung: 2026-11-07 05:32",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.21 (Max DD: -$0.00)"
         },
         "https://www.tehrantimes.com/news/531877/Iran-s-seven-conditions-essential-to-reopening-Strait-of-Hormuz": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran's seven conditions essential to reopening Strait of Hormuz: army spokesman",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -835,10 +835,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794028870.0,
             "date": "Erstmeldung: 2026-11-06 16:21 | Letztes Update: 2026-11-07 05:21",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/7/russia-launches-missile-attack-on-kyiv-injuring-residents?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Russia launches missile attack on Kyiv, injuring residents",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -851,7 +851,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794028263.0,
             "date": "Erstmeldung: 2026-11-07 05:11",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.69 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249200/Iran-not-let-Trump-flee-region-sans-paying-price-reparation": {
             "status": "MISS",
@@ -1738,9 +1738,9 @@
             "headline": "US-Israel military aid: End of dependence, or a new chapter?",
             "source": "Tehran Times",
             "impact": "Bullish",
-            "prob": 52,
+            "prob": 53,
             "entry_price": 4070.59,
-            "target": 4078.3,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2138,9 +2138,9 @@
             "headline": "Rains flood Gaza displacement camps as Israeli authorities block entry of shelter material",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 52,
+            "prob": 51,
             "entry_price": 4070.59,
-            "target": 4078.3,
+            "target": 4070.79,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2179,6 +2179,230 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794062491.0,
             "date": "First Reported: 2026-11-07 14:41",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249237/IRGC-closely-monitoring-U-S-Scorpion-Strike-Task-Force": {
+            "status": "ACTIVE",
+            "headline": "IRGC closely monitoring U.S. “Scorpion Strike” Task Force",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4078.23,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794121741.0,
+            "date": "First Reported: 2026-11-08 07:09 UTC",
+            "fail_reason": ""
+        },
+        "https://stocktwits.com/news-articles/markets/equity/ai-buildout-data-center-backlash-nvidia/cNGouhgR9Iq?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "The AI Buildout Has A New Problem, And It’s Not Nvidia — JPMorgan Sounds Alarm",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 54,
+            "entry_price": 4070.59,
+            "target": 4059.91,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794120313.0,
+            "date": "First Reported: 2026-11-08 06:45 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249233/Multiple-explosions-heard-in-Riyadh-Saudi-Arabia": {
+            "status": "ACTIVE",
+            "headline": "Multiple explosions heard in Riyadh, Saudi Arabia",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4078.23,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794117769.0,
+            "date": "First Reported: 2026-11-08 06:02 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-civil-defence-issues-all-clear-riyadh-minutes-after-danger-alert": {
+            "status": "ACTIVE",
+            "headline": "Saudi civil defence issues all clear for Riyadh minutes after danger alert",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794115610.0,
+            "date": "First Reported: 2026-11-08 02:09 UTC | Last Update: 2026-11-08 05:26 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249230/Naval-units-ready-to-defend-maritime-borders-incessantly": {
+            "status": "ACTIVE",
+            "headline": "Naval units ready to defend maritime borders incessantly",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794114868.0,
+            "date": "First Reported: 2026-11-08 05:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/8/haitians-cheer-el-salvadors-bukele-amid-gang-war?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Haitians cheer El Salvador’s Bukele amid gang war",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794114579.0,
+            "date": "First Reported: 2026-11-08 05:09 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/iran-executes-three-men-convicted-over-january-2026-protests": {
+            "status": "ACTIVE",
+            "headline": "Iran executes three men convicted over January 2026 protests",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794114368.0,
+            "date": "First Reported: 2026-11-08 05:06 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-and-qatari-foreign-ministers-discuss-de-escalation-efforts": {
+            "status": "ACTIVE",
+            "headline": "Saudi and Qatari foreign ministers discuss de-escalation efforts",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794114215.0,
+            "date": "First Reported: 2026-11-08 03:32 UTC | Last Update: 2026-11-08 05:03 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/8/drone-attack-on-colombian-army-base-kills-three-soldiers-and-wounds-16?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Drone attack on Colombian army base kills three soldiers and wounds 16",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794113797.0,
+            "date": "First Reported: 2026-11-08 04:56 UTC",
+            "fail_reason": ""
+        },
+        "https://www.thestreet.com/investing/stocks/bofa-tech-stock-midterm-outlook?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Bank of America has unexpected advice for tech stock investors after midterms",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794112380.0,
+            "date": "First Reported: 2026-11-08 04:33 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/8/earthquake-hits-central-japan-injuring-more-than-20-people?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Earthquake hits central Japan, injuring more than 20 people",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794111657.0,
+            "date": "First Reported: 2026-11-08 04:20 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/gta-6-preorder-sales-hit-023006438.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "'GTA 6' Preorder Sales Hit $751 Million 2 Weeks Ahead of Release. Are Investors Ignoring T",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794105006.0,
+            "date": "First Reported: 2026-11-08 02:30 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/07/trumps-recent-warning-is-sending-shockwaves-throug/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Trump's Recent Warning Is Sending Shockwaves Through Wall Street. Here's What It Could Mea",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794104400.0,
+            "date": "First Reported: 2026-11-08 02:20 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/you-lost-war-and-election-irans-rezaei-warns-us-devastating-response": {
+            "status": "ACTIVE",
+            "headline": "'You lost war and election': Iran's Rezaei warns US of 'devastating response'",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794100033.0,
+            "date": "First Reported: 2026-11-08 01:07 UTC",
             "fail_reason": ""
         }
     }

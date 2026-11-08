@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 115,
+    "total_evaluated": 129,
     "hits": 15,
-    "misses": 100,
-    "win_rate": 13.0,
-    "active_signals": 56,
+    "misses": 114,
+    "win_rate": 11.6,
+    "active_signals": 46,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -1782,7 +1782,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-lifts-alert-jazan-home-aramco-refinery-targeted-houthis": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Saudi Arabia lifts alert in Jazan, home to Aramco refinery targeted by Houthis",
             "source": "Middle East Eye",
             "impact": "Bearish",
@@ -1795,10 +1795,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794083218.0,
             "date": "Erstmeldung: 2026-11-07 20:26",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249223/Rezaei-warns-of-devestating-response-to-any-aggression": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Rezaei warns of devestating response to any aggression",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -1811,10 +1811,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794083008.0,
             "date": "Erstmeldung: 2026-11-07 20:23",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/concentrix-cnxc-ai-migration-tool-201248119.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "What Concentrix (CNXC)'s AI Migration Tool Launch Means For Shareholders",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -1827,10 +1827,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794082368.0,
             "date": "Erstmeldung: 2026-11-07 20:12",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/7/more-than-140000-rally-as-new-protests-against-rising-costs-sweep-france?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "More than 140,000 rally as new protests against rising costs sweep France",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -1843,10 +1843,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794082342.0,
             "date": "Erstmeldung: 2026-11-07 20:12",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.77 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/7/masked-protesters-set-off-firecrackers-and-block-roads-in-albania?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Masked protesters set off firecrackers and block roads in Albania",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -1859,10 +1859,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794080959.0,
             "date": "Erstmeldung: 2026-11-07 19:49",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.77 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/7/malaysian-king-warns-against-defying-house-arrest-order-for-ex-pm-najib?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Malaysian king warns against defying house arrest order for ex-PM Najib",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -1875,10 +1875,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794079461.0,
             "date": "Erstmeldung: 2026-11-07 19:24",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.77 (Max DD: -$0.00)"
         },
         "https://www.marketbeat.com/instant-alerts/transcript-mach-natural-resources-q3-earnings-call-highlights-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Mach Natural Resources Q3 Earnings Call Highlights",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -1891,10 +1891,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794078857.0,
             "date": "Erstmeldung: 2026-11-07 19:14",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.77 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/7/7-11-sv-latvia-farmers-protest-russian-grain-transit?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Latvian farmers protest over ‘blood grain’ trade with Russia",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -1907,7 +1907,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794078634.0,
             "date": "Erstmeldung: 2026-11-07 19:10",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.77 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249225/Iran-s-Zare-named-world-s-best-freestyle-wrestler": {
             "status": "ACTIVE",
@@ -1942,7 +1942,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/erdogan-tells-trump-turkey-will-keep-pushing-us-iran-peace": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Erdogan tells Trump Turkey will keep pushing for US-Iran peace",
             "source": "Middle East Eye",
             "impact": "Bearish",
@@ -1955,10 +1955,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794078407.0,
             "date": "Erstmeldung: 2026-11-07 19:06",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.95 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/why-bank-america-td-cowen-184337011.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Here’s Why Bank of America and TD Cowen Backed Away From Marvell (MRVL)",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -1971,10 +1971,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794077017.0,
             "date": "Erstmeldung: 2026-11-07 18:42 | Letztes Update: 2026-11-07 18:43",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/why-morgan-stanley-analyst-meta-184215687.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Here’s Why Morgan Stanley Analyst Meta Marshall Trimmed Cisco (CSCO) to Equal-weight",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -1987,7 +1987,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794076935.0,
             "date": "Erstmeldung: 2026-11-07 18:40 | Letztes Update: 2026-11-07 18:42",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.95 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/crypto/articles/robert-kiyosaki-says-why-worry-223009735.html?.tsrc=rss": {
             "status": "ACTIVE",
@@ -2022,7 +2022,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/technology/ai/articles/alphabet-googl-expands-spacex-stake-191144041.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Alphabet (GOOGL) Expands SpaceX Stake to $69 Billion and Deepens AI Ties",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -2035,10 +2035,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794078704.0,
             "date": "First Reported: 2026-11-07 19:11",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4051.05 (Max DD: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/07/axon-plunged-to-a-2-year-low-here-s-why-it-could-be-a-golden-buying-opportunity/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Axon Plunged To a 2-Year Low. Here's Why It Could Be a Golden Buying Opportunity",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -2051,10 +2051,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794076860.0,
             "date": "First Reported: 2026-11-07 05:42 | Last Update: 2026-11-07 18:41",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/article/stocks-soared-on-the-democratic-sweep-less-than-24-hours-later-the-ai-trade-cracked-183312401.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Stocks soared on the Democratic sweep. Less than 24 hours later, the AI trade cracked.",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -2067,7 +2067,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794076392.0,
             "date": "First Reported: 2026-11-07 18:33",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/05/nvidia-vs-taiwan-semiconductor-the-ai-revolution-i/?.tsrc=rss": {
             "status": "MISS",
@@ -2739,6 +2739,70 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794139215.0,
             "date": "First Reported: 2026-11-08 12:00 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/top-3-quality-stocks-watch-091315093.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Top 3 Quality Stocks To Watch In November 2026",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4059.89,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794154825.0,
+            "date": "First Reported: 2026-11-08 09:13 UTC | Last Update: 2026-11-08 16:20 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/08/this-dividend-king-has-raised-its-payout-through/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "This Dividend King Has Raised Its Payout Through Every Recession Since the 1950s. I'm Buyi",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794153900.0,
+            "date": "First Reported: 2026-11-08 16:05 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249247/SNSC-endorses-agreement-on-Rasht-Astara-railway": {
+            "status": "ACTIVE",
+            "headline": "SNSC endorses agreement on Rasht-Astara railway",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794150447.0,
+            "date": "First Reported: 2026-11-08 15:07 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249246/Russia-ready-to-explore-CIS-plus-Iran-format-MFA": {
+            "status": "ACTIVE",
+            "headline": "Russia ready to explore CIS plus Iran format: MFA",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794149190.0,
+            "date": "First Reported: 2026-11-08 14:46 UTC",
             "fail_reason": ""
         }
     }

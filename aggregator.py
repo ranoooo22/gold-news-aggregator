@@ -131,48 +131,45 @@ def fetch_new_articles(existing_urls):
 
 def fetch_crypto_gold_basis(oanda_price):
     """
-    Fetches 24/7 Crypto Gold (XAU/USDT via PAXGUSDT) from non-blocked exchanges (Kraken -> Bybit -> Yahoo).
-    Calculates the live spread (Crypto Gold - OANDA Spot) for weekend gap prediction and intraday arbitrage.
+    Fetches 24/7 Crypto Gold directly from the OKX XAU-USDT-SWAP Perpetual Contract (XAUUSDT.P on TradingView),
+    with OKX Tether Gold (XAUT-USDT-SWAP) and Bybit Perpetuals as fallbacks.
     """
     crypto_price = 0.0
     source_used = "N/A"
     headers = {"User-Agent": "Mozilla/5.0"}
 
-    # 1. Try Kraken Public API (PAXGUSDT - works reliably from GitHub Actions US runners)
+    # 1. Primary Source: OKX XAU-USDT-SWAP (Exact match to TradingView XAUUSDT.P)
     try:
-        res = requests.get("https://api.kraken.com/0/public/Ticker?pair=PAXGUSDT", headers=headers, timeout=6)
+        res = requests.get("https://www.okx.com/api/v5/market/ticker?instId=XAU-USDT-SWAP", headers=headers, timeout=6)
         if res.status_code == 200:
-            data = res.json().get("result", {})
-            for k, v in data.items():
-                crypto_price = float(v["c"][0])
-                source_used = "Kraken PAXG/USDT"
-                break
+            data = res.json().get("data", [])
+            if data and data[0].get("last"):
+                crypto_price = float(data[0]["last"])
+                source_used = "OKX XAUUSDT.P"
     except Exception:
         pass
 
-    # 2. Backup: Bybit V5 Public Spot API (PAXGUSDT)
+    # 2. Backup: OKX XAUT-USDT-SWAP (Tether Gold Perpetual Swap)
     if crypto_price <= 0:
         try:
-            res = requests.get("https://api.bybit.com/v5/market/tickers?category=spot&symbol=PAXGUSDT", headers=headers, timeout=6)
+            res = requests.get("https://www.okx.com/api/v5/market/ticker?instId=XAUT-USDT-SWAP", headers=headers, timeout=6)
             if res.status_code == 200:
-                lst = res.json().get("result", {}).get("list", [])
-                if lst:
-                    crypto_price = float(lst[0].get("lastPrice", 0))
-                    source_used = "Bybit PAXG/USDT"
+                data = res.json().get("data", [])
+                if data and data[0].get("last"):
+                    crypto_price = float(data[0]["last"])
+                    source_used = "OKX XAUTUSDT.P"
         except Exception:
             pass
 
-    # 3. Backup: Yahoo Finance 24/7 Crypto Ticker (PAXG-USD)
+    # 3. Backup: Bybit Linear Perpetual (PAXGUSDT Perp)
     if crypto_price <= 0:
         try:
-            res = requests.get("https://query1.finance.yahoo.com/v8/finance/chart/PAXG-USD?range=1d&interval=5m", headers=headers, timeout=6)
+            res = requests.get("https://api.bybit.com/v5/market/tickers?category=linear&symbol=PAXGUSDT", headers=headers, timeout=6)
             if res.status_code == 200:
-                res_list = res.json().get("chart", {}).get("result", [])
-                if res_list:
-                    meta_p = res_list[0].get("meta", {}).get("regularMarketPrice", 0)
-                    if meta_p:
-                        crypto_price = float(meta_p)
-                        source_used = "Yahoo PAXG-USD"
+                lst = res.json().get("result", {}).get("list", [])
+                if lst and lst[0].get("lastPrice"):
+                    crypto_price = float(lst[0]["lastPrice"])
+                    source_used = "Bybit Gold Perp"
         except Exception:
             pass
 
@@ -190,25 +187,25 @@ def fetch_crypto_gold_basis(oanda_price):
 
         if is_weekend:
             regime = "WEEKEND GAP INDICATOR (Spot Closed)"
-            if spread_usd >= 8.0:
+            if spread_usd >= 5.0:
                 signal = f"Bullish Sunday Open Gap Expected (+${spread_usd:.2f})"
-            elif spread_usd <= -8.0:
+            elif spread_usd <= -5.0:
                 signal = f"Bearish Sunday Open Gap Expected (${spread_usd:+.2f})"
             else:
                 signal = f"Flat/Neutral Weekend Pricing (${spread_usd:+.2f})"
         else:
             regime = "LIVE INTRADAY BASIS (Spot Open)"
-            if spread_usd >= 12.0:
-                signal = f"High Crypto-Gold Premium (+${spread_usd:.2f}) -> Strong USDT Safe-Haven Inflow / FOMO"
-            elif spread_usd <= -12.0:
-                signal = f"Crypto-Gold Discount (${spread_usd:+.2f}) -> Crypto De-leveraging / Spot Outperforming"
+            if spread_usd >= 8.0:
+                signal = f"High Perp Premium (+${spread_usd:.2f}) -> Strong Leveraged Long Flow"
+            elif spread_usd <= -8.0:
+                signal = f"Perp Discount (${spread_usd:+.2f}) -> Crypto Long Liquidation / Short Pressure"
             else:
-                signal = f"Normal Arbitrage Parity (${spread_usd:+.2f})"
+                signal = f"Tight Spot/Perp Parity (${spread_usd:+.2f})"
 
         prompt_str = (
-            f"24/7 Crypto-Gold Basis (XAU/USDT via {source_used} vs. OANDA XAU/USD Spot):\n"
+            f"24/7 Crypto-Gold Perpetual Basis ({source_used} vs. OANDA XAU/USD Spot):\n"
             f"- Market Regime: {regime}\n"
-            f"- 24/7 XAU/USDT Price: ${crypto_price:.2f} | OANDA Reference Price: ${oanda_price:.2f}\n"
+            f"- 24/7 {source_used} Price: ${crypto_price:.2f} | OANDA Reference Price: ${oanda_price:.2f}\n"
             f"- Live Basis Spread: ${spread_usd:+.2f} ({spread_pct:+.2f}%) -> {signal}"
         )
 
@@ -219,10 +216,10 @@ def fetch_crypto_gold_basis(oanda_price):
             "spread_pct": spread_pct,
             "source": source_used,
             "is_weekend": is_weekend,
-            "regime": "Weekend Gap" if is_weekend else "Live Basis",
+            "regime": "Weekend Gap" if is_weekend else "Live Perp Basis",
             "signal": signal
         }
-        print(f"24/7 XAU/USDT loaded ({source_used}): ${crypto_price:.2f} | Spread vs OANDA: ${spread_usd:+.2f}")
+        print(f"24/7 Gold Perp loaded ({source_used}): ${crypto_price:.2f} | Spread vs OANDA: ${spread_usd:+.2f}")
         return prompt_str, basis_obj
 
     return "24/7 XAU/USDT Basis: Data temporarily unavailable.", {}
@@ -797,7 +794,7 @@ def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_
 
     basis_note = ""
     if crypto_basis_obj and crypto_basis_obj.get("crypto_price"):
-        basis_note = f" | 24/7 XAU/USDT: ${crypto_basis_obj['crypto_price']} (Spread: ${crypto_basis_obj['spread_usd']:+.2f})"
+        basis_note = f" | 24/7 {crypto_basis_obj.get('source', 'XAUUSDT.P')}: ${crypto_basis_obj['crypto_price']} (Spread: ${crypto_basis_obj['spread_usd']:+.2f})"
 
     return {
         "Event_Timestamp": f"First reported: {oldest.get('date', 'Unknown')} UTC (~{age_h}h ago)",
@@ -830,14 +827,14 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
     all_clusters_str = "\n\n".join(clusters_input)
     
     prompt = f"""You are an objective Intelligence & Calibration Agent for a manual Gold (XAU/USD) & Macro trader.
-    Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, 24/7 XAU/USDT basis, orderbook, and historical track record context below.
+    Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, 24/7 XAUUSDT.P perpetual basis, orderbook, and historical track record context below.
     Do NOT hide or dismiss minor news—thoroughly contextualize every cluster!
     Note: Every directional forecast ('Bullish' or 'Bearish') with Probability_Percent > 50% will be automatically tracked and evaluated over 20 hours against actual OANDA candles!
     Output ONLY a valid JSON array of {len(clusters_batch)} objects (one object per CLUSTER_ID). Write all values strictly in English!
 
     Current Reference Time: {now_utc_str}
 
-    Shared Market, 24/7 Crypto-Gold Basis, Orderbook & Self-Learning Memory:
+    Shared Market, 24/7 Crypto-Gold Perpetual Basis, Orderbook & Self-Learning Memory:
     {perf_memory_str}
     {crypto_basis_str}
     {macro_context_str}
@@ -854,7 +851,7 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
         "Event_Timestamp": "Exact or estimated date/time when the real-world event occurred and how many hours ago relative to {now_utc_str}.",
         "Facts": "Comprehensive, unfiltered summary of all core facts, numbers, and WHY it matters. Include [Source].",
         "Uncertainties": "What is unclear, speculative, or unconfirmed?",
-        "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, 24/7 XAU/USDT Basis Spread (Weekend Gap or Intraday Premium), and OANDA Retail Sentiment interact with this news.",
+        "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, 24/7 OKX XAUUSDT.P Basis Spread (Weekend Gap or Intraday Perp Premium), and OANDA Retail Sentiment interact with this news.",
         "Bull_Case": "Arguments and catalysts supporting a Bullish XAU/USD reaction.",
         "Bear_Case": "Counter-arguments, priced-in risks, or macro headwinds supporting a Bearish/muted XAU/USD reaction.",
         "Historical_Calibration": "Candid calibration note referencing specific lessons from the Historical Signal Track Record (e.g., past drawdowns, ATR exhaustion, macro alignment).",
@@ -862,7 +859,7 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
         "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
         "Probability_Percent": 60,
-        "Past_Price_Action_Cause": "How the 4h/24h price change, 24/7 XAU/USDT spread, and ATR ratio align with this news.",
+        "Past_Price_Action_Cause": "How the 4h/24h price change, 24/7 XAUUSDT.P spread, and ATR ratio align with this news.",
         "Orderflow_Price_Target": "Exact numerical Take-Profit target from the Liquidity Zones (strictly > current price for Bullish, < current price for Bearish, or 'N/A' for Neutral)."
       }}
     ]
@@ -999,7 +996,7 @@ def main():
         except Exception:
             existing_data = []
 
-    print("Loading Volatility (ATR), Multi-Source Order Zones (OANDA + COMEX), 24/7 XAU/USDT Basis & Macro...")
+    print("Loading Volatility (ATR), Multi-Source Order Zones (OANDA + COMEX), 24/7 OKX XAUUSDT.P Basis & Macro...")
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     candle_fallback_price = vol_metrics.get("current_price", 0.0)
     
@@ -1017,7 +1014,6 @@ def main():
     
     valid_clusters = [c for c in existing_data if c.get("_timestamp", 0) > cutoff_timestamp]
     
-    # Normalize any legacy German date labels in existing clusters to English
     for c in valid_clusters:
         if "main_date" in c and isinstance(c["main_date"], str):
             c["main_date"] = c["main_date"].replace("Erstmeldung:", "First Reported:").replace("Letztes Update:", "Last Update:")
@@ -1129,7 +1125,7 @@ def main():
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
         
-    print("Updating chart, 24/7 XAU/USDT basis & macro data...")
+    print("Updating chart, 24/7 OKX XAUUSDT.P basis & macro data...")
     update_market_data(
         top_zones_cache=oanda_zones_cache,
         macro_summary=macro_summary,

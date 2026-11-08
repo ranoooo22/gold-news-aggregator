@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 129,
+    "total_evaluated": 130,
     "hits": 15,
-    "misses": 114,
-    "win_rate": 11.6,
-    "active_signals": 46,
+    "misses": 115,
+    "win_rate": 11.5,
+    "active_signals": 49,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -1766,7 +1766,7 @@
             "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/7/abdul-el-sayed-slams-trumps-tariff-war-with-canada?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Abdul El-Sayed slams Trump’s tariff war with Canada",
             "source": "Al Jazeera English",
             "impact": "Bearish",
@@ -1779,7 +1779,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794084274.0,
             "date": "Erstmeldung: 2026-11-07 20:44",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-lifts-alert-jazan-home-aramco-refinery-targeted-houthis": {
             "status": "MISS",
@@ -2106,9 +2106,9 @@
             "headline": "Centcom sets up 'Task Force Iron Gate' to disrupt Iran’s weapons transfers",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 52,
+            "prob": 51,
             "entry_price": 4070.59,
-            "target": 4078.15,
+            "target": 4078.23,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2803,6 +2803,70 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794149190.0,
             "date": "First Reported: 2026-11-08 14:46 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531939/Investment-opportunities-worth-300b-presented-to-Chinese-investors": {
+            "status": "ACTIVE",
+            "headline": "Investment opportunities worth $300b presented to Chinese investors",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4078.23,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794157368.0,
+            "date": "First Reported: 2026-11-08 17:02 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/8/8-11-clip-eisenkot-address-il?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Israeli opposition leader warns of ‘point of no return’ for democracy",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.78,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794156701.0,
+            "date": "First Reported: 2026-11-08 16:51 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/8/train-crash-kills-four-injures-dozens-near-egypts-cairo-city?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Train crash kills seven, injures dozens near Egypt’s Cairo city",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.78,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794155840.0,
+            "date": "First Reported: 2026-11-08 16:37 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/ai/articles/bill-gates-says-10-hour-160008028.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Bill Gates Says A $10-an-Hour Robot Could Replace The $20-an-Hour Worker – 'There Is No Pl",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.78,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794153608.0,
+            "date": "First Reported: 2026-11-08 16:00 UTC",
             "fail_reason": ""
         }
     }

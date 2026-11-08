@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 71,
+    "total_evaluated": 83,
     "hits": 15,
-    "misses": 56,
-    "win_rate": 21.1,
-    "active_signals": 79,
+    "misses": 68,
+    "win_rate": 18.1,
+    "active_signals": 75,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "ACTIVE",
@@ -278,7 +278,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249120/IRGC-downs-55th-US-MQ-9-over-Strait-of-Hormuz": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -291,10 +291,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794057619.0,
             "date": "Erstmeldung: 2026-11-02 21:53 | Letztes Update: 2026-11-07 13:20",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/07/warren-buffett-advice-brace-market-crash/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Warren Buffett's Top Advice for Investors Bracing for a Market Crash",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -307,10 +307,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794055800.0,
             "date": "Erstmeldung: 2026-11-07 12:50",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/yemeni-government-forces-claim-gains-yemens": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Yemeni government forces claim gains in Lahij",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -323,10 +323,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794055729.0,
             "date": "Erstmeldung: 2026-11-02 17:35 | Letztes Update: 2026-11-07 12:48",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.23 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/us-offers-20-million-reward-info-irans-nuclear-program": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US offers $20 million reward for info on Iran's nuclear programme",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -339,10 +339,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794055425.0,
             "date": "Erstmeldung: 2026-11-07 01:54 | Letztes Update: 2026-11-07 12:43",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.2 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/news/fake-iranian-accounts-campaigned-netanyahu-ahead-israeli-election": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Fake Iranian accounts ‘campaigned for Netanyahu’ ahead of Israeli election",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -355,10 +355,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794055104.0,
             "date": "Erstmeldung: 2026-11-06 12:34 | Letztes Update: 2026-11-07 12:38",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4120.93 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/real-estate/articles/fed-pauses-7-18-mortgages-123000389.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Fed pauses as 7.18% mortgages punish buyers — but a big Dec. 9 hike means more pain may fo",
             "source": "Yahoo Finance Gold",
             "impact": "Bearish",
@@ -371,10 +371,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794054600.0,
             "date": "Erstmeldung: 2026-11-07 12:30",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.94 (Max DD: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/07/george-kurtz-incredible-crowdstrike-investors-ai/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "George Kurtz Just Announced Incredible News for CrowdStrike Investors and the Artificial I",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -387,10 +387,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794054540.0,
             "date": "Erstmeldung: 2026-11-07 12:29",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4051.03 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/7/why-are-oil-traders-refusing-to-buy-russian-diesel-after-trump-putin-deal?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Why are oil traders refusing to buy Russian diesel after Trump-Putin deal?",
             "source": "Al Jazeera English",
             "impact": "Bearish",
@@ -403,10 +403,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794054251.0,
             "date": "Erstmeldung: 2026-11-07 12:24",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.94 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249214/Iran-Uganda-to-expand-coop-in-agricultural-field-envoy": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran, Uganda to expand coop. in agricultural field: envoy",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -419,10 +419,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794053837.0,
             "date": "Erstmeldung: 2026-11-07 12:17",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.75 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249188/Rezaei-delivers-Leader-s-message-to-Putin-in-Moscow": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Rezaei delivers Leader's message to Putin in Moscow",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -435,10 +435,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794053801.0,
             "date": "Erstmeldung: 2026-11-05 15:50 | Letztes Update: 2026-11-07 12:16",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4078.3 (Max DD: -$0.00)"
         },
         "https://www.cnbc.com/2026/11/07/snap-social-media-teen-safety-lawsuits.html": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Tech companies face mounting child safety lawsuits while pushing AI into schools",
             "source": "CNBC Tech & AI",
             "impact": "Bearish",
@@ -451,10 +451,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794052801.0,
             "date": "Erstmeldung: 2026-11-07 12:00",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.94 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/technology/ai/articles/jeenius-ceo-ais-next-frontier-181100914.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Jeenius CEO: AI's Next Frontier Is the World It Can't Yet Reach",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -467,7 +467,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794052080.0,
             "date": "Erstmeldung: 2026-11-05 18:11 | Letztes Update: 2026-11-07 11:48",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4059.97 (Max DD: -$0.00)"
         },
         "https://www.aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings?traffic_source=rss": {
             "status": "MISS",
@@ -1932,7 +1932,7 @@
             "impact": "Bullish",
             "prob": 52,
             "entry_price": 4070.59,
-            "target": 4078.23,
+            "target": 4078.15,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2106,9 +2106,9 @@
             "headline": "Centcom sets up 'Task Force Iron Gate' to disrupt Iran’s weapons transfers",
             "source": "Middle East Eye",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 51,
             "entry_price": 4070.59,
-            "target": 4078.3,
+            "target": 4078.15,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
@@ -2403,6 +2403,134 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794100033.0,
             "date": "First Reported: 2026-11-08 01:07 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-aramco-building-riyadh-damaged-falling-debris-attempted-attack": {
+            "status": "ACTIVE",
+            "headline": "Saudi Aramco building in Riyadh damaged by falling debris in attempted attack, ministry sa",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4078.15,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794129283.0,
+            "date": "First Reported: 2026-11-08 07:22 UTC | Last Update: 2026-11-08 09:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/7/eisenkot-chosen-over-netanyahu-to-form-israels-next-government?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Eisenkot chosen over Netanyahu to form Israel’s next government",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4070.59,
+            "target": 4078.15,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794127656.0,
+            "date": "First Reported: 2026-11-07 23:45 UTC | Last Update: 2026-11-08 08:47 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/diamondback-energy-fang-raises-dividend-080848730.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Diamondback Energy (FANG) Raises Dividend While Holding Shale Drilling In Check",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4059.89,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794125328.0,
+            "date": "First Reported: 2026-11-08 08:08 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249239/Shooting-in-Poland-leaves-6-killed-16-injured-report": {
+            "status": "ACTIVE",
+            "headline": "Shooting in Poland leaves 6 killed, 16 injured: report",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.76,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794124215.0,
+            "date": "First Reported: 2026-11-08 07:50 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249238/US-doctrine-of-aggression-failed-against-Iran-deterrent-power": {
+            "status": "ACTIVE",
+            "headline": "Any power lining up against Iran doomed to failure: Shekarchi",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.76,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794123484.0,
+            "date": "First Reported: 2026-11-08 07:38 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketbeat.com/instant-alerts/transcript-what-teradata-tdc-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "What Teradata (TDC) Said on Its Q3 Earnings Call",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.76,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794122052.0,
+            "date": "First Reported: 2026-11-08 07:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketbeat.com/instant-alerts/transcript-what-avino-silver-gold-mines-asm-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "What Avino Silver & Gold Mines (ASM) Said on Its Q3 Earnings Call",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.76,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794122051.0,
+            "date": "First Reported: 2026-11-08 07:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tikr.com/blog/exxonmobil-is-up-38-in-2026-and-chevron-is-up-39-take-profits-or-hold-on?ref=yahoofinance&tlnk=yf-261108-4f8f2hpw&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "ExxonMobil Is Up 38% in 2026 and Chevron Is Up 39%: Take Profits, or Hold On?",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4070.59,
+            "target": 4070.76,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
+            "created_ts": 1794095159.0,
+            "date": "First Reported: 2026-11-07 23:45 UTC",
             "fail_reason": ""
         }
     }

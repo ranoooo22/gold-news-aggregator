@@ -1,8 +1,8 @@
 {
-    "total_evaluated": 138,
+    "total_evaluated": 140,
     "hits": 15,
-    "misses": 123,
-    "win_rate": 10.9,
+    "misses": 125,
+    "win_rate": 10.7,
     "active_signals": 59,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
@@ -2358,7 +2358,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/gta-6-preorder-sales-hit-023006438.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "'GTA 6' Preorder Sales Hit $751 Million 2 Weeks Ahead of Release. Are Investors Ignoring T",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -2371,10 +2371,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794105006.0,
             "date": "First Reported: 2026-11-08 02:30 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.79 (Max DD: -$0.00)"
         },
         "https://www.fool.com/investing/2026/11/07/trumps-recent-warning-is-sending-shockwaves-throug/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Trump's Recent Warning Is Sending Shockwaves Through Wall Street. Here's What It Could Mea",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -2387,7 +2387,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794104400.0,
             "date": "First Reported: 2026-11-08 02:20 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4070.79 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/you-lost-war-and-election-irans-rezaei-warns-us-devastating-response": {
             "status": "MISS",
@@ -3155,6 +3155,38 @@
             "macro_snapshot": "EUR -0.77%, NAS100 +1.81%",
             "created_ts": 1794150600.0,
             "date": "First Reported: 2026-11-08 15:10 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/08/this-semiconductor-etf-just-had-its-worst-day-sinc/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "This Semiconductor ETF Just Had Its Worst Day Since March 2020",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 51,
+            "entry_price": 4070.59,
+            "target": 4070.75,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.78%, NAS100 +1.81%",
+            "created_ts": 1794176400.0,
+            "date": "First Reported: 2026-11-08 22:20 UTC",
+            "fail_reason": ""
+        },
+        "https://247wallst.com/investing/2026/11/08/in-march-2000-cisco-briefly-became-the-worlds-most-valuable-company-as-its-stock-closed-at-80-06-buyers-that-day-waited-more-than-25-years-for-it-to-close-higher-heres-what-ai-investors-need-t/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "In March 2000, Cisco Briefly Became The World’s Most Valuable Company As Its Stock Closed ",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4070.59,
+            "target": 4059.91,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 60.1,
+            "macro_snapshot": "EUR -0.78%, NAS100 +1.81%",
+            "created_ts": 1794174941.0,
+            "date": "First Reported: 2026-11-08 19:54 UTC | Last Update: 2026-11-08 21:55 UTC",
             "fail_reason": ""
         }
     }

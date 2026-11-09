@@ -3,7 +3,7 @@
     "hits": 95,
     "misses": 128,
     "win_rate": 42.6,
-    "active_signals": 11,
+    "active_signals": 12,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -3661,7 +3661,7 @@
             "prob": 52,
             "entry_price": 4094.95,
             "target": 4078.83,
-            "max_dd_usd": 3.81,
+            "max_dd_usd": 5.32,
             "atr_ratio_at_signal": 0.42,
             "daily_atr_at_signal": 66.92,
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
@@ -3747,6 +3747,22 @@
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
             "created_ts": 1794209760.0,
             "date": "First Reported: 2026-11-09 07:36 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/9/irans-authorities-harden-domestic-security-controls-amid-us-strike-threats?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Iran’s authorities harden domestic security controls amid US strike threats",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 54,
+            "entry_price": 4097.22,
+            "target": 4131.12,
+            "max_dd_usd": 5.53,
+            "atr_ratio_at_signal": 0.13,
+            "daily_atr_at_signal": 63.35,
+            "macro_snapshot": "EUR +0.19%, NAS100 +0.29%",
+            "created_ts": 1794218173.0,
+            "date": "First Reported: 2026-11-09 09:56 UTC",
             "fail_reason": ""
         }
     }

@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 226,
-    "hits": 98,
+    "total_evaluated": 244,
+    "hits": 116,
     "misses": 128,
-    "win_rate": 43.4,
-    "active_signals": 23,
+    "win_rate": 47.5,
+    "active_signals": 16,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -3622,7 +3622,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$12.74)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-thinks-he-will-meet-xi-putin-set-discuss-ending-war-iran": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Trump says he thinks he will meet with Xi, Putin, set to discuss ending war on iran",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -3635,10 +3635,10 @@
             "macro_snapshot": "EUR -0.05%, NAS100 -0.59%",
             "created_ts": 1794209365.0,
             "date": "First Reported: 2026-11-09 07:29 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.46)"
         },
         "https://www.aljazeera.com/news/2026/11/9/who-are-the-seafarers-caught-in-the-us-israeli-war-on-iran?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Who are the seafarers caught in the US-Israeli war on Iran?",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -3651,7 +3651,7 @@
             "macro_snapshot": "EUR -0.05%, NAS100 -0.59%",
             "created_ts": 1794208046.0,
             "date": "First Reported: 2026-11-09 07:07 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.46)"
         },
         "https://www.investing.com/news/commodities-news/china-extends-suspension-of-new-rare-earth-controls-until-january-5010878": {
             "status": "ACTIVE",
@@ -3661,7 +3661,7 @@
             "prob": 52,
             "entry_price": 4094.95,
             "target": 4078.83,
-            "max_dd_usd": 13.72,
+            "max_dd_usd": 31.15,
             "atr_ratio_at_signal": 0.42,
             "daily_atr_at_signal": 66.92,
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
@@ -3670,7 +3670,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/real-estate/articles/3-reit-stocks-offering-steadier-091512245.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "3 REIT Stocks Offering Steadier Income As Bond Yields Ease",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -3683,10 +3683,10 @@
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
             "created_ts": 1794215712.0,
             "date": "First Reported: 2026-11-09 09:15 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.26)"
         },
         "https://www.fool.com/investing/2026/11/09/citi-downgraded-adobe-stock-to-sell-i-d-buy-it-now/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Citi Downgraded Adobe Stock to Sell. I'd Buy It Now.",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3699,10 +3699,10 @@
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
             "created_ts": 1794214622.0,
             "date": "First Reported: 2026-11-09 08:57 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$8.88)"
         },
         "https://www.tehrantimes.com/news/531960/Taremi-Beiranvand-left-out-of-Iran-squad-for-Iraq-international": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Taremi, Beiranvand left out of Iran squad for Iraq international tournament",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -3715,10 +3715,10 @@
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
             "created_ts": 1794213144.0,
             "date": "First Reported: 2026-11-09 08:32 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$8.88)"
         },
         "https://en.mehrnews.com/news/249267/Tehran-not-to-compromise-its-national-interests-FM-spox": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US not fulfilled obligations within \"Islamabad MoU\" framework",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -3731,10 +3731,10 @@
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
             "created_ts": 1794210893.0,
             "date": "First Reported: 2026-11-09 07:54 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.19)"
         },
         "https://www.proactiveinvestors.com/companies/news/1101402/meridian-mining-advances-cabacal-towards-fid-after-receiving-400-million-financing-proposals-1101402.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Meridian Mining jumps 6% to intraday high as Cabaçal advances towards FID",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -3747,7 +3747,7 @@
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
             "created_ts": 1794209760.0,
             "date": "First Reported: 2026-11-09 07:36 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.19)"
         },
         "https://www.aljazeera.com/news/2026/11/9/irans-authorities-harden-domestic-security-controls-amid-us-strike-threats?traffic_source=rss": {
             "status": "ACTIVE",
@@ -3766,7 +3766,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/erdogan-warns-trump-against-further-attacks-iran": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Erdogan warns Trump against further attacks on Iran",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -3779,7 +3779,7 @@
             "macro_snapshot": "EUR +0.19%, NAS100 +0.33%",
             "created_ts": 1794220294.0,
             "date": "First Reported: 2026-11-09 10:31 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.68)"
         },
         "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-ethereum-xrp-whipsaw-on-nvidia-scandal-iran-tensions/cNGr4kAR9ej?.tsrc=rss": {
             "status": "ACTIVE",
@@ -3789,7 +3789,7 @@
             "prob": 52,
             "entry_price": 4096.73,
             "target": 4090.41,
-            "max_dd_usd": 11.94,
+            "max_dd_usd": 29.37,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 63.71,
             "macro_snapshot": "EUR +0.19%, NAS100 +0.33%",
@@ -3846,7 +3846,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$5.53)"
         },
         "https://finance.yahoo.com/economy/policy/articles/commerzbank-says-treasuries-rise-euro-111434426.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Commerzbank Says Treasuries Rise, Euro Edges Higher, Oil Prices Remain Rangebound",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -3859,7 +3859,7 @@
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
             "created_ts": 1794222874.0,
             "date": "First Reported: 2026-11-09 11:14 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.80)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/nvidia-scandal-hurdled-pre-bell-111038422.html?.tsrc=rss": {
             "status": "ACTIVE",
@@ -3869,7 +3869,7 @@
             "prob": 52,
             "entry_price": 4103.67,
             "target": 4078.62,
-            "max_dd_usd": 4.99,
+            "max_dd_usd": 22.43,
             "atr_ratio_at_signal": 0.26,
             "daily_atr_at_signal": 64.25,
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
@@ -3885,7 +3885,7 @@
             "prob": 52,
             "entry_price": 4103.67,
             "target": 4078.62,
-            "max_dd_usd": 4.99,
+            "max_dd_usd": 22.43,
             "atr_ratio_at_signal": 0.26,
             "daily_atr_at_signal": 64.25,
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
@@ -3894,7 +3894,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/spdr-dow-jones-industrial-avg-110445805.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "What SPDR Dow Jones Industrial Avg ETF (DIA) Sold: Goldman Leads on Nov. 5",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3907,10 +3907,10 @@
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
             "created_ts": 1794222285.0,
             "date": "First Reported: 2026-11-09 11:04 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.80)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/etfs-net-sellers-microsoft-msft-110243773.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "ETFs Are Net Sellers of Microsoft (MSFT) on Nov. 5",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3923,10 +3923,10 @@
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
             "created_ts": 1794222163.0,
             "date": "First Reported: 2026-11-09 11:02 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.80)"
         },
         "https://www.fool.com/investing/2026/11/09/marvell-stock-fell-58-from-its-record-history-says-what-followed-its-last-4-drops-this-deep/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Marvell Stock Fell 58% From Its Record. History Says What Followed Its Last 4 Drops This D",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3939,10 +3939,10 @@
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
             "created_ts": 1794222062.0,
             "date": "First Reported: 2026-11-09 11:01 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.80)"
         },
         "https://finance.yahoo.com/technology/ai/articles/us-equity-investors-monitor-key-105739479.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US Equity Investors to Monitor Key Tech Earnings, Inflation This Week as Democrats Midterm",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3955,10 +3955,10 @@
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
             "created_ts": 1794221859.0,
             "date": "First Reported: 2026-11-09 10:57 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.32)"
         },
         "https://en.mehrnews.com/news/249270/Iran-s-Army-doctrine-shifted-towards-an-offensive-approach": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iran’s Army doctrine shifted towards an offensive approach",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -3971,10 +3971,10 @@
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
             "created_ts": 1794221312.0,
             "date": "First Reported: 2026-11-09 10:48 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.32)"
         },
         "https://www.aljazeera.com/sports/2026/11/9/usman-khawajas-sandpapergate-claims-are-accurate-says-david-warner?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Usman Khawaja’s ‘Sandpapergate’ claims are ‘accurate’, says David Warner",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -3987,6 +3987,182 @@
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
             "created_ts": 1794220690.0,
             "date": "First Reported: 2026-11-09 10:38 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.32)"
+        },
+        "https://finance.yahoo.com/technology/ai/articles/coreweave-power-wayves-ai-driver-130000105.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "CoreWeave to Power Wayve's AI Driver Training in Multi-Year Agreement",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4122.84,
+            "target": 4130.46,
+            "max_dd_usd": 16.49,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794229200.0,
+            "date": "First Reported: 2026-11-09 13:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tikr.com/blog/alphabet-has-75-7-billion-of-data-center-backstops-lenders-just-started-doubting-them?ref=yahoofinance&tlnk=yf-261109-7m64wc2q&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Alphabet Has $75.7 Billion of Data-Center Backstops. Lenders Just Started Doubting Them",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4122.06,
+            "target": 4138.91,
+            "max_dd_usd": 15.72,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794228281.0,
+            "date": "First Reported: 2026-11-09 12:44 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/09/nvidia-palantir-tesla-sending-shockwaves-through-wall-street-with-53-billion-warning/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Nvidia, Palantir, and Tesla Are Sending Shockwaves Through Wall Street With This $53 Billi",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4122.06,
+            "target": 4130.46,
+            "max_dd_usd": 15.72,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794227162.0,
+            "date": "First Reported: 2026-11-09 12:26 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/opinion/labours-message-britons-israel-more-important-your-needs": {
+            "status": "HIT",
+            "headline": "Labour's message to UK voters: Israel is more important than your needs",
+            "source": "Middle East Eye",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4122.06,
+            "target": 4120.66,
+            "max_dd_usd": 2.42,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794226719.0,
+            "date": "First Reported: 2026-11-09 12:18 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.42)"
+        },
+        "https://www.tehrantimes.com/news/531967/Science-for-Peace-and-Development-building-bridges-through-knowledge": {
+            "status": "HIT",
+            "headline": "Science for Peace and Development: building bridges through knowledge",
+            "source": "Tehran Times",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4122.06,
+            "target": 4120.66,
+            "max_dd_usd": 2.42,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794225818.0,
+            "date": "First Reported: 2026-11-09 12:03 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.42)"
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/atex-strengthens-executive-leadership-team-120000076.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "ATEX Strengthens Executive Leadership Team to Advance Valeriano and Accelerate District Gr",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4122.06,
+            "target": 4130.46,
+            "max_dd_usd": 24.19,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794225600.0,
+            "date": "First Reported: 2026-11-09 12:00 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/fredonia-mining-appoints-global-mining-120000408.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Fredonia Mining Appoints Global Mining Executive Gustavo Gomes as COO to Advance El Dorado",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4122.06,
+            "target": 4130.46,
+            "max_dd_usd": 24.19,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794225600.0,
+            "date": "First Reported: 2026-11-09 12:00 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/carney-gives-canada-oil-firms-120000385.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Carney Gives Canada’s Oil Firms a Tax Windfall and Hopes They’ll Spend It",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4122.06,
+            "target": 4120.66,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794225600.0,
+            "date": "First Reported: 2026-11-09 12:00 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
+        },
+        "https://www.investing.com/news/commodities-news/european-gas-edges-higher-as-hormuz-shipping-hits-offset-trumps-pause-on-iran-5011016": {
+            "status": "ACTIVE",
+            "headline": "European gas edges higher as Hormuz Shipping hits offset Trump’s pause on Iran",
+            "source": "Investing.com",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4108.51,
+            "target": 4130.46,
+            "max_dd_usd": 10.64,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794225197.0,
+            "date": "First Reported: 2026-11-09 11:53 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531965/Iranian-Iraqi-universities-to-expand-cooperation-through-joint": {
+            "status": "ACTIVE",
+            "headline": "Iranian, Iraqi universities to expand cooperation through joint AI degree",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4108.51,
+            "target": 4130.46,
+            "max_dd_usd": 10.64,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794224479.0,
+            "date": "First Reported: 2026-11-09 11:41 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/iraqs-oil-sales-america-fall-113000660.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Iraq's Oil Sales to America Fall to Lowest Since the 2003 War",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4108.51,
+            "target": 4130.46,
+            "max_dd_usd": 10.64,
+            "atr_ratio_at_signal": 0.4,
+            "daily_atr_at_signal": 64.16,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
+            "created_ts": 1794223800.0,
+            "date": "First Reported: 2026-11-09 11:30 UTC",
             "fail_reason": ""
         }
     }

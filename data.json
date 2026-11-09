@@ -1,5 +1,45 @@
 [
     {
+        "main_date": "First Reported: 2026-11-09 06:00 UTC",
+        "original_date": "2026-11-09 06:00",
+        "_timestamp": 1794204000.0,
+        "articles": [
+            {
+                "title": "Aktsiaselts Infortar own share acquisition transactions",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/aktsiaselts-infortar-own-share-acquisition-060000624.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 06:00",
+                "description": "Aktsiaselts Infortar acquired its own shares on the Nasdaq Tallinn Stock Exchange during the period of 2 November – 6 November 2026 as follows: DateAggregated volume (pcs)Weighted average price per day (EUR)02.11.202617967,071503.11.202617566,000004.11.202617165,938005.11.202616466,000006.11.202616166,6000 Aktsiaselts Infortar is acquiring its own shares based on the stock exchange announcement published on 21 October 2026. The share buyback prog",
+                "_timestamp": 1794204000.0
+            },
+            {
+                "title": "LHV Group's own share acquisition transactions",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/lhv-groups-own-share-acquisition-060000781.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 06:00",
+                "description": "AS LHV Group announces that during the period 30 October to 5 November 2026, it has acquired the company’s own shares on the Nasdaq Tallinn Stock Exchange as follows: Date Aggregated volume (pcs) Weighted average price per day (EUR) 30.10.202618,0003.252502.11.202617,6003.247503.11.202617,6003.237504.11.202617,2003.237505.11.20262223.225 LHV Group is acquiring its own shares based on the resolution of the company’s general meeting of shareholders",
+                "_timestamp": 1794204000.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-09 06:00 UTC (approximately 0 hours ago relative to reference time)",
+            "Facts": "Corporate disclosures from Nasdaq Tallinn detailing share buyback transactions: Aktsiaselts Infortar acquired its own shares between November 2 and November 6, 2026 [Yahoo Finance Nasdaq]. AS LHV Group acquired its own shares between October 30 and November 5, 2026 [Yahoo Finance Nasdaq]. Both are routine regional corporate treasury operations.",
+            "Uncertainties": "Completely localized and minor corporate equity repurchase programs on the Baltic (Nasdaq Tallinn) exchange with zero macroeconomic, monetary policy, or geopolitical relevance to global bullion markets.",
+            "Macro_Context": "EUR/USD is down 0.12% at 1.11638, US 10Y yields are flat/softer, Nasdaq 100 is higher (+0.51%), and Brent crude is lower (-2.91%). The localized equity buybacks in Estonia have no interaction with global dollar liquidity, yields, or XAU/USD spot/perpetual basis spreads (+2.72).",
+            "Bull_Case": "None. This news has zero bearing on gold demand or safe-haven flows.",
+            "Bear_Case": "None. The news is entirely irrelevant noise and will be completely ignored by broader macroeconomic flows and gold market participants.",
+            "Historical_Calibration": "With a 42.0% historical win rate, avoiding forced directional bets on irrelevant regional corporate news is essential to prevent unnecessary drawdowns. Past misses often stem from over-interpreting noise; thus, a neutral stance is mandatory here.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold's 24h change (+ $78.14) and recent 4h stability reflect broader macro and geopolitical currents, entirely divorced from regional Baltic corporate share buybacks.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "First Reported: 2026-11-09 05:59 UTC",
         "original_date": "2026-11-09 05:59",
         "_timestamp": 1794203951.0,
@@ -63,7 +103,7 @@
             "Orderflow_Price_Target": "4131.81"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 3.73
+        "max_dd_usd": 5.44
     },
     {
         "main_date": "First Reported: 2026-11-06 16:21 UTC | Last Update: 2026-11-09 05:52 UTC",
@@ -325,7 +365,7 @@
             "Orderflow_Price_Target": "4131.88"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 2.41
+        "max_dd_usd": 4.12
     },
     {
         "main_date": "First Reported: 2026-11-05 14:32 UTC | Last Update: 2026-11-09 05:20 UTC",
@@ -9782,38 +9822,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 40,
             "Past_Price_Action_Cause": "Micro-level mining earnings have minimal impact on immediate spot price action, which is currently dominated by weekend basis spread adjustments.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-08 06:14 UTC",
-        "original_date": "2026-11-08 06:14",
-        "_timestamp": 1794118447.0,
-        "articles": [
-            {
-                "title": "What Talos Energy (TALO) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-talos-energy-talo-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-08 06:14",
-                "description": "Talos Energy (NYSE:TALO) raised its full-year 2026 production guidance after third-quarter output exceeded expectations, as strong performance from existing operations and a recently closed offshore acquisition supported adjusted free cash flow of $186 million. The company produced approximately 69",
-                "_timestamp": 1794118447.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-08 06:14 UTC (approx. 1 hour ago)",
-            "Facts": "Talos Energy (TALO) raised its full-year 2026 production guidance after Q3 output exceeded expectations, supported by offshore acquisitions and generating $186 million in adjusted free cash flow [Yahoo Finance Oil].",
-            "Uncertainties": "Broader energy sector supply dynamics in light of declining Brent crude prices (-0.95%).",
-            "Macro_Context": "Energy company operational outperformance contrasts with falling oil prices, interacting with a strong Nasdaq 100 (+1.81%) and a defensive EUR/USD (-0.70%). Energy costs heavily influence inflation expectations, which indirectly impact gold's role as an inflation hedge.",
-            "Bull_Case": "Strong corporate free cash flow in the energy sector highlights robust industrial activity, supporting broader commodity market liquidity.",
-            "Bear_Case": "Rising corporate production coupled with falling spot oil prices points to adequate global supply, keeping inflationary pressures in check and reducing gold's inflation-hedge appeal.",
-            "Historical_Calibration": "Individual energy earnings have negligible direct impact on spot XAU/USD price discovery.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 35,
-            "Past_Price_Action_Cause": "Isolated energy corporate guidance has no direct transmission vector to immediate gold order flow.",
             "Orderflow_Price_Target": "N/A"
         }
     }

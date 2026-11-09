@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 205,
-    "hits": 78,
+    "total_evaluated": 215,
+    "hits": 88,
     "misses": 127,
-    "win_rate": 38.0,
-    "active_signals": 8,
+    "win_rate": 40.9,
+    "active_signals": 3,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -2541,7 +2541,7 @@
             "prob": 53,
             "entry_price": 4070.59,
             "target": 4051.09,
-            "max_dd_usd": 57.72,
+            "max_dd_usd": 63.55,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2973,7 +2973,7 @@
             "prob": 57,
             "entry_price": 4070.59,
             "target": 4051.1,
-            "max_dd_usd": 57.72,
+            "max_dd_usd": 63.55,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -3334,7 +3334,7 @@
             "fail_reason": ""
         },
         "https://stocktwits.com/news-articles/markets/equity/trump-blames-democratic-win-for-3-t-stock-market-rout-promises-markets-will-come-back-bigger-and-stronger/cNGAM4JR9ID?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Trump Blames Democratic Win For $3T Stock Market Rout, Promises Markets Will Come Back ‘Bi",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3347,10 +3347,10 @@
             "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
             "created_ts": 1794187865.0,
             "date": "First Reported: 2026-11-09 01:31 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$24.21)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/5-revealing-analyst-questions-magnolia-011736256.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "5 revealing analyst questions from Magnolia Oil & Gas’s Q3 2026 earnings call",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -3363,10 +3363,10 @@
             "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
             "created_ts": 1794187056.0,
             "date": "First Reported: 2026-11-09 01:17 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$24.21)"
         },
         "https://www.investing.com/news/commodities-news/oil-prices-dip-as-trump-says-new-iran-attacks-unlikely-if-talks-progress-5010370": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Oil prices dip as Trump says new Iran attacks ‘unlikely’ if talks progress",
             "source": "Investing.com",
             "impact": "Bullish",
@@ -3379,10 +3379,10 @@
             "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
             "created_ts": 1794185721.0,
             "date": "First Reported: 2026-11-09 00:24 UTC | Last Update: 2026-11-09 00:55 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$49.96)"
         },
         "https://www.fool.com/investing/2026/11/08/could-buying-palantir-stock-today-set-you-up-for-l/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Could Buying Palantir Stock Today Set You Up for Life?",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3395,10 +3395,10 @@
             "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
             "created_ts": 1794183600.0,
             "date": "First Reported: 2026-11-09 00:20 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$49.96)"
         },
         "https://247wallst.com/investing/2026/11/08/david-sacks-warns-the-ai-data-center-pipeline-could-dry-up-heres-whats-at-stake/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "David Sacks Warns the AI Data Center Pipeline Could Dry Up. Here’s What’s at Stake",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3411,7 +3411,87 @@
             "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
             "created_ts": 1794182869.0,
             "date": "First Reported: 2026-11-09 00:07 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$49.96)"
+        },
+        "https://en.mehrnews.com/news/249255/Official-details-U-S-strikes-on-Qeshm-Island": {
+            "status": "HIT",
+            "headline": "Official details U.S. strikes on Qeshm Island",
+            "source": "Mehr News Agency",
+            "impact": "Bearish",
+            "prob": 52,
+            "entry_price": 4124.04,
+            "target": 4120.09,
+            "max_dd_usd": 8.68,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 64.51,
+            "macro_snapshot": "EUR -0.20%, NAS100 +0.85%",
+            "created_ts": 1794199177.0,
+            "date": "First Reported: 2026-11-09 04:39 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$8.68)"
+        },
+        "https://finance.yahoo.com/markets/world-indices/articles/asian-markets-bounce-back-recovery-041457339.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Asian markets bounce back after a recovery for AI stocks on Wall Street",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 52,
+            "entry_price": 4124.04,
+            "target": 4120.09,
+            "max_dd_usd": 8.68,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 64.51,
+            "macro_snapshot": "EUR -0.20%, NAS100 +0.85%",
+            "created_ts": 1794197697.0,
+            "date": "First Reported: 2026-11-09 04:03 UTC | Last Update: 2026-11-09 04:14 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$8.68)"
+        },
+        "https://www.aljazeera.com/news/2026/11/9/rubio-says-war-on-iran-unpopular-but-necessary-to-stop-nuclear-threat?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Rubio says war on Iran unpopular but ‘necessary’ to stop nuclear threat",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 54,
+            "entry_price": 4124.04,
+            "target": 4131.96,
+            "max_dd_usd": 8.81,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 64.51,
+            "macro_snapshot": "EUR -0.20%, NAS100 +0.85%",
+            "created_ts": 1794196938.0,
+            "date": "First Reported: 2026-11-09 04:02 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$8.81)"
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/trump-doubles-down-choice-start-war-iran": {
+            "status": "HIT",
+            "headline": "Trump doubles down on choice to start war on Iran",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4115.76,
+            "target": 4131.96,
+            "max_dd_usd": 1.27,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 64.51,
+            "macro_snapshot": "EUR -0.20%, NAS100 +0.85%",
+            "created_ts": 1794193324.0,
+            "date": "First Reported: 2026-11-09 03:02 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.27)"
+        },
+        "https://beincrypto.com/brent-crude-iran-war-hochstein-warning/?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Brent Crude Fell 12.5% But Former Biden Advisor Warns Iran War Could Return",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4120.06,
+            "target": 4131.96,
+            "max_dd_usd": 0.69,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 64.51,
+            "macro_snapshot": "EUR -0.20%, NAS100 +0.85%",
+            "created_ts": 1794190072.0,
+            "date": "First Reported: 2026-11-09 02:07 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.69)"
         }
     }
 }

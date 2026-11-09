@@ -1897,22 +1897,25 @@
                 "_timestamp": 1794252619.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-09 19:30 UTC (~0.8h ago)",
-            "Facts": "[Yahoo Finance Nasdaq] Hegseth Has Been 'Disaster' as Secretary of Defense, Says Rep. Stanton - Democrat Representative from Arizona Greg Stanton said that he will vote yes to impeach Secretary of Defense Pete Hegseth and described the secretary's tenure as 'a disaster.' Stanton sai",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD +0.73%, Nasdaq-100 +3.74%, Brent Oil -6.38% | OANDA Sentiment: 69.0% Long / 31.0% Short | 24/7 OKX XAUUSDT.P: $4148.2 (Spread: $+6.98).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4149.25.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4130.71. 4h-ATR ratio is 0.5x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.8h.",
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-09 19:30 UTC (approx. 1 hour ago relative to 2026-11-09 20:27 UTC)",
+            "Facts": "Democrat Representative Greg Stanton of Arizona announced he will vote to impeach Secretary of Defense Pete Hegseth, calling his tenure a 'disaster' and citing midterm commitments to reestablish government checks and balances. [Yahoo Finance Nasdaq]",
+            "Uncertainties": "Whether wider bipartisan support will materialize in the House to push the impeachment forward or if this remains partisan posturing.",
+            "Macro_Context": "Domestic political instability and executive branch friction typically feed safe-haven demand for gold, counterbalancing a strong Nasdaq 100 (+3.87%) and an inverse USD proxy (EUR/USD +0.74%). The 24/7 OKX XAUUSDT.P basis reflects a solid +$11.68 perpetual premium.",
+            "Bull_Case": "Deepening domestic political turmoil and potential executive branch distraction heighten geopolitical and institutional risk premiums, favoring safe-haven gold accumulation toward higher liquidity pools.",
+            "Bear_Case": "Domestic political infighting rarely triggers immediate macroeconomic shifts unless it threatens fiscal continuity; equity markets remain buoyant with Nasdaq up nearly 4%, drawing capital away from non-yielding assets.",
+            "Historical_Calibration": "In line with recent safe-haven headlines, political noise often offers moderate upside when macro sentiment is mixed, though traders must guard against over-leveraging into headline chop.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+30.64 (0.5x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 53,
+            "Past_Price_Action_Cause": "Gold's 4h gain of +$35.14 reflects steady safe-haven accumulation interacting with geopolitical and political friction.",
+            "Orderflow_Price_Target": "4149.48"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 35.31
     },
     {
         "main_date": "First Reported: 2026-11-08 03:32 UTC | Last Update: 2026-11-09 19:19 UTC",
@@ -2008,22 +2011,22 @@
                 "_timestamp": 1794251976.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
-            "Event_Timestamp": "2026-11-09 09:27 UTC (approx. 21 minutes ago relative to 2026-11-09 09:48 UTC)",
-            "Facts": "Qatar's Prime Minister is scheduled to meet President Trump at the White House behind closed doors to discuss stalled US-Iran negotiations, while China's Middle East envoy Zhai Jun meets Iranian security officials in Tehran [Al Jazeera, Mehr News Agency].",
-            "Uncertainties": "The concrete outcomes of the closed-door White House meeting and whether Chinese diplomatic mediation will alter the negotiating leverage of Iran.",
-            "Macro_Context": "Geopolitical diplomatic interventions maintain elevated risk premiums across commodities and safe havens while keeping Brent crude firm near $99.75.",
-            "Bull_Case": "High-level diplomatic friction and uncertainty surrounding Middle East supply chains underpin gold demand.",
-            "Bear_Case": "If the meeting produces unexpected breakthrough signals, safe-haven premiums could unwind quickly.",
-            "Historical_Calibration": "Diplomatic summits carry binary risks; keeping probability at 51% with a tight target ensures alignment with historical signal-to-ATR ratios.",
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-09 18:48 UTC (approx. 2 hours ago relative to 2026-11-09 20:27 UTC)",
+            "Facts": "Qatari Prime Minister Sheikh Mohammed bin Abdulrahman Al Thani met with US President Donald Trump for 45 minutes to discuss Iran negotiations [Al Jazeera English, Middle East Eye]. Meanwhile, a senior Iranian security official denied reports of a potential meeting between Mohsen Rezaei and US VP JD Vance in Doha [Mehr News Agency], and China's special envoy Zhai Jun met with Iranian officials in Tehran [Tehran Times].",
+            "Uncertainties": "Whether the back-channel negotiations via Qatar will yield a concrete breakthrough on the Strait of Hormuz or oil export agreements.",
+            "Macro_Context": "De-escalation talks in the Middle East have directly exerted downward pressure on Brent crude (-6.10% over 24h to $94.63). Lower oil prices reduce inflation expectations, which can weigh on gold as an inflation hedge, though diplomatic friction keeps baseline geopolitical risk alive.",
+            "Bull_Case": "If negotiations stall or official denials harden positions, regional risk premium reasserts itself rapidly, triggering sharp safe-haven upside toward upper liquidity bands.",
+            "Bear_Case": "Progress in US-Qatar-Iran talks removes war premiums from energy markets, driving Brent lower and reducing the geopolitical risk premium embedded in gold.",
+            "Historical_Calibration": "Geopolitical headline clusters require close monitoring of the Signal-ATR-Ratio; when oil drops significantly, gold can experience temporary de-risking pullbacks before stabilizing.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 51,
-            "Past_Price_Action_Cause": "Markets are pricing in diplomatic friction ahead of the White House talks, supporting steady spot-perpetual parity.",
-            "Orderflow_Price_Target": "4120.63"
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 54,
+            "Past_Price_Action_Cause": "Crude oil's sharp drop (-6.10%) following diplomatic talks creates headwinds for commodity-linked inflation plays, capping gold's immediate momentum despite high perpetual premiums.",
+            "Orderflow_Price_Target": "4130.71"
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.84
@@ -2042,22 +2045,25 @@
                 "_timestamp": 1794251902.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-09 19:18 UTC (~1.0h ago)",
-            "Facts": "[Yahoo Finance Oil] UBS says tech sell-off is a positioning reset, not the start of an AI downturn - Investing.com -- UBS told clients in a note on Monday that last week’s sell-off in technology stocks reflects investors adjusting their positions rather than the start of a lastin",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD +0.73%, Nasdaq-100 +3.74%, Brent Oil -6.38% | OANDA Sentiment: 69.0% Long / 31.0% Short | 24/7 OKX XAUUSDT.P: $4148.2 (Spread: $+6.98).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4149.25.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4130.71. 4h-ATR ratio is 0.5x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 1.0h.",
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-09 19:18 UTC (approx. 1 hour ago relative to 2026-11-09 20:27 UTC)",
+            "Facts": "UBS informed clients that last week's technology stock sell-off was merely a portfolio positioning reset rather than the beginning of a lasting downturn in AI and tech investments [Yahoo Finance Oil].",
+            "Uncertainties": "Whether retail and institutional investors will immediately rotate back into tech growth assets or remain cautious.",
+            "Macro_Context": "The Nasdaq 100 rebounded strongly by +3.87%, signaling risk-on appetite across equities. Strong risk sentiment typically competes with safe-haven assets like gold, putting pressure on non-yielding bullion.",
+            "Bull_Case": "A stable tech sector confirms broader systemic liquidity remains robust, supporting overall market stability without triggering panic selling.",
+            "Bear_Case": "Strong equity rebound and risk-on sentiment divert speculative capital away from precious metals, encouraging profit-taking in gold.",
+            "Historical_Calibration": "Risk-on equity environments paired with surging Nasdaq indices historically pressure gold unless counteracted by immediate physical or geopolitical shocks.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+30.64 (0.5x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Nasdaq +3.87% strength provides an alternative venue for capital, introducing friction against aggressive spot gold continuation.",
+            "Orderflow_Price_Target": "4130.71"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 2.82
     },
     {
         "main_date": "First Reported: 2026-11-09 02:07 UTC | Last Update: 2026-11-09 19:15 UTC",
@@ -2097,22 +2103,22 @@
                 "_timestamp": 1794251746.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-09 02:07 UTC (3.6 hours ago)",
-            "Facts": "Brent crude fell over 12.5% over the week, but former Biden/current advisor Amos Hochstein warns that Iran war odds remain above 50/50 due to persistent Strait of Hormuz tanker attacks [Yahoo Finance Oil].",
-            "Uncertainties": "Whether tanker attacks will escalate into full-scale regional conflict or remain contained maritime disruptions.",
-            "Macro_Context": "Brent crude is at $99.85 (-2.90% 24h), down sharply overall this week, yet geopolitical risk premiums continue to underpin safe-haven assets. OANDA retail is 72.0% long, with strong overlap liquidity at $4131.88.",
-            "Bull_Case": "Persistent Strait of Hormuz attacks and high Iran war probabilities maintain safe-haven demand, supporting gold as an inflation and geopolitical hedge despite oil price pullbacks.",
-            "Bear_Case": "The 12.5% drop in Brent crude indicates broader energy deflationary pressures and easing supply anxieties, which can weigh on commodity-wide sentiment.",
-            "Historical_Calibration": "Similar to previous successful geopolitical setups ('Rubio says war on Iran unpopular...'), ongoing conflict risks provide a bullish structural tailwind. Keeping targets close to the $4131.88 liquidity zone.",
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-09 19:15 UTC (approx. 1 hour ago relative to 2026-11-09 20:27 UTC)",
+            "Facts": "U.S. gas prices are tracking toward sub-$4 a gallon amid midterm election optimism and peace deal expectations with Iran [Yahoo Finance Oil]. Brent crude fell 3.6% to $94 as Qatar advanced an $8 billion Hormuz deal to the White House, extending a broader downward trend in energy markets.",
+            "Uncertainties": "Whether the dramatic drop in crude prices is sustainable or if persistent tanker risks will reignite supply shocks.",
+            "Macro_Context": "Brent crude down 6.10% over 24 hours reduces headline inflation pressures. Lower inflation readings compress gold's appeal as an inflation hedge, though it simultaneously boosts consumer purchasing power.",
+            "Bull_Case": "Collapsing energy prices could stoke growth optimism, keeping central banks on a steady or dovish path, indirectly supporting asset valuations.",
+            "Bear_Case": "Sharp contraction in energy costs drastically subdues inflation metrics, removing a primary bullish driver for commodities and precious metals.",
+            "Historical_Calibration": "Energy market slides heavily influence broad commodity sentiment; tracking Brent's correlation is crucial to avoid false bullish continuations in gold.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "Gold's 24h gain of $76.84 reflects lingering geopolitical risk premiums despite the sharp weekly pullback in crude.",
-            "Orderflow_Price_Target": "4131.88"
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 56,
+            "Past_Price_Action_Cause": "Brent's steep descent to $94.63 directly undercuts raw commodity inflation narratives, exerting downward pressure on gold spot prices.",
+            "Orderflow_Price_Target": "4130.71"
         },
         "eval_status": "HIT",
         "max_dd_usd": 0.69
@@ -2139,20 +2145,21 @@
                 "_timestamp": 1794251720.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Event_Timestamp": "First reported: 2026-11-09 13:09 UTC (~1.4h ago)",
-            "Facts": "[Yahoo Finance Oil] 3 Value Stocks Under $5 to Buy Amid Oil Price Volatility - BTE, EPM and WTI stand out as value stocks under $5, offering exposure to oil and gas markets amid crude price volatility and potential recovery opportunities.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD +0.46%, Nasdaq-100 +0.05%, Brent Oil -4.66% | OANDA Sentiment: 71.5% Long / 28.5% Short | 24/7 OKX XAUUSDT.P: $4136.1 (Spread: $+7.39).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4131.25.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4120.11. 4h-ATR ratio is 0.57x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 1.4h.",
+            "Cluster_ID": 4,
+            "Event_Timestamp": "2026-11-09 19:15 UTC (approx. 1 hour ago relative to 2026-11-09 20:27 UTC)",
+            "Facts": "Lower oil prices and increased Iraqi export flows through secure routes are benefiting oil-importing sectors like airlines and select value stocks under $5 (such as BTE, EPM, WTI) [Yahoo Finance Oil].",
+            "Uncertainties": "Whether supply chain stabilization will hold up across broader transport and industrial sectors.",
+            "Macro_Context": "Sector rotation into transport and value equities highlights shifting risk appetite away from defensive holdings toward cyclical beneficiaries of lower energy costs.",
+            "Bull_Case": "Broadening economic participation in transport and value stocks points to healthy underlying economic activity.",
+            "Bear_Case": "Sector-specific rotation into cyclical equities draws liquidity away from safe-haven metals.",
+            "Historical_Calibration": "Minor equity sector news has limited direct impact on gold unless accompanied by macro currency shifts.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+31.32 (0.57x of estimated Daily ATR).",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Equities absorb micro-sector updates without directly shifting overarching gold spot dynamics.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -2194,21 +2201,21 @@
                 "_timestamp": 1794251704.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-09 14:10 UTC (~0.3 hours ago relative to 2026-11-09 14:30 UTC)",
-            "Facts": "Sable Offshore Corp shares collapsed 75% in premarket trading after reporting Q3 revenue of $154.4M (missing estimates of $177.19M) and disclosing that its sole downstream crude purchaser halted sales in early October due to refinery maintenance.",
-            "Uncertainties": "The timeline and terms for the resumption of crude oil purchases by Sable's downstream partner.",
-            "Macro_Context": "Brent Crude is down sharply by -4.66% to $95.71. Lower oil prices alleviate broader inflation pressures, which can influence real yields and support non-yielding bullion.",
-            "Bull_Case": "Sharp drops in energy prices and corporate distress in the oil sector signal underlying commodity demand shifts, indirectly boosting safe-haven assets.",
-            "Bear_Case": "Plummeting crude prices (-4.66%) drag down broader commodity sentiment, occasionally inducing collateral liquidation across all asset classes, including gold.",
-            "Historical_Calibration": "Company-specific oil production halts have a localized impact; however, the macro Brent decline (-4.66%) requires monitoring for cross-asset commodity contagion.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Cluster_ID": 5,
+            "Event_Timestamp": "2026-11-09 19:15 UTC (approx. 1 hour ago relative to 2026-11-09 20:27 UTC)",
+            "Facts": "Sable Offshore Corp. (NYSE:SOC) shares plunged 60%-75% to $0.77 after reporting Q3 revenue below estimates ($154.4M vs $177.19M expected) and disclosing that its sole downstream purchaser halted crude purchases in October due to refinery maintenance, raising going-concern doubts [Yahoo Finance Oil].",
+            "Uncertainties": "Whether Sable Offshore can secure emergency financing or alternative buyers before facing severe liquidity default.",
+            "Macro_Context": "Company-specific distress in the energy sector highlights localized credit stress without causing systemic contagion across broader financial markets.",
+            "Bull_Case": "Distress in localized energy producers emphasizes the fragile operational environment of smaller firms, reinforcing flight-to-quality dynamics.",
+            "Bear_Case": "Idiosyncratic corporate earnings misses have negligible macro transmission to precious metals.",
+            "Historical_Calibration": "Microcap corporate failures are isolated events with no meaningful impact on macro gold pricing.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 47,
-            "Past_Price_Action_Cause": "Gold has ignored isolated corporate oil distress while responding primarily to broader safe-haven and currency dynamics.",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "Isolated equity crash in a small-cap energy firm contained entirely within equity trading channels.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -5223,7 +5230,7 @@
             "Orderflow_Price_Target": "4099.84"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 40.44
+        "max_dd_usd": 40.7
     },
     {
         "main_date": "First Reported: 2026-11-09 17:00 UTC",
@@ -6916,7 +6923,7 @@
             "Orderflow_Price_Target": "4099.84"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 27.19
+        "max_dd_usd": 27.45
     },
     {
         "main_date": "First Reported: 2026-11-09 15:22 UTC",
@@ -6949,7 +6956,7 @@
             "Orderflow_Price_Target": "4099.84"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 27.19
+        "max_dd_usd": 27.45
     },
     {
         "main_date": "First Reported: 2026-11-09 15:16 UTC",
@@ -7563,7 +7570,7 @@
             "Orderflow_Price_Target": "4099.84"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 27.15
+        "max_dd_usd": 27.41
     },
     {
         "main_date": "First Reported: 2026-11-09 14:27 UTC",
@@ -9873,7 +9880,7 @@
             "Orderflow_Price_Target": "4078.62"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 44.16
+        "max_dd_usd": 44.43
     },
     {
         "main_date": "First Reported: 2026-11-09 11:06 UTC",
@@ -10035,7 +10042,7 @@
             "Orderflow_Price_Target": "4078.62"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 44.16
+        "max_dd_usd": 44.43
     },
     {
         "main_date": "First Reported: 2026-11-09 11:04 UTC",
@@ -10576,7 +10583,7 @@
             "Orderflow_Price_Target": "4090.41"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 51.11
+        "max_dd_usd": 51.37
     },
     {
         "main_date": "First Reported: 2026-11-09 10:26 UTC",
@@ -11037,7 +11044,7 @@
             "Orderflow_Price_Target": "4078.83"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 52.89
+        "max_dd_usd": 53.15
     },
     {
         "main_date": "First Reported: 2026-11-09 09:15 UTC",
@@ -13332,167 +13339,5 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 16.2
-    },
-    {
-        "main_date": "First Reported: 2026-11-05 16:00 UTC | Last Update: 2026-11-08 20:25 UTC",
-        "original_date": "2026-11-05 16:00",
-        "_timestamp": 1794169511.0,
-        "articles": [
-            {
-                "title": "IREN stock plunges 18% as Microsoft raises concerns over data center delays",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-stock-plunges-18-microsoft-162134051.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:21",
-                "description": "Investing.com -- IREN Ltd. shares plunged 18% Thursday amid a broad technology selloff, with a Bloomberg report highlighting growing concerns at Microsoft over delays and execution risks among its neocloud partners.",
-                "_timestamp": 1793895694.0
-            },
-            {
-                "title": "IREN Sinks 20% on Report It’s Behind Microsoft’s AI Spending Delay Ahead of Earnings",
-                "link": "https://www.tikr.com/blog/iren-sinks-20-on-report-its-behind-microsofts-ai-spending-delay-ahead-of-earnings?ref=yahoofinance&tlnk=yf-261105-qr7pp429&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 16:00",
-                "description": "Key TakeawaysIREN is down 20% on a report tying delays at its Childress, Texas, data center to Microsoft’s lower AI spending last quarter. Microsoft’s Childress contract should bring in about $1.",
-                "_timestamp": 1793894421.0
-            },
-            {
-                "title": "Here’s what’s driving Iren’s stock higher after a brutal selloff",
-                "link": "https://www.marketwatch.com/story/heres-whats-driving-irens-stock-higher-after-a-brutal-selloff-0ced09b0?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-05 22:21",
-                "description": "Iren announced a new cloud-computing deal and noted that much of its backlog is tied to “investment-grade counterparties.”",
-                "_timestamp": 1793917260.0
-            },
-            {
-                "title": "IREN (IREN) Draws Tighter Oversight On Neocloud Data Center Projects",
-                "link": "https://finance.yahoo.com/technology/ai/articles/iren-iren-draws-tighter-oversight-232125190.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 23:21",
-                "description": "Microsoft has tightened oversight of neocloud data center projects with partner IREN (NasdaqGS:IREN) after recent delivery issues. The tech giant has declined contract extensions on certain neocloud builds, citing project delays and higher than expected costs. IREN is reported to have faced operational setbacks at its Texas facility, including an incident that disrupted local data center activity. Microsoft's decision to refuse neocloud extensions and the Texas site incident is only one...",
-                "_timestamp": 1793920885.0
-            },
-            {
-                "title": "Update: Iren Fiscal Q1 Swings to Loss, Revenue Falls; Microsoft AI Infrastructure Deliveries Delayed",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-fiscal-q1-swings-loss-101234907.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 10:12",
-                "description": "(Updates with information on Microsoft delivery delays in the headline and the fifth to seventh para",
-                "_timestamp": 1793959954.0
-            },
-            {
-                "title": "IREN Shares Surge 18% After Strong AI Cloud Revenue Growth and Better-Than-Expected Quarterly Results",
-                "link": "https://investorshub.advfn.com/market-news/article/39419/iren-shares-surge-18-after-strong-ai-cloud-revenue-growth-and-better-than-expected-quarterly-results?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 11:10",
-                "description": "IREN Ltd (NASDAQ:IREN) shares jumped 18. 1% in premarket trading on Friday after the artificial intelligence infrastructure company reported fiscal first-quarter 2027 results that exceeded Wall Street expectations, helping the stock recover from a sharp decline in the previous session.",
-                "_timestamp": 1793963416.0
-            },
-            {
-                "title": "IREN Says New AI Cloud Customers Are Prepaying 90% of the Chips",
-                "link": "https://247wallst.com/investing/2026/11/06/iren-says-new-ai-cloud-customers-are-prepaying-90-of-the-chips/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:13",
-                "description": "A customer just agreed to fund nearly all of IREN's chips upfront, yet cash is draining and debt is climbing fast. Why would anyone pay that much early, and what does it reveal about the $6 billion gap still unfunded?",
-                "_timestamp": 1793985225.0
-            },
-            {
-                "title": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
-                "link": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-06 18:40",
-                "description": "Microsoft is winding down the number of neoclouds it counts as partners, picking key suppliers and focusing on its own data centers.",
-                "_timestamp": 1793990458.0
-            },
-            {
-                "title": "IREN (IREN) Stock May Still Be A Bargain Following Contract Delays",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/iren-iren-stock-may-still-201040967.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 20:10",
-                "description": "IREN has seen its share price swing sharply in recent years, which puts fresh focus on a simple question for you as an investor. Does the current US$18.03 price make sense relative to the sales the business is generating today and what those sales could reasonably support over time? Over the past 3 years the stock has delivered a very large gain of about 7x, which now puts a lot of weight on whether its sales base can carry that kind of move. Rec",
-                "_timestamp": 1793995840.0
-            },
-            {
-                "title": "Stock Market Today, Nov. 6: Iren Soars 20% on Strong AI Cloud Revenue Growth",
-                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/06/stock-market-today-nov-6-iren-soars-20-on-strong-ai-cloud-revenue-growth/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 22:18",
-                "description": "Today, Nov. 6, 2026, investors are weighing whether customer prepayments and contract wins can sustain the AI cloud momentum.",
-                "_timestamp": 1794003481.0
-            },
-            {
-                "title": "Why Iren Stock Soared Today",
-                "link": "https://www.fool.com/investing/2026/11/06/why-iren-stock-soared-today/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 02:19",
-                "description": "The AI boom isn't over yet.",
-                "_timestamp": 1794017952.0
-            },
-            {
-                "title": "Record Revenue, 52-Week Lows: Is the Massive Selloff in IREN Stock a Gift?",
-                "link": "https://finance.yahoo.com/technology/ai/articles/record-revenue-52-week-lows-232539659.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 23:25",
-                "description": "We just published a list of the 10 Best 52-Week Low NASDAQ Stocks to Buy According to Billionaires and IREN (NASDAQ:IREN) ranked 10th on this list. Scan the Nasdaq stocks hitting 52-week lows this week and a pattern jumps out: many of the biggest names build, power or rent space for artificial intelligence. Few of […]",
-                "_timestamp": 1794093939.0
-            },
-            {
-                "title": "Here’s Why Citi Downgraded iRhythm (IRTC) Despite 14.9% Revenue Growth",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/why-citi-downgraded-irhythm-irtc-202511900.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 20:25",
-                "description": "We just published a list of the 10 High-Profile Stocks Just Dumped by Top Analysts and iRhythm Holdings (NASDAQ:IRTC) ranked 10th on this list. Wall Street had one of its roughest sessions of the year this week. The Nasdaq Composite fell 5.52% on November 5, its deepest one-day drop in 19 months, Reuters reported that […]",
-                "_timestamp": 1794169511.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Event_Timestamp": "2026-11-08 20:25 UTC (approx. 16 hours ago relative to reference time)",
-            "Facts": "Citi downgraded iRhythm (IRTC) despite 14.9% revenue growth, while AI cloud infrastructure provider IREN experienced extreme volatility, dropping to 52-week lows before surging 20% on strong cloud revenue growth [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether AI infrastructure stocks have found a durable bottom or remain exposed to valuation contraction.",
-            "Macro_Context": "Nasdaq 100 is higher by +1.81% over 24h, showing resilience in select tech/AI segments despite broader market jitters.",
-            "Bull_Case": "Strong revenue metrics in AI infrastructure highlight robust technological demand, supporting broader growth sentiment.",
-            "Bear_Case": "Selective downgrades despite positive revenue growth point to heightened valuation scrutiny by institutional analysts.",
-            "Historical_Calibration": "Aligning with the self-learning memory of avoiding low-probability setups during choppy weekend pricing and flat basis spreads ($-3.09).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 46,
-            "Past_Price_Action_Cause": "Price action reflects weekend consolidation at $4070.59 with a muted ATR ratio of 0.17x.",
-            "Orderflow_Price_Target": "N/A"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-08 20:24 UTC",
-        "original_date": "2026-11-08 20:24",
-        "_timestamp": 1794169443.0,
-        "articles": [
-            {
-                "title": "Why Barclays Cut Gartner (IT) Despite a 27% Rally in Its Shares",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/why-barclays-cut-gartner-despite-202403354.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 20:24",
-                "description": "We just published a list of the 10 High-Profile Stocks Just Dumped by Top Analysts and Gartner (NYSE:IT) ranked 6th on this list. Wall Street had one of its roughest sessions of the year this week. The Nasdaq Composite fell 5.52% on November 5, its deepest one-day drop in 19 months, Reuters reported that day. […]",
-                "_timestamp": 1794169443.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-08 20:24 UTC (approx. 16 hours ago relative to reference time)",
-            "Facts": "Barclays cut its rating on Gartner (IT) despite a 27% prior share price rally, placing it among high-profile stocks dumped by analysts amid the broader market correction [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether consulting and advisory firms will see reduced corporate spending as clients tighten budgets.",
-            "Macro_Context": "US 10Y Bond Price is at 107.235 (-0.18%), reflecting slight yield pressures. Nasdaq 100 is up +1.81%.",
-            "Bull_Case": "Corporate spending retrenchment often coincides with macroeconomic defensive positioning.",
-            "Bear_Case": "Analyst target adjustments on individual service firms have negligible direct transmission to precious metals spot pricing.",
-            "Historical_Calibration": "Corporate equity rating actions rarely provide sufficient standalone macro impetus for gold breakout moves; previous misses emphasize sticking to direct macro drivers.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 47,
-            "Past_Price_Action_Cause": "Minimal direct impact on XAU/USD price action ($4070.59), which remains range-bound over the weekend.",
-            "Orderflow_Price_Target": "N/A"
-        }
     }
 ]

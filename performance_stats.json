@@ -1,8 +1,8 @@
 {
-    "total_evaluated": 221,
-    "hits": 94,
-    "misses": 127,
-    "win_rate": 42.5,
+    "total_evaluated": 223,
+    "hits": 95,
+    "misses": 128,
+    "win_rate": 42.6,
     "active_signals": 5,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
@@ -2534,7 +2534,7 @@
             "fail_reason": "20h time limit expired without reaching $4070.76 (Max DD: -$0.00)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/3-british-quality-stocks-roe-021445314.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "3 British Quality Stocks With ROE Over 27%",
             "source": "Yahoo Finance Gold",
             "impact": "Bearish",
@@ -2547,7 +2547,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794136398.0,
             "date": "First Reported: 2026-11-08 02:14 UTC | Last Update: 2026-11-08 11:13 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4051.09 (Max DD: -$63.55)"
         },
         "https://www.fool.com/investing/2026/11/08/amd-stock-has-more-than-doubled-in-2026-here-s-how-its-last-8-doubles-played-out-the-next-year/?.tsrc=rss": {
             "status": "HIT",
@@ -3533,7 +3533,7 @@
             "prob": 53,
             "entry_price": 4121.56,
             "target": 4131.88,
-            "max_dd_usd": 16.04,
+            "max_dd_usd": 35.32,
             "atr_ratio_at_signal": 0.03,
             "daily_atr_at_signal": 65.98,
             "macro_snapshot": "EUR -0.20%, NAS100 +0.76%",
@@ -3549,7 +3549,7 @@
             "prob": 51,
             "entry_price": 4122.88,
             "target": 4131.81,
-            "max_dd_usd": 17.36,
+            "max_dd_usd": 36.64,
             "atr_ratio_at_signal": 0.0,
             "daily_atr_at_signal": 63.45,
             "macro_snapshot": "EUR -0.15%, NAS100 +0.52%",
@@ -3606,7 +3606,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$10.55)"
         },
         "https://www.euronews.com/2026/11/09/tech-stocks-recover-after-midterms-rout-as-nvidia-takes-centre-stage?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Tech stocks recover after midterms rout as Nvidia takes centre stage",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -3619,6 +3619,38 @@
             "macro_snapshot": "EUR -0.10%, NAS100 +0.33%",
             "created_ts": 1794206068.0,
             "date": "First Reported: 2026-11-09 06:34 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$12.74)"
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-he-thinks-he-will-meet-xi-putin-set-discuss-ending-war-iran": {
+            "status": "ACTIVE",
+            "headline": "Trump says he thinks he will meet with Xi, Putin, set to discuss ending war on iran",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4086.95,
+            "target": 4120.8,
+            "max_dd_usd": 0.71,
+            "atr_ratio_at_signal": 0.41,
+            "daily_atr_at_signal": 69.66,
+            "macro_snapshot": "EUR -0.05%, NAS100 -0.59%",
+            "created_ts": 1794209365.0,
+            "date": "First Reported: 2026-11-09 07:29 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/9/who-are-the-seafarers-caught-in-the-us-israeli-war-on-iran?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Who are the seafarers caught in the US-Israeli war on Iran?",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4086.95,
+            "target": 4120.8,
+            "max_dd_usd": 0.71,
+            "atr_ratio_at_signal": 0.41,
+            "daily_atr_at_signal": 69.66,
+            "macro_snapshot": "EUR -0.05%, NAS100 -0.59%",
+            "created_ts": 1794208046.0,
+            "date": "First Reported: 2026-11-09 07:07 UTC",
             "fail_reason": ""
         }
     }

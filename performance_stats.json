@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 220,
-    "hits": 93,
+    "total_evaluated": 221,
+    "hits": 94,
     "misses": 127,
-    "win_rate": 42.3,
-    "active_signals": 6,
+    "win_rate": 42.5,
+    "active_signals": 5,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -3533,7 +3533,7 @@
             "prob": 53,
             "entry_price": 4121.56,
             "target": 4131.88,
-            "max_dd_usd": 12.15,
+            "max_dd_usd": 16.04,
             "atr_ratio_at_signal": 0.03,
             "daily_atr_at_signal": 65.98,
             "macro_snapshot": "EUR -0.20%, NAS100 +0.76%",
@@ -3549,7 +3549,7 @@
             "prob": 51,
             "entry_price": 4122.88,
             "target": 4131.81,
-            "max_dd_usd": 13.47,
+            "max_dd_usd": 17.36,
             "atr_ratio_at_signal": 0.0,
             "daily_atr_at_signal": 63.45,
             "macro_snapshot": "EUR -0.15%, NAS100 +0.52%",
@@ -3574,20 +3574,20 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$17.76)"
         },
         "https://en.mehrnews.com/news/249262/Iran-China-advancing-economic-partnership-on-300b-horizon": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iran, China advancing economic partnership on $300b horizon",
             "source": "Mehr News Agency",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 53,
             "entry_price": 4113.51,
-            "target": 4131.54,
-            "max_dd_usd": 4.1,
+            "target": 4120.74,
+            "max_dd_usd": 7.99,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 65.28,
             "macro_snapshot": "EUR -0.13%, NAS100 +0.40%",
             "created_ts": 1794205021.0,
             "date": "First Reported: 2026-11-09 06:17 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.99)"
         },
         "https://finance.yahoo.com/technology/ai/articles/chinese-robotics-stock-surge-apple-061332775.html?.tsrc=rss": {
             "status": "HIT",

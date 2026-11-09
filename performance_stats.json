@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 218,
-    "hits": 91,
+    "total_evaluated": 219,
+    "hits": 92,
     "misses": 127,
-    "win_rate": 41.7,
-    "active_signals": 3,
+    "win_rate": 42.0,
+    "active_signals": 4,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -3533,13 +3533,45 @@
             "prob": 53,
             "entry_price": 4121.56,
             "target": 4131.88,
-            "max_dd_usd": 2.27,
+            "max_dd_usd": 2.41,
             "atr_ratio_at_signal": 0.03,
             "daily_atr_at_signal": 65.98,
             "macro_snapshot": "EUR -0.20%, NAS100 +0.76%",
             "created_ts": 1794201685.0,
             "date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-09 05:21 UTC",
             "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249259/Egypt-s-Al-Azhar-urges-global-action-on-Gaza-dire-situation": {
+            "status": "ACTIVE",
+            "headline": "Egypt’s Al-Azhar urges global action on Gaza dire situation",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 51,
+            "entry_price": 4122.88,
+            "target": 4131.81,
+            "max_dd_usd": 3.73,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 63.45,
+            "macro_snapshot": "EUR -0.15%, NAS100 +0.52%",
+            "created_ts": 1794203915.0,
+            "date": "First Reported: 2026-11-09 05:58 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/gold-holds-decline-us-jobs-234010998.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Gold Holds Decline as US Jobs Data Fan December Rate Hike Bets",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4055.69,
+            "target": 4120.23,
+            "max_dd_usd": 17.76,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 63.45,
+            "macro_snapshot": "EUR -0.15%, NAS100 +0.52%",
+            "created_ts": 1794181210.0,
+            "date": "First Reported: 2026-11-08 23:40 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$17.76)"
         }
     }
 }

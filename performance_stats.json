@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 245,
-    "hits": 117,
-    "misses": 128,
-    "win_rate": 47.8,
-    "active_signals": 16,
+    "total_evaluated": 253,
+    "hits": 124,
+    "misses": 129,
+    "win_rate": 49.0,
+    "active_signals": 17,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -2966,7 +2966,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/core-natural-resources-bristow-group-182136821.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Core Natural Resources, Bristow Group, CVR Energy, Baker Hughes, and Oceaneering shares pl",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -2979,7 +2979,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794162096.0,
             "date": "First Reported: 2026-11-08 18:21 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4051.1 (Max DD: -$63.55)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/visa-v-15-revenue-gain-173201141.html?.tsrc=rss": {
             "status": "HIT",
@@ -3661,7 +3661,7 @@
             "prob": 52,
             "entry_price": 4094.95,
             "target": 4078.83,
-            "max_dd_usd": 31.18,
+            "max_dd_usd": 35.73,
             "atr_ratio_at_signal": 0.42,
             "daily_atr_at_signal": 66.92,
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
@@ -3789,7 +3789,7 @@
             "prob": 52,
             "entry_price": 4096.73,
             "target": 4090.41,
-            "max_dd_usd": 29.4,
+            "max_dd_usd": 33.95,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 63.71,
             "macro_snapshot": "EUR +0.19%, NAS100 +0.33%",
@@ -3869,7 +3869,7 @@
             "prob": 52,
             "entry_price": 4103.67,
             "target": 4078.62,
-            "max_dd_usd": 22.46,
+            "max_dd_usd": 27.01,
             "atr_ratio_at_signal": 0.26,
             "daily_atr_at_signal": 64.25,
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
@@ -3885,7 +3885,7 @@
             "prob": 52,
             "entry_price": 4103.67,
             "target": 4078.62,
-            "max_dd_usd": 22.46,
+            "max_dd_usd": 27.01,
             "atr_ratio_at_signal": 0.26,
             "daily_atr_at_signal": 64.25,
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
@@ -3990,7 +3990,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$3.32)"
         },
         "https://finance.yahoo.com/technology/ai/articles/coreweave-power-wayves-ai-driver-130000105.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "CoreWeave to Power Wayve's AI Driver Training in Multi-Year Agreement",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -4003,7 +4003,7 @@
             "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
             "created_ts": 1794229200.0,
             "date": "First Reported: 2026-11-09 13:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.49)"
         },
         "https://www.tikr.com/blog/alphabet-has-75-7-billion-of-data-center-backstops-lenders-just-started-doubting-them?ref=yahoofinance&tlnk=yf-261109-7m64wc2q&.tsrc=rss": {
             "status": "ACTIVE",
@@ -4022,7 +4022,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/09/nvidia-palantir-tesla-sending-shockwaves-through-wall-street-with-53-billion-warning/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Nvidia, Palantir, and Tesla Are Sending Shockwaves Through Wall Street With This $53 Billi",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -4035,7 +4035,7 @@
             "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
             "created_ts": 1794227162.0,
             "date": "First Reported: 2026-11-09 12:26 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$15.72)"
         },
         "https://www.middleeasteye.net/opinion/labours-message-britons-israel-more-important-your-needs": {
             "status": "HIT",
@@ -4070,7 +4070,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$2.42)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/atex-strengthens-executive-leadership-team-120000076.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "ATEX Strengthens Executive Leadership Team to Advance Valeriano and Accelerate District Gr",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -4083,10 +4083,10 @@
             "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
             "created_ts": 1794225600.0,
             "date": "First Reported: 2026-11-09 12:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$24.19)"
         },
         "https://finance.yahoo.com/markets/commodities/articles/fredonia-mining-appoints-global-mining-120000408.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Fredonia Mining Appoints Global Mining Executive Gustavo Gomes as COO to Advance El Dorado",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -4099,7 +4099,7 @@
             "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
             "created_ts": 1794225600.0,
             "date": "First Reported: 2026-11-09 12:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$24.19)"
         },
         "https://finance.yahoo.com/energy/articles/carney-gives-canada-oil-firms-120000385.html?.tsrc=rss": {
             "status": "HIT",
@@ -4118,7 +4118,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.investing.com/news/commodities-news/european-gas-edges-higher-as-hormuz-shipping-hits-offset-trumps-pause-on-iran-5011016": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "European gas edges higher as Hormuz Shipping hits offset Trump’s pause on Iran",
             "source": "Investing.com",
             "impact": "Bullish",
@@ -4131,10 +4131,10 @@
             "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
             "created_ts": 1794225197.0,
             "date": "First Reported: 2026-11-09 11:53 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.64)"
         },
         "https://www.tehrantimes.com/news/531965/Iranian-Iraqi-universities-to-expand-cooperation-through-joint": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iranian, Iraqi universities to expand cooperation through joint AI degree",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -4147,10 +4147,10 @@
             "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
             "created_ts": 1794224479.0,
             "date": "First Reported: 2026-11-09 11:41 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.64)"
         },
         "https://finance.yahoo.com/energy/articles/iraqs-oil-sales-america-fall-113000660.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iraq's Oil Sales to America Fall to Lowest Since the 2003 War",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
@@ -4163,7 +4163,7 @@
             "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
             "created_ts": 1794223800.0,
             "date": "First Reported: 2026-11-09 11:30 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.64)"
         },
         "https://finance.yahoo.com/markets/commodities/articles/freeman-gold-applies-fast-41-123000178.html?.tsrc=rss": {
             "status": "ACTIVE",
@@ -4179,6 +4179,150 @@
             "macro_snapshot": "EUR +0.38%, NAS100 +0.44%",
             "created_ts": 1794227400.0,
             "date": "First Reported: 2026-11-09 12:30 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/09/if-the-stock-market-crashes-im-loading-up-on-these/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "If the Stock Market Crashes, I'm Loading Up on These 2 No-Brainer ETFs",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4129.69,
+            "target": 4131.25,
+            "max_dd_usd": 9.75,
+            "atr_ratio_at_signal": 0.57,
+            "daily_atr_at_signal": 54.81,
+            "macro_snapshot": "EUR +0.46%, NAS100 +0.05%",
+            "created_ts": 1794233640.0,
+            "date": "First Reported: 2026-11-09 14:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/9/paraguay-raids-ex-presidents-home-why-a-bank-crash-brought-down-pena?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Paraguay raids ex-president’s home: Why a bank crash brought down Pena",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4125.05,
+            "target": 4131.25,
+            "max_dd_usd": 7.1,
+            "atr_ratio_at_signal": 0.57,
+            "daily_atr_at_signal": 54.81,
+            "macro_snapshot": "EUR +0.46%, NAS100 +0.05%",
+            "created_ts": 1794231840.0,
+            "date": "First Reported: 2026-11-09 13:44 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531975/Mount-Damavand-named-among-world-s-top-geological-heritage-sites": {
+            "status": "ACTIVE",
+            "headline": "Mount Damavand named among world’s top geological heritage sites",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4125.05,
+            "target": 4131.25,
+            "max_dd_usd": 7.1,
+            "atr_ratio_at_signal": 0.57,
+            "daily_atr_at_signal": 54.81,
+            "macro_snapshot": "EUR +0.46%, NAS100 +0.05%",
+            "created_ts": 1794231613.0,
+            "date": "First Reported: 2026-11-09 13:40 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531978/Italian-made-facsimile-of-Shahnameh-presented-to-Iran": {
+            "status": "ACTIVE",
+            "headline": "Italian-made facsimile of Shahnameh presented to Iran",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4125.05,
+            "target": 4131.25,
+            "max_dd_usd": 7.1,
+            "atr_ratio_at_signal": 0.57,
+            "daily_atr_at_signal": 54.81,
+            "macro_snapshot": "EUR +0.46%, NAS100 +0.05%",
+            "created_ts": 1794231595.0,
+            "date": "First Reported: 2026-11-09 13:39 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531979/Water-heritage-links-ancestral-wisdom-to-Iran-s-sustainable-future": {
+            "status": "ACTIVE",
+            "headline": "Water heritage links ancestral wisdom to Iran’s sustainable future: official",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4125.05,
+            "target": 4131.25,
+            "max_dd_usd": 7.1,
+            "atr_ratio_at_signal": 0.57,
+            "daily_atr_at_signal": 54.81,
+            "macro_snapshot": "EUR +0.46%, NAS100 +0.05%",
+            "created_ts": 1794231576.0,
+            "date": "First Reported: 2026-11-09 13:39 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531976/Yerevan-hosting-Iran-Armenia-joint-economic-committee-meeting": {
+            "status": "ACTIVE",
+            "headline": "Yerevan hosting Iran-Armenia joint economic committee meeting",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4125.05,
+            "target": 4131.25,
+            "max_dd_usd": 7.1,
+            "atr_ratio_at_signal": 0.57,
+            "daily_atr_at_signal": 54.81,
+            "macro_snapshot": "EUR +0.46%, NAS100 +0.05%",
+            "created_ts": 1794231383.0,
+            "date": "First Reported: 2026-11-09 13:36 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531974/Iran-Tajikistan-trade-from-growth-in-exchanges-to-test-of-implementing": {
+            "status": "ACTIVE",
+            "headline": "Iran-Tajikistan trade: from growth in exchanges to test of implementing agreements",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4125.05,
+            "target": 4131.25,
+            "max_dd_usd": 7.1,
+            "atr_ratio_at_signal": 0.57,
+            "daily_atr_at_signal": 54.81,
+            "macro_snapshot": "EUR +0.46%, NAS100 +0.05%",
+            "created_ts": 1794230795.0,
+            "date": "First Reported: 2026-11-09 13:26 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249273/Tehran-to-hold-funeral-for-110-Sacred-Defense-martyres": {
+            "status": "ACTIVE",
+            "headline": "Tehran to hold funeral for 110 Sacred Defense martyres",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4125.05,
+            "target": 4131.25,
+            "max_dd_usd": 7.1,
+            "atr_ratio_at_signal": 0.57,
+            "daily_atr_at_signal": 54.81,
+            "macro_snapshot": "EUR +0.46%, NAS100 +0.05%",
+            "created_ts": 1794230541.0,
+            "date": "First Reported: 2026-11-09 13:22 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/economy/2026/11/9/sudan-teachers-go-on-strike-over-meagre-salaries-and-dilapidated-schools?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Sudan teachers go on strike over meagre salaries and dilapidated schools",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4125.05,
+            "target": 4131.25,
+            "max_dd_usd": 7.1,
+            "atr_ratio_at_signal": 0.57,
+            "daily_atr_at_signal": 54.81,
+            "macro_snapshot": "EUR +0.46%, NAS100 +0.05%",
+            "created_ts": 1794229715.0,
+            "date": "First Reported: 2026-11-09 13:08 UTC",
             "fail_reason": ""
         }
     }

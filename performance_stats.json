@@ -3,7 +3,7 @@
     "hits": 93,
     "misses": 127,
     "win_rate": 42.3,
-    "active_signals": 5,
+    "active_signals": 6,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -3604,6 +3604,22 @@
             "created_ts": 1794204812.0,
             "date": "First Reported: 2026-11-09 06:13 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$10.55)"
+        },
+        "https://www.euronews.com/2026/11/09/tech-stocks-recover-after-midterms-rout-as-nvidia-takes-centre-stage?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Tech stocks recover after midterms rout as Nvidia takes centre stage",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bearish",
+            "prob": 53,
+            "entry_price": 4111.32,
+            "target": 4103.5,
+            "max_dd_usd": 12.74,
+            "atr_ratio_at_signal": 0.13,
+            "daily_atr_at_signal": 66.11,
+            "macro_snapshot": "EUR -0.10%, NAS100 +0.33%",
+            "created_ts": 1794206068.0,
+            "date": "First Reported: 2026-11-09 06:34 UTC",
+            "fail_reason": ""
         }
     }
 }

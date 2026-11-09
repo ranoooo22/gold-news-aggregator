@@ -1,5 +1,47 @@
 [
     {
+        "main_date": "First Reported: 2026-11-09 05:58 UTC | Last Update: 2026-11-09 06:46 UTC",
+        "original_date": "2026-11-09 05:58",
+        "_timestamp": 1794206764.0,
+        "articles": [
+            {
+                "title": "Egypt’s Al-Azhar urges global action on Gaza dire situation",
+                "link": "https://en.mehrnews.com/news/249259/Egypt-s-Al-Azhar-urges-global-action-on-Gaza-dire-situation",
+                "source": "Mehr News Agency",
+                "date": "2026-11-09 05:58",
+                "description": "TEHRAN, Nov. 08 (MNA) – Egypt’s Al-Azhar has called for an immediate action by the international community regarding the dire situation of the people in the Gaza Strip.",
+                "_timestamp": 1794203915.0
+            },
+            {
+                "title": "Pakistan’s Sharif slams Israel’s obstruction of aid into Gaza",
+                "link": "https://en.mehrnews.com/news/249264/Pakistan-s-Sharif-slams-Israel-s-obstruction-of-aid-into-Gaza",
+                "source": "Mehr News Agency",
+                "date": "2026-11-09 06:46",
+                "description": "TEHRAN, Nov. 09 (MNA) – Pakistan’s Prime Minister Shehbaz Sharif has condemned Israel’s denial of “basic humanitarian assistance” to Palestinians in Gaza as winter rains compound the crisis in the besieged enclave.",
+                "_timestamp": 1794206764.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-09 05:58 - 06:46 UTC (approx. 0.1 to 1 hour ago)",
+            "Facts": "Pakistan Prime Minister Shehbaz Sharif condemned Israel's denial of basic humanitarian assistance to Gaza, noting that winter rains are compounding the humanitarian crisis [Mehr News Agency]. Concurrently, Egypt's Al-Azhar urged immediate global action regarding the dire situation in the Gaza Strip [Mehr News Agency].",
+            "Uncertainties": "Whether these diplomatic and religious statements will translate into tangible geopolitical escalation or policy shifts impacting global markets.",
+            "Macro_Context": "EUR/USD is at 1.11656 (-0.10%), US 10Y Yield proxy is down at 107.26 (-0.20%), Nasdaq 100 is +0.33%, and Brent Crude is down 3.44% at 98.972. The 24/7 OKX XAUUSDT.P basis spread is $+7.97 (+0.19%), showing tight spot/perp parity. Global OANDA retail positioning stands at 71.9% long versus 28.1% short, presenting standard crowded retail conditions.",
+            "Bull_Case": "Continued geopolitical tensions in the Middle East and worsening humanitarian conditions in Gaza maintain persistent safe-haven demand for gold, protecting downside floors.",
+            "Bear_Case": "The news represents reiterations of existing geopolitical stances rather than fresh military escalation, meaning the safety premium is likely already priced into the current spot level around $4,109.64.",
+            "Historical_Calibration": "Drawing from past successful geopolitical setups like the Iran conflict headlines where tight signal-ATR ratios delivered rapid gains, this cluster offers a minor safe-haven tilt but lacks immediate structural catalyst power, suggesting a neutral stance or low-probability continuation.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Gold's 4h move (-$8.74) reflects minor consolidation off recent highs, while the 24h change of +$69.38 shows strong prior momentum that absorbs ongoing geopolitical headlines.",
+            "Orderflow_Price_Target": "N/A"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 13.47
+    },
+    {
         "main_date": "First Reported: 2026-11-09 06:42 UTC",
         "original_date": "2026-11-09 06:42",
         "_timestamp": 1794206557.0,
@@ -30,6 +72,40 @@
             "Past_Price_Action_Cause": "Gold is currently down slightly over 4h ($-8.34) amidst subdued weekend trading conditions. Localized accidents do not drive major multi-dollar moves on XAU/USD.",
             "Orderflow_Price_Target": "N/A"
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-09 06:34 UTC",
+        "original_date": "2026-11-09 06:34",
+        "_timestamp": 1794206068.0,
+        "articles": [
+            {
+                "title": "Tech stocks recover after midterms rout as Nvidia takes centre stage",
+                "link": "https://www.euronews.com/2026/11/09/tech-stocks-recover-after-midterms-rout-as-nvidia-takes-centre-stage?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 06:34",
+                "description": "Tech firms rose on Monday to claw back some of last week's painful losses fuelled by AI regulation worries, though traders were keeping an eye on a probe into Nvidia boss Jensen Huang.View on euronews",
+                "_timestamp": 1794206068.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-09 06:34 UTC (approx. 0.5 hours ago)",
+            "Facts": "Tech stocks rose on Monday to recover from last week's rout driven by AI regulation concerns, even as traders monitor an ongoing probe into Nvidia CEO Jensen Huang [Yahoo Finance Nasdaq / Euronews].",
+            "Uncertainties": "The ultimate outcome and severity of regulatory probes into Nvidia and broader AI sector governance.",
+            "Macro_Context": "Nasdaq 100 is up 0.33% at 26,980.0, signaling a risk-on recovery in equities. US 10Y Bond Price is 107.26 (-0.20%), and EUR/USD is 1.11656 (-0.10%). Brent crude dropped 3.44%. The OKX XAUUSDT.P basis spread is $+7.97 (+0.19%).",
+            "Bull_Case": "A recovering tech sector reduces safe-haven panic, potentially encouraging capital rotation back toward risk assets, which can keep gold gains capped.",
+            "Bear_Case": "Equities recovery and risk-on sentiment traditionally create headwinds for safe-haven precious metals, putting downward pressure on gold as alternative yields or equities attract capital.",
+            "Historical_Calibration": "Aligning with historical track records where opposing macro equity strength (e.g., NAS100 gains) pressures gold, a risk-on tech bounce creates a clear bearish intraday bias for XAU/USD.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 53,
+            "Past_Price_Action_Cause": "The 4h decline of $-8.74 aligns with the equities relief rally and easing tech panic, drawing gold prices slightly down toward closer liquidity pools.",
+            "Orderflow_Price_Target": "4103.50"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 12.74
     },
     {
         "main_date": "First Reported: 2026-11-09 06:32 UTC",
@@ -1202,40 +1278,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-09 05:58 UTC",
-        "original_date": "2026-11-09 05:58",
-        "_timestamp": 1794203915.0,
-        "articles": [
-            {
-                "title": "Egypt’s Al-Azhar urges global action on Gaza dire situation",
-                "link": "https://en.mehrnews.com/news/249259/Egypt-s-Al-Azhar-urges-global-action-on-Gaza-dire-situation",
-                "source": "Mehr News Agency",
-                "date": "2026-11-09 05:58",
-                "description": "TEHRAN, Nov. 08 (MNA) – Egypt’s Al-Azhar has called for an immediate action by the international community regarding the dire situation of the people in the Gaza Strip.",
-                "_timestamp": 1794203915.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-09 05:58 UTC (approx. 8 minutes ago)",
-            "Facts": "Egypt’s Al-Azhar issued a public call for immediate international action regarding the dire humanitarian situation in the Gaza Strip [Mehr News Agency].",
-            "Uncertainties": "Al-Azhar's statements carry moral and religious weight but lack binding political or military leverage to shift immediate Middle Eastern conflict escalation trajectories.",
-            "Macro_Context": "Reinforces ongoing Middle East geopolitical risk premiums. While Brent crude is lower (-2.82% to $99.60), safe-haven demand for gold remains underpinned by persistent regional tensions.",
-            "Bull_Case": "Escalating humanitarian appeals keep geopolitical risk premiums alive, supporting safe-haven flows into gold toward upper liquidity resistance.",
-            "Bear_Case": "Rhetorical appeals without concurrent military escalation often fail to ignite fresh institutional buying, remaining secondary to broader macro yields and dollar flows.",
-            "Historical_Calibration": "Historically, moral appeals yield muted immediate market reactions compared to direct supply disruptions or military actions.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 51,
-            "Past_Price_Action_Cause": "Contributes to persistent baseline safe-haven support keeping gold near $4122.88 against a backdrop of tight spot-perp basis ($+2.82).",
-            "Orderflow_Price_Target": "4131.81"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 13.47
-    },
-    {
         "main_date": "First Reported: 2026-11-06 16:21 UTC | Last Update: 2026-11-09 05:52 UTC",
         "original_date": "2026-11-06 16:21",
         "_timestamp": 1794203571.0,
@@ -1454,6 +1496,464 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 8.68
+    },
+    {
+        "main_date": "First Reported: 2026-11-02 22:53 UTC | Last Update: 2026-11-09 05:31 UTC",
+        "original_date": "2026-11-02 22:53",
+        "_timestamp": 1794202309.0,
+        "articles": [
+            {
+                "title": "Gold consolidates in downtrend, eyes $3,980 resistance: Live levels",
+                "link": "https://www.investing.com/news/commodities-news/gold-in-oversold-freefall-tests-key-support-live-levels-93CH-4990025",
+                "source": "Investing.com",
+                "date": "2026-11-03 07:10",
+                "description": "",
+                "_timestamp": 1793689808.0
+            },
+            {
+                "title": "Nevada Sunrise Metals: A dawning gold and copper growth story",
+                "link": "https://investorshub.advfn.com/market-news/article/38916/nevada-sunrise-metals-a-dawning-gold-and-copper-growth-story?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 08:00",
+                "description": "From a bird’s eye view, investing in commodities carries two primary value propositions, one tied to psychology, the other to industrial utility, each of which can support long-term portfolio growth. From a psychological perspective, commodities offer the potential to protect your portfolio from inflation and geopolitical instability, with gold differentiating itself as the asset of choice for these purposes thanks to its scarcity and millennia-spanning association with luxury.",
+                "_timestamp": 1793692800.0
+            },
+            {
+                "title": "Where Does i-80 Gold (TSX:IAU) Valuation Sit As Q3 2026 Results Raise New Questions?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/where-does-80-gold-tsx-070714062.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 07:07",
+                "description": "Why the latest i-80 Gold earnings matter for shareholders i-80 Gold (TSX:IAU) has just put fresh numbers on the table, releasing third quarter 2026 results that combine higher reported sales with a deeper net loss and ongoing mine development spending. Recent trading has been choppy. The share price has slid to CA$1.93, with a 1 month share price return of down 16.09% and a 7 day share price return of down 6.76%. However, the 1 year total shareholder return of 46.21% signals that longer term...",
+                "_timestamp": 1793689634.0
+            },
+            {
+                "title": "i-80 Gold (TSX:IAU) Keeps Archimedes On Track For Year End 2026 Production",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/80-gold-tsx-iau-keeps-051223502.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 05:12",
+                "description": "i-80 Gold (TSX:IAU) reaffirmed that first underground mining production from the Archimedes project is targeted by year-end 2026. The company declared maiden mineral reserves at its Granite Creek property, providing a new reserve base for the Nevada portfolio. Management outlined an updated development strategy that prioritizes Archimedes and Granite Creek within the broader project pipeline. The Archimedes start-up and new Granite Creek reserves matter, but investors should weigh them...",
+                "_timestamp": 1793682743.0
+            },
+            {
+                "title": "Is B2Gold (TSX:BTO) Still Cheap Based On Its Earnings?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/b2gold-tsx-bto-still-cheap-012014111.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 01:20",
+                "description": "B2Gold has given long term holders a strong 63.1% gain over the past three years, yet that rise leaves a simple question for anyone looking at the ticker today. Is the current share price, around C$6.68 at the last close, adequately grounded in the mining group’s earnings profile? The 63.1% return over three years puts real weight on whether the earnings that supported that journey can still justify today’s valuation. The business depends heavily on converting gold production into consistent...",
+                "_timestamp": 1793668814.0
+            },
+            {
+                "title": "Is Equinox Gold (TSX:EQX) Reasonable, Or Are Earnings Looking Stretched?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/equinox-gold-tsx-eqx-reasonable-231313873.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-02 23:13",
+                "description": "Equinox Gold has given long term holders a striking 3 year run, yet the recent pullback and shifting sector mood raise a sharper question about whether the current share price lines up with the earnings that support it. With gold miners under pressure since the Iran conflict and gold prices softening, investors are again asking how much earnings power this stock is really pricing in. Over the past 3 years Equinox Gold has delivered a 114.0% return, which puts a lot of accumulated optimism on...",
+                "_timestamp": 1793661193.0
+            },
+            {
+                "title": "i-80 Gold Reports Third Quarter 2026 Results; Archimedes Underground on Track to Begin Production Mining by Year-End",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/80-gold-reports-third-quarter-225300243.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-02 22:53",
+                "description": "i-80 GOLD CORP. (NYSE:IAUX) (TSX:IAU) (\"i-80 Gold\" or the \"Company\") reports its financial and operating results, as well as development highlights, for the three and nine months ended September 30, 2026.",
+                "_timestamp": 1793659980.0
+            },
+            {
+                "title": "Central Banks Buy Gold at Fastest Pace Since 2024, WGC Says",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/central-banks-buy-gold-fastest-060000481.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 06:00",
+                "description": "Central banks bought gold at the fastest pace since the end of 2024 in the third quarter, even as the metal faced pressure from higher oil prices and interest rates.",
+                "_timestamp": 1793685600.0
+            },
+            {
+                "title": "Central Banks Buy Gold at Fastest Pace Since 2024, WGC Says",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/central-banks-buy-gold-fastest-060000481.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 06:00",
+                "description": "Central banks bought gold at the fastest pace since the end of 2024 in the third quarter, even as the metal faced pressure from higher oil prices and interest rates.",
+                "_timestamp": 1793685600.0
+            },
+            {
+                "title": "Gold Falls Below $3,950 as Precious Metals Weaken Ahead of US Midterm Elections",
+                "link": "https://investorshub.advfn.com/market-news/article/39112/gold-falls-below-3950-as-precious-metals-weaken-ahead-of-us-midterm-elections?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 10:14",
+                "description": "Gold prices declined on Tuesday as renewed selling across precious metals erased part of the previous session’s recovery, while investors assessed developments in US-Iran peace negotiations, inflation expectations and the upcoming US midterm elections. Spot gold fell 0.",
+                "_timestamp": 1793700860.0
+            },
+            {
+                "title": "Heliostar Metals Stock And The Road To 500,000 Ounces Of Gold",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/heliostar-metals-stock-road-500-115702833.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 11:57",
+                "description": "This gold mining stock is not just targeting growth, but a tenfold increase in production.",
+                "_timestamp": 1793707022.0
+            },
+            {
+                "title": "Gold price today, Tuesday, November 3, 2026: Gold prices open below $4,000 for the second straight day",
+                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-tuesday-november-3-2026-gold-prices-open-below-4000-for-the-second-straight-day-123207114.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 12:32",
+                "description": "Gold futures opened at $3,960.50 per troy ounce on Tuesday, November 3, 2026, down 0.2% from Monday's closing price. Gold slipped further in early trading to $3,910.60 as of 7:20 a.m. ET.",
+                "_timestamp": 1793709127.0
+            },
+            {
+                "title": "Gold price today, Tuesday, November 3, 2026: Gold prices open below $4,000 for the second straight day",
+                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-tuesday-november-3-2026-gold-prices-open-below-4000-for-the-second-straight-day-123207114.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-03 12:32",
+                "description": "Gold futures opened at $3,960.50 per troy ounce on Tuesday, November 3, 2026, down 0.2% from Monday's closing price. Gold slipped further in early trading to $3,910.60 as of 7:20 a.m. ET.",
+                "_timestamp": 1793709127.0
+            },
+            {
+                "title": "Is It Worth Investing in Gold.com (GOLD) Based on Wall Street's Bullish Views?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-gold-com-gold-133003746.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-03 13:30",
+                "description": "According to the average brokerage recommendation (ABR), one should invest in Gold.com (GOLD). It is debatable whether this highly sought-after metric is effective because Wall Street analysts' recommendations tend to be overly optimistic. Would it be worth investing in the stock?",
+                "_timestamp": 1793712603.0
+            },
+            {
+                "title": "Gold holds near $3,930 as Iran talks, U.S. midterms shape outlook",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-holds-near-3-930-013232167.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 01:32",
+                "description": "Investing.com -- Gold prices held near $3,930 an ounce on Tuesday as investors monitored fresh diplomatic efforts to resolve the U.S.-Iran conflict and awaited U.S. midterm election results for clues on the outlook for interest rates and fiscal policy.",
+                "_timestamp": 1793755952.0
+            },
+            {
+                "title": "Gold holds near $3,930 as Iran talks, U.S. midterms shape outlook",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-holds-near-3-930-013232167.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-04 01:32",
+                "description": "Investing.com -- Gold prices held near $3,930 an ounce on Tuesday as investors monitored fresh diplomatic efforts to resolve the U.S.-Iran conflict and awaited U.S. midterm election results for clues on the outlook for interest rates and fiscal policy.",
+                "_timestamp": 1793755952.0
+            },
+            {
+                "title": "Who’s Buying Gold in 2026? The World Gold Council’s New Data Has an Answer",
+                "link": "https://beincrypto.com/world-gold-council-gold-forecast-2026/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 05:30",
+                "description": "World Gold Council halved its 2026 gold investment forecast as retail buying slowed, but lifted its central bank outlook.",
+                "_timestamp": 1793770214.0
+            },
+            {
+                "title": "Gold Prices Climb Above $3,975 as Weaker Dollar and Iran Diplomacy Support Recovery",
+                "link": "https://investorshub.advfn.com/market-news/article/39213/gold-prices-climb-above-3975-as-weaker-dollar-and-iran-diplomacy-support-recovery?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 10:58",
+                "description": "Gold prices advanced on Wednesday, extending their recovery above $3,975 per ounce as a decline in the US dollar supported demand for precious metals. Investors also assessed diplomatic developments involving the United States and Iran, alongside the potential economic implications of the US midterm elections.",
+                "_timestamp": 1793789936.0
+            },
+            {
+                "title": "Gold Mining Shares Rally as Democratic Midterm Victory Weakens US Dollar and Lifts Bullion Prices",
+                "link": "https://investorshub.advfn.com/market-news/article/39243/gold-mining-shares-rally-as-democratic-midterm-victory-weakens-us-dollar-and-lifts-bullion-prices?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 12:02",
+                "description": "US-listed gold mining stocks advanced sharply in premarket trading on Wednesday as gold prices climbed following the Democratic Party’s victory in both chambers of Congress during the US midterm elections. Spot gold rose 3.",
+                "_timestamp": 1793793778.0
+            },
+            {
+                "title": "Is American Century Global Gold Investor (BGEIX) a Strong Mutual Fund Pick Right Now?",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/american-century-global-gold-investor-110002926.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 11:00",
+                "description": "Mutual Fund Report for BGEIX",
+                "_timestamp": 1793790002.0
+            },
+            {
+                "title": "Gold is up over 100% in 5 years. Here's how to own it in an IRA",
+                "link": "https://www.thestreet.com/advisor/best-gold-ira-companies-2?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 15:19",
+                "description": "Gold IRAs let investors hold physical precious metals in a tax-advantaged retirement account.",
+                "_timestamp": 1793805540.0
+            },
+            {
+                "title": "Investors Are Rushing To Gold As US Dollar Tanks",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/investors-rushing-gold-us-dollar-171949355.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 17:19",
+                "description": "Investors are now watching payrolls and the Fed for the next move.",
+                "_timestamp": 1793812789.0
+            },
+            {
+                "title": "Why the Gold Rush Is Back On—at Least for Now",
+                "link": "https://finance.yahoo.com/m/fcd17d66-df4b-3f37-8549-fddc03fb2af5/why-the-gold-rush-is-back.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 20:23",
+                "description": "The precious metal got a big boost from the midterm elections. So did gold mining stocks. Can the rally last?",
+                "_timestamp": 1793823780.0
+            },
+            {
+                "title": "Allied Gold Reports Q3 2026 Results, Begins Production at the Kurmuk Mine and Delivers Strong Performance at the Côte D’Ivoire Complex",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/allied-gold-reports-q3-2026-222400129.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-04 22:24",
+                "description": "TORONTO, Nov. 04, 2026 (GLOBE NEWSWIRE) -- Allied Gold Corporation (TSX: AAUC) (NYSE: AAUC) (“Allied” or the “Company”) herein provides its financial and operational results for the third quarter of 2026. The Company produced 91,195 ounces of gold during the quarter, representing a 5% increase over the comparable prior-year period, at all-in sustaining costs (“AISC”)(1) of $2,378 per ounce sold. As previously disclosed, production is expected to be weighted toward the second half of the year, pa",
+                "_timestamp": 1793831040.0
+            },
+            {
+                "title": "Gold, Silver Cross $1 Trillion In Value In A Day: What’s Driving The Precious Metals Rally?",
+                "link": "https://stocktwits.com/news-articles/markets/equity/gold-silver-cross-1-trillion-in-value-in-a-day-what-s-driving-the-precious-metals-rally/cNG15dFR9EO?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 03:44",
+                "description": "Many market experts believe that this is just the beginning for the precious metals trade, which is likely to edge higher in a Democratic-led Congress.",
+                "_timestamp": 1793850244.0
+            },
+            {
+                "title": "i-80 Gold Stock What Granite Creek Feasibility Study Changes",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/80-gold-stock-granite-creek-043918493.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 04:39",
+                "description": "i-80 Gold reported third quarter 2026 sales of US$32.73 million and a net loss of US$48.35 million, while outlining progress on Nevada projects including a completed Granite Creek feasibility study and continued work at Archimedes and Lone Tree. The combination of a maiden mineral reserve at Granite Creek, a detailed Nevada buildout plan, and reported liquidity of about US$411 million highlights a business that is investing heavily today in an effort to convert drilled resources into a long...",
+                "_timestamp": 1793853558.0
+            },
+            {
+                "title": "Gold prices today, Thursday, November 5, 2026: Did one of 2026's worst assets just get a boost?",
+                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-november-5-2026-did-one-of-2026s-worst-assets-just-get-a-boost-142402603.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 14:24",
+                "description": "Gold futures opened at $4,075.40 per troy ounce on Thursday, November 5, 2026, up 0.1% from Wednesday's close. The price of gold rose this morning to $4,134.30 as of 9:14 a.m. ET.",
+                "_timestamp": 1793888642.0
+            },
+            {
+                "title": "Gold prices today, Thursday, November 5, 2026: Did one of 2026's worst assets just get a boost?",
+                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-november-5-2026-did-one-of-2026s-worst-assets-just-get-a-boost-142402603.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-05 14:24",
+                "description": "Gold futures opened at $4,075.40 per troy ounce on Thursday, November 5, 2026, up 0.1% from Wednesday's close. The price of gold rose this morning to $4,134.30 as of 9:14 a.m. ET.",
+                "_timestamp": 1793888642.0
+            },
+            {
+                "title": "Gold Just Had Its Best Day Since August, Back Above $4,000",
+                "link": "https://247wallst.com/investing/2026/11/05/gold-just-had-its-best-day-since-august-back-above-4000/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-05 19:22",
+                "description": "Gold's rebound lit a fire under the miners, and one stock nearly tripled the metal's move. Yet the Fed, a brutal year, and rising costs could turn that leverage against anyone holding for retirement.",
+                "_timestamp": 1793906567.0
+            },
+            {
+                "title": "Allied Gold (TSX:AAUC) Could Be 32% Undervalued After Its Q3 Profit Swing",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/allied-gold-tsx-aauc-could-002015876.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 00:20",
+                "description": "Why Allied Gold’s latest earnings matter for investors Allied Gold (TSX:AAUC) just posted a swing to profit in Q3 2026, supported by higher sales, a 5% increase in gold production, and updated guidance linked to new mine output. The miner also outlined plans for shareholder return policies starting in 2027, including a potential base dividend and share buyback program. This places future cash generation and project execution under closer investor scrutiny. Recent trading has been choppy for...",
+                "_timestamp": 1793924415.0
+            },
+            {
+                "title": "Goldman lowers year-end gold price forecast on hawkish Fed shift",
+                "link": "https://www.investing.com/news/commodities-news/goldman-lowers-yearend-gold-price-forecast-on-hawkish-fed-shift-5006662",
+                "source": "Investing.com",
+                "date": "2026-11-06 07:44",
+                "description": "",
+                "_timestamp": 1793951063.0
+            },
+            {
+                "title": "Goldman lowers year-end gold price forecast on hawkish Fed shift",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/goldman-lowers-end-gold-price-081423381.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 08:14",
+                "description": "Investing.com -- Goldman Sachs slashed its gold price forecasts, citing the Federal Reserve’s hawkish shift in recent months and its effect on investor positioning, while keeping a constructive longer-term view tied to strong central bank buying.",
+                "_timestamp": 1793952863.0
+            },
+            {
+                "title": "Goldman lowers year-end gold price forecast on hawkish Fed shift",
+                "link": "https://finance.yahoo.com/news/goldman-lowers-end-gold-price-081423381.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 08:14",
+                "description": "Investing.com -- Goldman Sachs slashed its gold price forecasts, citing the Federal Reserve’s hawkish shift in recent months and its effect on investor positioning, while keeping a constructive longer-term view tied to strong central bank buying.",
+                "_timestamp": 1793952863.0
+            },
+            {
+                "title": "Gold Holds Above $4,000 Ahead of Payrolls Test, Set for 4% Weekly Gain",
+                "link": "https://finance.yahoo.com/m/946fd469-9355-3bce-98d2-5e735bd9d952/gold-holds-above-%244%2C000-ahead.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 09:34",
+                "description": "Gold prices edged lower Friday morning but remained firmly on track for a weekly gain exceeding 4%, as desks braced for the high-stakes U.S. nonfarm payrolls report.",
+                "_timestamp": 1793957685.0
+            },
+            {
+                "title": "Gold price today, Friday, November 6, 2026: Gold hovers above $4,000 ahead of jobs report",
+                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-friday-november-6-2026-gold-hovers-above-4000-ahead-of-jobs-report-122450100.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 12:24",
+                "description": "Gold futures opened at $4,098.50 per troy ounce on Friday, November 6, 2026, down 0.4% from Thursday's closing price. Gold is sliding in early trading this morning to $4,072 per troy ounce as of 7:14 a.m. ET.",
+                "_timestamp": 1793967890.0
+            },
+            {
+                "title": "Is Agnico Eagle Mines (AEM) Cheap On The Gold Rally Or Already Fully Valued?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/agnico-eagle-mines-aem-cheap-121307486.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 12:13",
+                "description": "Agnico Eagle Mines (NYSE:AEM) is back in focus after a sharp move in gold prices following the Democrats' midterm win, which pulled the whole precious metals sector higher and reignited interest in gold miners. Agnico Eagle Mines has ridden that gold bounce with a 3.06% 1 day share price return and 7.47% gain over the past week, while a 19.73% 1 year total shareholder return and very large 3 year total shareholder return suggest momentum has been",
+                "_timestamp": 1793967187.0
+            },
+            {
+                "title": "How Investors Are Reacting To Gold.com Stock Profit Returns But Estimates Miss",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/investors-reacting-gold-com-stock-151234569.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 15:12",
+                "description": "Gold.com reported first quarter sales of US$3,265.27 million, net income of US$1.6 million and earnings of US$0.05 per share from continuing operations. Its board affirmed a quarterly cash dividend of US$0.20 per share payable in December 2026. Profitability improved year over year despite lower reported revenue, helped by stronger margins, a bigger direct to consumer contribution and ongoing integration of acquisitions such as Sunshine Mint and ",
+                "_timestamp": 1793977954.0
+            },
+            {
+                "title": "These stocks could be Budget 2026 winners, according to analysts",
+                "link": "https://financialpost.com/investing/stocks-canada-federal-budget-2026-winners-analysts/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-06 22:15",
+                "description": "The Week in Stocks: Why David Rosenberg isn't ready to call a market bottom, which TSX gold stock beat earnings-per-share estimates and more",
+                "_timestamp": 1794003348.0
+            },
+            {
+                "title": "China extends gold buying streak to 24 months as prices slump below $4,000",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/china-extends-gold-buying-streak-041505328.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-07 04:15",
+                "description": "Investing.com -- China’s central bank increased its gold reserves for a 24th consecutive month in October, extending its buying streak to two years as bullion prices recorded their steepest October decline since 2008.",
+                "_timestamp": 1794024905.0
+            },
+            {
+                "title": "Goldman Sachs Cuts Gold Price Forecasts as Hawkish Federal Reserve Weighs on Demand",
+                "link": "https://investorshub.advfn.com/market-news/article/39465/goldman-sachs-cuts-gold-price-forecasts-as-hawkish-federal-reserve-weighs-on-demand?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-07 14:51",
+                "description": "Goldman Sachs has lowered its gold price forecasts for the end of 2026 and 2027, citing the Federal Reserve’s increasingly hawkish monetary policy stance and its impact on investor demand. However, the investment bank maintained a positive longer-term outlook, supported by substantial central bank purchases.",
+                "_timestamp": 1794063106.0
+            },
+            {
+                "title": "What Gold.com (GOLD) Said on Its Q1 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-goldcom-gold-said-on-its-q1-earnings-call-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-07 11:20",
+                "description": "Gold.com (NYSE:GOLD) returned to a profit in its fiscal first quarter as higher precious metals sales and contributions from acquisitions helped lift gross profit, even as activity slowed from the preceding quarter. The company reported net income attributable to Gold.com of $1.6 million, or $0.05",
+                "_timestamp": 1794050403.0
+            },
+            {
+                "title": "Why gold is losing its shine: Goldman breaks down the recent sell-off",
+                "link": "https://www.investing.com/news/commodities-news/why-gold-is-losing-its-shine-goldman-breaks-down-the-recent-selloff-5010022",
+                "source": "Investing.com",
+                "date": "2026-11-07 20:02",
+                "description": "",
+                "_timestamp": 1794081726.0
+            },
+            {
+                "title": "Why gold is losing its shine: Goldman breaks down the recent sell-off",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/why-gold-losing-shine-goldman-203206007.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-07 20:32",
+                "description": "Investing.com - Speculative gold selling accelerated in late October, driving prices lower and decoupling the precious metal from falling real interest rates as non-traditional investors liquidated massive positions.",
+                "_timestamp": 1794083526.0
+            },
+            {
+                "title": "DRDGOLD And 2 Top Gold Stocks To Watch",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/drdgold-2-top-gold-stocks-221239873.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-07 22:12",
+                "description": "Inflation worries are back on center stage as companies talk more about rising costs and squeezed customers on earnings calls, which keeps attention on assets that some investors view as potential shelters when prices stay high. That focus creates fresh interest in high quality gold producers with stronger finances and lower production costs. This article highlights three leading stocks from our premium gold miners screen that fit that profile. T",
+                "_timestamp": 1794089559.0
+            },
+            {
+                "title": "Goldman Sachs revamps 2027 gold price target, but signals rebound",
+                "link": "https://www.thestreet.com/investing/goldman-sachs-gold-2027-forecast?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-08 16:17",
+                "description": "That forecast price drop comes with one twist.",
+                "_timestamp": 1794154620.0
+            },
+            {
+                "title": "Goldman Sachs revamps 2027 gold price target, but signals rebound",
+                "link": "https://www.thestreet.com/investing/goldman-sachs-gold-2027-forecast?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-08 16:17",
+                "description": "That forecast price drop comes with one twist.",
+                "_timestamp": 1794154620.0
+            },
+            {
+                "title": "Americas Gold And Silver (TSX:USA) On The Mine Transition Narrative And Its Valuation",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/americas-gold-silver-tsx-usa-170805221.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-08 17:08",
+                "description": "Americas Gold and Silver (TSX:USA) has drawn attention after recent trading left the share price at CA$4.34. With mixed returns over the past month and past 3 months, investors are focusing on valuation and risk. Recent trading in Americas Gold and Silver has shifted the short term tone, with a 1 day share price return of 5.34% and a 7 day gain of 8.50%. However, the 30 day and year to date share price returns remain sharply lower, and the very l",
+                "_timestamp": 1794157685.0
+            },
+            {
+                "title": "What B2Gold (BTG) Said on Its Q3 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-b2gold-btg-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-08 22:14",
+                "description": "B2Gold (NYSEAMERICAN:BTG) reported third-quarter 2026 gold production of approximately 193,000 ounces and lowered its full-year cost forecast, as management pointed to progress at its Goose and Fekola operations. Revenue was $836 million on sales of approximately 195,000 ounces at an average realiz",
+                "_timestamp": 1794176050.0
+            },
+            {
+                "title": "Gold rebounds above $4,100 as traders await U.S. inflation data after jobs beat",
+                "link": "https://www.investing.com/news/commodities-news/gold-rebounds-above-4100-as-traders-await-us-inflation-data-after-jobs-beat-5010397",
+                "source": "Investing.com",
+                "date": "2026-11-09 01:16",
+                "description": "",
+                "_timestamp": 1794187004.0
+            },
+            {
+                "title": "Gold rebounds above $4,100 as traders await U.S. inflation data after jobs beat",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-rebounds-above-4-100-014644409.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-09 01:46",
+                "description": "Investing.com -- Gold prices rebounded above $4,100 an ounce on Monday after stronger-than-expected U.S. employment data triggered a pullback, with investors weighing the prospect of further Federal Reserve tightening following the U.S. midterm elections.",
+                "_timestamp": 1794188804.0
+            },
+            {
+                "title": "Gold Is Up 4% Since Midterms: Here’s Where Markets Think The Precious Metal Prices Are Headed",
+                "link": "https://stocktwits.com/news-articles/markets/equity/gold-is-up-4-since-midterms-here-s-where-markets-think-the-precious-metal-prices-are-headed/cNGAH02R9Iy?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-09 02:18",
+                "description": "Goldman Sachs slashed the price target on gold, but economist Peter Schiff believes the yellow metal has more room to run.",
+                "_timestamp": 1794190717.0
+            },
+            {
+                "title": "What Torex Gold Resources (TXG) Said on Its Q3 Earnings Call",
+                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-torex-gold-resources-txg-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-09 02:14",
+                "description": "Torex Gold Resources (TSE:TXG) reported a 37% quarter-over-quarter increase in production in the third quarter of 2026, as higher grades and improved gold recovery boosted margins and cash flow at its Morelos complex. Production rose to 132,000 ounces, while all-in sustaining costs fell 27% to $1,8",
+                "_timestamp": 1794190455.0
+            },
+            {
+                "title": "Bitcoin Price Stalls as Gold Surges: Is a Major Crypto Catch-Up Rally Coming?",
+                "link": "https://99bitcoins.com/news/bitcoin-btc/bitcoin-price-gold-price-rally-catch-up/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-09 05:31",
+                "description": "Bitcoin price is struggling to regain momentum as gold extends its recovery above $4,100. But the growing demand for scarce assets could eventually put crypto back on the radar. Gold climbed 1.4% to $4,123 per ounce, extending gains from the previous week. Meanwhile, Bitcoin slipped to $73,700, its lowest level ...",
+                "_timestamp": 1794202309.0
+            },
+            {
+                "title": "Bitcoin Price Stalls as Gold Surges: Is a Major Crypto Catch-Up Rally Coming?",
+                "link": "https://99bitcoins.com/news/bitcoin-btc/bitcoin-price-gold-price-rally-catch-up/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 05:31",
+                "description": "Bitcoin price is struggling to regain momentum as gold extends its recovery above $4,100. But the growing demand for scarce assets could eventually put crypto back on the radar. Gold climbed 1.4% to $4,123 per ounce, extending gains from the previous week. Meanwhile, Bitcoin slipped to $73,700, its lowest level ...",
+                "_timestamp": 1794202309.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Event_Timestamp": "2026-11-09 02:14 - 05:31 UTC (approx. 1.5 to 4.5 hours ago)",
+            "Facts": "Bitcoin price stalled near $73,700 as gold extended its recovery above $4,100, climbing 1.4% to $4,123 per ounce [Yahoo Finance Gold/Oil]. Meanwhile, Goldman Sachs slashed its gold price target, though economist Peter Schiff argues gold has more upside [Yahoo Finance Gold]. Additionally, Torex Gold Resources reported a 37% QoQ increase in Q3 2026 production to 132,000 ounces while all-in sustaining costs dropped 27% [Yahoo Finance Gold].",
+            "Uncertainties": "Whether institutional profit-taking or Goldman Sachs' bearish target revision will outweigh retail and safe-haven buying momentum.",
+            "Macro_Context": "Gold is holding high near $4,109.64 with a 24h change of $+69.38. OKX XAUUSDT.P basis spread is $+7.97 (+0.19%). Retail positioning is heavy long at 71.9%. US 10Y Bond Price is down 0.20%, and Brent Crude fell 3.44%.",
+            "Bull_Case": "Sustained scarce asset demand and robust production metrics from miners confirm strong fundamental backing, helping gold defend vital support levels despite target cuts from major banks.",
+            "Bear_Case": "Goldman Sachs' target slash and overextended retail long positioning (71.9%) create a ripe environment for a mean-reversion flush or long squeeze towards lower liquidity pockets.",
+            "Historical_Calibration": "Based on past track records, heavily crowded retail longs combined with conflicting bank forecasts often precede a temporary corrective pullback toward immediate liquidity magnets below current spot.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 54,
+            "Past_Price_Action_Cause": "The 4h pullback of $-8.74 from daily peaks reflects initial digestion of the $4,120+ resistance zone and institutional target revisions, testing immediate local support.",
+            "Orderflow_Price_Target": "4070.97"
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-09 05:21 UTC",
@@ -3511,448 +4011,6 @@
             "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-02 22:53 UTC | Last Update: 2026-11-09 02:18 UTC",
-        "original_date": "2026-11-02 22:53",
-        "_timestamp": 1794190717.0,
-        "articles": [
-            {
-                "title": "Gold consolidates in downtrend, eyes $3,980 resistance: Live levels",
-                "link": "https://www.investing.com/news/commodities-news/gold-in-oversold-freefall-tests-key-support-live-levels-93CH-4990025",
-                "source": "Investing.com",
-                "date": "2026-11-03 07:10",
-                "description": "",
-                "_timestamp": 1793689808.0
-            },
-            {
-                "title": "Nevada Sunrise Metals: A dawning gold and copper growth story",
-                "link": "https://investorshub.advfn.com/market-news/article/38916/nevada-sunrise-metals-a-dawning-gold-and-copper-growth-story?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 08:00",
-                "description": "From a bird’s eye view, investing in commodities carries two primary value propositions, one tied to psychology, the other to industrial utility, each of which can support long-term portfolio growth. From a psychological perspective, commodities offer the potential to protect your portfolio from inflation and geopolitical instability, with gold differentiating itself as the asset of choice for these purposes thanks to its scarcity and millennia-spanning association with luxury.",
-                "_timestamp": 1793692800.0
-            },
-            {
-                "title": "Where Does i-80 Gold (TSX:IAU) Valuation Sit As Q3 2026 Results Raise New Questions?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/where-does-80-gold-tsx-070714062.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 07:07",
-                "description": "Why the latest i-80 Gold earnings matter for shareholders i-80 Gold (TSX:IAU) has just put fresh numbers on the table, releasing third quarter 2026 results that combine higher reported sales with a deeper net loss and ongoing mine development spending. Recent trading has been choppy. The share price has slid to CA$1.93, with a 1 month share price return of down 16.09% and a 7 day share price return of down 6.76%. However, the 1 year total shareholder return of 46.21% signals that longer term...",
-                "_timestamp": 1793689634.0
-            },
-            {
-                "title": "i-80 Gold (TSX:IAU) Keeps Archimedes On Track For Year End 2026 Production",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/80-gold-tsx-iau-keeps-051223502.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 05:12",
-                "description": "i-80 Gold (TSX:IAU) reaffirmed that first underground mining production from the Archimedes project is targeted by year-end 2026. The company declared maiden mineral reserves at its Granite Creek property, providing a new reserve base for the Nevada portfolio. Management outlined an updated development strategy that prioritizes Archimedes and Granite Creek within the broader project pipeline. The Archimedes start-up and new Granite Creek reserves matter, but investors should weigh them...",
-                "_timestamp": 1793682743.0
-            },
-            {
-                "title": "Is B2Gold (TSX:BTO) Still Cheap Based On Its Earnings?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/b2gold-tsx-bto-still-cheap-012014111.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 01:20",
-                "description": "B2Gold has given long term holders a strong 63.1% gain over the past three years, yet that rise leaves a simple question for anyone looking at the ticker today. Is the current share price, around C$6.68 at the last close, adequately grounded in the mining group’s earnings profile? The 63.1% return over three years puts real weight on whether the earnings that supported that journey can still justify today’s valuation. The business depends heavily on converting gold production into consistent...",
-                "_timestamp": 1793668814.0
-            },
-            {
-                "title": "Is Equinox Gold (TSX:EQX) Reasonable, Or Are Earnings Looking Stretched?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/equinox-gold-tsx-eqx-reasonable-231313873.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-02 23:13",
-                "description": "Equinox Gold has given long term holders a striking 3 year run, yet the recent pullback and shifting sector mood raise a sharper question about whether the current share price lines up with the earnings that support it. With gold miners under pressure since the Iran conflict and gold prices softening, investors are again asking how much earnings power this stock is really pricing in. Over the past 3 years Equinox Gold has delivered a 114.0% return, which puts a lot of accumulated optimism on...",
-                "_timestamp": 1793661193.0
-            },
-            {
-                "title": "i-80 Gold Reports Third Quarter 2026 Results; Archimedes Underground on Track to Begin Production Mining by Year-End",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/80-gold-reports-third-quarter-225300243.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-02 22:53",
-                "description": "i-80 GOLD CORP. (NYSE:IAUX) (TSX:IAU) (\"i-80 Gold\" or the \"Company\") reports its financial and operating results, as well as development highlights, for the three and nine months ended September 30, 2026.",
-                "_timestamp": 1793659980.0
-            },
-            {
-                "title": "Central Banks Buy Gold at Fastest Pace Since 2024, WGC Says",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/central-banks-buy-gold-fastest-060000481.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 06:00",
-                "description": "Central banks bought gold at the fastest pace since the end of 2024 in the third quarter, even as the metal faced pressure from higher oil prices and interest rates.",
-                "_timestamp": 1793685600.0
-            },
-            {
-                "title": "Central Banks Buy Gold at Fastest Pace Since 2024, WGC Says",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/central-banks-buy-gold-fastest-060000481.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 06:00",
-                "description": "Central banks bought gold at the fastest pace since the end of 2024 in the third quarter, even as the metal faced pressure from higher oil prices and interest rates.",
-                "_timestamp": 1793685600.0
-            },
-            {
-                "title": "Gold Falls Below $3,950 as Precious Metals Weaken Ahead of US Midterm Elections",
-                "link": "https://investorshub.advfn.com/market-news/article/39112/gold-falls-below-3950-as-precious-metals-weaken-ahead-of-us-midterm-elections?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 10:14",
-                "description": "Gold prices declined on Tuesday as renewed selling across precious metals erased part of the previous session’s recovery, while investors assessed developments in US-Iran peace negotiations, inflation expectations and the upcoming US midterm elections. Spot gold fell 0.",
-                "_timestamp": 1793700860.0
-            },
-            {
-                "title": "Heliostar Metals Stock And The Road To 500,000 Ounces Of Gold",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/heliostar-metals-stock-road-500-115702833.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 11:57",
-                "description": "This gold mining stock is not just targeting growth, but a tenfold increase in production.",
-                "_timestamp": 1793707022.0
-            },
-            {
-                "title": "Gold price today, Tuesday, November 3, 2026: Gold prices open below $4,000 for the second straight day",
-                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-tuesday-november-3-2026-gold-prices-open-below-4000-for-the-second-straight-day-123207114.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 12:32",
-                "description": "Gold futures opened at $3,960.50 per troy ounce on Tuesday, November 3, 2026, down 0.2% from Monday's closing price. Gold slipped further in early trading to $3,910.60 as of 7:20 a.m. ET.",
-                "_timestamp": 1793709127.0
-            },
-            {
-                "title": "Gold price today, Tuesday, November 3, 2026: Gold prices open below $4,000 for the second straight day",
-                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-tuesday-november-3-2026-gold-prices-open-below-4000-for-the-second-straight-day-123207114.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-03 12:32",
-                "description": "Gold futures opened at $3,960.50 per troy ounce on Tuesday, November 3, 2026, down 0.2% from Monday's closing price. Gold slipped further in early trading to $3,910.60 as of 7:20 a.m. ET.",
-                "_timestamp": 1793709127.0
-            },
-            {
-                "title": "Is It Worth Investing in Gold.com (GOLD) Based on Wall Street's Bullish Views?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/worth-investing-gold-com-gold-133003746.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-03 13:30",
-                "description": "According to the average brokerage recommendation (ABR), one should invest in Gold.com (GOLD). It is debatable whether this highly sought-after metric is effective because Wall Street analysts' recommendations tend to be overly optimistic. Would it be worth investing in the stock?",
-                "_timestamp": 1793712603.0
-            },
-            {
-                "title": "Gold holds near $3,930 as Iran talks, U.S. midterms shape outlook",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-holds-near-3-930-013232167.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 01:32",
-                "description": "Investing.com -- Gold prices held near $3,930 an ounce on Tuesday as investors monitored fresh diplomatic efforts to resolve the U.S.-Iran conflict and awaited U.S. midterm election results for clues on the outlook for interest rates and fiscal policy.",
-                "_timestamp": 1793755952.0
-            },
-            {
-                "title": "Gold holds near $3,930 as Iran talks, U.S. midterms shape outlook",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-holds-near-3-930-013232167.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-04 01:32",
-                "description": "Investing.com -- Gold prices held near $3,930 an ounce on Tuesday as investors monitored fresh diplomatic efforts to resolve the U.S.-Iran conflict and awaited U.S. midterm election results for clues on the outlook for interest rates and fiscal policy.",
-                "_timestamp": 1793755952.0
-            },
-            {
-                "title": "Who’s Buying Gold in 2026? The World Gold Council’s New Data Has an Answer",
-                "link": "https://beincrypto.com/world-gold-council-gold-forecast-2026/?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 05:30",
-                "description": "World Gold Council halved its 2026 gold investment forecast as retail buying slowed, but lifted its central bank outlook.",
-                "_timestamp": 1793770214.0
-            },
-            {
-                "title": "Gold Prices Climb Above $3,975 as Weaker Dollar and Iran Diplomacy Support Recovery",
-                "link": "https://investorshub.advfn.com/market-news/article/39213/gold-prices-climb-above-3975-as-weaker-dollar-and-iran-diplomacy-support-recovery?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 10:58",
-                "description": "Gold prices advanced on Wednesday, extending their recovery above $3,975 per ounce as a decline in the US dollar supported demand for precious metals. Investors also assessed diplomatic developments involving the United States and Iran, alongside the potential economic implications of the US midterm elections.",
-                "_timestamp": 1793789936.0
-            },
-            {
-                "title": "Gold Mining Shares Rally as Democratic Midterm Victory Weakens US Dollar and Lifts Bullion Prices",
-                "link": "https://investorshub.advfn.com/market-news/article/39243/gold-mining-shares-rally-as-democratic-midterm-victory-weakens-us-dollar-and-lifts-bullion-prices?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 12:02",
-                "description": "US-listed gold mining stocks advanced sharply in premarket trading on Wednesday as gold prices climbed following the Democratic Party’s victory in both chambers of Congress during the US midterm elections. Spot gold rose 3.",
-                "_timestamp": 1793793778.0
-            },
-            {
-                "title": "Is American Century Global Gold Investor (BGEIX) a Strong Mutual Fund Pick Right Now?",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/american-century-global-gold-investor-110002926.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 11:00",
-                "description": "Mutual Fund Report for BGEIX",
-                "_timestamp": 1793790002.0
-            },
-            {
-                "title": "Gold is up over 100% in 5 years. Here's how to own it in an IRA",
-                "link": "https://www.thestreet.com/advisor/best-gold-ira-companies-2?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 15:19",
-                "description": "Gold IRAs let investors hold physical precious metals in a tax-advantaged retirement account.",
-                "_timestamp": 1793805540.0
-            },
-            {
-                "title": "Investors Are Rushing To Gold As US Dollar Tanks",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/investors-rushing-gold-us-dollar-171949355.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 17:19",
-                "description": "Investors are now watching payrolls and the Fed for the next move.",
-                "_timestamp": 1793812789.0
-            },
-            {
-                "title": "Why the Gold Rush Is Back On—at Least for Now",
-                "link": "https://finance.yahoo.com/m/fcd17d66-df4b-3f37-8549-fddc03fb2af5/why-the-gold-rush-is-back.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 20:23",
-                "description": "The precious metal got a big boost from the midterm elections. So did gold mining stocks. Can the rally last?",
-                "_timestamp": 1793823780.0
-            },
-            {
-                "title": "Allied Gold Reports Q3 2026 Results, Begins Production at the Kurmuk Mine and Delivers Strong Performance at the Côte D’Ivoire Complex",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/allied-gold-reports-q3-2026-222400129.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-04 22:24",
-                "description": "TORONTO, Nov. 04, 2026 (GLOBE NEWSWIRE) -- Allied Gold Corporation (TSX: AAUC) (NYSE: AAUC) (“Allied” or the “Company”) herein provides its financial and operational results for the third quarter of 2026. The Company produced 91,195 ounces of gold during the quarter, representing a 5% increase over the comparable prior-year period, at all-in sustaining costs (“AISC”)(1) of $2,378 per ounce sold. As previously disclosed, production is expected to be weighted toward the second half of the year, pa",
-                "_timestamp": 1793831040.0
-            },
-            {
-                "title": "Gold, Silver Cross $1 Trillion In Value In A Day: What’s Driving The Precious Metals Rally?",
-                "link": "https://stocktwits.com/news-articles/markets/equity/gold-silver-cross-1-trillion-in-value-in-a-day-what-s-driving-the-precious-metals-rally/cNG15dFR9EO?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 03:44",
-                "description": "Many market experts believe that this is just the beginning for the precious metals trade, which is likely to edge higher in a Democratic-led Congress.",
-                "_timestamp": 1793850244.0
-            },
-            {
-                "title": "i-80 Gold Stock What Granite Creek Feasibility Study Changes",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/80-gold-stock-granite-creek-043918493.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 04:39",
-                "description": "i-80 Gold reported third quarter 2026 sales of US$32.73 million and a net loss of US$48.35 million, while outlining progress on Nevada projects including a completed Granite Creek feasibility study and continued work at Archimedes and Lone Tree. The combination of a maiden mineral reserve at Granite Creek, a detailed Nevada buildout plan, and reported liquidity of about US$411 million highlights a business that is investing heavily today in an effort to convert drilled resources into a long...",
-                "_timestamp": 1793853558.0
-            },
-            {
-                "title": "Gold prices today, Thursday, November 5, 2026: Did one of 2026's worst assets just get a boost?",
-                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-november-5-2026-did-one-of-2026s-worst-assets-just-get-a-boost-142402603.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 14:24",
-                "description": "Gold futures opened at $4,075.40 per troy ounce on Thursday, November 5, 2026, up 0.1% from Wednesday's close. The price of gold rose this morning to $4,134.30 as of 9:14 a.m. ET.",
-                "_timestamp": 1793888642.0
-            },
-            {
-                "title": "Gold prices today, Thursday, November 5, 2026: Did one of 2026's worst assets just get a boost?",
-                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-november-5-2026-did-one-of-2026s-worst-assets-just-get-a-boost-142402603.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-05 14:24",
-                "description": "Gold futures opened at $4,075.40 per troy ounce on Thursday, November 5, 2026, up 0.1% from Wednesday's close. The price of gold rose this morning to $4,134.30 as of 9:14 a.m. ET.",
-                "_timestamp": 1793888642.0
-            },
-            {
-                "title": "Gold Just Had Its Best Day Since August, Back Above $4,000",
-                "link": "https://247wallst.com/investing/2026/11/05/gold-just-had-its-best-day-since-august-back-above-4000/?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-05 19:22",
-                "description": "Gold's rebound lit a fire under the miners, and one stock nearly tripled the metal's move. Yet the Fed, a brutal year, and rising costs could turn that leverage against anyone holding for retirement.",
-                "_timestamp": 1793906567.0
-            },
-            {
-                "title": "Allied Gold (TSX:AAUC) Could Be 32% Undervalued After Its Q3 Profit Swing",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/allied-gold-tsx-aauc-could-002015876.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 00:20",
-                "description": "Why Allied Gold’s latest earnings matter for investors Allied Gold (TSX:AAUC) just posted a swing to profit in Q3 2026, supported by higher sales, a 5% increase in gold production, and updated guidance linked to new mine output. The miner also outlined plans for shareholder return policies starting in 2027, including a potential base dividend and share buyback program. This places future cash generation and project execution under closer investor scrutiny. Recent trading has been choppy for...",
-                "_timestamp": 1793924415.0
-            },
-            {
-                "title": "Goldman lowers year-end gold price forecast on hawkish Fed shift",
-                "link": "https://www.investing.com/news/commodities-news/goldman-lowers-yearend-gold-price-forecast-on-hawkish-fed-shift-5006662",
-                "source": "Investing.com",
-                "date": "2026-11-06 07:44",
-                "description": "",
-                "_timestamp": 1793951063.0
-            },
-            {
-                "title": "Goldman lowers year-end gold price forecast on hawkish Fed shift",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/goldman-lowers-end-gold-price-081423381.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 08:14",
-                "description": "Investing.com -- Goldman Sachs slashed its gold price forecasts, citing the Federal Reserve’s hawkish shift in recent months and its effect on investor positioning, while keeping a constructive longer-term view tied to strong central bank buying.",
-                "_timestamp": 1793952863.0
-            },
-            {
-                "title": "Goldman lowers year-end gold price forecast on hawkish Fed shift",
-                "link": "https://finance.yahoo.com/news/goldman-lowers-end-gold-price-081423381.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 08:14",
-                "description": "Investing.com -- Goldman Sachs slashed its gold price forecasts, citing the Federal Reserve’s hawkish shift in recent months and its effect on investor positioning, while keeping a constructive longer-term view tied to strong central bank buying.",
-                "_timestamp": 1793952863.0
-            },
-            {
-                "title": "Gold Holds Above $4,000 Ahead of Payrolls Test, Set for 4% Weekly Gain",
-                "link": "https://finance.yahoo.com/m/946fd469-9355-3bce-98d2-5e735bd9d952/gold-holds-above-%244%2C000-ahead.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 09:34",
-                "description": "Gold prices edged lower Friday morning but remained firmly on track for a weekly gain exceeding 4%, as desks braced for the high-stakes U.S. nonfarm payrolls report.",
-                "_timestamp": 1793957685.0
-            },
-            {
-                "title": "Gold price today, Friday, November 6, 2026: Gold hovers above $4,000 ahead of jobs report",
-                "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-friday-november-6-2026-gold-hovers-above-4000-ahead-of-jobs-report-122450100.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 12:24",
-                "description": "Gold futures opened at $4,098.50 per troy ounce on Friday, November 6, 2026, down 0.4% from Thursday's closing price. Gold is sliding in early trading this morning to $4,072 per troy ounce as of 7:14 a.m. ET.",
-                "_timestamp": 1793967890.0
-            },
-            {
-                "title": "Is Agnico Eagle Mines (AEM) Cheap On The Gold Rally Or Already Fully Valued?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/agnico-eagle-mines-aem-cheap-121307486.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 12:13",
-                "description": "Agnico Eagle Mines (NYSE:AEM) is back in focus after a sharp move in gold prices following the Democrats' midterm win, which pulled the whole precious metals sector higher and reignited interest in gold miners. Agnico Eagle Mines has ridden that gold bounce with a 3.06% 1 day share price return and 7.47% gain over the past week, while a 19.73% 1 year total shareholder return and very large 3 year total shareholder return suggest momentum has been",
-                "_timestamp": 1793967187.0
-            },
-            {
-                "title": "How Investors Are Reacting To Gold.com Stock Profit Returns But Estimates Miss",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/investors-reacting-gold-com-stock-151234569.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 15:12",
-                "description": "Gold.com reported first quarter sales of US$3,265.27 million, net income of US$1.6 million and earnings of US$0.05 per share from continuing operations. Its board affirmed a quarterly cash dividend of US$0.20 per share payable in December 2026. Profitability improved year over year despite lower reported revenue, helped by stronger margins, a bigger direct to consumer contribution and ongoing integration of acquisitions such as Sunshine Mint and ",
-                "_timestamp": 1793977954.0
-            },
-            {
-                "title": "These stocks could be Budget 2026 winners, according to analysts",
-                "link": "https://financialpost.com/investing/stocks-canada-federal-budget-2026-winners-analysts/?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-06 22:15",
-                "description": "The Week in Stocks: Why David Rosenberg isn't ready to call a market bottom, which TSX gold stock beat earnings-per-share estimates and more",
-                "_timestamp": 1794003348.0
-            },
-            {
-                "title": "China extends gold buying streak to 24 months as prices slump below $4,000",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/china-extends-gold-buying-streak-041505328.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-07 04:15",
-                "description": "Investing.com -- China’s central bank increased its gold reserves for a 24th consecutive month in October, extending its buying streak to two years as bullion prices recorded their steepest October decline since 2008.",
-                "_timestamp": 1794024905.0
-            },
-            {
-                "title": "Goldman Sachs Cuts Gold Price Forecasts as Hawkish Federal Reserve Weighs on Demand",
-                "link": "https://investorshub.advfn.com/market-news/article/39465/goldman-sachs-cuts-gold-price-forecasts-as-hawkish-federal-reserve-weighs-on-demand?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-07 14:51",
-                "description": "Goldman Sachs has lowered its gold price forecasts for the end of 2026 and 2027, citing the Federal Reserve’s increasingly hawkish monetary policy stance and its impact on investor demand. However, the investment bank maintained a positive longer-term outlook, supported by substantial central bank purchases.",
-                "_timestamp": 1794063106.0
-            },
-            {
-                "title": "What Gold.com (GOLD) Said on Its Q1 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-goldcom-gold-said-on-its-q1-earnings-call-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-07 11:20",
-                "description": "Gold.com (NYSE:GOLD) returned to a profit in its fiscal first quarter as higher precious metals sales and contributions from acquisitions helped lift gross profit, even as activity slowed from the preceding quarter. The company reported net income attributable to Gold.com of $1.6 million, or $0.05",
-                "_timestamp": 1794050403.0
-            },
-            {
-                "title": "Why gold is losing its shine: Goldman breaks down the recent sell-off",
-                "link": "https://www.investing.com/news/commodities-news/why-gold-is-losing-its-shine-goldman-breaks-down-the-recent-selloff-5010022",
-                "source": "Investing.com",
-                "date": "2026-11-07 20:02",
-                "description": "",
-                "_timestamp": 1794081726.0
-            },
-            {
-                "title": "Why gold is losing its shine: Goldman breaks down the recent sell-off",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/why-gold-losing-shine-goldman-203206007.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-07 20:32",
-                "description": "Investing.com - Speculative gold selling accelerated in late October, driving prices lower and decoupling the precious metal from falling real interest rates as non-traditional investors liquidated massive positions.",
-                "_timestamp": 1794083526.0
-            },
-            {
-                "title": "DRDGOLD And 2 Top Gold Stocks To Watch",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/drdgold-2-top-gold-stocks-221239873.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-07 22:12",
-                "description": "Inflation worries are back on center stage as companies talk more about rising costs and squeezed customers on earnings calls, which keeps attention on assets that some investors view as potential shelters when prices stay high. That focus creates fresh interest in high quality gold producers with stronger finances and lower production costs. This article highlights three leading stocks from our premium gold miners screen that fit that profile. T",
-                "_timestamp": 1794089559.0
-            },
-            {
-                "title": "Goldman Sachs revamps 2027 gold price target, but signals rebound",
-                "link": "https://www.thestreet.com/investing/goldman-sachs-gold-2027-forecast?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-08 16:17",
-                "description": "That forecast price drop comes with one twist.",
-                "_timestamp": 1794154620.0
-            },
-            {
-                "title": "Goldman Sachs revamps 2027 gold price target, but signals rebound",
-                "link": "https://www.thestreet.com/investing/goldman-sachs-gold-2027-forecast?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-08 16:17",
-                "description": "That forecast price drop comes with one twist.",
-                "_timestamp": 1794154620.0
-            },
-            {
-                "title": "Americas Gold And Silver (TSX:USA) On The Mine Transition Narrative And Its Valuation",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/americas-gold-silver-tsx-usa-170805221.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-08 17:08",
-                "description": "Americas Gold and Silver (TSX:USA) has drawn attention after recent trading left the share price at CA$4.34. With mixed returns over the past month and past 3 months, investors are focusing on valuation and risk. Recent trading in Americas Gold and Silver has shifted the short term tone, with a 1 day share price return of 5.34% and a 7 day gain of 8.50%. However, the 30 day and year to date share price returns remain sharply lower, and the very l",
-                "_timestamp": 1794157685.0
-            },
-            {
-                "title": "What B2Gold (BTG) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-b2gold-btg-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-08 22:14",
-                "description": "B2Gold (NYSEAMERICAN:BTG) reported third-quarter 2026 gold production of approximately 193,000 ounces and lowered its full-year cost forecast, as management pointed to progress at its Goose and Fekola operations. Revenue was $836 million on sales of approximately 195,000 ounces at an average realiz",
-                "_timestamp": 1794176050.0
-            },
-            {
-                "title": "Gold rebounds above $4,100 as traders await U.S. inflation data after jobs beat",
-                "link": "https://www.investing.com/news/commodities-news/gold-rebounds-above-4100-as-traders-await-us-inflation-data-after-jobs-beat-5010397",
-                "source": "Investing.com",
-                "date": "2026-11-09 01:16",
-                "description": "",
-                "_timestamp": 1794187004.0
-            },
-            {
-                "title": "Gold rebounds above $4,100 as traders await U.S. inflation data after jobs beat",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/gold-rebounds-above-4-100-014644409.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-09 01:46",
-                "description": "Investing.com -- Gold prices rebounded above $4,100 an ounce on Monday after stronger-than-expected U.S. employment data triggered a pullback, with investors weighing the prospect of further Federal Reserve tightening following the U.S. midterm elections.",
-                "_timestamp": 1794188804.0
-            },
-            {
-                "title": "Gold Is Up 4% Since Midterms: Here’s Where Markets Think The Precious Metal Prices Are Headed",
-                "link": "https://stocktwits.com/news-articles/markets/equity/gold-is-up-4-since-midterms-here-s-where-markets-think-the-precious-metal-prices-are-headed/cNGAH02R9Iy?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-09 02:18",
-                "description": "Goldman Sachs slashed the price target on gold, but economist Peter Schiff believes the yellow metal has more room to run.",
-                "_timestamp": 1794190717.0
-            },
-            {
-                "title": "What Torex Gold Resources (TXG) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-torex-gold-resources-txg-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-09 02:14",
-                "description": "Torex Gold Resources (TSE:TXG) reported a 37% quarter-over-quarter increase in production in the third quarter of 2026, as higher grades and improved gold recovery boosted margins and cash flow at its Morelos complex. Production rose to 132,000 ounces, while all-in sustaining costs fell 27% to $1,8",
-                "_timestamp": 1794190455.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Event_Timestamp": "2026-11-09 02:18 UTC (approx. 3.4 hours ago relative to reference time)",
-            "Facts": "Gold has gained 4% since the U.S. midterms, rebounding above $4,100 after stronger-than-expected employment data caused a brief pullback. Investors are now awaiting upcoming U.S. inflation data to gauge Federal Reserve rate path expectations, amidst contrasting views from Goldman Sachs and economist Peter Schiff [Yahoo Finance Gold, Investing.com].",
-            "Uncertainties": "Upcoming U.S. inflation print outcomes and the trajectory of Federal Reserve monetary policy post-jobs beat.",
-            "Macro_Context": "EUR/USD at 1.11592 (-0.20%) and US 10Y bond prices at 107.151 (-0.30%) indicate a slightly firmer USD and rising yields following strong employment data, creating short-term headwinds for non-yielding gold.",
-            "Bull_Case": "Persistent inflation fears and safe-haven demand post-midterms give structural support for gold to challenge higher liquidity magnets.",
-            "Bear_Case": "Strong U.S. jobs data combined with a firmer USD and rising yields increase the opportunity cost of holding gold, risking a pullback toward lower support.",
-            "Historical_Calibration": "Post-jobs-beat scenarios with rising yields typically trigger near-term retracements in gold before macro inflation data releases, pointing to a short-term bearish bias.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 53,
-            "Past_Price_Action_Cause": "Strong U.S. employment data and a stronger USD proxy pressure gold slightly, aligning with the nearest active support zone below current price.",
-            "Orderflow_Price_Target": "4120.26"
-        },
-        "eval_status": "MISS",
         "max_dd_usd": 0.0
     },
     {
@@ -9846,80 +9904,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 10,
             "Past_Price_Action_Cause": "No impact on recent 4h/24h price action or crypto-gold basis spread.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-07 17:55 UTC | Last Update: 2026-11-08 06:52 UTC",
-        "original_date": "2026-11-07 17:55",
-        "_timestamp": 1794120734.0,
-        "articles": [
-            {
-                "title": "US-Israel military aid: End of dependence, or a new chapter?",
-                "link": "https://www.tehrantimes.com/news/531911/US-Israel-military-aid-End-of-dependence-or-a-new-chapter",
-                "source": "Tehran Times",
-                "date": "2026-11-07 17:55",
-                "description": "TEHRAN – On November 3, President Trump said the U.S. would end what he described as approximately $4 billion in annual aid to Israel by the end of the year.",
-                "_timestamp": 1794074149.0
-            },
-            {
-                "title": "Is unconditional support for Israel becoming a liability for Republicans?",
-                "link": "https://www.aljazeera.com/opinions/2026/11/8/is-unconditional-support-for-israel-becoming-a-liability-for-republicans?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-08 06:52",
-                "description": "JD Vance’s response to the midterm defeat suggests a once-untouchable Republican consensus may be starting to crack.",
-                "_timestamp": 1794120734.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-08 06:52 UTC (approx. 0.4 hours ago relative to 2026-11-08 07:19 UTC)",
-            "Facts": "Reports highlight that unconditional support for Israel may be becoming a political liability for Republicans following midterm defeats, alongside President Trump's statement regarding ending ~$4 billion in annual aid to Israel by year-end [Al Jazeera English, Tehran Times].",
-            "Uncertainties": "Whether proposed aid cuts will face legislative pushback or materialize as official policy.",
-            "Macro_Context": "Shifts in U.S. foreign aid and domestic political realignments impact long-term fiscal policy, dollar sentiment, and geopolitical stability.",
-            "Bull_Case": "Potential reduction in U.S. military aid and shifting Middle Eastern alliances could alter regional power dynamics, driving safe-haven demand.",
-            "Bear_Case": "Such policy shifts are long-term and subject to intense domestic lobbying; markets view near-term execution as uncertain.",
-            "Historical_Calibration": "Macro-political shifts require patient multi-day holding periods; past setups show that distant targets often result in time-limit expirations if ATR is constrained.",
-            "Impact_Timing": "Future",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 53,
-            "Past_Price_Action_Cause": "Reflects structural shifts in U.S. foreign policy narratives contributing to underlying safe-haven retention.",
-            "Orderflow_Price_Target": "4078.23"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-08 06:46 UTC",
-        "original_date": "2026-11-08 06:46",
-        "_timestamp": 1794120369.0,
-        "articles": [
-            {
-                "title": "UK petition seeking Gaza genocide inquiry nears parliament debate threshold",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-petition-seeking-gaza-genocide-inquiry-nears-100000-target",
-                "source": "Middle East Eye",
-                "date": "2026-11-08 06:46",
-                "description": "UK petition seeking Gaza genocide inquiry nears parliament debate threshold\n\n    \n    \n\n        \n    \n                Britain's Your Party has said that its petition&nbsp;calling for a public enquiry into Britain’s involvement in Israel’s genocide in Gaza has reached 90,000, approaching 100,000 mark that will make it eligible for a debate in parliament.\n\n\"We will reach 100,000. Burnham has had 110 days to name Israel’s genocide of Gaza. He refuse",
-                "_timestamp": 1794120369.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-08 06:46 UTC (approx. 0.6 hours ago relative to 2026-11-08 07:19 UTC)",
-            "Facts": "A UK petition seeking a public inquiry into British involvement in Gaza has reached 90,000 signatures, nearing the 100,000 threshold required for a parliamentary debate [Middle East Eye].",
-            "Uncertainties": "Parliamentary debates raise political awareness but rarely translate directly into immediate macroeconomic or monetary policy shifts.",
-            "Macro_Context": "European political sentiment and GBP/EUR currency movements have minor spillover into dollar-denominated gold, with EUR/USD down 0.70%.",
-            "Bull_Case": "Heightened domestic political pressure in Western nations regarding Middle East policies increases global geopolitical awareness.",
-            "Bear_Case": "Local petitions have negligible direct impact on global gold spot pricing or institutional liquidity.",
-            "Historical_Calibration": "Localized petitions fall well below the threshold of macro market movers; neutral stance is calibrated to avoid noise.",
-            "Impact_Timing": "Future",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 15,
-            "Past_Price_Action_Cause": "No measurable transmission to XAU/USD price action or crypto-gold basis.",
             "Orderflow_Price_Target": "N/A"
         }
     }

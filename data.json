@@ -1,5 +1,55 @@
 [
     {
+        "main_date": "First Reported: 2026-11-08 20:55 UTC | Last Update: 2026-11-09 00:00 UTC",
+        "original_date": "2026-11-08 20:55",
+        "_timestamp": 1794182434.0,
+        "articles": [
+            {
+                "title": "Production suspended at Iraq’s Khor Mor gas field after drone attack, sources say",
+                "link": "https://www.investing.com/news/commodities-news/production-suspended-at-iraqs-khor-mor-gas-field-after-drone-attack-sources-say-5010313",
+                "source": "Investing.com",
+                "date": "2026-11-08 21:54",
+                "description": "",
+                "_timestamp": 1794174864.0
+            },
+            {
+                "title": "Drone attack hits Khor Mor gas field in Iraq’s Kurdistan region",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/drone-attack-hits-khor-mor-gas-field-iraqs-kurdistan-region",
+                "source": "Middle East Eye",
+                "date": "2026-11-08 20:55",
+                "description": "Drone attack hits Khor Mor gas field in Iraq’s Kurdistan region\n\n    \n    \n\n        \n    \n                A drone attack targeted the Khor Mor gas field, one of the largest in the Kurdistan region, on Sunday, according to Kurdish security forces.\n\nThe security sources said that smoke was seen rising from the field located in Iraq’s Sulaymaniyah Governorate.\n\nAccording to the Kurdistan region's electricity ministry, nearly 2.8GW of power generatio",
+                "_timestamp": 1794171334.0
+            },
+            {
+                "title": "Iran war live: Trump says land blockade in effect; drone cuts power in Iraq",
+                "link": "https://www.aljazeera.com/news/liveblog/2026/11/9/iran-war-live-trump-says-land-blockade-in-effect-drone-cuts-power-in-iraq?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-09 00:00",
+                "description": "More than 70 percent of northern Iraq&#039;s Kurdish region is without power after a drone struck the Khor Mor gas facility,",
+                "_timestamp": 1794182434.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-08 20:55 UTC to 2026-11-09 00:00 UTC (Approx. 0 to 3.5 hours ago relative to 2026-11-09 00:16 UTC)",
+            "Facts": "A drone attack hit the Khor Mor gas field in Iraq’s Kurdistan region, suspending production and causing a power outage affecting over 70 percent of northern Iraq's Kurdish region, halting nearly 2.8GW of power generation [Al Jazeera English, Investing.com, Middle East Eye]. Additionally, US President Trump announced that a land blockade is in effect regarding ongoing Iran tensions [Al Jazeera English].",
+            "Uncertainties": "The full extent of structural damage to the Khor Mor gas facility, the duration of production suspension, and whether retaliatory military escalations will immediately widen regional energy infrastructure disruptions remain unconfirmed.",
+            "Macro_Context": "Geopolitical risk in the Middle East directly boosts safe-haven assets. Concurrently, Brent Crude Oil is down 2.28% at 99.916, while EUR/USD is weaker (-0.53%) and US 10Y Yield proxies are slightly down (-0.23% on bond price). However, the 24/7 OKX XAUUSDT.P perpetual basis reflects a high premium of +$27.01 (+0.67%), signaling strong leveraged long participation entering the weekend/session. OANDA retail positioning is heavily long at 71.6%.",
+            "Bull_Case": "Severe geopolitical escalation in the Middle East, combined with direct strikes on critical energy infrastructure (Khor Mor gas field) and active land blockades announced by the US regarding Iran, acts as an immediate safe-haven catalyst driving capital into gold.",
+            "Bear_Case": "Crude oil is currently sliding (-2.28%), indicating that energy markets are currently shrugging off systemic supply shocks or pricing in a contained regional event. Furthermore, elevated retail long positioning (71.6%) and a high perp premium leave gold vulnerable to long-liquidation sweeps if initial safe-haven spikes fade.",
+            "Historical_Calibration": "Drawing from past track record lessons (win rate 32.1%), chasing high retail long ratios without a conservative target risks failure. Given the H1 ATR of $16.19, the target must be modest and well-anchored within nearby liquidity clusters to avoid expiration limits, keeping the Signal-ATR-Ratio well below 1.0x.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 56,
+            "Past_Price_Action_Cause": "Gold has seen a +$12.23 gain over the last 4 hours, supported by active safe-haven headline flows and a strong +$27.01 OKX perp premium, though constrained by a 0.2x 4h-to-Daily ATR ratio.",
+            "Orderflow_Price_Target": "4060.13"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 16.2
+    },
+    {
         "main_date": "First Reported: 2026-11-08 18:18 UTC | Last Update: 2026-11-08 23:59 UTC",
         "original_date": "2026-11-08 18:18",
         "_timestamp": 1794182397.0,
@@ -123,24 +173,32 @@
                 "date": "2026-11-08 23:59",
                 "description": "The stock market is damaged but Apple, Amazon and Microsoft are holding up. Nvidia is probing CEO Jensen Huang's spy case.",
                 "_timestamp": 1794182397.0
+            },
+            {
+                "title": "Nvidia CEO’s affair sparks Chinese espionage probe",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/8/nvidia-ceos-affair-sparks-chinese-espionage-probe?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-08 23:58",
+                "description": "Nvidia CEO Jensen Huang has admitted to an affair with a woman suspected of spying for China.",
+                "_timestamp": 1794182333.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Event_Timestamp": "2026-11-08 23:59 UTC (~0 hours ago)",
-            "Facts": "Nvidia announced an independent investigation into its CEO, Jensen Huang, over concerns he was the target of a foreign intelligence effort, following Huang's confirmation of an affair with a woman accused of spying for China [Yahoo Finance Nasdaq, Al Jazeera English].",
-            "Uncertainties": "The full extent of compromised proprietary information, whether regulatory penalties or national security restrictions will be imposed, and Huang's ultimate tenure status.",
-            "Macro_Context": "Nasdaq 100 is resilient (+0.48%) while broader tech equities face damage, but severe governance shocks to market-leading chipmakers threaten broader tech sentiment, indirectly supporting safe-haven flows into Gold alongside a positive OKX perpetual basis (+0.46%).",
-            "Bull_Case": "Corporate governance and national security threats to Nvidia trigger broader risk-off equity liquidations, driving safe-haven capital into XAU/USD.",
-            "Bear_Case": "The issue remains idiosyncratic to Nvidia/tech, and resilient megacaps (Apple, Amazon, Microsoft) cushion overall market sentiment, limiting safe-haven spillover into gold.",
-            "Historical_Calibration": "Drawing from past high-win setups where geopolitical or corporate governance shocks triggered immediate safe-haven demand, though keeping probability modest to respect recent track record hit rates.",
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-08 22:16 UTC to 2026-11-09 23:59 UTC (Approx. 0.5 to 2 hours ago relative to 2026-11-09 00:16 UTC)",
+            "Facts": "Nvidia CEO Jensen Huang has confirmed an affair with a woman accused of spying for China, prompting Nvidia to launch an internal corporate espionage probe [Yahoo Finance Nasdaq, Al Jazeera English]. Dow Jones futures are rising while tech shares face downward pressure [Yahoo Finance Nasdaq].",
+            "Uncertainties": "The depth of the security breach, whether proprietary AI or chip blueprints were compromised, and potential regulatory or governance fallout for Nvidia remain unclear.",
+            "Macro_Context": "The Nasdaq 100 is up 0.61% over 24 hours, showing general resilience in broader tech despite single-stock headwinds. This corporate scandal is idiosyncratic to Nvidia and tech equities rather than broader macroeconomic liquidity or currency devaluation, exerting minimal direct systemic influence on XAU/USD.",
+            "Bull_Case": "If the Nvidia espionage probe triggers a broader sell-off in high-flying AI tech stocks (Nasdaq), capital could rotate out of equities and into traditional safe havens like gold.",
+            "Bear_Case": "The event is localized strictly to corporate governance at Nvidia. Broader equity futures (Dow Jones) are rising, and tech resilience (Apple, Amazon, Microsoft holding up) prevents systemic contagion, resulting in a negligible impact on precious metals.",
+            "Historical_Calibration": "Past signals targeting idiosyncratic corporate news without macro alignment have tended to miss or stall (win rate 32.1%). Neutral stances or low-conviction setups are calibrated to avoid false triggers.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 53,
-            "Past_Price_Action_Cause": "Gold is trading near $4055.69 with an intraday perp premium of +$18.51, reflecting eager leveraged buying that can quickly target upper liquidity pockets on headline shocks.",
-            "Orderflow_Price_Target": "4071.18"
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 45,
+            "Past_Price_Action_Cause": "The gold price action is entirely driven by Middle East geopolitical risk and crypto-gold perpetual basis premiums rather than corporate governance developments in US chipmakers.",
+            "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "HIT",
         "max_dd_usd": 16.2
@@ -1838,48 +1896,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-08 20:55 UTC | Last Update: 2026-11-08 21:54 UTC",
-        "original_date": "2026-11-08 20:55",
-        "_timestamp": 1794174864.0,
-        "articles": [
-            {
-                "title": "Production suspended at Iraq’s Khor Mor gas field after drone attack, sources say",
-                "link": "https://www.investing.com/news/commodities-news/production-suspended-at-iraqs-khor-mor-gas-field-after-drone-attack-sources-say-5010313",
-                "source": "Investing.com",
-                "date": "2026-11-08 21:54",
-                "description": "",
-                "_timestamp": 1794174864.0
-            },
-            {
-                "title": "Drone attack hits Khor Mor gas field in Iraq’s Kurdistan region",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/drone-attack-hits-khor-mor-gas-field-iraqs-kurdistan-region",
-                "source": "Middle East Eye",
-                "date": "2026-11-08 20:55",
-                "description": "Drone attack hits Khor Mor gas field in Iraq’s Kurdistan region\n\n    \n    \n\n        \n    \n                A drone attack targeted the Khor Mor gas field, one of the largest in the Kurdistan region, on Sunday, according to Kurdish security forces.\n\nThe security sources said that smoke was seen rising from the field located in Iraq’s Sulaymaniyah Governorate.\n\nAccording to the Kurdistan region's electricity ministry, nearly 2.8GW of power generatio",
-                "_timestamp": 1794171334.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Event_Timestamp": "2026-11-08 20:55 UTC (Approx. 1 hour ago relative to 2026-11-08 21:57 UTC)",
-            "Facts": "A drone attack struck the Khor Mor gas field in Iraq’s Kurdistan region, leading to production suspension and smoke rising from the Sulaymaniyah Governorate. Nearly 2.8GW of power generation is tied to the facility [Investing.com, Middle East Eye].",
-            "Uncertainties": "Full extent of structural damage, duration of production outage, and potential spread of regional retaliatory energy infrastructure strikes remain unquantified.",
-            "Macro_Context": "Crude oil is down 0.70%-0.95% over 24h, yet geopolitical energy shocks in the Middle East act as severe supply-side triggers for safe-haven flows. With a weekend perp basis spread of -0.42% ($4053.30 vs $4070.59) and retail positioning 71.7% long, localized supply shocks add structural bid support against the weekend gap-down pressure.",
-            "Bull_Case": "Middle Eastern energy infrastructure attacks elevate geopolitical risk premia, driving safe-haven capital into physical and spot gold.",
-            "Bear_Case": "Crude oil prices are currently softening (-0.95%), and the broader market is pricing in localized disruptions without global supply contagion, limiting gold upside.",
-            "Historical_Calibration": "Our historical track record shows a dismal win rate (10.9%) primarily due to setting overly distant targets or failing to account for weekend gap dynamics and low signal-ATR ratios (0.17x). To avoid repeating past misses, we ensure tight, conservative targets aligned with immediate liquidity clusters.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Gold gained +$10.47 over the past 4 hours, absorbing safe-haven flows ahead of weekend Middle Eastern headline escalation.",
-            "Orderflow_Price_Target": "4078.28"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 16.2
     },
     {
         "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-08 21:42 UTC",
@@ -4109,7 +4125,7 @@
             "Orderflow_Price_Target": "4051.1"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 2.86
+        "max_dd_usd": 6.16
     },
     {
         "main_date": "First Reported: 2026-11-08 18:20 UTC",
@@ -7285,7 +7301,7 @@
             "Orderflow_Price_Target": "4051.09"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 2.86
+        "max_dd_usd": 6.16
     },
     {
         "main_date": "First Reported: 2026-11-08 11:09 UTC",
@@ -9390,38 +9406,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 30,
             "Past_Price_Action_Cause": "Isolated equity dividend action with no discernible footprint on gold's -$28.39 daily change.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-08 00:14 UTC",
-        "original_date": "2026-11-08 00:14",
-        "_timestamp": 1794096850.0,
-        "articles": [
-            {
-                "title": "What Suzano (SUZ) Said on Its Q3 Earnings Call",
-                "link": "https://www.marketbeat.com/instant-alerts/transcript-what-suzano-suz-said-on-its-q3-earnings-call-2026-11-07/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-08 00:14",
-                "description": "Suzano (NYSE:SUZ) reported its first quarterly results including the Arbex consumer goods business and raised its 2026 pulp cash cost forecast, while executives said stronger pulp sales and prices should help the company reduce debt in the fourth quarter. CEO Beto Abreu said Arbex performed in line",
-                "_timestamp": 1794096850.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-08 00:14 UTC (approx. 0.5 hours ago relative to 2026-11-08 00:42 UTC)",
-            "Facts": "Suzano (NYSE:SUZ) released Q3 earnings results incorporating the Arbex consumer goods business, raising its 2026 pulp cash cost forecast while projecting improved sales and debt reduction in Q4. [Yahoo Finance Oil]",
-            "Uncertainties": "Global pulp price realizations and broader commodity cost pressures.",
-            "Macro_Context": "Softening industrial commodity prices align with declining Brent Crude (-0.95%) and a stronger USD, reflecting tame industrial input cost pressures.",
-            "Bull_Case": "Rising operational costs in industrial forestry/pulp can feed broader cost-push inflation metrics over extended horizons.",
-            "Bear_Case": "Higher pulp cash cost forecasts reflect margin squeezes rather than demand-driven commodity booms, offering no direct bullish spillover to precious metals.",
-            "Historical_Calibration": "Pulp and paper corporate updates possess zero direct linkage to XAU/USD valuation models.",
-            "Impact_Timing": "Past (Already Priced In)",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 25,
-            "Past_Price_Action_Cause": "Sector-specific forestry earnings had no measurable impact on gold's intraday volatility or trend.",
             "Orderflow_Price_Target": "N/A"
         }
     }

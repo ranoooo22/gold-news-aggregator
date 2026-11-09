@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 187,
-    "hits": 60,
+    "total_evaluated": 188,
+    "hits": 61,
     "misses": 127,
-    "win_rate": 32.1,
-    "active_signals": 20,
+    "win_rate": 32.4,
+    "active_signals": 19,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -2541,7 +2541,7 @@
             "prob": 53,
             "entry_price": 4070.59,
             "target": 4051.09,
-            "max_dd_usd": 2.86,
+            "max_dd_usd": 6.16,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2973,7 +2973,7 @@
             "prob": 57,
             "entry_price": 4070.59,
             "target": 4051.1,
-            "max_dd_usd": 2.86,
+            "max_dd_usd": 6.16,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -3062,20 +3062,20 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.investing.com/news/commodities-news/production-suspended-at-iraqs-khor-mor-gas-field-after-drone-attack-sources-say-5010313": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Production suspended at Iraq’s Khor Mor gas field after drone attack, sources say",
             "source": "Investing.com",
             "impact": "Bullish",
-            "prob": 52,
+            "prob": 56,
             "entry_price": 4070.59,
-            "target": 4078.28,
+            "target": 4060.13,
             "max_dd_usd": 16.2,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794174864.0,
             "date": "First Reported: 2026-11-08 20:55 UTC | Last Update: 2026-11-08 21:54 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/3-indian-growth-stocks-46-211118901.html?.tsrc=rss": {
             "status": "HIT",

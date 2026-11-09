@@ -1,8 +1,8 @@
 {
-    "total_evaluated": 217,
-    "hits": 90,
+    "total_evaluated": 218,
+    "hits": 91,
     "misses": 127,
-    "win_rate": 41.5,
+    "win_rate": 41.7,
     "active_signals": 3,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
@@ -3494,20 +3494,20 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$0.69)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/taiwan-shares-rally-6-short-050031171.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Taiwan shares rally 6% as short-sale curbs and NT$500 bln fund lift sentiment",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
             "prob": 52,
             "entry_price": 4122.31,
             "target": 4120.08,
-            "max_dd_usd": 3.96,
+            "max_dd_usd": 4.81,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 65.43,
             "macro_snapshot": "EUR -0.21%, NAS100 +0.90%",
             "created_ts": 1794200431.0,
             "date": "First Reported: 2026-11-09 05:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.81)"
         },
         "https://www.investing.com/news/commodities-news/china-extends-suspension-of-24-tariff-on-us-imports-for-two-months-5010427": {
             "status": "HIT",
@@ -3524,6 +3524,22 @@
             "created_ts": 1794194660.0,
             "date": "First Reported: 2026-11-09 03:24 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$6.62)"
+        },
+        "https://finance.yahoo.com/m/09a7b85b-f39c-346a-88bc-f818668a56a9/nvidia-stock-faces-new.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Nvidia Stock Faces New Pressure as Board Investigates Huang’s Links to Alleged Spy",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 53,
+            "entry_price": 4121.56,
+            "target": 4131.88,
+            "max_dd_usd": 2.27,
+            "atr_ratio_at_signal": 0.03,
+            "daily_atr_at_signal": 65.98,
+            "macro_snapshot": "EUR -0.20%, NAS100 +0.76%",
+            "created_ts": 1794201685.0,
+            "date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-09 05:21 UTC",
+            "fail_reason": ""
         }
     }
 }

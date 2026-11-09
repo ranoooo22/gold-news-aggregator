@@ -3,7 +3,7 @@
     "hits": 152,
     "misses": 129,
     "win_rate": 54.1,
-    "active_signals": 20,
+    "active_signals": 21,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -4820,6 +4820,22 @@
             "created_ts": 1794251902.0,
             "date": "First Reported: 2026-11-09 19:18 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$2.82)"
+        },
+        "https://www.marketbeat.com/instant-alerts/transcript-geodrill-q3-earnings-call-highlights-2026-11-09/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Geodrill Q3 Earnings Call Highlights",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4144.78,
+            "target": 4149.5,
+            "max_dd_usd": 8.44,
+            "atr_ratio_at_signal": 0.76,
+            "daily_atr_at_signal": 56.38,
+            "macro_snapshot": "EUR +0.65%, NAS100 +3.32%",
+            "created_ts": 1794258773.0,
+            "date": "First Reported: 2026-11-09 21:12 UTC",
+            "fail_reason": ""
         }
     }
 }

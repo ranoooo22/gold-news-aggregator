@@ -1,8 +1,8 @@
 {
-    "total_evaluated": 244,
-    "hits": 116,
+    "total_evaluated": 245,
+    "hits": 117,
     "misses": 128,
-    "win_rate": 47.5,
+    "win_rate": 47.8,
     "active_signals": 16,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
@@ -3526,20 +3526,20 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$6.62)"
         },
         "https://finance.yahoo.com/m/09a7b85b-f39c-346a-88bc-f818668a56a9/nvidia-stock-faces-new.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Nvidia Stock Faces New Pressure as Board Investigates Huang’s Links to Alleged Spy",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
-            "prob": 53,
+            "prob": 55,
             "entry_price": 4121.56,
-            "target": 4131.88,
+            "target": 4120.67,
             "max_dd_usd": 37.08,
             "atr_ratio_at_signal": 0.03,
             "daily_atr_at_signal": 65.98,
             "macro_snapshot": "EUR -0.20%, NAS100 +0.76%",
             "created_ts": 1794201685.0,
             "date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-09 05:21 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$37.08)"
         },
         "https://en.mehrnews.com/news/249259/Egypt-s-Al-Azhar-urges-global-action-on-Gaza-dire-situation": {
             "status": "ACTIVE",
@@ -3661,7 +3661,7 @@
             "prob": 52,
             "entry_price": 4094.95,
             "target": 4078.83,
-            "max_dd_usd": 31.15,
+            "max_dd_usd": 31.18,
             "atr_ratio_at_signal": 0.42,
             "daily_atr_at_signal": 66.92,
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
@@ -3789,7 +3789,7 @@
             "prob": 52,
             "entry_price": 4096.73,
             "target": 4090.41,
-            "max_dd_usd": 29.37,
+            "max_dd_usd": 29.4,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 63.71,
             "macro_snapshot": "EUR +0.19%, NAS100 +0.33%",
@@ -3869,7 +3869,7 @@
             "prob": 52,
             "entry_price": 4103.67,
             "target": 4078.62,
-            "max_dd_usd": 22.43,
+            "max_dd_usd": 22.46,
             "atr_ratio_at_signal": 0.26,
             "daily_atr_at_signal": 64.25,
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
@@ -3885,7 +3885,7 @@
             "prob": 52,
             "entry_price": 4103.67,
             "target": 4078.62,
-            "max_dd_usd": 22.43,
+            "max_dd_usd": 22.46,
             "atr_ratio_at_signal": 0.26,
             "daily_atr_at_signal": 64.25,
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
@@ -4163,6 +4163,22 @@
             "macro_snapshot": "EUR +0.38%, NAS100 +0.71%",
             "created_ts": 1794223800.0,
             "date": "First Reported: 2026-11-09 11:30 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/freeman-gold-applies-fast-41-123000178.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "FREEMAN GOLD APPLIES FOR FAST-41 COVERED PROJECT STATUS TO ADVANCE FEDERAL PERMITTING OF T",
+            "source": "Yahoo Finance Gold",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4122.06,
+            "target": 4130.68,
+            "max_dd_usd": 15.72,
+            "atr_ratio_at_signal": 0.36,
+            "daily_atr_at_signal": 64.89,
+            "macro_snapshot": "EUR +0.38%, NAS100 +0.44%",
+            "created_ts": 1794227400.0,
+            "date": "First Reported: 2026-11-09 12:30 UTC",
             "fail_reason": ""
         }
     }

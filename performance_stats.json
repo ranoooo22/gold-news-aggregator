@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 219,
-    "hits": 92,
+    "total_evaluated": 220,
+    "hits": 93,
     "misses": 127,
-    "win_rate": 42.0,
-    "active_signals": 6,
+    "win_rate": 42.3,
+    "active_signals": 5,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -3533,7 +3533,7 @@
             "prob": 53,
             "entry_price": 4121.56,
             "target": 4131.88,
-            "max_dd_usd": 9.09,
+            "max_dd_usd": 12.15,
             "atr_ratio_at_signal": 0.03,
             "daily_atr_at_signal": 65.98,
             "macro_snapshot": "EUR -0.20%, NAS100 +0.76%",
@@ -3549,7 +3549,7 @@
             "prob": 51,
             "entry_price": 4122.88,
             "target": 4131.81,
-            "max_dd_usd": 10.4,
+            "max_dd_usd": 13.47,
             "atr_ratio_at_signal": 0.0,
             "daily_atr_at_signal": 63.45,
             "macro_snapshot": "EUR -0.15%, NAS100 +0.52%",
@@ -3581,7 +3581,7 @@
             "prob": 55,
             "entry_price": 4113.51,
             "target": 4131.54,
-            "max_dd_usd": 1.03,
+            "max_dd_usd": 4.1,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 65.28,
             "macro_snapshot": "EUR -0.13%, NAS100 +0.40%",
@@ -3590,7 +3590,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/technology/ai/articles/chinese-robotics-stock-surge-apple-061332775.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Chinese robotics stock surge on Apple robotics research",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -3603,7 +3603,7 @@
             "macro_snapshot": "EUR -0.13%, NAS100 +0.40%",
             "created_ts": 1794204812.0,
             "date": "First Reported: 2026-11-09 06:13 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.55)"
         }
     }
 }

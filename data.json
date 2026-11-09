@@ -1,5 +1,69 @@
 [
     {
+        "main_date": "First Reported: 2026-11-09 06:42 UTC",
+        "original_date": "2026-11-09 06:42",
+        "_timestamp": 1794206557.0,
+        "articles": [
+            {
+                "title": "North China building fire kills at least 14 people",
+                "link": "https://en.mehrnews.com/news/249263/North-China-building-fire-kills-at-least-14-people",
+                "source": "Mehr News Agency",
+                "date": "2026-11-09 06:42",
+                "description": "TEHRAN, Nov. 09 (MNA) – A fire on Sunday at a high-rise building in Taiyuan, in the northern Chinese province of Shanxi, killed at least 14 people, officials ⁠said on Monday.",
+                "_timestamp": 1794206557.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Event_Timestamp": "2026-11-09 06:42 UTC (approx. 4 minutes ago relative to 2026-11-09 06:46 UTC)",
+            "Facts": "A tragic building fire in a high-rise in Taiyuan, Shanxi province, northern China, resulted in at least 14 deaths, according to official state media reports. [Mehr News Agency]",
+            "Uncertainties": "Exact cause of the fire, whether industrial safety regulations were violated, and if any broader regulatory crackdown on construction or fire safety will emerge from central authorities.",
+            "Macro_Context": "EUR/USD is down -0.11%, US 10Y yields are slightly down/prices up (107.229, -0.23%), Nasdaq 100 is higher (+0.41%), and Brent Crude is dropping (-3.37%). The OKX XAUUSDT.P basis spread is tight (+0.766 or +0.19%), reflecting balanced perpetual-to-spot trading. Retail sentiment stands heavily long at 71.9%. Localized tragic events in China generally have negligible direct macro impact on global gold flows unless they trigger widespread industrial shutdowns.",
+            "Bull_Case": "Safe-haven flows could marginally benefit from general global risk aversion if the incident sparks broader worries over structural safety in industrial hubs.",
+            "Bear_Case": "The event is localized and tragic rather than systemic. It lacks the macro weight to shift global interest rate expectations, USD strength, or gold pricing. Markets will likely look past it entirely.",
+            "Historical_Calibration": "Looking at our track record, low-impact local news items without macroeconomic catalysts tend to create false or range-bound signals if traded aggressively. Given the low Signal-ATR-Ratio context and lack of structural weight, a Neutral stance is statistically safer to avoid uncalibrated drawdowns.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Gold is currently down slightly over 4h ($-8.34) amidst subdued weekend trading conditions. Localized accidents do not drive major multi-dollar moves on XAU/USD.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-09 06:32 UTC",
+        "original_date": "2026-11-09 06:32",
+        "_timestamp": 1794205938.0,
+        "articles": [
+            {
+                "title": "How Israel’s separation wall compares with the Berlin Wall",
+                "link": "https://www.aljazeera.com/news/2026/11/9/how-israels-separation-wall-compares-with-the-berlin-wall?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-09 06:32",
+                "description": "How Israel&#039;s wall, checkpoints and permits divide Palestinians in the occupied West Bank and cut farmers off from land.",
+                "_timestamp": 1794205938.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Event_Timestamp": "2026-11-09 06:32 UTC (approx. 14 minutes ago relative to 2026-11-09 06:46 UTC)",
+            "Facts": "An analytical feature published by Al Jazeera compares Israel's separation wall, checkpoints, and permit regime in the occupied West Bank with the historic Berlin Wall, detailing how it divides Palestinian lands and separates farmers from agricultural assets. [Al Jazeera English]",
+            "Uncertainties": "Whether this piece is tied to any fresh diplomatic developments, security escalations, or policy announcements regarding the West Bank.",
+            "Macro_Context": "Middle Eastern geopolitical commentary is an evergreen background risk factor for safe-haven assets like gold. However, without a fresh military escalation, breakout conflict, or major oil supply disruption, the immediate pricing impact is muted. Brent crude is down -3.37%, indicating a lack of near-term geopolitical energy premium priced into markets at this hour.",
+            "Bull_Case": "Persistent geopolitical tensions in the Middle East always maintain a baseline safe-haven bid for gold, preventing aggressive liquidation by retail longs (currently 71.9% long).",
+            "Bear_Case": "Analytical or historical retrospective pieces do not introduce new risk factors or supply shocks. With Brent crude falling and risk-on sentiment in equities (Nasdaq +0.41%), geopolitical safe-haven demand remains subdued.",
+            "Historical_Calibration": "Historical setups requiring directional calls on opinion pieces or analytical features often suffer from low predictability unless backed by hard macro catalysts. Aligning with our winning and losing patterns, neutral stances are preferred when news flow lacks actionable supply/demand or monetary policy implications.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "The 4h price action shows a modest contraction ($-8.34) following recent highs, but this is standard weekend consolidation rather than geopolitical shock pricing.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "First Reported: 2026-11-08 18:18 UTC | Last Update: 2026-11-09 06:20 UTC",
         "original_date": "2026-11-08 18:18",
         "_timestamp": 1794205239.0,
@@ -931,7 +995,7 @@
             "Orderflow_Price_Target": "4131.54"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 1.03
+        "max_dd_usd": 4.1
     },
     {
         "main_date": "First Reported: 2026-11-09 06:13 UTC",
@@ -964,7 +1028,7 @@
             "Past_Price_Action_Cause": "Risk-on tech sentiment and equity futures rebounds limit aggressive safe-haven chasing in gold.",
             "Orderflow_Price_Target": "4111.14"
         },
-        "eval_status": "ACTIVE",
+        "eval_status": "HIT",
         "max_dd_usd": 10.55
     },
     {
@@ -1169,7 +1233,7 @@
             "Orderflow_Price_Target": "4131.81"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 10.4
+        "max_dd_usd": 13.47
     },
     {
         "main_date": "First Reported: 2026-11-06 16:21 UTC | Last Update: 2026-11-09 05:52 UTC",
@@ -1431,7 +1495,7 @@
             "Orderflow_Price_Target": "4131.88"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 9.09
+        "max_dd_usd": 12.15
     },
     {
         "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-09 05:19 UTC",
@@ -9856,72 +9920,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 15,
             "Past_Price_Action_Cause": "No measurable transmission to XAU/USD price action or crypto-gold basis.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-08 06:45 UTC",
-        "original_date": "2026-11-08 06:45",
-        "_timestamp": 1794120313.0,
-        "articles": [
-            {
-                "title": "The AI Buildout Has A New Problem, And It’s Not Nvidia — JPMorgan Sounds Alarm",
-                "link": "https://stocktwits.com/news-articles/markets/equity/ai-buildout-data-center-backlash-nvidia/cNGouhgR9Iq?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 06:45",
-                "description": "JPMorgan Asset Management Global Market Strategist Stephanie Aliaga warned that mounting opposition could mean longer negotiations, higher costs and further delays.",
-                "_timestamp": 1794120313.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Event_Timestamp": "2026-11-08 06:45 UTC (approx. 0.6 hours ago relative to 2026-11-08 07:19 UTC)",
-            "Facts": "JPMorgan Asset Management Global Market Strategist Stephanie Aliaga warned that mounting opposition to the AI infrastructure buildout could lead to longer negotiations, higher costs, and further delays [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Extent of regulatory and community pushback against data center and power infrastructure expansion.",
-            "Macro_Context": "Nasdaq 100 is strong (+1.81%), reflecting AI optimism, but headwinds in infrastructure buildout could create periodic tech sector rotations, influencing broader risk sentiment and dollar demand.",
-            "Bull_Case": "Friction in AI capital expenditures could trigger a risk-off rotation from equities into defensive assets like gold.",
-            "Bear_Case": "Strong Nasdaq performance (+1.81%) shows that tech momentum remains dominant, dampening safe-haven demand as capital chases equity gains.",
-            "Historical_Calibration": "Equities outperforming with NAS100 up 1.81% typically creates a headwind for gold via opportunity cost; past data shows robust equity rallies suppress non-yielding metal upside.",
-            "Impact_Timing": "Future",
-            "Timeframe": "Weeks/Months",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 54,
-            "Past_Price_Action_Cause": "Strong tech equity performance limits safe-haven inflows, keeping upside capped below immediate resistance walls.",
-            "Orderflow_Price_Target": "4059.91"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-08 06:42 UTC",
-        "original_date": "2026-11-08 06:42",
-        "_timestamp": 1794120170.0,
-        "articles": [
-            {
-                "title": "Iran reverse engineering captured US military equipment",
-                "link": "https://en.mehrnews.com/news/249235/Iran-reverse-engineering-captured-US-military-equipment",
-                "source": "Mehr News Agency",
-                "date": "2026-11-08 06:42",
-                "description": "TEHRAN, Nov. 08 (MNA) – Stressing full readiness of Armed Forces to defend the country, a senior IRGC commander said defense industry’s specialists are currently engaged in reverse engineering of equipment captured from the US enemy.",
-                "_timestamp": 1794120170.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Event_Timestamp": "2026-11-08 06:42 UTC (approx. 38 minutes ago)",
-            "Facts": "A senior IRGC commander announced that Iran's defense industry specialists are actively reverse engineering captured US military equipment, highlighting full Armed Forces readiness [Mehr News Agency].",
-            "Uncertainties": "Specific types of equipment captured, when they were captured, and whether this represents a new tactical escalation or ongoing rhetorical posturing.",
-            "Macro_Context": "Geopolitical friction with Iran typically underpins safe-haven demand for gold, but current retail sentiment is heavily long (71.7%), and the 24/7 XAU/USDT basis shows a negative Sunday gap (-0.35%) indicating weekend discounting.",
-            "Bull_Case": "Heightened US-Iran military friction increases safe-haven demand, supporting gold against broader macro headwinds.",
-            "Bear_Case": "The market views this as routine rhetoric rather than an imminent kinetic conflict, rendering the news largely priced in or ignored amidst strong tech sector performance.",
-            "Historical_Calibration": "Reflecting on past low win rates (21.1%) and the failure of similar geopolitical headlines (e.g., AEOI nuclear site threats missing their target), over-relying on geopolitical news without immediate liquidity sweep confirmation leads to drawdowns.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 45,
-            "Past_Price_Action_Cause": "Gold is consolidating around $4070.59 despite minor geopolitical headlines, with the 24/7 XAU/USDT basis indicating an opening discount (-$14.30).",
             "Orderflow_Price_Target": "N/A"
         }
     }

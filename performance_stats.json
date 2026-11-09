@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 188,
-    "hits": 61,
+    "total_evaluated": 205,
+    "hits": 78,
     "misses": 127,
-    "win_rate": 32.4,
-    "active_signals": 19,
+    "win_rate": 38.0,
+    "active_signals": 8,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -2182,7 +2182,7 @@
             "fail_reason": "20h time limit expired without reaching $4050.99 (Max DD: -$0.00)"
         },
         "https://en.mehrnews.com/news/249237/IRGC-closely-monitoring-U-S-Scorpion-Strike-Task-Force": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "IRGC closely monitoring U.S. “Scorpion Strike” Task Force",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -2195,7 +2195,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794121741.0,
             "date": "First Reported: 2026-11-08 07:09 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://stocktwits.com/news-articles/markets/equity/ai-buildout-data-center-backlash-nvidia/cNGouhgR9Iq?.tsrc=rss": {
             "status": "HIT",
@@ -2214,7 +2214,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://en.mehrnews.com/news/249233/Multiple-explosions-heard-in-Riyadh-Saudi-Arabia": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Multiple explosions heard in Riyadh, Saudi Arabia",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -2227,7 +2227,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794117769.0,
             "date": "First Reported: 2026-11-08 06:02 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-civil-defence-issues-all-clear-riyadh-minutes-after-danger-alert": {
             "status": "HIT",
@@ -2278,7 +2278,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/iran-executes-three-men-convicted-over-january-2026-protests": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iran executes three men convicted over January 2026 protests",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -2291,7 +2291,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794114368.0,
             "date": "First Reported: 2026-11-08 05:06 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-and-qatari-foreign-ministers-discuss-de-escalation-efforts": {
             "status": "HIT",
@@ -2406,7 +2406,7 @@
             "fail_reason": "20h time limit expired without reaching $4078.28 (Max DD: -$0.00)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-aramco-building-riyadh-damaged-falling-debris-attempted-attack": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Saudi Aramco building in Riyadh damaged by falling debris in attempted attack, ministry sa",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -2419,10 +2419,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794129283.0,
             "date": "First Reported: 2026-11-08 07:22 UTC | Last Update: 2026-11-08 09:14 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/7/eisenkot-chosen-over-netanyahu-to-form-israels-next-government?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Eisenkot chosen over Netanyahu to form Israel’s next government",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -2435,7 +2435,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794127656.0,
             "date": "First Reported: 2026-11-07 23:45 UTC | Last Update: 2026-11-08 08:47 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://finance.yahoo.com/energy/articles/diamondback-energy-fang-raises-dividend-080848730.html?.tsrc=rss": {
             "status": "HIT",
@@ -2470,7 +2470,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://en.mehrnews.com/news/249238/US-doctrine-of-aggression-failed-against-Iran-deterrent-power": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Any power lining up against Iran doomed to failure: Shekarchi",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -2483,7 +2483,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794123484.0,
             "date": "First Reported: 2026-11-08 07:38 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.marketbeat.com/instant-alerts/transcript-what-teradata-tdc-said-on-its-q3-earnings-call-2026-11-08/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
             "status": "HIT",
@@ -2541,7 +2541,7 @@
             "prob": 53,
             "entry_price": 4070.59,
             "target": 4051.09,
-            "max_dd_usd": 6.16,
+            "max_dd_usd": 57.72,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -2710,7 +2710,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.aljazeera.com/news/2026/11/8/russian-strikes-on-ukraine-leave-hundreds-of-thousands-without-electricity?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Russian strikes on Ukraine leave hundreds of thousands without electricity",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -2723,7 +2723,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794140417.0,
             "date": "First Reported: 2026-11-08 12:20 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.tehrantimes.com/news/531937/QS-Asia-University-Ranking-includes-more-Iranian-universities": {
             "status": "HIT",
@@ -2790,7 +2790,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://en.mehrnews.com/news/249246/Russia-ready-to-explore-CIS-plus-Iran-format-MFA": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Russia ready to explore CIS plus Iran format: MFA",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -2803,10 +2803,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794149190.0,
             "date": "First Reported: 2026-11-08 14:46 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.tehrantimes.com/news/531939/Investment-opportunities-worth-300b-presented-to-Chinese-investors": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Investment opportunities worth $300b presented to Chinese investors",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -2819,7 +2819,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794157368.0,
             "date": "First Reported: 2026-11-08 17:02 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/8/8-11-clip-eisenkot-address-il?traffic_source=rss": {
             "status": "HIT",
@@ -2950,7 +2950,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://en.mehrnews.com/news/249252/Iranian-military-ready-to-defend-with-advanced-homegrown-arms": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iranian military ready to defend with advanced homegrown arms",
             "source": "Mehr News Agency",
             "impact": "Bullish",
@@ -2963,7 +2963,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794163102.0,
             "date": "First Reported: 2026-11-08 18:38 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/core-natural-resources-bristow-group-182136821.html?.tsrc=rss": {
             "status": "ACTIVE",
@@ -2973,7 +2973,7 @@
             "prob": 57,
             "entry_price": 4070.59,
             "target": 4051.1,
-            "max_dd_usd": 6.16,
+            "max_dd_usd": 57.72,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 60.1,
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
@@ -3014,7 +3014,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.investing.com/news/commodities-news/us-asks-iraq-to-shut-most-iran-border-crossings-iraqi-foreign-minister-says-5010296": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US asks Iraq to shut most Iran border crossings, Iraqi foreign minister says",
             "source": "Investing.com",
             "impact": "Bullish",
@@ -3027,10 +3027,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794164778.0,
             "date": "First Reported: 2026-11-08 19:06 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://finance.yahoo.com/m/826f68d8-6715-357e-b04d-885d04102528/inflation-data%2C-constellation.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Inflation Data, Constellation Energy, Skydance, Applied Materials, and More to Watch This ",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3043,7 +3043,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.81%",
             "created_ts": 1794164400.0,
             "date": "First Reported: 2026-11-08 19:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html": {
             "status": "HIT",
@@ -3110,7 +3110,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-forces-detain-teacher-following-school-raid-masafer-yatta": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Israeli forces detain teacher following school raid in Masafer Yatta, install gate east of",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -3123,10 +3123,10 @@
             "macro_snapshot": "EUR -0.77%, NAS100 +1.81%",
             "created_ts": 1794153403.0,
             "date": "First Reported: 2026-11-08 15:56 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/ai-trade-tires-bca-calls-153106937.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "As AI trade tires, BCA calls for European stocks to beat Wall Street",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3139,7 +3139,7 @@
             "macro_snapshot": "EUR -0.77%, NAS100 +1.81%",
             "created_ts": 1794151866.0,
             "date": "First Reported: 2026-11-08 15:31 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.fool.com/investing/2026/11/08/teslas-fsd-supervised-attach-rate-hit-75-on-new-ve/?.tsrc=rss": {
             "status": "HIT",
@@ -3190,7 +3190,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.middleeasteye.net/news/frances-polarised-road-2027-repression-racism-and-rise-far-right": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "France's polarised road to 2027: Repression, racism and the rise of the far right",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -3203,10 +3203,10 @@
             "macro_snapshot": "EUR -0.64%, NAS100 +0.79%",
             "created_ts": 1794130103.0,
             "date": "First Reported: 2026-11-08 09:28 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.fool.com/investing/2026/11/08/donald-trump-become-mr-veto-after-midterm-elections-results-put-president-wall-street-in-precarious-situation/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Donald Trump Claims He'll Become \"Mr. Veto\" After Midterm Elections, but the Results Put t",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -3219,10 +3219,10 @@
             "macro_snapshot": "EUR -0.64%, NAS100 +0.79%",
             "created_ts": 1794129962.0,
             "date": "First Reported: 2026-11-08 09:26 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.aljazeera.com/features/2026/11/8/former-palestinian-detainees-at-mercy-of-israel-amid-perpetual-detention?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Former Palestinian detainees at mercy of Israel amid perpetual detention",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -3235,7 +3235,7 @@
             "macro_snapshot": "EUR -0.64%, NAS100 +0.79%",
             "created_ts": 1794128999.0,
             "date": "First Reported: 2026-11-08 09:09 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$16.20)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/hostile-aircraft-alert-false-identification-israeli-military-says": {
             "status": "HIT",
@@ -3316,6 +3316,102 @@
             "created_ts": 1794100456.0,
             "date": "First Reported: 2026-11-08 01:14 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
+        },
+        "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html": {
+            "status": "ACTIVE",
+            "headline": "China wholesale inflation hits over four-year high as consumer measure slows",
+            "source": "CNBC Economy",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4123.86,
+            "target": 4139.15,
+            "max_dd_usd": 24.21,
+            "atr_ratio_at_signal": 0.75,
+            "daily_atr_at_signal": 73.35,
+            "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
+            "created_ts": 1794188411.0,
+            "date": "First Reported: 2026-11-09 01:40 UTC",
+            "fail_reason": ""
+        },
+        "https://stocktwits.com/news-articles/markets/equity/trump-blames-democratic-win-for-3-t-stock-market-rout-promises-markets-will-come-back-bigger-and-stronger/cNGAM4JR9ID?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Trump Blames Democratic Win For $3T Stock Market Rout, Promises Markets Will Come Back ‘Bi",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 51,
+            "entry_price": 4123.86,
+            "target": 4131.25,
+            "max_dd_usd": 24.21,
+            "atr_ratio_at_signal": 0.75,
+            "daily_atr_at_signal": 73.35,
+            "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
+            "created_ts": 1794187865.0,
+            "date": "First Reported: 2026-11-09 01:31 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/5-revealing-analyst-questions-magnolia-011736256.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "5 revealing analyst questions from Magnolia Oil & Gas’s Q3 2026 earnings call",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4123.86,
+            "target": 4131.25,
+            "max_dd_usd": 24.21,
+            "atr_ratio_at_signal": 0.75,
+            "daily_atr_at_signal": 73.35,
+            "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
+            "created_ts": 1794187056.0,
+            "date": "First Reported: 2026-11-09 01:17 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/oil-prices-dip-as-trump-says-new-iran-attacks-unlikely-if-talks-progress-5010370": {
+            "status": "ACTIVE",
+            "headline": "Oil prices dip as Trump says new Iran attacks ‘unlikely’ if talks progress",
+            "source": "Investing.com",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4104.98,
+            "target": 4131.25,
+            "max_dd_usd": 49.96,
+            "atr_ratio_at_signal": 0.75,
+            "daily_atr_at_signal": 73.35,
+            "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
+            "created_ts": 1794185721.0,
+            "date": "First Reported: 2026-11-09 00:24 UTC | Last Update: 2026-11-09 00:55 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/08/could-buying-palantir-stock-today-set-you-up-for-l/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Could Buying Palantir Stock Today Set You Up for Life?",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4104.98,
+            "target": 4131.25,
+            "max_dd_usd": 49.96,
+            "atr_ratio_at_signal": 0.75,
+            "daily_atr_at_signal": 73.35,
+            "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
+            "created_ts": 1794183600.0,
+            "date": "First Reported: 2026-11-09 00:20 UTC",
+            "fail_reason": ""
+        },
+        "https://247wallst.com/investing/2026/11/08/david-sacks-warns-the-ai-data-center-pipeline-could-dry-up-heres-whats-at-stake/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "David Sacks Warns the AI Data Center Pipeline Could Dry Up. Here’s What’s at Stake",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4104.98,
+            "target": 4131.25,
+            "max_dd_usd": 49.96,
+            "atr_ratio_at_signal": 0.75,
+            "daily_atr_at_signal": 73.35,
+            "macro_snapshot": "EUR -0.38%, NAS100 +0.18%",
+            "created_ts": 1794182869.0,
+            "date": "First Reported: 2026-11-09 00:07 UTC",
+            "fail_reason": ""
         }
     }
 }

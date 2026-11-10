@@ -78,6 +78,17 @@ def clean_html(raw_html):
     cleanr = re.compile('<.*?>')
     return re.sub(cleanr, '', raw_html)
 
+def classify_news_category(headline, source=""):
+    """Classifies a signal into one of 4 core macro/trading buckets for statistical regime tracking."""
+    text = f"{headline} {source}".lower()
+    if any(k in text for k in ["iran", "israel", "idf", "houthi", "yemen", "red sea", "hormuz", "missile", "strike", "attack", "drone", "war", "truce", "ceasefire", "nuclear", "irgc", "sanction", "tehran", "middle east", "al jazeera", "times of israel", "saba", "mehr"]):
+        return "Geopolitics & War"
+    if any(k in text for k in ["nvidia", "nvda", "nasdaq", "semiconductor", "chip", "tsmc", "taiwan", "ai ", "artificial intelligence", "microsoft", "apple", "big tech", "tech"]):
+        return "Tech, AI & Equities"
+    if any(k in text for k in ["fed", "inflation", "rate", "cpi", "pmi", "payroll", "unemployment", "gdp", "treasury", "yield", "dollar", "central bank", "recession", "tariff", "debt", "stimulus"]):
+        return "Fed, Rates & Macro"
+    return "Commodities & Energy"
+
 def fetch_single_feed(source_url):
     source, url = source_url
     articles = []
@@ -174,7 +185,6 @@ def fetch_crypto_gold_basis(oanda_price):
             pass
 
     now_utc = datetime.utcnow()
-    # Weekend Spot Market Closure: Friday >= 22:00 UTC, all Saturday (weekday 5), or Sunday < 22:00 UTC
     is_weekend = (
         (now_utc.weekday() == 4 and now_utc.hour >= 22) or
         (now_utc.weekday() == 5) or
@@ -560,6 +570,130 @@ def fetch_macro_context():
 
     return "\n".join(macro_lines), macro_summary
 
+def compute_regime_matrix(history_dict):
+    """
+    Aggregates ALL historical evaluations (250+ setups) into a multi-dimensional statistical Regime Matrix:
+    1. By Direction (Bullish vs. Bearish)
+    2. By ATR Exhaustion Regime (Fresh <0.8x, Moderate 0.8-1.2x, Exhausted >=1.2x)
+    3. By Macro/USD Alignment (With USD Tailwind, Against USD Headwind, Neutral/Legacy)
+    4. By News Category (Geopolitics, Tech/AI, Fed/Macro, Commodities)
+    5. By AI Confidence Bucket (51-64%, 65-74%, 75%+)
+    """
+    def init_bucket():
+        return {"hits": 0, "misses": 0, "total": 0, "win_rate": 0.0, "dd_sum": 0.0, "dd_count": 0, "avg_dd": 0.0}
+
+    matrix = {
+        "by_direction": {"Bullish": init_bucket(), "Bearish": init_bucket()},
+        "by_atr_regime": {
+            "Fresh (<0.8x ATR)": init_bucket(),
+            "Moderate (0.8x-1.2x ATR)": init_bucket(),
+            "Exhausted (>=1.2x ATR)": init_bucket(),
+            "Unrecorded (Legacy)": init_bucket()
+        },
+        "by_macro_alignment": {
+            "With USD Tailwind": init_bucket(),
+            "Against USD Headwind": init_bucket(),
+            "USD Neutral / Legacy": init_bucket()
+        },
+        "by_category": {
+            "Geopolitics & War": init_bucket(),
+            "Fed, Rates & Macro": init_bucket(),
+            "Tech, AI & Equities": init_bucket(),
+            "Commodities & Energy": init_bucket()
+        },
+        "by_confidence": {
+            "Moderate (51-64%)": init_bucket(),
+            "High (65-74%)": init_bucket(),
+            "Extreme (>=75%)": init_bucket()
+        }
+    }
+
+    def add_to_bucket(b_dict, is_hit, dd_val=None):
+        if is_hit:
+            b_dict["hits"] += 1
+        else:
+            b_dict["misses"] += 1
+        b_dict["total"] += 1
+        if dd_val is not None and dd_val > 0:
+            b_dict["dd_sum"] += dd_val
+            b_dict["dd_count"] += 1
+
+    for sig_id, rec in history_dict.items():
+        status = rec.get("status")
+        if status not in ("HIT", "MISS"):
+            continue
+
+        is_hit = (status == "HIT")
+        imp = "Bullish" if "Bullish" in str(rec.get("impact", "Bullish")) else "Bearish"
+        dd_val = float(rec.get("max_dd_usd", 0.0) or 0.0)
+
+        # 1. Direction
+        add_to_bucket(matrix["by_direction"][imp], is_hit, dd_val)
+
+        # 2. ATR Regime
+        if "atr_ratio_at_signal" in rec and rec["atr_ratio_at_signal"] is not None:
+            atr_r = float(rec["atr_ratio_at_signal"])
+            if atr_r < 0.8:
+                atr_key = "Fresh (<0.8x ATR)"
+            elif atr_r < 1.2:
+                atr_key = "Moderate (0.8x-1.2x ATR)"
+            else:
+                atr_key = "Exhausted (>=1.2x ATR)"
+        else:
+            atr_key = "Unrecorded (Legacy)"
+        add_to_bucket(matrix["by_atr_regime"][atr_key], is_hit, dd_val)
+
+        # 3. Macro / USD Alignment
+        eur_chg = rec.get("eur_chg_at_signal")
+        if eur_chg is None and "macro_snapshot" in rec:
+            m = re.search(r"EUR\s*([+-]?\d+(?:\.\d+)?)%", str(rec.get("macro_snapshot", "")))
+            if m:
+                try:
+                    eur_chg = float(m.group(1))
+                except ValueError:
+                    eur_chg = None
+
+        if eur_chg is not None:
+            # EUR/USD > +0.12% means weaker USD (Tailwind for Bullish Gold, Headwind for Bearish Gold)
+            # EUR/USD < -0.12% means stronger USD (Headwind for Bullish Gold, Tailwind for Bearish Gold)
+            if (imp == "Bullish" and eur_chg >= 0.12) or (imp == "Bearish" and eur_chg <= -0.12):
+                mac_key = "With USD Tailwind"
+            elif (imp == "Bullish" and eur_chg <= -0.12) or (imp == "Bearish" and eur_chg >= 0.12):
+                mac_key = "Against USD Headwind"
+            else:
+                mac_key = "USD Neutral / Legacy"
+        else:
+            mac_key = "USD Neutral / Legacy"
+        add_to_bucket(matrix["by_macro_alignment"][mac_key], is_hit, dd_val)
+
+        # 4. Category (retroactively classify legacy URLs/headlines if category field is missing)
+        cat = rec.get("category")
+        if not cat or cat not in matrix["by_category"]:
+            cat = classify_news_category(rec.get("headline", sig_id), rec.get("source", ""))
+        add_to_bucket(matrix["by_category"][cat], is_hit, dd_val)
+
+        # 5. Confidence Bucket
+        prob = int(rec.get("prob", 67) or 67)
+        if prob < 65:
+            conf_key = "Moderate (51-64%)"
+        elif prob < 75:
+            conf_key = "High (65-74%)"
+        else:
+            conf_key = "Extreme (>=75%)"
+        add_to_bucket(matrix["by_confidence"][conf_key], is_hit, dd_val)
+
+    # Finalize win rates and average drawdowns across all buckets
+    for group in matrix.values():
+        for b in group.values():
+            if b["total"] > 0:
+                b["win_rate"] = round((b["hits"] / b["total"]) * 100.0, 1)
+            if b["dd_count"] > 0:
+                b["avg_dd"] = round(b["dd_sum"] / b["dd_count"], 2)
+            del b["dd_sum"]
+            del b["dd_count"]
+
+    return matrix
+
 def evaluate_clusters(all_clusters, h1_candles, vol_metrics=None, macro_summary=None):
     stats = {
         "total_evaluated": 0,
@@ -567,6 +701,7 @@ def evaluate_clusters(all_clusters, h1_candles, vol_metrics=None, macro_summary=
         "misses": 0,
         "win_rate": 0.0,
         "active_signals": 0,
+        "regime_matrix": {},
         "history": {}
     }
     if os.path.exists(STATS_FILE):
@@ -617,10 +752,13 @@ def evaluate_clusters(all_clusters, h1_candles, vol_metrics=None, macro_summary=
 
         if cluster_id not in stats["history"]:
             first_art = cluster["articles"][0] if cluster.get("articles") else {}
+            hl_str = first_art.get("title", "Unknown")[:90]
+            src_str = first_art.get("source", "News")
             stats["history"][cluster_id] = {
                 "status": "ACTIVE",
-                "headline": first_art.get("title", "Unknown")[:90],
-                "source": first_art.get("source", "News"),
+                "headline": hl_str,
+                "source": src_str,
+                "category": classify_news_category(hl_str, src_str),
                 "impact": "Bullish" if "Bullish" in impact else "Bearish",
                 "prob": prob,
                 "entry_price": round(entry_price, 2),
@@ -628,6 +766,8 @@ def evaluate_clusters(all_clusters, h1_candles, vol_metrics=None, macro_summary=
                 "max_dd_usd": 0.0,
                 "atr_ratio_at_signal": atr_ratio_now,
                 "daily_atr_at_signal": est_daily_atr,
+                "eur_chg_at_signal": eur_chg,
+                "nas_chg_at_signal": nas_chg,
                 "macro_snapshot": macro_snap_str,
                 "created_ts": cluster_ts,
                 "date": cluster.get("main_date", ""),
@@ -712,6 +852,7 @@ def evaluate_clusters(all_clusters, h1_candles, vol_metrics=None, macro_summary=
     stats["total_evaluated"] = total_eval
     stats["win_rate"] = round((hits / total_eval) * 100, 1) if total_eval > 0 else 0.0
     stats["active_signals"] = active_count
+    stats["regime_matrix"] = compute_regime_matrix(stats["history"])
 
     try:
         with open(STATS_FILE, "w", encoding="utf-8") as f:
@@ -722,15 +863,35 @@ def evaluate_clusters(all_clusters, h1_candles, vol_metrics=None, macro_summary=
     return stats
 
 def format_performance_memory(stats):
+    """
+    Formats the full multi-dimensional Regime Matrix (from all 250+ evaluated setups)
+    plus the 5 most recent setups into an actionable statistical memory block for the AI Agent.
+    """
     if not stats or stats.get("total_evaluated", 0) == 0:
         return f"Historical Track Record (>50% setups): No completed 20h evaluations yet ({stats.get('active_signals', 0)} active setups currently tracked)."
     
+    rm = stats.get("regime_matrix") or compute_regime_matrix(stats.get("history", {}))
+
+    def fmt_group(group_dict):
+        parts = []
+        for k, b in group_dict.items():
+            if b["total"] > 0:
+                dd_str = f", Avg DD: -${b['avg_dd']:.1f}" if b.get("avg_dd", 0) > 0 else ""
+                parts.append(f"{k}: {b['win_rate']}% ({b['hits']}/{b['total']}{dd_str})")
+        return " | ".join(parts) if parts else "Insufficient data"
+
+    dir_line = fmt_group(rm.get("by_direction", {}))
+    atr_line = fmt_group(rm.get("by_atr_regime", {}))
+    mac_line = fmt_group(rm.get("by_macro_alignment", {}))
+    cat_line = fmt_group(rm.get("by_category", {}))
+    conf_line = fmt_group(rm.get("by_confidence", {}))
+
     completed = [v for v in stats.get("history", {}).values() if v.get("status") in ("HIT", "MISS")]
-    recent_items = completed[-6:]
+    recent_items = completed[-5:]
     
     details_lines = []
     for item in recent_items:
-        hl = item.get("headline", "News")[:55]
+        hl = item.get("headline", "News")[:50]
         imp = item.get("impact", "")
         prob = item.get("prob", 0)
         ent = item.get("entry_price", 0)
@@ -738,19 +899,23 @@ def format_performance_memory(stats):
         st = item.get("status", "")
         dd = item.get("max_dd_usd", 0.0)
         atr_r = item.get("atr_ratio_at_signal", 0.0)
-        mac = item.get("macro_snapshot", "")
-        reason = item.get("fail_reason", "")
+        cat = item.get("category", "General")
         details_lines.append(
-            f"  * [{st}] '{hl}...' | {imp} ({prob}%) Entry ${ent} -> Target ${trg} | Max DD: -${dd} | Signal-ATR-Ratio: {atr_r}x | Macro: {mac} | Note: {reason}"
+            f"  * [{st}] ({cat}) '{hl}...' | {imp} ({prob}%) Entry ${ent} -> Target ${trg} | Max DD: -${dd} | ATR-Ratio: {atr_r}x"
         )
     
     recent_block = "\n".join(details_lines)
     
     return (
-        f"Historical Signal Track Record (All directional setups >50% probability):\n"
-        f"- Total Evaluated: {stats['total_evaluated']} | Win Rate: {stats['win_rate']}% ({stats['hits']} Hits, {stats['misses']} Misses) | Currently Active: {stats.get('active_signals', 0)}\n"
-        f"- Last {len(recent_items)} Completed Setups with Context & Drawdown:\n{recent_block}\n"
-        f"- Self-Learning Rule: Analyze WHY past setups hit or missed (e.g., high Signal-ATR-Ratio >1.2x, opposing Macro, or overly distant targets) and explicitly reference these lessons in 'Historical_Calibration'."
+        f"=== EMPIRICAL AI TRACK RECORD & MULTI-DIMENSIONAL REGIME MATRIX (ALL {stats['total_evaluated']} EVALUATED SETUPS) ===\n"
+        f"- Overall Performance: {stats['win_rate']}% Win Rate ({stats['hits']} Hits, {stats['misses']} Misses) | Active Setups: {stats.get('active_signals', 0)}\n"
+        f"- Win Rate by Direction: {dir_line}\n"
+        f"- Win Rate by Volatility / ATR Exhaustion: {atr_line}\n"
+        f"- Win Rate by Macro / USD Alignment: {mac_line}\n"
+        f"- Win Rate by News Category: {cat_line}\n"
+        f"- Win Rate by AI Confidence Tier: {conf_line}\n"
+        f"- Last {len(recent_items)} Completed Setups:\n{recent_block}\n"
+        f"- MANDATORY CALIBRATION RULE: Match each new cluster to its exact category, current ATR-Ratio bucket, and USD alignment in the Regime Matrix above. Explicitly cite the corresponding historical win rate from the matrix in 'Historical_Calibration' and penalize Probability_Percent if the current regime has a <45% historical win rate!"
     )
 
 def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_summary, crypto_basis_obj=None):
@@ -821,20 +986,21 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
     clusters_input = []
     for idx, c in enumerate(clusters_batch):
         recent_arts = sorted(c["articles"], key=lambda x: x.get("_timestamp", 0), reverse=True)[:4]
+        cat_label = classify_news_category(recent_arts[0]["title"], recent_arts[0]["source"]) if recent_arts else "General"
         arts_text = "\n".join([f"  * [{a['source']}] ({a['date']} UTC): {a['title']} — {a['description']}" for a in recent_arts])
-        clusters_input.append(f"=== CLUSTER_ID: {idx} ===\n{arts_text}")
+        clusters_input.append(f"=== CLUSTER_ID: {idx} | CATEGORY: {cat_label} ===\n{arts_text}")
         
     all_clusters_str = "\n\n".join(clusters_input)
     
     prompt = f"""You are an objective Intelligence & Calibration Agent for a manual Gold (XAU/USD) & Macro trader.
-    Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, 24/7 XAUUSDT.P perpetual basis, orderbook, and historical track record context below.
+    Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, 24/7 XAUUSDT.P perpetual basis, orderbook, and the Empirical Multi-Dimensional Regime Matrix below.
     Do NOT hide or dismiss minor news—thoroughly contextualize every cluster!
     Note: Every directional forecast ('Bullish' or 'Bearish') with Probability_Percent > 50% will be automatically tracked and evaluated over 20 hours against actual OANDA candles!
     Output ONLY a valid JSON array of {len(clusters_batch)} objects (one object per CLUSTER_ID). Write all values strictly in English!
 
     Current Reference Time: {now_utc_str}
 
-    Shared Market, 24/7 Crypto-Gold Perpetual Basis, Orderbook & Self-Learning Memory:
+    Shared Market, 24/7 Crypto-Gold Perpetual Basis, Orderbook & Empirical Regime Matrix:
     {perf_memory_str}
     {crypto_basis_str}
     {macro_context_str}
@@ -854,7 +1020,7 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
         "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, 24/7 OKX XAUUSDT.P Basis Spread (Weekend Gap or Intraday Perp Premium), and OANDA Retail Sentiment interact with this news.",
         "Bull_Case": "Arguments and catalysts supporting a Bullish XAU/USD reaction.",
         "Bear_Case": "Counter-arguments, priced-in risks, or macro headwinds supporting a Bearish/muted XAU/USD reaction.",
-        "Historical_Calibration": "Candid calibration note referencing specific lessons from the Historical Signal Track Record (e.g., past drawdowns, ATR exhaustion, macro alignment).",
+        "Historical_Calibration": "Candid calibration audit citing the exact Win Rate from the Regime Matrix for this cluster's Category, ATR-Exhaustion bucket, and USD alignment.",
         "Impact_Timing": "Future, Present, or Past (Already Priced In)",
         "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",

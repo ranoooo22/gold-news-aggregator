@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 339,
-    "hits": 197,
-    "misses": 142,
+    "total_evaluated": 341,
+    "hits": 198,
+    "misses": 143,
     "win_rate": 58.1,
-    "active_signals": 21,
+    "active_signals": 22,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 155,
-                "misses": 110,
-                "total": 265,
-                "win_rate": 58.5,
-                "avg_dd": 17.61
+                "misses": 111,
+                "total": 266,
+                "win_rate": 58.3,
+                "avg_dd": 18.22
             },
             "Bearish": {
-                "hits": 42,
+                "hits": 43,
                 "misses": 32,
-                "total": 74,
-                "win_rate": 56.8,
-                "avg_dd": 19.89
+                "total": 75,
+                "win_rate": 57.3,
+                "avg_dd": 19.69
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 183,
-                "misses": 142,
-                "total": 325,
+                "hits": 184,
+                "misses": 143,
+                "total": 327,
                 "win_rate": 56.3,
-                "avg_dd": 18.74
+                "avg_dd": 19.25
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
@@ -53,11 +53,11 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 86,
-                "misses": 45,
-                "total": 131,
-                "win_rate": 65.6,
-                "avg_dd": 20.31
+                "hits": 87,
+                "misses": 46,
+                "total": 133,
+                "win_rate": 65.4,
+                "avg_dd": 21.32
             },
             "Against USD Headwind": {
                 "hits": 108,
@@ -77,17 +77,17 @@
         "by_category": {
             "Geopolitics & War": {
                 "hits": 110,
-                "misses": 82,
-                "total": 192,
-                "win_rate": 57.3,
-                "avg_dd": 18.33
+                "misses": 83,
+                "total": 193,
+                "win_rate": 57.0,
+                "avg_dd": 19.19
             },
             "Fed, Rates & Macro": {
-                "hits": 10,
+                "hits": 11,
                 "misses": 7,
-                "total": 17,
-                "win_rate": 58.8,
-                "avg_dd": 12.19
+                "total": 18,
+                "win_rate": 61.1,
+                "avg_dd": 12.24
             },
             "Tech, AI & Equities": {
                 "hits": 51,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 197,
-                "misses": 136,
-                "total": 333,
-                "win_rate": 59.2,
-                "avg_dd": 18.1
+                "hits": 198,
+                "misses": 137,
+                "total": 335,
+                "win_rate": 59.1,
+                "avg_dd": 18.58
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -4722,20 +4722,20 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$7.52)"
         },
         "https://www.aljazeera.com/news/2026/11/9/south-africa-detains-foreigners-suspected-of-heading-to-join-russian-forces?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "South Africa detains foreigners suspected of heading to join Russian forces",
             "source": "Al Jazeera English",
             "impact": "Bullish",
             "prob": 51,
             "entry_price": 4136.53,
             "target": 4149.25,
-            "max_dd_usd": 103.5,
+            "max_dd_usd": 122.89,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
             "created_ts": 1794254205.0,
             "date": "First Reported: 2026-11-09 19:56 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$122.89 >= 1.8x ATR) before target"
         },
         "https://www.cnbc.com/2026/11/09/elizabeth-warren-senate-banking-agenda.html": {
             "status": "MISS",
@@ -5113,7 +5113,7 @@
             "prob": 52,
             "entry_price": 4074.47,
             "target": 4120.65,
-            "max_dd_usd": 41.44,
+            "max_dd_usd": 60.83,
             "atr_ratio_at_signal": 0.82,
             "daily_atr_at_signal": 56.82,
             "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
@@ -5145,7 +5145,7 @@
             "prob": 55,
             "entry_price": 4074.47,
             "target": 4120.65,
-            "max_dd_usd": 41.44,
+            "max_dd_usd": 60.83,
             "atr_ratio_at_signal": 0.82,
             "daily_atr_at_signal": 56.82,
             "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
@@ -5161,7 +5161,7 @@
             "prob": 55,
             "entry_price": 4087.53,
             "target": 4120.65,
-            "max_dd_usd": 54.5,
+            "max_dd_usd": 73.89,
             "atr_ratio_at_signal": 0.82,
             "daily_atr_at_signal": 56.82,
             "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
@@ -5193,7 +5193,7 @@
             "prob": 55,
             "entry_price": 4087.53,
             "target": 4120.65,
-            "max_dd_usd": 54.5,
+            "max_dd_usd": 73.89,
             "atr_ratio_at_signal": 0.82,
             "daily_atr_at_signal": 56.82,
             "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
@@ -5401,7 +5401,7 @@
             "prob": 55,
             "entry_price": 4087.53,
             "target": 4120.72,
-            "max_dd_usd": 54.5,
+            "max_dd_usd": 73.89,
             "atr_ratio_at_signal": 0.73,
             "daily_atr_at_signal": 54.03,
             "macro_snapshot": "EUR +0.28%, NAS100 +2.67%",
@@ -5433,7 +5433,7 @@
             "prob": 55,
             "entry_price": 4079.11,
             "target": 4090.03,
-            "max_dd_usd": 46.08,
+            "max_dd_usd": 65.47,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5449,7 +5449,7 @@
             "prob": 55,
             "entry_price": 4079.11,
             "target": 4090.03,
-            "max_dd_usd": 46.08,
+            "max_dd_usd": 65.47,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5481,7 +5481,7 @@
             "prob": 55,
             "entry_price": 4079.11,
             "target": 4090.03,
-            "max_dd_usd": 46.08,
+            "max_dd_usd": 65.47,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5497,7 +5497,7 @@
             "prob": 55,
             "entry_price": 4079.11,
             "target": 4090.03,
-            "max_dd_usd": 46.08,
+            "max_dd_usd": 65.47,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5513,7 +5513,7 @@
             "prob": 55,
             "entry_price": 4079.11,
             "target": 4090.03,
-            "max_dd_usd": 46.08,
+            "max_dd_usd": 65.47,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5529,7 +5529,7 @@
             "prob": 55,
             "entry_price": 4074.35,
             "target": 4090.03,
-            "max_dd_usd": 41.32,
+            "max_dd_usd": 60.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5545,7 +5545,7 @@
             "prob": 55,
             "entry_price": 4074.35,
             "target": 4090.03,
-            "max_dd_usd": 41.32,
+            "max_dd_usd": 60.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5561,7 +5561,7 @@
             "prob": 55,
             "entry_price": 4074.35,
             "target": 4090.03,
-            "max_dd_usd": 41.32,
+            "max_dd_usd": 60.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5577,7 +5577,7 @@
             "prob": 55,
             "entry_price": 4074.35,
             "target": 4090.03,
-            "max_dd_usd": 41.32,
+            "max_dd_usd": 60.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5593,7 +5593,7 @@
             "prob": 55,
             "entry_price": 4074.35,
             "target": 4090.03,
-            "max_dd_usd": 41.32,
+            "max_dd_usd": 60.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5609,7 +5609,7 @@
             "prob": 55,
             "entry_price": 4074.35,
             "target": 4090.03,
-            "max_dd_usd": 41.32,
+            "max_dd_usd": 60.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5625,7 +5625,7 @@
             "prob": 55,
             "entry_price": 4074.35,
             "target": 4090.03,
-            "max_dd_usd": 41.32,
+            "max_dd_usd": 60.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5641,7 +5641,7 @@
             "prob": 55,
             "entry_price": 4074.35,
             "target": 4090.03,
-            "max_dd_usd": 41.32,
+            "max_dd_usd": 60.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
@@ -5657,7 +5657,7 @@
             "prob": 55,
             "entry_price": 4050.64,
             "target": 4060.08,
-            "max_dd_usd": 16.52,
+            "max_dd_usd": 37.0,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 62.91,
             "macro_snapshot": "EUR -0.25%, NAS100 -0.24%",
@@ -5874,7 +5874,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
         },
         "https://www.marketwatch.com/story/why-stocks-are-falling-and-10-year-yields-are-climbing-back-near-5-after-tuesdays-inflation-report-389b8392?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Why stocks are falling and 10-year yields are climbing back near 5% after Tuesday’s inflat",
             "source": "MarketWatch Macro",
             "category": "Fed, Rates & Macro",
@@ -5890,6 +5890,63 @@
             "macro_snapshot": "EUR -0.39%, NAS100 -0.96%",
             "created_ts": 1794325620.0,
             "date": "First Reported: 2026-11-10 15:47 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$12.78)"
+        },
+        "https://www.fool.com/investing/2026/11/10/2-etfs-to-buy-now-if-a-recession-is-coming-in-2027/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "2 ETFs to Buy Now If a Recession Is Coming in 2027",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4022.3,
+            "target": 4059.98,
+            "max_dd_usd": 8.66,
+            "atr_ratio_at_signal": 0.49,
+            "daily_atr_at_signal": 67.86,
+            "eur_chg_at_signal": -0.48,
+            "nas_chg_at_signal": -1.12,
+            "macro_snapshot": "EUR -0.48%, NAS100 -1.12%",
+            "created_ts": 1794329400.0,
+            "date": "First Reported: 2026-11-10 16:50 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/10/fed-governor-christopher-waller-just-said-21-words-that-could-challenge-the-stock-market-through-year-end/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Fed Governor Christopher Waller Just Said 21 Words That Could Challenge the Stock Market T",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4022.3,
+            "target": 4059.98,
+            "max_dd_usd": 8.66,
+            "atr_ratio_at_signal": 0.49,
+            "daily_atr_at_signal": 67.86,
+            "eur_chg_at_signal": -0.48,
+            "nas_chg_at_signal": -1.12,
+            "macro_snapshot": "EUR -0.48%, NAS100 -1.12%",
+            "created_ts": 1794328862.0,
+            "date": "First Reported: 2026-11-10 16:41 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/10/deadly-egypt-train-collision-prompts-calls-for-political-accountability?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Deadly Egypt train crash prompts calls for political accountability",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4042.39,
+            "target": 4059.98,
+            "max_dd_usd": 28.75,
+            "atr_ratio_at_signal": 0.49,
+            "daily_atr_at_signal": 67.86,
+            "eur_chg_at_signal": -0.48,
+            "nas_chg_at_signal": -1.12,
+            "macro_snapshot": "EUR -0.48%, NAS100 -1.12%",
+            "created_ts": 1794324137.0,
+            "date": "First Reported: 2026-11-10 15:22 UTC",
             "fail_reason": ""
         }
     }

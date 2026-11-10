@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 351,
-    "hits": 208,
+    "total_evaluated": 352,
+    "hits": 209,
     "misses": 143,
-    "win_rate": 59.3,
-    "active_signals": 62,
+    "win_rate": 59.4,
+    "active_signals": 64,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 163,
+                "hits": 164,
                 "misses": 111,
-                "total": 274,
-                "win_rate": 59.5,
-                "avg_dd": 17.77
+                "total": 275,
+                "win_rate": 59.6,
+                "avg_dd": 18.08
             },
             "Bearish": {
                 "hits": 45,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 194,
+                "hits": 195,
                 "misses": 143,
-                "total": 337,
-                "win_rate": 57.6,
-                "avg_dd": 18.68
+                "total": 338,
+                "win_rate": 57.7,
+                "avg_dd": 18.95
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
@@ -53,11 +53,11 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 89,
+                "hits": 90,
                 "misses": 46,
-                "total": 135,
-                "win_rate": 65.9,
-                "avg_dd": 20.99
+                "total": 136,
+                "win_rate": 66.2,
+                "avg_dd": 21.54
             },
             "Against USD Headwind": {
                 "hits": 116,
@@ -97,20 +97,20 @@
                 "avg_dd": 15.74
             },
             "Commodities & Energy": {
-                "hits": 27,
+                "hits": 28,
                 "misses": 18,
-                "total": 45,
-                "win_rate": 60.0,
-                "avg_dd": 23.07
+                "total": 46,
+                "win_rate": 60.9,
+                "avg_dd": 25.1
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 208,
+                "hits": 209,
                 "misses": 137,
-                "total": 345,
-                "win_rate": 60.3,
-                "avg_dd": 18.07
+                "total": 346,
+                "win_rate": 60.4,
+                "avg_dd": 18.33
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -5394,20 +5394,20 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$6.46)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-10-094800346.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Stock Market News for Nov 10, 2026",
             "source": "Yahoo Finance Oil",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 53,
             "entry_price": 4087.53,
-            "target": 4120.72,
+            "target": 4050.28,
             "max_dd_usd": 73.89,
             "atr_ratio_at_signal": 0.73,
             "daily_atr_at_signal": 54.03,
             "macro_snapshot": "EUR +0.28%, NAS100 +2.67%",
             "created_ts": 1794304080.0,
             "date": "First Reported: 2026-11-10 09:48 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$73.89)"
         },
         "https://investorshub.advfn.com/market-news/article/39501/us-stock-futures-mixed-as-investors-assess-berkshire-hathaway-earnings-nvidia-reports-and-ai-regulation-plans-dow-jones-sp-nasdaq-wall-street?.tsrc=rss": {
             "status": "HIT",
@@ -6357,7 +6357,7 @@
             "prob": 55,
             "entry_price": 4031.16,
             "target": 4021.69,
-            "max_dd_usd": 5.52,
+            "max_dd_usd": 6.78,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 68.78,
             "eur_chg_at_signal": -0.5,
@@ -6508,7 +6508,7 @@
             "impact": "Bullish",
             "prob": 52,
             "entry_price": 4031.55,
-            "target": 4038.76,
+            "target": 4050.28,
             "max_dd_usd": 4.85,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 66.25,
@@ -6699,7 +6699,7 @@
             "prob": 52,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 5.6,
+            "max_dd_usd": 7.76,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -6718,7 +6718,7 @@
             "prob": 61,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 5.6,
+            "max_dd_usd": 7.76,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -6755,8 +6755,8 @@
             "impact": "Bullish",
             "prob": 53,
             "entry_price": 4032.51,
-            "target": 4038.8,
-            "max_dd_usd": 0.0,
+            "target": 4050.28,
+            "max_dd_usd": 1.45,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 67.86,
             "eur_chg_at_signal": -0.51,
@@ -6775,7 +6775,7 @@
             "prob": 52,
             "entry_price": 4032.51,
             "target": 4038.8,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 1.45,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 67.86,
             "eur_chg_at_signal": -0.51,
@@ -6794,7 +6794,7 @@
             "prob": 54,
             "entry_price": 4032.51,
             "target": 4038.8,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 1.45,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 67.86,
             "eur_chg_at_signal": -0.51,
@@ -6813,7 +6813,7 @@
             "prob": 52,
             "entry_price": 4032.51,
             "target": 4038.8,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 1.45,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 67.86,
             "eur_chg_at_signal": -0.51,
@@ -6832,7 +6832,7 @@
             "prob": 53,
             "entry_price": 4032.51,
             "target": 4038.76,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 1.45,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 66.23,
             "eur_chg_at_signal": -0.46,
@@ -6851,7 +6851,7 @@
             "prob": 56,
             "entry_price": 4032.51,
             "target": 4038.76,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 1.45,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 66.23,
             "eur_chg_at_signal": -0.46,
@@ -6870,7 +6870,7 @@
             "prob": 56,
             "entry_price": 4032.51,
             "target": 4038.76,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 1.45,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 66.23,
             "eur_chg_at_signal": -0.46,
@@ -6889,7 +6889,7 @@
             "prob": 55,
             "entry_price": 4032.51,
             "target": 4038.76,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 1.45,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 66.23,
             "eur_chg_at_signal": -0.46,
@@ -6897,6 +6897,63 @@
             "macro_snapshot": "EUR -0.46%, NAS100 -0.77%",
             "created_ts": 1794349621.0,
             "date": "First Reported: 2026-11-10 22:27 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/10/massive-fire-as-israeli-settlers-burn-down-business-near-nablus?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Massive fire as Israeli settlers burn down business near Nablus",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4035.14,
+            "target": 4050.28,
+            "max_dd_usd": 4.08,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 67.21,
+            "eur_chg_at_signal": -0.46,
+            "nas_chg_at_signal": -0.38,
+            "macro_snapshot": "EUR -0.46%, NAS100 -0.38%",
+            "created_ts": 1794353623.0,
+            "date": "First Reported: 2026-11-10 23:33 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/10/hyperscalers-are-projected-to-spend-13-trillion-on/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Hyperscalers Are Projected to Spend $1.3 Trillion on Capex in 2027. Here's the 1 Industria",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 51,
+            "entry_price": 4035.14,
+            "target": 4050.28,
+            "max_dd_usd": 4.08,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 67.21,
+            "eur_chg_at_signal": -0.46,
+            "nas_chg_at_signal": -0.38,
+            "macro_snapshot": "EUR -0.46%, NAS100 -0.38%",
+            "created_ts": 1794353100.0,
+            "date": "First Reported: 2026-11-10 23:25 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/investors-may-respond-valero-energy-221552897.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "How Investors May Respond To Valero Energy (VLO) Dividend Affirmation",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4032.51,
+            "target": 4050.28,
+            "max_dd_usd": 1.45,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 67.21,
+            "eur_chg_at_signal": -0.46,
+            "nas_chg_at_signal": -0.38,
+            "macro_snapshot": "EUR -0.46%, NAS100 -0.38%",
+            "created_ts": 1794348952.0,
+            "date": "First Reported: 2026-11-10 22:15 UTC",
             "fail_reason": ""
         }
     }

@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 350,
-    "hits": 207,
+    "total_evaluated": 351,
+    "hits": 208,
     "misses": 143,
-    "win_rate": 59.1,
-    "active_signals": 42,
+    "win_rate": 59.3,
+    "active_signals": 51,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -14,20 +14,20 @@
                 "avg_dd": 17.77
             },
             "Bearish": {
-                "hits": 44,
+                "hits": 45,
                 "misses": 32,
-                "total": 76,
-                "win_rate": 57.9,
-                "avg_dd": 19.31
+                "total": 77,
+                "win_rate": 58.4,
+                "avg_dd": 18.94
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 193,
+                "hits": 194,
                 "misses": 143,
-                "total": 336,
-                "win_rate": 57.4,
-                "avg_dd": 18.74
+                "total": 337,
+                "win_rate": 57.6,
+                "avg_dd": 18.68
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
@@ -53,11 +53,11 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 88,
+                "hits": 89,
                 "misses": 46,
-                "total": 134,
-                "win_rate": 65.7,
-                "avg_dd": 21.16
+                "total": 135,
+                "win_rate": 65.9,
+                "avg_dd": 20.99
             },
             "Against USD Headwind": {
                 "hits": 116,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 115,
+                "hits": 116,
                 "misses": 83,
-                "total": 198,
-                "win_rate": 58.1,
-                "avg_dd": 18.75
+                "total": 199,
+                "win_rate": 58.3,
+                "avg_dd": 18.64
             },
             "Fed, Rates & Macro": {
                 "hits": 13,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 207,
+                "hits": 208,
                 "misses": 137,
-                "total": 344,
-                "win_rate": 60.2,
-                "avg_dd": 18.13
+                "total": 345,
+                "win_rate": 60.3,
+                "avg_dd": 18.07
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -6357,7 +6357,7 @@
             "prob": 55,
             "entry_price": 4031.16,
             "target": 4021.69,
-            "max_dd_usd": 4.62,
+            "max_dd_usd": 5.52,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 68.78,
             "eur_chg_at_signal": -0.5,
@@ -6498,6 +6498,196 @@
             "macro_snapshot": "EUR -0.53%, NAS100 -0.71%",
             "created_ts": 1794340818.0,
             "date": "First Reported: 2026-11-10 20:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.cnbc.com/2026/11/10/coreweave-earnings-preview-debt-capex.html": {
+            "status": "ACTIVE",
+            "headline": "CoreWeave earnings put debt-fueled AI build-out under scrutiny",
+            "source": "CNBC Tech & AI",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 54,
+            "entry_price": 4031.55,
+            "target": 4050.21,
+            "max_dd_usd": 1.61,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794345691.0,
+            "date": "First Reported: 2026-11-10 15:01 UTC | Last Update: 2026-11-10 21:21 UTC",
+            "fail_reason": ""
+        },
+        "https://www.cnbc.com/2026/11/10/tsmcs-october-sales-.html": {
+            "status": "ACTIVE",
+            "headline": "TSMC's October sales jump as global chip boom rolls on",
+            "source": "CNBC Tech & AI",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.55,
+            "target": 4050.21,
+            "max_dd_usd": 1.61,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794345515.0,
+            "date": "First Reported: 2026-11-10 05:42 UTC | Last Update: 2026-11-10 21:18 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketbeat.com/instant-alerts/transcript-infinity-natural-resources-q3-earnings-call-highlights-2026-11-10/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Infinity Natural Resources Q3 Earnings Call Highlights",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 53,
+            "entry_price": 4031.55,
+            "target": 4050.21,
+            "max_dd_usd": 1.61,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794345316.0,
+            "date": "First Reported: 2026-11-10 21:15 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-end-lower-211356171.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "US Equity Markets End Lower as Inflation Tops Expectations",
+            "source": "Yahoo Finance Oil",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bullish",
+            "prob": 57,
+            "entry_price": 4031.55,
+            "target": 4050.21,
+            "max_dd_usd": 1.61,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794345236.0,
+            "date": "First Reported: 2026-11-10 21:13 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/ai/articles/bedrock-data-extends-data-control-211100653.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Bedrock Data Extends Data Control to Agents as OpenShell Moves to the CNCF",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.55,
+            "target": 4050.21,
+            "max_dd_usd": 1.61,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794345060.0,
+            "date": "First Reported: 2026-11-10 21:11 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/10/white-house-announces-funds-for-law-enforcement-programme-in-several-cities?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "White House announces funds for law enforcement programme in several cities",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.55,
+            "target": 4050.21,
+            "max_dd_usd": 1.61,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794344401.0,
+            "date": "First Reported: 2026-11-10 21:00 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/amap-minerals-reports-third-quarter-210000155.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "AMAPÁ MINERALS REPORTS THIRD QUARTER 2026 FINANCIAL RESULTS AS RAMP-UP ADVANCES",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.55,
+            "target": 4050.21,
+            "max_dd_usd": 6.0,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794344400.0,
+            "date": "First Reported: 2026-11-10 21:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/10/worried-about-a-market-crash-these-3-high-yielding-stocks-can-be-safe-long-term-options/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Worried About a Market Crash? These 3 High-Yielding Stocks Can Be Safe Long-Term Options",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.3,
+            "target": 4050.21,
+            "max_dd_usd": 5.75,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794344222.0,
+            "date": "First Reported: 2026-11-10 20:57 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/un-peacekeepers-say-came-under-fire-southern-lebanon": {
+            "status": "HIT",
+            "headline": "UN peacekeepers say came they under fire in southern Lebanon",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4031.3,
+            "target": 4029.66,
+            "max_dd_usd": 5.38,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794344176.0,
+            "date": "First Reported: 2026-11-10 20:56 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.38)"
+        },
+        "https://www.tehrantimes.com/news/532032/Massie-forces-House-vote-to-impeach-Hegseth-over-Iran-war-Minab": {
+            "status": "ACTIVE",
+            "headline": "Massie forces House vote to impeach Hegseth over Iran war, Minab school massacre",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.3,
+            "target": 4050.21,
+            "max_dd_usd": 5.75,
+            "atr_ratio_at_signal": 0.2,
+            "daily_atr_at_signal": 66.25,
+            "eur_chg_at_signal": -0.49,
+            "nas_chg_at_signal": -0.72,
+            "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
+            "created_ts": 1794343824.0,
+            "date": "First Reported: 2026-11-10 20:50 UTC",
             "fail_reason": ""
         }
     }

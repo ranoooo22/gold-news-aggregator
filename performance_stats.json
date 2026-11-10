@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 287,
-    "hits": 158,
+    "total_evaluated": 308,
+    "hits": 179,
     "misses": 129,
-    "win_rate": 55.1,
-    "active_signals": 24,
+    "win_rate": 58.1,
+    "active_signals": 21,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -3654,7 +3654,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$2.46)"
         },
         "https://www.investing.com/news/commodities-news/china-extends-suspension-of-new-rare-earth-controls-until-january-5010878": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "China extends suspension of new rare earth controls until January",
             "source": "Investing.com",
             "impact": "Bearish",
@@ -3667,7 +3667,7 @@
             "macro_snapshot": "EUR +0.16%, NAS100 -0.22%",
             "created_ts": 1794215903.0,
             "date": "First Reported: 2026-11-09 09:18 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$53.76)"
         },
         "https://finance.yahoo.com/real-estate/articles/3-reit-stocks-offering-steadier-091512245.html?.tsrc=rss": {
             "status": "HIT",
@@ -3782,7 +3782,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$1.68)"
         },
         "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-ethereum-xrp-whipsaw-on-nvidia-scandal-iran-tensions/cNGr4kAR9ej?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Bitcoin, Ethereum, XRP Whipsaw On Nvidia Scandal, Iran Tensions: Crypto Sell-Off Sparks $1",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -3795,7 +3795,7 @@
             "macro_snapshot": "EUR +0.19%, NAS100 +0.33%",
             "created_ts": 1794220152.0,
             "date": "First Reported: 2026-11-09 10:29 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$51.98)"
         },
         "https://stocktwits.com/news-articles/markets/equity/stock-market-correction-or-crash-3-charts-for-the-week-ahead/cNGr4EOR9e1?.tsrc=rss": {
             "status": "HIT",
@@ -3862,7 +3862,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$5.80)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/nvidia-scandal-hurdled-pre-bell-111038422.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Nvidia Scandal Hurdled on Pre-Bell Wall Street; Asia, Europe Up",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -3875,10 +3875,10 @@
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
             "created_ts": 1794222638.0,
             "date": "First Reported: 2026-11-09 11:10 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$45.04)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/proshares-trust-tqqq-buys-83-110500104.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Proshares Trust (TQQQ) Buys $83.0 Million More Apple on Thursday",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -3891,7 +3891,7 @@
             "macro_snapshot": "EUR +0.21%, NAS100 +0.08%",
             "created_ts": 1794222300.0,
             "date": "First Reported: 2026-11-09 11:05 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$45.04)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/spdr-dow-jones-industrial-avg-110445805.html?.tsrc=rss": {
             "status": "HIT",
@@ -4358,7 +4358,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$6.80)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/quarterly-reports-independent-board-inquiry-170200762.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Quarterly Reports and an Independent Board Inquiry Frame the Chip Sector's Week",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bearish",
@@ -4371,7 +4371,7 @@
             "macro_snapshot": "EUR +0.53%, NAS100 +3.26%",
             "created_ts": 1794243720.0,
             "date": "First Reported: 2026-11-09 17:02 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$41.32)"
         },
         "https://www.tehrantimes.com/news/531989/Handala-warns-Israelis-of-life-without-water-and-electricity": {
             "status": "HIT",
@@ -4518,7 +4518,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$7.10)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/apa-beats-q3-earnings-strong-152500793.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "APA Beats Q3 Earnings: Can Strong Momentum Drive the Stock Higher?",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -4531,7 +4531,7 @@
             "macro_snapshot": "EUR +0.53%, NAS100 +3.26%",
             "created_ts": 1794237900.0,
             "date": "First Reported: 2026-11-09 15:25 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$28.06)"
         },
         "https://finance.yahoo.com/markets/article/tech-stocks-rally-as-nvidia-stock-and-oil-prices-fall-alphacheck-152208023.html?.tsrc=rss": {
             "status": "HIT",
@@ -4566,7 +4566,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$7.52)"
         },
         "https://finance.yahoo.com/energy/articles/valero-energy-surges-113-ytd-143500800.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Valero Energy Surges 113% YTD: Should Investors Bet on the Momentum?",
             "source": "Yahoo Finance Oil",
             "impact": "Bearish",
@@ -4579,7 +4579,7 @@
             "macro_snapshot": "EUR +0.53%, NAS100 +3.26%",
             "created_ts": 1794234900.0,
             "date": "First Reported: 2026-11-09 14:35 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$28.02)"
         },
         "https://www.aljazeera.com/news/2026/11/9/what-catastrophic-south-africa-local-election-results-mean-for-anc?traffic_source=rss": {
             "status": "HIT",
@@ -4605,7 +4605,7 @@
             "prob": 51,
             "entry_price": 4136.53,
             "target": 4149.25,
-            "max_dd_usd": 35.31,
+            "max_dd_usd": 63.22,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4621,7 +4621,7 @@
             "prob": 52,
             "entry_price": 4136.53,
             "target": 4149.25,
-            "max_dd_usd": 35.31,
+            "max_dd_usd": 63.22,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4637,7 +4637,7 @@
             "prob": 55,
             "entry_price": 4136.53,
             "target": 4149.25,
-            "max_dd_usd": 35.31,
+            "max_dd_usd": 63.22,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4653,7 +4653,7 @@
             "prob": 55,
             "entry_price": 4104.45,
             "target": 4149.25,
-            "max_dd_usd": 3.86,
+            "max_dd_usd": 31.14,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4669,7 +4669,7 @@
             "prob": 55,
             "entry_price": 4104.45,
             "target": 4149.25,
-            "max_dd_usd": 3.86,
+            "max_dd_usd": 31.14,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4685,7 +4685,7 @@
             "prob": 55,
             "entry_price": 4104.45,
             "target": 4149.25,
-            "max_dd_usd": 3.86,
+            "max_dd_usd": 31.14,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4701,7 +4701,7 @@
             "prob": 55,
             "entry_price": 4102.16,
             "target": 4149.25,
-            "max_dd_usd": 1.57,
+            "max_dd_usd": 28.85,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4717,7 +4717,7 @@
             "prob": 55,
             "entry_price": 4102.16,
             "target": 4149.25,
-            "max_dd_usd": 1.57,
+            "max_dd_usd": 28.85,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4733,7 +4733,7 @@
             "prob": 55,
             "entry_price": 4102.16,
             "target": 4149.25,
-            "max_dd_usd": 1.57,
+            "max_dd_usd": 28.85,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4749,7 +4749,7 @@
             "prob": 55,
             "entry_price": 4102.16,
             "target": 4149.25,
-            "max_dd_usd": 1.57,
+            "max_dd_usd": 28.85,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4765,7 +4765,7 @@
             "prob": 55,
             "entry_price": 4102.16,
             "target": 4149.25,
-            "max_dd_usd": 1.57,
+            "max_dd_usd": 28.85,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4781,7 +4781,7 @@
             "prob": 55,
             "entry_price": 4102.16,
             "target": 4149.25,
-            "max_dd_usd": 1.57,
+            "max_dd_usd": 28.85,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 60.7,
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
@@ -4797,7 +4797,7 @@
             "prob": 53,
             "entry_price": 4136.53,
             "target": 4149.48,
-            "max_dd_usd": 35.31,
+            "max_dd_usd": 63.22,
             "atr_ratio_at_signal": 0.58,
             "daily_atr_at_signal": 60.77,
             "macro_snapshot": "EUR +0.74%, NAS100 +3.87%",
@@ -4829,7 +4829,7 @@
             "prob": 55,
             "entry_price": 4144.78,
             "target": 4149.5,
-            "max_dd_usd": 34.69,
+            "max_dd_usd": 71.47,
             "atr_ratio_at_signal": 0.76,
             "daily_atr_at_signal": 56.38,
             "macro_snapshot": "EUR +0.65%, NAS100 +3.32%",
@@ -4838,7 +4838,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/barrick-reports-third-quarter-2026-110000619.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Barrick Reports Third Quarter 2026 Results",
             "source": "Yahoo Finance Gold",
             "impact": "Bearish",
@@ -4851,7 +4851,7 @@
             "macro_snapshot": "EUR +0.58%, NAS100 +2.77%",
             "created_ts": 1794276737.0,
             "date": "First Reported: 2026-11-09 11:00 UTC | Last Update: 2026-11-10 02:12 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$15.65)"
         },
         "https://247wallst.com/personal-finance/social-security/2026/11/09/he-watches-the-nasdaq-plunge-5-5-at-63-claiming-social-security-to-avoid-selling-stocks-could-lock-in-a-smaller-check-for-life/?.tsrc=rss": {
             "status": "HIT",
@@ -4870,7 +4870,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$2.33)"
         },
         "https://www.aljazeera.com/news/2026/11/9/israels-shin-bet-finds-no-evidence-of-foreign-election-meddling-report?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Israel’s Shin Bet finds no evidence of foreign election meddling: Report",
             "source": "Al Jazeera English",
             "impact": "Bearish",
@@ -4883,10 +4883,10 @@
             "macro_snapshot": "EUR +0.58%, NAS100 +2.77%",
             "created_ts": 1794275999.0,
             "date": "First Reported: 2026-11-09 16:18 UTC | Last Update: 2026-11-10 01:59 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$13.73)"
         },
         "https://www.aljazeera.com/news/2026/11/10/poll-finds-voters-preferred-candidates-who-opposed-iran-war-by-3-1-margin?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Poll finds Americans less likely to back pro-war candidates by 3-1 margin",
             "source": "Al Jazeera English",
             "impact": "Bearish",
@@ -4899,7 +4899,7 @@
             "macro_snapshot": "EUR +0.58%, NAS100 +2.77%",
             "created_ts": 1794275807.0,
             "date": "First Reported: 2026-11-10 01:56 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$13.73)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/peabody-energy-btu-reacts-oil-012111628.html?.tsrc=rss": {
             "status": "HIT",
@@ -4980,6 +4980,294 @@
             "created_ts": 1794260708.0,
             "date": "First Reported: 2026-11-09 21:45 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$6.60)"
+        },
+        "https://www.investing.com/news/commodities-news/vanishing-vessels-and-missing-sailors-the-iran-wars-human-cost-at-sea-5014523": {
+            "status": "ACTIVE",
+            "headline": "Vanishing vessels and missing sailors: The Iran war’s human cost at sea",
+            "source": "Investing.com",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4074.47,
+            "target": 4120.65,
+            "max_dd_usd": 1.16,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794306266.0,
+            "date": "First Reported: 2026-11-10 10:24 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249297/Trilateral-talks-between-Russia-US-Ukraine-kick-off-in-UAE": {
+            "status": "ACTIVE",
+            "headline": "Trilateral talks between Russia, US, Ukraine kick off in UAE",
+            "source": "Mehr News Agency",
+            "impact": "Bearish",
+            "prob": 56,
+            "entry_price": 4074.47,
+            "target": 4070.73,
+            "max_dd_usd": 14.25,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794306062.0,
+            "date": "First Reported: 2026-11-10 10:21 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/10/alphabet-meta-and-oracle-are-all-teaming-up-to-dis/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Alphabet, Meta, and Oracle Are All Teaming Up to Disrupt Nvidia's Biggest Competitive Adva",
+            "source": "Yahoo Finance Nasdaq",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4074.47,
+            "target": 4120.65,
+            "max_dd_usd": 1.16,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794305700.0,
+            "date": "First Reported: 2026-11-10 10:15 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/news/netanyahu-pressed-qatar-continue-funding-gaza-despite-security-warnings-report-finds": {
+            "status": "ACTIVE",
+            "headline": "Netanyahu pressed Qatar to continue funding Gaza despite security warnings, report finds",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4087.53,
+            "target": 4120.65,
+            "max_dd_usd": 14.22,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794304384.0,
+            "date": "First Reported: 2026-11-10 09:53 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketwatch.com/story/feds-waller-puts-half-point-rate-hike-into-the-mix-for-december-1bebdffc?mod=mw_rss_topstories": {
+            "status": "ACTIVE",
+            "headline": "Fed’s Waller puts half-point rate hike into the mix for December",
+            "source": "MarketWatch Macro",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4087.53,
+            "target": 4070.73,
+            "max_dd_usd": 25.82,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794303900.0,
+            "date": "First Reported: 2026-11-10 09:45 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/531998/How-October-7-shattered-Netanyahu-s-grip-on-power-and-Israeli": {
+            "status": "ACTIVE",
+            "headline": "How October 7 shattered Netanyahu's grip on power and Israeli stability",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4087.53,
+            "target": 4120.65,
+            "max_dd_usd": 14.22,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794301856.0,
+            "date": "First Reported: 2026-11-10 09:10 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/world-indices/articles/ftse-100-climbs-sinking-crude-091048234.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "FTSE 100 climbs as sinking crude boosts broader market but drags on energy majors",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4087.53,
+            "target": 4070.73,
+            "max_dd_usd": 25.82,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794301848.0,
+            "date": "First Reported: 2026-11-10 09:10 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/video/great-investors-tough-traders-market-083854974.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Great for Investors, Tough for Traders: Market Analysis",
+            "source": "Yahoo Finance Oil",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4113.37,
+            "target": 4120.65,
+            "max_dd_usd": 1.01,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794299934.0,
+            "date": "First Reported: 2026-11-10 08:38 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.01)"
+        },
+        "https://en.mehrnews.com/news/249296/No-meeting-btw-Iran-s-top-security-official-US-VP-JD-Vance": {
+            "status": "HIT",
+            "headline": "No meeting btw Iran’s top security official, US VP JD Vance",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4113.37,
+            "target": 4120.65,
+            "max_dd_usd": 1.01,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794298947.0,
+            "date": "First Reported: 2026-11-10 08:22 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.01)"
+        },
+        "https://www.tehrantimes.com/news/531968/Ghoddos-calls-time-on-his-international-duty-with-Iran": {
+            "status": "HIT",
+            "headline": "Ghoddos calls time on his international duty with Iran",
+            "source": "Tehran Times",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4113.37,
+            "target": 4120.65,
+            "max_dd_usd": 1.01,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794298355.0,
+            "date": "First Reported: 2026-11-10 08:12 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.01)"
+        },
+        "https://www.aljazeera.com/news/2026/11/10/us-moves-aircraft-from-second-uk-base-over-threat-from-iran?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "US moves aircraft from second UK base over ‘threat from Iran’",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4113.37,
+            "target": 4120.65,
+            "max_dd_usd": 1.01,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794298104.0,
+            "date": "First Reported: 2026-11-10 05:48 UTC | Last Update: 2026-11-10 08:08 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.01)"
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/irans-missile-industry-more-homegrown-persian-carpets-irgc-adviser-says": {
+            "status": "HIT",
+            "headline": "Iran's missile industry 'more homegrown than Persian carpets', IRGC adviser says",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4112.64,
+            "target": 4120.65,
+            "max_dd_usd": 0.34,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794295799.0,
+            "date": "First Reported: 2026-11-10 05:45 UTC | Last Update: 2026-11-10 07:29 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.34)"
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-hits-iran-could-be-five-times-bigger-previous-us-attacks": {
+            "status": "HIT",
+            "headline": "Trump says hits on Iran could be 'five times bigger' than previous US attacks",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4121.24,
+            "target": 4120.65,
+            "max_dd_usd": 2.67,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794292932.0,
+            "date": "First Reported: 2026-11-10 06:42 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.67)"
+        },
+        "https://www.aljazeera.com/news-analysis/2026/11/10/khor-mor-drone-attack-raises-fears-over-iraqs-energy-security?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Khor Mor drone attack raises fears over Iraq’s energy security",
+            "source": "Al Jazeera English",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4121.24,
+            "target": 4120.65,
+            "max_dd_usd": 2.67,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794291720.0,
+            "date": "First Reported: 2026-11-10 06:22 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.67)"
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/us-issues-warnings-against-travel-six-countries-middle-east": {
+            "status": "HIT",
+            "headline": "US issues warnings against travel to six countries in the Middle East",
+            "source": "Middle East Eye",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4123.64,
+            "target": 4120.65,
+            "max_dd_usd": 12.76,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794290287.0,
+            "date": "First Reported: 2026-11-10 05:58 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$12.76)"
+        },
+        "https://en.mehrnews.com/news/249288/Iran-mission-in-Vienna-slams-IAEA-chief-s-selective-outrage": {
+            "status": "HIT",
+            "headline": "Iran mission in Vienna slams IAEA chief's selective outrage",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4114.88,
+            "target": 4120.65,
+            "max_dd_usd": 6.46,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794285373.0,
+            "date": "First Reported: 2026-11-10 04:36 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.46)"
+        },
+        "https://en.mehrnews.com/news/249287/Araghchi-stresses-expanding-Iran-Singapore-relations": {
+            "status": "HIT",
+            "headline": "Araghchi stresses expanding Iran-Singapore relations",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4114.88,
+            "target": 4120.65,
+            "max_dd_usd": 6.46,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794284908.0,
+            "date": "First Reported: 2026-11-10 04:28 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.46)"
+        },
+        "https://en.mehrnews.com/news/249286/Iran-Ground-Force-ready-to-confront-any-threat-Cmdr": {
+            "status": "HIT",
+            "headline": "Iran Ground Force ready to confront any threat: Cmdr.",
+            "source": "Mehr News Agency",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4114.88,
+            "target": 4120.65,
+            "max_dd_usd": 6.46,
+            "atr_ratio_at_signal": 0.82,
+            "daily_atr_at_signal": 56.82,
+            "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
+            "created_ts": 1794284495.0,
+            "date": "First Reported: 2026-11-10 04:21 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.46)"
         }
     }
 }

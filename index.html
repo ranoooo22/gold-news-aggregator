@@ -48,7 +48,7 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
         .header-inner {
-            max-width: 1180px;
+            max-width: 1220px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -116,22 +116,22 @@
         }
 
         .main-wrapper {
-            max-width: 1180px;
-            margin: 20px auto 0 auto;
+            max-width: 1220px;
+            margin: 18px auto 0 auto;
             padding: 0 18px;
         }
 
-        /* Top Macro & Performance Bar */
+        /* Top Macro, Taker Flow & Performance Bar */
         .intel-bar {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-            gap: 12px;
-            margin-bottom: 22px;
+            grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+            gap: 11px;
+            margin-bottom: 14px;
         }
         .intel-card {
             background: var(--bg-card);
             border-radius: var(--radius-lg);
-            padding: 13px 16px;
+            padding: 12px 14px;
             box-shadow: var(--shadow-sm);
             border: 1px solid var(--border-color);
             border-top: 3px solid var(--accent-blue);
@@ -145,21 +145,110 @@
             color: var(--text-muted);
             font-weight: 700;
             text-transform: uppercase;
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             letter-spacing: 0.04em;
-            margin-bottom: 6px;
+            margin-bottom: 5px;
         }
         .intel-value {
             font-weight: 700;
             color: var(--text-primary);
-            font-size: 0.98rem;
+            font-size: 0.94rem;
             font-variant-numeric: tabular-nums;
             line-height: 1.35;
         }
         .intel-sub {
-            font-size: 0.75rem;
+            font-size: 0.73rem;
             color: var(--text-muted);
             margin-top: 3px;
+            font-variant-numeric: tabular-nums;
+        }
+        .taker-meter-bar {
+            width: 100%;
+            height: 5px;
+            background: #fee2e2;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+        .taker-meter-fill {
+            height: 100%;
+            background: #16a34a;
+            transition: width 0.3s ease;
+        }
+
+        /* Dominant Gold Market Drivers Radar */
+        .drivers-radar-panel {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 13px 16px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-sm);
+        }
+        .drivers-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .drivers-panel-title {
+            font-size: 0.74rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--text-secondary);
+        }
+        .drivers-panel-hint {
+            font-size: 0.73rem;
+            color: var(--text-muted);
+        }
+        .drivers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 10px;
+        }
+        .driver-chip {
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid #64748b;
+            border-radius: var(--radius-md);
+            padding: 9px 12px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .driver-chip:hover {
+            background: #eff6ff;
+            border-color: #93c5fd;
+            transform: translateY(-1px);
+        }
+        .driver-chip.drv-bull { border-left-color: var(--bull-green); }
+        .driver-chip.drv-bear { border-left-color: var(--bear-red); }
+        .driver-top-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 4px;
+        }
+        .driver-name {
+            font-size: 0.84rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .driver-share {
+            font-size: 0.74rem;
+            font-weight: 700;
+            background: #e2e8f0;
+            color: #1e293b;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-variant-numeric: tabular-nums;
+        }
+        .driver-meta {
+            font-size: 0.74rem;
+            color: var(--text-muted);
             font-variant-numeric: tabular-nums;
         }
 
@@ -324,7 +413,7 @@
         .card-meta-left {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             flex-wrap: wrap;
         }
         .date-header {
@@ -342,6 +431,15 @@
             border-radius: 4px;
             letter-spacing: 0.04em;
             text-transform: uppercase;
+        }
+        .driver-badge {
+            background: #e0f2fe;
+            color: #0369a1;
+            border: 1px solid #bae6fd;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 4px;
         }
 
         .card-actions-right {
@@ -571,12 +669,12 @@
         <div class="header-inner">
             <div class="brand-block">
                 <h1>Financial & Gold Intelligence Terminal</h1>
-                <div class="brand-sub">Multi-Source Orderflow, 24/7 XAU/USDT Basis, Macro & Self-Calibrating AI</div>
+                <div class="brand-sub">Aggressive Taker Flow, Dominant Market Narratives, 24/7 XAUUSDT.P & Empirical Regime Matrix</div>
             </div>
             <div class="nav-actions">
                 <div class="tab-group">
-                    <button class="tab-btn active" onclick="switchTab(event, 'chart-tab')">Chart & Orderflow</button>
-                    <button class="tab-btn" onclick="switchTab(event, 'news-tab')">News Intelligence</button>
+                    <button class="tab-btn active" id="tab-btn-chart" onclick="switchTab(event, 'chart-tab')">Chart & Orderflow</button>
+                    <button class="tab-btn" id="tab-btn-news" onclick="switchTab(event, 'news-tab')">News Intelligence</button>
                 </div>
                 <button class="refresh-btn" onclick="refreshAllData()">Refresh Data</button>
             </div>
@@ -584,17 +682,23 @@
     </header>
 
     <div class="main-wrapper">
-        <!-- TOP INTEL BAR -->
+        <!-- TOP INTEL BAR (6 METRICS INCLUDING AGGRESSIVE TAKER FLOW) -->
         <div class="intel-bar">
             <div class="intel-card" style="border-top-color: #10b981;">
-                <div class="intel-title">OANDA Retail Positioning</div>
+                <div class="intel-title">Passive Retail Crowd (OANDA)</div>
                 <div class="intel-value" id="ui-sentiment">Loading...</div>
-                <div class="intel-sub">Contrarian Crowd Indicator</div>
+                <div class="intel-sub">Contrarian Positioning</div>
+            </div>
+            <div class="intel-card" style="border-top-color: #8b5cf6;">
+                <div class="intel-title">Aggressive Taker Flow (Market Orders)</div>
+                <div class="intel-value" id="ui-taker-flow">Loading...</div>
+                <div class="taker-meter-bar"><div class="taker-meter-fill" id="ui-taker-bar" style="width:50%;"></div></div>
+                <div class="intel-sub" id="ui-taker-sub">Immediate Execution Pressure</div>
             </div>
             <div class="intel-card" style="border-top-color: #0ea5e9;">
                 <div class="intel-title">XAU/USDT 24/7 Basis & Gap</div>
                 <div class="intel-value" id="ui-crypto-basis">Loading...</div>
-                <div class="intel-sub" id="ui-crypto-sub">Spot vs. Tokenized Gold</div>
+                <div class="intel-sub" id="ui-crypto-sub">Spot vs. Perpetual Swap</div>
             </div>
             <div class="intel-card" style="border-top-color: #f59e0b;">
                 <div class="intel-title">4h Move / Est. Daily ATR</div>
@@ -613,19 +717,30 @@
             </div>
         </div>
 
+        <!-- DOMINANT 24H GOLD MARKET DRIVERS RADAR -->
+        <div class="drivers-radar-panel">
+            <div class="drivers-header-row">
+                <span class="drivers-panel-title">Dominant 24h Gold Price Drivers (What is Steering XAU/USD Right Now)</span>
+                <span class="drivers-panel-hint">Click any driver to filter corresponding intelligence reports</span>
+            </div>
+            <div class="drivers-grid" id="ui-drivers-grid">
+                <div style="font-size:0.82rem; color:#64748b;">Analyzing active market narratives...</div>
+            </div>
+        </div>
+
         <!-- CHART TAB -->
         <div id="chart-tab" class="tab-content active">
             <div class="chart-panel">
                 <div id="chart-container"></div>
                 <div class="chart-legend">
-                    <div class="legend-item"><span class="legend-dot" style="background:#16a34a;"></span><strong>BUY Zone:</strong> Net Long/Buy Orderflow</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span><strong>SELL Zone:</strong> Net Short/Sell Orderflow</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span><strong>24/7 XAU/USDT:</strong> Live Crypto-Gold Price</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#16a34a;"></span><strong>BUY Zone:</strong> Passive Buy Liquidity</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span><strong>SELL Zone:</strong> Passive Sell Liquidity</div>
+                    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span><strong>24/7 XAUUSDT.P:</strong> Live Perpetual Price</div>
                     <div class="legend-item"><strong>Solid Bold Line:</strong> Confirmed OANDA + COMEX Futures Overlap</div>
                 </div>
             </div>
             <div class="overlap-box" id="overlap-legend">
-                Loading orderflow and basis telemetry...
+                Loading orderflow, aggressive taker absorption, and basis telemetry...
             </div>
         </div>
 
@@ -633,7 +748,7 @@
         <div id="news-tab" class="tab-content">
             <div class="controls-panel">
                 <div class="controls-left">
-                    <input type="text" id="search-query" class="search-input" placeholder="Search headlines, tickers, keywords..." oninput="renderNews()">
+                    <input type="text" id="search-query" class="search-input" placeholder="Search headlines, drivers, tickers..." oninput="renderNews()">
                     <select id="filter-impact" onchange="renderNews()">
                         <option value="all">All Directions</option>
                         <option value="Bullish">Bullish Only</option>
@@ -709,6 +824,37 @@
             "MarketWatch Macro": { region: "Tech & Macro", bias: "Wall Street / US Economy" }
         };
 
+        function detectDriverClientSide(cluster) {
+            if (cluster.summary && cluster.summary.Dominant_Driver) {
+                return cluster.summary.Dominant_Driver;
+            }
+            const t = (cluster.articles || []).map(a => `${a.title} ${a.description}`).join(' ').toLowerCase();
+            if (["iran", "tehran", "hormuz", "irgc", "nuclear"].some(k => t.includes(k))) return "Iran & Strait of Hormuz";
+            if (["houthi", "yemen", "red sea", "saba"].some(k => t.includes(k))) return "Red Sea & Yemen Conflict";
+            if (["israel", "idf", "gaza", "lebanon", "hezbollah"].some(k => t.includes(k))) return "Israel & Middle East Escalation";
+            if (["tariff", "trade war", "sanction", "brics"].some(k => t.includes(k))) return "Tariffs, Sanctions & Geoeconomics";
+            if (["fed", "powell", "fomc", "rate", "cpi", "inflation", "payroll", "yield", "treasury"].some(k => t.includes(k))) return "US Inflation (CPI) & Fed Rate Path";
+            if (["nvidia", "nvda", "semiconductor", "chip", "tsmc", "ai ", "artificial intelligence", "nasdaq"].some(k => t.includes(k))) return "AI, Semiconductors & Tech Liquidity";
+            if (["oil", "brent", "crude", "opec", "energy"].some(k => t.includes(k))) return "Crude Oil & Energy Supply";
+            if (["recession", "gdp", "debt", "default", "stimulus", "china"].some(k => t.includes(k))) return "Global Growth, Debt & China Macro";
+            return "Gold Bullion & Central Bank Demand";
+        }
+
+        function filterByDriver(driverName) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+            document.getElementById('news-tab').classList.add('active');
+            document.getElementById('tab-btn-news').classList.add('active');
+
+            const searchBox = document.getElementById('search-query');
+            if (searchBox.value === driverName) {
+                searchBox.value = '';
+            } else {
+                searchBox.value = driverName;
+            }
+            renderNews();
+        }
+
         // ==========================================
         // PINNING & PERSISTENCE LOGIC (LOCALSTORAGE)
         // ==========================================
@@ -739,11 +885,6 @@
             }
         }
 
-        function isClusterPinned(clusterKey) {
-            const map = loadPinnedMap();
-            return Boolean(map[clusterKey]);
-        }
-
         function togglePinCluster(clusterKey) {
             const map = loadPinnedMap();
             if (map[clusterKey]) {
@@ -766,7 +907,6 @@
             const merged = [];
             const seenKeys = new Set();
 
-            // 1. Add all live clusters from data.json (and update snapshots if pinned)
             allClusters.forEach(c => {
                 const key = getClusterKey(c);
                 seenKeys.add(key);
@@ -776,7 +916,6 @@
                 merged.push(c);
             });
 
-            // 2. Keep pinned clusters visible even if they aged out of the 24h data.json feed
             Object.keys(pinnedMap).forEach(key => {
                 if (!seenKeys.has(key) && pinnedMap[key] && pinnedMap[key].cluster_snapshot) {
                     const archived = JSON.parse(JSON.stringify(pinnedMap[key].cluster_snapshot));
@@ -808,8 +947,35 @@
             loadNews();
         }
 
+        function renderDominantDriversRadar(driversList) {
+            const grid = document.getElementById('ui-drivers-grid');
+            if (!driversList || driversList.length === 0) {
+                grid.innerHTML = `<div style="font-size:0.82rem; color:#64748b;">Waiting for cluster telemetry...</div>`;
+                return;
+            }
+
+            grid.innerHTML = driversList.map((d, i) => {
+                const isBull = (d.net_bias || '').includes('Bullish');
+                const isBear = (d.net_bias || '').includes('Bearish');
+                const borderClass = isBull ? 'drv-bull' : (isBear ? 'drv-bear' : '');
+                const biasColor = isBull ? '#16a34a' : (isBear ? '#dc2626' : '#475569');
+                const safeName = (d.narrative || '').replace(/'/g, "\\'");
+                return `
+                    <div class="driver-chip ${borderClass}" onclick="filterByDriver('${safeName}')">
+                        <div class="driver-top-line">
+                            <span class="driver-name">#${i + 1} ${d.narrative}</span>
+                            <span class="driver-share">${d.share_pct}% Share</span>
+                        </div>
+                        <div class="driver-meta">
+                            <strong style="color:${biasColor};">${d.net_bias}</strong> (Avg ${d.avg_prob}%) &bull; ${d.sources_count} Sources in ${d.clusters_count} Cluster${d.clusters_count > 1 ? 's' : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
         // ==========================================
-        // 1. LOAD CHART, ORDERBOOK & XAU/USDT BASIS
+        // 1. LOAD CHART, TAKER FLOW & XAU/USDT BASIS
         // ==========================================
         async function loadChart() {
             const container = document.getElementById('chart-container');
@@ -827,6 +993,23 @@
                         `<span style="color:#16a34a;">${data.sentiment.long_pct}% Long</span> / <span style="color:#dc2626;">${data.sentiment.short_pct}% Short</span>`;
                 }
 
+                // Render Aggressive Taker Flow ("Kipp-Orders" / Market Execution Pressure)
+                if (data.taker_flow && data.taker_flow.taker_buy_pct !== undefined) {
+                    const tf = data.taker_flow;
+                    const buyP = Number(tf.taker_buy_pct).toFixed(1);
+                    const sellP = Number(tf.taker_sell_pct).toFixed(1);
+                    document.getElementById('ui-taker-flow').innerHTML = 
+                        `<span style="color:#16a34a;">${buyP}% Buy</span> / <span style="color:#dc2626;">${sellP}% Sell</span>`;
+                    document.getElementById('ui-taker-bar').style.width = `${Math.min(100, Math.max(0, tf.taker_buy_pct))}%`;
+                    document.getElementById('ui-taker-sub').innerText = tf.state_label || 'Market Execution Flow';
+                } else {
+                    document.getElementById('ui-taker-flow').innerText = "Calibrating Tape...";
+                }
+
+                if (data.dominant_drivers && data.dominant_drivers.length > 0) {
+                    renderDominantDriversRadar(data.dominant_drivers);
+                }
+
                 if (data.crypto_basis && data.crypto_basis.crypto_price) {
                     const cb = data.crypto_basis;
                     const spColor = cb.spread_usd > 2 ? '#16a34a' : (cb.spread_usd < -2 ? '#dc2626' : '#334155');
@@ -837,7 +1020,7 @@
                         `${cb.regime} via ${cb.source}`;
                 } else {
                     document.getElementById('ui-crypto-basis').innerText = "N/A";
-                    document.getElementById('ui-crypto-sub').innerText = "Spot vs. Tokenized Gold";
+                    document.getElementById('ui-crypto-sub').innerText = "Spot vs. Perpetual Swap";
                 }
 
                 if (data.volatility && data.volatility.est_daily_atr) {
@@ -904,6 +1087,11 @@
 
                 let detailsHTML = "";
 
+                if (data.taker_flow && data.taker_flow.taker_buy_pct !== undefined) {
+                    const tf = data.taker_flow;
+                    detailsHTML += `<strong>Aggressive Market-Order Execution (Why Zones Hold or Flip):</strong> ${tf.taker_buy_pct}% Market Buys vs. ${tf.taker_sell_pct}% Market Sells [OKX Tape: ${tf.raw_tape_buy_pct}% Buy | OANDA 4h Candle Absorption: ${tf.candle_buy_pressure_pct}% Buy | Perp Funding: ${tf.funding_rate_pct >= 0 ? '+' : ''}${tf.funding_rate_pct}%]<br><em>Status: ${tf.state_label} — ${tf.wick_note} (${tf.squeeze_warning})</em><br><hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">`;
+                }
+
                 if (data.crypto_basis && data.crypto_basis.crypto_price) {
                     const cb = data.crypto_basis;
                     const spSign = cb.spread_usd >= 0 ? '+' : '';
@@ -913,13 +1101,13 @@
                         lineWidth: 2,
                         lineStyle: LightweightCharts.LineStyle.Dotted,
                         axisLabelVisible: true,
-                        title: `24/7 XAU/USDT (${spSign}$${cb.spread_usd.toFixed(2)})`
+                        title: `24/7 XAUUSDT.P (${spSign}$${cb.spread_usd.toFixed(2)})`
                     });
-                    detailsHTML += `<strong>24/7 Crypto-Gold Basis (${cb.source}):</strong> $${cb.crypto_price.toFixed(2)} vs. OANDA Spot $${cb.oanda_price.toFixed(2)} | Spread: <strong>${spSign}$${cb.spread_usd.toFixed(2)} (${spSign}${cb.spread_pct.toFixed(2)}%)</strong> -> <em>${cb.signal}</em><br><hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">`;
+                    detailsHTML += `<strong>24/7 Crypto-Gold Perpetual Basis (${cb.source}):</strong> $${cb.crypto_price.toFixed(2)} vs. OANDA Spot $${cb.oanda_price.toFixed(2)} | Spread: <strong>${spSign}$${cb.spread_usd.toFixed(2)} (${spSign}${cb.spread_pct.toFixed(2)}%)</strong> -> <em>${cb.signal}</em><br><hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">`;
                 }
 
                 if (data.orderbook && data.orderbook.length > 0) {
-                    detailsHTML += "<strong>Active Liquidity Zones & Multi-Market Confluence (OANDA + Yahoo COMEX):</strong><br>";
+                    detailsHTML += "<strong>Passive Liquidity Zones & Multi-Market Confluence (OANDA + Yahoo COMEX):</strong><br>";
                     data.orderbook.forEach((level, index) => {
                         const isBuyDom = level.dominance === "BUY";
                         const lineColor = isBuyDom ? '#16a34a' : '#dc2626';
@@ -990,6 +1178,38 @@
                     container.innerHTML = `<p style="color:#dc2626; text-align:center;"><b>Syntax error in data.json!</b></p>`;
                     return;
                 }
+
+                // Fallback client-side driver radar computation if market_data.json hasn't populated drivers yet
+                const grid = document.getElementById('ui-drivers-grid');
+                if (grid && grid.innerText.includes('Analyzing active')) {
+                    const drvCounts = {};
+                    let totW = 0;
+                    allClusters.forEach(c => {
+                        const dName = detectDriverClientSide(c);
+                        const sCount = (c.articles || []).length || 1;
+                        const prob = parseInt(c.summary?.Probability_Percent || 50);
+                        const imp = c.summary?.XAUUSD_Impact || 'Neutral';
+                        const w = sCount * (0.6 + prob / 100.0);
+                        totW += w;
+                        if (!drvCounts[dName]) drvCounts[dName] = { narrative: dName, weight: 0, clusters_count: 0, sources_count: 0, bull: 0, bear: 0, prob_sum: 0 };
+                        drvCounts[dName].weight += w;
+                        drvCounts[dName].clusters_count += 1;
+                        drvCounts[dName].sources_count += sCount;
+                        drvCounts[dName].prob_sum += prob;
+                        if (imp.includes('Bullish')) drvCounts[dName].bull += w;
+                        if (imp.includes('Bearish')) drvCounts[dName].bear += w;
+                    });
+                    const clientDrivers = Object.values(drvCounts).map(d => ({
+                        narrative: d.narrative,
+                        share_pct: totW > 0 ? Math.round((d.weight / totW) * 1000) / 10 : 0,
+                        clusters_count: d.clusters_count,
+                        sources_count: d.sources_count,
+                        avg_prob: Math.round(d.prob_sum / Math.max(1, d.clusters_count)),
+                        net_bias: d.bull > d.bear * 1.15 ? 'Bullish' : (d.bear > d.bull * 1.15 ? 'Bearish' : 'Mixed / Neutral')
+                    })).sort((a, b) => b.share_pct - a.share_pct).slice(0, 4);
+                    renderDominantDriversRadar(clientDrivers);
+                }
+
                 renderNews();
             } catch (error) {
                 container.innerHTML = `<p style="color:#dc2626; text-align:center;">Error loading news: ${error.message}</p>`;
@@ -1035,11 +1255,13 @@
             let filtered = mergedList.filter(cluster => {
                 const cKey = getClusterKey(cluster);
                 const pinned = Boolean(pinnedMap[cKey]);
+                const drvLabel = detectDriverClientSide(cluster);
 
                 if (filterRelevance === 'pinned' && !pinned) return false;
 
                 if (searchQuery) {
                     const searchable = [
+                        drvLabel,
                         cluster.summary?.Facts || '',
                         cluster.summary?.Macro_Context || '',
                         cluster.summary?.Bull_Case || '',
@@ -1088,7 +1310,6 @@
                 return true;
             });
 
-            // Always keep pinned clusters at the very top, then apply user sorting
             filtered.sort((a, b) => {
                 const pinA = Boolean(pinnedMap[getClusterKey(a)]);
                 const pinB = Boolean(pinnedMap[getClusterKey(b)]);
@@ -1116,6 +1337,7 @@
                 const pinned = Boolean(pinnedMap[cKey]);
                 const impactStr = cluster.summary?.XAUUSD_Impact || 'Neutral';
                 const probVal = parseInt(cluster.summary?.Probability_Percent || 0);
+                const driverLabel = detectDriverClientSide(cluster);
 
                 let biasClass = 'bias-neutral';
                 let barColor = '#64748b';
@@ -1157,12 +1379,12 @@
                     const bullCase = cluster.summary.Bull_Case ? `<div class="bull-box"><span class="data-label" style="color:#166534;">Bull Case (Pro Gold)</span>${cluster.summary.Bull_Case}</div>` : '';
                     const bearCase = cluster.summary.Bear_Case ? `<div class="bear-box"><span class="data-label" style="color:#991b1b;">Bear Case (Contra / Risks)</span>${cluster.summary.Bear_Case}</div>` : '';
                     const proConSection = (bullCase || bearCase) ? `<div class="pro-con-grid">${bullCase}${bearCase}</div>` : '';
-                    const calibSection = cluster.summary.Historical_Calibration ? `<div class="calibration-box"><strong>Agent Calibration & Track-Record Audit:</strong> ${cluster.summary.Historical_Calibration}</div>` : '';
+                    const calibSection = cluster.summary.Historical_Calibration ? `<div class="calibration-box"><strong>Agent Calibration & Regime Matrix Audit:</strong> ${cluster.summary.Historical_Calibration}</div>` : '';
 
                     summaryHTML = `
                         <div class="event-time-banner">
                             <span><strong>Actual Event Time:</strong> ${eventTime}</span>
-                            <span><strong>24h Price/ATR Check:</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}</span>
+                            <span><strong>24h Price/ATR & Taker Check:</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}</span>
                         </div>
                         <div class="structured-data">
                             <div class="data-block">
@@ -1170,7 +1392,7 @@
                                 ${cluster.summary.Facts || '-'}
                             </div>
                             <div class="data-block">
-                                <span class="data-label">Macro, Tech, 24/7 XAU/USDT Basis & Sentiment Interplay</span>
+                                <span class="data-label">Macro, Tech, 24/7 XAUUSDT.P, Aggressive Taker Flow & Sentiment</span>
                                 ${cluster.summary.Macro_Context || '-'}
                             </div>
                             <div class="data-block">
@@ -1244,6 +1466,7 @@
                     <div class="card-top-row">
                         <div class="card-meta-left">
                             ${pinnedBadge}
+                            <span class="driver-badge">${driverLabel}</span>
                             <div class="date-header">${cleanDateHeader}</div>
                         </div>
                         <div class="card-actions-right">

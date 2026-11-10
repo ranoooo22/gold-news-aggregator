@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 341,
-    "hits": 198,
+    "total_evaluated": 350,
+    "hits": 207,
     "misses": 143,
-    "win_rate": 58.1,
-    "active_signals": 37,
+    "win_rate": 59.1,
+    "active_signals": 38,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 155,
+                "hits": 163,
                 "misses": 111,
-                "total": 266,
-                "win_rate": 58.3,
-                "avg_dd": 18.22
+                "total": 274,
+                "win_rate": 59.5,
+                "avg_dd": 17.77
             },
             "Bearish": {
-                "hits": 43,
+                "hits": 44,
                 "misses": 32,
-                "total": 75,
-                "win_rate": 57.3,
-                "avg_dd": 19.69
+                "total": 76,
+                "win_rate": 57.9,
+                "avg_dd": 19.31
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 184,
+                "hits": 193,
                 "misses": 143,
-                "total": 327,
-                "win_rate": 56.3,
-                "avg_dd": 19.25
+                "total": 336,
+                "win_rate": 57.4,
+                "avg_dd": 18.74
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
@@ -53,18 +53,18 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 87,
+                "hits": 88,
                 "misses": 46,
-                "total": 133,
-                "win_rate": 65.4,
-                "avg_dd": 21.32
+                "total": 134,
+                "win_rate": 65.7,
+                "avg_dd": 21.16
             },
             "Against USD Headwind": {
-                "hits": 108,
+                "hits": 116,
                 "misses": 97,
-                "total": 205,
-                "win_rate": 52.7,
-                "avg_dd": 16.39
+                "total": 213,
+                "win_rate": 54.5,
+                "avg_dd": 15.84
             },
             "USD Neutral / Legacy": {
                 "hits": 3,
@@ -76,41 +76,41 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 110,
+                "hits": 115,
                 "misses": 83,
-                "total": 193,
-                "win_rate": 57.0,
-                "avg_dd": 19.19
+                "total": 198,
+                "win_rate": 58.1,
+                "avg_dd": 18.75
             },
             "Fed, Rates & Macro": {
-                "hits": 11,
+                "hits": 13,
                 "misses": 7,
-                "total": 18,
-                "win_rate": 61.1,
-                "avg_dd": 12.24
+                "total": 20,
+                "win_rate": 65.0,
+                "avg_dd": 11.41
             },
             "Tech, AI & Equities": {
-                "hits": 51,
+                "hits": 52,
                 "misses": 35,
-                "total": 86,
-                "win_rate": 59.3,
-                "avg_dd": 15.92
+                "total": 87,
+                "win_rate": 59.8,
+                "avg_dd": 15.74
             },
             "Commodities & Energy": {
-                "hits": 26,
+                "hits": 27,
                 "misses": 18,
-                "total": 44,
-                "win_rate": 59.1,
-                "avg_dd": 23.53
+                "total": 45,
+                "win_rate": 60.0,
+                "avg_dd": 23.07
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 198,
+                "hits": 207,
                 "misses": 137,
-                "total": 335,
-                "win_rate": 59.1,
-                "avg_dd": 18.58
+                "total": 344,
+                "win_rate": 60.2,
+                "avg_dd": 18.13
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -6233,6 +6233,196 @@
             "created_ts": 1794334043.0,
             "date": "First Reported: 2026-11-10 18:07 UTC",
             "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/ai/articles/microsoft-warns-trade-crackdown-could-193904641.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Microsoft Warns a New Trade Crackdown Could Derail America's AI Boom",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.16,
+            "target": 4029.96,
+            "max_dd_usd": 6.72,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794339544.0,
+            "date": "First Reported: 2026-11-10 19:39 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.72)"
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/f1-star-lewis-hamilton-visits-gaza-border": {
+            "status": "HIT",
+            "headline": "F1 star Lewis Hamilton visits Gaza border",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.16,
+            "target": 4029.96,
+            "max_dd_usd": 6.72,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794339315.0,
+            "date": "First Reported: 2026-11-10 19:35 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.72)"
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/10/rubio-says-no-need-for-major-combat-operations-against-iran?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Rubio says no need for major combat operations against Iran",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.16,
+            "target": 4029.96,
+            "max_dd_usd": 6.72,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794339253.0,
+            "date": "First Reported: 2026-11-10 19:34 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.72)"
+        },
+        "https://finance.yahoo.com/m/f591b7f8-013b-367b-b8b5-72d9ef7903d2/microsoft-stock-falls-on.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Microsoft Stock Falls On Anthropic Challenge To Office Software",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.16,
+            "target": 4029.96,
+            "max_dd_usd": 6.72,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794339098.0,
+            "date": "First Reported: 2026-11-10 19:31 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.72)"
+        },
+        "https://www.marketwatch.com/story/corporate-america-is-making-a-trillion-dollar-mistake-about-retirement-234c8996?mod=mw_rss_topstories": {
+            "status": "HIT",
+            "headline": "Corporate America is making a trillion-dollar mistake about retirement",
+            "source": "MarketWatch Macro",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bullish",
+            "prob": 54,
+            "entry_price": 4031.16,
+            "target": 4029.96,
+            "max_dd_usd": 6.72,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794338940.0,
+            "date": "First Reported: 2026-11-10 19:29 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.72)"
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/ttm-technologies-ttmi-sees-almost-191654888.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "TTM Technologies (TTMI) Sees Almost 28% Jump in Insider Position Following Recent Dip",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4031.16,
+            "target": 4029.96,
+            "max_dd_usd": 6.72,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794338138.0,
+            "date": "First Reported: 2026-11-10 19:10 UTC | Last Update: 2026-11-10 19:15 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.72)"
+        },
+        "https://www.fool.com/earnings/call-transcripts/2026/11/10/rackspace-rxt-q3-2026-earnings-call-transcript/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Rackspace (RXT) Q3 2026 Earnings Call Transcript",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4031.16,
+            "target": 4021.69,
+            "max_dd_usd": 1.35,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794338046.0,
+            "date": "First Reported: 2026-11-10 19:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/opinion/michigan-election-how-abdul-el-sayeds-critics-smeared-his-defence-palestinians-hate": {
+            "status": "HIT",
+            "headline": "Michigan election: How Abdul El-Sayed's critics smeared his defence of Palestinians as 'ha",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4027.28,
+            "target": 4029.96,
+            "max_dd_usd": 12.39,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794337191.0,
+            "date": "First Reported: 2026-11-10 18:59 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$12.39)"
+        },
+        "https://finance.yahoo.com/markets/currencies/articles/us-greenback-rises-against-canadian-183454439.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "The US Greenback Rises Against the Canadian Dollar as Higher US CPI Adds to Rate Hike Expe",
+            "source": "Yahoo Finance Oil",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4027.28,
+            "target": 4021.69,
+            "max_dd_usd": 6.1,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794335694.0,
+            "date": "First Reported: 2026-11-10 18:34 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.10)"
+        },
+        "https://finance.yahoo.com/energy/articles/us-oil-output-reach-record-183440109.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "US oil output to reach record 13.9 million bpd in 2026",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4027.28,
+            "target": 4029.96,
+            "max_dd_usd": 12.39,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 68.78,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.95,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
+            "created_ts": 1794335680.0,
+            "date": "First Reported: 2026-11-10 18:34 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$12.39)"
         }
     }
 }

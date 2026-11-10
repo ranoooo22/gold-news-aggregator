@@ -89,6 +89,27 @@ def classify_news_category(headline, source=""):
         return "Fed, Rates & Macro"
     return "Commodities & Energy"
 
+def detect_specific_narrative(text):
+    """Detects granular market narratives so the trader immediately sees WHICH conflict or macro theme dominates Gold."""
+    t = text.lower()
+    if any(k in t for k in ["iran", "tehran", "hormuz", "irgc", "nuclear"]):
+        return ("Iran & Strait of Hormuz", "Geopolitics & War")
+    if any(k in t for k in ["houthi", "yemen", "red sea", "saba"]):
+        return ("Red Sea & Yemen Conflict", "Geopolitics & War")
+    if any(k in t for k in ["israel", "idf", "gaza", "lebanon", "hezbollah"]):
+        return ("Israel & Middle East Escalation", "Geopolitics & War")
+    if any(k in t for k in ["tariff", "trade war", "sanction", "brics"]):
+        return ("Tariffs, Sanctions & Geoeconomics", "Fed, Rates & Macro")
+    if any(k in t for k in ["fed", "powell", "fomc", "rate", "cpi", "inflation", "payroll", "yield", "treasury"]):
+        return ("US Inflation (CPI) & Fed Rate Path", "Fed, Rates & Macro")
+    if any(k in t for k in ["nvidia", "nvda", "semiconductor", "chip", "tsmc", "ai ", "artificial intelligence", "nasdaq"]):
+        return ("AI, Semiconductors & Tech Liquidity", "Tech, AI & Equities")
+    if any(k in t for k in ["oil", "brent", "crude", "opec", "energy"]):
+        return ("Crude Oil & Energy Supply", "Commodities & Energy")
+    if any(k in t for k in ["recession", "gdp", "debt", "default", "stimulus", "china"]):
+        return ("Global Growth, Debt & China Macro", "Fed, Rates & Macro")
+    return ("Gold Bullion & Central Bank Demand", "Commodities & Energy")
+
 def fetch_single_feed(source_url):
     source, url = source_url
     articles = []
@@ -233,6 +254,210 @@ def fetch_crypto_gold_basis(oanda_price):
         return prompt_str, basis_obj
 
     return "24/7 XAU/USDT Basis: Data temporarily unavailable.", {}
+
+def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
+    """
+    Captures the 'invisible' immediately executed Market Orders (Aggressive Taker Flow & Candle Absorption)
+    that break through passive limit orderbook walls:
+    1. OKX XAU-USDT-SWAP recent executed Taker Buy vs. Taker Sell volume + Funding Rate.
+    2. OANDA H1 Candle Buying/Selling Pressure & Wick Rejection over the last 4 hours.
+    3. Retail Stop-Hunt / Squeeze vulnerability check.
+    """
+    headers = {"User-Agent": "Mozilla/5.0"}
+    taker_buy_vol = 0.0
+    taker_sell_vol = 0.0
+    funding_rate_pct = 0.0
+
+    # 1. Fetch real executed Taker trades from OKX XAU-USDT-SWAP (or XAUT-USDT-SWAP fallback)
+    for inst in ["XAU-USDT-SWAP", "XAUT-USDT-SWAP"]:
+        try:
+            url_trades = f"https://www.okx.com/api/v5/market/trades?instId={inst}&limit=100"
+            res = requests.get(url_trades, headers=headers, timeout=6)
+            if res.status_code == 200:
+                trades = res.json().get("data", [])
+                for t in trades:
+                    sz = float(t.get("sz", 0))
+                    if t.get("side") == "buy":
+                        taker_buy_vol += sz
+                    elif t.get("side") == "sell":
+                        taker_sell_vol += sz
+                if (taker_buy_vol + taker_sell_vol) > 0:
+                    break
+        except Exception:
+            pass
+
+    # 2. Fetch Perpetual Funding Rate (Smart Money / Leverage skew)
+    try:
+        url_fr = "https://www.okx.com/api/v5/public/funding-rate?instId=XAU-USDT-SWAP"
+        res_fr = requests.get(url_fr, headers=headers, timeout=5)
+        if res_fr.status_code == 200:
+            fr_data = res_fr.json().get("data", [])
+            if fr_data and fr_data[0].get("fundingRate"):
+                funding_rate_pct = round(float(fr_data[0]["fundingRate"]) * 100.0, 4)
+    except Exception:
+        pass
+
+    # 3. Calculate OANDA H1 Candle Buying vs. Selling Absorption (last 4 hours)
+    candle_buy_pressure = 50.0
+    wick_note = "Balanced Intrabar Flow"
+    if h1_candles and len(h1_candles) >= 4:
+        recent_4 = h1_candles[-4:]
+        buy_pts = 0.0
+        sell_pts = 0.0
+        lower_wick_sum = 0.0
+        upper_wick_sum = 0.0
+
+        for c in recent_4:
+            rng = max(0.01, c["h"] - c["l"])
+            # Close position within the high-low range measures who won the hour via market orders
+            buy_pts += (c["c"] - c["l"]) / rng
+            sell_pts += (c["h"] - c["c"]) / rng
+            lower_wick_sum += (min(c["o"], c["c"]) - c["l"]) / rng
+            upper_wick_sum += (c["h"] - max(c["o"], c["c"])) / rng
+
+        tot_pts = buy_pts + sell_pts
+        if tot_pts > 0:
+            candle_buy_pressure = round((buy_pts / tot_pts) * 100.0, 1)
+
+        if lower_wick_sum > upper_wick_sum * 1.35:
+            wick_note = "Strong Lower-Wick Dip Buying (Passive Sell-Limits Absorbed)"
+        elif upper_wick_sum > lower_wick_sum * 1.35:
+            wick_note = "Strong Upper-Wick Rejection (Aggressive Market-Selling at Highs)"
+
+    # Combine Taker tape (60% weight) + OANDA Candle Pressure (40% weight)
+    tot_taker = taker_buy_vol + taker_sell_vol
+    if tot_taker > 0:
+        raw_taker_buy_pct = round((taker_buy_vol / tot_taker) * 100.0, 1)
+        composite_buy_pct = round(0.60 * raw_taker_buy_pct + 0.40 * candle_buy_pressure, 1)
+    else:
+        raw_taker_buy_pct = candle_buy_pressure
+        composite_buy_pct = candle_buy_pressure
+
+    composite_sell_pct = round(100.0 - composite_buy_pct, 1)
+
+    # Determine dominant execution state & squeeze risk
+    retail_long = (oanda_sentiment or {}).get("long_pct", 50.0)
+    if composite_buy_pct >= 58.0:
+        state_label = "AGGRESSIVE MARKET BUYING (Ask-Side Absorption)"
+        explanation = "Market-Buy orders are eating through passive Sell-Limit walls."
+    elif composite_buy_pct <= 42.0:
+        state_label = "AGGRESSIVE MARKET SELLING (Bid-Side Sweep)"
+        explanation = "Market-Sell orders are smashing through passive Buy-Limit support."
+    else:
+        state_label = "TWO-WAY BALANCED EXECUTION"
+        explanation = "No single-sided market-order sweep detected; passive orderbook walls likely hold."
+
+    if retail_long >= 62.0 and composite_buy_pct <= 45.0:
+        squeeze_warning = "HIGH LONG-STOP CASCADE RISK (Crowded Retail Longs + Aggressive Market Selling)"
+    elif retail_long <= 38.0 and composite_buy_pct >= 55.0:
+        squeeze_warning = "HIGH SHORT-SQUEEZE RISK (Crowded Retail Shorts + Aggressive Market Buying)"
+    else:
+        squeeze_warning = "Moderate Stop-Run Risk"
+
+    flow_obj = {
+        "taker_buy_pct": composite_buy_pct,
+        "taker_sell_pct": composite_sell_pct,
+        "raw_tape_buy_pct": raw_taker_buy_pct,
+        "candle_buy_pressure_pct": candle_buy_pressure,
+        "funding_rate_pct": funding_rate_pct,
+        "state_label": state_label,
+        "wick_note": wick_note,
+        "squeeze_warning": squeeze_warning,
+        "explanation": explanation
+    }
+
+    prompt_str = (
+        f"Real-Time Aggressive Taker Flow & Absorption (Immediate Market Orders vs. Passive Orderbook):\n"
+        f"- Composite Aggressive Flow: {composite_buy_pct}% Market Buys vs. {composite_sell_pct}% Market Sells -> {state_label}\n"
+        f"- OKX Perp Tape Buy Ratio: {raw_taker_buy_pct}% | OANDA 4h Candle Close Pressure: {candle_buy_pressure}% ({wick_note})\n"
+        f"- Perp Funding Rate: {funding_rate_pct:+.4f}% | Stop-Cascade Check: {squeeze_warning}\n"
+        f"- Orderbook Wall Survival Rule: {explanation}"
+    )
+    print(f"Aggressive Taker Flow loaded: {composite_buy_pct}% Buy / {composite_sell_pct}% Sell ({state_label})")
+    return prompt_str, flow_obj
+
+def compute_dominant_drivers(valid_clusters):
+    """
+    Aggregates all active news clusters over the last 24h to show the trader WHAT is currently
+    driving the Gold price (e.g., Iran/Hormuz War, US CPI/Fed Rates, AI/Tech Selloff), ranked by media weight.
+    """
+    if not valid_clusters:
+        return "No active market drivers detected.", []
+
+    driver_map = {}
+    total_weight = 0.0
+
+    for c in valid_clusters:
+        articles = c.get("articles", [])
+        if not articles:
+            continue
+        summary = c.get("summary") if isinstance(c.get("summary"), dict) else {}
+        combined_text = " ".join([f"{a.get('title', '')} {a.get('description', '')}" for a in articles[:3]])
+        narrative_name, broad_cat = detect_specific_narrative(combined_text)
+
+        src_count = len(articles)
+        prob = int(summary.get("Probability_Percent", 50) or 50)
+        impact = str(summary.get("XAUUSD_Impact", "Neutral"))
+
+        # Weight combines source coverage and AI conviction
+        weight = src_count * (0.6 + (prob / 100.0))
+        total_weight += weight
+
+        if narrative_name not in driver_map:
+            driver_map[narrative_name] = {
+                "narrative": narrative_name,
+                "category": broad_cat,
+                "clusters_count": 0,
+                "sources_count": 0,
+                "weight": 0.0,
+                "bull_score": 0.0,
+                "bear_score": 0.0,
+                "prob_sum": 0,
+                "top_headline": articles[0].get("title", "")[:85]
+            }
+
+        d = driver_map[narrative_name]
+        d["clusters_count"] += 1
+        d["sources_count"] += src_count
+        d["weight"] += weight
+        d["prob_sum"] += prob
+
+        if "Bullish" in impact:
+            d["bull_score"] += weight
+        elif "Bearish" in impact:
+            d["bear_score"] += weight
+
+    drivers_list = []
+    for d in driver_map.values():
+        share_pct = round((d["weight"] / total_weight) * 100.0, 1) if total_weight > 0 else 0.0
+        avg_prob = round(d["prob_sum"] / max(1, d["clusters_count"]))
+        if d["bull_score"] > d["bear_score"] * 1.15:
+            net_bias = "Bullish"
+        elif d["bear_score"] > d["bull_score"] * 1.15:
+            net_bias = "Bearish"
+        else:
+            net_bias = "Mixed / Neutral"
+
+        drivers_list.append({
+            "narrative": d["narrative"],
+            "category": d["category"],
+            "share_pct": share_pct,
+            "clusters_count": d["clusters_count"],
+            "sources_count": d["sources_count"],
+            "net_bias": net_bias,
+            "avg_prob": avg_prob,
+            "top_headline": d["top_headline"]
+        })
+
+    drivers_list.sort(key=lambda x: x["share_pct"], reverse=True)
+    top_drivers = drivers_list[:4]
+
+    lines = ["Dominant 24h Gold Market Narratives (Ranked by Media Coverage & Conviction Share):"]
+    for idx, drv in enumerate(top_drivers, 1):
+        lines.append(
+            f"  #{idx} {drv['narrative']} ({drv['share_pct']}% Share | {drv['sources_count']} Sources across {drv['clusters_count']} Clusters | Net Bias: {drv['net_bias']}, Avg Prob: {drv['avg_prob']}%)"
+        )
+    return "\n".join(lines), top_drivers
 
 def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
     comex_zones = {}
@@ -571,14 +796,6 @@ def fetch_macro_context():
     return "\n".join(macro_lines), macro_summary
 
 def compute_regime_matrix(history_dict):
-    """
-    Aggregates ALL historical evaluations (250+ setups) into a multi-dimensional statistical Regime Matrix:
-    1. By Direction (Bullish vs. Bearish)
-    2. By ATR Exhaustion Regime (Fresh <0.8x, Moderate 0.8-1.2x, Exhausted >=1.2x)
-    3. By Macro/USD Alignment (With USD Tailwind, Against USD Headwind, Neutral/Legacy)
-    4. By News Category (Geopolitics, Tech/AI, Fed/Macro, Commodities)
-    5. By AI Confidence Bucket (51-64%, 65-74%, 75%+)
-    """
     def init_bucket():
         return {"hits": 0, "misses": 0, "total": 0, "win_rate": 0.0, "dd_sum": 0.0, "dd_count": 0, "avg_dd": 0.0}
 
@@ -627,10 +844,8 @@ def compute_regime_matrix(history_dict):
         imp = "Bullish" if "Bullish" in str(rec.get("impact", "Bullish")) else "Bearish"
         dd_val = float(rec.get("max_dd_usd", 0.0) or 0.0)
 
-        # 1. Direction
         add_to_bucket(matrix["by_direction"][imp], is_hit, dd_val)
 
-        # 2. ATR Regime
         if "atr_ratio_at_signal" in rec and rec["atr_ratio_at_signal"] is not None:
             atr_r = float(rec["atr_ratio_at_signal"])
             if atr_r < 0.8:
@@ -643,7 +858,6 @@ def compute_regime_matrix(history_dict):
             atr_key = "Unrecorded (Legacy)"
         add_to_bucket(matrix["by_atr_regime"][atr_key], is_hit, dd_val)
 
-        # 3. Macro / USD Alignment
         eur_chg = rec.get("eur_chg_at_signal")
         if eur_chg is None and "macro_snapshot" in rec:
             m = re.search(r"EUR\s*([+-]?\d+(?:\.\d+)?)%", str(rec.get("macro_snapshot", "")))
@@ -654,8 +868,6 @@ def compute_regime_matrix(history_dict):
                     eur_chg = None
 
         if eur_chg is not None:
-            # EUR/USD > +0.12% means weaker USD (Tailwind for Bullish Gold, Headwind for Bearish Gold)
-            # EUR/USD < -0.12% means stronger USD (Headwind for Bullish Gold, Tailwind for Bearish Gold)
             if (imp == "Bullish" and eur_chg >= 0.12) or (imp == "Bearish" and eur_chg <= -0.12):
                 mac_key = "With USD Tailwind"
             elif (imp == "Bullish" and eur_chg <= -0.12) or (imp == "Bearish" and eur_chg >= 0.12):
@@ -666,13 +878,11 @@ def compute_regime_matrix(history_dict):
             mac_key = "USD Neutral / Legacy"
         add_to_bucket(matrix["by_macro_alignment"][mac_key], is_hit, dd_val)
 
-        # 4. Category (retroactively classify legacy URLs/headlines if category field is missing)
         cat = rec.get("category")
         if not cat or cat not in matrix["by_category"]:
             cat = classify_news_category(rec.get("headline", sig_id), rec.get("source", ""))
         add_to_bucket(matrix["by_category"][cat], is_hit, dd_val)
 
-        # 5. Confidence Bucket
         prob = int(rec.get("prob", 67) or 67)
         if prob < 65:
             conf_key = "Moderate (51-64%)"
@@ -682,7 +892,6 @@ def compute_regime_matrix(history_dict):
             conf_key = "Extreme (>=75%)"
         add_to_bucket(matrix["by_confidence"][conf_key], is_hit, dd_val)
 
-    # Finalize win rates and average drawdowns across all buckets
     for group in matrix.values():
         for b in group.values():
             if b["total"] > 0:
@@ -863,10 +1072,6 @@ def evaluate_clusters(all_clusters, h1_candles, vol_metrics=None, macro_summary=
     return stats
 
 def format_performance_memory(stats):
-    """
-    Formats the full multi-dimensional Regime Matrix (from all 250+ evaluated setups)
-    plus the 5 most recent setups into an actionable statistical memory block for the AI Agent.
-    """
     if not stats or stats.get("total_evaluated", 0) == 0:
         return f"Historical Track Record (>50% setups): No completed 20h evaluations yet ({stats.get('active_signals', 0)} active setups currently tracked)."
     
@@ -918,7 +1123,7 @@ def format_performance_memory(stats):
         f"- MANDATORY CALIBRATION RULE: Match each new cluster to its exact category, current ATR-Ratio bucket, and USD alignment in the Regime Matrix above. Explicitly cite the corresponding historical win rate from the matrix in 'Historical_Calibration' and penalize Probability_Percent if the current regime has a <45% historical win rate!"
     )
 
-def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_summary, crypto_basis_obj=None):
+def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_summary, crypto_basis_obj=None, taker_flow_obj=None):
     articles = cluster.get("articles", [])
     oldest = min(articles, key=lambda x: x.get("_timestamp", 0)) if articles else {}
     age_h = round((datetime.now().timestamp() - float(oldest.get("_timestamp", datetime.now().timestamp()))) / 3600.0, 1)
@@ -931,6 +1136,7 @@ def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_
     facts_str = " | ".join(facts_list)
 
     full_text = " ".join([f"{a.get('title','')} {a.get('description','')}" for a in articles]).lower()
+    narrative_name, _ = detect_specific_narrative(full_text)
     bull_kws = ["attack", "strike", "missile", "escalat", "war", "inflation", "recession", "cut", "crisis", "selloff", "crash", "sanction", "houthi", "iran"]
     bear_kws = ["truce", "ceasefire", "peace", "deal", "strong dollar", "rate hike", "surge", "rally"]
 
@@ -961,11 +1167,16 @@ def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_
     if crypto_basis_obj and crypto_basis_obj.get("crypto_price"):
         basis_note = f" | 24/7 {crypto_basis_obj.get('source', 'XAUUSDT.P')}: ${crypto_basis_obj['crypto_price']} (Spread: ${crypto_basis_obj['spread_usd']:+.2f})"
 
+    taker_note = ""
+    if taker_flow_obj and taker_flow_obj.get("taker_buy_pct") is not None:
+        taker_note = f" | Aggressive Taker Flow: {taker_flow_obj['taker_buy_pct']}% Market Buys ({taker_flow_obj.get('state_label', '')})"
+
     return {
+        "Dominant_Driver": narrative_name,
         "Event_Timestamp": f"First reported: {oldest.get('date', 'Unknown')} UTC (~{age_h}h ago)",
         "Facts": facts_str,
         "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-        "Macro_Context": f"24h Macro: EUR/USD {eur_chg:+.2f}%, Nasdaq-100 {nas_chg:+.2f}%, Brent Oil {bco_chg:+.2f}% | OANDA Sentiment: {sentiment['long_pct']}% Long / {sentiment['short_pct']}% Short{basis_note}.",
+        "Macro_Context": f"24h Macro: EUR/USD {eur_chg:+.2f}%, Nasdaq-100 {nas_chg:+.2f}%, Brent Oil {bco_chg:+.2f}% | OANDA Sentiment: {sentiment['long_pct']}% Long / {sentiment['short_pct']}% Short{basis_note}{taker_note}.",
         "Bull_Case": f"Nearest upside OANDA/COMEX liquidity zone sits at ${min(above_z):.2f}." if above_z else "Monitor geopolitical and macro risk premium.",
         "Bear_Case": f"Nearest downside liquidity zone sits at ${max(below_z):.2f}. 4h-ATR ratio is {atr_ratio}x." if below_z else f"4h-ATR ratio is {atr_ratio}x.",
         "Historical_Calibration": f"Rule-based real-time summary active. Event age: {age_h}h.",
@@ -977,7 +1188,7 @@ def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_
         "Orderflow_Price_Target": target
     }
 
-def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data, macro_context_str, crypto_basis_str, perf_memory_str):
+def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data, macro_context_str, crypto_basis_str, taker_flow_str, dominant_drivers_str, perf_memory_str):
     if not client or not clusters_batch:
         return {}
     
@@ -986,22 +1197,25 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
     clusters_input = []
     for idx, c in enumerate(clusters_batch):
         recent_arts = sorted(c["articles"], key=lambda x: x.get("_timestamp", 0), reverse=True)[:4]
-        cat_label = classify_news_category(recent_arts[0]["title"], recent_arts[0]["source"]) if recent_arts else "General"
+        combined_text = " ".join([f"{a.get('title', '')} {a.get('description', '')}" for a in recent_arts])
+        specific_drv, cat_label = detect_specific_narrative(combined_text)
         arts_text = "\n".join([f"  * [{a['source']}] ({a['date']} UTC): {a['title']} — {a['description']}" for a in recent_arts])
-        clusters_input.append(f"=== CLUSTER_ID: {idx} | CATEGORY: {cat_label} ===\n{arts_text}")
+        clusters_input.append(f"=== CLUSTER_ID: {idx} | CATEGORY: {cat_label} | DETECTED_DRIVER: {specific_drv} ===\n{arts_text}")
         
     all_clusters_str = "\n\n".join(clusters_input)
     
     prompt = f"""You are an objective Intelligence & Calibration Agent for a manual Gold (XAU/USD) & Macro trader.
-    Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, 24/7 XAUUSDT.P perpetual basis, orderbook, and the Empirical Multi-Dimensional Regime Matrix below.
+    Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, 24/7 XAUUSDT.P perpetual basis, Aggressive Taker Flow (immediate market orders vs. passive limit walls), Dominant 24h Drivers, and the Empirical Multi-Dimensional Regime Matrix below.
     Do NOT hide or dismiss minor news—thoroughly contextualize every cluster!
     Note: Every directional forecast ('Bullish' or 'Bearish') with Probability_Percent > 50% will be automatically tracked and evaluated over 20 hours against actual OANDA candles!
     Output ONLY a valid JSON array of {len(clusters_batch)} objects (one object per CLUSTER_ID). Write all values strictly in English!
 
     Current Reference Time: {now_utc_str}
 
-    Shared Market, 24/7 Crypto-Gold Perpetual Basis, Orderbook & Empirical Regime Matrix:
+    Shared Market, Aggressive Taker Flow, Dominant Narratives & Empirical Regime Matrix:
     {perf_memory_str}
+    {dominant_drivers_str}
+    {taker_flow_str}
     {crypto_basis_str}
     {macro_context_str}
     {price_history_data}
@@ -1014,18 +1228,19 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
     [
       {{
         "Cluster_ID": 0,
+        "Dominant_Driver": "Specific driver label (e.g., 'Iran & Strait of Hormuz', 'US Inflation & Fed Rate Path', 'AI & Semiconductor Shock', etc.)",
         "Event_Timestamp": "Exact or estimated date/time when the real-world event occurred and how many hours ago relative to {now_utc_str}.",
         "Facts": "Comprehensive, unfiltered summary of all core facts, numbers, and WHY it matters. Include [Source].",
         "Uncertainties": "What is unclear, speculative, or unconfirmed?",
-        "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, 24/7 OKX XAUUSDT.P Basis Spread (Weekend Gap or Intraday Perp Premium), and OANDA Retail Sentiment interact with this news.",
-        "Bull_Case": "Arguments and catalysts supporting a Bullish XAU/USD reaction.",
-        "Bear_Case": "Counter-arguments, priced-in risks, or macro headwinds supporting a Bearish/muted XAU/USD reaction.",
+        "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, 24/7 OKX XAUUSDT.P Basis Spread, Aggressive Taker Flow (Market Buys vs. Sells), and OANDA Retail Sentiment interact with this news.",
+        "Bull_Case": "Arguments and catalysts supporting a Bullish XAU/USD reaction (including whether aggressive Taker buying is absorbing passive sell walls).",
+        "Bear_Case": "Counter-arguments, priced-in risks, or macro/taker headwinds supporting a Bearish/muted XAU/USD reaction.",
         "Historical_Calibration": "Candid calibration audit citing the exact Win Rate from the Regime Matrix for this cluster's Category, ATR-Exhaustion bucket, and USD alignment.",
         "Impact_Timing": "Future, Present, or Past (Already Priced In)",
         "Timeframe": "Hours/Days, Days/Weeks, or Weeks/Months (Write 'N/A' if Past)",
         "XAUUSD_Impact": "Bullish, Bearish, or Neutral",
         "Probability_Percent": 60,
-        "Past_Price_Action_Cause": "How the 4h/24h price change, 24/7 XAUUSDT.P spread, and ATR ratio align with this news.",
+        "Past_Price_Action_Cause": "How the 4h/24h price change, Aggressive Taker Flow, and ATR ratio align with this news.",
         "Orderflow_Price_Target": "Exact numerical Take-Profit target from the Liquidity Zones (strictly > current price for Bullish, < current price for Bearish, or 'N/A' for Neutral)."
       }}
     ]
@@ -1068,7 +1283,7 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
             
     return {}
 
-def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None, crypto_basis_obj=None):
+def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None, crypto_basis_obj=None, taker_flow_obj=None, dominant_drivers_list=None):
     if not OANDA_API_KEY:
         print("WARNING: No OANDA_API_KEY found, skipping chart update.")
         return
@@ -1087,7 +1302,9 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
         "sentiment": {"long_pct": 50.0, "short_pct": 50.0},
         "macro": macro_summary or old_market_data.get("macro", {}),
         "volatility": vol_metrics or old_market_data.get("volatility", {}),
-        "crypto_basis": crypto_basis_obj or old_market_data.get("crypto_basis", {})
+        "crypto_basis": crypto_basis_obj or old_market_data.get("crypto_basis", {}),
+        "taker_flow": taker_flow_obj or old_market_data.get("taker_flow", {}),
+        "dominant_drivers": dominant_drivers_list if dominant_drivers_list is not None else old_market_data.get("dominant_drivers", [])
     }
     
     headers = {
@@ -1162,14 +1379,16 @@ def main():
         except Exception:
             existing_data = []
 
-    print("Loading Volatility (ATR), Multi-Source Order Zones (OANDA + COMEX), 24/7 OKX XAUUSDT.P Basis & Macro...")
+    print("Loading Volatility (ATR), Multi-Source Order Zones (OANDA + COMEX), 24/7 OKX XAUUSDT.P Basis & Aggressive Taker Flow...")
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     candle_fallback_price = vol_metrics.get("current_price", 0.0)
     
     oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0, fallback_price=candle_fallback_price)
     effective_spot_price = oanda_zones_cache[0] if oanda_zones_cache and oanda_zones_cache[0] > 0 else candle_fallback_price
+    oanda_sentiment = oanda_zones_cache[2] if oanda_zones_cache else {"long_pct": 50.0, "short_pct": 50.0}
     
     crypto_basis_str, crypto_basis_obj = fetch_crypto_gold_basis(effective_spot_price)
+    taker_flow_str, taker_flow_obj = fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=oanda_sentiment)
     macro_context_str, macro_summary = fetch_macro_context()
 
     current_stats = evaluate_clusters(existing_data, h1_candles, vol_metrics=vol_metrics, macro_summary=macro_summary)
@@ -1246,6 +1465,9 @@ def main():
 
     valid_clusters.sort(key=lambda x: float(x.get("_timestamp", 0)), reverse=True)
     
+    # Pre-compute dominant drivers so the AI batch has global awareness of what themes dominate the 24h cycle
+    dominant_drivers_str, _ = compute_dominant_drivers(valid_clusters)
+
     pending_clusters = [
         c for c in valid_clusters 
         if c.get("needs_update", False) or not isinstance(c.get("summary"), dict)
@@ -1265,6 +1487,8 @@ def main():
                 price_history_data,
                 macro_context_str,
                 crypto_basis_str,
+                taker_flow_str,
+                dominant_drivers_str,
                 perf_memory_str
             )
             
@@ -1279,24 +1503,29 @@ def main():
     fallback_count = 0
     for c in valid_clusters:
         if not isinstance(c.get("summary"), dict):
-            c["summary"] = build_local_fallback_summary(c, oanda_zones_cache, vol_metrics, macro_summary, crypto_basis_obj)
+            c["summary"] = build_local_fallback_summary(c, oanda_zones_cache, vol_metrics, macro_summary, crypto_basis_obj, taker_flow_obj)
             c["needs_update"] = True
             fallback_count += 1
             
     if fallback_count > 0:
         print(f"Info: {fallback_count} clusters populated with local real-time summary (zero data loss).")
 
+    # Finalize dominant drivers after AI summaries are updated
+    _, dominant_drivers_list = compute_dominant_drivers(valid_clusters)
+
     evaluate_clusters(valid_clusters, h1_candles, vol_metrics=vol_metrics, macro_summary=macro_summary)
             
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
         
-    print("Updating chart, 24/7 OKX XAUUSDT.P basis & macro data...")
+    print("Updating chart, 24/7 OKX XAUUSDT.P basis, Aggressive Taker Flow & Dominant Drivers...")
     update_market_data(
         top_zones_cache=oanda_zones_cache,
         macro_summary=macro_summary,
         vol_metrics=vol_metrics,
-        crypto_basis_obj=crypto_basis_obj
+        crypto_basis_obj=crypto_basis_obj,
+        taker_flow_obj=taker_flow_obj,
+        dominant_drivers_list=dominant_drivers_list
     )
     print("Update completed.")
 

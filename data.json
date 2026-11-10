@@ -1,5 +1,54 @@
 [
     {
+        "main_date": "First Reported: 2026-11-10 11:12 UTC | Last Update: 2026-11-10 15:32 UTC",
+        "original_date": "2026-11-10 11:12",
+        "_timestamp": 1794324755.0,
+        "articles": [
+            {
+                "title": "Iran’s IRGC Aerospace Force unveils new missile city (+VIDEO)",
+                "link": "https://en.mehrnews.com/news/249300/Iran-s-IRGC-Aerospace-Force-unveils-new-missile-city",
+                "source": "Mehr News Agency",
+                "date": "2026-11-10 11:12",
+                "description": "TEHRAN, Nov. 10 (MNA) – Islamic Revolutionary Guards Corps (IRGC) Aerospace Force has unveiled a new missile city in presence of Armed Forces Chief of Staff Major General Abdollahi and IRGC Aerospace Commander Brigadier General Seyyed Majid Mousavi.",
+                "_timestamp": 1794309149.0
+            },
+            {
+                "title": "Iran to have new surprises for enemy in missile field",
+                "link": "https://en.mehrnews.com/news/249304/Iran-to-have-new-surprises-for-enemy-in-missile-field",
+                "source": "Mehr News Agency",
+                "date": "2026-11-10 13:50",
+                "description": "TEHRAN, Nov. 10 (MNA) –  Chief of Staff  of Iranian Armed Forces Major General Ali Abdollahi has said that the Irnaina armed forces will employ new missiles in future war with the enemy.",
+                "_timestamp": 1794318657.0
+            },
+            {
+                "title": "IRGC Unveils New Underground Missile City in Show of Power",
+                "link": "https://www.tehrantimes.com/news/532026/IRGC-Unveils-New-Underground-Missile-City-in-Show-of-Power",
+                "source": "Tehran Times",
+                "date": "2026-11-10 15:32",
+                "description": "TEHRAN – On Tuesday, the IRGC Aerospace Force unveiled a new underground missile city, displaying an array of ballistic and cruise missiles and their launch systems.",
+                "_timestamp": 1794324755.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "First reported: 2026-11-10 11:12 UTC (~2.1h ago)",
+            "Facts": "[Mehr News Agency] Iran’s IRGC Aerospace Force unveils new missile city (+VIDEO) - TEHRAN, Nov. 10 (MNA) – Islamic Revolutionary Guards Corps (IRGC) Aerospace Force has unveiled a new missile city in presence of Armed Forces Chief of Staff Major General Abdollahi and IRGC Aerosp",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD +0.12%, Nasdaq-100 +1.98%, Brent Oil -4.32% | OANDA Sentiment: 67.5% Long / 32.5% Short | 24/7 OKX XAUUSDT.P: $4082.4 (Spread: $+3.29).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4090.03.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $4070.83. 4h-ATR ratio is 0.25x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 2.1h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-13.01 (0.25x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "4090.03"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 41.32
+    },
+    {
         "main_date": "First Reported: 2026-11-10 11:19 UTC | Last Update: 2026-11-10 15:24 UTC",
         "original_date": "2026-11-10 11:19",
         "_timestamp": 1794324281.0,
@@ -5460,47 +5509,6 @@
             "Past_Price_Action_Cause": "4h XAU/USD move: $-23.71 (0.38x of estimated Daily ATR).",
             "Orderflow_Price_Target": "N/A"
         }
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 11:12 UTC | Last Update: 2026-11-10 13:50 UTC",
-        "original_date": "2026-11-10 11:12",
-        "_timestamp": 1794318657.0,
-        "articles": [
-            {
-                "title": "Iran’s IRGC Aerospace Force unveils new missile city (+VIDEO)",
-                "link": "https://en.mehrnews.com/news/249300/Iran-s-IRGC-Aerospace-Force-unveils-new-missile-city",
-                "source": "Mehr News Agency",
-                "date": "2026-11-10 11:12",
-                "description": "TEHRAN, Nov. 10 (MNA) – Islamic Revolutionary Guards Corps (IRGC) Aerospace Force has unveiled a new missile city in presence of Armed Forces Chief of Staff Major General Abdollahi and IRGC Aerospace Commander Brigadier General Seyyed Majid Mousavi.",
-                "_timestamp": 1794309149.0
-            },
-            {
-                "title": "Iran to have new surprises for enemy in missile field",
-                "link": "https://en.mehrnews.com/news/249304/Iran-to-have-new-surprises-for-enemy-in-missile-field",
-                "source": "Mehr News Agency",
-                "date": "2026-11-10 13:50",
-                "description": "TEHRAN, Nov. 10 (MNA) –  Chief of Staff  of Iranian Armed Forces Major General Ali Abdollahi has said that the Irnaina armed forces will employ new missiles in future war with the enemy.",
-                "_timestamp": 1794318657.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "First reported: 2026-11-10 11:12 UTC (~2.1h ago)",
-            "Facts": "[Mehr News Agency] Iran’s IRGC Aerospace Force unveils new missile city (+VIDEO) - TEHRAN, Nov. 10 (MNA) – Islamic Revolutionary Guards Corps (IRGC) Aerospace Force has unveiled a new missile city in presence of Armed Forces Chief of Staff Major General Abdollahi and IRGC Aerosp",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD +0.12%, Nasdaq-100 +1.98%, Brent Oil -4.32% | OANDA Sentiment: 67.5% Long / 32.5% Short | 24/7 OKX XAUUSDT.P: $4082.4 (Spread: $+3.29).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4090.03.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4070.83. 4h-ATR ratio is 0.25x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 2.1h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-13.01 (0.25x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4090.03"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 41.32
     },
     {
         "main_date": "First Reported: 2026-11-10 13:40 UTC",
@@ -12054,7 +12062,7 @@
             "Past_Price_Action_Cause": "Current price action remains anchored by spot-perp parity ($+6.98 spread) and strong intraday momentum rather than incoming congressional leadership news.",
             "Orderflow_Price_Target": "4149.25"
         },
-        "eval_status": "ACTIVE",
+        "eval_status": "MISS",
         "max_dd_usd": 103.5
     },
     {
@@ -13806,119 +13814,5 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.1
-    },
-    {
-        "main_date": "First Reported: 2026-11-08 00:44 UTC | Last Update: 2026-11-09 15:31 UTC",
-        "original_date": "2026-11-08 00:44",
-        "_timestamp": 1794238297.0,
-        "articles": [
-            {
-                "title": "Centcom sets up 'Task Force Iron Gate' to disrupt Iran’s weapons transfers",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/centcom-sets-task-force-iron-gate-disrupt-irans-weapons-transfers",
-                "source": "Middle East Eye",
-                "date": "2026-11-08 00:44",
-                "description": "Centcom sets up 'Task Force Iron Gate' to disrupt Iran’s weapons transfers\n\n    \n    \n\n        \n    \n                The United States Central Command (Centcom) has directed the establishment of a task force that will support US government's efforts to prevent&nbsp;Iran from using ground routes to transport advanced weapons and other materials.\n\nIn a statement issued on Saturday on X, Centcom said Admiral Brad Cooper has directed the formation of",
-                "_timestamp": 1794098691.0
-            },
-            {
-                "title": "US launches task force to disrupt Iran’s land-based supply routes",
-                "link": "https://www.aljazeera.com/news/2026/11/8/us-launches-task-force-to-disrupt-irans-land-based-supply-routes?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-08 02:34",
-                "description": "The operation is to prevent Iran from using ground routes to transport weapons and other materials, US says.",
-                "_timestamp": 1794105244.0
-            },
-            {
-                "title": "Morning update",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-664",
-                "source": "Middle East Eye",
-                "date": "2026-11-08 08:00",
-                "description": "Morning update\n\n    \n    \n\n        \n    \n                Good Morning Middle East Eye readers,\n\nIf you are just joining us, here are key developments from across the region and beyond:\n\n*The United States Central Command has directed the establishment of a task force that will support US government's efforts to prevent Iran from using ground routes to transport advanced weapons and other materials.\n\n*The Saudi-led coalition forces intercepted and",
-                "_timestamp": 1794124810.0
-            },
-            {
-                "title": "The Iron Gate; U.S. confession of military failure",
-                "link": "https://en.mehrnews.com/news/249234/The-Iron-Gate-U-S-confession-of-military-failure",
-                "source": "Mehr News Agency",
-                "date": "2026-11-08 08:13",
-                "description": "TEHRAN, Nov. 08 (MNA) – A new US task force aims to choke off Iran's supply lines. But with seven land neighbors, a legal ban on foreign forces in the Caspian, and trade partners with minds of their own, the \"Iron Gate\" looks far from airtight.",
-                "_timestamp": 1794125618.0
-            },
-            {
-                "title": "US task force to cut off Iran’s transport of advanced weapons: What we know",
-                "link": "https://www.aljazeera.com/news/2026/11/8/us-task-force-to-cut-off-irans-transport-of-advanced-weapons-what-we-know?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-08 14:06",
-                "description": "As fears of an escalation grow, Washington announces &#039;Task Force Iron Gate&#039;.",
-                "_timestamp": 1794146779.0
-            },
-            {
-                "title": "'Iron Gate plan is merely wordplay': Iran mocks US military initiative to disrupt supply routes",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iron-gate-plan-merely-wordplay-iran-mocks-us-military-initiative-disrupt",
-                "source": "Middle East Eye",
-                "date": "2026-11-08 16:03",
-                "description": "'Iron Gate plan is merely wordplay': Iran mocks US military initiative to disrupt supply routes\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard Corps (IRGC) has dismissed a new US military initiative to restrict the movement of goods through Iran's land borders and the Caspian Sea as “merely wordplay”, as tensions over shipping routes and Washington's blockade continue.\n\n“The Iron Gate plan is merely wordplay. The Ame",
-                "_timestamp": 1794153792.0
-            },
-            {
-                "title": "'Iron Gate plan is merely wordplay': Iran mocks US military initiative to disrupt supply routes",
-                "link": "https://www.middleeasteye.net/news/iron-gate-plan-merely-wordplay-iran-mocks-us-plan-disrupt-supply-routes",
-                "source": "Middle East Eye",
-                "date": "2026-11-08 15:59",
-                "description": "'Iron Gate plan is merely wordplay': Iran mocks US military initiative to disrupt supply routes\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nSun, 11/08/2026 - 13:34\n\n        \n      \n    \n      \n    \n                Centcom has announced a US initiative to establish Task Force Iron Gate through Iran's land routes and the Caspian Sea \n                      \n                  \n                  \n\n  \n\n\n                  A",
-                "_timestamp": 1794153555.0
-            },
-            {
-                "title": "Iran dismisses US ‘Iron Gate’ task force as another failed bid to force economic collapse",
-                "link": "https://www.tehrantimes.com/news/531953/Iran-dismisses-US-Iron-Gate-task-force-as-another-failed-bid",
-                "source": "Tehran Times",
-                "date": "2026-11-08 17:10",
-                "description": "TEHRAN – Iran has dismissed a newly announced US military initiative targeting its land-based trade and transit routes as another unsuccessful attempt to cripple the country's economy, arguing that Washington's strategy of economic coercion will not achieve its ultimate objective of weakening or dismantling the Islamic Republic.",
-                "_timestamp": 1794157803.0
-            },
-            {
-                "title": "US launches task force to disrupt land transit routes into Iran",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/us-launches-task-force-disrupt-land-transit-routes-iran",
-                "source": "Middle East Eye",
-                "date": "2026-11-08 22:12",
-                "description": "US launches task force to disrupt land transit routes into Iran\n\n    \n    \n\n        \n    \n                US President Donald Trump said Sunday that a new task force is now in&nbsp;“in full force and effect” in Iran.\n\n\"Task Force Iron Gate is in full force and effect in the Islamic Republic of Iran. Coupled with history’s greatest Naval Blockade, very little gets into, or out of, Iran!\" he posted on his Truth Social platform.\n\nUS Central Command ",
-                "_timestamp": 1794175924.0
-            },
-            {
-                "title": "Iran mocks US military initiative to disrupt supply routes",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-mocks-us-military-initiative-disrupt-supply-routes",
-                "source": "Middle East Eye",
-                "date": "2026-11-09 03:33",
-                "description": "Iran mocks US military initiative to disrupt supply routes\n\n    \n    \n\n        \n    \n                Iran's Islamic Revolutionary Guard Corps (IRGC) has dismissed a new US military initiative to restrict the movement of goods through Iran's land borders and the Caspian Sea as “merely wordplay”, as tensions over shipping routes and Washington's blockade continue.\n\n“The Iron Gate plan is merely wordplay. The Americans cannot achieve their objective",
-                "_timestamp": 1794195214.0
-            },
-            {
-                "title": "Trump says Iran is sealed off. But can new US task force stop weapons flow?",
-                "link": "https://www.aljazeera.com/news-analysis/2026/11/9/trump-says-iran-is-sealed-off-but-can-new-us-task-force-stop-weapons-flow?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-09 15:31",
-                "description": "Analysts say a small intelligence-focused unit cannot seal Iran’s borders, and others warn it could expand the war.",
-                "_timestamp": 1794238297.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 4,
-            "Event_Timestamp": "2026-11-09 03:33 UTC (approx. 1.9 hours ago relative to 2026-11-09 05:25 UTC)",
-            "Facts": "Iran's IRGC dismissed the US 'Iron Gate' task force and naval blockade targeting land transit and Caspian Sea routes as 'merely wordplay', while President Trump confirmed the task force is in full effect [Middle East Eye, Tehran Times].",
-            "Uncertainties": "Effectiveness of land and naval blockades in actually restricting Iranian commerce and oil exports.",
-            "Macro_Context": "Geopolitical friction in the Middle East underpins gold safe-haven demand. Brent crude is down -2.85%, reflecting market skepticism over immediate supply disruptions despite aggressive US rhetoric.",
-            "Bull_Case": "Escalating economic warfare and naval blockades keep geopolitical risk premiums high for safe-haven assets.",
-            "Bear_Case": "Markets may become desensitized to ongoing rhetorical standoffs and blockades if actual supply lines remain unaffected.",
-            "Historical_Calibration": "Middle East naval and blockade tensions historically trigger buying pressure in gold, matching prior successful geopolitical setups.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "Persistent geopolitical escalation supports a steady underlying bid in gold prices.",
-            "Orderflow_Price_Target": "4138.79"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
     }
 ]

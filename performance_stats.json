@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 338,
+    "total_evaluated": 339,
     "hits": 197,
-    "misses": 141,
-    "win_rate": 58.3,
-    "active_signals": 21,
+    "misses": 142,
+    "win_rate": 58.1,
+    "active_signals": 20,
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -4614,7 +4614,7 @@
             "fail_reason": ""
         },
         "https://www.cnbc.com/2026/11/09/elizabeth-warren-senate-banking-agenda.html": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Elizabeth Warren set to take over the Senate banking committee. Here's what she plans to d",
             "source": "CNBC Tech & AI",
             "impact": "Bullish",
@@ -4627,7 +4627,7 @@
             "macro_snapshot": "EUR +0.73%, NAS100 +3.74%",
             "created_ts": 1794252883.0,
             "date": "First Reported: 2026-11-09 19:34 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4149.25 (Max DD: -$103.50)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-led-coalition-says-it-destroyed-houthi-missile-facilities": {
             "status": "MISS",

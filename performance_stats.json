@@ -3,7 +3,131 @@
     "hits": 197,
     "misses": 142,
     "win_rate": 58.1,
-    "active_signals": 20,
+    "active_signals": 21,
+    "regime_matrix": {
+        "by_direction": {
+            "Bullish": {
+                "hits": 155,
+                "misses": 110,
+                "total": 265,
+                "win_rate": 58.5,
+                "avg_dd": 17.61
+            },
+            "Bearish": {
+                "hits": 42,
+                "misses": 32,
+                "total": 74,
+                "win_rate": 56.8,
+                "avg_dd": 19.89
+            }
+        },
+        "by_atr_regime": {
+            "Fresh (<0.8x ATR)": {
+                "hits": 183,
+                "misses": 142,
+                "total": 325,
+                "win_rate": 56.3,
+                "avg_dd": 18.74
+            },
+            "Moderate (0.8x-1.2x ATR)": {
+                "hits": 14,
+                "misses": 0,
+                "total": 14,
+                "win_rate": 100.0,
+                "avg_dd": 7.7
+            },
+            "Exhausted (>=1.2x ATR)": {
+                "hits": 0,
+                "misses": 0,
+                "total": 0,
+                "win_rate": 0.0,
+                "avg_dd": 0.0
+            },
+            "Unrecorded (Legacy)": {
+                "hits": 0,
+                "misses": 0,
+                "total": 0,
+                "win_rate": 0.0,
+                "avg_dd": 0.0
+            }
+        },
+        "by_macro_alignment": {
+            "With USD Tailwind": {
+                "hits": 86,
+                "misses": 45,
+                "total": 131,
+                "win_rate": 65.6,
+                "avg_dd": 20.31
+            },
+            "Against USD Headwind": {
+                "hits": 108,
+                "misses": 97,
+                "total": 205,
+                "win_rate": 52.7,
+                "avg_dd": 16.39
+            },
+            "USD Neutral / Legacy": {
+                "hits": 3,
+                "misses": 0,
+                "total": 3,
+                "win_rate": 100.0,
+                "avg_dd": 5.89
+            }
+        },
+        "by_category": {
+            "Geopolitics & War": {
+                "hits": 110,
+                "misses": 82,
+                "total": 192,
+                "win_rate": 57.3,
+                "avg_dd": 18.33
+            },
+            "Fed, Rates & Macro": {
+                "hits": 10,
+                "misses": 7,
+                "total": 17,
+                "win_rate": 58.8,
+                "avg_dd": 12.19
+            },
+            "Tech, AI & Equities": {
+                "hits": 51,
+                "misses": 35,
+                "total": 86,
+                "win_rate": 59.3,
+                "avg_dd": 15.92
+            },
+            "Commodities & Energy": {
+                "hits": 26,
+                "misses": 18,
+                "total": 44,
+                "win_rate": 59.1,
+                "avg_dd": 23.53
+            }
+        },
+        "by_confidence": {
+            "Moderate (51-64%)": {
+                "hits": 197,
+                "misses": 136,
+                "total": 333,
+                "win_rate": 59.2,
+                "avg_dd": 18.1
+            },
+            "High (65-74%)": {
+                "hits": 0,
+                "misses": 5,
+                "total": 5,
+                "win_rate": 0.0,
+                "avg_dd": 12.77
+            },
+            "Extreme (>=75%)": {
+                "hits": 0,
+                "misses": 1,
+                "total": 1,
+                "win_rate": 0.0,
+                "avg_dd": 6.41
+            }
+        }
+    },
     "history": {
         "https://www.thestreet.com/fed/bank-of-america-oil-fed-rates?.tsrc=rss": {
             "status": "MISS",
@@ -5533,7 +5657,7 @@
             "prob": 55,
             "entry_price": 4050.64,
             "target": 4060.08,
-            "max_dd_usd": 11.78,
+            "max_dd_usd": 16.52,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 62.91,
             "macro_snapshot": "EUR -0.25%, NAS100 -0.24%",
@@ -5748,6 +5872,25 @@
             "created_ts": 1794315600.0,
             "date": "First Reported: 2026-11-10 13:00 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
+        },
+        "https://www.marketwatch.com/story/why-stocks-are-falling-and-10-year-yields-are-climbing-back-near-5-after-tuesdays-inflation-report-389b8392?mod=mw_rss_topstories": {
+            "status": "ACTIVE",
+            "headline": "Why stocks are falling and 10-year yields are climbing back near 5% after Tuesday’s inflat",
+            "source": "MarketWatch Macro",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bearish",
+            "prob": 56,
+            "entry_price": 4041.38,
+            "target": 4029.92,
+            "max_dd_usd": 12.78,
+            "atr_ratio_at_signal": 0.51,
+            "daily_atr_at_signal": 64.7,
+            "eur_chg_at_signal": -0.39,
+            "nas_chg_at_signal": -0.96,
+            "macro_snapshot": "EUR -0.39%, NAS100 -0.96%",
+            "created_ts": 1794325620.0,
+            "date": "First Reported: 2026-11-10 15:47 UTC",
+            "fail_reason": ""
         }
     }
 }

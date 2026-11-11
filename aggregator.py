@@ -257,18 +257,14 @@ def fetch_crypto_gold_basis(oanda_price):
 
 def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
     """
-    Captures the 'invisible' immediately executed Market Orders (Aggressive Taker Flow & Candle Absorption)
-    that break through passive limit orderbook walls:
-    1. OKX XAU-USDT-SWAP recent executed Taker Buy vs. Taker Sell volume + Funding Rate.
-    2. OANDA H1 Candle Buying/Selling Pressure & Wick Rejection over the last 4 hours.
-    3. Retail Stop-Hunt / Squeeze vulnerability check.
+    Captures immediately executed Market Orders (Aggressive Taker Flow & Candle Absorption)
+    that break through passive limit orderbook walls.
     """
     headers = {"User-Agent": "Mozilla/5.0"}
     taker_buy_vol = 0.0
     taker_sell_vol = 0.0
     funding_rate_pct = 0.0
 
-    # 1. Fetch real executed Taker trades from OKX XAU-USDT-SWAP (or XAUT-USDT-SWAP fallback)
     for inst in ["XAU-USDT-SWAP", "XAUT-USDT-SWAP"]:
         try:
             url_trades = f"https://www.okx.com/api/v5/market/trades?instId={inst}&limit=100"
@@ -286,7 +282,6 @@ def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
         except Exception:
             pass
 
-    # 2. Fetch Perpetual Funding Rate (Smart Money / Leverage skew)
     try:
         url_fr = "https://www.okx.com/api/v5/public/funding-rate?instId=XAU-USDT-SWAP"
         res_fr = requests.get(url_fr, headers=headers, timeout=5)
@@ -297,7 +292,6 @@ def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
     except Exception:
         pass
 
-    # 3. Calculate OANDA H1 Candle Buying vs. Selling Absorption (last 4 hours)
     candle_buy_pressure = 50.0
     wick_note = "Balanced Intrabar Flow"
     if h1_candles and len(h1_candles) >= 4:
@@ -309,7 +303,6 @@ def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
 
         for c in recent_4:
             rng = max(0.01, c["h"] - c["l"])
-            # Close position within the high-low range measures who won the hour via market orders
             buy_pts += (c["c"] - c["l"]) / rng
             sell_pts += (c["h"] - c["c"]) / rng
             lower_wick_sum += (min(c["o"], c["c"]) - c["l"]) / rng
@@ -324,7 +317,6 @@ def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
         elif upper_wick_sum > lower_wick_sum * 1.35:
             wick_note = "Strong Upper-Wick Rejection (Aggressive Market-Selling at Highs)"
 
-    # Combine Taker tape (60% weight) + OANDA Candle Pressure (40% weight)
     tot_taker = taker_buy_vol + taker_sell_vol
     if tot_taker > 0:
         raw_taker_buy_pct = round((taker_buy_vol / tot_taker) * 100.0, 1)
@@ -335,7 +327,6 @@ def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
 
     composite_sell_pct = round(100.0 - composite_buy_pct, 1)
 
-    # Determine dominant execution state & squeeze risk
     retail_long = (oanda_sentiment or {}).get("long_pct", 50.0)
     if composite_buy_pct >= 58.0:
         state_label = "AGGRESSIVE MARKET BUYING (Ask-Side Absorption)"
@@ -377,10 +368,6 @@ def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
     return prompt_str, flow_obj
 
 def compute_dominant_drivers(valid_clusters):
-    """
-    Aggregates all active news clusters over the last 24h to show the trader WHAT is currently
-    driving the Gold price (e.g., Iran/Hormuz War, US CPI/Fed Rates, AI/Tech Selloff), ranked by media weight.
-    """
     if not valid_clusters:
         return "No active market drivers detected.", []
 
@@ -399,7 +386,6 @@ def compute_dominant_drivers(valid_clusters):
         prob = int(summary.get("Probability_Percent", 50) or 50)
         impact = str(summary.get("XAUUSD_Impact", "Neutral"))
 
-        # Weight combines source coverage and AI conviction
         weight = src_count * (0.6 + (prob / 100.0))
         total_weight += weight
 
@@ -1124,15 +1110,24 @@ def format_performance_memory(stats):
     )
 
 def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_summary, crypto_basis_obj=None, taker_flow_obj=None):
-    articles = cluster.get("articles", [])
-    oldest = min(articles, key=lambda x: x.get("_timestamp", 0)) if articles else {}
+    articles = sorted(cluster.get("articles", []), key=lambda x: x.get("_timestamp", 0))
+    oldest = articles[0] if articles else {}
+    newest = articles[-1] if articles else {}
     age_h = round((datetime.now().timestamp() - float(oldest.get("_timestamp", datetime.now().timestamp()))) / 3600.0, 1)
 
     facts_list = []
-    for a in articles[:4]:
+    # If multiple sources exist, explicitly lead with the latest update timestamp and details
+    if len(articles) > 1:
+        upd_desc = newest.get("description", "").strip()
+        upd_snippet = f"{newest['title']} — {upd_desc}" if upd_desc and upd_desc.lower() != newest['title'].lower() else newest['title']
+        facts_list.append(f"[Update {newest.get('date', '')} UTC via {newest.get('source', '')}]: {upd_snippet[:260]}")
+
+    for a in articles[:3]:
+        if len(articles) > 1 and a["link"] == newest["link"]:
+            continue
         desc = a.get("description", "").strip()
         snippet = f"{a['title']} - {desc}" if desc and desc.lower() != a['title'].lower() else a['title']
-        facts_list.append(f"[{a['source']}] {snippet[:260]}")
+        facts_list.append(f"[{a['source']}] {snippet[:240]}")
     facts_str = " | ".join(facts_list)
 
     full_text = " ".join([f"{a.get('title','')} {a.get('description','')}" for a in articles]).lower()
@@ -1196,18 +1191,34 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
     
     clusters_input = []
     for idx, c in enumerate(clusters_batch):
-        recent_arts = sorted(c["articles"], key=lambda x: x.get("_timestamp", 0), reverse=True)[:4]
-        combined_text = " ".join([f"{a.get('title', '')} {a.get('description', '')}" for a in recent_arts])
+         chronological_arts = sorted(c["articles"], key=lambda x: x.get("_timestamp", 0))
+        combined_text = " ".join([f"{a.get('title', '')} {a.get('description', '')}" for a in chronological_arts])
         specific_drv, cat_label = detect_specific_narrative(combined_text)
-        arts_text = "\n".join([f"  * [{a['source']}] ({a['date']} UTC): {a['title']} — {a['description']}" for a in recent_arts])
-        clusters_input.append(f"=== CLUSTER_ID: {idx} | CATEGORY: {cat_label} | DETECTED_DRIVER: {specific_drv} ===\n{arts_text}")
+        
+        # Keep oldest article + up to 4 newest articles in chronological order so AI clearly sees updates
+        if len(chronological_arts) > 5:
+            selected_arts = [chronological_arts[0]] + chronological_arts[-4:]
+        else:
+            selected_arts = chronological_arts
+            
+        arts_lines = []
+        for a_i, a in enumerate(selected_arts):
+            role_tag = "INITIAL REPORT" if a_i == 0 else f"NEW UPDATE #{a_i}"
+            arts_lines.append(f"  * [{role_tag} | {a['date']} UTC | {a['source']}]: {a['title']} — {a['description']}")
+        arts_text = "\n".join(arts_lines)
+        clusters_input.append(f"=== CLUSTER_ID: {idx} | TOTAL_SOURCES: {len(chronological_arts)} | CATEGORY: {cat_label} | DETECTED_DRIVER: {specific_drv} ===\n{arts_text}")
         
     all_clusters_str = "\n\n".join(clusters_input)
     
     prompt = f"""You are an objective Intelligence & Calibration Agent for a manual Gold (XAU/USD) & Macro trader.
     Analyze the following {len(clusters_batch)} News Clusters using the shared market, macro, 24/7 XAUUSDT.P perpetual basis, Aggressive Taker Flow (immediate market orders vs. passive limit walls), Dominant 24h Drivers, and the Empirical Multi-Dimensional Regime Matrix below.
     Do NOT hide or dismiss minor news—thoroughly contextualize every cluster!
-    Note: Every directional forecast ('Bullish' or 'Bearish') with Probability_Percent > 50% will be automatically tracked and evaluated over 20 hours against actual OANDA candles!
+    
+    CRITICAL RULE FOR MULTI-SOURCE UPDATES:
+    Whenever a cluster has more than 1 source (i.e., contains 'NEW UPDATE #...'), you MUST start the 'Facts' field with the latest update prefixed by its exact timestamp and source:
+    '[Update YYYY-MM-DD HH:MM UTC via Source]: <What new information or confirmation was added> | Core Background: <Comprehensive summary of initial report>'
+    Never leave the summary text unchanged when a new source is added!
+
     Output ONLY a valid JSON array of {len(clusters_batch)} objects (one object per CLUSTER_ID). Write all values strictly in English!
 
     Current Reference Time: {now_utc_str}
@@ -1230,7 +1241,7 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
         "Cluster_ID": 0,
         "Dominant_Driver": "Specific driver label (e.g., 'Iran & Strait of Hormuz', 'US Inflation & Fed Rate Path', 'AI & Semiconductor Shock', etc.)",
         "Event_Timestamp": "Exact or estimated date/time when the real-world event occurred and how many hours ago relative to {now_utc_str}.",
-        "Facts": "Comprehensive, unfiltered summary of all core facts, numbers, and WHY it matters. Include [Source].",
+        "Facts": "If updated by newer sources, MUST start with '[Update YYYY-MM-DD HH:MM UTC via Source]: <new facts>' followed by the comprehensive summary of all core facts and numbers.",
         "Uncertainties": "What is unclear, speculative, or unconfirmed?",
         "Macro_Context": "How USD, 10Y Yields, Nasdaq 100 (Tech/AI), Brent Oil, 24/7 OKX XAUUSDT.P Basis Spread, Aggressive Taker Flow (Market Buys vs. Sells), and OANDA Retail Sentiment interact with this news.",
         "Bull_Case": "Arguments and catalysts supporting a Bullish XAU/USD reaction (including whether aggressive Taker buying is absorbing passive sell walls).",
@@ -1412,6 +1423,8 @@ def main():
     new_articles = fetch_new_articles(existing_urls)
     
     if new_articles:
+        # Process chronologically so updates are appended in exact time order
+        new_articles.sort(key=lambda x: x.get("_timestamp", 0))
         print(f"Found {len(new_articles)} new articles. Clustering (Threshold: {SIMILARITY_THRESHOLD})...")
         
         cluster_embeddings = []
@@ -1447,6 +1460,15 @@ def main():
                 target_cluster["_timestamp"] = newest_article["_timestamp"]
                 target_cluster["needs_update"] = True
                 
+                # Immediate Zero-Delay Update Injection into existing summary (guarantees text update even before AI runs)
+                if isinstance(target_cluster.get("summary"), dict):
+                    old_facts = target_cluster["summary"].get("Facts", "")
+                    upd_tag = f"[Update {article['date']} UTC via {article['source']}]:"
+                    if upd_tag not in old_facts:
+                        desc_clean = article.get("description", "").strip()
+                        new_info = f"{article['title']} — {desc_clean[:180]}" if desc_clean and desc_clean.lower() != article['title'].lower() else article['title']
+                        target_cluster["summary"]["Facts"] = f"{upd_tag} {new_info} | {old_facts}"
+                
                 updated_text = " ".join([a["title"] for a in target_cluster["articles"]])
                 cluster_embeddings[best_match_idx] = model.encode(updated_text)
             else:
@@ -1463,9 +1485,9 @@ def main():
     else:
         print("No new articles found.")
 
+    # Sort strictly by newest timestamp (including newly updated clusters) so top feed items get AI priority
     valid_clusters.sort(key=lambda x: float(x.get("_timestamp", 0)), reverse=True)
     
-    # Pre-compute dominant drivers so the AI batch has global awareness of what themes dominate the 24h cycle
     dominant_drivers_str, _ = compute_dominant_drivers(valid_clusters)
 
     pending_clusters = [
@@ -1494,7 +1516,14 @@ def main():
             
             for idx_in_batch, cluster in enumerate(batch_slice):
                 if idx_in_batch in batch_results:
-                    cluster["summary"] = batch_results[idx_in_batch]
+                    ai_summary = batch_results[idx_in_batch]
+                    # Ensure that if a cluster has >1 source, the "[Update Date UTC via Source]:" prefix is guaranteed in Facts
+                    if len(cluster.get("articles", [])) > 1 and isinstance(ai_summary, dict):
+                        newest_a = max(cluster["articles"], key=lambda x: x.get("_timestamp", 0))
+                        facts_val = str(ai_summary.get("Facts", ""))
+                        if "[Update" not in facts_val:
+                            ai_summary["Facts"] = f"[Update {newest_a['date']} UTC via {newest_a['source']}]: {newest_a['title']} | {facts_val}"
+                    cluster["summary"] = ai_summary
                     cluster["needs_update"] = False
             
             if b_idx < total_batches - 1 and batch_results:
@@ -1510,7 +1539,6 @@ def main():
     if fallback_count > 0:
         print(f"Info: {fallback_count} clusters populated with local real-time summary (zero data loss).")
 
-    # Finalize dominant drivers after AI summaries are updated
     _, dominant_drivers_list = compute_dominant_drivers(valid_clusters)
 
     evaluate_clusters(valid_clusters, h1_candles, vol_metrics=vol_metrics, macro_summary=macro_summary)

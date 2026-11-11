@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 352,
-    "hits": 209,
+    "total_evaluated": 361,
+    "hits": 218,
     "misses": 143,
-    "win_rate": 59.4,
-    "active_signals": 64,
+    "win_rate": 60.4,
+    "active_signals": 58,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 164,
+                "hits": 173,
                 "misses": 111,
-                "total": 275,
-                "win_rate": 59.6,
-                "avg_dd": 18.08
+                "total": 284,
+                "win_rate": 60.9,
+                "avg_dd": 17.37
             },
             "Bearish": {
                 "hits": 45,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 195,
+                "hits": 204,
                 "misses": 143,
-                "total": 338,
-                "win_rate": 57.7,
-                "avg_dd": 18.95
+                "total": 347,
+                "win_rate": 58.8,
+                "avg_dd": 18.27
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
@@ -60,11 +60,11 @@
                 "avg_dd": 21.54
             },
             "Against USD Headwind": {
-                "hits": 116,
+                "hits": 125,
                 "misses": 97,
-                "total": 213,
-                "win_rate": 54.5,
-                "avg_dd": 15.84
+                "total": 222,
+                "win_rate": 56.3,
+                "avg_dd": 14.93
             },
             "USD Neutral / Legacy": {
                 "hits": 3,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 116,
+                "hits": 118,
                 "misses": 83,
-                "total": 199,
-                "win_rate": 58.3,
-                "avg_dd": 18.64
+                "total": 201,
+                "win_rate": 58.7,
+                "avg_dd": 18.43
             },
             "Fed, Rates & Macro": {
                 "hits": 13,
@@ -90,27 +90,27 @@
                 "avg_dd": 11.41
             },
             "Tech, AI & Equities": {
-                "hits": 52,
+                "hits": 58,
                 "misses": 35,
-                "total": 87,
-                "win_rate": 59.8,
-                "avg_dd": 15.74
+                "total": 93,
+                "win_rate": 62.4,
+                "avg_dd": 14.37
             },
             "Commodities & Energy": {
-                "hits": 28,
+                "hits": 29,
                 "misses": 18,
-                "total": 46,
-                "win_rate": 60.9,
-                "avg_dd": 25.1
+                "total": 47,
+                "win_rate": 61.7,
+                "avg_dd": 24.19
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 209,
+                "hits": 218,
                 "misses": 137,
-                "total": 346,
-                "win_rate": 60.4,
-                "avg_dd": 18.33
+                "total": 355,
+                "win_rate": 61.4,
+                "avg_dd": 17.72
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -6357,7 +6357,7 @@
             "prob": 55,
             "entry_price": 4031.16,
             "target": 4021.69,
-            "max_dd_usd": 6.78,
+            "max_dd_usd": 9.63,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 68.78,
             "eur_chg_at_signal": -0.5,
@@ -6699,7 +6699,7 @@
             "prob": 52,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 7.76,
+            "max_dd_usd": 10.61,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -6718,7 +6718,7 @@
             "prob": 61,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 7.76,
+            "max_dd_usd": 10.61,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -6767,7 +6767,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/technology/ai/articles/uniserve-acquire-additional-nvidia-b300-221800451.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Uniserve To Acquire Additional NVIDIA B300 Systems to Expand Canadian AI Compute Capacity;",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6783,10 +6783,10 @@
             "macro_snapshot": "EUR -0.51%, NAS100 -0.61%",
             "created_ts": 1794349080.0,
             "date": "First Reported: 2026-11-10 22:18 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.45)"
         },
         "https://www.fool.com/investing/2026/11/10/is-the-s-and-p-500-heading-for-a-correction/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Is the S&P 500 Heading for a Correction?",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6802,10 +6802,10 @@
             "macro_snapshot": "EUR -0.51%, NAS100 -0.61%",
             "created_ts": 1794348928.0,
             "date": "First Reported: 2026-11-10 17:53 UTC | Last Update: 2026-11-10 22:15 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.45)"
         },
         "https://www.marketbeat.com/instant-alerts/transcript-mcewen-q3-earnings-call-highlights-2026-11-10/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "McEwen Q3 Earnings Call Highlights",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -6821,10 +6821,10 @@
             "macro_snapshot": "EUR -0.51%, NAS100 -0.61%",
             "created_ts": 1794348884.0,
             "date": "First Reported: 2026-11-10 22:14 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.45)"
         },
         "https://www.middleeasteye.net/news/us-house-democrat-leader-jeffries-will-retain-position-despite-opposition-sources-say": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US House Democrat leader Jeffries will retain position despite opposition, sources say",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -6840,10 +6840,10 @@
             "macro_snapshot": "EUR -0.46%, NAS100 -0.77%",
             "created_ts": 1794351159.0,
             "date": "First Reported: 2026-11-10 22:52 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.45)"
         },
         "https://finance.yahoo.com/m/db2f6d95-b7a5-3274-8193-c767d2b681c1/dow-jones-soars-1%2C132-points.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Dow Jones Soars 1,132 Points As Amazon, Tesla Rally, But Nvidia Dives; CPI Inflation Repor",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6859,10 +6859,10 @@
             "macro_snapshot": "EUR -0.46%, NAS100 -0.77%",
             "created_ts": 1794351007.0,
             "date": "First Reported: 2026-11-10 02:31 UTC | Last Update: 2026-11-10 22:50 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.45)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/why-morgan-stanley-downgraded-pdd-223358866.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Why Morgan Stanley Downgraded PDD Holdings (PDD)",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6878,10 +6878,10 @@
             "macro_snapshot": "EUR -0.46%, NAS100 -0.77%",
             "created_ts": 1794350038.0,
             "date": "First Reported: 2026-11-10 22:23 UTC | Last Update: 2026-11-10 22:33 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.45)"
         },
         "https://www.fool.com/investing/2026/11/10/only-2-novembers-since-1950-have-started-worse-for-the-s-and-p-500-than-this-one-here-s-what-followed-the-other-weak-starts/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Only 2 Novembers Since 1950 Have Started Worse for the S&P 500 Than This One. Here's What ",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6897,7 +6897,7 @@
             "macro_snapshot": "EUR -0.46%, NAS100 -0.77%",
             "created_ts": 1794349621.0,
             "date": "First Reported: 2026-11-10 22:27 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.45)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/10/massive-fire-as-israeli-settlers-burn-down-business-near-nablus?traffic_source=rss": {
             "status": "ACTIVE",
@@ -6955,6 +6955,63 @@
             "created_ts": 1794348952.0,
             "date": "First Reported: 2026-11-10 22:15 UTC",
             "fail_reason": ""
+        },
+        "https://www.thestreet.com/investing/morgan-stanley-says-oil-price-will-fall-2027?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Morgan Stanley shares a definitive oil price verdict for 2027",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4039.68,
+            "target": 4050.16,
+            "max_dd_usd": 8.62,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 59.79,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.14,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.14%",
+            "created_ts": 1794355200.0,
+            "date": "First Reported: 2026-11-11 00:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/us-house-votes-derail-impeachment-defense-secretary-hegseth": {
+            "status": "HIT",
+            "headline": "US Republicans derail bid to impeach Pentagon chief",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 56,
+            "entry_price": 4039.03,
+            "target": 4040.09,
+            "max_dd_usd": 7.97,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 59.79,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.14,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.14%",
+            "created_ts": 1794354690.0,
+            "date": "First Reported: 2026-11-10 23:51 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.97)"
+        },
+        "https://www.fool.com/investing/2026/11/10/why-aaon-stock-popped-today/?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Why AAON Stock Popped Today",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4039.03,
+            "target": 4040.09,
+            "max_dd_usd": 7.97,
+            "atr_ratio_at_signal": 0.17,
+            "daily_atr_at_signal": 59.79,
+            "eur_chg_at_signal": -0.5,
+            "nas_chg_at_signal": -0.14,
+            "macro_snapshot": "EUR -0.50%, NAS100 -0.14%",
+            "created_ts": 1794354365.0,
+            "date": "First Reported: 2026-11-10 23:46 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.97)"
         }
     }
 }

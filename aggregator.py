@@ -1116,7 +1116,6 @@ def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_
     age_h = round((datetime.now().timestamp() - float(oldest.get("_timestamp", datetime.now().timestamp()))) / 3600.0, 1)
 
     facts_list = []
-    # If multiple sources exist, explicitly lead with the latest update timestamp and details
     if len(articles) > 1:
         upd_desc = newest.get("description", "").strip()
         upd_snippet = f"{newest['title']} — {upd_desc}" if upd_desc and upd_desc.lower() != newest['title'].lower() else newest['title']
@@ -1191,11 +1190,10 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
     
     clusters_input = []
     for idx, c in enumerate(clusters_batch):
-         chronological_arts = sorted(c["articles"], key=lambda x: x.get("_timestamp", 0))
+        chronological_arts = sorted(c["articles"], key=lambda x: x.get("_timestamp", 0))
         combined_text = " ".join([f"{a.get('title', '')} {a.get('description', '')}" for a in chronological_arts])
         specific_drv, cat_label = detect_specific_narrative(combined_text)
         
-        # Keep oldest article + up to 4 newest articles in chronological order so AI clearly sees updates
         if len(chronological_arts) > 5:
             selected_arts = [chronological_arts[0]] + chronological_arts[-4:]
         else:
@@ -1423,7 +1421,6 @@ def main():
     new_articles = fetch_new_articles(existing_urls)
     
     if new_articles:
-        # Process chronologically so updates are appended in exact time order
         new_articles.sort(key=lambda x: x.get("_timestamp", 0))
         print(f"Found {len(new_articles)} new articles. Clustering (Threshold: {SIMILARITY_THRESHOLD})...")
         
@@ -1460,7 +1457,6 @@ def main():
                 target_cluster["_timestamp"] = newest_article["_timestamp"]
                 target_cluster["needs_update"] = True
                 
-                # Immediate Zero-Delay Update Injection into existing summary (guarantees text update even before AI runs)
                 if isinstance(target_cluster.get("summary"), dict):
                     old_facts = target_cluster["summary"].get("Facts", "")
                     upd_tag = f"[Update {article['date']} UTC via {article['source']}]:"
@@ -1485,7 +1481,6 @@ def main():
     else:
         print("No new articles found.")
 
-    # Sort strictly by newest timestamp (including newly updated clusters) so top feed items get AI priority
     valid_clusters.sort(key=lambda x: float(x.get("_timestamp", 0)), reverse=True)
     
     dominant_drivers_str, _ = compute_dominant_drivers(valid_clusters)
@@ -1517,7 +1512,6 @@ def main():
             for idx_in_batch, cluster in enumerate(batch_slice):
                 if idx_in_batch in batch_results:
                     ai_summary = batch_results[idx_in_batch]
-                    # Ensure that if a cluster has >1 source, the "[Update Date UTC via Source]:" prefix is guaranteed in Facts
                     if len(cluster.get("articles", [])) > 1 and isinstance(ai_summary, dict):
                         newest_a = max(cluster["articles"], key=lambda x: x.get("_timestamp", 0))
                         facts_val = str(ai_summary.get("Facts", ""))

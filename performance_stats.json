@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 389,
-    "hits": 246,
-    "misses": 143,
-    "win_rate": 63.2,
-    "active_signals": 39,
+    "total_evaluated": 415,
+    "hits": 270,
+    "misses": 145,
+    "win_rate": 65.1,
+    "active_signals": 18,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 201,
-                "misses": 111,
-                "total": 312,
-                "win_rate": 64.4,
-                "avg_dd": 16.25
+                "hits": 225,
+                "misses": 113,
+                "total": 338,
+                "win_rate": 66.6,
+                "avg_dd": 16.03
             },
             "Bearish": {
                 "hits": 45,
@@ -23,18 +23,18 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 232,
+                "hits": 256,
                 "misses": 143,
-                "total": 375,
-                "win_rate": 61.9,
-                "avg_dd": 17.15
+                "total": 399,
+                "win_rate": 64.2,
+                "avg_dd": 16.44
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
-                "misses": 0,
-                "total": 14,
-                "win_rate": 100.0,
-                "avg_dd": 7.7
+                "misses": 2,
+                "total": 16,
+                "win_rate": 87.5,
+                "avg_dd": 15.97
             },
             "Exhausted (>=1.2x ATR)": {
                 "hits": 0,
@@ -53,18 +53,18 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 90,
-                "misses": 46,
-                "total": 136,
-                "win_rate": 66.2,
-                "avg_dd": 21.54
+                "hits": 91,
+                "misses": 48,
+                "total": 139,
+                "win_rate": 65.5,
+                "avg_dd": 22.98
             },
             "Against USD Headwind": {
-                "hits": 153,
+                "hits": 176,
                 "misses": 97,
-                "total": 250,
-                "win_rate": 61.2,
-                "avg_dd": 13.79
+                "total": 273,
+                "win_rate": 64.5,
+                "avg_dd": 12.92
             },
             "USD Neutral / Legacy": {
                 "hits": 3,
@@ -76,41 +76,41 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 130,
-                "misses": 83,
-                "total": 213,
-                "win_rate": 61.0,
-                "avg_dd": 17.72
+                "hits": 142,
+                "misses": 85,
+                "total": 227,
+                "win_rate": 62.6,
+                "avg_dd": 17.94
             },
             "Fed, Rates & Macro": {
-                "hits": 16,
+                "hits": 17,
                 "misses": 7,
-                "total": 23,
-                "win_rate": 69.6,
-                "avg_dd": 11.31
+                "total": 24,
+                "win_rate": 70.8,
+                "avg_dd": 10.89
             },
             "Tech, AI & Equities": {
-                "hits": 66,
+                "hits": 75,
                 "misses": 35,
-                "total": 101,
-                "win_rate": 65.3,
-                "avg_dd": 13.38
+                "total": 110,
+                "win_rate": 68.2,
+                "avg_dd": 12.78
             },
             "Commodities & Energy": {
-                "hits": 34,
+                "hits": 36,
                 "misses": 18,
-                "total": 52,
-                "win_rate": 65.4,
-                "avg_dd": 21.5
+                "total": 54,
+                "win_rate": 66.7,
+                "avg_dd": 20.44
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 246,
-                "misses": 137,
-                "total": 383,
-                "win_rate": 64.2,
-                "avg_dd": 16.71
+                "hits": 270,
+                "misses": 139,
+                "total": 409,
+                "win_rate": 66.0,
+                "avg_dd": 16.47
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -5154,7 +5154,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/netanyahu-pressed-qatar-continue-funding-gaza-despite-security-warnings-report-finds": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Netanyahu pressed Qatar to continue funding Gaza despite security warnings, report finds",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -5167,7 +5167,7 @@
             "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
             "created_ts": 1794304384.0,
             "date": "First Reported: 2026-11-10 09:53 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4120.65 (Max DD: -$73.89)"
         },
         "https://www.marketwatch.com/story/feds-waller-puts-half-point-rate-hike-into-the-mix-for-december-1bebdffc?mod=mw_rss_topstories": {
             "status": "HIT",
@@ -5186,7 +5186,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$25.82)"
         },
         "https://www.tehrantimes.com/news/531998/How-October-7-shattered-Netanyahu-s-grip-on-power-and-Israeli": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "How October 7 shattered Netanyahu's grip on power and Israeli stability",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -5199,7 +5199,7 @@
             "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
             "created_ts": 1794301856.0,
             "date": "First Reported: 2026-11-10 09:10 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4120.65 (Max DD: -$73.89)"
         },
         "https://finance.yahoo.com/markets/world-indices/articles/ftse-100-climbs-sinking-crude-091048234.html?.tsrc=rss": {
             "status": "HIT",
@@ -5634,23 +5634,23 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249300/Iran-s-IRGC-Aerospace-Force-unveils-new-missile-city": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iran’s IRGC Aerospace Force unveils new missile city (+VIDEO)",
             "source": "Mehr News Agency",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 53,
             "entry_price": 4074.35,
-            "target": 4090.03,
+            "target": 4060.23,
             "max_dd_usd": 60.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 52.41,
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794309149.0,
             "date": "First Reported: 2026-11-10 11:12 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$60.71)"
         },
         "https://www.fool.com/investing/2026/11/10/this-1-investing-rule-has-protected-long-term-inve/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "This 1 Investing Rule Has Protected Long-Term Investors in Every Market Crash",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -5663,7 +5663,7 @@
             "macro_snapshot": "EUR -0.25%, NAS100 -0.24%",
             "created_ts": 1794324000.0,
             "date": "First Reported: 2026-11-10 15:20 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$37.00)"
         },
         "https://finance.yahoo.com/technology/ai/articles/silicon-fabric-compal-unites-nvidia-150000299.html?.tsrc=rss": {
             "status": "HIT",
@@ -5893,7 +5893,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$12.78)"
         },
         "https://www.fool.com/investing/2026/11/10/2-etfs-to-buy-now-if-a-recession-is-coming-in-2027/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "2 ETFs to Buy Now If a Recession Is Coming in 2027",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -5909,10 +5909,10 @@
             "macro_snapshot": "EUR -0.48%, NAS100 -1.12%",
             "created_ts": 1794329400.0,
             "date": "First Reported: 2026-11-10 16:50 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$8.66)"
         },
         "https://www.fool.com/investing/2026/11/10/fed-governor-christopher-waller-just-said-21-words-that-could-challenge-the-stock-market-through-year-end/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Fed Governor Christopher Waller Just Said 21 Words That Could Challenge the Stock Market T",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -5928,10 +5928,10 @@
             "macro_snapshot": "EUR -0.48%, NAS100 -1.12%",
             "created_ts": 1794328862.0,
             "date": "First Reported: 2026-11-10 16:41 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$8.66)"
         },
         "https://www.aljazeera.com/news/2026/11/10/deadly-egypt-train-collision-prompts-calls-for-political-accountability?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Deadly Egypt train crash prompts calls for political accountability",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -5947,10 +5947,10 @@
             "macro_snapshot": "EUR -0.48%, NAS100 -1.12%",
             "created_ts": 1794324137.0,
             "date": "First Reported: 2026-11-10 15:22 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$28.75)"
         },
         "https://finance.yahoo.com/technology/ai/articles/ibm-microsoft-announce-ai-agent-130000185.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "IBM and Microsoft Announce a New AI Agent Platform Designed for Industry-Specific Transfor",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -5966,10 +5966,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794334008.0,
             "date": "First Reported: 2026-11-10 12:40 UTC | Last Update: 2026-11-10 18:06 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.56)"
         },
         "https://247wallst.com/investing/2026/11/10/iren-sinks-10-as-analyst-target-cuts-pile-up-after-microsoft-delay-cipher-digital-falls-6-terawulf-slides-2/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "IREN Sinks 10% as Analyst Target Cuts Pile Up After Microsoft Delay; Cipher Digital Falls ",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -5985,10 +5985,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794333744.0,
             "date": "First Reported: 2026-11-10 18:02 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.56)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/dht-holdings-inc-third-quarter-211500766.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "DHT Holdings, Inc. Third Quarter 2026 Results",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -6004,10 +6004,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794333456.0,
             "date": "First Reported: 2026-11-09 21:15 UTC | Last Update: 2026-11-10 17:57 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.78)"
         },
         "https://247wallst.com/investing/2026/11/10/openai-built-a-kill-switch-that-can-stop-its-ai-models-within-35-seconds/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "OpenAI Built a Kill Switch That Can Stop Its AI Models Within 35 Seconds",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6023,10 +6023,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794333448.0,
             "date": "First Reported: 2026-11-10 17:57 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.78)"
         },
         "https://finance.yahoo.com/m/7a09187f-b3a7-3224-bf52-479775b74718/anthropic%2C-nvidia%2C-coreweave%2C.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Anthropic, Nvidia, CoreWeave, Take-Two, D-Wave, Securitize, and More That Explain Today’s ",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6042,10 +6042,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794333360.0,
             "date": "First Reported: 2026-11-10 17:56 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.78)"
         },
         "https://www.middleeasteye.net/news/gcc-establish-joint-forward-command-center-kuwait": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "GCC to establish joint forward-command centre in Kuwait",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -6061,10 +6061,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794332935.0,
             "date": "First Reported: 2026-11-10 17:48 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.78)"
         },
         "https://www.fool.com/investing/2026/11/10/this-industrial-stock-could-make-you-rich/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "This Industrial Stock Could Make You Rich",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6080,10 +6080,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794332880.0,
             "date": "First Reported: 2026-11-10 17:48 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.78)"
         },
         "https://www.aljazeera.com/news/2026/11/10/us-petrol-prices-are-down-but-elevated-inflation-continues?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US petrol prices are down, but elevated inflation continues",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -6099,10 +6099,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794332435.0,
             "date": "First Reported: 2026-11-10 17:40 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.78)"
         },
         "https://www.aljazeera.com/news/2026/11/10/iran-backs-nuclear-treaty-even-as-hardliners-raise-prospect-of-bomb?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iran backs nuclear treaty even as hardliners raise prospect of bomb",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -6118,10 +6118,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794332107.0,
             "date": "First Reported: 2026-11-10 17:35 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.78)"
         },
         "https://finance.yahoo.com/economy/policy/articles/federal-research-reveals-inflation-threat-172430610.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Federal Reserve Research Reveals New Inflation Threat",
             "source": "Yahoo Finance Oil",
             "category": "Fed, Rates & Macro",
@@ -6137,10 +6137,10 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794331470.0,
             "date": "First Reported: 2026-11-10 17:24 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.78)"
         },
         "https://www.aljazeera.com/news/2026/11/10/israeli-president-warns-against-repeat-election-in-new-knesset-session?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Israeli president warns against repeat election in new Knesset session",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -6156,7 +6156,7 @@
             "macro_snapshot": "EUR -0.61%, NAS100 -1.25%",
             "created_ts": 1794330975.0,
             "date": "First Reported: 2026-11-10 17:16 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.78)"
         },
         "https://en.mehrnews.com/news/249310/Iran-to-follow-environmental-damages-in-war-internationally": {
             "status": "HIT",
@@ -6357,7 +6357,7 @@
             "prob": 55,
             "entry_price": 4031.16,
             "target": 4021.69,
-            "max_dd_usd": 21.52,
+            "max_dd_usd": 34.92,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 68.78,
             "eur_chg_at_signal": -0.5,
@@ -6699,7 +6699,7 @@
             "prob": 52,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 22.5,
+            "max_dd_usd": 35.9,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -6718,7 +6718,7 @@
             "prob": 61,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 22.5,
+            "max_dd_usd": 35.9,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -7014,7 +7014,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$7.97)"
         },
         "https://www.middleeasteye.net/news/changing-face-israels-ultra-orthodox-politics": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "The changing face of Israel’s ultra-Orthodox politics",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -7030,10 +7030,10 @@
             "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
             "created_ts": 1794365331.0,
             "date": "First Reported: 2026-11-10 12:55 UTC | Last Update: 2026-11-11 02:48 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.09)"
         },
         "https://finance.yahoo.com/energy/articles/petrobras-q3-profit-rises-22-023000217.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Petrobras Q3 Profit Rises 22% as Oil Production Hits New Record",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -7049,10 +7049,10 @@
             "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
             "created_ts": 1794364200.0,
             "date": "First Reported: 2026-11-11 02:30 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.09)"
         },
         "https://www.thestreet.com/investing/stocks/cathie-wood-buys-15-3-million-of-tumbling-semiconductor-stock-nvda-nvidia?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Cathie Wood buys $15.3 million of tumbling semiconductor stock",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -7068,10 +7068,10 @@
             "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
             "created_ts": 1794364177.0,
             "date": "First Reported: 2026-11-11 02:29 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.09)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/11/protesters-throw-milk-at-joe-biden-during-hunter-event-in-dublin?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Protesters throw milk at Joe Biden during Hunter event in Dublin",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -7087,7 +7087,7 @@
             "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
             "created_ts": 1794363142.0,
             "date": "First Reported: 2026-11-11 02:12 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.09)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/us-treasury-chief-moved-military-base-after-alleged-iranian-threats": {
             "status": "HIT",
@@ -7183,6 +7183,101 @@
             "created_ts": 1794357761.0,
             "date": "First Reported: 2026-11-11 00:42 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$7.04)"
+        },
+        "https://finance.yahoo.com/energy/articles/eneos-raises-fy-profit-forecast-044636723.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Eneos raises FY profit forecast by ~50% on stronger oil markets",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4046.39,
+            "target": 4079.07,
+            "max_dd_usd": 5.75,
+            "atr_ratio_at_signal": 0.22,
+            "daily_atr_at_signal": 54.25,
+            "eur_chg_at_signal": -0.61,
+            "nas_chg_at_signal": 0.75,
+            "macro_snapshot": "EUR -0.61%, NAS100 +0.75%",
+            "created_ts": 1794372396.0,
+            "date": "First Reported: 2026-11-11 04:46 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/11/russia-claims-interception-of-146-drones-in-leningrad-region?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Russia claims interception of 146 drones in Leningrad region",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4046.39,
+            "target": 4060.23,
+            "max_dd_usd": 5.75,
+            "atr_ratio_at_signal": 0.22,
+            "daily_atr_at_signal": 54.25,
+            "eur_chg_at_signal": -0.61,
+            "nas_chg_at_signal": 0.75,
+            "macro_snapshot": "EUR -0.61%, NAS100 +0.75%",
+            "created_ts": 1794371687.0,
+            "date": "First Reported: 2026-11-11 04:34 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.75)"
+        },
+        "https://en.mehrnews.com/news/249320/Pezeshkian-departs-for-Turkey-to-attend-COP31-conference": {
+            "status": "HIT",
+            "headline": "Pezeshkian departs for Turkey to attend COP31 conference",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4046.39,
+            "target": 4060.23,
+            "max_dd_usd": 5.75,
+            "atr_ratio_at_signal": 0.22,
+            "daily_atr_at_signal": 54.25,
+            "eur_chg_at_signal": -0.61,
+            "nas_chg_at_signal": 0.75,
+            "macro_snapshot": "EUR -0.61%, NAS100 +0.75%",
+            "created_ts": 1794371261.0,
+            "date": "First Reported: 2026-11-11 04:27 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.75)"
+        },
+        "https://en.mehrnews.com/news/249318/Qalibaf-calls-for-concrete-Iran-China-cooperation": {
+            "status": "HIT",
+            "headline": "Qalibaf calls for concrete Iran-China cooperation",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4046.39,
+            "target": 4060.23,
+            "max_dd_usd": 5.75,
+            "atr_ratio_at_signal": 0.22,
+            "daily_atr_at_signal": 54.25,
+            "eur_chg_at_signal": -0.61,
+            "nas_chg_at_signal": 0.75,
+            "macro_snapshot": "EUR -0.61%, NAS100 +0.75%",
+            "created_ts": 1794370532.0,
+            "date": "First Reported: 2026-11-11 04:15 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.75)"
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/11/el-salvador-fires-missiles-on-haitian-gang-hideout?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "El Salvador fires missiles on Haitian gang hideout",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4045.48,
+            "target": 4060.23,
+            "max_dd_usd": 4.84,
+            "atr_ratio_at_signal": 0.22,
+            "daily_atr_at_signal": 54.25,
+            "eur_chg_at_signal": -0.61,
+            "nas_chg_at_signal": 0.75,
+            "macro_snapshot": "EUR -0.61%, NAS100 +0.75%",
+            "created_ts": 1794366023.0,
+            "date": "First Reported: 2026-11-11 03:00 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.84)"
         }
     }
 }

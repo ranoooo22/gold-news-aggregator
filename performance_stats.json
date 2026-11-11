@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 417,
-    "hits": 270,
-    "misses": 147,
-    "win_rate": 64.7,
-    "active_signals": 17,
+    "total_evaluated": 439,
+    "hits": 280,
+    "misses": 159,
+    "win_rate": 63.8,
+    "active_signals": 7,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 225,
-                "misses": 115,
-                "total": 340,
-                "win_rate": 66.2,
-                "avg_dd": 16.39
+                "hits": 235,
+                "misses": 127,
+                "total": 362,
+                "win_rate": 64.9,
+                "avg_dd": 18.05
             },
             "Bearish": {
                 "hits": 45,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 256,
-                "misses": 143,
-                "total": 399,
-                "win_rate": 64.2,
-                "avg_dd": 16.44
+                "hits": 266,
+                "misses": 155,
+                "total": 421,
+                "win_rate": 63.2,
+                "avg_dd": 17.98
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
@@ -54,17 +54,17 @@
         "by_macro_alignment": {
             "With USD Tailwind": {
                 "hits": 91,
-                "misses": 50,
-                "total": 141,
-                "win_rate": 64.5,
-                "avg_dd": 23.72
+                "misses": 62,
+                "total": 153,
+                "win_rate": 59.5,
+                "avg_dd": 27.82
             },
             "Against USD Headwind": {
-                "hits": 176,
+                "hits": 186,
                 "misses": 97,
-                "total": 273,
-                "win_rate": 64.5,
-                "avg_dd": 12.92
+                "total": 283,
+                "win_rate": 65.7,
+                "avg_dd": 12.49
             },
             "USD Neutral / Legacy": {
                 "hits": 3,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 142,
-                "misses": 86,
-                "total": 228,
-                "win_rate": 62.3,
-                "avg_dd": 18.22
+                "hits": 148,
+                "misses": 95,
+                "total": 243,
+                "win_rate": 60.9,
+                "avg_dd": 20.01
             },
             "Fed, Rates & Macro": {
                 "hits": 17,
@@ -90,27 +90,27 @@
                 "avg_dd": 10.89
             },
             "Tech, AI & Equities": {
-                "hits": 75,
-                "misses": 36,
-                "total": 111,
-                "win_rate": 67.6,
-                "avg_dd": 13.41
+                "hits": 76,
+                "misses": 37,
+                "total": 113,
+                "win_rate": 67.3,
+                "avg_dd": 13.95
             },
             "Commodities & Energy": {
-                "hits": 36,
-                "misses": 18,
-                "total": 54,
-                "win_rate": 66.7,
-                "avg_dd": 20.44
+                "hits": 39,
+                "misses": 20,
+                "total": 59,
+                "win_rate": 66.1,
+                "avg_dd": 21.98
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 270,
-                "misses": 141,
-                "total": 411,
-                "win_rate": 65.7,
-                "avg_dd": 16.79
+                "hits": 280,
+                "misses": 153,
+                "total": 433,
+                "win_rate": 64.7,
+                "avg_dd": 18.23
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -5426,7 +5426,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$1.89)"
         },
         "https://www.aljazeera.com/news/2026/11/10/at-least-12-people-killed-in-motorway-crash-in-southeastern-bulgaria?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "At least 12 people killed in motorway crash in southeastern Bulgaria",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -5439,10 +5439,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794315244.0,
             "date": "First Reported: 2026-11-10 12:54 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$65.47)"
         },
         "https://www.tikr.com/blog/zscaler-sinks-11-in-a-week-as-security-stocks-slide-dan-ives-sees-budgets-potentially-double?ref=yahoofinance&tlnk=yf-261110-9cxf7w38&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Zscaler Sinks 11% in a Week as Security Stocks Slide. Dan Ives Sees Budgets “Potentially D",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -5455,7 +5455,7 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794314636.0,
             "date": "First Reported: 2026-11-10 12:43 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$65.47)"
         },
         "https://finance.yahoo.com/m/8bdd03a8-f617-3801-819f-e59016452f77/market-rotation-splits-stock.html?.tsrc=rss": {
             "status": "HIT",
@@ -5474,7 +5474,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$1.89)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-injure-palestinian-photojournalist-occupied-west-bank": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Israeli settlers injure Palestinian photojournalist in occupied West Bank",
             "source": "Middle East Eye",
             "impact": "Bullish",
@@ -5487,10 +5487,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794313251.0,
             "date": "First Reported: 2026-11-10 11:25 UTC | Last Update: 2026-11-10 12:20 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$65.47)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/orezone-gold-shareholders-got-121030573.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "What Orezone Gold Shareholders Got Right",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -5503,10 +5503,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794312630.0,
             "date": "First Reported: 2026-11-10 12:10 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$65.47)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/newmont-stock-26-ytd-buy-120800954.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Newmont Stock Up 26% YTD: Should You Buy, Sell or Hold the Stock?",
             "source": "Yahoo Finance Gold",
             "impact": "Bullish",
@@ -5519,10 +5519,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794312480.0,
             "date": "First Reported: 2026-11-10 12:08 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$65.47)"
         },
         "https://www.investing.com/news/commodities-news/uae-selling-saudi-oil-from-supertanker-attacked-in-gulf-5014949": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "UAE selling Saudi oil from supertanker attacked in Gulf",
             "source": "Investing.com",
             "impact": "Bullish",
@@ -5535,10 +5535,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794311672.0,
             "date": "First Reported: 2026-11-10 11:54 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$60.71)"
         },
         "https://www.aljazeera.com/news/2026/11/10/trump-says-israel-gulf-allies-must-repay-iran-war-cost-what-does-it-mean?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Trump says Israel, Gulf allies must repay Iran war cost: What does it mean?",
             "source": "Al Jazeera English",
             "impact": "Bullish",
@@ -5551,10 +5551,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794311554.0,
             "date": "First Reported: 2026-11-10 11:52 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$60.71)"
         },
         "https://www.tehrantimes.com/news/532006/Iranian-Ivorian-ICT-ministers-discuss-ways-to-boost-ties": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iranian, Ivorian ministers discuss ways to boost ties in ICT sector",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -5567,10 +5567,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794311110.0,
             "date": "First Reported: 2026-11-10 11:45 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$60.71)"
         },
         "https://www.investing.com/news/commodities-news/morning-bid-war-is-over-5014909": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Morning Bid: War is over?",
             "source": "Investing.com",
             "impact": "Bullish",
@@ -5583,10 +5583,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794311009.0,
             "date": "First Reported: 2026-11-10 11:43 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$60.71)"
         },
         "https://www.tehrantimes.com/news/532004/45-Iranian-universities-included-in-Leiden-Ranking-Traditional-Edition": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "45 Iranian universities included in Leiden Ranking Traditional Edition",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -5599,10 +5599,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794310939.0,
             "date": "First Reported: 2026-11-10 11:42 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$60.71)"
         },
         "https://www.tehrantimes.com/news/532002/Iran-shakes-with-over-85-earthquakes-in-a-week": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran shakes with over 85 earthquakes in a week",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -5615,10 +5615,10 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794309917.0,
             "date": "First Reported: 2026-11-10 11:25 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$60.71)"
         },
         "https://www.tehrantimes.com/news/532000/Study-highlights-challenges-opportunities-for-Iran-s-scientific": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Study highlights challenges, opportunities for Iran’s scientific diplomacy",
             "source": "Tehran Times",
             "impact": "Bullish",
@@ -5631,7 +5631,7 @@
             "macro_snapshot": "EUR +0.12%, NAS100 +1.98%",
             "created_ts": 1794309576.0,
             "date": "First Reported: 2026-11-10 11:19 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4090.03 (Max DD: -$60.71)"
         },
         "https://en.mehrnews.com/news/249300/Iran-s-IRGC-Aerospace-Force-unveils-new-missile-city": {
             "status": "HIT",
@@ -6357,7 +6357,7 @@
             "prob": 55,
             "entry_price": 4031.16,
             "target": 4021.69,
-            "max_dd_usd": 34.92,
+            "max_dd_usd": 35.94,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 68.78,
             "eur_chg_at_signal": -0.5,
@@ -6699,7 +6699,7 @@
             "prob": 52,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 35.9,
+            "max_dd_usd": 36.92,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -6718,7 +6718,7 @@
             "prob": 61,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 35.9,
+            "max_dd_usd": 36.92,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -7280,7 +7280,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$4.84)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/lower-oil-prices-american-airlines-061615059.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "How Lower Oil Prices At American Airlines Group (AAL) Have Changed Its Investment Story",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -7288,7 +7288,7 @@
             "prob": 52,
             "entry_price": 4055.51,
             "target": 4060.26,
-            "max_dd_usd": 1.45,
+            "max_dd_usd": 1.61,
             "atr_ratio_at_signal": 0.23,
             "daily_atr_at_signal": 50.37,
             "eur_chg_at_signal": -0.79,
@@ -7296,7 +7296,235 @@
             "macro_snapshot": "EUR -0.79%, NAS100 +1.02%",
             "created_ts": 1794377775.0,
             "date": "First Reported: 2026-11-11 06:16 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.61)"
+        },
+        "https://en.mehrnews.com/news/249332/Tehran-to-host-ECO-Summit-on-Dec-3-4": {
+            "status": "ACTIVE",
+            "headline": "Tehran to host ECO Summit on Dec. 3-4",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 59,
+            "entry_price": 4049.88,
+            "target": 4060.34,
+            "max_dd_usd": 3.37,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794389429.0,
+            "date": "First Reported: 2026-11-11 09:30 UTC",
             "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/wider-loss-guidance-change-clarivate-091519878.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Will Wider Loss Guidance Change Clarivate Stock Narrative",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 56,
+            "entry_price": 4049.88,
+            "target": 4050.39,
+            "max_dd_usd": 3.37,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794388519.0,
+            "date": "First Reported: 2026-11-11 09:15 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.37)"
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/3-value-stocks-under-5-130900631.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "3 Value Stocks Under $5 to Buy Amid Oil Price Volatility",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 64,
+            "entry_price": 4049.88,
+            "target": 4060.34,
+            "max_dd_usd": 3.37,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794388387.0,
+            "date": "First Reported: 2026-11-09 13:09 UTC | Last Update: 2026-11-11 09:13 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/11/what-do-kyiv-residents-think-about-giving-up-territory-to-russia?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "What do Kyiv residents think about giving up territory to Russia?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 4049.88,
+            "target": 4050.39,
+            "max_dd_usd": 3.37,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794388079.0,
+            "date": "First Reported: 2026-11-11 09:07 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.37)"
+        },
+        "https://www.aljazeera.com/opinions/2026/11/11/is-washington-rethinking-its-relationship-with-israel?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Is Washington rethinking its relationship with Israel?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 63,
+            "entry_price": 4049.88,
+            "target": 4060.34,
+            "max_dd_usd": 3.37,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794387746.0,
+            "date": "First Reported: 2026-11-11 07:26 UTC | Last Update: 2026-11-11 09:02 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/galantas-gold-intersects-71-meters-070000666.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Galantas Gold Intersects 71 Meters at 0.76 g/t Gold in Its First Drill Hole at Andacollo G",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 4049.88,
+            "target": 4050.39,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794387600.0,
+            "date": "First Reported: 2026-11-09 07:00 UTC | Last Update: 2026-11-11 09:00 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.00)"
+        },
+        "https://www.aljazeera.com/news/2026/11/11/us-embassy-refutes-houthis-yemen-blockade-claims-highlights-siege-on-taiz?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "US embassy refutes Houthis’ Yemen blockade claims, highlights siege on Taiz",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4059.12,
+            "target": 4050.39,
+            "max_dd_usd": 4.03,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794387539.0,
+            "date": "First Reported: 2026-11-11 08:58 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.03)"
+        },
+        "https://en.mehrnews.com/news/249330/VIDEO-A-train-derailed-near-Guwahati-India-s-NE-Assam": {
+            "status": "HIT",
+            "headline": "VIDEO: A train derailed near Guwahati, India’s NE Assam",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4059.12,
+            "target": 4050.39,
+            "max_dd_usd": 4.03,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794386863.0,
+            "date": "First Reported: 2026-11-11 08:47 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.03)"
+        },
+        "https://en.mehrnews.com/news/249329/Weapons-production-not-to-cease-even-under-enemy-bombardment": {
+            "status": "HIT",
+            "headline": "Weapons' production not to cease even under enemy bombardment",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4059.12,
+            "target": 4050.39,
+            "max_dd_usd": 4.03,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794386096.0,
+            "date": "First Reported: 2026-11-11 08:34 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.03)"
+        },
+        "https://www.aljazeera.com/news/2026/11/11/how-are-pakistans-imports-from-india-growing-again-despite-tensions?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "How are Pakistan’s imports from India growing again despite tensions?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4059.12,
+            "target": 4050.39,
+            "max_dd_usd": 4.03,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794385840.0,
+            "date": "First Reported: 2026-11-11 08:30 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.03)"
+        },
+        "https://en.mehrnews.com/news/249325/Iraq-accounts-for-22-of-Iran-s-total-exports-share-Official": {
+            "status": "HIT",
+            "headline": "Iraq accounts for 22% of Iran’s total exports share: Official",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4060.03,
+            "target": 4050.39,
+            "max_dd_usd": 6.13,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794379278.0,
+            "date": "First Reported: 2026-11-11 06:41 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.13)"
+        },
+        "https://finance.yahoo.com/energy/articles/zacks-investment-ideas-feature-highlights-053300546.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Zacks Investment Ideas feature highlights: CVR Energy, Delek US, Northern Oil and Gas and ",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4060.03,
+            "target": 4050.39,
+            "max_dd_usd": 6.13,
+            "atr_ratio_at_signal": 0.21,
+            "daily_atr_at_signal": 42.28,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.05,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
+            "created_ts": 1794376980.0,
+            "date": "First Reported: 2026-11-11 05:33 UTC | Last Update: 2026-11-11 06:03 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.13)"
         }
     }
 }

@@ -10,6 +10,8 @@
             --bg-main: #f1f5f9;
             --bg-card: #ffffff;
             --bg-subtle: #f8fafc;
+            --bg-dark: #0f172a;
+            --bg-dark-sub: #1e293b;
             --text-primary: #0f172a;
             --text-secondary: #475569;
             --text-muted: #64748b;
@@ -33,64 +35,69 @@
             background-color: var(--bg-main);
             color: var(--text-primary);
             margin: 0;
-            padding: 0 0 50px 0;
+            padding: 0 0 40px 0;
             -webkit-font-smoothing: antialiased;
         }
 
         /* Sticky Top Header */
         .top-header {
-            background: #0f172a;
+            background: var(--bg-dark);
             color: #f8fafc;
-            padding: 14px 24px;
+            padding: 11px 20px;
             position: sticky;
             top: 0;
             z-index: 200;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
         }
         .header-inner {
-            max-width: 1220px;
+            max-width: 1380px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 14px;
+            gap: 12px;
+        }
+        .brand-block {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            flex-wrap: wrap;
         }
         .brand-block h1 {
             margin: 0;
-            font-size: 1.2rem;
+            font-size: 1.12rem;
             font-weight: 700;
             letter-spacing: -0.02em;
             color: #ffffff;
         }
         .brand-sub {
-            font-size: 0.76rem;
+            font-size: 0.74rem;
             color: #94a3b8;
-            margin-top: 2px;
         }
 
         .nav-actions {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
         .tab-group {
             display: flex;
-            background: #1e293b;
-            padding: 4px;
-            border-radius: 8px;
+            background: var(--bg-dark-sub);
+            padding: 3px;
+            border-radius: 7px;
             border: 1px solid #334155;
         }
         .tab-btn {
             background: transparent;
             border: none;
             color: #94a3b8;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             font-weight: 600;
-            padding: 8px 16px;
-            border-radius: 6px;
+            padding: 7px 14px;
+            border-radius: 5px;
             cursor: pointer;
-            transition: all 0.18s ease;
+            transition: all 0.16s ease;
         }
         .tab-btn:hover { color: #f8fafc; }
         .tab-btn.active {
@@ -100,215 +107,386 @@
         }
 
         .refresh-btn {
-            background: #1e293b;
+            background: var(--bg-dark-sub);
             color: #e2e8f0;
             border: 1px solid #334155;
-            padding: 8px 14px;
-            border-radius: 8px;
-            font-size: 0.82rem;
+            padding: 7px 12px;
+            border-radius: 7px;
+            font-size: 0.79rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.18s ease;
+            transition: all 0.16s ease;
         }
         .refresh-btn:hover {
             background: #334155;
             color: #ffffff;
         }
 
-        .main-wrapper {
-            max-width: 1220px;
-            margin: 18px auto 0 auto;
-            padding: 0 18px;
-        }
-
-        /* Top Intel Bar */
-        .intel-bar {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-            gap: 11px;
-            margin-bottom: 14px;
-        }
-        .intel-card {
-            background: var(--bg-card);
-            border-radius: var(--radius-lg);
-            padding: 12px 14px;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-color);
-            border-top: 3px solid var(--accent-blue);
-            transition: transform 0.15s ease, box-shadow 0.15s ease;
-        }
-        .intel-card:hover {
-            transform: translateY(-1px);
-            box-shadow: var(--shadow-md);
-        }
-        .intel-title {
-            color: var(--text-muted);
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.68rem;
-            letter-spacing: 0.04em;
-            margin-bottom: 5px;
-        }
-        .intel-value {
-            font-weight: 700;
-            color: var(--text-primary);
-            font-size: 0.94rem;
-            font-variant-numeric: tabular-nums;
-            line-height: 1.35;
-        }
-        .intel-sub {
-            font-size: 0.73rem;
-            color: var(--text-muted);
-            margin-top: 3px;
+        /* ========================================================= */
+        /* 1. COMPACT TELEMETRY TICKER BAR (REPLACES BULKY TOP CARDS)*/
+        /* ========================================================= */
+        .telemetry-Ribbon {
+            background: #1e293b;
+            border-bottom: 1px solid #334155;
+            color: #f8fafc;
+            padding: 7px 20px;
+            font-size: 0.78rem;
             font-variant-numeric: tabular-nums;
         }
-        .taker-meter-bar {
-            width: 100%;
-            height: 5px;
-            background: #fee2e2;
-            border-radius: 3px;
-            overflow: hidden;
-            margin-top: 5px;
-        }
-        .taker-meter-fill {
-            height: 100%;
-            background: #16a34a;
-            transition: width 0.3s ease;
-        }
-
-        /* Dominant Drivers Radar */
-        .drivers-radar-panel {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 13px 16px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow-sm);
-        }
-        .drivers-header-row {
+        .telemetry-inner {
+            max-width: 1380px;
+            margin: 0 auto;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
+            justify-content: space-between;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 14px;
         }
-        .drivers-panel-title {
-            font-size: 0.74rem;
+        .t-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            white-space: nowrap;
+        }
+        .t-label {
+            color: #94a3b8;
             font-weight: 700;
+            font-size: 0.69rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .t-val {
+            font-weight: 700;
+            color: #f8fafc;
+        }
+        .t-sub {
+            color: #cbd5e1;
+            font-size: 0.72rem;
+        }
+        .t-divider {
+            width: 1px;
+            height: 14px;
+            background: #334155;
+        }
+
+        .main-wrapper {
+            max-width: 1380px;
+            margin: 12px auto 0 auto;
+            padding: 0 16px;
+        }
+
+        /* ========================================================= */
+        /* 2. COMPACT DOMINANT DRIVERS PILL RIBBON                   */
+        /* ========================================================= */
+        .drivers-ribbon {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 7px 12px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .drivers-ribbon-label {
+            font-size: 0.7rem;
+            font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.04em;
             color: var(--text-secondary);
+            white-space: nowrap;
+            margin-right: 4px;
         }
-        .drivers-panel-hint {
-            font-size: 0.73rem;
-            color: var(--text-muted);
+        .drivers-pills-wrap {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            flex: 1;
         }
-        .drivers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 10px;
-        }
-        .driver-chip {
+        .driver-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
             background: var(--bg-subtle);
             border: 1px solid var(--border-color);
-            border-left: 4px solid #64748b;
-            border-radius: var(--radius-md);
-            padding: 9px 12px;
+            border-left: 3px solid #64748b;
+            border-radius: 5px;
+            padding: 4px 9px;
+            font-size: 0.76rem;
             cursor: pointer;
-            transition: all 0.15s ease;
+            transition: all 0.14s ease;
+            font-variant-numeric: tabular-nums;
         }
-        .driver-chip:hover {
+        .driver-pill:hover {
             background: #eff6ff;
             border-color: #93c5fd;
             transform: translateY(-1px);
         }
-        .driver-chip.drv-bull { border-left-color: var(--bull-green); }
-        .driver-chip.drv-bear { border-left-color: var(--bear-red); }
-        .driver-top-line {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 6px;
-            margin-bottom: 4px;
-        }
-        .driver-name {
-            font-size: 0.84rem;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-        .driver-share {
-            font-size: 0.74rem;
-            font-weight: 700;
+        .driver-pill.drv-bull { border-left-color: var(--bull-green); }
+        .driver-pill.drv-bear { border-left-color: var(--bear-red); }
+        .dp-name { font-weight: 700; color: var(--text-primary); }
+        .dp-share {
             background: #e2e8f0;
             color: #1e293b;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-variant-numeric: tabular-nums;
+            font-weight: 700;
+            font-size: 0.69rem;
+            padding: 1px 5px;
+            border-radius: 3px;
         }
-        .driver-meta {
-            font-size: 0.74rem;
-            color: var(--text-muted);
-            font-variant-numeric: tabular-nums;
-        }
+        .dp-bias { font-weight: 700; font-size: 0.71rem; }
 
         /* Tab Content */
-        .tab-content { display: none; animation: fadeIn 0.2s ease; }
+        .tab-content { display: none; animation: fadeIn 0.18s ease; }
         .tab-content.active { display: block; }
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(3px); }
+            from { opacity: 0; transform: translateY(2px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Chart Section */
+        /* ========================================================= */
+        /* 3. TERMINAL COCKPIT: CHART LEFT (70%) + HUD RIGHT (30%)   */
+        /* ========================================================= */
+        .cockpit-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 390px;
+            gap: 14px;
+            align-items: start;
+        }
+
         .chart-panel {
             background: var(--bg-card);
             border-radius: var(--radius-lg);
             border: 1px solid var(--border-color);
             box-shadow: var(--shadow-sm);
-            padding: 16px;
-            margin-bottom: 16px;
+            padding: 12px;
+            min-width: 0;
         }
         #chart-container {
             width: 100%;
-            height: 500px;
+            height: 550px;
             border-radius: var(--radius-md);
             overflow: hidden;
         }
         .chart-legend {
-            margin-top: 12px;
-            padding-top: 12px;
+            margin-top: 10px;
+            padding-top: 9px;
             border-top: 1px solid var(--border-color);
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 18px;
-            font-size: 0.8rem;
+            gap: 16px;
+            font-size: 0.76rem;
             color: var(--text-secondary);
         }
-        .legend-item { display: flex; align-items: center; gap: 6px; }
-        .legend-dot { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+        .legend-item { display: flex; align-items: center; gap: 5px; }
+        .legend-dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
 
-        .overlap-box {
+        /* RIGHT SIDEBAR HUD (COINGLASS TUG-OF-WAR + PRICE LADDER) */
+        .orderflow-sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            min-width: 0;
+        }
+        .hud-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
-            border-left: 4px solid var(--accent-blue);
             border-radius: var(--radius-lg);
-            padding: 16px 20px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            line-height: 1.65;
+            padding: 13px 15px;
             box-shadow: var(--shadow-sm);
             font-variant-numeric: tabular-nums;
         }
+        .hud-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        .hud-title {
+            font-size: 0.72rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--text-primary);
+        }
+        .hud-badge {
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: #f1f5f9;
+            color: var(--text-secondary);
+        }
 
-        /* Controls Panel */
+        /* Coinglass Dual Tug-of-War Bars */
+        .tug-group {
+            margin-bottom: 12px;
+        }
+        .tug-group:last-of-type {
+            margin-bottom: 8px;
+        }
+        .tug-top-labels {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 0.75rem;
+            margin-bottom: 4px;
+        }
+        .tug-metric-name {
+            font-weight: 700;
+            color: var(--text-secondary);
+            font-size: 0.71rem;
+            text-transform: uppercase;
+        }
+        .tug-pct-buy { font-weight: 800; color: var(--bull-green); }
+        .tug-pct-sell { font-weight: 800; color: var(--bear-red); }
+
+        .tug-bar-track {
+            width: 100%;
+            height: 9px;
+            background: var(--bear-red);
+            border-radius: 4px;
+            overflow: hidden;
+            display: flex;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+        }
+        .tug-bar-fill-buy {
+            height: 100%;
+            background: var(--bull-green);
+            border-right: 2px solid #ffffff;
+            transition: width 0.35s ease;
+        }
+        .tug-sub-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 3px;
+        }
+
+        .flow-diagnostic-box {
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid #8b5cf6;
+            border-radius: 5px;
+            padding: 8px 10px;
+            font-size: 0.74rem;
+            color: var(--text-secondary);
+            line-height: 1.42;
+            margin-top: 8px;
+        }
+        .squeeze-alert {
+            margin-top: 5px;
+            font-weight: 700;
+            font-size: 0.72rem;
+            color: #b45309;
+        }
+
+        /* Vertical Orderbook Liquidity Ladder */
+        .ladder-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .ladder-row {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 9px;
+            border-radius: 5px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-subtle);
+            font-size: 0.77rem;
+            overflow: hidden;
+        }
+        .ladder-vol-fill {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0.14;
+            pointer-events: none;
+        }
+        .ladder-row.zone-sell { border-left: 3px solid var(--bear-red); }
+        .ladder-row.zone-sell .ladder-vol-fill { background: var(--bear-red); }
+        .ladder-row.zone-buy { border-left: 3px solid var(--bull-green); }
+        .ladder-row.zone-buy .ladder-vol-fill { background: var(--bull-green); }
+        .ladder-row.is-overlap {
+            border-color: #93c5fd;
+            background: #f8fafc;
+        }
+
+        .ladder-left {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .ladder-price {
+            font-weight: 800;
+            font-size: 0.84rem;
+            color: var(--text-primary);
+        }
+        .ladder-side-tag {
+            font-size: 0.65rem;
+            font-weight: 800;
+            padding: 1px 5px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        .tag-sell { background: #fee2e2; color: #991b1b; }
+        .tag-buy { background: #dcfce7; color: #166534; }
+        .tag-overlap {
+            background: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #93c5fd;
+            font-size: 0.63rem;
+            font-weight: 800;
+            padding: 1px 4px;
+            border-radius: 3px;
+        }
+
+        .ladder-right {
+            position: relative;
+            z-index: 1;
+            text-align: right;
+            font-size: 0.71rem;
+            color: var(--text-secondary);
+        }
+        .ladder-tot-vol {
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .ladder-spot-divider {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 7px 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.76rem;
+            font-weight: 700;
+            margin: 3px 0;
+        }
+
+        /* ========================================================= */
+        /* NEWS TAB & OPTION A ACCORDION CARDS                       */
+        /* ========================================================= */
         .controls-panel {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
-            padding: 14px 16px;
-            margin-bottom: 14px;
+            padding: 12px 15px;
+            margin-bottom: 12px;
             box-shadow: var(--shadow-sm);
             display: flex;
             flex-wrap: wrap;
@@ -324,23 +502,22 @@
             flex: 1;
         }
         .search-input {
-            padding: 8px 12px;
+            padding: 7px 11px;
             border-radius: var(--radius-md);
             border: 1px solid #cbd5e1;
-            font-size: 0.86rem;
+            font-size: 0.84rem;
             min-width: 200px;
             outline: none;
-            transition: border-color 0.15s;
         }
         .search-input:focus, select:focus {
             border-color: var(--accent-blue);
         }
         select {
-            padding: 8px 11px;
+            padding: 7px 10px;
             border-radius: var(--radius-md);
             border: 1px solid #cbd5e1;
             background-color: #fff;
-            font-size: 0.85rem;
+            font-size: 0.83rem;
             color: var(--text-primary);
             cursor: pointer;
             outline: none;
@@ -350,10 +527,10 @@
             align-items: center;
             gap: 6px;
             background: var(--bg-subtle);
-            padding: 7px 11px;
+            padding: 6px 10px;
             border-radius: var(--radius-md);
             border: 1px solid #cbd5e1;
-            font-size: 0.84rem;
+            font-size: 0.82rem;
             color: var(--text-secondary);
             cursor: pointer;
             user-select: none;
@@ -364,9 +541,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.8rem;
+            font-size: 0.79rem;
             color: var(--text-muted);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             padding: 0 4px;
             flex-wrap: wrap;
             gap: 8px;
@@ -380,12 +557,12 @@
             background: #ffffff;
             border: 1px solid #cbd5e1;
             color: var(--text-secondary);
-            padding: 5px 11px;
-            border-radius: 6px;
-            font-size: 0.75rem;
+            padding: 4px 10px;
+            border-radius: 5px;
+            font-size: 0.74rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.15s ease;
+            transition: all 0.14s ease;
         }
         .compact-action-btn:hover {
             background: #e2e8f0;
@@ -395,28 +572,23 @@
             background: #fef3c7;
             color: #92400e;
             border: 1px solid #fcd34d;
-            padding: 3px 10px;
+            padding: 2px 9px;
             border-radius: 999px;
             font-weight: 700;
-            font-size: 0.76rem;
+            font-size: 0.74rem;
         }
 
-        /* ================================================= */
-        /* OPTION A: PROGRESSIVE DISCLOSURE ACCORDION CARDS  */
-        /* ================================================= */
         .news-card {
             background-color: var(--bg-card);
             border-radius: var(--radius-lg);
             border: 1px solid var(--border-color);
             border-left: 5px solid #94a3b8;
-            margin-bottom: 10px;
+            margin-bottom: 9px;
             box-shadow: var(--shadow-sm);
-            transition: box-shadow 0.18s ease, border-color 0.18s ease;
+            transition: box-shadow 0.16s ease;
             overflow: hidden;
         }
-        .news-card:hover {
-            box-shadow: var(--shadow-md);
-        }
+        .news-card:hover { box-shadow: var(--shadow-md); }
         .news-card.bias-bullish { border-left-color: var(--bull-green); }
         .news-card.bias-bearish { border-left-color: var(--bear-red); }
         .news-card.bias-neutral { border-left-color: #64748b; }
@@ -427,17 +599,15 @@
         }
 
         .card-accordion-header {
-            padding: 12px 16px;
+            padding: 11px 16px;
             cursor: pointer;
             user-select: none;
             display: flex;
             flex-direction: column;
-            gap: 6px;
-            transition: background 0.15s ease;
+            gap: 5px;
+            transition: background 0.14s ease;
         }
-        .card-accordion-header:hover {
-            background-color: #f8fafc;
-        }
+        .card-accordion-header:hover { background-color: #f8fafc; }
 
         .card-top-row {
             display: flex;
@@ -454,25 +624,24 @@
         }
         .date-header {
             color: var(--text-secondary);
-            font-size: 0.78rem;
+            font-size: 0.77rem;
             font-weight: 600;
             font-variant-numeric: tabular-nums;
         }
         .pinned-tag {
             background: #d97706;
             color: #ffffff;
-            font-size: 0.68rem;
+            font-size: 0.67rem;
             font-weight: 700;
             padding: 2px 7px;
             border-radius: 4px;
-            letter-spacing: 0.04em;
             text-transform: uppercase;
         }
         .driver-badge {
             background: #e0f2fe;
             color: #0369a1;
             border: 1px solid #bae6fd;
-            font-size: 0.71rem;
+            font-size: 0.7rem;
             font-weight: 700;
             padding: 2px 7px;
             border-radius: 4px;
@@ -481,7 +650,7 @@
             background: #f1f5f9;
             color: #475569;
             border: 1px solid #cbd5e1;
-            font-size: 0.7rem;
+            font-size: 0.69rem;
             font-weight: 700;
             padding: 2px 6px;
             border-radius: 4px;
@@ -493,11 +662,10 @@
             gap: 6px;
             flex-wrap: wrap;
         }
-
         .bias-pill {
-            padding: 3px 8px;
+            padding: 2px 8px;
             border-radius: 5px;
-            font-size: 0.72rem;
+            font-size: 0.71rem;
             font-weight: 700;
             font-variant-numeric: tabular-nums;
         }
@@ -509,28 +677,19 @@
             background: var(--bg-subtle);
             color: var(--text-secondary);
             border: 1px solid #cbd5e1;
-            padding: 3px 9px;
+            padding: 2px 8px;
             border-radius: 5px;
-            font-size: 0.71rem;
+            font-size: 0.7rem;
             font-weight: 700;
-            letter-spacing: 0.03em;
             cursor: pointer;
-            transition: all 0.15s ease;
         }
-        .pin-btn:hover {
-            background: #e2e8f0;
-            color: var(--text-primary);
-        }
-        .pin-btn.active {
-            background: #fef3c7;
-            color: #92400e;
-            border-color: #f59e0b;
-        }
+        .pin-btn:hover { background: #e2e8f0; color: var(--text-primary); }
+        .pin-btn.active { background: #fef3c7; color: #92400e; border-color: #f59e0b; }
 
         .eval-badge {
-            padding: 3px 8px;
+            padding: 2px 8px;
             border-radius: 5px;
-            font-size: 0.71rem;
+            font-size: 0.7rem;
             font-weight: 700;
             font-variant-numeric: tabular-nums;
         }
@@ -546,15 +705,15 @@
             gap: 12px;
         }
         .cluster-headline {
-            font-size: 0.96rem;
+            font-size: 0.95rem;
             font-weight: 700;
             color: var(--text-primary);
             margin: 0;
-            line-height: 1.38;
+            line-height: 1.36;
             flex: 1;
         }
         .expand-indicator {
-            font-size: 0.72rem;
+            font-size: 0.71rem;
             color: var(--accent-blue);
             font-weight: 700;
             background: #eff6ff;
@@ -565,17 +724,15 @@
         }
 
         .compact-teaser {
-            font-size: 0.83rem;
+            font-size: 0.82rem;
             color: var(--text-secondary);
-            line-height: 1.42;
+            line-height: 1.4;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
-        .news-card.is-expanded .compact-teaser {
-            display: none;
-        }
+        .news-card.is-expanded .compact-teaser { display: none; }
 
         .update-highlight {
             background: #fef9c3;
@@ -586,26 +743,25 @@
             border: 1px solid #fde047;
         }
 
-        /* Collapsible Body Content */
         .card-accordion-body {
             display: none;
-            padding: 0 16px 16px 16px;
+            padding: 0 16px 15px 16px;
             border-top: 1px solid #e2e8f0;
             background: #ffffff;
         }
         .news-card.is-expanded .card-accordion-body {
             display: block;
-            animation: fadeIn 0.18s ease;
+            animation: fadeIn 0.16s ease;
         }
 
         .event-time-banner {
             background-color: #fffbeb;
             color: #92400e;
             border: 1px solid #fde68a;
-            padding: 8px 12px;
+            padding: 7px 11px;
             border-radius: var(--radius-md);
-            font-size: 0.81rem;
-            margin: 12px 0;
+            font-size: 0.8rem;
+            margin: 11px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -616,22 +772,22 @@
         .summary-box {
             background-color: var(--bg-subtle);
             border-radius: var(--radius-md);
-            padding: 14px;
-            margin-bottom: 14px;
+            padding: 13px;
+            margin-bottom: 12px;
             border: 1px solid var(--border-color);
         }
         .structured-data {
-            font-size: 0.88rem;
-            line-height: 1.55;
+            font-size: 0.87rem;
+            line-height: 1.54;
             color: var(--text-primary);
         }
-        .data-block { margin-bottom: 10px; }
+        .data-block { margin-bottom: 9px; }
         .data-block:last-child { margin-bottom: 0; }
         .data-label {
             font-weight: 700;
             color: var(--text-secondary);
             text-transform: uppercase;
-            font-size: 0.71rem;
+            font-size: 0.7rem;
             letter-spacing: 0.03em;
             display: block;
             margin-bottom: 2px;
@@ -639,60 +795,60 @@
 
         .pro-con-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 10px;
-            margin: 12px 0;
+            margin: 11px 0;
         }
         .bull-box {
             background-color: var(--bull-bg);
             border: 1px solid #bbf7d0;
             border-left: 4px solid var(--bull-green);
-            padding: 10px 12px;
+            padding: 9px 11px;
             border-radius: var(--radius-md);
-            font-size: 0.85rem;
-            line-height: 1.48;
+            font-size: 0.84rem;
+            line-height: 1.46;
         }
         .bear-box {
             background-color: var(--bear-bg);
             border: 1px solid #fecaca;
             border-left: 4px solid var(--bear-red);
-            padding: 10px 12px;
+            padding: 9px 11px;
             border-radius: var(--radius-md);
-            font-size: 0.85rem;
-            line-height: 1.48;
+            font-size: 0.84rem;
+            line-height: 1.46;
         }
         .calibration-box {
             background-color: #eff6ff;
             border: 1px solid #bfdbfe;
             border-left: 4px solid var(--accent-blue);
-            padding: 10px 12px;
+            padding: 9px 11px;
             border-radius: var(--radius-md);
-            font-size: 0.83rem;
+            font-size: 0.82rem;
             color: #1e3a8a;
-            margin-top: 10px;
-            line-height: 1.48;
+            margin-top: 9px;
+            line-height: 1.46;
         }
 
         .outlook-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
             gap: 8px;
             background: #ffffff;
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
-            padding: 10px 12px;
-            margin-top: 12px;
+            padding: 9px 11px;
+            margin-top: 11px;
             font-variant-numeric: tabular-nums;
         }
         .outlook-cell { display: flex; flex-direction: column; gap: 2px; }
         .outlook-label {
-            font-size: 0.68rem;
+            font-size: 0.67rem;
             font-weight: 700;
             text-transform: uppercase;
             color: var(--text-muted);
         }
         .outlook-val {
-            font-size: 0.87rem;
+            font-size: 0.86rem;
             font-weight: 700;
             color: var(--text-primary);
         }
@@ -704,7 +860,7 @@
             background: #e2e8f0;
             border-radius: 2px;
             overflow: hidden;
-            margin-top: 3px;
+            margin-top: 2px;
         }
         .prob-bar-fill { height: 100%; border-radius: 2px; }
 
@@ -712,43 +868,51 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 8px;
+            margin-bottom: 7px;
         }
         .reported-by-label {
             color: var(--text-muted);
             font-weight: 700;
-            font-size: 0.73rem;
+            font-size: 0.72rem;
             text-transform: uppercase;
             letter-spacing: 0.04em;
         }
         .source-item {
             display: flex;
             align-items: baseline;
-            margin-bottom: 6px;
+            margin-bottom: 5px;
             flex-wrap: wrap;
             gap: 6px;
-            font-size: 0.83rem;
+            font-size: 0.82rem;
         }
         .source-badge {
             background-color: #e2e8f0;
             color: #1e293b;
             padding: 2px 6px;
             border-radius: 4px;
-            font-size: 0.71rem;
+            font-size: 0.7rem;
             font-weight: 700;
             white-space: nowrap;
         }
         .regional-badge { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
         .tech-badge { background-color: #e0e7ff; color: #1e40af; border: 1px solid #c7d2fe; }
-        .bias-note { font-size: 0.71rem; color: var(--text-muted); font-style: italic; }
-        .source-link { color: var(--accent-blue); text-decoration: none; line-height: 1.4; }
+        .bias-note { font-size: 0.7rem; color: var(--text-muted); font-style: italic; }
+        .source-link { color: var(--accent-blue); text-decoration: none; line-height: 1.38; }
         .source-link:hover { text-decoration: underline; }
 
+        @media (max-width: 1024px) {
+            .cockpit-grid {
+                grid-template-columns: 1fr;
+            }
+            #chart-container { height: 440px; }
+        }
         @media (max-width: 720px) {
-            .top-header { padding: 12px 14px; }
+            .top-header { padding: 10px 14px; }
+            .telemetry-Ribbon { padding: 8px 14px; }
+            .t-divider { display: none; }
             .controls-left { flex-direction: column; align-items: stretch; }
             .search-input, select { width: 100%; }
-            #chart-container { height: 380px; }
+            #chart-container { height: 370px; }
         }
     </style>
 </head>
@@ -759,82 +923,132 @@
         <div class="header-inner">
             <div class="brand-block">
                 <h1>Financial & Gold Intelligence Terminal</h1>
-                <div class="brand-sub">Aggressive Taker Flow, Dominant Market Narratives, 24/7 XAUUSDT.P & Compact Accordion Feed</div>
+                <span class="brand-sub">Orderflow Cockpit &bull; 24/7 XAUUSDT.P &bull; Coinglass Tug-of-War &bull; AI Regime Matrix</span>
             </div>
             <div class="nav-actions">
                 <div class="tab-group">
                     <button class="tab-btn active" id="tab-btn-chart" onclick="switchTab(event, 'chart-tab')">Chart & Orderflow</button>
                     <button class="tab-btn" id="tab-btn-news" onclick="switchTab(event, 'news-tab')">News Intelligence</button>
                 </div>
-                <button class="refresh-btn" onclick="refreshAllData()">Refresh Data</button>
+                <button class="refresh-btn" onclick="refreshAllData()">Refresh</button>
             </div>
         </div>
     </header>
 
+    <!-- 1-LINE COMPACT TELEMETRY RIBBON (BINANCE / BYBIT STYLE) -->
+    <div class="telemetry-Ribbon">
+        <div class="telemetry-inner">
+            <div class="t-item">
+                <span class="t-label">24/7 XAUUSDT.P Basis:</span>
+                <span class="t-val" id="ui-crypto-basis">Loading...</span>
+                <span class="t-sub" id="ui-crypto-sub"></span>
+            </div>
+            <div class="t-divider"></div>
+            <div class="t-item">
+                <span class="t-label">4h Move / Daily ATR:</span>
+                <span class="t-val" id="ui-volatility">Loading...</span>
+                <span class="t-sub" id="ui-vol-sub"></span>
+            </div>
+            <div class="t-divider"></div>
+            <div class="t-item">
+                <span class="t-label">24h Macro (EUR | 10Y | NAS100 | Oil):</span>
+                <span class="t-val" id="ui-macro">Loading...</span>
+            </div>
+            <div class="t-divider"></div>
+            <div class="t-item">
+                <span class="t-label">AI Track Record (&gt;50%):</span>
+                <span class="t-val" id="ui-winrate">Loading...</span>
+                <span class="t-sub" id="ui-winrate-sub"></span>
+            </div>
+        </div>
+    </div>
+
     <div class="main-wrapper">
-        <!-- TOP INTEL BAR -->
-        <div class="intel-bar">
-            <div class="intel-card" style="border-top-color: #10b981;">
-                <div class="intel-title">Passive Retail Crowd (OANDA)</div>
-                <div class="intel-value" id="ui-sentiment">Loading...</div>
-                <div class="intel-sub">Contrarian Positioning</div>
-            </div>
-            <div class="intel-card" style="border-top-color: #8b5cf6;">
-                <div class="intel-title">Aggressive Taker Flow (Market Orders)</div>
-                <div class="intel-value" id="ui-taker-flow">Loading...</div>
-                <div class="taker-meter-bar"><div class="taker-meter-fill" id="ui-taker-bar" style="width:50%;"></div></div>
-                <div class="intel-sub" id="ui-taker-sub">Immediate Execution Pressure</div>
-            </div>
-            <div class="intel-card" style="border-top-color: #0ea5e9;">
-                <div class="intel-title">XAU/USDT 24/7 Basis & Gap</div>
-                <div class="intel-value" id="ui-crypto-basis">Loading...</div>
-                <div class="intel-sub" id="ui-crypto-sub">Spot vs. Perpetual Swap</div>
-            </div>
-            <div class="intel-card" style="border-top-color: #f59e0b;">
-                <div class="intel-title">4h Move / Est. Daily ATR</div>
-                <div class="intel-value" id="ui-volatility">Loading...</div>
-                <div class="intel-sub" id="ui-vol-sub">Priced-In Exhaustion Check</div>
-            </div>
-            <div class="intel-card" style="border-top-color: #6366f1;">
-                <div class="intel-title">24h Macro (EUR | 10Y | NAS100 | Oil)</div>
-                <div class="intel-value" id="ui-macro">Loading...</div>
-                <div class="intel-sub">Cross-Asset Correlations</div>
-            </div>
-            <div class="intel-card" style="border-top-color: #ec4899;">
-                <div class="intel-title">AI Track Record (&gt;50% Setups)</div>
-                <div class="intel-value" id="ui-winrate">Loading...</div>
-                <div class="intel-sub" id="ui-winrate-sub">20h Horizon Evaluation</div>
+        <!-- COMPACT DOMINANT DRIVERS PILL RIBBON (KOYFIN STYLE) -->
+        <div class="drivers-ribbon">
+            <span class="drivers-ribbon-label">Dominant 24h Drivers:</span>
+            <div class="drivers-pills-wrap" id="ui-drivers-grid">
+                <span style="font-size:0.76rem; color:#64748b;">Analyzing active market narratives...</span>
             </div>
         </div>
 
-        <!-- DOMINANT 24H GOLD MARKET DRIVERS RADAR -->
-        <div class="drivers-radar-panel">
-            <div class="drivers-header-row">
-                <span class="drivers-panel-title">Dominant 24h Gold Price Drivers (What is Steering XAU/USD Right Now)</span>
-                <span class="drivers-panel-hint">Click any driver to filter corresponding intelligence reports</span>
-            </div>
-            <div class="drivers-grid" id="ui-drivers-grid">
-                <div style="font-size:0.82rem; color:#64748b;">Analyzing active market narratives...</div>
-            </div>
-        </div>
-
-        <!-- CHART TAB -->
+        <!-- CHART & ORDERFLOW COCKPIT TAB -->
         <div id="chart-tab" class="tab-content active">
-            <div class="chart-panel">
-                <div id="chart-container"></div>
-                <div class="chart-legend">
-                    <div class="legend-item"><span class="legend-dot" style="background:#16a34a;"></span><strong>BUY Zone:</strong> Passive Buy Liquidity</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span><strong>SELL Zone:</strong> Passive Sell Liquidity</div>
-                    <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span><strong>24/7 XAUUSDT.P:</strong> Live Perpetual Price</div>
-                    <div class="legend-item"><strong>Solid Bold Line:</strong> Confirmed OANDA + COMEX Futures Overlap</div>
+            <div class="cockpit-grid">
+                <!-- LEFT 70%: PRICE CHART -->
+                <div class="chart-panel">
+                    <div id="chart-container"></div>
+                    <div class="chart-legend">
+                        <div class="legend-item"><span class="legend-dot" style="background:#16a34a;"></span><strong>BUY Zone:</strong> Passive Buy Liquidity</div>
+                        <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span><strong>SELL Zone:</strong> Passive Sell Liquidity</div>
+                        <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span><strong>24/7 XAUUSDT.P:</strong> Live Perp Price</div>
+                        <div class="legend-item"><strong>Solid Bold Line:</strong> Confirmed OANDA + COMEX Overlap</div>
+                    </div>
+                </div>
+
+                <!-- RIGHT 30%: COINGLASS TUG-OF-WAR & VERTICAL LIQUIDITY LADDER -->
+                <div class="orderflow-sidebar">
+                    <!-- Panel A: Coinglass Tug-of-War Divergence -->
+                    <div class="hud-card">
+                        <div class="hud-header">
+                            <span class="hud-title">Orderflow vs. Crowd Divergence</span>
+                            <span class="hud-badge" id="ui-funding-badge">Funding: --</span>
+                        </div>
+
+                        <!-- Bar 1: Aggressive Taker Flow (Market Orders) -->
+                        <div class="tug-group">
+                            <div class="tug-top-labels">
+                                <span class="tug-pct-buy" id="ui-taker-buy-lbl">--% BUY</span>
+                                <span class="tug-metric-name">Aggressive Taker (Market)</span>
+                                <span class="tug-pct-sell" id="ui-taker-sell-lbl">--% SELL</span>
+                            </div>
+                            <div class="tug-bar-track">
+                                <div class="tug-bar-fill-buy" id="ui-taker-bar" style="width: 50%;"></div>
+                            </div>
+                            <div class="tug-sub-row">
+                                <span id="ui-tape-sub">OKX Tape: --%</span>
+                                <span id="ui-candle-sub">4h Candle Absorption: --%</span>
+                            </div>
+                        </div>
+
+                        <!-- Bar 2: Passive OANDA Retail Crowd -->
+                        <div class="tug-group">
+                            <div class="tug-top-labels">
+                                <span class="tug-pct-buy" id="ui-retail-long-lbl">--% LONG</span>
+                                <span class="tug-metric-name">Passive Crowd (OANDA)</span>
+                                <span class="tug-pct-sell" id="ui-retail-short-lbl">--% SHORT</span>
+                            </div>
+                            <div class="tug-bar-track">
+                                <div class="tug-bar-fill-buy" id="ui-retail-bar" style="width: 50%;"></div>
+                            </div>
+                            <div class="tug-sub-row">
+                                <span>Contrarian Retail Positioning</span>
+                                <span>Stop-Hunt Fuel</span>
+                            </div>
+                        </div>
+
+                        <div class="flow-diagnostic-box">
+                            <strong id="ui-taker-state">Calibrating Execution Tape...</strong><br>
+                            <span id="ui-wick-note">Waiting for intrabar absorption metrics.</span>
+                            <div class="squeeze-alert" id="ui-squeeze-warn"></div>
+                        </div>
+                    </div>
+
+                    <!-- Panel B: Vertical Orderbook Liquidity Ladder -->
+                    <div class="hud-card">
+                        <div class="hud-header">
+                            <span class="hud-title">Liquidity Price Ladder ($10 Zones)</span>
+                            <span class="hud-badge">OANDA + COMEX</span>
+                        </div>
+                        <div class="ladder-container" id="ui-liquidity-ladder">
+                            <div style="font-size:0.78rem; color:#64748b; text-align:center; padding:12px;">Loading orderbook zones...</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="overlap-box" id="overlap-legend">
-                Loading orderflow, aggressive taker absorption, and basis telemetry...
-            </div>
         </div>
 
-        <!-- NEWS TAB -->
+        <!-- NEWS INTELLIGENCE TAB -->
         <div id="news-tab" class="tab-content">
             <div class="controls-panel">
                 <div class="controls-left">
@@ -1082,7 +1296,7 @@
         function renderDominantDriversRadar(driversList) {
             const grid = document.getElementById('ui-drivers-grid');
             if (!driversList || driversList.length === 0) {
-                grid.innerHTML = `<div style="font-size:0.82rem; color:#64748b;">Waiting for cluster telemetry...</div>`;
+                grid.innerHTML = `<span style="font-size:0.76rem; color:#64748b;">Waiting for cluster telemetry...</span>`;
                 return;
             }
 
@@ -1093,25 +1307,77 @@
                 const biasColor = isBull ? '#16a34a' : (isBear ? '#dc2626' : '#475569');
                 const safeName = (d.narrative || '').replace(/'/g, "\\'");
                 return `
-                    <div class="driver-chip ${borderClass}" onclick="filterByDriver('${safeName}')">
-                        <div class="driver-top-line">
-                            <span class="driver-name">#${i + 1} ${d.narrative}</span>
-                            <span class="driver-share">${d.share_pct}% Share</span>
-                        </div>
-                        <div class="driver-meta">
-                            <strong style="color:${biasColor};">${d.net_bias}</strong> (Avg ${d.avg_prob}%) &bull; ${d.sources_count} Sources in ${d.clusters_count} Cluster${d.clusters_count > 1 ? 's' : ''}
-                        </div>
+                    <div class="driver-pill ${borderClass}" onclick="filterByDriver('${safeName}')" title="Click to filter news by ${d.narrative}">
+                        <span class="dp-name">#${i + 1} ${d.narrative}</span>
+                        <span class="dp-share">${d.share_pct}%</span>
+                        <span class="dp-bias" style="color:${biasColor};">${d.net_bias} (${d.avg_prob}%)</span>
                     </div>
                 `;
             }).join('');
         }
 
+        function renderLiquidityLadder(orderbookZones, spotPrice, cryptoBasis) {
+            const ladderEl = document.getElementById('ui-liquidity-ladder');
+            if (!orderbookZones || orderbookZones.length === 0) {
+                ladderEl.innerHTML = `<div style="font-size:0.78rem; color:#64748b; text-align:center; padding:12px;">No orderbook zones available.</div>`;
+                return;
+            }
+
+            const sortedZones = [...orderbookZones].sort((a, b) => b.price - a.price);
+            const maxVol = Math.max(...sortedZones.map(z => z.volume || 1), 1);
+
+            const aboveSpot = sortedZones.filter(z => z.price >= spotPrice);
+            const belowSpot = sortedZones.filter(z => z.price < spotPrice);
+
+            const buildZoneRow = (z) => {
+                const isBuy = z.dominance === "BUY";
+                const rowClass = isBuy ? "zone-buy" : "zone-sell";
+                const tagClass = isBuy ? "tag-buy" : "tag-sell";
+                const overlapClass = z.overlap ? "is-overlap" : "";
+                const overlapBadge = z.overlap ? `<span class="tag-overlap">OVERLAP</span>` : `<span style="font-size:0.65rem; color:#64748b;">${z.sources || 'OANDA'}</span>`;
+                const widthPct = Math.min(100, Math.round((z.volume / maxVol) * 100));
+                const distUsd = spotPrice > 0 ? (z.price - spotPrice) : 0;
+                const distSign = distUsd >= 0 ? '+' : '';
+
+                return `
+                    <div class="ladder-row ${rowClass} ${overlapClass}">
+                        <div class="ladder-vol-fill" style="width:${widthPct}%;"></div>
+                        <div class="ladder-left">
+                            <span class="ladder-price">$${z.price.toFixed(2)}</span>
+                            <span class="ladder-side-tag ${tagClass}">${z.dominance}</span>
+                            ${overlapBadge}
+                        </div>
+                        <div class="ladder-right">
+                            <span class="ladder-tot-vol">${z.volume.toFixed(1)}% Vol</span>
+                            <span style="margin-left:5px; color:#64748b;">(${distSign}$${distUsd.toFixed(1)})</span>
+                        </div>
+                    </div>
+                `;
+            };
+
+            const perpInfo = (cryptoBasis && cryptoBasis.crypto_price)
+                ? `<span>24/7 Perp: $${cryptoBasis.crypto_price.toFixed(2)} (${cryptoBasis.spread_usd >= 0 ? '+' : ''}$${cryptoBasis.spread_usd.toFixed(2)})</span>`
+                : '';
+
+            const spotDividerHTML = `
+                <div class="ladder-spot-divider">
+                    <span>SPOT: $${spotPrice > 0 ? spotPrice.toFixed(2) : '--'}</span>
+                    ${perpInfo}
+                </div>
+            `;
+
+            ladderEl.innerHTML = [
+                ...aboveSpot.map(buildZoneRow),
+                spotDividerHTML,
+                ...belowSpot.map(buildZoneRow)
+            ].join('');
+        }
+
         // ==========================================
-        // 1. LOAD CHART, TAKER FLOW & XAU/USDT BASIS
+        // 1. LOAD CHART, TAKER HUD & PRICE LADDER
         // ==========================================
         async function loadChart() {
             const container = document.getElementById('chart-container');
-            const overlapBox = document.getElementById('overlap-legend');
             try {
                 const response = await fetch('market_data.json?t=' + new Date().getTime());
                 if (!response.ok) {
@@ -1120,51 +1386,65 @@
                 }
                 const data = await response.json();
 
+                // Populate Passive Retail Tug-of-War Bar
                 if (data.sentiment) {
-                    document.getElementById('ui-sentiment').innerHTML = 
-                        `<span style="color:#16a34a;">${data.sentiment.long_pct}% Long</span> / <span style="color:#dc2626;">${data.sentiment.short_pct}% Short</span>`;
+                    const lPct = Number(data.sentiment.long_pct || 50).toFixed(1);
+                    const sPct = Number(data.sentiment.short_pct || 50).toFixed(1);
+                    document.getElementById('ui-retail-long-lbl').innerText = `${lPct}% LONG`;
+                    document.getElementById('ui-retail-short-lbl').innerText = `${sPct}% SHORT`;
+                    document.getElementById('ui-retail-bar').style.width = `${Math.min(100, Math.max(0, data.sentiment.long_pct))}%`;
                 }
 
+                // Populate Aggressive Taker Tug-of-War Bar
                 if (data.taker_flow && data.taker_flow.taker_buy_pct !== undefined) {
                     const tf = data.taker_flow;
                     const buyP = Number(tf.taker_buy_pct).toFixed(1);
                     const sellP = Number(tf.taker_sell_pct).toFixed(1);
-                    document.getElementById('ui-taker-flow').innerHTML = 
-                        `<span style="color:#16a34a;">${buyP}% Buy</span> / <span style="color:#dc2626;">${sellP}% Sell</span>`;
+                    document.getElementById('ui-taker-buy-lbl').innerText = `${buyP}% BUY`;
+                    document.getElementById('ui-taker-sell-lbl').innerText = `${sellP}% SELL`;
                     document.getElementById('ui-taker-bar').style.width = `${Math.min(100, Math.max(0, tf.taker_buy_pct))}%`;
-                    document.getElementById('ui-taker-sub').innerText = tf.state_label || 'Market Execution Flow';
-                } else {
-                    document.getElementById('ui-taker-flow').innerText = "Calibrating Tape...";
+
+                    document.getElementById('ui-tape-sub').innerText = `OKX Perp Tape: ${tf.raw_tape_buy_pct}% Buy`;
+                    document.getElementById('ui-candle-sub').innerText = `4h Candle Close: ${tf.candle_buy_pressure_pct}% Buy`;
+                    const frSign = tf.funding_rate_pct >= 0 ? '+' : '';
+                    document.getElementById('ui-funding-badge').innerText = `Funding: ${frSign}${tf.funding_rate_pct}%`;
+
+                    document.getElementById('ui-taker-state').innerText = tf.state_label || 'Balanced Flow';
+                    document.getElementById('ui-wick-note').innerText = tf.wick_note || '';
+                    document.getElementById('ui-squeeze-warn').innerText = tf.squeeze_warning || '';
                 }
 
                 if (data.dominant_drivers && data.dominant_drivers.length > 0) {
                     renderDominantDriversRadar(data.dominant_drivers);
                 }
 
+                // Top Telemetry Ribbon: 24/7 Basis
                 if (data.crypto_basis && data.crypto_basis.crypto_price) {
                     const cb = data.crypto_basis;
-                    const spColor = cb.spread_usd > 2 ? '#16a34a' : (cb.spread_usd < -2 ? '#dc2626' : '#334155');
+                    const spColor = cb.spread_usd > 2 ? '#4ade80' : (cb.spread_usd < -2 ? '#f87171' : '#cbd5e1');
                     const spSign = cb.spread_usd >= 0 ? '+' : '';
                     document.getElementById('ui-crypto-basis').innerHTML = 
                         `$${cb.crypto_price.toFixed(2)} <span style="color:${spColor};">(${spSign}$${cb.spread_usd.toFixed(2)})</span>`;
-                    document.getElementById('ui-crypto-sub').innerText = 
-                        `${cb.regime} via ${cb.source}`;
+                    document.getElementById('ui-crypto-sub').innerText = `[${cb.regime}]`;
                 } else {
                     document.getElementById('ui-crypto-basis').innerText = "N/A";
-                    document.getElementById('ui-crypto-sub').innerText = "Spot vs. Perpetual Swap";
                 }
 
+                // Top Telemetry Ribbon: Volatility / ATR
+                let currentSpotPrice = 0;
                 if (data.volatility && data.volatility.est_daily_atr) {
+                    currentSpotPrice = Number(data.volatility.current_price || 0);
                     const chg = data.volatility.change_4h || 0;
                     const ratio = data.volatility.move_to_daily_atr_ratio || 0;
-                    const warn = ratio >= 1.2 ? " [Exhausted]" : " [Normal]";
+                    const warn = ratio >= 1.2 ? "Exhausted" : "Normal";
                     document.getElementById('ui-volatility').innerText = 
-                        `${chg >= 0 ? '+' : ''}$${chg} | ATR: $${data.volatility.est_daily_atr}`;
-                    document.getElementById('ui-vol-sub').innerText = `4h Move/ATR Ratio: ${ratio}x${warn}`;
+                        `${chg >= 0 ? '+' : ''}$${chg} / $${data.volatility.est_daily_atr}`;
+                    document.getElementById('ui-vol-sub').innerText = `(${ratio}x ${warn})`;
                 } else {
                     document.getElementById('ui-volatility').innerText = "N/A";
                 }
 
+                // Top Telemetry Ribbon: Macro
                 if (data.macro) {
                     const eur = data.macro.EUR_USD ? `${data.macro.EUR_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.EUR_USD.change_24h_pct}%` : '--';
                     const us10 = data.macro.USB10Y_USD ? `${data.macro.USB10Y_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.USB10Y_USD.change_24h_pct}%` : '--';
@@ -1185,6 +1465,13 @@
                     }
                 });
 
+                if (currentSpotPrice <= 0 && uniqueCandles.length > 0) {
+                    currentSpotPrice = uniqueCandles[uniqueCandles.length - 1].close;
+                }
+
+                // Populate Vertical Liquidity Price Ladder in Right Sidebar
+                renderLiquidityLadder(data.orderbook || [], currentSpotPrice, data.crypto_basis);
+
                 if (chartResizeObserver) {
                     chartResizeObserver.disconnect();
                 }
@@ -1192,7 +1479,7 @@
 
                 chartInstance = LightweightCharts.createChart(container, {
                     width: container.clientWidth,
-                    height: container.clientHeight || 500,
+                    height: container.clientHeight || 550,
                     layout: { backgroundColor: '#ffffff', textColor: '#334155' },
                     grid: { vertLines: { color: '#f1f5f9' }, horzLines: { color: '#f1f5f9' } },
                     timeScale: { timeVisible: true, borderColor: '#e2e8f0' },
@@ -1216,13 +1503,6 @@
                 
                 candleSeries.setData(uniqueCandles);
 
-                let detailsHTML = "";
-
-                if (data.taker_flow && data.taker_flow.taker_buy_pct !== undefined) {
-                    const tf = data.taker_flow;
-                    detailsHTML += `<strong>Aggressive Market-Order Execution (Why Zones Hold or Flip):</strong> ${tf.taker_buy_pct}% Market Buys vs. ${tf.taker_sell_pct}% Market Sells [OKX Tape: ${tf.raw_tape_buy_pct}% Buy | OANDA 4h Candle Absorption: ${tf.candle_buy_pressure_pct}% Buy | Perp Funding: ${tf.funding_rate_pct >= 0 ? '+' : ''}${tf.funding_rate_pct}%]<br><em>Status: ${tf.state_label} — ${tf.wick_note} (${tf.squeeze_warning})</em><br><hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">`;
-                }
-
                 if (data.crypto_basis && data.crypto_basis.crypto_price) {
                     const cb = data.crypto_basis;
                     const spSign = cb.spread_usd >= 0 ? '+' : '';
@@ -1234,11 +1514,9 @@
                         axisLabelVisible: true,
                         title: `24/7 XAUUSDT.P (${spSign}$${cb.spread_usd.toFixed(2)})`
                     });
-                    detailsHTML += `<strong>24/7 Crypto-Gold Perpetual Basis (${cb.source}):</strong> $${cb.crypto_price.toFixed(2)} vs. OANDA Spot $${cb.oanda_price.toFixed(2)} | Spread: <strong>${spSign}$${cb.spread_usd.toFixed(2)} (${spSign}${cb.spread_pct.toFixed(2)}%)</strong> -> <em>${cb.signal}</em><br><hr style="border:none; border-top:1px solid #e2e8f0; margin:10px 0;">`;
                 }
 
                 if (data.orderbook && data.orderbook.length > 0) {
-                    detailsHTML += "<strong>Passive Liquidity Zones & Multi-Market Confluence (OANDA + Yahoo COMEX):</strong><br>";
                     data.orderbook.forEach((level, index) => {
                         const isBuyDom = level.dominance === "BUY";
                         const lineColor = isBuyDom ? '#16a34a' : '#dc2626';
@@ -1252,16 +1530,9 @@
                             lineWidth: isOverlap ? 3 : 2,
                             lineStyle: isOverlap ? LightweightCharts.LineStyle.Solid : LightweightCharts.LineStyle.Dashed,
                             axisLabelVisible: true,
-                            title: `L${index + 1} ${srcTag}${domTag} (${level.volume.toFixed(2)}%)`
+                            title: `L${index + 1} ${srcTag}${domTag} (${level.volume.toFixed(1)}%)`
                         });
-
-                        const oVol = level.oanda_vol !== undefined ? `${level.oanda_vol}%` : '-';
-                        const cVol = level.comex_vol !== undefined ? `${level.comex_vol}%` : '-';
-                        detailsHTML += `L${index + 1} at <strong>$${level.price.toFixed(2)}</strong> (${level.dominance}): Combined Vol ${level.volume.toFixed(2)}% [OANDA: ${oVol} | COMEX Futures: ${cVol}] ${isOverlap ? '-> <strong>CONFIRMED OVERLAP</strong>' : ''}<br>`;
                     });
-                    overlapBox.innerHTML = detailsHTML;
-                } else {
-                    overlapBox.innerHTML = detailsHTML + "No orderbook zones available.";
                 }
             } catch (error) {
                 container.innerHTML = `<p style="color:#dc2626; font-weight:bold; padding: 20px;">Chart Load Error: ${error.message}</p>`;
@@ -1281,12 +1552,11 @@
                 const stats = await res.json();
                 if (stats.total_evaluated > 0) {
                     document.getElementById('ui-winrate').innerText = 
-                        `${stats.win_rate}% (${stats.hits} Hits / ${stats.total_evaluated} Eval)`;
-                    document.getElementById('ui-winrate-sub').innerText = `${stats.active_signals || 0} Setups Currently Active`;
+                        `${stats.win_rate}% (${stats.hits}/${stats.total_evaluated})`;
+                    document.getElementById('ui-winrate-sub').innerText = `[${stats.active_signals || 0} Active]`;
                 } else {
-                    document.getElementById('ui-winrate').innerText = 
-                        `0 Evaluated`;
-                    document.getElementById('ui-winrate-sub').innerText = `${stats.active_signals || 0} Setups Currently Active`;
+                    document.getElementById('ui-winrate').innerText = `0 Eval`;
+                    document.getElementById('ui-winrate-sub').innerText = `[${stats.active_signals || 0} Active]`;
                 }
             } catch (e) {
                 document.getElementById('ui-winrate').innerText = "Calibrating...";
@@ -1335,7 +1605,7 @@
                         clusters_count: d.clusters_count,
                         sources_count: d.sources_count,
                         avg_prob: Math.round(d.prob_sum / Math.max(1, d.clusters_count)),
-                        net_bias: d.bull > d.bear * 1.15 ? 'Bullish' : (d.bear > d.bull * 1.15 ? 'Bearish' : 'Mixed / Neutral')
+                        net_bias: d.bull > d.bear * 1.15 ? 'Bullish' : (d.bear > d.bull * 1.15 ? 'Bearish' : 'Mixed')
                     })).sort((a, b) => b.share_pct - a.share_pct).slice(0, 4);
                     renderDominantDriversRadar(clientDrivers);
                 }

@@ -1,5 +1,324 @@
 [
     {
+        "main_date": "First Reported: 2026-11-10 09:10 UTC | Last Update: 2026-11-11 06:23 UTC",
+        "original_date": "2026-11-10 09:10",
+        "_timestamp": 1794378184.0,
+        "articles": [
+            {
+                "title": "How October 7 shattered Netanyahu's grip on power and Israeli stability",
+                "link": "https://www.tehrantimes.com/news/531998/How-October-7-shattered-Netanyahu-s-grip-on-power-and-Israeli",
+                "source": "Tehran Times",
+                "date": "2026-11-10 09:10",
+                "description": "The global far-right alliance has suffered three consecutive defeats in recent weeks, beginning with Flavio Bolsonaro's defeat in Brazil's presidential election and his subsequent flight from the country. This was followed by Benjamin Netanyahu's defeat, as the number of seats held by his parliamentary coalition fell below the required majority, and culminated in Donald Trump's major setback in the US midterm elections, which saw Republicans lose",
+                "_timestamp": 1794301856.0
+            },
+            {
+                "title": "Netanyahu fights to stay relevant as Israel’s opposition closes in",
+                "link": "https://www.aljazeera.com/news/2026/11/11/netanyahu-fights-to-stay-relevant-as-israels-opposition-closes-in?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-11 06:23",
+                "description": "A new Knesset shaped by October 7 prepares to convene as Netanyahu fights to prevent an opposition-led government",
+                "_timestamp": 1794378184.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "2026-11-10 09:10 UTC to 2026-11-11 06:23 UTC (approx. 21 hours ago)",
+            "Facts": "Netanyahu fights to maintain political survival as Israel’s political opposition prepares to convene a new Knesset shaped by the October 7 fallout, following setbacks for global far-right allies including Brazil's Flavio Bolsonaro and US Republicans in midterms [Al Jazeera English, Tehran Times].",
+            "Uncertainties": "Whether the potential shift in Israeli leadership will alter ongoing military engagements or accelerate diplomatic de-escalation in Gaza and Lebanon.",
+            "Macro_Context": "Geopolitical friction supports safe-haven flows into gold, interacting with a strong USD proxy (EUR/USD down -0.79%), falling 10Y yields, and balanced taker flow (44.7% buys).",
+            "Bull_Case": "Persistent political instability and regional security risks in Israel maintain safe-haven premiums for XAU/USD, drawing bids from institutional safe-haven allocators.",
+            "Bear_Case": "Political transition could signal potential future de-escalation paths, reducing risk premia if markets price in a more moderate diplomatic stance.",
+            "Historical_Calibration": "Category: Geopolitics & War | ATR-Ratio Bucket: Fresh (<0.8x ATR, current 0.23x) | USD Alignment: Against USD Headwind | Historical Win Rate: 62.3% (Avg DD: -$18.2).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 56,
+            "Past_Price_Action_Cause": "The 4h price change ($+11.74) reflects ongoing safe-haven bids matching historical geopolitical cluster performance despite short-term upper-wick rejection.",
+            "Orderflow_Price_Target": "4060.26"
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 73.89
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 15:01 UTC | Last Update: 2026-11-11 06:20 UTC",
+        "original_date": "2026-11-10 15:01",
+        "_timestamp": 1794378002.0,
+        "articles": [
+            {
+                "title": "CoreWeave earnings put debt-fueled AI build-out under scrutiny",
+                "link": "https://www.cnbc.com/2026/11/10/coreweave-earnings-preview-debt-capex.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-10 15:01",
+                "description": "CoreWeave’s earnings after the bell could calm fears about its debt-fueled AI buildout — or stoke more fear.",
+                "_timestamp": 1794322881.0
+            },
+            {
+                "title": "CoreWeave beats on revenue and lifts guidance, easing AI slowdown concerns",
+                "link": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-10 21:21",
+                "description": "CoreWeave's stock has been hammered heading into the neocloud's Q3 earnings report.",
+                "_timestamp": 1794345691.0
+            },
+            {
+                "title": "CoreWeave Earnings Beat Expectations, Assuaging Market Nervousness",
+                "link": "https://finance.yahoo.com/m/0cd31936-82e3-3051-8fb2-6e33049f3cb0/coreweave-earnings-beat.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 21:20",
+                "description": "The AI cloud provider’s rapid expansion is paying off as the company handily beat analyst expectations.",
+                "_timestamp": 1794345600.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 10: CoreWeave Stock Edges Lower as a Multibillion-Dollar Question Looms Over Earnings",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-coreweave-stock-edges-lower-as-a-multibillion-dollar-question-looms-over-earnings/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:05",
+                "description": "CoreWeave's massive AI infrastructure expansion is fueling revenue growth, but mounting debt and capital spending are raising the stakes for investors.",
+                "_timestamp": 1794348302.0
+            },
+            {
+                "title": "CoreWeave Earnings, Revenue Top Views. Cash Burn Less Than Expected.",
+                "link": "https://finance.yahoo.com/m/ad611b90-19b3-3483-8e63-8cdb59726707/coreweave-earnings%2C-revenue.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:45",
+                "description": "CoreWeave stock edged up after the builder of AI data centers reported a bigger Q3 quarter loss than a year earlier but topped estimates.",
+                "_timestamp": 1794350702.0
+            },
+            {
+                "title": "Ethereum ended CoreWeave's mining days. Earnings test its AI bet",
+                "link": "https://www.thestreet.com/crypto/markets/coreweave-stock-could-swing-15-on-q3-earnings-options-imply?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:25",
+                "description": "Wall Street is bracing for a major post-earnings stock swing.",
+                "_timestamp": 1794349525.0
+            },
+            {
+                "title": "CoreWeave Earnings Were Strong. Investors Remain Antsy as Stock Edges Up.",
+                "link": "https://finance.yahoo.com/m/0cd31936-82e3-3051-8fb2-6e33049f3cb0/coreweave-earnings-were.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 23:03",
+                "description": "The AI cloud provider’s rapid expansion is paying off as the company handily beat analyst expectations.",
+                "_timestamp": 1794351780.0
+            },
+            {
+                "title": "CoreWeave’s stock pops as new financing playbook eases debt concerns",
+                "link": "https://www.marketwatch.com/story/coreweaves-stock-pops-as-new-financing-playbook-eases-debt-concerns-70241525?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-11 01:12",
+                "description": "A third-quarter revenue beat and $9 billion in planned prepayments gave investors renewed confidence in CoreWeave’s business.",
+                "_timestamp": 1794359520.0
+            },
+            {
+                "title": "CoreWeave Earnings: 3 Things Investors Need To Know",
+                "link": "https://www.fool.com/investing/2026/11/11/coreweave-earnings-3-things-investors-need-to-know/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 06:20",
+                "description": "CoreWeave plunged over the last month, but the company is in a stronger position than investors think.",
+                "_timestamp": 1794378002.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-10 22:45 UTC to 2026-11-11 06:20 UTC (approx. 7 hours ago)",
+            "Facts": "CoreWeave posted strong Q3 results beating consensus expectations, reporting lower-than-expected cash burn, $9 billion in planned prepayments, and a new financing playbook that eased investor debt concerns, lifting AI stocks and Nasdaq futures [Yahoo Finance Nasdaq, MarketWatch Macro].",
+            "Uncertainties": "Whether broader tech sector valuations can sustain high capital expenditure cycles amidst rising treasury yields.",
+            "Macro_Context": "Nasdaq 100 up +1.02% alongside surging tech earnings boosts risk appetite, competing with safe-haven gold flows and dampening aggressive yellow metal buying.",
+            "Bull_Case": "Strong tech earnings and liquidity expansion drive broader risk-on sentiment, which can occasionally spill over into commodity basket demand.",
+            "Bear_Case": "Robust tech equity performance and rising equity indices draw institutional capital away from non-yielding bullion, exerting downward pressure on XAU/USD.",
+            "Historical_Calibration": "Category: Tech, AI & Equities | ATR-Ratio Bucket: Fresh (<0.8x ATR) | USD Alignment: Against USD Headwind | Historical Win Rate: 67.6% (Avg DD: -$13.4).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Strong equity/tech momentum creates an alternative asset pull, aligning with strong upper-wick rejection on OANDA 4h candles.",
+            "Orderflow_Price_Target": "N/A"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 4.95
+    },
+    {
+        "main_date": "First Reported: 2026-11-11 04:27 UTC | Last Update: 2026-11-11 06:18 UTC",
+        "original_date": "2026-11-11 04:27",
+        "_timestamp": 1794377938.0,
+        "articles": [
+            {
+                "title": "Pezeshkian departs for Turkey to attend COP31 conference",
+                "link": "https://en.mehrnews.com/news/249320/Pezeshkian-departs-for-Turkey-to-attend-COP31-conference",
+                "source": "Mehr News Agency",
+                "date": "2026-11-11 04:27",
+                "description": "TEHRAN, Nov. 11 (MNA) – Iranian President Masoud Pezeshkian left Tehran for Turkey on Wednesday to attend and address the 31st UN climate change conference (COP31), with bilateral meetings with participating leaders also planned.",
+                "_timestamp": 1794371261.0
+            },
+            {
+                "title": "Pezeshkian says COP31 will be 'good opportunity' to bring up US-Israeli 'damage' to the environment",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/pezeshkian-says-cop31-will-be-good-opportunity-bring-us-israeli-damage",
+                "source": "Middle East Eye",
+                "date": "2026-11-11 06:18",
+                "description": "Pezeshkian says COP31 will be 'good opportunity' to bring up US-Israeli 'damage' to the environment\n\n    \n    \n\n        \n    \n                Iranian President Masoud Pezeshkian said that the upcoming COP31 UN climate summit in Turkiye would be a \"good opportunity\" to bring up the impact of US and Israeli attacks against Iran’s environment and the region.\n\n\"The UN climate summit is a good opportunity to discuss the actions the US and Israel have ",
+                "_timestamp": 1794377938.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-11 04:27 UTC to 2026-11-11 06:18 UTC (approx. 2 hours ago)",
+            "Facts": "Iranian President Masoud Pezeshkian departed Tehran for Turkey to attend the COP31 UN climate summit, stating it is a 'good opportunity' to highlight environmental and regional damage caused by US and Israeli attacks [Middle East Eye, Mehr News Agency].",
+            "Uncertainties": "The nature of bilateral discussions on the sidelines of COP31 and whether diplomatic rhetoric will translate into regional tensions or de-escalation.",
+            "Macro_Context": "Directly links to the #1 dominant narrative on Iran and Strait of Hormuz (30.6% share). Brent crude is higher (+0.94% to $94.59), reinforcing energy supply premium risks.",
+            "Bull_Case": "High-level Iranian diplomatic posturing highlighting active regional conflict damages reinforces supply-chain and geopolitical risk premiums, supporting gold.",
+            "Bear_Case": "Engagement in an international multilateral summit like COP31 offers a diplomatic channel, potentially capping escalation fears if talks proceed constructively.",
+            "Historical_Calibration": "Category: Geopolitics & War | ATR-Ratio Bucket: Fresh (<0.8x ATR) | USD Alignment: Against USD Headwind | Historical Win Rate: 62.3% (Avg DD: -$18.2).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Geopolitical headlines out of Tehran keep baseline safe-haven bids active, countering aggressive retail short positioning.",
+            "Orderflow_Price_Target": "4079.09"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 5.75
+    },
+    {
+        "main_date": "First Reported: 2026-11-11 06:16 UTC",
+        "original_date": "2026-11-11 06:16",
+        "_timestamp": 1794377775.0,
+        "articles": [
+            {
+                "title": "How Lower Oil Prices At American Airlines Group (AAL) Have Changed Its Investment Story",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/lower-oil-prices-american-airlines-061615059.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 06:16",
+                "description": "American Airlines Group saw investor attention pick up after crude oil prices moved toward US$87 a barrel earlier this week, easing a key operating cost for carriers that rely heavily on jet fuel. The move in oil prices directly affects American Airlines Group's cost base, which is particularly important while the business is still managing a sizeable debt load and fuel-sensitive margins. We will now look at how American Airlines Group's investme",
+                "_timestamp": 1794377775.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-11 06:16 UTC (approx. 30 minutes ago)",
+            "Facts": "American Airlines Group (AAL) experienced shifting investor sentiment as crude oil prices moved toward US$87 a barrel earlier in the week, easing operating cost pressures for jet fuel-reliant carriers [Yahoo Finance Oil].",
+            "Uncertainties": "Whether broader energy markets will sustain lower price levels given active geopolitical flare-ups in the Middle East and OPEC+ supply adjustments.",
+            "Macro_Context": "Brent Crude is currently at $94.59 (+0.94%), indicating ongoing energy price resilience that sustains inflationary inputs across global transport and manufacturing sectors.",
+            "Bull_Case": "Sustained high energy costs reinforce underlying inflation sticky dynamics, increasing the appeal of gold as an inflation hedge.",
+            "Bear_Case": "Lower jet fuel and specific carrier operating costs point to localized energy easing, dampening broad-basket commodity panic.",
+            "Historical_Calibration": "Category: Commodities & Energy | ATR-Ratio Bucket: Fresh (<0.8x ATR) | USD Alignment: Against USD Headwind | Historical Win Rate: 66.7% (Avg DD: -$20.4).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Energy price resilience and general commodity tailwinds support baseline holding above $4050 liquidity support zones.",
+            "Orderflow_Price_Target": "4060.26"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 1.45
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 02:31 UTC | Last Update: 2026-11-11 06:09 UTC",
+        "original_date": "2026-11-10 02:31",
+        "_timestamp": 1794377395.0,
+        "articles": [
+            {
+                "title": "Dow Jones Soars 1,132 Points As Amazon, Tesla Rally, But Nvidia Dives; CPI Inflation Report Next",
+                "link": "https://finance.yahoo.com/m/db2f6d95-b7a5-3274-8193-c767d2b681c1/dow-jones-soars-1%2C132-points.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 02:31",
+                "description": "Dow Jones futures were in focus after soaring 1,132 points ahead of the CPI inflation report. Amazon and Tesla rallied, but Nvidia dived.",
+                "_timestamp": 1794277908.0
+            },
+            {
+                "title": "Nvidia couldn’t derail the stock market’s rally. Hot inflation might.",
+                "link": "https://www.marketwatch.com/story/nvidia-couldnt-derail-the-stock-markets-rally-hot-inflation-might-8a572024?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-10 12:33",
+                "description": "A Fed official raises the prospect of a half-a-percentage-point rate hike. Plus, fresh valuation focus on Anthropic’s blockbuster IPO.",
+                "_timestamp": 1794313980.0
+            },
+            {
+                "title": "Stock Market Today: Dow Dips On Hot Inflation Data; Nvidia Falls Again, Anthropic Sets IPO Range (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/c7fbd2af-5702-3c77-9aa6-7c6578bb8abb/stock-market-today%3A-dow-dips.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 15:31",
+                "description": "Stock Market Today: The Dow Jones index falls Tuesday on a hot inflation report. Anthropic prices its IPO range. Nvidia sells off.",
+                "_timestamp": 1794324688.0
+            },
+            {
+                "title": "Stock Market Today: Dow Dips On Hot Inflation Data; Nvidia Falls Again, Anthropic Sets IPO Range (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/c7fbd2af-5702-3c77-9aa6-7c6578bb8abb/stock-market-today%3A-dow-dips.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:31",
+                "description": "Stock Market Today: The Dow Jones index falls Tuesday on a hot inflation report. Anthropic prices its IPO range. Nvidia sells off.",
+                "_timestamp": 1794324688.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 10: Wall Street's Rally Hits a Roadblock as Hot Inflation Raises the Stakes for the Fed",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-wall-street-s-rally-hits-a-roadblock-as-hot-inflation-raises-the-stakes-for-the-fed/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-10 22:50",
+                "description": "Yesterday's rebound lost momentum as rising Treasury yields and renewed inflation concerns weighed on stocks",
+                "_timestamp": 1794351007.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 10: Wall Street's Rally Hits a Roadblock as Hot Inflation Raises the Stakes for the Fed",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-wall-street-s-rally-hits-a-roadblock-as-hot-inflation-raises-the-stakes-for-the-fed/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:50",
+                "description": "Yesterday's rebound lost momentum as rising Treasury yields and renewed inflation concerns weighed on stocks",
+                "_timestamp": 1794351007.0
+            },
+            {
+                "title": "Dow Jones Futures Rise As CoreWave Jumps, Lifts AI Stocks; Look For This Bullish Signal",
+                "link": "https://finance.yahoo.com/m/656fca57-9896-3dfb-96e8-e0af2bc227df/dow-jones-futures-rise-as.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 02:54",
+                "description": "Futures rose while AI stocks rallied overnight on CoreWeave earnings: The stock market fell on Nvidia and surging Treasury yields.",
+                "_timestamp": 1794365654.0
+            },
+            {
+                "title": "Dow, S&P 500, Nasdaq Futures Edge Higher After Red-Hot Inflation Data And Nvidia Losses: CRWV, TTWO, NLST, NBIS In Focus",
+                "link": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-nasdaq-futures-edge-higher-after-red-hot-inflation-data-and-nvidia-losses-crwv-ttwo-nlst-nbis-in-focus/cNGDaIOR9J8?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 03:51",
+                "description": "October’s Consumer Price Index data came in red hot, rising 0.4% month-on-month, ahead of the consensus estimates.",
+                "_timestamp": 1794369075.0
+            },
+            {
+                "title": "Dow Jones Futures Rise, Techs Jump On CoreWeave Earnings; Look For This Bullish Signal",
+                "link": "https://finance.yahoo.com/m/656fca57-9896-3dfb-96e8-e0af2bc227df/dow-jones-futures-rise%2C-techs.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 06:09",
+                "description": "Futures rose while AI stocks rallied overnight on CoreWeave earnings: The stock market fell on Nvidia and surging Treasury yields.",
+                "_timestamp": 1794377395.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-10 22:50 UTC to 2026-11-11 06:09 UTC (approx. 1 hour ago)",
+            "Facts": "October’s Consumer Price Index (CPI) came in red hot, rising 0.4% month-on-month and beating consensus estimates, triggering surging Treasury yields, Wall Street momentum roadblocks, and subsequent equity futures adjustments [Yahoo Finance Nasdaq, Yahoo Finance Gold].",
+            "Uncertainties": "The exact extent of Federal Reserve rate path recalibration and whether subsequent labor data will confirm persistent inflationary pressures.",
+            "Macro_Context": "Hot inflation data drives up Treasury yields and strengthens the USD proxy, creating a classic macro headwind for non-yielding gold despite its long-term inflation-hedge role.",
+            "Bull_Case": "Persistently high inflation cements gold's long-term status as the ultimate store of value against fiat currency devaluation.",
+            "Bear_Case": "Hot CPI forces aggressive Fed rate-path repricing, driving up real yields and strengthening the dollar, leading to immediate downward pressure on XAU/USD.",
+            "Historical_Calibration": "Category: Fed, Rates & Macro | ATR-Ratio Bucket: Fresh (<0.8x ATR) | USD Alignment: With USD Tailwind | Historical Win Rate: 70.8% (Avg DD: -$10.9).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 58,
+            "Past_Price_Action_Cause": "Surging Treasury yields and red-hot CPI data caused the 24h drop of $-68.12 and strong upper-wick rejections as aggressive sellers hit market orders.",
+            "Orderflow_Price_Target": "4029.39"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 1.45
+    },
+    {
         "main_date": "First Reported: 2026-11-09 19:00 UTC | Last Update: 2026-11-11 05:53 UTC",
         "original_date": "2026-11-09 19:00",
         "_timestamp": 1794376381.0,
@@ -75,28 +394,102 @@
                 "date": "2026-11-11 05:53",
                 "description": "TEHRAN, Nov. 11 (MNA) – The border villages in Saada province, Yemen, came under heavy airstrikes of artillery of the Saudi Arabia on Wednesday.",
                 "_timestamp": 1794376381.0
+            },
+            {
+                "title": "Yemeni forces, Houthis exchange attacks, claim to inflict heavy losses",
+                "link": "https://www.aljazeera.com/news/2026/11/11/yemeni-forces-houthis-exchange-attacks-claim-to-inflict-heavy-losses?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-11 05:39",
+                "description": "Yemen&#039;s government says 190 rebel fighters killed and wounded, as Houthis also claim inflicting dealing heavy blows.",
+                "_timestamp": 1794375566.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-10 13:39 UTC to 2026-11-11 05:53 UTC (approx. 1 hour ago)",
+            "Facts": "Saudi Arabia launched heavy artillery and airstrikes on border villages in Saada province, Yemen, following massive escalations where Houthi forces claimed targeting Riyadh's King Khalid International Airport, financial centers, and Aramco oil facilities in Abqaiq [Mehr News Agency, Al Jazeera English, Middle East Eye].",
+            "Uncertainties": "The severity of damage to critical Saudi oil infrastructure and whether Riyadh will launch a larger counter-offensive affecting regional energy corridors.",
+            "Macro_Context": "Direct kinetic strikes on Saudi oil infrastructure and Aramco sites amplify energy supply disruption risks, driving Brent crude higher and fueling safe-haven gold demand.",
+            "Bull_Case": "Direct attacks on Saudi oil installations and escalating Yemen-Saudi border warfare heighten Middle East supply chain disruption risks, triggering aggressive safe-haven bullion buying.",
+            "Bear_Case": "Saudi air defense interceptions and counter-strikes could quickly contain the operational impact, limiting sustained safe-haven expansion.",
+            "Historical_Calibration": "Category: Geopolitics & War | ATR-Ratio Bucket: Fresh (<0.8x ATR) | USD Alignment: Against USD Headwind | Historical Win Rate: 62.3% (Avg DD: -$18.2).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 61,
+            "Past_Price_Action_Cause": "Active military strikes on key oil infrastructure provide strong fundamental underpinnings, protecting gold from deeper macro-driven liquidations.",
+            "Orderflow_Price_Target": "4079.09"
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 103.5
+    },
+    {
+        "main_date": "First Reported: 2026-11-11 05:52 UTC",
+        "original_date": "2026-11-11 05:52",
+        "_timestamp": 1794376348.0,
+        "articles": [
+            {
+                "title": "South African swimmer Tatjana Smith switches allegiance to Netherlands",
+                "link": "https://www.aljazeera.com/sports/2026/11/11/south-african-swimmer-tatjana-smith-switches-allegiance-to-netherlands?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-11 05:52",
+                "description": "Double Olympic gold medallist cites &#039;financial and practical challenges&#039; of swimming.",
+                "_timestamp": 1794376348.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-10 12:16 UTC to 2026-11-11 05:53 UTC (approx. 1 to 18 hours ago)",
-            "Facts": "Saudi Arabia launched heavy airstrikes on border villages in Saada, Yemen, following Houthi missile and drone attacks targeting King Khalid International Airport in Riyadh, Saudi oil infrastructure, pumping stations on the East-West pipeline, Riyadh's financial centre, and an Aramco site in Abqaiq [Middle East Eye, Mehr News Agency, Al Jazeera English]. The escalation follows 44 deaths in Yemen over the weekend and intercepted missiles over Saudi territory [Middle East Eye].",
-            "Uncertainties": "Whether the strikes will disrupt actual crude production flows or lead to direct military engagement involving Iran or maritime transit blockades in regional waterways.",
-            "Macro_Context": "Brent Crude is up +0.94% at $94.68, supporting inflation and commodity-linked safe-haven demand. Aggressive Taker Flow is heavily net-short (30.0% buys vs 70.0% sells) with high long-stop cascade risk as OANDA retail remains 67.7% long.",
-            "Bull_Case": "Geopolitical escalation in the Arabian Peninsula heightens middle east risk premiums, driving immediate safe-haven capital inflows into gold bullion.",
-            "Bear_Case": "Persistent aggressive market-selling and high retail long positioning could overpower safe-haven bids, forcing stop-losses below support zones.",
-            "Historical_Calibration": "Category: Geopolitics & War | Fresh ATR-Ratio (<0.8x): Win Rate 63.7% (251/394) | Against USD Headwind: Win Rate 63.9% (172/269). Calibrated probability adjusted safely.",
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-11 05:52 UTC (~1 hour ago relative to 2026-11-11 06:40 UTC)",
+            "Facts": "South African swimmer Tatjana Smith has switched her sporting allegiance to the Netherlands, citing financial and practical challenges. [Al Jazeera English]. This is a completely unrelated lifestyle/sports news item erroneously grouped under commodity/gold demand tags.",
+            "Uncertainties": "Completely irrelevant to macroeconomic gold drivers, bullion flows, or central bank reserves.",
+            "Macro_Context": "Zero macro relevance. USD, yields, equity indices, and XAU/USD orderflow are entirely unaffected by individual sports athlete migrations.",
+            "Bull_Case": "None. The news has no bearing on gold fundamentals.",
+            "Bear_Case": "None. The news has no bearing on gold fundamentals.",
+            "Historical_Calibration": "Category: Commodities & Energy, Fresh (<0.8x ATR) at 0.23x, Against USD Headwind. Historical Win Rate from Regime Matrix: 64.7% overall for commodities, but calibrated to Neutral/N/A due to irrelevance.",
+            "Impact_Timing": "Past (Already Priced In)",
+            "Timeframe": "N/A",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Price action reflects broader macro and geopolitical currents rather than unrelated sports stories.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-11 05:50 UTC",
+        "original_date": "2026-11-11 05:50",
+        "_timestamp": 1794376200.0,
+        "articles": [
+            {
+                "title": "Robinhood's Latest Earnings Report Tells You All You Need to Know About the Future of Crypto. These 2 Numbers Really Stood Out.",
+                "link": "https://www.fool.com/investing/2026/11/11/robinhoods-latest-earnings-report-tells-you-all-yo/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 05:50",
+                "description": "Robinhood Chain brought in $26 million, and prediction markets brought in $173 million last quarter. Here's where Robinhood's growth could come from next.",
+                "_timestamp": 1794376200.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-11 05:50 UTC (~1 hour ago relative to 2026-11-11 06:40 UTC)",
+            "Facts": "Robinhood reported its latest earnings, highlighting $26 million from Robinhood Chain and $173 million from prediction markets last quarter, showcasing expanding retail risk appetite. [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Unclear how broader retail prediction market volumes translate into sustained institutional bullion flows.",
+            "Macro_Context": "Nasdaq 100 rose 1.02%, while retail risk appetite remains elevated. This supports equities and risk-on sentiment, which can sometimes compete with safe-haven gold flows.",
+            "Bull_Case": "Expanded retail liquidity and speculative activity increase overall financial system velocity, occasionally spilling into alternative safe havens and commodities.",
+            "Bear_Case": "Strong tech and equity performance (Nasdaq +1.02%) draws speculative capital into risk assets, pressuring non-yielding gold.",
+            "Historical_Calibration": "Category: Commodities & Energy, Fresh (<0.8x ATR) at 0.23x, Against USD Headwind. Historical Win Rate from Regime Matrix: 66.7% for Commodities & Energy.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 54,
-            "Past_Price_Action_Cause": "4h change of $+12.08 and 24h drop of $-57.93 reflect volatile swings where geopolitical news attempts to cushion against heavy taker selling.",
-            "Orderflow_Price_Target": "4060.23"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 103.5
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Steady intraday trading reflecting balanced retail risk appetite alongside tech sector outperformance.",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "First Reported: 2026-11-09 23:47 UTC | Last Update: 2026-11-11 05:49 UTC",
@@ -164,6 +557,177 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 3.9
+    },
+    {
+        "main_date": "First Reported: 2026-11-09 02:07 UTC | Last Update: 2026-11-11 05:45 UTC",
+        "original_date": "2026-11-09 02:07",
+        "_timestamp": 1794375900.0,
+        "articles": [
+            {
+                "title": "Brent Crude Fell 12.5% But Former Biden Advisor Warns Iran War Could Return",
+                "link": "https://beincrypto.com/brent-crude-iran-war-hochstein-warning/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 02:07",
+                "description": "Brent crude fell over 12.5% this week, but Amos Hochstein says Iran war odds top 50/50 as Hormuz tanker attacks persist.",
+                "_timestamp": 1794190072.0
+            },
+            {
+                "title": "Oil Sinks to $94 as Iran’s $8 Billion Hormuz Deal Heads to Trump",
+                "link": "https://finance.yahoo.com/energy/articles/oil-sinks-94-iran-8-133000587.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 13:30",
+                "description": "Brent fell 3.6% to $94 as Qatar’s prime minister took an Iranian Hormuz proposal to the White House, extending last week’s 16% slide in oil prices.",
+                "_timestamp": 1794231000.0
+            },
+            {
+                "title": "Exxon Mobil Stocks Move Lower 0.31% as Crude Slides Toward $87",
+                "link": "https://finance.yahoo.com/energy/articles/exxon-mobil-stocks-move-lower-190037292.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 19:00",
+                "description": "Oil fell after President Trump called renewed strikes on Iran \"highly unlikely,\" but Exxon's cash machine barely flinched.",
+                "_timestamp": 1794250837.0
+            },
+            {
+                "title": "U.S. gas prices on track to fall below $4 a gallon, experts say",
+                "link": "https://www.cbsnews.com/news/gas-prices-below-four-dollars-expert-predicts/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 19:15",
+                "description": "Fuel prices have dropped in recent weeks amid hopes that the midterm elections would increase pressure on the U.S. and Iran to reach a peace deal.",
+                "_timestamp": 1794251746.0
+            },
+            {
+                "title": "Oil falls as Trump downplays prospect of escalation with Iran",
+                "link": "https://www.investing.com/news/commodities-news/oil-falls-as-trump-downplays-prospect-of-escalation-with-iran-5013892",
+                "source": "Investing.com",
+                "date": "2026-11-10 01:49",
+                "description": "",
+                "_timestamp": 1794275354.0
+            },
+            {
+                "title": "Oil Prices Extend Decline as Trump Signals Pause in Further Military Action Against Iran",
+                "link": "https://investorshub.advfn.com/market-news/article/39596/oil-prices-extend-decline-as-trump-signals-pause-in-further-military-action-against-iran?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 10:11",
+                "description": "Oil prices fell on Tuesday, extending losses from the previous session after US President Donald Trump indicated that additional military strikes against Iran were not necessary for the time being. The comments reduced concerns about an immediate escalation of the conflict, although risks to shipping through the Strait of Hormuz remained.",
+                "_timestamp": 1794305482.0
+            },
+            {
+                "title": "Brent Crude Falls Below $90 for First Time Since August",
+                "link": "https://finance.yahoo.com/energy/articles/brent-crude-falls-below-90-100635859.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 10:06",
+                "description": "Brent crude prices plunged below $90 per barrel as President Trump signaled restraint toward Iran, raising hopes for an end to the Middle East conflict.",
+                "_timestamp": 1794305195.0
+            },
+            {
+                "title": "Oil drops further as Trump eases Middle East conflict fears",
+                "link": "https://www.offshore-technology.com/news/oil-drops-trump-eases-middle-east-conflict/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 11:05",
+                "description": "Brent crude has now retreated roughly 22% from its six-month high as fears of a broader US-Iran military confrontation subside.",
+                "_timestamp": 1794308759.0
+            },
+            {
+                "title": "Canada Commodities: Oil Prices Fall as Secretary of State Marco Rubio Downplays More Iran Attacks",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-fall-145927198.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-10 14:59",
+                "description": "Crude oil prices fell below $90 per barrel Tuesday morning after US Secretary of State Marco Rubio d",
+                "_timestamp": 1794322767.0
+            },
+            {
+                "title": "Gas prices fall below $4 for the first time since July",
+                "link": "https://finance.yahoo.com/video/gas-prices-fall-below-4-for-the-first-time-since-july-145333135.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 14:53",
+                "description": "U.S. retail gasoline prices have fallen back below $4 per gallon and Brent crude has dipped under $90 as easing Middle East tensions reduce energy's war premium, though structural supply disruptions and seasonal factors leave analysts questioning whether $85 will serve as the new price floor.",
+                "_timestamp": 1794322405.0
+            },
+            {
+                "title": "Canada Commodities: Oil Prices Fall as Secretary of State Marco Rubio Downplays More Iran Attacks",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-fall-145927198.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 14:59",
+                "description": "Crude oil prices fell below $90 per barrel Tuesday morning after US Secretary of State Marco Rubio d",
+                "_timestamp": 1794322767.0
+            },
+            {
+                "title": "Oil Falls to Lowest Level Since August",
+                "link": "https://finance.yahoo.com/energy/articles/oil-falls-lowest-level-since-163400495.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 16:34",
+                "description": "Brent crude briefly fell below $90 as hopes of diplomatic breakthroughs in Iran and Ukraine accelerate the oil market selloff.",
+                "_timestamp": 1794328440.0
+            },
+            {
+                "title": "Oil Prices Just Fell to Their Lowest Since August as Trump Says the Iran War Is ‘Effectively Over’",
+                "link": "https://247wallst.com/investing/2026/11/10/oil-prices-just-fell-to-their-lowest-since-august-as-trump-says-the-iran-war-is-effectively-over/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 18:34",
+                "description": "Futures sank on words alone, with no signed deal and Iran denying any talks exist. Why did one oil fund crater while Exxon and Chevron barely flinched, and what number could reverse the slide?",
+                "_timestamp": 1794335693.0
+            },
+            {
+                "title": "Oil prices rise from 2-mth low with focus on U.S.-Iran peace, inventories",
+                "link": "https://www.investing.com/news/commodities-news/oil-prices-rise-from-2mth-low-with-focus-on-usiran-peace-inventories-5017522",
+                "source": "Investing.com",
+                "date": "2026-11-11 02:15",
+                "description": "",
+                "_timestamp": 1794363346.0
+            },
+            {
+                "title": "Brent briefly dips below $90 for first time since August on Iran peace hopes",
+                "link": "https://www.investing.com/news/commodities-news/oil-prices-dip-amid-iran-peace-hopes-improving-supplies-5013753",
+                "source": "Investing.com",
+                "date": "2026-11-10 22:21",
+                "description": "",
+                "_timestamp": 1794349293.0
+            },
+            {
+                "title": "Oil prices rise from 2-mth low with focus on U.S.-Iran peace, inventories",
+                "link": "https://finance.yahoo.com/energy/articles/oil-prices-rise-2-mth-024546161.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 02:45",
+                "description": "Investing.com-- Oil prices rose slightly in Asian trade on Wednesday, recovering from a two-month low as markets remained focused on any signs of de-escalation in the U.S.-Iran war.",
+                "_timestamp": 1794365146.0
+            },
+            {
+                "title": "Jim Cramer Ties CPI Relief to $40 Oil, but Brent Trades Over $92",
+                "link": "https://beincrypto.com/jim-cramer-40-oil-cpi-relief/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 04:25",
+                "description": "Jim Cramer ties CPI relief to $40 oil, but Brent trades near $91 and core inflation still ran hot in October.",
+                "_timestamp": 1794371130.0
+            },
+            {
+                "title": "Oil Prices Rise as Iran Peace Optimism Fades",
+                "link": "https://finance.yahoo.com/energy/articles/oil-prices-rise-iran-peace-054500318.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 05:45",
+                "description": "Oil prices rebounded as continuing attacks on shipping near the Strait of Hormuz undermined optimism about a potential U.S.-Iran peace deal.",
+                "_timestamp": 1794375900.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-11 05:45 UTC (~1 hour ago relative to 2026-11-11 06:40 UTC)",
+            "Facts": "Oil prices rebounded as continuing attacks on shipping near the Strait of Hormuz undermined optimism about a potential U.S.-Iran peace deal. Brent crude trades near $94.59 (+0.94%). Jim Cramer and market participants note persistent inflationary pressures from elevated energy costs. [Yahoo Finance Oil, Investing.com].",
+            "Uncertainties": "Whether diplomatic channels in Abu Dhabi can establish a durable ceasefire or if shipping disruptions in the Strait of Hormuz will escalate further.",
+            "Macro_Context": "Brent crude is up 0.94% to $94.59, reinforcing energy-driven inflation fears. This undercuts Fed rate cut optimism, keeping upward pressure on safe-haven gold despite strong USD proxies.",
+            "Bull_Case": "Ongoing military friction in the Strait of Hormuz drives persistent safe-haven demand and commodity-push inflation, underpinning XAU/USD bids.",
+            "Bear_Case": "Any sudden breakthrough in U.S.-Iran peace negotiations could trigger an immediate unwinding of the geopolitical risk premium in gold.",
+            "Historical_Calibration": "Category: Geopolitics & War, Fresh (<0.8x ATR) at 0.23x, Against USD Headwind. Historical Win Rate from Regime Matrix: 62.3% for Geopolitics & War.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 58,
+            "Past_Price_Action_Cause": " Geopolitical risk premium in oil and shipping lanes supports gold's floor against aggressive upper-wick selling.",
+            "Orderflow_Price_Target": "4060.26"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 0.69
     },
     {
         "main_date": "First Reported: 2026-11-10 10:48 UTC | Last Update: 2026-11-11 05:35 UTC",
@@ -2007,23 +2571,23 @@
                 "_timestamp": 1794372380.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-10 21:18 UTC (0 hours ago relative to reference time)",
-            "Facts": "Taiwan Semiconductor Manufacturing (TSMC) reported an October sales surge of 59.7% year-over-year in local currency (monthly revenue hitting NT$586.89 billion, up 14.7% sequentially), driven by insatiable global AI chip demand. [Yahoo Finance Nasdaq]",
-            "Uncertainties": "Geopolitical concentration risks surrounding Taiwan and potential supply chain bottlenecks for advanced packaging.",
-            "Macro_Context": "Nasdaq 100 down 0.72% alongside strong USD proxy movement. Robust taker buy flow (68.0%) and high OKX perp basis (+$8.82) show speculative leverage supporting broader risk-on sentiment.",
-            "Bull_Case": "Stellar semiconductor metrics validate massive AI capital expenditure, creating positive spillover effects into high-beta commodities and store-of-value assets.",
-            "Bear_Case": "Surging tech revenue strengthens the broader US trade balance and dollar appeal, diverting capital away from gold into equity growth.",
-            "Historical_Calibration": "Tech, AI & Equities category, Fresh ATR (<0.8x ATR), Against USD Headwind -> Historical Win Rate: 54.5% (Avg DD: -$15.8). Probability set at 55%.",
+            "Cluster_ID": 3,
+            "Dominant_Driver": "US Inflation & Fed Rate Path",
+            "Event_Timestamp": "2026-11-11 04:46 UTC (~2 hours ago relative to 2026-11-11 06:40 UTC)",
+            "Facts": "Asian shares mostly rose on robust AI chip demand (TSMC October sales surged 59.7% year-over-year) despite Wall Street retreating following hotter-than-expected October U.S. inflation data. [Yahoo Finance Oil, Yahoo Finance Nasdaq].",
+            "Uncertainties": "Extent to which sticky inflation will force the Fed to maintain restrictive policy rates for longer.",
+            "Macro_Context": "Hotter US CPI forces a re-pricing of the Fed rate path, strengthening the US dollar (EUR/USD -0.79%) and pushing down 10Y bond prices (-0.95%), creating a strong USD headwind for gold.",
+            "Bull_Case": "Persistent inflation cements gold's role as the ultimate multi-decade hedge against fiat purchasing power erosion.",
+            "Bear_Case": "Hotter inflation drives higher real yields and a stronger USD, directly conflicting with non-yielding bullion and triggering long-stop cascades.",
+            "Historical_Calibration": "Category: Fed, Rates & Macro, Fresh (<0.8x ATR) at 0.23x, Against USD Headwind. Historical Win Rate from Regime Matrix: 70.8% for Fed, Rates & Macro.",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "Aggressive market buying (71.9% OKX perp tape buy ratio) is actively chewing through passive sell walls above current prices.",
-            "Orderflow_Price_Target": "4050.21"
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 54,
+            "Past_Price_Action_Cause": "Strong upper-wick rejection at highs and aggressive market-selling reflect macro headwinds from hot inflation and a firmer dollar.",
+            "Orderflow_Price_Target": "4039.72"
         },
         "eval_status": "HIT",
         "max_dd_usd": 4.95
@@ -2114,22 +2678,23 @@
                 "_timestamp": 1794372302.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Event_Timestamp": "2026-11-09 17:07 UTC (approx. 0 to 12 hours ago relative to reference time)",
-            "Facts": "Iranian Foreign Minister Abbas Araghchi stated that Americans and regional populations are tired of Israel dragging the U.S. into forever wars, noting Donald Trump's comments on midterm election impacts [Tehran Times, Middle East Eye, Mehr News Agency].",
-            "Uncertainties": "Whether Washington will alter its Middle East policy or if rhetoric remains purely political posturing.",
-            "Macro_Context": "Geopolitical rhetoric involving the U.S., Iran, and Israel underpins structural safe-haven demand for gold, counterbalancing strong tech equities (Nasdaq +3.26%) and a softer Brent Crude (-4.10%).",
-            "Bull_Case": "Sustained high-level rhetoric warning of endless conflicts keeps geopolitical risk premiums elevated in precious metals.",
-            "Bear_Case": "Statements from Iranian officials blaming domestic U.S. political dynamics are viewed as standard diplomatic discourse, failing to spark new physical supply or conflict fears.",
-            "Historical_Calibration": "Similar geopolitical rhetoric clusters have achieved success when aligned with persistent Middle East supply risks, though traders must monitor ATR ratios to avoid overextending.",
+            "Cluster_ID": 4,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-11 04:45 UTC (~2 hours ago relative to 2026-11-11 06:40 UTC)",
+            "Facts": "Iranian President headed to COP31 to highlight environmental damage from US-Israeli aggression, while officials warned that Western leaders are facing political fallout and entrapment in endless Middle Eastern conflicts. [Mehr News Agency, Tehran Times].",
+            "Uncertainties": "Degree of direct military escalation versus diplomatic posturing at international forums like COP31.",
+            "Macro_Context": "Persistently high geopolitical tensions align with firm Brent crude prices ($94.59), keeping safe-haven flows active despite a stronger dollar.",
+            "Bull_Case": "Prolonged regional instability and institutional distrust in Western security architectures maintain a steady floor under gold.",
+            "Bear_Case": "Rhetoric fails to materialize into fresh kinetic escalation, causing safe-haven fatigue among leveraged retail longs.",
+            "Historical_Calibration": "Category: Geopolitics & War, Fresh (<0.8x ATR) at 0.23x, Against USD Headwind. Historical Win Rate from Regime Matrix: 62.3% for Geopolitics & War.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Ongoing geopolitical headlines support gold's resilience despite a downward 4h correction (-$17.66), keeping prices anchored above key support zones.",
-            "Orderflow_Price_Target": "4120.3"
+            "Probability_Percent": 56,
+            "Past_Price_Action_Cause": "Geopolitical friction supports baseline structural demand amidst two-way balanced execution.",
+            "Orderflow_Price_Target": "4060.26"
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -2148,22 +2713,23 @@
                 "_timestamp": 1794371687.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 5,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "First reported: 2026-11-11 04:34 UTC (~1.4h ago)",
-            "Facts": "[Al Jazeera English] Russia claims interception of 146 drones in Leningrad region - Attacks also reported in the Russian-occupied Donbas region of Ukraine as US-mediated talks continue in Abu Dhabi.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.61%, Nasdaq-100 +0.75%, Brent Oil +0.94% | OANDA Sentiment: 67.7% Long / 32.3% Short | 24/7 OKX XAUUSDT.P: $4065.4 (Spread: $+6.61) | Aggressive Taker Flow: 30.0% Market Buys (AGGRESSIVE MARKET SELLING (Bid-Side Sweep)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4060.23.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4050.06. 4h-ATR ratio is 0.22x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 1.4h.",
+            "Event_Timestamp": "2026-11-11 04:34 UTC (~2 hours ago relative to 2026-11-11 06:40 UTC)",
+            "Facts": "Russia reported the interception of 146 drones in the Leningrad region alongside fighting in the Donbas, while U.S.-mediated talks continue in Abu Dhabi. [Al Jazeera English].",
+            "Uncertainties": "Whether Abu Dhabi negotiations will yield tangible de-escalation in Eastern Europe or if drone strikes on Russian infrastructure will intensify.",
+            "Macro_Context": "Ongoing European kinetic conflict reinforces central bank and institutional accumulation of physical bullion as a sanction-proof reserve asset.",
+            "Bull_Case": "Unrelenting drone warfare and stalemate in Eastern Europe preserve safe-haven demand for physical gold.",
+            "Bear_Case": "Progress in Abu Dhabi talks could reduce perceived tail-risks of a wider NATO-Russia conflagration.",
+            "Historical_Calibration": "Category: Geopolitics & War, Fresh (<0.8x ATR) at 0.23x, Against USD Headwind. Historical Win Rate from Regime Matrix: 62.3% for Geopolitics & War.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+12.08 (0.22x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4060.23"
+            "Probability_Percent": 57,
+            "Past_Price_Action_Cause": "Ongoing conflict headlines maintain baseline buying interest despite strong OANDA upper-wick rejections.",
+            "Orderflow_Price_Target": "4060.26"
         },
         "eval_status": "HIT",
         "max_dd_usd": 5.75
@@ -2295,40 +2861,6 @@
             "Past_Price_Action_Cause": "4h XAU/USD move: $-23.71 (0.38x of estimated Daily ATR).",
             "Orderflow_Price_Target": "N/A"
         }
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 04:27 UTC",
-        "original_date": "2026-11-11 04:27",
-        "_timestamp": 1794371261.0,
-        "articles": [
-            {
-                "title": "Pezeshkian departs for Turkey to attend COP31 conference",
-                "link": "https://en.mehrnews.com/news/249320/Pezeshkian-departs-for-Turkey-to-attend-COP31-conference",
-                "source": "Mehr News Agency",
-                "date": "2026-11-11 04:27",
-                "description": "TEHRAN, Nov. 11 (MNA) – Iranian President Masoud Pezeshkian left Tehran for Turkey on Wednesday to attend and address the 31st UN climate change conference (COP31), with bilateral meetings with participating leaders also planned.",
-                "_timestamp": 1794371261.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "First reported: 2026-11-11 04:27 UTC (~1.5h ago)",
-            "Facts": "[Mehr News Agency] Pezeshkian departs for Turkey to attend COP31 conference - TEHRAN, Nov. 11 (MNA) – Iranian President Masoud Pezeshkian left Tehran for Turkey on Wednesday to attend and address the 31st UN climate change conference (COP31), with bilateral meetings with partici",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.61%, Nasdaq-100 +0.75%, Brent Oil +0.94% | OANDA Sentiment: 67.7% Long / 32.3% Short | 24/7 OKX XAUUSDT.P: $4065.4 (Spread: $+6.61) | Aggressive Taker Flow: 30.0% Market Buys (AGGRESSIVE MARKET SELLING (Bid-Side Sweep)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4060.23.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4050.06. 4h-ATR ratio is 0.22x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 1.5h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $+12.08 (0.22x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4060.23"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 5.75
     },
     {
         "main_date": "First Reported: 2026-11-05 18:59 UTC | Last Update: 2026-11-11 04:26 UTC",
@@ -2580,169 +3112,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 6.26
-    },
-    {
-        "main_date": "First Reported: 2026-11-09 02:07 UTC | Last Update: 2026-11-11 04:25 UTC",
-        "original_date": "2026-11-09 02:07",
-        "_timestamp": 1794371130.0,
-        "articles": [
-            {
-                "title": "Brent Crude Fell 12.5% But Former Biden Advisor Warns Iran War Could Return",
-                "link": "https://beincrypto.com/brent-crude-iran-war-hochstein-warning/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 02:07",
-                "description": "Brent crude fell over 12.5% this week, but Amos Hochstein says Iran war odds top 50/50 as Hormuz tanker attacks persist.",
-                "_timestamp": 1794190072.0
-            },
-            {
-                "title": "Oil Sinks to $94 as Iran’s $8 Billion Hormuz Deal Heads to Trump",
-                "link": "https://finance.yahoo.com/energy/articles/oil-sinks-94-iran-8-133000587.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 13:30",
-                "description": "Brent fell 3.6% to $94 as Qatar’s prime minister took an Iranian Hormuz proposal to the White House, extending last week’s 16% slide in oil prices.",
-                "_timestamp": 1794231000.0
-            },
-            {
-                "title": "Exxon Mobil Stocks Move Lower 0.31% as Crude Slides Toward $87",
-                "link": "https://finance.yahoo.com/energy/articles/exxon-mobil-stocks-move-lower-190037292.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 19:00",
-                "description": "Oil fell after President Trump called renewed strikes on Iran \"highly unlikely,\" but Exxon's cash machine barely flinched.",
-                "_timestamp": 1794250837.0
-            },
-            {
-                "title": "U.S. gas prices on track to fall below $4 a gallon, experts say",
-                "link": "https://www.cbsnews.com/news/gas-prices-below-four-dollars-expert-predicts/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 19:15",
-                "description": "Fuel prices have dropped in recent weeks amid hopes that the midterm elections would increase pressure on the U.S. and Iran to reach a peace deal.",
-                "_timestamp": 1794251746.0
-            },
-            {
-                "title": "Oil falls as Trump downplays prospect of escalation with Iran",
-                "link": "https://www.investing.com/news/commodities-news/oil-falls-as-trump-downplays-prospect-of-escalation-with-iran-5013892",
-                "source": "Investing.com",
-                "date": "2026-11-10 01:49",
-                "description": "",
-                "_timestamp": 1794275354.0
-            },
-            {
-                "title": "Oil Prices Extend Decline as Trump Signals Pause in Further Military Action Against Iran",
-                "link": "https://investorshub.advfn.com/market-news/article/39596/oil-prices-extend-decline-as-trump-signals-pause-in-further-military-action-against-iran?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 10:11",
-                "description": "Oil prices fell on Tuesday, extending losses from the previous session after US President Donald Trump indicated that additional military strikes against Iran were not necessary for the time being. The comments reduced concerns about an immediate escalation of the conflict, although risks to shipping through the Strait of Hormuz remained.",
-                "_timestamp": 1794305482.0
-            },
-            {
-                "title": "Brent Crude Falls Below $90 for First Time Since August",
-                "link": "https://finance.yahoo.com/energy/articles/brent-crude-falls-below-90-100635859.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 10:06",
-                "description": "Brent crude prices plunged below $90 per barrel as President Trump signaled restraint toward Iran, raising hopes for an end to the Middle East conflict.",
-                "_timestamp": 1794305195.0
-            },
-            {
-                "title": "Oil drops further as Trump eases Middle East conflict fears",
-                "link": "https://www.offshore-technology.com/news/oil-drops-trump-eases-middle-east-conflict/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 11:05",
-                "description": "Brent crude has now retreated roughly 22% from its six-month high as fears of a broader US-Iran military confrontation subside.",
-                "_timestamp": 1794308759.0
-            },
-            {
-                "title": "Canada Commodities: Oil Prices Fall as Secretary of State Marco Rubio Downplays More Iran Attacks",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-fall-145927198.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-10 14:59",
-                "description": "Crude oil prices fell below $90 per barrel Tuesday morning after US Secretary of State Marco Rubio d",
-                "_timestamp": 1794322767.0
-            },
-            {
-                "title": "Gas prices fall below $4 for the first time since July",
-                "link": "https://finance.yahoo.com/video/gas-prices-fall-below-4-for-the-first-time-since-july-145333135.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 14:53",
-                "description": "U.S. retail gasoline prices have fallen back below $4 per gallon and Brent crude has dipped under $90 as easing Middle East tensions reduce energy's war premium, though structural supply disruptions and seasonal factors leave analysts questioning whether $85 will serve as the new price floor.",
-                "_timestamp": 1794322405.0
-            },
-            {
-                "title": "Canada Commodities: Oil Prices Fall as Secretary of State Marco Rubio Downplays More Iran Attacks",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-fall-145927198.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 14:59",
-                "description": "Crude oil prices fell below $90 per barrel Tuesday morning after US Secretary of State Marco Rubio d",
-                "_timestamp": 1794322767.0
-            },
-            {
-                "title": "Oil Falls to Lowest Level Since August",
-                "link": "https://finance.yahoo.com/energy/articles/oil-falls-lowest-level-since-163400495.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 16:34",
-                "description": "Brent crude briefly fell below $90 as hopes of diplomatic breakthroughs in Iran and Ukraine accelerate the oil market selloff.",
-                "_timestamp": 1794328440.0
-            },
-            {
-                "title": "Oil Prices Just Fell to Their Lowest Since August as Trump Says the Iran War Is ‘Effectively Over’",
-                "link": "https://247wallst.com/investing/2026/11/10/oil-prices-just-fell-to-their-lowest-since-august-as-trump-says-the-iran-war-is-effectively-over/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 18:34",
-                "description": "Futures sank on words alone, with no signed deal and Iran denying any talks exist. Why did one oil fund crater while Exxon and Chevron barely flinched, and what number could reverse the slide?",
-                "_timestamp": 1794335693.0
-            },
-            {
-                "title": "Oil prices rise from 2-mth low with focus on U.S.-Iran peace, inventories",
-                "link": "https://www.investing.com/news/commodities-news/oil-prices-rise-from-2mth-low-with-focus-on-usiran-peace-inventories-5017522",
-                "source": "Investing.com",
-                "date": "2026-11-11 02:15",
-                "description": "",
-                "_timestamp": 1794363346.0
-            },
-            {
-                "title": "Brent briefly dips below $90 for first time since August on Iran peace hopes",
-                "link": "https://www.investing.com/news/commodities-news/oil-prices-dip-amid-iran-peace-hopes-improving-supplies-5013753",
-                "source": "Investing.com",
-                "date": "2026-11-10 22:21",
-                "description": "",
-                "_timestamp": 1794349293.0
-            },
-            {
-                "title": "Oil prices rise from 2-mth low with focus on U.S.-Iran peace, inventories",
-                "link": "https://finance.yahoo.com/energy/articles/oil-prices-rise-2-mth-024546161.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 02:45",
-                "description": "Investing.com-- Oil prices rose slightly in Asian trade on Wednesday, recovering from a two-month low as markets remained focused on any signs of de-escalation in the U.S.-Iran war.",
-                "_timestamp": 1794365146.0
-            },
-            {
-                "title": "Jim Cramer Ties CPI Relief to $40 Oil, but Brent Trades Over $92",
-                "link": "https://beincrypto.com/jim-cramer-40-oil-cpi-relief/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 04:25",
-                "description": "Jim Cramer ties CPI relief to $40 oil, but Brent trades near $91 and core inflation still ran hot in October.",
-                "_timestamp": 1794371130.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 2,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-10 18:34 UTC to 2026-11-11 02:45 UTC (~30 minutes to 8 hours ago)",
-            "Facts": "Oil prices recovered slightly from two-month lows in Asian trade as markets focused on the ambiguous status of U.S.-Iran peace talks. Brent briefly dipped below $90 previously after statements claimed the Iran war was 'effectively over', though Iran denied any talks exist [Yahoo Finance Oil / Investing.com].",
-            "Uncertainties": "Whether official de-escalation talks are actually occurring or if Trump's remarks were premature, leaving supply lines through the Strait of Hormuz vulnerable.",
-            "Macro_Context": "Brent Crude is up 0.64% at $94.58 as oil bounces from support. The high OKX perp premium (+$11.13) and aggressive taker buying (83.4%) reflect speculative positioning hedging against sudden geopolitical flare-ups in energy corridors.",
-            "Bull_Case": "If Iran denies talks and tensions re-escalate, energy markets will surge, driving inflationary safe-haven flows directly into gold.",
-            "Bear_Case": "Actual de-escalation and a permanent cease-fire agreement would collapse oil risk premiums, dragging precious metals lower alongside energy.",
-            "Historical_Calibration": "Geopolitics & War category with Fresh ATR-Ratio (0.12x) and Against USD Headwind regime. Historical win rate from the matrix: 60.3% (Avg DD: -$17.8).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 62,
-            "Past_Price_Action_Cause": "Oil price recovery from lows and lingering skepticism over U.S.-Iran peace claims support safe-haven gold accumulation and aggressive ask-side absorption.",
-            "Orderflow_Price_Target": "4059.74"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 0.69
     },
     {
         "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-11 04:23 UTC",
@@ -3332,97 +3701,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 6.46
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 02:31 UTC | Last Update: 2026-11-11 03:51 UTC",
-        "original_date": "2026-11-10 02:31",
-        "_timestamp": 1794369075.0,
-        "articles": [
-            {
-                "title": "Dow Jones Soars 1,132 Points As Amazon, Tesla Rally, But Nvidia Dives; CPI Inflation Report Next",
-                "link": "https://finance.yahoo.com/m/db2f6d95-b7a5-3274-8193-c767d2b681c1/dow-jones-soars-1%2C132-points.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 02:31",
-                "description": "Dow Jones futures were in focus after soaring 1,132 points ahead of the CPI inflation report. Amazon and Tesla rallied, but Nvidia dived.",
-                "_timestamp": 1794277908.0
-            },
-            {
-                "title": "Nvidia couldn’t derail the stock market’s rally. Hot inflation might.",
-                "link": "https://www.marketwatch.com/story/nvidia-couldnt-derail-the-stock-markets-rally-hot-inflation-might-8a572024?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-10 12:33",
-                "description": "A Fed official raises the prospect of a half-a-percentage-point rate hike. Plus, fresh valuation focus on Anthropic’s blockbuster IPO.",
-                "_timestamp": 1794313980.0
-            },
-            {
-                "title": "Stock Market Today: Dow Dips On Hot Inflation Data; Nvidia Falls Again, Anthropic Sets IPO Range (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/c7fbd2af-5702-3c77-9aa6-7c6578bb8abb/stock-market-today%3A-dow-dips.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 15:31",
-                "description": "Stock Market Today: The Dow Jones index falls Tuesday on a hot inflation report. Anthropic prices its IPO range. Nvidia sells off.",
-                "_timestamp": 1794324688.0
-            },
-            {
-                "title": "Stock Market Today: Dow Dips On Hot Inflation Data; Nvidia Falls Again, Anthropic Sets IPO Range (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/c7fbd2af-5702-3c77-9aa6-7c6578bb8abb/stock-market-today%3A-dow-dips.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:31",
-                "description": "Stock Market Today: The Dow Jones index falls Tuesday on a hot inflation report. Anthropic prices its IPO range. Nvidia sells off.",
-                "_timestamp": 1794324688.0
-            },
-            {
-                "title": "Stock Market Today, Nov. 10: Wall Street's Rally Hits a Roadblock as Hot Inflation Raises the Stakes for the Fed",
-                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-wall-street-s-rally-hits-a-roadblock-as-hot-inflation-raises-the-stakes-for-the-fed/?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-10 22:50",
-                "description": "Yesterday's rebound lost momentum as rising Treasury yields and renewed inflation concerns weighed on stocks",
-                "_timestamp": 1794351007.0
-            },
-            {
-                "title": "Stock Market Today, Nov. 10: Wall Street's Rally Hits a Roadblock as Hot Inflation Raises the Stakes for the Fed",
-                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-wall-street-s-rally-hits-a-roadblock-as-hot-inflation-raises-the-stakes-for-the-fed/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:50",
-                "description": "Yesterday's rebound lost momentum as rising Treasury yields and renewed inflation concerns weighed on stocks",
-                "_timestamp": 1794351007.0
-            },
-            {
-                "title": "Dow Jones Futures Rise As CoreWave Jumps, Lifts AI Stocks; Look For This Bullish Signal",
-                "link": "https://finance.yahoo.com/m/656fca57-9896-3dfb-96e8-e0af2bc227df/dow-jones-futures-rise-as.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 02:54",
-                "description": "Futures rose while AI stocks rallied overnight on CoreWeave earnings: The stock market fell on Nvidia and surging Treasury yields.",
-                "_timestamp": 1794365654.0
-            },
-            {
-                "title": "Dow, S&P 500, Nasdaq Futures Edge Higher After Red-Hot Inflation Data And Nvidia Losses: CRWV, TTWO, NLST, NBIS In Focus",
-                "link": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-nasdaq-futures-edge-higher-after-red-hot-inflation-data-and-nvidia-losses-crwv-ttwo-nlst-nbis-in-focus/cNGDaIOR9J8?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 03:51",
-                "description": "October’s Consumer Price Index data came in red hot, rising 0.4% month-on-month, ahead of the consensus estimates.",
-                "_timestamp": 1794369075.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 0,
-            "Dominant_Driver": "US Inflation & Fed Rate Path",
-            "Event_Timestamp": "2026-11-10 15:31 UTC to 2026-11-11 02:54 UTC (~30 minutes to 12 hours ago)",
-            "Facts": "Hot inflation data triggered a roadblock on Wall Street's rally, pushing Treasury yields higher and forcing equities downward. Dow Jones futures rose overnight as CoreWeave earnings lifted AI stocks, but overall sentiment remains fragile due to renewed inflation concerns raising the stakes for the Fed [Yahoo Finance Nasdaq/Gold/Oil].",
-            "Uncertainties": "Whether the hot inflation print is a temporary blip or a persistent re-acceleration that forces the Fed into a hawkish pivot rather than an extended pause.",
-            "Macro_Context": "US 10Y Bond Price is down 0.88% (implying surging yields, a USD tailwind), EUR/USD is down 0.55%, and Brent Oil is up 0.64%. Despite the USD tailwind, aggressive taker flow shows 83.4% market buys and an OKX perp premium of +$11.13, indicating strong leveraged long participation absorbing passive sell walls.",
-            "Bull_Case": "Persistent inflation fears drive safe-haven demand into gold as an inflation hedge, while aggressive market buyers overwhelm passive limit walls at the $4050.30 resistance zone.",
-            "Bear_Case": "Rising Treasury yields and a stronger USD increase the opportunity cost of holding non-yielding gold, triggering profit-taking after recent gains.",
-            "Historical_Calibration": "Fed, Rates & Macro category with Fresh ATR-Ratio (<0.8x ATR at 0.12x) and With USD Tailwind regime. Historical win rate from the matrix: 66.2% (Avg DD: -$21.5).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 61,
-            "Past_Price_Action_Cause": "Gold's 4h price change of +$7.74 aligns with aggressive taker buying (83.4% market buys) despite hot inflation data and higher yields.",
-            "Orderflow_Price_Target": "4059.74"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 1.45
     },
     {
         "main_date": "First Reported: 2026-11-10 11:52 UTC | Last Update: 2026-11-11 03:48 UTC",
@@ -6555,97 +6833,6 @@
         "max_dd_usd": 1.89
     },
     {
-        "main_date": "First Reported: 2026-11-10 15:01 UTC | Last Update: 2026-11-11 01:12 UTC",
-        "original_date": "2026-11-10 15:01",
-        "_timestamp": 1794359520.0,
-        "articles": [
-            {
-                "title": "CoreWeave earnings put debt-fueled AI build-out under scrutiny",
-                "link": "https://www.cnbc.com/2026/11/10/coreweave-earnings-preview-debt-capex.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-10 15:01",
-                "description": "CoreWeave’s earnings after the bell could calm fears about its debt-fueled AI buildout — or stoke more fear.",
-                "_timestamp": 1794322881.0
-            },
-            {
-                "title": "CoreWeave beats on revenue and lifts guidance, easing AI slowdown concerns",
-                "link": "https://www.cnbc.com/2026/11/10/coreweave-crwv-q3-earnings-report-2026.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-10 21:21",
-                "description": "CoreWeave's stock has been hammered heading into the neocloud's Q3 earnings report.",
-                "_timestamp": 1794345691.0
-            },
-            {
-                "title": "CoreWeave Earnings Beat Expectations, Assuaging Market Nervousness",
-                "link": "https://finance.yahoo.com/m/0cd31936-82e3-3051-8fb2-6e33049f3cb0/coreweave-earnings-beat.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 21:20",
-                "description": "The AI cloud provider’s rapid expansion is paying off as the company handily beat analyst expectations.",
-                "_timestamp": 1794345600.0
-            },
-            {
-                "title": "Stock Market Today, Nov. 10: CoreWeave Stock Edges Lower as a Multibillion-Dollar Question Looms Over Earnings",
-                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-coreweave-stock-edges-lower-as-a-multibillion-dollar-question-looms-over-earnings/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:05",
-                "description": "CoreWeave's massive AI infrastructure expansion is fueling revenue growth, but mounting debt and capital spending are raising the stakes for investors.",
-                "_timestamp": 1794348302.0
-            },
-            {
-                "title": "CoreWeave Earnings, Revenue Top Views. Cash Burn Less Than Expected.",
-                "link": "https://finance.yahoo.com/m/ad611b90-19b3-3483-8e63-8cdb59726707/coreweave-earnings%2C-revenue.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:45",
-                "description": "CoreWeave stock edged up after the builder of AI data centers reported a bigger Q3 quarter loss than a year earlier but topped estimates.",
-                "_timestamp": 1794350702.0
-            },
-            {
-                "title": "Ethereum ended CoreWeave's mining days. Earnings test its AI bet",
-                "link": "https://www.thestreet.com/crypto/markets/coreweave-stock-could-swing-15-on-q3-earnings-options-imply?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:25",
-                "description": "Wall Street is bracing for a major post-earnings stock swing.",
-                "_timestamp": 1794349525.0
-            },
-            {
-                "title": "CoreWeave Earnings Were Strong. Investors Remain Antsy as Stock Edges Up.",
-                "link": "https://finance.yahoo.com/m/0cd31936-82e3-3051-8fb2-6e33049f3cb0/coreweave-earnings-were.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 23:03",
-                "description": "The AI cloud provider’s rapid expansion is paying off as the company handily beat analyst expectations.",
-                "_timestamp": 1794351780.0
-            },
-            {
-                "title": "CoreWeave’s stock pops as new financing playbook eases debt concerns",
-                "link": "https://www.marketwatch.com/story/coreweaves-stock-pops-as-new-financing-playbook-eases-debt-concerns-70241525?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-11 01:12",
-                "description": "A third-quarter revenue beat and $9 billion in planned prepayments gave investors renewed confidence in CoreWeave’s business.",
-                "_timestamp": 1794359520.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 2,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-10 23:03 UTC (about 0.6 hours ago relative to 2026-11-10 23:40 UTC)",
-            "Facts": "CoreWeave reported strong Q3 earnings, beating analyst expectations on revenue and showing narrower-than-expected cash burn despite a wider quarterly loss [Yahoo Finance Nasdaq]. The AI cloud provider's massive infrastructure buildout continues to drive explosive top-line growth, though mounting debt and high capital expenditure raise questions among investors [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Whether CoreWeave's heavy capital expenditures and debt load can be sustainably serviced by future AI cloud demand.",
-            "Macro_Context": "Nasdaq 100 declines by -0.38%, while US 10Y bond prices rise (+0.78%). Taker flow is balanced (55.1% buys), and the 24/7 perp basis sits at $+7.20 over spot.",
-            "Bull_Case": "Solid earnings from key AI infrastructure players reinforce secular tech liquidity narratives, keeping overall market volatility elevated and supporting safe-haven gold demand.",
-            "Bear_Case": "Stronger-than-expected earnings can boost overall market risk appetite, drawing capital back into growth equities and capping gold upside.",
-            "Historical_Calibration": "Category: Tech, AI & Equities, Fresh ATR-Ratio (0.12x), Against USD Headwind -> Historical Win Rate: 54.5% (116/213, Avg DD: -$15.8). Probability calibrated conservatively.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Mixed equity responses to AI infrastructure earnings match balanced taker flow and a low 0.12x ATR ratio, keeping gold range-bound.",
-            "Orderflow_Price_Target": "4050.28"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 4.95
-    },
-    {
         "main_date": "First Reported: 2026-11-11 01:11 UTC",
         "original_date": "2026-11-11 01:11",
         "_timestamp": 1794359464.0,
@@ -7106,6 +7293,53 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.04
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 14:58 UTC | Last Update: 2026-11-11 00:30 UTC",
+        "original_date": "2026-11-10 14:58",
+        "_timestamp": 1794357004.0,
+        "articles": [
+            {
+                "title": "ConocoPhillips Just Raised Its Dividend 10.7%. Does Its Free Cash Flow Cover the 2.5% Yield?",
+                "link": "https://www.tikr.com/blog/conocophillips-just-raised-its-dividend-10-7-does-its-free-cash-flow-cover-the-2-5-yield?ref=yahoofinancedividend&tlnk=yf-261110-98mmhc98&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 14:58",
+                "description": "Key TakeawaysConocoPhillips raised its quarterly dividend 10. 7% to $0.",
+                "_timestamp": 1794322721.0
+            },
+            {
+                "title": "EOG Resources Just Raised Its Dividend 7.8%. Does Its Free Cash Flow Cover the 2.8% Yield?",
+                "link": "https://www.tikr.com/blog/eog-resources-just-raised-its-dividend-7-8-does-its-free-cash-flow-cover-the-2-8-yield?ref=yahoofinancedividend&tlnk=yf-261110-f338f954&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 14:58",
+                "description": "Key TakeawaysEOG Resources raised its quarterly dividend 7. 8%, from $1.",
+                "_timestamp": 1794322689.0
+            },
+            {
+                "title": "This Energy Stock Just Raised Its Dividend by More Than 10%",
+                "link": "https://finance.yahoo.com/energy/articles/energy-stock-just-raised-dividend-003004663.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 00:30",
+                "description": "ConocoPhillips raised its quarterly base dividend by more than 10% to $0.93 per share after Q3 net earnings rose to $4 billion.",
+                "_timestamp": 1794357004.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "First reported: 2026-11-10 14:58 UTC (~0.6h ago)",
+            "Facts": "[Yahoo Finance Oil] ConocoPhillips Just Raised Its Dividend 10.7%. Does Its Free Cash Flow Cover the 2.5% Yield? - Key TakeawaysConocoPhillips raised its quarterly dividend 10. 7% to $0. | [Yahoo Finance Oil] EOG Resources Just Raised Its Dividend 7.8%. Does Its Free Cash Flow Cover the 2.8% Yield? - Key TakeawaysEOG Resources raised its quarterly dividend 7. 8%, from $1.",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.25%, Nasdaq-100 -0.24%, Brent Oil -3.91% | OANDA Sentiment: 67.0% Long / 33.0% Short | 24/7 OKX XAUUSDT.P: $4057.8 (Spread: $+8.31).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4060.08.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $4040.36. 4h-ATR ratio is 0.38x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.6h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-23.71 (0.38x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "First Reported: 2026-11-11 00:00 UTC",
@@ -13427,45 +13661,6 @@
         "max_dd_usd": 17.61
     },
     {
-        "main_date": "First Reported: 2026-11-10 14:58 UTC",
-        "original_date": "2026-11-10 14:58",
-        "_timestamp": 1794322721.0,
-        "articles": [
-            {
-                "title": "ConocoPhillips Just Raised Its Dividend 10.7%. Does Its Free Cash Flow Cover the 2.5% Yield?",
-                "link": "https://www.tikr.com/blog/conocophillips-just-raised-its-dividend-10-7-does-its-free-cash-flow-cover-the-2-5-yield?ref=yahoofinancedividend&tlnk=yf-261110-98mmhc98&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 14:58",
-                "description": "Key TakeawaysConocoPhillips raised its quarterly dividend 10. 7% to $0.",
-                "_timestamp": 1794322721.0
-            },
-            {
-                "title": "EOG Resources Just Raised Its Dividend 7.8%. Does Its Free Cash Flow Cover the 2.8% Yield?",
-                "link": "https://www.tikr.com/blog/eog-resources-just-raised-its-dividend-7-8-does-its-free-cash-flow-cover-the-2-8-yield?ref=yahoofinancedividend&tlnk=yf-261110-f338f954&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 14:58",
-                "description": "Key TakeawaysEOG Resources raised its quarterly dividend 7. 8%, from $1.",
-                "_timestamp": 1794322689.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "First reported: 2026-11-10 14:58 UTC (~0.6h ago)",
-            "Facts": "[Yahoo Finance Oil] ConocoPhillips Just Raised Its Dividend 10.7%. Does Its Free Cash Flow Cover the 2.5% Yield? - Key TakeawaysConocoPhillips raised its quarterly dividend 10. 7% to $0. | [Yahoo Finance Oil] EOG Resources Just Raised Its Dividend 7.8%. Does Its Free Cash Flow Cover the 2.8% Yield? - Key TakeawaysEOG Resources raised its quarterly dividend 7. 8%, from $1.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.25%, Nasdaq-100 -0.24%, Brent Oil -3.91% | OANDA Sentiment: 67.0% Long / 33.0% Short | 24/7 OKX XAUUSDT.P: $4057.8 (Spread: $+8.31).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4060.08.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4040.36. 4h-ATR ratio is 0.38x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.6h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-23.71 (0.38x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-10 14:46 UTC",
         "original_date": "2026-11-10 14:46",
         "_timestamp": 1794321998.0,
@@ -15558,7 +15753,7 @@
             "Past_Price_Action_Cause": "Gold has pulled back alongside falling oil, but ongoing maritime friction provides subtle under-the-radar support.",
             "Orderflow_Price_Target": "4120.65"
         },
-        "eval_status": "ACTIVE",
+        "eval_status": "MISS",
         "max_dd_usd": 60.83
     },
     {
@@ -15623,7 +15818,7 @@
             "Past_Price_Action_Cause": "4h XAU/USD move: $-46.77 (0.82x of estimated Daily ATR).",
             "Orderflow_Price_Target": "4120.65"
         },
-        "eval_status": "ACTIVE",
+        "eval_status": "MISS",
         "max_dd_usd": 60.83
     },
     {
@@ -15761,39 +15956,6 @@
         },
         "eval_status": "MISS",
         "max_dd_usd": 69.13
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 09:10 UTC",
-        "original_date": "2026-11-10 09:10",
-        "_timestamp": 1794301856.0,
-        "articles": [
-            {
-                "title": "How October 7 shattered Netanyahu's grip on power and Israeli stability",
-                "link": "https://www.tehrantimes.com/news/531998/How-October-7-shattered-Netanyahu-s-grip-on-power-and-Israeli",
-                "source": "Tehran Times",
-                "date": "2026-11-10 09:10",
-                "description": "The global far-right alliance has suffered three consecutive defeats in recent weeks, beginning with Flavio Bolsonaro's defeat in Brazil's presidential election and his subsequent flight from the country. This was followed by Benjamin Netanyahu's defeat, as the number of seats held by his parliamentary coalition fell below the required majority, and culminated in Donald Trump's major setback in the US midterm elections, which saw Republicans lose",
-                "_timestamp": 1794301856.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "First reported: 2026-11-10 09:10 UTC (~1.6h ago)",
-            "Facts": "[Tehran Times] How October 7 shattered Netanyahu's grip on power and Israeli stability - The global far-right alliance has suffered three consecutive defeats in recent weeks, beginning with Flavio Bolsonaro's defeat in Brazil's presidential election and his subsequent flight",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD +0.31%, Nasdaq-100 +2.83%, Brent Oil -6.93% | OANDA Sentiment: 67.4% Long / 32.6% Short | 24/7 OKX XAUUSDT.P: $4082.9 (Spread: $+6.09).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4120.65.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4070.73. 4h-ATR ratio is 0.82x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 1.6h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-46.77 (0.82x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4120.65"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 73.89
     },
     {
         "main_date": "First Reported: 2026-11-10 09:10 UTC",
@@ -16028,102 +16190,5 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 2.67
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 06:22 UTC",
-        "original_date": "2026-11-10 06:22",
-        "_timestamp": 1794291720.0,
-        "articles": [
-            {
-                "title": "Khor Mor drone attack raises fears over Iraq’s energy security",
-                "link": "https://www.aljazeera.com/news-analysis/2026/11/10/khor-mor-drone-attack-raises-fears-over-iraqs-energy-security?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-10 06:22",
-                "description": "Drone strike disrupts electricity supply in Iraq&#039;s semi-autonomous Kurdish region, renewing concerns about armed groups.",
-                "_timestamp": 1794291720.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "First reported: 2026-11-10 06:22 UTC (~4.5h ago)",
-            "Facts": "[Al Jazeera English] Khor Mor drone attack raises fears over Iraq’s energy security - Drone strike disrupts electricity supply in Iraq&#039;s semi-autonomous Kurdish region, renewing concerns about armed groups.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD +0.31%, Nasdaq-100 +2.83%, Brent Oil -6.93% | OANDA Sentiment: 67.4% Long / 32.6% Short | 24/7 OKX XAUUSDT.P: $4082.9 (Spread: $+6.09).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4120.65.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4070.73. 4h-ATR ratio is 0.82x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 4.5h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-46.77 (0.82x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4120.65"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 2.67
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 06:18 UTC",
-        "original_date": "2026-11-10 06:18",
-        "_timestamp": 1794291485.0,
-        "articles": [
-            {
-                "title": "Myanmar lobbies US to invest in its rare earths sector, dominated by China",
-                "link": "https://www.investing.com/news/commodities-news/myanmar-lobbies-us-to-invest-in-its-rare-earths-sector-dominated-by-china-5014199",
-                "source": "Investing.com",
-                "date": "2026-11-10 06:18",
-                "description": "",
-                "_timestamp": 1794291485.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "First reported: 2026-11-10 06:18 UTC (~4.5h ago)",
-            "Facts": "[Investing.com] Myanmar lobbies US to invest in its rare earths sector, dominated by China",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD +0.31%, Nasdaq-100 +2.83%, Brent Oil -6.93% | OANDA Sentiment: 67.4% Long / 32.6% Short | 24/7 OKX XAUUSDT.P: $4082.9 (Spread: $+6.09).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4120.65.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4070.73. 4h-ATR ratio is 0.82x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 4.5h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-46.77 (0.82x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 05:58 UTC",
-        "original_date": "2026-11-10 05:58",
-        "_timestamp": 1794290287.0,
-        "articles": [
-            {
-                "title": "US issues warnings against travel to six countries in the Middle East",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/us-issues-warnings-against-travel-six-countries-middle-east",
-                "source": "Middle East Eye",
-                "date": "2026-11-10 05:58",
-                "description": "US issues warnings against travel to six countries in the Middle East\n\n    \n    \n\n        \n    \n                The US State Department has warned its citizen against travelling to six Middle Eastern countries, including Iran, Iraq, Lebanon, Libya, Syria and Yemen.\n\nIn a post on X, the department said all six countries remained under its highest travel advisory, Level 4, which instructs Americans not to travel for any reason.\n\n\"We assign Level 4 ",
-                "_timestamp": 1794290287.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "First reported: 2026-11-10 05:58 UTC (~4.9h ago)",
-            "Facts": "[Middle East Eye] US issues warnings against travel to six countries in the Middle East - US issues warnings against travel to six countries in the Middle East\n\n    \n    \n\n        \n    \n                The US State Department has warned its citizen against travelling to six Mid",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD +0.31%, Nasdaq-100 +2.83%, Brent Oil -6.93% | OANDA Sentiment: 67.4% Long / 32.6% Short | 24/7 OKX XAUUSDT.P: $4082.9 (Spread: $+6.09).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4120.65.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4070.73. 4h-ATR ratio is 0.82x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 4.9h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-46.77 (0.82x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4120.65"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 12.76
     }
 ]

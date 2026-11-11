@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 415,
+    "total_evaluated": 417,
     "hits": 270,
-    "misses": 145,
-    "win_rate": 65.1,
-    "active_signals": 18,
+    "misses": 147,
+    "win_rate": 64.7,
+    "active_signals": 17,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 225,
-                "misses": 113,
-                "total": 338,
-                "win_rate": 66.6,
-                "avg_dd": 16.03
+                "misses": 115,
+                "total": 340,
+                "win_rate": 66.2,
+                "avg_dd": 16.39
             },
             "Bearish": {
                 "hits": 45,
@@ -31,10 +31,10 @@
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
-                "misses": 2,
-                "total": 16,
-                "win_rate": 87.5,
-                "avg_dd": 15.97
+                "misses": 4,
+                "total": 18,
+                "win_rate": 77.8,
+                "avg_dd": 20.95
             },
             "Exhausted (>=1.2x ATR)": {
                 "hits": 0,
@@ -54,10 +54,10 @@
         "by_macro_alignment": {
             "With USD Tailwind": {
                 "hits": 91,
-                "misses": 48,
-                "total": 139,
-                "win_rate": 65.5,
-                "avg_dd": 22.98
+                "misses": 50,
+                "total": 141,
+                "win_rate": 64.5,
+                "avg_dd": 23.72
             },
             "Against USD Headwind": {
                 "hits": 176,
@@ -77,10 +77,10 @@
         "by_category": {
             "Geopolitics & War": {
                 "hits": 142,
-                "misses": 85,
-                "total": 227,
-                "win_rate": 62.6,
-                "avg_dd": 17.94
+                "misses": 86,
+                "total": 228,
+                "win_rate": 62.3,
+                "avg_dd": 18.22
             },
             "Fed, Rates & Macro": {
                 "hits": 17,
@@ -91,10 +91,10 @@
             },
             "Tech, AI & Equities": {
                 "hits": 75,
-                "misses": 35,
-                "total": 110,
-                "win_rate": 68.2,
-                "avg_dd": 12.78
+                "misses": 36,
+                "total": 111,
+                "win_rate": 67.6,
+                "avg_dd": 13.41
             },
             "Commodities & Energy": {
                 "hits": 36,
@@ -107,10 +107,10 @@
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 270,
-                "misses": 139,
-                "total": 409,
-                "win_rate": 66.0,
-                "avg_dd": 16.47
+                "misses": 141,
+                "total": 411,
+                "win_rate": 65.7,
+                "avg_dd": 16.79
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -5106,7 +5106,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$6.60)"
         },
         "https://www.investing.com/news/commodities-news/vanishing-vessels-and-missing-sailors-the-iran-wars-human-cost-at-sea-5014523": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Vanishing vessels and missing sailors: The Iran war’s human cost at sea",
             "source": "Investing.com",
             "impact": "Bullish",
@@ -5119,7 +5119,7 @@
             "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
             "created_ts": 1794306266.0,
             "date": "First Reported: 2026-11-10 10:24 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4120.65 (Max DD: -$60.83)"
         },
         "https://en.mehrnews.com/news/249297/Trilateral-talks-between-Russia-US-Ukraine-kick-off-in-UAE": {
             "status": "HIT",
@@ -5138,7 +5138,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$14.25)"
         },
         "https://www.fool.com/investing/2026/11/10/alphabet-meta-and-oracle-are-all-teaming-up-to-dis/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Alphabet, Meta, and Oracle Are All Teaming Up to Disrupt Nvidia's Biggest Competitive Adva",
             "source": "Yahoo Finance Nasdaq",
             "impact": "Bullish",
@@ -5151,7 +5151,7 @@
             "macro_snapshot": "EUR +0.31%, NAS100 +2.83%",
             "created_ts": 1794305700.0,
             "date": "First Reported: 2026-11-10 10:15 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4120.65 (Max DD: -$60.83)"
         },
         "https://www.middleeasteye.net/news/netanyahu-pressed-qatar-continue-funding-gaza-despite-security-warnings-report-finds": {
             "status": "MISS",
@@ -7278,6 +7278,25 @@
             "created_ts": 1794366023.0,
             "date": "First Reported: 2026-11-11 03:00 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$4.84)"
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/lower-oil-prices-american-airlines-061615059.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "How Lower Oil Prices At American Airlines Group (AAL) Have Changed Its Investment Story",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4055.51,
+            "target": 4060.26,
+            "max_dd_usd": 1.45,
+            "atr_ratio_at_signal": 0.23,
+            "daily_atr_at_signal": 50.37,
+            "eur_chg_at_signal": -0.79,
+            "nas_chg_at_signal": 1.02,
+            "macro_snapshot": "EUR -0.79%, NAS100 +1.02%",
+            "created_ts": 1794377775.0,
+            "date": "First Reported: 2026-11-11 06:16 UTC",
+            "fail_reason": ""
         }
     }
 }

@@ -1,40 +1,40 @@
 {
-    "total_evaluated": 448,
-    "hits": 289,
+    "total_evaluated": 452,
+    "hits": 293,
     "misses": 159,
-    "win_rate": 64.5,
-    "active_signals": 21,
+    "win_rate": 64.8,
+    "active_signals": 22,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 242,
+                "hits": 243,
                 "misses": 127,
-                "total": 369,
-                "win_rate": 65.6,
-                "avg_dd": 17.64
+                "total": 370,
+                "win_rate": 65.7,
+                "avg_dd": 17.59
             },
             "Bearish": {
-                "hits": 47,
+                "hits": 50,
                 "misses": 32,
-                "total": 79,
-                "win_rate": 59.5,
-                "avg_dd": 18.44
+                "total": 82,
+                "win_rate": 61.0,
+                "avg_dd": 19.74
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 275,
+                "hits": 278,
                 "misses": 155,
-                "total": 430,
-                "win_rate": 64.0,
-                "avg_dd": 17.54
+                "total": 433,
+                "win_rate": 64.2,
+                "avg_dd": 17.73
             },
             "Moderate (0.8x-1.2x ATR)": {
-                "hits": 14,
+                "hits": 15,
                 "misses": 4,
-                "total": 18,
-                "win_rate": 77.8,
-                "avg_dd": 20.95
+                "total": 19,
+                "win_rate": 78.9,
+                "avg_dd": 20.09
             },
             "Exhausted (>=1.2x ATR)": {
                 "hits": 0,
@@ -53,18 +53,18 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 93,
+                "hits": 96,
                 "misses": 62,
-                "total": 155,
-                "win_rate": 60.0,
-                "avg_dd": 27.5
+                "total": 158,
+                "win_rate": 60.8,
+                "avg_dd": 27.73
             },
             "Against USD Headwind": {
-                "hits": 193,
+                "hits": 194,
                 "misses": 97,
-                "total": 290,
-                "win_rate": 66.6,
-                "avg_dd": 12.11
+                "total": 291,
+                "win_rate": 66.7,
+                "avg_dd": 12.07
             },
             "USD Neutral / Legacy": {
                 "hits": 3,
@@ -76,25 +76,25 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 155,
+                "hits": 156,
                 "misses": 95,
-                "total": 250,
-                "win_rate": 62.0,
-                "avg_dd": 19.29
+                "total": 251,
+                "win_rate": 62.2,
+                "avg_dd": 19.21
             },
             "Fed, Rates & Macro": {
-                "hits": 17,
+                "hits": 18,
                 "misses": 7,
-                "total": 24,
-                "win_rate": 70.8,
-                "avg_dd": 10.89
+                "total": 25,
+                "win_rate": 72.0,
+                "avg_dd": 12.26
             },
             "Tech, AI & Equities": {
-                "hits": 77,
+                "hits": 79,
                 "misses": 37,
-                "total": 114,
-                "win_rate": 67.5,
-                "avg_dd": 13.92
+                "total": 116,
+                "win_rate": 68.1,
+                "avg_dd": 14.47
             },
             "Commodities & Energy": {
                 "hits": 40,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 289,
+                "hits": 293,
                 "misses": 153,
-                "total": 442,
-                "win_rate": 65.4,
-                "avg_dd": 17.8
+                "total": 446,
+                "win_rate": 65.7,
+                "avg_dd": 17.94
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -6349,7 +6349,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$6.72)"
         },
         "https://www.fool.com/earnings/call-transcripts/2026/11/10/rackspace-rxt-q3-2026-earnings-call-transcript/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Rackspace (RXT) Q3 2026 Earnings Call Transcript",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6365,7 +6365,7 @@
             "macro_snapshot": "EUR -0.50%, NAS100 -0.95%",
             "created_ts": 1794338046.0,
             "date": "First Reported: 2026-11-10 19:14 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$35.94)"
         },
         "https://www.middleeasteye.net/opinion/michigan-election-how-abdul-el-sayeds-critics-smeared-his-defence-palestinians-hate": {
             "status": "HIT",
@@ -6691,7 +6691,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$5.75)"
         },
         "https://247wallst.com/investing/2026/11/10/what-does-nvidias-selloff-mean-for-a-68-year-old-with-940000-of-a-2-3-million-ira-in-the-stock/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "What Does Nvidia’s Selloff Mean for a 68-Year-Old With $940,000 of a $2.3 Million IRA in t",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6707,10 +6707,10 @@
             "macro_snapshot": "EUR -0.50%, NAS100 -0.64%",
             "created_ts": 1794345376.0,
             "date": "First Reported: 2026-11-10 21:16 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$36.92)"
         },
         "https://beincrypto.com/us-cpi-crypto-liquidations-fed-hike/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Hot US CPI Wipes Out $200 Million in Crypto Bets",
             "source": "Yahoo Finance Gold",
             "category": "Fed, Rates & Macro",
@@ -6726,7 +6726,7 @@
             "macro_snapshot": "EUR -0.50%, NAS100 -0.64%",
             "created_ts": 1794345030.0,
             "date": "First Reported: 2026-11-10 13:39 UTC | Last Update: 2026-11-10 21:10 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$36.92)"
         },
         "https://finance.yahoo.com/m/ba629833-a382-330f-a462-ecacfef1fb38/the-stock-market%E2%80%99s-rebound.html?.tsrc=rss": {
             "status": "HIT",
@@ -7193,7 +7193,7 @@
             "prob": 55,
             "entry_price": 4046.39,
             "target": 4079.07,
-            "max_dd_usd": 11.2,
+            "max_dd_usd": 45.63,
             "atr_ratio_at_signal": 0.22,
             "daily_atr_at_signal": 54.25,
             "eur_chg_at_signal": -0.61,
@@ -7307,7 +7307,7 @@
             "prob": 59,
             "entry_price": 4049.88,
             "target": 4060.34,
-            "max_dd_usd": 14.69,
+            "max_dd_usd": 49.12,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 42.28,
             "eur_chg_at_signal": -0.79,
@@ -7345,7 +7345,7 @@
             "prob": 64,
             "entry_price": 4049.88,
             "target": 4060.34,
-            "max_dd_usd": 14.69,
+            "max_dd_usd": 49.12,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 42.28,
             "eur_chg_at_signal": -0.79,
@@ -7383,7 +7383,7 @@
             "prob": 63,
             "entry_price": 4049.88,
             "target": 4060.34,
-            "max_dd_usd": 14.69,
+            "max_dd_usd": 49.12,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 42.28,
             "eur_chg_at_signal": -0.79,
@@ -7573,7 +7573,7 @@
             "prob": 56,
             "entry_price": 4049.84,
             "target": 4060.21,
-            "max_dd_usd": 14.65,
+            "max_dd_usd": 49.09,
             "atr_ratio_at_signal": 0.24,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -7592,7 +7592,7 @@
             "prob": 61,
             "entry_price": 4049.84,
             "target": 4060.21,
-            "max_dd_usd": 14.65,
+            "max_dd_usd": 49.09,
             "atr_ratio_at_signal": 0.24,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -7611,7 +7611,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 0.43,
+            "max_dd_usd": 34.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7630,7 +7630,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 0.43,
+            "max_dd_usd": 34.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7649,7 +7649,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 0.43,
+            "max_dd_usd": 34.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7668,7 +7668,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 0.43,
+            "max_dd_usd": 34.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7687,7 +7687,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 0.43,
+            "max_dd_usd": 34.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7706,7 +7706,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 8.95,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7725,7 +7725,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 8.95,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7744,7 +7744,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 8.95,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7763,7 +7763,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 8.95,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7782,7 +7782,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 8.95,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7801,7 +7801,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 8.95,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7820,7 +7820,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 8.95,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7962,6 +7962,101 @@
             "created_ts": 1794394659.0,
             "date": "First Reported: 2026-11-11 10:57 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$4.37)"
+        },
+        "https://www.aljazeera.com/news/2026/11/11/israel-is-disrupting-entire-ecosystems-including-lebanons-wheat-crop?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Israel is ‘disrupting entire ecosystems’, including Lebanon’s wheat crop",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4005.12,
+            "target": 4019.59,
+            "max_dd_usd": 4.36,
+            "atr_ratio_at_signal": 0.87,
+            "daily_atr_at_signal": 45.85,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 3.33,
+            "macro_snapshot": "EUR -0.55%, NAS100 +3.33%",
+            "created_ts": 1794412119.0,
+            "date": "First Reported: 2026-11-11 15:48 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/economy/2026/11/11/can-tehran-survive-a-zero-oil-budget-if-us-blockade-on-iran-persists?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Can Tehran survive a ‘zero oil’ budget, if US blockade on Iran persists?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4005.12,
+            "target": 4019.59,
+            "max_dd_usd": 4.36,
+            "atr_ratio_at_signal": 0.87,
+            "daily_atr_at_signal": 45.85,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 3.33,
+            "macro_snapshot": "EUR -0.55%, NAS100 +3.33%",
+            "created_ts": 1794411617.0,
+            "date": "First Reported: 2026-11-11 15:40 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/video/inflation-report-doesnt-warrant-50-151828574.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Inflation Report Doesn't Warrant 50 Bps Fed Rate Hike, David Rosenberg Says",
+            "source": "Yahoo Finance Oil",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4005.12,
+            "target": 4019.59,
+            "max_dd_usd": 4.36,
+            "atr_ratio_at_signal": 0.87,
+            "daily_atr_at_signal": 45.85,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 3.33,
+            "macro_snapshot": "EUR -0.55%, NAS100 +3.33%",
+            "created_ts": 1794410308.0,
+            "date": "First Reported: 2026-11-11 15:18 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/australian-growth-stocks-watch-november-151010717.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Australian Growth Stocks To Watch In November 2026",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4005.12,
+            "target": 4019.59,
+            "max_dd_usd": 4.36,
+            "atr_ratio_at_signal": 0.87,
+            "daily_atr_at_signal": 45.85,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 3.33,
+            "macro_snapshot": "EUR -0.55%, NAS100 +3.33%",
+            "created_ts": 1794409810.0,
+            "date": "First Reported: 2026-11-11 15:10 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/11/is-trump-team-split-on-iran?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Rubio backs blockade, Vance wants deal: Is Trump’s team split on Iran war?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4015.38,
+            "target": 4019.59,
+            "max_dd_usd": 4.59,
+            "atr_ratio_at_signal": 0.87,
+            "daily_atr_at_signal": 45.85,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 3.33,
+            "macro_snapshot": "EUR -0.55%, NAS100 +3.33%",
+            "created_ts": 1794406247.0,
+            "date": "First Reported: 2026-11-11 14:10 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.59)"
         }
     }
 }

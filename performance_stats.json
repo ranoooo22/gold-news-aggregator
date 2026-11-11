@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 361,
-    "hits": 218,
+    "total_evaluated": 389,
+    "hits": 246,
     "misses": 143,
-    "win_rate": 60.4,
-    "active_signals": 58,
+    "win_rate": 63.2,
+    "active_signals": 39,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 173,
+                "hits": 201,
                 "misses": 111,
-                "total": 284,
-                "win_rate": 60.9,
-                "avg_dd": 17.37
+                "total": 312,
+                "win_rate": 64.4,
+                "avg_dd": 16.25
             },
             "Bearish": {
                 "hits": 45,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 204,
+                "hits": 232,
                 "misses": 143,
-                "total": 347,
-                "win_rate": 58.8,
-                "avg_dd": 18.27
+                "total": 375,
+                "win_rate": 61.9,
+                "avg_dd": 17.15
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
@@ -60,11 +60,11 @@
                 "avg_dd": 21.54
             },
             "Against USD Headwind": {
-                "hits": 125,
+                "hits": 153,
                 "misses": 97,
-                "total": 222,
-                "win_rate": 56.3,
-                "avg_dd": 14.93
+                "total": 250,
+                "win_rate": 61.2,
+                "avg_dd": 13.79
             },
             "USD Neutral / Legacy": {
                 "hits": 3,
@@ -76,41 +76,41 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 118,
+                "hits": 130,
                 "misses": 83,
-                "total": 201,
-                "win_rate": 58.7,
-                "avg_dd": 18.43
+                "total": 213,
+                "win_rate": 61.0,
+                "avg_dd": 17.72
             },
             "Fed, Rates & Macro": {
-                "hits": 13,
+                "hits": 16,
                 "misses": 7,
-                "total": 20,
-                "win_rate": 65.0,
-                "avg_dd": 11.41
+                "total": 23,
+                "win_rate": 69.6,
+                "avg_dd": 11.31
             },
             "Tech, AI & Equities": {
-                "hits": 58,
+                "hits": 66,
                 "misses": 35,
-                "total": 93,
-                "win_rate": 62.4,
-                "avg_dd": 14.37
+                "total": 101,
+                "win_rate": 65.3,
+                "avg_dd": 13.38
             },
             "Commodities & Energy": {
-                "hits": 29,
+                "hits": 34,
                 "misses": 18,
-                "total": 47,
-                "win_rate": 61.7,
-                "avg_dd": 24.19
+                "total": 52,
+                "win_rate": 65.4,
+                "avg_dd": 21.5
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 218,
+                "hits": 246,
                 "misses": 137,
-                "total": 355,
-                "win_rate": 61.4,
-                "avg_dd": 17.72
+                "total": 383,
+                "win_rate": 64.2,
+                "avg_dd": 16.71
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -5993,9 +5993,9 @@
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
             "impact": "Bullish",
-            "prob": 58,
+            "prob": 62,
             "entry_price": 4018.52,
-            "target": 4059.96,
+            "target": 4059.74,
             "max_dd_usd": 3.78,
             "atr_ratio_at_signal": 0.32,
             "daily_atr_at_signal": 67.52,
@@ -6159,7 +6159,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249310/Iran-to-follow-environmental-damages-in-war-internationally": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iran to follow environmental damages in war internationally",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -6175,10 +6175,10 @@
             "macro_snapshot": "EUR -0.59%, NAS100 -1.25%",
             "created_ts": 1794334833.0,
             "date": "First Reported: 2026-11-10 18:20 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.56)"
         },
         "https://www.investing.com/news/commodities-news/us-power-demand-to-beat-record-highs-in-2026-and-2027-as-ai-use-surges-eia-says-5016495": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US power demand to beat record highs in 2026 and 2027 as AI use surges, EIA says",
             "source": "Investing.com",
             "category": "Tech, AI & Equities",
@@ -6194,10 +6194,10 @@
             "macro_snapshot": "EUR -0.59%, NAS100 -1.25%",
             "created_ts": 1794334755.0,
             "date": "First Reported: 2026-11-10 18:19 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.56)"
         },
         "https://finance.yahoo.com/markets/commodities/articles/centauri-minerals-provides-field-greater-181400711.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Centauri Minerals Provides Field Update from Greater Exploration Portfolio in Northern Arg",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -6213,10 +6213,10 @@
             "macro_snapshot": "EUR -0.59%, NAS100 -1.25%",
             "created_ts": 1794334440.0,
             "date": "First Reported: 2026-11-10 18:14 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.56)"
         },
         "https://www.aljazeera.com/news/2026/11/10/spain-braces-for-nationwide-walkout-as-anger-over-housing-costs-boils-over?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Spain braces for nationwide strike as anger over housing, costs boils over",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -6232,7 +6232,7 @@
             "macro_snapshot": "EUR -0.59%, NAS100 -1.25%",
             "created_ts": 1794334043.0,
             "date": "First Reported: 2026-11-10 18:07 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.56)"
         },
         "https://finance.yahoo.com/technology/ai/articles/microsoft-warns-trade-crackdown-could-193904641.html?.tsrc=rss": {
             "status": "HIT",
@@ -6357,7 +6357,7 @@
             "prob": 55,
             "entry_price": 4031.16,
             "target": 4021.69,
-            "max_dd_usd": 9.63,
+            "max_dd_usd": 21.52,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 68.78,
             "eur_chg_at_signal": -0.5,
@@ -6425,7 +6425,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$12.39)"
         },
         "https://www.marketwatch.com/story/an-overzealous-fed-is-quickly-becoming-the-biggest-risk-to-stocks-in-2027-ba28e51d?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Aggressive Fed rate hikes are quickly becoming the biggest risk to stocks in 2027, says ec",
             "source": "MarketWatch Macro",
             "category": "Fed, Rates & Macro",
@@ -6441,10 +6441,10 @@
             "macro_snapshot": "EUR -0.53%, NAS100 -0.71%",
             "created_ts": 1794342420.0,
             "date": "First Reported: 2026-11-10 20:27 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.38)"
         },
         "https://www.aljazeera.com/news/2026/11/10/most-americans-want-democrats-focused-on-ending-iran-war-lowering-costs?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Most Americans want Democrats focused on ending Iran war, lower costs: Poll",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -6460,10 +6460,10 @@
             "macro_snapshot": "EUR -0.53%, NAS100 -0.71%",
             "created_ts": 1794341221.0,
             "date": "First Reported: 2026-11-10 20:07 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.38)"
         },
         "https://finance.yahoo.com/technology/articles/sqc-expands-executive-team-appointment-200200572.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "SQC Expands Executive Team With Appointment of Chief Manufacturing Officer",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6479,10 +6479,10 @@
             "macro_snapshot": "EUR -0.53%, NAS100 -0.71%",
             "created_ts": 1794340920.0,
             "date": "First Reported: 2026-11-10 20:02 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.38)"
         },
         "https://www.aljazeera.com/news/2026/11/10/trump-administration-seeks-to-cut-food-aid-for-more-than-six-million-people?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Trump administration seeks to cut food aid for more than six million people",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -6498,10 +6498,10 @@
             "macro_snapshot": "EUR -0.53%, NAS100 -0.71%",
             "created_ts": 1794340818.0,
             "date": "First Reported: 2026-11-10 20:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.38)"
         },
         "https://www.cnbc.com/2026/11/10/coreweave-earnings-preview-debt-capex.html": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "CoreWeave earnings put debt-fueled AI build-out under scrutiny",
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
@@ -6509,7 +6509,7 @@
             "prob": 52,
             "entry_price": 4031.55,
             "target": 4050.28,
-            "max_dd_usd": 4.85,
+            "max_dd_usd": 4.95,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 66.25,
             "eur_chg_at_signal": -0.49,
@@ -6517,10 +6517,10 @@
             "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
             "created_ts": 1794345691.0,
             "date": "First Reported: 2026-11-10 15:01 UTC | Last Update: 2026-11-10 21:21 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.95)"
         },
         "https://www.cnbc.com/2026/11/10/tsmcs-october-sales-.html": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "TSMC's October sales jump as global chip boom rolls on",
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
@@ -6528,7 +6528,7 @@
             "prob": 55,
             "entry_price": 4031.55,
             "target": 4050.21,
-            "max_dd_usd": 4.85,
+            "max_dd_usd": 4.95,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 66.25,
             "eur_chg_at_signal": -0.49,
@@ -6536,10 +6536,10 @@
             "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
             "created_ts": 1794345515.0,
             "date": "First Reported: 2026-11-10 05:42 UTC | Last Update: 2026-11-10 21:18 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.95)"
         },
         "https://www.marketbeat.com/instant-alerts/transcript-infinity-natural-resources-q3-earnings-call-highlights-2026-11-10/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Infinity Natural Resources Q3 Earnings Call Highlights",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -6547,7 +6547,7 @@
             "prob": 53,
             "entry_price": 4031.55,
             "target": 4050.21,
-            "max_dd_usd": 4.85,
+            "max_dd_usd": 4.95,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 66.25,
             "eur_chg_at_signal": -0.49,
@@ -6555,10 +6555,10 @@
             "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
             "created_ts": 1794345316.0,
             "date": "First Reported: 2026-11-10 21:15 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.95)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-end-lower-211356171.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US Equity Markets End Lower as Inflation Tops Expectations",
             "source": "Yahoo Finance Oil",
             "category": "Fed, Rates & Macro",
@@ -6566,7 +6566,7 @@
             "prob": 57,
             "entry_price": 4031.55,
             "target": 4050.21,
-            "max_dd_usd": 4.85,
+            "max_dd_usd": 4.95,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 66.25,
             "eur_chg_at_signal": -0.49,
@@ -6574,10 +6574,10 @@
             "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
             "created_ts": 1794345236.0,
             "date": "First Reported: 2026-11-10 21:13 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.95)"
         },
         "https://finance.yahoo.com/technology/ai/articles/bedrock-data-extends-data-control-211100653.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Bedrock Data Extends Data Control to Agents as OpenShell Moves to the CNCF",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6585,7 +6585,7 @@
             "prob": 55,
             "entry_price": 4031.55,
             "target": 4050.21,
-            "max_dd_usd": 4.85,
+            "max_dd_usd": 4.95,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 66.25,
             "eur_chg_at_signal": -0.49,
@@ -6593,10 +6593,10 @@
             "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
             "created_ts": 1794345060.0,
             "date": "First Reported: 2026-11-10 21:11 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.95)"
         },
         "https://www.aljazeera.com/news/2026/11/10/white-house-announces-funds-for-law-enforcement-programme-in-several-cities?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "White House announces funds for law enforcement programme in several cities",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -6604,7 +6604,7 @@
             "prob": 55,
             "entry_price": 4031.55,
             "target": 4050.21,
-            "max_dd_usd": 4.85,
+            "max_dd_usd": 4.95,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 66.25,
             "eur_chg_at_signal": -0.49,
@@ -6612,10 +6612,10 @@
             "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
             "created_ts": 1794344401.0,
             "date": "First Reported: 2026-11-10 21:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$4.95)"
         },
         "https://finance.yahoo.com/markets/commodities/articles/amap-minerals-reports-third-quarter-210000155.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "AMAPÁ MINERALS REPORTS THIRD QUARTER 2026 FINANCIAL RESULTS AS RAMP-UP ADVANCES",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -6631,10 +6631,10 @@
             "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
             "created_ts": 1794344400.0,
             "date": "First Reported: 2026-11-10 21:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.00)"
         },
         "https://www.fool.com/investing/2026/11/10/worried-about-a-market-crash-these-3-high-yielding-stocks-can-be-safe-long-term-options/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Worried About a Market Crash? These 3 High-Yielding Stocks Can Be Safe Long-Term Options",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6650,7 +6650,7 @@
             "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
             "created_ts": 1794344222.0,
             "date": "First Reported: 2026-11-10 20:57 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.75)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/un-peacekeepers-say-came-under-fire-southern-lebanon": {
             "status": "HIT",
@@ -6672,7 +6672,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$5.38)"
         },
         "https://www.tehrantimes.com/news/532032/Massie-forces-House-vote-to-impeach-Hegseth-over-Iran-war-Minab": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Massie forces House vote to impeach Hegseth over Iran war, Minab school massacre",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -6688,7 +6688,7 @@
             "macro_snapshot": "EUR -0.49%, NAS100 -0.72%",
             "created_ts": 1794343824.0,
             "date": "First Reported: 2026-11-10 20:50 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.75)"
         },
         "https://247wallst.com/investing/2026/11/10/what-does-nvidias-selloff-mean-for-a-68-year-old-with-940000-of-a-2-3-million-ira-in-the-stock/?.tsrc=rss": {
             "status": "ACTIVE",
@@ -6699,7 +6699,7 @@
             "prob": 52,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 10.61,
+            "max_dd_usd": 22.5,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -6718,7 +6718,7 @@
             "prob": 61,
             "entry_price": 4030.18,
             "target": 4010.51,
-            "max_dd_usd": 10.61,
+            "max_dd_usd": 22.5,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -6729,7 +6729,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/m/ba629833-a382-330f-a462-ecacfef1fb38/the-stock-market%E2%80%99s-rebound.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "The Stock Market’s Rebound Met Its Match",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6737,7 +6737,7 @@
             "prob": 55,
             "entry_price": 4030.18,
             "target": 4050.31,
-            "max_dd_usd": 3.48,
+            "max_dd_usd": 3.58,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 67.13,
             "eur_chg_at_signal": -0.5,
@@ -6745,10 +6745,10 @@
             "macro_snapshot": "EUR -0.50%, NAS100 -0.64%",
             "created_ts": 1794344485.0,
             "date": "First Reported: 2026-11-10 21:01 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$3.58)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/fire-breaks-out-platform-irans-south-pars-field": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Fire breaks out on platform in Iran’s South Pars field",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -6756,7 +6756,7 @@
             "prob": 53,
             "entry_price": 4032.51,
             "target": 4050.28,
-            "max_dd_usd": 1.45,
+            "max_dd_usd": 5.91,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 67.86,
             "eur_chg_at_signal": -0.51,
@@ -6764,7 +6764,7 @@
             "macro_snapshot": "EUR -0.51%, NAS100 -0.61%",
             "created_ts": 1794349409.0,
             "date": "First Reported: 2026-11-10 22:23 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.91)"
         },
         "https://finance.yahoo.com/technology/ai/articles/uniserve-acquire-additional-nvidia-b300-221800451.html?.tsrc=rss": {
             "status": "HIT",
@@ -6900,7 +6900,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$1.45)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/10/massive-fire-as-israeli-settlers-burn-down-business-near-nablus?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Massive fire as Israeli settlers burn down business near Nablus",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -6908,7 +6908,7 @@
             "prob": 52,
             "entry_price": 4035.14,
             "target": 4050.28,
-            "max_dd_usd": 4.08,
+            "max_dd_usd": 8.54,
             "atr_ratio_at_signal": 0.12,
             "daily_atr_at_signal": 67.21,
             "eur_chg_at_signal": -0.46,
@@ -6916,10 +6916,10 @@
             "macro_snapshot": "EUR -0.46%, NAS100 -0.38%",
             "created_ts": 1794353623.0,
             "date": "First Reported: 2026-11-10 23:33 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$8.54)"
         },
         "https://www.fool.com/investing/2026/11/10/hyperscalers-are-projected-to-spend-13-trillion-on/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Hyperscalers Are Projected to Spend $1.3 Trillion on Capex in 2027. Here's the 1 Industria",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -6927,7 +6927,7 @@
             "prob": 51,
             "entry_price": 4035.14,
             "target": 4050.28,
-            "max_dd_usd": 4.08,
+            "max_dd_usd": 8.54,
             "atr_ratio_at_signal": 0.12,
             "daily_atr_at_signal": 67.21,
             "eur_chg_at_signal": -0.46,
@@ -6935,10 +6935,10 @@
             "macro_snapshot": "EUR -0.46%, NAS100 -0.38%",
             "created_ts": 1794353100.0,
             "date": "First Reported: 2026-11-10 23:25 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$8.54)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/investors-may-respond-valero-energy-221552897.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "How Investors May Respond To Valero Energy (VLO) Dividend Affirmation",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -6946,7 +6946,7 @@
             "prob": 52,
             "entry_price": 4032.51,
             "target": 4050.28,
-            "max_dd_usd": 1.45,
+            "max_dd_usd": 5.91,
             "atr_ratio_at_signal": 0.12,
             "daily_atr_at_signal": 67.21,
             "eur_chg_at_signal": -0.46,
@@ -6954,10 +6954,10 @@
             "macro_snapshot": "EUR -0.46%, NAS100 -0.38%",
             "created_ts": 1794348952.0,
             "date": "First Reported: 2026-11-10 22:15 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$5.91)"
         },
         "https://www.thestreet.com/investing/morgan-stanley-says-oil-price-will-fall-2027?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Morgan Stanley shares a definitive oil price verdict for 2027",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -6965,7 +6965,7 @@
             "prob": 55,
             "entry_price": 4039.68,
             "target": 4050.16,
-            "max_dd_usd": 8.62,
+            "max_dd_usd": 13.08,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 59.79,
             "eur_chg_at_signal": -0.5,
@@ -6973,7 +6973,7 @@
             "macro_snapshot": "EUR -0.50%, NAS100 -0.14%",
             "created_ts": 1794355200.0,
             "date": "First Reported: 2026-11-11 00:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$13.08)"
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/us-house-votes-derail-impeachment-defense-secretary-hegseth": {
             "status": "HIT",
@@ -7012,6 +7012,177 @@
             "created_ts": 1794354365.0,
             "date": "First Reported: 2026-11-10 23:46 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$7.97)"
+        },
+        "https://www.middleeasteye.net/news/changing-face-israels-ultra-orthodox-politics": {
+            "status": "ACTIVE",
+            "headline": "The changing face of Israel’s ultra-Orthodox politics",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 4043.77,
+            "target": 4059.74,
+            "max_dd_usd": 4.09,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 63.83,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 0.71,
+            "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
+            "created_ts": 1794365331.0,
+            "date": "First Reported: 2026-11-10 12:55 UTC | Last Update: 2026-11-11 02:48 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/petrobras-q3-profit-rises-22-023000217.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Petrobras Q3 Profit Rises 22% as Oil Production Hits New Record",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 4043.77,
+            "target": 4050.3,
+            "max_dd_usd": 4.09,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 63.83,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 0.71,
+            "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
+            "created_ts": 1794364200.0,
+            "date": "First Reported: 2026-11-11 02:30 UTC",
+            "fail_reason": ""
+        },
+        "https://www.thestreet.com/investing/stocks/cathie-wood-buys-15-3-million-of-tumbling-semiconductor-stock-nvda-nvidia?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Cathie Wood buys $15.3 million of tumbling semiconductor stock",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 63,
+            "entry_price": 4043.77,
+            "target": 4050.3,
+            "max_dd_usd": 4.09,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 63.83,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 0.71,
+            "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
+            "created_ts": 1794364177.0,
+            "date": "First Reported: 2026-11-11 02:29 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/11/protesters-throw-milk-at-joe-biden-during-hunter-event-in-dublin?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Protesters throw milk at Joe Biden during Hunter event in Dublin",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 52,
+            "entry_price": 4043.77,
+            "target": 4059.74,
+            "max_dd_usd": 4.09,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 63.83,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 0.71,
+            "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
+            "created_ts": 1794363142.0,
+            "date": "First Reported: 2026-11-11 02:12 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/us-treasury-chief-moved-military-base-after-alleged-iranian-threats": {
+            "status": "HIT",
+            "headline": "US Treasury chief moved to military base after alleged Iranian threats: Report",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4044.88,
+            "target": 4050.3,
+            "max_dd_usd": 18.28,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 63.83,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 0.71,
+            "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
+            "created_ts": 1794361564.0,
+            "date": "First Reported: 2026-11-11 01:46 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$18.28)"
+        },
+        "https://www.investing.com/news/commodities-news/gold-steadies-near-4035-after-sharp-selloff-as-december-fed-hike-bets-firm-5017433": {
+            "status": "HIT",
+            "headline": "Gold steadies near $4,035 after sharp selloff as December Fed hike bets firm",
+            "source": "Investing.com",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4044.88,
+            "target": 4050.3,
+            "max_dd_usd": 18.28,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 63.83,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 0.71,
+            "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
+            "created_ts": 1794360466.0,
+            "date": "First Reported: 2026-11-11 00:57 UTC | Last Update: 2026-11-11 01:27 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$18.28)"
+        },
+        "https://www.aljazeera.com/news/2026/11/11/tigray-displaced-families-fear-renewed-war-as-hopes-of-returning-home-fade?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Tigray displaced families fear renewed war as hopes of returning home fade",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4044.88,
+            "target": 4050.3,
+            "max_dd_usd": 18.28,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 63.83,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 0.71,
+            "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
+            "created_ts": 1794359464.0,
+            "date": "First Reported: 2026-11-11 01:11 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$18.28)"
+        },
+        "https://finance.yahoo.com/energy/articles/middle-east-oil-flows-far-010000433.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Middle East Oil Flows Far from Normal Despite Signs of Oversupply",
+            "source": "Yahoo Finance Oil",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4044.88,
+            "target": 4050.3,
+            "max_dd_usd": 18.28,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 63.83,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 0.71,
+            "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
+            "created_ts": 1794358800.0,
+            "date": "First Reported: 2026-11-11 01:00 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$18.28)"
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/11/spain-holds-state-funeral-for-69-victims-of-deadly-train-crash?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Spain holds state funeral for 69 victims of deadly train crash",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4033.64,
+            "target": 4050.3,
+            "max_dd_usd": 7.04,
+            "atr_ratio_at_signal": 0.12,
+            "daily_atr_at_signal": 63.83,
+            "eur_chg_at_signal": -0.55,
+            "nas_chg_at_signal": 0.71,
+            "macro_snapshot": "EUR -0.55%, NAS100 +0.71%",
+            "created_ts": 1794357761.0,
+            "date": "First Reported: 2026-11-11 00:42 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.04)"
         }
     }
 }

@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 440,
-    "hits": 281,
+    "total_evaluated": 441,
+    "hits": 282,
     "misses": 159,
     "win_rate": 63.9,
-    "active_signals": 8,
+    "active_signals": 9,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -14,20 +14,20 @@
                 "avg_dd": 17.99
             },
             "Bearish": {
-                "hits": 45,
+                "hits": 46,
                 "misses": 32,
-                "total": 77,
-                "win_rate": 58.4,
-                "avg_dd": 18.94
+                "total": 78,
+                "win_rate": 59.0,
+                "avg_dd": 18.62
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 267,
+                "hits": 268,
                 "misses": 155,
-                "total": 422,
-                "win_rate": 63.3,
-                "avg_dd": 17.93
+                "total": 423,
+                "win_rate": 63.4,
+                "avg_dd": 17.89
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
@@ -53,11 +53,11 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 91,
+                "hits": 92,
                 "misses": 62,
-                "total": 153,
-                "win_rate": 59.5,
-                "avg_dd": 27.82
+                "total": 154,
+                "win_rate": 59.7,
+                "avg_dd": 27.64
             },
             "Against USD Headwind": {
                 "hits": 187,
@@ -97,20 +97,20 @@
                 "avg_dd": 13.95
             },
             "Commodities & Energy": {
-                "hits": 39,
+                "hits": 40,
                 "misses": 20,
-                "total": 59,
-                "win_rate": 66.1,
-                "avg_dd": 21.98
+                "total": 60,
+                "win_rate": 66.7,
+                "avg_dd": 21.58
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 281,
+                "hits": 282,
                 "misses": 153,
-                "total": 434,
-                "win_rate": 64.7,
-                "avg_dd": 18.18
+                "total": 435,
+                "win_rate": 64.8,
+                "avg_dd": 18.14
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -7527,14 +7527,14 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$6.13)"
         },
         "https://www.offshore-technology.com/news/orlen-terminates-qatarenergy-lng-deal/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Orlen terminates QatarEnergy LNG deal after force majeure",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
             "impact": "Bearish",
-            "prob": 55,
+            "prob": 62,
             "entry_price": 4049.23,
-            "target": 4040.12,
+            "target": 4060.21,
             "max_dd_usd": 6.91,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 42.7,
@@ -7543,7 +7543,7 @@
             "macro_snapshot": "EUR -0.66%, NAS100 +1.37%",
             "created_ts": 1794392870.0,
             "date": "First Reported: 2026-11-11 10:27 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.91)"
         },
         "https://www.fool.com/investing/2026/11/11/warren-buffett-successor-greg-abel-just-bought-9-billion-oracle-of-omaha-favorite-stock-not-alphabet/?.tsrc=rss": {
             "status": "HIT",
@@ -7563,6 +7563,44 @@
             "created_ts": 1794392762.0,
             "date": "First Reported: 2026-11-11 10:26 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$2.70)"
+        },
+        "https://www.investing.com/news/commodities-news/oil-dependence-is-bad-for-the-climate-and-the-economy-un-chief-tells-cop31-5015927": {
+            "status": "ACTIVE",
+            "headline": "Oil dependence is bad for the climate and the economy, UN chief tells COP31",
+            "source": "Investing.com",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 56,
+            "entry_price": 4049.84,
+            "target": 4060.21,
+            "max_dd_usd": 3.31,
+            "atr_ratio_at_signal": 0.24,
+            "daily_atr_at_signal": 42.7,
+            "eur_chg_at_signal": -0.7,
+            "nas_chg_at_signal": 1.41,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.41%",
+            "created_ts": 1794393970.0,
+            "date": "First Reported: 2026-11-10 14:24 UTC | Last Update: 2026-11-11 10:46 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/11/whats-the-falklands-oil-project-at-the-heart-of-latest-uk-argentina-spat?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "What’s the Falklands oil project at the heart of latest UK-Argentina spat?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 4049.84,
+            "target": 4060.21,
+            "max_dd_usd": 3.31,
+            "atr_ratio_at_signal": 0.24,
+            "daily_atr_at_signal": 42.7,
+            "eur_chg_at_signal": -0.7,
+            "nas_chg_at_signal": 1.41,
+            "macro_snapshot": "EUR -0.70%, NAS100 +1.41%",
+            "created_ts": 1794392892.0,
+            "date": "First Reported: 2026-11-11 10:28 UTC",
+            "fail_reason": ""
         }
     }
 }

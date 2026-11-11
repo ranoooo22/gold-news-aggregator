@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 439,
-    "hits": 280,
+    "total_evaluated": 440,
+    "hits": 281,
     "misses": 159,
-    "win_rate": 63.8,
-    "active_signals": 7,
+    "win_rate": 63.9,
+    "active_signals": 8,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 235,
+                "hits": 236,
                 "misses": 127,
-                "total": 362,
-                "win_rate": 64.9,
-                "avg_dd": 18.05
+                "total": 363,
+                "win_rate": 65.0,
+                "avg_dd": 17.99
             },
             "Bearish": {
                 "hits": 45,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 266,
+                "hits": 267,
                 "misses": 155,
-                "total": 421,
-                "win_rate": 63.2,
-                "avg_dd": 17.98
+                "total": 422,
+                "win_rate": 63.3,
+                "avg_dd": 17.93
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 14,
@@ -60,11 +60,11 @@
                 "avg_dd": 27.82
             },
             "Against USD Headwind": {
-                "hits": 186,
+                "hits": 187,
                 "misses": 97,
-                "total": 283,
-                "win_rate": 65.7,
-                "avg_dd": 12.49
+                "total": 284,
+                "win_rate": 65.8,
+                "avg_dd": 12.44
             },
             "USD Neutral / Legacy": {
                 "hits": 3,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 148,
+                "hits": 149,
                 "misses": 95,
-                "total": 243,
-                "win_rate": 60.9,
-                "avg_dd": 20.01
+                "total": 244,
+                "win_rate": 61.1,
+                "avg_dd": 19.91
             },
             "Fed, Rates & Macro": {
                 "hits": 17,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 280,
+                "hits": 281,
                 "misses": 153,
-                "total": 433,
+                "total": 434,
                 "win_rate": 64.7,
-                "avg_dd": 18.23
+                "avg_dd": 18.18
             },
             "High (65-74%)": {
                 "hits": 0,
@@ -7525,6 +7525,44 @@
             "created_ts": 1794376980.0,
             "date": "First Reported: 2026-11-11 05:33 UTC | Last Update: 2026-11-11 06:03 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$6.13)"
+        },
+        "https://www.offshore-technology.com/news/orlen-terminates-qatarenergy-lng-deal/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Orlen terminates QatarEnergy LNG deal after force majeure",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 4049.23,
+            "target": 4040.12,
+            "max_dd_usd": 6.91,
+            "atr_ratio_at_signal": 0.25,
+            "daily_atr_at_signal": 42.7,
+            "eur_chg_at_signal": -0.66,
+            "nas_chg_at_signal": 1.37,
+            "macro_snapshot": "EUR -0.66%, NAS100 +1.37%",
+            "created_ts": 1794392870.0,
+            "date": "First Reported: 2026-11-11 10:27 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/11/warren-buffett-successor-greg-abel-just-bought-9-billion-oracle-of-omaha-favorite-stock-not-alphabet/?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Warren Buffett's Successor, Greg Abel, Just Bought $9.6 Billion of the Oracle of Omaha's F",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 4049.23,
+            "target": 4050.25,
+            "max_dd_usd": 2.7,
+            "atr_ratio_at_signal": 0.25,
+            "daily_atr_at_signal": 42.7,
+            "eur_chg_at_signal": -0.66,
+            "nas_chg_at_signal": 1.37,
+            "macro_snapshot": "EUR -0.66%, NAS100 +1.37%",
+            "created_ts": 1794392762.0,
+            "date": "First Reported: 2026-11-11 10:26 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$2.70)"
         }
     }
 }

@@ -1,5 +1,37 @@
 [
     {
+        "main_date": "First Reported: 2026-11-12 13:45 UTC",
+        "original_date": "2026-11-12 13:45",
+        "_timestamp": 1794491100.0,
+        "articles": [
+            {
+                "title": "Liberty Star Minerals to Host Mt. Baker Mining and Metals Founder Jason Gaber at Red Rock Canyon With Intent to Pour the First Gold Bar from the Property",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/liberty-star-minerals-host-mt-134500825.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-12 13:45",
+                "description": "Mining industry YouTube personality to visit the property and explore gold bearing rock, and bring the Company’s bonanza grade opportunity to processing a sample with MBMM equipment TUCSON, AZ, Nov. 12, 2026 (GLOBE NEWSWIRE) -- Liberty Star Minerals (OTCQB: LBSR) (“Liberty Star” or the “Company”), a U.S. mineral exploration company focused on strategic and commercially important critical minerals in southeast Arizona, today announced that Jason G",
+                "_timestamp": 1794491100.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "First reported: 2026-11-12 13:45 UTC (~0.2h ago)",
+            "Facts": "[Yahoo Finance Gold] Liberty Star Minerals to Host Mt. Baker Mining and Metals Founder Jason Gaber at Red Rock Canyon With Intent to Pour the First Gold Bar from the Property - Mining industry YouTube personality to visit the property and explore gold bearing r",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.04%, Nasdaq-100 -0.85%, Brent Oil +0.46% | OANDA Sentiment: 65.7% Long / 34.3% Short | 24/7 OKX XAUUSDT.P: $3894.4 (Spread: $-11.43) | Aggressive Taker Flow: 34.3% Market Buys (AGGRESSIVE MARKET SELLING (Bid-Side Sweep)).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3950.64.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3898.54. 4h-ATR ratio is 0.72x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.2h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-57.86 (0.72x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-12 13:44 UTC",
         "original_date": "2026-11-11 21:22",
         "_timestamp": 1794491066.0,
@@ -1030,6 +1062,38 @@
         "max_dd_usd": 16.2
     },
     {
+        "main_date": "First Reported: 2026-11-12 13:42 UTC",
+        "original_date": "2026-11-12 13:42",
+        "_timestamp": 1794490927.0,
+        "articles": [
+            {
+                "title": "Tether Gold Passes KPMG Audit: Can It Beat America’s Biggest Gold Fund?",
+                "link": "https://beincrypto.com/tether-gold-kpmg-audit-america-gold-fund/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-12 13:42",
+                "description": "Tether Gold passed a KPMG audit. Here is how XAU₮ stacks up against GLD on size, fees, and access for Americans.",
+                "_timestamp": 1794490927.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "First reported: 2026-11-12 13:42 UTC (~0.2h ago)",
+            "Facts": "[Yahoo Finance Gold] Tether Gold Passes KPMG Audit: Can It Beat America’s Biggest Gold Fund? - Tether Gold passed a KPMG audit. Here is how XAU₮ stacks up against GLD on size, fees, and access for Americans.",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.04%, Nasdaq-100 -0.85%, Brent Oil +0.46% | OANDA Sentiment: 65.7% Long / 34.3% Short | 24/7 OKX XAUUSDT.P: $3894.4 (Spread: $-11.43) | Aggressive Taker Flow: 34.3% Market Buys (AGGRESSIVE MARKET SELLING (Bid-Side Sweep)).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3950.64.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3898.54. 4h-ATR ratio is 0.72x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.2h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-57.86 (0.72x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "First Reported: 2026-11-05 18:59 UTC | Last Update: 2026-11-12 13:39 UTC",
         "original_date": "2026-11-05 18:59",
         "_timestamp": 1794490750.0,
@@ -1560,7 +1624,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 10.58
+        "max_dd_usd": 19.21
     },
     {
         "main_date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-12 13:31 UTC",
@@ -1934,7 +1998,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 10.58
+        "max_dd_usd": 19.21
     },
     {
         "main_date": "First Reported: 2026-11-12 13:30 UTC",
@@ -2110,7 +2174,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-12 13:29 UTC",
@@ -2146,6 +2210,48 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.58
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 01:05 UTC | Last Update: 2026-11-12 13:29 UTC",
+        "original_date": "2026-11-12 01:05",
+        "_timestamp": 1794490140.0,
+        "articles": [
+            {
+                "title": "Meren Energy Inc (MRNFF) Q3 2026 Earnings Call Highlights: Strong Cash Flow, Raised Guidance ...",
+                "link": "https://finance.yahoo.com/energy/articles/meren-energy-inc-mrnff-q3-010541483.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 01:05",
+                "description": "Meren Energy Inc (MRNFF) narrowed production guidance, lifted full-year EBITDAX and cash flow outlook, cut net debt to 0.5x EBITDAX and declared its fourth $25 million dividend of 2026.",
+                "_timestamp": 1794445541.0
+            },
+            {
+                "title": "Meren Energy completes Impact restructuring, sharpening focus on Namibia’s Venus project",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101676/meren-energy-completes-impact-restructuring-sharpening-focus-on-namibia-s-venus-project-1101676.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 13:29",
+                "description": "Meren Energy Inc (TSX:MER, STO:MER, OTCQX:MRNFF) said the restructuring of its investee company Impact Oil & Gas Limited has been completed, leaving the business focused on its Namibian exploration and development assets, including the Venus oil discovery. The transaction, first...",
+                "_timestamp": 1794490140.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "First reported: 2026-11-12 01:05 UTC (~7.0h ago)",
+            "Facts": "[Update 2026-11-12 13:29 UTC via Yahoo Finance Oil]: Meren Energy completes Impact restructuring, sharpening focus on Namibia’s Venus project — Meren Energy Inc (TSX:MER, STO:MER, OTCQX:MRNFF) said the restructuring of its investee company Impact Oil & Gas Limited has been completed, leaving the business focused on its Nam | [Yahoo Finance Oil] Meren Energy Inc (MRNFF) Q3 2026 Earnings Call Highlights: Strong Cash Flow, Raised Guidance ... - Meren Energy Inc (MRNFF) narrowed production guidance, lifted full-year EBITDAX and cash flow outlook, cut net debt to 0.5x EBITDAX and decla",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.42%, Nasdaq-100 -0.20%, Brent Oil +1.22% | OANDA Sentiment: 65.7% Long / 34.3% Short | 24/7 OKX XAUUSDT.P: $3970.8 (Spread: $+5.85) | Aggressive Taker Flow: 61.1% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3989.85.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3960.85. 4h-ATR ratio is 0.26x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 7.0h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-12.59 (0.26x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "3989.85"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 6.7
     },
     {
         "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-12 13:28 UTC",
@@ -2604,7 +2710,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 10.58
+        "max_dd_usd": 19.21
     },
     {
         "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-12 13:19 UTC",
@@ -3496,7 +3602,7 @@
             "Orderflow_Price_Target": "3989.80"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 22.79
+        "max_dd_usd": 31.42
     },
     {
         "main_date": "First Reported: 2026-11-12 13:05 UTC",
@@ -3905,7 +4011,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-07 11:56 UTC | Last Update: 2026-11-12 12:50 UTC",
@@ -4355,7 +4461,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-11 07:26 UTC | Last Update: 2026-11-12 12:39 UTC",
@@ -4423,6 +4529,40 @@
         },
         "eval_status": "MISS",
         "max_dd_usd": 81.12
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 12:37 UTC",
+        "original_date": "2026-11-12 12:37",
+        "_timestamp": 1794487020.0,
+        "articles": [
+            {
+                "title": "International Seaways and Installed Building Products have been highlighted as Zacks Bull and Bear of the Day",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/international-seaways-installed-building-products-123700397.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 12:37",
+                "description": "INSW's earnings surge, rising EPS estimates and hefty dividend contrast with IBP's housing-driven slowdown and weakening earnings outlook.",
+                "_timestamp": 1794487020.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "First reported: 2026-11-12 12:37 UTC (~1.3h ago)",
+            "Facts": "[Yahoo Finance Oil] International Seaways and Installed Building Products have been highlighted as Zacks Bull and Bear of the Day - INSW's earnings surge, rising EPS estimates and hefty dividend contrast with IBP's housing-driven slowdown and weakening earning",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.04%, Nasdaq-100 -0.85%, Brent Oil +0.46% | OANDA Sentiment: 65.7% Long / 34.3% Short | 24/7 OKX XAUUSDT.P: $3894.4 (Spread: $-11.43) | Aggressive Taker Flow: 34.3% Market Buys (AGGRESSIVE MARKET SELLING (Bid-Side Sweep)).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3950.64.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3898.54. 4h-ATR ratio is 0.72x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 1.3h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-57.86 (0.72x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "3898.54"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 11.99
     },
     {
         "main_date": "First Reported: 2026-11-12 12:32 UTC",
@@ -4575,7 +4715,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -4641,7 +4781,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -4739,7 +4879,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-11 17:35 UTC | Last Update: 2026-11-12 12:29 UTC",
@@ -5947,7 +6087,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-11 02:30 UTC | Last Update: 2026-11-12 12:10 UTC",
@@ -6032,7 +6172,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-12 12:01 UTC",
@@ -6066,7 +6206,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-12 06:25 UTC | Last Update: 2026-11-12 12:01 UTC",
@@ -6108,7 +6248,7 @@
             "Orderflow_Price_Target": "3989.85"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 72.09
+        "max_dd_usd": 80.72
     },
     {
         "main_date": "First Reported: 2026-11-12 12:00 UTC",
@@ -6174,7 +6314,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-12 07:00 UTC | Last Update: 2026-11-12 12:00 UTC",
@@ -6264,7 +6404,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 43.09
+        "max_dd_usd": 51.72
     },
     {
         "main_date": "First Reported: 2026-11-12 08:34 UTC | Last Update: 2026-11-12 11:59 UTC",
@@ -7231,7 +7371,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 50.64
+        "max_dd_usd": 59.27
     },
     {
         "main_date": "First Reported: 2026-11-12 11:45 UTC",
@@ -7331,7 +7471,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 50.64
+        "max_dd_usd": 59.27
     },
     {
         "main_date": "First Reported: 2026-11-12 11:33 UTC",
@@ -7431,7 +7571,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 50.64
+        "max_dd_usd": 59.27
     },
     {
         "main_date": "First Reported: 2026-11-10 23:46 UTC | Last Update: 2026-11-12 11:32 UTC",
@@ -7516,7 +7656,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 50.64
+        "max_dd_usd": 59.27
     },
     {
         "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-12 11:18 UTC",
@@ -8521,7 +8661,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 60.23
+        "max_dd_usd": 68.86
     },
     {
         "main_date": "First Reported: 2026-11-12 10:17 UTC",
@@ -8555,7 +8695,7 @@
             "Orderflow_Price_Target": "3989.79"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 56.97
+        "max_dd_usd": 65.6
     },
     {
         "main_date": "First Reported: 2026-11-12 08:21 UTC | Last Update: 2026-11-12 10:14 UTC",
@@ -9390,7 +9530,7 @@
             "Orderflow_Price_Target": "3989.85"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 50.23
+        "max_dd_usd": 58.86
     },
     {
         "main_date": "First Reported: 2026-11-10 12:32 UTC | Last Update: 2026-11-12 09:28 UTC",
@@ -9473,7 +9613,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 35.11
+        "max_dd_usd": 43.74
     },
     {
         "main_date": "First Reported: 2026-11-12 09:10 UTC",
@@ -9508,7 +9648,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 49.05
+        "max_dd_usd": 57.68
     },
     {
         "main_date": "First Reported: 2026-11-11 22:50 UTC | Last Update: 2026-11-12 09:08 UTC",
@@ -9586,7 +9726,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 49.05
+        "max_dd_usd": 57.68
     },
     {
         "main_date": "First Reported: 2026-11-10 10:21 UTC | Last Update: 2026-11-12 09:01 UTC",
@@ -9753,7 +9893,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 35.11
+        "max_dd_usd": 43.74
     },
     {
         "main_date": "First Reported: 2026-11-12 08:35 UTC",
@@ -9788,7 +9928,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 35.11
+        "max_dd_usd": 43.74
     },
     {
         "main_date": "First Reported: 2026-11-09 19:00 UTC | Last Update: 2026-11-12 08:30 UTC",
@@ -10050,7 +10190,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 35.11
+        "max_dd_usd": 43.74
     },
     {
         "main_date": "First Reported: 2026-11-12 08:20 UTC",
@@ -10085,7 +10225,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 35.11
+        "max_dd_usd": 43.74
     },
     {
         "main_date": "First Reported: 2026-11-05 18:11 UTC | Last Update: 2026-11-12 08:14 UTC",
@@ -10435,7 +10575,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 35.11
+        "max_dd_usd": 43.74
     },
     {
         "main_date": "First Reported: 2026-11-10 18:07 UTC | Last Update: 2026-11-12 08:01 UTC",
@@ -11596,7 +11736,7 @@
             "Orderflow_Price_Target": "3989.85"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 72.09
+        "max_dd_usd": 80.72
     },
     {
         "main_date": "First Reported: 2026-11-09 15:22 UTC | Last Update: 2026-11-12 06:38 UTC",
@@ -11965,8 +12105,8 @@
             "Past_Price_Action_Cause": "4h XAU/USD move: $-12.59 (0.26x of estimated Daily ATR).",
             "Orderflow_Price_Target": "3989.85"
         },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 85.94
+        "eval_status": "MISS",
+        "max_dd_usd": 94.57
     },
     {
         "main_date": "First Reported: 2026-11-12 05:13 UTC",
@@ -12341,40 +12481,6 @@
         },
         "eval_status": "MISS",
         "max_dd_usd": 91.97
-    },
-    {
-        "main_date": "First Reported: 2026-11-12 01:05 UTC",
-        "original_date": "2026-11-12 01:05",
-        "_timestamp": 1794445541.0,
-        "articles": [
-            {
-                "title": "Meren Energy Inc (MRNFF) Q3 2026 Earnings Call Highlights: Strong Cash Flow, Raised Guidance ...",
-                "link": "https://finance.yahoo.com/energy/articles/meren-energy-inc-mrnff-q3-010541483.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-12 01:05",
-                "description": "Meren Energy Inc (MRNFF) narrowed production guidance, lifted full-year EBITDAX and cash flow outlook, cut net debt to 0.5x EBITDAX and declared its fourth $25 million dividend of 2026.",
-                "_timestamp": 1794445541.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "First reported: 2026-11-12 01:05 UTC (~7.0h ago)",
-            "Facts": "[Yahoo Finance Oil] Meren Energy Inc (MRNFF) Q3 2026 Earnings Call Highlights: Strong Cash Flow, Raised Guidance ... - Meren Energy Inc (MRNFF) narrowed production guidance, lifted full-year EBITDAX and cash flow outlook, cut net debt to 0.5x EBITDAX and decla",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.42%, Nasdaq-100 -0.20%, Brent Oil +1.22% | OANDA Sentiment: 65.7% Long / 34.3% Short | 24/7 OKX XAUUSDT.P: $3970.8 (Spread: $+5.85) | Aggressive Taker Flow: 61.1% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3989.85.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $3960.85. 4h-ATR ratio is 0.26x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 7.0h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-12.59 (0.26x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "3989.85"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 6.7
     },
     {
         "main_date": "First Reported: 2026-11-12 01:00 UTC",

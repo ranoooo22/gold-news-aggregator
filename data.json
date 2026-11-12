@@ -1,156 +1,40 @@
 [
     {
-        "main_date": "First Reported: 2026-11-10 18:03 UTC | Last Update: 2026-11-12 15:03 UTC",
-        "original_date": "2026-11-10 18:03",
-        "_timestamp": 1794495820.0,
+        "main_date": "First Reported: 2026-11-12 15:15 UTC",
+        "original_date": "2026-11-12 15:15",
+        "_timestamp": 1794496504.0,
         "articles": [
             {
-                "title": "Alphabet Stocks Rise 0.34% as Google Lines Up $10 Billion Anthropic Stake Purchase",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-rise-0-34-180311251.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 18:03",
-                "description": "Anthropic's amended IPO filing makes Google and Nvidia the largest buyers in a $26 billion private placement priced alongside the offering.",
-                "_timestamp": 1794333791.0
-            },
-            {
-                "title": "AMD Stocks Rise as $2.5 Billion Anthropic Stake Meets Goldman Top-Pick Call",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/amd-stocks-rise-2-5-170138086.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 17:01",
-                "description": "AMD will buy about 33.8 million Anthropic shares at the IPO price, while Goldman Sachs names it a top chip idea.",
-                "_timestamp": 1794416498.0
-            },
-            {
-                "title": "AMD Bounced 10% but Is Still Down 32% in a Month. Wedbush Sees $600",
-                "link": "https://247wallst.com/investing/2026/11/12/amd-bounced-10-but-is-still-down-32-in-a-month-wedbush-sees-600/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 15:03",
-                "description": "AMD posted a record quarter, then watched a brutal AI selloff erase a third of its value in weeks. Free cash flow is collapsing and inventory is piling up, so can the Helios ramp justify a premium multiple?",
-                "_timestamp": 1794495820.0
+                "title": "Israeli soldier accused of smearing faeces on Palestinian detainee’s face",
+                "link": "https://www.middleeasteye.net/news/israeli-soldier-accused-smearing-faeces-palestinian-detainees-face",
+                "source": "Middle East Eye",
+                "date": "2026-11-12 15:15",
+                "description": "Israeli soldier accused of smearing faeces on Palestinian detainee’s face\n\n    \n    \n\n          \n      \n      \n        Submitted by \nNadav Rapaport\n on \nThu, 11/12/2026 - 14:35\n\n        \n      \n    \n      \n    \n                Military police accuse soldier of beating Palestinian detainee, urinating on him and smearing faeces on his face before the man was released without charge\n                      \n                  \n                  \n\n  \n\n\n",
+                "_timestamp": 1794496504.0
             }
         ],
         "needs_update": true,
         "summary": {
-            "Cluster_ID": 2,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-10 18:03 UTC (Approx. 13 minutes ago relative to 2026-11-10 18:16 UTC)",
-            "Facts": "[Update 2026-11-12 15:03 UTC via Yahoo Finance Nasdaq]: AMD Bounced 10% but Is Still Down 32% in a Month. Wedbush Sees $600 — AMD posted a record quarter, then watched a brutal AI selloff erase a third of its value in weeks. Free cash flow is collapsing and inventory is piling up, so can the Helios ramp j | [Update 2026-11-11 17:01 UTC via Yahoo Finance Nasdaq]: AMD Stocks Rise as $2.5 Billion Anthropic Stake Meets Goldman Top-Pick Call — AMD will buy about 33.8 million Anthropic shares at the IPO price, while Goldman Sachs names it a top chip idea. | Alphabet shares rose 0.34% as Google lined up a $10 billion Anthropic stake purchase, part of an amended IPO filing making Google and Nvidia the largest private placement buyers [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Regulatory scrutiny regarding mega-cap tech investments in artificial intelligence startups and private placement valuations.",
-            "Macro_Context": "Alphabet's resilience contrasts with broader tech weakness, supporting selective risk-on sentiment in AI infrastructure that limits aggressive safe-haven panic.",
-            "Bull_Case": "Massive capital commitments into AI leaders validate sector growth and support overall market liquidity.",
-            "Bear_Case": "Concentrated tech capital allocation can drain liquidity from other asset classes, increasing overall market volatility.",
-            "Historical_Calibration": "Tech, AI & Equities category with Fresh ATR (<0.8x) and Against USD Headwind: Historical Win Rate is 52.7% (Avg DD: -$16.4).",
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "First reported: 2026-11-12 15:15 UTC (~0.0h ago)",
+            "Facts": "[Middle East Eye] Israeli soldier accused of smearing faeces on Palestinian detainee’s face - Israeli soldier accused of smearing faeces on Palestinian detainee’s face\n\n    \n    \n\n          \n      \n      \n        Submitted by \nNadav Rapaport\n on \nThu, 11/12/",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.27%, Nasdaq-100 -0.97%, Brent Oil +0.62% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3863.3 (Spread: $-6.74) | Aggressive Taker Flow: 46.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.44.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 1.06x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.0h.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "Micro-level tech developments had minimal direct directional impact on gold spot prices, which remain driven by macro CPI data and currency flows.",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-89.20 (1.06x of estimated Daily ATR).",
             "Orderflow_Price_Target": "N/A"
         }
     },
     {
-        "main_date": "First Reported: 2026-11-10 12:32 UTC | Last Update: 2026-11-12 15:03 UTC",
-        "original_date": "2026-11-10 12:32",
-        "_timestamp": 1794495789.0,
-        "articles": [
-            {
-                "title": "Microsoft Reportedly Pushes Back Against Trump’s Plan To Ban Chinese Optical Transceivers – Flags Challenges To Data Center Rollout",
-                "link": "https://stocktwits.com/news-articles/markets/equity/microsoft-against-trumps-plan-to-ban-chinese-optical-transceivers/cNGu0CWR97y?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 12:32",
-                "description": "According to a Reuters report, Microsoft met with White House and National Security Council officials to highlight potential shortages if the ban takes effect.",
-                "_timestamp": 1794313944.0
-            },
-            {
-                "title": "Microsoft warns proposed Chinese transceiver ban threatens U.S. AI edge - Reuters",
-                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-warns-proposed-chinese-transceiver-151619964.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:16",
-                "description": "Investing.com -- Microsoft has been quietly lobbying the Trump administration to abandon a proposed ban on Chinese-made optical transceivers, warning that the move risks crippling the domestic buildout of artificial intelligence infrastructure, Reuters reported Tuesday. The pushback reflects mounting anxiety among hyperscalers that escalating geopolitical restrictions could disrupt critical hardware supply chains just as capital expenditure on da",
-                "_timestamp": 1794323779.0
-            },
-            {
-                "title": "China optical stocks rally as Microsoft challenges proposed U.S. import curbs",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/china-optical-stocks-rally-microsoft-063031256.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 06:30",
-                "description": "Investing.com -- Chinese optical communications stocks rallied on Wednesday, with several Hong Kong and mainland listings reaching their highest levels since early November, as investors weighed the implications of a potential U.S. restriction on Chinese data-centre equipment and Microsoft's push to have the proposal dropped.",
-                "_timestamp": 1794378631.0
-            },
-            {
-                "title": "Chinese university buys Nvidia AI H200 chips despite US ban, records show",
-                "link": "https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-11 07:26",
-                "description": "Investigation reveals Chinese entities accessing US-restricted AI tech despite stringent export control measures.",
-                "_timestamp": 1794381988.0
-            },
-            {
-                "title": "Nvidia is spending more than ever on Washington lobbying. It may not stop Congress from limiting China chip sales now.",
-                "link": "https://www.marketwatch.com/story/nvidia-is-spending-more-than-ever-on-washington-lobbying-it-still-may-not-be-able-to-stop-congress-from-limiting-its-china-chip-sales-now-d4c34c66?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-11 18:48",
-                "description": "‘There’s no question that Congress is going to push for a complete ban on the sale of advanced semiconductors into China,’ says a former U.S. ambassador to Beijing",
-                "_timestamp": 1794422880.0
-            },
-            {
-                "title": "Market Chatter: Nvidia Chip Access Concerns Drive Chinese Firms to Secure Overseas Capacity",
-                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-nvidia-chip-access-084521497.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 08:45",
-                "description": "Nvidia (NVDA) faces rising demand for computing capacity as Chinese firms seek to secure overseas ac",
-                "_timestamp": 1794473121.0
-            },
-            {
-                "title": "Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries",
-                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-us-set-extend-092834736.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 09:28",
-                "description": "The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely a",
-                "_timestamp": 1794475714.0
-            },
-            {
-                "title": "Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing?",
-                "link": "https://www.aljazeera.com/news/2026/11/12/trump-heads-to-china-amid-nvidia-scandal-will-he-get-tougher-on-beijing?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-12 14:48",
-                "description": "Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week&#039;s talks.",
-                "_timestamp": 1794494890.0
-            },
-            {
-                "title": "Chinese AI Firms Rush to Secure Nvidia Computing Power Overseas. A US Crackdown Could Shut The Door.",
-                "link": "https://www.ibtimes.com/chinese-ai-firms-seek-overseas-nvidia-computing-3809667?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 15:03",
-                "description": "A U.S. bill targeting remote access to restricted technology has already passed the House, raising concerns among Chinese AI companies about losing access to Nvidia's most powerful processors.",
-                "_timestamp": 1794495789.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 3,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-12 09:28 UTC (approx. 23 minutes ago)",
-            "Facts": "[Update 2026-11-12 15:03 UTC via Yahoo Finance Nasdaq]: Chinese AI Firms Rush to Secure Nvidia Computing Power Overseas. A US Crackdown Could Shut The Door. — A U.S. bill targeting remote access to restricted technology has already passed the House, raising concerns among Chinese AI companies about losing access to Nvidia's most powerful | [Update 2026-11-12 14:48 UTC via Al Jazeera English]: Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing? — Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week&#039;s talks. | [Update 2026-11-12 09:28 UTC via Yahoo Finance Nasdaq]: Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries — The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely accessing US tech | Core Background: Regulatory friction is escalating as Microsoft and other tech giants push back against proposed bans on optical transceivers and advanced semiconductors to China, while Chinese entities continue sourcing restricted hardware via alternative channels.",
-            "Uncertainties": "Whether international licensing extensions will effectively choke off remote AI access or merely fragment global semiconductor supply chains.",
-            "Macro_Context": "Tech supply chain friction supports defensive asset rotation. Aggressive taker buying (65.7% market buys) absorbs sell-limit walls as traders hedge regulatory clampdowns.",
-            "Bull_Case": "Technological bifurcation and tightening export controls increase operational costs and systemic friction, boosting gold's appeal as a neutral geopolitical reserve asset.",
-            "Bear_Case": "Broad tech sector supply chain disruptions could cause a liquidity squeeze, forcing temporary long liquidations in precious metals.",
-            "Historical_Calibration": "Category: Tech, AI & Equities | Regime Match: Fresh (<0.8x ATR), Against USD Headwind | Historical Win Rate: 69.6% (87/125, Avg DD: -$15.1)",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 62,
-            "Past_Price_Action_Cause": "Persistent structural demand for safe-haven protection against regulatory fragmentation keeps spot prices supported above key liquidity zones.",
-            "Orderflow_Price_Target": "3989.91"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 68.8
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-12 15:03 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-12 15:08 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794495780.0,
+        "_timestamp": 1794496136.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -343,6 +227,14 @@
                 "date": "2026-11-12 15:03",
                 "description": "\"In the Loop\" host Ejaaz Ahamadeen and Yahoo Finance's Deirdre Bosa are joined by Jesse Zhang, Decagon co-founder and CEO, and Runway co-founder and CEO Cristóbal Valenzuela at Yahoo Finance's 2026 Invest conference to discuss how policy threats to open-weight AI models could derail their momentum, especially after the resignation of Nvidia (NVDA) CEO Jensen Huang.",
                 "_timestamp": 1794495780.0
+            },
+            {
+                "title": "Who is Colette Kress, Nvidia's new interim CEO?",
+                "link": "https://finance.yahoo.com/technology/article/who-is-colette-kress-nvidias-new-interim-ceo-150856209.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:08",
+                "description": "Nvidia CFO Colette Kress will serve as interim CEO following Jensen Huang's ouster.",
+                "_timestamp": 1794496136.0
             }
         ],
         "needs_update": true,
@@ -350,7 +242,7 @@
             "Cluster_ID": 0,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
             "Event_Timestamp": "2026-11-12 14:38 UTC (~0 hours ago relative to reference time)",
-            "Facts": "[Update 2026-11-12 15:03 UTC via Yahoo Finance Nasdaq]: Decagon CEO ‘extremely bullish’ on open-weight AI even after Huang's exit — \"In the Loop\" host Ejaaz Ahamadeen and Yahoo Finance's Deirdre Bosa are joined by Jesse Zhang, Decagon co-founder and CEO, and Runway co-founder and CEO Cristóbal Valenzuela at Yah | [Update 2026-11-12 14:59 UTC via Yahoo Finance Nasdaq]: Scandal Forces Jensen Huang Out at Nvidia. Here's How Investors Should Consider Nvidia Stock Now. — What makes Nvidia hard to beat doesn’t live in the corner office. | [Update 2026-11-12 14:44 UTC via Al Jazeera English]: LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns — Jensen Huang, 63, has resigned as chief executive of AI giant Nvidia, according to the company. | [Update 2026-11-12 14:40 UTC via Al Jazeera English]: Nvidia CEO Jensen Huang resigns — Nvidia CEO Jensen Huang has resigned amid reports of a second affair with an executive. | [Update 2026-11-12 14:36 UTC via CNBC Tech & AI]: Who is Colette Kress? Nvidia's finance chief steps in as interim CEO after Huang exit — Colette Kress joined Nvidia in 2013 after nearly 25 years in finance roles at Cisco, Microsoft and other tech companies. | [Update 2026-11-12 14:46 UTC via Yahoo Finance Nasdaq]: Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary? — Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief marke | [Update 2026-11-12 14:43 UTC via Yahoo Finance Nasdaq]: Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide — Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42  | [Update 2026-11-12 14:40 UTC via Yahoo Finance Nasdaq]: Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation. — Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor. | [Update 2026-11-12 14:30 UTC via Yahoo Finance Nasdaq]: The unfolding Jensen Huang scandal: a timeline — Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastru | [Update 2026-11-12 14:38 UTC via CNBC Tech & AI]: Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief — Nvidia CEO Jensen Huang has faced increased scrutiny following affair revelations and investigations | Core Background: D.A. Davidson's Gil Luria previously warned investors against CoreWeave after Nvidia's board opened probes into Jensen Huang, which quickly culminated in his resignation as president, CEO, and board member, with CFO Colette Kress stepping in as interim chief.",
+            "Facts": "[Update 2026-11-12 15:08 UTC via Yahoo Finance Nasdaq]: Who is Colette Kress, Nvidia's new interim CEO? — Nvidia CFO Colette Kress will serve as interim CEO following Jensen Huang's ouster. | [Update 2026-11-12 15:03 UTC via Yahoo Finance Nasdaq]: Decagon CEO ‘extremely bullish’ on open-weight AI even after Huang's exit — \"In the Loop\" host Ejaaz Ahamadeen and Yahoo Finance's Deirdre Bosa are joined by Jesse Zhang, Decagon co-founder and CEO, and Runway co-founder and CEO Cristóbal Valenzuela at Yah | [Update 2026-11-12 14:59 UTC via Yahoo Finance Nasdaq]: Scandal Forces Jensen Huang Out at Nvidia. Here's How Investors Should Consider Nvidia Stock Now. — What makes Nvidia hard to beat doesn’t live in the corner office. | [Update 2026-11-12 14:44 UTC via Al Jazeera English]: LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns — Jensen Huang, 63, has resigned as chief executive of AI giant Nvidia, according to the company. | [Update 2026-11-12 14:40 UTC via Al Jazeera English]: Nvidia CEO Jensen Huang resigns — Nvidia CEO Jensen Huang has resigned amid reports of a second affair with an executive. | [Update 2026-11-12 14:36 UTC via CNBC Tech & AI]: Who is Colette Kress? Nvidia's finance chief steps in as interim CEO after Huang exit — Colette Kress joined Nvidia in 2013 after nearly 25 years in finance roles at Cisco, Microsoft and other tech companies. | [Update 2026-11-12 14:46 UTC via Yahoo Finance Nasdaq]: Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary? — Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief marke | [Update 2026-11-12 14:43 UTC via Yahoo Finance Nasdaq]: Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide — Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42  | [Update 2026-11-12 14:40 UTC via Yahoo Finance Nasdaq]: Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation. — Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor. | [Update 2026-11-12 14:30 UTC via Yahoo Finance Nasdaq]: The unfolding Jensen Huang scandal: a timeline — Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastru | [Update 2026-11-12 14:38 UTC via CNBC Tech & AI]: Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief — Nvidia CEO Jensen Huang has faced increased scrutiny following affair revelations and investigations | Core Background: D.A. Davidson's Gil Luria previously warned investors against CoreWeave after Nvidia's board opened probes into Jensen Huang, which quickly culminated in his resignation as president, CEO, and board member, with CFO Colette Kress stepping in as interim chief.",
             "Uncertainties": "The full fallout on multi-billion dollar backstops, partner dependencies like CoreWeave, and the direction of US-China relations under interim leadership remain highly uncertain.",
             "Macro_Context": "Nasdaq 100 is higher (+0.18%), but the massive tech governance shock creates severe equity volatility that impacts broader risk sentiment. XAU/USD faces intraday pressure alongside aggressive taker selling at highs.",
             "Bull_Case": "Uncertainty surrounding Nvidia's executive leadership and potential delays in AI infrastructure expansion could trigger a broader risk-off flight to safety, boosting safe-haven gold demand.",
@@ -365,6 +257,253 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 15:07 UTC",
+        "original_date": "2026-11-12 15:07",
+        "_timestamp": 1794496057.0,
+        "articles": [
+            {
+                "title": "Full-Year Revenue Guidance and Strong Quarter Drove Twist Bioscience Corporation (TWST) Higher in Q3",
+                "link": "https://finance.yahoo.com/healthcare/articles/full-revenue-guidance-strong-quarter-150737117.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 15:07",
+                "description": "Artisan Partners, an investment management company, released its third-quarter 2026 investor letter for the “Artisan U.S. Small-Cap Growth Strategy”. The letter can be downloaded here. Global equities reached new highs despite elevated oil prices and rising interest rates, driven by resilient U.S. economic data and a revised GDP growth forecast. However, the bond market faced […]",
+                "_timestamp": 1794496057.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "First reported: 2026-11-12 15:07 UTC (~0.1h ago)",
+            "Facts": "[Yahoo Finance Oil] Full-Year Revenue Guidance and Strong Quarter Drove Twist Bioscience Corporation (TWST) Higher in Q3 - Artisan Partners, an investment management company, released its third-quarter 2026 investor letter for the “Artisan U.S. Small-Cap Growt",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.27%, Nasdaq-100 -0.97%, Brent Oil +0.62% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3863.3 (Spread: $-6.74) | Aggressive Taker Flow: 46.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.44.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 1.06x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.1h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-89.20 (1.06x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 18:03 UTC | Last Update: 2026-11-12 15:03 UTC",
+        "original_date": "2026-11-10 18:03",
+        "_timestamp": 1794495820.0,
+        "articles": [
+            {
+                "title": "Alphabet Stocks Rise 0.34% as Google Lines Up $10 Billion Anthropic Stake Purchase",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-rise-0-34-180311251.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 18:03",
+                "description": "Anthropic's amended IPO filing makes Google and Nvidia the largest buyers in a $26 billion private placement priced alongside the offering.",
+                "_timestamp": 1794333791.0
+            },
+            {
+                "title": "AMD Stocks Rise as $2.5 Billion Anthropic Stake Meets Goldman Top-Pick Call",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/amd-stocks-rise-2-5-170138086.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 17:01",
+                "description": "AMD will buy about 33.8 million Anthropic shares at the IPO price, while Goldman Sachs names it a top chip idea.",
+                "_timestamp": 1794416498.0
+            },
+            {
+                "title": "AMD Bounced 10% but Is Still Down 32% in a Month. Wedbush Sees $600",
+                "link": "https://247wallst.com/investing/2026/11/12/amd-bounced-10-but-is-still-down-32-in-a-month-wedbush-sees-600/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:03",
+                "description": "AMD posted a record quarter, then watched a brutal AI selloff erase a third of its value in weeks. Free cash flow is collapsing and inventory is piling up, so can the Helios ramp justify a premium multiple?",
+                "_timestamp": 1794495820.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 2,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-10 18:03 UTC (Approx. 13 minutes ago relative to 2026-11-10 18:16 UTC)",
+            "Facts": "[Update 2026-11-12 15:03 UTC via Yahoo Finance Nasdaq]: AMD Bounced 10% but Is Still Down 32% in a Month. Wedbush Sees $600 — AMD posted a record quarter, then watched a brutal AI selloff erase a third of its value in weeks. Free cash flow is collapsing and inventory is piling up, so can the Helios ramp j | [Update 2026-11-11 17:01 UTC via Yahoo Finance Nasdaq]: AMD Stocks Rise as $2.5 Billion Anthropic Stake Meets Goldman Top-Pick Call — AMD will buy about 33.8 million Anthropic shares at the IPO price, while Goldman Sachs names it a top chip idea. | Alphabet shares rose 0.34% as Google lined up a $10 billion Anthropic stake purchase, part of an amended IPO filing making Google and Nvidia the largest private placement buyers [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Regulatory scrutiny regarding mega-cap tech investments in artificial intelligence startups and private placement valuations.",
+            "Macro_Context": "Alphabet's resilience contrasts with broader tech weakness, supporting selective risk-on sentiment in AI infrastructure that limits aggressive safe-haven panic.",
+            "Bull_Case": "Massive capital commitments into AI leaders validate sector growth and support overall market liquidity.",
+            "Bear_Case": "Concentrated tech capital allocation can drain liquidity from other asset classes, increasing overall market volatility.",
+            "Historical_Calibration": "Tech, AI & Equities category with Fresh ATR (<0.8x) and Against USD Headwind: Historical Win Rate is 52.7% (Avg DD: -$16.4).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Micro-level tech developments had minimal direct directional impact on gold spot prices, which remain driven by macro CPI data and currency flows.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 12:32 UTC | Last Update: 2026-11-12 15:03 UTC",
+        "original_date": "2026-11-10 12:32",
+        "_timestamp": 1794495789.0,
+        "articles": [
+            {
+                "title": "Microsoft Reportedly Pushes Back Against Trump’s Plan To Ban Chinese Optical Transceivers – Flags Challenges To Data Center Rollout",
+                "link": "https://stocktwits.com/news-articles/markets/equity/microsoft-against-trumps-plan-to-ban-chinese-optical-transceivers/cNGu0CWR97y?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 12:32",
+                "description": "According to a Reuters report, Microsoft met with White House and National Security Council officials to highlight potential shortages if the ban takes effect.",
+                "_timestamp": 1794313944.0
+            },
+            {
+                "title": "Microsoft warns proposed Chinese transceiver ban threatens U.S. AI edge - Reuters",
+                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-warns-proposed-chinese-transceiver-151619964.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:16",
+                "description": "Investing.com -- Microsoft has been quietly lobbying the Trump administration to abandon a proposed ban on Chinese-made optical transceivers, warning that the move risks crippling the domestic buildout of artificial intelligence infrastructure, Reuters reported Tuesday. The pushback reflects mounting anxiety among hyperscalers that escalating geopolitical restrictions could disrupt critical hardware supply chains just as capital expenditure on da",
+                "_timestamp": 1794323779.0
+            },
+            {
+                "title": "China optical stocks rally as Microsoft challenges proposed U.S. import curbs",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/china-optical-stocks-rally-microsoft-063031256.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 06:30",
+                "description": "Investing.com -- Chinese optical communications stocks rallied on Wednesday, with several Hong Kong and mainland listings reaching their highest levels since early November, as investors weighed the implications of a potential U.S. restriction on Chinese data-centre equipment and Microsoft's push to have the proposal dropped.",
+                "_timestamp": 1794378631.0
+            },
+            {
+                "title": "Chinese university buys Nvidia AI H200 chips despite US ban, records show",
+                "link": "https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-11 07:26",
+                "description": "Investigation reveals Chinese entities accessing US-restricted AI tech despite stringent export control measures.",
+                "_timestamp": 1794381988.0
+            },
+            {
+                "title": "Nvidia is spending more than ever on Washington lobbying. It may not stop Congress from limiting China chip sales now.",
+                "link": "https://www.marketwatch.com/story/nvidia-is-spending-more-than-ever-on-washington-lobbying-it-still-may-not-be-able-to-stop-congress-from-limiting-its-china-chip-sales-now-d4c34c66?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-11 18:48",
+                "description": "‘There’s no question that Congress is going to push for a complete ban on the sale of advanced semiconductors into China,’ says a former U.S. ambassador to Beijing",
+                "_timestamp": 1794422880.0
+            },
+            {
+                "title": "Market Chatter: Nvidia Chip Access Concerns Drive Chinese Firms to Secure Overseas Capacity",
+                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-nvidia-chip-access-084521497.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 08:45",
+                "description": "Nvidia (NVDA) faces rising demand for computing capacity as Chinese firms seek to secure overseas ac",
+                "_timestamp": 1794473121.0
+            },
+            {
+                "title": "Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries",
+                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-us-set-extend-092834736.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:28",
+                "description": "The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely a",
+                "_timestamp": 1794475714.0
+            },
+            {
+                "title": "Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing?",
+                "link": "https://www.aljazeera.com/news/2026/11/12/trump-heads-to-china-amid-nvidia-scandal-will-he-get-tougher-on-beijing?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 14:48",
+                "description": "Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week&#039;s talks.",
+                "_timestamp": 1794494890.0
+            },
+            {
+                "title": "Chinese AI Firms Rush to Secure Nvidia Computing Power Overseas. A US Crackdown Could Shut The Door.",
+                "link": "https://www.ibtimes.com/chinese-ai-firms-seek-overseas-nvidia-computing-3809667?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:03",
+                "description": "A U.S. bill targeting remote access to restricted technology has already passed the House, raising concerns among Chinese AI companies about losing access to Nvidia's most powerful processors.",
+                "_timestamp": 1794495789.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 3,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-12 09:28 UTC (approx. 23 minutes ago)",
+            "Facts": "[Update 2026-11-12 15:03 UTC via Yahoo Finance Nasdaq]: Chinese AI Firms Rush to Secure Nvidia Computing Power Overseas. A US Crackdown Could Shut The Door. — A U.S. bill targeting remote access to restricted technology has already passed the House, raising concerns among Chinese AI companies about losing access to Nvidia's most powerful | [Update 2026-11-12 14:48 UTC via Al Jazeera English]: Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing? — Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week&#039;s talks. | [Update 2026-11-12 09:28 UTC via Yahoo Finance Nasdaq]: Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries — The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely accessing US tech | Core Background: Regulatory friction is escalating as Microsoft and other tech giants push back against proposed bans on optical transceivers and advanced semiconductors to China, while Chinese entities continue sourcing restricted hardware via alternative channels.",
+            "Uncertainties": "Whether international licensing extensions will effectively choke off remote AI access or merely fragment global semiconductor supply chains.",
+            "Macro_Context": "Tech supply chain friction supports defensive asset rotation. Aggressive taker buying (65.7% market buys) absorbs sell-limit walls as traders hedge regulatory clampdowns.",
+            "Bull_Case": "Technological bifurcation and tightening export controls increase operational costs and systemic friction, boosting gold's appeal as a neutral geopolitical reserve asset.",
+            "Bear_Case": "Broad tech sector supply chain disruptions could cause a liquidity squeeze, forcing temporary long liquidations in precious metals.",
+            "Historical_Calibration": "Category: Tech, AI & Equities | Regime Match: Fresh (<0.8x ATR), Against USD Headwind | Historical Win Rate: 69.6% (87/125, Avg DD: -$15.1)",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 62,
+            "Past_Price_Action_Cause": "Persistent structural demand for safe-haven protection against regulatory fragmentation keeps spot prices supported above key liquidity zones.",
+            "Orderflow_Price_Target": "3989.91"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 74.86
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 18:07 UTC | Last Update: 2026-11-12 15:02 UTC",
+        "original_date": "2026-11-10 18:07",
+        "_timestamp": 1794495750.0,
+        "articles": [
+            {
+                "title": "Spain braces for nationwide strike as anger over housing, costs boils over",
+                "link": "https://www.aljazeera.com/news/2026/11/10/spain-braces-for-nationwide-walkout-as-anger-over-housing-costs-boils-over?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-10 18:07",
+                "description": "The 24-hour walkout, called by Spain’s two biggest unions, is due to start on Wednesday.",
+                "_timestamp": 1794334043.0
+            },
+            {
+                "title": "Spain’s first general strike in 14 years begins",
+                "link": "https://www.aljazeera.com/news/2026/11/11/spains-first-general-strike-in-14-years-begins?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-11 10:18",
+                "description": "Strike disrupts public transport and industries amid demands for housing reform ahead of November 29 elections.",
+                "_timestamp": 1794392308.0
+            },
+            {
+                "title": "‘It’s just too expensive’: Housing and wages at the heart of Spain’s strike",
+                "link": "https://www.aljazeera.com/news/2026/11/11/its-just-too-expensive-housing-and-wages-at-the-heart-of-spains-strike?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-11 16:20",
+                "description": "Mass walkout across several cities marks first general strike in 14 years.",
+                "_timestamp": 1794414013.0
+            },
+            {
+                "title": "Photos: Protesters clash with police after housing cost rallies in Spain",
+                "link": "https://www.aljazeera.com/gallery/2026/11/12/photos-protesters-clash-with-police-after-housing-cost-rallies-in-spain?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 08:01",
+                "description": "Anger over housing affordability and purchasing power leads to clashes amid Spain&#039;s first general strike in 14 years.",
+                "_timestamp": 1794470489.0
+            },
+            {
+                "title": "Spain approves housing reforms after nationwide strike over costs",
+                "link": "https://www.aljazeera.com/news/2026/11/12/spain-approves-housing-reforms-after-nationwide-strike-over-costs?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 15:02",
+                "description": "Spanish parliament passes new laws limiting evictions but their duration depends on the upcoming snap election outcome.",
+                "_timestamp": 1794495750.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 5,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-12 08:01 UTC (1.0 hours ago relative to 2026-11-12 09:04 UTC)",
+            "Facts": "[Update 2026-11-12 15:02 UTC via Al Jazeera English]: Spain approves housing reforms after nationwide strike over costs — Spanish parliament passes new laws limiting evictions but their duration depends on the upcoming snap election outcome. | [Update 2026-11-12 08:01 UTC via Al Jazeera English]: Protesters clashed with police after housing cost rallies in Spain amid the country's first general strike in 14 years, which has severely disrupted public transport and industries. | Core Background: Nationwide walkout called by Spain's top unions over housing affordability, purchasing power, and inflation pressures.",
+            "Uncertainties": "Whether social unrest and general strikes will spread to other Eurozone economies, impacting broader industrial output.",
+            "Macro_Context": "EUR/USD down 0.42%; localized European labor unrest highlights cost-of-living crises, boosting inflationary hedging demand.",
+            "Bull_Case": "Labor disruptions and social unrest elevate inflation expectations and risk premiums, supporting safe-haven gold allocations.",
+            "Bear_Case": "Localized European strikes have limited direct transmission to global monetary policy or precious metals spot pricing.",
+            "Historical_Calibration": "Commodities & Energy, Fresh (<0.8x ATR), Against USD Headwind: Historical Win Rate is 63.9% (46/72, Avg DD: -$27.1).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 64,
+            "Past_Price_Action_Cause": "OANDA lower-wick rejection indicates passive buyers stepping in to absorb sell pressure during European session openings.",
+            "Orderflow_Price_Target": "3989.9"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 7.56
     },
     {
         "main_date": "First Reported: 2026-11-12 15:01 UTC",
@@ -398,7 +537,7 @@
             "Orderflow_Price_Target": "4049.40"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 2.58
+        "max_dd_usd": 8.64
     },
     {
         "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-12 15:00 UTC",
@@ -486,7 +625,7 @@
     {
         "main_date": "First Reported: 2026-11-09 15:00 UTC | Last Update: 2026-11-12 15:00 UTC",
         "original_date": "2026-11-09 15:00",
-        "_timestamp": 1794495614.0,
+        "_timestamp": 1794495623.0,
         "articles": [
             {
                 "title": "BC-Gold Futures",
@@ -591,13 +730,21 @@
                 "date": "2026-11-12 15:00",
                 "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Thursday, November 12.Light Sweet Crude (NYMX)1,000 bbl.",
                 "_timestamp": 1794495614.0
+            },
+            {
+                "title": "BC-Gold Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150023861.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-12 15:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Thursday, November 12.Contract Open High Low Last Change Today's Volume Wednesday's Volume  Nov 26 3972.",
+                "_timestamp": 1794495623.0
             }
         ],
         "needs_update": true,
         "summary": {
             "Cluster_ID": 3,
             "Event_Timestamp": "2026-11-09 15:00 to 20:00 UTC (approx. 0 to 5 hours ago)",
-            "Facts": "[Update 2026-11-12 15:00 UTC via Yahoo Finance Oil]: BC-Crude Oil Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Thursday, November 12.Light Sweet Crude (NYMX)1,000 bbl. | [Update 2026-11-11 20:00 UTC via Yahoo Finance Oil]: BC-OILS — NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Wednesday:Open High Low Settle Chg.'s open int 1,929,570 down 12,782  HEATING OIL  42,000 gal, cents per gal  De | [Update 2026-11-11 20:00 UTC via Yahoo Finance Gold]: BC-Gold-Silver — NEW YORK (AP) — Futures trading on the NY Merc Wednesday:Open High Low Settle Chg.'s open int 399,545 up 163  SILVER  5,000 troy oz. | [Update 2026-11-11 15:00 UTC via Yahoo Finance Gold]: BC-Gold Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Contract Open High Low Last Change Today's Volume Tuesday's Volume  Nov 26 4048. | [Update 2026-11-11 15:00 UTC via Yahoo Finance Oil]: BC-Crude Oil Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Light Sweet Crude (NYMX)1,000 bbl. | Routine daily NYMEX/COMEX settlement figures and opening interest reports for Crude Oil, Heating Oil, Gold, and Silver [Yahoo Finance Oil/Gold].",
+            "Facts": "[Update 2026-11-12 15:00 UTC via Yahoo Finance Gold]: BC-Gold Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Thursday, November 12.Contract Open High Low Last Change Today's Volume Wednesday's Volume  Nov 26 3972. | [Update 2026-11-12 15:00 UTC via Yahoo Finance Oil]: BC-Crude Oil Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Thursday, November 12.Light Sweet Crude (NYMX)1,000 bbl. | [Update 2026-11-11 20:00 UTC via Yahoo Finance Oil]: BC-OILS — NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Wednesday:Open High Low Settle Chg.'s open int 1,929,570 down 12,782  HEATING OIL  42,000 gal, cents per gal  De | [Update 2026-11-11 20:00 UTC via Yahoo Finance Gold]: BC-Gold-Silver — NEW YORK (AP) — Futures trading on the NY Merc Wednesday:Open High Low Settle Chg.'s open int 399,545 up 163  SILVER  5,000 troy oz. | [Update 2026-11-11 15:00 UTC via Yahoo Finance Gold]: BC-Gold Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Contract Open High Low Last Change Today's Volume Tuesday's Volume  Nov 26 4048. | [Update 2026-11-11 15:00 UTC via Yahoo Finance Oil]: BC-Crude Oil Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Light Sweet Crude (NYMX)1,000 bbl. | Routine daily NYMEX/COMEX settlement figures and opening interest reports for Crude Oil, Heating Oil, Gold, and Silver [Yahoo Finance Oil/Gold].",
             "Uncertainties": "Standard exchange clearing data without unexpected shock elements.",
             "Macro_Context": "Brent Crude is down (-6.38%), reflecting lower energy input costs, while precious metals consolidate near multi-week highs.",
             "Bull_Case": "Steady open interest in COMEX gold futures supports underlying structural liquidity.",
@@ -707,7 +854,71 @@
             "Orderflow_Price_Target": "4049.40"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 2.58
+        "max_dd_usd": 8.64
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 15:00 UTC",
+        "original_date": "2026-11-12 15:00",
+        "_timestamp": 1794495600.0,
+        "articles": [
+            {
+                "title": "SuperX (NASDAQ: SUPX) to Make U.S. Exhibition Debut at SC26, Showcasing Full-Stack AI Infrastructure Solutions",
+                "link": "https://finance.yahoo.com/technology/ai/articles/superx-nasdaq-supx-u-exhibition-150000139.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:00",
+                "description": "SuperX AI Technology Limited (NASDAQ: SUPX) (\"SuperX\" or the \"Company\"), a full-stack AI infrastructure solutions provider, today announced its participation in SC26, the International Conference for High Performance Computing, Networking, Storage, and Analysis, taking place November 17–19, 2026, in Chicago. Making its U.S. exhibition debut, SuperX will showcase its full-stack AI infrastructure solutions built around the NVIDIA accelerated comput",
+                "_timestamp": 1794495600.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "First reported: 2026-11-12 15:00 UTC (~0.3h ago)",
+            "Facts": "[Yahoo Finance Nasdaq] SuperX (NASDAQ: SUPX) to Make U.S. Exhibition Debut at SC26, Showcasing Full-Stack AI Infrastructure Solutions - SuperX AI Technology Limited (NASDAQ: SUPX) (\"SuperX\" or the \"Company\"), a full-stack AI infrastructure solutions provider, tod",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.27%, Nasdaq-100 -0.97%, Brent Oil +0.62% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3863.3 (Spread: $-6.74) | Aggressive Taker Flow: 46.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.44.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 1.06x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.3h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-89.20 (1.06x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 14:58 UTC",
+        "original_date": "2026-11-12 14:58",
+        "_timestamp": 1794495529.0,
+        "articles": [
+            {
+                "title": "Alibaba Sinks 7% as U.S. Readies Curbs on China’s Remote AI Chip Access",
+                "link": "https://www.tikr.com/blog/alibaba-sinks-7-as-u-s-readies-curbs-on-chinas-remote-ai-chip-access?ref=yahoofinance&tlnk=yf-261112-47jx7jjh&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:58",
+                "description": "Key TakeawaysAlibaba fell 7% after a report that the U. S.",
+                "_timestamp": 1794495529.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "First reported: 2026-11-12 14:58 UTC (~0.3h ago)",
+            "Facts": "[Yahoo Finance Nasdaq] Alibaba Sinks 7% as U.S. Readies Curbs on China’s Remote AI Chip Access - Key TakeawaysAlibaba fell 7% after a report that the U. S.",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.27%, Nasdaq-100 -0.97%, Brent Oil +0.62% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3863.3 (Spread: $-6.74) | Aggressive Taker Flow: 46.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.44.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 1.06x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.3h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-89.20 (1.06x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "First Reported: 2026-11-12 14:57 UTC",
@@ -1846,7 +2057,7 @@
             "Orderflow_Price_Target": "4049.44"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 10.63
+        "max_dd_usd": 16.69
     },
     {
         "main_date": "First Reported: 2026-11-12 14:38 UTC",
@@ -1881,7 +2092,7 @@
             "Orderflow_Price_Target": "4049.39"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 38.29
+        "max_dd_usd": 44.35
     },
     {
         "main_date": "First Reported: 2026-11-12 14:35 UTC",
@@ -2992,7 +3203,7 @@
             "Orderflow_Price_Target": "4049.39"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 38.29
+        "max_dd_usd": 44.35
     },
     {
         "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-12 14:29 UTC",
@@ -3908,7 +4119,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-05 18:11 UTC | Last Update: 2026-11-12 14:20 UTC",
@@ -4273,7 +4484,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 38.29
+        "max_dd_usd": 44.35
     },
     {
         "main_date": "First Reported: 2026-11-12 14:19 UTC",
@@ -4511,7 +4722,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 38.29
+        "max_dd_usd": 44.35
     },
     {
         "main_date": "First Reported: 2026-11-12 14:10 UTC",
@@ -4545,7 +4756,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 38.29
+        "max_dd_usd": 44.35
     },
     {
         "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-12 14:08 UTC",
@@ -6024,7 +6235,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 44.27
+        "max_dd_usd": 50.33
     },
     {
         "main_date": "First Reported: 2026-11-12 13:30 UTC",
@@ -6059,7 +6270,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 44.27
+        "max_dd_usd": 50.33
     },
     {
         "main_date": "First Reported: 2026-11-12 13:30 UTC",
@@ -6696,7 +6907,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 44.27
+        "max_dd_usd": 50.33
     },
     {
         "main_date": "First Reported: 2026-11-12 13:17 UTC",
@@ -6826,7 +7037,7 @@
             "Orderflow_Price_Target": "3989.80"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 56.48
+        "max_dd_usd": 62.54
     },
     {
         "main_date": "First Reported: 2026-11-12 13:05 UTC",
@@ -7108,7 +7319,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-07 11:56 UTC | Last Update: 2026-11-12 12:50 UTC",
@@ -7558,7 +7769,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-11 07:26 UTC | Last Update: 2026-11-12 12:39 UTC",
@@ -7812,7 +8023,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -7878,7 +8089,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -7976,7 +8187,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-11 17:35 UTC | Last Update: 2026-11-12 12:29 UTC",
@@ -9184,7 +9395,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-11 02:30 UTC | Last Update: 2026-11-12 12:10 UTC",
@@ -9269,7 +9480,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-12 12:01 UTC",
@@ -9303,7 +9514,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-12 06:25 UTC | Last Update: 2026-11-12 12:01 UTC",
@@ -9411,7 +9622,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-12 07:00 UTC | Last Update: 2026-11-12 12:00 UTC",
@@ -9501,7 +9712,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.78
+        "max_dd_usd": 82.84
     },
     {
         "main_date": "First Reported: 2026-11-12 08:34 UTC | Last Update: 2026-11-12 11:59 UTC",
@@ -10468,7 +10679,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 84.33
+        "max_dd_usd": 90.39
     },
     {
         "main_date": "First Reported: 2026-11-12 11:45 UTC",
@@ -10568,7 +10779,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 84.33
+        "max_dd_usd": 90.39
     },
     {
         "main_date": "First Reported: 2026-11-12 11:33 UTC",
@@ -10668,7 +10879,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 84.33
+        "max_dd_usd": 90.39
     },
     {
         "main_date": "First Reported: 2026-11-10 23:46 UTC | Last Update: 2026-11-12 11:32 UTC",
@@ -10753,7 +10964,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 84.33
+        "max_dd_usd": 90.39
     },
     {
         "main_date": "First Reported: 2026-11-12 11:03 UTC",
@@ -10947,7 +11158,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 93.92
+        "max_dd_usd": 99.98
     },
     {
         "main_date": "First Reported: 2026-11-12 10:17 UTC",
@@ -10981,7 +11192,7 @@
             "Orderflow_Price_Target": "3989.79"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 90.66
+        "max_dd_usd": 96.72
     },
     {
         "main_date": "First Reported: 2026-11-12 08:21 UTC | Last Update: 2026-11-12 10:14 UTC",
@@ -11589,7 +11800,7 @@
             "Orderflow_Price_Target": "3989.85"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 83.92
+        "max_dd_usd": 89.98
     },
     {
         "main_date": "First Reported: 2026-11-12 09:10 UTC",
@@ -11624,7 +11835,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 82.74
+        "max_dd_usd": 88.8
     },
     {
         "main_date": "First Reported: 2026-11-11 22:50 UTC | Last Update: 2026-11-12 09:08 UTC",
@@ -11702,7 +11913,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 82.74
+        "max_dd_usd": 88.8
     },
     {
         "main_date": "First Reported: 2026-11-10 10:21 UTC | Last Update: 2026-11-12 09:01 UTC",
@@ -11869,7 +12080,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 68.8
+        "max_dd_usd": 74.86
     },
     {
         "main_date": "First Reported: 2026-11-12 08:35 UTC",
@@ -11904,7 +12115,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 68.8
+        "max_dd_usd": 74.86
     },
     {
         "main_date": "First Reported: 2026-11-09 19:00 UTC | Last Update: 2026-11-12 08:30 UTC",
@@ -12166,7 +12377,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 68.8
+        "max_dd_usd": 74.86
     },
     {
         "main_date": "First Reported: 2026-11-12 08:20 UTC",
@@ -12201,7 +12412,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 68.8
+        "max_dd_usd": 74.86
     },
     {
         "main_date": "First Reported: 2026-11-12 08:02 UTC",
@@ -12236,66 +12447,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 68.8
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 18:07 UTC | Last Update: 2026-11-12 08:01 UTC",
-        "original_date": "2026-11-10 18:07",
-        "_timestamp": 1794470489.0,
-        "articles": [
-            {
-                "title": "Spain braces for nationwide strike as anger over housing, costs boils over",
-                "link": "https://www.aljazeera.com/news/2026/11/10/spain-braces-for-nationwide-walkout-as-anger-over-housing-costs-boils-over?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-10 18:07",
-                "description": "The 24-hour walkout, called by Spain’s two biggest unions, is due to start on Wednesday.",
-                "_timestamp": 1794334043.0
-            },
-            {
-                "title": "Spain’s first general strike in 14 years begins",
-                "link": "https://www.aljazeera.com/news/2026/11/11/spains-first-general-strike-in-14-years-begins?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-11 10:18",
-                "description": "Strike disrupts public transport and industries amid demands for housing reform ahead of November 29 elections.",
-                "_timestamp": 1794392308.0
-            },
-            {
-                "title": "‘It’s just too expensive’: Housing and wages at the heart of Spain’s strike",
-                "link": "https://www.aljazeera.com/news/2026/11/11/its-just-too-expensive-housing-and-wages-at-the-heart-of-spains-strike?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-11 16:20",
-                "description": "Mass walkout across several cities marks first general strike in 14 years.",
-                "_timestamp": 1794414013.0
-            },
-            {
-                "title": "Photos: Protesters clash with police after housing cost rallies in Spain",
-                "link": "https://www.aljazeera.com/gallery/2026/11/12/photos-protesters-clash-with-police-after-housing-cost-rallies-in-spain?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-12 08:01",
-                "description": "Anger over housing affordability and purchasing power leads to clashes amid Spain&#039;s first general strike in 14 years.",
-                "_timestamp": 1794470489.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-12 08:01 UTC (1.0 hours ago relative to 2026-11-12 09:04 UTC)",
-            "Facts": "[Update 2026-11-12 08:01 UTC via Al Jazeera English]: Protesters clashed with police after housing cost rallies in Spain amid the country's first general strike in 14 years, which has severely disrupted public transport and industries. | Core Background: Nationwide walkout called by Spain's top unions over housing affordability, purchasing power, and inflation pressures.",
-            "Uncertainties": "Whether social unrest and general strikes will spread to other Eurozone economies, impacting broader industrial output.",
-            "Macro_Context": "EUR/USD down 0.42%; localized European labor unrest highlights cost-of-living crises, boosting inflationary hedging demand.",
-            "Bull_Case": "Labor disruptions and social unrest elevate inflation expectations and risk premiums, supporting safe-haven gold allocations.",
-            "Bear_Case": "Localized European strikes have limited direct transmission to global monetary policy or precious metals spot pricing.",
-            "Historical_Calibration": "Commodities & Energy, Fresh (<0.8x ATR), Against USD Headwind: Historical Win Rate is 63.9% (46/72, Avg DD: -$27.1).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 64,
-            "Past_Price_Action_Cause": "OANDA lower-wick rejection indicates passive buyers stepping in to absorb sell pressure during European session openings.",
-            "Orderflow_Price_Target": "3989.9"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 7.56
+        "max_dd_usd": 74.86
     },
     {
         "main_date": "First Reported: 2026-11-12 07:49 UTC",

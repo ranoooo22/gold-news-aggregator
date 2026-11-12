@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 562,
-    "hits": 364,
+    "total_evaluated": 568,
+    "hits": 370,
     "misses": 198,
-    "win_rate": 64.8,
-    "active_signals": 89,
+    "win_rate": 65.1,
+    "active_signals": 87,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 298,
+                "hits": 304,
                 "misses": 166,
-                "total": 464,
-                "win_rate": 64.2,
-                "avg_dd": 25.06
+                "total": 470,
+                "win_rate": 64.7,
+                "avg_dd": 24.87
             },
             "Bearish": {
                 "hits": 66,
@@ -23,18 +23,18 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 339,
+                "hits": 344,
                 "misses": 188,
-                "total": 527,
-                "win_rate": 64.3,
-                "avg_dd": 23.27
+                "total": 532,
+                "win_rate": 64.7,
+                "avg_dd": 23.13
             },
             "Moderate (0.8x-1.2x ATR)": {
-                "hits": 25,
+                "hits": 26,
                 "misses": 10,
-                "total": 35,
-                "win_rate": 71.4,
-                "avg_dd": 33.68
+                "total": 36,
+                "win_rate": 72.2,
+                "avg_dd": 33.25
             },
             "Exhausted (>=1.2x ATR)": {
                 "hits": 0,
@@ -60,71 +60,71 @@
                 "avg_dd": 15.82
             },
             "Against USD Headwind": {
-                "hits": 136,
+                "hits": 141,
                 "misses": 39,
-                "total": 175,
-                "win_rate": 77.7,
-                "avg_dd": 26.75
+                "total": 180,
+                "win_rate": 78.3,
+                "avg_dd": 26.19
             },
             "USD Neutral / Legacy": {
-                "hits": 212,
+                "hits": 213,
                 "misses": 159,
-                "total": 371,
-                "win_rate": 57.1,
-                "avg_dd": 22.76
+                "total": 372,
+                "win_rate": 57.3,
+                "avg_dd": 22.86
             }
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 186,
+                "hits": 187,
                 "misses": 122,
-                "total": 308,
-                "win_rate": 60.4,
-                "avg_dd": 26.36
+                "total": 309,
+                "win_rate": 60.5,
+                "avg_dd": 26.45
             },
             "Fed, Rates & Macro": {
-                "hits": 22,
+                "hits": 23,
                 "misses": 7,
-                "total": 29,
-                "win_rate": 75.9,
-                "avg_dd": 14.61
+                "total": 30,
+                "win_rate": 76.7,
+                "avg_dd": 14.16
             },
             "Tech, AI & Equities": {
-                "hits": 99,
+                "hits": 100,
                 "misses": 38,
-                "total": 137,
-                "win_rate": 72.3,
-                "avg_dd": 16.35
+                "total": 138,
+                "win_rate": 72.5,
+                "avg_dd": 16.23
             },
             "Commodities & Energy": {
-                "hits": 57,
+                "hits": 60,
                 "misses": 31,
-                "total": 88,
-                "win_rate": 64.8,
-                "avg_dd": 31.4
+                "total": 91,
+                "win_rate": 65.9,
+                "avg_dd": 30.41
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 356,
+                "hits": 359,
                 "misses": 190,
-                "total": 546,
-                "win_rate": 65.2,
-                "avg_dd": 23.59
+                "total": 549,
+                "win_rate": 65.4,
+                "avg_dd": 23.55
             },
             "High (65-74%)": {
-                "hits": 8,
+                "hits": 10,
                 "misses": 7,
-                "total": 15,
-                "win_rate": 53.3,
-                "avg_dd": 44.16
+                "total": 17,
+                "win_rate": 58.8,
+                "avg_dd": 39.41
             },
             "Extreme (>=75%)": {
-                "hits": 0,
+                "hits": 1,
                 "misses": 1,
-                "total": 1,
-                "win_rate": 0.0,
-                "avg_dd": 6.41
+                "total": 2,
+                "win_rate": 50.0,
+                "avg_dd": 5.11
             }
         }
     },
@@ -9807,14 +9807,14 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/12/police-say-at-least-five-people-shot-at-busy-thoroughfare-in-washington-dc?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Police say at least five people shot at busy thoroughfare in Washington, DC",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 62,
             "entry_price": 3898.32,
-            "target": 3950.56,
+            "target": 3890.6,
             "max_dd_usd": 45.74,
             "atr_ratio_at_signal": 0.69,
             "daily_atr_at_signal": 80.34,
@@ -9902,14 +9902,14 @@
             "fail_reason": ""
         },
         "https://www.proactiveinvestors.com/companies/news/1101685/renforth-resources-completes-new-channel-sampling-at-parbec-gold-deposit-1101685.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Renforth Resources completes new channel sampling at Parbec gold deposit",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 65,
             "entry_price": 3870.66,
-            "target": 4049.44,
+            "target": 3890.6,
             "max_dd_usd": 18.08,
             "atr_ratio_at_signal": 0.98,
             "daily_atr_at_signal": 84.9,
@@ -11350,6 +11350,78 @@
             "nas_chg_at_signal": -0.08,
             "created_ts": 1794495442.0,
             "date": "First Reported: 2026-11-12 14:57 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/articles/tech-giant-foxconn-beats-forecasts-065700078.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Tech giant Foxconn beats forecasts with third-quarter profit jump",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3870.05,
+            "target": 3899.59,
+            "max_dd_usd": 3.81,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.37,
+            "nas_chg_at_signal": 0.84,
+            "created_ts": 1794494910.0,
+            "date": "First Reported: 2026-11-12 07:43 UTC | Last Update: 2026-11-12 14:48 UTC",
+            "fail_reason": ""
+        },
+        "https://www.wsj.com/economy/central-banking/treasury-yields-rise-as-fed-rate-hike-expectations-remain-strong-401fed89?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Treasury Selloff Accelerates, European Bonds Follow Suit",
+            "source": "Yahoo Finance Oil",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bullish",
+            "prob": 75,
+            "entry_price": 3870.05,
+            "target": 3899.59,
+            "max_dd_usd": 3.81,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.37,
+            "nas_chg_at_signal": 0.84,
+            "created_ts": 1794494100.0,
+            "date": "First Reported: 2026-11-12 14:35 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/insws-record-q3-strong-q4-142500769.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Can INSW's Record Q3 and Strong Q4 Bookings Sustain Cash Returns?",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 64,
+            "entry_price": 3870.05,
+            "target": 3880.01,
+            "max_dd_usd": 3.81,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.37,
+            "nas_chg_at_signal": 0.84,
+            "created_ts": 1794493500.0,
+            "date": "First Reported: 2026-11-12 14:25 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/diesel-101-why-truck-stop-142400953.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Diesel 101: Why Truck Stop Diesel Is Still Above $6 a Gallon as Crude Falls",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 63,
+            "entry_price": 3870.05,
+            "target": 3880.01,
+            "max_dd_usd": 3.81,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.37,
+            "nas_chg_at_signal": 0.84,
+            "created_ts": 1794493440.0,
+            "date": "First Reported: 2026-11-12 14:24 UTC",
             "fail_reason": ""
         }
     }

@@ -1,8 +1,8 @@
 [
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-12 14:38 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-12 14:46 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794494326.0,
+        "_timestamp": 1794494798.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -123,14 +123,46 @@
                 "date": "2026-11-12 14:38",
                 "description": "Nvidia CEO Jensen Huang has faced increased scrutiny since revealing an affair. Follow live updates on the investigation, NVDA stock and succession plans.",
                 "_timestamp": 1794494326.0
+            },
+            {
+                "title": "The unfolding Jensen Huang scandal: a timeline",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-ceo-jensen-huang-affair-170419585.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:30",
+                "description": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+                "_timestamp": 1794493801.0
+            },
+            {
+                "title": "Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation.",
+                "link": "https://www.ibtimes.com/nvidia-colette-kress-interim-ceo-jensen-huang-resignation-3809677?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:40",
+                "description": "Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor.",
+                "_timestamp": 1794494412.0
+            },
+            {
+                "title": "Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide",
+                "link": "https://247wallst.com/investing/2026/11/12/colette-kress-joined-nvidia-in-2013-when-it-made-4-billion-a-year-she-now-runs-a-company-that-made-216-billion-and-her-first-job-is-stopping-the-slide/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:43",
+                "description": "Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42 AM ET, 13.3% below its November 6 close.",
+                "_timestamp": 1794494633.0
+            },
+            {
+                "title": "Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary?",
+                "link": "https://finance.yahoo.com/video/jensen-huang-vs-steve-jobs-can-nvidia-also-thrive-without-its-visionary-144638496.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:46",
+                "description": "Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief market strategist Liz Thomas and Moor Insights & Strategy founder Patrick Moorhead at Yahoo Finance's 2026 Invest conference to discuss the parallels between Steve Jobs for Apple (AAPL) and Huang for Nvidia.",
+                "_timestamp": 1794494798.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
             "Event_Timestamp": "2026-11-12 14:38 UTC (~0 hours ago relative to reference time)",
-            "Facts": "[Update 2026-11-12 14:38 UTC via CNBC Tech & AI]: Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief — Nvidia CEO Jensen Huang has faced increased scrutiny following affair revelations and investigations | Core Background: D.A. Davidson's Gil Luria previously warned investors against CoreWeave after Nvidia's board opened probes into Jensen Huang, which quickly culminated in his resignation as president, CEO, and board member, with CFO Colette Kress stepping in as interim chief.",
+            "Facts": "[Update 2026-11-12 14:46 UTC via Yahoo Finance Nasdaq]: Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary? — Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief marke | [Update 2026-11-12 14:43 UTC via Yahoo Finance Nasdaq]: Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide — Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42  | [Update 2026-11-12 14:40 UTC via Yahoo Finance Nasdaq]: Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation. — Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor. | [Update 2026-11-12 14:30 UTC via Yahoo Finance Nasdaq]: The unfolding Jensen Huang scandal: a timeline — Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastru | [Update 2026-11-12 14:38 UTC via CNBC Tech & AI]: Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief — Nvidia CEO Jensen Huang has faced increased scrutiny following affair revelations and investigations | Core Background: D.A. Davidson's Gil Luria previously warned investors against CoreWeave after Nvidia's board opened probes into Jensen Huang, which quickly culminated in his resignation as president, CEO, and board member, with CFO Colette Kress stepping in as interim chief.",
             "Uncertainties": "The full fallout on multi-billion dollar backstops, partner dependencies like CoreWeave, and the direction of US-China relations under interim leadership remain highly uncertain.",
             "Macro_Context": "Nasdaq 100 is higher (+0.18%), but the massive tech governance shock creates severe equity volatility that impacts broader risk sentiment. XAU/USD faces intraday pressure alongside aggressive taker selling at highs.",
             "Bull_Case": "Uncertainty surrounding Nvidia's executive leadership and potential delays in AI infrastructure expansion could trigger a broader risk-off flight to safety, boosting safe-haven gold demand.",
@@ -145,6 +177,500 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
+    },
+    {
+        "main_date": "First Reported: 2026-11-05 18:59 UTC | Last Update: 2026-11-12 14:45 UTC",
+        "original_date": "2026-11-05 18:59",
+        "_timestamp": 1794494746.0,
+        "articles": [
+            {
+                "title": "As Nvidia’s stock heads for a bear market, bargain hunters see a golden buying opportunity",
+                "link": "https://www.marketwatch.com/story/as-nvidias-stock-heads-for-a-bear-market-bargain-hunters-see-a-golden-buying-opportunity-1a5917e6?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-05 18:59",
+                "description": "Portfolio managers say chip demand should be resilient even in a period of political uncertainty.",
+                "_timestamp": 1793905140.0
+            },
+            {
+                "title": "Historically Bullish Signal Emerges for Nvidia Stock",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/historically-bullish-signal-emerges-nvidia-193737196.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:37",
+                "description": "History says you should \"buy the dip\" on NVDA",
+                "_timestamp": 1793907457.0
+            },
+            {
+                "title": "Is Nvidia Still a Millionaire-Maker Stock?",
+                "link": "https://www.fool.com/investing/2026/11/05/is-nvidia-still-a-millionaire-maker-stock/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 21:11",
+                "description": "Nvidia looks like it can keep beating the S&amp;P 500, but if you're looking for it to deliver another 10x return (or more) like it has in the past, you may want to dial back your expectations.",
+                "_timestamp": 1793913060.0
+            },
+            {
+                "title": "Nvidia Stock Is Down Nearly 24% Ahead of Earnings: Is It a Buy?",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62956559/nvidia-stock-selloff?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 22:00",
+                "description": "Nvidia Corp. (NASDAQ:NVDA) plunged more than 8% Thursday, extending its decline since Oct. 6 to nearly 24% and wiping approximately $1.4 trillion off its market value just 12 days before earnings. The latest selloff comes as Democrats’ midterm election victories...",
+                "_timestamp": 1793916008.0
+            },
+            {
+                "title": "GE Vernova Has Something Nvidia Needs Under a Democratic Congress",
+                "link": "https://247wallst.com/investing/2026/11/06/ge-vernova-has-something-nvidia-needs-under-a-democratic-congress/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:45",
+                "description": "Industrial stocks are sliding on fears of a Democratic sweep, yet one power equipment maker keeps stacking orders while its stock gets cheaper. This investor sees the selloff as a buying window, and the reasons go beyond politics.",
+                "_timestamp": 1793987126.0
+            },
+            {
+                "title": "Jim Cramer sends a strong signal to Nvidia stock investors",
+                "link": "https://www.thestreet.com/investing/stocks/jim-cramer-sends-a-strong-signal-to-nvidia-stock-investors?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 17:17",
+                "description": "Jim Cramer has a take on Nvidia’s steep drop that not everyone on Wall Street is ready to hear.",
+                "_timestamp": 1794071820.0
+            },
+            {
+                "title": "Ben Thompson: NVIDIA Will “Almost Certainly Be a Short-Term Loser” From the Blue Wave",
+                "link": "https://www.tikr.com/blog/ben-thompson-nvidia-will-almost-certainly-be-a-short-term-loser-from-the-blue-wave?ref=yahoofinance&tlnk=yf-261108-5q4fjcqc&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 14:21",
+                "description": "Key TakeawaysNVIDIA fell about 12% on Wednesday and Thursday while Amazon and Microsoft rallied, after Democrats won control of Congress and Yorkville Ives’ Dan Ives estimated that 10% of planned U. S.",
+                "_timestamp": 1794147664.0
+            },
+            {
+                "title": "Why Nvidia Stock Looks Like a Bargain Right Now",
+                "link": "https://www.fool.com/investing/2026/11/08/why-nvidia-stock-looks-like-a-bargain-right-now/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 17:10",
+                "description": "Nvidia's shares have stalled, while its business hasn't. Here's the case for buying the dip.",
+                "_timestamp": 1794157800.0
+            },
+            {
+                "title": "Nvidia (NVDA) Stock May Be A Bargain Following Data Center Regulation Fears",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-stock-may-bargain-060738189.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 06:07",
+                "description": "NVIDIA has just come through a sharp pullback, with the stock down over the past month and year after a very large multiyear rise. This leaves a straightforward question for you as an investor: Are today’s cash flows, and the ones buyers expect over time, enough to support the current share price after this reset? Over the past 5 years, NVIDIA has returned roughly 5x. This means a lot of future cash generation is already embedded in expectations ",
+                "_timestamp": 1794204458.0
+            },
+            {
+                "title": "Nvidia CEO Jensen Huang just made his already surprisingly cheap stock that much cheaper",
+                "link": "https://finance.yahoo.com/markets/stocks/article/nvidia-ceo-jensen-huang-just-made-his-already-surprisingly-cheap-stock-that-much-cheaper-095550447.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 09:55",
+                "description": "It's almost stunning to see Nvidia's PE ratio at these levels.",
+                "_timestamp": 1794218150.0
+            },
+            {
+                "title": "Only One Analyst Rates Nvidia a Sell. Is the Lone Bear Onto Something?",
+                "link": "https://247wallst.com/investing/2026/11/09/only-one-analyst-rates-nvidia-a-sell-is-the-lone-bear-onto-something/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 12:27",
+                "description": "Wall Street has almost entirely agreed on Nvidia, yet institutional filers are quietly splitting and a CEO probe is rattling the board. The case against the stock rests on financing exposure, thinning margins, and one number worth watching.",
+                "_timestamp": 1794227244.0
+            },
+            {
+                "title": "Stocks Climb as Buyers Step In Despite Nvidia Woes",
+                "link": "https://finance.yahoo.com/video/stocks-climb-buyers-step-despite-164729067.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 16:47",
+                "description": "A renewed wave of dip buying drove stocks toward their best day since April in the wake of a technology selloff that roiled Wall Street, with the market also gaining as oil prices fell. Lori Calvasina, Head of US Equity Strategy at RBC Capital Markets, discusses bearish sentiment in the markets and compressed equity valuations.",
+                "_timestamp": 1794242849.0
+            },
+            {
+                "title": "Are AMD and Broadcom the real winners of the Nvidia spy scandal?",
+                "link": "https://www.marketwatch.com/story/are-amd-and-broadcom-the-real-winners-of-the-nvidia-spy-scandal-d2343072?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-09 18:33",
+                "description": "The chip makers’ shares were posting big gains Monday — but those companies could also be subject to greater scrutiny over their sales practices, analysts say.",
+                "_timestamp": 1794249180.0
+            },
+            {
+                "title": "Jim Cramer says Nvidia investors need to prepare for a future without Jensen Huang",
+                "link": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-probe-data-centers-cramer.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-09 23:24",
+                "description": "Cramer warned that his long-standing \"own it, don't trade it\" status for Nvidia could be at risk.",
+                "_timestamp": 1794266645.0
+            },
+            {
+                "title": "Nvidia Faces Class Action Suit Over Huang Allegations; Senator Seeks Probe, Analyst Puts CEO Exit Odds At 15%",
+                "link": "https://stocktwits.com/news-articles/markets/equity/nvidia-faces-class-action-suit-over-huang-allegations-senator-seeks-probe-analyst-puts-ceo-exit-odds-at-15/cNGuT97R97g?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 02:44",
+                "description": "Fund managers like Cathie Wood and Dan Niles, however, bought the dip in Nvidia shares, and retail traders maintained a bullish view.",
+                "_timestamp": 1794278688.0
+            },
+            {
+                "title": "Nvidia stock edges higher as investors weigh potential fallout of CEO's affair with alleged spy",
+                "link": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-10 10:02",
+                "description": "Investors continue to weigh the potential fallout from CEO Jensen Huang's affair with an alleged Chinese spy.",
+                "_timestamp": 1794304943.0
+            },
+            {
+                "title": "Here’s what Nvidia investors should be focusing on now. Hint: It’s not Jensen Huang’s affair.",
+                "link": "https://www.marketwatch.com/story/heres-what-nvidia-investors-should-be-focusing-on-now-hint-its-not-jensen-huangs-affair-f443b822?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-10 13:30",
+                "description": "Nvidia’s stock still seems like a good bet — if the AI trade holds up. And that’s a big ‘if.’",
+                "_timestamp": 1794317400.0
+            },
+            {
+                "title": "Nvidia, Alphabet, and Micron Just Agreed to Buy $26 Billion of Stock in One of Their Biggest Customers",
+                "link": "https://www.fool.com/investing/2026/11/10/nvidia-alphabet-and-micron-just-agreed-to-buy-26-billion-of-stock-in-one-of-their-biggest-customers/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:23",
+                "description": "Chip and cloud suppliers are now investors in a customer whose spending plans far outrun its revenue.",
+                "_timestamp": 1794324198.0
+            },
+            {
+                "title": "5-Star Analyst Tweaks Nvidia Stock Price Target for 2027",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/5-star-analyst-tweaks-nvidia-175014106.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 17:50",
+                "description": "Wells Fargo Says Nvidia Probe Is a Worry but Risk Reward Looks Fine at These Levels",
+                "_timestamp": 1794333014.0
+            },
+            {
+                "title": "NVDA Stock Slides To Fresh 7-Month Low Amid CEO Turmoil: Ross Gerber Calls Selloff A Chance To Buy Shares At ‘Absurdly Low Price’",
+                "link": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-slides-to-fresh-7-month-low-amid-ceo-turmoil-ross-gerber-calls-selloff-a-chance-to-buy-shares-at-absurdly-low-price/cNGuAzER9Jg?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 19:23",
+                "description": "Nvidia shares were trading at lows last seen in March, with Microsoft overtaking the chipmaker’s market capitalization briefly for the first time since June 2025.",
+                "_timestamp": 1794338620.0
+            },
+            {
+                "title": "Nvidia Hits 7-Month Lows Amid CEO Scandal, DOJ Probe With Earnings Ahead. Is Nvidia A Sell?",
+                "link": "https://finance.yahoo.com/m/eb810ea9-9aea-372d-8f17-1198d748a265/nvidia-hits-7-month-lows-amid.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 19:23",
+                "description": "Nvidia stock is at lows last seen in March as news of chief executive Jensen Huang's affair takes a toll on the AI leader.",
+                "_timestamp": 1794338597.0
+            },
+            {
+                "title": "AMD’s stock fades as investors weigh whether Nvidia’s turmoil will mean lasting wins",
+                "link": "https://www.marketwatch.com/story/amds-stock-fades-as-investors-weigh-whether-nvidias-turmoil-will-mean-lasting-wins-1ecfbc5e?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-10 19:17",
+                "description": "It’s one thing for money to shift between stocks,  but it’s another thing for customers to shift their supplier relationships.",
+                "_timestamp": 1794338220.0
+            },
+            {
+                "title": "Nvidia’s 70% to 80% Margins Are “Like Throwing Chum in the Water,” Says Its Biographer",
+                "link": "https://www.tikr.com/blog/nvidias-70-to-80-margins-are-like-throwing-chum-in-the-water-says-its-biographer?ref=yahoofinance&tlnk=yf-261110-23ph5h8g&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 19:55",
+                "description": "Key TakeawaysNvidia fell 4% on Monday after its board opened an investigation into CEO Jensen Huang. Nvidia’s 71% gross margin gives its biggest buyers every reason to back cheaper chips, and Anthropic training its AI almost entirely on chips Google designs shows how that can work.",
+                "_timestamp": 1794340526.0
+            },
+            {
+                "title": "Cathie Wood Buys Over 90,000 Shares Of Nvidia After CEO Probe Sends Stock Down",
+                "link": "https://finance.yahoo.com/m/5d104062-e978-3f1f-ab90-66b1a33fa3d0/cathie-wood-buys-over-90%2C000.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 21:01",
+                "description": "Nvidia stock is down about 8% this week after the board opened an investigation into CEO Jensen Huang's affair with an alleged Chinese spy.",
+                "_timestamp": 1794344467.0
+            },
+            {
+                "title": "Why Nvidia Stock Just Fell Again",
+                "link": "https://www.fool.com/investing/2026/11/10/why-nvidia-stock-just-fell-again/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 21:55",
+                "description": "More details are emerging.",
+                "_timestamp": 1794347702.0
+            },
+            {
+                "title": "Michael Burry Sees Nvidia Becoming ‘A Heck Of A Trade’ — Reveals His 2 Biggest Bets And Where He’s Buying More",
+                "link": "https://stocktwits.com/news-articles/markets/equity/michael-burry-nvidia-outlook-stock-picks-2026-meli/cNGD7sxR9Jk?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 02:20",
+                "description": "MercadoLibre and Temple & Webster are his two largest positions, each accounting for over 10% of his portfolio.",
+                "_timestamp": 1794363608.0
+            },
+            {
+                "title": "Nvidia Bloodbath Over by November’s End? Crypto Bettors Weigh NVDA Stock’s Next Move as Jensen Huang Controversy Brews",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63130036/nvidia-price-crypto-bettors-november-end?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 04:26",
+                "description": "NVIDIA Corp. (NASDAQ:NVDA) shares are under selling pressure, and cryptocurrency punters remain skeptical about a rebound by the month’s end. Will NVDA Plunge to $140? The betting crowd on Polygon (CRYPTO: POL)-based Polymarket currently assigns a 90% chance that NVDA...",
+                "_timestamp": 1794371162.0
+            },
+            {
+                "title": "Nvidia Shares Just Crashed Nearly 30% in Five Weeks. Dan Ives Says Losing Jensen Huang Would Cost Up to 30% More. Here’s the Math",
+                "link": "https://247wallst.com/investing/2026/11/10/nvidia-shares-just-crashed-nearly-30-in-five-weeks-dan-ives-says-losing-jensen-huang-would-cost-up-to-30-more-heres-the-math/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 03:41",
+                "description": "Nvidia closed Tuesday at $168.89, nearly 30% below its October 6 record, with about $430 billion of the $1.7 trillion lost coming in the two sessions since Jensen Huang's letter: six times what Enron was worth at its peak. Dan Ives says the stock is worth 25% to 30% less if Huang goes. Here is that math, Nvidia's own numbers on China, the path to $100, and what it means for a retired couple with 1,000 shares, including the tax to get out.",
+                "_timestamp": 1794368473.0
+            },
+            {
+                "title": "AI Is “Hanging On by a Leather Jacket”: What Nvidia Without Jensen Would Be Worth",
+                "link": "https://www.tikr.com/blog/ai-is-hanging-on-by-a-leather-jacket-what-nvidia-without-jensen-would-be-worth?ref=yahoofinance&tlnk=yf-261111-c34qqq8p&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 06:46",
+                "description": "Key TakeawaysNVIDIA shares fell 4% on Monday after its board opened an independent investigation into reports that CEO Jensen Huang was the target of a foreign intelligence effort. Dan Ives and Gene Munster think the stock would be 20% to 30% lower without Huang, but put the odds he leaves at 10% to 15%.",
+                "_timestamp": 1794379577.0
+            },
+            {
+                "title": "Is Nvidia Stock a Buy on the Spy Allegation Sell-Off?",
+                "link": "https://www.fool.com/investing/2026/11/11/is-nvidia-stock-a-buy-on-the-spy-allegation-sell-off/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 08:03",
+                "description": "The chipmaker's shares sank after revelations that its CEO had been having a relationship with someone who's now accused of being a Chinese spy.",
+                "_timestamp": 1794384182.0
+            },
+            {
+                "title": "NVDA Stock Set For Best Day In Over 2 Months – Baird Downgrades Shares, Flags Slower AI Spending, Jensen Huang Risk",
+                "link": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-set-for-best-day-in-over-2-months-baird-downgrades-shares-flags-slower-ai-spending-jensen-huang-risk/cNGDYR8R9Bm?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 13:06",
+                "description": "Morgan Stanley removed Nvidia from its semiconductor ‘Top Pick’ list but maintained its ‘Overweight’ rating and $300 price target.",
+                "_timestamp": 1794402377.0
+            },
+            {
+                "title": "Prediction: After Losing Over $1.7 Trillion in Market Cap This Year, Nvidia Stock Will Rebound in Epic Fashion. Here's Why.",
+                "link": "https://www.fool.com/investing/2026/11/11/prediction-after-losing-over-usd1-7-trillion-in-market-cap-this-year-nvidia-stock-will-rebound-in-epic-fashion-here-s-why/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 15:50",
+                "description": "Nvidia stock has crashed 27% over the last month.",
+                "_timestamp": 1794412202.0
+            },
+            {
+                "title": "Wall Street is cooling on Jensen Huang's Nvidia — but history says don't give up on the stock just yet",
+                "link": "https://finance.yahoo.com/technology/article/wall-street-is-cooling-on-jensen-huangs-nvidia--but-history-says-dont-give-up-on-the-stock-just-yet-155345795.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 15:53",
+                "description": "Morgan Stanley and Bank of America pulled Nvidia from their best-ideas lists, but nearly all analysts still rate the stock a Buy.",
+                "_timestamp": 1794412425.0
+            },
+            {
+                "title": "When It Comes To Options, Don't Give Up On Nvidia Stock Just Yet",
+                "link": "https://finance.yahoo.com/m/fdf3ece9-e440-31c4-9f3f-da4ea6c289a5/when-it-comes-to-options%2C.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 16:57",
+                "description": "Despite price target cuts following its spy scandal, investors might want to buy at a lower price than where it trades now.",
+                "_timestamp": 1794416266.0
+            },
+            {
+                "title": "NVIDIA Stocks Rise Despite Baird Downgrade as $10 Billion Anthropic Bet Emerges",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-rise-despite-baird-170912416.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 17:09",
+                "description": "Baird slashes its target to $200, yet NVIDIA commits $10 billion to Anthropic's IPO placement six days before earnings.",
+                "_timestamp": 1794416952.0
+            },
+            {
+                "title": "Has Nvidia flown too close to the sun? One analyst warns of major scrutiny ahead.",
+                "link": "https://www.marketwatch.com/story/has-nvidia-flown-too-close-to-the-sun-one-analyst-warns-of-major-scrutiny-ahead-a323c4dd?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-11 17:13",
+                "description": "A Baird analyst no longer recommends buying the chip maker’s stock as its problems mount.",
+                "_timestamp": 1794417180.0
+            },
+            {
+                "title": "Don’t buy Nvidia yet: 4 stocks to buy instead",
+                "link": "https://www.thestreet.com/video/dont-buy-nvidia-yet-4-stock-to-buy-instead?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 20:45",
+                "description": "Nvidia may be 30% off its highs and trading below $170, but rushing in to buy the dip could land you right in a value trap. Hudson Value Partners’ Christopher Davis breaks down why you should hold your fire on Nvidia—and reveals the 4 resilient stocks retail investors should buy aggressively ...",
+                "_timestamp": 1794429912.0
+            },
+            {
+                "title": "Why Nvidia Stock Was Downgraded to Hold by a Top Analyst and Price Target Halved to $200",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/why-nvidia-stock-downgraded-hold-211754136.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 21:17",
+                "description": "Nvidia (NVDA) received a rare downgrade from Robert W. Baird analyst Tristan Gerra, who raised concerns about the chipmaker’s data center growth outlook. The five-star analyst cut his rating on Nvidia to Hold from Buy and slashed his price target to $200 from $500. Gerra sees less visibility into Nvidia’s data center demand for 2027. He also lowered his estimates for 2028 and later years. Supply issues remain the main concern, though signs of sof",
+                "_timestamp": 1794431874.0
+            },
+            {
+                "title": "Nvidia’s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
+                "link": "https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-11 22:47",
+                "description": "Nvidia’s board of directors could reportedly meet as soon as today to determine the CEO’s fate.",
+                "_timestamp": 1794437220.0
+            },
+            {
+                "title": "Nvidia faces governance risks; watch these 2 chip stocks for buy opportunities",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-faces-governance-risks-watch-061429709.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 06:14",
+                "description": "Investing.com-- NVIDIA (NVDA) fell 7.8% in after hours trade on Wednesday following a report that the board is preparing to oust CEO Jensen Huang. Read more",
+                "_timestamp": 1794464069.0
+            },
+            {
+                "title": "Michael Burry Says Nvidia Earnings Will Be 'Great' — So Why Is He Telling NVDA Bulls To 'Get Out'?",
+                "link": "https://stocktwits.com/news-articles/markets/equity/michael-burry-nvidia-earnings-great-why-nvda-bulls-get-out/cNGznw4R99A?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 07:17",
+                "description": "Burry says customers could renegotiate deals or switch suppliers, slowing Nvidia’s growth and squeezing margins.",
+                "_timestamp": 1794467867.0
+            },
+            {
+                "title": "How the Nvidia selloff hits your 401(k)",
+                "link": "https://www.cnn.com/2026/11/12/business/video/nvidia-scandal-impacts-retirement-funds-kristie-lu-stout-hnk-digvid?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 08:10",
+                "description": "CNN’s Kristie Lu Stout explains how you could be influenced by the Nvidia scandal, as the company is one of the largest stocks in the S&amp;P 500 and at the center of the AI ecosystem.",
+                "_timestamp": 1794471041.0
+            },
+            {
+                "title": "NVDA Stock On Track To Hit Lowest Level In Over A Year: Dan Ives Values Nvidia At $225 Without Jensen Huang",
+                "link": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-hit-lowest-level-in-a-year-dan-ives-values-nvidia-at-225-without-jensen-huang/cNGzMuWR9aO?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 11:38",
+                "description": "Dan Ives said he expects Huang to be removed and estimated Nvidia shares could be worth $225 without him, compared with $300 if he remains CEO.",
+                "_timestamp": 1794483538.0
+            },
+            {
+                "title": "Nvidia CEO Exit Reports Sends Shockwaves Through AI Chip Stocks --  AMD and Broadcom Stocks Jump",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-ceo-exit-reports-sends-115114044.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 11:51",
+                "description": "Nvidia's Leadership Drama Opens Door for AMD, Broadcom and Google's AI Chips",
+                "_timestamp": 1794484274.0
+            },
+            {
+                "title": "WSJ Says Nvidia Is Preparing to Oust Jensen Huang Over Alleged Affairs; Here’s How Much 2,000 Shares Have Lost Over the Last Month",
+                "link": "https://247wallst.com/investing/2026/11/12/wsj-says-nvidia-is-preparing-to-oust-jensen-huang-over-alleged-affairs-heres-how-much-2000-shares-have-lost-over-the-last-month/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 12:47",
+                "description": "A boardroom meeting, an unconfirmed report, and a stock already sliding for weeks. Nvidia's next move on its founder could reveal whether investors fear a governance scandal or something deeper about the business itself.",
+                "_timestamp": 1794487620.0
+            },
+            {
+                "title": "Nvidia stock tumbles amid CEO scandal, dragging down other AI names",
+                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-but-rivals-amd-broadcom-rise-133910081.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:39",
+                "description": "Chip giants Broadcom and AMD rose on the back of Nvidia's recent woes. Other AI trade-related names didn't fare as well.",
+                "_timestamp": 1794490750.0
+            },
+            {
+                "title": "Why Nvidia Is Still A Buy Even Without Jensen Huang: Dan Niles",
+                "link": "https://www.coinage.media/2026/why-nvidia-is-still-a-buy-even-without-jensen-huang-dan-niles?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:30",
+                "description": "Nvidia could still continue on without Jensen Huang and thrive, says Dan Niles",
+                "_timestamp": 1794490200.0
+            },
+            {
+                "title": "AMD Shares Jump on Stunning Upgrade Amid Nvidia Turmoil",
+                "link": "https://finance.yahoo.com/technology/ai/articles/amd-shares-jump-stunning-upgrade-140414998.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:04",
+                "description": "AMD Stock Gets a Bullish Boost as Wall Street Reassesses Nvidia's Future",
+                "_timestamp": 1794492254.0
+            },
+            {
+                "title": "Jim Cramer Is Bullish on These 5 Stocks Amid Nvidia Controversy",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-bullish-5-stocks-144546369.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:45",
+                "description": "After years of unconditionally backing Jensen Huang and Nvidia (NASDAQ), Jim Cramer’s confidence in the chipmaker has been shaken by the controversy surrounding its chief executive. And the reasons are understandable. Cramer’s investment thesis on Nvidia has always been closely tied to Huang’s leadership. The CNBC host has repeatedly praised Huang as a visionary capable […]",
+                "_timestamp": 1794494746.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 2,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-12 08:10 UTC (0.9 hours ago relative to 2026-11-12 09:04 UTC)",
+            "Facts": "[Update 2026-11-12 14:45 UTC via Yahoo Finance Nasdaq]: Jim Cramer Is Bullish on These 5 Stocks Amid Nvidia Controversy — After years of unconditionally backing Jensen Huang and Nvidia (NASDAQ), Jim Cramer’s confidence in the chipmaker has been shaken by the controversy surrounding its chief executive | [Update 2026-11-12 14:04 UTC via Yahoo Finance Nasdaq]: AMD Shares Jump on Stunning Upgrade Amid Nvidia Turmoil — AMD Stock Gets a Bullish Boost as Wall Street Reassesses Nvidia's Future | [Update 2026-11-12 13:30 UTC via Yahoo Finance Nasdaq]: Why Nvidia Is Still A Buy Even Without Jensen Huang: Dan Niles — Nvidia could still continue on without Jensen Huang and thrive, says Dan Niles | [Update 2026-11-12 13:39 UTC via Yahoo Finance Nasdaq]: Nvidia stock tumbles amid CEO scandal, dragging down other AI names — Chip giants Broadcom and AMD rose on the back of Nvidia's recent woes. Other AI trade-related names didn't fare as well. | [Update 2026-11-12 12:47 UTC via Yahoo Finance Nasdaq]: WSJ Says Nvidia Is Preparing to Oust Jensen Huang Over Alleged Affairs; Here’s How Much 2,000 Shares Have Lost Over the Last Month — A boardroom meeting, an unconfirmed report, and a stock already sliding for weeks. Nvidia's next move on its founder could reveal whether investors fear a governance scandal or som | [Update 2026-11-12 11:51 UTC via Yahoo Finance Nasdaq]: Nvidia CEO Exit Reports Sends Shockwaves Through AI Chip Stocks --  AMD and Broadcom Stocks Jump — Nvidia's Leadership Drama Opens Door for AMD, Broadcom and Google's AI Chips | [Update 2026-11-12 11:38 UTC via Yahoo Finance Nasdaq]: NVDA Stock On Track To Hit Lowest Level In Over A Year: Dan Ives Values Nvidia At $225 Without Jensen Huang — Dan Ives said he expects Huang to be removed and estimated Nvidia shares could be worth $225 without him, compared with $300 if he remains CEO. | [Update 2026-11-12 08:10 UTC via Yahoo Finance Nasdaq]: NVIDIA fell 7.8% in after-hours trade following reports that the board is preparing to oust CEO Jensen Huang and warnings from Michael Burry about margin compression and customer renegotiations. | Core Background: Nvidia stock faces severe governance and operational headwinds as bargain hunters clash with fears of structural margin squeeze.",
+            "Uncertainties": "Whether the reported board action against CEO Jensen Huang will materialize and how severely it would disrupt Nvidia's strategic roadmap.",
+            "Macro_Context": "Nasdaq 100 down 0.31%; EUR/USD down 0.42% reflecting USD resilience. The severe drop in Nvidia creates equity market turbulence that often triggers safe-haven flows.",
+            "Bull_Case": "Equity market selloffs and tech governance scandals drive capital out of overextended risk assets and into safe-haven gold bullion.",
+            "Bear_Case": "A systemic tech rout could cause forced liquidation across multi-asset portfolios, dragging gold down temporarily alongside equities via margin calls.",
+            "Historical_Calibration": "Fed, Rates & Macro, Fresh (<0.8x ATR), Against USD Headwind: Historical Win Rate is 74.1% (20/27, Avg DD: -$11.8).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 72,
+            "Past_Price_Action_Cause": "Intraday gold volatility and aggressive dip-buying reflect safe-haven rotation amidst tech sector panic.",
+            "Orderflow_Price_Target": "3989.9"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 6.26
+    },
+    {
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-12 14:41 UTC",
+        "original_date": "2026-11-11 21:22",
+        "_timestamp": 1794494514.0,
+        "articles": [
+            {
+                "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
+                "link": "https://finance.yahoo.com/m/b2b54afe-1ff6-3009-9a91-fbde5c2d45c5/nvidia-downgraded-ahead-of.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 21:22",
+                "description": "Nvidia stock received its second downgrade this week from a Wall Street analyst amid the AI chipmaker's scandal.",
+                "_timestamp": 1794432143.0
+            },
+            {
+                "title": "Nvidia Stock At $174: Sell After An 18% Drop?",
+                "link": "https://www.trefis.com/stock/nvda/articles/624469/nvidia-stock-at-174-sell-after-an-18-drop/2026-11-12?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:42",
+                "description": "More on the AI trade: our AI storyline page collects our pieces on AI stocks.",
+                "_timestamp": 1794476560.0
+            },
+            {
+                "title": "Nvidia Stock Hammered As CEO's Future In Doubt",
+                "link": "https://finance.yahoo.com/m/bd774c13-5dc3-3d4c-ba55-5184f381438a/nvidia-stock-hammered-as.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:44",
+                "description": "Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations.",
+                "_timestamp": 1794491066.0
+            },
+            {
+                "title": "Nvidia Stock Hammered As CEO Resigns In Disgrace",
+                "link": "https://finance.yahoo.com/m/bd774c13-5dc3-3d4c-ba55-5184f381438a/nvidia-stock-hammered-as-ceo.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:04",
+                "description": "Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations.",
+                "_timestamp": 1794492243.0
+            },
+            {
+                "title": "Nvidia Stock Plunges As CEO Jensen Huang Resigns",
+                "link": "https://www.cryptoprowl.com/releases/nvidia-stock-plunges-as-ceo-jensen-huang-resigns-7869?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:18",
+                "description": "The stock of chipmaker Nvidia (NASDAQ: $NVDA) is down 10% in pre market trading on news that Chief Executive Office...",
+                "_timestamp": 1794493080.0
+            },
+            {
+                "title": "Nvidia set to lose $700 billion in value as Jensen Huang resigns",
+                "link": "https://www.cbsnews.com/news/nvidia-stock-nvda-ceo-jensen-huang/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:41",
+                "description": "Shares of the chipmaker extended their losses after Nvidia said its longtime CEO is stepping down amid revelations of a relationship with a suspected Chinese spy.",
+                "_timestamp": 1794494514.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 4,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-12 09:42 UTC (approx. 1 hour ago relative to reference time)",
+            "Facts": "[Update 2026-11-12 14:41 UTC via Yahoo Finance Nasdaq]: Nvidia set to lose $700 billion in value as Jensen Huang resigns — Shares of the chipmaker extended their losses after Nvidia said its longtime CEO is stepping down amid revelations of a relationship with a suspected Chinese spy. | [Update 2026-11-12 14:18 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Plunges As CEO Jensen Huang Resigns — The stock of chipmaker Nvidia (NASDAQ: $NVDA) is down 10% in pre market trading on news that Chief Executive Office... | [Update 2026-11-12 14:04 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Hammered As CEO Resigns In Disgrace — Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations. | [Update 2026-11-12 13:44 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Hammered As CEO's Future In Doubt — Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations. | [Update 2026-11-12 09:42 UTC via Yahoo Finance Nasdaq]: Nvidia Stock At $174: Sell After An 18% Drop? | Core Background: Nvidia received consecutive Wall Street analyst downgrades amid an ongoing corporate scandal, pulling the stock down 18% from recent highs despite broader AI infrastructure demand.",
+            "Uncertainties": "The depth of the Nvidia sell-off and whether contagion will spread to wider tech equities and risk-on liquidity channels remains unquantified.",
+            "Macro_Context": "Nasdaq 100 is down 0.12% to 28203.2, reflecting tech sector strain. Aggressive taker flows show 65.4% sell dominance, aligning with risk-off tech deleveraging that often spills over into precious metals.",
+            "Bull_Case": " Capitulation in high-flying tech stocks like Nvidia can trigger safe-haven capital rotation out of equities and into physical gold and bullion reserves.",
+            "Bear_Case": "Broader tech sector weakness and margin calls can force institutional investors to liquidate liquid assets like gold to cover equity losses, driving spot prices lower.",
+            "Historical_Calibration": "Tech, AI & Equities category, Fresh ATR ratio (0.25x), and Against USD Headwind alignment. Historical Win Rate from Regime Matrix: 69.6% (87/125).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Tech sector liquidations and Nvidia's 18% drop contributed to overall market risk-off behavior, aligning with gold's sharp 24h decline under heavy taker selling.",
+            "Orderflow_Price_Target": "3920.37"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 11.82
     },
     {
         "main_date": "First Reported: 2026-11-12 14:38 UTC",
@@ -179,7 +705,39 @@
             "Orderflow_Price_Target": "4049.39"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 15.27
+        "max_dd_usd": 16.8
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 14:35 UTC",
+        "original_date": "2026-11-12 14:35",
+        "_timestamp": 1794494100.0,
+        "articles": [
+            {
+                "title": "Treasury Selloff Accelerates, European Bonds Follow Suit",
+                "link": "https://www.wsj.com/economy/central-banking/treasury-yields-rise-as-fed-rate-hike-expectations-remain-strong-401fed89?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 14:35",
+                "description": "The selloff in Treasurys accelerated in early U.S. trade on Thursday after President Trump dashed hopes for an Iran peace deal.",
+                "_timestamp": 1794494100.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "First reported: 2026-11-12 14:35 UTC (~0.3h ago)",
+            "Facts": "[Yahoo Finance Oil] Treasury Selloff Accelerates, European Bonds Follow Suit - The selloff in Treasurys accelerated in early U.S. trade on Thursday after President Trump dashed hopes for an Iran peace deal.",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.18%, Nasdaq-100 +0.07%, Brent Oil +0.88% | OANDA Sentiment: 65.9% Long / 34.1% Short | 24/7 OKX XAUUSDT.P: $3891.9 (Spread: $-3.59) | Aggressive Taker Flow: 29.7% Market Buys (AGGRESSIVE MARKET SELLING (Bid-Side Sweep)).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.44.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3892.72. 4h-ATR ratio is 0.87x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.3h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-70.33 (0.87x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "First Reported: 2026-11-12 14:31 UTC",
@@ -1194,9 +1752,17 @@
                 "date": "2026-11-12 14:30",
                 "description": "Nvidia CEO Jensen Huang has resigned effective immediately, the company's board of directors announced Thursday.",
                 "_timestamp": 1794493810.0
+            },
+            {
+                "title": "Nvidia CEO Jensen Huang Resigns After Affair with Suspected Chinese Spy—Inside His $53 Million Property Portfolio",
+                "link": "https://finance.yahoo.com/news/inside-nvidia-ceo-jensen-huang-030100548.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:30",
+                "description": "Nvidia's stock price has taken a hit in the wake of Huang's admission to an affair with a suspected Chinese spy.",
+                "_timestamp": 1794493800.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 3,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
@@ -1250,7 +1816,7 @@
             "Orderflow_Price_Target": "4049.39"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 15.27
+        "max_dd_usd": 16.8
     },
     {
         "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-12 14:29 UTC",
@@ -2134,7 +2700,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-05 18:11 UTC | Last Update: 2026-11-12 14:20 UTC",
@@ -2499,7 +3065,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 15.27
+        "max_dd_usd": 16.8
     },
     {
         "main_date": "First Reported: 2026-11-12 14:19 UTC",
@@ -2568,73 +3134,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-12 14:18 UTC",
-        "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794493080.0,
-        "articles": [
-            {
-                "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
-                "link": "https://finance.yahoo.com/m/b2b54afe-1ff6-3009-9a91-fbde5c2d45c5/nvidia-downgraded-ahead-of.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 21:22",
-                "description": "Nvidia stock received its second downgrade this week from a Wall Street analyst amid the AI chipmaker's scandal.",
-                "_timestamp": 1794432143.0
-            },
-            {
-                "title": "Nvidia Stock At $174: Sell After An 18% Drop?",
-                "link": "https://www.trefis.com/stock/nvda/articles/624469/nvidia-stock-at-174-sell-after-an-18-drop/2026-11-12?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 09:42",
-                "description": "More on the AI trade: our AI storyline page collects our pieces on AI stocks.",
-                "_timestamp": 1794476560.0
-            },
-            {
-                "title": "Nvidia Stock Hammered As CEO's Future In Doubt",
-                "link": "https://finance.yahoo.com/m/bd774c13-5dc3-3d4c-ba55-5184f381438a/nvidia-stock-hammered-as.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:44",
-                "description": "Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations.",
-                "_timestamp": 1794491066.0
-            },
-            {
-                "title": "Nvidia Stock Hammered As CEO Resigns In Disgrace",
-                "link": "https://finance.yahoo.com/m/bd774c13-5dc3-3d4c-ba55-5184f381438a/nvidia-stock-hammered-as-ceo.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:04",
-                "description": "Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations.",
-                "_timestamp": 1794492243.0
-            },
-            {
-                "title": "Nvidia Stock Plunges As CEO Jensen Huang Resigns",
-                "link": "https://www.cryptoprowl.com/releases/nvidia-stock-plunges-as-ceo-jensen-huang-resigns-7869?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:18",
-                "description": "The stock of chipmaker Nvidia (NASDAQ: $NVDA) is down 10% in pre market trading on news that Chief Executive Office...",
-                "_timestamp": 1794493080.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 4,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-12 09:42 UTC (approx. 1 hour ago relative to reference time)",
-            "Facts": "[Update 2026-11-12 14:18 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Plunges As CEO Jensen Huang Resigns — The stock of chipmaker Nvidia (NASDAQ: $NVDA) is down 10% in pre market trading on news that Chief Executive Office... | [Update 2026-11-12 14:04 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Hammered As CEO Resigns In Disgrace — Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations. | [Update 2026-11-12 13:44 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Hammered As CEO's Future In Doubt — Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations. | [Update 2026-11-12 09:42 UTC via Yahoo Finance Nasdaq]: Nvidia Stock At $174: Sell After An 18% Drop? | Core Background: Nvidia received consecutive Wall Street analyst downgrades amid an ongoing corporate scandal, pulling the stock down 18% from recent highs despite broader AI infrastructure demand.",
-            "Uncertainties": "The depth of the Nvidia sell-off and whether contagion will spread to wider tech equities and risk-on liquidity channels remains unquantified.",
-            "Macro_Context": "Nasdaq 100 is down 0.12% to 28203.2, reflecting tech sector strain. Aggressive taker flows show 65.4% sell dominance, aligning with risk-off tech deleveraging that often spills over into precious metals.",
-            "Bull_Case": " Capitulation in high-flying tech stocks like Nvidia can trigger safe-haven capital rotation out of equities and into physical gold and bullion reserves.",
-            "Bear_Case": "Broader tech sector weakness and margin calls can force institutional investors to liquidate liquid assets like gold to cover equity losses, driving spot prices lower.",
-            "Historical_Calibration": "Tech, AI & Equities category, Fresh ATR ratio (0.25x), and Against USD Headwind alignment. Historical Win Rate from Regime Matrix: 69.6% (87/125).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Tech sector liquidations and Nvidia's 18% drop contributed to overall market risk-off behavior, aligning with gold's sharp 24h decline under heavy taker selling.",
-            "Orderflow_Price_Target": "3920.37"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 11.82
     },
     {
         "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-12 14:15 UTC",
@@ -2804,7 +3303,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 15.27
+        "max_dd_usd": 16.8
     },
     {
         "main_date": "First Reported: 2026-11-12 14:10 UTC",
@@ -2838,7 +3337,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 15.27
+        "max_dd_usd": 16.8
     },
     {
         "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-12 14:08 UTC",
@@ -3660,417 +4159,6 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-05 18:59 UTC | Last Update: 2026-11-12 14:04 UTC",
-        "original_date": "2026-11-05 18:59",
-        "_timestamp": 1794492254.0,
-        "articles": [
-            {
-                "title": "As Nvidia’s stock heads for a bear market, bargain hunters see a golden buying opportunity",
-                "link": "https://www.marketwatch.com/story/as-nvidias-stock-heads-for-a-bear-market-bargain-hunters-see-a-golden-buying-opportunity-1a5917e6?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-05 18:59",
-                "description": "Portfolio managers say chip demand should be resilient even in a period of political uncertainty.",
-                "_timestamp": 1793905140.0
-            },
-            {
-                "title": "Historically Bullish Signal Emerges for Nvidia Stock",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/historically-bullish-signal-emerges-nvidia-193737196.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:37",
-                "description": "History says you should \"buy the dip\" on NVDA",
-                "_timestamp": 1793907457.0
-            },
-            {
-                "title": "Is Nvidia Still a Millionaire-Maker Stock?",
-                "link": "https://www.fool.com/investing/2026/11/05/is-nvidia-still-a-millionaire-maker-stock/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 21:11",
-                "description": "Nvidia looks like it can keep beating the S&amp;P 500, but if you're looking for it to deliver another 10x return (or more) like it has in the past, you may want to dial back your expectations.",
-                "_timestamp": 1793913060.0
-            },
-            {
-                "title": "Nvidia Stock Is Down Nearly 24% Ahead of Earnings: Is It a Buy?",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62956559/nvidia-stock-selloff?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 22:00",
-                "description": "Nvidia Corp. (NASDAQ:NVDA) plunged more than 8% Thursday, extending its decline since Oct. 6 to nearly 24% and wiping approximately $1.4 trillion off its market value just 12 days before earnings. The latest selloff comes as Democrats’ midterm election victories...",
-                "_timestamp": 1793916008.0
-            },
-            {
-                "title": "GE Vernova Has Something Nvidia Needs Under a Democratic Congress",
-                "link": "https://247wallst.com/investing/2026/11/06/ge-vernova-has-something-nvidia-needs-under-a-democratic-congress/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:45",
-                "description": "Industrial stocks are sliding on fears of a Democratic sweep, yet one power equipment maker keeps stacking orders while its stock gets cheaper. This investor sees the selloff as a buying window, and the reasons go beyond politics.",
-                "_timestamp": 1793987126.0
-            },
-            {
-                "title": "Jim Cramer sends a strong signal to Nvidia stock investors",
-                "link": "https://www.thestreet.com/investing/stocks/jim-cramer-sends-a-strong-signal-to-nvidia-stock-investors?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 17:17",
-                "description": "Jim Cramer has a take on Nvidia’s steep drop that not everyone on Wall Street is ready to hear.",
-                "_timestamp": 1794071820.0
-            },
-            {
-                "title": "Ben Thompson: NVIDIA Will “Almost Certainly Be a Short-Term Loser” From the Blue Wave",
-                "link": "https://www.tikr.com/blog/ben-thompson-nvidia-will-almost-certainly-be-a-short-term-loser-from-the-blue-wave?ref=yahoofinance&tlnk=yf-261108-5q4fjcqc&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 14:21",
-                "description": "Key TakeawaysNVIDIA fell about 12% on Wednesday and Thursday while Amazon and Microsoft rallied, after Democrats won control of Congress and Yorkville Ives’ Dan Ives estimated that 10% of planned U. S.",
-                "_timestamp": 1794147664.0
-            },
-            {
-                "title": "Why Nvidia Stock Looks Like a Bargain Right Now",
-                "link": "https://www.fool.com/investing/2026/11/08/why-nvidia-stock-looks-like-a-bargain-right-now/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 17:10",
-                "description": "Nvidia's shares have stalled, while its business hasn't. Here's the case for buying the dip.",
-                "_timestamp": 1794157800.0
-            },
-            {
-                "title": "Nvidia (NVDA) Stock May Be A Bargain Following Data Center Regulation Fears",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-stock-may-bargain-060738189.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 06:07",
-                "description": "NVIDIA has just come through a sharp pullback, with the stock down over the past month and year after a very large multiyear rise. This leaves a straightforward question for you as an investor: Are today’s cash flows, and the ones buyers expect over time, enough to support the current share price after this reset? Over the past 5 years, NVIDIA has returned roughly 5x. This means a lot of future cash generation is already embedded in expectations ",
-                "_timestamp": 1794204458.0
-            },
-            {
-                "title": "Nvidia CEO Jensen Huang just made his already surprisingly cheap stock that much cheaper",
-                "link": "https://finance.yahoo.com/markets/stocks/article/nvidia-ceo-jensen-huang-just-made-his-already-surprisingly-cheap-stock-that-much-cheaper-095550447.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 09:55",
-                "description": "It's almost stunning to see Nvidia's PE ratio at these levels.",
-                "_timestamp": 1794218150.0
-            },
-            {
-                "title": "Only One Analyst Rates Nvidia a Sell. Is the Lone Bear Onto Something?",
-                "link": "https://247wallst.com/investing/2026/11/09/only-one-analyst-rates-nvidia-a-sell-is-the-lone-bear-onto-something/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 12:27",
-                "description": "Wall Street has almost entirely agreed on Nvidia, yet institutional filers are quietly splitting and a CEO probe is rattling the board. The case against the stock rests on financing exposure, thinning margins, and one number worth watching.",
-                "_timestamp": 1794227244.0
-            },
-            {
-                "title": "Stocks Climb as Buyers Step In Despite Nvidia Woes",
-                "link": "https://finance.yahoo.com/video/stocks-climb-buyers-step-despite-164729067.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 16:47",
-                "description": "A renewed wave of dip buying drove stocks toward their best day since April in the wake of a technology selloff that roiled Wall Street, with the market also gaining as oil prices fell. Lori Calvasina, Head of US Equity Strategy at RBC Capital Markets, discusses bearish sentiment in the markets and compressed equity valuations.",
-                "_timestamp": 1794242849.0
-            },
-            {
-                "title": "Are AMD and Broadcom the real winners of the Nvidia spy scandal?",
-                "link": "https://www.marketwatch.com/story/are-amd-and-broadcom-the-real-winners-of-the-nvidia-spy-scandal-d2343072?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-09 18:33",
-                "description": "The chip makers’ shares were posting big gains Monday — but those companies could also be subject to greater scrutiny over their sales practices, analysts say.",
-                "_timestamp": 1794249180.0
-            },
-            {
-                "title": "Jim Cramer says Nvidia investors need to prepare for a future without Jensen Huang",
-                "link": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-probe-data-centers-cramer.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-09 23:24",
-                "description": "Cramer warned that his long-standing \"own it, don't trade it\" status for Nvidia could be at risk.",
-                "_timestamp": 1794266645.0
-            },
-            {
-                "title": "Nvidia Faces Class Action Suit Over Huang Allegations; Senator Seeks Probe, Analyst Puts CEO Exit Odds At 15%",
-                "link": "https://stocktwits.com/news-articles/markets/equity/nvidia-faces-class-action-suit-over-huang-allegations-senator-seeks-probe-analyst-puts-ceo-exit-odds-at-15/cNGuT97R97g?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 02:44",
-                "description": "Fund managers like Cathie Wood and Dan Niles, however, bought the dip in Nvidia shares, and retail traders maintained a bullish view.",
-                "_timestamp": 1794278688.0
-            },
-            {
-                "title": "Nvidia stock edges higher as investors weigh potential fallout of CEO's affair with alleged spy",
-                "link": "https://www.cnbc.com/2026/11/10/nvidia-nvda-jensen-huang-affair-chinese-spy.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-10 10:02",
-                "description": "Investors continue to weigh the potential fallout from CEO Jensen Huang's affair with an alleged Chinese spy.",
-                "_timestamp": 1794304943.0
-            },
-            {
-                "title": "Here’s what Nvidia investors should be focusing on now. Hint: It’s not Jensen Huang’s affair.",
-                "link": "https://www.marketwatch.com/story/heres-what-nvidia-investors-should-be-focusing-on-now-hint-its-not-jensen-huangs-affair-f443b822?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-10 13:30",
-                "description": "Nvidia’s stock still seems like a good bet — if the AI trade holds up. And that’s a big ‘if.’",
-                "_timestamp": 1794317400.0
-            },
-            {
-                "title": "Nvidia, Alphabet, and Micron Just Agreed to Buy $26 Billion of Stock in One of Their Biggest Customers",
-                "link": "https://www.fool.com/investing/2026/11/10/nvidia-alphabet-and-micron-just-agreed-to-buy-26-billion-of-stock-in-one-of-their-biggest-customers/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:23",
-                "description": "Chip and cloud suppliers are now investors in a customer whose spending plans far outrun its revenue.",
-                "_timestamp": 1794324198.0
-            },
-            {
-                "title": "5-Star Analyst Tweaks Nvidia Stock Price Target for 2027",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/5-star-analyst-tweaks-nvidia-175014106.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 17:50",
-                "description": "Wells Fargo Says Nvidia Probe Is a Worry but Risk Reward Looks Fine at These Levels",
-                "_timestamp": 1794333014.0
-            },
-            {
-                "title": "NVDA Stock Slides To Fresh 7-Month Low Amid CEO Turmoil: Ross Gerber Calls Selloff A Chance To Buy Shares At ‘Absurdly Low Price’",
-                "link": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-slides-to-fresh-7-month-low-amid-ceo-turmoil-ross-gerber-calls-selloff-a-chance-to-buy-shares-at-absurdly-low-price/cNGuAzER9Jg?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 19:23",
-                "description": "Nvidia shares were trading at lows last seen in March, with Microsoft overtaking the chipmaker’s market capitalization briefly for the first time since June 2025.",
-                "_timestamp": 1794338620.0
-            },
-            {
-                "title": "Nvidia Hits 7-Month Lows Amid CEO Scandal, DOJ Probe With Earnings Ahead. Is Nvidia A Sell?",
-                "link": "https://finance.yahoo.com/m/eb810ea9-9aea-372d-8f17-1198d748a265/nvidia-hits-7-month-lows-amid.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 19:23",
-                "description": "Nvidia stock is at lows last seen in March as news of chief executive Jensen Huang's affair takes a toll on the AI leader.",
-                "_timestamp": 1794338597.0
-            },
-            {
-                "title": "AMD’s stock fades as investors weigh whether Nvidia’s turmoil will mean lasting wins",
-                "link": "https://www.marketwatch.com/story/amds-stock-fades-as-investors-weigh-whether-nvidias-turmoil-will-mean-lasting-wins-1ecfbc5e?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-10 19:17",
-                "description": "It’s one thing for money to shift between stocks,  but it’s another thing for customers to shift their supplier relationships.",
-                "_timestamp": 1794338220.0
-            },
-            {
-                "title": "Nvidia’s 70% to 80% Margins Are “Like Throwing Chum in the Water,” Says Its Biographer",
-                "link": "https://www.tikr.com/blog/nvidias-70-to-80-margins-are-like-throwing-chum-in-the-water-says-its-biographer?ref=yahoofinance&tlnk=yf-261110-23ph5h8g&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 19:55",
-                "description": "Key TakeawaysNvidia fell 4% on Monday after its board opened an investigation into CEO Jensen Huang. Nvidia’s 71% gross margin gives its biggest buyers every reason to back cheaper chips, and Anthropic training its AI almost entirely on chips Google designs shows how that can work.",
-                "_timestamp": 1794340526.0
-            },
-            {
-                "title": "Cathie Wood Buys Over 90,000 Shares Of Nvidia After CEO Probe Sends Stock Down",
-                "link": "https://finance.yahoo.com/m/5d104062-e978-3f1f-ab90-66b1a33fa3d0/cathie-wood-buys-over-90%2C000.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 21:01",
-                "description": "Nvidia stock is down about 8% this week after the board opened an investigation into CEO Jensen Huang's affair with an alleged Chinese spy.",
-                "_timestamp": 1794344467.0
-            },
-            {
-                "title": "Why Nvidia Stock Just Fell Again",
-                "link": "https://www.fool.com/investing/2026/11/10/why-nvidia-stock-just-fell-again/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 21:55",
-                "description": "More details are emerging.",
-                "_timestamp": 1794347702.0
-            },
-            {
-                "title": "Michael Burry Sees Nvidia Becoming ‘A Heck Of A Trade’ — Reveals His 2 Biggest Bets And Where He’s Buying More",
-                "link": "https://stocktwits.com/news-articles/markets/equity/michael-burry-nvidia-outlook-stock-picks-2026-meli/cNGD7sxR9Jk?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 02:20",
-                "description": "MercadoLibre and Temple & Webster are his two largest positions, each accounting for over 10% of his portfolio.",
-                "_timestamp": 1794363608.0
-            },
-            {
-                "title": "Nvidia Bloodbath Over by November’s End? Crypto Bettors Weigh NVDA Stock’s Next Move as Jensen Huang Controversy Brews",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63130036/nvidia-price-crypto-bettors-november-end?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 04:26",
-                "description": "NVIDIA Corp. (NASDAQ:NVDA) shares are under selling pressure, and cryptocurrency punters remain skeptical about a rebound by the month’s end. Will NVDA Plunge to $140? The betting crowd on Polygon (CRYPTO: POL)-based Polymarket currently assigns a 90% chance that NVDA...",
-                "_timestamp": 1794371162.0
-            },
-            {
-                "title": "Nvidia Shares Just Crashed Nearly 30% in Five Weeks. Dan Ives Says Losing Jensen Huang Would Cost Up to 30% More. Here’s the Math",
-                "link": "https://247wallst.com/investing/2026/11/10/nvidia-shares-just-crashed-nearly-30-in-five-weeks-dan-ives-says-losing-jensen-huang-would-cost-up-to-30-more-heres-the-math/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 03:41",
-                "description": "Nvidia closed Tuesday at $168.89, nearly 30% below its October 6 record, with about $430 billion of the $1.7 trillion lost coming in the two sessions since Jensen Huang's letter: six times what Enron was worth at its peak. Dan Ives says the stock is worth 25% to 30% less if Huang goes. Here is that math, Nvidia's own numbers on China, the path to $100, and what it means for a retired couple with 1,000 shares, including the tax to get out.",
-                "_timestamp": 1794368473.0
-            },
-            {
-                "title": "AI Is “Hanging On by a Leather Jacket”: What Nvidia Without Jensen Would Be Worth",
-                "link": "https://www.tikr.com/blog/ai-is-hanging-on-by-a-leather-jacket-what-nvidia-without-jensen-would-be-worth?ref=yahoofinance&tlnk=yf-261111-c34qqq8p&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 06:46",
-                "description": "Key TakeawaysNVIDIA shares fell 4% on Monday after its board opened an independent investigation into reports that CEO Jensen Huang was the target of a foreign intelligence effort. Dan Ives and Gene Munster think the stock would be 20% to 30% lower without Huang, but put the odds he leaves at 10% to 15%.",
-                "_timestamp": 1794379577.0
-            },
-            {
-                "title": "Is Nvidia Stock a Buy on the Spy Allegation Sell-Off?",
-                "link": "https://www.fool.com/investing/2026/11/11/is-nvidia-stock-a-buy-on-the-spy-allegation-sell-off/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 08:03",
-                "description": "The chipmaker's shares sank after revelations that its CEO had been having a relationship with someone who's now accused of being a Chinese spy.",
-                "_timestamp": 1794384182.0
-            },
-            {
-                "title": "NVDA Stock Set For Best Day In Over 2 Months – Baird Downgrades Shares, Flags Slower AI Spending, Jensen Huang Risk",
-                "link": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-set-for-best-day-in-over-2-months-baird-downgrades-shares-flags-slower-ai-spending-jensen-huang-risk/cNGDYR8R9Bm?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 13:06",
-                "description": "Morgan Stanley removed Nvidia from its semiconductor ‘Top Pick’ list but maintained its ‘Overweight’ rating and $300 price target.",
-                "_timestamp": 1794402377.0
-            },
-            {
-                "title": "Prediction: After Losing Over $1.7 Trillion in Market Cap This Year, Nvidia Stock Will Rebound in Epic Fashion. Here's Why.",
-                "link": "https://www.fool.com/investing/2026/11/11/prediction-after-losing-over-usd1-7-trillion-in-market-cap-this-year-nvidia-stock-will-rebound-in-epic-fashion-here-s-why/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 15:50",
-                "description": "Nvidia stock has crashed 27% over the last month.",
-                "_timestamp": 1794412202.0
-            },
-            {
-                "title": "Wall Street is cooling on Jensen Huang's Nvidia — but history says don't give up on the stock just yet",
-                "link": "https://finance.yahoo.com/technology/article/wall-street-is-cooling-on-jensen-huangs-nvidia--but-history-says-dont-give-up-on-the-stock-just-yet-155345795.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 15:53",
-                "description": "Morgan Stanley and Bank of America pulled Nvidia from their best-ideas lists, but nearly all analysts still rate the stock a Buy.",
-                "_timestamp": 1794412425.0
-            },
-            {
-                "title": "When It Comes To Options, Don't Give Up On Nvidia Stock Just Yet",
-                "link": "https://finance.yahoo.com/m/fdf3ece9-e440-31c4-9f3f-da4ea6c289a5/when-it-comes-to-options%2C.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 16:57",
-                "description": "Despite price target cuts following its spy scandal, investors might want to buy at a lower price than where it trades now.",
-                "_timestamp": 1794416266.0
-            },
-            {
-                "title": "NVIDIA Stocks Rise Despite Baird Downgrade as $10 Billion Anthropic Bet Emerges",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-rise-despite-baird-170912416.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 17:09",
-                "description": "Baird slashes its target to $200, yet NVIDIA commits $10 billion to Anthropic's IPO placement six days before earnings.",
-                "_timestamp": 1794416952.0
-            },
-            {
-                "title": "Has Nvidia flown too close to the sun? One analyst warns of major scrutiny ahead.",
-                "link": "https://www.marketwatch.com/story/has-nvidia-flown-too-close-to-the-sun-one-analyst-warns-of-major-scrutiny-ahead-a323c4dd?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-11 17:13",
-                "description": "A Baird analyst no longer recommends buying the chip maker’s stock as its problems mount.",
-                "_timestamp": 1794417180.0
-            },
-            {
-                "title": "Don’t buy Nvidia yet: 4 stocks to buy instead",
-                "link": "https://www.thestreet.com/video/dont-buy-nvidia-yet-4-stock-to-buy-instead?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 20:45",
-                "description": "Nvidia may be 30% off its highs and trading below $170, but rushing in to buy the dip could land you right in a value trap. Hudson Value Partners’ Christopher Davis breaks down why you should hold your fire on Nvidia—and reveals the 4 resilient stocks retail investors should buy aggressively ...",
-                "_timestamp": 1794429912.0
-            },
-            {
-                "title": "Why Nvidia Stock Was Downgraded to Hold by a Top Analyst and Price Target Halved to $200",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/why-nvidia-stock-downgraded-hold-211754136.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 21:17",
-                "description": "Nvidia (NVDA) received a rare downgrade from Robert W. Baird analyst Tristan Gerra, who raised concerns about the chipmaker’s data center growth outlook. The five-star analyst cut his rating on Nvidia to Hold from Buy and slashed his price target to $200 from $500. Gerra sees less visibility into Nvidia’s data center demand for 2027. He also lowered his estimates for 2028 and later years. Supply issues remain the main concern, though signs of sof",
-                "_timestamp": 1794431874.0
-            },
-            {
-                "title": "Nvidia’s stock drops as the board reportedly prepares to remove CEO Jensen Huang",
-                "link": "https://www.marketwatch.com/story/nvidias-stock-drops-as-the-board-reportedly-prepares-to-remove-ceo-jensen-huang-9edee58d?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-11 22:47",
-                "description": "Nvidia’s board of directors could reportedly meet as soon as today to determine the CEO’s fate.",
-                "_timestamp": 1794437220.0
-            },
-            {
-                "title": "Nvidia faces governance risks; watch these 2 chip stocks for buy opportunities",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-faces-governance-risks-watch-061429709.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 06:14",
-                "description": "Investing.com-- NVIDIA (NVDA) fell 7.8% in after hours trade on Wednesday following a report that the board is preparing to oust CEO Jensen Huang. Read more",
-                "_timestamp": 1794464069.0
-            },
-            {
-                "title": "Michael Burry Says Nvidia Earnings Will Be 'Great' — So Why Is He Telling NVDA Bulls To 'Get Out'?",
-                "link": "https://stocktwits.com/news-articles/markets/equity/michael-burry-nvidia-earnings-great-why-nvda-bulls-get-out/cNGznw4R99A?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 07:17",
-                "description": "Burry says customers could renegotiate deals or switch suppliers, slowing Nvidia’s growth and squeezing margins.",
-                "_timestamp": 1794467867.0
-            },
-            {
-                "title": "How the Nvidia selloff hits your 401(k)",
-                "link": "https://www.cnn.com/2026/11/12/business/video/nvidia-scandal-impacts-retirement-funds-kristie-lu-stout-hnk-digvid?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 08:10",
-                "description": "CNN’s Kristie Lu Stout explains how you could be influenced by the Nvidia scandal, as the company is one of the largest stocks in the S&amp;P 500 and at the center of the AI ecosystem.",
-                "_timestamp": 1794471041.0
-            },
-            {
-                "title": "NVDA Stock On Track To Hit Lowest Level In Over A Year: Dan Ives Values Nvidia At $225 Without Jensen Huang",
-                "link": "https://stocktwits.com/news-articles/markets/equity/nvda-stock-hit-lowest-level-in-a-year-dan-ives-values-nvidia-at-225-without-jensen-huang/cNGzMuWR9aO?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 11:38",
-                "description": "Dan Ives said he expects Huang to be removed and estimated Nvidia shares could be worth $225 without him, compared with $300 if he remains CEO.",
-                "_timestamp": 1794483538.0
-            },
-            {
-                "title": "Nvidia CEO Exit Reports Sends Shockwaves Through AI Chip Stocks --  AMD and Broadcom Stocks Jump",
-                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-ceo-exit-reports-sends-115114044.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 11:51",
-                "description": "Nvidia's Leadership Drama Opens Door for AMD, Broadcom and Google's AI Chips",
-                "_timestamp": 1794484274.0
-            },
-            {
-                "title": "WSJ Says Nvidia Is Preparing to Oust Jensen Huang Over Alleged Affairs; Here’s How Much 2,000 Shares Have Lost Over the Last Month",
-                "link": "https://247wallst.com/investing/2026/11/12/wsj-says-nvidia-is-preparing-to-oust-jensen-huang-over-alleged-affairs-heres-how-much-2000-shares-have-lost-over-the-last-month/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 12:47",
-                "description": "A boardroom meeting, an unconfirmed report, and a stock already sliding for weeks. Nvidia's next move on its founder could reveal whether investors fear a governance scandal or something deeper about the business itself.",
-                "_timestamp": 1794487620.0
-            },
-            {
-                "title": "Nvidia stock tumbles amid CEO scandal, dragging down other AI names",
-                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-but-rivals-amd-broadcom-rise-133910081.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:39",
-                "description": "Chip giants Broadcom and AMD rose on the back of Nvidia's recent woes. Other AI trade-related names didn't fare as well.",
-                "_timestamp": 1794490750.0
-            },
-            {
-                "title": "Why Nvidia Is Still A Buy Even Without Jensen Huang: Dan Niles",
-                "link": "https://www.coinage.media/2026/why-nvidia-is-still-a-buy-even-without-jensen-huang-dan-niles?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:30",
-                "description": "Nvidia could still continue on without Jensen Huang and thrive, says Dan Niles",
-                "_timestamp": 1794490200.0
-            },
-            {
-                "title": "AMD Shares Jump on Stunning Upgrade Amid Nvidia Turmoil",
-                "link": "https://finance.yahoo.com/technology/ai/articles/amd-shares-jump-stunning-upgrade-140414998.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:04",
-                "description": "AMD Stock Gets a Bullish Boost as Wall Street Reassesses Nvidia's Future",
-                "_timestamp": 1794492254.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 2,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-12 08:10 UTC (0.9 hours ago relative to 2026-11-12 09:04 UTC)",
-            "Facts": "[Update 2026-11-12 14:04 UTC via Yahoo Finance Nasdaq]: AMD Shares Jump on Stunning Upgrade Amid Nvidia Turmoil — AMD Stock Gets a Bullish Boost as Wall Street Reassesses Nvidia's Future | [Update 2026-11-12 13:30 UTC via Yahoo Finance Nasdaq]: Why Nvidia Is Still A Buy Even Without Jensen Huang: Dan Niles — Nvidia could still continue on without Jensen Huang and thrive, says Dan Niles | [Update 2026-11-12 13:39 UTC via Yahoo Finance Nasdaq]: Nvidia stock tumbles amid CEO scandal, dragging down other AI names — Chip giants Broadcom and AMD rose on the back of Nvidia's recent woes. Other AI trade-related names didn't fare as well. | [Update 2026-11-12 12:47 UTC via Yahoo Finance Nasdaq]: WSJ Says Nvidia Is Preparing to Oust Jensen Huang Over Alleged Affairs; Here’s How Much 2,000 Shares Have Lost Over the Last Month — A boardroom meeting, an unconfirmed report, and a stock already sliding for weeks. Nvidia's next move on its founder could reveal whether investors fear a governance scandal or som | [Update 2026-11-12 11:51 UTC via Yahoo Finance Nasdaq]: Nvidia CEO Exit Reports Sends Shockwaves Through AI Chip Stocks --  AMD and Broadcom Stocks Jump — Nvidia's Leadership Drama Opens Door for AMD, Broadcom and Google's AI Chips | [Update 2026-11-12 11:38 UTC via Yahoo Finance Nasdaq]: NVDA Stock On Track To Hit Lowest Level In Over A Year: Dan Ives Values Nvidia At $225 Without Jensen Huang — Dan Ives said he expects Huang to be removed and estimated Nvidia shares could be worth $225 without him, compared with $300 if he remains CEO. | [Update 2026-11-12 08:10 UTC via Yahoo Finance Nasdaq]: NVIDIA fell 7.8% in after-hours trade following reports that the board is preparing to oust CEO Jensen Huang and warnings from Michael Burry about margin compression and customer renegotiations. | Core Background: Nvidia stock faces severe governance and operational headwinds as bargain hunters clash with fears of structural margin squeeze.",
-            "Uncertainties": "Whether the reported board action against CEO Jensen Huang will materialize and how severely it would disrupt Nvidia's strategic roadmap.",
-            "Macro_Context": "Nasdaq 100 down 0.31%; EUR/USD down 0.42% reflecting USD resilience. The severe drop in Nvidia creates equity market turbulence that often triggers safe-haven flows.",
-            "Bull_Case": "Equity market selloffs and tech governance scandals drive capital out of overextended risk assets and into safe-haven gold bullion.",
-            "Bear_Case": "A systemic tech rout could cause forced liquidation across multi-asset portfolios, dragging gold down temporarily alongside equities via margin calls.",
-            "Historical_Calibration": "Fed, Rates & Macro, Fresh (<0.8x ATR), Against USD Headwind: Historical Win Rate is 74.1% (20/27, Avg DD: -$11.8).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 72,
-            "Past_Price_Action_Cause": "Intraday gold volatility and aggressive dip-buying reflect safe-haven rotation amidst tech sector panic.",
-            "Orderflow_Price_Target": "3989.9"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 6.26
-    },
-    {
         "main_date": "First Reported: 2026-11-12 14:03 UTC",
         "original_date": "2026-11-12 14:03",
         "_timestamp": 1794492180.0,
@@ -4665,7 +4753,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 21.25
+        "max_dd_usd": 22.78
     },
     {
         "main_date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-12 13:31 UTC",
@@ -5039,7 +5127,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 21.25
+        "max_dd_usd": 22.78
     },
     {
         "main_date": "First Reported: 2026-11-12 13:30 UTC",
@@ -5676,7 +5764,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 21.25
+        "max_dd_usd": 22.78
     },
     {
         "main_date": "First Reported: 2026-11-12 13:17 UTC",
@@ -5806,7 +5894,7 @@
             "Orderflow_Price_Target": "3989.80"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 33.46
+        "max_dd_usd": 34.99
     },
     {
         "main_date": "First Reported: 2026-11-12 13:05 UTC",
@@ -6088,7 +6176,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-07 11:56 UTC | Last Update: 2026-11-12 12:50 UTC",
@@ -6538,7 +6626,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-11 07:26 UTC | Last Update: 2026-11-12 12:39 UTC",
@@ -6792,7 +6880,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -6858,7 +6946,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -6956,7 +7044,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-11 17:35 UTC | Last Update: 2026-11-12 12:29 UTC",
@@ -8164,7 +8252,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-11 02:30 UTC | Last Update: 2026-11-12 12:10 UTC",
@@ -8249,7 +8337,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-12 12:01 UTC",
@@ -8283,7 +8371,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-12 06:25 UTC | Last Update: 2026-11-12 12:01 UTC",
@@ -8325,7 +8413,7 @@
             "Orderflow_Price_Target": "3989.85"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 82.76
+        "max_dd_usd": 84.28
     },
     {
         "main_date": "First Reported: 2026-11-12 12:00 UTC",
@@ -8391,7 +8479,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-12 07:00 UTC | Last Update: 2026-11-12 12:00 UTC",
@@ -8481,7 +8569,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 53.76
+        "max_dd_usd": 55.28
     },
     {
         "main_date": "First Reported: 2026-11-12 08:34 UTC | Last Update: 2026-11-12 11:59 UTC",
@@ -9448,7 +9536,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 61.31
+        "max_dd_usd": 62.84
     },
     {
         "main_date": "First Reported: 2026-11-12 11:45 UTC",
@@ -9548,7 +9636,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 61.31
+        "max_dd_usd": 62.84
     },
     {
         "main_date": "First Reported: 2026-11-12 11:33 UTC",
@@ -9648,7 +9736,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 61.31
+        "max_dd_usd": 62.84
     },
     {
         "main_date": "First Reported: 2026-11-10 23:46 UTC | Last Update: 2026-11-12 11:32 UTC",
@@ -9733,7 +9821,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 61.31
+        "max_dd_usd": 62.84
     },
     {
         "main_date": "First Reported: 2026-11-12 11:03 UTC",
@@ -9927,7 +10015,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.89
+        "max_dd_usd": 72.42
     },
     {
         "main_date": "First Reported: 2026-11-12 10:17 UTC",
@@ -9961,7 +10049,7 @@
             "Orderflow_Price_Target": "3989.79"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 67.64
+        "max_dd_usd": 69.16
     },
     {
         "main_date": "First Reported: 2026-11-12 08:21 UTC | Last Update: 2026-11-12 10:14 UTC",
@@ -10796,7 +10884,7 @@
             "Orderflow_Price_Target": "3989.85"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 60.89
+        "max_dd_usd": 62.42
     },
     {
         "main_date": "First Reported: 2026-11-10 12:32 UTC | Last Update: 2026-11-12 09:28 UTC",
@@ -10879,7 +10967,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 45.78
+        "max_dd_usd": 47.3
     },
     {
         "main_date": "First Reported: 2026-11-12 09:10 UTC",
@@ -10914,7 +11002,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 59.72
+        "max_dd_usd": 61.24
     },
     {
         "main_date": "First Reported: 2026-11-11 22:50 UTC | Last Update: 2026-11-12 09:08 UTC",
@@ -10992,7 +11080,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 59.72
+        "max_dd_usd": 61.24
     },
     {
         "main_date": "First Reported: 2026-11-10 10:21 UTC | Last Update: 2026-11-12 09:01 UTC",
@@ -11159,7 +11247,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 45.78
+        "max_dd_usd": 47.3
     },
     {
         "main_date": "First Reported: 2026-11-12 08:35 UTC",
@@ -11194,7 +11282,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 45.78
+        "max_dd_usd": 47.3
     },
     {
         "main_date": "First Reported: 2026-11-09 19:00 UTC | Last Update: 2026-11-12 08:30 UTC",
@@ -11456,7 +11544,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 45.78
+        "max_dd_usd": 47.3
     },
     {
         "main_date": "First Reported: 2026-11-12 08:20 UTC",
@@ -11491,7 +11579,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 45.78
+        "max_dd_usd": 47.3
     },
     {
         "main_date": "First Reported: 2026-11-12 08:02 UTC",
@@ -11526,7 +11614,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 45.78
+        "max_dd_usd": 47.3
     },
     {
         "main_date": "First Reported: 2026-11-10 18:07 UTC | Last Update: 2026-11-12 08:01 UTC",
@@ -12687,7 +12775,7 @@
             "Orderflow_Price_Target": "3989.85"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 82.76
+        "max_dd_usd": 84.28
     },
     {
         "main_date": "First Reported: 2026-11-09 15:22 UTC | Last Update: 2026-11-12 06:38 UTC",
@@ -17804,46 +17892,6 @@
             "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4019.59.",
             "Bear_Case": "Nearest downside liquidity zone sits at $3999.84. 4h-ATR ratio is 0.87x.",
             "Historical_Calibration": "Rule-based real-time summary active. Event age: 1.3h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-39.68 (0.87x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 13:44 UTC | Last Update: 2026-11-11 14:43 UTC",
-        "original_date": "2026-11-11 13:44",
-        "_timestamp": 1794408230.0,
-        "articles": [
-            {
-                "title": "Retrial of Egyptian journalist Lina Attalah adjourned amid criticism of media crackdown",
-                "link": "https://www.middleeasteye.net/news/mada-masr-chief-lina-attalah-trial-adjourned-egypt",
-                "source": "Middle East Eye",
-                "date": "2026-11-11 13:44",
-                "description": "Retrial of Egyptian journalist Lina Attalah adjourned amid criticism of media crackdown\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nWed, 11/11/2026 - 10:13\n\n        \n      \n    \n      \n    \n                Mada Masr editor’s lawyers say judge has already formed a view against her after ordering the outlet’s closure in a separate case\n                      \n                  \n                  \n\n  \n\n\n                 ",
-                "_timestamp": 1794404687.0
-            },
-            {
-                "title": "Retrial of Egyptian journalist Lina Attalah suspended",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/retrial-egyptian-journalist-lina-attalah-suspended",
-                "source": "Middle East Eye",
-                "date": "2026-11-11 14:43",
-                "description": "Retrial of Egyptian journalist Lina Attalah suspended\n\n    \n    \n\n        \n    \n                An Egyptian court on Wednesday adjourned the retrial of Mada Masr editor-in-chief Lina Attalah until 18 November to consider a defence request for the judge’s removal, the independent news outlet&nbsp;said.\n\nAttalah faces charges of publishing false news and operating a website without a licence in a case in which she was sentenced to a year in prison ",
-                "_timestamp": 1794408230.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "First reported: 2026-11-11 13:44 UTC (~2.7h ago)",
-            "Facts": "[Update 2026-11-11 14:43 UTC via Middle East Eye]: Retrial of Egyptian journalist Lina Attalah suspended — Retrial of Egyptian journalist Lina Attalah suspended\n\n    \n    \n\n        \n    \n                An Egyptian court on Wednesday adjourned the retrial of Mada Masr editor-in-chief Lina Attalah until 18 Nove | [Middle East Eye] Retrial of Egyptian journalist Lina Attalah adjourned amid criticism of media crackdown - Retrial of Egyptian journalist Lina Attalah adjourned amid criticism of media crackdown\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.55%, Nasdaq-100 +3.33%, Brent Oil +3.66% | OANDA Sentiment: 65.9% Long / 34.1% Short | 24/7 OKX XAUUSDT.P: $4012.3 (Spread: $+6.14) | Aggressive Taker Flow: 53.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4019.59.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $3999.84. 4h-ATR ratio is 0.87x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 2.7h.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",

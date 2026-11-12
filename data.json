@@ -1,5 +1,331 @@
 [
     {
+        "main_date": "First Reported: 2026-11-10 12:32 UTC | Last Update: 2026-11-12 14:48 UTC",
+        "original_date": "2026-11-10 12:32",
+        "_timestamp": 1794494890.0,
+        "articles": [
+            {
+                "title": "Microsoft Reportedly Pushes Back Against Trump’s Plan To Ban Chinese Optical Transceivers – Flags Challenges To Data Center Rollout",
+                "link": "https://stocktwits.com/news-articles/markets/equity/microsoft-against-trumps-plan-to-ban-chinese-optical-transceivers/cNGu0CWR97y?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 12:32",
+                "description": "According to a Reuters report, Microsoft met with White House and National Security Council officials to highlight potential shortages if the ban takes effect.",
+                "_timestamp": 1794313944.0
+            },
+            {
+                "title": "Microsoft warns proposed Chinese transceiver ban threatens U.S. AI edge - Reuters",
+                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-warns-proposed-chinese-transceiver-151619964.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:16",
+                "description": "Investing.com -- Microsoft has been quietly lobbying the Trump administration to abandon a proposed ban on Chinese-made optical transceivers, warning that the move risks crippling the domestic buildout of artificial intelligence infrastructure, Reuters reported Tuesday. The pushback reflects mounting anxiety among hyperscalers that escalating geopolitical restrictions could disrupt critical hardware supply chains just as capital expenditure on da",
+                "_timestamp": 1794323779.0
+            },
+            {
+                "title": "China optical stocks rally as Microsoft challenges proposed U.S. import curbs",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/china-optical-stocks-rally-microsoft-063031256.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 06:30",
+                "description": "Investing.com -- Chinese optical communications stocks rallied on Wednesday, with several Hong Kong and mainland listings reaching their highest levels since early November, as investors weighed the implications of a potential U.S. restriction on Chinese data-centre equipment and Microsoft's push to have the proposal dropped.",
+                "_timestamp": 1794378631.0
+            },
+            {
+                "title": "Chinese university buys Nvidia AI H200 chips despite US ban, records show",
+                "link": "https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-11 07:26",
+                "description": "Investigation reveals Chinese entities accessing US-restricted AI tech despite stringent export control measures.",
+                "_timestamp": 1794381988.0
+            },
+            {
+                "title": "Nvidia is spending more than ever on Washington lobbying. It may not stop Congress from limiting China chip sales now.",
+                "link": "https://www.marketwatch.com/story/nvidia-is-spending-more-than-ever-on-washington-lobbying-it-still-may-not-be-able-to-stop-congress-from-limiting-its-china-chip-sales-now-d4c34c66?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-11 18:48",
+                "description": "‘There’s no question that Congress is going to push for a complete ban on the sale of advanced semiconductors into China,’ says a former U.S. ambassador to Beijing",
+                "_timestamp": 1794422880.0
+            },
+            {
+                "title": "Market Chatter: Nvidia Chip Access Concerns Drive Chinese Firms to Secure Overseas Capacity",
+                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-nvidia-chip-access-084521497.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 08:45",
+                "description": "Nvidia (NVDA) faces rising demand for computing capacity as Chinese firms seek to secure overseas ac",
+                "_timestamp": 1794473121.0
+            },
+            {
+                "title": "Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries",
+                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-us-set-extend-092834736.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:28",
+                "description": "The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely a",
+                "_timestamp": 1794475714.0
+            },
+            {
+                "title": "Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing?",
+                "link": "https://www.aljazeera.com/news/2026/11/12/trump-heads-to-china-amid-nvidia-scandal-will-he-get-tougher-on-beijing?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 14:48",
+                "description": "Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week&#039;s talks.",
+                "_timestamp": 1794494890.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 3,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-12 09:28 UTC (approx. 23 minutes ago)",
+            "Facts": "[Update 2026-11-12 14:48 UTC via Al Jazeera English]: Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing? — Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week&#039;s talks. | [Update 2026-11-12 09:28 UTC via Yahoo Finance Nasdaq]: Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries — The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely accessing US tech | Core Background: Regulatory friction is escalating as Microsoft and other tech giants push back against proposed bans on optical transceivers and advanced semiconductors to China, while Chinese entities continue sourcing restricted hardware via alternative channels.",
+            "Uncertainties": "Whether international licensing extensions will effectively choke off remote AI access or merely fragment global semiconductor supply chains.",
+            "Macro_Context": "Tech supply chain friction supports defensive asset rotation. Aggressive taker buying (65.7% market buys) absorbs sell-limit walls as traders hedge regulatory clampdowns.",
+            "Bull_Case": "Technological bifurcation and tightening export controls increase operational costs and systemic friction, boosting gold's appeal as a neutral geopolitical reserve asset.",
+            "Bear_Case": "Broad tech sector supply chain disruptions could cause a liquidity squeeze, forcing temporary long liquidations in precious metals.",
+            "Historical_Calibration": "Category: Tech, AI & Equities | Regime Match: Fresh (<0.8x ATR), Against USD Headwind | Historical Win Rate: 69.6% (87/125, Avg DD: -$15.1)",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 62,
+            "Past_Price_Action_Cause": "Persistent structural demand for safe-haven protection against regulatory fragmentation keeps spot prices supported above key liquidity zones.",
+            "Orderflow_Price_Target": "3989.91"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 62.59
+    },
+    {
+        "main_date": "First Reported: 2026-11-09 02:07 UTC | Last Update: 2026-11-12 14:47 UTC",
+        "original_date": "2026-11-09 02:07",
+        "_timestamp": 1794494855.0,
+        "articles": [
+            {
+                "title": "Brent Crude Fell 12.5% But Former Biden Advisor Warns Iran War Could Return",
+                "link": "https://beincrypto.com/brent-crude-iran-war-hochstein-warning/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 02:07",
+                "description": "Brent crude fell over 12.5% this week, but Amos Hochstein says Iran war odds top 50/50 as Hormuz tanker attacks persist.",
+                "_timestamp": 1794190072.0
+            },
+            {
+                "title": "Oil Sinks to $94 as Iran’s $8 Billion Hormuz Deal Heads to Trump",
+                "link": "https://finance.yahoo.com/energy/articles/oil-sinks-94-iran-8-133000587.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 13:30",
+                "description": "Brent fell 3.6% to $94 as Qatar’s prime minister took an Iranian Hormuz proposal to the White House, extending last week’s 16% slide in oil prices.",
+                "_timestamp": 1794231000.0
+            },
+            {
+                "title": "Exxon Mobil Stocks Move Lower 0.31% as Crude Slides Toward $87",
+                "link": "https://finance.yahoo.com/energy/articles/exxon-mobil-stocks-move-lower-190037292.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 19:00",
+                "description": "Oil fell after President Trump called renewed strikes on Iran \"highly unlikely,\" but Exxon's cash machine barely flinched.",
+                "_timestamp": 1794250837.0
+            },
+            {
+                "title": "U.S. gas prices on track to fall below $4 a gallon, experts say",
+                "link": "https://www.cbsnews.com/news/gas-prices-below-four-dollars-expert-predicts/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 19:15",
+                "description": "Fuel prices have dropped in recent weeks amid hopes that the midterm elections would increase pressure on the U.S. and Iran to reach a peace deal.",
+                "_timestamp": 1794251746.0
+            },
+            {
+                "title": "Oil falls as Trump downplays prospect of escalation with Iran",
+                "link": "https://www.investing.com/news/commodities-news/oil-falls-as-trump-downplays-prospect-of-escalation-with-iran-5013892",
+                "source": "Investing.com",
+                "date": "2026-11-10 01:49",
+                "description": "",
+                "_timestamp": 1794275354.0
+            },
+            {
+                "title": "Oil Prices Extend Decline as Trump Signals Pause in Further Military Action Against Iran",
+                "link": "https://investorshub.advfn.com/market-news/article/39596/oil-prices-extend-decline-as-trump-signals-pause-in-further-military-action-against-iran?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 10:11",
+                "description": "Oil prices fell on Tuesday, extending losses from the previous session after US President Donald Trump indicated that additional military strikes against Iran were not necessary for the time being. The comments reduced concerns about an immediate escalation of the conflict, although risks to shipping through the Strait of Hormuz remained.",
+                "_timestamp": 1794305482.0
+            },
+            {
+                "title": "Brent Crude Falls Below $90 for First Time Since August",
+                "link": "https://finance.yahoo.com/energy/articles/brent-crude-falls-below-90-100635859.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 10:06",
+                "description": "Brent crude prices plunged below $90 per barrel as President Trump signaled restraint toward Iran, raising hopes for an end to the Middle East conflict.",
+                "_timestamp": 1794305195.0
+            },
+            {
+                "title": "Oil drops further as Trump eases Middle East conflict fears",
+                "link": "https://www.offshore-technology.com/news/oil-drops-trump-eases-middle-east-conflict/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 11:05",
+                "description": "Brent crude has now retreated roughly 22% from its six-month high as fears of a broader US-Iran military confrontation subside.",
+                "_timestamp": 1794308759.0
+            },
+            {
+                "title": "Canada Commodities: Oil Prices Fall as Secretary of State Marco Rubio Downplays More Iran Attacks",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-fall-145927198.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-10 14:59",
+                "description": "Crude oil prices fell below $90 per barrel Tuesday morning after US Secretary of State Marco Rubio d",
+                "_timestamp": 1794322767.0
+            },
+            {
+                "title": "Gas prices fall below $4 for the first time since July",
+                "link": "https://finance.yahoo.com/video/gas-prices-fall-below-4-for-the-first-time-since-july-145333135.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 14:53",
+                "description": "U.S. retail gasoline prices have fallen back below $4 per gallon and Brent crude has dipped under $90 as easing Middle East tensions reduce energy's war premium, though structural supply disruptions and seasonal factors leave analysts questioning whether $85 will serve as the new price floor.",
+                "_timestamp": 1794322405.0
+            },
+            {
+                "title": "Canada Commodities: Oil Prices Fall as Secretary of State Marco Rubio Downplays More Iran Attacks",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-fall-145927198.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 14:59",
+                "description": "Crude oil prices fell below $90 per barrel Tuesday morning after US Secretary of State Marco Rubio d",
+                "_timestamp": 1794322767.0
+            },
+            {
+                "title": "Oil Falls to Lowest Level Since August",
+                "link": "https://finance.yahoo.com/energy/articles/oil-falls-lowest-level-since-163400495.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 16:34",
+                "description": "Brent crude briefly fell below $90 as hopes of diplomatic breakthroughs in Iran and Ukraine accelerate the oil market selloff.",
+                "_timestamp": 1794328440.0
+            },
+            {
+                "title": "Oil Prices Just Fell to Their Lowest Since August as Trump Says the Iran War Is ‘Effectively Over’",
+                "link": "https://247wallst.com/investing/2026/11/10/oil-prices-just-fell-to-their-lowest-since-august-as-trump-says-the-iran-war-is-effectively-over/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 18:34",
+                "description": "Futures sank on words alone, with no signed deal and Iran denying any talks exist. Why did one oil fund crater while Exxon and Chevron barely flinched, and what number could reverse the slide?",
+                "_timestamp": 1794335693.0
+            },
+            {
+                "title": "Oil prices rise from 2-mth low with focus on U.S.-Iran peace, inventories",
+                "link": "https://www.investing.com/news/commodities-news/oil-prices-rise-from-2mth-low-with-focus-on-usiran-peace-inventories-5017522",
+                "source": "Investing.com",
+                "date": "2026-11-11 02:15",
+                "description": "",
+                "_timestamp": 1794363346.0
+            },
+            {
+                "title": "Brent briefly dips below $90 for first time since August on Iran peace hopes",
+                "link": "https://www.investing.com/news/commodities-news/oil-prices-dip-amid-iran-peace-hopes-improving-supplies-5013753",
+                "source": "Investing.com",
+                "date": "2026-11-10 22:21",
+                "description": "",
+                "_timestamp": 1794349293.0
+            },
+            {
+                "title": "Oil prices rise from 2-mth low with focus on U.S.-Iran peace, inventories",
+                "link": "https://finance.yahoo.com/energy/articles/oil-prices-rise-2-mth-024546161.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 02:45",
+                "description": "Investing.com-- Oil prices rose slightly in Asian trade on Wednesday, recovering from a two-month low as markets remained focused on any signs of de-escalation in the U.S.-Iran war.",
+                "_timestamp": 1794365146.0
+            },
+            {
+                "title": "Jim Cramer Ties CPI Relief to $40 Oil, but Brent Trades Over $92",
+                "link": "https://beincrypto.com/jim-cramer-40-oil-cpi-relief/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 04:25",
+                "description": "Jim Cramer ties CPI relief to $40 oil, but Brent trades near $91 and core inflation still ran hot in October.",
+                "_timestamp": 1794371130.0
+            },
+            {
+                "title": "Oil Prices Rise as Iran Peace Optimism Fades",
+                "link": "https://finance.yahoo.com/energy/articles/oil-prices-rise-iran-peace-054500318.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 05:45",
+                "description": "Oil prices rebounded as continuing attacks on shipping near the Strait of Hormuz undermined optimism about a potential U.S.-Iran peace deal.",
+                "_timestamp": 1794375900.0
+            },
+            {
+                "title": "Oil Prices Rise More Than 1% as Iran Rejects Removal of Enriched Nuclear Material and Hormuz Risks Persist",
+                "link": "https://investorshub.advfn.com/market-news/article/39736/oil-prices-rise-more-than-1-as-iran-rejects-removal-of-enriched-nuclear-material-and-hormuz-risks-persist?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 10:10",
+                "description": "Oil prices advanced on Wednesday, recovering from two-month lows after an Iranian security official said Tehran would not permit enriched nuclear material to leave the country, adding uncertainty to prospects for negotiations aimed at ending the conflict involving Iran, the United States and Israel. At 09:34 GMT, Brent crude futures rose $1.",
+                "_timestamp": 1794391820.0
+            },
+            {
+                "title": "EIA Sees Brent Near $100 for the Rest of the Year as Crude Futures Ease Again",
+                "link": "https://finance.yahoo.com/energy/articles/eia-sees-brent-near-100-123000435.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 12:30",
+                "description": "Oil Market Daily News Commentary - U.S. crude oil futures closed lower for a second straight session on Tuesday. The December NYMEX West Texas Intermediate contract settled at $86.04 a barrel, down 81 cents, or 0.93%, and the January ICE Brent contract settled at $91.49, down $1.08, or 1.17%. December WTI had settled at $104.12 on Oct. 30. Over the past two weeks, a producer, an oil sands company, a refiner, a gas processor and a tanker owner hav",
+                "_timestamp": 1794400200.0
+            },
+            {
+                "title": "Jefferies Backs Two European Oil Stocks, Lifts 2027 Brent Call to $82.5",
+                "link": "https://finance.yahoo.com/energy/articles/jefferies-backs-two-european-oil-125905910.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 12:59",
+                "description": "Investing.com -- Jefferies kept its “buy” rating and €35 price target on integrated oil company Repsol, saying Repsol’s 2026 shareholder returns estimate has risen 44% and its net debt reduction is the sector’s highest.",
+                "_timestamp": 1794401945.0
+            },
+            {
+                "title": "Brent Jumps Nearly 3% as Iran Denies Any Talks With Washington",
+                "link": "https://finance.yahoo.com/energy/articles/brent-jumps-nearly-3-iran-163000485.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 16:30",
+                "description": "Brent rose more than 3% to above $94 as Iran denied talks with the U.S., while Saudi output neared pre-war levels and Hormuz ship attacks continued.",
+                "_timestamp": 1794414600.0
+            },
+            {
+                "title": "Oil prices dip on report of more U.S.-Iran diplomacy plans",
+                "link": "https://www.investing.com/news/commodities-news/oil-prices-dip-on-report-of-more-usiran-diplomacy-plans-5020081",
+                "source": "Investing.com",
+                "date": "2026-11-11 23:48",
+                "description": "",
+                "_timestamp": 1794440935.0
+            },
+            {
+                "title": "Oil Prices Sink as Iran and Ukraine Peace Optimism Builds",
+                "link": "https://finance.yahoo.com/energy/articles/oil-prices-sink-iran-ukraine-063500894.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 06:35",
+                "description": "Oil prices fell as hopes for easing conflicts in Iran and Ukraine, rising OPEC+ production, and growing U.S. crude inventories outweighed concerns about Middle Eastern supply disruptions.",
+                "_timestamp": 1794465300.0
+            },
+            {
+                "title": "Oil Prices Recover as Middle East Tensions Offset Rising Production",
+                "link": "https://investorshub.advfn.com/market-news/article/39857/oil-prices-recover-as-middle-east-tensions-offset-rising-production?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 10:06",
+                "description": "Oil prices advanced on Thursday, recovering from earlier declines as geopolitical tensions in the Middle East continued to influence trading despite increased crude production in the region. Brent crude futures rose 45 cents, or 0.",
+                "_timestamp": 1794478004.0
+            },
+            {
+                "title": "Trump Says No Iran Deal Needed; Oil Prices Jump",
+                "link": "https://finance.yahoo.com/m/ea7d1174-292c-38c3-9191-66791c17946e/trump-says-no-iran-deal.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 14:47",
+                "description": "Oil futures shot up on Thursday after President Donald Trump said the U.S. doesn't \"need a deal with Iran.\"",
+                "_timestamp": 1794494855.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 2,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-11 05:45 UTC (~1 hour ago relative to 2026-11-11 06:40 UTC)",
+            "Facts": "[Update 2026-11-12 14:47 UTC via Yahoo Finance Oil]: Trump Says No Iran Deal Needed; Oil Prices Jump — Oil futures shot up on Thursday after President Donald Trump said the U.S. doesn't \"need a deal with Iran.\" | [Update 2026-11-12 10:06 UTC via Yahoo Finance Oil]: Oil Prices Recover as Middle East Tensions Offset Rising Production — Oil prices advanced on Thursday, recovering from earlier declines as geopolitical tensions in the Middle East continued to influence trading despite increased crude production in t | [Update 2026-11-12 06:35 UTC via Yahoo Finance Oil]: Oil Prices Sink as Iran and Ukraine Peace Optimism Builds — Oil prices fell as hopes for easing conflicts in Iran and Ukraine, rising OPEC+ production, and growing U.S. crude inventories outweighed concerns about Middle Eastern supply disru | [Update 2026-11-11 23:48 UTC via Investing.com]: Oil prices dip on report of more U.S.-Iran diplomacy plans | [Update 2026-11-11 16:30 UTC via Yahoo Finance Oil]: Brent Jumps Nearly 3% as Iran Denies Any Talks With Washington — Brent rose more than 3% to above $94 as Iran denied talks with the U.S., while Saudi output neared pre-war levels and Hormuz ship attacks continued. | [Update 2026-11-11 12:59 UTC via Yahoo Finance Oil]: Jefferies Backs Two European Oil Stocks, Lifts 2027 Brent Call to $82.5 — Investing.com -- Jefferies kept its “buy” rating and €35 price target on integrated oil company Repsol, saying Repsol’s 2026 shareholder returns estimate has risen 44% and its net  | [Update 2026-11-11 12:30 UTC via Yahoo Finance Oil]: EIA Sees Brent Near $100 for the Rest of the Year as Crude Futures Ease Again — Oil Market Daily News Commentary - U.S. crude oil futures closed lower for a second straight session on Tuesday. The December NYMEX West Texas Intermediate contract settled at $86. | [Update 2026-11-11 10:10 UTC via Yahoo Finance Oil]: Oil Prices Rise More Than 1% as Iran Rejects Removal of Enriched Nuclear Material and Hormuz Risks Persist — Oil prices advanced on Wednesday, recovering from two-month lows after an Iranian security official said Tehran would not permit enriched nuclear material to leave the country, add | Oil prices rebounded as continuing attacks on shipping near the Strait of Hormuz undermined optimism about a potential U.S.-Iran peace deal. Brent crude trades near $94.59 (+0.94%). Jim Cramer and market participants note persistent inflationary pressures from elevated energy costs. [Yahoo Finance Oil, Investing.com].",
+            "Uncertainties": "Whether diplomatic channels in Abu Dhabi can establish a durable ceasefire or if shipping disruptions in the Strait of Hormuz will escalate further.",
+            "Macro_Context": "Brent crude is up 0.94% to $94.59, reinforcing energy-driven inflation fears. This undercuts Fed rate cut optimism, keeping upward pressure on safe-haven gold despite strong USD proxies.",
+            "Bull_Case": "Ongoing military friction in the Strait of Hormuz drives persistent safe-haven demand and commodity-push inflation, underpinning XAU/USD bids.",
+            "Bear_Case": "Any sudden breakthrough in U.S.-Iran peace negotiations could trigger an immediate unwinding of the geopolitical risk premium in gold.",
+            "Historical_Calibration": "Category: Geopolitics & War, Fresh (<0.8x ATR) at 0.23x, Against USD Headwind. Historical Win Rate from Regime Matrix: 62.3% for Geopolitics & War.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 58,
+            "Past_Price_Action_Cause": " Geopolitical risk premium in oil and shipping lanes supports gold's floor against aggressive upper-wick selling.",
+            "Orderflow_Price_Target": "4060.26"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 0.69
+    },
+    {
         "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-12 14:46 UTC",
         "original_date": "2026-11-11 16:44",
         "_timestamp": 1794494798.0,
@@ -155,6 +481,30 @@
                 "date": "2026-11-12 14:46",
                 "description": "Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief market strategist Liz Thomas and Moor Insights & Strategy founder Patrick Moorhead at Yahoo Finance's 2026 Invest conference to discuss the parallels between Steve Jobs for Apple (AAPL) and Huang for Nvidia.",
                 "_timestamp": 1794494798.0
+            },
+            {
+                "title": "Who is Colette Kress? Nvidia's finance chief steps in as interim CEO after Huang exit",
+                "link": "https://www.cnbc.com/2026/11/12/colette-kress-nvidia-cfo-interim-ceo-candidate.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-12 14:36",
+                "description": "Colette Kress joined Nvidia in 2013 after nearly 25 years in finance roles at Cisco, Microsoft and other tech companies.",
+                "_timestamp": 1794494195.0
+            },
+            {
+                "title": "Nvidia CEO Jensen Huang resigns",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 14:40",
+                "description": "Nvidia CEO Jensen Huang has resigned amid reports of a second affair with an executive.",
+                "_timestamp": 1794494420.0
+            },
+            {
+                "title": "LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns",
+                "link": "https://www.aljazeera.com/news/liveblog/2026/11/12/live-jensen-huang-resigns-as-nvidia-ceo-as-affairs-raise-security-concerns?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 14:44",
+                "description": "Jensen Huang, 63, has resigned as chief executive of AI giant Nvidia, according to the company.",
+                "_timestamp": 1794494694.0
             }
         ],
         "needs_update": true,
@@ -162,7 +512,7 @@
             "Cluster_ID": 0,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
             "Event_Timestamp": "2026-11-12 14:38 UTC (~0 hours ago relative to reference time)",
-            "Facts": "[Update 2026-11-12 14:46 UTC via Yahoo Finance Nasdaq]: Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary? — Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief marke | [Update 2026-11-12 14:43 UTC via Yahoo Finance Nasdaq]: Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide — Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42  | [Update 2026-11-12 14:40 UTC via Yahoo Finance Nasdaq]: Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation. — Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor. | [Update 2026-11-12 14:30 UTC via Yahoo Finance Nasdaq]: The unfolding Jensen Huang scandal: a timeline — Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastru | [Update 2026-11-12 14:38 UTC via CNBC Tech & AI]: Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief — Nvidia CEO Jensen Huang has faced increased scrutiny following affair revelations and investigations | Core Background: D.A. Davidson's Gil Luria previously warned investors against CoreWeave after Nvidia's board opened probes into Jensen Huang, which quickly culminated in his resignation as president, CEO, and board member, with CFO Colette Kress stepping in as interim chief.",
+            "Facts": "[Update 2026-11-12 14:44 UTC via Al Jazeera English]: LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns — Jensen Huang, 63, has resigned as chief executive of AI giant Nvidia, according to the company. | [Update 2026-11-12 14:40 UTC via Al Jazeera English]: Nvidia CEO Jensen Huang resigns — Nvidia CEO Jensen Huang has resigned amid reports of a second affair with an executive. | [Update 2026-11-12 14:36 UTC via CNBC Tech & AI]: Who is Colette Kress? Nvidia's finance chief steps in as interim CEO after Huang exit — Colette Kress joined Nvidia in 2013 after nearly 25 years in finance roles at Cisco, Microsoft and other tech companies. | [Update 2026-11-12 14:46 UTC via Yahoo Finance Nasdaq]: Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary? — Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief marke | [Update 2026-11-12 14:43 UTC via Yahoo Finance Nasdaq]: Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide — Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42  | [Update 2026-11-12 14:40 UTC via Yahoo Finance Nasdaq]: Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation. — Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor. | [Update 2026-11-12 14:30 UTC via Yahoo Finance Nasdaq]: The unfolding Jensen Huang scandal: a timeline — Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastru | [Update 2026-11-12 14:38 UTC via CNBC Tech & AI]: Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief — Nvidia CEO Jensen Huang has faced increased scrutiny following affair revelations and investigations | Core Background: D.A. Davidson's Gil Luria previously warned investors against CoreWeave after Nvidia's board opened probes into Jensen Huang, which quickly culminated in his resignation as president, CEO, and board member, with CFO Colette Kress stepping in as interim chief.",
             "Uncertainties": "The full fallout on multi-billion dollar backstops, partner dependencies like CoreWeave, and the direction of US-China relations under interim leadership remain highly uncertain.",
             "Macro_Context": "Nasdaq 100 is higher (+0.18%), but the massive tech governance shock creates severe equity volatility that impacts broader risk sentiment. XAU/USD faces intraday pressure alongside aggressive taker selling at highs.",
             "Bull_Case": "Uncertainty surrounding Nvidia's executive leadership and potential delays in AI infrastructure expansion could trigger a broader risk-off flight to safety, boosting safe-haven gold demand.",
@@ -598,6 +948,387 @@
         "max_dd_usd": 6.26
     },
     {
+        "main_date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-12 14:44 UTC",
+        "original_date": "2026-11-08 23:30",
+        "_timestamp": 1794494676.0,
+        "articles": [
+            {
+                "title": "Nvidia Stock Faces New Pressure as Board Investigates Huang’s Links to Alleged Spy",
+                "link": "https://finance.yahoo.com/m/09a7b85b-f39c-346a-88bc-f818668a56a9/nvidia-stock-faces-new.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 23:30",
+                "description": "The board said it has no reason to believe that either national security or Nvidia secrets were compromised.",
+                "_timestamp": 1794180600.0
+            },
+            {
+                "title": "Nvidia Slips 3% Overnight as Board Probes Jensen Huang: “No Reason to Believe” Secrets Were Compromised",
+                "link": "https://www.tikr.com/blog/nvidia-slips-3-overnight-as-board-probes-jensen-huang-no-reason-to-believe-secrets-were-compromised?ref=yahoofinance&tlnk=yf-261109-9rm87vv2&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 05:21",
+                "description": "Key TakeawaysNvidia stock traded about 3. 4% lower overnight, near $180, after its board opened an independent probe into reports that CEO Jensen Huang was the target of a foreign intelligence effort.",
+                "_timestamp": 1794201685.0
+            },
+            {
+                "title": "Stock Market Today: Dow Rallies As Oil Prices Slide; Nvidia Stock Dives On CEO Huang Probe (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 13:04",
+                "description": "The Dow Jones index rallies 500 points Monday as oil prices drop. Nvidia stock dives on the probe into CEO Jensen Huang.",
+                "_timestamp": 1794229497.0
+            },
+            {
+                "title": "Nvidia stock sinks 5% as chipmaker investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 13:03",
+                "description": "Nvidia sank 5% on Monday, while the rest of the chip sector mostly rose.",
+                "_timestamp": 1794229426.0
+            },
+            {
+                "title": "Stock Market Today: Dow Rallies As Oil Prices Slide; Nvidia Stock Dives On CEO Huang Probe (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 13:04",
+                "description": "The Dow Jones index rallies 500 points Monday as oil prices drop. Nvidia stock dives on the probe into CEO Jensen Huang.",
+                "_timestamp": 1794229497.0
+            },
+            {
+                "title": "Nvidia Stock Drops On Spy Scandal, CEO Probe",
+                "link": "https://finance.yahoo.com/m/2c1c8bc5-818d-357d-a3f9-2b7a4a511e1f/nvidia-stock-drops-on-spy.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 14:06",
+                "description": "Nvidia stock fell Monday as the AI chipmaker deals with an embarrassing \"honeypot\" scandal involving Chief Executive Jensen Huang.",
+                "_timestamp": 1794233201.0
+            },
+            {
+                "title": "Stock Market Today: Nvidia Pressures Indexes to Maintain Rebound",
+                "link": "https://247wallst.com/investing/2026/11/09/stock-market-today-nvidia-pressures-indexes-to-maintain-rebound/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 14:28",
+                "description": "Cheaper oil is handing Wall Street a Monday bounce, but a boardroom shock at one AI giant and stalled peace talks could undo it fast. Find out which corner of the market is quietly pulling ahead.",
+                "_timestamp": 1794234498.0
+            },
+            {
+                "title": "Why Nvidia Stock Was Falling Today",
+                "link": "https://www.fool.com/investing/2026/11/09/why-nvidia-stock-was-falling-today/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 16:43",
+                "description": "Nvidia CEO Jensen Huang is in hot water after admitting an affair with a suspected Chinese spy.",
+                "_timestamp": 1794242603.0
+            },
+            {
+                "title": "Top Midday Stories: Nvidia Faces China Spy Allegations; NRG to Sell 6 natural Gas Generation Assets to LS Power for $4 Billion",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-nvidia-faces-164201985.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 16:42",
+                "description": "All three major US stock indexes were up over 1.5% on Monday, with the Nasdaq Composite trading abov",
+                "_timestamp": 1794242521.0
+            },
+            {
+                "title": "Nvidia shares slump amid investigation into CEO Jensen Huang",
+                "link": "https://www.aljazeera.com/economy/2026/11/9/nvidia-shares-slump-amid-investigation-into-ceo-jensen-huang?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-09 16:00",
+                "description": "Huang admits infidelity, denies compromising Nvidia security as China spy inquiry shakes $4.5 trillion AI firm.",
+                "_timestamp": 1794240010.0
+            },
+            {
+                "title": "U.S. Stocks Leap Despite Nvidia Slide",
+                "link": "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 19:29",
+                "description": "U.S. stocks jumped, even as Nvidia’s shares sank after the company’s board launched an investigation into CEO Jensen Huang.",
+                "_timestamp": 1794252540.0
+            },
+            {
+                "title": "Nvidia stock slumps amid board investigation into CEO Jensen Huang",
+                "link": "https://www.cbsnews.com/news/nvidia-jensen-huang-stock-board-investigation-spy/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 19:46",
+                "description": "Investors are questioning whether Huang's future as Nvidia's CEO may be at risk amid allegations that he was targeted in a Chinese intelligence operation.",
+                "_timestamp": 1794253580.0
+            },
+            {
+                "title": "Jensen Huang Might Be the Biggest Wild Card for Nvidia Stock. Here's What to Watch During Earnings on Nov. 17",
+                "link": "https://www.fool.com/investing/2026/11/09/jensen-huang-might-be-the-biggest-wild-card-for-nvidia-stock-here-s-what-to-watch-during-earnings-on-nov-17/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 19:29",
+                "description": "Nvidia's business is still booming, but the investigation tied to its CEO adds a risk that no one can yet price in. Here are the four things to watch next week.",
+                "_timestamp": 1794252575.0
+            },
+            {
+                "title": "U.S. Stocks Leap Despite Nvidia Slide",
+                "link": "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 19:29",
+                "description": "U.S. stocks jumped, even as Nvidia’s shares sank after the company’s board launched an investigation into CEO Jensen Huang.",
+                "_timestamp": 1794252540.0
+            },
+            {
+                "title": "Stock Market Today: Dow Pops, Multiple Stocks Clear Entries; Jensen Huang Details Emerge (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow-pops%2C.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 20:46",
+                "description": "The Dow Jones index rallied Monday as Nvidia dived on a probe into CEO Jensen Huang. Multiple stocks cleared buy points.",
+                "_timestamp": 1794257180.0
+            },
+            {
+                "title": "Nvidia stock drops 3%, extending decline on report alleged Chinese spy linked to Nvidia CEO aided $7.5 billion in China chip shipments",
+                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipments-152654028.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:24",
+                "description": "Nvidia sank on Tuesday, while the rest of the chip sector held up.",
+                "_timestamp": 1794324261.0
+            },
+            {
+                "title": "Why analysts aren't trying to ruffle Nvidia's feathers amid CEO scandal",
+                "link": "https://finance.yahoo.com/video/why-analysts-arent-trying-to-ruffle-nvidias-feathers-amid-ceo-scandal-151507913.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:15",
+                "description": "Yahoo Finance Executive Editor Brian Sozzi assesses why Wall Street analysts have been largely silent on Nvidia (NVDA) amid the scandal involving CEO Jensen Huang and why being crtitical could cost them access to management.",
+                "_timestamp": 1794323707.0
+            },
+            {
+                "title": "NVIDIA Stocks Slide 4.43% as Report Alleges $7.5 Billion in Chips Reached China",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-slide-4-43-175809767.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 17:58",
+                "description": "The Information says a network tied to an alleged Beijing intelligence asset obtained roughly 240,000 restricted GPUs while the board's review continues.",
+                "_timestamp": 1794333489.0
+            },
+            {
+                "title": "Nvidia Is Down 30% From Its High. History Says This Is What Happens Next.",
+                "link": "https://www.fool.com/investing/2026/11/10/nvidia-is-down-30-from-its-high-history-says-this/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 18:15",
+                "description": "The chipmaker's stock could be a bargain buy today.",
+                "_timestamp": 1794334500.0
+            },
+            {
+                "title": "Prediction: Nov. 18 Will Be a Huge Day for the Stock Market",
+                "link": "https://www.fool.com/investing/2026/11/10/prediction-nov-18-will-be-a-huge-day-for-the-stock-market/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 20:20",
+                "description": "Nvidia CEO Jensen Huang has been asked to brief Congress about his ties to a business executive from Singapore on Nov. 18.",
+                "_timestamp": 1794342002.0
+            },
+            {
+                "title": "Nvidia could soon face tougher export rules, making it harder to sell chips to China after scandal",
+                "link": "https://www.marketwatch.com/story/nvidia-could-soon-face-tougher-export-rules-making-it-harder-to-sell-chips-to-china-69c88cc8?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-10 20:37",
+                "description": "“There is growing momentum for these bills in light of the Jensen Huang spy scandal,” one analyst says.",
+                "_timestamp": 1794343020.0
+            },
+            {
+                "title": "Nvidia Stock Hit With Price-Target Cuts Amid Spy Scandal",
+                "link": "https://finance.yahoo.com/m/45cd5aac-d312-37af-8964-003c24a22c85/nvidia-stock-hit-with.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 21:24",
+                "description": "Nvidia stock continued to fall on Tuesday in the wake of an affair involving CEO Jensen Huang and an alleged Chinese \"honeypot\" spy.",
+                "_timestamp": 1794345867.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 10: Nvidia Stock Plunges 5.5% as CEO Scandal Overshadows Its Upcoming Earnings Report",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-nvidia-stock-plunges-5-5-as-ceo-scandal-overshadows-its-upcoming-earnings-report/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:35",
+                "description": "Nvidia shares extended their sell-off as an investigation involving CEO Jensen Huang raised fresh concerns about corporate governance, leadership uncertainty, and the AI chipmaker's future.",
+                "_timestamp": 1794350102.0
+            },
+            {
+                "title": "Nvidia shares rebound 4% as Huang faces scrutiny ahead of earnings",
+                "link": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-11 10:03",
+                "description": "Investors are assessing whether CEO Jensen Huang's affair will have spillover effects on Nvidia's business.",
+                "_timestamp": 1794391409.0
+            },
+            {
+                "title": "Nvidia Selloff Puts China Exposed US Chip Stocks Back In Focus",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-selloff-puts-china-exposed-130900790.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 13:09",
+                "description": "A 9.5% two-day slide in Nvidia that wiped about US$430b off its market value has turned a hot AI favorite into a stress test for every large-cap chip stock tied to China. Political scrutiny of Jensen Huang, fresh export-control proposals and a board investigation have pulled risk into sharp focus. This article unpacks how that shock ripples into three U.S. semiconductor stocks exposed to the same headlines and where the news flow currently looks ",
+                "_timestamp": 1794402540.0
+            },
+            {
+                "title": "Nvidia is Now Down More Than 25% In 30 Days: This Wall Street Desk Predicts 205% Returns",
+                "link": "https://247wallst.com/investing/2026/11/11/nvidia-is-now-down-more-than-25-in-30-days-this-wall-street-desk-predicts-205-returns/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 15:45",
+                "description": "NVIDIA posted a record quarter and still lost a quarter of its value in a month, while earnings estimates kept climbing. A swelling balance sheet and one looming report may explain why investors are bailing.",
+                "_timestamp": 1794411931.0
+            },
+            {
+                "title": "Nvidia, CoreWeave, Nebius, Teradyne, Riskified, and More Stocks That Explain Today’s Market",
+                "link": "https://finance.yahoo.com/m/37147cf1-aa70-3e70-9d7d-f8d6cb4dcbb8/nvidia%2C-coreweave%2C-nebius%2C.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 18:00",
+                "description": "Nvidia rises following a rebound in shares of AI companies even as Baird calls for Nvidia CEO Jensen Huang to step down.",
+                "_timestamp": 1794420000.0
+            },
+            {
+                "title": "Nvidia shares slip in after-hours trading on fresh allegations of CEO relationship",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-slip-hours-trading-223702826.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 22:37",
+                "description": "Investing.com -- Nvidia shares fell about 3% in after-hours trading Wednesday evening after a new report alleged that chief executive Jensen Huang maintained an extramarital relationship with Kimberly Powell, the company’s vice president of healthcare—a senior executive who reports to him.",
+                "_timestamp": 1794436622.0
+            },
+            {
+                "title": "Nvidia Just Fell 8.3% After Hours on a Report of a Second Jensen Huang Affair. Here’s What 2,000 Shares Have Lost This Week",
+                "link": "https://247wallst.com/investing/2026/11/11/nvidia-just-fell-8-3-after-hours-on-a-report-of-a-second-jensen-huang-affair-heres-what-2000-shares-have-lost-this-week/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 22:37",
+                "description": "Nvidia fell 8.3% after hours Wednesday to $159.37 after The New York Times reported a second Jensen Huang affair, with Nvidia executive Kimberly Powell. A holder with 2,000 shares has lost $54,540 since the November 6 close. Dan Ives says Huang's exit would cut Nvidia's value 25% to 30%; Baird says a new CEO is needed.",
+                "_timestamp": 1794436675.0
+            },
+            {
+                "title": "Nvidia stock drops as board reportedly weighs Jensen Huang’s future",
+                "link": "https://www.cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 00:15",
+                "description": "Nvidia shares dropped sharply in after-hours trading on Wednesday after reports that CEO Jensen Huang had an extramarital relationship with a company executive and that the board is meeting to discuss his future.",
+                "_timestamp": 1794442518.0
+            },
+            {
+                "title": "Nvidia's stock dives as board weighs move to oust Jensen Huang",
+                "link": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 00:18",
+                "description": "Nvidia shares fall sharply in after-hours trading as the company's board considers whether to remove Jensen Huang as CEO.",
+                "_timestamp": 1794442705.0
+            },
+            {
+                "title": "Nvidia shares plunge amid reports board to discuss CEO Huang’s future",
+                "link": "https://www.aljazeera.com/economy/2026/11/12/nvidia-shares-plunge-amid-reports-board-to-discuss-ceo-huangs-future?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 00:43",
+                "description": "Chip giants stock price falls more than 8 percent amid speculation over co-founder&#039;s future.",
+                "_timestamp": 1794444206.0
+            },
+            {
+                "title": "Asian stocks drop as traders keep eye on Nvidia crisis",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-extend-gains-traders-025559054.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 07:13",
+                "description": "Asian stocks fell Thursday as investors kept a nervous eye on Nvidia whose influential boss Jensen Huang faces a probe into an affair with a woman accused of spying for China.Traders' nerves are being tested by the crisis at Nvidia, with co-founder and CEO Huang facing the boot after he admitted a relationship with Alice Huang, a senior executive at Singapore-based data centre company Megaspeed.",
+                "_timestamp": 1794467587.0
+            },
+            {
+                "title": "Pressure Mounts on Nvidia's Jensen Huang Amid Reports of Second Affair",
+                "link": "https://decrypt.co/383114/pressure-mounts-on-nvidias-jensen-huang-amid-reports-of-second-affair?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:47",
+                "description": "Nvidia's board is reportedly preparing to oust its CEO, sending the chipmaker's shares down more than 5% in premarket trading.",
+                "_timestamp": 1794476838.0
+            },
+            {
+                "title": "Nvidia Outlook Damps Asian Stock Markets",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/nvidia-outlook-damps-asian-stock-103439402.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 10:34",
+                "description": "Asian stock markets tracked moderately lower Thursday, after US chip giant Nvidia (NVDA) shares hit",
+                "_timestamp": 1794479679.0
+            },
+            {
+                "title": "Nerves around Nvidia as investors await the outcome of Board's crisis CEO meeting",
+                "link": "https://www.cnbc.com/2026/11/12/nvidia-boards-crisis-meeting.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-12 11:06",
+                "description": "Shares in Nvidia are back in the red in premarket trading as Huang's future hangs in the balance",
+                "_timestamp": 1794481601.0
+            },
+            {
+                "title": "Nvidia tumbles early amid questions about Nvidia CEO Jensen Huang’s future",
+                "link": "https://finance.yahoo.com/technology/articles/nvidia-tumbles-early-amid-questions-122602360.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 12:26",
+                "description": "NEW YORK (AP) — Shares of Nvidia, the chipmaker at the center of the global artificial intelligence boom, tumbled early Thursday with the tenure of CEO Jensen Huang threatened by revelations of an affair with a woman reported to be a suspected Chinese spy. The company's stock has been under pressure for weeks, both because of reporting about the affair and questions about a potential bubble in the AI sector.",
+                "_timestamp": 1794486362.0
+            },
+            {
+                "title": "Five things to know about Nvidia",
+                "link": "https://finance.yahoo.com/technology/ai/articles/five-things-know-nvidia-130739903.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:07",
+                "description": "After launching as a small gaming start-up and morphing into the top chip designer for artificial intelligence, US tech giant Nvidia faces unprecedented turbulence after  its co-founder and CEO Jensen Huang reportedly had a second extramarital affair with an employee. - Video games to data centers - After its launch, Nvidia became the first company entirely dedicated to graphics processors, hoping to ride the video games wave as they started to f",
+                "_timestamp": 1794488859.0
+            },
+            {
+                "title": "Why Intel and Marvell Stocks Are Caught in Nvidia’s Web",
+                "link": "https://finance.yahoo.com/m/a0845ef8-f26b-34ea-a67f-3b4ce7ce3701/why-intel-and-marvell-stocks.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:31",
+                "description": "Intel stock falls along with Marvell, Lumentum, and Coherent on reports Nvidia CEO Jensen Huang may be forced out. Here's why that is bad news.",
+                "_timestamp": 1794490260.0
+            },
+            {
+                "title": "Stock Market Today: Dow Wavers On Trump Remarks; Nvidia Plunges As Jensen Huang Resigns (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/b961f164-91b1-38c0-a2e1-5ab20b01108e/stock-market-today%3A-dow.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 14:44",
+                "description": "The Dow wavers Thursday on Trump's Iran comments as Nvidia stock plunges 10% on the resignation of Jensen Huang.",
+                "_timestamp": 1794494676.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 1,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-12 09:47 UTC (approx. 0.3 hours ago)",
+            "Facts": "[Update 2026-11-12 14:44 UTC via Yahoo Finance Oil]: Stock Market Today: Dow Wavers On Trump Remarks; Nvidia Plunges As Jensen Huang Resigns (Live Coverage) — The Dow wavers Thursday on Trump's Iran comments as Nvidia stock plunges 10% on the resignation of Jensen Huang. | [Update 2026-11-12 13:31 UTC via Yahoo Finance Nasdaq]: Why Intel and Marvell Stocks Are Caught in Nvidia’s Web — Intel stock falls along with Marvell, Lumentum, and Coherent on reports Nvidia CEO Jensen Huang may be forced out. Here's why that is bad news. | [Update 2026-11-12 13:07 UTC via Yahoo Finance Nasdaq]: Five things to know about Nvidia — After launching as a small gaming start-up and morphing into the top chip designer for artificial intelligence, US tech giant Nvidia faces unprecedented turbulence after  its co-fo | [Update 2026-11-12 12:26 UTC via Yahoo Finance Nasdaq]: Nvidia tumbles early amid questions about Nvidia CEO Jensen Huang’s future — NEW YORK (AP) — Shares of Nvidia, the chipmaker at the center of the global artificial intelligence boom, tumbled early Thursday with the tenure of CEO Jensen Huang threatened by r | [Update 2026-11-12 11:06 UTC via CNBC Tech & AI]: Nerves around Nvidia as investors await the outcome of Board's crisis CEO meeting — Shares in Nvidia are back in the red in premarket trading as Huang's future hangs in the balance | [Update 2026-11-12 10:34 UTC via Yahoo Finance Oil]: Nvidia Outlook Damps Asian Stock Markets — Asian stock markets tracked moderately lower Thursday, after US chip giant Nvidia (NVDA) shares hit | [Update 2026-11-12 09:47 UTC via Yahoo Finance Nasdaq]: Nvidia's board is reportedly preparing to oust its CEO Jensen Huang amid a second affair probe, sending shares down over 5% in premarket trading | Core Background: Nvidia shares plunged following revelations that co-founder and CEO Jensen Huang faces a board probe regarding links to an alleged spy, compounding corporate governance crises and dragging down broader equity sentiment.",
+            "Uncertainties": "Whether the board will officially oust Jensen Huang and how deeply enterprise AI infrastructure spending plans will be disrupted by management turmoil.",
+            "Macro_Context": "Tech equity sell-offs driven by corporate governance shocks can trigger broad liquidity liquidations, temporarily boosting safe-haven cash or driving margin calls that impact gold alongside equities.",
+            "Bull_Case": "Systemic shocks to mega-cap tech leaders undermine market confidence in high-flying equity valuations, driving capital flight toward physical safe-havens like gold.",
+            "Bear_Case": "Severe equity drawdowns can induce forced liquidations across multi-asset portfolios, causing leveraged gold longs to unwind alongside stocks.",
+            "Historical_Calibration": "Fed, Rates & Macro category with Fresh ATR-Ratio (0.35x) and against USD headwind yields a historical win rate of 66.1% (Avg DD: -$17.1).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 60,
+            "Past_Price_Action_Cause": "Aggressive taker buying (64.1% OKX perp buy ratio) and strong lower-wick dip buying reflect safe-haven absorption of tech-driven equity volatility.",
+            "Orderflow_Price_Target": "3989.85"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 37.08
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 14:42 UTC",
+        "original_date": "2026-11-12 14:42",
+        "_timestamp": 1794494520.0,
+        "articles": [
+            {
+                "title": "Renforth Resources completes new channel sampling at Parbec gold deposit",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101685/renforth-resources-completes-new-channel-sampling-at-parbec-gold-deposit-1101685.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-12 14:42",
+                "description": "Renforth Resources Inc (CSE:RFR, OTCQB:RFHRF) has completed another round of channel sampling at its wholly owned Parbec gold deposit in Malartic, Quebec, as work on an updated mineral resource estimate moves towards completion. The latest sampling was carried out within the stripped area of...",
+                "_timestamp": 1794494520.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "First reported: 2026-11-12 14:42 UTC (~0.3h ago)",
+            "Facts": "[Yahoo Finance Gold] Renforth Resources completes new channel sampling at Parbec gold deposit - Renforth Resources Inc (CSE:RFR, OTCQB:RFHRF) has completed another round of channel sampling at its wholly owned Parbec gold deposit in Malartic, Quebec, as work on",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.20%, Nasdaq-100 +0.21%, Brent Oil +1.13% | OANDA Sentiment: 65.9% Long / 34.1% Short | 24/7 OKX XAUUSDT.P: $3880.1 (Spread: $-15.39) | Aggressive Taker Flow: 51.7% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.44.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3891.42. 4h-ATR ratio is 0.98x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.3h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-83.29 (0.98x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "4049.44"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 4.42
+    },
+    {
         "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-12 14:41 UTC",
         "original_date": "2026-11-11 21:22",
         "_timestamp": 1794494514.0,
@@ -705,7 +1436,7 @@
             "Orderflow_Price_Target": "4049.39"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 16.8
+        "max_dd_usd": 32.08
     },
     {
         "main_date": "First Reported: 2026-11-12 14:35 UTC",
@@ -1816,7 +2547,7 @@
             "Orderflow_Price_Target": "4049.39"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 16.8
+        "max_dd_usd": 32.08
     },
     {
         "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-12 14:29 UTC",
@@ -2521,6 +3252,38 @@
         }
     },
     {
+        "main_date": "First Reported: 2026-11-12 14:24 UTC",
+        "original_date": "2026-11-12 14:24",
+        "_timestamp": 1794493440.0,
+        "articles": [
+            {
+                "title": "Diesel 101: Why Truck Stop Diesel Is Still Above $6 a Gallon as Crude Falls",
+                "link": "https://finance.yahoo.com/energy/articles/diesel-101-why-truck-stop-142400953.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 14:24",
+                "description": "Truck stop diesel hit $6.23/gal on Nov. 9, up 65% YoY, even as Brent fell 21%. SONAR's Diesel 101 sitrep explains the crack spread and what comes next. The post Diesel 101: Why Truck Stop Diesel Is Still Above $6 a Gallon as Crude Falls appeared first on FreightWaves.",
+                "_timestamp": 1794493440.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "First reported: 2026-11-12 14:24 UTC (~0.6h ago)",
+            "Facts": "[Yahoo Finance Oil] Diesel 101: Why Truck Stop Diesel Is Still Above $6 a Gallon as Crude Falls - Truck stop diesel hit $6.23/gal on Nov. 9, up 65% YoY, even as Brent fell 21%. SONAR's Diesel 101 sitrep explains the crack spread and what comes next. The post D",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.20%, Nasdaq-100 +0.21%, Brent Oil +1.13% | OANDA Sentiment: 65.9% Long / 34.1% Short | 24/7 OKX XAUUSDT.P: $3880.1 (Spread: $-15.39) | Aggressive Taker Flow: 51.7% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.44.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3891.42. 4h-ATR ratio is 0.98x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.6h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-83.29 (0.98x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "First Reported: 2026-11-11 22:55 UTC | Last Update: 2026-11-12 14:23 UTC",
         "original_date": "2026-11-11 22:55",
         "_timestamp": 1794493381.0,
@@ -2700,7 +3463,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-05 18:11 UTC | Last Update: 2026-11-12 14:20 UTC",
@@ -3065,7 +3828,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 16.8
+        "max_dd_usd": 32.08
     },
     {
         "main_date": "First Reported: 2026-11-12 14:19 UTC",
@@ -3303,7 +4066,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 16.8
+        "max_dd_usd": 32.08
     },
     {
         "main_date": "First Reported: 2026-11-12 14:10 UTC",
@@ -3337,7 +4100,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 16.8
+        "max_dd_usd": 32.08
     },
     {
         "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-12 14:08 UTC",
@@ -4722,6 +5485,69 @@
         }
     },
     {
+        "main_date": "First Reported: 2026-11-10 14:58 UTC | Last Update: 2026-11-12 13:41 UTC",
+        "original_date": "2026-11-10 14:58",
+        "_timestamp": 1794490860.0,
+        "articles": [
+            {
+                "title": "ConocoPhillips Just Raised Its Dividend 10.7%. Does Its Free Cash Flow Cover the 2.5% Yield?",
+                "link": "https://www.tikr.com/blog/conocophillips-just-raised-its-dividend-10-7-does-its-free-cash-flow-cover-the-2-5-yield?ref=yahoofinancedividend&tlnk=yf-261110-98mmhc98&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 14:58",
+                "description": "Key TakeawaysConocoPhillips raised its quarterly dividend 10. 7% to $0.",
+                "_timestamp": 1794322721.0
+            },
+            {
+                "title": "EOG Resources Just Raised Its Dividend 7.8%. Does Its Free Cash Flow Cover the 2.8% Yield?",
+                "link": "https://www.tikr.com/blog/eog-resources-just-raised-its-dividend-7-8-does-its-free-cash-flow-cover-the-2-8-yield?ref=yahoofinancedividend&tlnk=yf-261110-f338f954&.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 14:58",
+                "description": "Key TakeawaysEOG Resources raised its quarterly dividend 7. 8%, from $1.",
+                "_timestamp": 1794322689.0
+            },
+            {
+                "title": "This Energy Stock Just Raised Its Dividend by More Than 10%",
+                "link": "https://finance.yahoo.com/energy/articles/energy-stock-just-raised-dividend-003004663.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 00:30",
+                "description": "ConocoPhillips raised its quarterly base dividend by more than 10% to $0.93 per share after Q3 net earnings rose to $4 billion.",
+                "_timestamp": 1794357004.0
+            },
+            {
+                "title": "EOG’s 8% Dividend Raise Is a Bet on Surviving Any Oil Cycle",
+                "link": "https://247wallst.com/investing/2026/11/11/eogs-8-dividend-raise-is-a-bet-on-surviving-any-oil-cycle/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 17:17",
+                "description": "EOG just raised its dividend while oil trades near $100, and the CEO says it can survive any cycle. One unglamorous line in the earnings release shows whether that promise holds, and it is creeping in the wrong direction.",
+                "_timestamp": 1794417443.0
+            },
+            {
+                "title": "Oil Still Above $85, EOG Up 41% in a Year: Is the Stock Still a Buy?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/oil-still-above-85-eog-134100525.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 13:41",
+                "description": "EOG Resources has surged 40.8% in a year. High oil prices, low debt, steady dividends and attractive valuation support its appeal.",
+                "_timestamp": 1794490860.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Event_Timestamp": "First reported: 2026-11-10 14:58 UTC (~0.6h ago)",
+            "Facts": "[Update 2026-11-12 13:41 UTC via Yahoo Finance Oil]: Oil Still Above $85, EOG Up 41% in a Year: Is the Stock Still a Buy? — EOG Resources has surged 40.8% in a year. High oil prices, low debt, steady dividends and attractive valuation support its appeal. | [Update 2026-11-11 17:17 UTC via Yahoo Finance Oil]: EOG’s 8% Dividend Raise Is a Bet on Surviving Any Oil Cycle — EOG just raised its dividend while oil trades near $100, and the CEO says it can survive any cycle. One unglamorous line in the earnings release shows whether that promise holds, a | [Yahoo Finance Oil] ConocoPhillips Just Raised Its Dividend 10.7%. Does Its Free Cash Flow Cover the 2.5% Yield? - Key TakeawaysConocoPhillips raised its quarterly dividend 10. 7% to $0. | [Yahoo Finance Oil] EOG Resources Just Raised Its Dividend 7.8%. Does Its Free Cash Flow Cover the 2.8% Yield? - Key TakeawaysEOG Resources raised its quarterly dividend 7. 8%, from $1.",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.25%, Nasdaq-100 -0.24%, Brent Oil -3.91% | OANDA Sentiment: 67.0% Long / 33.0% Short | 24/7 OKX XAUUSDT.P: $4057.8 (Spread: $+8.31).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4060.08.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $4040.36. 4h-ATR ratio is 0.38x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.6h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-23.71 (0.38x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
         "main_date": "First Reported: 2026-11-12 13:35 UTC",
         "original_date": "2026-11-12 13:35",
         "_timestamp": 1794490544.0,
@@ -4753,346 +5579,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 22.78
-    },
-    {
-        "main_date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-12 13:31 UTC",
-        "original_date": "2026-11-08 23:30",
-        "_timestamp": 1794490260.0,
-        "articles": [
-            {
-                "title": "Nvidia Stock Faces New Pressure as Board Investigates Huang’s Links to Alleged Spy",
-                "link": "https://finance.yahoo.com/m/09a7b85b-f39c-346a-88bc-f818668a56a9/nvidia-stock-faces-new.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 23:30",
-                "description": "The board said it has no reason to believe that either national security or Nvidia secrets were compromised.",
-                "_timestamp": 1794180600.0
-            },
-            {
-                "title": "Nvidia Slips 3% Overnight as Board Probes Jensen Huang: “No Reason to Believe” Secrets Were Compromised",
-                "link": "https://www.tikr.com/blog/nvidia-slips-3-overnight-as-board-probes-jensen-huang-no-reason-to-believe-secrets-were-compromised?ref=yahoofinance&tlnk=yf-261109-9rm87vv2&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 05:21",
-                "description": "Key TakeawaysNvidia stock traded about 3. 4% lower overnight, near $180, after its board opened an independent probe into reports that CEO Jensen Huang was the target of a foreign intelligence effort.",
-                "_timestamp": 1794201685.0
-            },
-            {
-                "title": "Stock Market Today: Dow Rallies As Oil Prices Slide; Nvidia Stock Dives On CEO Huang Probe (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 13:04",
-                "description": "The Dow Jones index rallies 500 points Monday as oil prices drop. Nvidia stock dives on the probe into CEO Jensen Huang.",
-                "_timestamp": 1794229497.0
-            },
-            {
-                "title": "Nvidia stock sinks 5% as chipmaker investigates CEO Jensen Huang's relationship with alleged Chinese spy",
-                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 13:03",
-                "description": "Nvidia sank 5% on Monday, while the rest of the chip sector mostly rose.",
-                "_timestamp": 1794229426.0
-            },
-            {
-                "title": "Stock Market Today: Dow Rallies As Oil Prices Slide; Nvidia Stock Dives On CEO Huang Probe (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 13:04",
-                "description": "The Dow Jones index rallies 500 points Monday as oil prices drop. Nvidia stock dives on the probe into CEO Jensen Huang.",
-                "_timestamp": 1794229497.0
-            },
-            {
-                "title": "Nvidia Stock Drops On Spy Scandal, CEO Probe",
-                "link": "https://finance.yahoo.com/m/2c1c8bc5-818d-357d-a3f9-2b7a4a511e1f/nvidia-stock-drops-on-spy.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 14:06",
-                "description": "Nvidia stock fell Monday as the AI chipmaker deals with an embarrassing \"honeypot\" scandal involving Chief Executive Jensen Huang.",
-                "_timestamp": 1794233201.0
-            },
-            {
-                "title": "Stock Market Today: Nvidia Pressures Indexes to Maintain Rebound",
-                "link": "https://247wallst.com/investing/2026/11/09/stock-market-today-nvidia-pressures-indexes-to-maintain-rebound/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 14:28",
-                "description": "Cheaper oil is handing Wall Street a Monday bounce, but a boardroom shock at one AI giant and stalled peace talks could undo it fast. Find out which corner of the market is quietly pulling ahead.",
-                "_timestamp": 1794234498.0
-            },
-            {
-                "title": "Why Nvidia Stock Was Falling Today",
-                "link": "https://www.fool.com/investing/2026/11/09/why-nvidia-stock-was-falling-today/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 16:43",
-                "description": "Nvidia CEO Jensen Huang is in hot water after admitting an affair with a suspected Chinese spy.",
-                "_timestamp": 1794242603.0
-            },
-            {
-                "title": "Top Midday Stories: Nvidia Faces China Spy Allegations; NRG to Sell 6 natural Gas Generation Assets to LS Power for $4 Billion",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-nvidia-faces-164201985.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 16:42",
-                "description": "All three major US stock indexes were up over 1.5% on Monday, with the Nasdaq Composite trading abov",
-                "_timestamp": 1794242521.0
-            },
-            {
-                "title": "Nvidia shares slump amid investigation into CEO Jensen Huang",
-                "link": "https://www.aljazeera.com/economy/2026/11/9/nvidia-shares-slump-amid-investigation-into-ceo-jensen-huang?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-09 16:00",
-                "description": "Huang admits infidelity, denies compromising Nvidia security as China spy inquiry shakes $4.5 trillion AI firm.",
-                "_timestamp": 1794240010.0
-            },
-            {
-                "title": "U.S. Stocks Leap Despite Nvidia Slide",
-                "link": "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 19:29",
-                "description": "U.S. stocks jumped, even as Nvidia’s shares sank after the company’s board launched an investigation into CEO Jensen Huang.",
-                "_timestamp": 1794252540.0
-            },
-            {
-                "title": "Nvidia stock slumps amid board investigation into CEO Jensen Huang",
-                "link": "https://www.cbsnews.com/news/nvidia-jensen-huang-stock-board-investigation-spy/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 19:46",
-                "description": "Investors are questioning whether Huang's future as Nvidia's CEO may be at risk amid allegations that he was targeted in a Chinese intelligence operation.",
-                "_timestamp": 1794253580.0
-            },
-            {
-                "title": "Jensen Huang Might Be the Biggest Wild Card for Nvidia Stock. Here's What to Watch During Earnings on Nov. 17",
-                "link": "https://www.fool.com/investing/2026/11/09/jensen-huang-might-be-the-biggest-wild-card-for-nvidia-stock-here-s-what-to-watch-during-earnings-on-nov-17/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 19:29",
-                "description": "Nvidia's business is still booming, but the investigation tied to its CEO adds a risk that no one can yet price in. Here are the four things to watch next week.",
-                "_timestamp": 1794252575.0
-            },
-            {
-                "title": "U.S. Stocks Leap Despite Nvidia Slide",
-                "link": "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 19:29",
-                "description": "U.S. stocks jumped, even as Nvidia’s shares sank after the company’s board launched an investigation into CEO Jensen Huang.",
-                "_timestamp": 1794252540.0
-            },
-            {
-                "title": "Stock Market Today: Dow Pops, Multiple Stocks Clear Entries; Jensen Huang Details Emerge (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow-pops%2C.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 20:46",
-                "description": "The Dow Jones index rallied Monday as Nvidia dived on a probe into CEO Jensen Huang. Multiple stocks cleared buy points.",
-                "_timestamp": 1794257180.0
-            },
-            {
-                "title": "Nvidia stock drops 3%, extending decline on report alleged Chinese spy linked to Nvidia CEO aided $7.5 billion in China chip shipments",
-                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipments-152654028.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:24",
-                "description": "Nvidia sank on Tuesday, while the rest of the chip sector held up.",
-                "_timestamp": 1794324261.0
-            },
-            {
-                "title": "Why analysts aren't trying to ruffle Nvidia's feathers amid CEO scandal",
-                "link": "https://finance.yahoo.com/video/why-analysts-arent-trying-to-ruffle-nvidias-feathers-amid-ceo-scandal-151507913.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:15",
-                "description": "Yahoo Finance Executive Editor Brian Sozzi assesses why Wall Street analysts have been largely silent on Nvidia (NVDA) amid the scandal involving CEO Jensen Huang and why being crtitical could cost them access to management.",
-                "_timestamp": 1794323707.0
-            },
-            {
-                "title": "NVIDIA Stocks Slide 4.43% as Report Alleges $7.5 Billion in Chips Reached China",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-slide-4-43-175809767.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 17:58",
-                "description": "The Information says a network tied to an alleged Beijing intelligence asset obtained roughly 240,000 restricted GPUs while the board's review continues.",
-                "_timestamp": 1794333489.0
-            },
-            {
-                "title": "Nvidia Is Down 30% From Its High. History Says This Is What Happens Next.",
-                "link": "https://www.fool.com/investing/2026/11/10/nvidia-is-down-30-from-its-high-history-says-this/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 18:15",
-                "description": "The chipmaker's stock could be a bargain buy today.",
-                "_timestamp": 1794334500.0
-            },
-            {
-                "title": "Prediction: Nov. 18 Will Be a Huge Day for the Stock Market",
-                "link": "https://www.fool.com/investing/2026/11/10/prediction-nov-18-will-be-a-huge-day-for-the-stock-market/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 20:20",
-                "description": "Nvidia CEO Jensen Huang has been asked to brief Congress about his ties to a business executive from Singapore on Nov. 18.",
-                "_timestamp": 1794342002.0
-            },
-            {
-                "title": "Nvidia could soon face tougher export rules, making it harder to sell chips to China after scandal",
-                "link": "https://www.marketwatch.com/story/nvidia-could-soon-face-tougher-export-rules-making-it-harder-to-sell-chips-to-china-69c88cc8?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-10 20:37",
-                "description": "“There is growing momentum for these bills in light of the Jensen Huang spy scandal,” one analyst says.",
-                "_timestamp": 1794343020.0
-            },
-            {
-                "title": "Nvidia Stock Hit With Price-Target Cuts Amid Spy Scandal",
-                "link": "https://finance.yahoo.com/m/45cd5aac-d312-37af-8964-003c24a22c85/nvidia-stock-hit-with.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 21:24",
-                "description": "Nvidia stock continued to fall on Tuesday in the wake of an affair involving CEO Jensen Huang and an alleged Chinese \"honeypot\" spy.",
-                "_timestamp": 1794345867.0
-            },
-            {
-                "title": "Stock Market Today, Nov. 10: Nvidia Stock Plunges 5.5% as CEO Scandal Overshadows Its Upcoming Earnings Report",
-                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-nvidia-stock-plunges-5-5-as-ceo-scandal-overshadows-its-upcoming-earnings-report/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:35",
-                "description": "Nvidia shares extended their sell-off as an investigation involving CEO Jensen Huang raised fresh concerns about corporate governance, leadership uncertainty, and the AI chipmaker's future.",
-                "_timestamp": 1794350102.0
-            },
-            {
-                "title": "Nvidia shares rebound 4% as Huang faces scrutiny ahead of earnings",
-                "link": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-11 10:03",
-                "description": "Investors are assessing whether CEO Jensen Huang's affair will have spillover effects on Nvidia's business.",
-                "_timestamp": 1794391409.0
-            },
-            {
-                "title": "Nvidia Selloff Puts China Exposed US Chip Stocks Back In Focus",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-selloff-puts-china-exposed-130900790.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 13:09",
-                "description": "A 9.5% two-day slide in Nvidia that wiped about US$430b off its market value has turned a hot AI favorite into a stress test for every large-cap chip stock tied to China. Political scrutiny of Jensen Huang, fresh export-control proposals and a board investigation have pulled risk into sharp focus. This article unpacks how that shock ripples into three U.S. semiconductor stocks exposed to the same headlines and where the news flow currently looks ",
-                "_timestamp": 1794402540.0
-            },
-            {
-                "title": "Nvidia is Now Down More Than 25% In 30 Days: This Wall Street Desk Predicts 205% Returns",
-                "link": "https://247wallst.com/investing/2026/11/11/nvidia-is-now-down-more-than-25-in-30-days-this-wall-street-desk-predicts-205-returns/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 15:45",
-                "description": "NVIDIA posted a record quarter and still lost a quarter of its value in a month, while earnings estimates kept climbing. A swelling balance sheet and one looming report may explain why investors are bailing.",
-                "_timestamp": 1794411931.0
-            },
-            {
-                "title": "Nvidia, CoreWeave, Nebius, Teradyne, Riskified, and More Stocks That Explain Today’s Market",
-                "link": "https://finance.yahoo.com/m/37147cf1-aa70-3e70-9d7d-f8d6cb4dcbb8/nvidia%2C-coreweave%2C-nebius%2C.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 18:00",
-                "description": "Nvidia rises following a rebound in shares of AI companies even as Baird calls for Nvidia CEO Jensen Huang to step down.",
-                "_timestamp": 1794420000.0
-            },
-            {
-                "title": "Nvidia shares slip in after-hours trading on fresh allegations of CEO relationship",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-slip-hours-trading-223702826.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 22:37",
-                "description": "Investing.com -- Nvidia shares fell about 3% in after-hours trading Wednesday evening after a new report alleged that chief executive Jensen Huang maintained an extramarital relationship with Kimberly Powell, the company’s vice president of healthcare—a senior executive who reports to him.",
-                "_timestamp": 1794436622.0
-            },
-            {
-                "title": "Nvidia Just Fell 8.3% After Hours on a Report of a Second Jensen Huang Affair. Here’s What 2,000 Shares Have Lost This Week",
-                "link": "https://247wallst.com/investing/2026/11/11/nvidia-just-fell-8-3-after-hours-on-a-report-of-a-second-jensen-huang-affair-heres-what-2000-shares-have-lost-this-week/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 22:37",
-                "description": "Nvidia fell 8.3% after hours Wednesday to $159.37 after The New York Times reported a second Jensen Huang affair, with Nvidia executive Kimberly Powell. A holder with 2,000 shares has lost $54,540 since the November 6 close. Dan Ives says Huang's exit would cut Nvidia's value 25% to 30%; Baird says a new CEO is needed.",
-                "_timestamp": 1794436675.0
-            },
-            {
-                "title": "Nvidia stock drops as board reportedly weighs Jensen Huang’s future",
-                "link": "https://www.cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 00:15",
-                "description": "Nvidia shares dropped sharply in after-hours trading on Wednesday after reports that CEO Jensen Huang had an extramarital relationship with a company executive and that the board is meeting to discuss his future.",
-                "_timestamp": 1794442518.0
-            },
-            {
-                "title": "Nvidia's stock dives as board weighs move to oust Jensen Huang",
-                "link": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 00:18",
-                "description": "Nvidia shares fall sharply in after-hours trading as the company's board considers whether to remove Jensen Huang as CEO.",
-                "_timestamp": 1794442705.0
-            },
-            {
-                "title": "Nvidia shares plunge amid reports board to discuss CEO Huang’s future",
-                "link": "https://www.aljazeera.com/economy/2026/11/12/nvidia-shares-plunge-amid-reports-board-to-discuss-ceo-huangs-future?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-12 00:43",
-                "description": "Chip giants stock price falls more than 8 percent amid speculation over co-founder&#039;s future.",
-                "_timestamp": 1794444206.0
-            },
-            {
-                "title": "Asian stocks drop as traders keep eye on Nvidia crisis",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-extend-gains-traders-025559054.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 07:13",
-                "description": "Asian stocks fell Thursday as investors kept a nervous eye on Nvidia whose influential boss Jensen Huang faces a probe into an affair with a woman accused of spying for China.Traders' nerves are being tested by the crisis at Nvidia, with co-founder and CEO Huang facing the boot after he admitted a relationship with Alice Huang, a senior executive at Singapore-based data centre company Megaspeed.",
-                "_timestamp": 1794467587.0
-            },
-            {
-                "title": "Pressure Mounts on Nvidia's Jensen Huang Amid Reports of Second Affair",
-                "link": "https://decrypt.co/383114/pressure-mounts-on-nvidias-jensen-huang-amid-reports-of-second-affair?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 09:47",
-                "description": "Nvidia's board is reportedly preparing to oust its CEO, sending the chipmaker's shares down more than 5% in premarket trading.",
-                "_timestamp": 1794476838.0
-            },
-            {
-                "title": "Nvidia Outlook Damps Asian Stock Markets",
-                "link": "https://finance.yahoo.com/markets/world-indices/articles/nvidia-outlook-damps-asian-stock-103439402.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-12 10:34",
-                "description": "Asian stock markets tracked moderately lower Thursday, after US chip giant Nvidia (NVDA) shares hit",
-                "_timestamp": 1794479679.0
-            },
-            {
-                "title": "Nerves around Nvidia as investors await the outcome of Board's crisis CEO meeting",
-                "link": "https://www.cnbc.com/2026/11/12/nvidia-boards-crisis-meeting.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-12 11:06",
-                "description": "Shares in Nvidia are back in the red in premarket trading as Huang's future hangs in the balance",
-                "_timestamp": 1794481601.0
-            },
-            {
-                "title": "Nvidia tumbles early amid questions about Nvidia CEO Jensen Huang’s future",
-                "link": "https://finance.yahoo.com/technology/articles/nvidia-tumbles-early-amid-questions-122602360.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 12:26",
-                "description": "NEW YORK (AP) — Shares of Nvidia, the chipmaker at the center of the global artificial intelligence boom, tumbled early Thursday with the tenure of CEO Jensen Huang threatened by revelations of an affair with a woman reported to be a suspected Chinese spy. The company's stock has been under pressure for weeks, both because of reporting about the affair and questions about a potential bubble in the AI sector.",
-                "_timestamp": 1794486362.0
-            },
-            {
-                "title": "Five things to know about Nvidia",
-                "link": "https://finance.yahoo.com/technology/ai/articles/five-things-know-nvidia-130739903.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:07",
-                "description": "After launching as a small gaming start-up and morphing into the top chip designer for artificial intelligence, US tech giant Nvidia faces unprecedented turbulence after  its co-founder and CEO Jensen Huang reportedly had a second extramarital affair with an employee. - Video games to data centers - After its launch, Nvidia became the first company entirely dedicated to graphics processors, hoping to ride the video games wave as they started to f",
-                "_timestamp": 1794488859.0
-            },
-            {
-                "title": "Why Intel and Marvell Stocks Are Caught in Nvidia’s Web",
-                "link": "https://finance.yahoo.com/m/a0845ef8-f26b-34ea-a67f-3b4ce7ce3701/why-intel-and-marvell-stocks.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:31",
-                "description": "Intel stock falls along with Marvell, Lumentum, and Coherent on reports Nvidia CEO Jensen Huang may be forced out. Here's why that is bad news.",
-                "_timestamp": 1794490260.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 1,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-12 09:47 UTC (approx. 0.3 hours ago)",
-            "Facts": "[Update 2026-11-12 13:31 UTC via Yahoo Finance Nasdaq]: Why Intel and Marvell Stocks Are Caught in Nvidia’s Web — Intel stock falls along with Marvell, Lumentum, and Coherent on reports Nvidia CEO Jensen Huang may be forced out. Here's why that is bad news. | [Update 2026-11-12 13:07 UTC via Yahoo Finance Nasdaq]: Five things to know about Nvidia — After launching as a small gaming start-up and morphing into the top chip designer for artificial intelligence, US tech giant Nvidia faces unprecedented turbulence after  its co-fo | [Update 2026-11-12 12:26 UTC via Yahoo Finance Nasdaq]: Nvidia tumbles early amid questions about Nvidia CEO Jensen Huang’s future — NEW YORK (AP) — Shares of Nvidia, the chipmaker at the center of the global artificial intelligence boom, tumbled early Thursday with the tenure of CEO Jensen Huang threatened by r | [Update 2026-11-12 11:06 UTC via CNBC Tech & AI]: Nerves around Nvidia as investors await the outcome of Board's crisis CEO meeting — Shares in Nvidia are back in the red in premarket trading as Huang's future hangs in the balance | [Update 2026-11-12 10:34 UTC via Yahoo Finance Oil]: Nvidia Outlook Damps Asian Stock Markets — Asian stock markets tracked moderately lower Thursday, after US chip giant Nvidia (NVDA) shares hit | [Update 2026-11-12 09:47 UTC via Yahoo Finance Nasdaq]: Nvidia's board is reportedly preparing to oust its CEO Jensen Huang amid a second affair probe, sending shares down over 5% in premarket trading | Core Background: Nvidia shares plunged following revelations that co-founder and CEO Jensen Huang faces a board probe regarding links to an alleged spy, compounding corporate governance crises and dragging down broader equity sentiment.",
-            "Uncertainties": "Whether the board will officially oust Jensen Huang and how deeply enterprise AI infrastructure spending plans will be disrupted by management turmoil.",
-            "Macro_Context": "Tech equity sell-offs driven by corporate governance shocks can trigger broad liquidity liquidations, temporarily boosting safe-haven cash or driving margin calls that impact gold alongside equities.",
-            "Bull_Case": "Systemic shocks to mega-cap tech leaders undermine market confidence in high-flying equity valuations, driving capital flight toward physical safe-havens like gold.",
-            "Bear_Case": "Severe equity drawdowns can induce forced liquidations across multi-asset portfolios, causing leveraged gold longs to unwind alongside stocks.",
-            "Historical_Calibration": "Fed, Rates & Macro category with Fresh ATR-Ratio (0.35x) and against USD headwind yields a historical win rate of 66.1% (Avg DD: -$17.1).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "Aggressive taker buying (64.1% OKX perp buy ratio) and strong lower-wick dip buying reflect safe-haven absorption of tech-driven equity volatility.",
-            "Orderflow_Price_Target": "3989.85"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 37.08
+        "max_dd_usd": 38.06
     },
     {
         "main_date": "First Reported: 2026-11-12 13:30 UTC",
@@ -5127,7 +5614,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 22.78
+        "max_dd_usd": 38.06
     },
     {
         "main_date": "First Reported: 2026-11-12 13:30 UTC",
@@ -5764,7 +6251,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 22.78
+        "max_dd_usd": 38.06
     },
     {
         "main_date": "First Reported: 2026-11-12 13:17 UTC",
@@ -5894,7 +6381,7 @@
             "Orderflow_Price_Target": "3989.80"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 34.99
+        "max_dd_usd": 50.27
     },
     {
         "main_date": "First Reported: 2026-11-12 13:05 UTC",
@@ -6176,7 +6663,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-07 11:56 UTC | Last Update: 2026-11-12 12:50 UTC",
@@ -6626,7 +7113,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-11 07:26 UTC | Last Update: 2026-11-12 12:39 UTC",
@@ -6880,7 +7367,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -6946,7 +7433,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -7044,7 +7531,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-11 17:35 UTC | Last Update: 2026-11-12 12:29 UTC",
@@ -8252,7 +8739,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-11 02:30 UTC | Last Update: 2026-11-12 12:10 UTC",
@@ -8337,7 +8824,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-12 12:01 UTC",
@@ -8371,7 +8858,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-12 06:25 UTC | Last Update: 2026-11-12 12:01 UTC",
@@ -8412,8 +8899,8 @@
             "Past_Price_Action_Cause": "4h XAU/USD move: $-12.59 (0.26x of estimated Daily ATR).",
             "Orderflow_Price_Target": "3989.85"
         },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 84.28
+        "eval_status": "MISS",
+        "max_dd_usd": 99.57
     },
     {
         "main_date": "First Reported: 2026-11-12 12:00 UTC",
@@ -8479,7 +8966,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-12 07:00 UTC | Last Update: 2026-11-12 12:00 UTC",
@@ -8569,7 +9056,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 55.28
+        "max_dd_usd": 70.57
     },
     {
         "main_date": "First Reported: 2026-11-12 08:34 UTC | Last Update: 2026-11-12 11:59 UTC",
@@ -9536,7 +10023,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.84
+        "max_dd_usd": 78.12
     },
     {
         "main_date": "First Reported: 2026-11-12 11:45 UTC",
@@ -9636,7 +10123,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.84
+        "max_dd_usd": 78.12
     },
     {
         "main_date": "First Reported: 2026-11-12 11:33 UTC",
@@ -9736,7 +10223,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.84
+        "max_dd_usd": 78.12
     },
     {
         "main_date": "First Reported: 2026-11-10 23:46 UTC | Last Update: 2026-11-12 11:32 UTC",
@@ -9821,7 +10308,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.84
+        "max_dd_usd": 78.12
     },
     {
         "main_date": "First Reported: 2026-11-12 11:03 UTC",
@@ -10015,7 +10502,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 72.42
+        "max_dd_usd": 87.71
     },
     {
         "main_date": "First Reported: 2026-11-12 10:17 UTC",
@@ -10049,7 +10536,7 @@
             "Orderflow_Price_Target": "3989.79"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 69.16
+        "max_dd_usd": 84.45
     },
     {
         "main_date": "First Reported: 2026-11-12 08:21 UTC | Last Update: 2026-11-12 10:14 UTC",
@@ -10091,233 +10578,6 @@
             "Past_Price_Action_Cause": "Consolidation near $3928.83 reflects balanced macro forces between dollar headwinds and regional support.",
             "Orderflow_Price_Target": "N/A"
         }
-    },
-    {
-        "main_date": "First Reported: 2026-11-09 02:07 UTC | Last Update: 2026-11-12 10:06 UTC",
-        "original_date": "2026-11-09 02:07",
-        "_timestamp": 1794478004.0,
-        "articles": [
-            {
-                "title": "Brent Crude Fell 12.5% But Former Biden Advisor Warns Iran War Could Return",
-                "link": "https://beincrypto.com/brent-crude-iran-war-hochstein-warning/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 02:07",
-                "description": "Brent crude fell over 12.5% this week, but Amos Hochstein says Iran war odds top 50/50 as Hormuz tanker attacks persist.",
-                "_timestamp": 1794190072.0
-            },
-            {
-                "title": "Oil Sinks to $94 as Iran’s $8 Billion Hormuz Deal Heads to Trump",
-                "link": "https://finance.yahoo.com/energy/articles/oil-sinks-94-iran-8-133000587.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 13:30",
-                "description": "Brent fell 3.6% to $94 as Qatar’s prime minister took an Iranian Hormuz proposal to the White House, extending last week’s 16% slide in oil prices.",
-                "_timestamp": 1794231000.0
-            },
-            {
-                "title": "Exxon Mobil Stocks Move Lower 0.31% as Crude Slides Toward $87",
-                "link": "https://finance.yahoo.com/energy/articles/exxon-mobil-stocks-move-lower-190037292.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 19:00",
-                "description": "Oil fell after President Trump called renewed strikes on Iran \"highly unlikely,\" but Exxon's cash machine barely flinched.",
-                "_timestamp": 1794250837.0
-            },
-            {
-                "title": "U.S. gas prices on track to fall below $4 a gallon, experts say",
-                "link": "https://www.cbsnews.com/news/gas-prices-below-four-dollars-expert-predicts/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 19:15",
-                "description": "Fuel prices have dropped in recent weeks amid hopes that the midterm elections would increase pressure on the U.S. and Iran to reach a peace deal.",
-                "_timestamp": 1794251746.0
-            },
-            {
-                "title": "Oil falls as Trump downplays prospect of escalation with Iran",
-                "link": "https://www.investing.com/news/commodities-news/oil-falls-as-trump-downplays-prospect-of-escalation-with-iran-5013892",
-                "source": "Investing.com",
-                "date": "2026-11-10 01:49",
-                "description": "",
-                "_timestamp": 1794275354.0
-            },
-            {
-                "title": "Oil Prices Extend Decline as Trump Signals Pause in Further Military Action Against Iran",
-                "link": "https://investorshub.advfn.com/market-news/article/39596/oil-prices-extend-decline-as-trump-signals-pause-in-further-military-action-against-iran?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 10:11",
-                "description": "Oil prices fell on Tuesday, extending losses from the previous session after US President Donald Trump indicated that additional military strikes against Iran were not necessary for the time being. The comments reduced concerns about an immediate escalation of the conflict, although risks to shipping through the Strait of Hormuz remained.",
-                "_timestamp": 1794305482.0
-            },
-            {
-                "title": "Brent Crude Falls Below $90 for First Time Since August",
-                "link": "https://finance.yahoo.com/energy/articles/brent-crude-falls-below-90-100635859.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 10:06",
-                "description": "Brent crude prices plunged below $90 per barrel as President Trump signaled restraint toward Iran, raising hopes for an end to the Middle East conflict.",
-                "_timestamp": 1794305195.0
-            },
-            {
-                "title": "Oil drops further as Trump eases Middle East conflict fears",
-                "link": "https://www.offshore-technology.com/news/oil-drops-trump-eases-middle-east-conflict/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 11:05",
-                "description": "Brent crude has now retreated roughly 22% from its six-month high as fears of a broader US-Iran military confrontation subside.",
-                "_timestamp": 1794308759.0
-            },
-            {
-                "title": "Canada Commodities: Oil Prices Fall as Secretary of State Marco Rubio Downplays More Iran Attacks",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-fall-145927198.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-10 14:59",
-                "description": "Crude oil prices fell below $90 per barrel Tuesday morning after US Secretary of State Marco Rubio d",
-                "_timestamp": 1794322767.0
-            },
-            {
-                "title": "Gas prices fall below $4 for the first time since July",
-                "link": "https://finance.yahoo.com/video/gas-prices-fall-below-4-for-the-first-time-since-july-145333135.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 14:53",
-                "description": "U.S. retail gasoline prices have fallen back below $4 per gallon and Brent crude has dipped under $90 as easing Middle East tensions reduce energy's war premium, though structural supply disruptions and seasonal factors leave analysts questioning whether $85 will serve as the new price floor.",
-                "_timestamp": 1794322405.0
-            },
-            {
-                "title": "Canada Commodities: Oil Prices Fall as Secretary of State Marco Rubio Downplays More Iran Attacks",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/canada-commodities-oil-prices-fall-145927198.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 14:59",
-                "description": "Crude oil prices fell below $90 per barrel Tuesday morning after US Secretary of State Marco Rubio d",
-                "_timestamp": 1794322767.0
-            },
-            {
-                "title": "Oil Falls to Lowest Level Since August",
-                "link": "https://finance.yahoo.com/energy/articles/oil-falls-lowest-level-since-163400495.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 16:34",
-                "description": "Brent crude briefly fell below $90 as hopes of diplomatic breakthroughs in Iran and Ukraine accelerate the oil market selloff.",
-                "_timestamp": 1794328440.0
-            },
-            {
-                "title": "Oil Prices Just Fell to Their Lowest Since August as Trump Says the Iran War Is ‘Effectively Over’",
-                "link": "https://247wallst.com/investing/2026/11/10/oil-prices-just-fell-to-their-lowest-since-august-as-trump-says-the-iran-war-is-effectively-over/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 18:34",
-                "description": "Futures sank on words alone, with no signed deal and Iran denying any talks exist. Why did one oil fund crater while Exxon and Chevron barely flinched, and what number could reverse the slide?",
-                "_timestamp": 1794335693.0
-            },
-            {
-                "title": "Oil prices rise from 2-mth low with focus on U.S.-Iran peace, inventories",
-                "link": "https://www.investing.com/news/commodities-news/oil-prices-rise-from-2mth-low-with-focus-on-usiran-peace-inventories-5017522",
-                "source": "Investing.com",
-                "date": "2026-11-11 02:15",
-                "description": "",
-                "_timestamp": 1794363346.0
-            },
-            {
-                "title": "Brent briefly dips below $90 for first time since August on Iran peace hopes",
-                "link": "https://www.investing.com/news/commodities-news/oil-prices-dip-amid-iran-peace-hopes-improving-supplies-5013753",
-                "source": "Investing.com",
-                "date": "2026-11-10 22:21",
-                "description": "",
-                "_timestamp": 1794349293.0
-            },
-            {
-                "title": "Oil prices rise from 2-mth low with focus on U.S.-Iran peace, inventories",
-                "link": "https://finance.yahoo.com/energy/articles/oil-prices-rise-2-mth-024546161.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 02:45",
-                "description": "Investing.com-- Oil prices rose slightly in Asian trade on Wednesday, recovering from a two-month low as markets remained focused on any signs of de-escalation in the U.S.-Iran war.",
-                "_timestamp": 1794365146.0
-            },
-            {
-                "title": "Jim Cramer Ties CPI Relief to $40 Oil, but Brent Trades Over $92",
-                "link": "https://beincrypto.com/jim-cramer-40-oil-cpi-relief/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 04:25",
-                "description": "Jim Cramer ties CPI relief to $40 oil, but Brent trades near $91 and core inflation still ran hot in October.",
-                "_timestamp": 1794371130.0
-            },
-            {
-                "title": "Oil Prices Rise as Iran Peace Optimism Fades",
-                "link": "https://finance.yahoo.com/energy/articles/oil-prices-rise-iran-peace-054500318.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 05:45",
-                "description": "Oil prices rebounded as continuing attacks on shipping near the Strait of Hormuz undermined optimism about a potential U.S.-Iran peace deal.",
-                "_timestamp": 1794375900.0
-            },
-            {
-                "title": "Oil Prices Rise More Than 1% as Iran Rejects Removal of Enriched Nuclear Material and Hormuz Risks Persist",
-                "link": "https://investorshub.advfn.com/market-news/article/39736/oil-prices-rise-more-than-1-as-iran-rejects-removal-of-enriched-nuclear-material-and-hormuz-risks-persist?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 10:10",
-                "description": "Oil prices advanced on Wednesday, recovering from two-month lows after an Iranian security official said Tehran would not permit enriched nuclear material to leave the country, adding uncertainty to prospects for negotiations aimed at ending the conflict involving Iran, the United States and Israel. At 09:34 GMT, Brent crude futures rose $1.",
-                "_timestamp": 1794391820.0
-            },
-            {
-                "title": "EIA Sees Brent Near $100 for the Rest of the Year as Crude Futures Ease Again",
-                "link": "https://finance.yahoo.com/energy/articles/eia-sees-brent-near-100-123000435.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 12:30",
-                "description": "Oil Market Daily News Commentary - U.S. crude oil futures closed lower for a second straight session on Tuesday. The December NYMEX West Texas Intermediate contract settled at $86.04 a barrel, down 81 cents, or 0.93%, and the January ICE Brent contract settled at $91.49, down $1.08, or 1.17%. December WTI had settled at $104.12 on Oct. 30. Over the past two weeks, a producer, an oil sands company, a refiner, a gas processor and a tanker owner hav",
-                "_timestamp": 1794400200.0
-            },
-            {
-                "title": "Jefferies Backs Two European Oil Stocks, Lifts 2027 Brent Call to $82.5",
-                "link": "https://finance.yahoo.com/energy/articles/jefferies-backs-two-european-oil-125905910.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 12:59",
-                "description": "Investing.com -- Jefferies kept its “buy” rating and €35 price target on integrated oil company Repsol, saying Repsol’s 2026 shareholder returns estimate has risen 44% and its net debt reduction is the sector’s highest.",
-                "_timestamp": 1794401945.0
-            },
-            {
-                "title": "Brent Jumps Nearly 3% as Iran Denies Any Talks With Washington",
-                "link": "https://finance.yahoo.com/energy/articles/brent-jumps-nearly-3-iran-163000485.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 16:30",
-                "description": "Brent rose more than 3% to above $94 as Iran denied talks with the U.S., while Saudi output neared pre-war levels and Hormuz ship attacks continued.",
-                "_timestamp": 1794414600.0
-            },
-            {
-                "title": "Oil prices dip on report of more U.S.-Iran diplomacy plans",
-                "link": "https://www.investing.com/news/commodities-news/oil-prices-dip-on-report-of-more-usiran-diplomacy-plans-5020081",
-                "source": "Investing.com",
-                "date": "2026-11-11 23:48",
-                "description": "",
-                "_timestamp": 1794440935.0
-            },
-            {
-                "title": "Oil Prices Sink as Iran and Ukraine Peace Optimism Builds",
-                "link": "https://finance.yahoo.com/energy/articles/oil-prices-sink-iran-ukraine-063500894.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-12 06:35",
-                "description": "Oil prices fell as hopes for easing conflicts in Iran and Ukraine, rising OPEC+ production, and growing U.S. crude inventories outweighed concerns about Middle Eastern supply disruptions.",
-                "_timestamp": 1794465300.0
-            },
-            {
-                "title": "Oil Prices Recover as Middle East Tensions Offset Rising Production",
-                "link": "https://investorshub.advfn.com/market-news/article/39857/oil-prices-recover-as-middle-east-tensions-offset-rising-production?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-12 10:06",
-                "description": "Oil prices advanced on Thursday, recovering from earlier declines as geopolitical tensions in the Middle East continued to influence trading despite increased crude production in the region. Brent crude futures rose 45 cents, or 0.",
-                "_timestamp": 1794478004.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 2,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-11 05:45 UTC (~1 hour ago relative to 2026-11-11 06:40 UTC)",
-            "Facts": "[Update 2026-11-12 10:06 UTC via Yahoo Finance Oil]: Oil Prices Recover as Middle East Tensions Offset Rising Production — Oil prices advanced on Thursday, recovering from earlier declines as geopolitical tensions in the Middle East continued to influence trading despite increased crude production in t | [Update 2026-11-12 06:35 UTC via Yahoo Finance Oil]: Oil Prices Sink as Iran and Ukraine Peace Optimism Builds — Oil prices fell as hopes for easing conflicts in Iran and Ukraine, rising OPEC+ production, and growing U.S. crude inventories outweighed concerns about Middle Eastern supply disru | [Update 2026-11-11 23:48 UTC via Investing.com]: Oil prices dip on report of more U.S.-Iran diplomacy plans | [Update 2026-11-11 16:30 UTC via Yahoo Finance Oil]: Brent Jumps Nearly 3% as Iran Denies Any Talks With Washington — Brent rose more than 3% to above $94 as Iran denied talks with the U.S., while Saudi output neared pre-war levels and Hormuz ship attacks continued. | [Update 2026-11-11 12:59 UTC via Yahoo Finance Oil]: Jefferies Backs Two European Oil Stocks, Lifts 2027 Brent Call to $82.5 — Investing.com -- Jefferies kept its “buy” rating and €35 price target on integrated oil company Repsol, saying Repsol’s 2026 shareholder returns estimate has risen 44% and its net  | [Update 2026-11-11 12:30 UTC via Yahoo Finance Oil]: EIA Sees Brent Near $100 for the Rest of the Year as Crude Futures Ease Again — Oil Market Daily News Commentary - U.S. crude oil futures closed lower for a second straight session on Tuesday. The December NYMEX West Texas Intermediate contract settled at $86. | [Update 2026-11-11 10:10 UTC via Yahoo Finance Oil]: Oil Prices Rise More Than 1% as Iran Rejects Removal of Enriched Nuclear Material and Hormuz Risks Persist — Oil prices advanced on Wednesday, recovering from two-month lows after an Iranian security official said Tehran would not permit enriched nuclear material to leave the country, add | Oil prices rebounded as continuing attacks on shipping near the Strait of Hormuz undermined optimism about a potential U.S.-Iran peace deal. Brent crude trades near $94.59 (+0.94%). Jim Cramer and market participants note persistent inflationary pressures from elevated energy costs. [Yahoo Finance Oil, Investing.com].",
-            "Uncertainties": "Whether diplomatic channels in Abu Dhabi can establish a durable ceasefire or if shipping disruptions in the Strait of Hormuz will escalate further.",
-            "Macro_Context": "Brent crude is up 0.94% to $94.59, reinforcing energy-driven inflation fears. This undercuts Fed rate cut optimism, keeping upward pressure on safe-haven gold despite strong USD proxies.",
-            "Bull_Case": "Ongoing military friction in the Strait of Hormuz drives persistent safe-haven demand and commodity-push inflation, underpinning XAU/USD bids.",
-            "Bear_Case": "Any sudden breakthrough in U.S.-Iran peace negotiations could trigger an immediate unwinding of the geopolitical risk premium in gold.",
-            "Historical_Calibration": "Category: Geopolitics & War, Fresh (<0.8x ATR) at 0.23x, Against USD Headwind. Historical Win Rate from Regime Matrix: 62.3% for Geopolitics & War.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 58,
-            "Past_Price_Action_Cause": " Geopolitical risk premium in oil and shipping lanes supports gold's floor against aggressive upper-wick selling.",
-            "Orderflow_Price_Target": "4060.26"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 0.69
     },
     {
         "main_date": "First Reported: 2026-11-11 22:19 UTC | Last Update: 2026-11-12 10:00 UTC",
@@ -10884,90 +11144,7 @@
             "Orderflow_Price_Target": "3989.85"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.42
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 12:32 UTC | Last Update: 2026-11-12 09:28 UTC",
-        "original_date": "2026-11-10 12:32",
-        "_timestamp": 1794475714.0,
-        "articles": [
-            {
-                "title": "Microsoft Reportedly Pushes Back Against Trump’s Plan To Ban Chinese Optical Transceivers – Flags Challenges To Data Center Rollout",
-                "link": "https://stocktwits.com/news-articles/markets/equity/microsoft-against-trumps-plan-to-ban-chinese-optical-transceivers/cNGu0CWR97y?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 12:32",
-                "description": "According to a Reuters report, Microsoft met with White House and National Security Council officials to highlight potential shortages if the ban takes effect.",
-                "_timestamp": 1794313944.0
-            },
-            {
-                "title": "Microsoft warns proposed Chinese transceiver ban threatens U.S. AI edge - Reuters",
-                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-warns-proposed-chinese-transceiver-151619964.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:16",
-                "description": "Investing.com -- Microsoft has been quietly lobbying the Trump administration to abandon a proposed ban on Chinese-made optical transceivers, warning that the move risks crippling the domestic buildout of artificial intelligence infrastructure, Reuters reported Tuesday. The pushback reflects mounting anxiety among hyperscalers that escalating geopolitical restrictions could disrupt critical hardware supply chains just as capital expenditure on da",
-                "_timestamp": 1794323779.0
-            },
-            {
-                "title": "China optical stocks rally as Microsoft challenges proposed U.S. import curbs",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/china-optical-stocks-rally-microsoft-063031256.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 06:30",
-                "description": "Investing.com -- Chinese optical communications stocks rallied on Wednesday, with several Hong Kong and mainland listings reaching their highest levels since early November, as investors weighed the implications of a potential U.S. restriction on Chinese data-centre equipment and Microsoft's push to have the proposal dropped.",
-                "_timestamp": 1794378631.0
-            },
-            {
-                "title": "Chinese university buys Nvidia AI H200 chips despite US ban, records show",
-                "link": "https://www.aljazeera.com/news/2026/11/11/chinese-university-buys-nvidia-ai-h200-chips-despite-us-ban-records-show?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-11 07:26",
-                "description": "Investigation reveals Chinese entities accessing US-restricted AI tech despite stringent export control measures.",
-                "_timestamp": 1794381988.0
-            },
-            {
-                "title": "Nvidia is spending more than ever on Washington lobbying. It may not stop Congress from limiting China chip sales now.",
-                "link": "https://www.marketwatch.com/story/nvidia-is-spending-more-than-ever-on-washington-lobbying-it-still-may-not-be-able-to-stop-congress-from-limiting-its-china-chip-sales-now-d4c34c66?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-11 18:48",
-                "description": "‘There’s no question that Congress is going to push for a complete ban on the sale of advanced semiconductors into China,’ says a former U.S. ambassador to Beijing",
-                "_timestamp": 1794422880.0
-            },
-            {
-                "title": "Market Chatter: Nvidia Chip Access Concerns Drive Chinese Firms to Secure Overseas Capacity",
-                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-nvidia-chip-access-084521497.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 08:45",
-                "description": "Nvidia (NVDA) faces rising demand for computing capacity as Chinese firms seek to secure overseas ac",
-                "_timestamp": 1794473121.0
-            },
-            {
-                "title": "Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries",
-                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-us-set-extend-092834736.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 09:28",
-                "description": "The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely a",
-                "_timestamp": 1794475714.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-12 09:28 UTC (approx. 23 minutes ago)",
-            "Facts": "[Update 2026-11-12 09:28 UTC via Yahoo Finance Nasdaq]: Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries — The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely accessing US tech | Core Background: Regulatory friction is escalating as Microsoft and other tech giants push back against proposed bans on optical transceivers and advanced semiconductors to China, while Chinese entities continue sourcing restricted hardware via alternative channels.",
-            "Uncertainties": "Whether international licensing extensions will effectively choke off remote AI access or merely fragment global semiconductor supply chains.",
-            "Macro_Context": "Tech supply chain friction supports defensive asset rotation. Aggressive taker buying (65.7% market buys) absorbs sell-limit walls as traders hedge regulatory clampdowns.",
-            "Bull_Case": "Technological bifurcation and tightening export controls increase operational costs and systemic friction, boosting gold's appeal as a neutral geopolitical reserve asset.",
-            "Bear_Case": "Broad tech sector supply chain disruptions could cause a liquidity squeeze, forcing temporary long liquidations in precious metals.",
-            "Historical_Calibration": "Category: Tech, AI & Equities | Regime Match: Fresh (<0.8x ATR), Against USD Headwind | Historical Win Rate: 69.6% (87/125, Avg DD: -$15.1)",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 62,
-            "Past_Price_Action_Cause": "Persistent structural demand for safe-haven protection against regulatory fragmentation keeps spot prices supported above key liquidity zones.",
-            "Orderflow_Price_Target": "3989.91"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 47.3
+        "max_dd_usd": 77.71
     },
     {
         "main_date": "First Reported: 2026-11-12 09:10 UTC",
@@ -11002,7 +11179,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 61.24
+        "max_dd_usd": 76.53
     },
     {
         "main_date": "First Reported: 2026-11-11 22:50 UTC | Last Update: 2026-11-12 09:08 UTC",
@@ -11080,7 +11257,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 61.24
+        "max_dd_usd": 76.53
     },
     {
         "main_date": "First Reported: 2026-11-10 10:21 UTC | Last Update: 2026-11-12 09:01 UTC",
@@ -11247,7 +11424,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 47.3
+        "max_dd_usd": 62.59
     },
     {
         "main_date": "First Reported: 2026-11-12 08:35 UTC",
@@ -11282,7 +11459,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 47.3
+        "max_dd_usd": 62.59
     },
     {
         "main_date": "First Reported: 2026-11-09 19:00 UTC | Last Update: 2026-11-12 08:30 UTC",
@@ -11544,7 +11721,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 47.3
+        "max_dd_usd": 62.59
     },
     {
         "main_date": "First Reported: 2026-11-12 08:20 UTC",
@@ -11579,7 +11756,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 47.3
+        "max_dd_usd": 62.59
     },
     {
         "main_date": "First Reported: 2026-11-12 08:02 UTC",
@@ -11614,7 +11791,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 47.3
+        "max_dd_usd": 62.59
     },
     {
         "main_date": "First Reported: 2026-11-10 18:07 UTC | Last Update: 2026-11-12 08:01 UTC",
@@ -12774,8 +12951,8 @@
             "Past_Price_Action_Cause": "4h XAU/USD move: $-12.59 (0.26x of estimated Daily ATR).",
             "Orderflow_Price_Target": "3989.85"
         },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 84.28
+        "eval_status": "MISS",
+        "max_dd_usd": 99.57
     },
     {
         "main_date": "First Reported: 2026-11-09 15:22 UTC | Last Update: 2026-11-12 06:38 UTC",
@@ -16956,61 +17133,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.64
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 14:58 UTC | Last Update: 2026-11-11 17:17 UTC",
-        "original_date": "2026-11-10 14:58",
-        "_timestamp": 1794417443.0,
-        "articles": [
-            {
-                "title": "ConocoPhillips Just Raised Its Dividend 10.7%. Does Its Free Cash Flow Cover the 2.5% Yield?",
-                "link": "https://www.tikr.com/blog/conocophillips-just-raised-its-dividend-10-7-does-its-free-cash-flow-cover-the-2-5-yield?ref=yahoofinancedividend&tlnk=yf-261110-98mmhc98&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 14:58",
-                "description": "Key TakeawaysConocoPhillips raised its quarterly dividend 10. 7% to $0.",
-                "_timestamp": 1794322721.0
-            },
-            {
-                "title": "EOG Resources Just Raised Its Dividend 7.8%. Does Its Free Cash Flow Cover the 2.8% Yield?",
-                "link": "https://www.tikr.com/blog/eog-resources-just-raised-its-dividend-7-8-does-its-free-cash-flow-cover-the-2-8-yield?ref=yahoofinancedividend&tlnk=yf-261110-f338f954&.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 14:58",
-                "description": "Key TakeawaysEOG Resources raised its quarterly dividend 7. 8%, from $1.",
-                "_timestamp": 1794322689.0
-            },
-            {
-                "title": "This Energy Stock Just Raised Its Dividend by More Than 10%",
-                "link": "https://finance.yahoo.com/energy/articles/energy-stock-just-raised-dividend-003004663.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 00:30",
-                "description": "ConocoPhillips raised its quarterly base dividend by more than 10% to $0.93 per share after Q3 net earnings rose to $4 billion.",
-                "_timestamp": 1794357004.0
-            },
-            {
-                "title": "EOG’s 8% Dividend Raise Is a Bet on Surviving Any Oil Cycle",
-                "link": "https://247wallst.com/investing/2026/11/11/eogs-8-dividend-raise-is-a-bet-on-surviving-any-oil-cycle/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 17:17",
-                "description": "EOG just raised its dividend while oil trades near $100, and the CEO says it can survive any cycle. One unglamorous line in the earnings release shows whether that promise holds, and it is creeping in the wrong direction.",
-                "_timestamp": 1794417443.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Event_Timestamp": "First reported: 2026-11-10 14:58 UTC (~0.6h ago)",
-            "Facts": "[Update 2026-11-11 17:17 UTC via Yahoo Finance Oil]: EOG’s 8% Dividend Raise Is a Bet on Surviving Any Oil Cycle — EOG just raised its dividend while oil trades near $100, and the CEO says it can survive any cycle. One unglamorous line in the earnings release shows whether that promise holds, a | [Yahoo Finance Oil] ConocoPhillips Just Raised Its Dividend 10.7%. Does Its Free Cash Flow Cover the 2.5% Yield? - Key TakeawaysConocoPhillips raised its quarterly dividend 10. 7% to $0. | [Yahoo Finance Oil] EOG Resources Just Raised Its Dividend 7.8%. Does Its Free Cash Flow Cover the 2.8% Yield? - Key TakeawaysEOG Resources raised its quarterly dividend 7. 8%, from $1.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.25%, Nasdaq-100 -0.24%, Brent Oil -3.91% | OANDA Sentiment: 67.0% Long / 33.0% Short | 24/7 OKX XAUUSDT.P: $4057.8 (Spread: $+8.31).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4060.08.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4040.36. 4h-ATR ratio is 0.38x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.6h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-23.71 (0.38x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
     },
     {
         "main_date": "First Reported: 2026-11-11 17:17 UTC",

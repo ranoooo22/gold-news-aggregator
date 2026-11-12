@@ -39,7 +39,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Sticky Top Header (Bloomberg Command Bar) */
+        /* Sticky Top Header */
         .top-header {
             background: #000000;
             color: var(--text-primary);
@@ -50,7 +50,7 @@
             border-bottom: 1px solid #262f40;
         }
         .header-inner {
-            max-width: 1400px;
+            max-width: 1420px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -61,7 +61,7 @@
         .brand-block {
             display: flex;
             align-items: baseline;
-            gap: 12px;
+            gap: 10px;
             flex-wrap: wrap;
         }
         .brand-tag {
@@ -69,22 +69,21 @@
             color: #000000;
             font-family: var(--font-mono);
             font-weight: 800;
-            font-size: 0.75rem;
+            font-size: 0.74rem;
             padding: 2px 6px;
             border-radius: 2px;
             letter-spacing: 0.05em;
         }
         .brand-block h1 {
             margin: 0;
-            font-size: 1.05rem;
+            font-size: 1.02rem;
             font-weight: 700;
             font-family: var(--font-mono);
-            letter-spacing: -0.01em;
             color: var(--bb-amber);
             text-transform: uppercase;
         }
         .brand-sub {
-            font-size: 0.72rem;
+            font-size: 0.71rem;
             color: var(--text-secondary);
             font-family: var(--font-mono);
         }
@@ -106,9 +105,9 @@
             border: none;
             color: var(--text-secondary);
             font-family: var(--font-mono);
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             font-weight: 700;
-            padding: 6px 14px;
+            padding: 6px 13px;
             border-radius: 3px;
             cursor: pointer;
             text-transform: uppercase;
@@ -124,14 +123,13 @@
             background: var(--bg-subtle);
             color: var(--bb-amber);
             border: 1px solid var(--bb-amber);
-            padding: 6px 12px;
+            padding: 6px 11px;
             border-radius: var(--radius-md);
             font-family: var(--font-mono);
-            font-size: 0.76rem;
+            font-size: 0.74rem;
             font-weight: 700;
             text-transform: uppercase;
             cursor: pointer;
-            transition: all 0.15s ease;
         }
         .refresh-btn:hover {
             background: var(--bb-amber);
@@ -143,19 +141,19 @@
             background: #0b0f17;
             border-bottom: 1px solid var(--border-color);
             color: var(--text-primary);
-            padding: 7px 18px;
+            padding: 6px 18px;
             font-family: var(--font-mono);
-            font-size: 0.76rem;
+            font-size: 0.75rem;
             font-variant-numeric: tabular-nums;
         }
         .telemetry-inner {
-            max-width: 1400px;
+            max-width: 1420px;
             margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
         }
         .t-item {
             display: flex;
@@ -166,67 +164,68 @@
         .t-label {
             color: var(--bb-amber);
             font-weight: 700;
-            font-size: 0.69rem;
+            font-size: 0.68rem;
             text-transform: uppercase;
         }
-        .t-val {
-            font-weight: 700;
-            color: #ffffff;
-        }
-        .t-sub {
-            color: var(--text-secondary);
-            font-size: 0.71rem;
-        }
-        .t-divider {
-            width: 1px;
-            height: 13px;
-            background: var(--border-color);
-        }
+        .t-val { font-weight: 700; color: #ffffff; }
+        .t-sub { color: var(--text-secondary); font-size: 0.7rem; }
+        .t-divider { width: 1px; height: 13px; background: var(--border-color); }
 
         .main-wrapper {
-            max-width: 1400px;
-            margin: 12px auto 0 auto;
-            padding: 0 16px;
+            max-width: 1420px;
+            margin: 10px auto 0 auto;
+            padding: 0 14px;
         }
 
-        /* 2. COMPACT DOMINANT DRIVERS PILL RIBBON */
-        .drivers-ribbon {
+        /* 2. DUAL-HORIZON DRIVERS PANEL (WEEKLY + 24H) */
+        .dual-drivers-box {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
-            padding: 7px 12px;
-            margin-bottom: 12px;
+            padding: 6px 11px;
+            margin-bottom: 11px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .drivers-row {
             display: flex;
             align-items: center;
             gap: 8px;
             flex-wrap: wrap;
         }
+        .drivers-row + .drivers-row {
+            padding-top: 5px;
+            border-top: 1px dashed #1e2636;
+        }
         .drivers-ribbon-label {
             font-family: var(--font-mono);
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             font-weight: 800;
             text-transform: uppercase;
-            color: var(--bb-amber);
+            min-width: 175px;
             white-space: nowrap;
-            margin-right: 4px;
         }
+        .lbl-weekly { color: var(--bb-cyan); }
+        .lbl-24h { color: var(--bb-amber); }
+
         .drivers-pills-wrap {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 7px;
             flex-wrap: wrap;
             flex: 1;
         }
         .driver-pill {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
             background: var(--bg-subtle);
             border: 1px solid var(--border-color);
             border-left: 3px solid var(--text-muted);
             border-radius: 3px;
-            padding: 4px 9px;
-            font-size: 0.75rem;
+            padding: 3px 8px;
+            font-size: 0.73rem;
             cursor: pointer;
             transition: all 0.14s ease;
             font-variant-numeric: tabular-nums;
@@ -244,28 +243,20 @@
             color: var(--bb-amber);
             border: 1px solid #334155;
             font-weight: 700;
-            font-size: 0.68rem;
-            padding: 1px 5px;
+            font-size: 0.66rem;
+            padding: 1px 4px;
             border-radius: 2px;
         }
-        .dp-bias {
-            font-family: var(--font-mono);
-            font-weight: 700;
-            font-size: 0.7rem;
-        }
+        .dp-bias { font-family: var(--font-mono); font-weight: 700; font-size: 0.68rem; }
 
         /* Tab Content */
-        .tab-content { display: none; animation: fadeIn 0.15s ease; }
+        .tab-content { display: none; }
         .tab-content.active { display: block; }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
 
         /* 3. TERMINAL COCKPIT: CHART LEFT + HUD RIGHT */
         .cockpit-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1fr) 420px;
+            grid-template-columns: minmax(0, 1fr) 440px;
             gap: 12px;
             align-items: start;
         }
@@ -279,20 +270,20 @@
         }
         #chart-container {
             width: 100%;
-            height: 560px;
+            height: 575px;
             border-radius: var(--radius-md);
             overflow: hidden;
         }
         .chart-legend {
-            margin-top: 9px;
+            margin-top: 8px;
             padding-top: 8px;
             border-top: 1px solid var(--border-color);
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 16px;
+            gap: 14px;
             font-family: var(--font-mono);
-            font-size: 0.73rem;
+            font-size: 0.71rem;
             color: var(--text-secondary);
         }
         .legend-item { display: flex; align-items: center; gap: 5px; }
@@ -302,35 +293,34 @@
         .orderflow-sidebar {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
             min-width: 0;
         }
         .hud-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
-            padding: 12px 14px;
+            padding: 11px 13px;
             font-variant-numeric: tabular-nums;
         }
         .hud-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 10px;
-            padding-bottom: 6px;
+            margin-bottom: 9px;
+            padding-bottom: 5px;
             border-bottom: 1px solid var(--border-color);
         }
         .hud-title {
             font-family: var(--font-mono);
-            font-size: 0.72rem;
+            font-size: 0.71rem;
             font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 0.04em;
             color: var(--bb-amber);
         }
         .hud-badge {
             font-family: var(--font-mono);
-            font-size: 0.68rem;
+            font-size: 0.66rem;
             font-weight: 700;
             padding: 2px 6px;
             border-radius: 3px;
@@ -339,21 +329,20 @@
             border: 1px solid var(--border-color);
         }
 
-        /* Coinglass Dual Tug-of-War Bars */
-        .tug-group { margin-bottom: 12px; }
-        .tug-group:last-of-type { margin-bottom: 8px; }
+        /* Multi-Source Tug-of-War Bars */
+        .tug-group { margin-bottom: 9px; }
         .tug-top-labels {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             font-family: var(--font-mono);
-            font-size: 0.74rem;
-            margin-bottom: 4px;
+            font-size: 0.72rem;
+            margin-bottom: 3px;
         }
         .tug-metric-name {
             font-weight: 700;
             color: var(--text-secondary);
-            font-size: 0.68rem;
+            font-size: 0.66rem;
             text-transform: uppercase;
         }
         .tug-pct-buy { font-weight: 800; color: var(--bull-green); }
@@ -361,7 +350,7 @@
 
         .tug-bar-track {
             width: 100%;
-            height: 8px;
+            height: 7px;
             background: var(--bear-red);
             border-radius: 2px;
             overflow: hidden;
@@ -377,9 +366,22 @@
             display: flex;
             justify-content: space-between;
             font-family: var(--font-mono);
-            font-size: 0.68rem;
+            font-size: 0.66rem;
             color: var(--text-muted);
-            margin-top: 3px;
+            margin-top: 2px;
+        }
+
+        .cot-inst-strip {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #080b11;
+            border: 1px solid var(--border-color);
+            padding: 5px 8px;
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-size: 0.69rem;
+            margin-top: 6px;
         }
 
         .flow-diagnostic-box {
@@ -387,21 +389,21 @@
             border: 1px solid var(--border-color);
             border-left: 3px solid var(--bb-cyan);
             border-radius: 3px;
-            padding: 8px 10px;
-            font-size: 0.74rem;
+            padding: 7px 9px;
+            font-size: 0.72rem;
             color: var(--text-secondary);
-            line-height: 1.42;
-            margin-top: 8px;
+            line-height: 1.38;
+            margin-top: 7px;
         }
         .squeeze-alert {
-            margin-top: 5px;
+            margin-top: 4px;
             font-family: var(--font-mono);
             font-weight: 700;
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             color: var(--bb-amber);
         }
 
-        /* Vertical Orderbook Liquidity Ladder (With Explicit OANDA vs COMEX Breakdown) */
+        /* 3-Source Vertical Liquidity Price Ladder (OANDA + OKX L2 + COMEX) */
         .ladder-container {
             display: flex;
             flex-direction: column;
@@ -412,7 +414,7 @@
             display: flex;
             flex-direction: column;
             gap: 3px;
-            padding: 6px 9px;
+            padding: 6px 8px;
             border-radius: 3px;
             border: 1px solid var(--border-color);
             background: var(--bg-subtle);
@@ -431,9 +433,7 @@
         .ladder-row.zone-sell .ladder-vol-fill { background: var(--bear-red); }
         .ladder-row.zone-buy { border-left: 3px solid var(--bull-green); }
         .ladder-row.zone-buy .ladder-vol-fill { background: var(--bull-green); }
-        .ladder-row.is-overlap {
-            border-color: rgba(255, 153, 0, 0.5);
-        }
+        .ladder-row.is-overlap { border-color: rgba(255, 153, 0, 0.55); }
 
         .ladder-top-line {
             position: relative;
@@ -442,20 +442,12 @@
             justify-content: space-between;
             align-items: center;
         }
-        .ladder-left {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        .ladder-price {
-            font-weight: 800;
-            font-size: 0.84rem;
-            color: #ffffff;
-        }
+        .ladder-left { display: flex; align-items: center; gap: 5px; }
+        .ladder-price { font-weight: 800; font-size: 0.82rem; color: #ffffff; }
         .ladder-side-tag {
-            font-size: 0.64rem;
+            font-size: 0.62rem;
             font-weight: 800;
-            padding: 1px 5px;
+            padding: 1px 4px;
             border-radius: 2px;
             text-transform: uppercase;
         }
@@ -465,58 +457,52 @@
             background: var(--bb-amber-dim);
             color: var(--bb-amber);
             border: 1px solid var(--bb-amber);
-            font-size: 0.62rem;
+            font-size: 0.6rem;
             font-weight: 800;
             padding: 1px 4px;
             border-radius: 2px;
         }
 
-        .ladder-right {
-            font-size: 0.72rem;
-            color: var(--text-secondary);
-        }
-        .ladder-tot-vol {
-            font-weight: 800;
-            color: var(--bb-amber);
-        }
+        .ladder-right { font-size: 0.7rem; color: var(--text-secondary); }
+        .ladder-tot-vol { font-weight: 800; color: var(--bb-amber); }
 
-        /* Explicit OANDA vs COMEX Sub-row */
         .ladder-split-line {
             position: relative;
             z-index: 1;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.68rem;
+            font-size: 0.65rem;
             color: var(--text-secondary);
             padding-top: 2px;
             border-top: 1px dashed rgba(255, 255, 255, 0.07);
         }
         .split-oanda { color: var(--bb-cyan); font-weight: 700; }
+        .split-okx { color: #38bdf8; font-weight: 700; }
         .split-comex { color: #c084fc; font-weight: 700; }
 
         .ladder-spot-divider {
             background: #000000;
             border: 1px solid var(--bb-amber);
             color: var(--bb-amber);
-            padding: 6px 10px;
+            padding: 6px 9px;
             border-radius: 3px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-family: var(--font-mono);
-            font-size: 0.75rem;
+            font-size: 0.73rem;
             font-weight: 800;
-            margin: 3px 0;
+            margin: 2px 0;
         }
 
-        /* NEWS TAB & ACCORDION CARDS (BLOOMBERG DARK) */
+        /* NEWS TAB & ACCORDION CARDS */
         .controls-panel {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
-            padding: 11px 14px;
-            margin-bottom: 12px;
+            padding: 10px 14px;
+            margin-bottom: 11px;
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
@@ -531,19 +517,17 @@
             flex: 1;
         }
         .search-input, select {
-            padding: 7px 10px;
+            padding: 6px 10px;
             border-radius: var(--radius-md);
             border: 1px solid var(--border-color);
             background-color: var(--bg-subtle);
             color: var(--text-primary);
             font-family: var(--font-mono);
-            font-size: 0.78rem;
+            font-size: 0.76rem;
             outline: none;
         }
         .search-input { min-width: 210px; }
-        .search-input:focus, select:focus {
-            border-color: var(--bb-amber);
-        }
+        .search-input:focus, select:focus { border-color: var(--bb-amber); }
         .filter-checkbox-wrap {
             display: flex;
             align-items: center;
@@ -553,7 +537,7 @@
             border-radius: var(--radius-md);
             border: 1px solid var(--border-color);
             font-family: var(--font-mono);
-            font-size: 0.76rem;
+            font-size: 0.74rem;
             color: var(--text-secondary);
             cursor: pointer;
             user-select: none;
@@ -565,18 +549,14 @@
             justify-content: space-between;
             align-items: center;
             font-family: var(--font-mono);
-            font-size: 0.75rem;
+            font-size: 0.74rem;
             color: var(--text-secondary);
-            margin-bottom: 10px;
+            margin-bottom: 9px;
             padding: 0 4px;
             flex-wrap: wrap;
             gap: 8px;
         }
-        .quick-actions-bar {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
+        .quick-actions-bar { display: flex; align-items: center; gap: 8px; }
         .compact-action-btn {
             background: var(--bg-subtle);
             border: 1px solid var(--border-color);
@@ -584,14 +564,11 @@
             font-family: var(--font-mono);
             padding: 4px 10px;
             border-radius: 3px;
-            font-size: 0.72rem;
+            font-size: 0.71rem;
             font-weight: 700;
             cursor: pointer;
         }
-        .compact-action-btn:hover {
-            border-color: var(--bb-amber);
-            color: var(--bb-amber);
-        }
+        .compact-action-btn:hover { border-color: var(--bb-amber); color: var(--bb-amber); }
         .pinned-counter-badge {
             background: var(--bb-amber-dim);
             color: var(--bb-amber);
@@ -599,7 +576,7 @@
             padding: 2px 8px;
             border-radius: 3px;
             font-weight: 700;
-            font-size: 0.72rem;
+            font-size: 0.71rem;
         }
 
         .news-card {
@@ -621,13 +598,12 @@
         }
 
         .card-accordion-header {
-            padding: 11px 15px;
+            padding: 10px 14px;
             cursor: pointer;
             user-select: none;
             display: flex;
             flex-direction: column;
             gap: 5px;
-            transition: background 0.12s ease;
         }
         .card-accordion-header:hover { background-color: var(--bg-subtle); }
 
@@ -638,23 +614,13 @@
             flex-wrap: wrap;
             gap: 8px;
         }
-        .card-meta-left {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-            flex-wrap: wrap;
-        }
-        .date-header {
-            color: var(--bb-amber);
-            font-family: var(--font-mono);
-            font-size: 0.74rem;
-            font-weight: 600;
-        }
+        .card-meta-left { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+        .date-header { color: var(--bb-amber); font-family: var(--font-mono); font-size: 0.73rem; font-weight: 600; }
         .pinned-tag {
             background: var(--bb-amber);
             color: #000000;
             font-family: var(--font-mono);
-            font-size: 0.66rem;
+            font-size: 0.65rem;
             font-weight: 800;
             padding: 1px 6px;
             border-radius: 2px;
@@ -665,7 +631,7 @@
             color: var(--bb-cyan);
             border: 1px solid rgba(0, 180, 216, 0.35);
             font-family: var(--font-mono);
-            font-size: 0.69rem;
+            font-size: 0.68rem;
             font-weight: 700;
             padding: 1px 6px;
             border-radius: 2px;
@@ -675,7 +641,7 @@
             color: var(--text-secondary);
             border: 1px solid var(--border-color);
             font-family: var(--font-mono);
-            font-size: 0.68rem;
+            font-size: 0.67rem;
             font-weight: 700;
             padding: 1px 6px;
             border-radius: 2px;
@@ -688,12 +654,7 @@
             flex-wrap: wrap;
             font-family: var(--font-mono);
         }
-        .bias-pill {
-            padding: 2px 7px;
-            border-radius: 3px;
-            font-size: 0.7rem;
-            font-weight: 800;
-        }
+        .bias-pill { padding: 2px 7px; border-radius: 3px; font-size: 0.69rem; font-weight: 800; }
         .bias-pill-bull { background: rgba(0, 230, 118, 0.16); color: var(--bull-green); border: 1px solid rgba(0, 230, 118, 0.35); }
         .bias-pill-bear { background: rgba(255, 59, 48, 0.16); color: var(--bear-red); border: 1px solid rgba(255, 59, 48, 0.35); }
         .bias-pill-neutral { background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-color); }
@@ -705,41 +666,24 @@
             padding: 2px 8px;
             border-radius: 3px;
             font-family: var(--font-mono);
-            font-size: 0.69rem;
+            font-size: 0.68rem;
             font-weight: 700;
             cursor: pointer;
         }
         .pin-btn:hover { border-color: var(--bb-amber); color: var(--bb-amber); }
         .pin-btn.active { background: var(--bb-amber); color: #000000; border-color: var(--bb-amber); }
 
-        .eval-badge {
-            padding: 2px 7px;
-            border-radius: 3px;
-            font-size: 0.69rem;
-            font-weight: 700;
-        }
+        .eval-badge { padding: 2px 7px; border-radius: 3px; font-size: 0.68rem; font-weight: 700; }
         .eval-hit { background: rgba(0, 230, 118, 0.16); color: var(--bull-green); border: 1px solid rgba(0, 230, 118, 0.4); }
         .eval-active { background: var(--bb-cyan-dim); color: var(--bb-cyan); border: 1px solid rgba(0, 180, 216, 0.4); }
         .eval-miss { background: rgba(255, 59, 48, 0.16); color: var(--bear-red); border: 1px solid rgba(255, 59, 48, 0.4); }
         .eval-pricedin { background: var(--bg-subtle); color: var(--text-muted); border: 1px solid var(--border-color); }
 
-        .headline-line {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-        }
-        .cluster-headline {
-            font-size: 0.94rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin: 0;
-            line-height: 1.35;
-            flex: 1;
-        }
+        .headline-line { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+        .cluster-headline { font-size: 0.93rem; font-weight: 700; color: #ffffff; margin: 0; line-height: 1.35; flex: 1; }
         .expand-indicator {
             font-family: var(--font-mono);
-            font-size: 0.69rem;
+            font-size: 0.68rem;
             color: var(--bb-amber);
             font-weight: 700;
             background: var(--bg-subtle);
@@ -750,9 +694,9 @@
         }
 
         .compact-teaser {
-            font-size: 0.82rem;
+            font-size: 0.81rem;
             color: var(--text-secondary);
-            line-height: 1.4;
+            line-height: 1.38;
             display: -webkit-box;
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
@@ -772,25 +716,22 @@
 
         .card-accordion-body {
             display: none;
-            padding: 0 15px 15px 15px;
+            padding: 0 14px 14px 14px;
             border-top: 1px solid var(--border-color);
             background: var(--bg-card);
         }
-        .news-card.is-expanded .card-accordion-body {
-            display: block;
-            animation: fadeIn 0.15s ease;
-        }
+        .news-card.is-expanded .card-accordion-body { display: block; }
 
         .event-time-banner {
             background-color: var(--bg-subtle);
             color: var(--bb-amber);
             border: 1px solid var(--border-color);
             border-left: 3px solid var(--bb-amber);
-            padding: 7px 11px;
+            padding: 6px 10px;
             border-radius: var(--radius-md);
             font-family: var(--font-mono);
-            font-size: 0.76rem;
-            margin: 11px 0;
+            font-size: 0.74rem;
+            margin: 10px 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -801,120 +742,81 @@
         .summary-box {
             background-color: var(--bg-subtle);
             border-radius: var(--radius-md);
-            padding: 13px;
-            margin-bottom: 12px;
+            padding: 12px;
+            margin-bottom: 11px;
             border: 1px solid var(--border-color);
         }
-        .structured-data {
-            font-size: 0.86rem;
-            line-height: 1.54;
-            color: var(--text-primary);
-        }
-        .data-block { margin-bottom: 9px; }
+        .structured-data { font-size: 0.85rem; line-height: 1.52; color: var(--text-primary); }
+        .data-block { margin-bottom: 8px; }
         .data-block:last-child { margin-bottom: 0; }
         .data-label {
             font-family: var(--font-mono);
             font-weight: 700;
             color: var(--bb-amber);
             text-transform: uppercase;
-            font-size: 0.69rem;
-            letter-spacing: 0.03em;
+            font-size: 0.68rem;
             display: block;
             margin-bottom: 2px;
         }
 
         .pro-con-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-            margin: 11px 0;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 9px;
+            margin: 10px 0;
         }
         .bull-box {
             background-color: var(--bull-bg);
             border: 1px solid rgba(0, 230, 118, 0.25);
             border-left: 3px solid var(--bull-green);
-            padding: 9px 11px;
+            padding: 8px 10px;
             border-radius: var(--radius-md);
-            font-size: 0.84rem;
-            line-height: 1.46;
+            font-size: 0.83rem;
+            line-height: 1.45;
         }
         .bear-box {
             background-color: var(--bear-bg);
             border: 1px solid rgba(255, 59, 48, 0.25);
             border-left: 3px solid var(--bear-red);
-            padding: 9px 11px;
+            padding: 8px 10px;
             border-radius: var(--radius-md);
-            font-size: 0.84rem;
-            line-height: 1.46;
+            font-size: 0.83rem;
+            line-height: 1.45;
         }
         .calibration-box {
             background-color: var(--bb-cyan-dim);
             border: 1px solid rgba(0, 180, 216, 0.3);
             border-left: 3px solid var(--bb-cyan);
-            padding: 9px 11px;
+            padding: 8px 10px;
             border-radius: var(--radius-md);
-            font-size: 0.82rem;
+            font-size: 0.81rem;
             color: #e0f2fe;
-            margin-top: 9px;
-            line-height: 1.46;
+            margin-top: 8px;
+            line-height: 1.45;
         }
 
         .outlook-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
             gap: 8px;
             background: #080b10;
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
-            padding: 9px 11px;
-            margin-top: 11px;
+            padding: 8px 10px;
+            margin-top: 10px;
             font-family: var(--font-mono);
         }
         .outlook-cell { display: flex; flex-direction: column; gap: 2px; }
-        .outlook-label {
-            font-size: 0.66rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: var(--text-muted);
-        }
-        .outlook-val {
-            font-size: 0.84rem;
-            font-weight: 700;
-            color: #ffffff;
-        }
+        .outlook-label { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); }
+        .outlook-val { font-size: 0.83rem; font-weight: 700; color: #ffffff; }
         .val-bull { color: var(--bull-green); }
         .val-bear { color: var(--bear-red); }
-        .prob-bar-bg {
-            width: 100%;
-            height: 4px;
-            background: #1e293b;
-            border-radius: 2px;
-            overflow: hidden;
-            margin-top: 2px;
-        }
+        .prob-bar-bg { width: 100%; height: 4px; background: #1e293b; border-radius: 2px; overflow: hidden; margin-top: 2px; }
         .prob-bar-fill { height: 100%; border-radius: 2px; }
 
-        .reported-by-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 7px;
-        }
-        .reported-by-label {
-            font-family: var(--font-mono);
-            color: var(--bb-amber);
-            font-weight: 700;
-            font-size: 0.71rem;
-            text-transform: uppercase;
-        }
-        .source-item {
-            display: flex;
-            align-items: baseline;
-            margin-bottom: 5px;
-            flex-wrap: wrap;
-            gap: 6px;
-            font-size: 0.82rem;
-        }
+        .reported-by-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+        .reported-by-label { font-family: var(--font-mono); color: var(--bb-amber); font-weight: 700; font-size: 0.7rem; text-transform: uppercase; }
+        .source-item { display: flex; align-items: baseline; margin-bottom: 5px; flex-wrap: wrap; gap: 6px; font-size: 0.81rem; }
         .source-badge {
             font-family: var(--font-mono);
             background-color: var(--bg-subtle);
@@ -922,27 +824,27 @@
             border: 1px solid var(--border-color);
             padding: 1px 6px;
             border-radius: 2px;
-            font-size: 0.69rem;
+            font-size: 0.68rem;
             font-weight: 700;
             white-space: nowrap;
         }
         .regional-badge { background-color: var(--bb-amber-dim); color: var(--bb-amber); border: 1px solid rgba(255, 153, 0, 0.4); }
         .tech-badge { background-color: var(--bb-cyan-dim); color: var(--bb-cyan); border: 1px solid rgba(0, 180, 216, 0.4); }
-        .bias-note { font-size: 0.7rem; color: var(--text-muted); font-style: italic; }
-        .source-link { color: var(--bb-cyan); text-decoration: none; line-height: 1.38; }
+        .bias-note { font-size: 0.69rem; color: var(--text-muted); font-style: italic; }
+        .source-link { color: var(--bb-cyan); text-decoration: none; line-height: 1.36; }
         .source-link:hover { text-decoration: underline; color: var(--bb-amber); }
 
-        @media (max-width: 1024px) {
+        @media (max-width: 1060px) {
             .cockpit-grid { grid-template-columns: 1fr; }
             #chart-container { height: 430px; }
         }
         @media (max-width: 720px) {
-            .top-header { padding: 10px 14px; }
-            .telemetry-ribbon { padding: 8px 14px; }
+            .top-header { padding: 9px 12px; }
+            .telemetry-ribbon { padding: 7px 12px; }
             .t-divider { display: none; }
             .controls-left { flex-direction: column; align-items: stretch; }
             .search-input, select { width: 100%; }
-            #chart-container { height: 360px; }
+            #chart-container { height: 350px; }
         }
     </style>
 </head>
@@ -954,7 +856,7 @@
             <div class="brand-block">
                 <span class="brand-tag">BBG // XAU</span>
                 <h1>Gold & Macro Intelligence Terminal</h1>
-                <span class="brand-sub">OANDA + COMEX Orderflow &bull; 24/7 XAUUSDT.P &bull; Taker Tape</span>
+                <span class="brand-sub">OANDA + OKX L2 + Unmitigated COMEX &bull; CFTC COT &bull; Dual-Horizon Drivers</span>
             </div>
             <div class="nav-actions">
                 <div class="tab-group">
@@ -995,11 +897,19 @@
     </div>
 
     <div class="main-wrapper">
-        <!-- COMPACT DOMINANT DRIVERS PILL RIBBON -->
-        <div class="drivers-ribbon">
-            <span class="drivers-ribbon-label">Dominant 24h Drivers:</span>
-            <div class="drivers-pills-wrap" id="ui-drivers-grid">
-                <span style="font-size:0.75rem; color:#64748b; font-family:var(--font-mono);">Calculating narrative weights...</span>
+        <!-- DUAL-HORIZON DRIVERS RIBBON: 7-14D WEEKLY REGIME + 24H INTRADAY PULSE -->
+        <div class="dual-drivers-box">
+            <div class="drivers-row">
+                <span class="drivers-ribbon-label lbl-weekly">Weekly Regime (7-14d):</span>
+                <div class="drivers-pills-wrap" id="ui-weekly-drivers-grid">
+                    <span style="font-size:0.73rem; color:#64748b; font-family:var(--font-mono);">Loading multi-week structural drivers...</span>
+                </div>
+            </div>
+            <div class="drivers-row">
+                <span class="drivers-ribbon-label lbl-24h">Dominant 24h Pulse:</span>
+                <div class="drivers-pills-wrap" id="ui-drivers-grid">
+                    <span style="font-size:0.73rem; color:#64748b; font-family:var(--font-mono);">Loading 24h intraday drivers...</span>
+                </div>
             </div>
         </div>
 
@@ -1013,24 +923,24 @@
                         <div class="legend-item"><span class="legend-dot" style="background:#00e676;"></span><strong>BUY Zone:</strong> Net Long Orders</div>
                         <div class="legend-item"><span class="legend-dot" style="background:#ff3b30;"></span><strong>SELL Zone:</strong> Net Short Orders</div>
                         <div class="legend-item"><span class="legend-dot" style="background:#00b4d8;"></span><strong>24/7 XAUUSDT.P:</strong> Live Perp</div>
-                        <div class="legend-item"><strong>Solid Line:</strong> Confirmed OANDA + COMEX Overlap</div>
+                        <div class="legend-item"><strong>Solid Line:</strong> Multi-Market Confluence (OANDA + OKX L2 + COMEX)</div>
                     </div>
                 </div>
 
-                <!-- RIGHT: TUG-OF-WAR & OANDA/COMEX LIQUIDITY LADDER -->
+                <!-- RIGHT: MULTI-SOURCE POSITIONING & 3-SOURCE LIQUIDITY LADDER -->
                 <div class="orderflow-sidebar">
-                    <!-- Panel A: Coinglass Tug-of-War Divergence -->
+                    <!-- Panel A: Multi-Source Positioning & Taker Flow -->
                     <div class="hud-card">
                         <div class="hud-header">
-                            <span class="hud-title">Taker Execution vs. Retail Crowd</span>
+                            <span class="hud-title">Multi-Source Orderflow & Positioning</span>
                             <span class="hud-badge" id="ui-funding-badge">Funding: --</span>
                         </div>
 
-                        <!-- Bar 1: Aggressive Taker Flow -->
+                        <!-- Bar 1: Aggressive Taker Flow (Immediate Market Orders) -->
                         <div class="tug-group">
                             <div class="tug-top-labels">
                                 <span class="tug-pct-buy" id="ui-taker-buy-lbl">--% BUY</span>
-                                <span class="tug-metric-name">Aggressive Taker (Market)</span>
+                                <span class="tug-metric-name">1. Aggressive Taker (Market)</span>
                                 <span class="tug-pct-sell" id="ui-taker-sell-lbl">--% SELL</span>
                             </div>
                             <div class="tug-bar-track">
@@ -1042,20 +952,34 @@
                             </div>
                         </div>
 
-                        <!-- Bar 2: Passive OANDA Retail Crowd -->
+                        <!-- Bar 2: OKX Top-Trader Account Ratio (24/7 Derivatives Whales) -->
+                        <div class="tug-group">
+                            <div class="tug-top-labels">
+                                <span class="tug-pct-buy" id="ui-okx-long-lbl">--% LONG</span>
+                                <span class="tug-metric-name">2. OKX Top Traders (Whales)</span>
+                                <span class="tug-pct-sell" id="ui-okx-short-lbl">--% SHORT</span>
+                            </div>
+                            <div class="tug-bar-track">
+                                <div class="tug-bar-fill-buy" id="ui-okx-bar" style="width: 50%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Bar 3: Passive OANDA Retail Crowd -->
                         <div class="tug-group">
                             <div class="tug-top-labels">
                                 <span class="tug-pct-buy" id="ui-retail-long-lbl">--% LONG</span>
-                                <span class="tug-metric-name">Passive Crowd (OANDA)</span>
+                                <span class="tug-metric-name">3. OANDA Retail (Contrarian)</span>
                                 <span class="tug-pct-sell" id="ui-retail-short-lbl">--% SHORT</span>
                             </div>
                             <div class="tug-bar-track">
                                 <div class="tug-bar-fill-buy" id="ui-retail-bar" style="width: 50%;"></div>
                             </div>
-                            <div class="tug-sub-row">
-                                <span>Contrarian Retail Positioning</span>
-                                <span>Stop-Cascade Fuel</span>
-                            </div>
+                        </div>
+
+                        <!-- CFTC COT Institutional Strip -->
+                        <div class="cot-inst-strip">
+                            <span style="color:#94a3b8;">4. CFTC COMEX Hedge Funds:</span>
+                            <span id="ui-cot-val" style="color:var(--bb-amber); font-weight:700;">Loading COT...</span>
                         </div>
 
                         <div class="flow-diagnostic-box">
@@ -1065,14 +989,14 @@
                         </div>
                     </div>
 
-                    <!-- Panel B: Vertical Orderbook Liquidity Ladder (With OANDA & COMEX split) -->
+                    <!-- Panel B: 3-Source Vertical Liquidity Price Ladder -->
                     <div class="hud-card">
                         <div class="hud-header">
-                            <span class="hud-title">Orderbook Ladder ($10 Clustered)</span>
-                            <span class="hud-badge">OANDA % vs. COMEX %</span>
+                            <span class="hud-title">3-Source Orderbook Ladder ($10 Zones)</span>
+                            <span class="hud-badge">OANDA | OKX L2 | COMEX</span>
                         </div>
                         <div class="ladder-container" id="ui-liquidity-ladder">
-                            <div style="font-size:0.76rem; color:#64748b; text-align:center; padding:12px; font-family:var(--font-mono);">Loading orderbook zones...</div>
+                            <div style="font-size:0.75rem; color:#64748b; text-align:center; padding:12px; font-family:var(--font-mono);">Loading orderbook zones...</div>
                         </div>
                     </div>
                 </div>
@@ -1197,11 +1121,7 @@
             document.getElementById('tab-btn-news').classList.add('active');
 
             const searchBox = document.getElementById('search-query');
-            if (searchBox.value === driverName) {
-                searchBox.value = '';
-            } else {
-                searchBox.value = driverName;
-            }
+            searchBox.value = (searchBox.value === driverName) ? '' : driverName;
             renderNews();
         }
 
@@ -1227,9 +1147,7 @@
         function savePinnedMap(mapObj) {
             try {
                 localStorage.setItem(PINNED_STORAGE_KEY, JSON.stringify(mapObj));
-            } catch (e) {
-                console.error("Failed to save pinned clusters:", e);
-            }
+            } catch (e) {}
         }
 
         function togglePinCluster(clusterKey, event) {
@@ -1240,10 +1158,7 @@
             } else {
                 const found = getMergedClusters().find(c => getClusterKey(c) === clusterKey);
                 if (found) {
-                    map[clusterKey] = {
-                        pinned_at: Date.now(),
-                        cluster_snapshot: found
-                    };
+                    map[clusterKey] = { pinned_at: Date.now(), cluster_snapshot: found };
                 }
             }
             savePinnedMap(map);
@@ -1251,11 +1166,9 @@
         }
 
         function toggleCardAccordion(clusterKey) {
-            if (expandedCardKeys.has(clusterKey)) {
-                expandedCardKeys.delete(clusterKey);
-            } else {
-                expandedCardKeys.add(clusterKey);
-            }
+            if (expandedCardKeys.has(clusterKey)) expandedCardKeys.delete(clusterKey);
+            else expandedCardKeys.add(clusterKey);
+
             const cardEl = document.querySelector(`[data-cluster-key="${CSS.escape(clusterKey)}"]`);
             if (cardEl) {
                 const isExp = expandedCardKeys.has(clusterKey);
@@ -1266,8 +1179,7 @@
         }
 
         function expandAllCards(expand = true) {
-            const mergedList = getMergedClusters();
-            mergedList.forEach(c => {
+            getMergedClusters().forEach(c => {
                 const k = getClusterKey(c);
                 if (expand) expandedCardKeys.add(k);
                 else expandedCardKeys.delete(k);
@@ -1287,9 +1199,7 @@
             allClusters.forEach(c => {
                 const key = getClusterKey(c);
                 seenKeys.add(key);
-                if (pinnedMap[key]) {
-                    pinnedMap[key].cluster_snapshot = c;
-                }
+                if (pinnedMap[key]) pinnedMap[key].cluster_snapshot = c;
                 merged.push(c);
             });
 
@@ -1311,11 +1221,8 @@
             document.getElementById(tabId).classList.add('active');
             event.currentTarget.classList.add('active');
 
-            if (tabId === 'chart-tab') {
-                loadChart();
-            } else if (tabId === 'news-tab') {
-                loadNews();
-            }
+            if (tabId === 'chart-tab') loadChart();
+            else if (tabId === 'news-tab') loadNews();
         }
 
         function refreshAllData() {
@@ -1324,12 +1231,9 @@
             loadNews();
         }
 
-        function renderDominantDriversRadar(driversList) {
-            const grid = document.getElementById('ui-drivers-grid');
-            if (!driversList || driversList.length === 0) {
-                grid.innerHTML = `<span style="font-size:0.75rem; color:#64748b; font-family:var(--font-mono);">Waiting for cluster telemetry...</span>`;
-                return;
-            }
+        function renderDriverPillsToContainer(containerId, driversList) {
+            const grid = document.getElementById(containerId);
+            if (!grid || !driversList || driversList.length === 0) return;
 
             grid.innerHTML = driversList.map((d, i) => {
                 const isBull = (d.net_bias || '').includes('Bullish');
@@ -1338,7 +1242,7 @@
                 const biasColor = isBull ? '#00e676' : (isBear ? '#ff3b30' : '#94a3b8');
                 const safeName = (d.narrative || '').replace(/'/g, "\\'");
                 return `
-                    <div class="driver-pill ${borderClass}" onclick="filterByDriver('${safeName}')" title="Click to filter news by ${d.narrative} (${d.sources_count} sources in ${d.clusters_count} clusters)">
+                    <div class="driver-pill ${borderClass}" onclick="filterByDriver('${safeName}')" title="Click to filter news by ${d.narrative}">
                         <span class="dp-name">#${i + 1} ${d.narrative}</span>
                         <span class="dp-share">${d.share_pct}%</span>
                         <span class="dp-bias" style="color:${biasColor};">${d.net_bias} (${d.avg_prob}%)</span>
@@ -1347,11 +1251,11 @@
             }).join('');
         }
 
-        // Renders the Vertical Liquidity Price Ladder with explicit OANDA % and COMEX % volumes
+        // Renders the 3-Source Vertical Liquidity Price Ladder (OANDA + OKX L2 + Unmitigated COMEX)
         function renderLiquidityLadder(orderbookZones, spotPrice, cryptoBasis) {
             const ladderEl = document.getElementById('ui-liquidity-ladder');
             if (!orderbookZones || orderbookZones.length === 0) {
-                ladderEl.innerHTML = `<div style="font-size:0.76rem; color:#64748b; text-align:center; padding:12px;">No orderbook zones available.</div>`;
+                ladderEl.innerHTML = `<div style="font-size:0.75rem; color:#64748b; text-align:center; padding:12px;">No orderbook zones available.</div>`;
                 return;
             }
 
@@ -1366,12 +1270,15 @@
                 const rowClass = isBuy ? "zone-buy" : "zone-sell";
                 const tagClass = isBuy ? "tag-buy" : "tag-sell";
                 const overlapClass = z.overlap ? "is-overlap" : "";
-                const overlapBadge = z.overlap ? `<span class="tag-overlap">OVERLAP</span>` : '';
+                const overlapBadge = z.overlap
+                    ? `<span class="tag-overlap">CONFLUENCE [${z.sources || 'MULTI'}]</span>`
+                    : `<span style="font-size:0.62rem; color:#64748b;">[${z.sources || 'OANDA'}]</span>`;
                 const widthPct = Math.min(100, Math.round((z.volume / maxVol) * 100));
                 const distUsd = spotPrice > 0 ? (z.price - spotPrice) : 0;
                 const distSign = distUsd >= 0 ? '+' : '';
 
                 const oandaVolStr = z.oanda_vol !== undefined ? `${Number(z.oanda_vol).toFixed(2)}%` : '0.00%';
+                const okxVolStr = z.okx_vol !== undefined ? `${Number(z.okx_vol).toFixed(2)}%` : '0.00%';
                 const comexVolStr = z.comex_vol !== undefined ? `${Number(z.comex_vol).toFixed(2)}%` : '0.00%';
 
                 return `
@@ -1384,13 +1291,14 @@
                                 ${overlapBadge}
                             </div>
                             <div class="ladder-right">
-                                <span class="ladder-tot-vol">Total: ${z.volume.toFixed(2)}%</span>
-                                <span style="margin-left:4px; color:#94a3b8;">(${distSign}$${distUsd.toFixed(1)})</span>
+                                <span class="ladder-tot-vol">Tot: ${z.volume.toFixed(2)}%</span>
+                                <span style="margin-left:3px; color:#94a3b8;">(${distSign}$${distUsd.toFixed(1)})</span>
                             </div>
                         </div>
                         <div class="ladder-split-line">
-                            <span>OANDA Orders: <span class="split-oanda">${oandaVolStr}</span></span>
-                            <span>COMEX Futures: <span class="split-comex">${comexVolStr}</span></span>
+                            <span>OANDA: <span class="split-oanda">${oandaVolStr}</span></span>
+                            <span>OKX L2: <span class="split-okx">${okxVolStr}</span></span>
+                            <span>COMEX: <span class="split-comex">${comexVolStr}</span></span>
                         </div>
                     </div>
                 `;
@@ -1415,7 +1323,7 @@
         }
 
         // ==========================================
-        // 1. LOAD CHART, TAKER HUD & PRICE LADDER
+        // 1. LOAD CHART, MULTI-POS HUD & LADDER
         // ==========================================
         async function loadChart() {
             const container = document.getElementById('chart-container');
@@ -1433,6 +1341,22 @@
                     document.getElementById('ui-retail-long-lbl').innerText = `${lPct}% LONG`;
                     document.getElementById('ui-retail-short-lbl').innerText = `${sPct}% SHORT`;
                     document.getElementById('ui-retail-bar').style.width = `${Math.min(100, Math.max(0, data.sentiment.long_pct))}%`;
+                }
+
+                // Multi-Source Positioning (OKX Top Traders + CFTC COT Managed Money)
+                if (data.multi_positioning) {
+                    const mp = data.multi_positioning;
+                    const okxL = Number(mp.okx_top_long_pct || 50).toFixed(1);
+                    const okxS = Number(mp.okx_top_short_pct || 50).toFixed(1);
+                    document.getElementById('ui-okx-long-lbl').innerText = `${okxL}% LONG`;
+                    document.getElementById('ui-okx-short-lbl').innerText = `${okxS}% SHORT`;
+                    document.getElementById('ui-okx-bar').style.width = `${Math.min(100, Math.max(0, mp.okx_top_long_pct || 50))}%`;
+
+                    if (mp.cot_mm_long_pct && mp.cot_mm_long_pct > 0) {
+                        document.getElementById('ui-cot-val').innerText = `${mp.cot_mm_long_pct}% Long / ${mp.cot_mm_short_pct}% Short (${mp.cot_date})`;
+                    } else {
+                        document.getElementById('ui-cot-val').innerText = "50.0% Neutral (Awaiting CFTC)";
+                    }
                 }
 
                 if (data.taker_flow && data.taker_flow.taker_buy_pct !== undefined) {
@@ -1454,7 +1378,12 @@
                 }
 
                 if (data.dominant_drivers && data.dominant_drivers.length > 0) {
-                    renderDominantDriversRadar(data.dominant_drivers);
+                    renderDriverPillsToContainer('ui-drivers-grid', data.dominant_drivers);
+                }
+                if (data.weekly_drivers && data.weekly_drivers.length > 0) {
+                    renderDriverPillsToContainer('ui-weekly-drivers-grid', data.weekly_drivers);
+                } else if (data.dominant_drivers && data.dominant_drivers.length > 0) {
+                    renderDriverPillsToContainer('ui-weekly-drivers-grid', data.dominant_drivers);
                 }
 
                 if (data.crypto_basis && data.crypto_basis.crypto_price) {
@@ -1507,14 +1436,12 @@
 
                 renderLiquidityLadder(data.orderbook || [], currentSpotPrice, data.crypto_basis);
 
-                if (chartResizeObserver) {
-                    chartResizeObserver.disconnect();
-                }
+                if (chartResizeObserver) chartResizeObserver.disconnect();
                 container.innerHTML = '';
 
                 chartInstance = LightweightCharts.createChart(container, {
                     width: container.clientWidth,
-                    height: container.clientHeight || 560,
+                    height: container.clientHeight || 575,
                     layout: { backgroundColor: '#0d1117', textColor: '#94a3b8' },
                     grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
                     timeScale: { timeVisible: true, borderColor: '#21293a' },
@@ -1558,6 +1485,7 @@
                         const domTag = level.dominance ? ` ${level.dominance}` : '';
                         const isOverlap = level.overlap === true;
                         const oVol = level.oanda_vol !== undefined ? Number(level.oanda_vol).toFixed(1) : '0';
+                        const kVol = level.okx_vol !== undefined ? Number(level.okx_vol).toFixed(1) : '0';
                         const cVol = level.comex_vol !== undefined ? Number(level.comex_vol).toFixed(1) : '0';
 
                         candleSeries.createPriceLine({
@@ -1566,7 +1494,7 @@
                             lineWidth: isOverlap ? 2 : 1,
                             lineStyle: isOverlap ? LightweightCharts.LineStyle.Solid : LightweightCharts.LineStyle.Dashed,
                             axisLabelVisible: true,
-                            title: `L${index + 1}${domTag} [O:${oVol}%|C:${cVol}%]`
+                            title: `L${index + 1}${domTag} [O:${oVol}%|OKX:${kVol}%|C:${cVol}%]`
                         });
                     });
                 }
@@ -1576,7 +1504,7 @@
         }
 
         // ==========================================
-        // 2. LOAD PERFORMANCE STATS
+        // 2. LOAD PERFORMANCE STATS & WEEKLY DRIVERS FALLBACK
         // ==========================================
         async function loadStats() {
             try {
@@ -1594,6 +1522,33 @@
                     document.getElementById('ui-winrate').innerText = `0 Eval`;
                     document.getElementById('ui-winrate-sub').innerText = `[${stats.active_signals || 0} Active]`;
                 }
+
+                // Client-side fallback for Weekly Drivers from 14d history if not yet in market_data.json
+                const wGrid = document.getElementById('ui-weekly-drivers-grid');
+                if (wGrid && wGrid.innerText.includes('Loading') && stats.history) {
+                    const drvCounts = {};
+                    let totW = 0;
+                    Object.values(stats.history).forEach(rec => {
+                        const dName = detectDriverClientSide({ articles: [{ title: rec.headline || '', description: '' }] });
+                        const prob = parseInt(rec.prob || 60);
+                        const imp = rec.impact || 'Bullish';
+                        const w = 2.0 * (0.6 + prob / 100.0);
+                        totW += w;
+                        if (!drvCounts[dName]) drvCounts[dName] = { narrative: dName, weight: 0, clusters_count: 0, bull: 0, bear: 0, prob_sum: 0 };
+                        drvCounts[dName].weight += w;
+                        drvCounts[dName].clusters_count += 1;
+                        drvCounts[dName].prob_sum += prob;
+                        if (imp.includes('Bullish')) drvCounts[dName].bull += w;
+                        if (imp.includes('Bearish')) drvCounts[dName].bear += w;
+                    });
+                    const weeklyList = Object.values(drvCounts).map(d => ({
+                        narrative: d.narrative,
+                        share_pct: totW > 0 ? Math.round((d.weight / totW) * 1000) / 10 : 0,
+                        avg_prob: Math.round(d.prob_sum / Math.max(1, d.clusters_count)),
+                        net_bias: d.bull > d.bear * 1.15 ? 'Bullish' : (d.bear > d.bull * 1.15 ? 'Bearish' : 'Mixed')
+                    })).sort((a, b) => b.share_pct - a.share_pct).slice(0, 4);
+                    renderDriverPillsToContainer('ui-weekly-drivers-grid', weeklyList);
+                }
             } catch (e) {
                 document.getElementById('ui-winrate').innerText = "Calibrating...";
             }
@@ -1608,16 +1563,10 @@
                 const response = await fetch('data.json?t=' + new Date().getTime());
                 if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
                 const textData = await response.text();
-                
-                try {
-                    allClusters = JSON.parse(textData);
-                } catch (e) {
-                    container.innerHTML = `<p style="color:#ff3b30; text-align:center;"><b>Syntax error in data.json!</b></p>`;
-                    return;
-                }
+                allClusters = JSON.parse(textData);
 
                 const grid = document.getElementById('ui-drivers-grid');
-                if (grid && grid.innerText.includes('Calculating')) {
+                if (grid && grid.innerText.includes('Loading')) {
                     const drvCounts = {};
                     let totW = 0;
                     allClusters.forEach(c => {
@@ -1627,10 +1576,9 @@
                         const imp = c.summary?.XAUUSD_Impact || 'Neutral';
                         const w = sCount * (0.6 + prob / 100.0);
                         totW += w;
-                        if (!drvCounts[dName]) drvCounts[dName] = { narrative: dName, weight: 0, clusters_count: 0, sources_count: 0, bull: 0, bear: 0, prob_sum: 0 };
+                        if (!drvCounts[dName]) drvCounts[dName] = { narrative: dName, weight: 0, clusters_count: 0, bull: 0, bear: 0, prob_sum: 0 };
                         drvCounts[dName].weight += w;
                         drvCounts[dName].clusters_count += 1;
-                        drvCounts[dName].sources_count += sCount;
                         drvCounts[dName].prob_sum += prob;
                         if (imp.includes('Bullish')) drvCounts[dName].bull += w;
                         if (imp.includes('Bearish')) drvCounts[dName].bear += w;
@@ -1638,12 +1586,10 @@
                     const clientDrivers = Object.values(drvCounts).map(d => ({
                         narrative: d.narrative,
                         share_pct: totW > 0 ? Math.round((d.weight / totW) * 1000) / 10 : 0,
-                        clusters_count: d.clusters_count,
-                        sources_count: d.sources_count,
                         avg_prob: Math.round(d.prob_sum / Math.max(1, d.clusters_count)),
                         net_bias: d.bull > d.bear * 1.15 ? 'Bullish' : (d.bear > d.bull * 1.15 ? 'Bearish' : 'Mixed')
                     })).sort((a, b) => b.share_pct - a.share_pct).slice(0, 4);
-                    renderDominantDriversRadar(clientDrivers);
+                    renderDriverPillsToContainer('ui-drivers-grid', clientDrivers);
                 }
 
                 renderNews();
@@ -1658,7 +1604,6 @@
                 cluster.summary?.Macro_Context || '',
                 ...cluster.articles.map(a => `${a.title} ${a.description}`)
             ].join(' ').toLowerCase();
-
             return IMPACT_KEYWORDS.some(kw => textToScan.includes(kw));
         }
 
@@ -1675,8 +1620,7 @@
 
             const mergedList = getMergedClusters();
             const pinnedMap = loadPinnedMap();
-            const totalPinnedCount = Object.keys(pinnedMap).length;
-            document.getElementById('pinned-count-badge').innerText = `Pinned: ${totalPinnedCount}`;
+            document.getElementById('pinned-count-badge').innerText = `Pinned: ${Object.keys(pinnedMap).length}`;
 
             let filtered = mergedList.filter(cluster => {
                 const cKey = getClusterKey(cluster);
@@ -1697,9 +1641,7 @@
                     if (!searchable.includes(searchQuery)) return false;
                 }
 
-                if (requireKeywords && !containsImpactKeyword(cluster)) {
-                    return false;
-                }
+                if (requireKeywords && !containsImpactKeyword(cluster)) return false;
 
                 if (filterImpact !== 'all') {
                     const impact = cluster.summary?.XAUUSD_Impact || '';
@@ -1707,15 +1649,8 @@
                 }
 
                 if (filterRegion !== 'all') {
-                    const hasRegionalSource = cluster.articles.some(a => {
-                        const meta = SOURCE_META[a.source] || {};
-                        return meta.region === "Middle East";
-                    });
-                    const hasTechMacroSource = cluster.articles.some(a => {
-                        const meta = SOURCE_META[a.source] || {};
-                        return meta.region === "Tech & Macro";
-                    });
-
+                    const hasRegionalSource = cluster.articles.some(a => (SOURCE_META[a.source] || {}).region === "Middle East");
+                    const hasTechMacroSource = cluster.articles.some(a => (SOURCE_META[a.source] || {}).region === "Tech & Macro");
                     if (filterRegion === 'regional' && !hasRegionalSource) return false;
                     if (filterRegion === 'tech_macro' && !hasTechMacroSource) return false;
                     if (filterRegion === 'western' && (hasRegionalSource || hasTechMacroSource)) return false;
@@ -1724,13 +1659,11 @@
                 if (filterRelevance === 'directional') {
                     const prob = parseInt(cluster.summary?.Probability_Percent || 0);
                     const impact = cluster.summary?.XAUUSD_Impact || '';
-                    const isDir = impact.includes('Bullish') || impact.includes('Bearish');
-                    if (prob <= 50 || !isDir) return false;
+                    if (prob <= 50 || !(impact.includes('Bullish') || impact.includes('Bearish'))) return false;
                 } else if (filterRelevance === 'tradeable') {
                     const prob = parseInt(cluster.summary?.Probability_Percent || 0);
                     const impact = cluster.summary?.XAUUSD_Impact || '';
-                    const isTradeableImpact = impact.includes('Bullish') || impact.includes('Bearish');
-                    if (prob < 67 || !isTradeableImpact) return false;
+                    if (prob < 67 || !(impact.includes('Bullish') || impact.includes('Bearish'))) return false;
                 }
 
                 return true;
@@ -1743,9 +1676,7 @@
                 if (!pinA && pinB) return 1;
 
                 if (sortBy === 'probability') {
-                    const probA = parseInt(a.summary?.Probability_Percent || 0);
-                    const probB = parseInt(b.summary?.Probability_Percent || 0);
-                    return probB - probA;
+                    return parseInt(b.summary?.Probability_Percent || 0) - parseInt(a.summary?.Probability_Percent || 0);
                 }
                 return (b._timestamp || 0) - (a._timestamp || 0);
             });
@@ -1830,7 +1761,7 @@
                                 ${formatUpdateBadges(cluster.summary.Facts)}
                             </div>
                             <div class="data-block">
-                                <span class="data-label">Macro, Tech, 24/7 XAUUSDT.P, Aggressive Taker Flow & Sentiment</span>
+                                <span class="data-label">Macro, Tech, 24/7 XAUUSDT.P, Taker Flow & CFTC/OKX Positioning</span>
                                 ${cluster.summary.Macro_Context || '-'}
                             </div>
                             <div class="data-block">
@@ -1868,11 +1799,8 @@
                 let sourcesHTML = sortedArticles.map(article => {
                     const meta = SOURCE_META[article.source];
                     let badgeClass = "source-badge";
-                    if (meta && meta.region === "Middle East") {
-                        badgeClass = "source-badge regional-badge";
-                    } else if (meta && meta.region === "Tech & Macro") {
-                        badgeClass = "source-badge tech-badge";
-                    }
+                    if (meta && meta.region === "Middle East") badgeClass = "source-badge regional-badge";
+                    else if (meta && meta.region === "Tech & Macro") badgeClass = "source-badge tech-badge";
                     const biasText = meta ? `<span class="bias-note">(${meta.bias})</span>` : '';
 
                     return `
@@ -1932,12 +1860,9 @@
         }
 
         document.addEventListener("visibilitychange", function() {
-            if (document.visibilityState === 'visible') {
-                refreshAllData();
-            }
+            if (document.visibilityState === 'visible') refreshAllData();
         });
 
-        // Initialize Terminal
         refreshAllData();
     </script>
 </body>

@@ -3,7 +3,7 @@
     "hits": 328,
     "misses": 177,
     "win_rate": 65.0,
-    "active_signals": 30,
+    "active_signals": 32,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -9215,6 +9215,44 @@
             "macro_snapshot": "EUR -0.38%, NAS100 +0.00%",
             "created_ts": 1794476280.0,
             "date": "First Reported: 2026-11-12 09:38 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/12/greg-abel-144-billion-warren-buffetts-stock-apple/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Greg Abel Has Plowed $14.4 Billion Into Warren Buffett's Favorite Stock This Year, and It'",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3950.69,
+            "target": 3989.79,
+            "max_dd_usd": 8.78,
+            "atr_ratio_at_signal": 0.25,
+            "daily_atr_at_signal": 60.9,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": -0.12,
+            "macro_snapshot": "EUR -0.32%, NAS100 -0.12%",
+            "created_ts": 1794478620.0,
+            "date": "First Reported: 2026-11-12 10:17 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/m/b2b54afe-1ff6-3009-9a91-fbde5c2d45c5/nvidia-downgraded-ahead-of.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 52,
+            "entry_price": 3943.95,
+            "target": 3920.37,
+            "max_dd_usd": 7.76,
+            "atr_ratio_at_signal": 0.25,
+            "daily_atr_at_signal": 60.9,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": -0.12,
+            "macro_snapshot": "EUR -0.32%, NAS100 -0.12%",
+            "created_ts": 1794476560.0,
+            "date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-12 09:42 UTC",
             "fail_reason": ""
         }
     }

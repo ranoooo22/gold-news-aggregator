@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 545,
-    "hits": 347,
+    "total_evaluated": 548,
+    "hits": 350,
     "misses": 198,
-    "win_rate": 63.7,
-    "active_signals": 40,
+    "win_rate": 63.9,
+    "active_signals": 38,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 282,
+                "hits": 285,
                 "misses": 166,
-                "total": 448,
-                "win_rate": 62.9,
-                "avg_dd": 24.5
+                "total": 451,
+                "win_rate": 63.2,
+                "avg_dd": 24.34
             },
             "Bearish": {
                 "hits": 65,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 324,
+                "hits": 327,
                 "misses": 188,
-                "total": 512,
-                "win_rate": 63.3,
-                "avg_dd": 23.0
+                "total": 515,
+                "win_rate": 63.5,
+                "avg_dd": 22.87
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 23,
@@ -60,11 +60,11 @@
                 "avg_dd": 16.55
             },
             "Against USD Headwind": {
-                "hits": 123,
+                "hits": 126,
                 "misses": 39,
-                "total": 162,
-                "win_rate": 75.9,
-                "avg_dd": 26.8
+                "total": 165,
+                "win_rate": 76.4,
+                "avg_dd": 26.42
             },
             "USD Neutral / Legacy": {
                 "hits": 209,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 181,
+                "hits": 183,
                 "misses": 122,
-                "total": 303,
-                "win_rate": 59.7,
-                "avg_dd": 26.07
+                "total": 305,
+                "win_rate": 60.0,
+                "avg_dd": 25.88
             },
             "Fed, Rates & Macro": {
                 "hits": 20,
@@ -90,11 +90,11 @@
                 "avg_dd": 11.76
             },
             "Tech, AI & Equities": {
-                "hits": 94,
+                "hits": 95,
                 "misses": 38,
-                "total": 132,
-                "win_rate": 71.2,
-                "avg_dd": 15.45
+                "total": 133,
+                "win_rate": 71.4,
+                "avg_dd": 15.39
             },
             "Commodities & Energy": {
                 "hits": 52,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 344,
+                "hits": 347,
                 "misses": 190,
-                "total": 534,
-                "win_rate": 64.4,
-                "avg_dd": 23.5
+                "total": 537,
+                "win_rate": 64.6,
+                "avg_dd": 23.37
             },
             "High (65-74%)": {
                 "hits": 3,
@@ -10111,7 +10111,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$10.07)"
         },
         "https://www.middleeasteye.net/news/dutch-foreign-minister-declines-rule-out-talks-curbing-icc-powers": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Dutch foreign minister declines to deny talks are under way on curbing ICC powers",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -10129,7 +10129,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/12/warren-buffett-doesnt-follow-his-own-sp-500-advice-should-you/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Warren Buffett Doesn't Follow His Own S&P 500 Advice. Should You?",
             "source": "Yahoo Finance Nasdaq",
             "category": "Geopolitics & War",
@@ -10162,6 +10162,24 @@
             "nas_chg_at_signal": -0.45,
             "created_ts": 1794498600.0,
             "date": "First Reported: 2026-11-12 15:50 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/articles/intermedia-form-joint-venture-build-180000447.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "ALSO and Intermedia Form Joint Venture to Build a Next-Generation U.S. Cloud and Technolog",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3879.41,
+            "target": 3879.94,
+            "max_dd_usd": 9.12,
+            "atr_ratio_at_signal": 0.11,
+            "daily_atr_at_signal": 84.82,
+            "eur_chg_at_signal": -0.38,
+            "nas_chg_at_signal": -0.7,
+            "created_ts": 1794506400.0,
+            "date": "First Reported: 2026-11-12 18:00 UTC",
             "fail_reason": ""
         }
     }

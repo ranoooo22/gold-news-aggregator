@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 548,
-    "hits": 350,
+    "total_evaluated": 549,
+    "hits": 351,
     "misses": 198,
     "win_rate": 63.9,
-    "active_signals": 38,
+    "active_signals": 40,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -14,20 +14,20 @@
                 "avg_dd": 24.34
             },
             "Bearish": {
-                "hits": 65,
+                "hits": 66,
                 "misses": 32,
-                "total": 97,
-                "win_rate": 67.0,
-                "avg_dd": 18.4
+                "total": 98,
+                "win_rate": 67.3,
+                "avg_dd": 18.17
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 327,
+                "hits": 328,
                 "misses": 188,
-                "total": 515,
-                "win_rate": 63.5,
-                "avg_dd": 22.87
+                "total": 516,
+                "win_rate": 63.6,
+                "avg_dd": 22.82
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 23,
@@ -53,11 +53,11 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 15,
+                "hits": 16,
                 "misses": 0,
-                "total": 15,
+                "total": 16,
                 "win_rate": 100.0,
-                "avg_dd": 16.55
+                "avg_dd": 15.82
             },
             "Against USD Headwind": {
                 "hits": 126,
@@ -83,11 +83,11 @@
                 "avg_dd": 25.88
             },
             "Fed, Rates & Macro": {
-                "hits": 20,
+                "hits": 21,
                 "misses": 7,
-                "total": 27,
-                "win_rate": 74.1,
-                "avg_dd": 11.76
+                "total": 28,
+                "win_rate": 75.0,
+                "avg_dd": 11.44
             },
             "Tech, AI & Equities": {
                 "hits": 95,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 347,
+                "hits": 348,
                 "misses": 190,
-                "total": 537,
-                "win_rate": 64.6,
-                "avg_dd": 23.37
+                "total": 538,
+                "win_rate": 64.7,
+                "avg_dd": 23.32
             },
             "High (65-74%)": {
                 "hits": 3,
@@ -10180,6 +10180,60 @@
             "nas_chg_at_signal": -0.7,
             "created_ts": 1794506400.0,
             "date": "First Reported: 2026-11-12 18:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/12/why-corteva-stock-dropped-on-thursday/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Why Corteva Stock Dropped on Thursday",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3882.86,
+            "target": 3890.51,
+            "max_dd_usd": 8.98,
+            "atr_ratio_at_signal": 0.13,
+            "daily_atr_at_signal": 84.97,
+            "eur_chg_at_signal": -0.34,
+            "nas_chg_at_signal": -0.34,
+            "created_ts": 1794509496.0,
+            "date": "First Reported: 2026-11-12 18:51 UTC",
+            "fail_reason": ""
+        },
+        "https://financialpost.com/investing/analysts-cut-price-targets-nvidia-jensen-huang/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Analysts cut price targets in wake in Nvidia-Jensen Huang bombshell",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3882.86,
+            "target": 3890.51,
+            "max_dd_usd": 8.98,
+            "atr_ratio_at_signal": 0.13,
+            "daily_atr_at_signal": 84.97,
+            "eur_chg_at_signal": -0.34,
+            "nas_chg_at_signal": -0.34,
+            "created_ts": 1794509076.0,
+            "date": "First Reported: 2026-11-12 18:44 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/currencies/articles/us-dollar-nudges-higher-against-182928559.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "US Dollar Nudges Higher Against The Loonie on Rate Hike Expectations And As Oil Prices Ris",
+            "source": "Yahoo Finance Gold",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3882.86,
+            "target": 3879.89,
+            "max_dd_usd": 4.76,
+            "atr_ratio_at_signal": 0.13,
+            "daily_atr_at_signal": 84.97,
+            "eur_chg_at_signal": -0.34,
+            "nas_chg_at_signal": -0.34,
+            "created_ts": 1794508168.0,
+            "date": "First Reported: 2026-11-12 18:29 UTC",
             "fail_reason": ""
         }
     }

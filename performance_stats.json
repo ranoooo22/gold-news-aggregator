@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 516,
-    "hits": 332,
-    "misses": 184,
-    "win_rate": 64.3,
-    "active_signals": 40,
+    "total_evaluated": 528,
+    "hits": 333,
+    "misses": 195,
+    "win_rate": 63.1,
+    "active_signals": 34,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 273,
-                "misses": 152,
-                "total": 425,
-                "win_rate": 64.2,
-                "avg_dd": 22.0
+                "misses": 163,
+                "total": 436,
+                "win_rate": 62.6,
+                "avg_dd": 24.23
             },
             "Bearish": {
-                "hits": 59,
+                "hits": 60,
                 "misses": 32,
-                "total": 91,
-                "win_rate": 64.8,
-                "avg_dd": 18.04
+                "total": 92,
+                "win_rate": 65.2,
+                "avg_dd": 18.55
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 316,
-                "misses": 174,
-                "total": 490,
-                "win_rate": 64.5,
-                "avg_dd": 20.42
+                "hits": 317,
+                "misses": 185,
+                "total": 502,
+                "win_rate": 63.1,
+                "avg_dd": 22.6
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 16,
@@ -61,26 +61,26 @@
             },
             "Against USD Headwind": {
                 "hits": 224,
-                "misses": 122,
-                "total": 346,
-                "win_rate": 64.7,
-                "avg_dd": 19.1
+                "misses": 133,
+                "total": 357,
+                "win_rate": 62.7,
+                "avg_dd": 22.13
             },
             "USD Neutral / Legacy": {
-                "hits": 6,
+                "hits": 7,
                 "misses": 0,
-                "total": 6,
+                "total": 7,
                 "win_rate": 100.0,
-                "avg_dd": 8.74
+                "avg_dd": 13.85
             }
         },
         "by_category": {
             "Geopolitics & War": {
                 "hits": 175,
-                "misses": 110,
-                "total": 285,
-                "win_rate": 61.4,
-                "avg_dd": 22.81
+                "misses": 119,
+                "total": 294,
+                "win_rate": 59.5,
+                "avg_dd": 25.59
             },
             "Fed, Rates & Macro": {
                 "hits": 20,
@@ -90,34 +90,34 @@
                 "avg_dd": 11.76
             },
             "Tech, AI & Equities": {
-                "hits": 88,
+                "hits": 89,
                 "misses": 38,
-                "total": 126,
-                "win_rate": 69.8,
-                "avg_dd": 15.03
+                "total": 127,
+                "win_rate": 70.1,
+                "avg_dd": 15.35
             },
             "Commodities & Energy": {
                 "hits": 49,
-                "misses": 29,
-                "total": 78,
-                "win_rate": 62.8,
-                "avg_dd": 30.48
+                "misses": 31,
+                "total": 80,
+                "win_rate": 61.3,
+                "avg_dd": 32.51
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 330,
-                "misses": 178,
-                "total": 508,
-                "win_rate": 65.0,
-                "avg_dd": 21.6
+                "hits": 331,
+                "misses": 187,
+                "total": 518,
+                "win_rate": 63.9,
+                "avg_dd": 23.28
             },
             "High (65-74%)": {
                 "hits": 2,
-                "misses": 5,
-                "total": 7,
-                "win_rate": 28.6,
-                "avg_dd": 13.48
+                "misses": 7,
+                "total": 9,
+                "win_rate": 22.2,
+                "avg_dd": 38.87
             },
             "Extreme (>=75%)": {
                 "hits": 0,
@@ -8135,7 +8135,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$1.49)"
         },
         "https://www.marketbeat.com/instant-alerts/transcript-what-elemental-royalty-ele-said-on-its-q3-earnings-call-2026-11-11/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "What Elemental Royalty (ELE) Said on Its Q3 Earnings Call",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -8143,7 +8143,7 @@
             "prob": 55,
             "entry_price": 3992.95,
             "target": 4050.11,
-            "max_dd_usd": 80.85,
+            "max_dd_usd": 91.97,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8151,7 +8151,7 @@
             "macro_snapshot": "EUR -0.67%, NAS100 +3.60%",
             "created_ts": 1794420913.0,
             "date": "First Reported: 2026-11-11 18:15 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$91.97 >= 1.8x ATR) before target"
         },
         "https://finance.yahoo.com/markets/stocks/articles/exxonmobil-xom-stock-may-24-181015023.html?.tsrc=rss": {
             "status": "HIT",
@@ -8173,7 +8173,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$1.49)"
         },
         "https://www.tehrantimes.com/news/532072/German-student-replaces-flag-outside-Bundestag-with-Palestinian": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Student replaces German flag with Palestinian flag outside Bundestag",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -8181,7 +8181,7 @@
             "prob": 55,
             "entry_price": 3992.95,
             "target": 4050.11,
-            "max_dd_usd": 80.85,
+            "max_dd_usd": 91.97,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8189,10 +8189,10 @@
             "macro_snapshot": "EUR -0.67%, NAS100 +3.60%",
             "created_ts": 1794420267.0,
             "date": "First Reported: 2026-11-11 18:04 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$91.97 >= 1.8x ATR) before target"
         },
         "https://www.tehrantimes.com/news/532071/After-the-strikes-Iran-rethinks-the-nuclear-threshold": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "After the strikes, Iran rethinks the nuclear threshold",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -8200,7 +8200,7 @@
             "prob": 55,
             "entry_price": 3992.95,
             "target": 4050.11,
-            "max_dd_usd": 80.85,
+            "max_dd_usd": 91.97,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8208,10 +8208,10 @@
             "macro_snapshot": "EUR -0.67%, NAS100 +3.60%",
             "created_ts": 1794420197.0,
             "date": "First Reported: 2026-11-11 18:03 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$91.97 >= 1.8x ATR) before target"
         },
         "https://www.investing.com/news/commodities-news/iran-attacks-shipping-navigation-systems-on-omans-didamarisland-sources-say-5019671": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran attacks shipping navigation systems on Oman’s Didamar island, sources say",
             "source": "Investing.com",
             "category": "Geopolitics & War",
@@ -8219,7 +8219,7 @@
             "prob": 55,
             "entry_price": 3992.95,
             "target": 4050.11,
-            "max_dd_usd": 80.85,
+            "max_dd_usd": 91.97,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8227,10 +8227,10 @@
             "macro_snapshot": "EUR -0.67%, NAS100 +3.60%",
             "created_ts": 1794420012.0,
             "date": "First Reported: 2026-11-11 18:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$91.97 >= 1.8x ATR) before target"
         },
         "https://www.fool.com/retirement/2026/11/11/3-roth-conversion-tricks-before-rmds-strike/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "3 Roth Conversion Tricks to Use Before RMDs Strike",
             "source": "Yahoo Finance Nasdaq",
             "category": "Geopolitics & War",
@@ -8238,7 +8238,7 @@
             "prob": 55,
             "entry_price": 3993.22,
             "target": 4050.11,
-            "max_dd_usd": 81.12,
+            "max_dd_usd": 92.24,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8246,10 +8246,10 @@
             "macro_snapshot": "EUR -0.67%, NAS100 +3.60%",
             "created_ts": 1794419282.0,
             "date": "First Reported: 2026-11-11 17:48 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$92.24 >= 1.8x ATR) before target"
         },
         "https://www.tehrantimes.com/news/532042/Leader-offers-condolences-on-death-of-Iranian-actor-theater": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Leader offers condolences on death of Iranian actor, theater director Kourosh Zarei",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -8257,7 +8257,7 @@
             "prob": 55,
             "entry_price": 3993.22,
             "target": 4050.11,
-            "max_dd_usd": 81.12,
+            "max_dd_usd": 92.24,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8265,10 +8265,10 @@
             "macro_snapshot": "EUR -0.67%, NAS100 +3.60%",
             "created_ts": 1794419184.0,
             "date": "First Reported: 2026-11-11 17:44 UTC | Last Update: 2026-11-11 17:46 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$92.24 >= 1.8x ATR) before target"
         },
         "https://www.aljazeera.com/news/2026/11/11/tens-of-thousands-join-polands-nationalist-independence-day-march?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Tens of thousands join Poland’s nationalist Independence Day march",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -8276,7 +8276,7 @@
             "prob": 55,
             "entry_price": 3993.22,
             "target": 4050.11,
-            "max_dd_usd": 81.12,
+            "max_dd_usd": 92.24,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8284,10 +8284,10 @@
             "macro_snapshot": "EUR -0.67%, NAS100 +3.60%",
             "created_ts": 1794418683.0,
             "date": "First Reported: 2026-11-11 17:38 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$92.24 >= 1.8x ATR) before target"
         },
         "https://www.tehrantimes.com/news/532062/Leader-aide-warns-of-consequences-for-those-supporting-hostile": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Leader aide warns of consequences for those supporting hostile economic blockade against I",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -8295,7 +8295,7 @@
             "prob": 55,
             "entry_price": 3993.22,
             "target": 4050.11,
-            "max_dd_usd": 81.12,
+            "max_dd_usd": 92.24,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8303,7 +8303,7 @@
             "macro_snapshot": "EUR -0.67%, NAS100 +3.60%",
             "created_ts": 1794418600.0,
             "date": "First Reported: 2026-11-11 17:36 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$92.24 >= 1.8x ATR) before target"
         },
         "https://finance.yahoo.com/markets/stocks/articles/alkane-resources-2-australian-penny-171652012.html?.tsrc=rss": {
             "status": "MISS",
@@ -8572,7 +8572,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$63.01)"
         },
         "https://www.middleeasteye.net/news/us-taxpayer-group-calls-icc-investigate-trump-rubio-aiding-gaza-genocide": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US taxpayer group calls on ICC to investigate Trump, Rubio for 'aiding' Gaza genocide",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -8580,7 +8580,7 @@
             "prob": 58,
             "entry_price": 3987.7,
             "target": 4050.15,
-            "max_dd_usd": 75.6,
+            "max_dd_usd": 86.72,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.7,
@@ -8588,7 +8588,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.92%",
             "created_ts": 1794435330.0,
             "date": "First Reported: 2026-11-11 22:15 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$86.72 >= 1.8x ATR) before target"
         },
         "https://www.middleeasteye.net/news/saudi-arabia-feels-liquidity-crunch-even-oil-exports-rebound": {
             "status": "HIT",
@@ -8610,7 +8610,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$9.45)"
         },
         "https://finance.yahoo.com/markets/commodities/articles/found-gold-reports-q3-2026-220000335.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "New Found Gold Reports Q3 2026 Financial and Operational Results",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -8618,7 +8618,7 @@
             "prob": 65,
             "entry_price": 3987.7,
             "target": 4050.15,
-            "max_dd_usd": 75.6,
+            "max_dd_usd": 86.72,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.71,
@@ -8626,7 +8626,7 @@
             "macro_snapshot": "EUR -0.71%, NAS100 +1.92%",
             "created_ts": 1794436200.0,
             "date": "First Reported: 2026-11-11 22:00 UTC | Last Update: 2026-11-11 22:30 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$86.72 >= 1.8x ATR) before target"
         },
         "https://app.moby.co/home/research/tools/earningsCalendar/earnings-mink-therapeutics-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss": {
             "status": "HIT",
@@ -8800,7 +8800,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$24.83)"
         },
         "https://www.aljazeera.com/news/liveblog/2026/11/12/iran-war-live-tehran-warns-of-wider-retaliation-israel-kills-in-gaza?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran war live: Tehran warns of wider retaliation; Israel kills in Gaza",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -8808,7 +8808,7 @@
             "prob": 66,
             "entry_price": 3993.59,
             "target": 4050.11,
-            "max_dd_usd": 81.49,
+            "max_dd_usd": 92.61,
             "atr_ratio_at_signal": 0.15,
             "daily_atr_at_signal": 48.42,
             "eur_chg_at_signal": -0.64,
@@ -8816,7 +8816,7 @@
             "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
             "created_ts": 1794441644.0,
             "date": "First Reported: 2026-11-12 00:00 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$92.61 >= 1.8x ATR) before target"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/11/barcelona-erupts-in-violence-after-general-strike?traffic_source=rss": {
             "status": "HIT",
@@ -8903,7 +8903,7 @@
             "prob": 55,
             "entry_price": 3965.81,
             "target": 3989.85,
-            "max_dd_usd": 53.71,
+            "max_dd_usd": 64.83,
             "atr_ratio_at_signal": 0.26,
             "daily_atr_at_signal": 48.2,
             "eur_chg_at_signal": -0.42,
@@ -8922,7 +8922,7 @@
             "prob": 55,
             "entry_price": 3965.81,
             "target": 3989.85,
-            "max_dd_usd": 53.71,
+            "max_dd_usd": 64.83,
             "atr_ratio_at_signal": 0.26,
             "daily_atr_at_signal": 48.2,
             "eur_chg_at_signal": -0.42,
@@ -8941,7 +8941,7 @@
             "prob": 55,
             "entry_price": 3979.66,
             "target": 3989.85,
-            "max_dd_usd": 67.56,
+            "max_dd_usd": 78.68,
             "atr_ratio_at_signal": 0.26,
             "daily_atr_at_signal": 48.2,
             "eur_chg_at_signal": -0.42,
@@ -9036,7 +9036,7 @@
             "prob": 62,
             "entry_price": 3928.83,
             "target": 3989.91,
-            "max_dd_usd": 16.73,
+            "max_dd_usd": 27.85,
             "atr_ratio_at_signal": 0.84,
             "daily_atr_at_signal": 56.81,
             "eur_chg_at_signal": -0.42,
@@ -9055,7 +9055,7 @@
             "prob": 61,
             "entry_price": 3928.83,
             "target": 3989.9,
-            "max_dd_usd": 16.73,
+            "max_dd_usd": 27.85,
             "atr_ratio_at_signal": 0.84,
             "daily_atr_at_signal": 56.81,
             "eur_chg_at_signal": -0.42,
@@ -9074,7 +9074,7 @@
             "prob": 58,
             "entry_price": 3928.83,
             "target": 3989.9,
-            "max_dd_usd": 16.73,
+            "max_dd_usd": 27.85,
             "atr_ratio_at_signal": 0.84,
             "daily_atr_at_signal": 56.81,
             "eur_chg_at_signal": -0.42,
@@ -9093,7 +9093,7 @@
             "prob": 69,
             "entry_price": 3928.83,
             "target": 3989.9,
-            "max_dd_usd": 16.73,
+            "max_dd_usd": 27.85,
             "atr_ratio_at_signal": 0.84,
             "daily_atr_at_signal": 56.81,
             "eur_chg_at_signal": -0.42,
@@ -9112,7 +9112,7 @@
             "prob": 69,
             "entry_price": 3928.83,
             "target": 3989.9,
-            "max_dd_usd": 16.73,
+            "max_dd_usd": 27.85,
             "atr_ratio_at_signal": 0.84,
             "daily_atr_at_signal": 56.81,
             "eur_chg_at_signal": -0.42,
@@ -9131,7 +9131,7 @@
             "prob": 65,
             "entry_price": 3942.77,
             "target": 3989.91,
-            "max_dd_usd": 30.67,
+            "max_dd_usd": 41.79,
             "atr_ratio_at_signal": 0.61,
             "daily_atr_at_signal": 60.08,
             "eur_chg_at_signal": -0.41,
@@ -9150,7 +9150,7 @@
             "prob": 54,
             "entry_price": 3942.77,
             "target": 3989.91,
-            "max_dd_usd": 30.67,
+            "max_dd_usd": 41.79,
             "atr_ratio_at_signal": 0.61,
             "daily_atr_at_signal": 60.08,
             "eur_chg_at_signal": -0.41,
@@ -9169,7 +9169,7 @@
             "prob": 55,
             "entry_price": 3928.83,
             "target": 3989.91,
-            "max_dd_usd": 16.73,
+            "max_dd_usd": 27.85,
             "atr_ratio_at_signal": 0.61,
             "daily_atr_at_signal": 60.08,
             "eur_chg_at_signal": -0.41,
@@ -9207,7 +9207,7 @@
             "prob": 55,
             "entry_price": 3943.95,
             "target": 3989.85,
-            "max_dd_usd": 31.85,
+            "max_dd_usd": 42.97,
             "atr_ratio_at_signal": 0.35,
             "daily_atr_at_signal": 58.92,
             "eur_chg_at_signal": -0.38,
@@ -9226,7 +9226,7 @@
             "prob": 55,
             "entry_price": 3950.69,
             "target": 3989.79,
-            "max_dd_usd": 38.59,
+            "max_dd_usd": 49.71,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 60.9,
             "eur_chg_at_signal": -0.32,
@@ -9264,7 +9264,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.77,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9302,7 +9302,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.82,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9321,7 +9321,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.77,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9340,7 +9340,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.82,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9359,7 +9359,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.77,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9378,7 +9378,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.77,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9397,7 +9397,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.77,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9416,7 +9416,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.82,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9435,7 +9435,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.82,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9454,7 +9454,7 @@
             "prob": 55,
             "entry_price": 3936.81,
             "target": 3989.77,
-            "max_dd_usd": 24.71,
+            "max_dd_usd": 35.83,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9473,7 +9473,7 @@
             "prob": 55,
             "entry_price": 3944.36,
             "target": 3989.82,
-            "max_dd_usd": 32.26,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9511,7 +9511,7 @@
             "prob": 55,
             "entry_price": 3944.36,
             "target": 3989.82,
-            "max_dd_usd": 32.26,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9549,7 +9549,7 @@
             "prob": 55,
             "entry_price": 3944.36,
             "target": 3989.82,
-            "max_dd_usd": 32.26,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9568,7 +9568,7 @@
             "prob": 55,
             "entry_price": 3944.36,
             "target": 3989.82,
-            "max_dd_usd": 32.26,
+            "max_dd_usd": 43.38,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9587,7 +9587,7 @@
             "prob": 55,
             "entry_price": 3953.95,
             "target": 3989.82,
-            "max_dd_usd": 41.85,
+            "max_dd_usd": 52.97,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9606,7 +9606,7 @@
             "prob": 55,
             "entry_price": 3916.51,
             "target": 3989.8,
-            "max_dd_usd": 4.41,
+            "max_dd_usd": 15.53,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
             "eur_chg_at_signal": -0.01,
@@ -9614,6 +9614,120 @@
             "macro_snapshot": "EUR -0.01%, NAS100 -1.00%",
             "created_ts": 1794488707.0,
             "date": "First Reported: 2026-11-12 13:05 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/gideo-saar-warns-attempts-harm-israel-also-harm-britain-following": {
+            "status": "ACTIVE",
+            "headline": "Gideo Saar warns 'attempts to harm Israel also harm Britain' following meeting with UK Con",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3904.3,
+            "target": 3989.86,
+            "max_dd_usd": 3.32,
+            "atr_ratio_at_signal": 0.52,
+            "daily_atr_at_signal": 76.12,
+            "eur_chg_at_signal": -0.01,
+            "nas_chg_at_signal": -0.93,
+            "macro_snapshot": "EUR -0.01%, NAS100 -0.93%",
+            "created_ts": 1794490544.0,
+            "date": "First Reported: 2026-11-12 13:35 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/bipartisan-silver-act-gains-strong-133000495.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Bipartisan SILVER Act Gains Strong Momentum in Congress as Lawmakers Eye National Defense ",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3904.3,
+            "target": 3989.86,
+            "max_dd_usd": 3.32,
+            "atr_ratio_at_signal": 0.52,
+            "daily_atr_at_signal": 76.12,
+            "eur_chg_at_signal": -0.01,
+            "nas_chg_at_signal": -0.93,
+            "macro_snapshot": "EUR -0.01%, NAS100 -0.93%",
+            "created_ts": 1794490200.0,
+            "date": "First Reported: 2026-11-12 13:30 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/healthcare/articles/kno2-brings-nationwide-connectivity-microsoft-133000267.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Kno2 Brings Nationwide Connectivity to Microsoft Azure Healthcare Customers",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3904.3,
+            "target": 3918.7,
+            "max_dd_usd": 44.5,
+            "atr_ratio_at_signal": 0.52,
+            "daily_atr_at_signal": 76.12,
+            "eur_chg_at_signal": -0.01,
+            "nas_chg_at_signal": -0.93,
+            "macro_snapshot": "EUR -0.01%, NAS100 -0.93%",
+            "created_ts": 1794490200.0,
+            "date": "First Reported: 2026-11-12 13:30 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$44.50)"
+        },
+        "https://finance.yahoo.com/energy/articles/bernstein-cuts-conocophillips-diamondback-ratings-132928047.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Bernstein cuts ConocoPhillips and Diamondback ratings as Iran de-escalation looms",
+            "source": "Yahoo Finance Oil",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3904.3,
+            "target": 3989.86,
+            "max_dd_usd": 3.32,
+            "atr_ratio_at_signal": 0.52,
+            "daily_atr_at_signal": 76.12,
+            "eur_chg_at_signal": -0.01,
+            "nas_chg_at_signal": -0.93,
+            "macro_snapshot": "EUR -0.01%, NAS100 -0.93%",
+            "created_ts": 1794490168.0,
+            "date": "First Reported: 2026-11-12 13:29 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/12/more-than-1800-italian-schools-targeted-by-new-hoax-bomb-alerts?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "More than 1,800 Italian schools targeted by new hoax bomb alerts",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3904.3,
+            "target": 3989.86,
+            "max_dd_usd": 3.32,
+            "atr_ratio_at_signal": 0.52,
+            "daily_atr_at_signal": 76.12,
+            "eur_chg_at_signal": -0.01,
+            "nas_chg_at_signal": -0.93,
+            "macro_snapshot": "EUR -0.01%, NAS100 -0.93%",
+            "created_ts": 1794489620.0,
+            "date": "First Reported: 2026-11-12 13:20 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/nigeria-hits-opec-oil-production-123000910.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Nigeria Hits OPEC Oil Production Quota for Sixth Straight Month",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3936.81,
+            "target": 3989.86,
+            "max_dd_usd": 35.83,
+            "atr_ratio_at_signal": 0.52,
+            "daily_atr_at_signal": 76.12,
+            "eur_chg_at_signal": -0.01,
+            "nas_chg_at_signal": -0.93,
+            "macro_snapshot": "EUR -0.01%, NAS100 -0.93%",
+            "created_ts": 1794486600.0,
+            "date": "First Reported: 2026-11-12 12:30 UTC",
             "fail_reason": ""
         }
     }

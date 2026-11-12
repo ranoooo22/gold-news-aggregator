@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 549,
-    "hits": 351,
+    "total_evaluated": 550,
+    "hits": 352,
     "misses": 198,
-    "win_rate": 63.9,
-    "active_signals": 40,
+    "win_rate": 64.0,
+    "active_signals": 41,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 285,
+                "hits": 286,
                 "misses": 166,
-                "total": 451,
-                "win_rate": 63.2,
-                "avg_dd": 24.34
+                "total": 452,
+                "win_rate": 63.3,
+                "avg_dd": 24.55
             },
             "Bearish": {
                 "hits": 66,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 328,
+                "hits": 329,
                 "misses": 188,
-                "total": 516,
+                "total": 517,
                 "win_rate": 63.6,
-                "avg_dd": 22.82
+                "avg_dd": 23.01
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 23,
@@ -60,11 +60,11 @@
                 "avg_dd": 15.82
             },
             "Against USD Headwind": {
-                "hits": 126,
+                "hits": 127,
                 "misses": 39,
-                "total": 165,
-                "win_rate": 76.4,
-                "avg_dd": 26.42
+                "total": 166,
+                "win_rate": 76.5,
+                "avg_dd": 26.86
             },
             "USD Neutral / Legacy": {
                 "hits": 209,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 183,
+                "hits": 184,
                 "misses": 122,
-                "total": 305,
-                "win_rate": 60.0,
-                "avg_dd": 25.88
+                "total": 306,
+                "win_rate": 60.1,
+                "avg_dd": 26.19
             },
             "Fed, Rates & Macro": {
                 "hits": 21,
@@ -113,11 +113,11 @@
                 "avg_dd": 23.32
             },
             "High (65-74%)": {
-                "hits": 3,
+                "hits": 4,
                 "misses": 7,
-                "total": 10,
-                "win_rate": 30.0,
-                "avg_dd": 34.89
+                "total": 11,
+                "win_rate": 36.4,
+                "avg_dd": 42.79
             },
             "Extreme (>=75%)": {
                 "hits": 0,
@@ -9218,14 +9218,14 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/12/greg-abel-144-billion-warren-buffetts-stock-apple/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Greg Abel Has Plowed $14.4 Billion Into Warren Buffett's Favorite Stock This Year, and It'",
             "source": "Yahoo Finance Nasdaq",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 70,
             "entry_price": 3950.69,
-            "target": 3989.79,
+            "target": 3899.56,
             "max_dd_usd": 98.11,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 60.9,
@@ -10234,6 +10234,42 @@
             "nas_chg_at_signal": -0.34,
             "created_ts": 1794508168.0,
             "date": "First Reported: 2026-11-12 18:29 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/news/x-suspends-campaign-account-palestinian-american-running-us-senate": {
+            "status": "ACTIVE",
+            "headline": "X suspends campaign account of Palestinian American running for US Senate",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3882.82,
+            "target": 3890.78,
+            "max_dd_usd": 7.09,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 84.98,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": -0.68,
+            "created_ts": 1794510518.0,
+            "date": "First Reported: 2026-11-12 18:58 UTC | Last Update: 2026-11-12 19:08 UTC",
+            "fail_reason": ""
+        },
+        "https://www.ibtimes.com/elon-musk-hire-nvidia-ceo-jensen-huang-3809671?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Musk Says it Would be an 'Honor' to Hire Jensen Huang as Nvidia's Board Reportedly Gears u",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3882.82,
+            "target": 3890.78,
+            "max_dd_usd": 7.09,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 84.98,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": -0.68,
+            "created_ts": 1794510320.0,
+            "date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-12 19:05 UTC",
             "fail_reason": ""
         }
     }

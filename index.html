@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial & Gold Intelligence Terminal</title>
+    <title>XAU/USD Intelligence Terminal</title>
     <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
     <style>
         :root {
-            --bg-main: #f1f5f9;
-            --bg-card: #ffffff;
-            --bg-subtle: #f8fafc;
-            --bg-dark: #0f172a;
-            --bg-dark-sub: #1e293b;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
+            --bg-main: #06080c;
+            --bg-card: #0d1117;
+            --bg-subtle: #141a24;
+            --bg-elevated: #1b2330;
+            --text-primary: #e6edf3;
+            --text-secondary: #94a3b8;
             --text-muted: #64748b;
-            --border-color: #e2e8f0;
-            --accent-blue: #2563eb;
-            --accent-gold: #d97706;
-            --bull-green: #16a34a;
-            --bull-bg: #f0fdf4;
-            --bear-red: #dc2626;
-            --bear-bg: #fef2f2;
-            --radius-lg: 10px;
-            --radius-md: 6px;
-            --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
-            --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.07);
+            --border-color: #21293a;
+            --bb-amber: #ff9900;
+            --bb-amber-dim: rgba(255, 153, 0, 0.14);
+            --bb-cyan: #00b4d8;
+            --bb-cyan-dim: rgba(0, 180, 216, 0.14);
+            --bull-green: #00e676;
+            --bull-bg: rgba(0, 230, 118, 0.08);
+            --bear-red: #ff3b30;
+            --bear-bg: rgba(255, 59, 48, 0.08);
+            --radius-lg: 6px;
+            --radius-md: 4px;
+            --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
         }
 
         * { box-sizing: border-box; }
@@ -39,18 +39,18 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Sticky Top Header */
+        /* Sticky Top Header (Bloomberg Command Bar) */
         .top-header {
-            background: var(--bg-dark);
-            color: #f8fafc;
-            padding: 11px 20px;
+            background: #000000;
+            color: var(--text-primary);
+            padding: 9px 18px;
             position: sticky;
             top: 0;
             z-index: 200;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+            border-bottom: 1px solid #262f40;
         }
         .header-inner {
-            max-width: 1380px;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
@@ -64,16 +64,29 @@
             gap: 12px;
             flex-wrap: wrap;
         }
+        .brand-tag {
+            background: var(--bb-amber);
+            color: #000000;
+            font-family: var(--font-mono);
+            font-weight: 800;
+            font-size: 0.75rem;
+            padding: 2px 6px;
+            border-radius: 2px;
+            letter-spacing: 0.05em;
+        }
         .brand-block h1 {
             margin: 0;
-            font-size: 1.12rem;
+            font-size: 1.05rem;
             font-weight: 700;
-            letter-spacing: -0.02em;
-            color: #ffffff;
+            font-family: var(--font-mono);
+            letter-spacing: -0.01em;
+            color: var(--bb-amber);
+            text-transform: uppercase;
         }
         .brand-sub {
-            font-size: 0.74rem;
-            color: #94a3b8;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
         }
 
         .nav-actions {
@@ -83,119 +96,117 @@
         }
         .tab-group {
             display: flex;
-            background: var(--bg-dark-sub);
-            padding: 3px;
-            border-radius: 7px;
-            border: 1px solid #334155;
+            background: var(--bg-subtle);
+            padding: 2px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
         }
         .tab-btn {
             background: transparent;
             border: none;
-            color: #94a3b8;
-            font-size: 0.82rem;
-            font-weight: 600;
-            padding: 7px 14px;
-            border-radius: 5px;
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            font-weight: 700;
+            padding: 6px 14px;
+            border-radius: 3px;
             cursor: pointer;
-            transition: all 0.16s ease;
+            text-transform: uppercase;
+            transition: all 0.14s ease;
         }
-        .tab-btn:hover { color: #f8fafc; }
+        .tab-btn:hover { color: #ffffff; }
         .tab-btn.active {
-            background: var(--accent-blue);
-            color: #ffffff;
-            box-shadow: 0 1px 4px rgba(37, 99, 235, 0.4);
+            background: var(--bb-amber);
+            color: #000000;
         }
 
         .refresh-btn {
-            background: var(--bg-dark-sub);
-            color: #e2e8f0;
-            border: 1px solid #334155;
-            padding: 7px 12px;
-            border-radius: 7px;
-            font-size: 0.79rem;
-            font-weight: 600;
+            background: var(--bg-subtle);
+            color: var(--bb-amber);
+            border: 1px solid var(--bb-amber);
+            padding: 6px 12px;
+            border-radius: var(--radius-md);
+            font-family: var(--font-mono);
+            font-size: 0.76rem;
+            font-weight: 700;
+            text-transform: uppercase;
             cursor: pointer;
-            transition: all 0.16s ease;
+            transition: all 0.15s ease;
         }
         .refresh-btn:hover {
-            background: #334155;
-            color: #ffffff;
+            background: var(--bb-amber);
+            color: #000000;
         }
 
-        /* ========================================================= */
-        /* 1. COMPACT TELEMETRY TICKER BAR (REPLACES BULKY TOP CARDS)*/
-        /* ========================================================= */
-        .telemetry-Ribbon {
-            background: #1e293b;
-            border-bottom: 1px solid #334155;
-            color: #f8fafc;
-            padding: 7px 20px;
-            font-size: 0.78rem;
+        /* 1. COMPACT TELEMETRY TICKER BAR */
+        .telemetry-ribbon {
+            background: #0b0f17;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 7px 18px;
+            font-family: var(--font-mono);
+            font-size: 0.76rem;
             font-variant-numeric: tabular-nums;
         }
         .telemetry-inner {
-            max-width: 1380px;
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 14px;
+            gap: 12px;
         }
         .t-item {
             display: flex;
             align-items: center;
-            gap: 7px;
+            gap: 6px;
             white-space: nowrap;
         }
         .t-label {
-            color: #94a3b8;
+            color: var(--bb-amber);
             font-weight: 700;
             font-size: 0.69rem;
             text-transform: uppercase;
-            letter-spacing: 0.04em;
         }
         .t-val {
             font-weight: 700;
-            color: #f8fafc;
+            color: #ffffff;
         }
         .t-sub {
-            color: #cbd5e1;
-            font-size: 0.72rem;
+            color: var(--text-secondary);
+            font-size: 0.71rem;
         }
         .t-divider {
             width: 1px;
-            height: 14px;
-            background: #334155;
+            height: 13px;
+            background: var(--border-color);
         }
 
         .main-wrapper {
-            max-width: 1380px;
+            max-width: 1400px;
             margin: 12px auto 0 auto;
             padding: 0 16px;
         }
 
-        /* ========================================================= */
-        /* 2. COMPACT DOMINANT DRIVERS PILL RIBBON                   */
-        /* ========================================================= */
+        /* 2. COMPACT DOMINANT DRIVERS PILL RIBBON */
         .drivers-ribbon {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             padding: 7px 12px;
             margin-bottom: 12px;
-            box-shadow: var(--shadow-sm);
             display: flex;
             align-items: center;
             gap: 8px;
             flex-wrap: wrap;
         }
         .drivers-ribbon-label {
+            font-family: var(--font-mono);
             font-size: 0.7rem;
             font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 0.04em;
-            color: var(--text-secondary);
+            color: var(--bb-amber);
             white-space: nowrap;
             margin-right: 4px;
         }
@@ -212,47 +223,50 @@
             gap: 6px;
             background: var(--bg-subtle);
             border: 1px solid var(--border-color);
-            border-left: 3px solid #64748b;
-            border-radius: 5px;
+            border-left: 3px solid var(--text-muted);
+            border-radius: 3px;
             padding: 4px 9px;
-            font-size: 0.76rem;
+            font-size: 0.75rem;
             cursor: pointer;
             transition: all 0.14s ease;
             font-variant-numeric: tabular-nums;
         }
         .driver-pill:hover {
-            background: #eff6ff;
-            border-color: #93c5fd;
-            transform: translateY(-1px);
+            background: var(--bg-elevated);
+            border-color: var(--bb-amber);
         }
         .driver-pill.drv-bull { border-left-color: var(--bull-green); }
         .driver-pill.drv-bear { border-left-color: var(--bear-red); }
         .dp-name { font-weight: 700; color: var(--text-primary); }
         .dp-share {
-            background: #e2e8f0;
-            color: #1e293b;
+            font-family: var(--font-mono);
+            background: #000000;
+            color: var(--bb-amber);
+            border: 1px solid #334155;
             font-weight: 700;
-            font-size: 0.69rem;
+            font-size: 0.68rem;
             padding: 1px 5px;
-            border-radius: 3px;
+            border-radius: 2px;
         }
-        .dp-bias { font-weight: 700; font-size: 0.71rem; }
+        .dp-bias {
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 0.7rem;
+        }
 
         /* Tab Content */
-        .tab-content { display: none; animation: fadeIn 0.18s ease; }
+        .tab-content { display: none; animation: fadeIn 0.15s ease; }
         .tab-content.active { display: block; }
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(2px); }
-            to { opacity: 1; transform: translateY(0); }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
-        /* ========================================================= */
-        /* 3. TERMINAL COCKPIT: CHART LEFT (70%) + HUD RIGHT (30%)   */
-        /* ========================================================= */
+        /* 3. TERMINAL COCKPIT: CHART LEFT + HUD RIGHT */
         .cockpit-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1fr) 390px;
-            gap: 14px;
+            grid-template-columns: minmax(0, 1fr) 420px;
+            gap: 12px;
             align-items: start;
         }
 
@@ -260,31 +274,31 @@
             background: var(--bg-card);
             border-radius: var(--radius-lg);
             border: 1px solid var(--border-color);
-            box-shadow: var(--shadow-sm);
-            padding: 12px;
+            padding: 10px;
             min-width: 0;
         }
         #chart-container {
             width: 100%;
-            height: 550px;
+            height: 560px;
             border-radius: var(--radius-md);
             overflow: hidden;
         }
         .chart-legend {
-            margin-top: 10px;
-            padding-top: 9px;
+            margin-top: 9px;
+            padding-top: 8px;
             border-top: 1px solid var(--border-color);
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 16px;
-            font-size: 0.76rem;
+            font-family: var(--font-mono);
+            font-size: 0.73rem;
             color: var(--text-secondary);
         }
         .legend-item { display: flex; align-items: center; gap: 5px; }
         .legend-dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
 
-        /* RIGHT SIDEBAR HUD (COINGLASS TUG-OF-WAR + PRICE LADDER) */
+        /* RIGHT SIDEBAR HUD */
         .orderflow-sidebar {
             display: flex;
             flex-direction: column;
@@ -295,8 +309,7 @@
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
-            padding: 13px 15px;
-            box-shadow: var(--shadow-sm);
+            padding: 12px 14px;
             font-variant-numeric: tabular-nums;
         }
         .hud-header {
@@ -308,39 +321,39 @@
             border-bottom: 1px solid var(--border-color);
         }
         .hud-title {
+            font-family: var(--font-mono);
             font-size: 0.72rem;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: 0.04em;
-            color: var(--text-primary);
+            color: var(--bb-amber);
         }
         .hud-badge {
+            font-family: var(--font-mono);
             font-size: 0.68rem;
             font-weight: 700;
             padding: 2px 6px;
-            border-radius: 4px;
-            background: #f1f5f9;
-            color: var(--text-secondary);
+            border-radius: 3px;
+            background: var(--bg-subtle);
+            color: var(--bb-cyan);
+            border: 1px solid var(--border-color);
         }
 
         /* Coinglass Dual Tug-of-War Bars */
-        .tug-group {
-            margin-bottom: 12px;
-        }
-        .tug-group:last-of-type {
-            margin-bottom: 8px;
-        }
+        .tug-group { margin-bottom: 12px; }
+        .tug-group:last-of-type { margin-bottom: 8px; }
         .tug-top-labels {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            font-size: 0.75rem;
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
             margin-bottom: 4px;
         }
         .tug-metric-name {
             font-weight: 700;
             color: var(--text-secondary);
-            font-size: 0.71rem;
+            font-size: 0.68rem;
             text-transform: uppercase;
         }
         .tug-pct-buy { font-weight: 800; color: var(--bull-green); }
@@ -348,23 +361,23 @@
 
         .tug-bar-track {
             width: 100%;
-            height: 9px;
+            height: 8px;
             background: var(--bear-red);
-            border-radius: 4px;
+            border-radius: 2px;
             overflow: hidden;
             display: flex;
-            box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
         }
         .tug-bar-fill-buy {
             height: 100%;
             background: var(--bull-green);
-            border-right: 2px solid #ffffff;
+            border-right: 2px solid #000000;
             transition: width 0.35s ease;
         }
         .tug-sub-row {
             display: flex;
             justify-content: space-between;
-            font-size: 0.7rem;
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
             color: var(--text-muted);
             margin-top: 3px;
         }
@@ -372,8 +385,8 @@
         .flow-diagnostic-box {
             background: var(--bg-subtle);
             border: 1px solid var(--border-color);
-            border-left: 3px solid #8b5cf6;
-            border-radius: 5px;
+            border-left: 3px solid var(--bb-cyan);
+            border-radius: 3px;
             padding: 8px 10px;
             font-size: 0.74rem;
             color: var(--text-secondary);
@@ -382,12 +395,13 @@
         }
         .squeeze-alert {
             margin-top: 5px;
+            font-family: var(--font-mono);
             font-weight: 700;
-            font-size: 0.72rem;
-            color: #b45309;
+            font-size: 0.7rem;
+            color: var(--bb-amber);
         }
 
-        /* Vertical Orderbook Liquidity Ladder */
+        /* Vertical Orderbook Liquidity Ladder (With Explicit OANDA vs COMEX Breakdown) */
         .ladder-container {
             display: flex;
             flex-direction: column;
@@ -396,13 +410,13 @@
         .ladder-row {
             position: relative;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-direction: column;
+            gap: 3px;
             padding: 6px 9px;
-            border-radius: 5px;
+            border-radius: 3px;
             border: 1px solid var(--border-color);
             background: var(--bg-subtle);
-            font-size: 0.77rem;
+            font-family: var(--font-mono);
             overflow: hidden;
         }
         .ladder-vol-fill {
@@ -418,13 +432,17 @@
         .ladder-row.zone-buy { border-left: 3px solid var(--bull-green); }
         .ladder-row.zone-buy .ladder-vol-fill { background: var(--bull-green); }
         .ladder-row.is-overlap {
-            border-color: #93c5fd;
-            background: #f8fafc;
+            border-color: rgba(255, 153, 0, 0.5);
         }
 
-        .ladder-left {
+        .ladder-top-line {
             position: relative;
             z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ladder-left {
             display: flex;
             align-items: center;
             gap: 6px;
@@ -432,65 +450,76 @@
         .ladder-price {
             font-weight: 800;
             font-size: 0.84rem;
-            color: var(--text-primary);
+            color: #ffffff;
         }
         .ladder-side-tag {
-            font-size: 0.65rem;
+            font-size: 0.64rem;
             font-weight: 800;
             padding: 1px 5px;
-            border-radius: 3px;
+            border-radius: 2px;
             text-transform: uppercase;
         }
-        .tag-sell { background: #fee2e2; color: #991b1b; }
-        .tag-buy { background: #dcfce7; color: #166534; }
+        .tag-sell { background: rgba(255, 59, 48, 0.2); color: var(--bear-red); border: 1px solid rgba(255, 59, 48, 0.4); }
+        .tag-buy { background: rgba(0, 230, 118, 0.18); color: var(--bull-green); border: 1px solid rgba(0, 230, 118, 0.4); }
         .tag-overlap {
-            background: #dbeafe;
-            color: #1e40af;
-            border: 1px solid #93c5fd;
-            font-size: 0.63rem;
+            background: var(--bb-amber-dim);
+            color: var(--bb-amber);
+            border: 1px solid var(--bb-amber);
+            font-size: 0.62rem;
             font-weight: 800;
             padding: 1px 4px;
-            border-radius: 3px;
+            border-radius: 2px;
         }
 
         .ladder-right {
-            position: relative;
-            z-index: 1;
-            text-align: right;
-            font-size: 0.71rem;
+            font-size: 0.72rem;
             color: var(--text-secondary);
         }
         .ladder-tot-vol {
-            font-weight: 700;
-            color: var(--text-primary);
+            font-weight: 800;
+            color: var(--bb-amber);
         }
 
-        .ladder-spot-divider {
-            background: #0f172a;
-            color: #ffffff;
-            padding: 7px 10px;
-            border-radius: 5px;
+        /* Explicit OANDA vs COMEX Sub-row */
+        .ladder-split-line {
+            position: relative;
+            z-index: 1;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.76rem;
-            font-weight: 700;
+            font-size: 0.68rem;
+            color: var(--text-secondary);
+            padding-top: 2px;
+            border-top: 1px dashed rgba(255, 255, 255, 0.07);
+        }
+        .split-oanda { color: var(--bb-cyan); font-weight: 700; }
+        .split-comex { color: #c084fc; font-weight: 700; }
+
+        .ladder-spot-divider {
+            background: #000000;
+            border: 1px solid var(--bb-amber);
+            color: var(--bb-amber);
+            padding: 6px 10px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 800;
             margin: 3px 0;
         }
 
-        /* ========================================================= */
-        /* NEWS TAB & OPTION A ACCORDION CARDS                       */
-        /* ========================================================= */
+        /* NEWS TAB & ACCORDION CARDS (BLOOMBERG DARK) */
         .controls-panel {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
-            padding: 12px 15px;
+            padding: 11px 14px;
             margin-bottom: 12px;
-            box-shadow: var(--shadow-sm);
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
             align-items: center;
             justify-content: space-between;
         }
@@ -501,26 +530,19 @@
             align-items: center;
             flex: 1;
         }
-        .search-input {
-            padding: 7px 11px;
-            border-radius: var(--radius-md);
-            border: 1px solid #cbd5e1;
-            font-size: 0.84rem;
-            min-width: 200px;
-            outline: none;
-        }
-        .search-input:focus, select:focus {
-            border-color: var(--accent-blue);
-        }
-        select {
+        .search-input, select {
             padding: 7px 10px;
             border-radius: var(--radius-md);
-            border: 1px solid #cbd5e1;
-            background-color: #fff;
-            font-size: 0.83rem;
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-subtle);
             color: var(--text-primary);
-            cursor: pointer;
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
             outline: none;
+        }
+        .search-input { min-width: 210px; }
+        .search-input:focus, select:focus {
+            border-color: var(--bb-amber);
         }
         .filter-checkbox-wrap {
             display: flex;
@@ -529,20 +551,22 @@
             background: var(--bg-subtle);
             padding: 6px 10px;
             border-radius: var(--radius-md);
-            border: 1px solid #cbd5e1;
-            font-size: 0.82rem;
+            border: 1px solid var(--border-color);
+            font-family: var(--font-mono);
+            font-size: 0.76rem;
             color: var(--text-secondary);
             cursor: pointer;
             user-select: none;
         }
-        .filter-checkbox-wrap input { cursor: pointer; accent-color: var(--accent-blue); }
+        .filter-checkbox-wrap input { cursor: pointer; accent-color: var(--bb-amber); }
 
         .feed-stats-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.79rem;
-            color: var(--text-muted);
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
             margin-bottom: 10px;
             padding: 0 4px;
             flex-wrap: wrap;
@@ -554,60 +578,58 @@
             gap: 8px;
         }
         .compact-action-btn {
-            background: #ffffff;
-            border: 1px solid #cbd5e1;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
             color: var(--text-secondary);
+            font-family: var(--font-mono);
             padding: 4px 10px;
-            border-radius: 5px;
-            font-size: 0.74rem;
-            font-weight: 600;
+            border-radius: 3px;
+            font-size: 0.72rem;
+            font-weight: 700;
             cursor: pointer;
-            transition: all 0.14s ease;
         }
         .compact-action-btn:hover {
-            background: #e2e8f0;
-            color: var(--text-primary);
+            border-color: var(--bb-amber);
+            color: var(--bb-amber);
         }
         .pinned-counter-badge {
-            background: #fef3c7;
-            color: #92400e;
-            border: 1px solid #fcd34d;
-            padding: 2px 9px;
-            border-radius: 999px;
+            background: var(--bb-amber-dim);
+            color: var(--bb-amber);
+            border: 1px solid var(--bb-amber);
+            padding: 2px 8px;
+            border-radius: 3px;
             font-weight: 700;
-            font-size: 0.74rem;
+            font-size: 0.72rem;
         }
 
         .news-card {
             background-color: var(--bg-card);
             border-radius: var(--radius-lg);
             border: 1px solid var(--border-color);
-            border-left: 5px solid #94a3b8;
-            margin-bottom: 9px;
-            box-shadow: var(--shadow-sm);
-            transition: box-shadow 0.16s ease;
+            border-left: 4px solid var(--text-muted);
+            margin-bottom: 8px;
             overflow: hidden;
         }
-        .news-card:hover { box-shadow: var(--shadow-md); }
+        .news-card:hover { border-color: #334155; }
         .news-card.bias-bullish { border-left-color: var(--bull-green); }
         .news-card.bias-bearish { border-left-color: var(--bear-red); }
         .news-card.bias-neutral { border-left-color: #64748b; }
         .news-card.is-pinned {
-            border: 1px solid #f59e0b;
-            border-left: 6px solid #d97706;
-            background: linear-gradient(to bottom, #fffbeb 0%, #ffffff 70px);
+            border: 1px solid var(--bb-amber);
+            border-left: 5px solid var(--bb-amber);
+            background: linear-gradient(to bottom, rgba(255, 153, 0, 0.07) 0%, var(--bg-card) 75px);
         }
 
         .card-accordion-header {
-            padding: 11px 16px;
+            padding: 11px 15px;
             cursor: pointer;
             user-select: none;
             display: flex;
             flex-direction: column;
             gap: 5px;
-            transition: background 0.14s ease;
+            transition: background 0.12s ease;
         }
-        .card-accordion-header:hover { background-color: #f8fafc; }
+        .card-accordion-header:hover { background-color: var(--bg-subtle); }
 
         .card-top-row {
             display: flex;
@@ -623,37 +645,40 @@
             flex-wrap: wrap;
         }
         .date-header {
-            color: var(--text-secondary);
-            font-size: 0.77rem;
+            color: var(--bb-amber);
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
             font-weight: 600;
-            font-variant-numeric: tabular-nums;
         }
         .pinned-tag {
-            background: #d97706;
-            color: #ffffff;
-            font-size: 0.67rem;
-            font-weight: 700;
-            padding: 2px 7px;
-            border-radius: 4px;
+            background: var(--bb-amber);
+            color: #000000;
+            font-family: var(--font-mono);
+            font-size: 0.66rem;
+            font-weight: 800;
+            padding: 1px 6px;
+            border-radius: 2px;
             text-transform: uppercase;
         }
         .driver-badge {
-            background: #e0f2fe;
-            color: #0369a1;
-            border: 1px solid #bae6fd;
-            font-size: 0.7rem;
-            font-weight: 700;
-            padding: 2px 7px;
-            border-radius: 4px;
-        }
-        .sources-count-pill {
-            background: #f1f5f9;
-            color: #475569;
-            border: 1px solid #cbd5e1;
+            background: var(--bb-cyan-dim);
+            color: var(--bb-cyan);
+            border: 1px solid rgba(0, 180, 216, 0.35);
+            font-family: var(--font-mono);
             font-size: 0.69rem;
             font-weight: 700;
-            padding: 2px 6px;
-            border-radius: 4px;
+            padding: 1px 6px;
+            border-radius: 2px;
+        }
+        .sources-count-pill {
+            background: var(--bg-subtle);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 1px 6px;
+            border-radius: 2px;
         }
 
         .card-actions-right {
@@ -661,42 +686,42 @@
             align-items: center;
             gap: 6px;
             flex-wrap: wrap;
+            font-family: var(--font-mono);
         }
         .bias-pill {
-            padding: 2px 8px;
-            border-radius: 5px;
-            font-size: 0.71rem;
-            font-weight: 700;
-            font-variant-numeric: tabular-nums;
+            padding: 2px 7px;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            font-weight: 800;
         }
-        .bias-pill-bull { background: #dcfce7; color: #166534; }
-        .bias-pill-bear { background: #fee2e2; color: #991b1b; }
-        .bias-pill-neutral { background: #e2e8f0; color: #334155; }
+        .bias-pill-bull { background: rgba(0, 230, 118, 0.16); color: var(--bull-green); border: 1px solid rgba(0, 230, 118, 0.35); }
+        .bias-pill-bear { background: rgba(255, 59, 48, 0.16); color: var(--bear-red); border: 1px solid rgba(255, 59, 48, 0.35); }
+        .bias-pill-neutral { background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-color); }
 
         .pin-btn {
             background: var(--bg-subtle);
             color: var(--text-secondary);
-            border: 1px solid #cbd5e1;
+            border: 1px solid var(--border-color);
             padding: 2px 8px;
-            border-radius: 5px;
-            font-size: 0.7rem;
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-size: 0.69rem;
             font-weight: 700;
             cursor: pointer;
         }
-        .pin-btn:hover { background: #e2e8f0; color: var(--text-primary); }
-        .pin-btn.active { background: #fef3c7; color: #92400e; border-color: #f59e0b; }
+        .pin-btn:hover { border-color: var(--bb-amber); color: var(--bb-amber); }
+        .pin-btn.active { background: var(--bb-amber); color: #000000; border-color: var(--bb-amber); }
 
         .eval-badge {
-            padding: 2px 8px;
-            border-radius: 5px;
-            font-size: 0.7rem;
+            padding: 2px 7px;
+            border-radius: 3px;
+            font-size: 0.69rem;
             font-weight: 700;
-            font-variant-numeric: tabular-nums;
         }
-        .eval-hit { background-color: #dcfce7; color: #166534; border: 1px solid #86efac; }
-        .eval-active { background-color: #dbeafe; color: #1e40af; border: 1px solid #93c5fd; }
-        .eval-miss { background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
-        .eval-pricedin { background-color: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; }
+        .eval-hit { background: rgba(0, 230, 118, 0.16); color: var(--bull-green); border: 1px solid rgba(0, 230, 118, 0.4); }
+        .eval-active { background: var(--bb-cyan-dim); color: var(--bb-cyan); border: 1px solid rgba(0, 180, 216, 0.4); }
+        .eval-miss { background: rgba(255, 59, 48, 0.16); color: var(--bear-red); border: 1px solid rgba(255, 59, 48, 0.4); }
+        .eval-pricedin { background: var(--bg-subtle); color: var(--text-muted); border: 1px solid var(--border-color); }
 
         .headline-line {
             display: flex;
@@ -705,21 +730,22 @@
             gap: 12px;
         }
         .cluster-headline {
-            font-size: 0.95rem;
+            font-size: 0.94rem;
             font-weight: 700;
-            color: var(--text-primary);
+            color: #ffffff;
             margin: 0;
-            line-height: 1.36;
+            line-height: 1.35;
             flex: 1;
         }
         .expand-indicator {
-            font-size: 0.71rem;
-            color: var(--accent-blue);
+            font-family: var(--font-mono);
+            font-size: 0.69rem;
+            color: var(--bb-amber);
             font-weight: 700;
-            background: #eff6ff;
-            border: 1px solid #bfdbfe;
-            padding: 2px 8px;
-            border-radius: 4px;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            padding: 2px 7px;
+            border-radius: 3px;
             white-space: nowrap;
         }
 
@@ -735,32 +761,35 @@
         .news-card.is-expanded .compact-teaser { display: none; }
 
         .update-highlight {
-            background: #fef9c3;
-            color: #854d0e;
+            background: var(--bb-amber-dim);
+            color: var(--bb-amber);
+            font-family: var(--font-mono);
             font-weight: 700;
             padding: 1px 5px;
-            border-radius: 3px;
-            border: 1px solid #fde047;
+            border-radius: 2px;
+            border: 1px solid rgba(255, 153, 0, 0.4);
         }
 
         .card-accordion-body {
             display: none;
-            padding: 0 16px 15px 16px;
-            border-top: 1px solid #e2e8f0;
-            background: #ffffff;
+            padding: 0 15px 15px 15px;
+            border-top: 1px solid var(--border-color);
+            background: var(--bg-card);
         }
         .news-card.is-expanded .card-accordion-body {
             display: block;
-            animation: fadeIn 0.16s ease;
+            animation: fadeIn 0.15s ease;
         }
 
         .event-time-banner {
-            background-color: #fffbeb;
-            color: #92400e;
-            border: 1px solid #fde68a;
+            background-color: var(--bg-subtle);
+            color: var(--bb-amber);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--bb-amber);
             padding: 7px 11px;
             border-radius: var(--radius-md);
-            font-size: 0.8rem;
+            font-family: var(--font-mono);
+            font-size: 0.76rem;
             margin: 11px 0;
             display: flex;
             justify-content: space-between;
@@ -777,17 +806,18 @@
             border: 1px solid var(--border-color);
         }
         .structured-data {
-            font-size: 0.87rem;
+            font-size: 0.86rem;
             line-height: 1.54;
             color: var(--text-primary);
         }
         .data-block { margin-bottom: 9px; }
         .data-block:last-child { margin-bottom: 0; }
         .data-label {
+            font-family: var(--font-mono);
             font-weight: 700;
-            color: var(--text-secondary);
+            color: var(--bb-amber);
             text-transform: uppercase;
-            font-size: 0.7rem;
+            font-size: 0.69rem;
             letter-spacing: 0.03em;
             display: block;
             margin-bottom: 2px;
@@ -801,8 +831,8 @@
         }
         .bull-box {
             background-color: var(--bull-bg);
-            border: 1px solid #bbf7d0;
-            border-left: 4px solid var(--bull-green);
+            border: 1px solid rgba(0, 230, 118, 0.25);
+            border-left: 3px solid var(--bull-green);
             padding: 9px 11px;
             border-radius: var(--radius-md);
             font-size: 0.84rem;
@@ -810,21 +840,21 @@
         }
         .bear-box {
             background-color: var(--bear-bg);
-            border: 1px solid #fecaca;
-            border-left: 4px solid var(--bear-red);
+            border: 1px solid rgba(255, 59, 48, 0.25);
+            border-left: 3px solid var(--bear-red);
             padding: 9px 11px;
             border-radius: var(--radius-md);
             font-size: 0.84rem;
             line-height: 1.46;
         }
         .calibration-box {
-            background-color: #eff6ff;
-            border: 1px solid #bfdbfe;
-            border-left: 4px solid var(--accent-blue);
+            background-color: var(--bb-cyan-dim);
+            border: 1px solid rgba(0, 180, 216, 0.3);
+            border-left: 3px solid var(--bb-cyan);
             padding: 9px 11px;
             border-radius: var(--radius-md);
             font-size: 0.82rem;
-            color: #1e3a8a;
+            color: #e0f2fe;
             margin-top: 9px;
             line-height: 1.46;
         }
@@ -833,31 +863,31 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
             gap: 8px;
-            background: #ffffff;
+            background: #080b10;
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             padding: 9px 11px;
             margin-top: 11px;
-            font-variant-numeric: tabular-nums;
+            font-family: var(--font-mono);
         }
         .outlook-cell { display: flex; flex-direction: column; gap: 2px; }
         .outlook-label {
-            font-size: 0.67rem;
+            font-size: 0.66rem;
             font-weight: 700;
             text-transform: uppercase;
             color: var(--text-muted);
         }
         .outlook-val {
-            font-size: 0.86rem;
+            font-size: 0.84rem;
             font-weight: 700;
-            color: var(--text-primary);
+            color: #ffffff;
         }
         .val-bull { color: var(--bull-green); }
         .val-bear { color: var(--bear-red); }
         .prob-bar-bg {
             width: 100%;
             height: 4px;
-            background: #e2e8f0;
+            background: #1e293b;
             border-radius: 2px;
             overflow: hidden;
             margin-top: 2px;
@@ -871,11 +901,11 @@
             margin-bottom: 7px;
         }
         .reported-by-label {
-            color: var(--text-muted);
+            font-family: var(--font-mono);
+            color: var(--bb-amber);
             font-weight: 700;
-            font-size: 0.72rem;
+            font-size: 0.71rem;
             text-transform: uppercase;
-            letter-spacing: 0.04em;
         }
         .source-item {
             display: flex;
@@ -886,77 +916,78 @@
             font-size: 0.82rem;
         }
         .source-badge {
-            background-color: #e2e8f0;
-            color: #1e293b;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.7rem;
+            font-family: var(--font-mono);
+            background-color: var(--bg-subtle);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 1px 6px;
+            border-radius: 2px;
+            font-size: 0.69rem;
             font-weight: 700;
             white-space: nowrap;
         }
-        .regional-badge { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
-        .tech-badge { background-color: #e0e7ff; color: #1e40af; border: 1px solid #c7d2fe; }
+        .regional-badge { background-color: var(--bb-amber-dim); color: var(--bb-amber); border: 1px solid rgba(255, 153, 0, 0.4); }
+        .tech-badge { background-color: var(--bb-cyan-dim); color: var(--bb-cyan); border: 1px solid rgba(0, 180, 216, 0.4); }
         .bias-note { font-size: 0.7rem; color: var(--text-muted); font-style: italic; }
-        .source-link { color: var(--accent-blue); text-decoration: none; line-height: 1.38; }
-        .source-link:hover { text-decoration: underline; }
+        .source-link { color: var(--bb-cyan); text-decoration: none; line-height: 1.38; }
+        .source-link:hover { text-decoration: underline; color: var(--bb-amber); }
 
         @media (max-width: 1024px) {
-            .cockpit-grid {
-                grid-template-columns: 1fr;
-            }
-            #chart-container { height: 440px; }
+            .cockpit-grid { grid-template-columns: 1fr; }
+            #chart-container { height: 430px; }
         }
         @media (max-width: 720px) {
             .top-header { padding: 10px 14px; }
-            .telemetry-Ribbon { padding: 8px 14px; }
+            .telemetry-ribbon { padding: 8px 14px; }
             .t-divider { display: none; }
             .controls-left { flex-direction: column; align-items: stretch; }
             .search-input, select { width: 100%; }
-            #chart-container { height: 370px; }
+            #chart-container { height: 360px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- STICKY HEADER -->
+    <!-- STICKY BLOOMBERG COMMAND HEADER -->
     <header class="top-header">
         <div class="header-inner">
             <div class="brand-block">
-                <h1>Financial & Gold Intelligence Terminal</h1>
-                <span class="brand-sub">Orderflow Cockpit &bull; 24/7 XAUUSDT.P &bull; Coinglass Tug-of-War &bull; AI Regime Matrix</span>
+                <span class="brand-tag">BBG // XAU</span>
+                <h1>Gold & Macro Intelligence Terminal</h1>
+                <span class="brand-sub">OANDA + COMEX Orderflow &bull; 24/7 XAUUSDT.P &bull; Taker Tape</span>
             </div>
             <div class="nav-actions">
                 <div class="tab-group">
-                    <button class="tab-btn active" id="tab-btn-chart" onclick="switchTab(event, 'chart-tab')">Chart & Orderflow</button>
-                    <button class="tab-btn" id="tab-btn-news" onclick="switchTab(event, 'news-tab')">News Intelligence</button>
+                    <button class="tab-btn active" id="tab-btn-chart" onclick="switchTab(event, 'chart-tab')">[1] Chart & Orderflow</button>
+                    <button class="tab-btn" id="tab-btn-news" onclick="switchTab(event, 'news-tab')">[2] News Intelligence</button>
                 </div>
                 <button class="refresh-btn" onclick="refreshAllData()">Refresh</button>
             </div>
         </div>
     </header>
 
-    <!-- 1-LINE COMPACT TELEMETRY RIBBON (BINANCE / BYBIT STYLE) -->
-    <div class="telemetry-Ribbon">
+    <!-- 1-LINE COMPACT TELEMETRY RIBBON -->
+    <div class="telemetry-ribbon">
         <div class="telemetry-inner">
             <div class="t-item">
-                <span class="t-label">24/7 XAUUSDT.P Basis:</span>
+                <span class="t-label">24/7 XAUUSDT.P:</span>
                 <span class="t-val" id="ui-crypto-basis">Loading...</span>
                 <span class="t-sub" id="ui-crypto-sub"></span>
             </div>
             <div class="t-divider"></div>
             <div class="t-item">
-                <span class="t-label">4h Move / Daily ATR:</span>
+                <span class="t-label">4H Move / ATR:</span>
                 <span class="t-val" id="ui-volatility">Loading...</span>
                 <span class="t-sub" id="ui-vol-sub"></span>
             </div>
             <div class="t-divider"></div>
             <div class="t-item">
-                <span class="t-label">24h Macro (EUR | 10Y | NAS100 | Oil):</span>
+                <span class="t-label">Macro (EUR | 10Y | NAS | OIL):</span>
                 <span class="t-val" id="ui-macro">Loading...</span>
             </div>
             <div class="t-divider"></div>
             <div class="t-item">
-                <span class="t-label">AI Track Record (&gt;50%):</span>
+                <span class="t-label">AI Winrate (&gt;50%):</span>
                 <span class="t-val" id="ui-winrate">Loading...</span>
                 <span class="t-sub" id="ui-winrate-sub"></span>
             </div>
@@ -964,38 +995,38 @@
     </div>
 
     <div class="main-wrapper">
-        <!-- COMPACT DOMINANT DRIVERS PILL RIBBON (KOYFIN STYLE) -->
+        <!-- COMPACT DOMINANT DRIVERS PILL RIBBON -->
         <div class="drivers-ribbon">
             <span class="drivers-ribbon-label">Dominant 24h Drivers:</span>
             <div class="drivers-pills-wrap" id="ui-drivers-grid">
-                <span style="font-size:0.76rem; color:#64748b;">Analyzing active market narratives...</span>
+                <span style="font-size:0.75rem; color:#64748b; font-family:var(--font-mono);">Calculating narrative weights...</span>
             </div>
         </div>
 
         <!-- CHART & ORDERFLOW COCKPIT TAB -->
         <div id="chart-tab" class="tab-content active">
             <div class="cockpit-grid">
-                <!-- LEFT 70%: PRICE CHART -->
+                <!-- LEFT: DARK BLOOMBERG CHART -->
                 <div class="chart-panel">
                     <div id="chart-container"></div>
                     <div class="chart-legend">
-                        <div class="legend-item"><span class="legend-dot" style="background:#16a34a;"></span><strong>BUY Zone:</strong> Passive Buy Liquidity</div>
-                        <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span><strong>SELL Zone:</strong> Passive Sell Liquidity</div>
-                        <div class="legend-item"><span class="legend-dot" style="background:#0284c7;"></span><strong>24/7 XAUUSDT.P:</strong> Live Perp Price</div>
-                        <div class="legend-item"><strong>Solid Bold Line:</strong> Confirmed OANDA + COMEX Overlap</div>
+                        <div class="legend-item"><span class="legend-dot" style="background:#00e676;"></span><strong>BUY Zone:</strong> Net Long Orders</div>
+                        <div class="legend-item"><span class="legend-dot" style="background:#ff3b30;"></span><strong>SELL Zone:</strong> Net Short Orders</div>
+                        <div class="legend-item"><span class="legend-dot" style="background:#00b4d8;"></span><strong>24/7 XAUUSDT.P:</strong> Live Perp</div>
+                        <div class="legend-item"><strong>Solid Line:</strong> Confirmed OANDA + COMEX Overlap</div>
                     </div>
                 </div>
 
-                <!-- RIGHT 30%: COINGLASS TUG-OF-WAR & VERTICAL LIQUIDITY LADDER -->
+                <!-- RIGHT: TUG-OF-WAR & OANDA/COMEX LIQUIDITY LADDER -->
                 <div class="orderflow-sidebar">
                     <!-- Panel A: Coinglass Tug-of-War Divergence -->
                     <div class="hud-card">
                         <div class="hud-header">
-                            <span class="hud-title">Orderflow vs. Crowd Divergence</span>
+                            <span class="hud-title">Taker Execution vs. Retail Crowd</span>
                             <span class="hud-badge" id="ui-funding-badge">Funding: --</span>
                         </div>
 
-                        <!-- Bar 1: Aggressive Taker Flow (Market Orders) -->
+                        <!-- Bar 1: Aggressive Taker Flow -->
                         <div class="tug-group">
                             <div class="tug-top-labels">
                                 <span class="tug-pct-buy" id="ui-taker-buy-lbl">--% BUY</span>
@@ -1023,25 +1054,25 @@
                             </div>
                             <div class="tug-sub-row">
                                 <span>Contrarian Retail Positioning</span>
-                                <span>Stop-Hunt Fuel</span>
+                                <span>Stop-Cascade Fuel</span>
                             </div>
                         </div>
 
                         <div class="flow-diagnostic-box">
-                            <strong id="ui-taker-state">Calibrating Execution Tape...</strong><br>
+                            <strong id="ui-taker-state" style="color:#ffffff;">Calibrating Execution Tape...</strong><br>
                             <span id="ui-wick-note">Waiting for intrabar absorption metrics.</span>
                             <div class="squeeze-alert" id="ui-squeeze-warn"></div>
                         </div>
                     </div>
 
-                    <!-- Panel B: Vertical Orderbook Liquidity Ladder -->
+                    <!-- Panel B: Vertical Orderbook Liquidity Ladder (With OANDA & COMEX split) -->
                     <div class="hud-card">
                         <div class="hud-header">
-                            <span class="hud-title">Liquidity Price Ladder ($10 Zones)</span>
-                            <span class="hud-badge">OANDA + COMEX</span>
+                            <span class="hud-title">Orderbook Ladder ($10 Clustered)</span>
+                            <span class="hud-badge">OANDA % vs. COMEX %</span>
                         </div>
                         <div class="ladder-container" id="ui-liquidity-ladder">
-                            <div style="font-size:0.78rem; color:#64748b; text-align:center; padding:12px;">Loading orderbook zones...</div>
+                            <div style="font-size:0.76rem; color:#64748b; text-align:center; padding:12px; font-family:var(--font-mono);">Loading orderbook zones...</div>
                         </div>
                     </div>
                 </div>
@@ -1088,13 +1119,13 @@
                     <span class="pinned-counter-badge" id="pinned-count-badge" style="margin-left:8px;">Pinned: 0</span>
                 </div>
                 <div class="quick-actions-bar">
-                    <button class="compact-action-btn" onclick="expandAllCards(true)">Expand All Details</button>
+                    <button class="compact-action-btn" onclick="expandAllCards(true)">Expand All</button>
                     <button class="compact-action-btn" onclick="expandAllCards(false)">Collapse All</button>
                 </div>
             </div>
 
             <div id="news-container">
-                <p style="text-align:center; padding: 30px; color:#64748b;">Loading intelligence feed...</p>
+                <p style="text-align:center; padding: 30px; color:#64748b; font-family:var(--font-mono);">Loading intelligence feed...</p>
             </div>
         </div>
     </div>
@@ -1230,7 +1261,7 @@
                 const isExp = expandedCardKeys.has(clusterKey);
                 cardEl.classList.toggle('is-expanded', isExp);
                 const ind = cardEl.querySelector('.expand-indicator');
-                if (ind) ind.innerText = isExp ? 'Hide Details' : 'View Details';
+                if (ind) ind.innerText = isExp ? '[-] HIDE' : '[+] DETAILS';
             }
         }
 
@@ -1244,7 +1275,7 @@
             document.querySelectorAll('.news-card').forEach(el => {
                 el.classList.toggle('is-expanded', expand);
                 const ind = el.querySelector('.expand-indicator');
-                if (ind) ind.innerText = expand ? 'Hide Details' : 'View Details';
+                if (ind) ind.innerText = expand ? '[-] HIDE' : '[+] DETAILS';
             });
         }
 
@@ -1296,7 +1327,7 @@
         function renderDominantDriversRadar(driversList) {
             const grid = document.getElementById('ui-drivers-grid');
             if (!driversList || driversList.length === 0) {
-                grid.innerHTML = `<span style="font-size:0.76rem; color:#64748b;">Waiting for cluster telemetry...</span>`;
+                grid.innerHTML = `<span style="font-size:0.75rem; color:#64748b; font-family:var(--font-mono);">Waiting for cluster telemetry...</span>`;
                 return;
             }
 
@@ -1304,10 +1335,10 @@
                 const isBull = (d.net_bias || '').includes('Bullish');
                 const isBear = (d.net_bias || '').includes('Bearish');
                 const borderClass = isBull ? 'drv-bull' : (isBear ? 'drv-bear' : '');
-                const biasColor = isBull ? '#16a34a' : (isBear ? '#dc2626' : '#475569');
+                const biasColor = isBull ? '#00e676' : (isBear ? '#ff3b30' : '#94a3b8');
                 const safeName = (d.narrative || '').replace(/'/g, "\\'");
                 return `
-                    <div class="driver-pill ${borderClass}" onclick="filterByDriver('${safeName}')" title="Click to filter news by ${d.narrative}">
+                    <div class="driver-pill ${borderClass}" onclick="filterByDriver('${safeName}')" title="Click to filter news by ${d.narrative} (${d.sources_count} sources in ${d.clusters_count} clusters)">
                         <span class="dp-name">#${i + 1} ${d.narrative}</span>
                         <span class="dp-share">${d.share_pct}%</span>
                         <span class="dp-bias" style="color:${biasColor};">${d.net_bias} (${d.avg_prob}%)</span>
@@ -1316,10 +1347,11 @@
             }).join('');
         }
 
+        // Renders the Vertical Liquidity Price Ladder with explicit OANDA % and COMEX % volumes
         function renderLiquidityLadder(orderbookZones, spotPrice, cryptoBasis) {
             const ladderEl = document.getElementById('ui-liquidity-ladder');
             if (!orderbookZones || orderbookZones.length === 0) {
-                ladderEl.innerHTML = `<div style="font-size:0.78rem; color:#64748b; text-align:center; padding:12px;">No orderbook zones available.</div>`;
+                ladderEl.innerHTML = `<div style="font-size:0.76rem; color:#64748b; text-align:center; padding:12px;">No orderbook zones available.</div>`;
                 return;
             }
 
@@ -1334,34 +1366,43 @@
                 const rowClass = isBuy ? "zone-buy" : "zone-sell";
                 const tagClass = isBuy ? "tag-buy" : "tag-sell";
                 const overlapClass = z.overlap ? "is-overlap" : "";
-                const overlapBadge = z.overlap ? `<span class="tag-overlap">OVERLAP</span>` : `<span style="font-size:0.65rem; color:#64748b;">${z.sources || 'OANDA'}</span>`;
+                const overlapBadge = z.overlap ? `<span class="tag-overlap">OVERLAP</span>` : '';
                 const widthPct = Math.min(100, Math.round((z.volume / maxVol) * 100));
                 const distUsd = spotPrice > 0 ? (z.price - spotPrice) : 0;
                 const distSign = distUsd >= 0 ? '+' : '';
 
+                const oandaVolStr = z.oanda_vol !== undefined ? `${Number(z.oanda_vol).toFixed(2)}%` : '0.00%';
+                const comexVolStr = z.comex_vol !== undefined ? `${Number(z.comex_vol).toFixed(2)}%` : '0.00%';
+
                 return `
                     <div class="ladder-row ${rowClass} ${overlapClass}">
                         <div class="ladder-vol-fill" style="width:${widthPct}%;"></div>
-                        <div class="ladder-left">
-                            <span class="ladder-price">$${z.price.toFixed(2)}</span>
-                            <span class="ladder-side-tag ${tagClass}">${z.dominance}</span>
-                            ${overlapBadge}
+                        <div class="ladder-top-line">
+                            <div class="ladder-left">
+                                <span class="ladder-price">$${z.price.toFixed(2)}</span>
+                                <span class="ladder-side-tag ${tagClass}">${z.dominance}</span>
+                                ${overlapBadge}
+                            </div>
+                            <div class="ladder-right">
+                                <span class="ladder-tot-vol">Total: ${z.volume.toFixed(2)}%</span>
+                                <span style="margin-left:4px; color:#94a3b8;">(${distSign}$${distUsd.toFixed(1)})</span>
+                            </div>
                         </div>
-                        <div class="ladder-right">
-                            <span class="ladder-tot-vol">${z.volume.toFixed(1)}% Vol</span>
-                            <span style="margin-left:5px; color:#64748b;">(${distSign}$${distUsd.toFixed(1)})</span>
+                        <div class="ladder-split-line">
+                            <span>OANDA Orders: <span class="split-oanda">${oandaVolStr}</span></span>
+                            <span>COMEX Futures: <span class="split-comex">${comexVolStr}</span></span>
                         </div>
                     </div>
                 `;
             };
 
             const perpInfo = (cryptoBasis && cryptoBasis.crypto_price)
-                ? `<span>24/7 Perp: $${cryptoBasis.crypto_price.toFixed(2)} (${cryptoBasis.spread_usd >= 0 ? '+' : ''}$${cryptoBasis.spread_usd.toFixed(2)})</span>`
+                ? `<span style="color:#00b4d8;">PERP: $${cryptoBasis.crypto_price.toFixed(2)} (${cryptoBasis.spread_usd >= 0 ? '+' : ''}$${cryptoBasis.spread_usd.toFixed(2)})</span>`
                 : '';
 
             const spotDividerHTML = `
                 <div class="ladder-spot-divider">
-                    <span>SPOT: $${spotPrice > 0 ? spotPrice.toFixed(2) : '--'}</span>
+                    <span>OANDA SPOT: $${spotPrice > 0 ? spotPrice.toFixed(2) : '--'}</span>
                     ${perpInfo}
                 </div>
             `;
@@ -1386,7 +1427,6 @@
                 }
                 const data = await response.json();
 
-                // Populate Passive Retail Tug-of-War Bar
                 if (data.sentiment) {
                     const lPct = Number(data.sentiment.long_pct || 50).toFixed(1);
                     const sPct = Number(data.sentiment.short_pct || 50).toFixed(1);
@@ -1395,7 +1435,6 @@
                     document.getElementById('ui-retail-bar').style.width = `${Math.min(100, Math.max(0, data.sentiment.long_pct))}%`;
                 }
 
-                // Populate Aggressive Taker Tug-of-War Bar
                 if (data.taker_flow && data.taker_flow.taker_buy_pct !== undefined) {
                     const tf = data.taker_flow;
                     const buyP = Number(tf.taker_buy_pct).toFixed(1);
@@ -1404,8 +1443,8 @@
                     document.getElementById('ui-taker-sell-lbl').innerText = `${sellP}% SELL`;
                     document.getElementById('ui-taker-bar').style.width = `${Math.min(100, Math.max(0, tf.taker_buy_pct))}%`;
 
-                    document.getElementById('ui-tape-sub').innerText = `OKX Perp Tape: ${tf.raw_tape_buy_pct}% Buy`;
-                    document.getElementById('ui-candle-sub').innerText = `4h Candle Close: ${tf.candle_buy_pressure_pct}% Buy`;
+                    document.getElementById('ui-tape-sub').innerText = `OKX Tape: ${tf.raw_tape_buy_pct}% Buy`;
+                    document.getElementById('ui-candle-sub').innerText = `4h Candle: ${tf.candle_buy_pressure_pct}% Buy`;
                     const frSign = tf.funding_rate_pct >= 0 ? '+' : '';
                     document.getElementById('ui-funding-badge').innerText = `Funding: ${frSign}${tf.funding_rate_pct}%`;
 
@@ -1418,10 +1457,9 @@
                     renderDominantDriversRadar(data.dominant_drivers);
                 }
 
-                // Top Telemetry Ribbon: 24/7 Basis
                 if (data.crypto_basis && data.crypto_basis.crypto_price) {
                     const cb = data.crypto_basis;
-                    const spColor = cb.spread_usd > 2 ? '#4ade80' : (cb.spread_usd < -2 ? '#f87171' : '#cbd5e1');
+                    const spColor = cb.spread_usd > 2 ? '#00e676' : (cb.spread_usd < -2 ? '#ff3b30' : '#94a3b8');
                     const spSign = cb.spread_usd >= 0 ? '+' : '';
                     document.getElementById('ui-crypto-basis').innerHTML = 
                         `$${cb.crypto_price.toFixed(2)} <span style="color:${spColor};">(${spSign}$${cb.spread_usd.toFixed(2)})</span>`;
@@ -1430,13 +1468,12 @@
                     document.getElementById('ui-crypto-basis').innerText = "N/A";
                 }
 
-                // Top Telemetry Ribbon: Volatility / ATR
                 let currentSpotPrice = 0;
                 if (data.volatility && data.volatility.est_daily_atr) {
                     currentSpotPrice = Number(data.volatility.current_price || 0);
                     const chg = data.volatility.change_4h || 0;
                     const ratio = data.volatility.move_to_daily_atr_ratio || 0;
-                    const warn = ratio >= 1.2 ? "Exhausted" : "Normal";
+                    const warn = ratio >= 1.2 ? "EXHAUSTED" : "NORMAL";
                     document.getElementById('ui-volatility').innerText = 
                         `${chg >= 0 ? '+' : ''}$${chg} / $${data.volatility.est_daily_atr}`;
                     document.getElementById('ui-vol-sub').innerText = `(${ratio}x ${warn})`;
@@ -1444,7 +1481,6 @@
                     document.getElementById('ui-volatility').innerText = "N/A";
                 }
 
-                // Top Telemetry Ribbon: Macro
                 if (data.macro) {
                     const eur = data.macro.EUR_USD ? `${data.macro.EUR_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.EUR_USD.change_24h_pct}%` : '--';
                     const us10 = data.macro.USB10Y_USD ? `${data.macro.USB10Y_USD.change_24h_pct >= 0 ? '+' : ''}${data.macro.USB10Y_USD.change_24h_pct}%` : '--';
@@ -1469,7 +1505,6 @@
                     currentSpotPrice = uniqueCandles[uniqueCandles.length - 1].close;
                 }
 
-                // Populate Vertical Liquidity Price Ladder in Right Sidebar
                 renderLiquidityLadder(data.orderbook || [], currentSpotPrice, data.crypto_basis);
 
                 if (chartResizeObserver) {
@@ -1479,11 +1514,11 @@
 
                 chartInstance = LightweightCharts.createChart(container, {
                     width: container.clientWidth,
-                    height: container.clientHeight || 550,
-                    layout: { backgroundColor: '#ffffff', textColor: '#334155' },
-                    grid: { vertLines: { color: '#f1f5f9' }, horzLines: { color: '#f1f5f9' } },
-                    timeScale: { timeVisible: true, borderColor: '#e2e8f0' },
-                    rightPriceScale: { borderColor: '#e2e8f0' }
+                    height: container.clientHeight || 560,
+                    layout: { backgroundColor: '#0d1117', textColor: '#94a3b8' },
+                    grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
+                    timeScale: { timeVisible: true, borderColor: '#21293a' },
+                    rightPriceScale: { borderColor: '#21293a' }
                 });
 
                 chartResizeObserver = new ResizeObserver(entries => {
@@ -1494,11 +1529,11 @@
                 chartResizeObserver.observe(container);
 
                 const candleSeries = chartInstance.addCandlestickSeries({
-                    upColor: '#16a34a',
-                    downColor: '#dc2626',
+                    upColor: '#00e676',
+                    downColor: '#ff3b30',
                     borderVisible: false,
-                    wickUpColor: '#16a34a',
-                    wickDownColor: '#dc2626'
+                    wickUpColor: '#00e676',
+                    wickDownColor: '#ff3b30'
                 });
                 
                 candleSeries.setData(uniqueCandles);
@@ -1508,7 +1543,7 @@
                     const spSign = cb.spread_usd >= 0 ? '+' : '';
                     candleSeries.createPriceLine({
                         price: cb.crypto_price,
-                        color: '#0284c7',
+                        color: '#00b4d8',
                         lineWidth: 2,
                         lineStyle: LightweightCharts.LineStyle.Dotted,
                         axisLabelVisible: true,
@@ -1519,23 +1554,24 @@
                 if (data.orderbook && data.orderbook.length > 0) {
                     data.orderbook.forEach((level, index) => {
                         const isBuyDom = level.dominance === "BUY";
-                        const lineColor = isBuyDom ? '#16a34a' : '#dc2626';
+                        const lineColor = isBuyDom ? '#00e676' : '#ff3b30';
                         const domTag = level.dominance ? ` ${level.dominance}` : '';
                         const isOverlap = level.overlap === true;
-                        const srcTag = isOverlap ? "OVERLAP" : (level.sources || "OANDA");
+                        const oVol = level.oanda_vol !== undefined ? Number(level.oanda_vol).toFixed(1) : '0';
+                        const cVol = level.comex_vol !== undefined ? Number(level.comex_vol).toFixed(1) : '0';
 
                         candleSeries.createPriceLine({
                             price: level.price,
                             color: lineColor,
-                            lineWidth: isOverlap ? 3 : 2,
+                            lineWidth: isOverlap ? 2 : 1,
                             lineStyle: isOverlap ? LightweightCharts.LineStyle.Solid : LightweightCharts.LineStyle.Dashed,
                             axisLabelVisible: true,
-                            title: `L${index + 1} ${srcTag}${domTag} (${level.volume.toFixed(1)}%)`
+                            title: `L${index + 1}${domTag} [O:${oVol}%|C:${cVol}%]`
                         });
                     });
                 }
             } catch (error) {
-                container.innerHTML = `<p style="color:#dc2626; font-weight:bold; padding: 20px;">Chart Load Error: ${error.message}</p>`;
+                container.innerHTML = `<p style="color:#ff3b30; font-weight:bold; padding: 20px;">Chart Load Error: ${error.message}</p>`;
             }
         }
 
@@ -1576,12 +1612,12 @@
                 try {
                     allClusters = JSON.parse(textData);
                 } catch (e) {
-                    container.innerHTML = `<p style="color:#dc2626; text-align:center;"><b>Syntax error in data.json!</b></p>`;
+                    container.innerHTML = `<p style="color:#ff3b30; text-align:center;"><b>Syntax error in data.json!</b></p>`;
                     return;
                 }
 
                 const grid = document.getElementById('ui-drivers-grid');
-                if (grid && grid.innerText.includes('Analyzing active')) {
+                if (grid && grid.innerText.includes('Calculating')) {
                     const drvCounts = {};
                     let totW = 0;
                     allClusters.forEach(c => {
@@ -1612,7 +1648,7 @@
 
                 renderNews();
             } catch (error) {
-                container.innerHTML = `<p style="color:#dc2626; text-align:center;">Error loading news: ${error.message}</p>`;
+                container.innerHTML = `<p style="color:#ff3b30; text-align:center;">Error loading news: ${error.message}</p>`;
             }
         }
 
@@ -1715,10 +1751,10 @@
             });
 
             document.getElementById('feed-count-label').innerText = 
-                `Showing ${filtered.length} of ${mergedList.length} clusters (Click any card to expand)`;
+                `Showing ${filtered.length} of ${mergedList.length} clusters (Click card to expand)`;
 
             if (filtered.length === 0) {
-                container.innerHTML = '<p style="text-align:center; padding: 40px; color:#64748b;">No matching intelligence clusters found for the active filters.</p>';
+                container.innerHTML = '<p style="text-align:center; padding: 40px; color:#64748b; font-family:var(--font-mono);">No matching intelligence clusters found.</p>';
                 return;
             }
 
@@ -1738,12 +1774,12 @@
                 if (impactStr.toLowerCase().includes('bullish')) {
                     biasClass = 'bias-bullish';
                     biasPillClass = 'bias-pill-bull';
-                    barColor = '#16a34a';
+                    barColor = '#00e676';
                     valClass = 'val-bull';
                 } else if (impactStr.toLowerCase().includes('bearish')) {
                     biasClass = 'bias-bearish';
                     biasPillClass = 'bias-pill-bear';
-                    barColor = '#dc2626';
+                    barColor = '#ff3b30';
                     valClass = 'val-bear';
                 }
 
@@ -1778,8 +1814,8 @@
                 let summaryHTML = "";
                 if (typeof cluster.summary === 'object' && cluster.summary !== null) {
                     const eventTime = cluster.summary.Event_Timestamp || 'See First Reported timestamp';
-                    const bullCase = cluster.summary.Bull_Case ? `<div class="bull-box"><span class="data-label" style="color:#166534;">Bull Case (Pro Gold)</span>${cluster.summary.Bull_Case}</div>` : '';
-                    const bearCase = cluster.summary.Bear_Case ? `<div class="bear-box"><span class="data-label" style="color:#991b1b;">Bear Case (Contra / Risks)</span>${cluster.summary.Bear_Case}</div>` : '';
+                    const bullCase = cluster.summary.Bull_Case ? `<div class="bull-box"><span class="data-label" style="color:#00e676;">Bull Case (Pro Gold)</span>${cluster.summary.Bull_Case}</div>` : '';
+                    const bearCase = cluster.summary.Bear_Case ? `<div class="bear-box"><span class="data-label" style="color:#ff3b30;">Bear Case (Contra / Risks)</span>${cluster.summary.Bear_Case}</div>` : '';
                     const proConSection = (bullCase || bearCase) ? `<div class="pro-con-grid">${bullCase}${bearCase}</div>` : '';
                     const calibSection = cluster.summary.Historical_Calibration ? `<div class="calibration-box"><strong>Agent Calibration & Regime Matrix Audit:</strong> ${cluster.summary.Historical_Calibration}</div>` : '';
 
@@ -1853,7 +1889,7 @@
                     .replace('Letztes Update:', 'Last Update:');
 
                 const pinnedBadge = pinned 
-                    ? `<span class="pinned-tag">${cluster._is_archived_pin ? 'PINNED (ARCHIVED >24H)' : 'PINNED'}</span>` 
+                    ? `<span class="pinned-tag">${cluster._is_archived_pin ? 'PINNED (>24H)' : 'PINNED'}</span>` 
                     : '';
 
                 const safeKeyAttr = cKey.replace(/'/g, "\\'");
@@ -1864,7 +1900,7 @@
                             <div class="card-meta-left">
                                 ${pinnedBadge}
                                 <span class="driver-badge">${driverLabel}</span>
-                                <span class="sources-count-pill">${totalSources} Source${totalSources > 1 ? 's' : ''}</span>
+                                <span class="sources-count-pill">${totalSources} SRC</span>
                                 <div class="date-header">${cleanDateHeader}</div>
                             </div>
                             <div class="card-actions-right">
@@ -1877,7 +1913,7 @@
                         </div>
                         <div class="headline-line">
                             <h2 class="cluster-headline">${leadTitle}</h2>
-                            <span class="expand-indicator">${isExpanded ? 'Hide Details' : 'View Details'}</span>
+                            <span class="expand-indicator">${isExpanded ? '[-] HIDE' : '[+] DETAILS'}</span>
                         </div>
                         <div class="compact-teaser">${formattedTeaserHTML}</div>
                     </div>

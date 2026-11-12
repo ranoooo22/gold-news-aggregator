@@ -1,5 +1,72 @@
 [
     {
+        "main_date": "First Reported: 2026-11-11 12:41 UTC | Last Update: 2026-11-12 09:58 UTC",
+        "original_date": "2026-11-11 12:41",
+        "_timestamp": 1794477491.0,
+        "articles": [
+            {
+                "title": "Iranian, Iraqi presidents meet in Turkey on COP31 sidelines",
+                "link": "https://en.mehrnews.com/news/249339/Iranian-Iraqi-presidents-meet-in-Turkey-on-COP31-sidelines",
+                "source": "Mehr News Agency",
+                "date": "2026-11-11 12:41",
+                "description": "TEHRAN, Nov. 11 (MNA) – Iranian President Masoud Pezeshkian and his Iraqi counterpart Nizar Amedi met and held talks in Turkey's Antalya on Wednesday on the sidelines of 31st UN climate change conference (COP31).",
+                "_timestamp": 1794400909.0
+            },
+            {
+                "title": "Pezeshkian, Sharif hold talks in Antalya on COP31 Summit",
+                "link": "https://en.mehrnews.com/news/249340/Pezeshkian-Sharif-hold-talks-in-Antalya-on-COP31-Summit",
+                "source": "Mehr News Agency",
+                "date": "2026-11-11 12:57",
+                "description": "TEHRAN, Nov. 11 (MNA) – Iranian President Masoud Pezeshkian and Pakistani Prime Minister Shehbaz Sharif met and held talks in Turkey’s Antalya on Wednesday on the sidelines of 31st UN Climate Change Conference (COP31).",
+                "_timestamp": 1794401872.0
+            },
+            {
+                "title": "Pezeshkian holds talks with leaders on sidelines of COP31",
+                "link": "https://www.tehrantimes.com/news/532059/Pezeshkian-holds-talks-with-leaders-on-sidelines-of-COP31",
+                "source": "Tehran Times",
+                "date": "2026-11-11 17:18",
+                "description": "TEHRAN– Iranian President Masoud Pezeshkian has held a series of bilateral meetings with the leaders of Iraq, Norway, Armenia and Pakistan on the sidelines of the 31st United Nations Climate Change Conference (COP31) in Antalya, Turkey, discussing bilateral relations, regional developments and prospects for expanding economic and political cooperation.",
+                "_timestamp": 1794417529.0
+            },
+            {
+                "title": "Pakistan, Iran leaders reaffirm ties in COP31 meeting",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-iran-leaders-reaffirm-ties-cop31-meeting",
+                "source": "Middle East Eye",
+                "date": "2026-11-11 21:16",
+                "description": "Pakistan, Iran leaders reaffirm ties in COP31 meeting\n\n    \n    \n\n        \n    \n                Pakistan’s Prime Minister Shehbaz Sharif and Iran’s President Masoud Pezeshkian met on the sidelines of the COP31 UN climate summit in Turkey's Antalya on Wednesday, reaffirming the \"deep and enduring bonds between Pakistan and Iran\".\n\n“Dialogue, restraint, de-escalation and sustained diplomacy are the only path to lasting peace,” Sharif&nbsp;said in a",
+                "_timestamp": 1794431781.0
+            },
+            {
+                "title": "Pezeshkian, Erdogan stress expanding bilateral ties",
+                "link": "https://en.mehrnews.com/news/249355/Pezeshkian-Erdogan-stress-expanding-bilateral-ties",
+                "source": "Mehr News Agency",
+                "date": "2026-11-12 09:58",
+                "description": "TEHRAN, Nov. 12 (MNA) – Iran and Turkey's presidents met on the sidelines of the COP31 summit, stressing mutual respect, good neighborliness and common interests as they discussed expanding cooperation and regional stability.",
+                "_timestamp": 1794477491.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-12 09:58 UTC (approx. 0.1 hours ago)",
+            "Facts": "[Update 2026-11-12 09:58 UTC via Mehr News Agency]: Iran and Turkey's presidents met on the sidelines of the COP31 summit, stressing mutual respect, good neighborliness, and regional stability | Core Background: Iranian President Masoud Pezeshkian engaged in active diplomatic outreach during the UN COP31 summit in Antalya, Turkey, holding bilateral talks with leaders from Iraq, Pakistan, Norway, Armenia, and Turkey. Pakistani Prime Minister Shehbaz Sharif and Pezeshkian reaffirmed bilateral ties, emphasizing dialogue, restraint, de-escalation, and sustained diplomacy as the primary path to regional peace.",
+            "Uncertainties": "Whether bilateral diplomatic engagements at a climate summit can translate into tangible de-escalation of active Middle Eastern flashpoints and naval tensions in the Strait of Hormuz.",
+            "Macro_Context": "In an environment where spot XAU/USD trades at $3943.95 alongside a high OKX perpetual basis premium of +$9.05 (+0.23%) and aggressive market buying (62.5% taker buy ratio), diplomatic de-escalation acts as a minor geopolitical headwind, though offset by persistent safe-haven positioning.",
+            "Bull_Case": "Geopolitical friction remains elevated across the Middle East despite diplomatic talks; market participants continue to price in tail risks regarding Strait of Hormuz transit, supporting safe-haven gold accumulation.",
+            "Bear_Case": "Active diplomatic outreach and public commitments to 'restraint and de-escalation' between Iran, Turkey, and Pakistan reduce immediate conflict premium, encouraging profit-taking in safe-haven assets.",
+            "Historical_Calibration": "Geopolitics & War category with Fresh ATR-Ratio (0.35x) and against USD headwind yields a historical win rate of 66.1% (Avg DD: -$17.1).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "The 4h decline of $-20.36 reflects a mild unwinding of geopolitical risk premium as diplomatic headlines out of Antalya emphasize regional dialogue.",
+            "Orderflow_Price_Target": "3931.17"
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 81.67
+    },
+    {
         "main_date": "First Reported: 2026-11-12 00:22 UTC | Last Update: 2026-11-12 09:49 UTC",
         "original_date": "2026-11-12 00:22",
         "_timestamp": 1794476961.0,
@@ -81,6 +148,1085 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 24.83
+    },
+    {
+        "main_date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-12 09:47 UTC",
+        "original_date": "2026-11-08 23:30",
+        "_timestamp": 1794476838.0,
+        "articles": [
+            {
+                "title": "Nvidia Stock Faces New Pressure as Board Investigates Huang’s Links to Alleged Spy",
+                "link": "https://finance.yahoo.com/m/09a7b85b-f39c-346a-88bc-f818668a56a9/nvidia-stock-faces-new.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 23:30",
+                "description": "The board said it has no reason to believe that either national security or Nvidia secrets were compromised.",
+                "_timestamp": 1794180600.0
+            },
+            {
+                "title": "Nvidia Slips 3% Overnight as Board Probes Jensen Huang: “No Reason to Believe” Secrets Were Compromised",
+                "link": "https://www.tikr.com/blog/nvidia-slips-3-overnight-as-board-probes-jensen-huang-no-reason-to-believe-secrets-were-compromised?ref=yahoofinance&tlnk=yf-261109-9rm87vv2&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 05:21",
+                "description": "Key TakeawaysNvidia stock traded about 3. 4% lower overnight, near $180, after its board opened an independent probe into reports that CEO Jensen Huang was the target of a foreign intelligence effort.",
+                "_timestamp": 1794201685.0
+            },
+            {
+                "title": "Stock Market Today: Dow Rallies As Oil Prices Slide; Nvidia Stock Dives On CEO Huang Probe (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 13:04",
+                "description": "The Dow Jones index rallies 500 points Monday as oil prices drop. Nvidia stock dives on the probe into CEO Jensen Huang.",
+                "_timestamp": 1794229497.0
+            },
+            {
+                "title": "Nvidia stock sinks 5% as chipmaker investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 13:03",
+                "description": "Nvidia sank 5% on Monday, while the rest of the chip sector mostly rose.",
+                "_timestamp": 1794229426.0
+            },
+            {
+                "title": "Stock Market Today: Dow Rallies As Oil Prices Slide; Nvidia Stock Dives On CEO Huang Probe (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 13:04",
+                "description": "The Dow Jones index rallies 500 points Monday as oil prices drop. Nvidia stock dives on the probe into CEO Jensen Huang.",
+                "_timestamp": 1794229497.0
+            },
+            {
+                "title": "Nvidia Stock Drops On Spy Scandal, CEO Probe",
+                "link": "https://finance.yahoo.com/m/2c1c8bc5-818d-357d-a3f9-2b7a4a511e1f/nvidia-stock-drops-on-spy.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 14:06",
+                "description": "Nvidia stock fell Monday as the AI chipmaker deals with an embarrassing \"honeypot\" scandal involving Chief Executive Jensen Huang.",
+                "_timestamp": 1794233201.0
+            },
+            {
+                "title": "Stock Market Today: Nvidia Pressures Indexes to Maintain Rebound",
+                "link": "https://247wallst.com/investing/2026/11/09/stock-market-today-nvidia-pressures-indexes-to-maintain-rebound/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 14:28",
+                "description": "Cheaper oil is handing Wall Street a Monday bounce, but a boardroom shock at one AI giant and stalled peace talks could undo it fast. Find out which corner of the market is quietly pulling ahead.",
+                "_timestamp": 1794234498.0
+            },
+            {
+                "title": "Why Nvidia Stock Was Falling Today",
+                "link": "https://www.fool.com/investing/2026/11/09/why-nvidia-stock-was-falling-today/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 16:43",
+                "description": "Nvidia CEO Jensen Huang is in hot water after admitting an affair with a suspected Chinese spy.",
+                "_timestamp": 1794242603.0
+            },
+            {
+                "title": "Top Midday Stories: Nvidia Faces China Spy Allegations; NRG to Sell 6 natural Gas Generation Assets to LS Power for $4 Billion",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-nvidia-faces-164201985.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 16:42",
+                "description": "All three major US stock indexes were up over 1.5% on Monday, with the Nasdaq Composite trading abov",
+                "_timestamp": 1794242521.0
+            },
+            {
+                "title": "Nvidia shares slump amid investigation into CEO Jensen Huang",
+                "link": "https://www.aljazeera.com/economy/2026/11/9/nvidia-shares-slump-amid-investigation-into-ceo-jensen-huang?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-09 16:00",
+                "description": "Huang admits infidelity, denies compromising Nvidia security as China spy inquiry shakes $4.5 trillion AI firm.",
+                "_timestamp": 1794240010.0
+            },
+            {
+                "title": "U.S. Stocks Leap Despite Nvidia Slide",
+                "link": "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 19:29",
+                "description": "U.S. stocks jumped, even as Nvidia’s shares sank after the company’s board launched an investigation into CEO Jensen Huang.",
+                "_timestamp": 1794252540.0
+            },
+            {
+                "title": "Nvidia stock slumps amid board investigation into CEO Jensen Huang",
+                "link": "https://www.cbsnews.com/news/nvidia-jensen-huang-stock-board-investigation-spy/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 19:46",
+                "description": "Investors are questioning whether Huang's future as Nvidia's CEO may be at risk amid allegations that he was targeted in a Chinese intelligence operation.",
+                "_timestamp": 1794253580.0
+            },
+            {
+                "title": "Jensen Huang Might Be the Biggest Wild Card for Nvidia Stock. Here's What to Watch During Earnings on Nov. 17",
+                "link": "https://www.fool.com/investing/2026/11/09/jensen-huang-might-be-the-biggest-wild-card-for-nvidia-stock-here-s-what-to-watch-during-earnings-on-nov-17/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 19:29",
+                "description": "Nvidia's business is still booming, but the investigation tied to its CEO adds a risk that no one can yet price in. Here are the four things to watch next week.",
+                "_timestamp": 1794252575.0
+            },
+            {
+                "title": "U.S. Stocks Leap Despite Nvidia Slide",
+                "link": "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 19:29",
+                "description": "U.S. stocks jumped, even as Nvidia’s shares sank after the company’s board launched an investigation into CEO Jensen Huang.",
+                "_timestamp": 1794252540.0
+            },
+            {
+                "title": "Stock Market Today: Dow Pops, Multiple Stocks Clear Entries; Jensen Huang Details Emerge (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow-pops%2C.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 20:46",
+                "description": "The Dow Jones index rallied Monday as Nvidia dived on a probe into CEO Jensen Huang. Multiple stocks cleared buy points.",
+                "_timestamp": 1794257180.0
+            },
+            {
+                "title": "Nvidia stock drops 3%, extending decline on report alleged Chinese spy linked to Nvidia CEO aided $7.5 billion in China chip shipments",
+                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipments-152654028.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:24",
+                "description": "Nvidia sank on Tuesday, while the rest of the chip sector held up.",
+                "_timestamp": 1794324261.0
+            },
+            {
+                "title": "Why analysts aren't trying to ruffle Nvidia's feathers amid CEO scandal",
+                "link": "https://finance.yahoo.com/video/why-analysts-arent-trying-to-ruffle-nvidias-feathers-amid-ceo-scandal-151507913.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:15",
+                "description": "Yahoo Finance Executive Editor Brian Sozzi assesses why Wall Street analysts have been largely silent on Nvidia (NVDA) amid the scandal involving CEO Jensen Huang and why being crtitical could cost them access to management.",
+                "_timestamp": 1794323707.0
+            },
+            {
+                "title": "NVIDIA Stocks Slide 4.43% as Report Alleges $7.5 Billion in Chips Reached China",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-slide-4-43-175809767.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 17:58",
+                "description": "The Information says a network tied to an alleged Beijing intelligence asset obtained roughly 240,000 restricted GPUs while the board's review continues.",
+                "_timestamp": 1794333489.0
+            },
+            {
+                "title": "Nvidia Is Down 30% From Its High. History Says This Is What Happens Next.",
+                "link": "https://www.fool.com/investing/2026/11/10/nvidia-is-down-30-from-its-high-history-says-this/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 18:15",
+                "description": "The chipmaker's stock could be a bargain buy today.",
+                "_timestamp": 1794334500.0
+            },
+            {
+                "title": "Prediction: Nov. 18 Will Be a Huge Day for the Stock Market",
+                "link": "https://www.fool.com/investing/2026/11/10/prediction-nov-18-will-be-a-huge-day-for-the-stock-market/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 20:20",
+                "description": "Nvidia CEO Jensen Huang has been asked to brief Congress about his ties to a business executive from Singapore on Nov. 18.",
+                "_timestamp": 1794342002.0
+            },
+            {
+                "title": "Nvidia could soon face tougher export rules, making it harder to sell chips to China after scandal",
+                "link": "https://www.marketwatch.com/story/nvidia-could-soon-face-tougher-export-rules-making-it-harder-to-sell-chips-to-china-69c88cc8?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-10 20:37",
+                "description": "“There is growing momentum for these bills in light of the Jensen Huang spy scandal,” one analyst says.",
+                "_timestamp": 1794343020.0
+            },
+            {
+                "title": "Nvidia Stock Hit With Price-Target Cuts Amid Spy Scandal",
+                "link": "https://finance.yahoo.com/m/45cd5aac-d312-37af-8964-003c24a22c85/nvidia-stock-hit-with.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 21:24",
+                "description": "Nvidia stock continued to fall on Tuesday in the wake of an affair involving CEO Jensen Huang and an alleged Chinese \"honeypot\" spy.",
+                "_timestamp": 1794345867.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 10: Nvidia Stock Plunges 5.5% as CEO Scandal Overshadows Its Upcoming Earnings Report",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-nvidia-stock-plunges-5-5-as-ceo-scandal-overshadows-its-upcoming-earnings-report/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:35",
+                "description": "Nvidia shares extended their sell-off as an investigation involving CEO Jensen Huang raised fresh concerns about corporate governance, leadership uncertainty, and the AI chipmaker's future.",
+                "_timestamp": 1794350102.0
+            },
+            {
+                "title": "Nvidia shares rebound 4% as Huang faces scrutiny ahead of earnings",
+                "link": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-11 10:03",
+                "description": "Investors are assessing whether CEO Jensen Huang's affair will have spillover effects on Nvidia's business.",
+                "_timestamp": 1794391409.0
+            },
+            {
+                "title": "Nvidia Selloff Puts China Exposed US Chip Stocks Back In Focus",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-selloff-puts-china-exposed-130900790.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 13:09",
+                "description": "A 9.5% two-day slide in Nvidia that wiped about US$430b off its market value has turned a hot AI favorite into a stress test for every large-cap chip stock tied to China. Political scrutiny of Jensen Huang, fresh export-control proposals and a board investigation have pulled risk into sharp focus. This article unpacks how that shock ripples into three U.S. semiconductor stocks exposed to the same headlines and where the news flow currently looks ",
+                "_timestamp": 1794402540.0
+            },
+            {
+                "title": "Nvidia is Now Down More Than 25% In 30 Days: This Wall Street Desk Predicts 205% Returns",
+                "link": "https://247wallst.com/investing/2026/11/11/nvidia-is-now-down-more-than-25-in-30-days-this-wall-street-desk-predicts-205-returns/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 15:45",
+                "description": "NVIDIA posted a record quarter and still lost a quarter of its value in a month, while earnings estimates kept climbing. A swelling balance sheet and one looming report may explain why investors are bailing.",
+                "_timestamp": 1794411931.0
+            },
+            {
+                "title": "Nvidia, CoreWeave, Nebius, Teradyne, Riskified, and More Stocks That Explain Today’s Market",
+                "link": "https://finance.yahoo.com/m/37147cf1-aa70-3e70-9d7d-f8d6cb4dcbb8/nvidia%2C-coreweave%2C-nebius%2C.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 18:00",
+                "description": "Nvidia rises following a rebound in shares of AI companies even as Baird calls for Nvidia CEO Jensen Huang to step down.",
+                "_timestamp": 1794420000.0
+            },
+            {
+                "title": "Nvidia shares slip in after-hours trading on fresh allegations of CEO relationship",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-slip-hours-trading-223702826.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 22:37",
+                "description": "Investing.com -- Nvidia shares fell about 3% in after-hours trading Wednesday evening after a new report alleged that chief executive Jensen Huang maintained an extramarital relationship with Kimberly Powell, the company’s vice president of healthcare—a senior executive who reports to him.",
+                "_timestamp": 1794436622.0
+            },
+            {
+                "title": "Nvidia Just Fell 8.3% After Hours on a Report of a Second Jensen Huang Affair. Here’s What 2,000 Shares Have Lost This Week",
+                "link": "https://247wallst.com/investing/2026/11/11/nvidia-just-fell-8-3-after-hours-on-a-report-of-a-second-jensen-huang-affair-heres-what-2000-shares-have-lost-this-week/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 22:37",
+                "description": "Nvidia fell 8.3% after hours Wednesday to $159.37 after The New York Times reported a second Jensen Huang affair, with Nvidia executive Kimberly Powell. A holder with 2,000 shares has lost $54,540 since the November 6 close. Dan Ives says Huang's exit would cut Nvidia's value 25% to 30%; Baird says a new CEO is needed.",
+                "_timestamp": 1794436675.0
+            },
+            {
+                "title": "Nvidia stock drops as board reportedly weighs Jensen Huang’s future",
+                "link": "https://www.cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 00:15",
+                "description": "Nvidia shares dropped sharply in after-hours trading on Wednesday after reports that CEO Jensen Huang had an extramarital relationship with a company executive and that the board is meeting to discuss his future.",
+                "_timestamp": 1794442518.0
+            },
+            {
+                "title": "Nvidia's stock dives as board weighs move to oust Jensen Huang",
+                "link": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 00:18",
+                "description": "Nvidia shares fall sharply in after-hours trading as the company's board considers whether to remove Jensen Huang as CEO.",
+                "_timestamp": 1794442705.0
+            },
+            {
+                "title": "Nvidia shares plunge amid reports board to discuss CEO Huang’s future",
+                "link": "https://www.aljazeera.com/economy/2026/11/12/nvidia-shares-plunge-amid-reports-board-to-discuss-ceo-huangs-future?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 00:43",
+                "description": "Chip giants stock price falls more than 8 percent amid speculation over co-founder&#039;s future.",
+                "_timestamp": 1794444206.0
+            },
+            {
+                "title": "Asian stocks drop as traders keep eye on Nvidia crisis",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-extend-gains-traders-025559054.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 07:13",
+                "description": "Asian stocks fell Thursday as investors kept a nervous eye on Nvidia whose influential boss Jensen Huang faces a probe into an affair with a woman accused of spying for China.Traders' nerves are being tested by the crisis at Nvidia, with co-founder and CEO Huang facing the boot after he admitted a relationship with Alice Huang, a senior executive at Singapore-based data centre company Megaspeed.",
+                "_timestamp": 1794467587.0
+            },
+            {
+                "title": "Pressure Mounts on Nvidia's Jensen Huang Amid Reports of Second Affair",
+                "link": "https://decrypt.co/383114/pressure-mounts-on-nvidias-jensen-huang-amid-reports-of-second-affair?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:47",
+                "description": "Nvidia's board is reportedly preparing to oust its CEO, sending the chipmaker's shares down more than 5% in premarket trading.",
+                "_timestamp": 1794476838.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-12 09:47 UTC (approx. 0.3 hours ago)",
+            "Facts": "[Update 2026-11-12 09:47 UTC via Yahoo Finance Nasdaq]: Nvidia's board is reportedly preparing to oust its CEO Jensen Huang amid a second affair probe, sending shares down over 5% in premarket trading | Core Background: Nvidia shares plunged following revelations that co-founder and CEO Jensen Huang faces a board probe regarding links to an alleged spy, compounding corporate governance crises and dragging down broader equity sentiment.",
+            "Uncertainties": "Whether the board will officially oust Jensen Huang and how deeply enterprise AI infrastructure spending plans will be disrupted by management turmoil.",
+            "Macro_Context": "Tech equity sell-offs driven by corporate governance shocks can trigger broad liquidity liquidations, temporarily boosting safe-haven cash or driving margin calls that impact gold alongside equities.",
+            "Bull_Case": "Systemic shocks to mega-cap tech leaders undermine market confidence in high-flying equity valuations, driving capital flight toward physical safe-havens like gold.",
+            "Bear_Case": "Severe equity drawdowns can induce forced liquidations across multi-asset portfolios, causing leveraged gold longs to unwind alongside stocks.",
+            "Historical_Calibration": "Fed, Rates & Macro category with Fresh ATR-Ratio (0.35x) and against USD headwind yields a historical win rate of 66.1% (Avg DD: -$17.1).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 60,
+            "Past_Price_Action_Cause": "Aggressive taker buying (64.1% OKX perp buy ratio) and strong lower-wick dip buying reflect safe-haven absorption of tech-driven equity volatility.",
+            "Orderflow_Price_Target": "3989.85"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 37.08
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 02:31 UTC | Last Update: 2026-11-12 09:42 UTC",
+        "original_date": "2026-11-10 02:31",
+        "_timestamp": 1794476560.0,
+        "articles": [
+            {
+                "title": "Dow Jones Soars 1,132 Points As Amazon, Tesla Rally, But Nvidia Dives; CPI Inflation Report Next",
+                "link": "https://finance.yahoo.com/m/db2f6d95-b7a5-3274-8193-c767d2b681c1/dow-jones-soars-1%2C132-points.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 02:31",
+                "description": "Dow Jones futures were in focus after soaring 1,132 points ahead of the CPI inflation report. Amazon and Tesla rallied, but Nvidia dived.",
+                "_timestamp": 1794277908.0
+            },
+            {
+                "title": "Nvidia couldn’t derail the stock market’s rally. Hot inflation might.",
+                "link": "https://www.marketwatch.com/story/nvidia-couldnt-derail-the-stock-markets-rally-hot-inflation-might-8a572024?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-10 12:33",
+                "description": "A Fed official raises the prospect of a half-a-percentage-point rate hike. Plus, fresh valuation focus on Anthropic’s blockbuster IPO.",
+                "_timestamp": 1794313980.0
+            },
+            {
+                "title": "Stock Market Today: Dow Dips On Hot Inflation Data; Nvidia Falls Again, Anthropic Sets IPO Range (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/c7fbd2af-5702-3c77-9aa6-7c6578bb8abb/stock-market-today%3A-dow-dips.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 15:31",
+                "description": "Stock Market Today: The Dow Jones index falls Tuesday on a hot inflation report. Anthropic prices its IPO range. Nvidia sells off.",
+                "_timestamp": 1794324688.0
+            },
+            {
+                "title": "Stock Market Today: Dow Dips On Hot Inflation Data; Nvidia Falls Again, Anthropic Sets IPO Range (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/c7fbd2af-5702-3c77-9aa6-7c6578bb8abb/stock-market-today%3A-dow-dips.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:31",
+                "description": "Stock Market Today: The Dow Jones index falls Tuesday on a hot inflation report. Anthropic prices its IPO range. Nvidia sells off.",
+                "_timestamp": 1794324688.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 10: Wall Street's Rally Hits a Roadblock as Hot Inflation Raises the Stakes for the Fed",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-wall-street-s-rally-hits-a-roadblock-as-hot-inflation-raises-the-stakes-for-the-fed/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-10 22:50",
+                "description": "Yesterday's rebound lost momentum as rising Treasury yields and renewed inflation concerns weighed on stocks",
+                "_timestamp": 1794351007.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 10: Wall Street's Rally Hits a Roadblock as Hot Inflation Raises the Stakes for the Fed",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-wall-street-s-rally-hits-a-roadblock-as-hot-inflation-raises-the-stakes-for-the-fed/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:50",
+                "description": "Yesterday's rebound lost momentum as rising Treasury yields and renewed inflation concerns weighed on stocks",
+                "_timestamp": 1794351007.0
+            },
+            {
+                "title": "Dow Jones Futures Rise As CoreWave Jumps, Lifts AI Stocks; Look For This Bullish Signal",
+                "link": "https://finance.yahoo.com/m/656fca57-9896-3dfb-96e8-e0af2bc227df/dow-jones-futures-rise-as.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 02:54",
+                "description": "Futures rose while AI stocks rallied overnight on CoreWeave earnings: The stock market fell on Nvidia and surging Treasury yields.",
+                "_timestamp": 1794365654.0
+            },
+            {
+                "title": "Dow, S&P 500, Nasdaq Futures Edge Higher After Red-Hot Inflation Data And Nvidia Losses: CRWV, TTWO, NLST, NBIS In Focus",
+                "link": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-nasdaq-futures-edge-higher-after-red-hot-inflation-data-and-nvidia-losses-crwv-ttwo-nlst-nbis-in-focus/cNGDaIOR9J8?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 03:51",
+                "description": "October’s Consumer Price Index data came in red hot, rising 0.4% month-on-month, ahead of the consensus estimates.",
+                "_timestamp": 1794369075.0
+            },
+            {
+                "title": "Dow Jones Futures Rise, Techs Jump On CoreWeave Earnings; Look For This Bullish Signal",
+                "link": "https://finance.yahoo.com/m/656fca57-9896-3dfb-96e8-e0af2bc227df/dow-jones-futures-rise%2C-techs.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 06:09",
+                "description": "Futures rose while AI stocks rallied overnight on CoreWeave earnings: The stock market fell on Nvidia and surging Treasury yields.",
+                "_timestamp": 1794377395.0
+            },
+            {
+                "title": "Stock Market Today: Tech Futures Jump As CoreWeave Surges On Results; Nvidia Rebounds (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/2199baae-3d36-344b-b4d8-76ff24b7f5e9/stock-market-today%3A-tech.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 13:05",
+                "description": "Tech futures jump Wednesday as CoreWeave surges on earnings. Nvidia stock rebounds premarket.",
+                "_timestamp": 1794402324.0
+            },
+            {
+                "title": "Stock Market Today: Tech Futures Jump As CoreWeave Surges On Results; Nvidia Rebounds (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/2199baae-3d36-344b-b4d8-76ff24b7f5e9/stock-market-today%3A-tech.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 13:05",
+                "description": "Tech futures jump Wednesday as CoreWeave surges on earnings. Nvidia stock rebounds premarket.",
+                "_timestamp": 1794402324.0
+            },
+            {
+                "title": "Nasdaq Futures Rally as AI Optimism Returns",
+                "link": "https://www.wsj.com/finance/commodities-futures/nasdaq-futures-rally-as-ai-optimism-returns-af100e62?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 13:14",
+                "description": "Nasdaq futures led stock futures higher as rebounding artificial-intelligence sentiment helped markets recover from a revival of Fed rate-hike concerns Tuesday.",
+                "_timestamp": 1794402840.0
+            },
+            {
+                "title": "CoreWeave rally signals relief for Nvidia as analyst sees AI demand accelerating",
+                "link": "https://finance.yahoo.com/technology/ai/articles/coreweave-rally-signals-relief-nvidia-133039985.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 13:30",
+                "description": "Investing.com -- CoreWeave’s 16% rally on Wednesday could signal a broader reprieve for AI semiconductor stocks, with Lynx Equity Strategies analyst KC Rajkumar arguing that the company’s latest results undermine concerns about weakening infrastructure demand and mounting financial pressure.",
+                "_timestamp": 1794403839.0
+            },
+            {
+                "title": "Stock Market Today: Nasdaq Jumps As CoreWeave Surges On Earnings; Nvidia, AMD Shares Bounce (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/2199baae-3d36-344b-b4d8-76ff24b7f5e9/stock-market-today%3A-nasdaq.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 15:21",
+                "description": "The tech-heavy Nasdaq jumps Wednesday as CoreWeave surges on earnings. Nvidia stock rebounds.",
+                "_timestamp": 1794410485.0
+            },
+            {
+                "title": "The Dow Is Missing Out on the CoreWeave Earnings AI Rebound",
+                "link": "https://finance.yahoo.com/m/0f13a4c7-1995-3729-b3ef-a062adff3c1a/the-dow-is-missing-out-on-the.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 15:53",
+                "description": "The Nasdaq is crushing the Dow, and you can probably guess why.",
+                "_timestamp": 1794412420.0
+            },
+            {
+                "title": "Dow Jones Futures: CoreWeave, Sandisk, Nvidia, AMD, Nebius Lead Bullish Market Move",
+                "link": "https://finance.yahoo.com/m/672e6ef4-2ba3-319b-b948-a356a7f1fcbe/dow-jones-futures%3A-coreweave%2C.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 21:22",
+                "description": "CoreWeave fueled big AI gains for the new market rally Wednesday, with Nebius, Sandisk, Nvidia, Bloom Energy and AMD key movers.",
+                "_timestamp": 1794432128.0
+            },
+            {
+                "title": "Stock Market Today: Major Indexes Pare Earlier Gains But Finish Trading Day Solidly Higher",
+                "link": "https://finance.yahoo.com/m/2199baae-3d36-344b-b4d8-76ff24b7f5e9/stock-market-today%3A-major.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 21:22",
+                "description": "The Nasdaq composite led the stock market with a nearly 3% romp as CoreWeave's bullish earnings report revived the artificial intelligence trade.",
+                "_timestamp": 1794432151.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 11: Nvidia Rebounds as CoreWeave Earnings Reignite the AI Trade",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-nvidia-rebounds-as-coreweave-earnings-reignite-the-ai-trade/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 22:05",
+                "description": "Nvidia and other semiconductor stocks rallied Wednesday as CoreWeave's latest earnings reinforced demand for AI infrastructure, helping Wall Street recover from Tuesday's sell-off.",
+                "_timestamp": 1794434703.0
+            },
+            {
+                "title": "Stock Indexes Finish Sharply Higher on AI Demand Optimism",
+                "link": "https://www.barchart.com/story/news/8788259/stock-indexes-finish-sharply-higher-on-ai-demand-optimism?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 21:34",
+                "description": "The S&amp;P 500 Index ($SPX ) (SPY ) closed up +1.31% on Wednesday, the Dow Jones Industrial Average ($DOWI ) (DIA ) closed up +0.49%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) closed up +2.28%. December E-mini S&amp;P futures (ESZ26 ) rose +1.33%, and December E-mini Nasdaq futures...",
+                "_timestamp": 1794432850.0
+            },
+            {
+                "title": "Fed Hike: Buy, Sell Or Hold Nvidia Stock?",
+                "link": "https://www.trefis.com/stock/nvda/articles/624196/fed-hike-buy-sell-or-hold-nvidia-stock/2026-11-12?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:42",
+                "description": "More on inflation and the market: Inflation Is Back. Is A Stock Market Crash Next.",
+                "_timestamp": 1794476560.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-12 09:42 UTC (approx. 0.4 hours ago)",
+            "Facts": "[Update 2026-11-12 09:42 UTC via Yahoo Finance Nasdaq]: Market focus turns intensely to upcoming US CPI inflation prints and Federal Reserve rate path expectations following strong tech earnings rebounds | Core Background: Major US stock indexes rallied solidly earlier in the week led by Nasdaq and S&P 500 gains, powered by CoreWeave's stellar earnings which briefly revived AI demand optimism before renewed macro scrutiny set in.",
+            "Uncertainties": "The exact magnitude of upcoming CPI prints and whether sticky inflation components will force the Federal Reserve to pause rate cuts.",
+            "Macro_Context": "As EUR/USD dips 0.38% and 10Y bond yields remain resilient, gold faces immediate USD strength headwinds, yet robust taker buy pressure (62.5%) indicates strong underlying demand at support.",
+            "Bull_Case": "Cooling inflation prints or heightened anticipation of Fed easing cycles weaken the US dollar and propel non-yielding gold higher.",
+            "Bear_Case": "Hotter-than-expected CPI inflation reinforces 'higher-for-longer' Fed rate expectations, boosting real yields and weighing heavily on gold bullion.",
+            "Historical_Calibration": "Fed, Rates & Macro category with Fresh ATR-Ratio (0.35x) and against USD headwind yields a historical win rate of 66.1% (Avg DD: -$17.1).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 58,
+            "Past_Price_Action_Cause": "Consolidation near $3945 after a 4h pullback of $-20.36 indicates market hesitation ahead of crucial macro inflation data releases.",
+            "Orderflow_Price_Target": "3989.85"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 1.45
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 10:48 UTC | Last Update: 2026-11-12 09:42 UTC",
+        "original_date": "2026-11-10 10:48",
+        "_timestamp": 1794476560.0,
+        "articles": [
+            {
+                "title": "Anthropic reportedly retracts IPO terms sent to banks by mistake, exposing jitters over AI investments",
+                "link": "https://www.marketwatch.com/story/anthropic-reportedly-retracts-ipo-terms-sent-to-banks-by-mistake-exposing-jitters-over-ai-investments-6116578d?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-10 10:48",
+                "description": "Anthropic reportedly late Monday sent a copy of a securities filing to bankers for an IPO raising up to $69.3 billion before saying that was in error.",
+                "_timestamp": 1794307680.0
+            },
+            {
+                "title": "Anthropic IPO Meets Nvidia Scandal. Hold On to Your Hats.",
+                "link": "https://finance.yahoo.com/m/34351a04-efec-3db3-a27d-cf4a9788b729/anthropic-ipo-meets-nvidia.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 12:42",
+                "description": "Anthropic sets an estimated IPO price range amid febrile time for artificial intelligence stocks as Nvidia shares and Dow futures rise.",
+                "_timestamp": 1794314520.0
+            },
+            {
+                "title": "State of the tech market: Anthropic IPO and Nvidia CEO scandal are reshaping portfolios",
+                "link": "https://finance.yahoo.com/video/state-of-the-tech-market-anthropic-ipo-and-nvidia-ceo-scandal-are-reshaping-portfolios-150759438.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:07",
+                "description": "Yahoo Finance Executive Editor Brian Sozzi tackles all the biggest stories of the market day, including a deep dive into the state of the tech market and how the Anthropic (ANTH.PVT) IPO and Jensen Huang affair are impacting investor portfolios. Chime (CHYM) CEO Chris Britt sits down with Sozzi for a 1-on-1 conversation about the financial health of US consumers and corporate earnings.",
+                "_timestamp": 1794323279.0
+            },
+            {
+                "title": "Anthropic's $1.4 trillion IPO could raise $90 billion as Wedbush backs AI hardware outlook",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101534/anthropic-s-1-4-trillion-ipo-could-raise-90-billion-as-wedbush-backs-ai-hardware-outlook-1101534.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 17:00",
+                "description": "Anthropic (Unlisted (US):ANTHRO), the artificial intelligence developer behind Claude, is seeking a valuation of up to $1.4 trillion in an initial public offering (IPO) that could give it substantial new funding for its expanding computing infrastructure. The company has set a price range of...",
+                "_timestamp": 1794330000.0
+            },
+            {
+                "title": "Anthropic Will Pay SpaceX “Over $3 Billion Per Month.” Cramer Says a Failed IPO Hits Nvidia Too",
+                "link": "https://www.tikr.com/blog/anthropic-will-pay-spacex-over-3-billion-per-month-cramer-says-a-failed-ipo-hits-nvidia-too?ref=yahoofinance&tlnk=yf-261110-68r823v6&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 16:43",
+                "description": "Key TakeawaysAnthropic’s IPO filing shows its SpaceX compute deals reaching about $3. 1 billion a month in December, and Jim Cramer warns a failed IPO would hit SpaceX and Nvidia estimates.",
+                "_timestamp": 1794329039.0
+            },
+            {
+                "title": "Anthropic’s $1.4T IPO is Finally Here",
+                "link": "https://app.moby.co/home/news/news-anthropics-14t-ipo-is-finally-here?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 20:59",
+                "description": "Goldman Sachs says Dario’s free cash flow arrives in 2030. Maybe.",
+                "_timestamp": 1794344357.0
+            },
+            {
+                "title": "Anthropic IPO: Here's What Betting Markets Are Predicting After the AI Correction",
+                "link": "https://www.fool.com/investing/2026/11/10/anthropic-ipo-heres-what-betting-markets-are-predi/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 21:22",
+                "description": "With AI stocks slumping, the Anthropic IPO.",
+                "_timestamp": 1794345720.0
+            },
+            {
+                "title": "Anthropic IPO could give AI stocks a needed spark",
+                "link": "https://www.axios.com/2026/11/10/anthropic-ipo-nvidia-stocks-spark#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-AI?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:02",
+                "description": "Anthropic shares are set to begin trading next week, just as AI investors are needing a feel-good spark.",
+                "_timestamp": 1794348146.0
+            },
+            {
+                "title": "Jim Cramer says Anthropic's explosive growth could justify a record-breaking IPO",
+                "link": "https://www.cnbc.com/2026/11/10/anthropic-ipo-revenue-growth-cramer.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-10 23:46",
+                "description": "\"The fact that this deal is on is bullish for tech and the AI trade,\" CNBC's Jim Cramer said Tuesday.",
+                "_timestamp": 1794354395.0
+            },
+            {
+                "title": "Anthropic opens Australian retail IPO offering as AI scrutiny intensifies",
+                "link": "https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-11 01:52",
+                "description": "Anthropic opened its Australia retail IPO offering on Wednesday, allowing individual investors to apply for shares ahead of its planned IPO.",
+                "_timestamp": 1794361976.0
+            },
+            {
+                "title": "Inside Anthropic’s blockbuster IPO: What we know about the AI giant’s plans",
+                "link": "https://www.euronews.com/2026/11/11/anthropic-targets-valuation-of-up-to-14-trillion-for-blockbuster-ipo?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 05:35",
+                "description": "Anthropic plans to raise up to $64 billion (€57.1bn) in its upcoming initial public offering, the artificial intelligence giant said in a filing on Tuesday, in a listing that could value the company at up to $1.4 trillion (€1.25trn).View on euronews",
+                "_timestamp": 1794375307.0
+            },
+            {
+                "title": "Anthropic’s IPO roadshow kicks off — and the big money is already lining up",
+                "link": "https://www.marketwatch.com/story/anthropics-ipo-roadshow-kicks-off-and-the-big-money-is-already-lining-up-7cdd4f8b?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-11 16:03",
+                "description": "Despite nagging concerns over the AI trade, Anthropic’s IPO is reportedly seeing very strong demand.",
+                "_timestamp": 1794412980.0
+            },
+            {
+                "title": "Tech round-up: A closer look at Anthropic, Nvidia, CoreWeave, and next week",
+                "link": "https://finance.yahoo.com/video/tech-round-up-a-closer-look-at-anthropic-nvidia-coreweave-and-next-week-211955539.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 21:19",
+                "description": "Deirdre Bosa summarizes what's been going on in tech this week: CoreWeave's (CRWV) third quarter earnings and the associated concerns with circular AI financing, Nvidia's (NVDA) Jensen Huang controversy and upcoming earnings results, Anthropic's (ANTH.PVT) IPO buzz, and more.",
+                "_timestamp": 1794431995.0
+            },
+            {
+                "title": "Anthropic IPO Or Amazon, Google, Microsoft Stock?",
+                "link": "https://www.trefis.com/stock/amzn/articles/624197/anthropic-ipo-or-amazon-google-microsoft-stock/2026-11-12?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:42",
+                "description": "More on the Anthropic IPO: our Anthropic IPO storyline page collects our pieces on it.",
+                "_timestamp": 1794476560.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-12 09:42 UTC (approx. 0.4 hours ago)",
+            "Facts": "[Update 2026-11-12 09:42 UTC via Yahoo Finance Nasdaq]: Anthropic's blockbuster IPO roadshow attracts immense institutional demand, valuing the AI giant up to $1.4 trillion amid broader market scrutiny | Core Background: Anthropic kicked off its roadshow after initially retracting IPO terms sent to banks by mistake, highlighting massive venture capital and public market appetite for AI infrastructure plays.",
+            "Uncertainties": "Whether mega-cap tech IPO valuations are sustainable or represent a speculative peak that could distort broader market liquidity.",
+            "Macro_Context": "Venture and tech liquidity inflows into multi-trillion-dollar AI entities drive risk-on sentiment, competing with safe-haven assets for institutional capital allocation.",
+            "Bull_Case": "Massive capital raisings by AI leaders inject liquidity into financial markets, increasing asset inflation hedges and supporting gold as a monetary anchor.",
+            "Bear_Case": "Mega-IPO exuberance draws liquidity directly out of safe-haven assets and traditional commodities into speculative equity growth sectors.",
+            "Historical_Calibration": "Fed, Rates & Macro category with Fresh ATR-Ratio (0.35x) and against USD headwind yields a historical win rate of 66.1% (Avg DD: -$17.1).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Price action remains range-bound as equity-specific IPO catalysts balance against broader macro uncertainties.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-05 19:27 UTC | Last Update: 2026-11-12 09:42 UTC",
+        "original_date": "2026-11-05 19:27",
+        "_timestamp": 1794476560.0,
+        "articles": [
+            {
+                "title": "AI demand isn't going anywhere, but volatility lies ahead",
+                "link": "https://finance.yahoo.com/video/ai-demand-isnt-going-anywhere-but-volatility-lies-ahead-194213515.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:42",
+                "description": "Host and \"The Buy Side\" author Turney Duff and his panel of experts weigh in on the effect of the blue wave following the midterm election results.Today's panel includes Hennion & Walsh CIO Kevin Mahn, Neostellar Principal Willy Lee, Grenadilla Advisory Founder and CEO Anna Rathbun, and Futurum Chief Market Strategist Shay Boloor.",
+                "_timestamp": 1793907733.0
+            },
+            {
+                "title": "The AI Trade Selloff Is Crushing Industrial Stocks. What Caterpillar’s Valuation Tells Us.",
+                "link": "https://finance.yahoo.com/m/a69385ba-7bed-307d-82ea-55b8e8f0fb7a/the-ai-trade-selloff-is.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:27",
+                "description": "The market clearly believes that a Democratic Congress means less AI spending. We ask two very hard questions. Will you like our answers?",
+                "_timestamp": 1793906820.0
+            },
+            {
+                "title": "Jim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash",
+                "link": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-sell-off.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 23:17",
+                "description": "Cramer warned that the sell-off in AI stocks likely has further to run.",
+                "_timestamp": 1793920671.0
+            },
+            {
+                "title": "Jim Cramer explains why no AI stock seems safe from the market carnage",
+                "link": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-data-center-uncertainty.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-05 23:25",
+                "description": "CNBC’s Jim Cramer said AI stocks are becoming increasingly difficult to value.",
+                "_timestamp": 1793921104.0
+            },
+            {
+                "title": "AI Rally Cools — And Takes Average U.S. Stock Fund Down With It",
+                "link": "https://finance.yahoo.com/m/b354e7e6-35a5-392d-80c1-03c84d67cc1e/ai-rally-cools-%E2%80%94-and-takes.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-06 12:00",
+                "description": "With the AI trade in the stock market coming under pressure, fund gains in October tilted toward dividend-paying stocks.",
+                "_timestamp": 1793966431.0
+            },
+            {
+                "title": "Stocks lost $2 trillion. The market is wrong about AI",
+                "link": "https://finance.yahoo.com/video/stocks-lost-2-trillion-market-120000040.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 12:00",
+                "description": "The stock market lost $2 trillion in 40 minutes, and AI stocks took the worst of it, with Intel down more than half since October and AMD off 17% in a day. Host Ejaaz Ahamadeen breaks down why it happened and why he thinks the market is wrong, from GPU rental prices up 106% to the CPU boom and Anthropic's IPO valuation.",
+                "_timestamp": 1793966400.0
+            },
+            {
+                "title": "AI Rally Cools — And Takes Average U.S. Stock Fund Down With It",
+                "link": "https://finance.yahoo.com/m/b354e7e6-35a5-392d-80c1-03c84d67cc1e/ai-rally-cools-%E2%80%94-and-takes.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 12:00",
+                "description": "With the AI trade in the stock market coming under pressure, fund gains in October tilted toward dividend-paying stocks.",
+                "_timestamp": 1793966431.0
+            },
+            {
+                "title": "Let's dismiss the multi-trillion AI sell-off and look at demand",
+                "link": "https://finance.yahoo.com/video/lets-dismiss-the-multi-trillion-ai-sell-off-and-look-at-demand-162233407.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 16:22",
+                "description": "Host Ejaaz Ahamadee discusses the multi-trillion-dollar market wipeout and how it seems exaggerated, given accelerating AI demand and some \"Magnificent Seven\" stocks rebounding.",
+                "_timestamp": 1793982153.0
+            },
+            {
+                "title": "The AI Crash Broke the Market.  Here Are 3 Things That Decide What’s Next.",
+                "link": "https://finance.yahoo.com/m/ca4c3ede-280b-3770-8c3a-3472b5489769/the-ai-crash-broke-the.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 19:57",
+                "description": "The market hates empty spaces. But there are plenty of open calendar pages coming up. And that puts the year-end rally back in focus.",
+                "_timestamp": 1793995020.0
+            },
+            {
+                "title": "5 Latest Jim Cramer Stock Picks on Twitter and Mad Money",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/5-latest-jim-cramer-stock-211011014.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 21:10",
+                "description": "Markets are trembling amid the latest AI stock sell-off, which has sent shares of major AI players deep into the red. But CNBC’s Jim Cramer believes the downturn is not another dot-com crash. Cramer warned that AI stocks could fall further, particularly semiconductor companies whose shares surged during the AI boom. However, he argued that […]",
+                "_timestamp": 1793999411.0
+            },
+            {
+                "title": "Cramer’s week ahead: AI data center stocks face another hurdle and so does the Fed",
+                "link": "https://www.cnbc.com/2026/11/06/cramer-coreweave-nebius-earnings.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-06 23:13",
+                "description": "CoreWeave and Nebius earnings, alongside key inflation reports that could shape the Fed's next interest rate decision, are the focus.",
+                "_timestamp": 1794006790.0
+            },
+            {
+                "title": "If I Could Buy and Hold Only 1 Artificial Intelligence (AI) Stock Through a Democratic Congress, It Would Be This One",
+                "link": "https://www.fool.com/investing/2026/11/06/if-i-could-buy-and-hold-only-1-artificial-intellig/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 23:11",
+                "description": "Artificial intelligence (AI) stocks are plunging following the results of the midterm elections.",
+                "_timestamp": 1794006704.0
+            },
+            {
+                "title": "Jim Cramer Says the AI Sell-Off “Is Not Like 2000.” Here’s His Case",
+                "link": "https://247wallst.com/investing/2026/11/06/jim-cramer-says-the-ai-sell-off-is-not-like-2000-heres-his-case/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 00:09",
+                "description": "Data center stocks are tumbling and the Nasdaq has slipped into correction, yet Jim Cramer insists this is no repeat of the dot-com crash. He sees one real threat hiding in the debt, and a few warning signs could prove him wrong.",
+                "_timestamp": 1794010150.0
+            },
+            {
+                "title": "3 Great AI Stocks To Own In November 2026",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-great-ai-stocks-own-101511863.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 10:15",
+                "description": "A strong US jobs report on 8 October showed 165,000 new roles added and unemployment down, which reinforced the idea that the economy still has solid momentum behind it. In that context, companies expected to grow earnings quickly while keeping their finances in decent shape can look especially interesting. This article walks through three such high potential US stocks and explains why they feature on this growth focused shortlist. The three stoc",
+                "_timestamp": 1794046511.0
+            },
+            {
+                "title": "Wall Street May Have Lost $2.5 Trillion, but This 30% Warning Could Be an Even Bigger Problem for AI Stocks",
+                "link": "https://247wallst.com/investing/2026/11/07/wall-street-may-have-lost-2-5-trillion-but-this-30-warning-could-be-an-even-bigger-problem-for-ai-stocks/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 15:34",
+                "description": "NVIDIA has locked in billions in chip and memory commitments, but some of the buildings meant to house them exist only on paper. A new warning shifts the AI debate from demand to delivery, and the market is already picking winners.",
+                "_timestamp": 1794065649.0
+            },
+            {
+                "title": "Fed Chair Kevin Warsh Just Issued a 6-Word Warning That Could Spell Disaster for AI Stocks",
+                "link": "https://247wallst.com/investing/2026/11/07/fed-chair-kevin-warsh-just-issued-a-6-word-warning-that-could-spell-disaster-for-ai-stocks/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 15:26",
+                "description": "Two AI stocks lost nearly half their value in a month while Microsoft barely moved. The split has less to do with chips than with one question every data center builder now has to answer, and rising rates are forcing the issue.",
+                "_timestamp": 1794065192.0
+            },
+            {
+                "title": "3 Artificial Intelligence (AI) Stocks I’d Buy Without Hesitation in a Market Crash",
+                "link": "https://www.fool.com/investing/2026/11/07/3-artificial-intelligence-ai-stocks-i-d-buy-without-hesitation-in-a-market-crash/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 14:50",
+                "description": "These companies have promising prospects. They would be even more attractive on the dip.",
+                "_timestamp": 1794063002.0
+            },
+            {
+                "title": "1 AI Stock I'll Buy Hand Over Fist If the Market Crashes",
+                "link": "https://www.fool.com/investing/2026/11/07/1-ai-stock-ill-buy-hand-over-fist-if-market-crash/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 16:20",
+                "description": "Most investors haven't realized how much this company is exposed to artificial intelligence.",
+                "_timestamp": 1794068400.0
+            },
+            {
+                "title": "AI stock selloff drives investors to China, India, and overlooked Asian sectors",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/ai-stock-selloff-drives-investors-013045557.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-08 01:30",
+                "description": "Investing.com -- Investors are shifting toward Chinese and Indian equities and less technology-dependent Asian sectors as a selloff in artificial intelligence stocks raises concerns about valuations and returns on massive infrastructure spending.",
+                "_timestamp": 1794101445.0
+            },
+            {
+                "title": "AI stock selloff drives investors to China, India, and overlooked Asian sectors",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/ai-stock-selloff-drives-investors-013045557.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 01:30",
+                "description": "Investing.com -- Investors are shifting toward Chinese and Indian equities and less technology-dependent Asian sectors as a selloff in artificial intelligence stocks raises concerns about valuations and returns on massive infrastructure spending.",
+                "_timestamp": 1794101445.0
+            },
+            {
+                "title": "EXCLUSIVE: Democrats Took Congress. But AI's Spending Binge Isn't Going Anywhere, This CEO Says",
+                "link": "https://finance.yahoo.com/technology/ai/articles/exclusive-democrats-took-congress-ais-114506653.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 11:45",
+                "description": "Democrats’ takeover of Congress puts a new political spotlight on the cost of America’s AI buildout, but it is unlikely to persuade Microsoft Corp., Amazon.com Inc. or Alphabet Inc. to step away from the spending race. The companies may become...",
+                "_timestamp": 1794138306.0
+            },
+            {
+                "title": "The market bloodbath just exposed Wall Street’s true fears about U.S. debt, top economist warns",
+                "link": "https://finance.yahoo.com/economy/policy/articles/market-bloodbath-just-exposed-wall-204604891.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-08 20:46",
+                "description": "\"They’re up because of mounting fiscal stress, not because of AI.\"",
+                "_timestamp": 1794170764.0
+            },
+            {
+                "title": "Futurum's Newman Believes AI Trade Isn't Over",
+                "link": "https://finance.yahoo.com/video/futurums-newman-believes-ai-trade-051638116.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 05:16",
+                "description": "The Futurum Group CEO Daniel Newman says the market is trading artificial intelligence, or AI, like it's over, but he doesn't think it is. He speaks with Haslinda Amin on \"Insight with Haslinda Amin.\"",
+                "_timestamp": 1794201398.0
+            },
+            {
+                "title": "Jim Cramer is ‘furious’ as Intel crashes nearly 30% — but Uncle Sam is the top shareholder. What it means for taxpayers",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-furious-intel-crashes-124500450.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-09 12:45",
+                "description": "Major investors like Jim Cramer aren’t the only ones feeling the pain after a disappointing Q3 report. Every American has some Intel exposure.",
+                "_timestamp": 1794228300.0
+            },
+            {
+                "title": "Jim Cramer is ‘furious’ as Intel crashes nearly 30% — but Uncle Sam is the top shareholder. What it means for taxpayers",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-furious-intel-crashes-124500450.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 12:45",
+                "description": "Major investors like Jim Cramer aren’t the only ones feeling the pain after a disappointing Q3 report. Every American has some Intel exposure.",
+                "_timestamp": 1794228300.0
+            },
+            {
+                "title": "As AI trade falters, Goldman Sachs says this lagging region is now positioned to outperform",
+                "link": "https://www.marketwatch.com/story/as-ai-trade-falters-goldman-sachs-says-this-lagging-region-is-now-positioned-to-outperform-589805c6?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-09 14:16",
+                "description": "Precisely because it has long been hamstrung by rigid labor markets and overregulation, European stocks may paradoxically be bigger beneficiaries of the AI revolution in terms of enhanced productivity and cost-cutting than its U.S. counterparts",
+                "_timestamp": 1794233760.0
+            },
+            {
+                "title": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
+                "link": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-09 18:14",
+                "description": "Goldman CEO David Solomon says investor appetite for AI infrastructure remains strong despite a reset in AI stocks and political uncertainty around data centers.",
+                "_timestamp": 1794248087.0
+            },
+            {
+                "title": "Jim Cramer says Anthropic's IPO could make or break the AI trade. Here's why",
+                "link": "https://www.cnbc.com/2026/11/09/anthropic-ipo-ai-trade-jim-cramer.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-09 23:30",
+                "description": "Anthropic's initial public offering could be a crucial test of investor confidence in the AI trade, CNBC's Jim Cramer said.",
+                "_timestamp": 1794267015.0
+            },
+            {
+                "title": "The AI Trade Looks Like It's Falling Apart. AMD's Earnings Delivered a Reality Check.",
+                "link": "https://www.fool.com/investing/2026/11/09/the-ai-trade-looks-like-its-falling-apart-amds-ear/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 01:20",
+                "description": "AMD is still growing and is optimistic about the fourth quarter, despite recent market noise about the AI trade.",
+                "_timestamp": 1794273600.0
+            },
+            {
+                "title": "Is Wall Street Turning on AI?",
+                "link": "https://www.fool.com/investing/2026/11/09/is-wall-street-turning-on-ai/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 01:53",
+                "description": "Alphabet’s sharp sell-off raises a big question: Are investors more concerned about AI spending than AI growth?",
+                "_timestamp": 1794275581.0
+            },
+            {
+                "title": "As Democrats Take Over Congress, Is Palantir Stock at Risk?",
+                "link": "https://www.fool.com/investing/2026/11/10/as-democrats-take-over-congress-is-palantir-stock-at-risk/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 09:42",
+                "description": "The AI data analytics stock is now trading 19% below its October high.",
+                "_timestamp": 1794303722.0
+            },
+            {
+                "title": "The Odds of an AI Bubble-Bursting Event Appear to Be Sharply Rising",
+                "link": "https://www.fool.com/investing/2026/11/10/the-odds-of-an-ai-bubble-bursting-event-appear-to-be-sharply-rising/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 09:26",
+                "description": "Wall Street’s artificial intelligence (AI)-driven bull market may be running on borrowed time.",
+                "_timestamp": 1794302762.0
+            },
+            {
+                "title": "Fed’s Goolsbee Says AI Data Centers Look Like ‘Old-Fashioned Overheating’",
+                "link": "https://247wallst.com/investing/2026/11/10/feds-goolsbee-says-ai-data-centers-look-like-old-fashioned-overheating/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 15:38",
+                "description": "Stocks surged while short-term bonds quietly flashed the opposite signal. One Fed official's warning about AI spending suggests the market may be reading the same data in two very different ways, and retirement portfolios sit in the middle.",
+                "_timestamp": 1794325122.0
+            },
+            {
+                "title": "3 AI Stocks to Buy Now That Midterms Are Over",
+                "link": "https://www.fool.com/investing/2026/11/10/3-ai-stocks-to-buy-now-that-midterms-are-over/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 21:11",
+                "description": "Democrats gained ground in the midterms, but it's not looking as bad for the AI trade as many people feared. These three stocks stand to rally.",
+                "_timestamp": 1794345060.0
+            },
+            {
+                "title": "The Stock Market Just Got Bad News on Inflation.",
+                "link": "https://www.fool.com/investing/2026/11/10/the-stock-market-just-got-bad-news-on-inflation/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:25",
+                "description": "October inflation cooled, but not as much as Wall Street expected, and now investors have to take a half-point Fed hike in December more seriously. That could be a problem for an AI trade that already looks wobbly.",
+                "_timestamp": 1794349502.0
+            },
+            {
+                "title": "Tech Sell-Off: Two AI Stocks That Are Screaming Buys Right Now",
+                "link": "https://www.fool.com/investing/2026/11/11/tech-sell-off-two-ai-stocks-that-are-screaming-buys-right-now/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 09:22",
+                "description": "These stocks look dirt cheap.",
+                "_timestamp": 1794388922.0
+            },
+            {
+                "title": "Uh-Oh! 2 Critical Inflation Measures Are Heading the Wrong Way in November, and the Stock Market May Pay the Price.",
+                "link": "https://www.fool.com/investing/2026/11/11/uh-oh-2-critical-inflation-measures-heading-wrong-way-in-november-stock-market-pay-the-price/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 09:26",
+                "description": "Trumpflation may tip Wall Street's artificial intelligence (AI)-driven bull market over the edge.",
+                "_timestamp": 1794389162.0
+            },
+            {
+                "title": "2 Safe AI Stocks to Buy in the Next Market Crash. And No, It's Not Palantir.",
+                "link": "https://www.fool.com/investing/2026/11/11/safe-ai-stocks-buy-next-market-crash-amzn-goog/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 09:46",
+                "description": "The next market downturn could offer a chance to own established technology leaders at more reasonable prices. The key is knowing what to look for before the opportunity arrives.",
+                "_timestamp": 1794390360.0
+            },
+            {
+                "title": "AI boom or bubble?",
+                "link": "https://www.aljazeera.com/video/counting-the-cost/2026/11/11/ai-boom-or-bubble?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-11 10:31",
+                "description": "A tech sell-off has raised questions about AI spending and the risks to jobs and growth across the global economy.",
+                "_timestamp": 1794393084.0
+            },
+            {
+                "title": "Prediction: This Could Be the Biggest AI Stock You’re Not Talking About",
+                "link": "https://247wallst.com/investing/2026/11/11/prediction-this-could-be-the-biggest-ai-stock-youre-not-talking-about/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 16:03",
+                "description": "Micron just shed 30% in a single week, yet it posted record revenue and a gross margin of 87%. So why does the market price it like a fading cyclical, and what would it take to prove the sell-off wrong?",
+                "_timestamp": 1794412992.0
+            },
+            {
+                "title": "Fed’s Bowman Says AI Now Drives About a Quarter of America’s Excess Inflation",
+                "link": "https://247wallst.com/investing/2026/11/11/feds-bowman-says-ai-now-drives-about-a-quarter-of-americas-excess-inflation/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 21:18",
+                "description": "The chips fueling the AI boom now show up on the Fed's inflation ledger, and rate hikes can't touch them. One stock collects the higher prices while another pays them, and a December decision could split their fortunes.",
+                "_timestamp": 1794431918.0
+            },
+            {
+                "title": "Buy, Sell Or Hold AMD Stock At $553?",
+                "link": "https://www.trefis.com/stock/amd/articles/624203/buy-sell-or-hold-amd-stock-at-553/2026-11-12?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:42",
+                "description": "More on the AI trade: our AI storyline page collects our pieces on AI stocks.",
+                "_timestamp": 1794476560.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-12 09:42 UTC (approx. 0.4 hours ago)",
+            "Facts": "[Update 2026-11-12 09:42 UTC via Yahoo Finance Nasdaq]: Fed Governor Bowman highlights that artificial intelligence infrastructure and chips now drive approximately 25% of America's excess inflation | Core Background: Ongoing debates regarding the AI boom versus bubble center on structural cost pressures, as specialized semiconductor components and high-energy data centers embed inflation directly into the Fed's ledger beyond the reach of conventional rate hikes.",
+            "Uncertainties": "How the Federal Reserve will formulate monetary policy when structural supply-side inflation is driven by technology capital expenditures rather than consumer demand.",
+            "Macro_Context": "With structural inflation tied to AI capex, real interest rate dynamics shift, bolstering gold's fundamental appeal as an ultimate inflation and currency debasement hedge.",
+            "Bull_Case": "Recognition that traditional monetary rate hikes cannot neutralize structural tech-driven inflation erodes confidence in central bank efficacy, driving long-term capital into gold bullion.",
+            "Bear_Case": "If structural inflation forces the Fed to maintain tight monetary policy longer than expected, elevated nominal and real yields can create strong headwinds for non-yielding bullion.",
+            "Historical_Calibration": "Fed, Rates & Macro category with Fresh ATR-Ratio (0.35x) and against USD headwind yields a historical win rate of 66.1% (Avg DD: -$17.1).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Weeks/Months",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 62,
+            "Past_Price_Action_Cause": "Persistent lower-wick dip buying and active ask-side absorption reflect institutional accumulation of gold against structural inflation risks.",
+            "Orderflow_Price_Target": "3989.85"
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 19:31 UTC | Last Update: 2026-11-12 09:42 UTC",
+        "original_date": "2026-11-10 19:31",
+        "_timestamp": 1794476560.0,
+        "articles": [
+            {
+                "title": "Microsoft Stock Falls On Anthropic Challenge To Office Software",
+                "link": "https://finance.yahoo.com/m/f591b7f8-013b-367b-b8b5-72d9ef7903d2/microsoft-stock-falls-on.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 19:31",
+                "description": "Microsoft stock fell Tuesday after AI bigwig Anthropic announced a set of tools that could rival Microsoft's Office suite.",
+                "_timestamp": 1794339098.0
+            },
+            {
+                "title": "Microsoft Corporation (MSFT) Is Pouring Billions Into AI: Could Massive Spending Weigh on Future Returns?",
+                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-corporation-msft-pouring-billions-212222905.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 21:22",
+                "description": "Moon Capital Management an investment management company, recently released its Q3 2026 investor letter. A copy of the letter can be downloaded here. The letter reported that its equity portfolio gained approximately 4% during the first nine months of 2026, compared with an approximately 12% year-to-date return for the S&amp;P 500. The firm noted that […]",
+                "_timestamp": 1794345742.0
+            },
+            {
+                "title": "Microsoft Stocks Decline 2.5% as $1 Billion Anthropic Stake Tests Partner-Rival Balance",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stocks-decline-2-5-165450997.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 16:54",
+                "description": "Microsoft joins Anthropic's IPO placement while Azure collects fees on Claude sales under joint go-to-market arrangements.",
+                "_timestamp": 1794416090.0
+            },
+            {
+                "title": "Nvidia Stock At $174: Could It Repeat Microsoft's Lost Decade?",
+                "link": "https://www.trefis.com/stock/nvda/articles/623887/nvidia-stock-at-174-could-it-repeat-microsoft-s-lost-decade/2026-11-12?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:42",
+                "description": "Part 3 of our Microsoft and AI series. Start with part 1: How Microsoft Missed $2 Trillion In AI.",
+                "_timestamp": 1794476560.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-12 09:42 UTC (approx. 0.4 hours ago)",
+            "Facts": "[Update 2026-11-12 09:42 UTC via Yahoo Finance Nasdaq]: Microsoft stock declines 2.5% as its $1 billion stake and partnership integration with Anthropic tests the delicate partner-rival balance in enterprise software | Core Background: Microsoft faces competitive pressures as AI startup Anthropic rolls out tools rivalling Microsoft's Office suite, while Azure simultaneously collects cloud hosting revenue from Claude sales under joint go-to-market arrangements.",
+            "Uncertainties": "Whether competitive disruption by AI upstarts will erode Microsoft's profit margins faster than cloud infrastructure revenues can compensate.",
+            "Macro_Context": "Mega-cap tech valuation adjustments ripple across equity indices, occasionally triggering safe-haven portfolio reallocations into spot gold and perpetual futures.",
+            "Bull_Case": "Intensifying competition and margin compression among tech monopolists spur sector-wide risk aversion, increasing safe-haven inflows into precious metals.",
+            "Bear_Case": "Tech sector consolidation remains orderly, with capital merely rotating among AI ecosystem participants without inciting broad macroeconomic liquidations.",
+            "Historical_Calibration": "Tech, AI & Equities category with Fresh ATR-Ratio (0.35x) and against USD headwind yields a historical win rate of 66.1% (Avg DD: -$17.1).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 56,
+            "Past_Price_Action_Cause": "Aggressive taker buy ratio (62.5%) and positive OKX perpetual basis spread (+$9.05) demonstrate resilient leveraged long positioning amidst tech equities volatility.",
+            "Orderflow_Price_Target": "3989.85"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 6.72
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 09:38 UTC",
+        "original_date": "2026-11-12 09:38",
+        "_timestamp": 1794476280.0,
+        "articles": [
+            {
+                "title": "From the UK to the Gulf, are US overseas bases becoming liabilities?",
+                "link": "https://www.aljazeera.com/news-analysis/2026/11/12/from-the-uk-to-the-gulf-are-us-overseas-bases-becoming-liabilities?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 09:38",
+                "description": "For decades, these bases allowed the US to wage faraway wars. Now, Iran has changed that calculation.",
+                "_timestamp": 1794476280.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "First reported: 2026-11-12 09:38 UTC (~0.5h ago)",
+            "Facts": "[Al Jazeera English] From the UK to the Gulf, are US overseas bases becoming liabilities? - For decades, these bases allowed the US to wage faraway wars. Now, Iran has changed that calculation.",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.38%, Nasdaq-100 +0.00%, Brent Oil +0.00% | OANDA Sentiment: 66.0% Long / 34.0% Short | 24/7 OKX XAUUSDT.P: $3953.0 (Spread: $+9.05) | Aggressive Taker Flow: 62.5% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3989.85.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3931.17. 4h-ATR ratio is 0.35x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.5h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-20.36 (0.35x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "3989.85"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 19.26
     },
     {
         "main_date": "First Reported: 2026-11-08 19:54 UTC | Last Update: 2026-11-12 09:33 UTC",
@@ -6193,297 +7339,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-08 23:30 UTC | Last Update: 2026-11-12 07:13 UTC",
-        "original_date": "2026-11-08 23:30",
-        "_timestamp": 1794467587.0,
-        "articles": [
-            {
-                "title": "Nvidia Stock Faces New Pressure as Board Investigates Huang’s Links to Alleged Spy",
-                "link": "https://finance.yahoo.com/m/09a7b85b-f39c-346a-88bc-f818668a56a9/nvidia-stock-faces-new.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 23:30",
-                "description": "The board said it has no reason to believe that either national security or Nvidia secrets were compromised.",
-                "_timestamp": 1794180600.0
-            },
-            {
-                "title": "Nvidia Slips 3% Overnight as Board Probes Jensen Huang: “No Reason to Believe” Secrets Were Compromised",
-                "link": "https://www.tikr.com/blog/nvidia-slips-3-overnight-as-board-probes-jensen-huang-no-reason-to-believe-secrets-were-compromised?ref=yahoofinance&tlnk=yf-261109-9rm87vv2&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 05:21",
-                "description": "Key TakeawaysNvidia stock traded about 3. 4% lower overnight, near $180, after its board opened an independent probe into reports that CEO Jensen Huang was the target of a foreign intelligence effort.",
-                "_timestamp": 1794201685.0
-            },
-            {
-                "title": "Stock Market Today: Dow Rallies As Oil Prices Slide; Nvidia Stock Dives On CEO Huang Probe (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 13:04",
-                "description": "The Dow Jones index rallies 500 points Monday as oil prices drop. Nvidia stock dives on the probe into CEO Jensen Huang.",
-                "_timestamp": 1794229497.0
-            },
-            {
-                "title": "Nvidia stock sinks 5% as chipmaker investigates CEO Jensen Huang's relationship with alleged Chinese spy",
-                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 13:03",
-                "description": "Nvidia sank 5% on Monday, while the rest of the chip sector mostly rose.",
-                "_timestamp": 1794229426.0
-            },
-            {
-                "title": "Stock Market Today: Dow Rallies As Oil Prices Slide; Nvidia Stock Dives On CEO Huang Probe (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 13:04",
-                "description": "The Dow Jones index rallies 500 points Monday as oil prices drop. Nvidia stock dives on the probe into CEO Jensen Huang.",
-                "_timestamp": 1794229497.0
-            },
-            {
-                "title": "Nvidia Stock Drops On Spy Scandal, CEO Probe",
-                "link": "https://finance.yahoo.com/m/2c1c8bc5-818d-357d-a3f9-2b7a4a511e1f/nvidia-stock-drops-on-spy.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 14:06",
-                "description": "Nvidia stock fell Monday as the AI chipmaker deals with an embarrassing \"honeypot\" scandal involving Chief Executive Jensen Huang.",
-                "_timestamp": 1794233201.0
-            },
-            {
-                "title": "Stock Market Today: Nvidia Pressures Indexes to Maintain Rebound",
-                "link": "https://247wallst.com/investing/2026/11/09/stock-market-today-nvidia-pressures-indexes-to-maintain-rebound/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 14:28",
-                "description": "Cheaper oil is handing Wall Street a Monday bounce, but a boardroom shock at one AI giant and stalled peace talks could undo it fast. Find out which corner of the market is quietly pulling ahead.",
-                "_timestamp": 1794234498.0
-            },
-            {
-                "title": "Why Nvidia Stock Was Falling Today",
-                "link": "https://www.fool.com/investing/2026/11/09/why-nvidia-stock-was-falling-today/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 16:43",
-                "description": "Nvidia CEO Jensen Huang is in hot water after admitting an affair with a suspected Chinese spy.",
-                "_timestamp": 1794242603.0
-            },
-            {
-                "title": "Top Midday Stories: Nvidia Faces China Spy Allegations; NRG to Sell 6 natural Gas Generation Assets to LS Power for $4 Billion",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-stories-nvidia-faces-164201985.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 16:42",
-                "description": "All three major US stock indexes were up over 1.5% on Monday, with the Nasdaq Composite trading abov",
-                "_timestamp": 1794242521.0
-            },
-            {
-                "title": "Nvidia shares slump amid investigation into CEO Jensen Huang",
-                "link": "https://www.aljazeera.com/economy/2026/11/9/nvidia-shares-slump-amid-investigation-into-ceo-jensen-huang?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-09 16:00",
-                "description": "Huang admits infidelity, denies compromising Nvidia security as China spy inquiry shakes $4.5 trillion AI firm.",
-                "_timestamp": 1794240010.0
-            },
-            {
-                "title": "U.S. Stocks Leap Despite Nvidia Slide",
-                "link": "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 19:29",
-                "description": "U.S. stocks jumped, even as Nvidia’s shares sank after the company’s board launched an investigation into CEO Jensen Huang.",
-                "_timestamp": 1794252540.0
-            },
-            {
-                "title": "Nvidia stock slumps amid board investigation into CEO Jensen Huang",
-                "link": "https://www.cbsnews.com/news/nvidia-jensen-huang-stock-board-investigation-spy/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 19:46",
-                "description": "Investors are questioning whether Huang's future as Nvidia's CEO may be at risk amid allegations that he was targeted in a Chinese intelligence operation.",
-                "_timestamp": 1794253580.0
-            },
-            {
-                "title": "Jensen Huang Might Be the Biggest Wild Card for Nvidia Stock. Here's What to Watch During Earnings on Nov. 17",
-                "link": "https://www.fool.com/investing/2026/11/09/jensen-huang-might-be-the-biggest-wild-card-for-nvidia-stock-here-s-what-to-watch-during-earnings-on-nov-17/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 19:29",
-                "description": "Nvidia's business is still booming, but the investigation tied to its CEO adds a risk that no one can yet price in. Here are the four things to watch next week.",
-                "_timestamp": 1794252575.0
-            },
-            {
-                "title": "U.S. Stocks Leap Despite Nvidia Slide",
-                "link": "https://www.wsj.com/finance/stocks/stock-futures-treasurys-steady-but-nvidia-slides-premarket-on-huang-probe-31deea55?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 19:29",
-                "description": "U.S. stocks jumped, even as Nvidia’s shares sank after the company’s board launched an investigation into CEO Jensen Huang.",
-                "_timestamp": 1794252540.0
-            },
-            {
-                "title": "Stock Market Today: Dow Pops, Multiple Stocks Clear Entries; Jensen Huang Details Emerge (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/6fc3228f-8806-33c0-9e3b-4402850ebacd/stock-market-today%3A-dow-pops%2C.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 20:46",
-                "description": "The Dow Jones index rallied Monday as Nvidia dived on a probe into CEO Jensen Huang. Multiple stocks cleared buy points.",
-                "_timestamp": 1794257180.0
-            },
-            {
-                "title": "Nvidia stock drops 3%, extending decline on report alleged Chinese spy linked to Nvidia CEO aided $7.5 billion in China chip shipments",
-                "link": "https://finance.yahoo.com/markets/article/nvidia-stock-drops-3-extending-decline-on-report-alleged-chinese-spy-linked-to-nvidia-ceo-aided-75-billion-in-china-chip-shipments-152654028.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:24",
-                "description": "Nvidia sank on Tuesday, while the rest of the chip sector held up.",
-                "_timestamp": 1794324261.0
-            },
-            {
-                "title": "Why analysts aren't trying to ruffle Nvidia's feathers amid CEO scandal",
-                "link": "https://finance.yahoo.com/video/why-analysts-arent-trying-to-ruffle-nvidias-feathers-amid-ceo-scandal-151507913.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:15",
-                "description": "Yahoo Finance Executive Editor Brian Sozzi assesses why Wall Street analysts have been largely silent on Nvidia (NVDA) amid the scandal involving CEO Jensen Huang and why being crtitical could cost them access to management.",
-                "_timestamp": 1794323707.0
-            },
-            {
-                "title": "NVIDIA Stocks Slide 4.43% as Report Alleges $7.5 Billion in Chips Reached China",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stocks-slide-4-43-175809767.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 17:58",
-                "description": "The Information says a network tied to an alleged Beijing intelligence asset obtained roughly 240,000 restricted GPUs while the board's review continues.",
-                "_timestamp": 1794333489.0
-            },
-            {
-                "title": "Nvidia Is Down 30% From Its High. History Says This Is What Happens Next.",
-                "link": "https://www.fool.com/investing/2026/11/10/nvidia-is-down-30-from-its-high-history-says-this/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 18:15",
-                "description": "The chipmaker's stock could be a bargain buy today.",
-                "_timestamp": 1794334500.0
-            },
-            {
-                "title": "Prediction: Nov. 18 Will Be a Huge Day for the Stock Market",
-                "link": "https://www.fool.com/investing/2026/11/10/prediction-nov-18-will-be-a-huge-day-for-the-stock-market/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 20:20",
-                "description": "Nvidia CEO Jensen Huang has been asked to brief Congress about his ties to a business executive from Singapore on Nov. 18.",
-                "_timestamp": 1794342002.0
-            },
-            {
-                "title": "Nvidia could soon face tougher export rules, making it harder to sell chips to China after scandal",
-                "link": "https://www.marketwatch.com/story/nvidia-could-soon-face-tougher-export-rules-making-it-harder-to-sell-chips-to-china-69c88cc8?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-10 20:37",
-                "description": "“There is growing momentum for these bills in light of the Jensen Huang spy scandal,” one analyst says.",
-                "_timestamp": 1794343020.0
-            },
-            {
-                "title": "Nvidia Stock Hit With Price-Target Cuts Amid Spy Scandal",
-                "link": "https://finance.yahoo.com/m/45cd5aac-d312-37af-8964-003c24a22c85/nvidia-stock-hit-with.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 21:24",
-                "description": "Nvidia stock continued to fall on Tuesday in the wake of an affair involving CEO Jensen Huang and an alleged Chinese \"honeypot\" spy.",
-                "_timestamp": 1794345867.0
-            },
-            {
-                "title": "Stock Market Today, Nov. 10: Nvidia Stock Plunges 5.5% as CEO Scandal Overshadows Its Upcoming Earnings Report",
-                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-nvidia-stock-plunges-5-5-as-ceo-scandal-overshadows-its-upcoming-earnings-report/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:35",
-                "description": "Nvidia shares extended their sell-off as an investigation involving CEO Jensen Huang raised fresh concerns about corporate governance, leadership uncertainty, and the AI chipmaker's future.",
-                "_timestamp": 1794350102.0
-            },
-            {
-                "title": "Nvidia shares rebound 4% as Huang faces scrutiny ahead of earnings",
-                "link": "https://www.cnbc.com/2026/11/11/nvidia-stock-jensen-huang-affair-china.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-11 10:03",
-                "description": "Investors are assessing whether CEO Jensen Huang's affair will have spillover effects on Nvidia's business.",
-                "_timestamp": 1794391409.0
-            },
-            {
-                "title": "Nvidia Selloff Puts China Exposed US Chip Stocks Back In Focus",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-selloff-puts-china-exposed-130900790.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 13:09",
-                "description": "A 9.5% two-day slide in Nvidia that wiped about US$430b off its market value has turned a hot AI favorite into a stress test for every large-cap chip stock tied to China. Political scrutiny of Jensen Huang, fresh export-control proposals and a board investigation have pulled risk into sharp focus. This article unpacks how that shock ripples into three U.S. semiconductor stocks exposed to the same headlines and where the news flow currently looks ",
-                "_timestamp": 1794402540.0
-            },
-            {
-                "title": "Nvidia is Now Down More Than 25% In 30 Days: This Wall Street Desk Predicts 205% Returns",
-                "link": "https://247wallst.com/investing/2026/11/11/nvidia-is-now-down-more-than-25-in-30-days-this-wall-street-desk-predicts-205-returns/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 15:45",
-                "description": "NVIDIA posted a record quarter and still lost a quarter of its value in a month, while earnings estimates kept climbing. A swelling balance sheet and one looming report may explain why investors are bailing.",
-                "_timestamp": 1794411931.0
-            },
-            {
-                "title": "Nvidia, CoreWeave, Nebius, Teradyne, Riskified, and More Stocks That Explain Today’s Market",
-                "link": "https://finance.yahoo.com/m/37147cf1-aa70-3e70-9d7d-f8d6cb4dcbb8/nvidia%2C-coreweave%2C-nebius%2C.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 18:00",
-                "description": "Nvidia rises following a rebound in shares of AI companies even as Baird calls for Nvidia CEO Jensen Huang to step down.",
-                "_timestamp": 1794420000.0
-            },
-            {
-                "title": "Nvidia shares slip in after-hours trading on fresh allegations of CEO relationship",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-shares-slip-hours-trading-223702826.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 22:37",
-                "description": "Investing.com -- Nvidia shares fell about 3% in after-hours trading Wednesday evening after a new report alleged that chief executive Jensen Huang maintained an extramarital relationship with Kimberly Powell, the company’s vice president of healthcare—a senior executive who reports to him.",
-                "_timestamp": 1794436622.0
-            },
-            {
-                "title": "Nvidia Just Fell 8.3% After Hours on a Report of a Second Jensen Huang Affair. Here’s What 2,000 Shares Have Lost This Week",
-                "link": "https://247wallst.com/investing/2026/11/11/nvidia-just-fell-8-3-after-hours-on-a-report-of-a-second-jensen-huang-affair-heres-what-2000-shares-have-lost-this-week/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 22:37",
-                "description": "Nvidia fell 8.3% after hours Wednesday to $159.37 after The New York Times reported a second Jensen Huang affair, with Nvidia executive Kimberly Powell. A holder with 2,000 shares has lost $54,540 since the November 6 close. Dan Ives says Huang's exit would cut Nvidia's value 25% to 30%; Baird says a new CEO is needed.",
-                "_timestamp": 1794436675.0
-            },
-            {
-                "title": "Nvidia stock drops as board reportedly weighs Jensen Huang’s future",
-                "link": "https://www.cnn.com/2026/11/11/investing/nvidia-stock-jensen-huang?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 00:15",
-                "description": "Nvidia shares dropped sharply in after-hours trading on Wednesday after reports that CEO Jensen Huang had an extramarital relationship with a company executive and that the board is meeting to discuss his future.",
-                "_timestamp": 1794442518.0
-            },
-            {
-                "title": "Nvidia's stock dives as board weighs move to oust Jensen Huang",
-                "link": "https://www.cbsnews.com/news/nvidia-stock-dives-report-board-prepares-oust-jensen-huang/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 00:18",
-                "description": "Nvidia shares fall sharply in after-hours trading as the company's board considers whether to remove Jensen Huang as CEO.",
-                "_timestamp": 1794442705.0
-            },
-            {
-                "title": "Nvidia shares plunge amid reports board to discuss CEO Huang’s future",
-                "link": "https://www.aljazeera.com/economy/2026/11/12/nvidia-shares-plunge-amid-reports-board-to-discuss-ceo-huangs-future?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-12 00:43",
-                "description": "Chip giants stock price falls more than 8 percent amid speculation over co-founder&#039;s future.",
-                "_timestamp": 1794444206.0
-            },
-            {
-                "title": "Asian stocks drop as traders keep eye on Nvidia crisis",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-extend-gains-traders-025559054.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 07:13",
-                "description": "Asian stocks fell Thursday as investors kept a nervous eye on Nvidia whose influential boss Jensen Huang faces a probe into an affair with a woman accused of spying for China.Traders' nerves are being tested by the crisis at Nvidia, with co-founder and CEO Huang facing the boot after he admitted a relationship with Alice Huang, a senior executive at Singapore-based data centre company Megaspeed.",
-                "_timestamp": 1794467587.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 1,
-            "Dominant_Driver": "US Inflation & Fed Rate Path",
-            "Event_Timestamp": "2026-11-12 00:43 UTC (~0.2 hours ago)",
-            "Facts": "[Update 2026-11-12 07:13 UTC via Yahoo Finance Nasdaq]: Asian stocks drop as traders keep eye on Nvidia crisis — Asian stocks fell Thursday as investors kept a nervous eye on Nvidia whose influential boss Jensen Huang faces a probe into an affair with a woman accused of spying for China.Trade | [Update 2026-11-12 00:43 UTC via Al Jazeera English]: Nvidia shares plunge more than 8 percent amid speculation over co-founder's future | Core Background: Cascading headlines concerning executive affairs and alleged national security links triggering severe after-hours stock declines.",
-            "Uncertainties": "The full operational impact on Nvidia's roadmap and supply chain partnerships if leadership changes abruptly.",
-            "Macro_Context": "EUR/USD down -0.64%, US 10Y Bond Price up +0.03%, and Brent Oil up +0.49%. High OKX perpetual basis spread (+0.48%) indicating strong leveraged long participation.",
-            "Bull_Case": "Uncertainty in market-leading megacap tech equities increases systemic risk aversion, channeling capital into XAU/USD safe-haven flows.",
-            "Bear_Case": "Systemic risk-off sentiment triggers broad-based liquidity liquidation across all asset classes, weighing temporarily on precious metals.",
-            "Historical_Calibration": "Fed, Rates & Macro, Fresh (<0.8x ATR), With USD Tailwind -> Historical Win Rate: 74.1% (20/27, Avg DD: -$11.8).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 63,
-            "Past_Price_Action_Cause": "Aggressive taker buying (64.3% OKX buy ratio) is actively lifting prices off lower-wick dip zones.",
-            "Orderflow_Price_Target": "4050.11"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 37.08
-    },
-    {
         "main_date": "First Reported: 2026-11-12 07:11 UTC",
         "original_date": "2026-11-12 07:11",
         "_timestamp": 1794467460.0,
@@ -9340,185 +10195,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-10 02:31 UTC | Last Update: 2026-11-11 22:05 UTC",
-        "original_date": "2026-11-10 02:31",
-        "_timestamp": 1794434703.0,
-        "articles": [
-            {
-                "title": "Dow Jones Soars 1,132 Points As Amazon, Tesla Rally, But Nvidia Dives; CPI Inflation Report Next",
-                "link": "https://finance.yahoo.com/m/db2f6d95-b7a5-3274-8193-c767d2b681c1/dow-jones-soars-1%2C132-points.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 02:31",
-                "description": "Dow Jones futures were in focus after soaring 1,132 points ahead of the CPI inflation report. Amazon and Tesla rallied, but Nvidia dived.",
-                "_timestamp": 1794277908.0
-            },
-            {
-                "title": "Nvidia couldn’t derail the stock market’s rally. Hot inflation might.",
-                "link": "https://www.marketwatch.com/story/nvidia-couldnt-derail-the-stock-markets-rally-hot-inflation-might-8a572024?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-10 12:33",
-                "description": "A Fed official raises the prospect of a half-a-percentage-point rate hike. Plus, fresh valuation focus on Anthropic’s blockbuster IPO.",
-                "_timestamp": 1794313980.0
-            },
-            {
-                "title": "Stock Market Today: Dow Dips On Hot Inflation Data; Nvidia Falls Again, Anthropic Sets IPO Range (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/c7fbd2af-5702-3c77-9aa6-7c6578bb8abb/stock-market-today%3A-dow-dips.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 15:31",
-                "description": "Stock Market Today: The Dow Jones index falls Tuesday on a hot inflation report. Anthropic prices its IPO range. Nvidia sells off.",
-                "_timestamp": 1794324688.0
-            },
-            {
-                "title": "Stock Market Today: Dow Dips On Hot Inflation Data; Nvidia Falls Again, Anthropic Sets IPO Range (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/c7fbd2af-5702-3c77-9aa6-7c6578bb8abb/stock-market-today%3A-dow-dips.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:31",
-                "description": "Stock Market Today: The Dow Jones index falls Tuesday on a hot inflation report. Anthropic prices its IPO range. Nvidia sells off.",
-                "_timestamp": 1794324688.0
-            },
-            {
-                "title": "Stock Market Today, Nov. 10: Wall Street's Rally Hits a Roadblock as Hot Inflation Raises the Stakes for the Fed",
-                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-wall-street-s-rally-hits-a-roadblock-as-hot-inflation-raises-the-stakes-for-the-fed/?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-10 22:50",
-                "description": "Yesterday's rebound lost momentum as rising Treasury yields and renewed inflation concerns weighed on stocks",
-                "_timestamp": 1794351007.0
-            },
-            {
-                "title": "Stock Market Today, Nov. 10: Wall Street's Rally Hits a Roadblock as Hot Inflation Raises the Stakes for the Fed",
-                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/10/stock-market-today-nov-10-wall-street-s-rally-hits-a-roadblock-as-hot-inflation-raises-the-stakes-for-the-fed/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:50",
-                "description": "Yesterday's rebound lost momentum as rising Treasury yields and renewed inflation concerns weighed on stocks",
-                "_timestamp": 1794351007.0
-            },
-            {
-                "title": "Dow Jones Futures Rise As CoreWave Jumps, Lifts AI Stocks; Look For This Bullish Signal",
-                "link": "https://finance.yahoo.com/m/656fca57-9896-3dfb-96e8-e0af2bc227df/dow-jones-futures-rise-as.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 02:54",
-                "description": "Futures rose while AI stocks rallied overnight on CoreWeave earnings: The stock market fell on Nvidia and surging Treasury yields.",
-                "_timestamp": 1794365654.0
-            },
-            {
-                "title": "Dow, S&P 500, Nasdaq Futures Edge Higher After Red-Hot Inflation Data And Nvidia Losses: CRWV, TTWO, NLST, NBIS In Focus",
-                "link": "https://stocktwits.com/news-articles/markets/equity/dow-s-and-p-500-nasdaq-futures-edge-higher-after-red-hot-inflation-data-and-nvidia-losses-crwv-ttwo-nlst-nbis-in-focus/cNGDaIOR9J8?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 03:51",
-                "description": "October’s Consumer Price Index data came in red hot, rising 0.4% month-on-month, ahead of the consensus estimates.",
-                "_timestamp": 1794369075.0
-            },
-            {
-                "title": "Dow Jones Futures Rise, Techs Jump On CoreWeave Earnings; Look For This Bullish Signal",
-                "link": "https://finance.yahoo.com/m/656fca57-9896-3dfb-96e8-e0af2bc227df/dow-jones-futures-rise%2C-techs.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 06:09",
-                "description": "Futures rose while AI stocks rallied overnight on CoreWeave earnings: The stock market fell on Nvidia and surging Treasury yields.",
-                "_timestamp": 1794377395.0
-            },
-            {
-                "title": "Stock Market Today: Tech Futures Jump As CoreWeave Surges On Results; Nvidia Rebounds (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/2199baae-3d36-344b-b4d8-76ff24b7f5e9/stock-market-today%3A-tech.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 13:05",
-                "description": "Tech futures jump Wednesday as CoreWeave surges on earnings. Nvidia stock rebounds premarket.",
-                "_timestamp": 1794402324.0
-            },
-            {
-                "title": "Stock Market Today: Tech Futures Jump As CoreWeave Surges On Results; Nvidia Rebounds (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/2199baae-3d36-344b-b4d8-76ff24b7f5e9/stock-market-today%3A-tech.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 13:05",
-                "description": "Tech futures jump Wednesday as CoreWeave surges on earnings. Nvidia stock rebounds premarket.",
-                "_timestamp": 1794402324.0
-            },
-            {
-                "title": "Nasdaq Futures Rally as AI Optimism Returns",
-                "link": "https://www.wsj.com/finance/commodities-futures/nasdaq-futures-rally-as-ai-optimism-returns-af100e62?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 13:14",
-                "description": "Nasdaq futures led stock futures higher as rebounding artificial-intelligence sentiment helped markets recover from a revival of Fed rate-hike concerns Tuesday.",
-                "_timestamp": 1794402840.0
-            },
-            {
-                "title": "CoreWeave rally signals relief for Nvidia as analyst sees AI demand accelerating",
-                "link": "https://finance.yahoo.com/technology/ai/articles/coreweave-rally-signals-relief-nvidia-133039985.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 13:30",
-                "description": "Investing.com -- CoreWeave’s 16% rally on Wednesday could signal a broader reprieve for AI semiconductor stocks, with Lynx Equity Strategies analyst KC Rajkumar arguing that the company’s latest results undermine concerns about weakening infrastructure demand and mounting financial pressure.",
-                "_timestamp": 1794403839.0
-            },
-            {
-                "title": "Stock Market Today: Nasdaq Jumps As CoreWeave Surges On Earnings; Nvidia, AMD Shares Bounce (Live Coverage)",
-                "link": "https://finance.yahoo.com/m/2199baae-3d36-344b-b4d8-76ff24b7f5e9/stock-market-today%3A-nasdaq.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 15:21",
-                "description": "The tech-heavy Nasdaq jumps Wednesday as CoreWeave surges on earnings. Nvidia stock rebounds.",
-                "_timestamp": 1794410485.0
-            },
-            {
-                "title": "The Dow Is Missing Out on the CoreWeave Earnings AI Rebound",
-                "link": "https://finance.yahoo.com/m/0f13a4c7-1995-3729-b3ef-a062adff3c1a/the-dow-is-missing-out-on-the.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 15:53",
-                "description": "The Nasdaq is crushing the Dow, and you can probably guess why.",
-                "_timestamp": 1794412420.0
-            },
-            {
-                "title": "Dow Jones Futures: CoreWeave, Sandisk, Nvidia, AMD, Nebius Lead Bullish Market Move",
-                "link": "https://finance.yahoo.com/m/672e6ef4-2ba3-319b-b948-a356a7f1fcbe/dow-jones-futures%3A-coreweave%2C.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 21:22",
-                "description": "CoreWeave fueled big AI gains for the new market rally Wednesday, with Nebius, Sandisk, Nvidia, Bloom Energy and AMD key movers.",
-                "_timestamp": 1794432128.0
-            },
-            {
-                "title": "Stock Market Today: Major Indexes Pare Earlier Gains But Finish Trading Day Solidly Higher",
-                "link": "https://finance.yahoo.com/m/2199baae-3d36-344b-b4d8-76ff24b7f5e9/stock-market-today%3A-major.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 21:22",
-                "description": "The Nasdaq composite led the stock market with a nearly 3% romp as CoreWeave's bullish earnings report revived the artificial intelligence trade.",
-                "_timestamp": 1794432151.0
-            },
-            {
-                "title": "Stock Market Today, Nov. 11: Nvidia Rebounds as CoreWeave Earnings Reignite the AI Trade",
-                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/11/stock-market-today-nov-11-nvidia-rebounds-as-coreweave-earnings-reignite-the-ai-trade/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 22:05",
-                "description": "Nvidia and other semiconductor stocks rallied Wednesday as CoreWeave's latest earnings reinforced demand for AI infrastructure, helping Wall Street recover from Tuesday's sell-off.",
-                "_timestamp": 1794434703.0
-            },
-            {
-                "title": "Stock Indexes Finish Sharply Higher on AI Demand Optimism",
-                "link": "https://www.barchart.com/story/news/8788259/stock-indexes-finish-sharply-higher-on-ai-demand-optimism?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 21:34",
-                "description": "The S&amp;P 500 Index ($SPX ) (SPY ) closed up +1.31% on Wednesday, the Dow Jones Industrial Average ($DOWI ) (DIA ) closed up +0.49%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) closed up +2.28%. December E-mini S&amp;P futures (ESZ26 ) rose +1.33%, and December E-mini Nasdaq futures...",
-                "_timestamp": 1794432850.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 5,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "[Update 2026-11-11 22:05 UTC via Yahoo Finance Nasdaq]: Nvidia and semiconductor stocks rally alongside CoreWeave earnings, helping Wall Street recover from Tuesday's CPI sell-off | Core Background: Dow Jones futures surged 1,132 points earlier in anticipation of CPI inflation data, with Amazon, Tesla, and AI infrastructure names driving strong market resilience.",
-            "Uncertainties": "The extent to which upcoming Fed monetary policy adjustments will react to resilient economic growth and sticky price pressures.",
-            "Macro_Context": "Correlates with US 10Y Bond yields (106.174, -0.08%) and Nasdaq 100 (+1.92%), with aggressive taker flow showing 73.4% buy dominance and a tight OKX/OANDA basis spread.",
-            "Bull_Case": "Equities and precious metals successfully digest hotter CPI data, with aggressive taker buying confirming strong dip-absorption and target-seeking behavior toward upper liquidity zones.",
-            "Bear_Case": "Sticky inflation prints strengthen the USD and elevate real yields over the medium term, creating formidable headwinds for non-yielding bullion.",
-            "Historical_Calibration": "Category: Fed, Rates & Macro, ATR-Ratio Bucket: Fresh (<0.8x ATR at 0.13x), USD Alignment: Against USD Headwind -> Historical Win Rate from Matrix: 67.2% (199/296, Avg DD: -$11.9).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 70,
-            "Past_Price_Action_Cause": "Post-CPI resilience and strong tech rebound drive aggressive market buying (73.4%) and steady upward price action.",
-            "Orderflow_Price_Target": "4060.31",
-            "Facts": "[Update 2026-11-11 21:34 UTC via Yahoo Finance Oil]: Stock Indexes Finish Sharply Higher on AI Demand Optimism — The S&amp;P 500 Index ($SPX ) (SPY ) closed up +1.31% on Wednesday, the Dow Jones Industrial Average ($DOWI ) (DIA ) closed up +0.49%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) clos | [Update 2026-11-11 22:05 UTC via Yahoo Finance Nasdaq]: Stock Market Today, Nov. 11: Nvidia Rebounds as CoreWeave Earnings Reignite the AI Trade | "
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 1.45
-    },
-    {
         "main_date": "First Reported: 2026-11-11 22:05 UTC",
         "original_date": "2026-11-11 22:05",
         "_timestamp": 1794434700.0,
@@ -9843,490 +10519,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-10 10:48 UTC | Last Update: 2026-11-11 21:19 UTC",
-        "original_date": "2026-11-10 10:48",
-        "_timestamp": 1794431995.0,
-        "articles": [
-            {
-                "title": "Anthropic reportedly retracts IPO terms sent to banks by mistake, exposing jitters over AI investments",
-                "link": "https://www.marketwatch.com/story/anthropic-reportedly-retracts-ipo-terms-sent-to-banks-by-mistake-exposing-jitters-over-ai-investments-6116578d?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-10 10:48",
-                "description": "Anthropic reportedly late Monday sent a copy of a securities filing to bankers for an IPO raising up to $69.3 billion before saying that was in error.",
-                "_timestamp": 1794307680.0
-            },
-            {
-                "title": "Anthropic IPO Meets Nvidia Scandal. Hold On to Your Hats.",
-                "link": "https://finance.yahoo.com/m/34351a04-efec-3db3-a27d-cf4a9788b729/anthropic-ipo-meets-nvidia.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 12:42",
-                "description": "Anthropic sets an estimated IPO price range amid febrile time for artificial intelligence stocks as Nvidia shares and Dow futures rise.",
-                "_timestamp": 1794314520.0
-            },
-            {
-                "title": "State of the tech market: Anthropic IPO and Nvidia CEO scandal are reshaping portfolios",
-                "link": "https://finance.yahoo.com/video/state-of-the-tech-market-anthropic-ipo-and-nvidia-ceo-scandal-are-reshaping-portfolios-150759438.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:07",
-                "description": "Yahoo Finance Executive Editor Brian Sozzi tackles all the biggest stories of the market day, including a deep dive into the state of the tech market and how the Anthropic (ANTH.PVT) IPO and Jensen Huang affair are impacting investor portfolios. Chime (CHYM) CEO Chris Britt sits down with Sozzi for a 1-on-1 conversation about the financial health of US consumers and corporate earnings.",
-                "_timestamp": 1794323279.0
-            },
-            {
-                "title": "Anthropic's $1.4 trillion IPO could raise $90 billion as Wedbush backs AI hardware outlook",
-                "link": "https://www.proactiveinvestors.com/companies/news/1101534/anthropic-s-1-4-trillion-ipo-could-raise-90-billion-as-wedbush-backs-ai-hardware-outlook-1101534.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 17:00",
-                "description": "Anthropic (Unlisted (US):ANTHRO), the artificial intelligence developer behind Claude, is seeking a valuation of up to $1.4 trillion in an initial public offering (IPO) that could give it substantial new funding for its expanding computing infrastructure. The company has set a price range of...",
-                "_timestamp": 1794330000.0
-            },
-            {
-                "title": "Anthropic Will Pay SpaceX “Over $3 Billion Per Month.” Cramer Says a Failed IPO Hits Nvidia Too",
-                "link": "https://www.tikr.com/blog/anthropic-will-pay-spacex-over-3-billion-per-month-cramer-says-a-failed-ipo-hits-nvidia-too?ref=yahoofinance&tlnk=yf-261110-68r823v6&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 16:43",
-                "description": "Key TakeawaysAnthropic’s IPO filing shows its SpaceX compute deals reaching about $3. 1 billion a month in December, and Jim Cramer warns a failed IPO would hit SpaceX and Nvidia estimates.",
-                "_timestamp": 1794329039.0
-            },
-            {
-                "title": "Anthropic’s $1.4T IPO is Finally Here",
-                "link": "https://app.moby.co/home/news/news-anthropics-14t-ipo-is-finally-here?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 20:59",
-                "description": "Goldman Sachs says Dario’s free cash flow arrives in 2030. Maybe.",
-                "_timestamp": 1794344357.0
-            },
-            {
-                "title": "Anthropic IPO: Here's What Betting Markets Are Predicting After the AI Correction",
-                "link": "https://www.fool.com/investing/2026/11/10/anthropic-ipo-heres-what-betting-markets-are-predi/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 21:22",
-                "description": "With AI stocks slumping, the Anthropic IPO.",
-                "_timestamp": 1794345720.0
-            },
-            {
-                "title": "Anthropic IPO could give AI stocks a needed spark",
-                "link": "https://www.axios.com/2026/11/10/anthropic-ipo-nvidia-stocks-spark#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-AI?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:02",
-                "description": "Anthropic shares are set to begin trading next week, just as AI investors are needing a feel-good spark.",
-                "_timestamp": 1794348146.0
-            },
-            {
-                "title": "Jim Cramer says Anthropic's explosive growth could justify a record-breaking IPO",
-                "link": "https://www.cnbc.com/2026/11/10/anthropic-ipo-revenue-growth-cramer.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-10 23:46",
-                "description": "\"The fact that this deal is on is bullish for tech and the AI trade,\" CNBC's Jim Cramer said Tuesday.",
-                "_timestamp": 1794354395.0
-            },
-            {
-                "title": "Anthropic opens Australian retail IPO offering as AI scrutiny intensifies",
-                "link": "https://www.cnbc.com/2026/11/11/anthopic-australian-retail-ipo-offering-.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-11 01:52",
-                "description": "Anthropic opened its Australia retail IPO offering on Wednesday, allowing individual investors to apply for shares ahead of its planned IPO.",
-                "_timestamp": 1794361976.0
-            },
-            {
-                "title": "Inside Anthropic’s blockbuster IPO: What we know about the AI giant’s plans",
-                "link": "https://www.euronews.com/2026/11/11/anthropic-targets-valuation-of-up-to-14-trillion-for-blockbuster-ipo?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 05:35",
-                "description": "Anthropic plans to raise up to $64 billion (€57.1bn) in its upcoming initial public offering, the artificial intelligence giant said in a filing on Tuesday, in a listing that could value the company at up to $1.4 trillion (€1.25trn).View on euronews",
-                "_timestamp": 1794375307.0
-            },
-            {
-                "title": "Anthropic’s IPO roadshow kicks off — and the big money is already lining up",
-                "link": "https://www.marketwatch.com/story/anthropics-ipo-roadshow-kicks-off-and-the-big-money-is-already-lining-up-7cdd4f8b?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-11 16:03",
-                "description": "Despite nagging concerns over the AI trade, Anthropic’s IPO is reportedly seeing very strong demand.",
-                "_timestamp": 1794412980.0
-            },
-            {
-                "title": "Tech round-up: A closer look at Anthropic, Nvidia, CoreWeave, and next week",
-                "link": "https://finance.yahoo.com/video/tech-round-up-a-closer-look-at-anthropic-nvidia-coreweave-and-next-week-211955539.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 21:19",
-                "description": "Deirdre Bosa summarizes what's been going on in tech this week: CoreWeave's (CRWV) third quarter earnings and the associated concerns with circular AI financing, Nvidia's (NVDA) Jensen Huang controversy and upcoming earnings results, Anthropic's (ANTH.PVT) IPO buzz, and more.",
-                "_timestamp": 1794431995.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-11 21:19 UTC (approx. 0.1 hours ago relative to reference time)",
-            "Facts": "[Update 2026-11-11 21:19 UTC via Yahoo Finance Nasdaq]: Deirdre Bosa summarizes tech highlights: CoreWeave's Q3 earnings, Nvidia's Jensen Huang controversy, and Anthropic's blockbuster IPO buzz aiming to raise up to $64 billion with a valuation up to $1.4 trillion. | Core Background: Anthropic initially retracted IPO terms by mistake before launching retail offerings in Australia and kicking off strong institutional roadshows.",
-            "Uncertainties": "Whether massive private valuations for AI startups like Anthropic can sustain public market multiples without triggering a bubble correction.",
-            "Macro_Context": "Nasdaq 100 surging +2.01% alongside Brent oil at $94.59. Aggressive Taker flow shows 60.4% buy dominance, supporting risk assets over safe havens.",
-            "Bull_Case": "Massive capital inflows into mega-cap AI listings highlight speculative liquidity that frequently spills over into broader commodity hedges.",
-            "Bear_Case": "Unprecedented mega-cap IPO sizes siphon liquidity directly out of defensive bullion investments.",
-            "Historical_Calibration": "Tech, AI & Equities category with fresh ATR (<0.8x) against USD headwind yields 66.8% historically.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Equities rally and strong risk appetite weigh on gold spot prices, keeping H1 ATR at $11.24.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-05 19:27 UTC | Last Update: 2026-11-11 21:18 UTC",
-        "original_date": "2026-11-05 19:27",
-        "_timestamp": 1794431918.0,
-        "articles": [
-            {
-                "title": "AI demand isn't going anywhere, but volatility lies ahead",
-                "link": "https://finance.yahoo.com/video/ai-demand-isnt-going-anywhere-but-volatility-lies-ahead-194213515.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:42",
-                "description": "Host and \"The Buy Side\" author Turney Duff and his panel of experts weigh in on the effect of the blue wave following the midterm election results.Today's panel includes Hennion & Walsh CIO Kevin Mahn, Neostellar Principal Willy Lee, Grenadilla Advisory Founder and CEO Anna Rathbun, and Futurum Chief Market Strategist Shay Boloor.",
-                "_timestamp": 1793907733.0
-            },
-            {
-                "title": "The AI Trade Selloff Is Crushing Industrial Stocks. What Caterpillar’s Valuation Tells Us.",
-                "link": "https://finance.yahoo.com/m/a69385ba-7bed-307d-82ea-55b8e8f0fb7a/the-ai-trade-selloff-is.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:27",
-                "description": "The market clearly believes that a Democratic Congress means less AI spending. We ask two very hard questions. Will you like our answers?",
-                "_timestamp": 1793906820.0
-            },
-            {
-                "title": "Jim Cramer says the AI sell-off isn't over, but it isn't another dot-com crash",
-                "link": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-sell-off.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-05 23:17",
-                "description": "Cramer warned that the sell-off in AI stocks likely has further to run.",
-                "_timestamp": 1793920671.0
-            },
-            {
-                "title": "Jim Cramer explains why no AI stock seems safe from the market carnage",
-                "link": "https://www.cnbc.com/2026/11/05/jim-cramer-ai-stocks-data-center-uncertainty.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-05 23:25",
-                "description": "CNBC’s Jim Cramer said AI stocks are becoming increasingly difficult to value.",
-                "_timestamp": 1793921104.0
-            },
-            {
-                "title": "AI Rally Cools — And Takes Average U.S. Stock Fund Down With It",
-                "link": "https://finance.yahoo.com/m/b354e7e6-35a5-392d-80c1-03c84d67cc1e/ai-rally-cools-%E2%80%94-and-takes.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-06 12:00",
-                "description": "With the AI trade in the stock market coming under pressure, fund gains in October tilted toward dividend-paying stocks.",
-                "_timestamp": 1793966431.0
-            },
-            {
-                "title": "Stocks lost $2 trillion. The market is wrong about AI",
-                "link": "https://finance.yahoo.com/video/stocks-lost-2-trillion-market-120000040.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 12:00",
-                "description": "The stock market lost $2 trillion in 40 minutes, and AI stocks took the worst of it, with Intel down more than half since October and AMD off 17% in a day. Host Ejaaz Ahamadeen breaks down why it happened and why he thinks the market is wrong, from GPU rental prices up 106% to the CPU boom and Anthropic's IPO valuation.",
-                "_timestamp": 1793966400.0
-            },
-            {
-                "title": "AI Rally Cools — And Takes Average U.S. Stock Fund Down With It",
-                "link": "https://finance.yahoo.com/m/b354e7e6-35a5-392d-80c1-03c84d67cc1e/ai-rally-cools-%E2%80%94-and-takes.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 12:00",
-                "description": "With the AI trade in the stock market coming under pressure, fund gains in October tilted toward dividend-paying stocks.",
-                "_timestamp": 1793966431.0
-            },
-            {
-                "title": "Let's dismiss the multi-trillion AI sell-off and look at demand",
-                "link": "https://finance.yahoo.com/video/lets-dismiss-the-multi-trillion-ai-sell-off-and-look-at-demand-162233407.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 16:22",
-                "description": "Host Ejaaz Ahamadee discusses the multi-trillion-dollar market wipeout and how it seems exaggerated, given accelerating AI demand and some \"Magnificent Seven\" stocks rebounding.",
-                "_timestamp": 1793982153.0
-            },
-            {
-                "title": "The AI Crash Broke the Market.  Here Are 3 Things That Decide What’s Next.",
-                "link": "https://finance.yahoo.com/m/ca4c3ede-280b-3770-8c3a-3472b5489769/the-ai-crash-broke-the.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 19:57",
-                "description": "The market hates empty spaces. But there are plenty of open calendar pages coming up. And that puts the year-end rally back in focus.",
-                "_timestamp": 1793995020.0
-            },
-            {
-                "title": "5 Latest Jim Cramer Stock Picks on Twitter and Mad Money",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/5-latest-jim-cramer-stock-211011014.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 21:10",
-                "description": "Markets are trembling amid the latest AI stock sell-off, which has sent shares of major AI players deep into the red. But CNBC’s Jim Cramer believes the downturn is not another dot-com crash. Cramer warned that AI stocks could fall further, particularly semiconductor companies whose shares surged during the AI boom. However, he argued that […]",
-                "_timestamp": 1793999411.0
-            },
-            {
-                "title": "Cramer’s week ahead: AI data center stocks face another hurdle and so does the Fed",
-                "link": "https://www.cnbc.com/2026/11/06/cramer-coreweave-nebius-earnings.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-06 23:13",
-                "description": "CoreWeave and Nebius earnings, alongside key inflation reports that could shape the Fed's next interest rate decision, are the focus.",
-                "_timestamp": 1794006790.0
-            },
-            {
-                "title": "If I Could Buy and Hold Only 1 Artificial Intelligence (AI) Stock Through a Democratic Congress, It Would Be This One",
-                "link": "https://www.fool.com/investing/2026/11/06/if-i-could-buy-and-hold-only-1-artificial-intellig/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 23:11",
-                "description": "Artificial intelligence (AI) stocks are plunging following the results of the midterm elections.",
-                "_timestamp": 1794006704.0
-            },
-            {
-                "title": "Jim Cramer Says the AI Sell-Off “Is Not Like 2000.” Here’s His Case",
-                "link": "https://247wallst.com/investing/2026/11/06/jim-cramer-says-the-ai-sell-off-is-not-like-2000-heres-his-case/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 00:09",
-                "description": "Data center stocks are tumbling and the Nasdaq has slipped into correction, yet Jim Cramer insists this is no repeat of the dot-com crash. He sees one real threat hiding in the debt, and a few warning signs could prove him wrong.",
-                "_timestamp": 1794010150.0
-            },
-            {
-                "title": "3 Great AI Stocks To Own In November 2026",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/3-great-ai-stocks-own-101511863.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 10:15",
-                "description": "A strong US jobs report on 8 October showed 165,000 new roles added and unemployment down, which reinforced the idea that the economy still has solid momentum behind it. In that context, companies expected to grow earnings quickly while keeping their finances in decent shape can look especially interesting. This article walks through three such high potential US stocks and explains why they feature on this growth focused shortlist. The three stoc",
-                "_timestamp": 1794046511.0
-            },
-            {
-                "title": "Wall Street May Have Lost $2.5 Trillion, but This 30% Warning Could Be an Even Bigger Problem for AI Stocks",
-                "link": "https://247wallst.com/investing/2026/11/07/wall-street-may-have-lost-2-5-trillion-but-this-30-warning-could-be-an-even-bigger-problem-for-ai-stocks/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 15:34",
-                "description": "NVIDIA has locked in billions in chip and memory commitments, but some of the buildings meant to house them exist only on paper. A new warning shifts the AI debate from demand to delivery, and the market is already picking winners.",
-                "_timestamp": 1794065649.0
-            },
-            {
-                "title": "Fed Chair Kevin Warsh Just Issued a 6-Word Warning That Could Spell Disaster for AI Stocks",
-                "link": "https://247wallst.com/investing/2026/11/07/fed-chair-kevin-warsh-just-issued-a-6-word-warning-that-could-spell-disaster-for-ai-stocks/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 15:26",
-                "description": "Two AI stocks lost nearly half their value in a month while Microsoft barely moved. The split has less to do with chips than with one question every data center builder now has to answer, and rising rates are forcing the issue.",
-                "_timestamp": 1794065192.0
-            },
-            {
-                "title": "3 Artificial Intelligence (AI) Stocks I’d Buy Without Hesitation in a Market Crash",
-                "link": "https://www.fool.com/investing/2026/11/07/3-artificial-intelligence-ai-stocks-i-d-buy-without-hesitation-in-a-market-crash/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 14:50",
-                "description": "These companies have promising prospects. They would be even more attractive on the dip.",
-                "_timestamp": 1794063002.0
-            },
-            {
-                "title": "1 AI Stock I'll Buy Hand Over Fist If the Market Crashes",
-                "link": "https://www.fool.com/investing/2026/11/07/1-ai-stock-ill-buy-hand-over-fist-if-market-crash/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 16:20",
-                "description": "Most investors haven't realized how much this company is exposed to artificial intelligence.",
-                "_timestamp": 1794068400.0
-            },
-            {
-                "title": "AI stock selloff drives investors to China, India, and overlooked Asian sectors",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/ai-stock-selloff-drives-investors-013045557.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-08 01:30",
-                "description": "Investing.com -- Investors are shifting toward Chinese and Indian equities and less technology-dependent Asian sectors as a selloff in artificial intelligence stocks raises concerns about valuations and returns on massive infrastructure spending.",
-                "_timestamp": 1794101445.0
-            },
-            {
-                "title": "AI stock selloff drives investors to China, India, and overlooked Asian sectors",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/ai-stock-selloff-drives-investors-013045557.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 01:30",
-                "description": "Investing.com -- Investors are shifting toward Chinese and Indian equities and less technology-dependent Asian sectors as a selloff in artificial intelligence stocks raises concerns about valuations and returns on massive infrastructure spending.",
-                "_timestamp": 1794101445.0
-            },
-            {
-                "title": "EXCLUSIVE: Democrats Took Congress. But AI's Spending Binge Isn't Going Anywhere, This CEO Says",
-                "link": "https://finance.yahoo.com/technology/ai/articles/exclusive-democrats-took-congress-ais-114506653.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 11:45",
-                "description": "Democrats’ takeover of Congress puts a new political spotlight on the cost of America’s AI buildout, but it is unlikely to persuade Microsoft Corp., Amazon.com Inc. or Alphabet Inc. to step away from the spending race. The companies may become...",
-                "_timestamp": 1794138306.0
-            },
-            {
-                "title": "The market bloodbath just exposed Wall Street’s true fears about U.S. debt, top economist warns",
-                "link": "https://finance.yahoo.com/economy/policy/articles/market-bloodbath-just-exposed-wall-204604891.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-08 20:46",
-                "description": "\"They’re up because of mounting fiscal stress, not because of AI.\"",
-                "_timestamp": 1794170764.0
-            },
-            {
-                "title": "Futurum's Newman Believes AI Trade Isn't Over",
-                "link": "https://finance.yahoo.com/video/futurums-newman-believes-ai-trade-051638116.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 05:16",
-                "description": "The Futurum Group CEO Daniel Newman says the market is trading artificial intelligence, or AI, like it's over, but he doesn't think it is. He speaks with Haslinda Amin on \"Insight with Haslinda Amin.\"",
-                "_timestamp": 1794201398.0
-            },
-            {
-                "title": "Jim Cramer is ‘furious’ as Intel crashes nearly 30% — but Uncle Sam is the top shareholder. What it means for taxpayers",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-furious-intel-crashes-124500450.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-09 12:45",
-                "description": "Major investors like Jim Cramer aren’t the only ones feeling the pain after a disappointing Q3 report. Every American has some Intel exposure.",
-                "_timestamp": 1794228300.0
-            },
-            {
-                "title": "Jim Cramer is ‘furious’ as Intel crashes nearly 30% — but Uncle Sam is the top shareholder. What it means for taxpayers",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-furious-intel-crashes-124500450.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 12:45",
-                "description": "Major investors like Jim Cramer aren’t the only ones feeling the pain after a disappointing Q3 report. Every American has some Intel exposure.",
-                "_timestamp": 1794228300.0
-            },
-            {
-                "title": "As AI trade falters, Goldman Sachs says this lagging region is now positioned to outperform",
-                "link": "https://www.marketwatch.com/story/as-ai-trade-falters-goldman-sachs-says-this-lagging-region-is-now-positioned-to-outperform-589805c6?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-09 14:16",
-                "description": "Precisely because it has long been hamstrung by rigid labor markets and overregulation, European stocks may paradoxically be bigger beneficiaries of the AI revolution in terms of enhanced productivity and cost-cutting than its U.S. counterparts",
-                "_timestamp": 1794233760.0
-            },
-            {
-                "title": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
-                "link": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-09 18:14",
-                "description": "Goldman CEO David Solomon says investor appetite for AI infrastructure remains strong despite a reset in AI stocks and political uncertainty around data centers.",
-                "_timestamp": 1794248087.0
-            },
-            {
-                "title": "Jim Cramer says Anthropic's IPO could make or break the AI trade. Here's why",
-                "link": "https://www.cnbc.com/2026/11/09/anthropic-ipo-ai-trade-jim-cramer.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-09 23:30",
-                "description": "Anthropic's initial public offering could be a crucial test of investor confidence in the AI trade, CNBC's Jim Cramer said.",
-                "_timestamp": 1794267015.0
-            },
-            {
-                "title": "The AI Trade Looks Like It's Falling Apart. AMD's Earnings Delivered a Reality Check.",
-                "link": "https://www.fool.com/investing/2026/11/09/the-ai-trade-looks-like-its-falling-apart-amds-ear/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 01:20",
-                "description": "AMD is still growing and is optimistic about the fourth quarter, despite recent market noise about the AI trade.",
-                "_timestamp": 1794273600.0
-            },
-            {
-                "title": "Is Wall Street Turning on AI?",
-                "link": "https://www.fool.com/investing/2026/11/09/is-wall-street-turning-on-ai/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 01:53",
-                "description": "Alphabet’s sharp sell-off raises a big question: Are investors more concerned about AI spending than AI growth?",
-                "_timestamp": 1794275581.0
-            },
-            {
-                "title": "As Democrats Take Over Congress, Is Palantir Stock at Risk?",
-                "link": "https://www.fool.com/investing/2026/11/10/as-democrats-take-over-congress-is-palantir-stock-at-risk/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 09:42",
-                "description": "The AI data analytics stock is now trading 19% below its October high.",
-                "_timestamp": 1794303722.0
-            },
-            {
-                "title": "The Odds of an AI Bubble-Bursting Event Appear to Be Sharply Rising",
-                "link": "https://www.fool.com/investing/2026/11/10/the-odds-of-an-ai-bubble-bursting-event-appear-to-be-sharply-rising/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 09:26",
-                "description": "Wall Street’s artificial intelligence (AI)-driven bull market may be running on borrowed time.",
-                "_timestamp": 1794302762.0
-            },
-            {
-                "title": "Fed’s Goolsbee Says AI Data Centers Look Like ‘Old-Fashioned Overheating’",
-                "link": "https://247wallst.com/investing/2026/11/10/feds-goolsbee-says-ai-data-centers-look-like-old-fashioned-overheating/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 15:38",
-                "description": "Stocks surged while short-term bonds quietly flashed the opposite signal. One Fed official's warning about AI spending suggests the market may be reading the same data in two very different ways, and retirement portfolios sit in the middle.",
-                "_timestamp": 1794325122.0
-            },
-            {
-                "title": "3 AI Stocks to Buy Now That Midterms Are Over",
-                "link": "https://www.fool.com/investing/2026/11/10/3-ai-stocks-to-buy-now-that-midterms-are-over/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 21:11",
-                "description": "Democrats gained ground in the midterms, but it's not looking as bad for the AI trade as many people feared. These three stocks stand to rally.",
-                "_timestamp": 1794345060.0
-            },
-            {
-                "title": "The Stock Market Just Got Bad News on Inflation.",
-                "link": "https://www.fool.com/investing/2026/11/10/the-stock-market-just-got-bad-news-on-inflation/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:25",
-                "description": "October inflation cooled, but not as much as Wall Street expected, and now investors have to take a half-point Fed hike in December more seriously. That could be a problem for an AI trade that already looks wobbly.",
-                "_timestamp": 1794349502.0
-            },
-            {
-                "title": "Tech Sell-Off: Two AI Stocks That Are Screaming Buys Right Now",
-                "link": "https://www.fool.com/investing/2026/11/11/tech-sell-off-two-ai-stocks-that-are-screaming-buys-right-now/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 09:22",
-                "description": "These stocks look dirt cheap.",
-                "_timestamp": 1794388922.0
-            },
-            {
-                "title": "Uh-Oh! 2 Critical Inflation Measures Are Heading the Wrong Way in November, and the Stock Market May Pay the Price.",
-                "link": "https://www.fool.com/investing/2026/11/11/uh-oh-2-critical-inflation-measures-heading-wrong-way-in-november-stock-market-pay-the-price/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 09:26",
-                "description": "Trumpflation may tip Wall Street's artificial intelligence (AI)-driven bull market over the edge.",
-                "_timestamp": 1794389162.0
-            },
-            {
-                "title": "2 Safe AI Stocks to Buy in the Next Market Crash. And No, It's Not Palantir.",
-                "link": "https://www.fool.com/investing/2026/11/11/safe-ai-stocks-buy-next-market-crash-amzn-goog/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 09:46",
-                "description": "The next market downturn could offer a chance to own established technology leaders at more reasonable prices. The key is knowing what to look for before the opportunity arrives.",
-                "_timestamp": 1794390360.0
-            },
-            {
-                "title": "AI boom or bubble?",
-                "link": "https://www.aljazeera.com/video/counting-the-cost/2026/11/11/ai-boom-or-bubble?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-11 10:31",
-                "description": "A tech sell-off has raised questions about AI spending and the risks to jobs and growth across the global economy.",
-                "_timestamp": 1794393084.0
-            },
-            {
-                "title": "Prediction: This Could Be the Biggest AI Stock You’re Not Talking About",
-                "link": "https://247wallst.com/investing/2026/11/11/prediction-this-could-be-the-biggest-ai-stock-youre-not-talking-about/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 16:03",
-                "description": "Micron just shed 30% in a single week, yet it posted record revenue and a gross margin of 87%. So why does the market price it like a fading cyclical, and what would it take to prove the sell-off wrong?",
-                "_timestamp": 1794412992.0
-            },
-            {
-                "title": "Fed’s Bowman Says AI Now Drives About a Quarter of America’s Excess Inflation",
-                "link": "https://247wallst.com/investing/2026/11/11/feds-bowman-says-ai-now-drives-about-a-quarter-of-americas-excess-inflation/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 21:18",
-                "description": "The chips fueling the AI boom now show up on the Fed's inflation ledger, and rate hikes can't touch them. One stock collects the higher prices while another pays them, and a December decision could split their fortunes.",
-                "_timestamp": 1794431918.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-11 21:18 UTC (approx. 0.2 hours ago relative to reference time)",
-            "Facts": "[Update 2026-11-11 21:18 UTC via Yahoo Finance Nasdaq]: Fed's Bowman Says AI Now Drives About a Quarter of America’s Excess Inflation — The chips fueling the AI boom now show up on the Fed's inflation ledger, and rate hikes can't touch them. | Core Background: Broader industrial stocks face valuation pressures as market participants weigh structural AI spending versus congressional policy shifts.",
-            "Uncertainties": "How the Federal Reserve plans to address structural energy and chip-driven inflation components that standard rate hikes fail to impact.",
-            "Macro_Context": "US 10Y Bond price is down slightly (-0.06%), indicating steady yields. EUR/USD inverse proxy down -0.70%. Aggressive Taker flow shows 60.4% buying.",
-            "Bull_Case": "Recognition that inflation is structurally embedded by high-tech and energy costs reinforces gold's core mandate as an inflation hedge.",
-            "Bear_Case": "Persistent structural inflation could force the Fed into a more aggressive stance, raising real yields and hurting non-yielding gold.",
-            "Historical_Calibration": "Fed, Rates & Macro category with fresh ATR (<0.8x) against USD headwind has a historical win rate of 66.8%.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Past_Price_Action_Cause": "Gold's 24h decline of $-46.77 reflects USD strength, but aggressive taker buy ratio of 78.1% on OKX signals strong dip-buying absorption.",
-            "Orderflow_Price_Target": "3990.14"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
         "main_date": "First Reported: 2026-11-09 09:59 UTC | Last Update: 2026-11-11 21:18 UTC",
         "original_date": "2026-11-09 09:59",
         "_timestamp": 1794431914.0,
@@ -10624,64 +10816,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 1.89
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 12:41 UTC | Last Update: 2026-11-11 21:16 UTC",
-        "original_date": "2026-11-11 12:41",
-        "_timestamp": 1794431781.0,
-        "articles": [
-            {
-                "title": "Iranian, Iraqi presidents meet in Turkey on COP31 sidelines",
-                "link": "https://en.mehrnews.com/news/249339/Iranian-Iraqi-presidents-meet-in-Turkey-on-COP31-sidelines",
-                "source": "Mehr News Agency",
-                "date": "2026-11-11 12:41",
-                "description": "TEHRAN, Nov. 11 (MNA) – Iranian President Masoud Pezeshkian and his Iraqi counterpart Nizar Amedi met and held talks in Turkey's Antalya on Wednesday on the sidelines of 31st UN climate change conference (COP31).",
-                "_timestamp": 1794400909.0
-            },
-            {
-                "title": "Pezeshkian, Sharif hold talks in Antalya on COP31 Summit",
-                "link": "https://en.mehrnews.com/news/249340/Pezeshkian-Sharif-hold-talks-in-Antalya-on-COP31-Summit",
-                "source": "Mehr News Agency",
-                "date": "2026-11-11 12:57",
-                "description": "TEHRAN, Nov. 11 (MNA) – Iranian President Masoud Pezeshkian and Pakistani Prime Minister Shehbaz Sharif met and held talks in Turkey’s Antalya on Wednesday on the sidelines of 31st UN Climate Change Conference (COP31).",
-                "_timestamp": 1794401872.0
-            },
-            {
-                "title": "Pezeshkian holds talks with leaders on sidelines of COP31",
-                "link": "https://www.tehrantimes.com/news/532059/Pezeshkian-holds-talks-with-leaders-on-sidelines-of-COP31",
-                "source": "Tehran Times",
-                "date": "2026-11-11 17:18",
-                "description": "TEHRAN– Iranian President Masoud Pezeshkian has held a series of bilateral meetings with the leaders of Iraq, Norway, Armenia and Pakistan on the sidelines of the 31st United Nations Climate Change Conference (COP31) in Antalya, Turkey, discussing bilateral relations, regional developments and prospects for expanding economic and political cooperation.",
-                "_timestamp": 1794417529.0
-            },
-            {
-                "title": "Pakistan, Iran leaders reaffirm ties in COP31 meeting",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-iran-leaders-reaffirm-ties-cop31-meeting",
-                "source": "Middle East Eye",
-                "date": "2026-11-11 21:16",
-                "description": "Pakistan, Iran leaders reaffirm ties in COP31 meeting\n\n    \n    \n\n        \n    \n                Pakistan’s Prime Minister Shehbaz Sharif and Iran’s President Masoud Pezeshkian met on the sidelines of the COP31 UN climate summit in Turkey's Antalya on Wednesday, reaffirming the \"deep and enduring bonds between Pakistan and Iran\".\n\n“Dialogue, restraint, de-escalation and sustained diplomacy are the only path to lasting peace,” Sharif&nbsp;said in a",
-                "_timestamp": 1794431781.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "First reported: 2026-11-11 12:41 UTC (~1.0h ago)",
-            "Facts": "[Update 2026-11-11 21:16 UTC via Middle East Eye]: Pakistan, Iran leaders reaffirm ties in COP31 meeting — Pakistan, Iran leaders reaffirm ties in COP31 meeting\n\n    \n    \n\n        \n    \n                Pakistan’s Prime Minister Shehbaz Sharif and Iran’s President Masoud Pezeshkian met  | [Update 2026-11-11 17:18 UTC via Tehran Times]: Pezeshkian holds talks with leaders on sidelines of COP31 — TEHRAN– Iranian President Masoud Pezeshkian has held a series of bilateral meetings with the leaders of Iraq, Norway, Armenia and Pakistan on the sidelines of the 31st United Natio | [Update 2026-11-11 12:57 UTC via Mehr News Agency]: Pezeshkian, Sharif hold talks in Antalya on COP31 Summit — TEHRAN, Nov. 11 (MNA) – Iranian President Masoud Pezeshkian and Pakistani Prime Minister Shehbaz Sharif met and held talks in Turkey’s Antalya on Wednesday on the sidelines of 31st UN Climate Change Co | [Mehr News Agency] Iranian, Iraqi presidents meet in Turkey on COP31 sidelines - TEHRAN, Nov. 11 (MNA) – Iranian President Masoud Pezeshkian and his Iraqi counterpart Nizar Amedi met and held talks in Turkey's Antalya on Wednesday on the sidelines of 31st UN ",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.55%, Nasdaq-100 +2.57%, Brent Oil +3.18% | OANDA Sentiment: 66.6% Long / 33.4% Short | 24/7 OKX XAUUSDT.P: $4041.6 (Spread: $-2.06) | Aggressive Taker Flow: 15.1% Market Buys (AGGRESSIVE MARKET SELLING (Bid-Side Sweep)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4050.17.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4039.75. 4h-ATR ratio is 0.34x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 1.0h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-14.99 (0.34x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4050.17"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 81.67
     },
     {
         "main_date": "First Reported: 2026-11-11 21:15 UTC",
@@ -13388,56 +13522,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 4.95
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 19:31 UTC | Last Update: 2026-11-11 16:54 UTC",
-        "original_date": "2026-11-10 19:31",
-        "_timestamp": 1794416090.0,
-        "articles": [
-            {
-                "title": "Microsoft Stock Falls On Anthropic Challenge To Office Software",
-                "link": "https://finance.yahoo.com/m/f591b7f8-013b-367b-b8b5-72d9ef7903d2/microsoft-stock-falls-on.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 19:31",
-                "description": "Microsoft stock fell Tuesday after AI bigwig Anthropic announced a set of tools that could rival Microsoft's Office suite.",
-                "_timestamp": 1794339098.0
-            },
-            {
-                "title": "Microsoft Corporation (MSFT) Is Pouring Billions Into AI: Could Massive Spending Weigh on Future Returns?",
-                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-corporation-msft-pouring-billions-212222905.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 21:22",
-                "description": "Moon Capital Management an investment management company, recently released its Q3 2026 investor letter. A copy of the letter can be downloaded here. The letter reported that its equity portfolio gained approximately 4% during the first nine months of 2026, compared with an approximately 12% year-to-date return for the S&amp;P 500. The firm noted that […]",
-                "_timestamp": 1794345742.0
-            },
-            {
-                "title": "Microsoft Stocks Decline 2.5% as $1 Billion Anthropic Stake Tests Partner-Rival Balance",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-stocks-decline-2-5-165450997.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 16:54",
-                "description": "Microsoft joins Anthropic's IPO placement while Azure collects fees on Claude sales under joint go-to-market arrangements.",
-                "_timestamp": 1794416090.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "First reported: 2026-11-10 19:31 UTC (~0.3h ago)",
-            "Facts": "[Update 2026-11-11 16:54 UTC via Yahoo Finance Nasdaq]: Microsoft Stocks Decline 2.5% as $1 Billion Anthropic Stake Tests Partner-Rival Balance — Microsoft joins Anthropic's IPO placement while Azure collects fees on Claude sales under joint go-to-market arrangements. | [Yahoo Finance Nasdaq] Microsoft Stock Falls On Anthropic Challenge To Office Software - Microsoft stock fell Tuesday after AI bigwig Anthropic announced a set of tools that could rival Microsoft's Office suite.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.50%, Nasdaq-100 -0.95%, Brent Oil -2.09% | OANDA Sentiment: 66.7% Long / 33.3% Short | 24/7 OKX XAUUSDT.P: $4038.2 (Spread: $+12.78) | Aggressive Taker Flow: 63.7% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4029.96.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4021.69. 4h-ATR ratio is 0.16x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.3h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-11.22 (0.16x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "4029.96"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 6.72
     },
     {
         "main_date": "First Reported: 2026-11-11 16:50 UTC",
@@ -16480,143 +16564,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 50,
             "Past_Price_Action_Cause": "Tech-driven equity liquidity has created mixed cross-asset pressures, keeping gold tethered to safe-haven geopolitical headlines.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-10 19:20 UTC | Last Update: 2026-11-11 10:04 UTC",
-        "original_date": "2026-11-10 19:20",
-        "_timestamp": 1794391442.0,
-        "articles": [
-            {
-                "title": "1 of the Largest Corporate Splits in History Is Coming to Wall Street in 2028 -- It's a Stock Up 737% Since Its IPO",
-                "link": "https://www.fool.com/investing/2026/11/10/1-of-the-largest-corporate-splits-in-history-2028/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 19:20",
-                "description": "A large and well-known retail pharmacy giant is planning to split into two companies as part of a new strategic direction.",
-                "_timestamp": 1794338400.0
-            },
-            {
-                "title": "1 Stock-Split AI Stock to Buy Before It Soars 328%, According to a Wall Street Analyst",
-                "link": "https://www.fool.com/investing/2026/11/11/1-stock-split-ai-stock-buy-before-soar-328-wall-street/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 10:04",
-                "description": "Wall Street says this semiconductor stock is headed much higher in the next year, and historical data supports that possibility.",
-                "_timestamp": 1794391442.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 5,
-            "Dominant_Driver": "US Inflation & Fed Rate Path",
-            "Event_Timestamp": "2026-11-10 19:20 UTC (approx. 0.4 hours ago relative to 2026-11-10 19:48 UTC)",
-            "Facts": "[Update 2026-11-11 10:04 UTC via Yahoo Finance Nasdaq]: 1 Stock-Split AI Stock to Buy Before It Soars 328%, According to a Wall Street Analyst — Wall Street says this semiconductor stock is headed much higher in the next year, and historical data supports that possibility. | A major retail pharmacy giant is planning one of the largest corporate splits in Wall Street history in 2028, following a 737% stock surge since its IPO [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Execution risk and regulatory hurdles associated with massive multi-billion-dollar corporate restructuring over a multi-year horizon.",
-            "Macro_Context": "Corporate restructuring news has minimal immediate transmission to foreign exchange or short-term precious metals liquidity.",
-            "Bull_Case": "Corporate restructuring activity signals robust M&A and corporate liquidity pipelines, maintaining baseline economic confidence.",
-            "Bear_Case": "Large corporate breakups often reflect defensive operational streamlining in response to margin compression and high borrowing costs.",
-            "Historical_Calibration": "Category: Fed, Rates & Macro, Fresh (<0.8x ATR), USD Neutral / Legacy. Historical Win Rate from Regime Matrix: 100.0% (Avg DD: -$5.9).",
-            "Impact_Timing": "Future",
-            "Timeframe": "N/A",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Past_Price_Action_Cause": "Distant future corporate events have no direct causal link to the current intraday XAU/USD price action.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 10:03 UTC",
-        "original_date": "2026-11-11 10:03",
-        "_timestamp": 1794391380.0,
-        "articles": [
-            {
-                "title": "Tiger Woods has another private, 18-hole golf destination in the works — this one for Long Island’s Gold Coast",
-                "link": "https://www.marketwatch.com/story/tiger-woods-has-another-private-18-hole-golf-destination-in-the-works-this-one-for-long-islands-gold-coast-7e8e669c?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-11 10:03",
-                "description": "Golf legend Tiger Woods is heading up a new private golf destination on the North Shore of Long Island in Brookville, N.Y.",
-                "_timestamp": 1794391380.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "First reported: 2026-11-11 10:03 UTC (~0.7h ago)",
-            "Facts": "[MarketWatch Macro] Tiger Woods has another private, 18-hole golf destination in the works — this one for Long Island’s Gold Coast - Golf legend Tiger Woods is heading up a new private golf destination on the North Shore of Long Island in Brookville, N.Y.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.66%, Nasdaq-100 +1.37%, Brent Oil +3.94% | OANDA Sentiment: 66.9% Long / 33.1% Short | 24/7 OKX XAUUSDT.P: $4055.9 (Spread: $+7.82) | Aggressive Taker Flow: 60.8% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4050.25.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4040.12. 4h-ATR ratio is 0.25x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.7h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-10.80 (0.25x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 10:00 UTC",
-        "original_date": "2026-11-11 10:00",
-        "_timestamp": 1794391200.0,
-        "articles": [
-            {
-                "title": "Kitsault Energy’s Vision for Canada's Future: An Integrated Energy and Commodity Export Corridor",
-                "link": "https://finance.yahoo.com/energy/articles/kitsault-energy-vision-canadas-future-100000309.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 10:00",
-                "description": "VANCOUVER, British Columbia, November 11, 2026--For the past 14 years, Kitsault Energy (KE) has advocated for a dedicated energy corridor extending from Dawson Creek in northeastern British Columbia to Kitsault/Observatory Inlet in northwest British Columbia. The proposed corridor would transport crude oil, natural gas/LNG, natural gas liquids, and other commodities to international markets.",
-                "_timestamp": 1794391200.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "First reported: 2026-11-11 10:00 UTC (~0.8h ago)",
-            "Facts": "[Yahoo Finance Oil] Kitsault Energy’s Vision for Canada's Future: An Integrated Energy and Commodity Export Corridor - VANCOUVER, British Columbia, November 11, 2026--For the past 14 years, Kitsault Energy (KE) has advocated for a dedicated energy corridor ext",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.66%, Nasdaq-100 +1.37%, Brent Oil +3.94% | OANDA Sentiment: 66.9% Long / 33.1% Short | 24/7 OKX XAUUSDT.P: $4055.9 (Spread: $+7.82) | Aggressive Taker Flow: 60.8% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4050.25.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4040.12. 4h-ATR ratio is 0.25x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.8h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-10.80 (0.25x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 09:55 UTC",
-        "original_date": "2026-11-11 09:55",
-        "_timestamp": 1794390900.0,
-        "articles": [
-            {
-                "title": "Should You Buy SoundHound AI Stock After Its 83% Plunge? The Answer Might Surprise You.",
-                "link": "https://www.fool.com/investing/2026/11/11/should-buy-soundhound-ai-stock-83-plunge-answer/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 09:55",
-                "description": "SoundHound's valuation is approaching a record low.",
-                "_timestamp": 1794390900.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "First reported: 2026-11-11 09:55 UTC (~0.8h ago)",
-            "Facts": "[Yahoo Finance Nasdaq] Should You Buy SoundHound AI Stock After Its 83% Plunge? The Answer Might Surprise You. - SoundHound's valuation is approaching a record low.",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.66%, Nasdaq-100 +1.37%, Brent Oil +3.94% | OANDA Sentiment: 66.9% Long / 33.1% Short | 24/7 OKX XAUUSDT.P: $4055.9 (Spread: $+7.82) | Aggressive Taker Flow: 60.8% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4050.25.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $4040.12. 4h-ATR ratio is 0.25x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.8h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-10.80 (0.25x of estimated Daily ATR).",
             "Orderflow_Price_Target": "N/A"
         }
     }

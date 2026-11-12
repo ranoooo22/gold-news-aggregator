@@ -3,7 +3,7 @@
     "hits": 328,
     "misses": 177,
     "win_rate": 65.0,
-    "active_signals": 29,
+    "active_signals": 30,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -9197,6 +9197,25 @@
             "created_ts": 1794472485.0,
             "date": "First Reported: 2026-11-12 08:34 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$36.15)"
+        },
+        "https://www.aljazeera.com/news-analysis/2026/11/12/from-the-uk-to-the-gulf-are-us-overseas-bases-becoming-liabilities?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "From the UK to the Gulf, are US overseas bases becoming liabilities?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3943.95,
+            "target": 3989.85,
+            "max_dd_usd": 19.26,
+            "atr_ratio_at_signal": 0.35,
+            "daily_atr_at_signal": 58.92,
+            "eur_chg_at_signal": -0.38,
+            "nas_chg_at_signal": 0.0,
+            "macro_snapshot": "EUR -0.38%, NAS100 +0.00%",
+            "created_ts": 1794476280.0,
+            "date": "First Reported: 2026-11-12 09:38 UTC",
+            "fail_reason": ""
         }
     }
 }

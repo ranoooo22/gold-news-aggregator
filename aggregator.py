@@ -32,7 +32,7 @@ FALLBACK_MODELS = [
 ]
 
 BATCH_SIZE = 6
-MAX_BATCH_CALLS_PER_RUN = 2
+MAX_BATCH_CALLS_PER_RUN = 4
 
 MIN_EVAL_PROBABILITY = 51
 EVAL_HORIZON_HOURS = 20.0
@@ -210,14 +210,9 @@ def fetch_crypto_gold_basis(oanda_price):
     return "24/7 XAU/USDT Basis: Unavailable.", {}
 
 def fetch_okx_l2_orderbook(reference_price, zone_width=10.0):
-    """
-    Fetches LIVE resting limit orders (400 depth levels) from OKX XAU-USDT-SWAP & XAUT-USDT-SWAP.
-    Unlike historical volume, if a trader cancels or closes an order, it vanishes immediately.
-    """
     okx_zones = {}
     headers = {"User-Agent": "Mozilla/5.0"}
-    raw_bids = []
-    raw_asks = []
+    raw_bids, raw_asks = [], []
 
     for inst in ["XAU-USDT-SWAP", "XAUT-USDT-SWAP"]:
         try:
@@ -261,11 +256,6 @@ def fetch_okx_l2_orderbook(reference_price, zone_width=10.0):
     return okx_zones
 
 def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
-    """
-    Fetches COMEX GC=F hourly volume, applying an Unmitigated Filter:
-    If subsequent candles already traded cleanly through an old price level, its weight is reduced by 75%
-    because those positions could already have been closed/mitigated.
-    """
     comex_zones = {}
     try:
         url = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=5d&interval=1h"
@@ -276,10 +266,7 @@ def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
         if not result:
             return comex_zones
         q = result[0].get("indicators", {}).get("quote", [{}])[0]
-        closes = q.get("close", [])
-        highs = q.get("high", [])
-        lows = q.get("low", [])
-        volumes = q.get("volume", [])
+        closes, highs, lows, volumes = q.get("close", []), q.get("high", []), q.get("low", []), q.get("volume", [])
 
         candles = []
         for c, h, l, v in zip(closes, highs, lows, volumes):
@@ -299,14 +286,12 @@ def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
             p = cndl["c"]
             if abs(p - reference_price) / reference_price > 0.18:
                 continue
-            # Check if later candles (at least 2 hours later) traded across this price (mitigated)
             mitigated = False
             if idx < n - 2:
                 for later in candles[idx + 2:]:
                     if later["l"] <= p <= later["h"]:
                         mitigated = True
                         break
-            # Unmitigated institutional volume gets 100% weight; already-crossed volume gets 25% weight
             recency_factor = 0.5 + 0.5 * (idx / max(1, n - 1))
             adj_v = cndl["v"] * recency_factor * (0.25 if mitigated else 1.0)
             raw_entries.append((p, adj_v))
@@ -327,18 +312,11 @@ def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
     return comex_zones
 
 def fetch_multi_positioning(oanda_sentiment):
-    """
-    Combines 3 distinct positioning sources:
-    1. OANDA Retail Positioning (Passive Retail Crowd)
-    2. OKX Top-Trader Long/Short Account Ratio (24/7 Derivatives Whales)
-    3. CFTC COT Report for COMEX Gold (Institutional Managed Money / Hedge Funds vs. Swap Dealers)
-    """
     headers = {"User-Agent": "Mozilla/5.0"}
     okx_long_pct = 50.0
     cot_mm_long_pct = 0.0
     cot_report_date = "N/A"
 
-    # 1. OKX Top-Trader Long/Short Ratio
     for inst in ["XAU-USDT-SWAP", "XAUT-USDT-SWAP"]:
         try:
             url = f"https://www.okx.com/api/v5/rubik/stat/contracts/long-short-account-ratio-contract-top-trader?instId={inst}&period=1H"
@@ -352,7 +330,6 @@ def fetch_multi_positioning(oanda_sentiment):
         except Exception:
             pass
 
-    # 2. CFTC Disaggregated & Financial COT Report (Gold COMEX Code 088691)
     try:
         cot_url = "https://publicreporting.cftc.gov/resource/72hh-3qpy.json?$where=cftc_contract_market_code='088691'&$order=report_date_as_yyyy_mm_dd%20DESC&$limit=1"
         res_cot = requests.get(cot_url, headers=headers, timeout=6)
@@ -368,7 +345,7 @@ def fetch_multi_positioning(oanda_sentiment):
     except Exception:
         pass
 
-    pos_obj = {
+    return {
         "oanda_long_pct": oanda_sentiment.get("long_pct", 50.0),
         "oanda_short_pct": oanda_sentiment.get("short_pct", 50.0),
         "okx_top_long_pct": okx_long_pct,
@@ -377,13 +354,11 @@ def fetch_multi_positioning(oanda_sentiment):
         "cot_mm_short_pct": round(100.0 - cot_mm_long_pct, 1) if cot_mm_long_pct > 0 else 0.0,
         "cot_date": cot_report_date
     }
-    return pos_obj
 
 def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
     current_price = float(fallback_price) if fallback_price else 0.0
     combined_buckets = {}
-    total_pos_long = 0.0
-    total_pos_short = 0.0
+    total_pos_long, total_pos_short = 0.0, 0.0
     
     if OANDA_API_KEY:
         headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
@@ -455,7 +430,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         zones[zone_key]["oanda_vol"] += tot
         zones[zone_key]["weighted_price_sum"] += p * tot
 
-    # Merge Source 2: OKX Live Level-2 Resting Limit Orders (35% weight)
     okx_zones = fetch_okx_l2_orderbook(current_price, zone_width=zone_width)
     for z_key, o_data in okx_zones.items():
         weight = 0.35 if combined_buckets else 1.0
@@ -471,7 +445,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         zones[z_key]["okx_vol"] += o_data["total"]
         zones[z_key]["weighted_price_sum"] += o_data["weighted_price_sum"] * weight
 
-    # Merge Source 3: Unmitigated COMEX Institutional Volume Profile (20% weight)
     comex_zones = fetch_yahoo_futures_zones(current_price, zone_width=zone_width)
     for z_key, f_data in comex_zones.items():
         weight = 0.20 if combined_buckets else 0.6
@@ -490,9 +463,7 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
     if not zones or current_price == 0:
         return current_price, [], sentiment
 
-    above_zones = []
-    below_zones = []
-
+    above_zones, below_zones = [], []
     for z_key, z_data in zones.items():
         if z_data["total"] > 0:
             vwap_price = round(z_data["weighted_price_sum"] / z_data["total"], 2)
@@ -568,9 +539,7 @@ def fetch_oanda_orderbook(top_zones_cache=None, multi_pos=None):
 
 def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
     headers = {"User-Agent": "Mozilla/5.0"}
-    taker_buy_vol = 0.0
-    taker_sell_vol = 0.0
-    funding_rate_pct = 0.0
+    taker_buy_vol, taker_sell_vol, funding_rate_pct = 0.0, 0.0, 0.0
 
     for inst in ["XAU-USDT-SWAP", "XAUT-USDT-SWAP"]:
         try:
@@ -647,11 +616,6 @@ def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
     return prompt_str, flow_obj
 
 def compute_dual_horizon_drivers(valid_clusters, stats_history=None):
-    """
-    Computes BOTH:
-    1. Dominant 24h Drivers (from today's active clusters)
-    2. Structural Weekly Drivers (7-14d rolling memory from performance_stats.json + active clusters weighted by Timeframe)
-    """
     def build_ranked_list(items_list):
         driver_map = {}
         total_weight = 0.0
@@ -697,7 +661,6 @@ def compute_dual_horizon_drivers(valid_clusters, stats_history=None):
         out.sort(key=lambda x: x["share_pct"], reverse=True)
         return out[:4]
 
-    # 1. Build 24h items
     items_24h = []
     for c in (valid_clusters or []):
         arts = c.get("articles", [])
@@ -713,7 +676,6 @@ def compute_dual_horizon_drivers(valid_clusters, stats_history=None):
 
     drivers_24h = build_ranked_list(items_24h)
 
-    # 2. Build 14-Day Structural Weekly Drivers from stats_history + current clusters
     items_weekly = []
     cutoff_14d = datetime.now().timestamp() - (14 * 86400)
     seen_ids = set()
@@ -1041,13 +1003,19 @@ def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_
     newest = articles[-1] if articles else {}
     age_h = round((datetime.now().timestamp() - float(oldest.get("_timestamp", datetime.now().timestamp()))) / 3600.0, 1)
 
+    def extract_body_only(art):
+        desc = art.get("description", "").strip()
+        if desc and desc.lower() != art.get("title", "").strip().lower():
+            return desc
+        return f"Report from {art.get('source', 'feed')} covering {art.get('title', '').rstrip('?')}."
+
     facts_list = []
     if len(articles) > 1:
-        facts_list.append(f"[Update {newest.get('date', '')} UTC via {newest.get('source', '')}]: {newest.get('title', '')}")
+        facts_list.append(f"[Update {newest.get('date', '')} UTC via {newest.get('source', '')}]: {extract_body_only(newest)}")
     for a in articles[:3]:
         if len(articles) > 1 and a["link"] == newest["link"]:
             continue
-        facts_list.append(f"[{a['source']}] {a['title']}")
+        facts_list.append(extract_body_only(a))
     facts_str = " | ".join(facts_list)
 
     full_text = " ".join([f"{a.get('title','')} {a.get('description','')}" for a in articles]).lower()
@@ -1090,12 +1058,22 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
         combined_text = " ".join([f"{a.get('title', '')} {a.get('description', '')}" for a in chronological_arts])
         specific_drv, cat_label = detect_specific_narrative(combined_text)
         selected_arts = [chronological_arts[0]] + chronological_arts[-4:] if len(chronological_arts) > 5 else chronological_arts
-        arts_lines = [f"  * [{'INITIAL REPORT' if a_i == 0 else f'NEW UPDATE #{a_i}'} | {a['date']} UTC | {a['source']}]: {a['title']} — {a['description']}" for a_i, a in enumerate(selected_arts)]
+        arts_lines = []
+        for a_i, a in enumerate(selected_arts):
+            role = "INITIAL REPORT" if a_i == 0 else f"NEW UPDATE #{a_i}"
+            body = a.get("description", "").strip()
+            content_block = f"Content: {body} (Context topic: {a['title']})" if body else f"Topic to synthesize into prose (do NOT copy title): {a['title']}"
+            arts_lines.append(f"  * [{role} | {a['date']} UTC | {a['source']}]: {content_block}")
         clusters_input.append(f"=== CLUSTER_ID: {idx} | SOURCES: {len(chronological_arts)} | CATEGORY: {cat_label} | DRIVER: {specific_drv} ===\n" + "\n".join(arts_lines))
 
     prompt = f"""You are an objective Intelligence & Calibration Agent for a Gold (XAU/USD) trader.
     Analyze these {len(clusters_batch)} News Clusters using the 3-Source Orderbook (OANDA + OKX Live L2 + Unmitigated COMEX), CFTC COT positioning, Dual-Horizon Drivers, and Empirical Regime Matrix below.
-    CRITICAL UPDATE RULE: When a cluster has >1 source ('NEW UPDATE #...'), start 'Facts' with '[Update YYYY-MM-DD HH:MM UTC via Source]: <new details> | '.
+
+    STRICT RULES FOR THE 'Facts' FIELD (NO HEADLINES / NO TITLES):
+    1. NEVER copy, repeat, or paste raw article titles/headlines or clickbait questions into 'Facts'. The UI already displays the headline separately!
+    2. Write ONLY a clean, synthesized intelligence summary in your own analytical sentences explaining what actually happened, key figures, and why it matters.
+    3. If a cluster has >1 source ('NEW UPDATE #...'), start 'Facts' with '[Update YYYY-MM-DD HH:MM UTC via Source]: <1-2 sentences synthesizing the new factual development in your own words, NEVER the raw headline> | Core Summary: <synthesized summary of the overall event>'.
+
     Output ONLY a valid JSON array of {len(clusters_batch)} objects in English!
 
     Current Time: {now_utc_str}
@@ -1116,7 +1094,7 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
         "Cluster_ID": 0,
         "Dominant_Driver": "Specific driver label",
         "Event_Timestamp": "When the event occurred relative to {now_utc_str}",
-        "Facts": "If >1 source, start with '[Update YYYY-MM-DD HH:MM UTC via Source]: ...' followed by core facts.",
+        "Facts": "Pure synthesized factual summary in analytical prose (NO raw article titles). If updated by newer sources, start with '[Update YYYY-MM-DD HH:MM UTC via Source]: <synthesized new facts> | Core Summary: <synthesized background>'.",
         "Uncertainties": "Key unknowns",
         "Macro_Context": "How USD, Yields, Nasdaq, Oil, 24/7 Perp Basis, Taker Flow, OKX Top Traders & CFTC COT interact with this news.",
         "Bull_Case": "Pro-Gold catalysts & orderbook absorption",
@@ -1243,6 +1221,20 @@ def main():
 
     cutoff_timestamp = (datetime.now() - timedelta(hours=24)).timestamp()
     valid_clusters = [c for c in existing_data if c.get("_timestamp", 0) > cutoff_timestamp]
+
+    # Auto-Heal: Flag any existing cluster that still has raw article titles or '[INITIAL REPORT' injected into Facts
+    for c in valid_clusters:
+        if isinstance(c.get("summary"), dict):
+            facts_str = str(c["summary"].get("Facts", ""))
+            if "[INITIAL REPORT" in facts_str or " — " in facts_str:
+                c["needs_update"] = True
+            else:
+                for a in c.get("articles", []):
+                    t_str = a.get("title", "").strip()
+                    if len(t_str) > 20 and t_str in facts_str:
+                        c["needs_update"] = True
+                        break
+
     existing_urls = {a["link"] for c in valid_clusters for a in c.get("articles", [])}
 
     new_articles = fetch_new_articles(existing_urls)
@@ -1265,11 +1257,6 @@ def main():
                 tc["main_date"] = f"First Reported: {tc['original_date']} UTC | Last Update: {newest_a['date']} UTC" if newest_a["date"] != tc["original_date"] else f"First Reported: {newest_a['date']} UTC"
                 tc["_timestamp"] = newest_a["_timestamp"]
                 tc["needs_update"] = True
-                if isinstance(tc.get("summary"), dict):
-                    old_f = tc["summary"].get("Facts", "")
-                    upd_tag = f"[Update {article['date']} UTC via {article['source']}]:"
-                    if upd_tag not in old_f:
-                        tc["summary"]["Facts"] = f"{upd_tag} {article['title']} | {old_f}"
                 cluster_embeddings[best_match_idx] = model.encode(" ".join([a["title"] for a in tc["articles"]]))
             else:
                 valid_clusters.append({
@@ -1294,11 +1281,7 @@ def main():
             batch_results = generate_batch_summaries(batch_slice, orderbook_data, price_history_data, macro_context_str, crypto_basis_str, taker_flow_str, dominant_drivers_str, perf_memory_str)
             for idx_in_batch, cluster in enumerate(batch_slice):
                 if idx_in_batch in batch_results:
-                    ai_s = batch_results[idx_in_batch]
-                    if len(cluster.get("articles", [])) > 1 and isinstance(ai_s, dict) and "[Update" not in str(ai_s.get("Facts", "")):
-                        na = max(cluster["articles"], key=lambda x: x.get("_timestamp", 0))
-                        ai_s["Facts"] = f"[Update {na['date']} UTC via {na['source']}]: {na['title']} | {ai_s.get('Facts', '')}"
-                    cluster["summary"] = ai_s
+                    cluster["summary"] = batch_results[idx_in_batch]
                     cluster["needs_update"] = False
 
     for c in valid_clusters:

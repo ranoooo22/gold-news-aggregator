@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 460,
-    "hits": 301,
-    "misses": 159,
-    "win_rate": 65.4,
-    "active_signals": 49,
+    "total_evaluated": 487,
+    "hits": 322,
+    "misses": 165,
+    "win_rate": 66.1,
+    "active_signals": 31,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 248,
-                "misses": 127,
-                "total": 375,
-                "win_rate": 66.1,
-                "avg_dd": 17.35
+                "hits": 269,
+                "misses": 133,
+                "total": 402,
+                "win_rate": 66.9,
+                "avg_dd": 18.13
             },
             "Bearish": {
                 "hits": 53,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 285,
-                "misses": 155,
-                "total": 440,
-                "win_rate": 64.8,
-                "avg_dd": 17.4
+                "hits": 306,
+                "misses": 161,
+                "total": 467,
+                "win_rate": 65.5,
+                "avg_dd": 18.12
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 16,
@@ -60,11 +60,11 @@
                 "avg_dd": 27.09
             },
             "Against USD Headwind": {
-                "hits": 199,
-                "misses": 97,
-                "total": 296,
-                "win_rate": 67.2,
-                "avg_dd": 11.87
+                "hits": 220,
+                "misses": 103,
+                "total": 323,
+                "win_rate": 68.1,
+                "avg_dd": 13.57
             },
             "USD Neutral / Legacy": {
                 "hits": 3,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 158,
-                "misses": 95,
-                "total": 253,
-                "win_rate": 62.5,
-                "avg_dd": 19.01
+                "hits": 171,
+                "misses": 98,
+                "total": 269,
+                "win_rate": 63.6,
+                "avg_dd": 19.22
             },
             "Fed, Rates & Macro": {
                 "hits": 20,
@@ -90,34 +90,34 @@
                 "avg_dd": 11.76
             },
             "Tech, AI & Equities": {
-                "hits": 81,
+                "hits": 87,
                 "misses": 37,
-                "total": 118,
-                "win_rate": 68.6,
-                "avg_dd": 14.19
+                "total": 124,
+                "win_rate": 70.2,
+                "avg_dd": 14.32
             },
             "Commodities & Energy": {
-                "hits": 42,
-                "misses": 20,
-                "total": 62,
-                "win_rate": 67.7,
-                "avg_dd": 20.62
+                "hits": 44,
+                "misses": 23,
+                "total": 67,
+                "win_rate": 65.7,
+                "avg_dd": 24.22
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 301,
-                "misses": 153,
-                "total": 454,
-                "win_rate": 66.3,
-                "avg_dd": 17.58
+                "hits": 320,
+                "misses": 159,
+                "total": 479,
+                "win_rate": 66.8,
+                "avg_dd": 18.27
             },
             "High (65-74%)": {
-                "hits": 0,
+                "hits": 2,
                 "misses": 5,
-                "total": 5,
-                "win_rate": 0.0,
-                "avg_dd": 12.77
+                "total": 7,
+                "win_rate": 28.6,
+                "avg_dd": 13.48
             },
             "Extreme (>=75%)": {
                 "hits": 0,
@@ -7185,7 +7185,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$7.04)"
         },
         "https://finance.yahoo.com/energy/articles/eneos-raises-fy-profit-forecast-044636723.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Eneos raises FY profit forecast by ~50% on stronger oil markets",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -7193,7 +7193,7 @@
             "prob": 55,
             "entry_price": 4046.39,
             "target": 4079.07,
-            "max_dd_usd": 63.7,
+            "max_dd_usd": 77.62,
             "atr_ratio_at_signal": 0.22,
             "daily_atr_at_signal": 54.25,
             "eur_chg_at_signal": -0.61,
@@ -7201,7 +7201,7 @@
             "macro_snapshot": "EUR -0.61%, NAS100 +0.75%",
             "created_ts": 1794372396.0,
             "date": "First Reported: 2026-11-11 04:46 UTC",
-            "fail_reason": ""
+            "fail_reason": "20h time limit expired without reaching $4079.07 (Max DD: -$77.62)"
         },
         "https://www.aljazeera.com/news/2026/11/11/russia-claims-interception-of-146-drones-in-leningrad-region?traffic_source=rss": {
             "status": "HIT",
@@ -7299,7 +7299,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$1.61)"
         },
         "https://en.mehrnews.com/news/249332/Tehran-to-host-ECO-Summit-on-Dec-3-4": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Tehran to host ECO Summit on Dec. 3-4",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -7307,7 +7307,7 @@
             "prob": 59,
             "entry_price": 4049.88,
             "target": 4060.34,
-            "max_dd_usd": 67.2,
+            "max_dd_usd": 81.12,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 42.28,
             "eur_chg_at_signal": -0.79,
@@ -7315,7 +7315,7 @@
             "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
             "created_ts": 1794389429.0,
             "date": "First Reported: 2026-11-11 09:30 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$81.12 >= 1.8x ATR) before target"
         },
         "https://finance.yahoo.com/markets/stocks/articles/wider-loss-guidance-change-clarivate-091519878.html?.tsrc=rss": {
             "status": "HIT",
@@ -7337,7 +7337,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$3.37)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/3-value-stocks-under-5-130900631.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "3 Value Stocks Under $5 to Buy Amid Oil Price Volatility",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -7345,7 +7345,7 @@
             "prob": 64,
             "entry_price": 4049.88,
             "target": 4060.34,
-            "max_dd_usd": 67.2,
+            "max_dd_usd": 81.12,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 42.28,
             "eur_chg_at_signal": -0.79,
@@ -7353,7 +7353,7 @@
             "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
             "created_ts": 1794388387.0,
             "date": "First Reported: 2026-11-09 13:09 UTC | Last Update: 2026-11-11 09:13 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$81.12 >= 1.8x ATR) before target"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/11/what-do-kyiv-residents-think-about-giving-up-territory-to-russia?traffic_source=rss": {
             "status": "HIT",
@@ -7375,7 +7375,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$3.37)"
         },
         "https://www.aljazeera.com/opinions/2026/11/11/is-washington-rethinking-its-relationship-with-israel?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Is Washington rethinking its relationship with Israel?",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -7383,7 +7383,7 @@
             "prob": 63,
             "entry_price": 4049.88,
             "target": 4060.34,
-            "max_dd_usd": 67.2,
+            "max_dd_usd": 81.12,
             "atr_ratio_at_signal": 0.21,
             "daily_atr_at_signal": 42.28,
             "eur_chg_at_signal": -0.79,
@@ -7391,7 +7391,7 @@
             "macro_snapshot": "EUR -0.79%, NAS100 +1.05%",
             "created_ts": 1794387746.0,
             "date": "First Reported: 2026-11-11 07:26 UTC | Last Update: 2026-11-11 09:02 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$81.12 >= 1.8x ATR) before target"
         },
         "https://finance.yahoo.com/markets/commodities/articles/galantas-gold-intersects-71-meters-070000666.html?.tsrc=rss": {
             "status": "HIT",
@@ -7565,7 +7565,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$2.70)"
         },
         "https://www.investing.com/news/commodities-news/oil-dependence-is-bad-for-the-climate-and-the-economy-un-chief-tells-cop31-5015927": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Oil dependence is bad for the climate and the economy, UN chief tells COP31",
             "source": "Investing.com",
             "category": "Commodities & Energy",
@@ -7573,7 +7573,7 @@
             "prob": 56,
             "entry_price": 4049.84,
             "target": 4060.21,
-            "max_dd_usd": 67.16,
+            "max_dd_usd": 81.08,
             "atr_ratio_at_signal": 0.24,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -7581,10 +7581,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.41%",
             "created_ts": 1794393970.0,
             "date": "First Reported: 2026-11-10 14:24 UTC | Last Update: 2026-11-11 10:46 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$81.08 >= 1.8x ATR) before target"
         },
         "https://www.aljazeera.com/news/2026/11/11/whats-the-falklands-oil-project-at-the-heart-of-latest-uk-argentina-spat?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "What’s the Falklands oil project at the heart of latest UK-Argentina spat?",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -7592,7 +7592,7 @@
             "prob": 61,
             "entry_price": 4049.84,
             "target": 4060.21,
-            "max_dd_usd": 67.16,
+            "max_dd_usd": 81.08,
             "atr_ratio_at_signal": 0.24,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -7600,7 +7600,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.41%",
             "created_ts": 1794392892.0,
             "date": "First Reported: 2026-11-11 10:28 UTC",
-            "fail_reason": ""
+            "fail_reason": "Exceeded catastrophe drawdown limit (-$81.08 >= 1.8x ATR) before target"
         },
         "https://finance.yahoo.com/technology/article/anthropics-new-claude-product-drop-just-sent-a-message-to-these-3-tech-stocks-133421409.html?.tsrc=rss": {
             "status": "ACTIVE",
@@ -7611,7 +7611,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 52.93,
+            "max_dd_usd": 66.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7630,7 +7630,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 52.93,
+            "max_dd_usd": 66.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7649,7 +7649,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 52.93,
+            "max_dd_usd": 66.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7668,7 +7668,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 52.93,
+            "max_dd_usd": 66.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7687,7 +7687,7 @@
             "prob": 55,
             "entry_price": 4035.62,
             "target": 4050.17,
-            "max_dd_usd": 52.93,
+            "max_dd_usd": 66.86,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7706,7 +7706,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 61.45,
+            "max_dd_usd": 75.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7725,7 +7725,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 61.45,
+            "max_dd_usd": 75.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7744,7 +7744,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 61.45,
+            "max_dd_usd": 75.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7763,7 +7763,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 61.45,
+            "max_dd_usd": 75.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7782,7 +7782,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 61.45,
+            "max_dd_usd": 75.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7801,7 +7801,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 61.45,
+            "max_dd_usd": 75.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7820,7 +7820,7 @@
             "prob": 55,
             "entry_price": 4044.14,
             "target": 4050.17,
-            "max_dd_usd": 61.45,
+            "max_dd_usd": 75.38,
             "atr_ratio_at_signal": 0.34,
             "daily_atr_at_signal": 43.47,
             "eur_chg_at_signal": -0.55,
@@ -7972,7 +7972,7 @@
             "prob": 55,
             "entry_price": 4005.12,
             "target": 4019.59,
-            "max_dd_usd": 22.43,
+            "max_dd_usd": 36.36,
             "atr_ratio_at_signal": 0.87,
             "daily_atr_at_signal": 45.85,
             "eur_chg_at_signal": -0.55,
@@ -7991,7 +7991,7 @@
             "prob": 55,
             "entry_price": 4005.12,
             "target": 4019.59,
-            "max_dd_usd": 22.43,
+            "max_dd_usd": 36.36,
             "atr_ratio_at_signal": 0.87,
             "daily_atr_at_signal": 45.85,
             "eur_chg_at_signal": -0.55,
@@ -8010,7 +8010,7 @@
             "prob": 55,
             "entry_price": 4005.12,
             "target": 4019.59,
-            "max_dd_usd": 22.43,
+            "max_dd_usd": 36.36,
             "atr_ratio_at_signal": 0.87,
             "daily_atr_at_signal": 45.85,
             "eur_chg_at_signal": -0.55,
@@ -8029,7 +8029,7 @@
             "prob": 55,
             "entry_price": 4005.12,
             "target": 4019.59,
-            "max_dd_usd": 22.43,
+            "max_dd_usd": 36.36,
             "atr_ratio_at_signal": 0.87,
             "daily_atr_at_signal": 45.85,
             "eur_chg_at_signal": -0.55,
@@ -8086,7 +8086,7 @@
             "prob": 55,
             "entry_price": 4000.89,
             "target": 4009.93,
-            "max_dd_usd": 18.2,
+            "max_dd_usd": 32.12,
             "atr_ratio_at_signal": 0.85,
             "daily_atr_at_signal": 45.56,
             "eur_chg_at_signal": -0.69,
@@ -8105,7 +8105,7 @@
             "prob": 55,
             "entry_price": 4000.89,
             "target": 4009.93,
-            "max_dd_usd": 18.2,
+            "max_dd_usd": 32.12,
             "atr_ratio_at_signal": 0.85,
             "daily_atr_at_signal": 45.56,
             "eur_chg_at_signal": -0.69,
@@ -8143,7 +8143,7 @@
             "prob": 55,
             "entry_price": 3992.95,
             "target": 4050.11,
-            "max_dd_usd": 10.26,
+            "max_dd_usd": 24.18,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8181,7 +8181,7 @@
             "prob": 55,
             "entry_price": 3992.95,
             "target": 4050.11,
-            "max_dd_usd": 10.26,
+            "max_dd_usd": 24.18,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8200,7 +8200,7 @@
             "prob": 55,
             "entry_price": 3992.95,
             "target": 4050.11,
-            "max_dd_usd": 10.26,
+            "max_dd_usd": 24.18,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8219,7 +8219,7 @@
             "prob": 55,
             "entry_price": 3992.95,
             "target": 4050.11,
-            "max_dd_usd": 10.26,
+            "max_dd_usd": 24.18,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8238,7 +8238,7 @@
             "prob": 55,
             "entry_price": 3993.22,
             "target": 4050.11,
-            "max_dd_usd": 10.53,
+            "max_dd_usd": 24.45,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8257,7 +8257,7 @@
             "prob": 55,
             "entry_price": 3993.22,
             "target": 4050.11,
-            "max_dd_usd": 10.53,
+            "max_dd_usd": 24.45,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8276,7 +8276,7 @@
             "prob": 55,
             "entry_price": 3993.22,
             "target": 4050.11,
-            "max_dd_usd": 10.53,
+            "max_dd_usd": 24.45,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8295,7 +8295,7 @@
             "prob": 55,
             "entry_price": 3993.22,
             "target": 4050.11,
-            "max_dd_usd": 10.53,
+            "max_dd_usd": 24.45,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8314,7 +8314,7 @@
             "prob": 55,
             "entry_price": 3993.22,
             "target": 4050.11,
-            "max_dd_usd": 10.53,
+            "max_dd_usd": 24.45,
             "atr_ratio_at_signal": 0.47,
             "daily_atr_at_signal": 47.9,
             "eur_chg_at_signal": -0.67,
@@ -8344,7 +8344,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$12.43)"
         },
         "https://finance.yahoo.com/technology/ai/articles/canadian-ai-buildout-stocks-hardware-211135535.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Canadian AI-buildout stocks: hardware, power, engineering and software",
             "source": "Yahoo Finance Nasdaq",
             "category": "Geopolitics & War",
@@ -8352,7 +8352,7 @@
             "prob": 55,
             "entry_price": 3984.53,
             "target": 3990.14,
-            "max_dd_usd": 1.35,
+            "max_dd_usd": 6.29,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -8360,10 +8360,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +2.01%",
             "created_ts": 1794431495.0,
             "date": "First Reported: 2026-11-11 21:11 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.29)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-end-higher-211108614.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US Equity Markets End Higher After CoreWeave's Results Push Technology Sector Upward",
             "source": "Yahoo Finance Oil",
             "category": "Geopolitics & War",
@@ -8371,7 +8371,7 @@
             "prob": 55,
             "entry_price": 3984.53,
             "target": 3990.2,
-            "max_dd_usd": 1.35,
+            "max_dd_usd": 6.29,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -8379,10 +8379,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +2.01%",
             "created_ts": 1794431468.0,
             "date": "First Reported: 2026-11-11 21:11 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.29)"
         },
         "https://www.fool.com/investing/2026/11/11/unity-software-measure-twice/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Unity Software: Measure Twice!",
             "source": "Yahoo Finance Nasdaq",
             "category": "Geopolitics & War",
@@ -8390,7 +8390,7 @@
             "prob": 55,
             "entry_price": 3984.53,
             "target": 3990.14,
-            "max_dd_usd": 1.35,
+            "max_dd_usd": 6.29,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -8398,10 +8398,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +2.01%",
             "created_ts": 1794431400.0,
             "date": "First Reported: 2026-11-11 21:10 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.29)"
         },
         "https://www.middleeasteye.net/trending/11-democrats-face-backlash-after-missing-hegseth-impeachment-vote-0": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Democrats face backlash after missing Hegseth impeachment vote",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -8409,7 +8409,7 @@
             "prob": 55,
             "entry_price": 3984.53,
             "target": 3990.14,
-            "max_dd_usd": 1.35,
+            "max_dd_usd": 6.29,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -8417,10 +8417,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +2.01%",
             "created_ts": 1794431047.0,
             "date": "First Reported: 2026-11-11 20:50 UTC | Last Update: 2026-11-11 21:04 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$6.29)"
         },
         "https://www.aljazeera.com/news/2026/11/11/trumps-white-house-calls-democratic-plans-for-congressional-probes-abuse?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Trump’s White House calls Democratic plans for congressional probes ‘abuse’",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -8428,7 +8428,7 @@
             "prob": 55,
             "entry_price": 3985.28,
             "target": 3990.14,
-            "max_dd_usd": 2.6,
+            "max_dd_usd": 7.04,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -8436,10 +8436,10 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +2.01%",
             "created_ts": 1794429590.0,
             "date": "First Reported: 2026-11-11 20:39 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.04)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/11/three-women-killed-in-la-crash-as-driver-arrested?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Three women killed in LA crash as driver arrested",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -8447,7 +8447,7 @@
             "prob": 55,
             "entry_price": 3985.28,
             "target": 3990.14,
-            "max_dd_usd": 2.6,
+            "max_dd_usd": 7.04,
             "atr_ratio_at_signal": 0.2,
             "daily_atr_at_signal": 42.7,
             "eur_chg_at_signal": -0.7,
@@ -8455,7 +8455,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +2.01%",
             "created_ts": 1794427425.0,
             "date": "First Reported: 2026-11-11 20:03 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$7.04)"
         },
         "https://www.cnbc.com/2026/11/11/morgan-stanley-ai-bonds-hyperscalers-credit.html": {
             "status": "HIT",
@@ -8534,7 +8534,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$0.65)"
         },
         "https://www.fool.com/investing/2026/11/11/ge-vernova-fell-25-on-data-center-fears-only-about/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "GE Vernova Fell 25% on Data Center Fears. Only About 20% of Its Gas Turbine Customers Are ",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -8542,7 +8542,7 @@
             "prob": 60,
             "entry_price": 3987.7,
             "target": 3990.21,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 9.45,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.7,
@@ -8550,7 +8550,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.92%",
             "created_ts": 1794435900.0,
             "date": "First Reported: 2026-11-11 22:25 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.45)"
         },
         "https://www.investing.com/news/commodities-news/exclusiveexxon-assessing-7-areas-in-venezuela-for-possible-energy-projects-sources-say-5019968": {
             "status": "ACTIVE",
@@ -8561,7 +8561,7 @@
             "prob": 61,
             "entry_price": 3987.7,
             "target": 4050.15,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 18.93,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.7,
@@ -8580,7 +8580,7 @@
             "prob": 58,
             "entry_price": 3987.7,
             "target": 4050.15,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 18.93,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.7,
@@ -8591,7 +8591,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/saudi-arabia-feels-liquidity-crunch-even-oil-exports-rebound": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Saudi Arabia faces liquidity crunch even as oil exports rebound to pre-war levels",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -8599,7 +8599,7 @@
             "prob": 58,
             "entry_price": 3987.7,
             "target": 3990.2,
-            "max_dd_usd": 4.51,
+            "max_dd_usd": 9.45,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.7,
@@ -8607,7 +8607,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.92%",
             "created_ts": 1794433496.0,
             "date": "First Reported: 2026-11-11 21:39 UTC | Last Update: 2026-11-11 21:44 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.45)"
         },
         "https://finance.yahoo.com/markets/commodities/articles/found-gold-reports-q3-2026-220000335.html?.tsrc=rss": {
             "status": "ACTIVE",
@@ -8618,7 +8618,7 @@
             "prob": 65,
             "entry_price": 3987.7,
             "target": 4050.15,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 18.93,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.71,
@@ -8629,7 +8629,7 @@
             "fail_reason": ""
         },
         "https://app.moby.co/home/research/tools/earningsCalendar/earnings-mink-therapeutics-inc-q3-2026-earnings-call-summary?utm_source=yahoo_finance&utm_medium=rss&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "MiNK Therapeutics, Inc. Q3 2026 Earnings Call Summary",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -8637,7 +8637,7 @@
             "prob": 55,
             "entry_price": 3987.7,
             "target": 3990.2,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 9.45,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.71,
@@ -8645,18 +8645,18 @@
             "macro_snapshot": "EUR -0.71%, NAS100 +1.92%",
             "created_ts": 1794435479.0,
             "date": "First Reported: 2026-11-11 21:58 UTC | Last Update: 2026-11-11 22:17 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.45)"
         },
         "https://finance.yahoo.com/markets/stocks/articles/3-data-center-infrastructure-stocks-043250014.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "3 Data Center Infrastructure Stocks Retail Investors Are Watching Beyond Nvidia",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 60,
+            "prob": 68,
             "entry_price": 3987.7,
-            "target": 4050.15,
-            "max_dd_usd": 0.0,
+            "target": 3990.39,
+            "max_dd_usd": 18.93,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.71,
@@ -8664,10 +8664,10 @@
             "macro_snapshot": "EUR -0.71%, NAS100 +1.92%",
             "created_ts": 1794435165.0,
             "date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-11 22:12 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$18.93)"
         },
         "https://www.marketwatch.com/story/oracles-stock-is-totally-misunderstood-and-should-be-a-go-to-ai-play-says-this-analyst-2a87e80d?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Oracle’s stock is totally misunderstood and should be a ‘go-to’ AI play, says this analyst",
             "source": "MarketWatch Macro",
             "category": "Tech, AI & Equities",
@@ -8675,7 +8675,7 @@
             "prob": 58,
             "entry_price": 3987.7,
             "target": 3990.2,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 9.45,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.71,
@@ -8683,10 +8683,10 @@
             "macro_snapshot": "EUR -0.71%, NAS100 +1.92%",
             "created_ts": 1794435102.0,
             "date": "First Reported: 2026-11-11 18:13 UTC | Last Update: 2026-11-11 22:11 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.45)"
         },
         "https://www.middleeasteye.net/opinion/how-israel-has-engineered-system-apartheid-west-bank-roads": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "How Israel has engineered a system of apartheid on West Bank roads",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -8694,7 +8694,7 @@
             "prob": 67,
             "entry_price": 3987.7,
             "target": 3990.2,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 9.45,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.71,
@@ -8702,10 +8702,10 @@
             "macro_snapshot": "EUR -0.71%, NAS100 +1.92%",
             "created_ts": 1794437427.0,
             "date": "First Reported: 2026-11-11 22:50 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.45)"
         },
         "https://www.aljazeera.com/news/2026/11/10/what-powers-does-netanyahu-have-as-israels-interim-pm?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "What powers does Netanyahu have as Israel’s interim PM?",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -8713,7 +8713,7 @@
             "prob": 62,
             "entry_price": 3987.7,
             "target": 3990.2,
-            "max_dd_usd": 4.51,
+            "max_dd_usd": 9.45,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
             "eur_chg_at_signal": -0.71,
@@ -8721,7 +8721,178 @@
             "macro_snapshot": "EUR -0.71%, NAS100 +1.92%",
             "created_ts": 1794433709.0,
             "date": "First Reported: 2026-11-10 08:38 UTC | Last Update: 2026-11-11 21:48 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.45)"
+        },
+        "https://stocktwits.com/news-articles/markets/equity/nasdaq-100-futures-drop-as-reports-relating-to-jensen-huang-s-ousting/cNGzQslR997?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Nasdaq 100 Futures Drop As Reports Relating To Jensen Huang’s Ousting Outweigh CoreWeave’s",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 3993.59,
+            "target": 3990.39,
+            "max_dd_usd": 24.83,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 48.42,
+            "eur_chg_at_signal": -0.64,
+            "nas_chg_at_signal": 0.69,
+            "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
+            "created_ts": 1794444258.0,
+            "date": "First Reported: 2026-11-12 00:22 UTC | Last Update: 2026-11-12 00:44 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$24.83)"
+        },
+        "https://www.investing.com/news/commodities-news/myanmar-lobbies-us-to-invest-in-its-rare-earths-sector-dominated-by-china-5018261": {
+            "status": "HIT",
+            "headline": "Myanmar lobbies US to invest in its rare earths sector, dominated by China",
+            "source": "Investing.com",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 58,
+            "entry_price": 3993.59,
+            "target": 3990.39,
+            "max_dd_usd": 24.83,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 48.42,
+            "eur_chg_at_signal": -0.64,
+            "nas_chg_at_signal": 0.69,
+            "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
+            "created_ts": 1794443100.0,
+            "date": "First Reported: 2026-11-11 10:30 UTC | Last Update: 2026-11-12 00:25 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$24.83)"
+        },
+        "https://finance.yahoo.com/technology/articles/market-chatter-microsoft-wants-power-000818359.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Market Chatter: Microsoft Wants to Power Data Centers Without Subsidies or Higher Costs fo",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3993.59,
+            "target": 3990.39,
+            "max_dd_usd": 24.83,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 48.42,
+            "eur_chg_at_signal": -0.64,
+            "nas_chg_at_signal": 0.69,
+            "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
+            "created_ts": 1794442098.0,
+            "date": "First Reported: 2026-11-12 00:08 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$24.83)"
+        },
+        "https://www.aljazeera.com/news/2026/11/12/us-election-results-could-be-positive-for-lebanon-hezbollah-chief-says?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "US election results could be positive for Lebanon, Hezbollah chief says",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 64,
+            "entry_price": 3993.59,
+            "target": 3990.39,
+            "max_dd_usd": 24.83,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 48.42,
+            "eur_chg_at_signal": -0.64,
+            "nas_chg_at_signal": 0.69,
+            "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
+            "created_ts": 1794442010.0,
+            "date": "First Reported: 2026-11-12 00:06 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$24.83)"
+        },
+        "https://www.aljazeera.com/news/liveblog/2026/11/12/iran-war-live-tehran-warns-of-wider-retaliation-israel-kills-in-gaza?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Iran war live: Tehran warns of wider retaliation; Israel kills in Gaza",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 66,
+            "entry_price": 3993.59,
+            "target": 4050.11,
+            "max_dd_usd": 24.83,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 48.42,
+            "eur_chg_at_signal": -0.64,
+            "nas_chg_at_signal": 0.69,
+            "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
+            "created_ts": 1794441644.0,
+            "date": "First Reported: 2026-11-12 00:00 UTC",
             "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/11/barcelona-erupts-in-violence-after-general-strike?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Barcelona erupts in violence after general strike",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 3978.77,
+            "target": 3990.39,
+            "max_dd_usd": 0.53,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 48.42,
+            "eur_chg_at_signal": -0.64,
+            "nas_chg_at_signal": 0.69,
+            "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
+            "created_ts": 1794441001.0,
+            "date": "First Reported: 2026-11-11 23:50 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.53)"
+        },
+        "https://www.marketwatch.com/story/your-holiday-credit-card-bills-are-going-up-what-you-can-do-to-ease-the-pain-5ddeb446?mod=mw_rss_topstories": {
+            "status": "HIT",
+            "headline": "Your holiday credit-card bills are going up. What you can do to ease the pain.",
+            "source": "MarketWatch Macro",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3978.77,
+            "target": 3990.39,
+            "max_dd_usd": 0.53,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 48.42,
+            "eur_chg_at_signal": -0.64,
+            "nas_chg_at_signal": 0.69,
+            "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
+            "created_ts": 1794439800.0,
+            "date": "First Reported: 2026-11-11 23:30 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.53)"
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/iran-accuses-us-spreading-disinformation-about-iranian-terrorism": {
+            "status": "HIT",
+            "headline": "Iran accuses US of spreading disinformation about Iranian terrorism",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3978.77,
+            "target": 3990.39,
+            "max_dd_usd": 0.53,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 48.42,
+            "eur_chg_at_signal": -0.64,
+            "nas_chg_at_signal": 0.69,
+            "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
+            "created_ts": 1794439457.0,
+            "date": "First Reported: 2026-11-11 23:24 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$0.53)"
+        },
+        "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Israeli strikes hit medical complex as nine killed across Gaza",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3987.7,
+            "target": 3990.39,
+            "max_dd_usd": 9.45,
+            "atr_ratio_at_signal": 0.15,
+            "daily_atr_at_signal": 48.42,
+            "eur_chg_at_signal": -0.64,
+            "nas_chg_at_signal": 0.69,
+            "macro_snapshot": "EUR -0.64%, NAS100 +0.69%",
+            "created_ts": 1794437737.0,
+            "date": "First Reported: 2026-11-11 22:55 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$9.45)"
         }
     }
 }

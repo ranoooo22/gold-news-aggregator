@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 503,
-    "hits": 326,
+    "total_evaluated": 505,
+    "hits": 328,
     "misses": 177,
-    "win_rate": 64.8,
-    "active_signals": 27,
+    "win_rate": 65.0,
+    "active_signals": 29,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 272,
+                "hits": 273,
                 "misses": 145,
-                "total": 417,
-                "win_rate": 65.2,
-                "avg_dd": 20.4
+                "total": 418,
+                "win_rate": 65.3,
+                "avg_dd": 20.53
             },
             "Bearish": {
-                "hits": 54,
+                "hits": 55,
                 "misses": 32,
-                "total": 86,
-                "win_rate": 62.8,
-                "avg_dd": 18.21
+                "total": 87,
+                "win_rate": 63.2,
+                "avg_dd": 18.59
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 310,
+                "hits": 312,
                 "misses": 173,
-                "total": 483,
-                "win_rate": 64.2,
-                "avg_dd": 20.18
+                "total": 485,
+                "win_rate": 64.3,
+                "avg_dd": 20.35
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 16,
@@ -53,18 +53,18 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 100,
+                "hits": 101,
                 "misses": 62,
-                "total": 162,
-                "win_rate": 61.7,
-                "avg_dd": 26.9
+                "total": 163,
+                "win_rate": 62.0,
+                "avg_dd": 26.97
             },
             "Against USD Headwind": {
-                "hits": 223,
+                "hits": 224,
                 "misses": 115,
-                "total": 338,
-                "win_rate": 66.0,
-                "avg_dd": 16.87
+                "total": 339,
+                "win_rate": 66.1,
+                "avg_dd": 17.06
             },
             "USD Neutral / Legacy": {
                 "hits": 3,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 173,
+                "hits": 174,
                 "misses": 106,
-                "total": 279,
-                "win_rate": 62.0,
-                "avg_dd": 21.47
+                "total": 280,
+                "win_rate": 62.1,
+                "avg_dd": 21.55
             },
             "Fed, Rates & Macro": {
                 "hits": 20,
@@ -97,20 +97,20 @@
                 "avg_dd": 15.06
             },
             "Commodities & Energy": {
-                "hits": 46,
+                "hits": 47,
                 "misses": 26,
-                "total": 72,
-                "win_rate": 63.9,
-                "avg_dd": 27.15
+                "total": 73,
+                "win_rate": 64.4,
+                "avg_dd": 27.86
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 324,
+                "hits": 326,
                 "misses": 171,
-                "total": 495,
-                "win_rate": 65.5,
-                "avg_dd": 20.24
+                "total": 497,
+                "win_rate": 65.6,
+                "avg_dd": 20.4
             },
             "High (65-74%)": {
                 "hits": 2,
@@ -8553,14 +8553,14 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$9.45)"
         },
         "https://www.investing.com/news/commodities-news/exclusiveexxon-assessing-7-areas-in-venezuela-for-possible-energy-projects-sources-say-5019968": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Exclusive-Exxon assessing 7 areas in Venezuela for possible energy projects, sources say",
             "source": "Investing.com",
             "category": "Commodities & Energy",
             "impact": "Bullish",
-            "prob": 61,
+            "prob": 63,
             "entry_price": 3987.7,
-            "target": 4050.15,
+            "target": 3989.91,
             "max_dd_usd": 63.01,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 43.19,
@@ -8569,7 +8569,7 @@
             "macro_snapshot": "EUR -0.70%, NAS100 +1.92%",
             "created_ts": 1794435559.0,
             "date": "First Reported: 2026-11-11 22:19 UTC",
-            "fail_reason": ""
+            "fail_reason": "Target reached (Max Drawdown along the way: -$63.01)"
         },
         "https://www.middleeasteye.net/news/us-taxpayer-group-calls-icc-investigate-trump-rubio-aiding-gaza-genocide": {
             "status": "ACTIVE",
@@ -9035,7 +9035,7 @@
             "impact": "Bullish",
             "prob": 62,
             "entry_price": 3928.83,
-            "target": 3989.9,
+            "target": 3989.91,
             "max_dd_usd": 4.14,
             "atr_ratio_at_signal": 0.84,
             "daily_atr_at_signal": 56.81,
@@ -9121,6 +9121,82 @@
             "created_ts": 1794470535.0,
             "date": "First Reported: 2026-11-12 08:02 UTC",
             "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249354/Army-chief-warns-aggressors-will-face-heavier-losses": {
+            "status": "ACTIVE",
+            "headline": "Army chief warns aggressors will face heavier losses",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3942.77,
+            "target": 3989.91,
+            "max_dd_usd": 18.09,
+            "atr_ratio_at_signal": 0.61,
+            "daily_atr_at_signal": 60.08,
+            "eur_chg_at_signal": -0.41,
+            "nas_chg_at_signal": -0.05,
+            "macro_snapshot": "EUR -0.41%, NAS100 -0.05%",
+            "created_ts": 1794474654.0,
+            "date": "First Reported: 2026-11-12 09:10 UTC",
+            "fail_reason": ""
+        },
+        "https://www.cnbc.com/2026/11/12/uforce-defense-tech-drones-warfare-ukraine.html": {
+            "status": "ACTIVE",
+            "headline": "Ukrainian defense tech startup hits $6 billion valuation as investors bet on battle-tested",
+            "source": "CNBC Tech & AI",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 54,
+            "entry_price": 3942.77,
+            "target": 3989.91,
+            "max_dd_usd": 18.09,
+            "atr_ratio_at_signal": 0.61,
+            "daily_atr_at_signal": 60.08,
+            "eur_chg_at_signal": -0.41,
+            "nas_chg_at_signal": -0.05,
+            "macro_snapshot": "EUR -0.41%, NAS100 -0.05%",
+            "created_ts": 1794474322.0,
+            "date": "First Reported: 2026-11-12 09:05 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/12/ten-police-officers-18-fighters-killed-in-northwest-pakistan-attack?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Ten police officers, 18 fighters killed in northwest Pakistan attack",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3928.83,
+            "target": 3989.91,
+            "max_dd_usd": 4.14,
+            "atr_ratio_at_signal": 0.61,
+            "daily_atr_at_signal": 60.08,
+            "eur_chg_at_signal": -0.41,
+            "nas_chg_at_signal": -0.05,
+            "macro_snapshot": "EUR -0.41%, NAS100 -0.05%",
+            "created_ts": 1794472520.0,
+            "date": "First Reported: 2026-11-12 08:35 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/12/xi-jinping-says-taiwan-reunification-with-china-must-happen?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Xi Jinping says Taiwan ‘reunification’ with China must happen",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3928.83,
+            "target": 3930.74,
+            "max_dd_usd": 36.15,
+            "atr_ratio_at_signal": 0.61,
+            "daily_atr_at_signal": 60.08,
+            "eur_chg_at_signal": -0.41,
+            "nas_chg_at_signal": -0.05,
+            "macro_snapshot": "EUR -0.41%, NAS100 -0.05%",
+            "created_ts": 1794472485.0,
+            "date": "First Reported: 2026-11-12 08:34 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$36.15)"
         }
     }
 }

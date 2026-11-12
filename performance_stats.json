@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 531,
-    "hits": 335,
+    "total_evaluated": 534,
+    "hits": 338,
     "misses": 196,
-    "win_rate": 63.1,
-    "active_signals": 32,
+    "win_rate": 63.3,
+    "active_signals": 37,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -14,20 +14,20 @@
                 "avg_dd": 24.39
             },
             "Bearish": {
-                "hits": 61,
+                "hits": 64,
                 "misses": 32,
-                "total": 93,
-                "win_rate": 65.6,
-                "avg_dd": 18.43
+                "total": 96,
+                "win_rate": 66.7,
+                "avg_dd": 18.03
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 319,
+                "hits": 322,
                 "misses": 186,
-                "total": 505,
-                "win_rate": 63.2,
-                "avg_dd": 22.73
+                "total": 508,
+                "win_rate": 63.4,
+                "avg_dd": 22.64
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 16,
@@ -67,11 +67,11 @@
                 "avg_dd": 22.4
             },
             "USD Neutral / Legacy": {
-                "hits": 9,
+                "hits": 12,
                 "misses": 0,
-                "total": 9,
+                "total": 12,
                 "win_rate": 100.0,
-                "avg_dd": 13.28
+                "avg_dd": 12.7
             }
         },
         "by_category": {
@@ -90,34 +90,34 @@
                 "avg_dd": 11.76
             },
             "Tech, AI & Equities": {
-                "hits": 89,
+                "hits": 91,
                 "misses": 38,
-                "total": 127,
-                "win_rate": 70.1,
-                "avg_dd": 15.35
+                "total": 129,
+                "win_rate": 70.5,
+                "avg_dd": 15.25
             },
             "Commodities & Energy": {
-                "hits": 50,
+                "hits": 51,
                 "misses": 31,
-                "total": 81,
-                "win_rate": 61.7,
-                "avg_dd": 32.16
+                "total": 82,
+                "win_rate": 62.2,
+                "avg_dd": 31.81
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 333,
+                "hits": 335,
                 "misses": 188,
-                "total": 521,
-                "win_rate": 63.9,
-                "avg_dd": 23.41
+                "total": 523,
+                "win_rate": 64.1,
+                "avg_dd": 23.34
             },
             "High (65-74%)": {
-                "hits": 2,
+                "hits": 3,
                 "misses": 7,
-                "total": 9,
-                "win_rate": 22.2,
-                "avg_dd": 38.87
+                "total": 10,
+                "win_rate": 30.0,
+                "avg_dd": 34.89
             },
             "Extreme (>=75%)": {
                 "hits": 0,
@@ -9748,6 +9748,158 @@
             "created_ts": 1794487020.0,
             "date": "First Reported: 2026-11-12 12:37 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$11.99)"
+        },
+        "https://www.tikr.com/blog/stay-away-from-coreweave-huangs-scandal-puts-nvidias-6-3-billion-backstop-in-focus?ref=yahoofinance&tlnk=yf-261111-xfr9gw86&.tsrc=rss": {
+            "status": "HIT",
+            "headline": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 74,
+            "entry_price": 3898.32,
+            "target": 3892.97,
+            "max_dd_usd": 10.96,
+            "atr_ratio_at_signal": 0.69,
+            "daily_atr_at_signal": 80.34,
+            "eur_chg_at_signal": -0.06,
+            "nas_chg_at_signal": 0.18,
+            "macro_snapshot": "EUR -0.06%, NAS100 +0.18%",
+            "created_ts": 1794494326.0,
+            "date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-12 14:38 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.96)"
+        },
+        "https://www.middleeasteye.net/news/six-dutch-parties-condemn-local-arms-companys-deal-israeli-gunmaker": {
+            "status": "ACTIVE",
+            "headline": "Six Dutch parties condemn local arms company’s deal with Israeli gunmaker",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 59,
+            "entry_price": 3898.32,
+            "target": 4049.39,
+            "max_dd_usd": 15.27,
+            "atr_ratio_at_signal": 0.69,
+            "daily_atr_at_signal": 80.34,
+            "eur_chg_at_signal": -0.06,
+            "nas_chg_at_signal": 0.18,
+            "macro_snapshot": "EUR -0.06%, NAS100 +0.18%",
+            "created_ts": 1794494311.0,
+            "date": "First Reported: 2026-11-12 14:38 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/market-one-article-feature-kitco-143000007.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Market One Article Feature on Kitco: Visionary Copper and Gold Revives Kismet Copper Depos",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 3898.32,
+            "target": 4049.39,
+            "max_dd_usd": 15.27,
+            "atr_ratio_at_signal": 0.69,
+            "daily_atr_at_signal": 80.34,
+            "eur_chg_at_signal": -0.06,
+            "nas_chg_at_signal": 0.18,
+            "macro_snapshot": "EUR -0.06%, NAS100 +0.18%",
+            "created_ts": 1794493800.0,
+            "date": "First Reported: 2026-11-12 14:30 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/12/police-say-at-least-five-people-shot-at-busy-thoroughfare-in-washington-dc?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Police say at least five people shot at busy thoroughfare in Washington, DC",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3898.32,
+            "target": 3950.56,
+            "max_dd_usd": 15.27,
+            "atr_ratio_at_signal": 0.69,
+            "daily_atr_at_signal": 80.34,
+            "eur_chg_at_signal": -0.06,
+            "nas_chg_at_signal": 0.18,
+            "macro_snapshot": "EUR -0.06%, NAS100 +0.18%",
+            "created_ts": 1794493177.0,
+            "date": "First Reported: 2026-11-12 14:19 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/article/planning-nvidia-investigations-top-democrats-tell-trump-administration-to-preserve-all-records-141932940.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Planning Nvidia investigations, top Democrats tell Trump administration to 'preserve all r",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3898.32,
+            "target": 3892.97,
+            "max_dd_usd": 10.96,
+            "atr_ratio_at_signal": 0.69,
+            "daily_atr_at_signal": 80.34,
+            "eur_chg_at_signal": -0.06,
+            "nas_chg_at_signal": 0.18,
+            "macro_snapshot": "EUR -0.06%, NAS100 +0.18%",
+            "created_ts": 1794493172.0,
+            "date": "First Reported: 2026-11-12 14:19 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.96)"
+        },
+        "https://247wallst.com/investing/cryptocurrency/2026/11/12/bitcoin-gained-7-in-september-but-near-and-arbitrum-reportedly-surged-187-and-137/?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Bitcoin Gained 7% in September, but NEAR and Arbitrum Reportedly Surged 187% and 137%",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3898.32,
+            "target": 3892.97,
+            "max_dd_usd": 10.96,
+            "atr_ratio_at_signal": 0.69,
+            "daily_atr_at_signal": 80.34,
+            "eur_chg_at_signal": -0.06,
+            "nas_chg_at_signal": 0.18,
+            "macro_snapshot": "EUR -0.06%, NAS100 +0.18%",
+            "created_ts": 1794493161.0,
+            "date": "First Reported: 2026-11-12 14:19 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.96)"
+        },
+        "https://www.cnbc.com/2026/11/12/jamieson-greer-trump-tariffs-election-nvidia.html": {
+            "status": "ACTIVE",
+            "headline": "Trump trade chief Greer speaks with 'Squawk Box' as tariff threats rise",
+            "source": "CNBC Tech & AI",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3898.32,
+            "target": 3950.56,
+            "max_dd_usd": 15.27,
+            "atr_ratio_at_signal": 0.69,
+            "daily_atr_at_signal": 80.34,
+            "eur_chg_at_signal": -0.06,
+            "nas_chg_at_signal": 0.18,
+            "macro_snapshot": "EUR -0.06%, NAS100 +0.18%",
+            "created_ts": 1794492885.0,
+            "date": "First Reported: 2026-11-12 14:14 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/canadian-value-stocks-watch-november-141024330.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Canadian Value Stocks To Watch In November 2026",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3898.32,
+            "target": 3950.56,
+            "max_dd_usd": 15.27,
+            "atr_ratio_at_signal": 0.69,
+            "daily_atr_at_signal": 80.34,
+            "eur_chg_at_signal": -0.06,
+            "nas_chg_at_signal": 0.18,
+            "macro_snapshot": "EUR -0.06%, NAS100 +0.18%",
+            "created_ts": 1794492624.0,
+            "date": "First Reported: 2026-11-12 14:10 UTC",
+            "fail_reason": ""
         }
     }
 }

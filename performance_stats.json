@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 559,
-    "hits": 361,
+    "total_evaluated": 562,
+    "hits": 364,
     "misses": 198,
-    "win_rate": 64.6,
-    "active_signals": 86,
+    "win_rate": 64.8,
+    "active_signals": 89,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 295,
+                "hits": 298,
                 "misses": 166,
-                "total": 461,
-                "win_rate": 64.0,
-                "avg_dd": 25.19
+                "total": 464,
+                "win_rate": 64.2,
+                "avg_dd": 25.06
             },
             "Bearish": {
                 "hits": 66,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 336,
+                "hits": 339,
                 "misses": 188,
-                "total": 524,
-                "win_rate": 64.1,
-                "avg_dd": 23.39
+                "total": 527,
+                "win_rate": 64.3,
+                "avg_dd": 23.27
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 25,
@@ -60,11 +60,11 @@
                 "avg_dd": 15.82
             },
             "Against USD Headwind": {
-                "hits": 133,
+                "hits": 136,
                 "misses": 39,
-                "total": 172,
-                "win_rate": 77.3,
-                "avg_dd": 27.08
+                "total": 175,
+                "win_rate": 77.7,
+                "avg_dd": 26.75
             },
             "USD Neutral / Legacy": {
                 "hits": 212,
@@ -90,27 +90,27 @@
                 "avg_dd": 14.61
             },
             "Tech, AI & Equities": {
-                "hits": 97,
+                "hits": 99,
                 "misses": 38,
-                "total": 135,
-                "win_rate": 71.9,
-                "avg_dd": 16.61
+                "total": 137,
+                "win_rate": 72.3,
+                "avg_dd": 16.35
             },
             "Commodities & Energy": {
-                "hits": 56,
+                "hits": 57,
                 "misses": 31,
-                "total": 87,
-                "win_rate": 64.4,
-                "avg_dd": 31.62
+                "total": 88,
+                "win_rate": 64.8,
+                "avg_dd": 31.4
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 353,
+                "hits": 356,
                 "misses": 190,
-                "total": 543,
-                "win_rate": 65.0,
-                "avg_dd": 23.7
+                "total": 546,
+                "win_rate": 65.2,
+                "avg_dd": 23.59
             },
             "High (65-74%)": {
                 "hits": 8,
@@ -9926,9 +9926,9 @@
             "source": "MarketWatch Macro",
             "category": "Fed, Rates & Macro",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 68,
             "entry_price": 3862.61,
-            "target": 4049.4,
+            "target": 3899.53,
             "max_dd_usd": 10.03,
             "atr_ratio_at_signal": 0.99,
             "daily_atr_at_signal": 82.62,
@@ -10260,9 +10260,9 @@
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 71,
+            "prob": 70,
             "entry_price": 3882.82,
-            "target": 3890.32,
+            "target": 3890.79,
             "max_dd_usd": 10.62,
             "atr_ratio_at_signal": 0.15,
             "daily_atr_at_signal": 84.98,
@@ -10908,9 +10908,9 @@
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 56,
+            "prob": 61,
             "entry_price": 3874.18,
-            "target": 3890.14,
+            "target": 3890.79,
             "max_dd_usd": 3.89,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
@@ -11160,9 +11160,9 @@
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 66,
+            "prob": 65,
             "entry_price": 3877.59,
-            "target": 3890.18,
+            "target": 3890.79,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
@@ -11242,6 +11242,114 @@
             "nas_chg_at_signal": -0.08,
             "created_ts": 1794521485.0,
             "date": "First Reported: 2026-11-12 22:11 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/12/why-aevex-stock-is-up-today/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Why AEVEX Stock Is Up Today",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 58,
+            "entry_price": 3877.59,
+            "target": 3890.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": -0.08,
+            "created_ts": 1794523561.0,
+            "date": "First Reported: 2026-11-12 22:46 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-12-071100866.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Stock Market News for Nov 12, 2026",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 64,
+            "entry_price": 3877.59,
+            "target": 3890.79,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": -0.08,
+            "created_ts": 1794522860.0,
+            "date": "First Reported: 2026-11-12 07:11 UTC | Last Update: 2026-11-12 22:34 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/news/more-drilling-won-t-shield-220000098.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "More Drilling Won’t Shield U.S. Consumers From Oil Price Shocks",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 72,
+            "entry_price": 3877.59,
+            "target": 3890.79,
+            "max_dd_usd": 5.39,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": -0.08,
+            "created_ts": 1794520800.0,
+            "date": "First Reported: 2026-11-12 22:00 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150022045.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "BC-Gold Futures",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 64,
+            "entry_price": 3870.13,
+            "target": 3880.42,
+            "max_dd_usd": 17.55,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": -0.08,
+            "created_ts": 1794495623.0,
+            "date": "First Reported: 2026-11-09 15:00 UTC | Last Update: 2026-11-12 15:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tikr.com/blog/alibaba-sinks-7-as-u-s-readies-curbs-on-chinas-remote-ai-chip-access?ref=yahoofinance&tlnk=yf-261112-47jx7jjh&.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Alibaba Sinks 7% as U.S. Readies Curbs on China’s Remote AI Chip Access",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 63,
+            "entry_price": 3870.05,
+            "target": 3890.79,
+            "max_dd_usd": 3.81,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": -0.08,
+            "created_ts": 1794495529.0,
+            "date": "First Reported: 2026-11-12 14:58 UTC",
+            "fail_reason": ""
+        },
+        "https://247wallst.com/investing/2026/11/12/how-much-tax-does-a-67-year-old-couple-owe-converting-300000-of-nvidia-shares-to-a-roth-in-2026/?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "How Much Tax Does a 67-Year-Old Couple Owe Converting $300,000 of Nvidia Shares to a Roth ",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3870.05,
+            "target": 3899.53,
+            "max_dd_usd": 3.81,
+            "atr_ratio_at_signal": 0.04,
+            "daily_atr_at_signal": 81.02,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": -0.08,
+            "created_ts": 1794495442.0,
+            "date": "First Reported: 2026-11-12 14:57 UTC",
             "fail_reason": ""
         }
     }

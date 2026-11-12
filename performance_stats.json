@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 550,
-    "hits": 352,
+    "total_evaluated": 551,
+    "hits": 353,
     "misses": 198,
-    "win_rate": 64.0,
-    "active_signals": 41,
+    "win_rate": 64.1,
+    "active_signals": 46,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 286,
+                "hits": 287,
                 "misses": 166,
-                "total": 452,
-                "win_rate": 63.3,
-                "avg_dd": 24.55
+                "total": 453,
+                "win_rate": 63.4,
+                "avg_dd": 24.71
             },
             "Bearish": {
                 "hits": 66,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 329,
+                "hits": 330,
                 "misses": 188,
-                "total": 517,
-                "win_rate": 63.6,
-                "avg_dd": 23.01
+                "total": 518,
+                "win_rate": 63.7,
+                "avg_dd": 23.17
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 23,
@@ -67,11 +67,11 @@
                 "avg_dd": 26.86
             },
             "USD Neutral / Legacy": {
-                "hits": 209,
+                "hits": 210,
                 "misses": 159,
-                "total": 368,
-                "win_rate": 56.8,
-                "avg_dd": 21.94
+                "total": 369,
+                "win_rate": 56.9,
+                "avg_dd": 22.21
             }
         },
         "by_category": {
@@ -83,11 +83,11 @@
                 "avg_dd": 26.19
             },
             "Fed, Rates & Macro": {
-                "hits": 21,
+                "hits": 22,
                 "misses": 7,
-                "total": 28,
-                "win_rate": 75.0,
-                "avg_dd": 11.44
+                "total": 29,
+                "win_rate": 75.9,
+                "avg_dd": 14.61
             },
             "Tech, AI & Equities": {
                 "hits": 95,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 348,
+                "hits": 349,
                 "misses": 190,
-                "total": 538,
+                "total": 539,
                 "win_rate": 64.7,
-                "avg_dd": 23.32
+                "avg_dd": 23.47
             },
             "High (65-74%)": {
                 "hits": 4,
@@ -9313,14 +9313,14 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/currencies/articles/canadian-dollar-struggles-despite-hawkish-124248437.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Canadian Dollar Struggles Despite Hawkish Central Bank Signals, With Inflation in Focus, C",
             "source": "Yahoo Finance Oil",
             "category": "Fed, Rates & Macro",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 62,
             "entry_price": 3936.81,
-            "target": 3989.77,
+            "target": 3859.59,
             "max_dd_usd": 84.23,
             "atr_ratio_at_signal": 0.38,
             "daily_atr_at_signal": 73.1,
@@ -10260,9 +10260,9 @@
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 65,
+            "prob": 72,
             "entry_price": 3882.82,
-            "target": 3890.78,
+            "target": 3890.3,
             "max_dd_usd": 7.09,
             "atr_ratio_at_signal": 0.15,
             "daily_atr_at_signal": 84.98,
@@ -10270,6 +10270,114 @@
             "nas_chg_at_signal": -0.68,
             "created_ts": 1794510320.0,
             "date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-12 19:05 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/healthcare/articles/3-australian-healthcare-stocks-earnings-201427691.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "3 Australian Healthcare Stocks With Earnings Growth Over 21%",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 67,
+            "entry_price": 3879.28,
+            "target": 3899.66,
+            "max_dd_usd": 0.79,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 82.77,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -0.45,
+            "created_ts": 1794514467.0,
+            "date": "First Reported: 2026-11-12 20:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-joon-kim-wachtell-china-spy.html": {
+            "status": "ACTIVE",
+            "headline": "Nvidia: Ex-prosecutor Joon Kim and Wachtell, Lipton bring big track record to investigatio",
+            "source": "CNBC Tech & AI",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.57,
+            "target": 3890.3,
+            "max_dd_usd": 8.84,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 82.77,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -0.45,
+            "created_ts": 1794513491.0,
+            "date": "First Reported: 2026-11-12 19:58 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/southern-irans-sirik-attacked-report-says": {
+            "status": "ACTIVE",
+            "headline": "Southern Iran's Sirik attacked, report says",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3884.57,
+            "target": 3890.3,
+            "max_dd_usd": 8.84,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 82.77,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -0.45,
+            "created_ts": 1794512745.0,
+            "date": "First Reported: 2026-11-12 19:45 UTC",
+            "fail_reason": ""
+        },
+        "https://www.usatoday.com/story/tech/2026/11/12/nvidia-appoints-colette-kress-as-interim-ceo/92740030007/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Who is Colette Kress, Nvidia's interim CEO?",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 58,
+            "entry_price": 3884.57,
+            "target": 3870.51,
+            "max_dd_usd": 2.28,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 82.77,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -0.45,
+            "created_ts": 1794512740.0,
+            "date": "First Reported: 2026-11-12 15:26 UTC | Last Update: 2026-11-12 19:45 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/gold-prices-plunge-fed-rate-194427220.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Gold Prices Plunge as Fed Rate Hike Fears Intensify",
+            "source": "Yahoo Finance Gold",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bearish",
+            "prob": 65,
+            "entry_price": 3884.57,
+            "target": 3870.51,
+            "max_dd_usd": 2.28,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 82.77,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -0.45,
+            "created_ts": 1794512667.0,
+            "date": "First Reported: 2026-11-12 19:44 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/oil-prices-drop-more-than-1-as-hopes-for-iran-ukraine-peace-talks-pressure-markets-5020171": {
+            "status": "ACTIVE",
+            "headline": "Oil falls over $1 on easing geopolitical fears and oversupply worries",
+            "source": "Investing.com",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 64,
+            "entry_price": 3884.57,
+            "target": 3899.66,
+            "max_dd_usd": 8.84,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 82.77,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -0.45,
+            "created_ts": 1794512105.0,
+            "date": "First Reported: 2026-11-12 04:55 UTC | Last Update: 2026-11-12 19:35 UTC",
             "fail_reason": ""
         }
     }

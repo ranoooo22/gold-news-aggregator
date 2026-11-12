@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 540,
-    "hits": 342,
+    "total_evaluated": 543,
+    "hits": 345,
     "misses": 198,
-    "win_rate": 63.3,
+    "win_rate": 63.5,
     "active_signals": 38,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 277,
+                "hits": 280,
                 "misses": 166,
-                "total": 443,
-                "win_rate": 62.5,
-                "avg_dd": 24.75
+                "total": 446,
+                "win_rate": 62.8,
+                "avg_dd": 24.56
             },
             "Bearish": {
                 "hits": 65,
@@ -30,11 +30,11 @@
                 "avg_dd": 23.05
             },
             "Moderate (0.8x-1.2x ATR)": {
-                "hits": 20,
+                "hits": 23,
                 "misses": 10,
-                "total": 30,
-                "win_rate": 66.7,
-                "avg_dd": 34.01
+                "total": 33,
+                "win_rate": 69.7,
+                "avg_dd": 31.1
             },
             "Exhausted (>=1.2x ATR)": {
                 "hits": 0,
@@ -60,11 +60,11 @@
                 "avg_dd": 26.95
             },
             "Against USD Headwind": {
-                "hits": 227,
+                "hits": 230,
                 "misses": 136,
-                "total": 363,
-                "win_rate": 62.5,
-                "avg_dd": 22.91
+                "total": 366,
+                "win_rate": 62.8,
+                "avg_dd": 22.67
             },
             "USD Neutral / Legacy": {
                 "hits": 12,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 178,
+                "hits": 181,
                 "misses": 122,
-                "total": 300,
-                "win_rate": 59.3,
-                "avg_dd": 26.39
+                "total": 303,
+                "win_rate": 59.7,
+                "avg_dd": 26.07
             },
             "Fed, Rates & Macro": {
                 "hits": 20,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 339,
+                "hits": 342,
                 "misses": 190,
-                "total": 529,
-                "win_rate": 64.1,
-                "avg_dd": 23.71
+                "total": 532,
+                "win_rate": 64.3,
+                "avg_dd": 23.55
             },
             "High (65-74%)": {
                 "hits": 3,
@@ -10033,6 +10033,63 @@
             "created_ts": 1794492360.0,
             "date": "First Reported: 2026-11-12 14:06 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$39.23)"
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/alphabet-vs-broadcom-best-ai-163818058.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Alphabet vs. Broadcom: the best AI stocks for risk and reward",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3867.63,
+            "target": 3871.85,
+            "max_dd_usd": 1.93,
+            "atr_ratio_at_signal": 0.83,
+            "daily_atr_at_signal": 83.82,
+            "eur_chg_at_signal": -0.34,
+            "nas_chg_at_signal": -0.48,
+            "macro_snapshot": "EUR -0.34%, NAS100 -0.48%",
+            "created_ts": 1794501498.0,
+            "date": "First Reported: 2026-11-12 16:38 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.93)"
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/artisan-partners-initiated-manhattan-associates-162718202.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Artisan Partners Initiated in Manhattan Associates (MANH) Following Broad Software Sector ",
+            "source": "Yahoo Finance Oil",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3867.63,
+            "target": 3871.85,
+            "max_dd_usd": 1.93,
+            "atr_ratio_at_signal": 0.83,
+            "daily_atr_at_signal": 83.82,
+            "eur_chg_at_signal": -0.34,
+            "nas_chg_at_signal": -0.48,
+            "macro_snapshot": "EUR -0.34%, NAS100 -0.48%",
+            "created_ts": 1794500951.0,
+            "date": "First Reported: 2026-11-12 16:27 UTC | Last Update: 2026-11-12 16:29 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.93)"
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/12/bds-claims-win-as-energy-giants-quit-israeli-gas-project-off-gaza?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "BDS claims win as energy giants quit Israeli gas project off Gaza",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3867.63,
+            "target": 3871.85,
+            "max_dd_usd": 1.93,
+            "atr_ratio_at_signal": 0.83,
+            "daily_atr_at_signal": 83.82,
+            "eur_chg_at_signal": -0.34,
+            "nas_chg_at_signal": -0.48,
+            "macro_snapshot": "EUR -0.34%, NAS100 -0.48%",
+            "created_ts": 1794499636.0,
+            "date": "First Reported: 2026-11-12 16:07 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$1.93)"
         }
     }
 }

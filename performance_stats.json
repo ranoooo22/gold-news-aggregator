@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 544,
-    "hits": 346,
+    "total_evaluated": 545,
+    "hits": 347,
     "misses": 198,
-    "win_rate": 63.6,
-    "active_signals": 38,
+    "win_rate": 63.7,
+    "active_signals": 40,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 281,
+                "hits": 282,
                 "misses": 166,
-                "total": 447,
+                "total": 448,
                 "win_rate": 62.9,
-                "avg_dd": 24.52
+                "avg_dd": 24.5
             },
             "Bearish": {
                 "hits": 65,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 323,
+                "hits": 324,
                 "misses": 188,
-                "total": 511,
-                "win_rate": 63.2,
-                "avg_dd": 23.01
+                "total": 512,
+                "win_rate": 63.3,
+                "avg_dd": 23.0
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 23,
@@ -53,25 +53,25 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 103,
-                "misses": 62,
-                "total": 165,
-                "win_rate": 62.4,
-                "avg_dd": 26.95
+                "hits": 15,
+                "misses": 0,
+                "total": 15,
+                "win_rate": 100.0,
+                "avg_dd": 16.55
             },
             "Against USD Headwind": {
-                "hits": 231,
-                "misses": 136,
-                "total": 367,
-                "win_rate": 62.9,
-                "avg_dd": 22.63
+                "hits": 123,
+                "misses": 39,
+                "total": 162,
+                "win_rate": 75.9,
+                "avg_dd": 26.8
             },
             "USD Neutral / Legacy": {
-                "hits": 12,
-                "misses": 0,
-                "total": 12,
-                "win_rate": 100.0,
-                "avg_dd": 12.7
+                "hits": 209,
+                "misses": 159,
+                "total": 368,
+                "win_rate": 56.8,
+                "avg_dd": 21.94
             }
         },
         "by_category": {
@@ -97,20 +97,20 @@
                 "avg_dd": 15.45
             },
             "Commodities & Energy": {
-                "hits": 51,
+                "hits": 52,
                 "misses": 31,
-                "total": 82,
-                "win_rate": 62.2,
-                "avg_dd": 31.81
+                "total": 83,
+                "win_rate": 62.7,
+                "avg_dd": 31.58
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 343,
+                "hits": 344,
                 "misses": 190,
-                "total": 533,
+                "total": 534,
                 "win_rate": 64.4,
-                "avg_dd": 23.51
+                "avg_dd": 23.5
             },
             "High (65-74%)": {
                 "hits": 3,
@@ -10109,6 +10109,60 @@
             "created_ts": 1794500615.0,
             "date": "First Reported: 2026-11-12 16:23 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$10.07)"
+        },
+        "https://www.middleeasteye.net/news/dutch-foreign-minister-declines-rule-out-talks-curbing-icc-powers": {
+            "status": "ACTIVE",
+            "headline": "Dutch foreign minister declines to deny talks are under way on curbing ICC powers",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3874.5,
+            "target": 3880.64,
+            "max_dd_usd": 4.22,
+            "atr_ratio_at_signal": 0.18,
+            "daily_atr_at_signal": 85.75,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": -0.45,
+            "created_ts": 1794504409.0,
+            "date": "First Reported: 2026-11-12 17:26 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/12/warren-buffett-doesnt-follow-his-own-sp-500-advice-should-you/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Warren Buffett Doesn't Follow His Own S&P 500 Advice. Should You?",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3874.5,
+            "target": 3880.64,
+            "max_dd_usd": 4.22,
+            "atr_ratio_at_signal": 0.18,
+            "daily_atr_at_signal": 85.75,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": -0.45,
+            "created_ts": 1794504002.0,
+            "date": "First Reported: 2026-11-12 17:20 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/investors-buy-au-growth-strength-155000079.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Should Investors Buy AU as Growth Strength Meets Mine Execution Risk?",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3870.13,
+            "target": 3880.64,
+            "max_dd_usd": 17.55,
+            "atr_ratio_at_signal": 0.18,
+            "daily_atr_at_signal": 85.75,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": -0.45,
+            "created_ts": 1794498600.0,
+            "date": "First Reported: 2026-11-12 15:50 UTC",
+            "fail_reason": ""
         }
     }
 }

@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 543,
-    "hits": 345,
+    "total_evaluated": 544,
+    "hits": 346,
     "misses": 198,
-    "win_rate": 63.5,
+    "win_rate": 63.6,
     "active_signals": 38,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 280,
+                "hits": 281,
                 "misses": 166,
-                "total": 446,
-                "win_rate": 62.8,
-                "avg_dd": 24.56
+                "total": 447,
+                "win_rate": 62.9,
+                "avg_dd": 24.52
             },
             "Bearish": {
                 "hits": 65,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 322,
+                "hits": 323,
                 "misses": 188,
-                "total": 510,
-                "win_rate": 63.1,
-                "avg_dd": 23.05
+                "total": 511,
+                "win_rate": 63.2,
+                "avg_dd": 23.01
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 23,
@@ -60,11 +60,11 @@
                 "avg_dd": 26.95
             },
             "Against USD Headwind": {
-                "hits": 230,
+                "hits": 231,
                 "misses": 136,
-                "total": 366,
-                "win_rate": 62.8,
-                "avg_dd": 22.67
+                "total": 367,
+                "win_rate": 62.9,
+                "avg_dd": 22.63
             },
             "USD Neutral / Legacy": {
                 "hits": 12,
@@ -90,11 +90,11 @@
                 "avg_dd": 11.76
             },
             "Tech, AI & Equities": {
-                "hits": 93,
+                "hits": 94,
                 "misses": 38,
-                "total": 131,
-                "win_rate": 71.0,
-                "avg_dd": 15.51
+                "total": 132,
+                "win_rate": 71.2,
+                "avg_dd": 15.45
             },
             "Commodities & Energy": {
                 "hits": 51,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 342,
+                "hits": 343,
                 "misses": 190,
-                "total": 532,
-                "win_rate": 64.3,
-                "avg_dd": 23.55
+                "total": 533,
+                "win_rate": 64.4,
+                "avg_dd": 23.51
             },
             "High (65-74%)": {
                 "hits": 3,
@@ -10090,6 +10090,25 @@
             "created_ts": 1794499636.0,
             "date": "First Reported: 2026-11-12 16:07 UTC",
             "fail_reason": "Target reached (Max Drawdown along the way: -$1.93)"
+        },
+        "https://finance.yahoo.com/video/trump-backs-lutnick-despite-uproar-162335569.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Trump Backs Lutnick Despite Uproar Over Nvidia Chip Controls",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3875.76,
+            "target": 3871.75,
+            "max_dd_usd": 10.07,
+            "atr_ratio_at_signal": 0.73,
+            "daily_atr_at_signal": 83.82,
+            "eur_chg_at_signal": -0.34,
+            "nas_chg_at_signal": -0.32,
+            "macro_snapshot": "EUR -0.34%, NAS100 -0.32%",
+            "created_ts": 1794500615.0,
+            "date": "First Reported: 2026-11-12 16:23 UTC",
+            "fail_reason": "Target reached (Max Drawdown along the way: -$10.07)"
         }
     }
 }

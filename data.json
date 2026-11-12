@@ -1,8 +1,57 @@
 [
     {
-        "main_date": "First Reported: 2026-11-10 12:32 UTC | Last Update: 2026-11-12 14:48 UTC",
+        "main_date": "First Reported: 2026-11-10 18:03 UTC | Last Update: 2026-11-12 15:03 UTC",
+        "original_date": "2026-11-10 18:03",
+        "_timestamp": 1794495820.0,
+        "articles": [
+            {
+                "title": "Alphabet Stocks Rise 0.34% as Google Lines Up $10 Billion Anthropic Stake Purchase",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-rise-0-34-180311251.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 18:03",
+                "description": "Anthropic's amended IPO filing makes Google and Nvidia the largest buyers in a $26 billion private placement priced alongside the offering.",
+                "_timestamp": 1794333791.0
+            },
+            {
+                "title": "AMD Stocks Rise as $2.5 Billion Anthropic Stake Meets Goldman Top-Pick Call",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/amd-stocks-rise-2-5-170138086.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 17:01",
+                "description": "AMD will buy about 33.8 million Anthropic shares at the IPO price, while Goldman Sachs names it a top chip idea.",
+                "_timestamp": 1794416498.0
+            },
+            {
+                "title": "AMD Bounced 10% but Is Still Down 32% in a Month. Wedbush Sees $600",
+                "link": "https://247wallst.com/investing/2026/11/12/amd-bounced-10-but-is-still-down-32-in-a-month-wedbush-sees-600/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:03",
+                "description": "AMD posted a record quarter, then watched a brutal AI selloff erase a third of its value in weeks. Free cash flow is collapsing and inventory is piling up, so can the Helios ramp justify a premium multiple?",
+                "_timestamp": 1794495820.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 2,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-10 18:03 UTC (Approx. 13 minutes ago relative to 2026-11-10 18:16 UTC)",
+            "Facts": "[Update 2026-11-12 15:03 UTC via Yahoo Finance Nasdaq]: AMD Bounced 10% but Is Still Down 32% in a Month. Wedbush Sees $600 — AMD posted a record quarter, then watched a brutal AI selloff erase a third of its value in weeks. Free cash flow is collapsing and inventory is piling up, so can the Helios ramp j | [Update 2026-11-11 17:01 UTC via Yahoo Finance Nasdaq]: AMD Stocks Rise as $2.5 Billion Anthropic Stake Meets Goldman Top-Pick Call — AMD will buy about 33.8 million Anthropic shares at the IPO price, while Goldman Sachs names it a top chip idea. | Alphabet shares rose 0.34% as Google lined up a $10 billion Anthropic stake purchase, part of an amended IPO filing making Google and Nvidia the largest private placement buyers [Yahoo Finance Nasdaq].",
+            "Uncertainties": "Regulatory scrutiny regarding mega-cap tech investments in artificial intelligence startups and private placement valuations.",
+            "Macro_Context": "Alphabet's resilience contrasts with broader tech weakness, supporting selective risk-on sentiment in AI infrastructure that limits aggressive safe-haven panic.",
+            "Bull_Case": "Massive capital commitments into AI leaders validate sector growth and support overall market liquidity.",
+            "Bear_Case": "Concentrated tech capital allocation can drain liquidity from other asset classes, increasing overall market volatility.",
+            "Historical_Calibration": "Tech, AI & Equities category with Fresh ATR (<0.8x) and Against USD Headwind: Historical Win Rate is 52.7% (Avg DD: -$16.4).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 48,
+            "Past_Price_Action_Cause": "Micro-level tech developments had minimal direct directional impact on gold spot prices, which remain driven by macro CPI data and currency flows.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-10 12:32 UTC | Last Update: 2026-11-12 15:03 UTC",
         "original_date": "2026-11-10 12:32",
-        "_timestamp": 1794494890.0,
+        "_timestamp": 1794495789.0,
         "articles": [
             {
                 "title": "Microsoft Reportedly Pushes Back Against Trump’s Plan To Ban Chinese Optical Transceivers – Flags Challenges To Data Center Rollout",
@@ -67,6 +116,14 @@
                 "date": "2026-11-12 14:48",
                 "description": "Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week&#039;s talks.",
                 "_timestamp": 1794494890.0
+            },
+            {
+                "title": "Chinese AI Firms Rush to Secure Nvidia Computing Power Overseas. A US Crackdown Could Shut The Door.",
+                "link": "https://www.ibtimes.com/chinese-ai-firms-seek-overseas-nvidia-computing-3809667?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:03",
+                "description": "A U.S. bill targeting remote access to restricted technology has already passed the House, raising concerns among Chinese AI companies about losing access to Nvidia's most powerful processors.",
+                "_timestamp": 1794495789.0
             }
         ],
         "needs_update": true,
@@ -74,7 +131,7 @@
             "Cluster_ID": 3,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
             "Event_Timestamp": "2026-11-12 09:28 UTC (approx. 23 minutes ago)",
-            "Facts": "[Update 2026-11-12 14:48 UTC via Al Jazeera English]: Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing? — Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week&#039;s talks. | [Update 2026-11-12 09:28 UTC via Yahoo Finance Nasdaq]: Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries — The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely accessing US tech | Core Background: Regulatory friction is escalating as Microsoft and other tech giants push back against proposed bans on optical transceivers and advanced semiconductors to China, while Chinese entities continue sourcing restricted hardware via alternative channels.",
+            "Facts": "[Update 2026-11-12 15:03 UTC via Yahoo Finance Nasdaq]: Chinese AI Firms Rush to Secure Nvidia Computing Power Overseas. A US Crackdown Could Shut The Door. — A U.S. bill targeting remote access to restricted technology has already passed the House, raising concerns among Chinese AI companies about losing access to Nvidia's most powerful | [Update 2026-11-12 14:48 UTC via Al Jazeera English]: Trump heads to China amid Nvidia scandal: Will he get tougher on Beijing? — Outgoing Nvidia chief credited with easing US-China chip ties but personal scandal unlikely to upend next week&#039;s talks. | [Update 2026-11-12 09:28 UTC via Yahoo Finance Nasdaq]: Market Chatter: US Set to Extend AI Chip Licensing Requirements to Seven More Countries — The US Commerce Department is finalizing a rule designed to prevent Chinese AI firms from remotely accessing US tech | Core Background: Regulatory friction is escalating as Microsoft and other tech giants push back against proposed bans on optical transceivers and advanced semiconductors to China, while Chinese entities continue sourcing restricted hardware via alternative channels.",
             "Uncertainties": "Whether international licensing extensions will effectively choke off remote AI access or merely fragment global semiconductor supply chains.",
             "Macro_Context": "Tech supply chain friction supports defensive asset rotation. Aggressive taker buying (65.7% market buys) absorbs sell-limit walls as traders hedge regulatory clampdowns.",
             "Bull_Case": "Technological bifurcation and tightening export controls increase operational costs and systemic friction, boosting gold's appeal as a neutral geopolitical reserve asset.",
@@ -88,7 +145,673 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.59
+        "max_dd_usd": 68.8
+    },
+    {
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-12 15:03 UTC",
+        "original_date": "2026-11-11 16:44",
+        "_timestamp": 1794495780.0,
+        "articles": [
+            {
+                "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
+                "link": "https://www.tikr.com/blog/stay-away-from-coreweave-huangs-scandal-puts-nvidias-6-3-billion-backstop-in-focus?ref=yahoofinance&tlnk=yf-261111-xfr9gw86&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 16:44",
+                "description": "Key TakeawaysD. A. Davidson’s Gil Luria told investors to stay away from CoreWeave after Nvidia’s board opened an investigation tied to CEO Jensen Huang.",
+                "_timestamp": 1794415472.0
+            },
+            {
+                "title": "Jensen Huang built Nvidia into a behemoth. His scandal puts the entire AI boom in jeopardy.",
+                "link": "https://www.marketwatch.com/story/jensen-huang-built-nvidia-into-a-behemoth-his-scandal-puts-the-entire-ai-boom-in-jeopardy-c374b079?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-12 07:30",
+                "description": "Huang fueled his company and the AI ecosystem with advanced chips and creative financing deals across the supply chain. What happens if he’s gone?",
+                "_timestamp": 1794468600.0
+            },
+            {
+                "title": "Jensen Huang's looming ouster triggers an AI earthquake",
+                "link": "https://www.axios.com/2026/11/12/jensen-huang-nvidia-board#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-AI?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 10:05",
+                "description": "Jensen Huang's potential ouster from Nvidia has plunged the AI industry into uncharted territory — a corporate earthquake that dwarfs even the chaos unleashed by Sam Altman's temporary firing from OpenAI in 2023.",
+                "_timestamp": 1794477947.0
+            },
+            {
+                "title": "Forget Nvidia CEO Jensen Huang's Affair Scandal -- There Are Far Bigger Issues With the AI Trade",
+                "link": "https://www.fool.com/investing/2026/11/12/forget-nvidia-jensen-huang-affair-scandal-there-are-far-bigger-issues-with-the-ai-trade/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 10:26",
+                "description": "Several structural issues are threatening the artificial intelligence (AI) infrastructure build-out.",
+                "_timestamp": 1794479162.0
+            },
+            {
+                "title": "Nvidia's $164 billion AI strategy faces an unexpected threat",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidias-164-billion-ai-strategy-115432025.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 11:54",
+                "description": "Investors worry a leadership change could disrupt Nvidia's financial support for AI infrastructure projects and its long-term strategy.",
+                "_timestamp": 1794484472.0
+            },
+            {
+                "title": "Nvidia’s Jensen Huang crisis tests how much of the AI industry depends on one man",
+                "link": "https://www.marketwatch.com/story/nvidias-jensen-huang-dilemma-is-a-test-of-the-ai-industrys-dependence-on-one-flawed-man-a9a1d99c?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-12 12:29",
+                "description": "Huang’s exit could fray tight bonds among AI businesses. Plus, Oracle’s potential AI catalyst, a $1.5 trillion Social Security stock proposal and what the oil-yield split may mean for inflation.",
+                "_timestamp": 1794486540.0
+            },
+            {
+                "title": "3 challenges for Nvidia if Jensen Huang is removed as CEO",
+                "link": "https://finance.yahoo.com/markets/article/3-challenges-for-nvidia-if-jensen-huang-is-removed-as-ceo-125854580.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 12:58",
+                "description": "The challenges for Nvidia don't stop with Jensen leaving.",
+                "_timestamp": 1794488334.0
+            },
+            {
+                "title": "Nvidia Stock Is Tumbling. What Happens If Huang Gets Ousted.",
+                "link": "https://finance.yahoo.com/m/3d72c4df-c159-3f9f-bf8f-967cb1e59a7f/nvidia-stock-is-tumbling..html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:25",
+                "description": "Nvidia stock was dropping with the company’s board preparing to oust CEO Jensen Huang, according to The Wall Street Journal.",
+                "_timestamp": 1794489900.0
+            },
+            {
+                "title": "Tim Cook, Former Apple CEO, Should Run Nvidia",
+                "link": "https://247wallst.com/investing/2026/11/12/tim-cook-former-apple-ceo-should-run-nvidia/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:38",
+                "description": "Jensen Huang, CEO of Nvidia (NASDAQ: NVDA), will be gone very soon. One more accusation of any ties, even if Huang acted by mistake, to the Chinese acquisition of Nvidia chips with the help of his former lover, Alice Huang, could undermine his chances of keeping his CEO job. A negative report from Wachtell, Lipton, […]",
+                "_timestamp": 1794490696.0
+            },
+            {
+                "title": "AI titan Jensen Huang out as Nvidia CEO",
+                "link": "https://www.aljazeera.com/news/2026/11/12/ai-titan-jensen-huang-out-as-nvidia-ceo?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 13:55",
+                "description": "This is a breaking news story.",
+                "_timestamp": 1794491707.0
+            },
+            {
+                "title": "Jensen Huang resigns as Nvidia CEO",
+                "link": "https://finance.yahoo.com/video/jensen-huang-resigns-as-nvidia-ceo-135832832.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:58",
+                "description": "Nvidia (NVDA) CEO Jensen Huang has resigned. Yahoo Finance takes a closer look at this developing story.",
+                "_timestamp": 1794491912.0
+            },
+            {
+                "title": "Nvidia’s Jensen Huang Resigns As CEO, CFO Colette Kress To Step In",
+                "link": "https://stocktwits.com/news-articles/markets/equity/nvidia-s-jensen-huang-resigns-as-ceo-cfo-colette-kress-to-step-in/cNGzUFDR9aS?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:01",
+                "description": "Nvidia said Jensen Huang has resigned as president, CEO, and a board member, effective immediately.",
+                "_timestamp": 1794492075.0
+            },
+            {
+                "title": "Why replacing Jensen Huang is an impossible task",
+                "link": "https://finance.yahoo.com/video/why-replacing-jensen-huang-is-an-impossible-task-142032893.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:20",
+                "description": "Yahoo Finance Executive Editor Brian Sozzi is joined by Julie Hyman and Deirdre Bosa at Yahoo Finance's 2026 Invest conference to discuss the questions that remain after Jensen Huang stepped down as Nvidia (NVDA) CEO following a second alleged affair, including who will be the spokesperson for AI, who will lead Nvidia, and what will be the fallout of US-China relations.",
+                "_timestamp": 1794493232.0
+            },
+            {
+                "title": "Nvidia CEO Jensen Huang Steps Down; CFO Colette Kress Becomes Interim Chief",
+                "link": "https://finance.yahoo.com/technology/articles/nvidia-ceo-jensen-huang-steps-143111556.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:31",
+                "description": "Nvidia (NVDA) said Thursday that Jensen Huang has resigned as chief executive and a board member of",
+                "_timestamp": 1794493871.0
+            },
+            {
+                "title": "Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief",
+                "link": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-12 14:38",
+                "description": "Nvidia CEO Jensen Huang has faced increased scrutiny since revealing an affair. Follow live updates on the investigation, NVDA stock and succession plans.",
+                "_timestamp": 1794494326.0
+            },
+            {
+                "title": "The unfolding Jensen Huang scandal: a timeline",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-ceo-jensen-huang-affair-170419585.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:30",
+                "description": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+                "_timestamp": 1794493801.0
+            },
+            {
+                "title": "Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation.",
+                "link": "https://www.ibtimes.com/nvidia-colette-kress-interim-ceo-jensen-huang-resignation-3809677?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:40",
+                "description": "Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor.",
+                "_timestamp": 1794494412.0
+            },
+            {
+                "title": "Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide",
+                "link": "https://247wallst.com/investing/2026/11/12/colette-kress-joined-nvidia-in-2013-when-it-made-4-billion-a-year-she-now-runs-a-company-that-made-216-billion-and-her-first-job-is-stopping-the-slide/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:43",
+                "description": "Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42 AM ET, 13.3% below its November 6 close.",
+                "_timestamp": 1794494633.0
+            },
+            {
+                "title": "Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary?",
+                "link": "https://finance.yahoo.com/video/jensen-huang-vs-steve-jobs-can-nvidia-also-thrive-without-its-visionary-144638496.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:46",
+                "description": "Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief market strategist Liz Thomas and Moor Insights & Strategy founder Patrick Moorhead at Yahoo Finance's 2026 Invest conference to discuss the parallels between Steve Jobs for Apple (AAPL) and Huang for Nvidia.",
+                "_timestamp": 1794494798.0
+            },
+            {
+                "title": "Who is Colette Kress? Nvidia's finance chief steps in as interim CEO after Huang exit",
+                "link": "https://www.cnbc.com/2026/11/12/colette-kress-nvidia-cfo-interim-ceo-candidate.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-12 14:36",
+                "description": "Colette Kress joined Nvidia in 2013 after nearly 25 years in finance roles at Cisco, Microsoft and other tech companies.",
+                "_timestamp": 1794494195.0
+            },
+            {
+                "title": "Nvidia CEO Jensen Huang resigns",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 14:40",
+                "description": "Nvidia CEO Jensen Huang has resigned amid reports of a second affair with an executive.",
+                "_timestamp": 1794494420.0
+            },
+            {
+                "title": "LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns",
+                "link": "https://www.aljazeera.com/news/liveblog/2026/11/12/live-jensen-huang-resigns-as-nvidia-ceo-as-affairs-raise-security-concerns?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-12 14:44",
+                "description": "Jensen Huang, 63, has resigned as chief executive of AI giant Nvidia, according to the company.",
+                "_timestamp": 1794494694.0
+            },
+            {
+                "title": "Scandal Forces Jensen Huang Out at Nvidia. Here's How Investors Should Consider Nvidia Stock Now.",
+                "link": "https://www.fool.com/investing/2026/11/12/scandal-forces-jensen-huang-out-at-nvidia-here-s-how-investors-should-consider-nvidia-stock-now/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:59",
+                "description": "What makes Nvidia hard to beat doesn’t live in the corner office.",
+                "_timestamp": 1794495542.0
+            },
+            {
+                "title": "Decagon CEO ‘extremely bullish’ on open-weight AI even after Huang's exit",
+                "link": "https://finance.yahoo.com/video/decagon-ceo-extremely-bullish-open-150300084.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:03",
+                "description": "\"In the Loop\" host Ejaaz Ahamadeen and Yahoo Finance's Deirdre Bosa are joined by Jesse Zhang, Decagon co-founder and CEO, and Runway co-founder and CEO Cristóbal Valenzuela at Yahoo Finance's 2026 Invest conference to discuss how policy threats to open-weight AI models could derail their momentum, especially after the resignation of Nvidia (NVDA) CEO Jensen Huang.",
+                "_timestamp": 1794495780.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 0,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-12 14:38 UTC (~0 hours ago relative to reference time)",
+            "Facts": "[Update 2026-11-12 15:03 UTC via Yahoo Finance Nasdaq]: Decagon CEO ‘extremely bullish’ on open-weight AI even after Huang's exit — \"In the Loop\" host Ejaaz Ahamadeen and Yahoo Finance's Deirdre Bosa are joined by Jesse Zhang, Decagon co-founder and CEO, and Runway co-founder and CEO Cristóbal Valenzuela at Yah | [Update 2026-11-12 14:59 UTC via Yahoo Finance Nasdaq]: Scandal Forces Jensen Huang Out at Nvidia. Here's How Investors Should Consider Nvidia Stock Now. — What makes Nvidia hard to beat doesn’t live in the corner office. | [Update 2026-11-12 14:44 UTC via Al Jazeera English]: LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns — Jensen Huang, 63, has resigned as chief executive of AI giant Nvidia, according to the company. | [Update 2026-11-12 14:40 UTC via Al Jazeera English]: Nvidia CEO Jensen Huang resigns — Nvidia CEO Jensen Huang has resigned amid reports of a second affair with an executive. | [Update 2026-11-12 14:36 UTC via CNBC Tech & AI]: Who is Colette Kress? Nvidia's finance chief steps in as interim CEO after Huang exit — Colette Kress joined Nvidia in 2013 after nearly 25 years in finance roles at Cisco, Microsoft and other tech companies. | [Update 2026-11-12 14:46 UTC via Yahoo Finance Nasdaq]: Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary? — Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief marke | [Update 2026-11-12 14:43 UTC via Yahoo Finance Nasdaq]: Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide — Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42  | [Update 2026-11-12 14:40 UTC via Yahoo Finance Nasdaq]: Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation. — Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor. | [Update 2026-11-12 14:30 UTC via Yahoo Finance Nasdaq]: The unfolding Jensen Huang scandal: a timeline — Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastru | [Update 2026-11-12 14:38 UTC via CNBC Tech & AI]: Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief — Nvidia CEO Jensen Huang has faced increased scrutiny following affair revelations and investigations | Core Background: D.A. Davidson's Gil Luria previously warned investors against CoreWeave after Nvidia's board opened probes into Jensen Huang, which quickly culminated in his resignation as president, CEO, and board member, with CFO Colette Kress stepping in as interim chief.",
+            "Uncertainties": "The full fallout on multi-billion dollar backstops, partner dependencies like CoreWeave, and the direction of US-China relations under interim leadership remain highly uncertain.",
+            "Macro_Context": "Nasdaq 100 is higher (+0.18%), but the massive tech governance shock creates severe equity volatility that impacts broader risk sentiment. XAU/USD faces intraday pressure alongside aggressive taker selling at highs.",
+            "Bull_Case": "Uncertainty surrounding Nvidia's executive leadership and potential delays in AI infrastructure expansion could trigger a broader risk-off flight to safety, boosting safe-haven gold demand.",
+            "Bear_Case": "Tech liquidations and margin calls across equities can force institutional investors to liquidate gold holdings to cover margin requirements, driving gold lower despite the macro shock.",
+            "Historical_Calibration": "Fed, Rates & Macro category with Fresh ATR ratio (<0.8x) and USD tailwind alignment yields a 74.1% historical win rate in the empirical regime matrix.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 74,
+            "Past_Price_Action_Cause": "Aggressive market selling and upper-wick rejections coincide with severe tech-sector volatility and executive upheaval, pressuring XAU/USD lower by $-55.62 over the last 4 hours.",
+            "Orderflow_Price_Target": "3892.97"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 10.96
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 15:01 UTC",
+        "original_date": "2026-11-12 15:01",
+        "_timestamp": 1794495660.0,
+        "articles": [
+            {
+                "title": "Home sales plummet to lowest level since the Great Recession as buyers flee the market",
+                "link": "https://www.marketwatch.com/story/home-sales-plummet-to-lowest-level-since-the-great-recession-as-buyers-flee-the-market-624e6270?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-12 15:01",
+                "description": "Home sales fell in October to a 16-year low as buyers bolted from the housing market in the face of 7% mortgage rates.",
+                "_timestamp": 1794495660.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "First reported: 2026-11-12 15:01 UTC (~0.1h ago)",
+            "Facts": "[MarketWatch Macro] Home sales plummet to lowest level since the Great Recession as buyers flee the market - Home sales fell in October to a 16-year low as buyers bolted from the housing market in the face of 7% mortgage rates.",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.20%, Nasdaq-100 -1.06%, Brent Oil +0.54% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3870.2 (Spread: $+0.15) | Aggressive Taker Flow: 54.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.40.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 0.99x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.1h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-81.75 (0.99x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "4049.40"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 2.58
+    },
+    {
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-12 15:00 UTC",
+        "original_date": "2026-11-11 21:22",
+        "_timestamp": 1794495649.0,
+        "articles": [
+            {
+                "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
+                "link": "https://finance.yahoo.com/m/b2b54afe-1ff6-3009-9a91-fbde5c2d45c5/nvidia-downgraded-ahead-of.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 21:22",
+                "description": "Nvidia stock received its second downgrade this week from a Wall Street analyst amid the AI chipmaker's scandal.",
+                "_timestamp": 1794432143.0
+            },
+            {
+                "title": "Nvidia Stock At $174: Sell After An 18% Drop?",
+                "link": "https://www.trefis.com/stock/nvda/articles/624469/nvidia-stock-at-174-sell-after-an-18-drop/2026-11-12?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 09:42",
+                "description": "More on the AI trade: our AI storyline page collects our pieces on AI stocks.",
+                "_timestamp": 1794476560.0
+            },
+            {
+                "title": "Nvidia Stock Hammered As CEO's Future In Doubt",
+                "link": "https://finance.yahoo.com/m/bd774c13-5dc3-3d4c-ba55-5184f381438a/nvidia-stock-hammered-as.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:44",
+                "description": "Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations.",
+                "_timestamp": 1794491066.0
+            },
+            {
+                "title": "Nvidia Stock Hammered As CEO Resigns In Disgrace",
+                "link": "https://finance.yahoo.com/m/bd774c13-5dc3-3d4c-ba55-5184f381438a/nvidia-stock-hammered-as-ceo.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:04",
+                "description": "Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations.",
+                "_timestamp": 1794492243.0
+            },
+            {
+                "title": "Nvidia Stock Plunges As CEO Jensen Huang Resigns",
+                "link": "https://www.cryptoprowl.com/releases/nvidia-stock-plunges-as-ceo-jensen-huang-resigns-7869?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:18",
+                "description": "The stock of chipmaker Nvidia (NASDAQ: $NVDA) is down 10% in pre market trading on news that Chief Executive Office...",
+                "_timestamp": 1794493080.0
+            },
+            {
+                "title": "Nvidia set to lose $700 billion in value as Jensen Huang resigns",
+                "link": "https://www.cbsnews.com/news/nvidia-stock-nvda-ceo-jensen-huang/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:41",
+                "description": "Shares of the chipmaker extended their losses after Nvidia said its longtime CEO is stepping down amid revelations of a relationship with a suspected Chinese spy.",
+                "_timestamp": 1794494514.0
+            },
+            {
+                "title": "CoreWeave slides 15% as Nvidia leadership shock rattles AI infrastructure trade",
+                "link": "https://finance.yahoo.com/technology/ai/articles/coreweave-slides-15-nvidia-leadership-150049396.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:00",
+                "description": "Investing.com -- CoreWeave shares fell 15% on Thursday, giving back much of the previous session’s nearly 25% rally, as Jensen Huang’s departure as Nvidia CEO rattled the AI infrastructure sector and disappointing guidance from Nebius added to investor concerns.",
+                "_timestamp": 1794495649.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 4,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-12 09:42 UTC (approx. 1 hour ago relative to reference time)",
+            "Facts": "[Update 2026-11-12 15:00 UTC via Yahoo Finance Nasdaq]: CoreWeave slides 15% as Nvidia leadership shock rattles AI infrastructure trade — Investing.com -- CoreWeave shares fell 15% on Thursday, giving back much of the previous session’s nearly 25% rally, as Jensen Huang’s departure as Nvidia CEO rattled the AI infras | [Update 2026-11-12 14:41 UTC via Yahoo Finance Nasdaq]: Nvidia set to lose $700 billion in value as Jensen Huang resigns — Shares of the chipmaker extended their losses after Nvidia said its longtime CEO is stepping down amid revelations of a relationship with a suspected Chinese spy. | [Update 2026-11-12 14:18 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Plunges As CEO Jensen Huang Resigns — The stock of chipmaker Nvidia (NASDAQ: $NVDA) is down 10% in pre market trading on news that Chief Executive Office... | [Update 2026-11-12 14:04 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Hammered As CEO Resigns In Disgrace — Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations. | [Update 2026-11-12 13:44 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Hammered As CEO's Future In Doubt — Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations. | [Update 2026-11-12 09:42 UTC via Yahoo Finance Nasdaq]: Nvidia Stock At $174: Sell After An 18% Drop? | Core Background: Nvidia received consecutive Wall Street analyst downgrades amid an ongoing corporate scandal, pulling the stock down 18% from recent highs despite broader AI infrastructure demand.",
+            "Uncertainties": "The depth of the Nvidia sell-off and whether contagion will spread to wider tech equities and risk-on liquidity channels remains unquantified.",
+            "Macro_Context": "Nasdaq 100 is down 0.12% to 28203.2, reflecting tech sector strain. Aggressive taker flows show 65.4% sell dominance, aligning with risk-off tech deleveraging that often spills over into precious metals.",
+            "Bull_Case": " Capitulation in high-flying tech stocks like Nvidia can trigger safe-haven capital rotation out of equities and into physical gold and bullion reserves.",
+            "Bear_Case": "Broader tech sector weakness and margin calls can force institutional investors to liquidate liquid assets like gold to cover equity losses, driving spot prices lower.",
+            "Historical_Calibration": "Tech, AI & Equities category, Fresh ATR ratio (0.25x), and Against USD Headwind alignment. Historical Win Rate from Regime Matrix: 69.6% (87/125).",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bearish",
+            "Probability_Percent": 52,
+            "Past_Price_Action_Cause": "Tech sector liquidations and Nvidia's 18% drop contributed to overall market risk-off behavior, aligning with gold's sharp 24h decline under heavy taker selling.",
+            "Orderflow_Price_Target": "3920.37"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 11.82
+    },
+    {
+        "main_date": "First Reported: 2026-11-09 15:00 UTC | Last Update: 2026-11-12 15:00 UTC",
+        "original_date": "2026-11-09 15:00",
+        "_timestamp": 1794495614.0,
+        "articles": [
+            {
+                "title": "BC-Gold Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150022045.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-09 15:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Monday, November 09.Contract Open High Low Last Change Today's Volume Friday's Volume  Nov 26 4087.",
+                "_timestamp": 1794236422.0
+            },
+            {
+                "title": "BC-Crude Oil Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-150015126.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 15:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Monday, November 09.Light Sweet Crude (NYMX)1,000 bbl.",
+                "_timestamp": 1794236415.0
+            },
+            {
+                "title": "BC-Gold-Silver",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-silver-200014293.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-09 20:00",
+                "description": "NEW YORK (AP) — Futures trading on the NY Merc Monday:Open High Low Settle Chg.'s open int 398,011 down 639  SILVER  5,000 troy oz.",
+                "_timestamp": 1794254414.0
+            },
+            {
+                "title": "BC-OILS",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-oils-200019452.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-09 20:00",
+                "description": "NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Monday:Open High Low Settle Chg.'s open int 1,934,887 down 22,302  HEATING OIL  42,000 gal, cents per gal  Dec 26 438.",
+                "_timestamp": 1794254419.0
+            },
+            {
+                "title": "BC-Gold Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150032168.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-10 15:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Tuesday, November 10.Contract Open High Low Last Change Today's Volume Monday's Volume  Nov 26 4122.",
+                "_timestamp": 1794322832.0
+            },
+            {
+                "title": "BC-Crude Oil Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-150026468.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 15:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Tuesday, November 10.Light Sweet Crude (NYMX)1,000 bbl.",
+                "_timestamp": 1794322826.0
+            },
+            {
+                "title": "BC-Gold-Silver",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-silver-200014577.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-10 20:00",
+                "description": "NEW YORK (AP) — Futures trading on the NY Merc Tuesday:Open High Low Settle Chg.'s open int 397,372 up 2,173  SILVER  5,000 troy oz.",
+                "_timestamp": 1794340814.0
+            },
+            {
+                "title": "BC-OILS",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-oils-200018413.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-10 20:00",
+                "description": "NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Tuesday:Open High Low Settle Chg.'s open int 1,929,570 down 20,382  HEATING OIL  42,000 gal, cents per gal  Dec 26 418.",
+                "_timestamp": 1794340818.0
+            },
+            {
+                "title": "BC-Crude Oil Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-150015017.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 15:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Light Sweet Crude (NYMX)1,000 bbl.",
+                "_timestamp": 1794409215.0
+            },
+            {
+                "title": "BC-Gold Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150024077.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-11 15:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Contract Open High Low Last Change Today's Volume Tuesday's Volume  Nov 26 4048.",
+                "_timestamp": 1794409224.0
+            },
+            {
+                "title": "BC-Gold-Silver",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-silver-200013017.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-11 20:00",
+                "description": "NEW YORK (AP) — Futures trading on the NY Merc Wednesday:Open High Low Settle Chg.'s open int 399,545 up 163  SILVER  5,000 troy oz.",
+                "_timestamp": 1794427213.0
+            },
+            {
+                "title": "BC-OILS",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-oils-200018406.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-11 20:00",
+                "description": "NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Wednesday:Open High Low Settle Chg.'s open int 1,929,570 down 12,782  HEATING OIL  42,000 gal, cents per gal  Dec 26 414.",
+                "_timestamp": 1794427218.0
+            },
+            {
+                "title": "BC-Crude Oil Futures",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-150014188.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-12 15:00",
+                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Thursday, November 12.Light Sweet Crude (NYMX)1,000 bbl.",
+                "_timestamp": 1794495614.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Cluster_ID": 3,
+            "Event_Timestamp": "2026-11-09 15:00 to 20:00 UTC (approx. 0 to 5 hours ago)",
+            "Facts": "[Update 2026-11-12 15:00 UTC via Yahoo Finance Oil]: BC-Crude Oil Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Thursday, November 12.Light Sweet Crude (NYMX)1,000 bbl. | [Update 2026-11-11 20:00 UTC via Yahoo Finance Oil]: BC-OILS — NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Wednesday:Open High Low Settle Chg.'s open int 1,929,570 down 12,782  HEATING OIL  42,000 gal, cents per gal  De | [Update 2026-11-11 20:00 UTC via Yahoo Finance Gold]: BC-Gold-Silver — NEW YORK (AP) — Futures trading on the NY Merc Wednesday:Open High Low Settle Chg.'s open int 399,545 up 163  SILVER  5,000 troy oz. | [Update 2026-11-11 15:00 UTC via Yahoo Finance Gold]: BC-Gold Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Contract Open High Low Last Change Today's Volume Tuesday's Volume  Nov 26 4048. | [Update 2026-11-11 15:00 UTC via Yahoo Finance Oil]: BC-Crude Oil Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Light Sweet Crude (NYMX)1,000 bbl. | Routine daily NYMEX/COMEX settlement figures and opening interest reports for Crude Oil, Heating Oil, Gold, and Silver [Yahoo Finance Oil/Gold].",
+            "Uncertainties": "Standard exchange clearing data without unexpected shock elements.",
+            "Macro_Context": "Brent Crude is down (-6.38%), reflecting lower energy input costs, while precious metals consolidate near multi-week highs.",
+            "Bull_Case": "Steady open interest in COMEX gold futures supports underlying structural liquidity.",
+            "Bear_Case": "Falling energy prices (Brent Crude -6.38%) weigh on broad commodity baskets and dampen inflation expectations, removing an inflationary tailwind for gold.",
+            "Historical_Calibration": "Standard exchange settlement reports validate existing price discovery but do not provide a fresh directional catalyst.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "Reflects ongoing market settling; aligns with current spot price of $4141.22.",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 15:00 UTC",
+        "original_date": "2026-11-12 15:00",
+        "_timestamp": 1794495600.0,
+        "articles": [
+            {
+                "title": "Modern Mining Announces Closing of its US$40 Million Reg A Initial Public Offering",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/modern-mining-announces-closing-us-150000525.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-12 15:00",
+                "description": "GREENVILLE, N.C., November 12, 2026--Modern Mining Technology Corp. (\"Modern Mining\" or the \"Company\"), which uses a proprietary aqueous-based process to recover gold and other valuable metals from electronic waste, today announced that it has closed its initial public offering (\"IPO\"), raising US$39,999,997 through the sale of 9,411,764 common shares (the \"Common Shares\") at a public offering price of US$4.25 per share.",
+                "_timestamp": 1794495600.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "First reported: 2026-11-12 15:00 UTC (~0.2h ago)",
+            "Facts": "[Yahoo Finance Gold] Modern Mining Announces Closing of its US$40 Million Reg A Initial Public Offering - GREENVILLE, N.C., November 12, 2026--Modern Mining Technology Corp. (\"Modern Mining\" or the \"Company\"), which uses a proprietary aqueous-based process to r",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.20%, Nasdaq-100 -1.06%, Brent Oil +0.54% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3870.2 (Spread: $+0.15) | Aggressive Taker Flow: 54.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.40.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 0.99x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.2h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-81.75 (0.99x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 15:00 UTC",
+        "original_date": "2026-11-12 15:00",
+        "_timestamp": 1794495600.0,
+        "articles": [
+            {
+                "title": "BDO Recognized by Microsoft for Helping Organizations Build the Governance Foundation of AI",
+                "link": "https://finance.yahoo.com/technology/ai/articles/bdo-recognized-microsoft-helping-organizations-150000005.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:00",
+                "description": "CHICAGO, November 12, 2026--BDO announced it has been named the 2026 Microsoft Data Security and Governance Partner of the Year.",
+                "_timestamp": 1794495600.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "First reported: 2026-11-12 15:00 UTC (~0.2h ago)",
+            "Facts": "[Yahoo Finance Nasdaq] BDO Recognized by Microsoft for Helping Organizations Build the Governance Foundation of AI - CHICAGO, November 12, 2026--BDO announced it has been named the 2026 Microsoft Data Security and Governance Partner of the Year.",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.20%, Nasdaq-100 -1.06%, Brent Oil +0.54% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3870.2 (Spread: $+0.15) | Aggressive Taker Flow: 54.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.40.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 0.99x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.2h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-81.75 (0.99x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 15:00 UTC",
+        "original_date": "2026-11-12 15:00",
+        "_timestamp": 1794495600.0,
+        "articles": [
+            {
+                "title": "atQor Named Finalist for 2026 Microsoft Partner of the Year Award in - Agents",
+                "link": "https://finance.yahoo.com/technology/ai/articles/atqor-named-finalist-2026-microsoft-150000518.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 15:00",
+                "description": "Global recognition highlights atQor's repeatable agentic AI framework, enterprise deployments across nine industries, and measurable business outcomes.SANTA FE SPRINGS, California, USA / MISSISSAUGA, Ontario, Canada / AHMEDABAD, India, Nov. 12, 2026 (GLOBE NEWSWIRE) -- atQor today announced it has been named a finalist for the 2026 Microsoft Partner of the Year Award - Agents. The company was honored among a global field of top Microsoft partners",
+                "_timestamp": 1794495600.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "First reported: 2026-11-12 15:00 UTC (~0.2h ago)",
+            "Facts": "[Yahoo Finance Nasdaq] atQor Named Finalist for 2026 Microsoft Partner of the Year Award in - Agents - Global recognition highlights atQor's repeatable agentic AI framework, enterprise deployments across nine industries, and measurable business outcomes.SANTA FE ",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.20%, Nasdaq-100 -1.06%, Brent Oil +0.54% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3870.2 (Spread: $+0.15) | Aggressive Taker Flow: 54.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.40.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 0.99x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.2h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-81.75 (0.99x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "4049.40"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 2.58
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 14:57 UTC",
+        "original_date": "2026-11-12 14:57",
+        "_timestamp": 1794495466.0,
+        "articles": [
+            {
+                "title": "Ondas Retreats 5% Despite Record Revenue and Raised Outlook; Red Cat Drops 4%, AeroVironment Holds Steady",
+                "link": "https://247wallst.com/investing/2026/11/12/ondas-retreats-5-despite-record-revenue-and-raised-outlook-red-cat-drops-4-aerovironment-holds-steady/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:57",
+                "description": "Ondas smashed Wall Street's revenue estimate and lifted its 2027 targets, yet traders sold anyway. One number buried in the quarter has investors questioning whether the growth story can pay off, and drone rivals are feeling the heat too.",
+                "_timestamp": 1794495466.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "First reported: 2026-11-12 14:57 UTC (~0.2h ago)",
+            "Facts": "[Yahoo Finance Nasdaq] Ondas Retreats 5% Despite Record Revenue and Raised Outlook; Red Cat Drops 4%, AeroVironment Holds Steady - Ondas smashed Wall Street's revenue estimate and lifted its 2027 targets, yet traders sold anyway. One number buried in the quarter ",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.20%, Nasdaq-100 -1.06%, Brent Oil +0.54% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3870.2 (Spread: $+0.15) | Aggressive Taker Flow: 54.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.40.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 0.99x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.2h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-81.75 (0.99x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 14:57 UTC",
+        "original_date": "2026-11-12 14:57",
+        "_timestamp": 1794495442.0,
+        "articles": [
+            {
+                "title": "How Much Tax Does a 67-Year-Old Couple Owe Converting $300,000 of Nvidia Shares to a Roth in 2026?",
+                "link": "https://247wallst.com/investing/2026/11/12/how-much-tax-does-a-67-year-old-couple-owe-converting-300000-of-nvidia-shares-to-a-roth-in-2026/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:57",
+                "description": "Nvidia has dropped more than 27% from its October peak, and that changes what a Roth conversion buys. Before December 31, a retired couple faces a tax bill, a hidden Medicare trap, and a move that can't be undone.",
+                "_timestamp": 1794495442.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "First reported: 2026-11-12 14:57 UTC (~0.2h ago)",
+            "Facts": "[Yahoo Finance Nasdaq] How Much Tax Does a 67-Year-Old Couple Owe Converting $300,000 of Nvidia Shares to a Roth in 2026? - Nvidia has dropped more than 27% from its October peak, and that changes what a Roth conversion buys. Before December 31, a retired couple ",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.20%, Nasdaq-100 -1.06%, Brent Oil +0.54% | OANDA Sentiment: 66.1% Long / 33.9% Short | 24/7 OKX XAUUSDT.P: $3870.2 (Spread: $+0.15) | Aggressive Taker Flow: 54.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4049.40.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3860.49. 4h-ATR ratio is 0.99x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.2h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-81.75 (0.99x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-12 07:43 UTC | Last Update: 2026-11-12 14:48 UTC",
+        "original_date": "2026-11-12 07:43",
+        "_timestamp": 1794494910.0,
+        "articles": [
+            {
+                "title": "Tech giant Foxconn beats forecasts with third-quarter profit jump",
+                "link": "https://finance.yahoo.com/technology/articles/tech-giant-foxconn-beats-forecasts-065700078.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 07:43",
+                "description": "Taiwanese tech giant Foxconn on Thursday reported a record net profit for the third quarter, as the global buildout of data centres fuels demand for the AI servers needed to operate them.Chief financial officer David Huang said Foxconn's \"third-quarter revenue, operating income, net income, and earnings per share all reached record quarterly highs\".",
+                "_timestamp": 1794469432.0
+            },
+            {
+                "title": "Apple supplier Foxconn posts record profit, raises outlook",
+                "link": "https://finance.yahoo.com/technology/ai/articles/apple-supplier-foxconn-posts-record-144830266.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:48",
+                "description": "Investing.com -- Foxconn, a key Apple supplier, reported record third-quarter profit on Thursday and raised its full-year outlook for all four of its main business segments, driven by strong demand for AI servers.",
+                "_timestamp": 1794494910.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "First reported: 2026-11-12 07:43 UTC (~0.4h ago)",
+            "Facts": "[Update 2026-11-12 14:48 UTC via Yahoo Finance Nasdaq]: Apple supplier Foxconn posts record profit, raises outlook — Investing.com -- Foxconn, a key Apple supplier, reported record third-quarter profit on Thursday and raised its full-year outlook for all four of its main business segments, driven | [Yahoo Finance Nasdaq] Tech giant Foxconn beats forecasts with third-quarter profit jump - Taiwanese tech giant Foxconn on Thursday reported a record net profit for the third quarter, as the global buildout of data centres fuels demand for the AI servers needed t",
+            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
+            "Macro_Context": "24h Macro: EUR/USD -0.42%, Nasdaq-100 -0.20%, Brent Oil +1.22% | OANDA Sentiment: 65.7% Long / 34.3% Short | 24/7 OKX XAUUSDT.P: $3970.8 (Spread: $+5.85) | Aggressive Taker Flow: 61.1% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
+            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3989.85.",
+            "Bear_Case": "Nearest downside liquidity zone sits at $3960.85. 4h-ATR ratio is 0.26x.",
+            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.4h.",
+            "Impact_Timing": "Present",
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 40,
+            "Past_Price_Action_Cause": "4h XAU/USD move: $-12.59 (0.26x of estimated Daily ATR).",
+            "Orderflow_Price_Target": "N/A"
+        }
     },
     {
         "main_date": "First Reported: 2026-11-09 02:07 UTC | Last Update: 2026-11-12 14:47 UTC",
@@ -324,209 +1047,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 0.69
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-12 14:46 UTC",
-        "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794494798.0,
-        "articles": [
-            {
-                "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
-                "link": "https://www.tikr.com/blog/stay-away-from-coreweave-huangs-scandal-puts-nvidias-6-3-billion-backstop-in-focus?ref=yahoofinance&tlnk=yf-261111-xfr9gw86&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 16:44",
-                "description": "Key TakeawaysD. A. Davidson’s Gil Luria told investors to stay away from CoreWeave after Nvidia’s board opened an investigation tied to CEO Jensen Huang.",
-                "_timestamp": 1794415472.0
-            },
-            {
-                "title": "Jensen Huang built Nvidia into a behemoth. His scandal puts the entire AI boom in jeopardy.",
-                "link": "https://www.marketwatch.com/story/jensen-huang-built-nvidia-into-a-behemoth-his-scandal-puts-the-entire-ai-boom-in-jeopardy-c374b079?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-12 07:30",
-                "description": "Huang fueled his company and the AI ecosystem with advanced chips and creative financing deals across the supply chain. What happens if he’s gone?",
-                "_timestamp": 1794468600.0
-            },
-            {
-                "title": "Jensen Huang's looming ouster triggers an AI earthquake",
-                "link": "https://www.axios.com/2026/11/12/jensen-huang-nvidia-board#utm_source=yahoo_finance&utm_medium=partner&utm_campaign=subs-partner-yahoo-finance-AI?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 10:05",
-                "description": "Jensen Huang's potential ouster from Nvidia has plunged the AI industry into uncharted territory — a corporate earthquake that dwarfs even the chaos unleashed by Sam Altman's temporary firing from OpenAI in 2023.",
-                "_timestamp": 1794477947.0
-            },
-            {
-                "title": "Forget Nvidia CEO Jensen Huang's Affair Scandal -- There Are Far Bigger Issues With the AI Trade",
-                "link": "https://www.fool.com/investing/2026/11/12/forget-nvidia-jensen-huang-affair-scandal-there-are-far-bigger-issues-with-the-ai-trade/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 10:26",
-                "description": "Several structural issues are threatening the artificial intelligence (AI) infrastructure build-out.",
-                "_timestamp": 1794479162.0
-            },
-            {
-                "title": "Nvidia's $164 billion AI strategy faces an unexpected threat",
-                "link": "https://finance.yahoo.com/technology/ai/articles/nvidias-164-billion-ai-strategy-115432025.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 11:54",
-                "description": "Investors worry a leadership change could disrupt Nvidia's financial support for AI infrastructure projects and its long-term strategy.",
-                "_timestamp": 1794484472.0
-            },
-            {
-                "title": "Nvidia’s Jensen Huang crisis tests how much of the AI industry depends on one man",
-                "link": "https://www.marketwatch.com/story/nvidias-jensen-huang-dilemma-is-a-test-of-the-ai-industrys-dependence-on-one-flawed-man-a9a1d99c?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-12 12:29",
-                "description": "Huang’s exit could fray tight bonds among AI businesses. Plus, Oracle’s potential AI catalyst, a $1.5 trillion Social Security stock proposal and what the oil-yield split may mean for inflation.",
-                "_timestamp": 1794486540.0
-            },
-            {
-                "title": "3 challenges for Nvidia if Jensen Huang is removed as CEO",
-                "link": "https://finance.yahoo.com/markets/article/3-challenges-for-nvidia-if-jensen-huang-is-removed-as-ceo-125854580.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 12:58",
-                "description": "The challenges for Nvidia don't stop with Jensen leaving.",
-                "_timestamp": 1794488334.0
-            },
-            {
-                "title": "Nvidia Stock Is Tumbling. What Happens If Huang Gets Ousted.",
-                "link": "https://finance.yahoo.com/m/3d72c4df-c159-3f9f-bf8f-967cb1e59a7f/nvidia-stock-is-tumbling..html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:25",
-                "description": "Nvidia stock was dropping with the company’s board preparing to oust CEO Jensen Huang, according to The Wall Street Journal.",
-                "_timestamp": 1794489900.0
-            },
-            {
-                "title": "Tim Cook, Former Apple CEO, Should Run Nvidia",
-                "link": "https://247wallst.com/investing/2026/11/12/tim-cook-former-apple-ceo-should-run-nvidia/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:38",
-                "description": "Jensen Huang, CEO of Nvidia (NASDAQ: NVDA), will be gone very soon. One more accusation of any ties, even if Huang acted by mistake, to the Chinese acquisition of Nvidia chips with the help of his former lover, Alice Huang, could undermine his chances of keeping his CEO job. A negative report from Wachtell, Lipton, […]",
-                "_timestamp": 1794490696.0
-            },
-            {
-                "title": "AI titan Jensen Huang out as Nvidia CEO",
-                "link": "https://www.aljazeera.com/news/2026/11/12/ai-titan-jensen-huang-out-as-nvidia-ceo?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-12 13:55",
-                "description": "This is a breaking news story.",
-                "_timestamp": 1794491707.0
-            },
-            {
-                "title": "Jensen Huang resigns as Nvidia CEO",
-                "link": "https://finance.yahoo.com/video/jensen-huang-resigns-as-nvidia-ceo-135832832.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:58",
-                "description": "Nvidia (NVDA) CEO Jensen Huang has resigned. Yahoo Finance takes a closer look at this developing story.",
-                "_timestamp": 1794491912.0
-            },
-            {
-                "title": "Nvidia’s Jensen Huang Resigns As CEO, CFO Colette Kress To Step In",
-                "link": "https://stocktwits.com/news-articles/markets/equity/nvidia-s-jensen-huang-resigns-as-ceo-cfo-colette-kress-to-step-in/cNGzUFDR9aS?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:01",
-                "description": "Nvidia said Jensen Huang has resigned as president, CEO, and a board member, effective immediately.",
-                "_timestamp": 1794492075.0
-            },
-            {
-                "title": "Why replacing Jensen Huang is an impossible task",
-                "link": "https://finance.yahoo.com/video/why-replacing-jensen-huang-is-an-impossible-task-142032893.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:20",
-                "description": "Yahoo Finance Executive Editor Brian Sozzi is joined by Julie Hyman and Deirdre Bosa at Yahoo Finance's 2026 Invest conference to discuss the questions that remain after Jensen Huang stepped down as Nvidia (NVDA) CEO following a second alleged affair, including who will be the spokesperson for AI, who will lead Nvidia, and what will be the fallout of US-China relations.",
-                "_timestamp": 1794493232.0
-            },
-            {
-                "title": "Nvidia CEO Jensen Huang Steps Down; CFO Colette Kress Becomes Interim Chief",
-                "link": "https://finance.yahoo.com/technology/articles/nvidia-ceo-jensen-huang-steps-143111556.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:31",
-                "description": "Nvidia (NVDA) said Thursday that Jensen Huang has resigned as chief executive and a board member of",
-                "_timestamp": 1794493871.0
-            },
-            {
-                "title": "Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief",
-                "link": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-12 14:38",
-                "description": "Nvidia CEO Jensen Huang has faced increased scrutiny since revealing an affair. Follow live updates on the investigation, NVDA stock and succession plans.",
-                "_timestamp": 1794494326.0
-            },
-            {
-                "title": "The unfolding Jensen Huang scandal: a timeline",
-                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-ceo-jensen-huang-affair-170419585.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:30",
-                "description": "Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
-                "_timestamp": 1794493801.0
-            },
-            {
-                "title": "Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation.",
-                "link": "https://www.ibtimes.com/nvidia-colette-kress-interim-ceo-jensen-huang-resignation-3809677?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:40",
-                "description": "Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor.",
-                "_timestamp": 1794494412.0
-            },
-            {
-                "title": "Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide",
-                "link": "https://247wallst.com/investing/2026/11/12/colette-kress-joined-nvidia-in-2013-when-it-made-4-billion-a-year-she-now-runs-a-company-that-made-216-billion-and-her-first-job-is-stopping-the-slide/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:43",
-                "description": "Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42 AM ET, 13.3% below its November 6 close.",
-                "_timestamp": 1794494633.0
-            },
-            {
-                "title": "Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary?",
-                "link": "https://finance.yahoo.com/video/jensen-huang-vs-steve-jobs-can-nvidia-also-thrive-without-its-visionary-144638496.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:46",
-                "description": "Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief market strategist Liz Thomas and Moor Insights & Strategy founder Patrick Moorhead at Yahoo Finance's 2026 Invest conference to discuss the parallels between Steve Jobs for Apple (AAPL) and Huang for Nvidia.",
-                "_timestamp": 1794494798.0
-            },
-            {
-                "title": "Who is Colette Kress? Nvidia's finance chief steps in as interim CEO after Huang exit",
-                "link": "https://www.cnbc.com/2026/11/12/colette-kress-nvidia-cfo-interim-ceo-candidate.html",
-                "source": "CNBC Tech & AI",
-                "date": "2026-11-12 14:36",
-                "description": "Colette Kress joined Nvidia in 2013 after nearly 25 years in finance roles at Cisco, Microsoft and other tech companies.",
-                "_timestamp": 1794494195.0
-            },
-            {
-                "title": "Nvidia CEO Jensen Huang resigns",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/12/nvidia-ceo-jensen-huang-resigns?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-12 14:40",
-                "description": "Nvidia CEO Jensen Huang has resigned amid reports of a second affair with an executive.",
-                "_timestamp": 1794494420.0
-            },
-            {
-                "title": "LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns",
-                "link": "https://www.aljazeera.com/news/liveblog/2026/11/12/live-jensen-huang-resigns-as-nvidia-ceo-as-affairs-raise-security-concerns?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-12 14:44",
-                "description": "Jensen Huang, 63, has resigned as chief executive of AI giant Nvidia, according to the company.",
-                "_timestamp": 1794494694.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 0,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-12 14:38 UTC (~0 hours ago relative to reference time)",
-            "Facts": "[Update 2026-11-12 14:44 UTC via Al Jazeera English]: LIVE: Jensen Huang resigns as Nvidia CEO as affairs raise security concerns — Jensen Huang, 63, has resigned as chief executive of AI giant Nvidia, according to the company. | [Update 2026-11-12 14:40 UTC via Al Jazeera English]: Nvidia CEO Jensen Huang resigns — Nvidia CEO Jensen Huang has resigned amid reports of a second affair with an executive. | [Update 2026-11-12 14:36 UTC via CNBC Tech & AI]: Who is Colette Kress? Nvidia's finance chief steps in as interim CEO after Huang exit — Colette Kress joined Nvidia in 2013 after nearly 25 years in finance roles at Cisco, Microsoft and other tech companies. | [Update 2026-11-12 14:46 UTC via Yahoo Finance Nasdaq]: Jensen Huang vs. Steve Jobs: Can Nvidia also thrive without its visionary? — Longtime Nvidia (NVDA) CEO Jensen Huang has resigned as chief executive following a string of personal controversies. Yahoo Finance's Julie Hyman chats with SoFi (SOFI) chief marke | [Update 2026-11-12 14:43 UTC via Yahoo Finance Nasdaq]: Colette Kress Joined Nvidia in 2013 When It Made $4 Billion a Year. She Now Runs a Company That Made $216 Billion, and Her First Job Is Stopping the Slide — Colette Kress, Nvidia's CFO since 2013, became interim CEO after Jensen Huang resigned. Revenue grew from $4.13 billion to $216 billion on her watch; Nvidia was at $161.84 at 9:42  | [Update 2026-11-12 14:40 UTC via Yahoo Finance Nasdaq]: Who is Colette Kress, Nvidia's New Interim CEO? Finance Veteran Takes Over After Jensen Huang's Resignation. — Kress has been appointed to lead Nvidia temporarily following Huang's departure. The AI chipmaker is already searching for a permanent successor. | [Update 2026-11-12 14:30 UTC via Yahoo Finance Nasdaq]: The unfolding Jensen Huang scandal: a timeline — Jensen Huang has resigned from Nvidia following an affair, which could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastru | [Update 2026-11-12 14:38 UTC via CNBC Tech & AI]: Nvidia live updates: CEO Jensen Huang resigns, Colette Kress named interim chief — Nvidia CEO Jensen Huang has faced increased scrutiny following affair revelations and investigations | Core Background: D.A. Davidson's Gil Luria previously warned investors against CoreWeave after Nvidia's board opened probes into Jensen Huang, which quickly culminated in his resignation as president, CEO, and board member, with CFO Colette Kress stepping in as interim chief.",
-            "Uncertainties": "The full fallout on multi-billion dollar backstops, partner dependencies like CoreWeave, and the direction of US-China relations under interim leadership remain highly uncertain.",
-            "Macro_Context": "Nasdaq 100 is higher (+0.18%), but the massive tech governance shock creates severe equity volatility that impacts broader risk sentiment. XAU/USD faces intraday pressure alongside aggressive taker selling at highs.",
-            "Bull_Case": "Uncertainty surrounding Nvidia's executive leadership and potential delays in AI infrastructure expansion could trigger a broader risk-off flight to safety, boosting safe-haven gold demand.",
-            "Bear_Case": "Tech liquidations and margin calls across equities can force institutional investors to liquidate gold holdings to cover margin requirements, driving gold lower despite the macro shock.",
-            "Historical_Calibration": "Fed, Rates & Macro category with Fresh ATR ratio (<0.8x) and USD tailwind alignment yields a 74.1% historical win rate in the empirical regime matrix.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 74,
-            "Past_Price_Action_Cause": "Aggressive market selling and upper-wick rejections coincide with severe tech-sector volatility and executive upheaval, pressuring XAU/USD lower by $-55.62 over the last 4 hours.",
-            "Orderflow_Price_Target": "3892.97"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 10.96
     },
     {
         "main_date": "First Reported: 2026-11-05 18:59 UTC | Last Update: 2026-11-12 14:45 UTC",
@@ -1326,82 +1846,7 @@
             "Orderflow_Price_Target": "4049.44"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 4.42
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-12 14:41 UTC",
-        "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794494514.0,
-        "articles": [
-            {
-                "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
-                "link": "https://finance.yahoo.com/m/b2b54afe-1ff6-3009-9a91-fbde5c2d45c5/nvidia-downgraded-ahead-of.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 21:22",
-                "description": "Nvidia stock received its second downgrade this week from a Wall Street analyst amid the AI chipmaker's scandal.",
-                "_timestamp": 1794432143.0
-            },
-            {
-                "title": "Nvidia Stock At $174: Sell After An 18% Drop?",
-                "link": "https://www.trefis.com/stock/nvda/articles/624469/nvidia-stock-at-174-sell-after-an-18-drop/2026-11-12?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 09:42",
-                "description": "More on the AI trade: our AI storyline page collects our pieces on AI stocks.",
-                "_timestamp": 1794476560.0
-            },
-            {
-                "title": "Nvidia Stock Hammered As CEO's Future In Doubt",
-                "link": "https://finance.yahoo.com/m/bd774c13-5dc3-3d4c-ba55-5184f381438a/nvidia-stock-hammered-as.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:44",
-                "description": "Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations.",
-                "_timestamp": 1794491066.0
-            },
-            {
-                "title": "Nvidia Stock Hammered As CEO Resigns In Disgrace",
-                "link": "https://finance.yahoo.com/m/bd774c13-5dc3-3d4c-ba55-5184f381438a/nvidia-stock-hammered-as-ceo.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:04",
-                "description": "Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations.",
-                "_timestamp": 1794492243.0
-            },
-            {
-                "title": "Nvidia Stock Plunges As CEO Jensen Huang Resigns",
-                "link": "https://www.cryptoprowl.com/releases/nvidia-stock-plunges-as-ceo-jensen-huang-resigns-7869?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:18",
-                "description": "The stock of chipmaker Nvidia (NASDAQ: $NVDA) is down 10% in pre market trading on news that Chief Executive Office...",
-                "_timestamp": 1794493080.0
-            },
-            {
-                "title": "Nvidia set to lose $700 billion in value as Jensen Huang resigns",
-                "link": "https://www.cbsnews.com/news/nvidia-stock-nvda-ceo-jensen-huang/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:41",
-                "description": "Shares of the chipmaker extended their losses after Nvidia said its longtime CEO is stepping down amid revelations of a relationship with a suspected Chinese spy.",
-                "_timestamp": 1794494514.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 4,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-12 09:42 UTC (approx. 1 hour ago relative to reference time)",
-            "Facts": "[Update 2026-11-12 14:41 UTC via Yahoo Finance Nasdaq]: Nvidia set to lose $700 billion in value as Jensen Huang resigns — Shares of the chipmaker extended their losses after Nvidia said its longtime CEO is stepping down amid revelations of a relationship with a suspected Chinese spy. | [Update 2026-11-12 14:18 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Plunges As CEO Jensen Huang Resigns — The stock of chipmaker Nvidia (NASDAQ: $NVDA) is down 10% in pre market trading on news that Chief Executive Office... | [Update 2026-11-12 14:04 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Hammered As CEO Resigns In Disgrace — Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations. | [Update 2026-11-12 13:44 UTC via Yahoo Finance Nasdaq]: Nvidia Stock Hammered As CEO's Future In Doubt — Nvidia stock received another round of downgrades and price-target cuts on Wall Street in the wake of the latest CEO revelations. | [Update 2026-11-12 09:42 UTC via Yahoo Finance Nasdaq]: Nvidia Stock At $174: Sell After An 18% Drop? | Core Background: Nvidia received consecutive Wall Street analyst downgrades amid an ongoing corporate scandal, pulling the stock down 18% from recent highs despite broader AI infrastructure demand.",
-            "Uncertainties": "The depth of the Nvidia sell-off and whether contagion will spread to wider tech equities and risk-on liquidity channels remains unquantified.",
-            "Macro_Context": "Nasdaq 100 is down 0.12% to 28203.2, reflecting tech sector strain. Aggressive taker flows show 65.4% sell dominance, aligning with risk-off tech deleveraging that often spills over into precious metals.",
-            "Bull_Case": " Capitulation in high-flying tech stocks like Nvidia can trigger safe-haven capital rotation out of equities and into physical gold and bullion reserves.",
-            "Bear_Case": "Broader tech sector weakness and margin calls can force institutional investors to liquidate liquid assets like gold to cover equity losses, driving spot prices lower.",
-            "Historical_Calibration": "Tech, AI & Equities category, Fresh ATR ratio (0.25x), and Against USD Headwind alignment. Historical Win Rate from Regime Matrix: 69.6% (87/125).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 52,
-            "Past_Price_Action_Cause": "Tech sector liquidations and Nvidia's 18% drop contributed to overall market risk-off behavior, aligning with gold's sharp 24h decline under heavy taker selling.",
-            "Orderflow_Price_Target": "3920.37"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 11.82
+        "max_dd_usd": 10.63
     },
     {
         "main_date": "First Reported: 2026-11-12 14:38 UTC",
@@ -1436,7 +1881,7 @@
             "Orderflow_Price_Target": "4049.39"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 32.08
+        "max_dd_usd": 38.29
     },
     {
         "main_date": "First Reported: 2026-11-12 14:35 UTC",
@@ -2547,7 +2992,7 @@
             "Orderflow_Price_Target": "4049.39"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 32.08
+        "max_dd_usd": 38.29
     },
     {
         "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-12 14:29 UTC",
@@ -3463,7 +3908,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-05 18:11 UTC | Last Update: 2026-11-12 14:20 UTC",
@@ -3828,7 +4273,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 32.08
+        "max_dd_usd": 38.29
     },
     {
         "main_date": "First Reported: 2026-11-12 14:19 UTC",
@@ -4066,7 +4511,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 32.08
+        "max_dd_usd": 38.29
     },
     {
         "main_date": "First Reported: 2026-11-12 14:10 UTC",
@@ -4100,7 +4545,7 @@
             "Orderflow_Price_Target": "3950.56"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 32.08
+        "max_dd_usd": 38.29
     },
     {
         "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-12 14:08 UTC",
@@ -5579,7 +6024,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 38.06
+        "max_dd_usd": 44.27
     },
     {
         "main_date": "First Reported: 2026-11-12 13:30 UTC",
@@ -5614,7 +6059,7 @@
             "Orderflow_Price_Target": "3950.64"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 38.06
+        "max_dd_usd": 44.27
     },
     {
         "main_date": "First Reported: 2026-11-12 13:30 UTC",
@@ -6251,7 +6696,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 38.06
+        "max_dd_usd": 44.27
     },
     {
         "main_date": "First Reported: 2026-11-12 13:17 UTC",
@@ -6381,7 +6826,7 @@
             "Orderflow_Price_Target": "3989.80"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 50.27
+        "max_dd_usd": 56.48
     },
     {
         "main_date": "First Reported: 2026-11-12 13:05 UTC",
@@ -6663,7 +7108,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-07 11:56 UTC | Last Update: 2026-11-12 12:50 UTC",
@@ -7113,7 +7558,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-11 07:26 UTC | Last Update: 2026-11-12 12:39 UTC",
@@ -7367,7 +7812,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -7433,7 +7878,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-12 12:30 UTC",
@@ -7531,7 +7976,7 @@
             "Orderflow_Price_Target": "3989.86"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-11 17:35 UTC | Last Update: 2026-11-12 12:29 UTC",
@@ -8739,7 +9184,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-11 02:30 UTC | Last Update: 2026-11-12 12:10 UTC",
@@ -8824,7 +9269,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-12 12:01 UTC",
@@ -8858,7 +9303,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-12 06:25 UTC | Last Update: 2026-11-12 12:01 UTC",
@@ -8966,7 +9411,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-12 07:00 UTC | Last Update: 2026-11-12 12:00 UTC",
@@ -9056,7 +9501,7 @@
             "Orderflow_Price_Target": "3989.77"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 70.57
+        "max_dd_usd": 76.78
     },
     {
         "main_date": "First Reported: 2026-11-12 08:34 UTC | Last Update: 2026-11-12 11:59 UTC",
@@ -10023,7 +10468,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 78.12
+        "max_dd_usd": 84.33
     },
     {
         "main_date": "First Reported: 2026-11-12 11:45 UTC",
@@ -10123,7 +10568,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 78.12
+        "max_dd_usd": 84.33
     },
     {
         "main_date": "First Reported: 2026-11-12 11:33 UTC",
@@ -10223,7 +10668,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 78.12
+        "max_dd_usd": 84.33
     },
     {
         "main_date": "First Reported: 2026-11-10 23:46 UTC | Last Update: 2026-11-12 11:32 UTC",
@@ -10308,7 +10753,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 78.12
+        "max_dd_usd": 84.33
     },
     {
         "main_date": "First Reported: 2026-11-12 11:03 UTC",
@@ -10502,7 +10947,7 @@
             "Orderflow_Price_Target": "3989.82"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 87.71
+        "max_dd_usd": 93.92
     },
     {
         "main_date": "First Reported: 2026-11-12 10:17 UTC",
@@ -10536,7 +10981,7 @@
             "Orderflow_Price_Target": "3989.79"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 84.45
+        "max_dd_usd": 90.66
     },
     {
         "main_date": "First Reported: 2026-11-12 08:21 UTC | Last Update: 2026-11-12 10:14 UTC",
@@ -11144,7 +11589,7 @@
             "Orderflow_Price_Target": "3989.85"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 77.71
+        "max_dd_usd": 83.92
     },
     {
         "main_date": "First Reported: 2026-11-12 09:10 UTC",
@@ -11179,7 +11624,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.53
+        "max_dd_usd": 82.74
     },
     {
         "main_date": "First Reported: 2026-11-11 22:50 UTC | Last Update: 2026-11-12 09:08 UTC",
@@ -11257,7 +11702,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 76.53
+        "max_dd_usd": 82.74
     },
     {
         "main_date": "First Reported: 2026-11-10 10:21 UTC | Last Update: 2026-11-12 09:01 UTC",
@@ -11424,7 +11869,7 @@
             "Orderflow_Price_Target": "3989.91"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.59
+        "max_dd_usd": 68.8
     },
     {
         "main_date": "First Reported: 2026-11-12 08:35 UTC",
@@ -11459,7 +11904,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.59
+        "max_dd_usd": 68.8
     },
     {
         "main_date": "First Reported: 2026-11-09 19:00 UTC | Last Update: 2026-11-12 08:30 UTC",
@@ -11721,7 +12166,7 @@
             "Orderflow_Price_Target": "3989.90"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.59
+        "max_dd_usd": 68.8
     },
     {
         "main_date": "First Reported: 2026-11-12 08:20 UTC",
@@ -11756,7 +12201,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.59
+        "max_dd_usd": 68.8
     },
     {
         "main_date": "First Reported: 2026-11-12 08:02 UTC",
@@ -11791,7 +12236,7 @@
             "Orderflow_Price_Target": "3989.9"
         },
         "eval_status": "ACTIVE",
-        "max_dd_usd": 62.59
+        "max_dd_usd": 68.8
     },
     {
         "main_date": "First Reported: 2026-11-10 18:07 UTC | Last Update: 2026-11-12 08:01 UTC",
@@ -11876,38 +12321,6 @@
             "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3989.85.",
             "Bear_Case": "Nearest downside liquidity zone sits at $3960.85. 4h-ATR ratio is 0.26x.",
             "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.3h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-12.59 (0.26x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-12 07:43 UTC",
-        "original_date": "2026-11-12 07:43",
-        "_timestamp": 1794469432.0,
-        "articles": [
-            {
-                "title": "Tech giant Foxconn beats forecasts with third-quarter profit jump",
-                "link": "https://finance.yahoo.com/technology/articles/tech-giant-foxconn-beats-forecasts-065700078.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 07:43",
-                "description": "Taiwanese tech giant Foxconn on Thursday reported a record net profit for the third quarter, as the global buildout of data centres fuels demand for the AI servers needed to operate them.Chief financial officer David Huang said Foxconn's \"third-quarter revenue, operating income, net income, and earnings per share all reached record quarterly highs\".",
-                "_timestamp": 1794469432.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "First reported: 2026-11-12 07:43 UTC (~0.4h ago)",
-            "Facts": "[Yahoo Finance Nasdaq] Tech giant Foxconn beats forecasts with third-quarter profit jump - Taiwanese tech giant Foxconn on Thursday reported a record net profit for the third quarter, as the global buildout of data centres fuels demand for the AI servers needed t",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.42%, Nasdaq-100 -0.20%, Brent Oil +1.22% | OANDA Sentiment: 65.7% Long / 34.3% Short | 24/7 OKX XAUUSDT.P: $3970.8 (Spread: $+5.85) | Aggressive Taker Flow: 61.1% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3989.85.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $3960.85. 4h-ATR ratio is 0.26x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.4h.",
             "Impact_Timing": "Present",
             "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
@@ -16002,126 +16415,6 @@
         "max_dd_usd": 7.04
     },
     {
-        "main_date": "First Reported: 2026-11-09 15:00 UTC | Last Update: 2026-11-11 20:00 UTC",
-        "original_date": "2026-11-09 15:00",
-        "_timestamp": 1794427218.0,
-        "articles": [
-            {
-                "title": "BC-Gold Futures",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150022045.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-09 15:00",
-                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Monday, November 09.Contract Open High Low Last Change Today's Volume Friday's Volume  Nov 26 4087.",
-                "_timestamp": 1794236422.0
-            },
-            {
-                "title": "BC-Crude Oil Futures",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-150015126.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 15:00",
-                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Monday, November 09.Light Sweet Crude (NYMX)1,000 bbl.",
-                "_timestamp": 1794236415.0
-            },
-            {
-                "title": "BC-Gold-Silver",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-silver-200014293.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-09 20:00",
-                "description": "NEW YORK (AP) — Futures trading on the NY Merc Monday:Open High Low Settle Chg.'s open int 398,011 down 639  SILVER  5,000 troy oz.",
-                "_timestamp": 1794254414.0
-            },
-            {
-                "title": "BC-OILS",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-oils-200019452.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-09 20:00",
-                "description": "NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Monday:Open High Low Settle Chg.'s open int 1,934,887 down 22,302  HEATING OIL  42,000 gal, cents per gal  Dec 26 438.",
-                "_timestamp": 1794254419.0
-            },
-            {
-                "title": "BC-Gold Futures",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150032168.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-10 15:00",
-                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Tuesday, November 10.Contract Open High Low Last Change Today's Volume Monday's Volume  Nov 26 4122.",
-                "_timestamp": 1794322832.0
-            },
-            {
-                "title": "BC-Crude Oil Futures",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-150026468.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 15:00",
-                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Tuesday, November 10.Light Sweet Crude (NYMX)1,000 bbl.",
-                "_timestamp": 1794322826.0
-            },
-            {
-                "title": "BC-Gold-Silver",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-silver-200014577.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-10 20:00",
-                "description": "NEW YORK (AP) — Futures trading on the NY Merc Tuesday:Open High Low Settle Chg.'s open int 397,372 up 2,173  SILVER  5,000 troy oz.",
-                "_timestamp": 1794340814.0
-            },
-            {
-                "title": "BC-OILS",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-oils-200018413.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 20:00",
-                "description": "NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Tuesday:Open High Low Settle Chg.'s open int 1,929,570 down 20,382  HEATING OIL  42,000 gal, cents per gal  Dec 26 418.",
-                "_timestamp": 1794340818.0
-            },
-            {
-                "title": "BC-Crude Oil Futures",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-crude-oil-futures-150015017.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 15:00",
-                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Light Sweet Crude (NYMX)1,000 bbl.",
-                "_timestamp": 1794409215.0
-            },
-            {
-                "title": "BC-Gold Futures",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150024077.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-11 15:00",
-                "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Contract Open High Low Last Change Today's Volume Tuesday's Volume  Nov 26 4048.",
-                "_timestamp": 1794409224.0
-            },
-            {
-                "title": "BC-Gold-Silver",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-silver-200013017.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-11 20:00",
-                "description": "NEW YORK (AP) — Futures trading on the NY Merc Wednesday:Open High Low Settle Chg.'s open int 399,545 up 163  SILVER  5,000 troy oz.",
-                "_timestamp": 1794427213.0
-            },
-            {
-                "title": "BC-OILS",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-oils-200018406.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 20:00",
-                "description": "NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Wednesday:Open High Low Settle Chg.'s open int 1,929,570 down 12,782  HEATING OIL  42,000 gal, cents per gal  Dec 26 414.",
-                "_timestamp": 1794427218.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 3,
-            "Event_Timestamp": "2026-11-09 15:00 to 20:00 UTC (approx. 0 to 5 hours ago)",
-            "Facts": "[Update 2026-11-11 20:00 UTC via Yahoo Finance Oil]: BC-OILS — NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Wednesday:Open High Low Settle Chg.'s open int 1,929,570 down 12,782  HEATING OIL  42,000 gal, cents per gal  De | [Update 2026-11-11 20:00 UTC via Yahoo Finance Gold]: BC-Gold-Silver — NEW YORK (AP) — Futures trading on the NY Merc Wednesday:Open High Low Settle Chg.'s open int 399,545 up 163  SILVER  5,000 troy oz. | [Update 2026-11-11 15:00 UTC via Yahoo Finance Gold]: BC-Gold Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Contract Open High Low Last Change Today's Volume Tuesday's Volume  Nov 26 4048. | [Update 2026-11-11 15:00 UTC via Yahoo Finance Oil]: BC-Crude Oil Futures — NEW YORK (AP) — Prices as of 10:00:00 AM Wednesday, November 11.Light Sweet Crude (NYMX)1,000 bbl. | Routine daily NYMEX/COMEX settlement figures and opening interest reports for Crude Oil, Heating Oil, Gold, and Silver [Yahoo Finance Oil/Gold].",
-            "Uncertainties": "Standard exchange clearing data without unexpected shock elements.",
-            "Macro_Context": "Brent Crude is down (-6.38%), reflecting lower energy input costs, while precious metals consolidate near multi-week highs.",
-            "Bull_Case": "Steady open interest in COMEX gold futures supports underlying structural liquidity.",
-            "Bear_Case": "Falling energy prices (Brent Crude -6.38%) weigh on broad commodity baskets and dampen inflation expectations, removing an inflationary tailwind for gold.",
-            "Historical_Calibration": "Standard exchange settlement reports validate existing price discovery but do not provide a fresh directional catalyst.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "Reflects ongoing market settling; aligns with current spot price of $4141.22.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-11 19:59 UTC",
         "original_date": "2026-11-11 19:59",
         "_timestamp": 1794427149.0,
@@ -17201,47 +17494,6 @@
         "max_dd_usd": 81.12
     },
     {
-        "main_date": "First Reported: 2026-11-10 18:03 UTC | Last Update: 2026-11-11 17:01 UTC",
-        "original_date": "2026-11-10 18:03",
-        "_timestamp": 1794416498.0,
-        "articles": [
-            {
-                "title": "Alphabet Stocks Rise 0.34% as Google Lines Up $10 Billion Anthropic Stake Purchase",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-rise-0-34-180311251.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 18:03",
-                "description": "Anthropic's amended IPO filing makes Google and Nvidia the largest buyers in a $26 billion private placement priced alongside the offering.",
-                "_timestamp": 1794333791.0
-            },
-            {
-                "title": "AMD Stocks Rise as $2.5 Billion Anthropic Stake Meets Goldman Top-Pick Call",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/amd-stocks-rise-2-5-170138086.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 17:01",
-                "description": "AMD will buy about 33.8 million Anthropic shares at the IPO price, while Goldman Sachs names it a top chip idea.",
-                "_timestamp": 1794416498.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Cluster_ID": 2,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-10 18:03 UTC (Approx. 13 minutes ago relative to 2026-11-10 18:16 UTC)",
-            "Facts": "[Update 2026-11-11 17:01 UTC via Yahoo Finance Nasdaq]: AMD Stocks Rise as $2.5 Billion Anthropic Stake Meets Goldman Top-Pick Call — AMD will buy about 33.8 million Anthropic shares at the IPO price, while Goldman Sachs names it a top chip idea. | Alphabet shares rose 0.34% as Google lined up a $10 billion Anthropic stake purchase, part of an amended IPO filing making Google and Nvidia the largest private placement buyers [Yahoo Finance Nasdaq].",
-            "Uncertainties": "Regulatory scrutiny regarding mega-cap tech investments in artificial intelligence startups and private placement valuations.",
-            "Macro_Context": "Alphabet's resilience contrasts with broader tech weakness, supporting selective risk-on sentiment in AI infrastructure that limits aggressive safe-haven panic.",
-            "Bull_Case": "Massive capital commitments into AI leaders validate sector growth and support overall market liquidity.",
-            "Bear_Case": "Concentrated tech capital allocation can drain liquidity from other asset classes, increasing overall market volatility.",
-            "Historical_Calibration": "Tech, AI & Equities category with Fresh ATR (<0.8x) and Against USD Headwind: Historical Win Rate is 52.7% (Avg DD: -$16.4).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 48,
-            "Past_Price_Action_Cause": "Micro-level tech developments had minimal direct directional impact on gold spot prices, which remain driven by macro CPI data and currency flows.",
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-11 17:00 UTC",
         "original_date": "2026-11-11 17:00",
         "_timestamp": 1794416400.0,
@@ -17989,37 +18241,5 @@
         },
         "eval_status": "MISS",
         "max_dd_usd": 93.02
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 15:08 UTC",
-        "original_date": "2026-11-11 15:08",
-        "_timestamp": 1794409688.0,
-        "articles": [
-            {
-                "title": "Revealed: West Bank petrol station chain faces $325m claim in PA fuel-smuggling probe",
-                "link": "https://www.middleeasteye.net/news/revealed-west-bank-petrol-station-chain-faces-325m-claim-pa-fuel-smuggling-probe",
-                "source": "Middle East Eye",
-                "date": "2026-11-11 15:08",
-                "description": "Revealed: West Bank petrol station chain faces $325m claim in PA fuel-smuggling probe\n\n    \n    \n\n          \n      \n      \n        Submitted by \nSimon Hooper\n on \nWed, 11/11/2026 - 12:12\n\n        \n      \n    \n      \n    \n                Leaked finance ministry report accuses Tarek al-Natsheh’s Al-Huda Group of tax evasion and financial misconduct. Natsheh, who is currently detained, denies wrongdoing\n                      \n                  \n    ",
-                "_timestamp": 1794409688.0
-            }
-        ],
-        "needs_update": true,
-        "summary": {
-            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "First reported: 2026-11-11 15:08 UTC (~1.3h ago)",
-            "Facts": "[Middle East Eye] Revealed: West Bank petrol station chain faces $325m claim in PA fuel-smuggling probe - Revealed: West Bank petrol station chain faces $325m claim in PA fuel-smuggling probe\n\n    \n    \n\n          \n      \n      \n        Submitted by \nSimon H",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.55%, Nasdaq-100 +3.33%, Brent Oil +3.66% | OANDA Sentiment: 65.9% Long / 34.1% Short | 24/7 OKX XAUUSDT.P: $4012.3 (Spread: $+6.14) | Aggressive Taker Flow: 53.3% Market Buys (TWO-WAY BALANCED EXECUTION).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $4019.59.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $3999.84. 4h-ATR ratio is 0.87x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 1.3h.",
-            "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-39.68 (0.87x of estimated Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
     }
 ]

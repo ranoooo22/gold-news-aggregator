@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 650,
-    "hits": 444,
-    "misses": 206,
-    "win_rate": 68.3,
-    "active_signals": 29,
+    "total_evaluated": 680,
+    "hits": 456,
+    "misses": 224,
+    "win_rate": 67.1,
+    "active_signals": 17,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 374,
-                "misses": 174,
-                "total": 548,
-                "win_rate": 68.2,
-                "avg_dd": 23.46
+                "hits": 385,
+                "misses": 192,
+                "total": 577,
+                "win_rate": 66.7,
+                "avg_dd": 24.95
             },
             "Bearish": {
-                "hits": 70,
+                "hits": 71,
                 "misses": 32,
-                "total": 102,
-                "win_rate": 68.6,
-                "avg_dd": 19.71
+                "total": 103,
+                "win_rate": 68.9,
+                "avg_dd": 19.47
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 417,
-                "misses": 193,
-                "total": 610,
-                "win_rate": 68.4,
-                "avg_dd": 21.93
+                "hits": 429,
+                "misses": 211,
+                "total": 640,
+                "win_rate": 67.0,
+                "avg_dd": 23.4
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -53,34 +53,34 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 20,
+                "hits": 21,
                 "misses": 0,
-                "total": 20,
+                "total": 21,
                 "win_rate": 100.0,
-                "avg_dd": 21.08
+                "avg_dd": 20.29
             },
             "Against USD Headwind": {
-                "hits": 209,
+                "hits": 220,
                 "misses": 46,
-                "total": 255,
-                "win_rate": 82.0,
-                "avg_dd": 22.82
+                "total": 266,
+                "win_rate": 82.7,
+                "avg_dd": 22.08
             },
             "USD Neutral / Legacy": {
                 "hits": 215,
-                "misses": 160,
-                "total": 375,
-                "win_rate": 57.3,
-                "avg_dd": 23.37
+                "misses": 178,
+                "total": 393,
+                "win_rate": 54.7,
+                "avg_dd": 26.92
             }
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 206,
-                "misses": 126,
-                "total": 332,
-                "win_rate": 62.0,
-                "avg_dd": 26.12
+                "hits": 215,
+                "misses": 134,
+                "total": 349,
+                "win_rate": 61.6,
+                "avg_dd": 26.81
             },
             "Fed, Rates & Macro": {
                 "hits": 27,
@@ -91,40 +91,40 @@
             },
             "Tech, AI & Equities": {
                 "hits": 128,
-                "misses": 42,
-                "total": 170,
-                "win_rate": 75.3,
-                "avg_dd": 17.35
+                "misses": 46,
+                "total": 174,
+                "win_rate": 73.6,
+                "avg_dd": 19.18
             },
             "Commodities & Energy": {
-                "hits": 83,
-                "misses": 31,
-                "total": 114,
-                "win_rate": 72.8,
-                "avg_dd": 25.26
+                "hits": 86,
+                "misses": 37,
+                "total": 123,
+                "win_rate": 69.9,
+                "avg_dd": 27.4
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 390,
-                "misses": 195,
-                "total": 585,
-                "win_rate": 66.7,
-                "avg_dd": 23.19
+                "hits": 400,
+                "misses": 212,
+                "total": 612,
+                "win_rate": 65.4,
+                "avg_dd": 24.7
             },
             "High (65-74%)": {
-                "hits": 51,
-                "misses": 10,
-                "total": 61,
-                "win_rate": 83.6,
-                "avg_dd": 21.96
+                "hits": 52,
+                "misses": 11,
+                "total": 63,
+                "win_rate": 82.5,
+                "avg_dd": 22.11
             },
             "Extreme (>=75%)": {
-                "hits": 3,
+                "hits": 4,
                 "misses": 1,
-                "total": 4,
-                "win_rate": 75.0,
-                "avg_dd": 17.08
+                "total": 5,
+                "win_rate": 80.0,
+                "avg_dd": 13.91
             }
         }
     },
@@ -9256,7 +9256,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$11.82)"
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/12/greta-thunberg-the-planet-is-being-killed?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Greta Thunberg: The planet is being killed",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -9332,7 +9332,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/omai-gold-intersects-multiple-gold-113000487.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Omai Gold Intersects Multiple Gold Zones in Each Wenot Hole Including 4.84 g/t Au over 38.",
             "source": "Yahoo Finance Gold",
             "category": "Tech, AI & Equities",
@@ -9351,7 +9351,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/tsx-opening-chibougamau-project-123000575.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "TSX Opening and Chibougamau Project Update",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -9370,7 +9370,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/currencies/articles/never-happen-graham-stephan-slams-121500544.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "‘This will never happen’: Graham Stephan slams Trump’s 10% credit card cap as ‘pure perfor",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -9389,7 +9389,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249357/Assembly-of-Experts-backs-NPT-exit-warns-against-escalation": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Assembly of Experts backs NPT exit, warns against escalation",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -9408,7 +9408,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/iran-emerging-stronger-from-war-iraq-kurdish-bafel-talabani-says": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran is emerging stronger from war, Iraqi Kurdish leader says",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -9427,7 +9427,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/video/tony-robbins-yourself-irreplaceable-ai-120000200.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Tony Robbins: How to make yourself irreplaceable in the AI era",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -9446,7 +9446,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/first-majestic-reports-positive-exploration-120000840.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "First Majestic Reports Positive Exploration Results at Jerritt Canyon and Provides Restart",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -9503,7 +9503,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$11.40)"
         },
         "https://www.marketwatch.com/story/tech-stocks-may-soon-enjoy-a-violent-bounce-but-one-strategist-warns-investors-not-to-take-the-bait-1a41f9c4?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Tech stocks may soon enjoy a ‘violent bounce’ — but one strategist warns investors not to ",
             "source": "MarketWatch Macro",
             "category": "Geopolitics & War",
@@ -9541,7 +9541,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$11.40)"
         },
         "https://finance.yahoo.com/healthcare/articles/baron-funds-sees-eli-lilly-113252634.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Baron Funds Sees Eli Lilly’s (LLY) Mounjaro, Zepbound and Orforglipron as Transformational",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -9560,7 +9560,7 @@
             "fail_reason": ""
         },
         "https://www.cnbc.com/2026/11/12/starlink-starshield-ukraine-restrictions-spacex.html": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Ukraine warns of fresh Starshield disruptions as U.S. envoys arrive in Moscow for talks wi",
             "source": "CNBC Tech & AI",
             "category": "Geopolitics & War",
@@ -9598,7 +9598,7 @@
             "fail_reason": ""
         },
         "https://247wallst.com/investing/2026/11/12/bernstein-just-gave-up-on-nvidia-cutting-its-target-in-half-to-200/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Bernstein Just Gave Up on Nvidia, Cutting Its Target in Half to $200",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -9617,7 +9617,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/gideo-saar-warns-attempts-harm-israel-also-harm-britain-following": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Gideo Saar warns 'attempts to harm Israel also harm Britain' following meeting with UK Con",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -9636,7 +9636,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/bipartisan-silver-act-gains-strong-133000495.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Bipartisan SILVER Act Gains Strong Momentum in Congress as Lawmakers Eye National Defense ",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -9693,7 +9693,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$10.58)"
         },
         "https://www.aljazeera.com/news/2026/11/12/more-than-1800-italian-schools-targeted-by-new-hoax-bomb-alerts?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "More than 1,800 Italian schools targeted by new hoax bomb alerts",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -9712,7 +9712,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/nigeria-hits-opec-oil-production-123000910.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Nigeria Hits OPEC Oil Production Quota for Sixth Straight Month",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -9769,7 +9769,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$10.96)"
         },
         "https://www.middleeasteye.net/news/six-dutch-parties-condemn-local-arms-companys-deal-israeli-gunmaker": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Six Dutch parties condemn local arms company’s deal with Israeli gunmaker",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -9788,7 +9788,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/market-one-article-feature-kitco-143000007.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Market One Article Feature on Kitco: Visionary Copper and Gold Revives Kismet Copper Depos",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -11854,6 +11854,330 @@
             "nas_chg_at_signal": 0.58,
             "created_ts": 1794491460.0,
             "date": "First Reported: 2026-11-12 13:51 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/india-clears-israeli-firm-cellebrite-supply-phone-hacking-tools": {
+            "status": "HIT",
+            "headline": "India clears Israeli firm Cellebrite to supply phone-hacking tools to government agencies",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 3895.34,
+            "target": 3900.21,
+            "max_dd_usd": 1.21,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794565340.0,
+            "date": "First Reported: 2026-11-13 10:22 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/european-gas-logs-12-weekly-surge-as-usiran-diplomatic-hopes-collapse-5024311": {
+            "status": "ACTIVE",
+            "headline": "European gas logs 12% weekly surge as U.S.-Iran diplomatic hopes collapse",
+            "source": "Investing.com",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 78,
+            "entry_price": 3895.34,
+            "target": 3919.97,
+            "max_dd_usd": 1.21,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794564841.0,
+            "date": "First Reported: 2026-11-13 09:44 UTC | Last Update: 2026-11-13 10:14 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/u-global-investors-reports-18-210500101.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "U.S. Global Investors Reports 18% Revenue Growth and Returns to Operating Profitability in",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3895.34,
+            "target": 3900.21,
+            "max_dd_usd": 1.21,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794564840.0,
+            "date": "First Reported: 2026-11-12 21:05 UTC | Last Update: 2026-11-13 10:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/russia-and-ukraine-report-overnight-attacks-amid-us-diplomatic-push?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Russia and Ukraine report overnight attacks amid US diplomatic push",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 3895.34,
+            "target": 3909.32,
+            "max_dd_usd": 1.21,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794564698.0,
+            "date": "First Reported: 2026-11-13 10:11 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-just-downgraded-3-100639137.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Goldman Sachs just downgraded these 3 European sectors",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 79,
+            "entry_price": 3895.34,
+            "target": 3900.21,
+            "max_dd_usd": 1.21,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794564399.0,
+            "date": "First Reported: 2026-11-13 10:06 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/goldman-sees-gulf-lng-disruption-pushing-ttf-gas-prices-higher-93CH-5024622": {
+            "status": "ACTIVE",
+            "headline": "Goldman sees Gulf LNG disruption pushing TTF gas prices higher",
+            "source": "Investing.com",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3901.57,
+            "target": 3909.32,
+            "max_dd_usd": 7.93,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794562865.0,
+            "date": "First Reported: 2026-11-13 09:41 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/goldman-sees-copper-climbing-to-15600-per-ton-by-december-2027-93CH-5024621": {
+            "status": "ACTIVE",
+            "headline": "Goldman sees copper climbing to $15,600 per ton by December 2027",
+            "source": "Investing.com",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3901.57,
+            "target": 3909.32,
+            "max_dd_usd": 7.93,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794562844.0,
+            "date": "First Reported: 2026-11-13 09:40 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/13/fed-chair-kevin-warsh-central-bank-reforms-come-with-a-significant-unintended-consequence/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Fed Chair Kevin Warsh's Central Bank Reforms Come With a Significant Unintended Consequenc",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 75,
+            "entry_price": 3901.57,
+            "target": 3919.97,
+            "max_dd_usd": 7.93,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794561961.0,
+            "date": "First Reported: 2026-11-13 09:26 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/news/exclusive-toyota-investigating-use-forklifts-israeli-military-mee-investigation": {
+            "status": "HIT",
+            "headline": "Exclusive: Toyota reviewing use of forklifts by Israeli military after MEE investigation",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 3901.57,
+            "target": 3900.21,
+            "max_dd_usd": 7.93,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794561932.0,
+            "date": "First Reported: 2026-11-13 09:25 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249371/Araghchi-lashes-out-at-lack-of-media-attention-to-Gaza-genoci": {
+            "status": "HIT",
+            "headline": "Araghchi lashes out at lack of media attention to Gaza genoci",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3901.57,
+            "target": 3900.21,
+            "max_dd_usd": 7.93,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794561877.0,
+            "date": "First Reported: 2026-11-13 09:24 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/bull-day-coherent-cohr-092000773.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Bull of the Day: Coherent (COHR)",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3901.57,
+            "target": 3890.85,
+            "max_dd_usd": 3.74,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794561600.0,
+            "date": "First Reported: 2026-11-13 09:20 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/13/pope-leo-xiv-warns-on-pressures-facing-modern-families?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Pope Leo XIV warns on pressures facing modern families",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3901.57,
+            "target": 3900.21,
+            "max_dd_usd": 7.93,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794561097.0,
+            "date": "First Reported: 2026-11-13 09:11 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-edge-084813171.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "FTSE 100 today: Stocks edge lower as Iran, Ukraine uncertainty weigh",
+            "source": "Yahoo Finance Oil",
+            "category": "Geopolitics & War",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3896.55,
+            "target": 3890.85,
+            "max_dd_usd": 4.47,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794559693.0,
+            "date": "First Reported: 2026-11-13 08:48 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249370/Enemy-must-learn-from-defeats-or-face-even-greater-lessons": {
+            "status": "HIT",
+            "headline": "Enemy must learn from defeats or face even greater lessons",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3896.55,
+            "target": 3900.21,
+            "max_dd_usd": 6.67,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794559282.0,
+            "date": "First Reported: 2026-11-13 08:41 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketbeat.com/instant-alerts/transcript-what-integra-resources-itrg-said-on-its-q3-earnings-call-2026-11-13/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+            "status": "HIT",
+            "headline": "What Integra Resources (ITRG) Said on Its Q3 Earnings Call",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3896.55,
+            "target": 3900.21,
+            "max_dd_usd": 6.67,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794557685.0,
+            "date": "First Reported: 2026-11-13 08:14 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/news/how-israel-war-lebanon-water-has-become-existential": {
+            "status": "HIT",
+            "headline": "How Israel's war on Lebanon's water has become existential",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3896.55,
+            "target": 3900.21,
+            "max_dd_usd": 6.67,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794556817.0,
+            "date": "First Reported: 2026-11-13 08:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/report-centcom-denies-israeli-reports-possible-renewed-war-iran": {
+            "status": "HIT",
+            "headline": "Report: Centcom denies Israeli reports of possible renewed war on Iran",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3897.34,
+            "target": 3900.21,
+            "max_dd_usd": 3.52,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794556765.0,
+            "date": "First Reported: 2026-11-13 07:59 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/opinions/2026/11/13/the-gulf-must-build-security-that-can-outlast-this-war?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "The Gulf must build security that can outlast this war",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3897.34,
+            "target": 3900.21,
+            "max_dd_usd": 3.52,
+            "atr_ratio_at_signal": 0.1,
+            "daily_atr_at_signal": 53.58,
+            "eur_chg_at_signal": -0.35,
+            "nas_chg_at_signal": 0.44,
+            "created_ts": 1794553681.0,
+            "date": "First Reported: 2026-11-13 07:08 UTC",
             "fail_reason": ""
         }
     }

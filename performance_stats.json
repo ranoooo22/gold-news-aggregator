@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 644,
-    "hits": 438,
+    "total_evaluated": 650,
+    "hits": 444,
     "misses": 206,
-    "win_rate": 68.0,
-    "active_signals": 31,
+    "win_rate": 68.3,
+    "active_signals": 29,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 370,
+                "hits": 374,
                 "misses": 174,
-                "total": 544,
-                "win_rate": 68.0,
-                "avg_dd": 23.43
+                "total": 548,
+                "win_rate": 68.2,
+                "avg_dd": 23.46
             },
             "Bearish": {
-                "hits": 68,
+                "hits": 70,
                 "misses": 32,
-                "total": 100,
-                "win_rate": 68.0,
-                "avg_dd": 18.74
+                "total": 102,
+                "win_rate": 68.6,
+                "avg_dd": 19.71
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 411,
+                "hits": 417,
                 "misses": 193,
-                "total": 604,
-                "win_rate": 68.0,
-                "avg_dd": 21.77
+                "total": 610,
+                "win_rate": 68.4,
+                "avg_dd": 21.93
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -53,34 +53,34 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 18,
+                "hits": 20,
                 "misses": 0,
-                "total": 18,
+                "total": 20,
                 "win_rate": 100.0,
-                "avg_dd": 17.99
+                "avg_dd": 21.08
             },
             "Against USD Headwind": {
-                "hits": 207,
+                "hits": 209,
                 "misses": 46,
-                "total": 253,
-                "win_rate": 81.8,
-                "avg_dd": 22.93
+                "total": 255,
+                "win_rate": 82.0,
+                "avg_dd": 22.82
             },
             "USD Neutral / Legacy": {
-                "hits": 213,
+                "hits": 215,
                 "misses": 160,
-                "total": 373,
-                "win_rate": 57.1,
-                "avg_dd": 23.18
+                "total": 375,
+                "win_rate": 57.3,
+                "avg_dd": 23.37
             }
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 205,
+                "hits": 206,
                 "misses": 126,
-                "total": 331,
-                "win_rate": 61.9,
-                "avg_dd": 26.2
+                "total": 332,
+                "win_rate": 62.0,
+                "avg_dd": 26.12
             },
             "Fed, Rates & Macro": {
                 "hits": 27,
@@ -90,41 +90,41 @@
                 "avg_dd": 13.9
             },
             "Tech, AI & Equities": {
-                "hits": 125,
+                "hits": 128,
                 "misses": 42,
-                "total": 167,
-                "win_rate": 74.9,
-                "avg_dd": 16.65
+                "total": 170,
+                "win_rate": 75.3,
+                "avg_dd": 17.35
             },
             "Commodities & Energy": {
-                "hits": 81,
+                "hits": 83,
                 "misses": 31,
-                "total": 112,
-                "win_rate": 72.3,
-                "avg_dd": 25.18
+                "total": 114,
+                "win_rate": 72.8,
+                "avg_dd": 25.26
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 388,
+                "hits": 390,
                 "misses": 195,
-                "total": 583,
-                "win_rate": 66.6,
-                "avg_dd": 23.2
+                "total": 585,
+                "win_rate": 66.7,
+                "avg_dd": 23.19
             },
             "High (65-74%)": {
-                "hits": 48,
+                "hits": 51,
                 "misses": 10,
-                "total": 58,
-                "win_rate": 82.8,
-                "avg_dd": 21.04
+                "total": 61,
+                "win_rate": 83.6,
+                "avg_dd": 21.96
             },
             "Extreme (>=75%)": {
-                "hits": 2,
+                "hits": 3,
                 "misses": 1,
-                "total": 3,
-                "win_rate": 66.7,
-                "avg_dd": 7.53
+                "total": 4,
+                "win_rate": 75.0,
+                "avg_dd": 17.08
             }
         }
     },
@@ -9864,14 +9864,14 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$10.96)"
         },
         "https://www.cnbc.com/2026/11/12/jamieson-greer-trump-tariffs-election-nvidia.html": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Trump trade chief Greer speaks with 'Squawk Box' as tariff threats rise",
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 71,
             "entry_price": 3898.32,
-            "target": 3950.56,
+            "target": 3919.96,
             "max_dd_usd": 45.74,
             "atr_ratio_at_signal": 0.69,
             "daily_atr_at_signal": 80.34,
@@ -9883,14 +9883,14 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/canadian-value-stocks-watch-november-141024330.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Canadian Value Stocks To Watch In November 2026",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 80,
             "entry_price": 3898.32,
-            "target": 3950.56,
+            "target": 3919.96,
             "max_dd_usd": 45.74,
             "atr_ratio_at_signal": 0.69,
             "daily_atr_at_signal": 80.34,
@@ -11782,6 +11782,78 @@
             "nas_chg_at_signal": 0.37,
             "created_ts": 1794543600.0,
             "date": "First Reported: 2026-11-13 04:20 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/zacks-industry-outlook-highlights-fury-060700812.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Zacks Industry Outlook Highlights Fury Gold, Gold Royalty, Newmont Mining and B2Gold",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3900.7,
+            "target": 3901.11,
+            "max_dd_usd": 12.23,
+            "atr_ratio_at_signal": 0.42,
+            "daily_atr_at_signal": 53.21,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.58,
+            "created_ts": 1794550020.0,
+            "date": "First Reported: 2026-11-13 06:07 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/ai/articles/millionways-introduces-thorsten-4-foundation-141500637.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "millionways Introduces Thorsten-4, the Foundation Model That Teaches AI to Read the Room a",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 62,
+            "entry_price": 3870.05,
+            "target": 3895.0,
+            "max_dd_usd": 39.23,
+            "atr_ratio_at_signal": 0.42,
+            "daily_atr_at_signal": 53.21,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.58,
+            "created_ts": 1794492900.0,
+            "date": "First Reported: 2026-11-12 14:15 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/israel-hands-over-body-palestinian-teen-who-died-custody": {
+            "status": "HIT",
+            "headline": "Israel hands over body of Palestinian teen who died in custody",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3890.28,
+            "target": 3909.53,
+            "max_dd_usd": 5.28,
+            "atr_ratio_at_signal": 0.42,
+            "daily_atr_at_signal": 53.21,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.58,
+            "created_ts": 1794491956.0,
+            "date": "First Reported: 2026-11-12 13:59 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/12/wall-streets-next-blockbuster-stock-split-could-co/?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Wall Street's Next Blockbuster Stock Split Could Come From This Chip Equipment Giant",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 68,
+            "entry_price": 3890.28,
+            "target": 3890.3,
+            "max_dd_usd": 58.52,
+            "atr_ratio_at_signal": 0.42,
+            "daily_atr_at_signal": 53.21,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.58,
+            "created_ts": 1794491460.0,
+            "date": "First Reported: 2026-11-12 13:51 UTC",
             "fail_reason": ""
         }
     }

@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 623,
-    "hits": 425,
-    "misses": 198,
-    "win_rate": 68.2,
-    "active_signals": 36,
+    "total_evaluated": 638,
+    "hits": 433,
+    "misses": 205,
+    "win_rate": 67.9,
+    "active_signals": 30,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 358,
-                "misses": 166,
-                "total": 524,
-                "win_rate": 68.3,
-                "avg_dd": 22.69
+                "hits": 366,
+                "misses": 173,
+                "total": 539,
+                "win_rate": 67.9,
+                "avg_dd": 23.36
             },
             "Bearish": {
                 "hits": 67,
@@ -23,18 +23,18 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 398,
-                "misses": 188,
-                "total": 586,
+                "hits": 406,
+                "misses": 192,
+                "total": 598,
                 "win_rate": 67.9,
-                "avg_dd": 21.32
+                "avg_dd": 21.65
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
-                "misses": 10,
-                "total": 37,
-                "win_rate": 73.0,
-                "avg_dd": 32.62
+                "misses": 13,
+                "total": 40,
+                "win_rate": 67.5,
+                "avg_dd": 35.89
             },
             "Exhausted (>=1.2x ATR)": {
                 "hits": 0,
@@ -60,11 +60,11 @@
                 "avg_dd": 16.78
             },
             "Against USD Headwind": {
-                "hits": 195,
-                "misses": 39,
-                "total": 234,
-                "win_rate": 83.3,
-                "avg_dd": 21.87
+                "hits": 203,
+                "misses": 46,
+                "total": 249,
+                "win_rate": 81.5,
+                "avg_dd": 23.12
             },
             "USD Neutral / Legacy": {
                 "hits": 213,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 199,
-                "misses": 122,
-                "total": 321,
+                "hits": 204,
+                "misses": 125,
+                "total": 329,
                 "win_rate": 62.0,
-                "avg_dd": 25.56
+                "avg_dd": 25.92
             },
             "Fed, Rates & Macro": {
                 "hits": 27,
@@ -90,34 +90,34 @@
                 "avg_dd": 13.9
             },
             "Tech, AI & Equities": {
-                "hits": 120,
-                "misses": 38,
-                "total": 158,
-                "win_rate": 75.9,
-                "avg_dd": 14.77
+                "hits": 122,
+                "misses": 42,
+                "total": 164,
+                "win_rate": 74.4,
+                "avg_dd": 16.62
             },
             "Commodities & Energy": {
-                "hits": 79,
+                "hits": 80,
                 "misses": 31,
-                "total": 110,
-                "win_rate": 71.8,
-                "avg_dd": 25.54
+                "total": 111,
+                "win_rate": 72.1,
+                "avg_dd": 25.4
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 383,
-                "misses": 190,
-                "total": 573,
-                "win_rate": 66.8,
-                "avg_dd": 22.65
+                "hits": 388,
+                "misses": 194,
+                "total": 582,
+                "win_rate": 66.7,
+                "avg_dd": 23.03
             },
             "High (65-74%)": {
-                "hits": 40,
-                "misses": 7,
-                "total": 47,
-                "win_rate": 85.1,
-                "avg_dd": 18.36
+                "hits": 43,
+                "misses": 10,
+                "total": 53,
+                "win_rate": 81.1,
+                "avg_dd": 21.47
             },
             "Extreme (>=75%)": {
                 "hits": 2,
@@ -9066,7 +9066,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/12/intel-s-ceo-bought-usd9-7-million-of-stock-right-after-it-plunged-29-i-m-not-ready-to-follow-him-in/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Intel's CEO Bought $9.7 Million of Stock Right After It Plunged 29%. I'm Not Ready to Foll",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -9085,7 +9085,7 @@
             "fail_reason": ""
         },
         "https://www.cnbc.com/2026/11/12/ai-consulting-billable-hours-graduate-hiring.html": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "AI is coming for consulting’s billable hours — and its graduate pipeline",
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
@@ -9104,7 +9104,7 @@
             "fail_reason": ""
         },
         "https://www.cnbc.com/2026/11/12/uk-gdp-third-quarter-2026.html": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "UK economy expands 0.7% in third quarter as AI provides 'extra engine of growth'",
             "source": "CNBC Economy",
             "category": "Tech, AI & Equities",
@@ -9123,7 +9123,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249354/Army-chief-warns-aggressors-will-face-heavier-losses": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Army chief warns aggressors will face heavier losses",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -9142,7 +9142,7 @@
             "fail_reason": ""
         },
         "https://www.cnbc.com/2026/11/12/uforce-defense-tech-drones-warfare-ukraine.html": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Ukrainian defense tech startup hits $6 billion valuation as investors bet on battle-tested",
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
@@ -9161,7 +9161,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/12/ten-police-officers-18-fighters-killed-in-northwest-pakistan-attack?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Ten police officers, 18 fighters killed in northwest Pakistan attack",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -9199,7 +9199,7 @@
             "fail_reason": "Target reached (Max Drawdown along the way: -$36.15)"
         },
         "https://www.aljazeera.com/news-analysis/2026/11/12/from-the-uk-to-the-gulf-are-us-overseas-bases-becoming-liabilities?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "From the UK to the Gulf, are US overseas bases becoming liabilities?",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -10335,7 +10335,7 @@
             "prob": 58,
             "entry_price": 3884.57,
             "target": 3870.51,
-            "max_dd_usd": 32.19,
+            "max_dd_usd": 38.52,
             "atr_ratio_at_signal": 0.0,
             "daily_atr_at_signal": 82.77,
             "eur_chg_at_signal": -0.31,
@@ -10417,7 +10417,7 @@
             "fail_reason": ""
         },
         "https://www.independent.co.uk/tech/nvidia-huang-affair-scandal-beijing-b3083768.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Alice Huang, alleged spy at centre of Nvidia scandal, said to be back in China",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10677,7 +10677,7 @@
             "prob": 65,
             "entry_price": 3874.8,
             "target": 3859.26,
-            "max_dd_usd": 41.96,
+            "max_dd_usd": 48.29,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.34,
@@ -11433,7 +11433,7 @@
             "prob": 70,
             "entry_price": 3910.84,
             "target": 3938.76,
-            "max_dd_usd": 6.11,
+            "max_dd_usd": 19.0,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11451,7 +11451,7 @@
             "prob": 62,
             "entry_price": 3910.84,
             "target": 3938.76,
-            "max_dd_usd": 6.11,
+            "max_dd_usd": 19.0,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11494,6 +11494,168 @@
             "nas_chg_at_signal": 0.64,
             "created_ts": 1794529342.0,
             "date": "First Reported: 2026-11-13 00:22 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249363/Reexamining-Intellectual-Genealogy-Iran-Nation-Steadfastness": {
+            "status": "HIT",
+            "headline": "Reexamining intellectual genealogy, Iran nation steadfastness",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3904.49,
+            "target": 3909.4,
+            "max_dd_usd": 12.65,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794549108.0,
+            "date": "First Reported: 2026-11-13 05:51 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/3-oil-gas-stocks-cash-051548385.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "3 Oil And Gas Stocks With Cash Flow Leverage As Crude Prices Swing",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3904.49,
+            "target": 3928.95,
+            "max_dd_usd": 12.65,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794546948.0,
+            "date": "First Reported: 2026-11-13 05:15 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/pedevco-corp-ped-q3-2026-050452392.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "PEDEVCO Corp (PED) (Q3 2026) Earnings Call Highlights: Revenue Surges 411% Despite ...",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3904.49,
+            "target": 3909.4,
+            "max_dd_usd": 12.65,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794546292.0,
+            "date": "First Reported: 2026-11-13 05:04 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/features/2026/11/13/unrwa-funding-cuts-deepen-hardship-for-palestinian-refugees-in-lebanon?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "UNRWA funding cuts deepen hardship for Palestinian refugees in Lebanon",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3912.68,
+            "target": 3928.95,
+            "max_dd_usd": 20.84,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794545516.0,
+            "date": "First Reported: 2026-11-13 04:51 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/iranophobia-netanyahus-bid-to-transform-fear-into-political-survival?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Iranophobia: Netanyahu’s bid to transform fear into political survival",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3912.68,
+            "target": 3919.65,
+            "max_dd_usd": 5.06,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794545320.0,
+            "date": "First Reported: 2026-11-13 04:48 UTC",
+            "fail_reason": ""
+        },
+        "https://stocktwits.com/news-articles/markets/equity/us-equity-etf-inflows-37-billion-nvidia-stock-selloff/cNbbpApR9Ok?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Despite NVDA Rout, Investors Have Poured In $37.5B In US Stock ETFs In 5 Days – Here’s Whe",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3912.68,
+            "target": 3909.4,
+            "max_dd_usd": 5.06,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794544696.0,
+            "date": "First Reported: 2026-11-13 04:38 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/who-is-us-senator-chris-van-hollen?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "US Senator Chris Van Hollen seeks to lead Democrats: Who is he?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3912.68,
+            "target": 3909.4,
+            "max_dd_usd": 5.06,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794544125.0,
+            "date": "First Reported: 2026-11-13 04:28 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/finland-detects-strike-on-russian-warship-as-zelenskyy-meets-us-envoys?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Finland detects strike on Russian warship as Zelenskyy meets US envoys",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3915.84,
+            "target": 3909.4,
+            "max_dd_usd": 11.11,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794537321.0,
+            "date": "First Reported: 2026-11-13 02:35 UTC",
+            "fail_reason": ""
+        },
+        "https://www.thestreet.com/crypto/markets/analyst-puts-his-life-savings-behind-one-bitcoin-prediction?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Analyst warns Bitcoin investors, citing gold",
+            "source": "Yahoo Finance Gold",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3877.59,
+            "target": 3909.4,
+            "max_dd_usd": 5.39,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794517474.0,
+            "date": "First Reported: 2026-11-12 21:04 UTC",
             "fail_reason": ""
         }
     }

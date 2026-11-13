@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 718,
-    "hits": 487,
+    "total_evaluated": 719,
+    "hits": 488,
     "misses": 231,
-    "win_rate": 67.8,
-    "active_signals": 26,
+    "win_rate": 67.9,
+    "active_signals": 30,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 409,
+                "hits": 410,
                 "misses": 198,
-                "total": 607,
+                "total": 608,
                 "win_rate": 67.4,
-                "avg_dd": 24.12
+                "avg_dd": 24.08
             },
             "Bearish": {
                 "hits": 78,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 460,
+                "hits": 461,
                 "misses": 217,
-                "total": 677,
-                "win_rate": 67.9,
-                "avg_dd": 22.61
+                "total": 678,
+                "win_rate": 68.0,
+                "avg_dd": 22.58
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -67,20 +67,20 @@
                 "avg_dd": 20.93
             },
             "USD Neutral / Legacy": {
-                "hits": 215,
+                "hits": 216,
                 "misses": 178,
-                "total": 393,
-                "win_rate": 54.7,
-                "avg_dd": 26.92
+                "total": 394,
+                "win_rate": 54.8,
+                "avg_dd": 26.82
             }
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 231,
+                "hits": 232,
                 "misses": 136,
-                "total": 367,
-                "win_rate": 62.9,
-                "avg_dd": 25.78
+                "total": 368,
+                "win_rate": 63.0,
+                "avg_dd": 25.7
             },
             "Fed, Rates & Macro": {
                 "hits": 31,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 425,
+                "hits": 426,
                 "misses": 214,
-                "total": 639,
-                "win_rate": 66.5,
-                "avg_dd": 23.87
+                "total": 640,
+                "win_rate": 66.6,
+                "avg_dd": 23.82
             },
             "High (65-74%)": {
                 "hits": 58,
@@ -12998,7 +12998,7 @@
             "impact": "Bullish",
             "prob": 55,
             "entry_price": 3878.43,
-            "target": 3890.03,
+            "target": 3890.07,
             "max_dd_usd": 8.9,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13014,9 +13014,9 @@
             "source": "Investing.com",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 65,
             "entry_price": 3878.43,
-            "target": 3890.03,
+            "target": 3899.66,
             "max_dd_usd": 8.9,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13024,6 +13024,96 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794600898.0,
             "date": "First Reported: 2026-11-13 20:14 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150023956.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "BC-Gold Futures",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3878.43,
+            "target": 3899.66,
+            "max_dd_usd": 8.9,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794600014.0,
+            "date": "First Reported: 2026-11-13 15:00 UTC | Last Update: 2026-11-13 20:00 UTC",
+            "fail_reason": ""
+        },
+        "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-falls-below-73-k-for-first-time-since-august-amid-nvidia-rout/cNGzD5IR9aW?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Bitcoin Falls Below $73K For First Time Since August: Michael Van De Poppe Wants One More ",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 75,
+            "entry_price": 3880.84,
+            "target": 3859.97,
+            "max_dd_usd": 7.17,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794595065.0,
+            "date": "First Reported: 2026-11-12 13:03 UTC | Last Update: 2026-11-13 18:37 UTC",
+            "fail_reason": ""
+        },
+        "https://www.proactiveinvestors.com/companies/news/1101754/goldman-sachs-recommends-commodities-as-portfolio-hedge-amid-geopolitical-and-supply-risks-1101754.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Goldman Sachs recommends commodities as portfolio hedge amid geopolitical and supply risks",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 75,
+            "entry_price": 3873.63,
+            "target": 3909.47,
+            "max_dd_usd": 5.96,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794583800.0,
+            "date": "First Reported: 2026-11-13 15:30 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/news/greta-thunberg-cop-turkish-energy-shipments-directly-fuelling-genocide-palestine": {
+            "status": "ACTIVE",
+            "headline": "Greta Thunberg at COP: Turkish energy shipments 'directly fuelling the genocide of Palesti",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3873.63,
+            "target": 3899.66,
+            "max_dd_usd": 5.96,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794583323.0,
+            "date": "First Reported: 2026-11-13 15:22 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/will-democrats-try-to-strip-us-israel-initiative-from-pentagon-funding?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Will Democrats try to strip US-Israel initiative from Pentagon funding?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 58,
+            "entry_price": 3873.63,
+            "target": 3890.07,
+            "max_dd_usd": 1.38,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794582136.0,
+            "date": "First Reported: 2026-11-13 15:02 UTC",
             "fail_reason": ""
         }
     }

@@ -20,12 +20,10 @@ else:
     client = None
     print("WARNING: GEMINI_API_KEY not found.")
 
+# Only active Gemini 3.5 models; dead 404 models removed
 FALLBACK_MODELS = [
     "gemini-3.5-flash-lite",
-    "gemini-3.5-flash",
-    "gemini-3-flash",
-    "gemini-2.5-flash",
-    "gemini-2.5-flash-lite"
+    "gemini-3.5-flash"
 ]
 DEAD_MODELS = set()
 
@@ -181,33 +179,32 @@ def fetch_new_articles(existing_urls):
                     articles.append(a)
     return articles
 
-def fetch_crypto_gold_basis(oanda_price):
-    crypto_price = 0.0
-    source_used = "N/A"
+def fetch_live_perp_price():
+    """Fetches 24/7 live Gold perpetual price from OKX or Bybit (used both for Basis and as Fallback Spot)."""
     headers = {"User-Agent": "Mozilla/5.0"}
-
     for inst, lbl in [("XAU-USDT-SWAP", "OKX XAUUSDT.P"), ("XAUT-USDT-SWAP", "OKX XAUTUSDT.P")]:
         try:
             res = requests.get(f"https://www.okx.com/api/v5/market/ticker?instId={inst}", headers=headers, timeout=6)
             if res.status_code == 200:
                 data = res.json().get("data", [])
                 if data and data[0].get("last"):
-                    crypto_price = float(data[0]["last"])
-                    source_used = lbl
-                    break
+                    return float(data[0]["last"]), lbl
         except Exception:
             pass
+    try:
+        res = requests.get("https://api.bybit.com/v5/market/tickers?category=linear&symbol=PAXGUSDT", headers=headers, timeout=6)
+        if res.status_code == 200:
+            lst = res.json().get("result", {}).get("list", [])
+            if lst and lst[0].get("lastPrice"):
+                return float(lst[0]["lastPrice"]), "Bybit Gold Perp"
+    except Exception:
+        pass
+    return 0.0, "N/A"
 
-    if crypto_price <= 0:
-        try:
-            res = requests.get("https://api.bybit.com/v5/market/tickers?category=linear&symbol=PAXGUSDT", headers=headers, timeout=6)
-            if res.status_code == 200:
-                lst = res.json().get("result", {}).get("list", [])
-                if lst and lst[0].get("lastPrice"):
-                    crypto_price = float(lst[0]["lastPrice"])
-                    source_used = "Bybit Gold Perp"
-        except Exception:
-            pass
+def fetch_crypto_gold_basis(oanda_price):
+    crypto_price, source_used = fetch_live_perp_price()
+    if crypto_price > 0 and oanda_price <= 0:
+        oanda_price = crypto_price
 
     now_utc = datetime.utcnow()
     is_weekend = (now_utc.weekday() == 4 and now_utc.hour >= 22) or (now_utc.weekday() == 5) or (now_utc.weekday() == 6 and now_utc.hour < 22)
@@ -226,6 +223,7 @@ def fetch_crypto_gold_basis(oanda_price):
             f"24/7 Crypto-Gold Perpetual Basis ({source_used} vs. OANDA XAU/USD Spot):\n"
             f"- Market Regime: {regime} | {source_used}: ${crypto_price:.2f} vs. OANDA: ${oanda_price:.2f} (Spread: ${spread_usd:+.2f} / {spread_pct:+.2f}% -> {signal})"
         )
+        print(f"24/7 Gold Perp loaded ({source_used}): ${crypto_price:.2f} | Spread vs OANDA: ${spread_usd:+.2f}")
         return prompt_str, {
             "crypto_price": round(crypto_price, 2),
             "oanda_price": round(oanda_price, 2),
@@ -290,6 +288,7 @@ def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
         url = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=5d&interval=1h"
         res = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
         if res.status_code != 200:
+            print(f"Yahoo COMEX Status Code: {res.status_code}")
             return comex_zones
         result = res.json().get("chart", {}).get("result", [])
         if not result:
@@ -394,49 +393,70 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
         url_pb = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/positionBook"
         
-        try:
-            res_ob = requests.get(url_ob, headers=headers, timeout=12)
-            if res_ob.status_code == 200:
-                ob_data = res_ob.json().get("orderBook", {})
-                ob_price = float(ob_data.get("price", 0))
-                if ob_price > 0:
-                    current_price = ob_price
-                for b in ob_data.get("buckets", []):
-                    try:
-                        p = float(b.get("price", 0))
-                        if current_price > 0 and abs(p - current_price) / current_price <= 0.18:
-                            combined_buckets[p] = {
-                                "long": float(b.get("longCountPercent", 0)),
-                                "short": float(b.get("shortCountPercent", 0))
-                            }
-                    except ValueError:
-                        continue
-        except Exception as e:
-            print(f"OANDA orderBook error: {e}")
+        for attempt in range(2):
+            try:
+                res_ob = requests.get(url_ob, headers=headers, timeout=12)
+                if res_ob.status_code == 200:
+                    ob_data = res_ob.json().get("orderBook", {})
+                    ob_price = float(ob_data.get("price", 0))
+                    if ob_price > 0:
+                        current_price = ob_price
+                    for b in ob_data.get("buckets", []):
+                        try:
+                            p = float(b.get("price", 0))
+                            if current_price > 0 and abs(p - current_price) / current_price <= 0.18:
+                                combined_buckets[p] = {
+                                    "long": float(b.get("longCountPercent", 0)),
+                                    "short": float(b.get("shortCountPercent", 0))
+                                }
+                        except ValueError:
+                            continue
+                    print(f"OANDA OrderBook loaded: {len(combined_buckets)} price buckets within 18% radius.")
+                    break
+                else:
+                    print(f"OANDA orderBook status {res_ob.status_code} (Attempt {attempt+1}/2): {res_ob.text[:120]}")
+                    time.sleep(2)
+            except Exception as e:
+                print(f"OANDA orderBook error (Attempt {attempt+1}/2): {e}")
+                time.sleep(2)
 
-        try:
-            res_pb = requests.get(url_pb, headers=headers, timeout=12)
-            if res_pb.status_code == 200:
-                pb_data = res_pb.json().get("positionBook", {})
-                pb_price = float(pb_data.get("price", 0))
-                if current_price == 0 and pb_price > 0:
-                    current_price = pb_price
-                for b in pb_data.get("buckets", []):
-                    try:
-                        p = float(b.get("price", 0))
-                        l_pct = float(b.get("longCountPercent", 0))
-                        s_pct = float(b.get("shortCountPercent", 0))
-                        total_pos_long += l_pct
-                        total_pos_short += s_pct
-                        if current_price > 0 and abs(p - current_price) / current_price <= 0.18:
-                            if p not in combined_buckets:
-                                combined_buckets[p] = {"long": 0.0, "short": 0.0}
-                            combined_buckets[p]["long"] += l_pct
-                            combined_buckets[p]["short"] += s_pct
-                    except ValueError:
-                        continue
-        except Exception as e:
-            print(f"OANDA positionBook error: {e}")
+        for attempt in range(2):
+            try:
+                res_pb = requests.get(url_pb, headers=headers, timeout=12)
+                if res_pb.status_code == 200:
+                    pb_data = res_pb.json().get("positionBook", {})
+                    pb_price = float(pb_data.get("price", 0))
+                    if current_price == 0 and pb_price > 0:
+                        current_price = pb_price
+                    for b in pb_data.get("buckets", []):
+                        try:
+                            p = float(b.get("price", 0))
+                            l_pct = float(b.get("longCountPercent", 0))
+                            s_pct = float(b.get("shortCountPercent", 0))
+                            total_pos_long += l_pct
+                            total_pos_short += s_pct
+                            if current_price > 0 and abs(p - current_price) / current_price <= 0.18:
+                                if p not in combined_buckets:
+                                    combined_buckets[p] = {"long": 0.0, "short": 0.0}
+                                combined_buckets[p]["long"] += l_pct
+                                combined_buckets[p]["short"] += s_pct
+                        except ValueError:
+                            continue
+                    print(f"OANDA PositionBook loaded (Total buckets: {len(combined_buckets)}).")
+                    break
+                else:
+                    print(f"OANDA positionBook status {res_pb.status_code} (Attempt {attempt+1}/2): {res_pb.text[:120]}")
+                    time.sleep(2)
+            except Exception as e:
+                print(f"OANDA positionBook error (Attempt {attempt+1}/2): {e}")
+                time.sleep(2)
+
+    # Critical safeguard: if OANDA failed to provide current_price, use live OKX Perp price so zones are never discarded!
+    if current_price <= 0:
+        perp_p, perp_src = fetch_live_perp_price()
+        if perp_p > 0:
+            current_price = perp_p
+            print(f"Using {perp_src} price (${current_price:.2f}) as reference price fallback.")
 
     pos_sum = total_pos_long + total_pos_short
     sentiment = {
@@ -641,6 +661,7 @@ def fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=None):
         "wick_note": wick_note,
         "squeeze_warning": squeeze_warning
     }
+    print(f"Aggressive Taker Flow loaded: {composite_buy_pct}% Buy / {composite_sell_pct}% Sell ({state_label})")
     prompt_str = f"Aggressive Taker Flow: {composite_buy_pct}% Market Buys vs. {composite_sell_pct}% Sells ({state_label}, {wick_note}, {squeeze_warning})"
     return prompt_str, flow_obj
 
@@ -748,51 +769,82 @@ def compute_dual_horizon_drivers(valid_clusters, stats_history=None):
     prompt_lines.append("- Dominant 24h Intraday Pulse: " + " | ".join([f"#{i+1} {d['narrative']} ({d['share_pct']}%, {d['net_bias']})" for i, d in enumerate(drivers_24h)]))
     return "\n".join(prompt_lines), drivers_24h, drivers_weekly
 
-def fetch_oanda_price_and_volatility():
-    if not OANDA_API_KEY:
-        return "No price data available.", [], {}
-    url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=48&granularity=H1&price=M"
-    headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
+def fetch_okx_fallback_candles(bar="1H", limit=48):
+    """Fetches live Gold candles from OKX XAU-USDT-SWAP if OANDA Practice API is unreachable."""
+    parsed = []
     try:
-        response = requests.get(url, headers=headers, timeout=10)
-        if response.status_code != 200:
-            return "OANDA Candle API Error", [], {}
-        raw_candles = response.json().get("candles", [])
-        parsed = []
-        for c in raw_candles:
-            if c.get("complete") or c == raw_candles[-1]:
-                ts = float(c.get("time", 0))
+        url = f"https://www.okx.com/api/v5/market/candles?instId=XAU-USDT-SWAP&bar={bar}&limit={limit}"
+        res = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
+        if res.status_code == 200:
+            rows = res.json().get("data", [])
+            for r in reversed(rows):
+                ts = float(r[0]) / 1000.0
                 parsed.append({
                     "ts": ts,
                     "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
-                    "o": float(c["mid"]["o"]),
-                    "h": float(c["mid"]["h"]),
-                    "l": float(c["mid"]["l"]),
-                    "c": float(c["mid"]["c"])
+                    "o": float(r[1]),
+                    "h": float(r[2]),
+                    "l": float(r[3]),
+                    "c": float(r[4])
                 })
-        if len(parsed) < 15:
-            return "Insufficient H1 candles.", parsed, {}
-
-        trs = [max(parsed[i]["h"] - parsed[i]["l"], abs(parsed[i]["h"] - parsed[i-1]["c"]), abs(parsed[i]["l"] - parsed[i-1]["c"])) for i in range(1, len(parsed))]
-        atr_14_h1 = sum(trs[-14:]) / 14.0
-        est_daily_atr = round(atr_14_h1 * 3.8, 2)
-        curr_c = parsed[-1]["c"]
-        change_4h = round(curr_c - parsed[-5]["c"], 2) if len(parsed) >= 5 else 0.0
-        change_24h = round(curr_c - parsed[-25]["c"], 2) if len(parsed) >= 25 else 0.0
-        ratio_4h = round(abs(change_4h) / est_daily_atr, 2) if est_daily_atr > 0 else 0.0
-
-        vol_metrics = {
-            "current_price": curr_c,
-            "atr_h1": round(atr_14_h1, 2),
-            "est_daily_atr": est_daily_atr,
-            "change_4h": change_4h,
-            "change_24h": change_24h,
-            "move_to_daily_atr_ratio": ratio_4h
-        }
-        history_str = f"XAU/USD Volatility: Spot ${curr_c} | 4h: ${change_4h:+.2f} | 24h: ${change_24h:+.2f} | Daily ATR: ${est_daily_atr:.2f} (4h Ratio: {ratio_4h}x)"
-        return history_str, parsed, vol_metrics
     except Exception as e:
-        return f"OANDA Candle Error: {e}", [], {}
+        print(f"OKX Fallback Candle Error ({bar}): {e}")
+    return parsed
+
+def fetch_oanda_price_and_volatility():
+    parsed = []
+    if OANDA_API_KEY:
+        url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=48&granularity=H1&price=M"
+        headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
+        for attempt in range(2):
+            try:
+                response = requests.get(url, headers=headers, timeout=10)
+                if response.status_code == 200:
+                    raw_candles = response.json().get("candles", [])
+                    for c in raw_candles:
+                        if c.get("complete") or c == raw_candles[-1]:
+                            ts = float(c.get("time", 0))
+                            parsed.append({
+                                "ts": ts,
+                                "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
+                                "o": float(c["mid"]["o"]),
+                                "h": float(c["mid"]["h"]),
+                                "l": float(c["mid"]["l"]),
+                                "c": float(c["mid"]["c"])
+                            })
+                    break
+                else:
+                    print(f"OANDA H1 Candle API Status {response.status_code} (Attempt {attempt+1}/2): {response.text[:120]}")
+                    time.sleep(2)
+            except Exception as e:
+                print(f"OANDA H1 Candle Error (Attempt {attempt+1}/2): {e}")
+                time.sleep(2)
+
+    if len(parsed) < 15:
+        print("Using OKX XAU-USDT-SWAP H1 candles as live fallback...")
+        parsed = fetch_okx_fallback_candles(bar="1H", limit=48)
+
+    if len(parsed) < 15:
+        return "Insufficient H1 candles.", parsed, {}
+
+    trs = [max(parsed[i]["h"] - parsed[i]["l"], abs(parsed[i]["h"] - parsed[i-1]["c"]), abs(parsed[i]["l"] - parsed[i-1]["c"])) for i in range(1, len(parsed))]
+    atr_14_h1 = sum(trs[-14:]) / 14.0
+    est_daily_atr = round(atr_14_h1 * 3.8, 2)
+    curr_c = parsed[-1]["c"]
+    change_4h = round(curr_c - parsed[-5]["c"], 2) if len(parsed) >= 5 else 0.0
+    change_24h = round(curr_c - parsed[-25]["c"], 2) if len(parsed) >= 25 else 0.0
+    ratio_4h = round(abs(change_4h) / est_daily_atr, 2) if est_daily_atr > 0 else 0.0
+
+    vol_metrics = {
+        "current_price": curr_c,
+        "atr_h1": round(atr_14_h1, 2),
+        "est_daily_atr": est_daily_atr,
+        "change_4h": change_4h,
+        "change_24h": change_24h,
+        "move_to_daily_atr_ratio": ratio_4h
+    }
+    history_str = f"XAU/USD Volatility: Spot ${curr_c} | 4h: ${change_4h:+.2f} | 24h: ${change_24h:+.2f} | Daily ATR: ${est_daily_atr:.2f} (4h Ratio: {ratio_4h}x)"
+    return history_str, parsed, vol_metrics
 
 def fetch_macro_context():
     if not OANDA_API_KEY:
@@ -1121,8 +1173,9 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
     if not active_models:
         active_models = ["gemini-3.5-flash-lite"]
 
+    backoff_delays = [3, 6, 10]
     for model_name in active_models:
-        for attempt in range(2):
+        for attempt in range(3):
             try:
                 response = client.models.generate_content(
                     model=model_name,
@@ -1148,13 +1201,12 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
                     DEAD_MODELS.add(model_name)
                     print(f" -> {model_name} retired (404), skipping in future batches.")
                     break
-                print(f" -> {model_name} attempt {attempt+1}/2 error ({err_str})")
-                time.sleep(1.5)
+                wait_s = backoff_delays[min(attempt, len(backoff_delays) - 1)]
+                print(f" -> {model_name} attempt {attempt+1}/3 temporary spike ({err_str}) - retrying in {wait_s}s...")
+                time.sleep(wait_s)
     return {}
 
 def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None, crypto_basis_obj=None, taker_flow_obj=None, drivers_24h=None, drivers_weekly=None, multi_pos=None):
-    if not OANDA_API_KEY:
-        return
     old_md = {}
     if os.path.exists("market_data.json"):
         try:
@@ -1176,20 +1228,42 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
         "weekly_drivers": drivers_weekly if drivers_weekly is not None else old_md.get("weekly_drivers", [])
     }
 
-    headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
-    try:
-        res_c = requests.get("[https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M](https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M)", headers=headers, timeout=10)
-        if res_c.status_code == 200:
-            for c in res_c.json().get("candles", []):
-                market_data["candles"].append({
-                    "time": int(float(c["time"])),
-                    "open": float(c["mid"]["o"]),
-                    "high": float(c["mid"]["h"]),
-                    "low": float(c["mid"]["l"]),
-                    "close": float(c["mid"]["c"])
-                })
-    except Exception:
-        pass
+    if OANDA_API_KEY:
+        headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
+        for attempt in range(2):
+            try:
+                res_c = requests.get("[https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M](https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M)", headers=headers, timeout=10)
+                if res_c.status_code == 200:
+                    for c in res_c.json().get("candles", []):
+                        market_data["candles"].append({
+                            "time": int(float(c["time"])),
+                            "open": float(c["mid"]["o"]),
+                            "high": float(c["mid"]["h"]),
+                            "low": float(c["mid"]["l"]),
+                            "close": float(c["mid"]["c"])
+                        })
+                    print(f"Successfully loaded {len(market_data['candles'])} OANDA H4 candles.")
+                    break
+                else:
+                    print(f"OANDA H4 Candle API Error {res_c.status_code} (Attempt {attempt+1}/2): {res_c.text[:120]}")
+                    time.sleep(2)
+            except Exception as e:
+                print(f"Error loading OANDA H4 candles (Attempt {attempt+1}/2): {e}")
+                time.sleep(2)
+
+    if not market_data["candles"]:
+        print("Using OKX XAU-USDT-SWAP H4 candles as live chart fallback...")
+        okx_h4 = fetch_okx_fallback_candles(bar="4H", limit=100)
+        for c in okx_h4:
+            market_data["candles"].append({
+                "time": int(c["ts"]),
+                "open": c["o"],
+                "high": c["h"],
+                "low": c["l"],
+                "close": c["c"]
+            })
+        if market_data["candles"]:
+            print(f"Successfully loaded {len(market_data['candles'])} OKX H4 fallback candles.")
 
     _, top_zones, sentiment = top_zones_cache if top_zones_cache else get_clustered_oanda_zones(zone_width=10.0)
     market_data["sentiment"] = sentiment
@@ -1207,16 +1281,20 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
             "overlap": z.get("overlap", False),
             "sources": z.get("sources", "OANDA")
         })
+    print(f"Successfully loaded {len(market_data['orderbook'])} combined 3-source order zones.")
 
     if not market_data["candles"] and old_md.get("candles"):
+        print("WARNING: Retaining previous candles.")
         market_data["candles"] = old_md["candles"]
     if not market_data["orderbook"] and old_md.get("orderbook"):
+        print("WARNING: Retaining previous orderbook zones.")
         market_data["orderbook"] = old_md["orderbook"]
 
     with open("market_data.json", "w", encoding="utf-8") as f:
         json.dump(market_data, f)
 
 def main():
+    print("Loading embeddings model...")
     model = SentenceTransformer('all-MiniLM-L6-v2')
     existing_data = []
     if os.path.exists(DATA_FILE):
@@ -1226,6 +1304,7 @@ def main():
         except Exception:
             existing_data = []
 
+    print("Loading Volatility (ATR), 3-Source Order Zones (OANDA + OKX L2 + COMEX), 24/7 OKX XAUUSDT.P Basis & Aggressive Taker Flow...")
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     candle_fallback_price = vol_metrics.get("current_price", 0.0)
     
@@ -1235,6 +1314,10 @@ def main():
     
     multi_pos = fetch_multi_positioning(oanda_sentiment)
     crypto_basis_str, crypto_basis_obj = fetch_crypto_gold_basis(effective_spot_price)
+    if effective_spot_price <= 0 and crypto_basis_obj.get("crypto_price"):
+        effective_spot_price = crypto_basis_obj["crypto_price"]
+        vol_metrics["current_price"] = effective_spot_price
+
     taker_flow_str, taker_flow_obj = fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=oanda_sentiment)
     macro_context_str, macro_summary = fetch_macro_context()
 
@@ -1247,7 +1330,7 @@ def main():
     for c in valid_clusters:
         if isinstance(c.get("summary"), dict):
             facts_str = str(c["summary"].get("Facts", ""))
-            if "[INITIAL REPORT" in facts_str or " -- " in facts_str:
+            if "[INITIAL REPORT" in facts_str or " -- " in facts_str or " — " in facts_str:
                 c["needs_update"] = True
             else:
                 for a in c.get("articles", []):
@@ -1258,9 +1341,11 @@ def main():
 
     existing_urls = {a["link"] for c in valid_clusters for a in c.get("articles", [])}
 
+    print("Fetching new articles in parallel (Geopolitics, Commodities, Tech/AI & Global Macro)...")
     new_articles = fetch_new_articles(existing_urls)
     if new_articles:
         new_articles.sort(key=lambda x: x.get("_timestamp", 0))
+        print(f"Found {len(new_articles)} new articles. Clustering (Threshold: {SIMILARITY_THRESHOLD})...")
         cluster_embeddings = [model.encode(" ".join([a["title"] for a in c["articles"]])) for c in valid_clusters]
         for article in new_articles:
             article_emb = model.encode(article["title"] + " " + article["description"])
@@ -1289,6 +1374,8 @@ def main():
                     "summary": None
                 })
                 cluster_embeddings.append(article_emb)
+    else:
+        print("No new articles found.")
 
     valid_clusters.sort(key=lambda x: float(x.get("_timestamp", 0)), reverse=True)
     dominant_drivers_str, _, _ = compute_dual_horizon_drivers(valid_clusters, current_stats.get("history", {}))
@@ -1299,16 +1386,23 @@ def main():
         total_batches = min(MAX_BATCH_CALLS_PER_RUN, (len(pending) + BATCH_SIZE - 1) // BATCH_SIZE)
         for b_idx in range(total_batches):
             batch_slice = pending[b_idx * BATCH_SIZE : (b_idx + 1) * BATCH_SIZE]
+            print(f"Running AI Batch Analysis {b_idx + 1}/{total_batches} ({len(batch_slice)} clusters in 1 call)...")
             batch_results = generate_batch_summaries(batch_slice, orderbook_data, price_history_data, macro_context_str, crypto_basis_str, taker_flow_str, dominant_drivers_str, perf_memory_str)
             for idx_in_batch, cluster in enumerate(batch_slice):
                 if idx_in_batch in batch_results:
                     cluster["summary"] = batch_results[idx_in_batch]
                     cluster["needs_update"] = False
+            if b_idx < total_batches - 1:
+                time.sleep(3)
 
+    fallback_count = 0
     for c in valid_clusters:
         if not isinstance(c.get("summary"), dict):
             c["summary"] = build_local_fallback_summary(c, oanda_zones_cache, vol_metrics, macro_summary, crypto_basis_obj, taker_flow_obj)
             c["needs_update"] = True
+            fallback_count += 1
+    if fallback_count > 0:
+        print(f"Info: {fallback_count} clusters populated with local real-time summary (zero data loss).")
 
     _, drivers_24h, drivers_weekly = compute_dual_horizon_drivers(valid_clusters, current_stats.get("history", {}))
     evaluate_clusters(valid_clusters, h1_candles, vol_metrics=vol_metrics, macro_summary=macro_summary)
@@ -1316,6 +1410,7 @@ def main():
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
 
+    print("Updating chart, 24/7 OKX XAUUSDT.P basis, Aggressive Taker Flow & Dominant Drivers...")
     update_market_data(oanda_zones_cache, macro_summary, vol_metrics, crypto_basis_obj, taker_flow_obj, drivers_24h, drivers_weekly, multi_pos)
     print("Update completed.")
 

@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 713,
-    "hits": 485,
+    "total_evaluated": 715,
+    "hits": 487,
     "misses": 228,
-    "win_rate": 68.0,
-    "active_signals": 21,
+    "win_rate": 68.1,
+    "active_signals": 22,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 407,
+                "hits": 409,
                 "misses": 195,
-                "total": 602,
-                "win_rate": 67.6,
-                "avg_dd": 24.17
+                "total": 604,
+                "win_rate": 67.7,
+                "avg_dd": 24.11
             },
             "Bearish": {
                 "hits": 78,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 458,
+                "hits": 460,
                 "misses": 214,
-                "total": 672,
+                "total": 674,
                 "win_rate": 68.2,
-                "avg_dd": 22.64
+                "avg_dd": 22.6
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -60,11 +60,11 @@
                 "avg_dd": 18.97
             },
             "Against USD Headwind": {
-                "hits": 242,
+                "hits": 244,
                 "misses": 49,
-                "total": 291,
-                "win_rate": 83.2,
-                "avg_dd": 20.96
+                "total": 293,
+                "win_rate": 83.3,
+                "avg_dd": 20.89
             },
             "USD Neutral / Legacy": {
                 "hits": 215,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 229,
+                "hits": 231,
                 "misses": 136,
-                "total": 365,
-                "win_rate": 62.7,
-                "avg_dd": 25.89
+                "total": 367,
+                "win_rate": 62.9,
+                "avg_dd": 25.78
             },
             "Fed, Rates & Macro": {
                 "hits": 31,
@@ -106,18 +106,18 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 424,
+                "hits": 425,
                 "misses": 214,
-                "total": 638,
+                "total": 639,
                 "win_rate": 66.5,
-                "avg_dd": 23.89
+                "avg_dd": 23.87
             },
             "High (65-74%)": {
-                "hits": 57,
+                "hits": 58,
                 "misses": 13,
-                "total": 70,
-                "win_rate": 81.4,
-                "avg_dd": 21.55
+                "total": 71,
+                "win_rate": 81.7,
+                "avg_dd": 21.41
             },
             "Extreme (>=75%)": {
                 "hits": 4,
@@ -12351,7 +12351,7 @@
             "prob": 68,
             "entry_price": 3884.18,
             "target": 3899.51,
-            "max_dd_usd": 10.7,
+            "max_dd_usd": 11.09,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 61.18,
             "eur_chg_at_signal": -0.24,
@@ -12369,7 +12369,7 @@
             "prob": 74,
             "entry_price": 3885.51,
             "target": 3899.51,
-            "max_dd_usd": 12.04,
+            "max_dd_usd": 12.43,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 61.18,
             "eur_chg_at_signal": -0.24,
@@ -12423,7 +12423,7 @@
             "prob": 68,
             "entry_price": 3885.51,
             "target": 3908.92,
-            "max_dd_usd": 12.04,
+            "max_dd_usd": 12.43,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 61.18,
             "eur_chg_at_signal": -0.24,
@@ -12765,7 +12765,7 @@
             "prob": 55,
             "entry_price": 3878.95,
             "target": 3889.5,
-            "max_dd_usd": 5.47,
+            "max_dd_usd": 5.86,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 62.76,
             "eur_chg_at_signal": -0.24,
@@ -12783,7 +12783,7 @@
             "prob": 72,
             "entry_price": 3874.88,
             "target": 3889.57,
-            "max_dd_usd": 1.41,
+            "max_dd_usd": 1.8,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 57.45,
             "eur_chg_at_signal": -0.3,
@@ -12819,7 +12819,7 @@
             "prob": 70,
             "entry_price": 3874.88,
             "target": 3899.77,
-            "max_dd_usd": 1.41,
+            "max_dd_usd": 1.8,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 57.45,
             "eur_chg_at_signal": -0.3,
@@ -12837,13 +12837,67 @@
             "prob": 67,
             "entry_price": 3880.84,
             "target": 3889.57,
-            "max_dd_usd": 7.37,
+            "max_dd_usd": 7.76,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 57.45,
             "eur_chg_at_signal": -0.3,
             "nas_chg_at_signal": -1.35,
             "created_ts": 1794596354.0,
             "date": "First Reported: 2026-11-13 18:59 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/economy/2026/11/13/the-fight-over-canadian-steelworker-jobs?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "The fight over Canadian steelworker jobs",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3885.51,
+            "target": 3889.94,
+            "max_dd_usd": 9.1,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 57.56,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.39,
+            "created_ts": 1794589843.0,
+            "date": "First Reported: 2026-11-13 17:10 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/baltic-dry-bulk-shipping-index-falls-on-weaker-capesize-rates-93CH-5026166": {
+            "status": "ACTIVE",
+            "headline": "Baltic dry bulk shipping index falls on weaker capesize rates",
+            "source": "Investing.com",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3879.65,
+            "target": 3860.28,
+            "max_dd_usd": 11.3,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 57.56,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.39,
+            "created_ts": 1794586851.0,
+            "date": "First Reported: 2026-11-13 16:20 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532098/Yemeni-forces-complete-Aden-encirclement": {
+            "status": "HIT",
+            "headline": "Yemeni forces complete Aden encirclement",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3879.65,
+            "target": 3889.94,
+            "max_dd_usd": 11.98,
+            "atr_ratio_at_signal": 0.0,
+            "daily_atr_at_signal": 57.56,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.39,
+            "created_ts": 1794585825.0,
+            "date": "First Reported: 2026-11-13 16:03 UTC",
             "fail_reason": ""
         }
     }

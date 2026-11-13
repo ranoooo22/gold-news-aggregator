@@ -1,40 +1,40 @@
 {
-    "total_evaluated": 680,
-    "hits": 456,
-    "misses": 224,
+    "total_evaluated": 683,
+    "hits": 458,
+    "misses": 225,
     "win_rate": 67.1,
     "active_signals": 17,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 385,
-                "misses": 192,
-                "total": 577,
+                "hits": 386,
+                "misses": 193,
+                "total": 579,
                 "win_rate": 66.7,
-                "avg_dd": 24.95
+                "avg_dd": 24.88
             },
             "Bearish": {
-                "hits": 71,
+                "hits": 72,
                 "misses": 32,
-                "total": 103,
-                "win_rate": 68.9,
-                "avg_dd": 19.47
+                "total": 104,
+                "win_rate": 69.2,
+                "avg_dd": 19.22
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 429,
+                "hits": 431,
                 "misses": 211,
-                "total": 640,
-                "win_rate": 67.0,
-                "avg_dd": 23.4
+                "total": 642,
+                "win_rate": 67.1,
+                "avg_dd": 23.33
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
-                "misses": 13,
-                "total": 40,
-                "win_rate": 67.5,
-                "avg_dd": 35.89
+                "misses": 14,
+                "total": 41,
+                "win_rate": 65.9,
+                "avg_dd": 35.26
             },
             "Exhausted (>=1.2x ATR)": {
                 "hits": 0,
@@ -53,18 +53,18 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 21,
+                "hits": 22,
                 "misses": 0,
-                "total": 21,
+                "total": 22,
                 "win_rate": 100.0,
-                "avg_dd": 20.29
+                "avg_dd": 19.53
             },
             "Against USD Headwind": {
-                "hits": 220,
-                "misses": 46,
-                "total": 266,
-                "win_rate": 82.7,
-                "avg_dd": 22.08
+                "hits": 221,
+                "misses": 47,
+                "total": 268,
+                "win_rate": 82.5,
+                "avg_dd": 21.97
             },
             "USD Neutral / Legacy": {
                 "hits": 215,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 215,
-                "misses": 134,
-                "total": 349,
-                "win_rate": 61.6,
-                "avg_dd": 26.81
+                "hits": 216,
+                "misses": 135,
+                "total": 351,
+                "win_rate": 61.5,
+                "avg_dd": 26.68
             },
             "Fed, Rates & Macro": {
                 "hits": 27,
@@ -90,11 +90,11 @@
                 "avg_dd": 13.9
             },
             "Tech, AI & Equities": {
-                "hits": 128,
+                "hits": 129,
                 "misses": 46,
-                "total": 174,
-                "win_rate": 73.6,
-                "avg_dd": 19.18
+                "total": 175,
+                "win_rate": 73.7,
+                "avg_dd": 19.07
             },
             "Commodities & Energy": {
                 "hits": 86,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 400,
-                "misses": 212,
-                "total": 612,
+                "hits": 402,
+                "misses": 213,
+                "total": 615,
                 "win_rate": 65.4,
-                "avg_dd": 24.7
+                "avg_dd": 24.59
             },
             "High (65-74%)": {
                 "hits": 52,
@@ -9940,7 +9940,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/technology/ai/articles/atqor-named-finalist-2026-microsoft-150000518.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "atQor Named Finalist for 2026 Microsoft Partner of the Year Award in - Agents",
             "source": "Yahoo Finance Nasdaq",
             "category": "Geopolitics & War",
@@ -11433,7 +11433,7 @@
             "prob": 70,
             "entry_price": 3910.84,
             "target": 3938.76,
-            "max_dd_usd": 22.37,
+            "max_dd_usd": 24.26,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11451,7 +11451,7 @@
             "prob": 62,
             "entry_price": 3910.84,
             "target": 3938.76,
-            "max_dd_usd": 22.37,
+            "max_dd_usd": 24.26,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11523,7 +11523,7 @@
             "prob": 68,
             "entry_price": 3904.49,
             "target": 3928.95,
-            "max_dd_usd": 16.02,
+            "max_dd_usd": 17.91,
             "atr_ratio_at_signal": 0.32,
             "daily_atr_at_signal": 54.27,
             "eur_chg_at_signal": -0.25,
@@ -11559,7 +11559,7 @@
             "prob": 62,
             "entry_price": 3912.68,
             "target": 3928.95,
-            "max_dd_usd": 24.21,
+            "max_dd_usd": 26.1,
             "atr_ratio_at_signal": 0.32,
             "daily_atr_at_signal": 54.27,
             "eur_chg_at_signal": -0.25,
@@ -11883,7 +11883,7 @@
             "prob": 78,
             "entry_price": 3895.34,
             "target": 3919.97,
-            "max_dd_usd": 1.21,
+            "max_dd_usd": 8.76,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -11916,10 +11916,10 @@
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 61,
+            "prob": 72,
             "entry_price": 3895.34,
-            "target": 3909.32,
-            "max_dd_usd": 1.21,
+            "target": 3909.35,
+            "max_dd_usd": 8.76,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -11955,7 +11955,7 @@
             "prob": 68,
             "entry_price": 3901.57,
             "target": 3909.32,
-            "max_dd_usd": 7.93,
+            "max_dd_usd": 14.99,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -11973,7 +11973,7 @@
             "prob": 65,
             "entry_price": 3901.57,
             "target": 3909.32,
-            "max_dd_usd": 7.93,
+            "max_dd_usd": 14.99,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -11991,7 +11991,7 @@
             "prob": 75,
             "entry_price": 3901.57,
             "target": 3919.97,
-            "max_dd_usd": 7.93,
+            "max_dd_usd": 14.99,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -12037,7 +12037,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/bull-day-coherent-cohr-092000773.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Bull of the Day: Coherent (COHR)",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -12178,6 +12178,60 @@
             "nas_chg_at_signal": 0.44,
             "created_ts": 1794553681.0,
             "date": "First Reported: 2026-11-13 07:08 UTC",
+            "fail_reason": ""
+        },
+        "https://www.euronews.com/2026/11/13/hungarys-mol-seeks-eu-funding-as-ceo-warns-russian-oil-phase-out-could-trigger-social-unre?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Hungary’s MOL seeks EU funding as CEO warns Russian oil phase-out could trigger social unr",
+            "source": "Yahoo Finance Oil",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3889.53,
+            "target": 3909.35,
+            "max_dd_usd": 0.58,
+            "atr_ratio_at_signal": 0.13,
+            "daily_atr_at_signal": 54.58,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": 0.75,
+            "created_ts": 1794572871.0,
+            "date": "First Reported: 2026-11-13 12:27 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/pakistan-military-reports-it-killed-74-terrorists-during-raids?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Pakistan military reports it killed 74 ‘terrorists’ during raids",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3893.04,
+            "target": 3899.19,
+            "max_dd_usd": 6.46,
+            "atr_ratio_at_signal": 0.13,
+            "daily_atr_at_signal": 54.58,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": 0.75,
+            "created_ts": 1794571174.0,
+            "date": "First Reported: 2026-11-13 11:59 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532085/Student-competition-promotes-environmental-awareness-through": {
+            "status": "HIT",
+            "headline": "Student competition promotes environmental awareness through science",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3893.04,
+            "target": 3890.65,
+            "max_dd_usd": 6.46,
+            "atr_ratio_at_signal": 0.13,
+            "daily_atr_at_signal": 54.58,
+            "eur_chg_at_signal": -0.32,
+            "nas_chg_at_signal": 0.75,
+            "created_ts": 1794568969.0,
+            "date": "First Reported: 2026-11-13 11:22 UTC",
             "fail_reason": ""
         }
     }

@@ -1,40 +1,40 @@
 {
-    "total_evaluated": 568,
-    "hits": 370,
+    "total_evaluated": 623,
+    "hits": 425,
     "misses": 198,
-    "win_rate": 65.1,
-    "active_signals": 87,
+    "win_rate": 68.2,
+    "active_signals": 36,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 304,
+                "hits": 358,
                 "misses": 166,
-                "total": 470,
-                "win_rate": 64.7,
-                "avg_dd": 24.87
+                "total": 524,
+                "win_rate": 68.3,
+                "avg_dd": 22.69
             },
             "Bearish": {
-                "hits": 66,
+                "hits": 67,
                 "misses": 32,
-                "total": 98,
-                "win_rate": 67.3,
-                "avg_dd": 18.17
+                "total": 99,
+                "win_rate": 67.7,
+                "avg_dd": 18.4
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 344,
+                "hits": 398,
                 "misses": 188,
-                "total": 532,
-                "win_rate": 64.7,
-                "avg_dd": 23.13
+                "total": 586,
+                "win_rate": 67.9,
+                "avg_dd": 21.32
             },
             "Moderate (0.8x-1.2x ATR)": {
-                "hits": 26,
+                "hits": 27,
                 "misses": 10,
-                "total": 36,
-                "win_rate": 72.2,
-                "avg_dd": 33.25
+                "total": 37,
+                "win_rate": 73.0,
+                "avg_dd": 32.62
             },
             "Exhausted (>=1.2x ATR)": {
                 "hits": 0,
@@ -53,18 +53,18 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 16,
+                "hits": 17,
                 "misses": 0,
-                "total": 16,
+                "total": 17,
                 "win_rate": 100.0,
-                "avg_dd": 15.82
+                "avg_dd": 16.78
             },
             "Against USD Headwind": {
-                "hits": 141,
+                "hits": 195,
                 "misses": 39,
-                "total": 180,
-                "win_rate": 78.3,
-                "avg_dd": 26.19
+                "total": 234,
+                "win_rate": 83.3,
+                "avg_dd": 21.87
             },
             "USD Neutral / Legacy": {
                 "hits": 213,
@@ -76,55 +76,55 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 187,
+                "hits": 199,
                 "misses": 122,
-                "total": 309,
-                "win_rate": 60.5,
-                "avg_dd": 26.45
+                "total": 321,
+                "win_rate": 62.0,
+                "avg_dd": 25.56
             },
             "Fed, Rates & Macro": {
-                "hits": 23,
+                "hits": 27,
                 "misses": 7,
-                "total": 30,
-                "win_rate": 76.7,
-                "avg_dd": 14.16
+                "total": 34,
+                "win_rate": 79.4,
+                "avg_dd": 13.9
             },
             "Tech, AI & Equities": {
-                "hits": 100,
+                "hits": 120,
                 "misses": 38,
-                "total": 138,
-                "win_rate": 72.5,
-                "avg_dd": 16.23
+                "total": 158,
+                "win_rate": 75.9,
+                "avg_dd": 14.77
             },
             "Commodities & Energy": {
-                "hits": 60,
+                "hits": 79,
                 "misses": 31,
-                "total": 91,
-                "win_rate": 65.9,
-                "avg_dd": 30.41
+                "total": 110,
+                "win_rate": 71.8,
+                "avg_dd": 25.54
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 359,
+                "hits": 383,
                 "misses": 190,
-                "total": 549,
-                "win_rate": 65.4,
-                "avg_dd": 23.55
+                "total": 573,
+                "win_rate": 66.8,
+                "avg_dd": 22.65
             },
             "High (65-74%)": {
-                "hits": 10,
+                "hits": 40,
                 "misses": 7,
-                "total": 17,
-                "win_rate": 58.8,
-                "avg_dd": 39.41
+                "total": 47,
+                "win_rate": 85.1,
+                "avg_dd": 18.36
             },
             "Extreme (>=75%)": {
-                "hits": 1,
+                "hits": 2,
                 "misses": 1,
-                "total": 2,
-                "win_rate": 50.0,
-                "avg_dd": 5.11
+                "total": 3,
+                "win_rate": 66.7,
+                "avg_dd": 7.53
             }
         }
     },
@@ -9921,7 +9921,7 @@
             "fail_reason": ""
         },
         "https://www.marketwatch.com/story/home-sales-plummet-to-lowest-level-since-the-great-recession-as-buyers-flee-the-market-624e6270?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Home sales plummet to lowest level since the Great Recession as buyers flee the market",
             "source": "MarketWatch Macro",
             "category": "Fed, Rates & Macro",
@@ -10183,7 +10183,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/12/why-corteva-stock-dropped-on-thursday/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Why Corteva Stock Dropped on Thursday",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10201,7 +10201,7 @@
             "fail_reason": ""
         },
         "https://financialpost.com/investing/analysts-cut-price-targets-nvidia-jensen-huang/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Analysts cut price targets in wake in Nvidia-Jensen Huang bombshell",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10237,7 +10237,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/x-suspends-campaign-account-palestinian-american-running-us-senate": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "X suspends campaign account of Palestinian American running for US Senate",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -10255,7 +10255,7 @@
             "fail_reason": ""
         },
         "https://www.ibtimes.com/elon-musk-hire-nvidia-ceo-jensen-huang-3809671?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Musk Says it Would be an 'Honor' to Hire Jensen Huang as Nvidia's Board Reportedly Gears u",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10273,7 +10273,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/healthcare/articles/3-australian-healthcare-stocks-earnings-201427691.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "3 Australian Healthcare Stocks With Earnings Growth Over 21%",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -10291,7 +10291,7 @@
             "fail_reason": ""
         },
         "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-joon-kim-wachtell-china-spy.html": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Nvidia: Ex-prosecutor Joon Kim and Wachtell, Lipton bring big track record to investigatio",
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
@@ -10309,7 +10309,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/southern-irans-sirik-attacked-report-says": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Southern Iran's Sirik attacked, report says",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -10335,7 +10335,7 @@
             "prob": 58,
             "entry_price": 3884.57,
             "target": 3870.51,
-            "max_dd_usd": 2.28,
+            "max_dd_usd": 32.19,
             "atr_ratio_at_signal": 0.0,
             "daily_atr_at_signal": 82.77,
             "eur_chg_at_signal": -0.31,
@@ -10345,15 +10345,15 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/gold-prices-plunge-fed-rate-194427220.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Gold Prices Plunge as Fed Rate Hike Fears Intensify",
             "source": "Yahoo Finance Gold",
             "category": "Fed, Rates & Macro",
             "impact": "Bearish",
-            "prob": 65,
+            "prob": 68,
             "entry_price": 3884.57,
-            "target": 3870.51,
-            "max_dd_usd": 2.28,
+            "target": 3900.12,
+            "max_dd_usd": 32.19,
             "atr_ratio_at_signal": 0.0,
             "daily_atr_at_signal": 82.77,
             "eur_chg_at_signal": -0.31,
@@ -10363,7 +10363,7 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/commodities-news/oil-prices-drop-more-than-1-as-hopes-for-iran-ukraine-peace-talks-pressure-markets-5020171": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Oil falls over $1 on easing geopolitical fears and oversupply worries",
             "source": "Investing.com",
             "category": "Commodities & Energy",
@@ -10381,7 +10381,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/coverage/etfs/2026/11/12/xop-vs-amlp-is-a-midstream-or-upstream-energy-etf-the-better-buy-as-oil-prices-stay-high/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "XOP vs AMLP. Is  a Midstream or Upstream Energy ETF the Better Buy as Oil Prices Stay High",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -10399,7 +10399,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/m/a3ae2b72-a9a3-384b-9696-035af217009a/small-caps-are-caught-between.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Small-Caps Are Caught Between Oil Prices and the Fed",
             "source": "Yahoo Finance Oil",
             "category": "Fed, Rates & Macro",
@@ -10435,7 +10435,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/m/abd4704d-2e59-3bef-8250-7e95ea2c132c/super-micro-stock-falls-as.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Super Micro Stock Falls as DOJ Probes Smuggling Allegations",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10453,7 +10453,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/bc-gold-silver-200014550.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "BC-Gold-Silver",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -10471,7 +10471,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/12/us-nonprofits-sue-tech-giants-to-halt-ai-development?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US nonprofits sue tech giants to halt AI development",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -10489,7 +10489,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/12/microsoft-outage-hits-tens-of-thousands-of-users?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Microsoft outage hits tens of thousands of users",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -10497,7 +10497,7 @@
             "prob": 61,
             "entry_price": 3877.59,
             "target": 3890.32,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.36,
@@ -10507,7 +10507,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/pro-palestinian-group-seeks-ban-israeli-real-estate-fair-paris": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Pro-Palestinian group seeks ban on Israeli real-estate fair in Paris",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -10515,7 +10515,7 @@
             "prob": 60,
             "entry_price": 3877.59,
             "target": 3880.42,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.36,
@@ -10525,7 +10525,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/caledonia-mining-corporation-plc-abridged-070000118.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Caledonia Mining Corporation Plc: ABRIDGED AND UNAUDITED QUARTERLY RESULTS AND DETAILS OF ",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -10543,7 +10543,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/12/if-the-fed-keeps-cutting-rates-history-says-these-3-industrial-stocks-win/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "If the Fed Keeps Cutting Rates, History Says These 3 Industrial Stocks Win",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10561,7 +10561,7 @@
             "fail_reason": ""
         },
         "https://www.marketwatch.com/story/the-10-best-stocks-for-a-year-end-momentum-trade-8d4cf8f7?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "The 10 best stocks for a year-end momentum trade",
             "source": "MarketWatch Macro",
             "category": "Commodities & Energy",
@@ -10579,7 +10579,7 @@
             "fail_reason": ""
         },
         "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Cerebras surges 18% after beating on quarterly revenue and announcing Microsoft deal",
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
@@ -10597,7 +10597,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/bethlehem-church-nativity-priest-denied-us-visa-speak-washington-dc-event": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Bethlehem Church of the Nativity priest denied visa to speak at US event",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -10615,7 +10615,7 @@
             "fail_reason": ""
         },
         "https://www.cnbc.com/2026/11/12/cisco-csco-q1-2027-earnings.html": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Cisco beats on earnings, says AI infrastructure revenue will double this fiscal year",
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
@@ -10633,7 +10633,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/sector-energy-stocks-higher-monday-184627929.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Sector Update: Energy Stocks Higher Monday Afternoon",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -10651,7 +10651,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/united-states-antimony-corporation-reports-210500919.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "United States Antimony Corporation Reports Third Quarter and Nine Months Ended September 3",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -10677,7 +10677,7 @@
             "prob": 65,
             "entry_price": 3874.8,
             "target": 3859.26,
-            "max_dd_usd": 12.05,
+            "max_dd_usd": 41.96,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.34,
@@ -10705,7 +10705,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/12/regional-security-dominates-european-talks-in-dublin-amid-hybrid-attacks?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Regional security dominates European talks in Dublin amid hybrid attacks",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -10723,7 +10723,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/article/the-strait-of-hormuz-was-the-biggest-game-changer-for-markets-in-2026-120000488.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "The Strait of Hormuz was the biggest game changer for markets in 2026",
             "source": "Yahoo Finance Oil",
             "category": "Geopolitics & War",
@@ -10741,7 +10741,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/technology/ai/articles/superx-nasdaq-supx-u-exhibition-150000139.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "SuperX (NASDAQ: SUPX) to Make U.S. Exhibition Debut at SC26, Showcasing Full-Stack AI Infr",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10759,7 +10759,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/technology/ai/articles/sovai-bam-energy-sign-memorandum-190000739.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "SovAI and BAM Energy Sign Memorandum of Understanding to Co-Develop Super Intelligent, Nuc",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10777,7 +10777,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/economy/policy/articles/us-equity-futures-mixed-pre-125006982.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US Equity Futures Mixed Pre-Bell as Fed Governor Christopher Waller Leans Towards Rate Hik",
             "source": "Yahoo Finance Oil",
             "category": "Geopolitics & War",
@@ -10795,7 +10795,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/us-house-democratic-leader-jeffries-wants-dramatic-change-middle-east": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US House Democratic Leader Hakeem Jeffries wants 'dramatic change' in Middle East",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -10813,7 +10813,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/liberty-star-minerals-host-mt-134500825.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Liberty Star Minerals to Host Mt. Baker Mining and Metals Founder Jason Gaber at Red Rock ",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -10831,7 +10831,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/helleniq-energy-holdings-third-quarter-172200531.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "HELLENiQ ENERGY Holdings Third Quarter / Nine-Month 2026 Results",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -10849,7 +10849,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/nebius-group-buyers-were-betting-231720905.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "What Nebius Group Buyers Were Betting On",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10867,7 +10867,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/us-asks-iraq-shut-most-iran-border-crossings-iraqi-foreign-minister-says": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US asks Iraq to shut most Iran border crossings, Iraqi foreign minister says",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -10885,7 +10885,7 @@
             "fail_reason": ""
         },
         "https://www.marketwatch.com/story/heres-what-megaspeed-the-company-at-the-forefront-of-the-nvidia-scandal-is-now-saying-b73f8d0b?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Here’s what Megaspeed, the company at the forefront of the Nvidia scandal, is now saying",
             "source": "MarketWatch Macro",
             "category": "Tech, AI & Equities",
@@ -10903,7 +10903,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/12/chk-prominent-israeli-settler-denied-entry-into-france?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Prominent Israeli settler denied entry into France",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -10921,7 +10921,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/equinox-gold-corp-eqx-q3-110338723.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Equinox Gold Corp (EQX) (Q3 2026) Earnings Call Highlights: Record Debt Repayment, Dividen",
             "source": "Yahoo Finance Gold",
             "category": "Fed, Rates & Macro",
@@ -10939,7 +10939,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/artisan-partners-trimmed-lattice-semiconductor-165539148.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Artisan Partners Trimmed Lattice Semiconductor Corporation (LSCC) Despite Its Long-Term Ap",
             "source": "Yahoo Finance Oil",
             "category": "Tech, AI & Equities",
@@ -10957,7 +10957,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/article/jensen-huangs-nvidia-ousting-may-signal-shifting-winds-on-china-in-washington-164315699.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Jensen Huang's Nvidia ousting may signal shifting winds on China in Washington",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -10975,7 +10975,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/makes-10x-genomics-txg-strong-164206047.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "What Makes 10x Genomics (TXG) a Strong Position Ahead of Its H2 2026 Atera Launch?",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -10993,7 +10993,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/supports-glaukos-corporation-gkos-powerful-163821265.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "What Supports Glaukos Corporation (GKOS) for a Powerful Profit Cycle?",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -11011,7 +11011,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/nlight-lasr-fell-q3-despite-163524113.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "NLIGHT (LASR) Fell in Q3 Despite Revenue Exceeding Expectations",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -11029,7 +11029,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/supply-chain-bottlenecks-weak-margin-163216657.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Supply Chain Bottlenecks and Weak Margin Dragged Modine Manufacturing Company (MOD) in Q3",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -11065,7 +11065,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/endeavour-silver-swings-q3-adjusted-222411092.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Endeavour Silver Swings to Q3 Adjusted Profit; Revenue Rises, 2026 Production Guidance Rev",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -11119,7 +11119,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/mexco-energy-corporation-reports-financial-222800487.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Mexco Energy Corporation Reports Financial Results for First Six Months",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -11127,7 +11127,7 @@
             "prob": 62,
             "entry_price": 3877.59,
             "target": 3890.18,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.35,
@@ -11137,7 +11137,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/m/7dbdf3a7-eb6f-38f5-abbb-3d4ea8a38ecf/apple-stock-called-%27safe.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Apple Stock Called 'Safe Haven,' Hits Record High",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -11145,7 +11145,7 @@
             "prob": 61,
             "entry_price": 3877.59,
             "target": 3880.47,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.35,
@@ -11155,7 +11155,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/alphabet-stocks-rise-0-34-180311251.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Alphabet Stocks Rise 0.34% as Google Lines Up $10 Billion Anthropic Stake Purchase",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -11163,7 +11163,7 @@
             "prob": 65,
             "entry_price": 3877.59,
             "target": 3890.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.35,
@@ -11173,7 +11173,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/12/prediction-500-a-month-invested-in-hot-ticker-will/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Prediction: $500 a Month Invested in Taiwan Semiconductor Manufacturing Will Be Worth This",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -11181,7 +11181,7 @@
             "prob": 63,
             "entry_price": 3877.59,
             "target": 3899.69,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.35,
@@ -11191,7 +11191,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/denarius-metals-announces-third-quarter-221500692.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Denarius Metals Announces Third Quarter and First Nine Months 2026 Financial Results",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -11199,7 +11199,7 @@
             "prob": 65,
             "entry_price": 3877.59,
             "target": 3890.18,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.35,
@@ -11209,7 +11209,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/m/796c2692-2257-3845-800e-6fe66e2532b9/ai-chipmaker-cerebras-tops-q3.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "AI Chipmaker Cerebras Tops Q3 Views, Adds Big Customers",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -11217,7 +11217,7 @@
             "prob": 71,
             "entry_price": 3877.59,
             "target": 3899.69,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.35,
@@ -11227,7 +11227,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/agnico-eagle-mines-aem-showing-221125516.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Agnico Eagle Mines (AEM) Is Showing Strong Free Cash Flow Leverage To Gold",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -11235,7 +11235,7 @@
             "prob": 67,
             "entry_price": 3877.59,
             "target": 3890.18,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.35,
@@ -11245,7 +11245,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/12/why-aevex-stock-is-up-today/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Why AEVEX Stock Is Up Today",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -11253,7 +11253,7 @@
             "prob": 58,
             "entry_price": 3877.59,
             "target": 3890.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.35,
@@ -11263,7 +11263,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-nov-12-071100866.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Stock Market News for Nov 12, 2026",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -11271,7 +11271,7 @@
             "prob": 64,
             "entry_price": 3877.59,
             "target": 3890.79,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 2.36,
             "atr_ratio_at_signal": 0.04,
             "daily_atr_at_signal": 81.02,
             "eur_chg_at_signal": -0.35,
@@ -11281,7 +11281,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/news/more-drilling-won-t-shield-220000098.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "More Drilling Won’t Shield U.S. Consumers From Oil Price Shocks",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -11422,6 +11422,78 @@
             "nas_chg_at_signal": 0.84,
             "created_ts": 1794493440.0,
             "date": "First Reported: 2026-11-12 14:24 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/citgo-reports-record-third-quarter-130000259.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "CITGO Reports Record Third-Quarter 2026 Results",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3910.84,
+            "target": 3938.76,
+            "max_dd_usd": 6.11,
+            "atr_ratio_at_signal": 0.43,
+            "daily_atr_at_signal": 76.47,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.64,
+            "created_ts": 1794537597.0,
+            "date": "First Reported: 2026-11-12 13:00 UTC | Last Update: 2026-11-13 02:39 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Trump moots toppling Cuba authorities before leaving office",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3910.84,
+            "target": 3938.76,
+            "max_dd_usd": 6.11,
+            "atr_ratio_at_signal": 0.43,
+            "daily_atr_at_signal": 76.47,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.64,
+            "created_ts": 1794537208.0,
+            "date": "First Reported: 2026-11-13 02:33 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/found-gold-corp-nfgc-q3-010424911.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "New Found Gold Corp (NFGC) (Q3 2026) Earnings Call Highlights: Record Revenue of $41. ...",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3908.01,
+            "target": 3938.76,
+            "max_dd_usd": 23.75,
+            "atr_ratio_at_signal": 0.43,
+            "daily_atr_at_signal": 76.47,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.64,
+            "created_ts": 1794531864.0,
+            "date": "First Reported: 2026-11-13 01:04 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/pdi-gold-2-australian-founder-002222410.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "PDI Gold And 2 Australian Founder Led Growth Stocks",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 74,
+            "entry_price": 3885.72,
+            "target": 3929.24,
+            "max_dd_usd": 6.45,
+            "atr_ratio_at_signal": 0.43,
+            "daily_atr_at_signal": 76.47,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.64,
+            "created_ts": 1794529342.0,
+            "date": "First Reported: 2026-11-13 00:22 UTC",
             "fail_reason": ""
         }
     }

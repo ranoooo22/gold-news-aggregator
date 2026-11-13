@@ -3452,21 +3452,22 @@
                 "_timestamp": 1794543194.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 0,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "First reported: 2026-11-13 04:13 UTC (~2.0h ago)",
-            "Facts": "Burry said a “mechanical bid” driven by fund flows and preset investment rules overwhelmed sellers at Thursday’s open.",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 66.9% Long | 4h ATR Ratio: 0.32x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3909.40.",
-            "Bear_Case": "Downside liquidity support at $3900.29.",
-            "Historical_Calibration": "Fallback summary active (Age: 2.0h).",
+            "Event_Timestamp": "2026-11-13 04:13 UTC",
+            "Facts": "Investor Michael Burry highlighted that automated fund flows and preset investment rules generated a heavy mechanical bid that successfully absorbed and overwhelmed sellers during Thursday's opening hours.",
+            "Uncertainties": "Whether passive index inflows can sustain equity valuations if underlying tech fundamentals face margin compression.",
+            "Macro_Context": "Nasdaq gains of +0.25% support risk-on tech liquidity, reducing immediate safe-haven demand for gold while keeping broader macro sentiment elevated.",
+            "Bull_Case": "Broader equity liquidity spillovers can occasionally increase risk appetite, spilling over into macro commodity baskets.",
+            "Bear_Case": "Strong equity demand absorbs institutional capital away from non-yielding safe-haven assets like gold.",
+            "Historical_Calibration": "Tech, AI & Equities: 74.4% Win Rate (Fresh ATR Regime: 67.9%)",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
+            "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h move: $-17.43 (0.32x Daily ATR).",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Spot gold down $-16.09 (4h) and $-79.91 (24h) amid aggressive market selling and lower-wick dip buying.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -3500,23 +3501,23 @@
                 "_timestamp": 1794543122.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
+            "Cluster_ID": 1,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-12 21:50 UTC",
-            "Facts": "[Update 2026-11-12 21:50 UTC via Yahoo Finance Nasdaq]: Market commentary highlights Warren Buffett's philosophy of buying during market sell-offs and capitalizing on post-election volatility. | Core Summary: Long-term investment positioning strategies emphasize accumulating high-quality assets amidst periods of widespread market fear.",
-            "Uncertainties": "Immediate macroeconomic headwinds causing short-term retail and institutional capital retrenchment.",
-            "Macro_Context": "Post-election market adjustments align with strong retail (65.8% long) and institutional (86.8% net long CFTC) commitment to hard assets.",
-            "Bull_Case": "Deep-value accumulation behavior during sell-offs prevents severe structural liquidations in safe-haven commodities.",
-            "Bear_Case": "Prolonged market fear can trigger liquidity squeezes affecting leveraged positions.",
-            "Historical_Calibration": "Fed, Rates & Macro category under Fresh ATR regime registers a 75.9% win rate.",
+            "Event_Timestamp": "2026-11-13 04:12 UTC",
+            "Facts": "Equities tied to value-investing strategies and long-term holding frameworks reached record closing highs, reflecting selective capital concentration despite post-election market volatility.",
+            "Uncertainties": "The degree to which concentrated mega-cap leadership can insulate broader market portfolios from macroeconomic headwinds.",
+            "Macro_Context": "Softer 10Y US Treasury yields (-0.75%) provide a supportive backdrop for non-yielding assets by lowering real yield pressures.",
+            "Bull_Case": "Persistent macro uncertainty drives institutional allocation toward defensive value equities and precious metals.",
+            "Bear_Case": "Narrow leadership in equity markets can trigger broad liquidations if macro sentiment shifts abruptly.",
+            "Historical_Calibration": "Fed, Rates & Macro: 79.4% Win Rate (Fresh ATR Regime: 67.9%)",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Past_Price_Action_Cause": "Aggressive market buying (82.2%) reflects active dip-absorption by buyers capitalizing on volatility.",
-            "Orderflow_Price_Target": "3890.32"
+            "Probability_Percent": 68,
+            "Past_Price_Action_Cause": "Spot gold consolidates near $3904.49 following a sharp 24h correction, with strong buy-wall absorption below $3900.",
+            "Orderflow_Price_Target": "3909.5"
         },
         "eval_status": "HIT",
         "max_dd_usd": 4.22
@@ -3655,23 +3656,23 @@
                 "_timestamp": 1794539503.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 2,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-13 00:30 UTC",
-            "Facts": "[Update 2026-11-13 00:30 UTC via Middle East Eye]: The death toll from the Israeli air strike on the Nasser Medical Complex in Khan Younis rose to seven, including medical staff and patients, as humanitarian crises compound across the enclave. | Core Summary: Ongoing military strikes on critical medical infrastructure in southern Gaza deepen regional instability and draw severe international condemnation.",
-            "Uncertainties": "The risk of localized conflict expanding into a wider regional conterminous front involving external state actors.",
-            "Macro_Context": "Ongoing geopolitical friction reinforces safe-haven hedging, aligning with strong CFTC Managed Money net long positioning (86.8%).",
-            "Bull_Case": "Expanding humanitarian and geopolitical conflict sustains continuous safe-haven demand for physical gold and bullion.",
-            "Bear_Case": "Ceasefire negotiations or localized de-escalation can temporarily deflate geopolitical risk premia.",
-            "Historical_Calibration": "Geopolitics & War category under Fresh ATR regime yields a 62.0% win rate across 321 evaluated setups.",
+            "Event_Timestamp": "2026-11-13 03:11 UTC",
+            "Facts": "[Update 2026-11-13 03:11 UTC via Al Jazeera English]: British volunteer surgeons and hospital directors confirmed ongoing strikes and rising casualties at the Nasser Medical Complex in Khan Younis. | Core Summary: Continued military operations and medical facility strikes in Gaza maintain elevated geopolitical tensions across the Middle East.",
+            "Uncertainties": "The risk of broader regional escalation involving external state actors and proxy networks.",
+            "Macro_Context": "Brent oil trading higher (+4.52% to $98.04) reflects persistent geopolitical risk premiums originating from Middle East supply disruption fears.",
+            "Bull_Case": "Intensified regional conflict directly boosts safe-haven bullion demand and energy-driven inflation fears.",
+            "Bear_Case": "Diplomatic interventions or ceasefire talks could quickly deflate geopolitical risk premia.",
+            "Historical_Calibration": "Geopolitics & War: 62.0% Win Rate (Fresh ATR Regime: 67.9%)",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
+            "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 67,
-            "Past_Price_Action_Cause": "Persistent geopolitical risk maintains baseline bid support above key lower liquidity zones like $3910.25.",
-            "Orderflow_Price_Target": "3929.24"
+            "Probability_Percent": 72,
+            "Past_Price_Action_Cause": "Safe-haven flows counteracting aggressive taker sell pressure, stabilizing spot gold above key psychological supports.",
+            "Orderflow_Price_Target": "3919.71"
         },
         "eval_status": "HIT",
         "max_dd_usd": 9.45
@@ -3938,23 +3939,23 @@
                 "_timestamp": 1794539196.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 3,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-13 00:41 UTC",
-            "Facts": "[Update 2026-11-13 00:41 UTC via Yahoo Finance Oil]: President Donald Trump stated that Washington no longer requires a diplomatic deal with Iran, keeping Brent crude elevated near $94–$96 a barrel despite prior weekly pullbacks, as Hormuz tanker disruptions persist. | Core Summary: Geopolitical tensions remain severely heightened after U.S. leadership abandoned diplomatic paths with Tehran, sustaining energy risk premiums.",
-            "Uncertainties": "Whether continuous tanker attacks in the Strait of Hormuz will trigger direct military escalation or broader supply blockades.",
-            "Macro_Context": "Brent oil surged 3.89% to $97.519, providing a strong energy inflation tailwind that bolsters safe-haven bullion demand against a minor EUR/USD dip (-0.13%).",
-            "Bull_Case": "Persistent Middle East conflict risks and high oil prices fuel safe-haven inflows and inflation hedging into gold.",
-            "Bear_Case": "Sudden diplomatic breakthroughs or unexpected supply releases could trigger sharp unwinding of oil and geopolitical risk premiums.",
-            "Historical_Calibration": "Geopolitics & War category under Fresh ATR regime yields a 62.0% win rate across 321 evaluated setups.",
+            "Event_Timestamp": "2026-11-13 03:06 UTC",
+            "Facts": "[Update 2026-11-13 03:06 UTC via Investing.com]: Crude oil prices maintained weekly gains as President Trump signaled that the U.S. does not require a diplomatic deal with Iran, keeping blockade measures intact. | Core Summary: Geopolitical friction in the Strait of Hormuz and hardening U.S. stances against Tehran sustain supply disruption concerns.",
+            "Uncertainties": "The exact duration of the Iranian oil blockade and potential impacts on global petroleum logistics.",
+            "Macro_Context": "Brent crude's robust gain to $98.04 reinforces cost-push inflation fears, directly aiding gold's profile as an inflation hedge.",
+            "Bull_Case": "Prolonged energy supply bottlenecks sustain elevated inflation expectations and geopolitical risk premia, bolstering XAU/USD.",
+            "Bear_Case": "Sudden diplomatic breakthroughs or unexpected supply releases could trigger sharp sell-offs in energy and precious metals.",
+            "Historical_Calibration": "Geopolitics & War: 62.0% Win Rate (Fresh ATR Regime: 67.9%)",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 72,
-            "Past_Price_Action_Cause": "Brent oil's 3.89% spike drives aggressive market buying and safe-haven accumulation toward upper liquidity zones.",
-            "Orderflow_Price_Target": "3938.76"
+            "Probability_Percent": 75,
+            "Past_Price_Action_Cause": "Energy-driven macro tailwinds supporting lower-wick dip buying against aggressive market seller sweeps.",
+            "Orderflow_Price_Target": "3929.01"
         },
         "eval_status": "HIT",
         "max_dd_usd": 0.69
@@ -4211,22 +4212,23 @@
                 "_timestamp": 1794537321.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 4,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "First reported: 2026-11-13 02:35 UTC (~3.6h ago)",
-            "Facts": "Reports of attack in Baltic came before US envoys met with Russian and Ukrainian presidents.",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 66.9% Long | 4h ATR Ratio: 0.32x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3909.40.",
-            "Bear_Case": "Downside liquidity support at $3900.29.",
-            "Historical_Calibration": "Fallback summary active (Age: 3.6h).",
+            "Event_Timestamp": "2026-11-13 02:35 UTC",
+            "Facts": "Baltic security incidents involving Russian naval assets occurred concurrently with high-level diplomatic engagements between U.S. envoys, Russia, and Ukraine.",
+            "Uncertainties": "The potential for military escalation or maritime disruptions in the Baltic Sea region affecting European security.",
+            "Macro_Context": "EUR/USD down -0.25% to 1.10582 creates a minor USD tailwind, though offset by falling US 10Y yields and geopolitical safe-haven demand.",
+            "Bull_Case": "Expansion of geopolitical flashpoints into European maritime corridors increases institutional demand for physical gold reserves.",
+            "Bear_Case": "De-escalation agreements in Eastern Europe could reduce safe-haven flows into bullion.",
+            "Historical_Calibration": "Commodities & Energy: 72.1% Win Rate (Fresh ATR Regime: 67.9%)",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 55,
-            "Past_Price_Action_Cause": "4h move: $-17.43 (0.32x Daily ATR).",
-            "Orderflow_Price_Target": "3909.40"
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Spot gold consolidating near $3904 after testing lower-bound liquidity zones.",
+            "Orderflow_Price_Target": "3919.71"
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.11
@@ -4598,23 +4600,26 @@
                 "_timestamp": 1794536400.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 5,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "First reported: 2026-11-13 02:20 UTC (~0.6h ago)",
-            "Facts": "The best move is often no move at all.",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 67.0% Long | 4h ATR Ratio: 0.43x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3919.67.",
-            "Bear_Case": "Downside liquidity support at $3910.25.",
-            "Historical_Calibration": "Fallback summary active (Age: 0.6h).",
+            "Event_Timestamp": "2026-11-13 02:20 UTC",
+            "Facts": "Historical market analysis indicates that disciplined, inactive portfolio management strategies have consistently outperformed reactionary trading following midterm election cycles.",
+            "Uncertainties": "Immediate macro data releases that could disrupt baseline policy expectations from the Federal Reserve.",
+            "Macro_Context": "Declining US 10Y bond yields (-0.75%) reduce the opportunity cost of holding non-yielding precious metals.",
+            "Bull_Case": "Stable macro environments with declining real yields favor steady capital accumulation in gold bullion.",
+            "Bear_Case": "Surprise hawkish shifts in monetary policy could trigger long-stop cascades among heavily leveraged retail and institutional longs.",
+            "Historical_Calibration": "Fed, Rates & Macro: 79.4% Win Rate (Fresh ATR Regime: 67.9%)",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h move: $+33.24 (0.43x Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "Timeframe": "Weeks/Months",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 70,
+            "Past_Price_Action_Cause": "Low 4h ATR ratio (0.3x) reflecting orderly consolidation above the $3900 psychological handle.",
+            "Orderflow_Price_Target": "3909.5"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 11.11
     },
     {
         "main_date": "First Reported: 2026-11-12 16:38 UTC | Last Update: 2026-11-13 02:04 UTC",
@@ -4678,23 +4683,23 @@
                 "_timestamp": 1794535442.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-12 22:23 UTC",
-            "Facts": "[Update 2026-11-12 22:23 UTC via Yahoo Finance Nasdaq]: NVIDIA experienced an unexpected leadership shake-up involving Jensen Huang's departure, causing its shares to tumble while competitors like Alphabet, AMD, and Broadcom rallied on expectations of capturing market share. | Core Summary: Alphabet shares climbed 3% as investors eyed its proprietary Tensor Processing Units (TPUs) through Google Cloud as an alternative AI infrastructure play amidst Nvidia's volatility.",
-            "Uncertainties": "The long-term stability of the AI compute market and how enterprise cloud buyers will redistribute chip orders following NVIDIA's executive transition.",
-            "Macro_Context": "Nasdaq 100 is down -0.08%, with tech sector liquidity rotating aggressively among chip peers. Gold benefits from overall risk asset cross-currents and strong structural demand.",
-            "Bull_Case": "Tech equity volatility enhancing safe-haven flows into physical and paper gold while speculative capital chases alternative liquidity avenues.",
-            "Bear_Case": "A disorderly tech sell-off causing broad-based margin liquidation that temporarily drags down precious metals.",
-            "Historical_Calibration": "Tech, AI & Equities: 71.9% win rate; Fresh ATR regime (<0.8x ATR): 64.1% win rate.",
+            "Event_Timestamp": "2026-11-13 02:04 UTC",
+            "Facts": "[Update 2026-11-13 02:04 UTC via Yahoo Finance Nasdaq]: Alphabet is commercializing its proprietary AI chips by allowing enterprise customers to run custom silicon directly within their own data centers as the stock trades roughly 28% below historical peaks. | Core Summary: Shifting semiconductor leadership dynamics—highlighted by executive transitions at Nvidia and rising competition from Alphabet and Broadcom—are driving massive capital shifts across global technology equities.",
+            "Uncertainties": "Whether Alphabet's enterprise chip deployment can capture meaningful market share from Nvidia's entrenched hardware monopoly.",
+            "Macro_Context": "Nasdaq 100 is higher (+0.25%) alongside robust risk-on sentiment, which supports tech-driven liquidity inflows while USD and bond yields retreat.",
+            "Bull_Case": "Technology sector liquidity rotations feed into broader risk assets, indirectly underpinning safe-haven gold as institutional portfolios rebalance.",
+            "Bear_Case": "Aggressive equity rallies can siphon capital away from precious metals if high-beta growth stocks capture total market momentum.",
+            "Historical_Calibration": "Tech, AI & Equities in Fresh ATR Regime: 74.4% win rate (122/164 setups)",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Past_Price_Action_Cause": "Persistent lower-wick absorption and aggressive taker buying (78.0%) support a continuation toward upper liquidity bands.",
-            "Orderflow_Price_Target": "$3890.18"
+            "Probability_Percent": 74,
+            "Past_Price_Action_Cause": "Despite a 24h drop of $-79.91, equity-driven liquidity supports dip-buying absorption near lower liquidity zones.",
+            "Orderflow_Price_Target": "3909.5"
         },
         "eval_status": "HIT",
         "max_dd_usd": 1.93
@@ -4721,21 +4726,22 @@
                 "_timestamp": 1794535200.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 1,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "First reported: 2026-11-12 07:30 UTC (~0.6h ago)",
-            "Facts": "[Yahoo Finance Nasdaq] FPT Becomes the World’s First Microsoft Partner to Earn Frontier Advanced Specialization - HANOI, Vietnam, November 12, 2026--Global technology and IT services provider FPT today announced that it has earned the Microsoft Frontier Advanced ",
-            "Uncertainties": "Direct extraction from primary feeds (deep AI contextualization queued for next cycle).",
-            "Macro_Context": "24h Macro: EUR/USD -0.42%, Nasdaq-100 -0.20%, Brent Oil +1.22% | OANDA Sentiment: 65.7% Long / 34.3% Short | 24/7 OKX XAUUSDT.P: $3970.8 (Spread: $+5.85) | Aggressive Taker Flow: 61.1% Market Buys (AGGRESSIVE MARKET BUYING (Ask-Side Absorption)).",
-            "Bull_Case": "Nearest upside OANDA/COMEX liquidity zone sits at $3989.85.",
-            "Bear_Case": "Nearest downside liquidity zone sits at $3960.85. 4h-ATR ratio is 0.26x.",
-            "Historical_Calibration": "Rule-based real-time summary active. Event age: 0.6h.",
+            "Event_Timestamp": "2026-11-13 02:00 UTC",
+            "Facts": "[Update 2026-11-13 02:00 UTC via Yahoo Finance Nasdaq]: Global technology provider FPT has secured the 2026 Microsoft Malaysia Partner of the Year Award following its earlier recognition as the world's first Microsoft Partner with Frontier Advanced Specialization. | Core Summary: Enterprise tech integration continues to expand globally, accelerating corporate adoption of agentic AI solutions.",
+            "Uncertainties": "The speed at which regional enterprises can monetize advanced AI integration to justify soaring capital expenditures.",
+            "Macro_Context": "Strong tech earnings and ecosystem awards align with a rising Nasdaq 100, maintaining favorable equity-linked liquidity conditions.",
+            "Bull_Case": "Broad corporate spending on AI infrastructure reinforces global economic resilience and liquidity expansion.",
+            "Bear_Case": "Micro-level tech developments have negligible direct impact on macroeconomic gold spot pricing.",
+            "Historical_Calibration": "Tech, AI & Equities in Fresh ATR Regime: 74.4% win rate (122/164 setups)",
             "Impact_Timing": "Present",
-            "Timeframe": "Hours/Days",
+            "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h XAU/USD move: $-12.59 (0.26x of estimated Daily ATR).",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Consolidation following short-term spot pullbacks, with low ATR ratio (0.3x) signaling compressed volatility.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -4753,23 +4759,26 @@
                 "_timestamp": 1794534295.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 2,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "First reported: 2026-11-13 01:44 UTC (~1.2h ago)",
-            "Facts": "Longtime Sunni politician and Iran critic was reportedly strangled in Beirut, sparking investigation.",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 67.0% Long | 4h ATR Ratio: 0.43x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3919.67.",
-            "Bear_Case": "Downside liquidity support at $3910.25.",
-            "Historical_Calibration": "Fallback summary active (Age: 1.2h).",
+            "Event_Timestamp": "2026-11-13 01:44 UTC",
+            "Facts": "Lebanese authorities have requested Syria extradite suspects connected to the assassination of a prominent Sunni politician and Iran critic in Beirut. | Core Summary: Regional friction points across the Levant continue to simmer, adding friction to diplomatic channels between Lebanon and Syria.",
+            "Uncertainties": "Whether this localized assassination will trigger broader retaliatory security operations involving external regional actors.",
+            "Macro_Context": "Brent oil is surging (+4.52% to 98.04), providing direct commodity inflation fuel and tightening geopolitical risk premiums.",
+            "Bull_Case": "Escalating Middle Eastern friction elevates safe-haven bullion demand and reinforces central bank hedging.",
+            "Bear_Case": "Diplomatic channels manage to contain the incident locally, preventing broader military escalation.",
+            "Historical_Calibration": "Geopolitics & War in Fresh ATR Regime: 62.0% win rate (204/329 setups)",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h move: $+33.24 (0.43x Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "Timeframe": "Hours/Days",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Geopolitical risk premium supports lower-wick dip buying against aggressive short-term taker sell flows.",
+            "Orderflow_Price_Target": "3919.71"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 23.75
     },
     {
         "main_date": "First Reported: 2026-11-13 01:43 UTC",
@@ -4785,21 +4794,22 @@
                 "_timestamp": 1794534197.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 3,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "First reported: 2026-11-13 01:43 UTC (~1.2h ago)",
-            "Facts": "Albania has faced criticism over low defence spending, as Rama is under pressure at home amid months of protests.",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 67.0% Long | 4h ATR Ratio: 0.43x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3919.67.",
-            "Bear_Case": "Downside liquidity support at $3910.25.",
-            "Historical_Calibration": "Fallback summary active (Age: 1.2h).",
+            "Event_Timestamp": "2026-11-13 01:43 UTC",
+            "Facts": "Albania's Prime Minister announced that the 2027 NATO summit will not be held in Tirana amid mounting domestic protests and ongoing criticism regarding national defense spending targets. | Core Summary: Domestic political pressures and resource constraints are impacting high-level international defense commitments in Southeastern Europe.",
+            "Uncertainties": "The potential for domestic unrest to spread or destabilize regional security cooperation frameworks.",
+            "Macro_Context": "Broad geopolitical strains globally align with higher energy costs (Brent +4.52%) and lower US 10Y bond yields.",
+            "Bull_Case": "Heightened global defense scrutiny reinforces structural geopolitical risk pricing across commodities.",
+            "Bear_Case": "Domestic political disputes remain isolated and have zero direct transmission to precious metals markets.",
+            "Historical_Calibration": "Geopolitics & War in Fresh ATR Regime: 62.0% win rate (204/329 setups)",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h move: $+33.24 (0.43x Daily ATR).",
+            "Probability_Percent": 50,
+            "Past_Price_Action_Cause": "Low ATR ratio (0.3x) indicates muted immediate price reaction to peripheral European geopolitical news.",
             "Orderflow_Price_Target": "N/A"
         }
     },
@@ -6270,23 +6280,26 @@
                 "_timestamp": 1794529064.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 4,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "First reported: 2026-11-13 00:17 UTC (~2.7h ago)",
-            "Facts": "BP has delivered a 115.9% share price gain over the past five years, and with fresh headlines around profits, asset sales and oil markets, the live question is whether that performance is properly backed by the cash the business can generate. With the stock last closing at £5.67, investors are increasingly asking how much of BP’s cash flow story is already reflected in that price. A 115.9% return over five years puts real weight on whether BP’s c",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 67.0% Long | 4h ATR Ratio: 0.43x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3919.67.",
-            "Bear_Case": "Downside liquidity support at $3910.25.",
-            "Historical_Calibration": "Fallback summary active (Age: 2.7h).",
+            "Event_Timestamp": "2026-11-13 00:17 UTC",
+            "Facts": "Energy major BP has delivered a 115.9% share price gain over the past five years, prompting investor scrutiny over whether asset sales and cash flow generation justify current valuations. | Core Summary: Energy sector profitability remains robust, underpinned by elevated crude oil price environments and strategic asset management.",
+            "Uncertainties": "Sustainability of long-term corporate cash flows if global energy demand moderates.",
+            "Macro_Context": "Brent oil trading strongly at 98.04 (+4.52%) reinforces inflationary pressures that complicate the Federal Reserve's rate path.",
+            "Bull_Case": "Persistently high energy prices sustain broader commodity inflation, driving structural demand for gold as an inflation hedge.",
+            "Bear_Case": "Strong corporate energy equity performance signals robust economic activity, potentially encouraging hawkish central bank postures.",
+            "Historical_Calibration": "Commodities & Energy in Fresh ATR Regime: 72.1% win rate (80/111 setups)",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h move: $+33.24 (0.43x Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 70,
+            "Past_Price_Action_Cause": "Commodity strength supports dip-buying absorption at lower COMEX/OKX liquidity support zones ($3900.11 - $3890.09).",
+            "Orderflow_Price_Target": "3929.01"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 6.45
     },
     {
         "main_date": "First Reported: 2026-11-12 00:00 UTC | Last Update: 2026-11-13 00:00 UTC",
@@ -6326,23 +6339,23 @@
                 "_timestamp": 1794528026.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 5,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-12 19:13 UTC",
-            "Facts": "[Update 2026-11-12 19:13 UTC via Middle East Eye]: Iranian Foreign Ministry spokesperson Esmaeil Baghaei issued a direct warning to third-party nations against backing US military actions or economic sanctions against Tehran, including logistical or naval support. | Core Summary: The Israeli security cabinet has ordered military forces to step up preparations for potential strikes on Iranian targets as regional tensions escalate.",
-            "Uncertainties": "The scope of retaliatory measures by Iran and potential disruption pathways through the Strait of Hormuz.",
-            "Macro_Context": "Brent oil surging +2.70% to $98.145 reflects direct geopolitical risk premium injection, aligning strongly with institutional hedge fund net long positioning (86.8% COT) and safe-haven gold demand.",
-            "Bull_Case": "Heightened geopolitical friction in the Middle East driving immediate safe-haven bullion flows toward upper liquidity clusters.",
-            "Bear_Case": "Diplomatic interventions de-escalating military postures and unwinding the current energy risk premium.",
-            "Historical_Calibration": "Geopolitics & War: 60.0% Win Rate (Fresh ATR Regime: 63.6%)",
+            "Event_Timestamp": "2026-11-13 00:00 UTC",
+            "Facts": "[Update 2026-11-13 00:00 UTC via Al Jazeera English]: President Trump stated at the White House that Gulf allies have urged a temporary pause in further US-led strikes against Iran. | Core Summary: While Israel's security cabinet escalates military preparations and Tehran warns regional states against supporting US economic or military actions, diplomatic pushback from Gulf allies introduces a complex layer of de-escalation pressure.",
+            "Uncertainties": "Whether diplomatic pressure from Gulf states can successfully forestall direct military conflict between Israel, the US, and Iran.",
+            "Macro_Context": "Brent oil surging 4.52% to 98.04 reflects severe supply-chain anxiety in the Strait of Hormuz, directly fueling gold's safe-haven appeal despite aggressive intraday spot selling.",
+            "Bull_Case": "Persistent military brinkmanship in the Middle East ensures safe-haven inflows and strong lower-wick dip buying at key support shelves.",
+            "Bear_Case": "A successful pause or diplomatic breakthrough brokered by Gulf allies could instantly deflate the geopolitical risk premium in gold.",
+            "Historical_Calibration": "Geopolitics & War in Fresh ATR Regime: 62.0% win rate (204/329 setups)",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
+            "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 78,
-            "Past_Price_Action_Cause": "Strong lower-wick dip buying and 66.0% market buy absorption reflect heavy accumulation reacting to escalating Middle East headlines.",
-            "Orderflow_Price_Target": "3890.78"
+            "Probability_Percent": 72,
+            "Past_Price_Action_Cause": "Aggressive market selling (68.3% taker sells) tested lower liquidity shelves, but strong lower-wick absorption absorbed sell walls near $3900.",
+            "Orderflow_Price_Target": "3929.01"
         },
         "eval_status": "MISS",
         "max_dd_usd": 92.61
@@ -6369,23 +6382,23 @@
                 "_timestamp": 1794527105.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 0,
             "Dominant_Driver": "Red Sea & Yemen Conflict",
-            "Event_Timestamp": "2026-11-12 21:21 UTC",
-            "Facts": "US authorities denied entry visas to prominent Palestinian Christian clergy members, including a Bethlehem Church priest and a Christmas Lutheran Church pastor, preventing them from speaking at scheduled events in the United States.",
-            "Uncertainties": "Potential diplomatic friction and international criticism regarding US visa policies concerning religious figures from the Middle East.",
-            "Macro_Context": "Brent oil trading higher at 97.78 (+3.28%) reflects ongoing Middle Eastern supply and geopolitical risk premiums that structurally underpin gold.",
-            "Bull_Case": "Ongoing geopolitical tensions in the Middle East sustain safe-haven inflows into physical bullion and gold derivatives.",
-            "Bear_Case": "Diplomatic developments remain localized without immediate escalation into broader regional military conflict.",
-            "Historical_Calibration": "Geopolitics & War: 60.1% win rate (Fresh ATR regime: 63.7%)",
+            "Event_Timestamp": "2026-11-12 23:45 UTC",
+            "Facts": "[Update 2026-11-12 23:45 UTC via Middle East Eye]: Palestinian parish priest Father Issa Thaljieh from the Church of the Nativity in Bethlehem was denied a US visa to speak alongside American clergy regarding Israeli settler attacks on Palestinian villages. | Core Summary: Diplomatic visa denials for Palestinian clergy traveling to the US highlight ongoing geopolitical friction and administrative restrictions tied to the Middle East conflict.",
+            "Uncertainties": "Whether further diplomatic restrictions will escalate regional tensions or draw international condemnation.",
+            "Macro_Context": "Geopolitical friction provides underlying safe-haven support for Gold, aligning with Brent oil higher at 98.04 (+4.52%) and strong 10-year bond demand, while aggressive taker selling (68.3% Sells) weighs on spot prices.",
+            "Bull_Case": "Widening Middle East diplomatic disputes reinforce safe-haven bullion flows, driving tests of overhead resistance zones.",
+            "Bear_Case": "Localized diplomatic friction fails to impact macro liquidity or currency flows, leaving bullion vulnerable to broader liquidation pressures.",
+            "Historical_Calibration": "Win Rate: 62.0% (Geopolitics & War, Fresh <0.8x ATR regime)",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 62,
-            "Past_Price_Action_Cause": "Spot price at $3877.59 is supported by continuous geopolitical hedging by institutional and retail participants.",
-            "Orderflow_Price_Target": "3890.32"
+            "Probability_Percent": 61,
+            "Past_Price_Action_Cause": "Spot gold is trading down $79.91 over 24h to $3904.48 amid aggressive market sell-side pressure.",
+            "Orderflow_Price_Target": "3919.71"
         },
         "eval_status": "HIT",
         "max_dd_usd": 5.39
@@ -6404,23 +6417,26 @@
                 "_timestamp": 1794526923.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 1,
             "Dominant_Driver": "Red Sea & Yemen Conflict",
-            "Event_Timestamp": "First reported: 2026-11-12 23:42 UTC (~3.3h ago)",
-            "Facts": "UN Security Council renews Yemen sanctions\n\n    \n    \n\n        \n    \n                The United Nations Security Council has voted to extend financial and travel sanctions on individuals in relation to the Yemen war.\n\nSecurity Council members unanimously decided in favour of a UK-proposed resolution,&nbsp;renewing “the Yemen financial and travel ban sanction measures on individuals engaging in or providing support for acts that threaten the peace",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 67.0% Long | 4h ATR Ratio: 0.43x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3919.67.",
-            "Bear_Case": "Downside liquidity support at $3910.25.",
-            "Historical_Calibration": "Fallback summary active (Age: 3.3h).",
+            "Event_Timestamp": "2026-11-12 23:42 UTC",
+            "Facts": "The United Nations Security Council unanimously adopted a UK-proposed resolution extending financial and travel sanctions on individuals supporting acts that threaten peace, security, and stability in Yemen.",
+            "Uncertainties": "The effectiveness of prolonged UN sanctions in curbing regional militant supply lines and maritime disruptions.",
+            "Macro_Context": "Maintains persistent geopolitical risk premiums supporting Brent oil at 98.04 and bolstering safe-haven demand against broader USD volatility.",
+            "Bull_Case": "Prolonged Red Sea security instability underpins commodities and safe-haven asset allocation.",
+            "Bear_Case": "Sanctions remain largely symbolic, failing to alter maritime freight costs or immediate energy supply risks.",
+            "Historical_Calibration": "Win Rate: 62.0% (Geopolitics & War, Fresh <0.8x ATR regime)",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h move: $+33.24 (0.43x Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "Timeframe": "Weeks/Months",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 63,
+            "Past_Price_Action_Cause": "Persistent geopolitical supply risks absorb lower-wick sell walls near the $3890-$3900 liquidity pocket.",
+            "Orderflow_Price_Target": "3929.01"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 5.53
     },
     {
         "main_date": "First Reported: 2026-11-12 23:29 UTC",
@@ -6436,23 +6452,26 @@
                 "_timestamp": 1794526196.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 2,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "First reported: 2026-11-12 23:29 UTC (~3.5h ago)",
-            "Facts": "One investor bought Bitcoin near its 2021 peak, then watched most of the money vanish after the FTX collapse. Five years later, how does that patient bet stack up against gold and the S&amp;P 500?",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 67.0% Long | 4h ATR Ratio: 0.43x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3919.67.",
-            "Bear_Case": "Downside liquidity support at $3910.25.",
-            "Historical_Calibration": "Fallback summary active (Age: 3.5h).",
+            "Event_Timestamp": "2026-11-12 23:29 UTC",
+            "Facts": "Retrospective financial analyses comparing multi-year asset performance highlight the stark contrast between speculative digital assets recovering from historical drawdowns and the structural wealth preservation offered by gold and broad equities.",
+            "Uncertainties": "Future retail capital rotation between risk-on cryptocurrencies and safe-haven bullion.",
+            "Macro_Context": "Reinforces long-term institutional and retail gold accumulation amid macroeconomic uncertainty, coinciding with robust CFTC Managed Money net long positioning (86.8%).",
+            "Bull_Case": "Long-term investors increasing portfolio allocations to gold as a hedge against digital asset volatility and fiat debasement.",
+            "Bear_Case": "Renewed appetite for high-beta risk assets drawing retail capital away from precious metals.",
+            "Historical_Calibration": "Win Rate: 72.1% (Commodities & Energy, Fresh <0.8x ATR regime)",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h move: $+33.24 (0.43x Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "Timeframe": "Weeks/Months",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 68,
+            "Past_Price_Action_Cause": "Spot gold's 4h pullback of $16.09 finds steady absorption by structural bullion demand below $3900.",
+            "Orderflow_Price_Target": "3929.01"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 5.53
     },
     {
         "main_date": "First Reported: 2026-11-12 23:20 UTC",
@@ -6468,23 +6487,26 @@
                 "_timestamp": 1794525620.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 3,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "First reported: 2026-11-12 23:20 UTC (~3.6h ago)",
-            "Facts": "The Strait of Hormuz shock earlier this year showed how quickly energy supply routes can be disrupted and how sharply oil markets can react. For UK investors, that kind of stress test highlights why large, globally active oil and gas groups can draw fresh attention as potential shock absorbers in a portfolio. This article walks through three of the strongest UK related stocks screened from this global energy universe. The stocks highlighted below",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 67.0% Long | 4h ATR Ratio: 0.43x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3919.67.",
-            "Bear_Case": "Downside liquidity support at $3910.25.",
-            "Historical_Calibration": "Fallback summary active (Age: 3.6h).",
+            "Event_Timestamp": "2026-11-12 23:20 UTC",
+            "Facts": "Previous disruptions in the Strait of Hormuz continue to serve as a key risk benchmark for institutional energy portfolios, driving increased investor focus on global oil majors as structural hedges against supply shocks.",
+            "Uncertainties": "Potential recurrence of maritime chokepoint blockades in the Persian Gulf impacting global crude flows.",
+            "Macro_Context": "Brent oil trading higher at 98.04 (+4.52%) directly elevates inflationary expectations, which historically underpin gold's role as an inflation hedge.",
+            "Bull_Case": "Energy market stress elevates headline inflation expectations, stimulating safe-haven and inflation-hedge buying in gold.",
+            "Bear_Case": "Rapid diplomatic de-escalation stabilizes crude prices, easing inflationary pressures on precious metals.",
+            "Historical_Calibration": "Win Rate: 62.0% (Geopolitics & War, Fresh <0.8x ATR regime)",
             "Impact_Timing": "Present",
             "Timeframe": "Days/Weeks",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h move: $+33.24 (0.43x Daily ATR).",
-            "Orderflow_Price_Target": "N/A"
-        }
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Past_Price_Action_Cause": "Spike in Brent crude to $98.04 supports commodity-linked bids against aggressive intraday dealer selling.",
+            "Orderflow_Price_Target": "3919.71"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 5.53
     },
     {
         "main_date": "First Reported: 2026-11-12 08:35 UTC | Last Update: 2026-11-12 23:14 UTC",
@@ -6516,23 +6538,23 @@
                 "_timestamp": 1794525240.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
+            "Cluster_ID": 4,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-12 17:20 UTC",
-            "Facts": "[Update 2026-11-12 17:20 UTC via Yahoo Finance Nasdaq]: Election results from 41 local contests on November 3 revealed widespread voter backlash against AI data center developments, with 40 out of 41 outcomes favoring restrictions, bans, or moratoriums due to infrastructure and resource concerns. | Core Summary: Grassroots political opposition to the rapid physical expansion of AI data centers is mounting significantly, posing a potential structural bottleneck to the multi-trillion-dollar AI boom.",
-            "Uncertainties": "Whether widespread local zoning bans will severely constrain the capital expenditure plans of major hyperscalers.",
-            "Macro_Context": "As AI infrastructure faces localized pushback, capital may rotate out of hyper-growth tech allocations and into defensive real assets and precious metals.",
-            "Bull_Case": "Infrastructure bottlenecks and regulatory pushback cool speculative tech excesses, channeling liquidity into physical gold bullion.",
-            "Bear_Case": "Tech giants successfully pivot investments toward alternative regions or power sources, neutralizing localized zoning restrictions.",
-            "Historical_Calibration": "Tech, AI & Equities category with Fresh (<0.8x ATR) regime shows a 71.6% win rate across 134 setups.",
+            "Event_Timestamp": "2026-11-12 23:14 UTC",
+            "Facts": "Local election results across 41 jurisdictions revealed significant bipartisan voter resistance to AI data centers, with 40 regions enacting restrictions, bans, or moratoriums due to infrastructure and resource strains.",
+            "Uncertainties": "Whether regulatory pushback against data centers will constrain broader technology sector capital expenditure and liquidity.",
+            "Macro_Context": "Nasdaq 100 resilience (+0.25% to 28190.6) contrasts with localized real estate and infrastructure hurdles, keeping broader tech liquidity high while testing macro sentiment.",
+            "Bull_Case": "Regulatory friction in physical tech infrastructure may trigger capital rotation from equities into safe-haven gold bullion.",
+            "Bear_Case": "Continued strong performance in major tech equities sustains overall risk-on market dynamics, limiting safe-haven inflows.",
+            "Historical_Calibration": "Win Rate: 74.4% (Tech, AI & Equities, Fresh <0.8x ATR regime)",
             "Impact_Timing": "Present",
-            "Timeframe": "Weeks/Months",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 62,
-            "Past_Price_Action_Cause": "Spot price stability near $3877 despite structural regulatory headwinds reflects balanced positioning across multi-source orderbooks.",
-            "Orderflow_Price_Target": "3890.14"
+            "Timeframe": "Days/Weeks",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 55,
+            "Past_Price_Action_Cause": "Mixed equity signals and aggressive taker selling (68.3%) have kept spot gold confined within a tight intraday range near $3904.",
+            "Orderflow_Price_Target": "N/A"
         },
         "eval_status": "HIT",
         "max_dd_usd": 76.25
@@ -6551,21 +6573,22 @@
                 "_timestamp": 1794525135.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
+            "Cluster_ID": 5,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "First reported: 2026-11-12 23:12 UTC (~3.8h ago)",
-            "Facts": "Nvidia-backed neocloud Nscale on Thursday released updated paperwork for a U.S. initial public offering showing a widening loss.",
-            "Uncertainties": "Awaiting next AI batch cycle.",
-            "Macro_Context": "OANDA Retail: 67.0% Long | 4h ATR Ratio: 0.43x.",
-            "Bull_Case": "Upside 3-source liquidity target at $3919.67.",
-            "Bear_Case": "Downside liquidity support at $3910.25.",
-            "Historical_Calibration": "Fallback summary active (Age: 3.8h).",
+            "Event_Timestamp": "2026-11-12 23:12 UTC",
+            "Facts": "Nvidia-backed neocloud provider Nscale filed updated regulatory paperwork for a United States initial public offering, revealing a widening corporate net loss as it scales operations.",
+            "Uncertainties": "Investor appetite for cash-burning artificial intelligence infrastructure firms amid tightening public market valuations.",
+            "Macro_Context": "Broad equity liquidity (Nasdaq +0.25%) remains resilient, though secondary tech listings showing widening losses highlight speculative risk tolerance in high-beta sectors.",
+            "Bull_Case": "Heightened scrutiny on unprofitable AI startups could encourage institutional reallocation toward hard assets like gold.",
+            "Bear_Case": "Robust mega-cap tech performance maintains strong risk-on sentiment, reducing the urgency for safe-haven allocations.",
+            "Historical_Calibration": "Win Rate: 74.4% (Tech, AI & Equities, Fresh <0.8x ATR regime)",
             "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
+            "Timeframe": "Hours/Days",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Past_Price_Action_Cause": "4h move: $+33.24 (0.43x Daily ATR).",
+            "Probability_Percent": 53,
+            "Past_Price_Action_Cause": "Spot gold hovers near $3904.48 with a low 4h ATR ratio of 0.3x, reflecting consolidated range-bound action.",
             "Orderflow_Price_Target": "N/A"
         }
     },

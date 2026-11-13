@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 638,
-    "hits": 433,
+    "total_evaluated": 641,
+    "hits": 436,
     "misses": 205,
-    "win_rate": 67.9,
-    "active_signals": 30,
+    "win_rate": 68.0,
+    "active_signals": 33,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 366,
+                "hits": 369,
                 "misses": 173,
-                "total": 539,
-                "win_rate": 67.9,
-                "avg_dd": 23.36
+                "total": 542,
+                "win_rate": 68.1,
+                "avg_dd": 23.29
             },
             "Bearish": {
                 "hits": 67,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 406,
+                "hits": 409,
                 "misses": 192,
-                "total": 598,
-                "win_rate": 67.9,
-                "avg_dd": 21.65
+                "total": 601,
+                "win_rate": 68.1,
+                "avg_dd": 21.6
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -60,11 +60,11 @@
                 "avg_dd": 16.78
             },
             "Against USD Headwind": {
-                "hits": 203,
+                "hits": 206,
                 "misses": 46,
-                "total": 249,
-                "win_rate": 81.5,
-                "avg_dd": 23.12
+                "total": 252,
+                "win_rate": 81.7,
+                "avg_dd": 23.0
             },
             "USD Neutral / Legacy": {
                 "hits": 213,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 204,
+                "hits": 205,
                 "misses": 125,
-                "total": 329,
-                "win_rate": 62.0,
-                "avg_dd": 25.92
+                "total": 330,
+                "win_rate": 62.1,
+                "avg_dd": 25.91
             },
             "Fed, Rates & Macro": {
                 "hits": 27,
@@ -90,18 +90,18 @@
                 "avg_dd": 13.9
             },
             "Tech, AI & Equities": {
-                "hits": 122,
+                "hits": 123,
                 "misses": 42,
-                "total": 164,
-                "win_rate": 74.4,
-                "avg_dd": 16.62
+                "total": 165,
+                "win_rate": 74.5,
+                "avg_dd": 16.58
             },
             "Commodities & Energy": {
-                "hits": 80,
+                "hits": 81,
                 "misses": 31,
-                "total": 111,
-                "win_rate": 72.1,
-                "avg_dd": 25.4
+                "total": 112,
+                "win_rate": 72.3,
+                "avg_dd": 25.18
             }
         },
         "by_confidence": {
@@ -113,11 +113,11 @@
                 "avg_dd": 23.03
             },
             "High (65-74%)": {
-                "hits": 43,
+                "hits": 46,
                 "misses": 10,
-                "total": 53,
-                "win_rate": 81.1,
-                "avg_dd": 21.47
+                "total": 56,
+                "win_rate": 82.1,
+                "avg_dd": 21.02
             },
             "Extreme (>=75%)": {
                 "hits": 2,
@@ -11656,6 +11656,114 @@
             "nas_chg_at_signal": 0.25,
             "created_ts": 1794517474.0,
             "date": "First Reported: 2026-11-12 21:04 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/12/history-says-investing-strategy-midterm-election/?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "History Says This Investing Strategy Has Never Failed After a Midterm Election",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3915.84,
+            "target": 3909.5,
+            "max_dd_usd": 11.11,
+            "atr_ratio_at_signal": 0.3,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794536400.0,
+            "date": "First Reported: 2026-11-13 02:20 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/after-iraq-ex-mps-killing-lebanon-asks-syria-to-extradite-suspects?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "After Iraq ex-MP’s killing, Lebanon asks Syria to extradite suspects",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3908.01,
+            "target": 3919.71,
+            "max_dd_usd": 23.75,
+            "atr_ratio_at_signal": 0.3,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794534295.0,
+            "date": "First Reported: 2026-11-13 01:44 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/bp-lse-bp-stock-could-001744959.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "BP (LSE:BP.) Stock Could Trade At A Discount As Its 116% Run Continues",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3885.72,
+            "target": 3929.01,
+            "max_dd_usd": 6.45,
+            "atr_ratio_at_signal": 0.3,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794529064.0,
+            "date": "First Reported: 2026-11-13 00:17 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/security-council-renews-yemen-sanctio": {
+            "status": "ACTIVE",
+            "headline": "UN Security Council renews Yemen sanctions",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 63,
+            "entry_price": 3880.76,
+            "target": 3929.01,
+            "max_dd_usd": 5.53,
+            "atr_ratio_at_signal": 0.3,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794526923.0,
+            "date": "First Reported: 2026-11-12 23:42 UTC",
+            "fail_reason": ""
+        },
+        "https://247wallst.com/investing/cryptocurrency/2026/11/12/what-if-you-had-invested-10000-in-bitcoin-5-years-ago/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "What If You Had Invested $10,000 in Bitcoin 5 Years Ago?",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3880.76,
+            "target": 3929.01,
+            "max_dd_usd": 5.53,
+            "atr_ratio_at_signal": 0.3,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794526196.0,
+            "date": "First Reported: 2026-11-12 23:29 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/seplat-energy-2-british-energy-232020296.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Seplat Energy And 2 British Energy Stocks To Watch",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3880.76,
+            "target": 3919.71,
+            "max_dd_usd": 5.53,
+            "atr_ratio_at_signal": 0.3,
+            "daily_atr_at_signal": 54.27,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": 0.25,
+            "created_ts": 1794525620.0,
+            "date": "First Reported: 2026-11-12 23:20 UTC",
             "fail_reason": ""
         }
     }

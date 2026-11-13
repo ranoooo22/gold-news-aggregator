@@ -20,40 +20,34 @@ else:
     client = None
     print("WARNING: GEMINI_API_KEY not found.")
 
-# Only active Gemini 3.5 models; dead 404 models removed
 FALLBACK_MODELS = [
     "gemini-3.5-flash-lite",
     "gemini-3.5-flash"
 ]
 DEAD_MODELS = set()
 
+# Streamlined Schema: No Bull/Bear filler boxes, plus strict Is_Gold_Relevant gatekeeper
 CLUSTER_SUMMARY_SCHEMA = types.Schema(
     type=types.Type.ARRAY,
     items=types.Schema(
         type=types.Type.OBJECT,
         properties={
             "Cluster_ID": types.Schema(type=types.Type.INTEGER),
+            "Is_Gold_Relevant": types.Schema(type=types.Type.BOOLEAN),
             "Dominant_Driver": types.Schema(type=types.Type.STRING),
             "Event_Timestamp": types.Schema(type=types.Type.STRING),
             "Facts": types.Schema(type=types.Type.STRING),
-            "Uncertainties": types.Schema(type=types.Type.STRING),
             "Macro_Context": types.Schema(type=types.Type.STRING),
-            "Bull_Case": types.Schema(type=types.Type.STRING),
-            "Bear_Case": types.Schema(type=types.Type.STRING),
-            "Historical_Calibration": types.Schema(type=types.Type.STRING),
             "Impact_Timing": types.Schema(type=types.Type.STRING),
             "Timeframe": types.Schema(type=types.Type.STRING),
             "XAUUSD_Impact": types.Schema(type=types.Type.STRING),
             "Probability_Percent": types.Schema(type=types.Type.INTEGER),
-            "Past_Price_Action_Cause": types.Schema(type=types.Type.STRING),
             "Orderflow_Price_Target": types.Schema(type=types.Type.STRING),
         },
         required=[
-            "Cluster_ID", "Dominant_Driver", "Event_Timestamp", "Facts",
-            "Uncertainties", "Macro_Context", "Bull_Case", "Bear_Case",
-            "Historical_Calibration", "Impact_Timing", "Timeframe",
-            "XAUUSD_Impact", "Probability_Percent", "Past_Price_Action_Cause",
-            "Orderflow_Price_Target"
+            "Cluster_ID", "Is_Gold_Relevant", "Dominant_Driver", "Event_Timestamp",
+            "Facts", "Macro_Context", "Impact_Timing", "Timeframe",
+            "XAUUSD_Impact", "Probability_Percent", "Orderflow_Price_Target"
         ]
     )
 )
@@ -84,22 +78,46 @@ FEEDS = {
     "Saba News Agency": "https://www.saba.ye/en/rss"
 }
 
-IMPACT_KEYWORDS = [
+# Stage 1 Pre-Filter: Direct Gold/Macro/Geopolitics keywords OR Tech/AI with systemic relevance
+CORE_MACRO_GEO_KEYWORDS = [
     "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
     "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
     "idf", "missile", "strike", "attack", "drone", "sanction", "nuclear", 
     "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "saudi",
     "fed", "inflation", "rate", "central bank", "brics", "dollar", "treasury", 
     "tariff", "recession", "gdp", "unemployment", "payroll", "cpi", "pmi", 
-    "stimulus", "china", "default", "liquidity", "debt", "yield",
+    "stimulus", "china", "default", "liquidity", "debt", "yield"
+]
+
+TECH_ENTITIES = [
     "nvidia", "nvda", "nasdaq", "s&p", "semiconductor", "chip", "taiwan", 
-    "tsmc", "artificial intelligence", "ai ", "big tech", "microsoft", "apple",
-    "earnings", "selloff", "sell-off", "crash", "bubble", "rout", "margin"
+    "tsmc", "artificial intelligence", "ai ", "big tech", "microsoft", "apple", "supermicro"
+]
+
+TECH_SYSTEMIC_TRIGGERS = [
+    "crash", "selloff", "sell-off", "rout", "bubble", "margin", "plunge", "turmoil",
+    "scandal", "resign", "doj", "probe", "investigation", "ban", "curb", "export",
+    "tariff", "sanction", "china", "taiwan", "beijing", "trump", "fed", "inflation",
+    "liquidity", "yield", "guidance", "shock", "record", "trillion", "war", "spy"
 ]
 
 DATA_FILE = "data.json"
 STATS_FILE = "performance_stats.json"
 SIMILARITY_THRESHOLD = 0.54
+
+def passes_stage1_filter(title, description):
+    """
+    Stage 1 Filter:
+    - Always passes direct Gold, Macro, Fed, Energy, and Geopolitics news.
+    - Passes Tech/AI news if it contains a systemic market, geopolitical, regulatory, or shock trigger.
+    """
+    full_text = f"{title} {description}".lower()
+    if any(kw in full_text for kw in CORE_MACRO_GEO_KEYWORDS):
+        return True
+    if any(te in full_text for te in TECH_ENTITIES):
+        if any(trig in full_text for trig in TECH_SYSTEMIC_TRIGGERS):
+            return True
+    return False
 
 def clean_html(raw_html):
     return re.sub(re.compile('<.*?>'), '', raw_html)
@@ -148,7 +166,7 @@ def fetch_single_feed(source_url):
             raw_desc = entry.get("summary", entry.get("description", ""))
             clean_desc = clean_html(raw_desc).strip()
             title = entry.title
-            if not any(kw in f"{title} {clean_desc}".lower() for kw in IMPACT_KEYWORDS):
+            if not passes_stage1_filter(title, clean_desc):
                 continue
             pub_dt = now
             if hasattr(entry, "published_parsed") and entry.published_parsed:
@@ -180,7 +198,6 @@ def fetch_new_articles(existing_urls):
     return articles
 
 def fetch_live_perp_price():
-    """Fetches 24/7 live Gold perpetual price from OKX or Bybit (used both for Basis and as Fallback Spot)."""
     headers = {"User-Agent": "Mozilla/5.0"}
     for inst, lbl in [("XAU-USDT-SWAP", "OKX XAUUSDT.P"), ("XAUT-USDT-SWAP", "OKX XAUTUSDT.P")]:
         try:
@@ -236,53 +253,8 @@ def fetch_crypto_gold_basis(oanda_price):
         }
     return "24/7 XAU/USDT Basis: Unavailable.", {}
 
-def fetch_okx_l2_orderbook(reference_price, zone_width=10.0):
-    okx_zones = {}
-    headers = {"User-Agent": "Mozilla/5.0"}
-    raw_bids, raw_asks = [], []
-
-    for inst in ["XAU-USDT-SWAP", "XAUT-USDT-SWAP"]:
-        try:
-            url = f"https://www.okx.com/api/v5/market/books?instId={inst}&sz=400"
-            res = requests.get(url, headers=headers, timeout=6)
-            if res.status_code == 200:
-                data = res.json().get("data", [])
-                if data:
-                    for b in data[0].get("bids", []):
-                        raw_bids.append((float(b[0]), float(b[1])))
-                    for a in data[0].get("asks", []):
-                        raw_asks.append((float(a[0]), float(a[1])))
-        except Exception:
-            pass
-
-    tot_contracts = sum(v for _, v in raw_bids) + sum(v for _, v in raw_asks)
-    if tot_contracts <= 0:
-        return okx_zones
-
-    for p, v in raw_bids:
-        if reference_price <= 0 or abs(p - reference_price) / reference_price <= 0.15:
-            z_key = round(p / zone_width) * zone_width
-            if z_key not in okx_zones:
-                okx_zones[z_key] = {"buy": 0.0, "sell": 0.0, "total": 0.0, "weighted_price_sum": 0.0}
-            pct = (v / tot_contracts) * 100.0
-            okx_zones[z_key]["buy"] += pct
-            okx_zones[z_key]["total"] += pct
-            okx_zones[z_key]["weighted_price_sum"] += p * pct
-
-    for p, v in raw_asks:
-        if reference_price <= 0 or abs(p - reference_price) / reference_price <= 0.15:
-            z_key = round(p / zone_width) * zone_width
-            if z_key not in okx_zones:
-                okx_zones[z_key] = {"buy": 0.0, "sell": 0.0, "total": 0.0, "weighted_price_sum": 0.0}
-            pct = (v / tot_contracts) * 100.0
-            okx_zones[z_key]["sell"] += pct
-            okx_zones[z_key]["total"] += pct
-            okx_zones[z_key]["weighted_price_sum"] += p * pct
-
-    print(f"OKX Live L2 Orderbook loaded: {len(okx_zones)} active $10 zones.")
-    return okx_zones
-
 def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
+    """Fetches unmitigated COMEX GC=F institutional volume profile zones."""
     comex_zones = {}
     try:
         url = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=5d&interval=1h"
@@ -384,6 +356,7 @@ def fetch_multi_positioning(oanda_sentiment):
     }
 
 def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
+    """Combines OANDA OrderBook/PositionBook + Unmitigated COMEX Futures (OKX L2 removed for clarity)."""
     current_price = float(fallback_price) if fallback_price else 0.0
     combined_buckets = {}
     total_pos_long, total_pos_short = 0.0, 0.0
@@ -404,14 +377,14 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                     for b in ob_data.get("buckets", []):
                         try:
                             p = float(b.get("price", 0))
-                            if current_price > 0 and abs(p - current_price) / current_price <= 0.18:
+                            if current_price > 0 and abs(p - current_price) / current_price <= 0.15:
                                 combined_buckets[p] = {
                                     "long": float(b.get("longCountPercent", 0)),
                                     "short": float(b.get("shortCountPercent", 0))
                                 }
                         except ValueError:
                             continue
-                    print(f"OANDA OrderBook loaded: {len(combined_buckets)} price buckets within 18% radius.")
+                    print(f"OANDA OrderBook loaded: {len(combined_buckets)} price buckets within 15% radius.")
                     break
                 else:
                     print(f"OANDA orderBook status {res_ob.status_code} (Attempt {attempt+1}/2): {res_ob.text[:120]}")
@@ -435,7 +408,7 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                             s_pct = float(b.get("shortCountPercent", 0))
                             total_pos_long += l_pct
                             total_pos_short += s_pct
-                            if current_price > 0 and abs(p - current_price) / current_price <= 0.18:
+                            if current_price > 0 and abs(p - current_price) / current_price <= 0.15:
                                 if p not in combined_buckets:
                                     combined_buckets[p] = {"long": 0.0, "short": 0.0}
                                 combined_buckets[p]["long"] += l_pct
@@ -451,13 +424,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                 print(f"OANDA positionBook error (Attempt {attempt+1}/2): {e}")
                 time.sleep(2)
 
-    # Critical safeguard: if OANDA failed to provide current_price, use live OKX Perp price so zones are never discarded!
-    if current_price <= 0:
-        perp_p, perp_src = fetch_live_perp_price()
-        if perp_p > 0:
-            current_price = perp_p
-            print(f"Using {perp_src} price (${current_price:.2f}) as reference price fallback.")
-
     pos_sum = total_pos_long + total_pos_short
     sentiment = {
         "long_pct": round((total_pos_long / pos_sum) * 100, 1) if pos_sum > 0 else 50.0,
@@ -470,7 +436,7 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         if zone_key not in zones:
             zones[zone_key] = {
                 "long": 0.0, "short": 0.0, "total": 0.0, "weighted_price_sum": 0.0,
-                "oanda_vol": 0.0, "okx_vol": 0.0, "comex_vol": 0.0
+                "oanda_vol": 0.0, "comex_vol": 0.0
             }
         tot = vols["long"] + vols["short"]
         zones[zone_key]["long"] += vols["long"]
@@ -479,29 +445,14 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         zones[zone_key]["oanda_vol"] += tot
         zones[zone_key]["weighted_price_sum"] += p * tot
 
-    okx_zones = fetch_okx_l2_orderbook(current_price, zone_width=zone_width)
-    for z_key, o_data in okx_zones.items():
-        weight = 0.35 if combined_buckets else 1.0
-        scaled_tot = o_data["total"] * weight
-        if z_key not in zones:
-            zones[z_key] = {
-                "long": 0.0, "short": 0.0, "total": 0.0, "weighted_price_sum": 0.0,
-                "oanda_vol": 0.0, "okx_vol": 0.0, "comex_vol": 0.0
-            }
-        zones[z_key]["long"] += o_data["buy"] * weight
-        zones[z_key]["short"] += o_data["sell"] * weight
-        zones[z_key]["total"] += scaled_tot
-        zones[z_key]["okx_vol"] += o_data["total"]
-        zones[z_key]["weighted_price_sum"] += o_data["weighted_price_sum"] * weight
-
     comex_zones = fetch_yahoo_futures_zones(current_price, zone_width=zone_width)
     for z_key, f_data in comex_zones.items():
-        weight = 0.20 if combined_buckets else 0.6
+        weight = 0.25 if combined_buckets else 1.0
         scaled_tot = f_data["total"] * weight
         if z_key not in zones:
             zones[z_key] = {
                 "long": 0.0, "short": 0.0, "total": 0.0, "weighted_price_sum": 0.0,
-                "oanda_vol": 0.0, "okx_vol": 0.0, "comex_vol": 0.0
+                "oanda_vol": 0.0, "comex_vol": 0.0
             }
         zones[z_key]["long"] += scaled_tot / 2.0
         zones[z_key]["short"] += scaled_tot / 2.0
@@ -517,7 +468,7 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         if z_data["total"] > 0:
             vwap_price = round(z_data["weighted_price_sum"] / z_data["total"], 2)
             net_diff = round(z_data["long"] - z_data["short"], 2)
-            if (z_data["oanda_vol"] + z_data["okx_vol"]) == 0:
+            if z_data["oanda_vol"] == 0:
                 dominance = "SELL" if vwap_price >= current_price else "BUY"
             else:
                 dominance = "BUY" if net_diff >= 0 else "SELL"
@@ -525,8 +476,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
             active_src = []
             if z_data["oanda_vol"] >= 0.4:
                 active_src.append("OANDA")
-            if z_data["okx_vol"] >= 0.4:
-                active_src.append("OKX-L2")
             if z_data["comex_vol"] >= 0.5:
                 active_src.append("COMEX")
             is_overlap = len(active_src) >= 2
@@ -539,7 +488,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                 "short": round(z_data["short"], 2),
                 "volume": round(z_data["total"], 2),
                 "oanda_vol": round(z_data["oanda_vol"], 2),
-                "okx_vol": round(z_data["okx_vol"], 2),
                 "comex_vol": round(z_data["comex_vol"], 2),
                 "net": net_diff,
                 "dominance": dominance,
@@ -575,14 +523,14 @@ def fetch_oanda_orderbook(top_zones_cache=None, multi_pos=None):
     liquidity_info = (
         f"Current XAU/USD Price: {current_price}\n"
         f"Multi-Source Positioning: {pos_line}\n"
-        f"3-Source Liquidity Zones (OANDA Resting + OKX Live L2 Depth + Unmitigated COMEX):\n"
+        f"Liquidity Zones (OANDA Resting + Unmitigated COMEX Volume):\n"
     )
     for z in top_zones:
         pos_label = "ABOVE price" if z["price"] >= current_price else "BELOW price"
         overlap_tag = f"CONFLUENCE [{z['sources']}]" if z.get("overlap") else f"[{z.get('sources', 'OANDA')}]"
         liquidity_info += (
             f"- Zone at ${z['price']} ({pos_label}) {overlap_tag} | Combined Vol: {z['volume']}% "
-            f"[OANDA: {z['oanda_vol']}% | OKX L2: {z.get('okx_vol', 0)}% | COMEX: {z['comex_vol']}%] (Net {z['dominance']})\n"
+            f"[OANDA: {z['oanda_vol']}% | COMEX: {z['comex_vol']}%] (Net {z['dominance']})\n"
         )
     return liquidity_info
 
@@ -713,10 +661,12 @@ def compute_dual_horizon_drivers(valid_clusters, stats_history=None):
 
     items_24h = []
     for c in (valid_clusters or []):
+        s = c.get("summary") if isinstance(c.get("summary"), dict) else {}
+        if s.get("Is_Gold_Relevant") is False:
+            continue
         arts = c.get("articles", [])
         if not arts:
             continue
-        s = c.get("summary") if isinstance(c.get("summary"), dict) else {}
         text = " ".join([f"{a.get('title', '')} {a.get('description', '')}" for a in arts[:3]])
         n_name, b_cat = detect_specific_narrative(text)
         prob = int(s.get("Probability_Percent", 50) or 50)
@@ -731,12 +681,14 @@ def compute_dual_horizon_drivers(valid_clusters, stats_history=None):
     seen_ids = set()
 
     for c in (valid_clusters or []):
+        s = c.get("summary") if isinstance(c.get("summary"), dict) else {}
+        if s.get("Is_Gold_Relevant") is False:
+            continue
         arts = c.get("articles", [])
         if not arts:
             continue
         cid = arts[0].get("link", "")
         seen_ids.add(cid)
-        s = c.get("summary") if isinstance(c.get("summary"), dict) else {}
         text = " ".join([f"{a.get('title', '')} {a.get('description', '')}" for a in arts[:3]])
         n_name, b_cat = detect_specific_narrative(text)
         prob = int(s.get("Probability_Percent", 50) or 50)
@@ -769,63 +721,38 @@ def compute_dual_horizon_drivers(valid_clusters, stats_history=None):
     prompt_lines.append("- Dominant 24h Intraday Pulse: " + " | ".join([f"#{i+1} {d['narrative']} ({d['share_pct']}%, {d['net_bias']})" for i, d in enumerate(drivers_24h)]))
     return "\n".join(prompt_lines), drivers_24h, drivers_weekly
 
-def fetch_okx_fallback_candles(bar="1H", limit=48):
-    """Fetches live Gold candles from OKX XAU-USDT-SWAP if OANDA Practice API is unreachable."""
-    parsed = []
-    try:
-        url = f"https://www.okx.com/api/v5/market/candles?instId=XAU-USDT-SWAP&bar={bar}&limit={limit}"
-        res = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
-        if res.status_code == 200:
-            rows = res.json().get("data", [])
-            for r in reversed(rows):
-                ts = float(r[0]) / 1000.0
-                parsed.append({
-                    "ts": ts,
-                    "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
-                    "o": float(r[1]),
-                    "h": float(r[2]),
-                    "l": float(r[3]),
-                    "c": float(r[4])
-                })
-    except Exception as e:
-        print(f"OKX Fallback Candle Error ({bar}): {e}")
-    return parsed
-
 def fetch_oanda_price_and_volatility():
+    if not OANDA_API_KEY:
+        return "No price data available.", [], {}
     parsed = []
-    if OANDA_API_KEY:
-        url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=48&granularity=H1&price=M"
-        headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
-        for attempt in range(2):
-            try:
-                response = requests.get(url, headers=headers, timeout=10)
-                if response.status_code == 200:
-                    raw_candles = response.json().get("candles", [])
-                    for c in raw_candles:
-                        if c.get("complete") or c == raw_candles[-1]:
-                            ts = float(c.get("time", 0))
-                            parsed.append({
-                                "ts": ts,
-                                "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
-                                "o": float(c["mid"]["o"]),
-                                "h": float(c["mid"]["h"]),
-                                "l": float(c["mid"]["l"]),
-                                "c": float(c["mid"]["c"])
-                            })
-                    break
-                else:
-                    print(f"OANDA H1 Candle API Status {response.status_code} (Attempt {attempt+1}/2): {response.text[:120]}")
-                    time.sleep(2)
-            except Exception as e:
-                print(f"OANDA H1 Candle Error (Attempt {attempt+1}/2): {e}")
+    url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=48&granularity=H1&price=M"
+    headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
+    for attempt in range(2):
+        try:
+            response = requests.get(url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                raw_candles = response.json().get("candles", [])
+                for c in raw_candles:
+                    if c.get("complete") or c == raw_candles[-1]:
+                        ts = float(c.get("time", 0))
+                        parsed.append({
+                            "ts": ts,
+                            "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
+                            "o": float(c["mid"]["o"]),
+                            "h": float(c["mid"]["h"]),
+                            "l": float(c["mid"]["l"]),
+                            "c": float(c["mid"]["c"])
+                        })
+                break
+            else:
+                print(f"OANDA H1 Candle API Status {response.status_code} (Attempt {attempt+1}/2): {response.text[:120]}")
                 time.sleep(2)
+        except Exception as e:
+            print(f"OANDA H1 Candle Error (Attempt {attempt+1}/2): {e}")
+            time.sleep(2)
 
     if len(parsed) < 15:
-        print("Using OKX XAU-USDT-SWAP H1 candles as live fallback...")
-        parsed = fetch_okx_fallback_candles(bar="1H", limit=48)
-
-    if len(parsed) < 15:
-        return "Insufficient H1 candles.", parsed, {}
+        return "Insufficient OANDA H1 candles.", parsed, {}
 
     trs = [max(parsed[i]["h"] - parsed[i]["l"], abs(parsed[i]["h"] - parsed[i-1]["c"]), abs(parsed[i]["l"] - parsed[i-1]["c"])) for i in range(1, len(parsed))]
     atr_14_h1 = sum(trs[-14:]) / 14.0
@@ -953,7 +880,7 @@ def evaluate_clusters(all_clusters, h1_candles, vol_metrics=None, macro_summary=
     cluster_map = {}
     for cluster in all_clusters:
         summary = cluster.get("summary")
-        if not isinstance(summary, dict):
+        if not isinstance(summary, dict) or summary.get("Is_Gold_Relevant") is False:
             continue
         impact = summary.get("XAUUSD_Impact", "")
         prob = int(summary.get("Probability_Percent", 0) or 0)
@@ -1113,19 +1040,15 @@ def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_
     atr_ratio = vol_metrics.get("move_to_daily_atr_ratio", 0)
 
     return {
+        "Is_Gold_Relevant": True,
         "Dominant_Driver": narrative_name,
         "Event_Timestamp": f"First reported: {oldest.get('date', 'Unknown')} UTC (~{age_h}h ago)",
         "Facts": facts_str,
-        "Uncertainties": "Awaiting next AI batch cycle.",
-        "Macro_Context": f"OANDA Retail: {sentiment['long_pct']}% Long | 4h ATR Ratio: {atr_ratio}x.",
-        "Bull_Case": f"Upside 3-source liquidity target at ${min(above_z):.2f}." if above_z else "Monitor safe-haven flow.",
-        "Bear_Case": f"Downside liquidity support at ${max(below_z):.2f}." if below_z else f"4h ATR ratio is {atr_ratio}x.",
-        "Historical_Calibration": f"Fallback summary active (Age: {age_h}h).",
+        "Macro_Context": f"OANDA Retail: {sentiment['long_pct']}% Long | 4h Move: ${vol_metrics.get('change_4h', 0):+.2f} ({atr_ratio}x Daily ATR).",
         "Impact_Timing": "Past (Already Priced In)" if (age_h > 12 or atr_ratio >= 1.2) else "Present",
         "Timeframe": "Days/Weeks",
         "XAUUSD_Impact": impact,
         "Probability_Percent": 55 if impact != "Neutral" else 40,
-        "Past_Price_Action_Cause": f"4h move: ${vol_metrics.get('change_4h', 0):+.2f} ({atr_ratio}x Daily ATR).",
         "Orderflow_Price_Target": target
     }
 
@@ -1147,15 +1070,21 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
             arts_lines.append(f"  * [{role} | {a['date']} UTC | {a['source']}]: {content_block}")
         clusters_input.append(f"=== CLUSTER_ID: {idx} | SOURCES: {len(chronological_arts)} | CATEGORY: {cat_label} | DRIVER: {specific_drv} ===\n" + "\n".join(arts_lines))
 
-    prompt = f"""You are an objective Intelligence & Calibration Agent for a Gold (XAU/USD) trader.
-    Analyze these {len(clusters_batch)} News Clusters using the 3-Source Orderbook (OANDA + OKX Live L2 + Unmitigated COMEX), CFTC COT positioning, Dual-Horizon Drivers, and Empirical Regime Matrix below.
+    prompt = f"""You are a senior Gold (XAU/USD) & Macro Intelligence Filter.
+    Analyze these {len(clusters_batch)} News Clusters using the market context below.
 
-    STRICT RULES FOR THE 'Facts' FIELD (NO HEADLINES / NO TITLES):
-    1. NEVER copy, repeat, or paste raw article titles/headlines or clickbait questions into 'Facts'. The UI already displays the headline separately!
-    2. Write ONLY a clean, synthesized intelligence summary in your own analytical sentences explaining what actually happened, key figures, and why it matters.
-    3. If a cluster has >1 source ('NEW UPDATE #...'), start 'Facts' with '[Update YYYY-MM-DD HH:MM UTC via Source]: <1-2 sentences synthesizing the new factual development in your own words, NEVER the raw headline> | Core Summary: <synthesized summary of the overall event>'.
+    STAGE 2 RELEVANCE FILTER ('Is_Gold_Relevant' boolean):
+    - Set 'Is_Gold_Relevant' = true ONLY if the event has a real transmission channel to Gold (XAU/USD) or broad market risk:
+      * Direct Gold, commodities, oil/energy supply, central bank buying, BRICS/de-dollarization.
+      * Geopolitics, war, Middle East escalation, Red Sea, Iran, tariffs, sanctions, US-China trade/tech war.
+      * Fed policy, CPI/inflation, jobs/NFP, GDP, US Dollar, Treasury yields, sovereign debt.
+      * SYSTEMIC Tech/AI/Nasdaq shocks: Mega-cap crises (e.g., Nvidia/Apple/Microsoft/TSMC leadership scandals, DOJ probes, export bans, AI bubble/selloff, or market-wide liquidity/margin shocks).
+    - Set 'Is_Gold_Relevant' = false for trivial, isolated single-stock news, routine earnings beats/misses of minor companies, or local news with zero macro/market spillover.
 
-    Output ONLY a valid JSON array of {len(clusters_batch)} objects in English!
+    STRICT RULES FOR 'Facts' AND 'Macro_Context' (CONCISE & NO HEADLINES):
+    1. NEVER copy or repeat raw article titles/headlines into 'Facts'.
+    2. Write 'Facts' as a crisp, 2-3 sentence synthesized summary of what happened. If a cluster has >1 source ('NEW UPDATE #...'), start 'Facts' with '[Update YYYY-MM-DD HH:MM UTC via Source]: <1 sentence on the new development> | <1-2 sentences on core background>'.
+    3. Keep 'Macro_Context' to 1-2 short, direct sentences explaining how this affects XAU/USD right now (e.g. safe-haven bid, USD/yield impact, or Nasdaq liquidity spillover).
 
     Current Time: {now_utc_str}
     {perf_memory_str}
@@ -1251,20 +1180,6 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
                 print(f"Error loading OANDA H4 candles (Attempt {attempt+1}/2): {e}")
                 time.sleep(2)
 
-    if not market_data["candles"]:
-        print("Using OKX XAU-USDT-SWAP H4 candles as live chart fallback...")
-        okx_h4 = fetch_okx_fallback_candles(bar="4H", limit=100)
-        for c in okx_h4:
-            market_data["candles"].append({
-                "time": int(c["ts"]),
-                "open": c["o"],
-                "high": c["h"],
-                "low": c["l"],
-                "close": c["c"]
-            })
-        if market_data["candles"]:
-            print(f"Successfully loaded {len(market_data['candles'])} OKX H4 fallback candles.")
-
     _, top_zones, sentiment = top_zones_cache if top_zones_cache else get_clustered_oanda_zones(zone_width=10.0)
     market_data["sentiment"] = sentiment
     for z in top_zones:
@@ -1272,7 +1187,6 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
             "price": z["price"],
             "volume": z["volume"],
             "oanda_vol": z.get("oanda_vol", 0),
-            "okx_vol": z.get("okx_vol", 0),
             "comex_vol": z.get("comex_vol", 0),
             "long": z["long"],
             "short": z["short"],
@@ -1281,10 +1195,10 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
             "overlap": z.get("overlap", False),
             "sources": z.get("sources", "OANDA")
         })
-    print(f"Successfully loaded {len(market_data['orderbook'])} combined 3-source order zones.")
+    print(f"Successfully loaded {len(market_data['orderbook'])} combined OANDA+COMEX order zones.")
 
     if not market_data["candles"] and old_md.get("candles"):
-        print("WARNING: Retaining previous candles.")
+        print("WARNING: Retaining previous OANDA candles.")
         market_data["candles"] = old_md["candles"]
     if not market_data["orderbook"] and old_md.get("orderbook"):
         print("WARNING: Retaining previous orderbook zones.")
@@ -1304,7 +1218,7 @@ def main():
         except Exception:
             existing_data = []
 
-    print("Loading Volatility (ATR), 3-Source Order Zones (OANDA + OKX L2 + COMEX), 24/7 OKX XAUUSDT.P Basis & Aggressive Taker Flow...")
+    print("Loading Volatility (ATR), OANDA + COMEX Order Zones, 24/7 OKX XAUUSDT.P Basis & Aggressive Taker Flow...")
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     candle_fallback_price = vol_metrics.get("current_price", 0.0)
     
@@ -1314,10 +1228,6 @@ def main():
     
     multi_pos = fetch_multi_positioning(oanda_sentiment)
     crypto_basis_str, crypto_basis_obj = fetch_crypto_gold_basis(effective_spot_price)
-    if effective_spot_price <= 0 and crypto_basis_obj.get("crypto_price"):
-        effective_spot_price = crypto_basis_obj["crypto_price"]
-        vol_metrics["current_price"] = effective_spot_price
-
     taker_flow_str, taker_flow_obj = fetch_aggressive_taker_flow(h1_candles, oanda_sentiment=oanda_sentiment)
     macro_context_str, macro_summary = fetch_macro_context()
 
@@ -1327,25 +1237,21 @@ def main():
     cutoff_timestamp = (datetime.now() - timedelta(hours=24)).timestamp()
     valid_clusters = [c for c in existing_data if c.get("_timestamp", 0) > cutoff_timestamp]
 
+    # Auto-Heal: Re-evaluate any legacy cluster that lacks 'Is_Gold_Relevant' or still has raw titles in Facts
     for c in valid_clusters:
-        if isinstance(c.get("summary"), dict):
-            facts_str = str(c["summary"].get("Facts", ""))
-            if "[INITIAL REPORT" in facts_str or " -- " in facts_str or " — " in facts_str:
+        s = c.get("summary")
+        if isinstance(s, dict):
+            facts_str = str(s.get("Facts", ""))
+            if "Is_Gold_Relevant" not in s or "[INITIAL REPORT" in facts_str or " — " in facts_str:
                 c["needs_update"] = True
-            else:
-                for a in c.get("articles", []):
-                    t_str = a.get("title", "").strip()
-                    if len(t_str) > 20 and t_str in facts_str:
-                        c["needs_update"] = True
-                        break
 
     existing_urls = {a["link"] for c in valid_clusters for a in c.get("articles", [])}
 
-    print("Fetching new articles in parallel (Geopolitics, Commodities, Tech/AI & Global Macro)...")
+    print("Fetching new articles in parallel (Stage 1 Macro/Geo/Systemic-Tech Filter active)...")
     new_articles = fetch_new_articles(existing_urls)
     if new_articles:
         new_articles.sort(key=lambda x: x.get("_timestamp", 0))
-        print(f"Found {len(new_articles)} new articles. Clustering (Threshold: {SIMILARITY_THRESHOLD})...")
+        print(f"Found {len(new_articles)} new articles passing Stage 1. Clustering (Threshold: {SIMILARITY_THRESHOLD})...")
         cluster_embeddings = [model.encode(" ".join([a["title"] for a in c["articles"]])) for c in valid_clusters]
         for article in new_articles:
             article_emb = model.encode(article["title"] + " " + article["description"])
@@ -1410,7 +1316,7 @@ def main():
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
 
-    print("Updating chart, 24/7 OKX XAUUSDT.P basis, Aggressive Taker Flow & Dominant Drivers...")
+    print("Updating OANDA chart, OANDA+COMEX Ladder & Dual-Horizon Drivers...")
     update_market_data(oanda_zones_cache, macro_summary, vol_metrics, crypto_basis_obj, taker_flow_obj, drivers_24h, drivers_weekly, multi_pos)
     print("Update completed.")
 

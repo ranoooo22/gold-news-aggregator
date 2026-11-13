@@ -3,7 +3,7 @@
     "hits": 484,
     "misses": 226,
     "win_rate": 68.2,
-    "active_signals": 19,
+    "active_signals": 20,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -12351,7 +12351,7 @@
             "prob": 68,
             "entry_price": 3884.18,
             "target": 3899.51,
-            "max_dd_usd": 2.14,
+            "max_dd_usd": 5.46,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 61.18,
             "eur_chg_at_signal": -0.24,
@@ -12420,9 +12420,9 @@
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 65,
+            "prob": 68,
             "entry_price": 3885.51,
-            "target": 3899.51,
+            "target": 3908.92,
             "max_dd_usd": 9.1,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 61.18,
@@ -12754,6 +12754,24 @@
             "nas_chg_at_signal": -1.78,
             "created_ts": 1794579010.0,
             "date": "First Reported: 2026-11-13 14:10 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/eisenkot-slams-netanyahus-racist-campaign-against-palestinian-israelis?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Eisenkot slams Netanyahu’s ‘racist’ campaign against Palestinian Israelis",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3878.95,
+            "target": 3889.5,
+            "max_dd_usd": 0.23,
+            "atr_ratio_at_signal": 0.25,
+            "daily_atr_at_signal": 62.76,
+            "eur_chg_at_signal": -0.24,
+            "nas_chg_at_signal": 0.0,
+            "created_ts": 1794593062.0,
+            "date": "First Reported: 2026-11-13 18:04 UTC",
             "fail_reason": ""
         }
     }

@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 715,
+    "total_evaluated": 718,
     "hits": 487,
-    "misses": 228,
-    "win_rate": 68.1,
-    "active_signals": 22,
+    "misses": 231,
+    "win_rate": 67.8,
+    "active_signals": 26,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 409,
-                "misses": 195,
-                "total": 604,
-                "win_rate": 67.7,
-                "avg_dd": 24.11
+                "misses": 198,
+                "total": 607,
+                "win_rate": 67.4,
+                "avg_dd": 24.12
             },
             "Bearish": {
                 "hits": 78,
@@ -24,10 +24,10 @@
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
                 "hits": 460,
-                "misses": 214,
-                "total": 674,
-                "win_rate": 68.2,
-                "avg_dd": 22.6
+                "misses": 217,
+                "total": 677,
+                "win_rate": 67.9,
+                "avg_dd": 22.61
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -61,10 +61,10 @@
             },
             "Against USD Headwind": {
                 "hits": 244,
-                "misses": 49,
-                "total": 293,
-                "win_rate": 83.3,
-                "avg_dd": 20.89
+                "misses": 52,
+                "total": 296,
+                "win_rate": 82.4,
+                "avg_dd": 20.93
             },
             "USD Neutral / Legacy": {
                 "hits": 215,
@@ -98,10 +98,10 @@
             },
             "Commodities & Energy": {
                 "hits": 91,
-                "misses": 39,
-                "total": 130,
-                "win_rate": 70.0,
-                "avg_dd": 26.75
+                "misses": 42,
+                "total": 133,
+                "win_rate": 68.4,
+                "avg_dd": 26.72
             }
         },
         "by_confidence": {
@@ -114,10 +114,10 @@
             },
             "High (65-74%)": {
                 "hits": 58,
-                "misses": 13,
-                "total": 71,
-                "win_rate": 81.7,
-                "avg_dd": 21.41
+                "misses": 16,
+                "total": 74,
+                "win_rate": 78.4,
+                "avg_dd": 21.58
             },
             "Extreme (>=75%)": {
                 "hits": 4,
@@ -11461,7 +11461,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/found-gold-corp-nfgc-q3-010424911.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "New Found Gold Corp (NFGC) (Q3 2026) Earnings Call Highlights: Record Revenue of $41. ...",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -11479,7 +11479,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/pdi-gold-2-australian-founder-002222410.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "PDI Gold And 2 Australian Founder Led Growth Stocks",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -11695,7 +11695,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/bp-lse-bp-stock-could-001744959.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "BP (LSE:BP.) Stock Could Trade At A Discount As Its 116% Run Continues",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -12351,7 +12351,7 @@
             "prob": 68,
             "entry_price": 3884.18,
             "target": 3899.51,
-            "max_dd_usd": 11.09,
+            "max_dd_usd": 14.65,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 61.18,
             "eur_chg_at_signal": -0.24,
@@ -12369,7 +12369,7 @@
             "prob": 74,
             "entry_price": 3885.51,
             "target": 3899.51,
-            "max_dd_usd": 12.43,
+            "max_dd_usd": 15.98,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 61.18,
             "eur_chg_at_signal": -0.24,
@@ -12423,7 +12423,7 @@
             "prob": 68,
             "entry_price": 3885.51,
             "target": 3908.92,
-            "max_dd_usd": 12.43,
+            "max_dd_usd": 15.98,
             "atr_ratio_at_signal": 0.17,
             "daily_atr_at_signal": 61.18,
             "eur_chg_at_signal": -0.24,
@@ -12765,7 +12765,7 @@
             "prob": 55,
             "entry_price": 3878.95,
             "target": 3889.5,
-            "max_dd_usd": 5.86,
+            "max_dd_usd": 9.42,
             "atr_ratio_at_signal": 0.25,
             "daily_atr_at_signal": 62.76,
             "eur_chg_at_signal": -0.24,
@@ -12783,7 +12783,7 @@
             "prob": 72,
             "entry_price": 3874.88,
             "target": 3889.57,
-            "max_dd_usd": 1.8,
+            "max_dd_usd": 5.35,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 57.45,
             "eur_chg_at_signal": -0.3,
@@ -12801,7 +12801,7 @@
             "prob": 78,
             "entry_price": 3874.88,
             "target": 3860.83,
-            "max_dd_usd": 6.72,
+            "max_dd_usd": 9.95,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 57.45,
             "eur_chg_at_signal": -0.3,
@@ -12819,7 +12819,7 @@
             "prob": 70,
             "entry_price": 3874.88,
             "target": 3899.77,
-            "max_dd_usd": 1.8,
+            "max_dd_usd": 5.35,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 57.45,
             "eur_chg_at_signal": -0.3,
@@ -12837,7 +12837,7 @@
             "prob": 67,
             "entry_price": 3880.84,
             "target": 3889.57,
-            "max_dd_usd": 7.76,
+            "max_dd_usd": 11.31,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 57.45,
             "eur_chg_at_signal": -0.3,
@@ -12898,6 +12898,132 @@
             "nas_chg_at_signal": -1.39,
             "created_ts": 1794585825.0,
             "date": "First Reported: 2026-11-13 16:03 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-110151154.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Stock market today: Dow, S&P 500, Nasdaq futures edge higher as Nvidia tumult deepens",
+            "source": "Yahoo Finance Oil",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 78,
+            "entry_price": 3884.68,
+            "target": 3899.89,
+            "max_dd_usd": 15.15,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794606593.0,
+            "date": "First Reported: 2026-11-13 11:01 UTC | Last Update: 2026-11-13 21:49 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/flex-flex-pull-off-plan-213309378.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Can Flex (FLEX) Pull Off Its Plan for Its Fastest-Growing Unit?",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 80,
+            "entry_price": 3884.68,
+            "target": 3899.89,
+            "max_dd_usd": 15.15,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794605631.0,
+            "date": "First Reported: 2026-11-13 21:33 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/3-indian-energy-infrastructure-stocks-211158656.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "3 Indian Energy Infrastructure Stocks With Direct Exposure To Oil Storage Expansion",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3884.68,
+            "target": 3890.03,
+            "max_dd_usd": 15.15,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794604318.0,
+            "date": "First Reported: 2026-11-13 21:11 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/deal-behind-mizuho-downgrade-surgery-211048170.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "The Deal Behind Mizuho’s Downgrade of Surgery Partners (SGRY)",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3884.68,
+            "target": 3899.89,
+            "max_dd_usd": 15.15,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794604248.0,
+            "date": "First Reported: 2026-11-13 21:10 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/news/activists-demand-end-transfer-military-materials-israel-through-new-yorks-jfk-airport": {
+            "status": "ACTIVE",
+            "headline": "Activists demand end to transfer of military materials to Israel through New York's JFK Ai",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 63,
+            "entry_price": 3884.68,
+            "target": 3890.03,
+            "max_dd_usd": 15.15,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794603978.0,
+            "date": "First Reported: 2026-11-13 21:06 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/tin-backwardation-widens-on-lme-as-exchange-stocks-fall-60-since-june-93CH-5026445": {
+            "status": "ACTIVE",
+            "headline": "Tin backwardation widens on LME as exchange stocks fall 60% since June",
+            "source": "Investing.com",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3878.43,
+            "target": 3890.03,
+            "max_dd_usd": 8.9,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794601942.0,
+            "date": "First Reported: 2026-11-13 20:32 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/stock-market-news/oil-market-positioning-risks-surplus-shipping-attacks-and-spillover-into-rates-and-equities-93CH-5026424": {
+            "status": "ACTIVE",
+            "headline": "Oil market positioning risks: surplus, shipping attacks, and spillover into rates and equi",
+            "source": "Investing.com",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3878.43,
+            "target": 3890.03,
+            "max_dd_usd": 8.9,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794600898.0,
+            "date": "First Reported: 2026-11-13 20:14 UTC",
             "fail_reason": ""
         }
     }

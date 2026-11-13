@@ -1,32 +1,32 @@
 {
-    "total_evaluated": 719,
-    "hits": 488,
-    "misses": 231,
-    "win_rate": 67.9,
-    "active_signals": 30,
+    "total_evaluated": 724,
+    "hits": 491,
+    "misses": 233,
+    "win_rate": 67.8,
+    "active_signals": 34,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 410,
-                "misses": 198,
-                "total": 608,
-                "win_rate": 67.4,
-                "avg_dd": 24.08
+                "hits": 412,
+                "misses": 200,
+                "total": 612,
+                "win_rate": 67.3,
+                "avg_dd": 24.1
             },
             "Bearish": {
-                "hits": 78,
+                "hits": 79,
                 "misses": 33,
-                "total": 111,
-                "win_rate": 70.3,
-                "avg_dd": 19.02
+                "total": 112,
+                "win_rate": 70.5,
+                "avg_dd": 18.9
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 461,
-                "misses": 217,
-                "total": 678,
-                "win_rate": 68.0,
+                "hits": 464,
+                "misses": 219,
+                "total": 683,
+                "win_rate": 67.9,
                 "avg_dd": 22.58
             },
             "Moderate (0.8x-1.2x ATR)": {
@@ -53,34 +53,34 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 28,
+                "hits": 29,
                 "misses": 1,
-                "total": 29,
-                "win_rate": 96.6,
-                "avg_dd": 18.97
+                "total": 30,
+                "win_rate": 96.7,
+                "avg_dd": 18.67
             },
             "Against USD Headwind": {
-                "hits": 244,
-                "misses": 52,
-                "total": 296,
-                "win_rate": 82.4,
-                "avg_dd": 20.93
+                "hits": 245,
+                "misses": 54,
+                "total": 299,
+                "win_rate": 81.9,
+                "avg_dd": 21.03
             },
             "USD Neutral / Legacy": {
-                "hits": 216,
+                "hits": 217,
                 "misses": 178,
-                "total": 394,
-                "win_rate": 54.8,
-                "avg_dd": 26.82
+                "total": 395,
+                "win_rate": 54.9,
+                "avg_dd": 26.78
             }
         },
         "by_category": {
             "Geopolitics & War": {
                 "hits": 232,
-                "misses": 136,
-                "total": 368,
-                "win_rate": 63.0,
-                "avg_dd": 25.7
+                "misses": 137,
+                "total": 369,
+                "win_rate": 62.9,
+                "avg_dd": 25.76
             },
             "Fed, Rates & Macro": {
                 "hits": 31,
@@ -90,34 +90,34 @@
                 "avg_dd": 13.52
             },
             "Tech, AI & Equities": {
-                "hits": 134,
+                "hits": 137,
                 "misses": 46,
-                "total": 180,
-                "win_rate": 74.4,
-                "avg_dd": 18.59
+                "total": 183,
+                "win_rate": 74.9,
+                "avg_dd": 18.42
             },
             "Commodities & Energy": {
                 "hits": 91,
-                "misses": 42,
-                "total": 133,
-                "win_rate": 68.4,
-                "avg_dd": 26.72
+                "misses": 43,
+                "total": 134,
+                "win_rate": 67.9,
+                "avg_dd": 26.86
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 426,
-                "misses": 214,
-                "total": 640,
-                "win_rate": 66.6,
-                "avg_dd": 23.82
+                "misses": 215,
+                "total": 641,
+                "win_rate": 66.5,
+                "avg_dd": 23.86
             },
             "High (65-74%)": {
-                "hits": 58,
-                "misses": 16,
-                "total": 74,
-                "win_rate": 78.4,
-                "avg_dd": 21.58
+                "hits": 61,
+                "misses": 17,
+                "total": 78,
+                "win_rate": 78.2,
+                "avg_dd": 21.41
             },
             "Extreme (>=75%)": {
                 "hits": 4,
@@ -11425,7 +11425,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/citgo-reports-record-third-quarter-130000259.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "CITGO Reports Record Third-Quarter 2026 Results",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -11443,7 +11443,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/13/trump-moots-toppling-cuba-authorities-before-leaving-office?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Trump moots toppling Cuba authorities before leaving office",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -12775,14 +12775,14 @@
             "fail_reason": ""
         },
         "https://www.trefis.com/stock/nvda/articles/624815/nvidia-is-6-1-of-your-s-p-500-fund-what-is-your-number/2026-11-13?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Nvidia Is 6.1% Of Your S&P 500 Fund. What Is Your Number?",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 72,
+            "prob": 74,
             "entry_price": 3874.88,
-            "target": 3889.57,
+            "target": 3880.83,
             "max_dd_usd": 5.35,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 57.45,
@@ -12793,14 +12793,14 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/us-equity-markets-end-lower-211137536.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "US Equity Markets End Lower After Crude Oil Prices Rise, Nvidia CEO Resigns",
             "source": "Yahoo Finance Oil",
             "category": "Tech, AI & Equities",
             "impact": "Bearish",
-            "prob": 78,
+            "prob": 70,
             "entry_price": 3874.88,
-            "target": 3860.83,
+            "target": 3871.78,
             "max_dd_usd": 9.95,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 57.45,
@@ -12834,7 +12834,7 @@
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
             "impact": "Bullish",
-            "prob": 67,
+            "prob": 55,
             "entry_price": 3880.84,
             "target": 3889.57,
             "max_dd_usd": 11.31,
@@ -12901,14 +12901,14 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-110151154.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Stock market today: Dow, S&P 500, Nasdaq futures edge higher as Nvidia tumult deepens",
             "source": "Yahoo Finance Oil",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 78,
+            "prob": 68,
             "entry_price": 3884.68,
-            "target": 3899.89,
+            "target": 3880.77,
             "max_dd_usd": 15.15,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -12924,9 +12924,9 @@
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 80,
+            "prob": 81,
             "entry_price": 3884.68,
-            "target": 3899.89,
+            "target": 3889.57,
             "max_dd_usd": 15.15,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -12942,9 +12942,9 @@
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
             "impact": "Bullish",
-            "prob": 68,
+            "prob": 64,
             "entry_price": 3884.68,
-            "target": 3890.03,
+            "target": 3898.95,
             "max_dd_usd": 15.15,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -12978,9 +12978,9 @@
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 63,
+            "prob": 55,
             "entry_price": 3884.68,
-            "target": 3890.03,
+            "target": 3889.81,
             "max_dd_usd": 15.15,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13014,9 +13014,9 @@
             "source": "Investing.com",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 65,
+            "prob": 68,
             "entry_price": 3878.43,
-            "target": 3899.66,
+            "target": 3889.81,
             "max_dd_usd": 8.9,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13114,6 +13114,168 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794582136.0,
             "date": "First Reported: 2026-11-13 15:02 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/heliostar-metals-ltd-hstxf-q3-230434580.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Heliostar Metals Ltd (HSTXF) (Q3 2026) Earnings Call Highlights: Record Revenue, Strong Ca",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.81,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794611074.0,
+            "date": "First Reported: 2026-11-13 23:04 UTC",
+            "fail_reason": ""
+        },
+        "https://www.cnbc.com/2026/11/12/nscale-updates-ipo-prospectus-that-shows-widening-loss.html": {
+            "status": "ACTIVE",
+            "headline": "Nscale updates IPO prospectus that shows widening loss",
+            "source": "CNBC Tech & AI",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 74,
+            "entry_price": 3884.68,
+            "target": 3898.95,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794610496.0,
+            "date": "First Reported: 2026-11-12 23:12 UTC | Last Update: 2026-11-13 22:54 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "FAA grounds US flights nationwide after ‘communication issue’",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3884.68,
+            "target": 3898.95,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794609840.0,
+            "date": "First Reported: 2026-11-13 21:32 UTC | Last Update: 2026-11-13 22:44 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/us-responds-suspected-drone-activity-over-uk-air-base-used-iran-strikes": {
+            "status": "ACTIVE",
+            "headline": "US responds to suspected drone activity over UK air base used in Iran strikes",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3898.95,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794609740.0,
+            "date": "First Reported: 2026-11-13 22:42 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/us-extends-shipping-law-waiver-90-days-to-allow-freer-movement-of-oil-commodities-5026364": {
+            "status": "ACTIVE",
+            "headline": "US extends shipping law waiver 90 days, to allow freer movement of oil, commodities",
+            "source": "Investing.com",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3889.57,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794608676.0,
+            "date": "First Reported: 2026-11-13 19:12 UTC | Last Update: 2026-11-13 22:24 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/rosenblatt-securities-thinks-market-misses-213235021.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "What Rosenblatt Securities Thinks the Market Misses on SK Hynix (SKHY)",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 78,
+            "entry_price": 3884.68,
+            "target": 3889.57,
+            "max_dd_usd": 15.15,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794605611.0,
+            "date": "First Reported: 2026-11-13 21:32 UTC | Last Update: 2026-11-13 21:33 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/why-bofa-calls-coreweave-crwv-213023720.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Why BofA Calls CoreWeave (CRWV) Funding Needs “Manageable”",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3889.57,
+            "max_dd_usd": 15.15,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794605423.0,
+            "date": "First Reported: 2026-11-13 21:30 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/news/why-erdogan-son-meeting-lebanons-top-leaders": {
+            "status": "ACTIVE",
+            "headline": "Why is Erdogan's son meeting Lebanon’s top leaders?",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3880.84,
+            "target": 3889.57,
+            "max_dd_usd": 11.31,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794595984.0,
+            "date": "First Reported: 2026-11-13 18:53 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/13/at-least-10-killed-in-guinea-in-crackdown-on-gold-mining?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "At least 10 killed in Guinea in crackdown on gold mining",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3880.84,
+            "target": 3899.62,
+            "max_dd_usd": 11.31,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794595485.0,
+            "date": "First Reported: 2026-11-13 18:44 UTC",
             "fail_reason": ""
         }
     }

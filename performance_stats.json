@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 683,
-    "hits": 458,
+    "total_evaluated": 689,
+    "hits": 464,
     "misses": 225,
-    "win_rate": 67.1,
+    "win_rate": 67.3,
     "active_signals": 17,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 386,
+                "hits": 391,
                 "misses": 193,
-                "total": 579,
-                "win_rate": 66.7,
-                "avg_dd": 24.88
+                "total": 584,
+                "win_rate": 67.0,
+                "avg_dd": 24.73
             },
             "Bearish": {
-                "hits": 72,
+                "hits": 73,
                 "misses": 32,
-                "total": 104,
-                "win_rate": 69.2,
-                "avg_dd": 19.22
+                "total": 105,
+                "win_rate": 69.5,
+                "avg_dd": 19.19
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 431,
+                "hits": 437,
                 "misses": 211,
-                "total": 642,
-                "win_rate": 67.1,
-                "avg_dd": 23.33
+                "total": 648,
+                "win_rate": 67.4,
+                "avg_dd": 23.19
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -53,18 +53,18 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 22,
+                "hits": 23,
                 "misses": 0,
-                "total": 22,
+                "total": 23,
                 "win_rate": 100.0,
-                "avg_dd": 19.53
+                "avg_dd": 19.42
             },
             "Against USD Headwind": {
-                "hits": 221,
+                "hits": 226,
                 "misses": 47,
-                "total": 268,
-                "win_rate": 82.5,
-                "avg_dd": 21.97
+                "total": 273,
+                "win_rate": 82.8,
+                "avg_dd": 21.77
             },
             "USD Neutral / Legacy": {
                 "hits": 215,
@@ -76,18 +76,18 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 216,
+                "hits": 218,
                 "misses": 135,
-                "total": 351,
-                "win_rate": 61.5,
-                "avg_dd": 26.68
+                "total": 353,
+                "win_rate": 61.8,
+                "avg_dd": 26.59
             },
             "Fed, Rates & Macro": {
-                "hits": 27,
+                "hits": 28,
                 "misses": 7,
-                "total": 34,
-                "win_rate": 79.4,
-                "avg_dd": 13.9
+                "total": 35,
+                "win_rate": 80.0,
+                "avg_dd": 13.71
             },
             "Tech, AI & Equities": {
                 "hits": 129,
@@ -97,27 +97,27 @@
                 "avg_dd": 19.07
             },
             "Commodities & Energy": {
-                "hits": 86,
+                "hits": 89,
                 "misses": 37,
-                "total": 123,
-                "win_rate": 69.9,
-                "avg_dd": 27.4
+                "total": 126,
+                "win_rate": 70.6,
+                "avg_dd": 26.93
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 402,
+                "hits": 406,
                 "misses": 213,
-                "total": 615,
-                "win_rate": 65.4,
-                "avg_dd": 24.59
+                "total": 619,
+                "win_rate": 65.6,
+                "avg_dd": 24.49
             },
             "High (65-74%)": {
-                "hits": 52,
+                "hits": 54,
                 "misses": 11,
-                "total": 63,
-                "win_rate": 82.5,
-                "avg_dd": 22.11
+                "total": 65,
+                "win_rate": 83.1,
+                "avg_dd": 21.67
             },
             "Extreme (>=75%)": {
                 "hits": 4,
@@ -11433,7 +11433,7 @@
             "prob": 70,
             "entry_price": 3910.84,
             "target": 3938.76,
-            "max_dd_usd": 24.26,
+            "max_dd_usd": 38.11,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11451,7 +11451,7 @@
             "prob": 62,
             "entry_price": 3910.84,
             "target": 3938.76,
-            "max_dd_usd": 24.26,
+            "max_dd_usd": 38.11,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11469,7 +11469,7 @@
             "prob": 68,
             "entry_price": 3908.01,
             "target": 3938.76,
-            "max_dd_usd": 23.75,
+            "max_dd_usd": 35.28,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11487,7 +11487,7 @@
             "prob": 74,
             "entry_price": 3885.72,
             "target": 3929.24,
-            "max_dd_usd": 6.45,
+            "max_dd_usd": 12.99,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11523,7 +11523,7 @@
             "prob": 68,
             "entry_price": 3904.49,
             "target": 3928.95,
-            "max_dd_usd": 17.91,
+            "max_dd_usd": 31.76,
             "atr_ratio_at_signal": 0.32,
             "daily_atr_at_signal": 54.27,
             "eur_chg_at_signal": -0.25,
@@ -11559,7 +11559,7 @@
             "prob": 62,
             "entry_price": 3912.68,
             "target": 3928.95,
-            "max_dd_usd": 26.1,
+            "max_dd_usd": 39.95,
             "atr_ratio_at_signal": 0.32,
             "daily_atr_at_signal": 54.27,
             "eur_chg_at_signal": -0.25,
@@ -11703,7 +11703,7 @@
             "prob": 70,
             "entry_price": 3885.72,
             "target": 3929.01,
-            "max_dd_usd": 6.45,
+            "max_dd_usd": 12.99,
             "atr_ratio_at_signal": 0.3,
             "daily_atr_at_signal": 54.27,
             "eur_chg_at_signal": -0.25,
@@ -11721,7 +11721,7 @@
             "prob": 63,
             "entry_price": 3880.76,
             "target": 3929.01,
-            "max_dd_usd": 5.53,
+            "max_dd_usd": 8.03,
             "atr_ratio_at_signal": 0.3,
             "daily_atr_at_signal": 54.27,
             "eur_chg_at_signal": -0.25,
@@ -11739,7 +11739,7 @@
             "prob": 68,
             "entry_price": 3880.76,
             "target": 3929.01,
-            "max_dd_usd": 5.53,
+            "max_dd_usd": 8.03,
             "atr_ratio_at_signal": 0.3,
             "daily_atr_at_signal": 54.27,
             "eur_chg_at_signal": -0.25,
@@ -11883,7 +11883,7 @@
             "prob": 78,
             "entry_price": 3895.34,
             "target": 3919.97,
-            "max_dd_usd": 8.76,
+            "max_dd_usd": 22.61,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -11919,7 +11919,7 @@
             "prob": 72,
             "entry_price": 3895.34,
             "target": 3909.35,
-            "max_dd_usd": 8.76,
+            "max_dd_usd": 22.61,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -11955,7 +11955,7 @@
             "prob": 68,
             "entry_price": 3901.57,
             "target": 3909.32,
-            "max_dd_usd": 14.99,
+            "max_dd_usd": 28.84,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -11973,7 +11973,7 @@
             "prob": 65,
             "entry_price": 3901.57,
             "target": 3909.32,
-            "max_dd_usd": 14.99,
+            "max_dd_usd": 28.84,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -11991,7 +11991,7 @@
             "prob": 75,
             "entry_price": 3901.57,
             "target": 3919.97,
-            "max_dd_usd": 14.99,
+            "max_dd_usd": 28.84,
             "atr_ratio_at_signal": 0.1,
             "daily_atr_at_signal": 53.58,
             "eur_chg_at_signal": -0.35,
@@ -12189,7 +12189,7 @@
             "prob": 62,
             "entry_price": 3889.53,
             "target": 3909.35,
-            "max_dd_usd": 0.58,
+            "max_dd_usd": 16.8,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 54.58,
             "eur_chg_at_signal": -0.32,
@@ -12199,7 +12199,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/13/pakistan-military-reports-it-killed-74-terrorists-during-raids?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Pakistan military reports it killed 74 ‘terrorists’ during raids",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -12207,7 +12207,7 @@
             "prob": 55,
             "entry_price": 3893.04,
             "target": 3899.19,
-            "max_dd_usd": 6.46,
+            "max_dd_usd": 20.31,
             "atr_ratio_at_signal": 0.13,
             "daily_atr_at_signal": 54.58,
             "eur_chg_at_signal": -0.32,
@@ -12232,6 +12232,114 @@
             "nas_chg_at_signal": 0.75,
             "created_ts": 1794568969.0,
             "date": "First Reported: 2026-11-13 11:22 UTC",
+            "fail_reason": ""
+        },
+        "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html": {
+            "status": "ACTIVE",
+            "headline": "Wholesale prices rose 0.3% in October, putting annual rate at 6.5%, the highest in nearly ",
+            "source": "CNBC Economy",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bearish",
+            "prob": 68,
+            "entry_price": 3882.25,
+            "target": 3870.23,
+            "max_dd_usd": 1.43,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 59.15,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.23,
+            "created_ts": 1794578411.0,
+            "date": "First Reported: 2026-11-13 14:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketwatch.com/story/midterm-elections-provided-the-hyperscalers-with-the-excuse-they-needed-to-cut-back-on-spending-says-jefferies-strategist-de6349ec?mod=mw_rss_topstories": {
+            "status": "HIT",
+            "headline": "Midterm elections provided the hyperscalers with the excuse they needed to cut back on spe",
+            "source": "MarketWatch Macro",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 3881.11,
+            "target": 3890.2,
+            "max_dd_usd": 8.38,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 59.15,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.23,
+            "created_ts": 1794577380.0,
+            "date": "First Reported: 2026-11-13 13:43 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-rabbi-rules-kill-politicians-cooperating-arab-parties": {
+            "status": "HIT",
+            "headline": "Israeli rabbi says politicians cooperating with Arab parties can be killed",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 64,
+            "entry_price": 3881.11,
+            "target": 3899.45,
+            "max_dd_usd": 8.38,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 59.15,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.23,
+            "created_ts": 1794576882.0,
+            "date": "First Reported: 2026-11-13 13:34 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/exclusiveiraq-turns-to-trucks-to-export-oil-in-overland-syrian-route-revival-5025456": {
+            "status": "HIT",
+            "headline": "Exclusive-Iraq turns to trucks to export oil in overland Syrian route revival",
+            "source": "Investing.com",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3881.11,
+            "target": 3890.2,
+            "max_dd_usd": 8.38,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 59.15,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.23,
+            "created_ts": 1794576639.0,
+            "date": "First Reported: 2026-11-13 13:30 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/real-estate/articles/us-home-equity-debt-explodes-131500643.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "US Home-equity debt explodes $23B in 3 months, biggest jump since the housing bubble. Is y",
+            "source": "Yahoo Finance Gold",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3881.11,
+            "target": 3899.45,
+            "max_dd_usd": 8.38,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 59.15,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.23,
+            "created_ts": 1794575700.0,
+            "date": "First Reported: 2026-11-13 13:15 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/oil-above-85-chord-energy-124300294.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Oil Above $85, Chord Energy Up 58% in a Year: Is It Still a Buy?",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3889.12,
+            "target": 3881.0,
+            "max_dd_usd": 16.85,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 59.15,
+            "eur_chg_at_signal": -0.13,
+            "nas_chg_at_signal": 0.23,
+            "created_ts": 1794574260.0,
+            "date": "First Reported: 2026-11-13 12:43 UTC | Last Update: 2026-11-13 12:51 UTC",
             "fail_reason": ""
         }
     }

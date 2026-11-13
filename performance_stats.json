@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 641,
-    "hits": 436,
-    "misses": 205,
+    "total_evaluated": 644,
+    "hits": 438,
+    "misses": 206,
     "win_rate": 68.0,
-    "active_signals": 33,
+    "active_signals": 31,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 369,
-                "misses": 173,
-                "total": 542,
-                "win_rate": 68.1,
-                "avg_dd": 23.29
+                "hits": 370,
+                "misses": 174,
+                "total": 544,
+                "win_rate": 68.0,
+                "avg_dd": 23.43
             },
             "Bearish": {
-                "hits": 67,
+                "hits": 68,
                 "misses": 32,
-                "total": 99,
-                "win_rate": 67.7,
-                "avg_dd": 18.4
+                "total": 100,
+                "win_rate": 68.0,
+                "avg_dd": 18.74
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 409,
-                "misses": 192,
-                "total": 601,
-                "win_rate": 68.1,
-                "avg_dd": 21.6
+                "hits": 411,
+                "misses": 193,
+                "total": 604,
+                "win_rate": 68.0,
+                "avg_dd": 21.77
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -53,34 +53,34 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 17,
+                "hits": 18,
                 "misses": 0,
-                "total": 17,
+                "total": 18,
                 "win_rate": 100.0,
-                "avg_dd": 16.78
+                "avg_dd": 17.99
             },
             "Against USD Headwind": {
-                "hits": 206,
+                "hits": 207,
                 "misses": 46,
-                "total": 252,
-                "win_rate": 81.7,
-                "avg_dd": 23.0
+                "total": 253,
+                "win_rate": 81.8,
+                "avg_dd": 22.93
             },
             "USD Neutral / Legacy": {
                 "hits": 213,
-                "misses": 159,
-                "total": 372,
-                "win_rate": 57.3,
-                "avg_dd": 22.86
+                "misses": 160,
+                "total": 373,
+                "win_rate": 57.1,
+                "avg_dd": 23.18
             }
         },
         "by_category": {
             "Geopolitics & War": {
                 "hits": 205,
-                "misses": 125,
-                "total": 330,
-                "win_rate": 62.1,
-                "avg_dd": 25.91
+                "misses": 126,
+                "total": 331,
+                "win_rate": 61.9,
+                "avg_dd": 26.2
             },
             "Fed, Rates & Macro": {
                 "hits": 27,
@@ -90,11 +90,11 @@
                 "avg_dd": 13.9
             },
             "Tech, AI & Equities": {
-                "hits": 123,
+                "hits": 125,
                 "misses": 42,
-                "total": 165,
-                "win_rate": 74.5,
-                "avg_dd": 16.58
+                "total": 167,
+                "win_rate": 74.9,
+                "avg_dd": 16.65
             },
             "Commodities & Energy": {
                 "hits": 81,
@@ -107,17 +107,17 @@
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 388,
-                "misses": 194,
-                "total": 582,
-                "win_rate": 66.7,
-                "avg_dd": 23.03
+                "misses": 195,
+                "total": 583,
+                "win_rate": 66.6,
+                "avg_dd": 23.2
             },
             "High (65-74%)": {
-                "hits": 46,
+                "hits": 48,
                 "misses": 10,
-                "total": 56,
-                "win_rate": 82.1,
-                "avg_dd": 21.02
+                "total": 58,
+                "win_rate": 82.8,
+                "avg_dd": 21.04
             },
             "Extreme (>=75%)": {
                 "hits": 2,
@@ -9579,7 +9579,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/major-publisher-release-book-deep-state-netanyahus-son": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Yair Netanyahu to release book on 'deep state' war against his father",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -10327,14 +10327,14 @@
             "fail_reason": ""
         },
         "https://www.usatoday.com/story/tech/2026/11/12/nvidia-appoints-colette-kress-as-interim-ceo/92740030007/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Who is Colette Kress, Nvidia's interim CEO?",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bearish",
-            "prob": 58,
+            "prob": 70,
             "entry_price": 3884.57,
-            "target": 3870.51,
+            "target": 3909.6,
             "max_dd_usd": 38.52,
             "atr_ratio_at_signal": 0.0,
             "daily_atr_at_signal": 82.77,
@@ -11433,7 +11433,7 @@
             "prob": 70,
             "entry_price": 3910.84,
             "target": 3938.76,
-            "max_dd_usd": 19.0,
+            "max_dd_usd": 22.37,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11451,7 +11451,7 @@
             "prob": 62,
             "entry_price": 3910.84,
             "target": 3938.76,
-            "max_dd_usd": 19.0,
+            "max_dd_usd": 22.37,
             "atr_ratio_at_signal": 0.43,
             "daily_atr_at_signal": 76.47,
             "eur_chg_at_signal": -0.13,
@@ -11523,7 +11523,7 @@
             "prob": 68,
             "entry_price": 3904.49,
             "target": 3928.95,
-            "max_dd_usd": 12.65,
+            "max_dd_usd": 16.02,
             "atr_ratio_at_signal": 0.32,
             "daily_atr_at_signal": 54.27,
             "eur_chg_at_signal": -0.25,
@@ -11559,7 +11559,7 @@
             "prob": 62,
             "entry_price": 3912.68,
             "target": 3928.95,
-            "max_dd_usd": 20.84,
+            "max_dd_usd": 24.21,
             "atr_ratio_at_signal": 0.32,
             "daily_atr_at_signal": 54.27,
             "eur_chg_at_signal": -0.25,
@@ -11764,6 +11764,24 @@
             "nas_chg_at_signal": 0.25,
             "created_ts": 1794525620.0,
             "date": "First Reported: 2026-11-12 23:20 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/12/if-an-ai-bubble-triggers-a-bear-market-history-say/?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "If an AI Bubble Triggers a Bear Market, History Says This Is the Best Move Investors Can M",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3912.68,
+            "target": 3920.12,
+            "max_dd_usd": 5.06,
+            "atr_ratio_at_signal": 0.36,
+            "daily_atr_at_signal": 56.07,
+            "eur_chg_at_signal": -0.22,
+            "nas_chg_at_signal": 0.37,
+            "created_ts": 1794543600.0,
+            "date": "First Reported: 2026-11-13 04:20 UTC",
             "fail_reason": ""
         }
     }

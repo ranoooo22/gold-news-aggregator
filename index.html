@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XAU/USD Intelligence Terminal</title>
+    <title>GMIT // XAU — Gold & Macro Intelligence Terminal</title>
     <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
     <style>
         :root {
@@ -20,9 +20,7 @@
             --bb-cyan: #00b4d8;
             --bb-cyan-dim: rgba(0, 180, 216, 0.14);
             --bull-green: #00e676;
-            --bull-bg: rgba(0, 230, 118, 0.08);
             --bear-red: #ff3b30;
-            --bear-bg: rgba(255, 59, 48, 0.08);
             --radius-lg: 6px;
             --radius-md: 4px;
             --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
@@ -256,7 +254,7 @@
         /* 3. TERMINAL COCKPIT: CHART LEFT + HUD RIGHT */
         .cockpit-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1fr) 440px;
+            grid-template-columns: minmax(0, 1fr) 420px;
             gap: 12px;
             align-items: start;
         }
@@ -281,7 +279,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 14px;
+            gap: 16px;
             font-family: var(--font-mono);
             font-size: 0.71rem;
             color: var(--text-secondary);
@@ -329,7 +327,7 @@
             border: 1px solid var(--border-color);
         }
 
-        /* Multi-Source Tug-of-War Bars */
+        /* Positioning & Taker Bars */
         .tug-group { margin-bottom: 9px; }
         .tug-top-labels {
             display: flex;
@@ -403,7 +401,7 @@
             color: var(--bb-amber);
         }
 
-        /* 3-Source Vertical Liquidity Price Ladder (OANDA + OKX L2 + COMEX) */
+        /* OANDA + COMEX Vertical Liquidity Price Ladder */
         .ladder-container {
             display: flex;
             flex-direction: column;
@@ -472,13 +470,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.65rem;
+            font-size: 0.66rem;
             color: var(--text-secondary);
             padding-top: 2px;
             border-top: 1px dashed rgba(255, 255, 255, 0.07);
         }
         .split-oanda { color: var(--bb-cyan); font-weight: 700; }
-        .split-okx { color: #38bdf8; font-weight: 700; }
         .split-comex { color: #c084fc; font-weight: 700; }
 
         .ladder-spot-divider {
@@ -496,7 +493,7 @@
             margin: 2px 0;
         }
 
-        /* NEWS TAB & ACCORDION CARDS */
+        /* NEWS TAB & STREAMLINED ACCORDION CARDS */
         .controls-panel {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -528,21 +525,6 @@
         }
         .search-input { min-width: 210px; }
         .search-input:focus, select:focus { border-color: var(--bb-amber); }
-        .filter-checkbox-wrap {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--bg-subtle);
-            padding: 6px 10px;
-            border-radius: var(--radius-md);
-            border: 1px solid var(--border-color);
-            font-family: var(--font-mono);
-            font-size: 0.74rem;
-            color: var(--text-secondary);
-            cursor: pointer;
-            user-select: none;
-        }
-        .filter-checkbox-wrap input { cursor: pointer; accent-color: var(--bb-amber); }
 
         .feed-stats-bar {
             display: flex;
@@ -716,28 +698,11 @@
 
         .card-accordion-body {
             display: none;
-            padding: 0 14px 14px 14px;
+            padding: 12px 14px 14px 14px;
             border-top: 1px solid var(--border-color);
             background: var(--bg-card);
         }
         .news-card.is-expanded .card-accordion-body { display: block; }
-
-        .event-time-banner {
-            background-color: var(--bg-subtle);
-            color: var(--bb-amber);
-            border: 1px solid var(--border-color);
-            border-left: 3px solid var(--bb-amber);
-            padding: 6px 10px;
-            border-radius: var(--radius-md);
-            font-family: var(--font-mono);
-            font-size: 0.74rem;
-            margin: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
 
         .summary-box {
             background-color: var(--bg-subtle);
@@ -747,7 +712,7 @@
             border: 1px solid var(--border-color);
         }
         .structured-data { font-size: 0.85rem; line-height: 1.52; color: var(--text-primary); }
-        .data-block { margin-bottom: 8px; }
+        .data-block { margin-bottom: 9px; }
         .data-block:last-child { margin-bottom: 0; }
         .data-label {
             font-family: var(--font-mono);
@@ -757,42 +722,6 @@
             font-size: 0.68rem;
             display: block;
             margin-bottom: 2px;
-        }
-
-        .pro-con-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 9px;
-            margin: 10px 0;
-        }
-        .bull-box {
-            background-color: var(--bull-bg);
-            border: 1px solid rgba(0, 230, 118, 0.25);
-            border-left: 3px solid var(--bull-green);
-            padding: 8px 10px;
-            border-radius: var(--radius-md);
-            font-size: 0.83rem;
-            line-height: 1.45;
-        }
-        .bear-box {
-            background-color: var(--bear-bg);
-            border: 1px solid rgba(255, 59, 48, 0.25);
-            border-left: 3px solid var(--bear-red);
-            padding: 8px 10px;
-            border-radius: var(--radius-md);
-            font-size: 0.83rem;
-            line-height: 1.45;
-        }
-        .calibration-box {
-            background-color: var(--bb-cyan-dim);
-            border: 1px solid rgba(0, 180, 216, 0.3);
-            border-left: 3px solid var(--bb-cyan);
-            padding: 8px 10px;
-            border-radius: var(--radius-md);
-            font-size: 0.81rem;
-            color: #e0f2fe;
-            margin-top: 8px;
-            line-height: 1.45;
         }
 
         .outlook-grid {
@@ -850,13 +779,13 @@
 </head>
 <body>
 
-    <!-- STICKY BLOOMBERG COMMAND HEADER -->
+    <!-- STICKY GMIT COMMAND HEADER -->
     <header class="top-header">
         <div class="header-inner">
             <div class="brand-block">
-                <span class="brand-tag">BBG // XAU</span>
+                <span class="brand-tag">GMIT // XAU</span>
                 <h1>Gold & Macro Intelligence Terminal</h1>
-                <span class="brand-sub">OANDA + OKX L2 + Unmitigated COMEX &bull; CFTC COT &bull; Dual-Horizon Drivers</span>
+                <span class="brand-sub">OANDA Spot + COMEX Volume &bull; CFTC COT &bull; AI Stage-2 Relevance Filter</span>
             </div>
             <div class="nav-actions">
                 <div class="tab-group">
@@ -872,7 +801,7 @@
     <div class="telemetry-ribbon">
         <div class="telemetry-inner">
             <div class="t-item">
-                <span class="t-label">24/7 XAUUSDT.P:</span>
+                <span class="t-label">24/7 XAUUSDT.P Basis:</span>
                 <span class="t-val" id="ui-crypto-basis">Loading...</span>
                 <span class="t-sub" id="ui-crypto-sub"></span>
             </div>
@@ -916,27 +845,26 @@
         <!-- CHART & ORDERFLOW COCKPIT TAB -->
         <div id="chart-tab" class="tab-content active">
             <div class="cockpit-grid">
-                <!-- LEFT: DARK BLOOMBERG CHART -->
+                <!-- LEFT: CLEAN OANDA SPOT CHART -->
                 <div class="chart-panel">
                     <div id="chart-container"></div>
                     <div class="chart-legend">
                         <div class="legend-item"><span class="legend-dot" style="background:#00e676;"></span><strong>BUY Zone:</strong> Net Long Orders</div>
                         <div class="legend-item"><span class="legend-dot" style="background:#ff3b30;"></span><strong>SELL Zone:</strong> Net Short Orders</div>
-                        <div class="legend-item"><span class="legend-dot" style="background:#00b4d8;"></span><strong>24/7 XAUUSDT.P:</strong> Live Perp</div>
-                        <div class="legend-item"><strong>Solid Line:</strong> Multi-Market Confluence (OANDA + OKX L2 + COMEX)</div>
+                        <div class="legend-item"><strong>Solid Line:</strong> Confirmed OANDA + COMEX Confluence</div>
                     </div>
                 </div>
 
-                <!-- RIGHT: MULTI-SOURCE POSITIONING & 3-SOURCE LIQUIDITY LADDER -->
+                <!-- RIGHT: MULTI-SOURCE POSITIONING & OANDA/COMEX LIQUIDITY LADDER -->
                 <div class="orderflow-sidebar">
                     <!-- Panel A: Multi-Source Positioning & Taker Flow -->
                     <div class="hud-card">
                         <div class="hud-header">
-                            <span class="hud-title">Multi-Source Orderflow & Positioning</span>
+                            <span class="hud-title">Orderflow & Positioning</span>
                             <span class="hud-badge" id="ui-funding-badge">Funding: --</span>
                         </div>
 
-                        <!-- Bar 1: Aggressive Taker Flow (Immediate Market Orders) -->
+                        <!-- Bar 1: Aggressive Taker Flow -->
                         <div class="tug-group">
                             <div class="tug-top-labels">
                                 <span class="tug-pct-buy" id="ui-taker-buy-lbl">--% BUY</span>
@@ -952,11 +880,11 @@
                             </div>
                         </div>
 
-                        <!-- Bar 2: OKX Top-Trader Account Ratio (24/7 Derivatives Whales) -->
+                        <!-- Bar 2: OKX Top-Trader Account Ratio -->
                         <div class="tug-group">
                             <div class="tug-top-labels">
                                 <span class="tug-pct-buy" id="ui-okx-long-lbl">--% LONG</span>
-                                <span class="tug-metric-name">2. OKX Top Traders (Whales)</span>
+                                <span class="tug-metric-name">2. Top Traders (Whales)</span>
                                 <span class="tug-pct-sell" id="ui-okx-short-lbl">--% SHORT</span>
                             </div>
                             <div class="tug-bar-track">
@@ -989,11 +917,11 @@
                         </div>
                     </div>
 
-                    <!-- Panel B: 3-Source Vertical Liquidity Price Ladder -->
+                    <!-- Panel B: OANDA + COMEX Vertical Liquidity Price Ladder -->
                     <div class="hud-card">
                         <div class="hud-header">
-                            <span class="hud-title">3-Source Orderbook Ladder ($10 Zones)</span>
-                            <span class="hud-badge">OANDA | OKX L2 | COMEX</span>
+                            <span class="hud-title">Orderbook Ladder ($10 Zones)</span>
+                            <span class="hud-badge">OANDA | COMEX</span>
                         </div>
                         <div class="ladder-container" id="ui-liquidity-ladder">
                             <div style="font-size:0.75rem; color:#64748b; text-align:center; padding:12px; font-family:var(--font-mono);">Loading orderbook zones...</div>
@@ -1021,7 +949,7 @@
                         <option value="western">Classic Commodity Media</option>
                     </select>
                     <select id="filter-relevance" onchange="renderNews()">
-                        <option value="all">Complete Feed (All News)</option>
+                        <option value="all">Verified Gold-Relevant Feed</option>
                         <option value="pinned">Pinned Watchlist Only</option>
                         <option value="directional">Directional Setups (&gt; 50%)</option>
                         <option value="tradeable">High-Conviction (&ge; 67%)</option>
@@ -1031,10 +959,6 @@
                         <option value="probability">Sort: Highest Probability (Pinned Top)</option>
                     </select>
                 </div>
-                <label class="filter-checkbox-wrap">
-                    <input type="checkbox" id="filter-keywords" onchange="renderNews()">
-                    <span>Strict Keyword Filter</span>
-                </label>
             </div>
 
             <div class="feed-stats-bar">
@@ -1061,19 +985,6 @@
         const expandedCardKeys = new Set();
 
         const PINNED_STORAGE_KEY = 'gold_terminal_pinned_clusters_v1';
-
-        const IMPACT_KEYWORDS = [
-            "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
-            "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
-            "idf", "missile", "strike", "attack", "drone", "sanction", "nuclear", 
-            "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "saudi",
-            "fed", "inflation", "rate", "central bank", "brics", "dollar", "treasury", 
-            "tariff", "recession", "gdp", "unemployment", "payroll", "cpi", "pmi", 
-            "stimulus", "china", "default", "liquidity", "debt", "yield",
-            "nvidia", "nvda", "nasdaq", "s&p", "semiconductor", "chip", "taiwan", 
-            "tsmc", "artificial intelligence", "ai ", "big tech", "microsoft", "apple",
-            "earnings", "selloff", "sell-off", "crash", "bubble", "rout", "margin"
-        ];
 
         const SOURCE_META = {
             "Zawya": { region: "Middle East", bias: "Gulf Economy / UAE" },
@@ -1251,7 +1162,7 @@
             }).join('');
         }
 
-        // Renders the 3-Source Vertical Liquidity Price Ladder (OANDA + OKX L2 + Unmitigated COMEX)
+        // Renders the OANDA + COMEX Vertical Liquidity Price Ladder
         function renderLiquidityLadder(orderbookZones, spotPrice, cryptoBasis) {
             const ladderEl = document.getElementById('ui-liquidity-ladder');
             if (!orderbookZones || orderbookZones.length === 0) {
@@ -1271,14 +1182,13 @@
                 const tagClass = isBuy ? "tag-buy" : "tag-sell";
                 const overlapClass = z.overlap ? "is-overlap" : "";
                 const overlapBadge = z.overlap
-                    ? `<span class="tag-overlap">CONFLUENCE [${z.sources || 'MULTI'}]</span>`
+                    ? `<span class="tag-overlap">CONFLUENCE [OANDA+COMEX]</span>`
                     : `<span style="font-size:0.62rem; color:#64748b;">[${z.sources || 'OANDA'}]</span>`;
                 const widthPct = Math.min(100, Math.round((z.volume / maxVol) * 100));
                 const distUsd = spotPrice > 0 ? (z.price - spotPrice) : 0;
                 const distSign = distUsd >= 0 ? '+' : '';
 
                 const oandaVolStr = z.oanda_vol !== undefined ? `${Number(z.oanda_vol).toFixed(2)}%` : '0.00%';
-                const okxVolStr = z.okx_vol !== undefined ? `${Number(z.okx_vol).toFixed(2)}%` : '0.00%';
                 const comexVolStr = z.comex_vol !== undefined ? `${Number(z.comex_vol).toFixed(2)}%` : '0.00%';
 
                 return `
@@ -1296,9 +1206,8 @@
                             </div>
                         </div>
                         <div class="ladder-split-line">
-                            <span>OANDA: <span class="split-oanda">${oandaVolStr}</span></span>
-                            <span>OKX L2: <span class="split-okx">${okxVolStr}</span></span>
-                            <span>COMEX: <span class="split-comex">${comexVolStr}</span></span>
+                            <span>OANDA Orders: <span class="split-oanda">${oandaVolStr}</span></span>
+                            <span>COMEX Futures: <span class="split-comex">${comexVolStr}</span></span>
                         </div>
                     </div>
                 `;
@@ -1323,7 +1232,7 @@
         }
 
         // ==========================================
-        // 1. LOAD CHART, MULTI-POS HUD & LADDER
+        // 1. LOAD OANDA CHART, POSITIONING & LADDER
         // ==========================================
         async function loadChart() {
             const container = document.getElementById('chart-container');
@@ -1343,7 +1252,6 @@
                     document.getElementById('ui-retail-bar').style.width = `${Math.min(100, Math.max(0, data.sentiment.long_pct))}%`;
                 }
 
-                // Multi-Source Positioning (OKX Top Traders + CFTC COT Managed Money)
                 if (data.multi_positioning) {
                     const mp = data.multi_positioning;
                     const okxL = Number(mp.okx_top_long_pct || 50).toFixed(1);
@@ -1465,28 +1373,12 @@
                 
                 candleSeries.setData(uniqueCandles);
 
-                if (data.crypto_basis && data.crypto_basis.crypto_price) {
-                    const cb = data.crypto_basis;
-                    const spSign = cb.spread_usd >= 0 ? '+' : '';
-                    candleSeries.createPriceLine({
-                        price: cb.crypto_price,
-                        color: '#00b4d8',
-                        lineWidth: 2,
-                        lineStyle: LightweightCharts.LineStyle.Dotted,
-                        axisLabelVisible: true,
-                        title: `24/7 XAUUSDT.P (${spSign}$${cb.spread_usd.toFixed(2)})`
-                    });
-                }
-
+                // Clean OANDA + COMEX Price Lines (without noisy multi-source text labels)
                 if (data.orderbook && data.orderbook.length > 0) {
                     data.orderbook.forEach((level, index) => {
                         const isBuyDom = level.dominance === "BUY";
                         const lineColor = isBuyDom ? '#00e676' : '#ff3b30';
-                        const domTag = level.dominance ? ` ${level.dominance}` : '';
                         const isOverlap = level.overlap === true;
-                        const oVol = level.oanda_vol !== undefined ? Number(level.oanda_vol).toFixed(1) : '0';
-                        const kVol = level.okx_vol !== undefined ? Number(level.okx_vol).toFixed(1) : '0';
-                        const cVol = level.comex_vol !== undefined ? Number(level.comex_vol).toFixed(1) : '0';
 
                         candleSeries.createPriceLine({
                             price: level.price,
@@ -1494,7 +1386,7 @@
                             lineWidth: isOverlap ? 2 : 1,
                             lineStyle: isOverlap ? LightweightCharts.LineStyle.Solid : LightweightCharts.LineStyle.Dashed,
                             axisLabelVisible: true,
-                            title: `L${index + 1}${domTag} [O:${oVol}%|OKX:${kVol}%|C:${cVol}%]`
+                            title: `L${index + 1} ${level.dominance}`
                         });
                     });
                 }
@@ -1504,7 +1396,7 @@
         }
 
         // ==========================================
-        // 2. LOAD PERFORMANCE STATS & WEEKLY DRIVERS FALLBACK
+        // 2. LOAD PERFORMANCE STATS
         // ==========================================
         async function loadStats() {
             try {
@@ -1522,40 +1414,13 @@
                     document.getElementById('ui-winrate').innerText = `0 Eval`;
                     document.getElementById('ui-winrate-sub').innerText = `[${stats.active_signals || 0} Active]`;
                 }
-
-                // Client-side fallback for Weekly Drivers from 14d history if not yet in market_data.json
-                const wGrid = document.getElementById('ui-weekly-drivers-grid');
-                if (wGrid && wGrid.innerText.includes('Loading') && stats.history) {
-                    const drvCounts = {};
-                    let totW = 0;
-                    Object.values(stats.history).forEach(rec => {
-                        const dName = detectDriverClientSide({ articles: [{ title: rec.headline || '', description: '' }] });
-                        const prob = parseInt(rec.prob || 60);
-                        const imp = rec.impact || 'Bullish';
-                        const w = 2.0 * (0.6 + prob / 100.0);
-                        totW += w;
-                        if (!drvCounts[dName]) drvCounts[dName] = { narrative: dName, weight: 0, clusters_count: 0, bull: 0, bear: 0, prob_sum: 0 };
-                        drvCounts[dName].weight += w;
-                        drvCounts[dName].clusters_count += 1;
-                        drvCounts[dName].prob_sum += prob;
-                        if (imp.includes('Bullish')) drvCounts[dName].bull += w;
-                        if (imp.includes('Bearish')) drvCounts[dName].bear += w;
-                    });
-                    const weeklyList = Object.values(drvCounts).map(d => ({
-                        narrative: d.narrative,
-                        share_pct: totW > 0 ? Math.round((d.weight / totW) * 1000) / 10 : 0,
-                        avg_prob: Math.round(d.prob_sum / Math.max(1, d.clusters_count)),
-                        net_bias: d.bull > d.bear * 1.15 ? 'Bullish' : (d.bear > d.bull * 1.15 ? 'Bearish' : 'Mixed')
-                    })).sort((a, b) => b.share_pct - a.share_pct).slice(0, 4);
-                    renderDriverPillsToContainer('ui-weekly-drivers-grid', weeklyList);
-                }
             } catch (e) {
                 document.getElementById('ui-winrate').innerText = "Calibrating...";
             }
         }
 
         // ==========================================
-        // 3. LOAD & RENDER NEWS INTELLIGENCE
+        // 3. LOAD & RENDER STREAMLINED NEWS
         // ==========================================
         async function loadNews() {
             const container = document.getElementById('news-container');
@@ -1564,47 +1429,10 @@
                 if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
                 const textData = await response.text();
                 allClusters = JSON.parse(textData);
-
-                const grid = document.getElementById('ui-drivers-grid');
-                if (grid && grid.innerText.includes('Loading')) {
-                    const drvCounts = {};
-                    let totW = 0;
-                    allClusters.forEach(c => {
-                        const dName = detectDriverClientSide(c);
-                        const sCount = (c.articles || []).length || 1;
-                        const prob = parseInt(c.summary?.Probability_Percent || 50);
-                        const imp = c.summary?.XAUUSD_Impact || 'Neutral';
-                        const w = sCount * (0.6 + prob / 100.0);
-                        totW += w;
-                        if (!drvCounts[dName]) drvCounts[dName] = { narrative: dName, weight: 0, clusters_count: 0, bull: 0, bear: 0, prob_sum: 0 };
-                        drvCounts[dName].weight += w;
-                        drvCounts[dName].clusters_count += 1;
-                        drvCounts[dName].prob_sum += prob;
-                        if (imp.includes('Bullish')) drvCounts[dName].bull += w;
-                        if (imp.includes('Bearish')) drvCounts[dName].bear += w;
-                    });
-                    const clientDrivers = Object.values(drvCounts).map(d => ({
-                        narrative: d.narrative,
-                        share_pct: totW > 0 ? Math.round((d.weight / totW) * 1000) / 10 : 0,
-                        avg_prob: Math.round(d.prob_sum / Math.max(1, d.clusters_count)),
-                        net_bias: d.bull > d.bear * 1.15 ? 'Bullish' : (d.bear > d.bull * 1.15 ? 'Bearish' : 'Mixed')
-                    })).sort((a, b) => b.share_pct - a.share_pct).slice(0, 4);
-                    renderDriverPillsToContainer('ui-drivers-grid', clientDrivers);
-                }
-
                 renderNews();
             } catch (error) {
                 container.innerHTML = `<p style="color:#ff3b30; text-align:center;">Error loading news: ${error.message}</p>`;
             }
-        }
-
-        function containsImpactKeyword(cluster) {
-            const textToScan = [
-                cluster.summary?.Facts || '',
-                cluster.summary?.Macro_Context || '',
-                ...cluster.articles.map(a => `${a.title} ${a.description}`)
-            ].join(' ').toLowerCase();
-            return IMPACT_KEYWORDS.some(kw => textToScan.includes(kw));
         }
 
         function renderNews() {
@@ -1616,7 +1444,6 @@
             const filterRegion = document.getElementById('filter-region').value;
             const filterRelevance = document.getElementById('filter-relevance').value;
             const sortBy = document.getElementById('sort-by').value;
-            const requireKeywords = document.getElementById('filter-keywords').checked;
 
             const mergedList = getMergedClusters();
             const pinnedMap = loadPinnedMap();
@@ -1625,8 +1452,13 @@
             let filtered = mergedList.filter(cluster => {
                 const cKey = getClusterKey(cluster);
                 const pinned = Boolean(pinnedMap[cKey]);
-                const drvLabel = detectDriverClientSide(cluster);
 
+                // Stage 2 AI Gatekeeper: Hide non-relevant noise unless explicitly pinned by user
+                if (!pinned && cluster.summary && cluster.summary.Is_Gold_Relevant === false) {
+                    return false;
+                }
+
+                const drvLabel = detectDriverClientSide(cluster);
                 if (filterRelevance === 'pinned' && !pinned) return false;
 
                 if (searchQuery) {
@@ -1634,14 +1466,10 @@
                         drvLabel,
                         cluster.summary?.Facts || '',
                         cluster.summary?.Macro_Context || '',
-                        cluster.summary?.Bull_Case || '',
-                        cluster.summary?.Bear_Case || '',
                         ...cluster.articles.map(a => `${a.source} ${a.title} ${a.description}`)
                     ].join(' ').toLowerCase();
                     if (!searchable.includes(searchQuery)) return false;
                 }
-
-                if (requireKeywords && !containsImpactKeyword(cluster)) return false;
 
                 if (filterImpact !== 'all') {
                     const impact = cluster.summary?.XAUUSD_Impact || '';
@@ -1682,7 +1510,7 @@
             });
 
             document.getElementById('feed-count-label').innerText = 
-                `Showing ${filtered.length} of ${mergedList.length} clusters (Click card to expand)`;
+                `Showing ${filtered.length} Gold-relevant intelligence clusters (Click card to expand)`;
 
             if (filtered.length === 0) {
                 container.innerHTML = '<p style="text-align:center; padding: 40px; color:#64748b; font-family:var(--font-mono);">No matching intelligence clusters found.</p>';
@@ -1744,33 +1572,17 @@
 
                 let summaryHTML = "";
                 if (typeof cluster.summary === 'object' && cluster.summary !== null) {
-                    const eventTime = cluster.summary.Event_Timestamp || 'See First Reported timestamp';
-                    const bullCase = cluster.summary.Bull_Case ? `<div class="bull-box"><span class="data-label" style="color:#00e676;">Bull Case (Pro Gold)</span>${cluster.summary.Bull_Case}</div>` : '';
-                    const bearCase = cluster.summary.Bear_Case ? `<div class="bear-box"><span class="data-label" style="color:#ff3b30;">Bear Case (Contra / Risks)</span>${cluster.summary.Bear_Case}</div>` : '';
-                    const proConSection = (bullCase || bearCase) ? `<div class="pro-con-grid">${bullCase}${bearCase}</div>` : '';
-                    const calibSection = cluster.summary.Historical_Calibration ? `<div class="calibration-box"><strong>Agent Calibration & Regime Matrix Audit:</strong> ${cluster.summary.Historical_Calibration}</div>` : '';
-
                     summaryHTML = `
-                        <div class="event-time-banner">
-                            <span><strong>Actual Event Time:</strong> ${eventTime}</span>
-                            <span><strong>24h Price/ATR & Taker Check:</strong> ${cluster.summary.Past_Price_Action_Cause || 'N/A'}</span>
-                        </div>
                         <div class="structured-data">
                             <div class="data-block">
-                                <span class="data-label">Core Facts, Updates & Regional Context</span>
+                                <span class="data-label">Synthesized Facts & Updates</span>
                                 ${formatUpdateBadges(cluster.summary.Facts)}
                             </div>
                             <div class="data-block">
-                                <span class="data-label">Macro, Tech, 24/7 XAUUSDT.P, Taker Flow & CFTC/OKX Positioning</span>
+                                <span class="data-label">Gold (XAU/USD) & Macro Transmission</span>
                                 ${cluster.summary.Macro_Context || '-'}
                             </div>
-                            <div class="data-block">
-                                <span class="data-label">Uncertainties & Open Questions</span>
-                                ${cluster.summary.Uncertainties || '-'}
-                            </div>
                         </div>
-                        ${proConSection}
-                        ${calibSection}
                         <div class="outlook-grid">
                             <div class="outlook-cell">
                                 <span class="outlook-label">XAU/USD Bias</span>
@@ -1786,7 +1598,7 @@
                                 <span class="outlook-val">${cluster.summary.Impact_Timing || '-'}</span>
                             </div>
                             <div class="outlook-cell">
-                                <span class="outlook-label">Expected Horizon</span>
+                                <span class="outlook-label">Horizon</span>
                                 <span class="outlook-val">${cluster.summary.Timeframe || '-'}</span>
                             </div>
                         </div>

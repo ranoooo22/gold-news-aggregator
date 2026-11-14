@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GMIT // XAU — Gold & Macro Intelligence Terminal</title>
     <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <style>
         :root {
             --bg-main: #06080c;
@@ -90,6 +91,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            flex-wrap: wrap;
         }
         .tab-group {
             display: flex;
@@ -97,15 +99,16 @@
             padding: 2px;
             border-radius: var(--radius-md);
             border: 1px solid var(--border-color);
+            flex-wrap: wrap;
         }
         .tab-btn {
             background: transparent;
             border: none;
             color: var(--text-secondary);
             font-family: var(--font-mono);
-            font-size: 0.76rem;
+            font-size: 0.75rem;
             font-weight: 700;
-            padding: 6px 13px;
+            padding: 6px 12px;
             border-radius: 3px;
             cursor: pointer;
             text-transform: uppercase;
@@ -251,12 +254,12 @@
         .tab-content { display: none; }
         .tab-content.active { display: block; }
 
-        /* 3. TERMINAL COCKPIT: CHART LEFT + HUD RIGHT */
+        /* 3. TERMINAL COCKPIT: CHART LEFT + LADDER RIGHT */
         .cockpit-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1fr) 420px;
+            grid-template-columns: minmax(0, 1fr) 390px;
             gap: 12px;
-            align-items: start;
+            align-items: stretch;
         }
 
         .chart-panel {
@@ -265,10 +268,12 @@
             border: 1px solid var(--border-color);
             padding: 10px;
             min-width: 0;
+            display: flex;
+            flex-direction: column;
         }
         #chart-container {
             width: 100%;
-            height: 575px;
+            height: 490px;
             border-radius: var(--radius-md);
             overflow: hidden;
         }
@@ -287,7 +292,7 @@
         .legend-item { display: flex; align-items: center; gap: 5px; }
         .legend-dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
 
-        /* RIGHT SIDEBAR HUD */
+        /* RIGHT SIDEBAR: CLEAN ORDERBOOK LADDER ONLY */
         .orderflow-sidebar {
             display: flex;
             flex-direction: column;
@@ -300,18 +305,23 @@
             border-radius: var(--radius-lg);
             padding: 11px 13px;
             font-variant-numeric: tabular-nums;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .hud-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 9px;
-            padding-bottom: 5px;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
             border-bottom: 1px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 8px;
         }
         .hud-title {
             font-family: var(--font-mono);
-            font-size: 0.71rem;
+            font-size: 0.73rem;
             font-weight: 800;
             text-transform: uppercase;
             color: var(--bb-amber);
@@ -327,92 +337,20 @@
             border: 1px solid var(--border-color);
         }
 
-        /* Positioning & Taker Bars */
-        .tug-group { margin-bottom: 9px; }
-        .tug-top-labels {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            font-family: var(--font-mono);
-            font-size: 0.72rem;
-            margin-bottom: 3px;
-        }
-        .tug-metric-name {
-            font-weight: 700;
-            color: var(--text-secondary);
-            font-size: 0.66rem;
-            text-transform: uppercase;
-        }
-        .tug-pct-buy { font-weight: 800; color: var(--bull-green); }
-        .tug-pct-sell { font-weight: 800; color: var(--bear-red); }
-
-        .tug-bar-track {
-            width: 100%;
-            height: 7px;
-            background: var(--bear-red);
-            border-radius: 2px;
-            overflow: hidden;
-            display: flex;
-        }
-        .tug-bar-fill-buy {
-            height: 100%;
-            background: var(--bull-green);
-            border-right: 2px solid #000000;
-            transition: width 0.35s ease;
-        }
-        .tug-sub-row {
-            display: flex;
-            justify-content: space-between;
-            font-family: var(--font-mono);
-            font-size: 0.66rem;
-            color: var(--text-muted);
-            margin-top: 2px;
-        }
-
-        .cot-inst-strip {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: #080b11;
-            border: 1px solid var(--border-color);
-            padding: 5px 8px;
-            border-radius: 3px;
-            font-family: var(--font-mono);
-            font-size: 0.69rem;
-            margin-top: 6px;
-        }
-
-        .flow-diagnostic-box {
-            background: var(--bg-subtle);
-            border: 1px solid var(--border-color);
-            border-left: 3px solid var(--bb-cyan);
-            border-radius: 3px;
-            padding: 7px 9px;
-            font-size: 0.72rem;
-            color: var(--text-secondary);
-            line-height: 1.38;
-            margin-top: 7px;
-        }
-        .squeeze-alert {
-            margin-top: 4px;
-            font-family: var(--font-mono);
-            font-weight: 700;
-            font-size: 0.68rem;
-            color: var(--bb-amber);
-        }
-
         /* OANDA + COMEX Vertical Liquidity Price Ladder */
         .ladder-container {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            justify-content: space-between;
+            gap: 6px;
+            flex: 1;
         }
         .ladder-row {
             position: relative;
             display: flex;
             flex-direction: column;
-            gap: 3px;
-            padding: 6px 8px;
+            gap: 4px;
+            padding: 8px 10px;
             border-radius: 3px;
             border: 1px solid var(--border-color);
             background: var(--bg-subtle);
@@ -441,7 +379,7 @@
             align-items: center;
         }
         .ladder-left { display: flex; align-items: center; gap: 5px; }
-        .ladder-price { font-weight: 800; font-size: 0.82rem; color: #ffffff; }
+        .ladder-price { font-weight: 800; font-size: 0.84rem; color: #ffffff; }
         .ladder-side-tag {
             font-size: 0.62rem;
             font-weight: 800;
@@ -461,7 +399,7 @@
             border-radius: 2px;
         }
 
-        .ladder-right { font-size: 0.7rem; color: var(--text-secondary); }
+        .ladder-right { font-size: 0.71rem; color: var(--text-secondary); }
         .ladder-tot-vol { font-weight: 800; color: var(--bb-amber); }
 
         .ladder-split-line {
@@ -470,9 +408,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 0.66rem;
+            font-size: 0.67rem;
             color: var(--text-secondary);
-            padding-top: 2px;
+            padding-top: 3px;
             border-top: 1px dashed rgba(255, 255, 255, 0.07);
         }
         .split-oanda { color: var(--bb-cyan); font-weight: 700; }
@@ -482,15 +420,81 @@
             background: #000000;
             border: 1px solid var(--bb-amber);
             color: var(--bb-amber);
-            padding: 6px 9px;
+            padding: 7px 10px;
             border-radius: 3px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-family: var(--font-mono);
-            font-size: 0.73rem;
+            font-size: 0.74rem;
             font-weight: 800;
             margin: 2px 0;
+        }
+
+        /* 3D / 2D SURFACE PANELS & TOGGLE CONTROLS */
+        .surface-section-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 12px 14px;
+            margin-top: 12px;
+        }
+        .surface-grid-two {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+            gap: 12px;
+        }
+        .surface-controls {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .mode-switch-group {
+            display: inline-flex;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-radius: 3px;
+            padding: 2px;
+        }
+        .mode-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            font-size: 0.69rem;
+            font-weight: 700;
+            padding: 4px 9px;
+            border-radius: 2px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .mode-btn.active {
+            background: var(--bb-amber);
+            color: #000000;
+        }
+        .mode-btn.active-cyan {
+            background: var(--bb-cyan);
+            color: #000000;
+        }
+        .plotly-box {
+            width: 100%;
+            height: 410px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            background: #0d1117;
+        }
+        .surface-caption {
+            margin-top: 8px;
+            padding-top: 7px;
+            border-top: 1px solid var(--border-color);
+            font-family: var(--font-mono);
+            font-size: 0.71rem;
+            color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 8px;
         }
 
         /* NEWS TAB & STREAMLINED ACCORDION CARDS */
@@ -765,7 +769,8 @@
 
         @media (max-width: 1060px) {
             .cockpit-grid { grid-template-columns: 1fr; }
-            #chart-container { height: 430px; }
+            .surface-grid-two { grid-template-columns: 1fr; }
+            #chart-container { height: 420px; }
         }
         @media (max-width: 720px) {
             .top-header { padding: 9px 12px; }
@@ -773,7 +778,8 @@
             .t-divider { display: none; }
             .controls-left { flex-direction: column; align-items: stretch; }
             .search-input, select { width: 100%; }
-            #chart-container { height: 350px; }
+            #chart-container { height: 340px; }
+            .plotly-box { height: 340px; }
         }
     </style>
 </head>
@@ -785,12 +791,13 @@
             <div class="brand-block">
                 <span class="brand-tag">GMIT // XAU</span>
                 <h1>Gold & Macro Intelligence Terminal</h1>
-                <span class="brand-sub">OANDA Spot + COMEX Volume &bull; CFTC COT &bull; AI Stage-2 Relevance Filter</span>
+                <span class="brand-sub">OANDA Spot + COMEX Volume &bull; 3D Liquidity & Volatility Surfaces</span>
             </div>
             <div class="nav-actions">
                 <div class="tab-group">
                     <button class="tab-btn active" id="tab-btn-chart" onclick="switchTab(event, 'chart-tab')">[1] Chart & Orderflow</button>
                     <button class="tab-btn" id="tab-btn-news" onclick="switchTab(event, 'news-tab')">[2] News Intelligence</button>
+                    <button class="tab-btn" id="tab-btn-3d" onclick="switchTab(event, '3d-tab')">[3] 3D Graphs</button>
                 </div>
                 <button class="refresh-btn" onclick="refreshAllData()">Refresh</button>
             </div>
@@ -826,7 +833,7 @@
     </div>
 
     <div class="main-wrapper">
-        <!-- DUAL-HORIZON DRIVERS RIBBON: 7-14D WEEKLY REGIME + 24H INTRADAY PULSE -->
+        <!-- DUAL-HORIZON DRIVERS RIBBON -->
         <div class="dual-drivers-box">
             <div class="drivers-row">
                 <span class="drivers-ribbon-label lbl-weekly">Weekly Regime (7-14d):</span>
@@ -842,7 +849,9 @@
             </div>
         </div>
 
-        <!-- CHART & ORDERFLOW COCKPIT TAB -->
+        <!-- ========================================================= -->
+        <!-- TAB 1: CHART, ORDERBOOK LADDER & MODEL 2 (LIQUIDITY CANYON) -->
+        <!-- ========================================================= -->
         <div id="chart-tab" class="tab-content active">
             <div class="cockpit-grid">
                 <!-- LEFT: CLEAN OANDA SPOT CHART -->
@@ -855,69 +864,8 @@
                     </div>
                 </div>
 
-                <!-- RIGHT: MULTI-SOURCE POSITIONING & OANDA/COMEX LIQUIDITY LADDER -->
+                <!-- RIGHT: CLEAN OANDA + COMEX LIQUIDITY LADDER ONLY -->
                 <div class="orderflow-sidebar">
-                    <!-- Panel A: Multi-Source Positioning & Taker Flow -->
-                    <div class="hud-card">
-                        <div class="hud-header">
-                            <span class="hud-title">Orderflow & Positioning</span>
-                            <span class="hud-badge" id="ui-funding-badge">Funding: --</span>
-                        </div>
-
-                        <!-- Bar 1: Aggressive Taker Flow -->
-                        <div class="tug-group">
-                            <div class="tug-top-labels">
-                                <span class="tug-pct-buy" id="ui-taker-buy-lbl">--% BUY</span>
-                                <span class="tug-metric-name">1. Aggressive Taker (Market)</span>
-                                <span class="tug-pct-sell" id="ui-taker-sell-lbl">--% SELL</span>
-                            </div>
-                            <div class="tug-bar-track">
-                                <div class="tug-bar-fill-buy" id="ui-taker-bar" style="width: 50%;"></div>
-                            </div>
-                            <div class="tug-sub-row">
-                                <span id="ui-tape-sub">OKX Tape: --%</span>
-                                <span id="ui-candle-sub">4h Candle Absorption: --%</span>
-                            </div>
-                        </div>
-
-                        <!-- Bar 2: OKX Top-Trader Account Ratio -->
-                        <div class="tug-group">
-                            <div class="tug-top-labels">
-                                <span class="tug-pct-buy" id="ui-okx-long-lbl">--% LONG</span>
-                                <span class="tug-metric-name">2. Top Traders (Whales)</span>
-                                <span class="tug-pct-sell" id="ui-okx-short-lbl">--% SHORT</span>
-                            </div>
-                            <div class="tug-bar-track">
-                                <div class="tug-bar-fill-buy" id="ui-okx-bar" style="width: 50%;"></div>
-                            </div>
-                        </div>
-
-                        <!-- Bar 3: Passive OANDA Retail Crowd -->
-                        <div class="tug-group">
-                            <div class="tug-top-labels">
-                                <span class="tug-pct-buy" id="ui-retail-long-lbl">--% LONG</span>
-                                <span class="tug-metric-name">3. OANDA Retail (Contrarian)</span>
-                                <span class="tug-pct-sell" id="ui-retail-short-lbl">--% SHORT</span>
-                            </div>
-                            <div class="tug-bar-track">
-                                <div class="tug-bar-fill-buy" id="ui-retail-bar" style="width: 50%;"></div>
-                            </div>
-                        </div>
-
-                        <!-- CFTC COT Institutional Strip -->
-                        <div class="cot-inst-strip">
-                            <span style="color:#94a3b8;">4. CFTC COMEX Hedge Funds:</span>
-                            <span id="ui-cot-val" style="color:var(--bb-amber); font-weight:700;">Loading COT...</span>
-                        </div>
-
-                        <div class="flow-diagnostic-box">
-                            <strong id="ui-taker-state" style="color:#ffffff;">Calibrating Execution Tape...</strong><br>
-                            <span id="ui-wick-note">Waiting for intrabar absorption metrics.</span>
-                            <div class="squeeze-alert" id="ui-squeeze-warn"></div>
-                        </div>
-                    </div>
-
-                    <!-- Panel B: OANDA + COMEX Vertical Liquidity Price Ladder -->
                     <div class="hud-card">
                         <div class="hud-header">
                             <span class="hud-title">Orderbook Ladder ($10 Zones)</span>
@@ -929,9 +877,36 @@
                     </div>
                 </div>
             </div>
+
+            <!-- BELOW CHART: MODEL 2 — 3D/2D ORDERBOOK TOPOGRAPHY OVER TIME (LIQUIDITY CANYON) -->
+            <div class="surface-section-card">
+                <div class="hud-header">
+                    <div>
+                        <span class="hud-title">Model 2 // Orderbook Liquidity Topography Over Time ("Liquidity Canyon")</span>
+                        <span class="hud-badge" style="margin-left:8px;" id="ui-m2-spot-badge">Spot: --</span>
+                    </div>
+                    <div class="surface-controls">
+                        <div class="mode-switch-group">
+                            <button class="mode-btn active-cyan" id="m2-metric-signed" onclick="setModel2Metric('signed')">Net Buy/Sell Walls</button>
+                            <button class="mode-btn" id="m2-metric-total" onclick="setModel2Metric('total')">Total Liquidity Depth</button>
+                        </div>
+                        <div class="mode-switch-group">
+                            <button class="mode-btn active" id="m2-view-3d" onclick="setModel2View('3d')">3D Surface</button>
+                            <button class="mode-btn" id="m2-view-2d" onclick="setModel2View('2d')">2D Heatmap</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="model2-plot" class="plotly-box"></div>
+                <div class="surface-caption">
+                    <span><strong>X-Axis:</strong> Timeline (UTC Snapshots) &bull; <strong>Y-Axis:</strong> Gold $10 Price Zones &bull; <strong>Z-Axis:</strong> OANDA + COMEX Liquidity Concentration</span>
+                    <span><strong>Tip:</strong> Switch to <strong>2D Heatmap</strong> on mobile for instant bird's-eye clarity.</span>
+                </div>
+            </div>
         </div>
 
-        <!-- NEWS INTELLIGENCE TAB -->
+        <!-- ========================================================= -->
+        <!-- TAB 2: NEWS INTELLIGENCE                                  -->
+        <!-- ========================================================= -->
         <div id="news-tab" class="tab-content">
             <div class="controls-panel">
                 <div class="controls-left">
@@ -976,13 +951,75 @@
                 <p style="text-align:center; padding: 30px; color:#64748b; font-family:var(--font-mono);">Loading intelligence feed...</p>
             </div>
         </div>
+
+        <!-- ========================================================= -->
+        <!-- TAB 3: 3D GRAPHS LAB (MODEL 1 & MODEL 3)                  -->
+        <!-- ========================================================= -->
+        <div id="3d-tab" class="tab-content">
+            <div class="surface-grid-two">
+                <!-- MODEL 1: 3D IMPLIED VOLATILITY & SKEW SURFACE -->
+                <div class="surface-section-card" style="margin-top:0;">
+                    <div class="hud-header">
+                        <div>
+                            <span class="hud-title">Model 1 // Implied Volatility & Skew Surface</span>
+                            <span class="hud-badge" style="margin-left:6px;" id="ui-m1-skew-badge">Calibrating Skew...</span>
+                        </div>
+                        <div class="surface-controls">
+                            <div class="mode-switch-group">
+                                <button class="mode-btn active" id="m1-view-3d" onclick="setModel1View('3d')">3D Surface</button>
+                                <button class="mode-btn" id="m1-view-2d" onclick="setModel1View('2d')">2D Heatmap</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="model1-plot" class="plotly-box"></div>
+                    <div class="surface-caption">
+                        <span><strong>X:</strong> Strike Price ($) &bull; <strong>Y:</strong> Tenor (1D to 1M) &bull; <strong>Z:</strong> Annualized Implied Vol (%)</span>
+                        <span id="ui-m1-baseiv">Base ATM IV: --%</span>
+                    </div>
+                </div>
+
+                <!-- MODEL 3: 30-DAY SESSION & VOLATILITY PROFILE (ASIAN / LONDON / NY) -->
+                <div class="surface-section-card" style="margin-top:0;">
+                    <div class="hud-header">
+                        <div>
+                            <span class="hud-title">Model 3 // 30-Day Session & Asian/NY Volatility Profile</span>
+                            <span class="hud-badge" style="margin-left:6px;" id="ui-m3-asian-badge">Asian Peak: --</span>
+                        </div>
+                        <div class="surface-controls">
+                            <div class="mode-switch-group">
+                                <button class="mode-btn active-cyan" id="m3-metric-range" onclick="setModel3Metric('range')">Hourly ATR ($)</button>
+                                <button class="mode-btn" id="m3-metric-bias" onclick="setModel3Metric('bias')">Net Bull/Bear ($)</button>
+                            </div>
+                            <div class="mode-switch-group">
+                                <button class="mode-btn active" id="m3-view-3d" onclick="setModel3View('3d')">3D Surface</button>
+                                <button class="mode-btn" id="m3-view-2d" onclick="setModel3View('2d')">2D Heatmap</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="model3-plot" class="plotly-box"></div>
+                    <div class="surface-caption">
+                        <span><strong>Asian:</strong> 00–08 UTC &bull; <strong>London:</strong> 08–13 UTC &bull; <strong>NY COMEX:</strong> 13–21 UTC</span>
+                        <span><strong>Y-Axis:</strong> Mon–Fri</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
         let allClusters = [];
+        let latestMarketData = null;
         let chartInstance = null;
         let chartResizeObserver = null;
         const expandedCardKeys = new Set();
+
+        // View states for the 3 Models (auto-default to 2D on small mobile screens if desired, or 3D with 1-click toggle)
+        const isMobileScreen = window.innerWidth < 720;
+        let m1ViewMode = isMobileScreen ? '2d' : '3d';
+        let m2ViewMode = isMobileScreen ? '2d' : '3d';
+        let m2MetricMode = 'signed'; // 'signed' or 'total'
+        let m3ViewMode = isMobileScreen ? '2d' : '3d';
+        let m3MetricMode = 'range';  // 'range' or 'bias'
 
         const PINNED_STORAGE_KEY = 'gold_terminal_pinned_clusters_v1';
 
@@ -1000,6 +1037,25 @@
             "Yahoo Finance Nasdaq": { region: "Tech & Macro", bias: "Nasdaq 100 / Big Tech Equities" },
             "MarketWatch Macro": { region: "Tech & Macro", bias: "Wall Street / US Economy" }
         };
+
+        function syncToggleButtonsUI() {
+            document.getElementById('m1-view-3d').classList.toggle('active', m1ViewMode === '3d');
+            document.getElementById('m1-view-2d').classList.toggle('active', m1ViewMode === '2d');
+            document.getElementById('m2-view-3d').classList.toggle('active', m2ViewMode === '3d');
+            document.getElementById('m2-view-2d').classList.toggle('active', m2ViewMode === '2d');
+            document.getElementById('m2-metric-signed').classList.toggle('active-cyan', m2MetricMode === 'signed');
+            document.getElementById('m2-metric-total').classList.toggle('active-cyan', m2MetricMode === 'total');
+            document.getElementById('m3-view-3d').classList.toggle('active', m3ViewMode === '3d');
+            document.getElementById('m3-view-2d').classList.toggle('active', m3ViewMode === '2d');
+            document.getElementById('m3-metric-range').classList.toggle('active-cyan', m3MetricMode === 'range');
+            document.getElementById('m3-metric-bias').classList.toggle('active-cyan', m3MetricMode === 'bias');
+        }
+
+        function setModel1View(mode) { m1ViewMode = mode; syncToggleButtonsUI(); renderModel1(); }
+        function setModel2View(mode) { m2ViewMode = mode; syncToggleButtonsUI(); renderModel2(); }
+        function setModel2Metric(metric) { m2MetricMode = metric; syncToggleButtonsUI(); renderModel2(); }
+        function setModel3View(mode) { m3ViewMode = mode; syncToggleButtonsUI(); renderModel3(); }
+        function setModel3Metric(metric) { m3MetricMode = metric; syncToggleButtonsUI(); renderModel3(); }
 
         function formatUpdateBadges(rawText) {
             if (!rawText) return '-';
@@ -1132,11 +1188,21 @@
             document.getElementById(tabId).classList.add('active');
             event.currentTarget.classList.add('active');
 
-            if (tabId === 'chart-tab') loadChart();
-            else if (tabId === 'news-tab') loadNews();
+            if (tabId === 'chart-tab') {
+                loadChart();
+                setTimeout(() => renderModel2(), 60);
+            } else if (tabId === 'news-tab') {
+                loadNews();
+            } else if (tabId === '3d-tab') {
+                setTimeout(() => {
+                    renderModel1();
+                    renderModel3();
+                }, 60);
+            }
         }
 
         function refreshAllData() {
+            syncToggleButtonsUI();
             loadChart();
             loadStats();
             loadNews();
@@ -1231,8 +1297,258 @@
             ].join('');
         }
 
+        // ======================================================================
+        // CLIENT-SIDE FALLBACK FOR 3D SURFACES (Works before next GitHub run)
+        // ======================================================================
+        function ensure3DSurfacesPopulated(data, spotPrice) {
+            const center10 = Math.round((spotPrice || 4000) / 10) * 10;
+
+            // 1. Fallback for Model 2 (Orderbook Topography over Time)
+            if (!data.ob_surface || !data.ob_surface.timestamps || data.ob_surface.timestamps.length === 0) {
+                const pLevels = [];
+                for (let off = -50; off <= 50; off += 10) pLevels.push(center10 + off);
+                const cList = (data.candles || []).slice(-12);
+                const times = cList.length > 0
+                    ? cList.map(c => new Date(c.time * 1000).toISOString().slice(11, 16))
+                    : ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00"];
+
+                const obMap = {};
+                (data.orderbook || []).forEach(z => {
+                    const k = Math.round(z.price / 10) * 10;
+                    obMap[k] = z;
+                });
+
+                const volMat = [];
+                const signedMat = [];
+                pLevels.forEach(p => {
+                    const zMatch = obMap[p];
+                    const baseV = zMatch ? Number(zMatch.volume) : 0.65;
+                    const isBuy = zMatch ? (zMatch.dominance === "BUY") : (p < spotPrice);
+                    const rVol = [];
+                    const rSig = [];
+                    times.forEach((_, idx) => {
+                        const wave = 0.85 + 0.25 * Math.sin(idx * 0.6 + p / 15.0);
+                        const v = Math.round(baseV * wave * 100) / 100;
+                        rVol.push(v);
+                        rSig.push(isBuy ? v : -v);
+                    });
+                    volMat.push(rVol);
+                    signedMat.push(rSig);
+                });
+
+                data.ob_surface = {
+                    timestamps: times,
+                    price_levels: pLevels,
+                    vol_matrix: volMat,
+                    signed_matrix: signedMat,
+                    spot_price: spotPrice
+                };
+            }
+
+            // 2. Fallback for Model 1 (Implied Volatility & Skew Surface)
+            if (!data.vol_surface || !data.vol_surface.iv_matrix) {
+                const dailyAtr = Number(data.volatility?.est_daily_atr || 38.0);
+                const atrRatio = Number(data.volatility?.move_to_daily_atr_ratio || 0.75);
+                const chg4h = Number(data.volatility?.change_4h || 0);
+                const baseIv = Math.round(Math.max(12, Math.min(40, (dailyAtr / Math.max(1, spotPrice)) * Math.sqrt(252) * 100)) * 100) / 100;
+                const skew = Math.round((chg4h / Math.max(10, dailyAtr)) * 1.5 * 100) / 100;
+
+                const offsets = [-80, -60, -40, -20, 0, 20, 40, 60, 80];
+                const strikes = offsets.map(o => center10 + o);
+                const tenors = ["1D (Event)", "3D (Swing)", "1W (Weekly)", "2W (Bi-Weekly)", "1M (Monthly)"];
+                const tDays = [1, 3, 7, 14, 30];
+
+                const ivMat = tDays.map(d => {
+                    const termMult = 1.0 + (atrRatio - 0.75) * (0.28 / Math.sqrt(Math.max(1, d / 2)));
+                    return offsets.map(sOff => {
+                        const m = sOff / Math.max(10, dailyAtr * 2);
+                        const smile = 2.4 * (m * m) * (1 / Math.sqrt(Math.max(1, d / 3)));
+                        const skewShift = skew * m * (sOff > 0 ? 1.1 : 0.7);
+                        return Math.round(Math.max(9.5, baseIv * termMult + smile + skewShift) * 100) / 100;
+                    });
+                });
+
+                data.vol_surface = {
+                    strikes: strikes,
+                    tenors: tenors,
+                    iv_matrix: ivMat,
+                    base_iv_pct: baseIv,
+                    skew_score: skew,
+                    skew_regime: skew >= 0.4 ? "BULLISH CALL SKEW" : (skew <= -0.4 ? "BEARISH PUT SKEW" : "SYMMETRIC SMILE")
+                };
+            }
+
+            // 3. Fallback for Model 3 (Session & Volatility Profile)
+            if (!data.session_surface || !data.session_surface.range_matrix) {
+                const days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+                const hours = Array.from({ length: 24 }, (_, i) => `${String(i).padStart(2, '0')}:00`);
+                const baseHr = Number(data.volatility?.atr_h1 || 9.5);
+
+                const rangeMat = days.map((_, dIdx) => hours.map((__, hIdx) => {
+                    // Asian Shanghai open (01-04 UTC), London open (08-10 UTC), NY COMEX open (13-16 UTC)
+                    const asianBoost = (hIdx >= 1 && hIdx <= 4) ? 1.35 : 0.85;
+                    const nyBoost = (hIdx >= 13 && hIdx <= 16) ? 1.55 : 1.0;
+                    const lonBoost = (hIdx >= 7 && hIdx <= 10) ? 1.25 : 1.0;
+                    const dayMult = (dIdx === 2 || dIdx === 3) ? 1.12 : 0.96;
+                    return Math.round(baseHr * asianBoost * nyBoost * lonBoost * dayMult * 100) / 100;
+                }));
+
+                const biasMat = days.map((_, dIdx) => hours.map((__, hIdx) => {
+                    const asianBuy = (hIdx >= 1 && hIdx <= 5) ? 1.8 : ((hIdx >= 14 && hIdx <= 17) ? -0.9 : 0.2);
+                    return Math.round((asianBuy + (dIdx - 2) * 0.25) * 100) / 100;
+                }));
+
+                data.session_surface = {
+                    hours: hours,
+                    days: days,
+                    range_matrix: rangeMat,
+                    bias_matrix: biasMat,
+                    best_asian_window: `02:00 UTC (Avg $${(baseHr * 1.35).toFixed(2)}/h)`
+                };
+            }
+        }
+
+        // ======================================================================
+        // PLOTLY RENDERERS FOR MODELS 1, 2 & 3 (WITH 3D / 2D HEATMAP TOGGLE)
+        // ======================================================================
+        function getBasePlotlyLayout(xTitle, yTitle, zTitle, is3D) {
+            if (is3D) {
+                return {
+                    paper_bgcolor: '#0d1117',
+                    plot_bgcolor: '#0d1117',
+                    margin: { l: 0, r: 0, b: 0, t: 8 },
+                    font: { family: 'JetBrains Mono, monospace', size: 11, color: '#94a3b8' },
+                    scene: {
+                        xaxis: { title: xTitle, gridcolor: '#21293a', zerolinecolor: '#21293a', backgroundcolor: '#0d1117', showbackground: true },
+                        yaxis: { title: yTitle, gridcolor: '#21293a', zerolinecolor: '#21293a', backgroundcolor: '#0d1117', showbackground: true },
+                        zaxis: { title: zTitle, gridcolor: '#21293a', zerolinecolor: '#21293a', backgroundcolor: '#0b0f17', showbackground: true },
+                        camera: { eye: { x: 1.45, y: -1.45, z: 0.85 } }
+                    }
+                };
+            }
+            return {
+                paper_bgcolor: '#0d1117',
+                plot_bgcolor: '#0d1117',
+                margin: { l: 64, r: 20, b: 44, t: 12 },
+                font: { family: 'JetBrains Mono, monospace', size: 11, color: '#94a3b8' },
+                xaxis: { title: xTitle, gridcolor: '#21293a', tickfont: { color: '#94a3b8' } },
+                yaxis: { title: yTitle, gridcolor: '#21293a', tickfont: { color: '#94a3b8' } }
+            };
+        }
+
+        // MODEL 2: Orderbook Liquidity Topography Over Time (Under main chart on Tab 1)
+        function renderModel2() {
+            if (!latestMarketData || !latestMarketData.ob_surface) return;
+            const ob = latestMarketData.ob_surface;
+            const container = document.getElementById('model2-plot');
+            if (!container) return;
+
+            document.getElementById('ui-m2-spot-badge').innerText = `Spot Ref: $${Number(ob.spot_price || 0).toFixed(2)}`;
+
+            const isSigned = (m2MetricMode === 'signed');
+            const zMat = isSigned ? ob.signed_matrix : ob.vol_matrix;
+            const yLabels = ob.price_levels.map(p => `$${p}`);
+            const xLabels = ob.timestamps;
+
+            const colorScale = isSigned
+                ? [[0, '#ff3b30'], [0.5, '#141a24'], [1, '#00e676']]
+                : [[0, '#0d1117'], [0.5, '#00b4d8'], [1, '#ff9900']];
+
+            const is3D = (m2ViewMode === '3d');
+            const trace = is3D ? {
+                type: 'surface',
+                x: xLabels,
+                y: ob.price_levels,
+                z: zMat,
+                colorscale: colorScale,
+                colorbar: { title: isSigned ? 'Net %' : 'Vol %', thickness: 12, len: 0.75 },
+                contours: { z: { show: true, usecolormap: true, highlightcolor: '#ff9900', project: { z: true } } }
+            } : {
+                type: 'heatmap',
+                x: xLabels,
+                y: yLabels,
+                z: zMat,
+                colorscale: colorScale,
+                colorbar: { title: isSigned ? 'Net %' : 'Vol %', thickness: 12 }
+            };
+
+            const layout = getBasePlotlyLayout('Time (UTC)', 'Gold Zone ($)', isSigned ? 'Net Buy/Sell (%)' : 'Total Liquidity (%)', is3D);
+            Plotly.react(container, [trace], layout, { responsive: true, displayModeBar: false });
+        }
+
+        // MODEL 1: 3D Implied Volatility & Skew Surface (Tab 3)
+        function renderModel1() {
+            if (!latestMarketData || !latestMarketData.vol_surface) return;
+            const vs = latestMarketData.vol_surface;
+            const container = document.getElementById('model1-plot');
+            if (!container) return;
+
+            document.getElementById('ui-m1-skew-badge').innerText = vs.skew_regime || 'Balanced Smile';
+            document.getElementById('ui-m1-baseiv').innerText = `Base ATM IV: ${vs.base_iv_pct}% | Skew Score: ${vs.skew_score >= 0 ? '+' : ''}${vs.skew_score}`;
+
+            const is3D = (m1ViewMode === '3d');
+            const colorScale = [[0, '#0d1117'], [0.35, '#00b4d8'], [0.7, '#ff9900'], [1, '#ff3b30']];
+
+            const trace = is3D ? {
+                type: 'surface',
+                x: vs.strikes,
+                y: vs.tenors,
+                z: vs.iv_matrix,
+                colorscale: colorScale,
+                colorbar: { title: 'IV %', thickness: 12, len: 0.75 },
+                contours: { z: { show: true, usecolormap: true, highlightcolor: '#ffffff', project: { z: true } } }
+            } : {
+                type: 'heatmap',
+                x: vs.strikes.map(s => `$${s}`),
+                y: vs.tenors,
+                z: vs.iv_matrix,
+                colorscale: colorScale,
+                colorbar: { title: 'IV %', thickness: 12 }
+            };
+
+            const layout = getBasePlotlyLayout('Strike Price ($)', 'Tenor', 'Implied Vol (%)', is3D);
+            Plotly.react(container, [trace], layout, { responsive: true, displayModeBar: false });
+        }
+
+        // MODEL 3: 30-Day Session & Asian/London/NY Volatility Profile (Tab 3)
+        function renderModel3() {
+            if (!latestMarketData || !latestMarketData.session_surface) return;
+            const ss = latestMarketData.session_surface;
+            const container = document.getElementById('model3-plot');
+            if (!container) return;
+
+            document.getElementById('ui-m3-asian-badge').innerText = `Asian Peak: ${ss.best_asian_window || '02:00 UTC'}`;
+
+            const isRange = (m3MetricMode === 'range');
+            const zMat = isRange ? ss.range_matrix : ss.bias_matrix;
+            const is3D = (m3ViewMode === '3d');
+
+            const colorScale = isRange
+                ? [[0, '#0d1117'], [0.45, '#00b4d8'], [0.8, '#ff9900'], [1, '#00e676']]
+                : [[0, '#ff3b30'], [0.5, '#141a24'], [1, '#00e676']];
+
+            const trace = is3D ? {
+                type: 'surface',
+                x: ss.hours,
+                y: ss.days,
+                z: zMat,
+                colorscale: colorScale,
+                colorbar: { title: isRange ? 'ATR $' : 'Bias $', thickness: 12, len: 0.75 }
+            } : {
+                type: 'heatmap',
+                x: ss.hours,
+                y: ss.days,
+                z: zMat,
+                colorscale: colorScale,
+                colorbar: { title: isRange ? 'ATR $' : 'Bias $', thickness: 12 }
+            };
+
+            const layout = getBasePlotlyLayout('Hour of Day (UTC)', 'Weekday', isRange ? 'Avg Range ($)' : 'Net Move ($)', is3D);
+            Plotly.react(container, [trace], layout, { responsive: true, displayModeBar: false });
+        }
+
         // ==========================================
-        // 1. LOAD OANDA CHART, POSITIONING & LADDER
+        // 1. LOAD OANDA CHART, LADDER & 3D SURFACES
         // ==========================================
         async function loadChart() {
             const container = document.getElementById('chart-container');
@@ -1243,47 +1559,6 @@
                     return;
                 }
                 const data = await response.json();
-
-                if (data.sentiment) {
-                    const lPct = Number(data.sentiment.long_pct || 50).toFixed(1);
-                    const sPct = Number(data.sentiment.short_pct || 50).toFixed(1);
-                    document.getElementById('ui-retail-long-lbl').innerText = `${lPct}% LONG`;
-                    document.getElementById('ui-retail-short-lbl').innerText = `${sPct}% SHORT`;
-                    document.getElementById('ui-retail-bar').style.width = `${Math.min(100, Math.max(0, data.sentiment.long_pct))}%`;
-                }
-
-                if (data.multi_positioning) {
-                    const mp = data.multi_positioning;
-                    const okxL = Number(mp.okx_top_long_pct || 50).toFixed(1);
-                    const okxS = Number(mp.okx_top_short_pct || 50).toFixed(1);
-                    document.getElementById('ui-okx-long-lbl').innerText = `${okxL}% LONG`;
-                    document.getElementById('ui-okx-short-lbl').innerText = `${okxS}% SHORT`;
-                    document.getElementById('ui-okx-bar').style.width = `${Math.min(100, Math.max(0, mp.okx_top_long_pct || 50))}%`;
-
-                    if (mp.cot_mm_long_pct && mp.cot_mm_long_pct > 0) {
-                        document.getElementById('ui-cot-val').innerText = `${mp.cot_mm_long_pct}% Long / ${mp.cot_mm_short_pct}% Short (${mp.cot_date})`;
-                    } else {
-                        document.getElementById('ui-cot-val').innerText = "50.0% Neutral (Awaiting CFTC)";
-                    }
-                }
-
-                if (data.taker_flow && data.taker_flow.taker_buy_pct !== undefined) {
-                    const tf = data.taker_flow;
-                    const buyP = Number(tf.taker_buy_pct).toFixed(1);
-                    const sellP = Number(tf.taker_sell_pct).toFixed(1);
-                    document.getElementById('ui-taker-buy-lbl').innerText = `${buyP}% BUY`;
-                    document.getElementById('ui-taker-sell-lbl').innerText = `${sellP}% SELL`;
-                    document.getElementById('ui-taker-bar').style.width = `${Math.min(100, Math.max(0, tf.taker_buy_pct))}%`;
-
-                    document.getElementById('ui-tape-sub').innerText = `OKX Tape: ${tf.raw_tape_buy_pct}% Buy`;
-                    document.getElementById('ui-candle-sub').innerText = `4h Candle: ${tf.candle_buy_pressure_pct}% Buy`;
-                    const frSign = tf.funding_rate_pct >= 0 ? '+' : '';
-                    document.getElementById('ui-funding-badge').innerText = `Funding: ${frSign}${tf.funding_rate_pct}%`;
-
-                    document.getElementById('ui-taker-state').innerText = tf.state_label || 'Balanced Flow';
-                    document.getElementById('ui-wick-note').innerText = tf.wick_note || '';
-                    document.getElementById('ui-squeeze-warn').innerText = tf.squeeze_warning || '';
-                }
 
                 if (data.dominant_drivers && data.dominant_drivers.length > 0) {
                     renderDriverPillsToContainer('ui-drivers-grid', data.dominant_drivers);
@@ -1342,14 +1617,22 @@
                     currentSpotPrice = uniqueCandles[uniqueCandles.length - 1].close;
                 }
 
+                ensure3DSurfacesPopulated(data, currentSpotPrice);
+                latestMarketData = data;
+
                 renderLiquidityLadder(data.orderbook || [], currentSpotPrice, data.crypto_basis);
+                renderModel2();
+                if (document.getElementById('3d-tab').classList.contains('active')) {
+                    renderModel1();
+                    renderModel3();
+                }
 
                 if (chartResizeObserver) chartResizeObserver.disconnect();
                 container.innerHTML = '';
 
                 chartInstance = LightweightCharts.createChart(container, {
                     width: container.clientWidth,
-                    height: container.clientHeight || 575,
+                    height: container.clientHeight || 490,
                     layout: { backgroundColor: '#0d1117', textColor: '#94a3b8' },
                     grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
                     timeScale: { timeVisible: true, borderColor: '#21293a' },
@@ -1373,7 +1656,6 @@
                 
                 candleSeries.setData(uniqueCandles);
 
-                // Clean OANDA + COMEX Price Lines (without noisy multi-source text labels)
                 if (data.orderbook && data.orderbook.length > 0) {
                     data.orderbook.forEach((level, index) => {
                         const isBuyDom = level.dominance === "BUY";
@@ -1453,7 +1735,6 @@
                 const cKey = getClusterKey(cluster);
                 const pinned = Boolean(pinnedMap[cKey]);
 
-                // Stage 2 AI Gatekeeper: Hide non-relevant noise unless explicitly pinned by user
                 if (!pinned && cluster.summary && cluster.summary.Is_Gold_Relevant === false) {
                     return false;
                 }

@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 724,
-    "hits": 491,
-    "misses": 233,
-    "win_rate": 67.8,
-    "active_signals": 34,
+    "total_evaluated": 728,
+    "hits": 493,
+    "misses": 235,
+    "win_rate": 67.7,
+    "active_signals": 38,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 412,
-                "misses": 200,
-                "total": 612,
-                "win_rate": 67.3,
-                "avg_dd": 24.1
+                "misses": 202,
+                "total": 614,
+                "win_rate": 67.1,
+                "avg_dd": 24.16
             },
             "Bearish": {
-                "hits": 79,
+                "hits": 81,
                 "misses": 33,
-                "total": 112,
-                "win_rate": 70.5,
-                "avg_dd": 18.9
+                "total": 114,
+                "win_rate": 71.1,
+                "avg_dd": 18.58
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 464,
-                "misses": 219,
-                "total": 683,
-                "win_rate": 67.9,
-                "avg_dd": 22.58
+                "hits": 466,
+                "misses": 221,
+                "total": 687,
+                "win_rate": 67.8,
+                "avg_dd": 22.59
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -53,71 +53,71 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 29,
+                "hits": 30,
                 "misses": 1,
-                "total": 30,
-                "win_rate": 96.7,
-                "avg_dd": 18.67
+                "total": 31,
+                "win_rate": 96.8,
+                "avg_dd": 18.3
             },
             "Against USD Headwind": {
                 "hits": 245,
-                "misses": 54,
-                "total": 299,
-                "win_rate": 81.9,
-                "avg_dd": 21.03
+                "misses": 56,
+                "total": 301,
+                "win_rate": 81.4,
+                "avg_dd": 21.16
             },
             "USD Neutral / Legacy": {
-                "hits": 217,
+                "hits": 218,
                 "misses": 178,
-                "total": 395,
-                "win_rate": 54.9,
-                "avg_dd": 26.78
+                "total": 396,
+                "win_rate": 55.1,
+                "avg_dd": 26.7
             }
         },
         "by_category": {
             "Geopolitics & War": {
                 "hits": 232,
-                "misses": 137,
-                "total": 369,
-                "win_rate": 62.9,
-                "avg_dd": 25.76
+                "misses": 138,
+                "total": 370,
+                "win_rate": 62.7,
+                "avg_dd": 25.83
             },
             "Fed, Rates & Macro": {
-                "hits": 31,
+                "hits": 32,
                 "misses": 7,
-                "total": 38,
-                "win_rate": 81.6,
-                "avg_dd": 13.52
+                "total": 39,
+                "win_rate": 82.1,
+                "avg_dd": 13.33
             },
             "Tech, AI & Equities": {
-                "hits": 137,
+                "hits": 138,
                 "misses": 46,
-                "total": 183,
-                "win_rate": 74.9,
-                "avg_dd": 18.42
+                "total": 184,
+                "win_rate": 75.0,
+                "avg_dd": 18.34
             },
             "Commodities & Energy": {
                 "hits": 91,
-                "misses": 43,
-                "total": 134,
-                "win_rate": 67.9,
-                "avg_dd": 26.86
+                "misses": 44,
+                "total": 135,
+                "win_rate": 67.4,
+                "avg_dd": 26.95
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 426,
-                "misses": 215,
-                "total": 641,
-                "win_rate": 66.5,
-                "avg_dd": 23.86
+                "misses": 216,
+                "total": 642,
+                "win_rate": 66.4,
+                "avg_dd": 23.9
             },
             "High (65-74%)": {
-                "hits": 61,
-                "misses": 17,
-                "total": 78,
-                "win_rate": 78.2,
-                "avg_dd": 21.41
+                "hits": 63,
+                "misses": 18,
+                "total": 81,
+                "win_rate": 77.8,
+                "avg_dd": 21.24
             },
             "Extreme (>=75%)": {
                 "hits": 4,
@@ -11515,7 +11515,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/3-oil-gas-stocks-cash-051548385.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "3 Oil And Gas Stocks With Cash Flow Leverage As Crude Prices Swing",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -11551,7 +11551,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/features/2026/11/13/unrwa-funding-cuts-deepen-hardship-for-palestinian-refugees-in-lebanon?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "UNRWA funding cuts deepen hardship for Palestinian refugees in Lebanon",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -13045,14 +13045,14 @@
             "fail_reason": ""
         },
         "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-falls-below-73-k-for-first-time-since-august-amid-nvidia-rout/cNGzD5IR9aW?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Bitcoin Falls Below $73K For First Time Since August: Michael Van De Poppe Wants One More ",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bearish",
-            "prob": 75,
+            "prob": 68,
             "entry_price": 3880.84,
-            "target": 3859.97,
+            "target": 3871.77,
             "max_dd_usd": 7.17,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13158,9 +13158,9 @@
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 62,
+            "prob": 58,
             "entry_price": 3884.68,
-            "target": 3898.95,
+            "target": 3889.56,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13276,6 +13276,150 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794595485.0,
             "date": "First Reported: 2026-11-13 18:44 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/mossad-chief-washington-talks-iran-report-says": {
+            "status": "ACTIVE",
+            "headline": "Mossad chief in Washington for talks on Iran, report says",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794627226.0,
+            "date": "First Reported: 2026-11-14 03:33 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/trump-discuss-iran-war-not-ukraine-china-summit": {
+            "status": "ACTIVE",
+            "headline": "Trump to discuss Iran war, but not Ukraine, at China summit",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3884.68,
+            "target": 3889.56,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794623452.0,
+            "date": "First Reported: 2026-11-14 02:30 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249373/Iran-s-Army-shoots-down-US-MQ-1drone-off-Sirik-coast": {
+            "status": "ACTIVE",
+            "headline": "Iran Army Navy shoots down US-made MQ-1drone off Sirik coast",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794620702.0,
+            "date": "First Reported: 2026-11-13 11:51 UTC | Last Update: 2026-11-14 01:45 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/watch-53-nations-and-organisations-urge-israel-allow-aid-gaza": {
+            "status": "ACTIVE",
+            "headline": "Watch: 53 nations and organisations urge Israel to allow aid into Gaza",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3889.56,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794618139.0,
+            "date": "First Reported: 2026-11-13 07:35 UTC | Last Update: 2026-11-14 01:02 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/hemlo-mining-corp-hmmcf-q3-010210603.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Hemlo Mining Corp (HMMCF) (Q3 2026) Earnings Call Highlights: Record Cash Position, Strong",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794618130.0,
+            "date": "First Reported: 2026-11-14 01:02 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/oil-india-ltd-bom-533106-010136397.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Oil India Ltd (BOM:533106) (Q2 2027) Earnings Call Highlights: Record Half-Year EBITDA of ",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3884.68,
+            "target": 3889.56,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794618096.0,
+            "date": "First Reported: 2026-11-14 01:01 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/articles/super-micro-run-jensen-huang-234845498.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Super Micro, run by Jensen Huang’s friend, says Megaspeed was ‘never’ its customer",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 3884.68,
+            "target": 3889.56,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794613725.0,
+            "date": "First Reported: 2026-11-13 23:48 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/currencies/articles/us-dollar-edges-higher-against-183801855.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "US Dollar Edges Higher Against The Loonie; Treasury Yields Top 5%",
+            "source": "Yahoo Finance Gold",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bearish",
+            "prob": 70,
+            "entry_price": 3880.84,
+            "target": 3880.83,
+            "max_dd_usd": 7.17,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794595081.0,
+            "date": "First Reported: 2026-11-13 18:38 UTC",
             "fail_reason": ""
         }
     }

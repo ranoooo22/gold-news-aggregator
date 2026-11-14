@@ -521,7 +521,7 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, se
     now_str = datetime.utcnow().strftime("%H:%M")
 
     # Build current snapshot across the standardized 11 price_grid levels
-    curr_ snapshot_levels = {}
+    curr_snapshot_levels = {}
     for p_lvl in price_grid:
         z_item = all_zones_dict.get(p_lvl)
         if z_item:

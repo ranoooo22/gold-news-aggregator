@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 728,
+    "total_evaluated": 748,
     "hits": 493,
-    "misses": 235,
-    "win_rate": 67.7,
-    "active_signals": 38,
+    "misses": 255,
+    "win_rate": 65.9,
+    "active_signals": 42,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 412,
-                "misses": 202,
-                "total": 614,
-                "win_rate": 67.1,
-                "avg_dd": 24.16
+                "misses": 221,
+                "total": 633,
+                "win_rate": 65.1,
+                "avg_dd": 23.89
             },
             "Bearish": {
                 "hits": 81,
-                "misses": 33,
-                "total": 114,
-                "win_rate": 71.1,
-                "avg_dd": 18.58
+                "misses": 34,
+                "total": 115,
+                "win_rate": 70.4,
+                "avg_dd": 18.48
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
                 "hits": 466,
-                "misses": 221,
-                "total": 687,
-                "win_rate": 67.8,
-                "avg_dd": 22.59
+                "misses": 241,
+                "total": 707,
+                "win_rate": 65.9,
+                "avg_dd": 22.37
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -54,77 +54,77 @@
         "by_macro_alignment": {
             "With USD Tailwind": {
                 "hits": 30,
-                "misses": 1,
-                "total": 31,
-                "win_rate": 96.8,
-                "avg_dd": 18.3
+                "misses": 2,
+                "total": 32,
+                "win_rate": 93.8,
+                "avg_dd": 18.08
             },
             "Against USD Headwind": {
                 "hits": 245,
-                "misses": 56,
-                "total": 301,
-                "win_rate": 81.4,
-                "avg_dd": 21.16
+                "misses": 70,
+                "total": 315,
+                "win_rate": 77.8,
+                "avg_dd": 21.09
             },
             "USD Neutral / Legacy": {
                 "hits": 218,
-                "misses": 178,
-                "total": 396,
-                "win_rate": 55.1,
-                "avg_dd": 26.7
+                "misses": 183,
+                "total": 401,
+                "win_rate": 54.4,
+                "avg_dd": 26.35
             }
         },
         "by_category": {
             "Geopolitics & War": {
                 "hits": 232,
-                "misses": 138,
-                "total": 370,
-                "win_rate": 62.7,
-                "avg_dd": 25.83
+                "misses": 151,
+                "total": 383,
+                "win_rate": 60.6,
+                "avg_dd": 25.43
             },
             "Fed, Rates & Macro": {
                 "hits": 32,
-                "misses": 7,
-                "total": 39,
-                "win_rate": 82.1,
-                "avg_dd": 13.33
+                "misses": 8,
+                "total": 40,
+                "win_rate": 80.0,
+                "avg_dd": 13.27
             },
             "Tech, AI & Equities": {
                 "hits": 138,
-                "misses": 46,
-                "total": 184,
-                "win_rate": 75.0,
-                "avg_dd": 18.34
+                "misses": 47,
+                "total": 185,
+                "win_rate": 74.6,
+                "avg_dd": 18.25
             },
             "Commodities & Energy": {
                 "hits": 91,
-                "misses": 44,
-                "total": 135,
-                "win_rate": 67.4,
-                "avg_dd": 26.95
+                "misses": 49,
+                "total": 140,
+                "win_rate": 65.0,
+                "avg_dd": 26.6
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 426,
-                "misses": 216,
-                "total": 642,
-                "win_rate": 66.4,
-                "avg_dd": 23.9
+                "misses": 223,
+                "total": 649,
+                "win_rate": 65.6,
+                "avg_dd": 23.73
             },
             "High (65-74%)": {
                 "hits": 63,
-                "misses": 18,
-                "total": 81,
-                "win_rate": 77.8,
-                "avg_dd": 21.24
+                "misses": 28,
+                "total": 91,
+                "win_rate": 69.2,
+                "avg_dd": 20.84
             },
             "Extreme (>=75%)": {
                 "hits": 4,
-                "misses": 1,
-                "total": 5,
-                "win_rate": 80.0,
-                "avg_dd": 13.91
+                "misses": 4,
+                "total": 8,
+                "win_rate": 50.0,
+                "avg_dd": 17.13
             }
         }
     },
@@ -11875,7 +11875,7 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/commodities-news/european-gas-logs-12-weekly-surge-as-usiran-diplomatic-hopes-collapse-5024311": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "European gas logs 12% weekly surge as U.S.-Iran diplomatic hopes collapse",
             "source": "Investing.com",
             "category": "Geopolitics & War",
@@ -11911,7 +11911,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/13/russia-and-ukraine-report-overnight-attacks-amid-us-diplomatic-push?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Russia and Ukraine report overnight attacks amid US diplomatic push",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -11947,7 +11947,7 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/commodities-news/goldman-sees-gulf-lng-disruption-pushing-ttf-gas-prices-higher-93CH-5024622": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Goldman sees Gulf LNG disruption pushing TTF gas prices higher",
             "source": "Investing.com",
             "category": "Commodities & Energy",
@@ -11965,7 +11965,7 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/commodities-news/goldman-sees-copper-climbing-to-15600-per-ton-by-december-2027-93CH-5024621": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Goldman sees copper climbing to $15,600 per ton by December 2027",
             "source": "Investing.com",
             "category": "Commodities & Energy",
@@ -11983,7 +11983,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/13/fed-chair-kevin-warsh-central-bank-reforms-come-with-a-significant-unintended-consequence/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Fed Chair Kevin Warsh's Central Bank Reforms Come With a Significant Unintended Consequenc",
             "source": "Yahoo Finance Nasdaq",
             "category": "Geopolitics & War",
@@ -12181,7 +12181,7 @@
             "fail_reason": ""
         },
         "https://www.euronews.com/2026/11/13/hungarys-mol-seeks-eu-funding-as-ceo-warns-russian-oil-phase-out-could-trigger-social-unre?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Hungary’s MOL seeks EU funding as CEO warns Russian oil phase-out could trigger social unr",
             "source": "Yahoo Finance Oil",
             "category": "Geopolitics & War",
@@ -12343,7 +12343,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/trump-says-saudi-arabia-disintegrating": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Trump says Saudi Arabia is 'disintegrating'",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -12361,7 +12361,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532099/Four-senators-threaten-government-shutdown-unless-Congress-cuts": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Four senators threaten government shutdown unless Congress cuts off Iran war money",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -12415,7 +12415,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249364/Tehran-hosting-funeral-ceremony-of-110-unknown-martyrs": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Tehran hosting funeral procession for 110 unknown martyrs",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -12757,7 +12757,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/13/eisenkot-slams-netanyahus-racist-campaign-against-palestinian-israelis?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Eisenkot slams Netanyahu’s ‘racist’ campaign against Palestinian Israelis",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -12811,7 +12811,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/13/raise-how-many-shares-exxonmobil-dividend/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "After a 3.9% Raise, Here's How Many Shares of ExxonMobil You'd Now Need for $1,000 a Month",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -12829,7 +12829,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/us-energy-rig-count-drops-185914224.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US energy rig count drops for first time in six weeks",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -12865,7 +12865,7 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/commodities-news/baltic-dry-bulk-shipping-index-falls-on-weaker-capesize-rates-93CH-5026166": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Baltic dry bulk shipping index falls on weaker capesize rates",
             "source": "Investing.com",
             "category": "Fed, Rates & Macro",
@@ -12991,7 +12991,7 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/commodities-news/tin-backwardation-widens-on-lme-as-exchange-stocks-fall-60-since-june-93CH-5026445": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Tin backwardation widens on LME as exchange stocks fall 60% since June",
             "source": "Investing.com",
             "category": "Geopolitics & War",
@@ -13009,14 +13009,14 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/stock-market-news/oil-market-positioning-risks-surplus-shipping-attacks-and-spillover-into-rates-and-equities-93CH-5026424": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Oil market positioning risks: surplus, shipping attacks, and spillover into rates and equi",
             "source": "Investing.com",
             "category": "Geopolitics & War",
             "impact": "Bullish",
             "prob": 68,
             "entry_price": 3878.43,
-            "target": 3889.81,
+            "target": 3899.62,
             "max_dd_usd": 8.9,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13027,7 +13027,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/bc-gold-futures-150023956.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "BC-Gold Futures",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -13063,7 +13063,7 @@
             "fail_reason": ""
         },
         "https://www.proactiveinvestors.com/companies/news/1101754/goldman-sachs-recommends-commodities-as-portfolio-hedge-amid-geopolitical-and-supply-risks-1101754.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Goldman Sachs recommends commodities as portfolio hedge amid geopolitical and supply risks",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -13081,7 +13081,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/greta-thunberg-cop-turkish-energy-shipments-directly-fuelling-genocide-palestine": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Greta Thunberg at COP: Turkish energy shipments 'directly fuelling the genocide of Palesti",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -13243,7 +13243,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/why-erdogan-son-meeting-lebanons-top-leaders": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Why is Erdogan's son meeting Lebanon’s top leaders?",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -13261,7 +13261,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/13/at-least-10-killed-in-guinea-in-crackdown-on-gold-mining?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "At least 10 killed in Guinea in crackdown on gold mining",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -13302,9 +13302,9 @@
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 62,
+            "prob": 75,
             "entry_price": 3884.68,
-            "target": 3889.56,
+            "target": 4049.03,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13320,7 +13320,7 @@
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 70,
+            "prob": 80,
             "entry_price": 3884.68,
             "target": 3899.62,
             "max_dd_usd": 0.0,
@@ -13340,7 +13340,7 @@
             "impact": "Bullish",
             "prob": 65,
             "entry_price": 3884.68,
-            "target": 3889.56,
+            "target": 3889.45,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13394,7 +13394,7 @@
             "impact": "Bullish",
             "prob": 60,
             "entry_price": 3884.68,
-            "target": 3889.56,
+            "target": 3880.89,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13420,6 +13420,438 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794595081.0,
             "date": "First Reported: 2026-11-13 18:38 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249385/Iran-lashes-out-at-IAEA-BoG-s-flawed-resolutions-mission": {
+            "status": "ACTIVE",
+            "headline": "Iran lashes out at IAEA BoG's \"flawed resolutions\": mission",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794674800.0,
+            "date": "First Reported: 2026-11-14 08:53 UTC | Last Update: 2026-11-14 16:46 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532141/Bet-on-the-losing-horse-Abu-Dhabi-s-gamble-in-Hormuz": {
+            "status": "ACTIVE",
+            "headline": "Bet on the losing horse: Abu Dhabi's gamble in Hormuz",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794674628.0,
+            "date": "First Reported: 2026-11-14 16:43 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/news/loss-confidence-us-navy-fires-commanders-warships-deployed-against-iran": {
+            "status": "ACTIVE",
+            "headline": "‘Loss of confidence’: US Navy fires commanders of warships deployed against Iran",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3884.68,
+            "target": 3889.45,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794674097.0,
+            "date": "First Reported: 2026-11-14 16:34 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249398/Israel-advances-plan-to-build-nearly-900-new-settler-units": {
+            "status": "ACTIVE",
+            "headline": "Israel advances plan to build nearly 900 new settler units",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3884.68,
+            "target": 3889.45,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794673627.0,
+            "date": "First Reported: 2026-11-14 16:27 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/13/anthropic-set-its-ipo-price-range-at-70-to-78-valuing-it-at-up-to-1405-trillion/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Anthropic Set Its IPO Share Price Range at $70 to $78, Valuing It at Up to $1.4 Trillion",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 72,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794671431.0,
+            "date": "First Reported: 2026-11-13 17:40 UTC | Last Update: 2026-11-14 15:50 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249396/You-reap-what-you-sow-Yemeni-negotiator-warns-Saudis": {
+            "status": "ACTIVE",
+            "headline": "‘You reap what you sow, Yemeni negotiator warns Saudis",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 63,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794670143.0,
+            "date": "First Reported: 2026-11-14 15:29 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532137/From-the-battlefield-to-the-ballot-box-war-comes-home": {
+            "status": "ACTIVE",
+            "headline": "From the battlefield to the ballot box: war comes home",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794669326.0,
+            "date": "First Reported: 2026-11-14 15:15 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/china-petroleum-chemical-sehk-386-150921054.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "China Petroleum & Chemical (SEHK:386) Wins Brazil Santos Basin Oil Block Rights",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 67,
+            "entry_price": 3884.68,
+            "target": 3889.45,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794668961.0,
+            "date": "First Reported: 2026-11-14 15:09 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/economy/policy/articles/america-heart-attack-ray-dalio-133000352.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "America ‘will have a heart attack’: Ray Dalio issues fresh warning on US economy — with sa",
+            "source": "Yahoo Finance Gold",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 75,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794663000.0,
+            "date": "First Reported: 2026-11-14 13:30 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/14/russian-casualties-reach-450000-what-that-means-for-the-ukraine-war?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Russian casualties ‘reach 450,000’: What that means for the Ukraine war",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.45,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794661056.0,
+            "date": "First Reported: 2026-11-14 12:57 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/14/ethiopia-blames-egypt-eritrea-for-tigray-attacks?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Ethiopia blames Egypt, Eritrea for Tigray attacks",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.45,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794659299.0,
+            "date": "First Reported: 2026-11-14 12:28 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/14/ukraine-russia-race-to-build-military-satellite-networks-as-war-rages-on?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Ukraine, Russia race to build military satellite networks as war rages on",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.45,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794654039.0,
+            "date": "First Reported: 2026-11-14 11:00 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532116/Damaged-oil-industry-facilities-reconstruction-should-be-accelerated": {
+            "status": "ACTIVE",
+            "headline": "Damaged oil industry facilities reconstruction should be accelerated: acting oil minister",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3889.47,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794650954.0,
+            "date": "First Reported: 2026-11-14 10:09 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249386/Iran-showcased-superb-astonishing-power-in-recent-2-wars": {
+            "status": "ACTIVE",
+            "headline": "Iran showcased superb, astonishing power in recent 2 wars",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 63,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794647218.0,
+            "date": "First Reported: 2026-11-14 09:06 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/sports/2026/11/14/warner-cricket-australia-ball-tampering-sandpapergate-khawaja-cummins?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Warner accuses Cricket Australia of ‘cover-up’ in ball-tampering scandal",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.47,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794643814.0,
+            "date": "First Reported: 2026-11-14 08:10 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/sports/2026/11/14/nba-cup-basketball-pacers-knicks-spurs-warriors?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.47,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794643283.0,
+            "date": "First Reported: 2026-11-14 08:01 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/un-says-imo-confirms-25-seafarer-deaths-iran-war-began": {
+            "status": "ACTIVE",
+            "headline": "UN says IMO confirms 25 seafarer deaths since Iran war began",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.47,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794642396.0,
+            "date": "First Reported: 2026-11-14 04:00 UTC | Last Update: 2026-11-14 07:46 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249383/ROSATOM-ready-to-implement-new-nuclear-projects-in-Iran": {
+            "status": "ACTIVE",
+            "headline": "“ROSATOM” ready to implement new nuclear projects in Iran",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.47,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794640265.0,
+            "date": "First Reported: 2026-11-14 07:11 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/14/philippine-court-orders-arrest-of-jailed-us-wanted-celebrity-preacher?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Philippine court orders arrest of jailed, US-wanted celebrity preacher",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.47,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794637483.0,
+            "date": "First Reported: 2026-11-14 06:24 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/14/siege-fuels-disease-fears-in-yemens-besieged-taiz?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Siege fuels disease fears in Yemen’s Taiz",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.47,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794637047.0,
+            "date": "First Reported: 2026-11-14 06:17 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249380/Why-Hazrat-Abolfazl-AS-is-shared-religious-symbol-for-peace": {
+            "status": "ACTIVE",
+            "headline": "Why Hazrat Abolfazl (AS) is shared religious symbol for peace",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3880.87,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794636951.0,
+            "date": "First Reported: 2026-11-14 06:15 UTC",
+            "fail_reason": ""
+        },
+        "https://investorshub.advfn.com/market-news/article/39985/bank-of-americas-hartnett-maintains-cautious-market-outlook-until-treasury-yields-and-oil-prices-decline?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Bank of America’s Hartnett Maintains Cautious Market Outlook Until Treasury Yields and Oil",
+            "source": "Yahoo Finance Oil",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3884.68,
+            "target": 3889.45,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794668884.0,
+            "date": "First Reported: 2026-11-14 15:08 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532136/Efforts-to-encircle-the-resistance-bloc-within-its-borders": {
+            "status": "ACTIVE",
+            "headline": "Efforts to encircle the resistance bloc within its borders",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794668602.0,
+            "date": "First Reported: 2026-11-14 15:03 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketwatch.com/story/washington-can-start-delivering-on-affordability-by-rejecting-trumps-tariffs-8f2c76fd?mod=mw_rss_topstories": {
+            "status": "ACTIVE",
+            "headline": "Washington can start delivering on affordability by rejecting Trump’s tariffs",
+            "source": "MarketWatch Macro",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bullish",
+            "prob": 72,
+            "entry_price": 3884.68,
+            "target": 3889.45,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794663000.0,
+            "date": "First Reported: 2026-11-14 13:30 UTC",
             "fail_reason": ""
         }
     }

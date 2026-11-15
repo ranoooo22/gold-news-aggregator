@@ -1,32 +1,32 @@
 {
-    "total_evaluated": 767,
+    "total_evaluated": 778,
     "hits": 493,
-    "misses": 274,
-    "win_rate": 64.3,
-    "active_signals": 35,
+    "misses": 285,
+    "win_rate": 63.4,
+    "active_signals": 30,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 412,
-                "misses": 240,
-                "total": 652,
-                "win_rate": 63.2,
+                "misses": 250,
+                "total": 662,
+                "win_rate": 62.2,
                 "avg_dd": 23.8
             },
             "Bearish": {
                 "hits": 81,
-                "misses": 34,
-                "total": 115,
-                "win_rate": 70.4,
+                "misses": 35,
+                "total": 116,
+                "win_rate": 69.8,
                 "avg_dd": 18.48
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
                 "hits": 466,
-                "misses": 260,
-                "total": 726,
-                "win_rate": 64.2,
+                "misses": 271,
+                "total": 737,
+                "win_rate": 63.2,
                 "avg_dd": 22.3
             },
             "Moderate (0.8x-1.2x ATR)": {
@@ -54,16 +54,16 @@
         "by_macro_alignment": {
             "With USD Tailwind": {
                 "hits": 30,
-                "misses": 2,
-                "total": 32,
-                "win_rate": 93.8,
+                "misses": 3,
+                "total": 33,
+                "win_rate": 90.9,
                 "avg_dd": 18.08
             },
             "Against USD Headwind": {
                 "hits": 245,
-                "misses": 85,
-                "total": 330,
-                "win_rate": 74.2,
+                "misses": 95,
+                "total": 340,
+                "win_rate": 72.1,
                 "avg_dd": 21.06
             },
             "USD Neutral / Legacy": {
@@ -77,9 +77,9 @@
         "by_category": {
             "Geopolitics & War": {
                 "hits": 232,
-                "misses": 158,
-                "total": 390,
-                "win_rate": 59.5,
+                "misses": 169,
+                "total": 401,
+                "win_rate": 57.9,
                 "avg_dd": 25.4
             },
             "Fed, Rates & Macro": {
@@ -107,23 +107,23 @@
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 426,
-                "misses": 231,
-                "total": 657,
-                "win_rate": 64.8,
+                "misses": 238,
+                "total": 664,
+                "win_rate": 64.2,
                 "avg_dd": 23.7
             },
             "High (65-74%)": {
                 "hits": 63,
-                "misses": 35,
-                "total": 98,
-                "win_rate": 64.3,
+                "misses": 38,
+                "total": 101,
+                "win_rate": 62.4,
                 "avg_dd": 20.71
             },
             "Extreme (>=75%)": {
                 "hits": 4,
-                "misses": 8,
-                "total": 12,
-                "win_rate": 33.3,
+                "misses": 9,
+                "total": 13,
+                "win_rate": 30.8,
                 "avg_dd": 16.74
             }
         }
@@ -13621,7 +13621,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/14/ukraine-russia-race-to-build-military-satellite-networks-as-war-rages-on?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Ukraine, Russia race to build military satellite networks as war rages on",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -13639,7 +13639,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532116/Damaged-oil-industry-facilities-reconstruction-should-be-accelerated": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Damaged oil industry facilities reconstruction should be accelerated: acting oil minister",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -13657,7 +13657,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249386/Iran-showcased-superb-astonishing-power-in-recent-2-wars": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran showcased superb, astonishing power in recent 2 wars",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -13675,7 +13675,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/sports/2026/11/14/warner-cricket-australia-ball-tampering-sandpapergate-khawaja-cummins?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Warner accuses Cricket Australia of ‘cover-up’ in ball-tampering scandal",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -13693,7 +13693,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/sports/2026/11/14/nba-cup-basketball-pacers-knicks-spurs-warriors?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Pacers hold off Knicks in NBA Cup thriller, Spurs rout Warriors",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -13711,7 +13711,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/un-says-imo-confirms-25-seafarer-deaths-iran-war-began": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "UN says IMO confirms 25 seafarer deaths since Iran war began",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -13729,7 +13729,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249383/ROSATOM-ready-to-implement-new-nuclear-projects-in-Iran": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "“ROSATOM” ready to implement new nuclear projects in Iran",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -13747,7 +13747,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/14/philippine-court-orders-arrest-of-jailed-us-wanted-celebrity-preacher?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Philippine court orders arrest of jailed, US-wanted celebrity preacher",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -13765,7 +13765,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/14/siege-fuels-disease-fears-in-yemens-besieged-taiz?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Siege fuels disease fears in Yemen’s Taiz",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -13783,7 +13783,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249380/Why-Hazrat-Abolfazl-AS-is-shared-religious-symbol-for-peace": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Why Hazrat Abolfazl (AS) is shared religious symbol for peace",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -13963,7 +13963,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/economy/2026/11/14/southeast-asian-leaders-to-meet-as-trump-visit-highlights-trade-disruption?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Southeast Asian leaders to meet as Trump visit highlights trade disruption",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -14004,9 +14004,9 @@
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 60,
+            "prob": 65,
             "entry_price": 3884.68,
-            "target": 3899.63,
+            "target": 3899.57,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -14058,9 +14058,9 @@
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 61,
+            "prob": 60,
             "entry_price": 3884.68,
-            "target": 3899.63,
+            "target": 3889.44,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -14068,6 +14068,114 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794699277.0,
             "date": "First Reported: 2026-11-14 23:34 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249412/Don-t-count-your-chicken-before-they-are-hatched": {
+            "status": "ACTIVE",
+            "headline": "Don’t count your chicken before they are hatched!",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 72,
+            "entry_price": 3884.68,
+            "target": 3899.57,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794727739.0,
+            "date": "First Reported: 2026-11-15 07:28 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/bahrains-ministry-interior-issues-hazard-alert-urges-citizens-stay-calm": {
+            "status": "ACTIVE",
+            "headline": "Bahrain's ministry of interior issues 'hazard' alert, urges citizens to stay calm",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 74,
+            "entry_price": 3884.68,
+            "target": 3889.44,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794727635.0,
+            "date": "First Reported: 2026-11-15 02:07 UTC | Last Update: 2026-11-15 07:27 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/15/asean-summit-whos-attending-and-whats-at-stake?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "ASEAN summit: Who’s attending and what’s at stake?",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3884.68,
+            "target": 3899.57,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794726684.0,
+            "date": "First Reported: 2026-11-15 07:11 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249410/Iran-not-remain-in-state-of-neither-war-nor-peace-Ghalibaf": {
+            "status": "ACTIVE",
+            "headline": "Iran not remain in state of ‘neither war nor peace’: Ghalibaf",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3899.57,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794724581.0,
+            "date": "First Reported: 2026-11-15 06:36 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/14/november-25-will-be-a-critical-day-for-the-stock-market/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Nov. 25 Will Be a Critical Day for the Stock Market",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bearish",
+            "prob": 75,
+            "entry_price": 3884.68,
+            "target": 3871.81,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794712802.0,
+            "date": "First Reported: 2026-11-15 03:20 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/eisenkot-calls-netanyahus-unity-government-call-yet-another-spin-move": {
+            "status": "ACTIVE",
+            "headline": "Eisenkot calls Netanyahu's unity government call 'yet another spin move'",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 3884.68,
+            "target": 3889.44,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794705870.0,
+            "date": "First Reported: 2026-11-15 01:24 UTC",
             "fail_reason": ""
         }
     }

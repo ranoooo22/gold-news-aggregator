@@ -1,5 +1,81 @@
 [
     {
+        "main_date": "First Reported: 2026-11-15 22:47 UTC",
+        "original_date": "2026-11-15 22:47",
+        "_timestamp": 1794782820.0,
+        "articles": [
+            {
+                "title": "Berkshire’s record high exposes hidden trap in S&P 500 401(k) plans",
+                "link": "https://www.thestreet.com/retirement/berkshire-sp500-401k-concentration?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-15 22:47",
+                "description": "A familiar fund can hold an unfamiliar risk.",
+                "_timestamp": 1794782820.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-15 22:47 UTC",
+            "Facts": "A financial report discusses hidden risks tied to record valuations in major market indices and retirement funds. The discussion centers on structural index concentration rather than direct macro shocks to gold or commodities.",
+            "Macro_Context": "This is isolated equity and retirement planning commentary with negligible direct transmission to XAU/USD liquidity.",
+            "Impact_Timing": "None",
+            "Timeframe": "Intraday",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 10,
+            "Orderflow_Price_Target": "3884.68"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-15 22:06 UTC | Last Update: 2026-11-15 22:36 UTC",
+        "original_date": "2026-11-15 22:06",
+        "_timestamp": 1794782160.0,
+        "articles": [
+            {
+                "title": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
+                "link": "https://www.investing.com/news/commodities-news/ubs-sees-brent-hitting-110-as-tight-supply-buffers-leave-oil-vulnerable-5028142",
+                "source": "Investing.com",
+                "date": "2026-11-15 22:06",
+                "description": "",
+                "_timestamp": 1794780360.0
+            },
+            {
+                "title": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
+                "link": "https://finance.yahoo.com/energy/articles/ubs-sees-brent-hitting-110-223600200.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-15 22:36",
+                "description": "Investing.com -- UBS’s Chief Investment Office expects Brent crude prices to reach $110 a barrel by year-end, saying limited supply buffers leave the market vulnerable despite recent price swings.",
+                "_timestamp": 1794782160.0
+            },
+            {
+                "title": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
+                "link": "https://finance.yahoo.com/energy/articles/ubs-sees-brent-hitting-110-223600200.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-15 22:36",
+                "description": "Investing.com -- UBS’s Chief Investment Office expects Brent crude prices to reach $110 a barrel by year-end, saying limited supply buffers leave the market vulnerable despite recent price swings.",
+                "_timestamp": 1794782160.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-15 22:36 UTC",
+            "Facts": "[Update 2026-11-15 22:36 UTC via Yahoo Finance Gold]: UBS forecasts Brent crude prices to escalate toward $110 per barrel by the end of the year due to tightening global supply buffers. The analysis highlights that current market volatility fails to reflect the underlying vulnerability in energy inventories.",
+            "Macro_Context": "Rising energy prices heighten long-term inflationary pressures, increasing safe-haven demand and reinforcing structural bullish drivers for gold.",
+            "Impact_Timing": "1-3 Hours",
+            "Timeframe": "Structural Weekly Regime",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 68,
+            "Orderflow_Price_Target": "3889.65"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
+    },
+    {
         "main_date": "First Reported: 2026-11-15 17:23 UTC | Last Update: 2026-11-15 22:34 UTC",
         "original_date": "2026-11-15 17:23",
         "_timestamp": 1794782050.0,
@@ -274,37 +350,6 @@
             "Orderflow_Price_Target": "$3898.97"
         },
         "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-15 22:06 UTC",
-        "original_date": "2026-11-15 22:06",
-        "_timestamp": 1794780360.0,
-        "articles": [
-            {
-                "title": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
-                "link": "https://www.investing.com/news/commodities-news/ubs-sees-brent-hitting-110-as-tight-supply-buffers-leave-oil-vulnerable-5028142",
-                "source": "Investing.com",
-                "date": "2026-11-15 22:06",
-                "description": "",
-                "_timestamp": 1794780360.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-15 22:06 UTC",
-            "Facts": "UBS analysts project Brent crude oil prices climbing toward $110 per barrel. Tight global supply buffers are leaving energy markets vulnerable to further upside price shocks.",
-            "Macro_Context": "Rising energy costs elevate broader inflationary pressures, increasing the appeal of gold as a traditional inflation hedge.",
-            "Impact_Timing": "Medium-term trend",
-            "Timeframe": "1-2 weeks",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Orderflow_Price_Target": "$3970.61"
-        },
-        "eval_status": "ACTIVE",
         "max_dd_usd": 0.0
     },
     {

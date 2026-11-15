@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GMIT Gold & Macro Intelligence Terminal</title>
+    <title>GMIT // XAU — Gold & Macro Intelligence Terminal</title>
     <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <style>
@@ -55,7 +55,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
         }
         .brand-block {
             display: flex;
@@ -87,11 +87,12 @@
             font-family: var(--font-mono);
         }
 
+        /* Single-Line Navigation Bar */
         .nav-actions {
             display: flex;
             align-items: center;
-            gap: 8px;
-            flex-wrap: wrap;
+            gap: 6px;
+            flex-wrap: nowrap;
         }
         .tab-group {
             display: flex;
@@ -99,19 +100,23 @@
             padding: 2px;
             border-radius: var(--radius-md);
             border: 1px solid var(--border-color);
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
+            flex: 1;
         }
         .tab-btn {
             background: transparent;
             border: none;
             color: var(--text-secondary);
             font-family: var(--font-mono);
-            font-size: 0.75rem;
+            font-size: 0.74rem;
             font-weight: 700;
-            padding: 6px 12px;
+            padding: 6px 11px;
             border-radius: 3px;
             cursor: pointer;
             text-transform: uppercase;
+            white-space: nowrap;
+            text-align: center;
+            flex: 1;
             transition: all 0.14s ease;
         }
         .tab-btn:hover { color: #ffffff; }
@@ -124,13 +129,15 @@
             background: var(--bg-subtle);
             color: var(--bb-amber);
             border: 1px solid var(--bb-amber);
-            padding: 6px 11px;
+            padding: 6px 10px;
             border-radius: var(--radius-md);
             font-family: var(--font-mono);
-            font-size: 0.74rem;
+            font-size: 0.73rem;
             font-weight: 700;
             text-transform: uppercase;
+            white-space: nowrap;
             cursor: pointer;
+            flex-shrink: 0;
         }
         .refresh-btn:hover {
             background: var(--bb-amber);
@@ -276,6 +283,7 @@
             height: 490px;
             border-radius: var(--radius-md);
             overflow: hidden;
+            background-color: #0d1117;
         }
         .chart-legend {
             margin-top: 8px;
@@ -426,7 +434,7 @@
             justify-content: space-between;
             align-items: center;
             font-family: var(--font-mono);
-            font-size: 0.74rem;
+            font-size: 0.75rem;
             font-weight: 800;
             margin: 2px 0;
         }
@@ -773,7 +781,10 @@
             #chart-container { height: 420px; }
         }
         @media (max-width: 720px) {
-            .top-header { padding: 9px 12px; }
+            .top-header { padding: 8px 10px; }
+            .nav-actions { width: 100%; justify-content: space-between; gap: 5px; }
+            .tab-btn { font-size: 0.69rem; padding: 6px 6px; }
+            .refresh-btn { font-size: 0.69rem; padding: 6px 8px; }
             .telemetry-ribbon { padding: 7px 12px; }
             .t-divider { display: none; }
             .controls-left { flex-direction: column; align-items: stretch; }
@@ -1013,13 +1024,15 @@
         let chartResizeObserver = null;
         const expandedCardKeys = new Set();
 
-        // View states for the 3 Models (auto-default to 2D on small mobile screens if desired, or 3D with 1-click toggle)
+        // Max radius (2.5% ~ $95 around spot) so distant outlier walls ($4049) never stretch the chart
+        const MAX_ZONE_RADIUS_PCT = 0.025;
+
         const isMobileScreen = window.innerWidth < 720;
         let m1ViewMode = isMobileScreen ? '2d' : '3d';
         let m2ViewMode = isMobileScreen ? '2d' : '3d';
-        let m2MetricMode = 'signed'; // 'signed' or 'total'
+        let m2MetricMode = 'signed';
         let m3ViewMode = isMobileScreen ? '2d' : '3d';
-        let m3MetricMode = 'range';  // 'range' or 'bias'
+        let m3MetricMode = 'range';
 
         const PINNED_STORAGE_KEY = 'gold_terminal_pinned_clusters_v1';
 
@@ -1228,8 +1241,7 @@
             }).join('');
         }
 
-        // Renders the OANDA + COMEX Vertical Liquidity Price Ladder
-        function renderLiquidityLadder(orderbookZones, spotPrice, cryptoBasis) {
+        function renderLiquidityLadder(orderbookZones, spotPrice) {
             const ladderEl = document.getElementById('ui-liquidity-ladder');
             if (!orderbookZones || orderbookZones.length === 0) {
                 ladderEl.innerHTML = `<div style="font-size:0.75rem; color:#64748b; text-align:center; padding:12px;">No orderbook zones available.</div>`;
@@ -1279,14 +1291,10 @@
                 `;
             };
 
-            const perpInfo = (cryptoBasis && cryptoBasis.crypto_price)
-                ? `<span style="color:#00b4d8;">PERP: $${cryptoBasis.crypto_price.toFixed(2)} (${cryptoBasis.spread_usd >= 0 ? '+' : ''}$${cryptoBasis.spread_usd.toFixed(2)})</span>`
-                : '';
-
             const spotDividerHTML = `
                 <div class="ladder-spot-divider">
-                    <span>OANDA SPOT: $${spotPrice > 0 ? spotPrice.toFixed(2) : '--'}</span>
-                    ${perpInfo}
+                    <span>OANDA SPOT (XAU/USD): $${spotPrice > 0 ? spotPrice.toFixed(2) : '--'}</span>
+                    <span style="color:#94a3b8; font-size:0.68rem;">SYNCED TO CHART</span>
                 </div>
             `;
 
@@ -1297,13 +1305,9 @@
             ].join('');
         }
 
-        // ======================================================================
-        // CLIENT-SIDE FALLBACK FOR 3D SURFACES (Works before next GitHub run)
-        // ======================================================================
         function ensure3DSurfacesPopulated(data, spotPrice) {
-            const center10 = Math.round((spotPrice || 4000) / 10) * 10;
+            const center10 = Math.round((spotPrice || 3890) / 10) * 10;
 
-            // 1. Fallback for Model 2 (Orderbook Topography over Time)
             if (!data.ob_surface || !data.ob_surface.timestamps || data.ob_surface.timestamps.length === 0) {
                 const pLevels = [];
                 for (let off = -50; off <= 50; off += 10) pLevels.push(center10 + off);
@@ -1343,9 +1347,11 @@
                     signed_matrix: signedMat,
                     spot_price: spotPrice
                 };
+            } else {
+                // Keep Model 2 Spot Ref strictly synchronized to current chart candle close
+                data.ob_surface.spot_price = spotPrice;
             }
 
-            // 2. Fallback for Model 1 (Implied Volatility & Skew Surface)
             if (!data.vol_surface || !data.vol_surface.iv_matrix) {
                 const dailyAtr = Number(data.volatility?.est_daily_atr || 38.0);
                 const atrRatio = Number(data.volatility?.move_to_daily_atr_ratio || 0.75);
@@ -1378,14 +1384,12 @@
                 };
             }
 
-            // 3. Fallback for Model 3 (Session & Volatility Profile)
             if (!data.session_surface || !data.session_surface.range_matrix) {
                 const days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
                 const hours = Array.from({ length: 24 }, (_, i) => `${String(i).padStart(2, '0')}:00`);
                 const baseHr = Number(data.volatility?.atr_h1 || 9.5);
 
                 const rangeMat = days.map((_, dIdx) => hours.map((__, hIdx) => {
-                    // Asian Shanghai open (01-04 UTC), London open (08-10 UTC), NY COMEX open (13-16 UTC)
                     const asianBoost = (hIdx >= 1 && hIdx <= 4) ? 1.35 : 0.85;
                     const nyBoost = (hIdx >= 13 && hIdx <= 16) ? 1.55 : 1.0;
                     const lonBoost = (hIdx >= 7 && hIdx <= 10) ? 1.25 : 1.0;
@@ -1408,9 +1412,6 @@
             }
         }
 
-        // ======================================================================
-        // PLOTLY RENDERERS FOR MODELS 1, 2 & 3 (WITH 3D / 2D HEATMAP TOGGLE)
-        // ======================================================================
         function getBasePlotlyLayout(xTitle, yTitle, zTitle, is3D) {
             if (is3D) {
                 return {
@@ -1436,7 +1437,6 @@
             };
         }
 
-        // MODEL 2: Orderbook Liquidity Topography Over Time (Under main chart on Tab 1)
         function renderModel2() {
             if (!latestMarketData || !latestMarketData.ob_surface) return;
             const ob = latestMarketData.ob_surface;
@@ -1476,7 +1476,6 @@
             Plotly.react(container, [trace], layout, { responsive: true, displayModeBar: false });
         }
 
-        // MODEL 1: 3D Implied Volatility & Skew Surface (Tab 3)
         function renderModel1() {
             if (!latestMarketData || !latestMarketData.vol_surface) return;
             const vs = latestMarketData.vol_surface;
@@ -1510,7 +1509,6 @@
             Plotly.react(container, [trace], layout, { responsive: true, displayModeBar: false });
         }
 
-        // MODEL 3: 30-Day Session & Asian/London/NY Volatility Profile (Tab 3)
         function renderModel3() {
             if (!latestMarketData || !latestMarketData.session_surface) return;
             const ss = latestMarketData.session_surface;
@@ -1547,9 +1545,6 @@
             Plotly.react(container, [trace], layout, { responsive: true, displayModeBar: false });
         }
 
-        // ==========================================
-        // 1. LOAD OANDA CHART, LADDER & 3D SURFACES
-        // ==========================================
         async function loadChart() {
             const container = document.getElementById('chart-container');
             try {
@@ -1569,20 +1564,36 @@
                     renderDriverPillsToContainer('ui-weekly-drivers-grid', data.dominant_drivers);
                 }
 
+                if (!data.candles || data.candles.length === 0) return;
+
+                let sortedCandles = data.candles.sort((a, b) => a.time - b.time);
+                let uniqueCandles = [];
+                let lastTime = 0;
+                sortedCandles.forEach(c => {
+                    if (c.time > lastTime) {
+                        uniqueCandles.push(c);
+                        lastTime = c.time;
+                    }
+                });
+
+                // SINGLE SOURCE OF TRUTH: Always use the latest chart candle close as currentSpotPrice
+                let currentSpotPrice = uniqueCandles.length > 0
+                    ? Number(uniqueCandles[uniqueCandles.length - 1].close)
+                    : Number(data.spot_price || data.volatility?.current_price || 0);
+
                 if (data.crypto_basis && data.crypto_basis.crypto_price) {
                     const cb = data.crypto_basis;
-                    const spColor = cb.spread_usd > 2 ? '#00e676' : (cb.spread_usd < -2 ? '#ff3b30' : '#94a3b8');
-                    const spSign = cb.spread_usd >= 0 ? '+' : '';
+                    const liveSpread = currentSpotPrice > 0 ? (cb.crypto_price - currentSpotPrice) : cb.spread_usd;
+                    const spColor = liveSpread > 2 ? '#00e676' : (liveSpread < -2 ? '#ff3b30' : '#94a3b8');
+                    const spSign = liveSpread >= 0 ? '+' : '';
                     document.getElementById('ui-crypto-basis').innerHTML = 
-                        `$${cb.crypto_price.toFixed(2)} <span style="color:${spColor};">(${spSign}$${cb.spread_usd.toFixed(2)})</span>`;
+                        `$${cb.crypto_price.toFixed(2)} <span style="color:${spColor};">(${spSign}$${liveSpread.toFixed(2)})</span>`;
                     document.getElementById('ui-crypto-sub').innerText = `[${cb.regime}]`;
                 } else {
                     document.getElementById('ui-crypto-basis').innerText = "N/A";
                 }
 
-                let currentSpotPrice = 0;
                 if (data.volatility && data.volatility.est_daily_atr) {
-                    currentSpotPrice = Number(data.volatility.current_price || 0);
                     const chg = data.volatility.change_4h || 0;
                     const ratio = data.volatility.move_to_daily_atr_ratio || 0;
                     const warn = ratio >= 1.2 ? "EXHAUSTED" : "NORMAL";
@@ -1601,26 +1612,16 @@
                     document.getElementById('ui-macro').innerText = `${eur} | ${us10} | ${nas} | ${bco}`;
                 }
 
-                if (!data.candles || data.candles.length === 0) return;
-
-                let sortedCandles = data.candles.sort((a, b) => a.time - b.time);
-                let uniqueCandles = [];
-                let lastTime = 0;
-                sortedCandles.forEach(c => {
-                    if (c.time > lastTime) {
-                        uniqueCandles.push(c);
-                        lastTime = c.time;
-                    }
+                // Filter out distant outliers (>2.5% from spot, like $4049) immediately
+                const nearSpotOrderbook = (data.orderbook || []).filter(z => {
+                    if (!currentSpotPrice || currentSpotPrice <= 0) return true;
+                    return Math.abs(z.price - currentSpotPrice) / currentSpotPrice <= MAX_ZONE_RADIUS_PCT;
                 });
-
-                if (currentSpotPrice <= 0 && uniqueCandles.length > 0) {
-                    currentSpotPrice = uniqueCandles[uniqueCandles.length - 1].close;
-                }
 
                 ensure3DSurfacesPopulated(data, currentSpotPrice);
                 latestMarketData = data;
 
-                renderLiquidityLadder(data.orderbook || [], currentSpotPrice, data.crypto_basis);
+                renderLiquidityLadder(nearSpotOrderbook, currentSpotPrice);
                 renderModel2();
                 if (document.getElementById('3d-tab').classList.contains('active')) {
                     renderModel1();
@@ -1633,10 +1634,19 @@
                 chartInstance = LightweightCharts.createChart(container, {
                     width: container.clientWidth,
                     height: container.clientHeight || 490,
-                    layout: { backgroundColor: '#0d1117', textColor: '#94a3b8' },
-                    grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
+                    layout: {
+                        background: { type: 'solid', color: '#0d1117' },
+                        textColor: '#94a3b8'
+                    },
+                    grid: {
+                        vertLines: { color: '#161d2a' },
+                        horzLines: { color: '#161d2a' }
+                    },
                     timeScale: { timeVisible: true, borderColor: '#21293a' },
-                    rightPriceScale: { borderColor: '#21293a' }
+                    rightPriceScale: {
+                        borderColor: '#21293a',
+                        scaleMargins: { top: 0.1, bottom: 0.1 }
+                    }
                 });
 
                 chartResizeObserver = new ResizeObserver(entries => {
@@ -1656,8 +1666,8 @@
                 
                 candleSeries.setData(uniqueCandles);
 
-                if (data.orderbook && data.orderbook.length > 0) {
-                    data.orderbook.forEach((level, index) => {
+                if (nearSpotOrderbook.length > 0) {
+                    nearSpotOrderbook.forEach((level, index) => {
                         const isBuyDom = level.dominance === "BUY";
                         const lineColor = isBuyDom ? '#00e676' : '#ff3b30';
                         const isOverlap = level.overlap === true;
@@ -1677,9 +1687,6 @@
             }
         }
 
-        // ==========================================
-        // 2. LOAD PERFORMANCE STATS
-        // ==========================================
         async function loadStats() {
             try {
                 const res = await fetch('performance_stats.json?t=' + new Date().getTime());
@@ -1701,9 +1708,6 @@
             }
         }
 
-        // ==========================================
-        // 3. LOAD & RENDER STREAMLINED NEWS
-        // ==========================================
         async function loadNews() {
             const container = document.getElementById('news-container');
             try {

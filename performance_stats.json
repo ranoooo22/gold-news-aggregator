@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 748,
+    "total_evaluated": 767,
     "hits": 493,
-    "misses": 255,
-    "win_rate": 65.9,
-    "active_signals": 42,
+    "misses": 274,
+    "win_rate": 64.3,
+    "active_signals": 35,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 412,
-                "misses": 221,
-                "total": 633,
-                "win_rate": 65.1,
-                "avg_dd": 23.89
+                "misses": 240,
+                "total": 652,
+                "win_rate": 63.2,
+                "avg_dd": 23.8
             },
             "Bearish": {
                 "hits": 81,
@@ -24,10 +24,10 @@
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
                 "hits": 466,
-                "misses": 241,
-                "total": 707,
-                "win_rate": 65.9,
-                "avg_dd": 22.37
+                "misses": 260,
+                "total": 726,
+                "win_rate": 64.2,
+                "avg_dd": 22.3
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -61,26 +61,26 @@
             },
             "Against USD Headwind": {
                 "hits": 245,
-                "misses": 70,
-                "total": 315,
-                "win_rate": 77.8,
-                "avg_dd": 21.09
+                "misses": 85,
+                "total": 330,
+                "win_rate": 74.2,
+                "avg_dd": 21.06
             },
             "USD Neutral / Legacy": {
                 "hits": 218,
-                "misses": 183,
-                "total": 401,
-                "win_rate": 54.4,
-                "avg_dd": 26.35
+                "misses": 187,
+                "total": 405,
+                "win_rate": 53.8,
+                "avg_dd": 26.19
             }
         },
         "by_category": {
             "Geopolitics & War": {
                 "hits": 232,
-                "misses": 151,
-                "total": 383,
-                "win_rate": 60.6,
-                "avg_dd": 25.43
+                "misses": 158,
+                "total": 390,
+                "win_rate": 59.5,
+                "avg_dd": 25.4
             },
             "Fed, Rates & Macro": {
                 "hits": 32,
@@ -91,40 +91,40 @@
             },
             "Tech, AI & Equities": {
                 "hits": 138,
-                "misses": 47,
-                "total": 185,
-                "win_rate": 74.6,
-                "avg_dd": 18.25
+                "misses": 51,
+                "total": 189,
+                "win_rate": 73.0,
+                "avg_dd": 18.21
             },
             "Commodities & Energy": {
                 "hits": 91,
-                "misses": 49,
-                "total": 140,
-                "win_rate": 65.0,
-                "avg_dd": 26.6
+                "misses": 57,
+                "total": 148,
+                "win_rate": 61.5,
+                "avg_dd": 26.32
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 426,
-                "misses": 223,
-                "total": 649,
-                "win_rate": 65.6,
-                "avg_dd": 23.73
+                "misses": 231,
+                "total": 657,
+                "win_rate": 64.8,
+                "avg_dd": 23.7
             },
             "High (65-74%)": {
                 "hits": 63,
-                "misses": 28,
-                "total": 91,
-                "win_rate": 69.2,
-                "avg_dd": 20.84
+                "misses": 35,
+                "total": 98,
+                "win_rate": 64.3,
+                "avg_dd": 20.71
             },
             "Extreme (>=75%)": {
                 "hits": 4,
-                "misses": 4,
-                "total": 8,
-                "win_rate": 50.0,
-                "avg_dd": 17.13
+                "misses": 8,
+                "total": 12,
+                "win_rate": 33.3,
+                "avg_dd": 16.74
             }
         }
     },
@@ -12919,7 +12919,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/flex-flex-pull-off-plan-213309378.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Can Flex (FLEX) Pull Off Its Plan for Its Fastest-Growing Unit?",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -12937,7 +12937,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/3-indian-energy-infrastructure-stocks-211158656.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "3 Indian Energy Infrastructure Stocks With Direct Exposure To Oil Storage Expansion",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -12955,7 +12955,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/deal-behind-mizuho-downgrade-surgery-211048170.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "The Deal Behind Mizuho’s Downgrade of Surgery Partners (SGRY)",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -12973,7 +12973,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/activists-demand-end-transfer-military-materials-israel-through-new-yorks-jfk-airport": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Activists demand end to transfer of military materials to Israel through New York's JFK Ai",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -13117,7 +13117,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/heliostar-metals-ltd-hstxf-q3-230434580.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Heliostar Metals Ltd (HSTXF) (Q3 2026) Earnings Call Highlights: Record Revenue, Strong Ca",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -13135,7 +13135,7 @@
             "fail_reason": ""
         },
         "https://www.cnbc.com/2026/11/12/nscale-updates-ipo-prospectus-that-shows-widening-loss.html": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Nscale updates IPO prospectus that shows widening loss",
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
@@ -13153,14 +13153,14 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/13/us-grounds-all-flights-after-communication-issue?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "FAA grounds US flights nationwide after ‘communication issue’",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 58,
+            "prob": 62,
             "entry_price": 3884.68,
-            "target": 3889.56,
+            "target": 3899.63,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13171,7 +13171,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/us-responds-suspected-drone-activity-over-uk-air-base-used-iran-strikes": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US responds to suspected drone activity over UK air base used in Iran strikes",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -13189,7 +13189,7 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/commodities-news/us-extends-shipping-law-waiver-90-days-to-allow-freer-movement-of-oil-commodities-5026364": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "US extends shipping law waiver 90 days, to allow freer movement of oil, commodities",
             "source": "Investing.com",
             "category": "Commodities & Energy",
@@ -13207,7 +13207,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/rosenblatt-securities-thinks-market-misses-213235021.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "What Rosenblatt Securities Thinks the Market Misses on SK Hynix (SKHY)",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -13225,7 +13225,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/stocks/articles/why-bofa-calls-coreweave-crwv-213023720.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Why BofA Calls CoreWeave (CRWV) Funding Needs “Manageable”",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -13279,7 +13279,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/mossad-chief-washington-talks-iran-report-says": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Mossad chief in Washington for talks on Iran, report says",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -13297,7 +13297,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/trump-discuss-iran-war-not-ukraine-china-summit": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Trump to discuss Iran war, but not Ukraine, at China summit",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -13315,7 +13315,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249373/Iran-s-Army-shoots-down-US-MQ-1drone-off-Sirik-coast": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran Army Navy shoots down US-made MQ-1drone off Sirik coast",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -13333,14 +13333,14 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/watch-53-nations-and-organisations-urge-israel-allow-aid-gaza": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Watch: 53 nations and organisations urge Israel to allow aid into Gaza",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
             "impact": "Bullish",
             "prob": 65,
             "entry_price": 3884.68,
-            "target": 3889.45,
+            "target": 3899.63,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13351,7 +13351,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/hemlo-mining-corp-hmmcf-q3-010210603.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Hemlo Mining Corp (HMMCF) (Q3 2026) Earnings Call Highlights: Record Cash Position, Strong",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -13369,7 +13369,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/oil-india-ltd-bom-533106-010136397.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Oil India Ltd (BOM:533106) (Q2 2027) Earnings Call Highlights: Record Half-Year EBITDA of ",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -13387,7 +13387,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/technology/articles/super-micro-run-jensen-huang-234845498.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Super Micro, run by Jensen Huang’s friend, says Megaspeed was ‘never’ its customer",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -13500,9 +13500,9 @@
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 72,
+            "prob": 65,
             "entry_price": 3884.68,
-            "target": 3899.62,
+            "target": 3889.6,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13716,9 +13716,9 @@
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 75,
             "entry_price": 3884.68,
-            "target": 3889.47,
+            "target": 3899.62,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13734,9 +13734,9 @@
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 65,
             "entry_price": 3884.68,
-            "target": 3889.47,
+            "target": 3899.63,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13852,6 +13852,222 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794663000.0,
             "date": "First Reported: 2026-11-14 13:30 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249404/Blinken-says-Iran-war-was-a-mistake": {
+            "status": "ACTIVE",
+            "headline": "Blinken says Iran war was a mistake as it came out stronger",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794683308.0,
+            "date": "First Reported: 2026-11-14 19:08 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/exclusive-alamos-gold-ceo-good-185110575.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "EXCLUSIVE: Alamos Gold CEO – ‘Be a Good Investment, Not a Gold Call Option’",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794682270.0,
+            "date": "First Reported: 2026-11-14 18:51 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532151/Expanding-missile-range-is-our-new-deterrence-strategy": {
+            "status": "ACTIVE",
+            "headline": "Expanding missile range is our new deterrence strategy",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3899.63,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794679057.0,
+            "date": "First Reported: 2026-11-14 17:57 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532147/Strengthening-strategic-ties-with-China-must-be-a-priority-for": {
+            "status": "ACTIVE",
+            "headline": "Strengthening strategic ties with China must be a priority for Iran",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3884.68,
+            "target": 3899.63,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794677262.0,
+            "date": "First Reported: 2026-11-14 17:27 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249382/Iran-to-continue-path-of-defense-industry-progress-with-power": {
+            "status": "ACTIVE",
+            "headline": "Iran to continue path of defense industry progress with power",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 3884.68,
+            "target": 3889.6,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794677108.0,
+            "date": "First Reported: 2026-11-14 06:53 UTC | Last Update: 2026-11-14 17:25 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/sell-texas-pacific-land-tpl-172217146.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Should You Sell Texas Pacific Land (TPL) Now That the Blue Wave is Here?",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bearish",
+            "prob": 60,
+            "entry_price": 3884.68,
+            "target": 3880.89,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794676950.0,
+            "date": "First Reported: 2026-11-14 17:22 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/economy/2026/11/14/southeast-asian-leaders-to-meet-as-trump-visit-highlights-trade-disruption?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Southeast Asian leaders to meet as Trump visit highlights trade disruption",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3899.62,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794638894.0,
+            "date": "First Reported: 2026-11-14 06:48 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/amarc-freeport-successfully-complete-2026-124500068.html?.tsrc=rss": {
+            "status": "MISS",
+            "headline": "Amarc and Freeport Successfully Complete 2026 Joy Copper-Gold District Exploration Program",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 3884.68,
+            "target": 3899.63,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794626114.0,
+            "date": "First Reported: 2026-11-12 12:45 UTC | Last Update: 2026-11-14 03:15 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-commander-samir-abu-younis-killed-israeli-strike-khan-younis": {
+            "status": "ACTIVE",
+            "headline": "Hamas commander Samir Abu Younis killed in Israeli strike on Khan Younis",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 3884.68,
+            "target": 3899.63,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794701887.0,
+            "date": "First Reported: 2026-11-15 00:18 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/14/nvidias-ousted-ceo-said-a-1-gigawatt-data-center/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Nvidia's Ousted CEO Said a 1-Gigawatt Data Center Delay Costs $10 Billion a Quarter. Here'",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3889.6,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794701100.0,
+            "date": "First Reported: 2026-11-15 00:05 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/14/warren-buffett-said-this-1-mistake-cost-berkshire-about-usd10-billion-here-s-how-investors-can-avoid-it/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Warren Buffett Said This 1 Mistake Cost Berkshire About $10 Billion. Here’s How Investors ",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 73,
+            "entry_price": 3884.68,
+            "target": 3899.63,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794700380.0,
+            "date": "First Reported: 2026-11-14 15:25 UTC | Last Update: 2026-11-14 23:53 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/video/newsfeed/2026/11/14/aje-onl-nf_iraq-pm-targets-militia-stronghold-in-oil-smuggling-141126?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Iraq PM targets powerful militia stronghold in $30m oil smuggling probe",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 3884.68,
+            "target": 3899.63,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794699277.0,
+            "date": "First Reported: 2026-11-14 23:34 UTC",
             "fail_reason": ""
         }
     }

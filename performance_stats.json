@@ -1,15 +1,15 @@
 {
-    "total_evaluated": 802,
+    "total_evaluated": 803,
     "hits": 493,
-    "misses": 309,
-    "win_rate": 61.5,
-    "active_signals": 31,
+    "misses": 310,
+    "win_rate": 61.4,
+    "active_signals": 32,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 412,
-                "misses": 273,
-                "total": 685,
+                "misses": 274,
+                "total": 686,
                 "win_rate": 60.1,
                 "avg_dd": 23.8
             },
@@ -24,8 +24,8 @@
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
                 "hits": 466,
-                "misses": 295,
-                "total": 761,
+                "misses": 296,
+                "total": 762,
                 "win_rate": 61.2,
                 "avg_dd": 22.3
             },
@@ -61,9 +61,9 @@
             },
             "Against USD Headwind": {
                 "hits": 245,
-                "misses": 118,
-                "total": 363,
-                "win_rate": 67.5,
+                "misses": 119,
+                "total": 364,
+                "win_rate": 67.3,
                 "avg_dd": 21.06
             },
             "USD Neutral / Legacy": {
@@ -77,9 +77,9 @@
         "by_category": {
             "Geopolitics & War": {
                 "hits": 232,
-                "misses": 186,
-                "total": 418,
-                "win_rate": 55.5,
+                "misses": 187,
+                "total": 419,
+                "win_rate": 55.4,
                 "avg_dd": 25.4
             },
             "Fed, Rates & Macro": {
@@ -107,9 +107,9 @@
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 426,
-                "misses": 248,
-                "total": 674,
-                "win_rate": 63.2,
+                "misses": 249,
+                "total": 675,
+                "win_rate": 63.1,
                 "avg_dd": 23.7
             },
             "High (65-74%)": {
@@ -14132,7 +14132,7 @@
             "impact": "Bullish",
             "prob": 65,
             "entry_price": 3884.68,
-            "target": 3899.57,
+            "target": 3870.0,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -14161,7 +14161,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/eisenkot-calls-netanyahus-unity-government-call-yet-another-spin-move": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Eisenkot calls Netanyahu's unity government call 'yet another spin move'",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -14382,9 +14382,9 @@
             "source": "Tehran Times",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 65,
+            "prob": 55,
             "entry_price": 3884.68,
-            "target": 3899.57,
+            "target": 3860.0,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -14626,6 +14626,42 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794766329.0,
             "date": "First Reported: 2026-11-15 18:12 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Estonia to close border crossings with Russia after attack on drone maker",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3884.68,
+            "target": 3864.0,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794774678.0,
+            "date": "First Reported: 2026-11-15 18:07 UTC | Last Update: 2026-11-15 20:31 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532189/Regional-developments-under-the-shadow-of-political-deadlock": {
+            "status": "ACTIVE",
+            "headline": "Regional developments under the shadow of political deadlock",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 58,
+            "entry_price": 3884.68,
+            "target": 3862.0,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794765245.0,
+            "date": "First Reported: 2026-11-15 17:54 UTC",
             "fail_reason": ""
         }
     }

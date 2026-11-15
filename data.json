@@ -1492,7 +1492,9 @@
             "XAUUSD_Impact": "Bullish",
             "Probability_Percent": 62,
             "Orderflow_Price_Target": "$3864.00"
-        }
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-15 20:23 UTC",
@@ -3661,7 +3663,9 @@
             "XAUUSD_Impact": "Bullish",
             "Probability_Percent": 58,
             "Orderflow_Price_Target": "$3862.00"
-        }
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.0
     },
     {
         "main_date": "First Reported: 2026-11-15 17:42 UTC | Last Update: 2026-11-15 17:49 UTC",
@@ -8363,7 +8367,7 @@
             "Probability_Percent": 60,
             "Orderflow_Price_Target": "$3889.44"
         },
-        "eval_status": "ACTIVE",
+        "eval_status": "MISS",
         "max_dd_usd": 0.0
     },
     {

@@ -1,16 +1,16 @@
 {
-    "total_evaluated": 778,
+    "total_evaluated": 786,
     "hits": 493,
-    "misses": 285,
-    "win_rate": 63.4,
-    "active_signals": 30,
+    "misses": 293,
+    "win_rate": 62.7,
+    "active_signals": 26,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 412,
-                "misses": 250,
-                "total": 662,
-                "win_rate": 62.2,
+                "misses": 258,
+                "total": 670,
+                "win_rate": 61.5,
                 "avg_dd": 23.8
             },
             "Bearish": {
@@ -24,9 +24,9 @@
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
                 "hits": 466,
-                "misses": 271,
-                "total": 737,
-                "win_rate": 63.2,
+                "misses": 279,
+                "total": 745,
+                "win_rate": 62.6,
                 "avg_dd": 22.3
             },
             "Moderate (0.8x-1.2x ATR)": {
@@ -61,9 +61,9 @@
             },
             "Against USD Headwind": {
                 "hits": 245,
-                "misses": 95,
-                "total": 340,
-                "win_rate": 72.1,
+                "misses": 103,
+                "total": 348,
+                "win_rate": 70.4,
                 "avg_dd": 21.06
             },
             "USD Neutral / Legacy": {
@@ -77,16 +77,16 @@
         "by_category": {
             "Geopolitics & War": {
                 "hits": 232,
-                "misses": 169,
-                "total": 401,
-                "win_rate": 57.9,
+                "misses": 174,
+                "total": 406,
+                "win_rate": 57.1,
                 "avg_dd": 25.4
             },
             "Fed, Rates & Macro": {
                 "hits": 32,
-                "misses": 8,
-                "total": 40,
-                "win_rate": 80.0,
+                "misses": 10,
+                "total": 42,
+                "win_rate": 76.2,
                 "avg_dd": 13.27
             },
             "Tech, AI & Equities": {
@@ -98,32 +98,32 @@
             },
             "Commodities & Energy": {
                 "hits": 91,
-                "misses": 57,
-                "total": 148,
-                "win_rate": 61.5,
+                "misses": 58,
+                "total": 149,
+                "win_rate": 61.1,
                 "avg_dd": 26.32
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 426,
-                "misses": 238,
-                "total": 664,
-                "win_rate": 64.2,
+                "misses": 241,
+                "total": 667,
+                "win_rate": 63.9,
                 "avg_dd": 23.7
             },
             "High (65-74%)": {
                 "hits": 63,
-                "misses": 38,
-                "total": 101,
-                "win_rate": 62.4,
+                "misses": 42,
+                "total": 105,
+                "win_rate": 60.0,
                 "avg_dd": 20.71
             },
             "Extreme (>=75%)": {
                 "hits": 4,
-                "misses": 9,
-                "total": 13,
-                "win_rate": 30.8,
+                "misses": 10,
+                "total": 14,
+                "win_rate": 28.6,
                 "avg_dd": 16.74
             }
         }
@@ -13500,9 +13500,9 @@
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 65,
+            "prob": 72,
             "entry_price": 3884.68,
-            "target": 3889.6,
+            "target": 3899.57,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -13531,7 +13531,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532137/From-the-battlefield-to-the-ballot-box-war-comes-home": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "From the battlefield to the ballot box: war comes home",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -13549,7 +13549,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/china-petroleum-chemical-sehk-386-150921054.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "China Petroleum & Chemical (SEHK:386) Wins Brazil Santos Basin Oil Block Rights",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -13567,7 +13567,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/economy/policy/articles/america-heart-attack-ray-dalio-133000352.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "America ‘will have a heart attack’: Ray Dalio issues fresh warning on US economy — with sa",
             "source": "Yahoo Finance Gold",
             "category": "Geopolitics & War",
@@ -13585,7 +13585,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/14/russian-casualties-reach-450000-what-that-means-for-the-ukraine-war?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Russian casualties ‘reach 450,000’: What that means for the Ukraine war",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -13603,7 +13603,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/14/ethiopia-blames-egypt-eritrea-for-tigray-attacks?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Ethiopia blames Egypt, Eritrea for Tigray attacks",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -13801,7 +13801,7 @@
             "fail_reason": ""
         },
         "https://investorshub.advfn.com/market-news/article/39985/bank-of-americas-hartnett-maintains-cautious-market-outlook-until-treasury-yields-and-oil-prices-decline?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Bank of America’s Hartnett Maintains Cautious Market Outlook Until Treasury Yields and Oil",
             "source": "Yahoo Finance Oil",
             "category": "Fed, Rates & Macro",
@@ -13819,7 +13819,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532136/Efforts-to-encircle-the-resistance-bloc-within-its-borders": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Efforts to encircle the resistance bloc within its borders",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -13837,7 +13837,7 @@
             "fail_reason": ""
         },
         "https://www.marketwatch.com/story/washington-can-start-delivering-on-affordability-by-rejecting-trumps-tariffs-8f2c76fd?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Washington can start delivering on affordability by rejecting Trump’s tariffs",
             "source": "MarketWatch Macro",
             "category": "Fed, Rates & Macro",
@@ -14094,9 +14094,9 @@
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 74,
+            "prob": 82,
             "entry_price": 3884.68,
-            "target": 3889.44,
+            "target": 3899.57,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -14176,6 +14176,78 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794705870.0,
             "date": "First Reported: 2026-11-15 01:24 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/u-diesel-prices-fall-below-033225657.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "U.S. diesel prices fall below $6 a gallon to two-month low",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bearish",
+            "prob": 58,
+            "entry_price": 3884.68,
+            "target": 3880.93,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794739163.0,
+            "date": "First Reported: 2026-11-15 03:32 UTC | Last Update: 2026-11-15 10:39 UTC",
+            "fail_reason": ""
+        },
+        "https://stocktwits.com/news-articles/markets/equity/what-to-expect-markets-this-week-nov-15-2026/cNbEXadR9Qu?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "What To Expect In Markets This Week: NVDA, PANW, DIS, HD, TGT, WMT, GRRR Earnings, Kevin W",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3899.57,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794738268.0,
+            "date": "First Reported: 2026-11-15 10:24 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/shock-absorber-why-volatility-reinforces-083958034.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "The shock absorber: Why volatility reinforces the case for hard assets",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 76,
+            "entry_price": 3884.68,
+            "target": 4049.05,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794731998.0,
+            "date": "First Reported: 2026-11-15 08:39 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249413/US-attaches-no-value-to-international-law-Iran-FM-spox": {
+            "status": "ACTIVE",
+            "headline": "Countries put airspace for attack on Iran must pay reparation",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3899.57,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794729701.0,
+            "date": "First Reported: 2026-11-15 08:01 UTC",
             "fail_reason": ""
         }
     }

@@ -59,6 +59,9 @@ MIN_EVAL_PROBABILITY = 51
 EVAL_HORIZON_HOURS = 20.0
 MAX_DRAWDOWN_ATR_MULT = 1.8
 
+# Maximum distance for orderbook zones (2.5% ~ $95 around spot to prevent $4049 chart stretching)
+MAX_ZONE_RADIUS_PCT = 0.025
+
 FEEDS = {
     "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
     "Investing.com": "https://www.investing.com/rss/news_11.rss",
@@ -234,7 +237,7 @@ def fetch_crypto_gold_basis(oanda_price):
             f"24/7 Crypto-Gold Perpetual Basis ({source_used} vs. OANDA XAU/USD Spot):\n"
             f"- Market Regime: {regime} | {source_used}: ${crypto_price:.2f} vs. OANDA: ${oanda_price:.2f} (Spread: ${spread_usd:+.2f} / {spread_pct:+.2f}% -> {signal})"
         )
-        print(f"24/7 Gold Perp loaded ({source_used}): ${crypto_price:.2f} | Spread vs OANDA: ${spread_usd:+.2f}")
+        print(f"24/7 Gold Perp loaded ({source_used}): ${crypto_price:.2f} | Spread vs OANDA (${oanda_price:.2f}): ${spread_usd:+.2f}")
         return prompt_str, {
             "crypto_price": round(crypto_price, 2),
             "oanda_price": round(oanda_price, 2),
@@ -277,7 +280,7 @@ def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
 
         for idx, cndl in enumerate(candles):
             p = cndl["c"]
-            if abs(p - reference_price) / reference_price > 0.18:
+            if abs(p - reference_price) / reference_price > MAX_ZONE_RADIUS_PCT:
                 continue
             mitigated = False
             if idx < n - 2:
@@ -349,6 +352,10 @@ def fetch_multi_positioning(oanda_sentiment):
     }
 
 def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
+    """
+    Uses live candle price (`fallback_price`) as Single Source of Truth for spot price.
+    Filters orderbook buckets strictly within MAX_ZONE_RADIUS_PCT (2.5% ~ $95) so distant outliers like $4049 are excluded.
+    """
     current_price = float(fallback_price) if fallback_price else 0.0
     combined_buckets = {}
     total_pos_long, total_pos_short = 0.0, 0.0
@@ -364,19 +371,20 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                 if res_ob.status_code == 200:
                     ob_data = res_ob.json().get("orderBook", {})
                     ob_price = float(ob_data.get("price", 0))
-                    if ob_price > 0:
+                    # Only use orderBook snapshot price if live candle price was unavailable
+                    if current_price <= 0 and ob_price > 0:
                         current_price = ob_price
                     for b in ob_data.get("buckets", []):
                         try:
                             p = float(b.get("price", 0))
-                            if current_price > 0 and abs(p - current_price) / current_price <= 0.15:
+                            if current_price > 0 and abs(p - current_price) / current_price <= MAX_ZONE_RADIUS_PCT:
                                 combined_buckets[p] = {
                                     "long": float(b.get("longCountPercent", 0)),
                                     "short": float(b.get("shortCountPercent", 0))
                                 }
                         except ValueError:
                             continue
-                    print(f"OANDA OrderBook loaded: {len(combined_buckets)} price buckets within 15% radius.")
+                    print(f"OANDA OrderBook loaded: {len(combined_buckets)} price buckets within 2.5% radius of ${current_price:.2f}.")
                     break
                 else:
                     print(f"OANDA orderBook status {res_ob.status_code} (Attempt {attempt+1}/2): {res_ob.text[:120]}")
@@ -391,7 +399,7 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                 if res_pb.status_code == 200:
                     pb_data = res_pb.json().get("positionBook", {})
                     pb_price = float(pb_data.get("price", 0))
-                    if current_price == 0 and pb_price > 0:
+                    if current_price <= 0 and pb_price > 0:
                         current_price = pb_price
                     for b in pb_data.get("buckets", []):
                         try:
@@ -400,14 +408,14 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                             s_pct = float(b.get("shortCountPercent", 0))
                             total_pos_long += l_pct
                             total_pos_short += s_pct
-                            if current_price > 0 and abs(p - current_price) / current_price <= 0.15:
+                            if current_price > 0 and abs(p - current_price) / current_price <= MAX_ZONE_RADIUS_PCT:
                                 if p not in combined_buckets:
                                     combined_buckets[p] = {"long": 0.0, "short": 0.0}
                                 combined_buckets[p]["long"] += l_pct
                                 combined_buckets[p]["short"] += s_pct
                         except ValueError:
                             continue
-                    print(f"OANDA PositionBook loaded (Total buckets: {len(combined_buckets)}).")
+                    print(f"OANDA PositionBook loaded (Total active near-spot buckets: {len(combined_buckets)}).")
                     break
                 else:
                     print(f"OANDA positionBook status {res_pb.status_code} (Attempt {attempt+1}/2): {res_pb.text[:120]}")
@@ -439,6 +447,8 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
 
     comex_zones = fetch_yahoo_futures_zones(current_price, zone_width=zone_width)
     for z_key, f_data in comex_zones.items():
+        if current_price > 0 and abs(z_key - current_price) / current_price > MAX_ZONE_RADIUS_PCT:
+            continue
         weight = 0.25 if combined_buckets else 1.0
         scaled_tot = f_data["total"] * weight
         if z_key not in zones:
@@ -456,7 +466,7 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         return current_price, [], sentiment, {}
 
     above_zones, below_zones = [], []
-    all_zone_Objects = {}
+    all_zone_objects = {}
     for z_key, z_data in zones.items():
         if z_data["total"] > 0:
             vwap_price = round(z_data["weighted_price_sum"] / z_data["total"], 2)
@@ -487,7 +497,7 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                 "overlap": is_overlap,
                 "sources": sources_label
             }
-            all_zone_Objects[int(z_key)] = zone_obj
+            all_zone_objects[int(z_key)] = zone_obj
             if vwap_price >= current_price:
                 above_zones.append(zone_obj)
             else:
@@ -498,34 +508,24 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
     selected_zones = above_zones[:3] + below_zones[:3]
     selected_zones.sort(key=lambda x: x["price"], reverse=True)
 
-    return current_price, selected_zones, sentiment, all_zone_Objects
+    return current_price, selected_zones, sentiment, all_zone_objects
 
 # ==============================================================================
 # 3D SURFACE ANALYTICS ENGINE (MODELS 1, 2 & 3)
 # ==============================================================================
 def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, sentiment, multi_pos, old_ob_history=None):
-    """
-    Computes the data grids for all 3 3D/2D Surface Models:
-    - Model 1: Options Implied Volatility & Skew Surface (Strike vs. Tenor vs. IV)
-    - Model 2: Orderbook Topography over Time ("Liquidity Canyon": Time vs. $10 Price Zone vs. Signed Net/Total Liquidity)
-    - Model 3: 30-Day Empirical Session & Volatility Profile (UTC Hour vs. Weekday vs. Avg Range & Bias)
-    """
-    spot = current_price if current_price > 0 else (h1_candles[-1]["c"] if h1_candles else 4000.0)
+    spot = current_price if current_price > 0 else (h1_candles[-1]["c"] if h1_candles else 3892.20)
     center_10 = int(round(spot / 10.0) * 10)
-    price_grid = [center_10 + offset for offset in range(-50, 60, 10)]  # 11 levels: -50 to +50 around spot
+    price_grid = [center_10 + offset for offset in range(-50, 60, 10)]
 
-    # --------------------------------------------------------------------------
-    # MODEL 2: ORDERBOOK TOPOGRAPHY OVER TIME (LIQUIDITY CANYON)
-    # --------------------------------------------------------------------------
+    # MODEL 2: ORDERBOOK TOPOGRAPHY OVER TIME
     history_list = list(old_ob_history) if isinstance(old_ob_history, list) else []
     now_str = datetime.utcnow().strftime("%H:%M")
 
-    # Build current snapshot across the standardized 11 price_grid levels
     curr_snapshot_levels = {}
     for p_lvl in price_grid:
         z_item = all_zones_dict.get(p_lvl)
         if z_item:
-            # Signed liquidity: positive for net BUY wall, negative for net SELL wall, scaled by total volume
             sign = 1.0 if z_item["dominance"] == "BUY" else -1.0
             curr_snapshot_levels[str(p_lvl)] = {
                 "vol": round(z_item["volume"], 2),
@@ -533,9 +533,12 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, se
                 "dom": z_item["dominance"]
             }
         else:
-            curr_snapshot_levels[str(p_lvl)] = {"vol": 0.4, "signed_vol": 0.2 if p_lvl < spot else -0.2, "dom": "BUY" if p_lvl < spot else "SELL"}
+            curr_snapshot_levels[str(p_lvl)] = {
+                "vol": 0.4,
+                "signed_vol": 0.2 if p_lvl < spot else -0.2,
+                "dom": "BUY" if p_lvl < spot else "SELL"
+            }
 
-    # If history has fewer than 10 snapshots (e.g. first run), seed realistic historical trajectory from H1 candles
     if len(history_list) < 10 and h1_candles:
         seed_candles = h1_candles[-12:]
         seeded = []
@@ -545,7 +548,6 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, se
             for p_lvl in price_grid:
                 base_z = curr_snapshot_levels[str(p_lvl)]["vol"]
                 dist_to_c = abs(p_lvl - c["c"])
-                # Liquidity intensifies near historical swing highs/lows and decays if price swept through
                 swept = (c["l"] <= p_lvl <= c["h"])
                 mod = 0.65 if swept else (1.15 if dist_to_c <= 20 else 0.92)
                 wave = 1.0 + 0.12 * math.sin(idx * 0.7 + (p_lvl / 20.0))
@@ -556,17 +558,19 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, se
             seeded.append({"time": t_lbl, "spot": round(c["c"], 2), "levels": c_levels})
         history_list = seeded + history_list
 
-    # Append current live snapshot (avoid duplicate timestamp)
     if not history_list or history_list[-1].get("time") != now_str:
         history_list.append({
             "time": now_str,
             "spot": round(spot, 2),
             "levels": curr_snapshot_levels
         })
-    history_list = history_list[-24:]  # Keep last 24 snapshots
+    else:
+        history_list[-1]["spot"] = round(spot, 2)
+        history_list[-1]["levels"] = curr_snapshot_levels
+
+    history_list = history_list[-24:]
 
     ob_timestamps = [h["time"] for h in history_list]
-    # Z-matrix for Plotly: rows = price_grid (Y), cols = timestamps (X)
     ob_vol_matrix = []
     ob_signed_matrix = []
     for p_lvl in price_grid:
@@ -575,7 +579,6 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, se
         for h in history_list:
             cell = h.get("levels", {}).get(str(p_lvl))
             if not cell:
-                # Fallback interpolation if spot shifted by $10
                 cell = curr_snapshot_levels.get(str(p_lvl), {"vol": 0.5, "signed_vol": 0.0})
             row_vol.append(cell.get("vol", 0.5))
             row_signed.append(cell.get("signed_vol", 0.0))
@@ -590,14 +593,11 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, se
         "spot_price": round(spot, 2)
     }
 
-    # --------------------------------------------------------------------------
-    # MODEL 1: 3D IMPLIED VOLATILITY & SKEW SURFACE (XAU/USD OPTIONS PROXY)
-    # --------------------------------------------------------------------------
+    # MODEL 1: 3D IMPLIED VOLATILITY & SKEW SURFACE
     daily_atr = float((vol_metrics or {}).get("est_daily_atr", 38.0) or 38.0)
     atr_ratio = float((vol_metrics or {}).get("move_to_daily_atr_ratio", 0.7) or 0.7)
     base_iv = round(max(11.0, min(42.0, (daily_atr / max(1.0, spot)) * math.sqrt(252) * 100.0)), 2)
 
-    # Calculate directional skew from OANDA positioning + CFTC COT + recent 24h momentum
     chg_24h = float((vol_metrics or {}).get("change_24h", 0.0) or 0.0)
     cot_long = float((multi_pos or {}).get("cot_mm_long_pct", 55.0) or 55.0)
     call_put_skew = round(((chg_24h / max(10.0, daily_atr)) * 1.4) + ((cot_long - 50.0) * 0.06), 2)
@@ -607,14 +607,12 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, se
     tenors = ["1D (Event)", "3D (Swing)", "1W (Weekly)", "2W (Bi-Weekly)", "1M (Monthly)"]
     tenor_days = [1, 3, 7, 14, 30]
 
-    # Term structure: if short-term ATR ratio is high (>1.0x), front-end 1D/3D IV spikes (backwardation)
     iv_matrix = []
-    for t_idx, d_days in enumerate(tenor_days):
+    for d_days in tenor_days:
         row_iv = []
         term_mult = 1.0 + (atr_ratio - 0.75) * (0.28 / math.sqrt(max(1.0, d_days / 2.0)))
         for s_off in strike_offsets:
-            moneyness = s_off / max(10.0, daily_atr * 2.0)  # normalized distance from spot
-            # Volatility Smile curvature (wings have higher IV) + Directional Skew (Call vs Put wing)
+            moneyness = s_off / max(10.0, daily_atr * 2.0)
             smile = 2.4 * (moneyness ** 2) * (1.0 / math.sqrt(max(1.0, d_days / 3.0)))
             skew_shift = call_put_skew * moneyness * (1.1 if s_off > 0 else 0.7)
             iv_val = round(max(9.5, base_iv * term_mult + smile + skew_shift), 2)
@@ -631,13 +629,10 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, se
         "skew_regime": skew_regime
     }
 
-    # --------------------------------------------------------------------------
-    # MODEL 3: 3D SESSION & VOLATILITY PROFILE (HOUR UTC vs. WEEKDAY)
-    # --------------------------------------------------------------------------
+    # MODEL 3: 3D SESSION & VOLATILITY PROFILE
     days_labels = ["Mon", "Tue", "Wed", "Thu", "Fri"]
     hours_labels = [f"{h:02d}:00" for h in range(24)]
 
-    # 5 days x 24 hours buckets
     range_sums = [[0.0 for _ in range(24)] for _ in range(5)]
     bias_sums = [[0.0 for _ in range(24)] for _ in range(5)]
     counts = [[0 for _ in range(24)] for _ in range(5)]
@@ -675,7 +670,6 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, se
         range_matrix.append(r_row)
         bias_matrix.append(b_row)
 
-    # Identify strongest Asian Session hour (00:00 - 08:00 UTC)
     for h_i in range(0, 9):
         avg_hr_range = sum(range_matrix[d][h_i] for d in range(5)) / 5.0
         if avg_hr_range > best_asian_val:
@@ -709,7 +703,7 @@ def fetch_oanda_orderbook(top_zones_cache=None, multi_pos=None):
     liquidity_info = (
         f"Current XAU/USD Price: {current_price}\n"
         f"Multi-Source Positioning: {pos_line}\n"
-        f"Liquidity Zones (OANDA Resting + Unmitigated COMEX Volume):\n"
+        f"Liquidity Zones (OANDA Resting + Unmitigated COMEX Volume within 2.5% radius):\n"
     )
     for z in top_zones:
         pos_label = "ABOVE price" if z["price"] >= current_price else "BELOW price"
@@ -908,7 +902,6 @@ def compute_dual_horizon_drivers(valid_clusters, stats_history=None):
     return "\n".join(prompt_lines), drivers_24h, drivers_weekly
 
 def fetch_oanda_price_and_volatility():
-    """Fetches 500 H1 candles (~30 trading days) for accurate ATR and 3D Session Profile."""
     if not OANDA_API_KEY:
         return "No price data available.", [], {}
     parsed = []
@@ -920,16 +913,15 @@ def fetch_oanda_price_and_volatility():
             if response.status_code == 200:
                 raw_candles = response.json().get("candles", [])
                 for c in raw_candles:
-                    if c.get("complete") or c == raw_candles[-1]:
-                        ts = float(c.get("time", 0))
-                        parsed.append({
-                            "ts": ts,
-                            "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
-                            "o": float(c["mid"]["o"]),
-                            "h": float(c["mid"]["h"]),
-                            "l": float(c["mid"]["l"]),
-                            "c": float(c["mid"]["c"])
-                        })
+                    ts = float(c.get("time", 0))
+                    parsed.append({
+                        "ts": ts,
+                        "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
+                        "o": float(c["mid"]["o"]),
+                        "h": float(c["mid"]["h"]),
+                        "l": float(c["mid"]["l"]),
+                        "c": float(c["mid"]["c"])
+                    })
                 break
             else:
                 print(f"OANDA H1 Candle API Status {response.status_code} (Attempt {attempt+1}/2): {response.text[:120]}")
@@ -957,7 +949,7 @@ def fetch_oanda_price_and_volatility():
         "change_24h": change_24h,
         "move_to_daily_atr_ratio": ratio_4h
     }
-    history_str = f"XAU/USD Volatility: Spot ${curr_c} | 4h: ${change_4h:+.2f} | 24h: ${change_24h:+.2f} | Daily ATR: ${est_daily_atr:.2f} (4h Ratio: {ratio_4h}x)"
+    history_str = f"XAU/USD Volatility: Spot ${curr_c:.2f} | 4h: ${change_4h:+.2f} | 24h: ${change_24h:+.2f} | Daily ATR: ${est_daily_atr:.2f} (4h Ratio: {ratio_4h}x)"
     return history_str, parsed, vol_metrics
 
 def fetch_macro_context():
@@ -1331,16 +1323,50 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
         except Exception:
             pass
 
-    curr_p, top_zones, sentiment, all_zones_dict = top_zones_cache if top_zones_cache else get_clustered_oanda_zones(zone_width=10.0)
-    eff_spot = curr_p if curr_p > 0 else (vol_metrics or {}).get("current_price", 0.0)
+    loaded_h4_candles = []
+    if OANDA_API_KEY:
+        headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
+        for attempt in range(2):
+            try:
+                res_c = requests.get("[https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M](https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M)", headers=headers, timeout=10)
+                if res_c.status_code == 200:
+                    for c in res_c.json().get("candles", []):
+                        loaded_h4_candles.append({
+                            "time": int(float(c["time"])),
+                            "open": float(c["mid"]["o"]),
+                            "high": float(c["mid"]["h"]),
+                            "low": float(c["mid"]["l"]),
+                            "close": float(c["mid"]["c"])
+                        })
+                    print(f"Successfully loaded {len(loaded_h4_candles)} OANDA H4 candles.")
+                    break
+                else:
+                    print(f"OANDA H4 Candle API Error {res_c.status_code} (Attempt {attempt+1}/2): {res_c.text[:120]}")
+                    time.sleep(2)
+            except Exception as e:
+                print(f"Error loading OANDA H4 candles (Attempt {attempt+1}/2): {e}")
+                time.sleep(2)
 
-    # Build 3D Surfaces for Model 1, Model 2, and Model 3
+    if not loaded_h4_candles and old_md.get("candles"):
+        loaded_h4_candles = old_md["candles"]
+
+    # SINGLE SOURCE OF TRUTH FOR SPOT PRICE: Always sync to latest chart candle close
+    curr_p, top_zones, sentiment, all_zones_dict = top_zones_cache if top_zones_cache else get_clustered_oanda_zones(zone_width=10.0)
+    eff_spot = loaded_h4_candles[-1]["close"] if loaded_h4_candles else (curr_p if curr_p > 0 else (vol_metrics or {}).get("current_price", 0.0))
+
+    if vol_metrics is not None and eff_spot > 0:
+        vol_metrics["current_price"] = round(eff_spot, 2)
+    if crypto_basis_obj and eff_spot > 0 and crypto_basis_obj.get("crypto_price"):
+        crypto_basis_obj["oanda_price"] = round(eff_spot, 2)
+        crypto_basis_obj["spread_usd"] = round(crypto_basis_obj["crypto_price"] - eff_spot, 2)
+
     ob_surf, vol_surf, sess_surf, updated_ob_hist = build_3d_surfaces(
         eff_spot, all_zones_dict, h1_candles, vol_metrics, sentiment, multi_pos, old_md.get("ob_history", [])
     )
 
     market_data = {
-        "candles": [],
+        "spot_price": round(eff_spot, 2),
+        "candles": loaded_h4_candles,
         "orderbook": [],
         "sentiment": sentiment,
         "multi_positioning": multi_pos or old_md.get("multi_positioning", {}),
@@ -1356,30 +1382,9 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
         "session_surface": sess_surf
     }
 
-    if OANDA_API_KEY:
-        headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
-        for attempt in range(2):
-            try:
-                res_c = requests.get("[https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M](https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M)", headers=headers, timeout=10)
-                if res_c.status_code == 200:
-                    for c in res_c.json().get("candles", []):
-                        market_data["candles"].append({
-                            "time": int(float(c["time"])),
-                            "open": float(c["mid"]["o"]),
-                            "high": float(c["mid"]["h"]),
-                            "low": float(c["mid"]["l"]),
-                            "close": float(c["mid"]["c"])
-                        })
-                    print(f"Successfully loaded {len(market_data['candles'])} OANDA H4 candles.")
-                    break
-                else:
-                    print(f"OANDA H4 Candle API Error {res_c.status_code} (Attempt {attempt+1}/2): {res_c.text[:120]}")
-                    time.sleep(2)
-            except Exception as e:
-                print(f"Error loading OANDA H4 candles (Attempt {attempt+1}/2): {e}")
-                time.sleep(2)
-
     for z in top_zones:
+        if eff_spot > 0 and abs(z["price"] - eff_spot) / eff_spot > MAX_ZONE_RADIUS_PCT:
+            continue
         market_data["orderbook"].append({
             "price": z["price"],
             "volume": z["volume"],
@@ -1392,12 +1397,7 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
             "overlap": z.get("overlap", False),
             "sources": z.get("sources", "OANDA")
         })
-    print(f"Successfully loaded {len(market_data['orderbook'])} OANDA+COMEX order zones & 3D surface matrices.")
-
-    if not market_data["candles"] and old_md.get("candles"):
-        market_data["candles"] = old_md["candles"]
-    if not market_data["orderbook"] and old_md.get("orderbook"):
-        market_data["orderbook"] = old_md["orderbook"]
+    print(f"Successfully synced Spot (${eff_spot:.2f}), {len(market_data['orderbook'])} near-spot zones & 3D surfaces.")
 
     with open("market_data.json", "w", encoding="utf-8") as f:
         json.dump(market_data, f)
@@ -1413,12 +1413,12 @@ def main():
         except Exception:
             existing_data = []
 
-    print("Loading 500 H1 Candles, OANDA + COMEX Order Zones & 3D Surface Telemetry...")
+    print("Loading 500 H1 Candles, Near-Spot OANDA + COMEX Zones & 3D Surface Telemetry...")
     price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
     candle_fallback_price = vol_metrics.get("current_price", 0.0)
     
     oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0, fallback_price=candle_fallback_price)
-    effective_spot_price = oanda_zones_cache[0] if oanda_zones_cache and oanda_zones_cache[0] > 0 else candle_fallback_price
+    effective_spot_price = candle_fallback_price if candle_fallback_price > 0 else (oanda_zones_cache[0] if oanda_zones_cache else 0.0)
     oanda_sentiment = oanda_zones_cache[2] if oanda_zones_cache else {"long_pct": 50.0, "short_pct": 50.0}
     
     multi_pos = fetch_multi_positioning(oanda_sentiment)
@@ -1506,7 +1506,7 @@ def main():
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
 
-    print("Updating OANDA chart, OANDA+COMEX Ladder & 3D Surfaces...")
+    print("Updating OANDA chart, synchronized Spot Price & 3D Surfaces...")
     update_market_data(oanda_zones_cache, macro_summary, vol_metrics, crypto_basis_obj, taker_flow_obj, drivers_24h, drivers_weekly, multi_pos, h1_candles)
     print("Update completed.")
 

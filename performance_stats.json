@@ -3,7 +3,7 @@
     "hits": 493,
     "misses": 310,
     "win_rate": 61.4,
-    "active_signals": 32,
+    "active_signals": 33,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -14418,9 +14418,9 @@
             "source": "CNBC Tech & AI",
             "category": "Tech, AI & Equities",
             "impact": "Bullish",
-            "prob": 70,
+            "prob": 73,
             "entry_price": 3884.68,
-            "target": 3899.42,
+            "target": 3970.61,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -14436,9 +14436,9 @@
             "source": "Tehran Times",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 56,
+            "prob": 65,
             "entry_price": 3884.68,
-            "target": 3889.43,
+            "target": 3899.41,
             "max_dd_usd": 0.0,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
@@ -14662,6 +14662,24 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794765245.0,
             "date": "First Reported: 2026-11-15 17:54 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/ubs-sees-brent-hitting-110-as-tight-supply-buffers-leave-oil-vulnerable-5028142": {
+            "status": "ACTIVE",
+            "headline": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
+            "source": "Investing.com",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3884.68,
+            "target": 3970.61,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.24,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794780360.0,
+            "date": "First Reported: 2026-11-15 22:06 UTC",
             "fail_reason": ""
         }
     }

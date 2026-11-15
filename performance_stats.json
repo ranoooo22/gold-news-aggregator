@@ -1,32 +1,32 @@
 {
-    "total_evaluated": 786,
+    "total_evaluated": 798,
     "hits": 493,
-    "misses": 293,
-    "win_rate": 62.7,
-    "active_signals": 26,
+    "misses": 305,
+    "win_rate": 61.8,
+    "active_signals": 20,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
                 "hits": 412,
-                "misses": 258,
-                "total": 670,
-                "win_rate": 61.5,
+                "misses": 269,
+                "total": 681,
+                "win_rate": 60.5,
                 "avg_dd": 23.8
             },
             "Bearish": {
                 "hits": 81,
-                "misses": 35,
-                "total": 116,
-                "win_rate": 69.8,
+                "misses": 36,
+                "total": 117,
+                "win_rate": 69.2,
                 "avg_dd": 18.48
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
                 "hits": 466,
-                "misses": 279,
-                "total": 745,
-                "win_rate": 62.6,
+                "misses": 291,
+                "total": 757,
+                "win_rate": 61.6,
                 "avg_dd": 22.3
             },
             "Moderate (0.8x-1.2x ATR)": {
@@ -54,16 +54,16 @@
         "by_macro_alignment": {
             "With USD Tailwind": {
                 "hits": 30,
-                "misses": 3,
-                "total": 33,
-                "win_rate": 90.9,
+                "misses": 4,
+                "total": 34,
+                "win_rate": 88.2,
                 "avg_dd": 18.08
             },
             "Against USD Headwind": {
                 "hits": 245,
-                "misses": 103,
-                "total": 348,
-                "win_rate": 70.4,
+                "misses": 114,
+                "total": 359,
+                "win_rate": 68.2,
                 "avg_dd": 21.06
             },
             "USD Neutral / Legacy": {
@@ -77,9 +77,9 @@
         "by_category": {
             "Geopolitics & War": {
                 "hits": 232,
-                "misses": 174,
-                "total": 406,
-                "win_rate": 57.1,
+                "misses": 183,
+                "total": 415,
+                "win_rate": 55.9,
                 "avg_dd": 25.4
             },
             "Fed, Rates & Macro": {
@@ -91,32 +91,32 @@
             },
             "Tech, AI & Equities": {
                 "hits": 138,
-                "misses": 51,
-                "total": 189,
-                "win_rate": 73.0,
+                "misses": 52,
+                "total": 190,
+                "win_rate": 72.6,
                 "avg_dd": 18.21
             },
             "Commodities & Energy": {
                 "hits": 91,
-                "misses": 58,
-                "total": 149,
-                "win_rate": 61.1,
+                "misses": 60,
+                "total": 151,
+                "win_rate": 60.3,
                 "avg_dd": 26.32
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
                 "hits": 426,
-                "misses": 241,
-                "total": 667,
-                "win_rate": 63.9,
+                "misses": 248,
+                "total": 674,
+                "win_rate": 63.2,
                 "avg_dd": 23.7
             },
             "High (65-74%)": {
                 "hits": 63,
-                "misses": 42,
-                "total": 105,
-                "win_rate": 60.0,
+                "misses": 47,
+                "total": 110,
+                "win_rate": 57.3,
                 "avg_dd": 20.71
             },
             "Extreme (>=75%)": {
@@ -13423,7 +13423,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249385/Iran-lashes-out-at-IAEA-BoG-s-flawed-resolutions-mission": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran lashes out at IAEA BoG's \"flawed resolutions\": mission",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -13441,7 +13441,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532141/Bet-on-the-losing-horse-Abu-Dhabi-s-gamble-in-Hormuz": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Bet on the losing horse: Abu Dhabi's gamble in Hormuz",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -13459,7 +13459,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/news/loss-confidence-us-navy-fires-commanders-warships-deployed-against-iran": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "‘Loss of confidence’: US Navy fires commanders of warships deployed against Iran",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -13477,7 +13477,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249398/Israel-advances-plan-to-build-nearly-900-new-settler-units": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Israel advances plan to build nearly 900 new settler units",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -13495,7 +13495,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/13/anthropic-set-its-ipo-price-range-at-70-to-78-valuing-it-at-up-to-1405-trillion/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Anthropic Set Its IPO Share Price Range at $70 to $78, Valuing It at Up to $1.4 Trillion",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -13513,7 +13513,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249396/You-reap-what-you-sow-Yemeni-negotiator-warns-Saudis": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "‘You reap what you sow, Yemeni negotiator warns Saudis",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -13855,7 +13855,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249404/Blinken-says-Iran-war-was-a-mistake": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Blinken says Iran war was a mistake as it came out stronger",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -13873,7 +13873,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/markets/commodities/articles/exclusive-alamos-gold-ceo-good-185110575.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "EXCLUSIVE: Alamos Gold CEO – ‘Be a Good Investment, Not a Gold Call Option’",
             "source": "Yahoo Finance Gold",
             "category": "Commodities & Energy",
@@ -13891,7 +13891,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532151/Expanding-missile-range-is-our-new-deterrence-strategy": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Expanding missile range is our new deterrence strategy",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -13909,7 +13909,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532147/Strengthening-strategic-ties-with-China-must-be-a-priority-for": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Strengthening strategic ties with China must be a priority for Iran",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -13927,7 +13927,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249382/Iran-to-continue-path-of-defense-industry-progress-with-power": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Iran to continue path of defense industry progress with power",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -13945,7 +13945,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/sell-texas-pacific-land-tpl-172217146.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Should You Sell Texas Pacific Land (TPL) Now That the Blue Wave is Here?",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -14248,6 +14248,114 @@
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794729701.0,
             "date": "First Reported: 2026-11-15 08:01 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532173/Oman-Iran-s-important-trade-partner-gateway-to-regional-markets": {
+            "status": "ACTIVE",
+            "headline": "Oman: Iran's important trade partner, gateway to regional markets",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 60,
+            "entry_price": 3884.68,
+            "target": 3899.57,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794755718.0,
+            "date": "First Reported: 2026-11-15 15:15 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security?traffic_source=rss": {
+            "status": "ACTIVE",
+            "headline": "Netanyahu says only a unity government can guarantee Israel’s security",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3884.68,
+            "target": 3889.6,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794751328.0,
+            "date": "First Reported: 2026-11-14 23:01 UTC | Last Update: 2026-11-15 14:02 UTC",
+            "fail_reason": ""
+        },
+        "https://www.usatoday.com/story/money/money-management/investing/2026/11/15/how-much-gold-investors-should-own/90710064007/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "How much gold should you have in your portfolio? Experts weigh in",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 75,
+            "entry_price": 3884.68,
+            "target": 4049.03,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794750325.0,
+            "date": "First Reported: 2026-11-15 13:45 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532169/What-is-the-proposed-Cyrus-Accords-between-Israel-and-anti-Iran": {
+            "status": "ACTIVE",
+            "headline": "What is the proposed \"Cyrus Accords\" between Israel and anti-Iran monarchists?",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bearish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3881.1,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794748106.0,
+            "date": "First Reported: 2026-11-15 13:08 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249419/Ex-IAEA-chief-says-US-war-against-Iran-based-on-lies": {
+            "status": "ACTIVE",
+            "headline": "Ex-IAEA chief says US war against Iran ‘based on lies'",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.6,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794747422.0,
+            "date": "First Reported: 2026-11-15 12:57 UTC",
+            "fail_reason": ""
+        },
+        "https://www.marketwatch.com/story/gold-and-silver-are-supposed-to-protect-against-inflation-so-why-are-both-metals-tumbling-instead-1735eca7?mod=mw_rss_topstories": {
+            "status": "ACTIVE",
+            "headline": "Gold and silver are supposed to protect against inflation. So why are both metals tumbling",
+            "source": "MarketWatch Macro",
+            "category": "Fed, Rates & Macro",
+            "impact": "Bullish",
+            "prob": 55,
+            "entry_price": 3884.68,
+            "target": 3889.6,
+            "max_dd_usd": 0.0,
+            "atr_ratio_at_signal": 0.01,
+            "daily_atr_at_signal": 56.4,
+            "eur_chg_at_signal": -0.31,
+            "nas_chg_at_signal": -1.68,
+            "created_ts": 1794745800.0,
+            "date": "First Reported: 2026-11-15 12:30 UTC",
             "fail_reason": ""
         }
     }

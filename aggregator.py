@@ -59,7 +59,7 @@ MIN_EVAL_PROBABILITY = 51
 EVAL_HORIZON_HOURS = 20.0
 MAX_DRAWDOWN_ATR_MULT = 1.8
 
-# Maximum distance for orderbook zones (2.5% ~ $95 around spot to prevent $4049 chart stretching)
+# Maximum distance for orderbook zones (2.5% ~ $95 around spot to prevent chart stretching)
 MAX_ZONE_RADIUS_PCT = 0.025
 
 FEEDS = {
@@ -106,6 +106,34 @@ TECH_SYSTEMIC_TRIGGERS = [
 DATA_FILE = "data.json"
 STATS_FILE = "performance_stats.json"
 SIMILARITY_THRESHOLD = 0.54
+
+def fetch_capitalcom_tv_price():
+    """
+    Fetches the live CAPITALCOM:GOLD price directly from TradingView's scanner API.
+    Falls back to OANDA:XAUUSD or FOREXCOM:XAUUSD on TradingView if needed.
+    """
+    url = "https://scanner.tradingview.com/global/scan"
+    payload = {
+        "symbols": {
+            "tickers": ["CAPITALCOM:GOLD", "OANDA:XAUUSD", "FOREXCOM:XAUUSD"]
+        },
+        "columns": ["close", "high", "low", "open", "change", "change_abs"]
+    }
+    headers = {"User-Agent": "Mozilla/5.0", "Content-Type": "application/json"}
+    try:
+        res = requests.post(url, json=payload, headers=headers, timeout=6)
+        if res.status_code == 200:
+            rows = res.json().get("data", [])
+            for row in rows:
+                sym = row.get("s", "")
+                d = row.get("d", [])
+                if d and d[0] is not None and float(d[0]) > 0:
+                    price = round(float(d[0]), 2)
+                    print(f"TradingView Live Price loaded ({sym}): ${price:.2f}")
+                    return price, sym
+    except Exception as e:
+        print(f"TradingView Scanner API note: {e}")
+    return 0.0, "N/A"
 
 def passes_stage1_filter(title, description):
     full_text = f"{title} {description}".lower()
@@ -215,17 +243,17 @@ def fetch_live_perp_price():
         pass
     return 0.0, "N/A"
 
-def fetch_crypto_gold_basis(oanda_price):
+def fetch_crypto_gold_basis(spot_price):
     crypto_price, source_used = fetch_live_perp_price()
-    if crypto_price > 0 and oanda_price <= 0:
-        oanda_price = crypto_price
+    if crypto_price > 0 and spot_price <= 0:
+        spot_price = crypto_price
 
     now_utc = datetime.utcnow()
     is_weekend = (now_utc.weekday() == 4 and now_utc.hour >= 22) or (now_utc.weekday() == 5) or (now_utc.weekday() == 6 and now_utc.hour < 22)
 
-    if crypto_price > 0 and oanda_price > 0:
-        spread_usd = round(crypto_price - oanda_price, 2)
-        spread_pct = round((spread_usd / oanda_price) * 100.0, 2)
+    if crypto_price > 0 and spot_price > 0:
+        spread_usd = round(crypto_price - spot_price, 2)
+        spread_pct = round((spread_usd / spot_price) * 100.0, 2)
         if is_weekend:
             regime = "WEEKEND GAP INDICATOR (Spot Closed)"
             signal = f"Bullish Sunday Gap (+${spread_usd:.2f})" if spread_usd >= 5.0 else (f"Bearish Sunday Gap (${spread_usd:+.2f})" if spread_usd <= -5.0 else f"Flat Weekend (${spread_usd:+.2f})")
@@ -234,13 +262,13 @@ def fetch_crypto_gold_basis(oanda_price):
             signal = f"High Perp Premium (+${spread_usd:.2f})" if spread_usd >= 8.0 else (f"Perp Discount (${spread_usd:+.2f})" if spread_usd <= -8.0 else f"Tight Parity (${spread_usd:+.2f})")
 
         prompt_str = (
-            f"24/7 Crypto-Gold Perpetual Basis ({source_used} vs. OANDA XAU/USD Spot):\n"
-            f"- Market Regime: {regime} | {source_used}: ${crypto_price:.2f} vs. OANDA: ${oanda_price:.2f} (Spread: ${spread_usd:+.2f} / {spread_pct:+.2f}% -> {signal})"
+            f"24/7 Crypto-Gold Perpetual Basis ({source_used} vs. CAPITALCOM:GOLD Spot):\n"
+            f"- Market Regime: {regime} | {source_used}: ${crypto_price:.2f} vs. Spot: ${spot_price:.2f} (Spread: ${spread_usd:+.2f} / {spread_pct:+.2f}% -> {signal})"
         )
-        print(f"24/7 Gold Perp loaded ({source_used}): ${crypto_price:.2f} | Spread vs OANDA (${oanda_price:.2f}): ${spread_usd:+.2f}")
+        print(f"24/7 Gold Perp loaded ({source_used}): ${crypto_price:.2f} | Spread vs Spot (${spot_price:.2f}): ${spread_usd:+.2f}")
         return prompt_str, {
             "crypto_price": round(crypto_price, 2),
-            "oanda_price": round(oanda_price, 2),
+            "oanda_price": round(spot_price, 2),
             "spread_usd": spread_usd,
             "spread_pct": spread_pct,
             "source": source_used,
@@ -352,10 +380,6 @@ def fetch_multi_positioning(oanda_sentiment):
     }
 
 def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
-    """
-    Uses live candle price (`fallback_price`) as Single Source of Truth for spot price.
-    Filters orderbook buckets strictly within MAX_ZONE_RADIUS_PCT (2.5% ~ $95) so distant outliers like $4049 are excluded.
-    """
     current_price = float(fallback_price) if fallback_price else 0.0
     combined_buckets = {}
     total_pos_long, total_pos_short = 0.0, 0.0
@@ -371,7 +395,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                 if res_ob.status_code == 200:
                     ob_data = res_ob.json().get("orderBook", {})
                     ob_price = float(ob_data.get("price", 0))
-                    # Only use orderBook snapshot price if live candle price was unavailable
                     if current_price <= 0 and ob_price > 0:
                         current_price = ob_price
                     for b in ob_data.get("buckets", []):
@@ -514,7 +537,7 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
 # 3D SURFACE ANALYTICS ENGINE (MODELS 1, 2 & 3)
 # ==============================================================================
 def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, sentiment, multi_pos, old_ob_history=None):
-    spot = current_price if current_price > 0 else (h1_candles[-1]["c"] if h1_candles else 3892.20)
+    spot = current_price if current_price > 0 else (h1_candles[-1]["c"] if h1_candles else 3850.0)
     center_10 = int(round(spot / 10.0) * 10)
     price_grid = [center_10 + offset for offset in range(-50, 60, 10)]
 
@@ -701,7 +724,7 @@ def fetch_oanda_orderbook(top_zones_cache=None, multi_pos=None):
             pos_line += f" | CFTC Managed Money (Hedge Funds): {multi_pos['cot_mm_long_pct']}% Net Long (as of {multi_pos['cot_date']})"
 
     liquidity_info = (
-        f"Current XAU/USD Price: {current_price}\n"
+        f"Current CAPITALCOM:GOLD / XAUUSD Price: {current_price}\n"
         f"Multi-Source Positioning: {pos_line}\n"
         f"Liquidity Zones (OANDA Resting + Unmitigated COMEX Volume within 2.5% radius):\n"
     )
@@ -901,37 +924,50 @@ def compute_dual_horizon_drivers(valid_clusters, stats_history=None):
     prompt_lines.append("- Dominant 24h Intraday Pulse: " + " | ".join([f"#{i+1} {d['narrative']} ({d['share_pct']}%, {d['net_bias']})" for i, d in enumerate(drivers_24h)]))
     return "\n".join(prompt_lines), drivers_24h, drivers_weekly
 
-def fetch_oanda_price_and_volatility():
-    if not OANDA_API_KEY:
-        return "No price data available.", [], {}
+def fetch_oanda_price_and_volatility(tv_live_price=0.0):
     parsed = []
-    url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=500&granularity=H1&price=M"
-    headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
-    for attempt in range(2):
-        try:
-            response = requests.get(url, headers=headers, timeout=12)
-            if response.status_code == 200:
-                raw_candles = response.json().get("candles", [])
-                for c in raw_candles:
-                    ts = float(c.get("time", 0))
-                    parsed.append({
-                        "ts": ts,
-                        "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
-                        "o": float(c["mid"]["o"]),
-                        "h": float(c["mid"]["h"]),
-                        "l": float(c["mid"]["l"]),
-                        "c": float(c["mid"]["c"])
-                    })
-                break
-            else:
-                print(f"OANDA H1 Candle API Status {response.status_code} (Attempt {attempt+1}/2): {response.text[:120]}")
+    if OANDA_API_KEY:
+        url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=500&granularity=H1&price=M"
+        headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
+        for attempt in range(2):
+            try:
+                response = requests.get(url, headers=headers, timeout=12)
+                if response.status_code == 200:
+                    raw_candles = response.json().get("candles", [])
+                    for c in raw_candles:
+                        ts = float(c.get("time", 0))
+                        parsed.append({
+                            "ts": ts,
+                            "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
+                            "o": float(c["mid"]["o"]),
+                            "h": float(c["mid"]["h"]),
+                            "l": float(c["mid"]["l"]),
+                            "c": float(c["mid"]["c"])
+                        })
+                    break
+                else:
+                    print(f"OANDA H1 Candle API Status {response.status_code} (Attempt {attempt+1}/2): {response.text[:120]}")
+                    time.sleep(2)
+            except Exception as e:
+                print(f"OANDA H1 Candle Error (Attempt {attempt+1}/2): {e}")
                 time.sleep(2)
-        except Exception as e:
-            print(f"OANDA H1 Candle Error (Attempt {attempt+1}/2): {e}")
-            time.sleep(2)
 
     if len(parsed) < 15:
-        return "Insufficient OANDA H1 candles.", parsed, {}
+        eff_p = tv_live_price if tv_live_price > 0 else 3850.0
+        return f"XAU/USD Spot (CAPITALCOM:GOLD): ${eff_p:.2f}", parsed, {
+            "current_price": eff_p,
+            "atr_h1": 9.5,
+            "est_daily_atr": 38.0,
+            "change_4h": 0.0,
+            "change_24h": 0.0,
+            "move_to_daily_atr_ratio": 0.5
+        }
+
+    # Sync latest H1 candle to live CAPITALCOM:GOLD price if available
+    if tv_live_price > 0:
+        parsed[-1]["c"] = tv_live_price
+        parsed[-1]["h"] = max(parsed[-1]["h"], tv_live_price)
+        parsed[-1]["l"] = min(parsed[-1]["l"], tv_live_price)
 
     trs = [max(parsed[i]["h"] - parsed[i]["l"], abs(parsed[i]["h"] - parsed[i-1]["c"]), abs(parsed[i]["l"] - parsed[i-1]["c"])) for i in range(1, len(parsed))]
     atr_14_h1 = sum(trs[-14:]) / 14.0
@@ -942,14 +978,14 @@ def fetch_oanda_price_and_volatility():
     ratio_4h = round(abs(change_4h) / est_daily_atr, 2) if est_daily_atr > 0 else 0.0
 
     vol_metrics = {
-        "current_price": curr_c,
+        "current_price": round(curr_c, 2),
         "atr_h1": round(atr_14_h1, 2),
         "est_daily_atr": est_daily_atr,
         "change_4h": change_4h,
         "change_24h": change_24h,
         "move_to_daily_atr_ratio": ratio_4h
     }
-    history_str = f"XAU/USD Volatility: Spot ${curr_c:.2f} | 4h: ${change_4h:+.2f} | 24h: ${change_24h:+.2f} | Daily ATR: ${est_daily_atr:.2f} (4h Ratio: {ratio_4h}x)"
+    history_str = f"XAU/USD Volatility (CAPITALCOM:GOLD Synced): Spot ${curr_c:.2f} | 4h: ${change_4h:+.2f} | 24h: ${change_24h:+.2f} | Daily ATR: ${est_daily_atr:.2f} (4h Ratio: {ratio_4h}x)"
     return history_str, parsed, vol_metrics
 
 def fetch_macro_context():
@@ -1314,7 +1350,40 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
                 time.sleep(wait_s)
     return {}
 
-def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None, crypto_basis_obj=None, taker_flow_obj=None, drivers_24h=None, drivers_weekly=None, multi_pos=None, h1_candles=None):
+def fetch_fallback_h4_candles(target_spot_price):
+    """Fetches recent Yahoo GC=F candles and calibrates them to CAPITALCOM:GOLD if OANDA H4 fails."""
+    candles = []
+    try:
+        url = "[https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1mo&interval=1h](https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1mo&interval=1h)"
+        res = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
+        if res.status_code == 200:
+            result = res.json().get("chart", {}).get("result", [])
+            if result:
+                timestamps = result[0].get("timestamp", [])
+                q = result[0].get("indicators", {}).get("quote", [{}])[0]
+                opens, highs, lows, closes = q.get("open", []), q.get("high", []), q.get("low", []), q.get("close", [])
+                raw_1h = []
+                for t, o, h, l, c in zip(timestamps, opens, highs, lows, closes):
+                    if all(x is not None for x in (t, o, h, l, c)):
+                        raw_1h.append({"time": int(t), "open": float(o), "high": float(h), "low": float(l), "close": float(c)})
+                if raw_1h:
+                    last_f_close = raw_1h[-1]["close"]
+                    basis_offset = (target_spot_price - last_f_close) if target_spot_price > 0 else 0.0
+                    # Group into 4-hour blocks
+                    for i in range(0, len(raw_1h), 4):
+                        chunk = raw_1h[i:i+4]
+                        candles.append({
+                            "time": chunk[0]["time"],
+                            "open": round(chunk[0]["open"] + basis_offset, 2),
+                            "high": round(max(x["high"] for x in chunk) + basis_offset, 2),
+                            "low": round(min(x["low"] for x in chunk) + basis_offset, 2),
+                            "close": round(chunk[-1]["close"] + basis_offset, 2)
+                        })
+    except Exception as e:
+        print(f"Fallback H4 candle note: {e}")
+    return candles[-100:]
+
+def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None, crypto_basis_obj=None, taker_flow_obj=None, drivers_24h=None, drivers_weekly=None, multi_pos=None, h1_candles=None, tv_live_price=0.0, tv_source="CAPITALCOM:GOLD"):
     old_md = {}
     if os.path.exists("market_data.json"):
         try:
@@ -1347,12 +1416,38 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
                 print(f"Error loading OANDA H4 candles (Attempt {attempt+1}/2): {e}")
                 time.sleep(2)
 
-    if not loaded_h4_candles and old_md.get("candles"):
-        loaded_h4_candles = old_md["candles"]
-
-    # SINGLE SOURCE OF TRUTH FOR SPOT PRICE: Always sync to latest chart candle close
     curr_p, top_zones, sentiment, all_zones_dict = top_zones_cache if top_zones_cache else get_clustered_oanda_zones(zone_width=10.0)
-    eff_spot = loaded_h4_candles[-1]["close"] if loaded_h4_candles else (curr_p if curr_p > 0 else (vol_metrics or {}).get("current_price", 0.0))
+    eff_spot = tv_live_price if tv_live_price > 0 else (curr_p if curr_p > 0 else (vol_metrics or {}).get("current_price", 0.0))
+
+    # If OANDA H4 failed or is stale (>36h old during weekdays), use calibrated fallback candles
+    now_ts = int(time.time())
+    if not loaded_h4_candles or (now_ts - loaded_h4_candles[-1]["time"] > 129600):
+        fb_candles = fetch_fallback_h4_candles(eff_spot)
+        if fb_candles:
+            loaded_h4_candles = fb_candles
+            print(f"Loaded {len(loaded_h4_candles)} calibrated H4 candles synced to {tv_source}.")
+        elif old_md.get("candles"):
+            loaded_h4_candles = old_md["candles"]
+
+    # Always synchronize the latest H4 candle to the exact CAPITALCOM:GOLD price
+    if loaded_h4_candles and eff_spot > 0:
+        last_c = loaded_h4_candles[-1]
+        if now_ts - last_c["time"] > 14400:
+            # Append a fresh 4H bar if the last bar is older than 4 hours
+            loaded_h4_candles.append({
+                "time": (now_ts // 14400) * 14400,
+                "open": last_c["close"],
+                "high": max(last_c["close"], eff_spot),
+                "low": min(last_c["close"], eff_spot),
+                "close": round(eff_spot, 2)
+            })
+        else:
+            last_c["close"] = round(eff_spot, 2)
+            last_c["high"] = round(max(last_c["high"], eff_spot), 2)
+            last_c["low"] = round(min(last_c["low"], eff_spot), 2)
+
+    if eff_spot <= 0 and loaded_h4_candles:
+        eff_spot = loaded_h4_candles[-1]["close"]
 
     if vol_metrics is not None and eff_spot > 0:
         vol_metrics["current_price"] = round(eff_spot, 2)
@@ -1366,6 +1461,7 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
 
     market_data = {
         "spot_price": round(eff_spot, 2),
+        "spot_source": tv_source if tv_live_price > 0 else "OANDA:XAUUSD",
         "candles": loaded_h4_candles,
         "orderbook": [],
         "sentiment": sentiment,
@@ -1397,7 +1493,7 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
             "overlap": z.get("overlap", False),
             "sources": z.get("sources", "OANDA")
         })
-    print(f"Successfully synced Spot (${eff_spot:.2f}), {len(market_data['orderbook'])} near-spot zones & 3D surfaces.")
+    print(f"Successfully synced Spot (${eff_spot:.2f} via {market_data['spot_source']}), {len(market_data['orderbook'])} near-spot zones & 3D surfaces.")
 
     with open("market_data.json", "w", encoding="utf-8") as f:
         json.dump(market_data, f)
@@ -1413,12 +1509,16 @@ def main():
         except Exception:
             existing_data = []
 
+    print("Fetching Live CAPITALCOM:GOLD Price from TradingView Scanner...")
+    tv_live_price, tv_source = fetch_capitalcom_tv_price()
+
     print("Loading 500 H1 Candles, Near-Spot OANDA + COMEX Zones & 3D Surface Telemetry...")
-    price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility()
-    candle_fallback_price = vol_metrics.get("current_price", 0.0)
+    price_history_data, h1_candles, vol_metrics = fetch_oanda_price_and_volatility(tv_live_price=tv_live_price)
+    effective_spot_price = tv_live_price if tv_live_price > 0 else vol_metrics.get("current_price", 0.0)
     
-    oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0, fallback_price=candle_fallback_price)
-    effective_spot_price = candle_fallback_price if candle_fallback_price > 0 else (oanda_zones_cache[0] if oanda_zones_cache else 0.0)
+    oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0, fallback_price=effective_spot_price)
+    if effective_spot_price <= 0 and oanda_zones_cache:
+        effective_spot_price = oanda_zones_cache[0]
     oanda_sentiment = oanda_zones_cache[2] if oanda_zones_cache else {"long_pct": 50.0, "short_pct": 50.0}
     
     multi_pos = fetch_multi_positioning(oanda_sentiment)
@@ -1506,8 +1606,12 @@ def main():
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
 
-    print("Updating OANDA chart, synchronized Spot Price & 3D Surfaces...")
-    update_market_data(oanda_zones_cache, macro_summary, vol_metrics, crypto_basis_obj, taker_flow_obj, drivers_24h, drivers_weekly, multi_pos, h1_candles)
+    print("Updating Chart, CAPITALCOM:GOLD Spot Price & 3D Surfaces...")
+    update_market_data(
+        oanda_zones_cache, macro_summary, vol_metrics, crypto_basis_obj,
+        taker_flow_obj, drivers_24h, drivers_weekly, multi_pos, h1_candles,
+        tv_live_price=effective_spot_price, tv_source=tv_source
+    )
     print("Update completed.")
 
 if __name__ == "__main__":

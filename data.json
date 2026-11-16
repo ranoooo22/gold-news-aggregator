@@ -31,9 +31,9 @@
         "max_dd_usd": 13.22
     },
     {
-        "main_date": "First Reported: 2026-11-16 14:25 UTC | Last Update: 2026-11-16 18:40 UTC",
+        "main_date": "First Reported: 2026-11-16 14:25 UTC | Last Update: 2026-11-16 20:58 UTC",
         "original_date": "2026-11-16 14:25",
-        "_timestamp": 1794854407.0,
+        "_timestamp": 1794862694.0,
         "articles": [
             {
                 "title": "Sector Update: Energy Stocks Decline Premarket Monday",
@@ -50,9 +50,17 @@
                 "date": "2026-11-16 18:40",
                 "description": "Energy stocks were lower Monday afternoon, with the NYSE Energy Sector Index and the State Street En",
                 "_timestamp": 1794854407.0
+            },
+            {
+                "title": "Sector Update: Energy Stocks Retreat Late Afternoon",
+                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-retreat-afternoon-205814412.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 20:58",
+                "description": "Energy stocks were lower late Monday afternoon, with the NYSE Energy Sector Index falling 2.1% and t",
+                "_timestamp": 1794862694.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 1,
             "Is_Gold_Relevant": true,
@@ -10422,35 +10430,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 21:10 UTC",
-        "original_date": "2026-11-15 21:10",
-        "_timestamp": 1794777014.0,
-        "articles": [
-            {
-                "title": "3 UK North Sea Oil Stocks Facing The Rosebank Policy Test",
-                "link": "https://finance.yahoo.com/energy/articles/3-uk-north-sea-oil-211014929.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-15 21:10",
-                "description": "Political fault lines around the Rosebank oilfield have turned the UK North Sea into a live policy experiment, where every briefing and backbench revolt can shift the outlook for future cash flows. That uncertainty cuts both ways. Some stocks could see projects delayed, while others may benefit if jobs, tax receipts and energy security win the argument. This article profiles three UK listed producers most directly exposed to that debate. The thre",
-                "_timestamp": 1794777014.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-15 21:10 UTC",
-            "Facts": "Political debate and regulatory uncertainty surrounding the Rosebank oilfield are creating a volatile policy testing ground for UK North Sea energy producers. Future cash flows and project timelines remain subject to shifting domestic tax and energy security mandates.",
-            "Macro_Context": "UK regional oil policy developments exert minimal direct transmission on global Brent benchmarks or broader energy-driven inflation pulses influencing XAU/USD.",
-            "Impact_Timing": "1-3 Days",
-            "Timeframe": "Structural Weekly Regime",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 30,
-            "Orderflow_Price_Target": "$3884.68"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-16 18:54 UTC",
         "original_date": "2026-11-16 18:54",
         "_timestamp": 1794855266.0,
@@ -10897,5 +10876,22 @@
             "Facts": "California residents gathered to observe massive El Nino-fueled waves exceeding 10 meters in height, prompted by National Weather Service warnings along the U.S. coast.",
             "Macro_Context": "Severe weather events and localized environmental impacts monitored for potential infrastructure disruptions."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:00 UTC",
+        "original_date": "2026-11-16 21:00",
+        "_timestamp": 1794862800.0,
+        "articles": [
+            {
+                "title": "Orezone Gold Reports Third Quarter 2026 Results",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/orezone-gold-reports-third-quarter-210000404.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 21:00",
+                "description": "All dollar amounts are in USD unless otherwise indicated VANCOUVER, British Columbia, Nov. 16, 2026 (GLOBE NEWSWIRE) -- Orezone Gold Corporation (TSX: ORE | ASX: ORE | OTCQX: ORZCF) (the “Company” or “Orezone”) is pleased to report its operational and financial results for the third quarter of 2026. The Company will host a conference call and webcast today at 3:00pm PT / 5:00pm ET to discuss the results. Details to join the conference call and we",
+                "_timestamp": 1794862800.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

@@ -133,9 +133,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 18:35 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 19:02 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794854106.0,
+        "_timestamp": 1794855738.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -904,21 +904,24 @@
                 "date": "2026-11-16 18:35",
                 "description": "\"I wouldn’t touch it with a barge pole,\" Quantum Strategy’s David Roche said of Nvidia Corp. (NASDAQ:NVDA). He’s out of the AI trade and says Nvidia lost its main driver of growth when Jensen Huang resigned. Roche said Huang’s chances...",
                 "_timestamp": 1794854106.0
+            },
+            {
+                "title": "NVDL 2X NVIDIA ETF Sinks 9% as NVIDIA Falls 4% on Jensen Huang Fallout Ahead of Earnings; AMD Drops 5%",
+                "link": "https://247wallst.com/investing/2026/11/16/nvdl-2x-nvidia-etf-sinks-9-as-nvidia-falls-4-on-jensen-huang-fallout-ahead-of-earnings-amd-drops-5/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:02",
+                "description": "Leveraged exposure to NVIDIA (NASDAQ:NVDA) is taking an oversized hit as the chipmaker extends its slide on the fallout from Jensen Huang’s resignation as CEO. The GraniteShares 2x Long NVDA Daily ETF (NASDAQ:NVDL) is at $16.21, down 9% in afternoon trading. The fund targets 2x NVIDIA’s daily return, so it amplifies every move in the […]",
+                "_timestamp": 1794855738.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 18:35 UTC",
-            "Facts": "[Update 2026-11-16 18:35 UTC via Yahoo Finance Nasdaq]: Nvidia faces intense market scrutiny following Jensen Huang's unexpected resignation and ongoing questions surrounding neocloud financing roles. Wall Street analysts and market commentators have voiced severe skepticism regarding the company's near-term growth drivers.",
-            "Macro_Context": "Systemic tech sector distress and equity market selloffs drive capital rotation away from mega-cap risk assets and into safe-haven gold bullion.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "7-14d",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 72,
-            "Orderflow_Price_Target": "$3880.16"
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-16 19:02 UTC",
+            "Facts": "Nvidia shares and related leveraged ETFs declined following the resignation of CEO Jensen Huang. Analysts and market commentators discussed alternative investments and leadership transitions in the semiconductor sector.",
+            "Market_Context": "Tech sector volatility driven by executive departures and upcoming corporate earnings."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -1018,9 +1021,9 @@
         "max_dd_usd": 13.22
     },
     {
-        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-16 18:28 UTC",
+        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-16 18:54 UTC",
         "original_date": "2026-11-05 15:15",
-        "_timestamp": 1794853682.0,
+        "_timestamp": 1794855240.0,
         "articles": [
             {
                 "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
@@ -1653,21 +1656,24 @@
                 "date": "2026-11-16 18:28",
                 "description": "Super Micro's stock has struggled to generate strong returns despite experiencing significant growth.",
                 "_timestamp": 1794853682.0
+            },
+            {
+                "title": "Micron, AMD and other AI stocks fall as the chip sector’s selloff intensifies",
+                "link": "https://www.marketwatch.com/story/micron-amd-and-other-ai-stocks-fall-as-the-chip-sectors-selloff-intensifies-48e38bdf?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-16 18:54",
+                "description": "Investors are jittery about Nvidia’s upcoming earnings and whether the company will scale back its financing of the AI ecosystem.",
+                "_timestamp": 1794855240.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 18:28 UTC",
-            "Facts": "[Update 2026-11-16 18:28 UTC via Yahoo Finance Nasdaq]: Super Micro Computer shares continue to struggle with valuation and return generation despite underlying business growth. Meanwhile, broader market participants brace for heavy upcoming catalysts including Nvidia earnings, the Anthropic IPO, and upcoming Federal Reserve meeting minutes.",
-            "Macro_Context": "Anticipation of major macroeconomic data releases and upcoming Fed minutes creates a cautious trading environment, favoring defensive positioning in precious metals.",
-            "Impact_Timing": "24-48 hours",
-            "Timeframe": "7-14d",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "$3890.27"
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-16 18:54 UTC",
+            "Facts": "Artificial intelligence and semiconductor stocks, including AMD and Micron, experienced a broad selloff amid concerns regarding export restrictions and upcoming corporate earnings reports.",
+            "Market_Context": "Broader chip sector weakness and investor caution regarding AI infrastructure financing."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -3530,9 +3536,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 17:51 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 19:05 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794851487.0,
+        "_timestamp": 1794855902.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4293,21 +4299,32 @@
                 "date": "2026-11-16 17:51",
                 "description": "Last week, Huang resigned from Nvidia, the company he founded, after 33 years as CEO.",
                 "_timestamp": 1794851487.0
+            },
+            {
+                "title": "Trump Backs Jensen Huang’s Return to Nvidia as Sam Altman Says 'Heroes Have Flaws'",
+                "link": "https://decrypt.co/383351/trump-elon-musk-sam-altman-jensen-huang-nvidia?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:05",
+                "description": "Trump would welcome Nvidia’s co-founder back. Altman, who survived his own CEO ouster, sympathizes but stops short of endorsing Huang’s comeback.",
+                "_timestamp": 1794855902.0
+            },
+            {
+                "title": "Jensen Huang’s Return To Nvidia Under Jeopardy As Nvidia’s Board Reportedly Refutes Reinstatement Plans",
+                "link": "https://stocktwits.com/news-articles/markets/equity/jensen-huang-s-return-to-nvidia-under-jeopardy-as-nvidia-s-board-reportedly-refutes-reinstatement-plans/cNb7DzGR9gg?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:51",
+                "description": "Nvidia’s board is focused on a national security investigation into Huang and is not discussing his return, CNBC reported.",
+                "_timestamp": 1794855086.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 17:51 UTC",
-            "Facts": "[Update 2026-11-16 17:51 UTC via CNBC Tech & AI]: Nvidia's board is reportedly not considering reinstating Jensen Huang as CEO despite political and public petitions. | Following Huang's departure after 33 years as CEO, political pressure and Treasury Secretary Scott Bessent are urging a major leadership shakeup and increased transparency over AI chip export controls.",
-            "Macro_Context": "Ongoing turmoil within Nvidia and severe pressure on tech mega-caps exacerbate broader equity liquidations, driving safe-haven demand into Gold.",
-            "Impact_Timing": "Intraday (0-24h)",
-            "Timeframe": "Intraday Pulse",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 72,
-            "Orderflow_Price_Target": "3870.33"
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "2026-11-16 19:05 UTC",
+            "Facts": "Nvidia's board refuted plans to reinstate Jensen Huang as CEO amid ongoing investigations and external commentary from government officials, while figures like Donald Trump and Sam Altman commented on the leadership situation.",
+            "Market_Context": "Corporate governance scrutiny intersecting with regulatory and national security investigations."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -4538,9 +4555,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 17:45 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 18:44 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794851102.0,
+        "_timestamp": 1794854694.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -4573,6 +4590,14 @@
                 "date": "2026-11-16 17:45",
                 "description": "Rising Treasury yields and mounting selling pressure across technology and cryptocurrency stocks are testing investor confidence ahead of a pivotal week for corporate earnings.",
                 "_timestamp": 1794851102.0
+            },
+            {
+                "title": "Stock Market Today: Dow Dives As Trump Says This On Huang; Victoria's Secret Flashes Sell Signal (Live Coverage)",
+                "link": "https://finance.yahoo.com/m/befe3344-5a22-304e-a07d-6ff7ad87bf49/stock-market-today%3A-dow-dives.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:44",
+                "description": "The Dow Jones index falls. President Trump speaks on Nvidia, Jensen Huang and Howard Lutnick. Chip plays skid.",
+                "_timestamp": 1794854694.0
             }
         ],
         "needs_update": false,
@@ -4580,14 +4605,9 @@
             "Cluster_ID": 3,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 17:45 UTC",
-            "Facts": "[Update 2026-11-16 17:45 UTC via Yahoo Finance]: Rising Treasury yields and heavy selling pressure across tech and cryptocurrency assets are pressuring broader equity markets. Investors are positioning defensively ahead of Nvidia earnings, upcoming Fed minutes, and key macroeconomic data releases.",
-            "Macro_Context": "Elevated Treasury yields and broader equity liquidations create cross-asset headwinds, though heightened market volatility reinforces safe-haven appeal for Gold.",
-            "Impact_Timing": "Near-term",
-            "Timeframe": "24h",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Orderflow_Price_Target": "$3870.78"
+            "Event_Timestamp": "2026-11-16 18:44 UTC",
+            "Facts": "U.S. equity futures and major indices traded lower as markets reacted to geopolitical tensions, tech sector turbulence, rising Treasury yields, and preparations for upcoming earnings releases.",
+            "Market_Context": "Macroeconomic pressure from rising yields and cross-asset risk aversion affecting equities and cryptocurrencies."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
@@ -4632,9 +4652,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-16 17:41 UTC",
+        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-16 19:05 UTC",
         "original_date": "2026-11-02 21:53",
-        "_timestamp": 1794850901.0,
+        "_timestamp": 1794855918.0,
         "articles": [
             {
                 "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
@@ -5331,21 +5351,24 @@
                 "date": "2026-11-16 17:41",
                 "description": "TEHRAN – The Iranian Navy has announced that another oil tanker violating maritime regulations exploded after striking naval mines in a prohibited area east of the Strait of Hormuz.",
                 "_timestamp": 1794850901.0
+            },
+            {
+                "title": "Iranian Army shoots down MQ-1 drone over Strait of Hormuz",
+                "link": "https://en.mehrnews.com/news/249461/Iranian-Army-shoots-down-MQ-1-drone-over-Strait-of-Hormuz",
+                "source": "Mehr News Agency",
+                "date": "2026-11-16 19:05",
+                "description": "TEHRAN, Nov. 16 (MNA) – The Iranian Army’s Public Relations Office announced that an MQ-1 drone was struck and destroyed over the Strait of Hormuz by domestically developed systems operated by the Army’s Air Defense Force.",
+                "_timestamp": 1794855918.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 4,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 17:41 UTC",
-            "Facts": "[Update 2026-11-16 17:41 UTC via Tehran Times]: Multiple oil tankers have sustained explosions after striking naval mines near the Strait of Hormuz, coinciding with reports of downed US drones. The incidents severely disrupt vital maritime trade routes in the Persian Gulf.",
-            "Macro_Context": "Direct kinetic escalation and naval disruptions in the Strait of Hormuz heavily boost safe-haven bullion demand and threaten energy supply lines.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday (0-24h)",
-            "XAUUSD_Impact": "Strong Bullish",
-            "Probability_Percent": 82,
-            "Orderflow_Price_Target": "$3890.16"
+            "Event_Timestamp": "2026-11-16 19:05 UTC",
+            "Facts": "The Iranian military reported shooting down a U.S. MQ-1 drone over the Strait of Hormuz. Additionally, Iranian state media reported that multiple oil tankers struck naval mines and exploded in prohibited areas.",
+            "Market_Context": "Heightened geopolitical friction and maritime security risks in a critical global energy transit chokepoint."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -8801,9 +8824,9 @@
         "max_dd_usd": 1.65
     },
     {
-        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-16 04:46 UTC",
+        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-16 19:03 UTC",
         "original_date": "2026-11-12 13:02",
-        "_timestamp": 1794804409.0,
+        "_timestamp": 1794855780.0,
         "articles": [
             {
                 "title": "Musk Says it Would be an 'Honor' to Hire Jensen Huang as Nvidia's Board Reportedly Gears up to Remove Him",
@@ -9020,21 +9043,24 @@
                 "date": "2026-11-16 04:46",
                 "description": "Chinese tech executive romantically linked to ex-Nvidia CEO Jensen Huang left in August 2025, Singapore-based firm says.",
                 "_timestamp": 1794804409.0
+            },
+            {
+                "title": "Could Jensen Huang launch a new startup within six months?",
+                "link": "https://finance.yahoo.com/video/could-jensen-huang-launch-startup-190300368.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:03",
+                "description": "Market Hang host Mark Malek, Siebert Financial's chief investment officer, and his panel of experts weigh in on whether Jensen Huang would start a new venture rather than return to Nvidia (NVDA). Today's panel includes Neostellar Principal Willy Lee, FAS Wealth Partners Chief Investment Strategist Mike Rode, Lopez Research Founder Maribel Lopez, and Macro Talk News founder Hope King,",
+                "_timestamp": 1794855780.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 04:46 UTC",
-            "Facts": "[Update 2026-11-16 04:46 UTC via Al Jazeera English]: Megaspeed confirmed that executive Alice Huang left the firm in August 2025 amid ongoing governance and security probes surrounding Nvidia. | High-profile figures including Elon Musk joined public petitions seeking Jensen Huang's reinstatement while US Treasury Secretary Scott Bessent urged rigorous oversight regarding chip exports to China.",
-            "Macro_Context": "Systemic tech leadership instability and regulatory probes pose broader equity risk, elevating cross-asset volatility and flight-to-safety flows into gold.",
-            "Impact_Timing": "Immediate (0-4h)",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "$3889.75"
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 19:03 UTC",
+            "Facts": "Public debate regarding Jensen Huang's departure from Nvidia continued, involving public figures calling for his reinstatement alongside corporate investigations linked to former associates.",
+            "Market_Context": "Corporate news flow and industry-wide attention concentrated on high-profile executive management changes in the technology sector."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.62
@@ -9652,9 +9678,9 @@
         "max_dd_usd": 41.87
     },
     {
-        "main_date": "First Reported: 2026-11-16 03:41 UTC",
+        "main_date": "First Reported: 2026-11-16 03:41 UTC | Last Update: 2026-11-16 18:58 UTC",
         "original_date": "2026-11-16 03:41",
-        "_timestamp": 1794800480.0,
+        "_timestamp": 1794855503.0,
         "articles": [
             {
                 "title": "KOSPI Falls Near 3% as Friday's Nvidia Selloff Reaches Seoul",
@@ -9663,21 +9689,32 @@
                 "date": "2026-11-16 03:41",
                 "description": "KOSPI falls 2.5% at midday as foreigners sell 852 billion won, carrying Friday's Nvidia-led Wall Street slide into Seoul.",
                 "_timestamp": 1794800480.0
+            },
+            {
+                "title": "Advantest Stocks Tumble 11.12% as Tokyo Chip Selloff Drags Nikkei Below 60,00",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/advantest-stocks-tumble-11-12-185823166.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:58",
+                "description": "The Nvidia test-equipment supplier posted the Nikkei's steepest drop, with Tokyo Electron accounting for most of the index's 1,480-point slide.",
+                "_timestamp": 1794855503.0
+            },
+            {
+                "title": "SK hynix Stocks Sink 7.89% Despite 80% Margin and 100 Trillion Won Payout",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/sk-hynix-stocks-sink-7-185457237.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:54",
+                "description": "Korea's HBM leader led the Kospi lower as Nvidia's leadership crisis revived AI bubble fears, wiping out weeks of gains.",
+                "_timestamp": 1794855297.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 03:41 UTC",
-            "Facts": "South Korea's KOSPI index dropped 2.5% at midday as foreign investors offloaded 852 billion won following Wall Street's tech selloff. Asian equity markets absorbed spillover pressure originating from U.S. semiconductor weakness.",
-            "Macro_Context": "Broader equity liquidations and tech sector risk-off sentiment frequently stimulate safe-haven inflows into XAU/USD.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24h Intraday",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 71,
-            "Orderflow_Price_Target": "$3900.46"
+            "Event_Timestamp": "2026-11-16 18:58 UTC",
+            "Facts": "Asian equity markets experienced significant declines led by technology and semiconductor stocks following a previous Wall Street selloff in Nvidia. Major regional equities including South Korea's KOSPI and Japan's Nikkei fell sharply, impacting key suppliers and chipmakers.",
+            "Market_Context": "Tech sector liquidity and sentiment remain sensitive to Nvidia-led volatility, driving cross-border equity outflows and valuation corrections across major Asian semiconductor manufacturing hubs."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 41.87
@@ -10161,9 +10198,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-15 21:50 UTC",
+        "main_date": "First Reported: 2026-11-15 21:50 UTC | Last Update: 2026-11-16 18:42 UTC",
         "original_date": "2026-11-15 21:50",
-        "_timestamp": 1794779400.0,
+        "_timestamp": 1794854521.0,
         "articles": [
             {
                 "title": "SoFi Planned for 2 Rate Cuts This Year and Got a Rate Hike. It Raised Its Guidance Anyway.",
@@ -10172,21 +10209,24 @@
                 "date": "2026-11-15 21:50",
                 "description": "The fintech company's strengths offset its weaknesses.",
                 "_timestamp": 1794779400.0
+            },
+            {
+                "title": "SoFi Wants 5 Billion-Dollar Businesses by 2030. Here’s the Road Map",
+                "link": "https://www.fool.com/investing/2026/11/16/sofi-wants-5-billion-dollar-businesses-by-2030-here-s-the-road-map/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:42",
+                "description": "The fintech’s goals are ambitious, but they’re more reasonable than they look.",
+                "_timestamp": 1794854521.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-15 21:50 UTC",
-            "Facts": "Fintech platform SoFi raised its financial guidance despite encountering an unexpected Federal Reserve rate hike instead of anticipated rate cuts. Strong operational execution helped offset tightening credit headwinds.",
-            "Macro_Context": "Unexpected hawkish shifts in monetary policy path impact broader real yields, creating nuanced cross-currents for gold valuations.",
-            "Impact_Timing": "Medium-term",
-            "Timeframe": "3-5 days",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 52,
-            "Orderflow_Price_Target": "$3880.90"
+            "Event_Timestamp": "2026-11-16 18:42 UTC",
+            "Facts": "Fintech company SoFi adjusted its internal financial planning following an unexpected interest rate path divergence and outlined long-term corporate roadmaps aiming for multiple billion-dollar business segments by 2030.",
+            "Market_Context": "Corporate adaptation to shifting macroeconomic monetary policies, specifically divergence from anticipated central bank rate cuts, impacts corporate strategic planning and revenue diversification in the financial technology sector."
         }
     },
     {
@@ -10601,50 +10641,99 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 12:57 UTC | Last Update: 2026-11-15 18:52 UTC",
-        "original_date": "2026-11-15 12:57",
-        "_timestamp": 1794768740.0,
+        "main_date": "First Reported: 2026-11-16 18:54 UTC",
+        "original_date": "2026-11-16 18:54",
+        "_timestamp": 1794855266.0,
         "articles": [
             {
-                "title": "Ex-IAEA chief says US war against Iran ‘based on lies'",
-                "link": "https://en.mehrnews.com/news/249419/Ex-IAEA-chief-says-US-war-against-Iran-based-on-lies",
-                "source": "Mehr News Agency",
-                "date": "2026-11-15 12:57",
-                "description": "TEHRAN, Nov. 15 (MNA) – Former International Atomic Energy Agency (IAEA) Director General, Mohamed ElBaradei, has highlighted US Senator Bernie Sanders’ criticism of Washington’s military interventions, saying the war on Iran is based on lies.",
-                "_timestamp": 1794747422.0
-            },
-            {
-                "title": "Iran says IAEA is yielding to US pressure",
-                "link": "https://www.tehrantimes.com/news/532185/Iran-says-IAEA-is-yielding-to-US-pressure",
-                "source": "Tehran Times",
-                "date": "2026-11-15 17:37",
-                "description": "TEHRAN – Iran has warned that any renewed military aggression against the country will be met with a forceful response, while criticizing the International Atomic Energy Agency (IAEA) for a 'biased approach' under US influence, saying the agency’s conduct has undermined its credibility and further strained relations with Tehran.",
-                "_timestamp": 1794764241.0
-            },
-            {
-                "title": "Western pressure on Iran undermines IAEA impartiality",
-                "link": "https://en.mehrnews.com/news/249426/Western-pressure-on-Iran-undermines-IAEA-impartiality",
-                "source": "Mehr News Agency",
-                "date": "2026-11-15 18:52",
-                "description": "TEHRAN, Nov. 15 (MNA) – Russia has criticized Western states for exploiting the International Atomic Energy Agency’s (IAEA) safeguards system to exert political pressure on Iran, warning that their actions are undermining the agency’s impartiality.",
-                "_timestamp": 1794768740.0
+                "title": "Samsung Stocks Fall 4.47% as Nvidia Turmoil and DRAM Lawsuit Hit Seoul",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/samsung-stocks-fall-4-47-185426586.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:54",
+                "description": "Foreign investors dumped Korean tech while a U.S. judge let a DRAM supply case against Samsung move forward.",
+                "_timestamp": 1794855266.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 2,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-15 18:52 UTC",
-            "Facts": "[Update 2026-11-15 18:52 UTC via Mehr News Agency]: Russia criticized Western states for exploiting IAEA safeguards to exert political pressure on Iran, while Tehran warned it would forcefully respond to any military aggression. | Former IAEA officials and Iranian authorities maintain that international pressure campaigns lack objective justification. | Geopolitical friction around Iran continues to escalate across diplomatic channels.",
-            "Macro_Context": "Ongoing geopolitical tensions involving Iran and international nuclear watchdogs maintain severe Middle East risk premiums, directly supporting bullion demand.",
-            "Impact_Timing": "Medium-term",
-            "Timeframe": "Weekly Regime",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "$3920.95"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 52.22
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 18:54 UTC",
+            "Facts": "Samsung Electronics shares declined amid broader regional tech selloffs linked to Nvidia volatility alongside legal developments regarding an ongoing U.S. DRAM supply lawsuit.",
+            "Market_Context": "Combination of external sector-wide equity selloffs in technology and localized legal headwinds create downward pressure on large-cap technology equities and foreign investor participation."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 18:56 UTC",
+        "original_date": "2026-11-16 18:56",
+        "_timestamp": 1794855362.0,
+        "articles": [
+            {
+                "title": "Hims & Hers Health Stock Crashes After Earnings: Is Now the Time to Buy?",
+                "link": "https://www.fool.com/investing/2026/11/16/hims-and-hers-health-stock-crashes-after-earnings-is-now-the-time-to-buy/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:56",
+                "description": "The company generated strong growth last quarter, but its bottom line didn't look nearly as impressive.",
+                "_timestamp": 1794855362.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 18:56 UTC",
+            "Facts": "Hims & Hers Health experienced a notable share price decline following earnings reports that showed strong revenue growth alongside less impressive bottom-line profitability.",
+            "Market_Context": "Equity market participants continue to balance top-line revenue expansion against profitability metrics in growth-oriented healthcare and consumer services sectors."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 18:40 UTC",
+        "original_date": "2026-11-16 18:40",
+        "_timestamp": 1794854400.0,
+        "articles": [
+            {
+                "title": "'Even bad hackers have become OK': PAN CEO Nikesh Arora on AI tools",
+                "link": "https://finance.yahoo.com/video/even-bad-hackers-become-ok-184000523.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:40",
+                "description": "Palo Alto Networks (PANW) CEO Nikesh Arora said during a panel with Federal Reserve Chairman Kevin Warsh that AI tools are lowering the bar for cyberattacks, leaving security help in short supply and attacks more frequent, but that the same technology can also help companies find vulnerabilities and rewrite old code.",
+                "_timestamp": 1794854400.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 18:40 UTC",
+            "Facts": "Palo Alto Networks CEO Nikesh Arora discussed the dual impact of artificial intelligence on cybersecurity during a panel, noting that AI tools lower the barrier for cyberattacks while simultaneously providing defensive mechanisms for vulnerability assessment.",
+            "Market_Context": "The proliferation of artificial intelligence introduces structural shifts in enterprise risk management, increasing the operational demand for advanced cybersecurity infrastructure."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 18:38 UTC",
+        "original_date": "2026-11-16 18:38",
+        "_timestamp": 1794854296.0,
+        "articles": [
+            {
+                "title": "Abdul El-Sayed’s victory is a blow to the politics of Islamophobia",
+                "link": "https://www.aljazeera.com/opinions/2026/11/16/abdul-el-sayeds-victory-is-a-blow-to-the-politics-of-islamophobia?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 18:38",
+                "description": "He embraced his Muslim identity, put Gaza on the ballot and showed Democrats a different way forward.",
+                "_timestamp": 1794854296.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 18:38 UTC",
+            "Facts": "Political developments highlighted Abdul El-Sayed's electoral victory, noting its implications for political representation, progressive political strategies, and integration of foreign policy discussions into domestic electoral campaigns.",
+            "Market_Context": "Shifts in domestic political leadership and coalition building influence policy priorities and legislative agendas within the broader political landscape."
+        }
     }
 ]

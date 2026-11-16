@@ -1,5 +1,52 @@
 [
     {
+        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-16 17:17 UTC",
+        "original_date": "2026-11-16 12:25",
+        "_timestamp": 1794849437.0,
+        "articles": [
+            {
+                "title": "Jericho settlers harass Al Jazeera reporter after stealing Palestinian home",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/16/jericho-settlers-harass-al-jazeera-reporter-after-stealing-palestinian-home?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 12:25",
+                "description": "Israeli settlers who took over 8 homes in Jericho harassed Al Jazeera’s Nour Odeh.",
+                "_timestamp": 1794831954.0
+            },
+            {
+                "title": "Israeli military says it will not evict settlers occupying Palestinian homes in Jericho",
+                "link": "https://www.middleeasteye.net/news/israeli-military-will-not-evict-settlers-occupying-palestinian-homes-jericho",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 13:44",
+                "description": "Israeli military says it will not evict settlers occupying Palestinian homes in Jericho\n\n    \n    \n\n          \n      \n      \n        Submitted by \nNadav Rapaport\n on \nMon, 11/16/2026 - 11:53\n\n        \n      \n    \n      \n    \n                Earlier this month, Israeli families raided a West Bank neighbourhood and took over eight Palestinian homes\n                      \n                  \n                  \n\n  \n\n\n                  Palestinian Bedo",
+                "_timestamp": 1794836648.0
+            },
+            {
+                "title": "Israeli settler injures eight Palestinians in ramming incident, Al Jazeera reports",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settler-injures-eight-palestinians-ramming-incident-al-jazeera",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 17:17",
+                "description": "Israeli settler injures eight Palestinians in ramming incident, Al Jazeera reports\n\n    \n    \n\n        \n    \n                An Israeli settler rammed his vehicle into a group of Palestinians in the town of Tuqu, south of Bethlehem in the occupied West Bank, injuring at least eight people, Al Jazeera reported.",
+                "_timestamp": 1794849437.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Geopolitics & War",
+            "Event_Timestamp": "2026-11-16 17:17 UTC",
+            "Facts": "[Update 2026-11-16 17:17 UTC via Middle East Eye]: An Israeli settler injured eight Palestinians in a vehicle ramming incident in the West Bank town of Tuqu. | This follows ongoing tensions regarding the military's refusal to evict settlers who occupied Palestinian homes in Jericho.",
+            "Macro_Context": "Persistent West Bank escalations sustain broader Middle East geopolitical risk premiums, reinforcing safe-haven bullion demand.",
+            "Impact_Timing": "Immediate",
+            "Timeframe": "Intraday (24h)",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 59,
+            "Orderflow_Price_Target": "3880.20"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 5.2
+    },
+    {
         "main_date": "First Reported: 2026-11-16 17:14 UTC",
         "original_date": "2026-11-16 17:14",
         "_timestamp": 1794849253.0,
@@ -1825,6 +1872,37 @@
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 16:50 UTC",
+        "original_date": "2026-11-16 16:50",
+        "_timestamp": 1794847802.0,
+        "articles": [
+            {
+                "title": "The Nasdaq Just Entered a Correction. Are Your ETFs All Making the Same Bet?",
+                "link": "https://www.fool.com/investing/2026/11/16/the-nasdaq-just-entered-a-correction-are-your-etfs-all-making-the-same-bet/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 16:50",
+                "description": "The latest technology sell-off makes portfolio overlap easier to notice.",
+                "_timestamp": 1794847802.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 16:50 UTC",
+            "Facts": "The Nasdaq entered a correction phase during the latest technology sell-off, highlighting severe portfolio overlap and concentration risks in major equity indexes. This broader tech liquidity shock is rippling across cross-asset sentiment.",
+            "Macro_Context": "Equity liquidations and Nasdaq drawdowns often trigger macro margin calls or prompt capital reallocation into safe-haven assets like gold.",
+            "Impact_Timing": "Immediate",
+            "Timeframe": "Intraday (24h)",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 72,
+            "Orderflow_Price_Target": "3890.25"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 7.92
     },
     {
         "main_date": "First Reported: 2026-11-16 16:48 UTC",
@@ -4807,43 +4885,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 3.52
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-16 13:44 UTC",
-        "original_date": "2026-11-16 12:25",
-        "_timestamp": 1794836648.0,
-        "articles": [
-            {
-                "title": "Jericho settlers harass Al Jazeera reporter after stealing Palestinian home",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/16/jericho-settlers-harass-al-jazeera-reporter-after-stealing-palestinian-home?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-16 12:25",
-                "description": "Israeli settlers who took over 8 homes in Jericho harassed Al Jazeera’s Nour Odeh.",
-                "_timestamp": 1794831954.0
-            },
-            {
-                "title": "Israeli military says it will not evict settlers occupying Palestinian homes in Jericho",
-                "link": "https://www.middleeasteye.net/news/israeli-military-will-not-evict-settlers-occupying-palestinian-homes-jericho",
-                "source": "Middle East Eye",
-                "date": "2026-11-16 13:44",
-                "description": "Israeli military says it will not evict settlers occupying Palestinian homes in Jericho\n\n    \n    \n\n          \n      \n      \n        Submitted by \nNadav Rapaport\n on \nMon, 11/16/2026 - 11:53\n\n        \n      \n    \n      \n    \n                Earlier this month, Israeli families raided a West Bank neighbourhood and took over eight Palestinian homes\n                      \n                  \n                  \n\n  \n\n\n                  Palestinian Bedo",
-                "_timestamp": 1794836648.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 13:44 UTC",
-            "Facts": "[Update 2026-11-16 13:44 UTC via Middle East Eye]: The Israeli military confirmed it will not evict settlers who recently took over eight Palestinian homes in Jericho. | The decision follows reports of settler harassment directed at local journalists and residents in the West Bank neighborhood.",
-            "Macro_Context": "Localized West Bank property friction lacks the broad regional geopolitical scale necessary to move global safe-haven liquidity into gold.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24h Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "3858.78"
-        }
     },
     {
         "main_date": "First Reported: 2026-11-16 13:32 UTC",
@@ -10017,74 +10058,6 @@
             "XAUUSD_Impact": "Neutral",
             "Probability_Percent": 10,
             "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-14 17:57 UTC | Last Update: 2026-11-15 17:18 UTC",
-        "original_date": "2026-11-14 17:57",
-        "_timestamp": 1794763081.0,
-        "articles": [
-            {
-                "title": "Expanding missile range is our new deterrence strategy",
-                "link": "https://www.tehrantimes.com/news/532151/Expanding-missile-range-is-our-new-deterrence-strategy",
-                "source": "Tehran Times",
-                "date": "2026-11-14 17:57",
-                "description": "Esmail Kosari, a member of Parliament, discussed Iran’s missile-range expansion in an interview with Javan. Following growing threats, the Islamic Republic of Iran unveiled an increase in the range of its missiles as part of its broader strategy to strengthen deterrence capabilities. The move came after remarks by Iran’s Leader emphasizing an immediate response to threats without geographical limitations.",
-                "_timestamp": 1794679057.0
-            },
-            {
-                "title": "General Safavi stresses increasing range of missiles",
-                "link": "https://en.mehrnews.com/news/249424/General-Safavi-stresses-increasing-range-of-missiles",
-                "source": "Mehr News Agency",
-                "date": "2026-11-15 17:18",
-                "description": "TEHRAN, Nov. 15 (MNA) – A senior military advisor to the Leader of the Islamic Revolution Major General Seyyed Yahya Rahim Safavi has stressed the need to increase the range of the missiles amid new threats.",
-                "_timestamp": 1794763081.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-15 17:18 UTC",
-            "Facts": "[Update 2026-11-15 17:18 UTC via Mehr News Agency]: A senior military advisor to Iran's Supreme Leader emphasized the critical necessity to increase the range of the nation's missiles. | Iranian officials previously confirmed missile-range expansions as part of a formal strategy to strengthen deterrence capabilities in response to rising foreign threats.",
-            "Macro_Context": "Escalating military deterrence measures and missile developments maintain structural risk premiums in the Middle East, favoring safe-haven XAU/USD assets.",
-            "Impact_Timing": "Short-term",
-            "Timeframe": "Structural Weekly",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Orderflow_Price_Target": "$4049.05"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-15 17:14 UTC",
-        "original_date": "2026-11-15 17:14",
-        "_timestamp": 1794762889.0,
-        "articles": [
-            {
-                "title": "Exclusive: Toyota reviewing use of forklifts by Israeli military after MEE investigation",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/exclusive-toyota-reviewing-use-forklifts-israeli-military-after-mee",
-                "source": "Middle East Eye",
-                "date": "2026-11-15 17:14",
-                "description": "Exclusive: Toyota reviewing use of forklifts by Israeli military after MEE investigation\n\n    \n    \n\n        \n    \n                Toyota has said it is investigating the use of its forklifts by the&nbsp;Israeli&nbsp;military after Middle East Eye found photos and videos of the vehicles at weapons and munitions storage sites, serving supply lines for frontline units, and being used by the army’s Logistics Corps.\n\nIt comes after MEE uncovered deta",
-                "_timestamp": 1794762889.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-15 17:14 UTC",
-            "Facts": "Toyota is investigating the usage of its industrial vehicles by the Israeli military following investigative reports. The findings highlighted forklift deployment at logistics and supply storage hubs.",
-            "Macro_Context": "Corporate logistical reviews of military supply chains carry negligible macroeconomic significance for gold or broader sovereign risk markets.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 15,
-            "Orderflow_Price_Target": "3884.68"
         }
     }
 ]

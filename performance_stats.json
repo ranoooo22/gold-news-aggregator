@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 869,
-    "hits": 550,
+    "total_evaluated": 871,
+    "hits": 552,
     "misses": 319,
-    "win_rate": 63.3,
-    "active_signals": 12,
+    "win_rate": 63.4,
+    "active_signals": 13,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 464,
+                "hits": 465,
                 "misses": 282,
-                "total": 746,
+                "total": 747,
                 "win_rate": 62.2,
-                "avg_dd": 23.06
+                "avg_dd": 23.04
             },
             "Bearish": {
-                "hits": 86,
+                "hits": 87,
                 "misses": 37,
-                "total": 123,
-                "win_rate": 69.9,
-                "avg_dd": 18.11
+                "total": 124,
+                "win_rate": 70.2,
+                "avg_dd": 17.9
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 523,
+                "hits": 525,
                 "misses": 305,
-                "total": 828,
-                "win_rate": 63.2,
-                "avg_dd": 21.66
+                "total": 830,
+                "win_rate": 63.3,
+                "avg_dd": 21.62
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -53,18 +53,18 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 34,
+                "hits": 35,
                 "misses": 5,
-                "total": 39,
-                "win_rate": 87.2,
-                "avg_dd": 17.8
+                "total": 40,
+                "win_rate": 87.5,
+                "avg_dd": 17.35
             },
             "Against USD Headwind": {
-                "hits": 295,
+                "hits": 296,
                 "misses": 127,
-                "total": 422,
-                "win_rate": 69.9,
-                "avg_dd": 20.38
+                "total": 423,
+                "win_rate": 70.0,
+                "avg_dd": 20.36
             },
             "USD Neutral / Legacy": {
                 "hits": 221,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 270,
+                "hits": 272,
                 "misses": 191,
-                "total": 461,
-                "win_rate": 58.6,
-                "avg_dd": 24.2
+                "total": 463,
+                "win_rate": 58.7,
+                "avg_dd": 24.1
             },
             "Fed, Rates & Macro": {
                 "hits": 35,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 459,
+                "hits": 461,
                 "misses": 249,
-                "total": 708,
-                "win_rate": 64.8,
-                "avg_dd": 22.96
+                "total": 710,
+                "win_rate": 64.9,
+                "avg_dd": 22.9
             },
             "High (65-74%)": {
                 "hits": 84,
@@ -15490,6 +15490,60 @@
             "nas_chg_at_signal": -1.06,
             "created_ts": 1794832541.0,
             "date": "First Reported: 2026-11-16 05:00 UTC | Last Update: 2026-11-16 12:35 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/eu-preparing-further-sanctions-iran": {
+            "status": "ACTIVE",
+            "headline": "EU preparing further sanctions on Iran",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3864.24,
+            "target": 3880.31,
+            "max_dd_usd": 7.92,
+            "atr_ratio_at_signal": 0.06,
+            "daily_atr_at_signal": 66.37,
+            "eur_chg_at_signal": -0.2,
+            "nas_chg_at_signal": -1.35,
+            "created_ts": 1794847998.0,
+            "date": "First Reported: 2026-11-16 16:53 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/news/can-hezbollah-salvage-syrian-network-without-clashing-damascus": {
+            "status": "HIT",
+            "headline": "Can Hezbollah salvage Syrian networks without clashing with Damascus?",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 61,
+            "entry_price": 3873.69,
+            "target": 3880.31,
+            "max_dd_usd": 12.26,
+            "atr_ratio_at_signal": 0.06,
+            "daily_atr_at_signal": 66.37,
+            "eur_chg_at_signal": -0.2,
+            "nas_chg_at_signal": -1.35,
+            "created_ts": 1794827860.0,
+            "date": "First Reported: 2026-11-16 11:17 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/european-gas-slips-as-us-shipping-waivers-override-middle-east-turmoil-5028807": {
+            "status": "HIT",
+            "headline": "European gas slips as U.S. shipping waivers override Middle East turmoil",
+            "source": "Investing.com",
+            "category": "Geopolitics & War",
+            "impact": "Bearish",
+            "prob": 62,
+            "entry_price": 3872.79,
+            "target": 3860.85,
+            "max_dd_usd": 0.68,
+            "atr_ratio_at_signal": 0.06,
+            "daily_atr_at_signal": 66.37,
+            "eur_chg_at_signal": -0.2,
+            "nas_chg_at_signal": -1.35,
+            "created_ts": 1794823915.0,
+            "date": "First Reported: 2026-11-16 10:11 UTC",
             "fail_reason": ""
         }
     }

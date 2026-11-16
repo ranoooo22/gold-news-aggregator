@@ -1,5 +1,36 @@
 [
     {
+        "main_date": "First Reported: 2026-11-16 00:11 UTC",
+        "original_date": "2026-11-16 00:11",
+        "_timestamp": 1794787885.0,
+        "articles": [
+            {
+                "title": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
+                "link": "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html",
+                "source": "CNBC Economy",
+                "date": "2026-11-16 00:11",
+                "description": "Energy subsidies for households had reportedly expired in September, exposing the economy to the higher energy prices brought about by the Iran war.",
+                "_timestamp": 1794787885.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-16 00:11 UTC",
+            "Facts": "Japan's economy unexpectedly contracted in the third quarter following the expiration of household energy subsidies in September. This left consumers fully exposed to elevated energy prices driven by ongoing disruptions related to the Iran conflict.",
+            "Macro_Context": "Broader economic contraction linked to energy shocks from the Iran war heightens global recession risks and reinforces safe-haven demand for XAU/USD.",
+            "Impact_Timing": "Immediate (0-4 hours)",
+            "Timeframe": "Intraday Pulse",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 65,
+            "Orderflow_Price_Target": "3900.56"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 0.74
+    },
+    {
         "main_date": "First Reported: 2026-11-15 23:45 UTC",
         "original_date": "2026-11-15 23:45",
         "_timestamp": 1794786333.0,

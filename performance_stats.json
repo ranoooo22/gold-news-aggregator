@@ -3,7 +3,7 @@
     "hits": 517,
     "misses": 311,
     "win_rate": 62.4,
-    "active_signals": 9,
+    "active_signals": 10,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -14698,6 +14698,24 @@
             "nas_chg_at_signal": -0.89,
             "created_ts": 1794786333.0,
             "date": "First Reported: 2026-11-15 23:45 UTC",
+            "fail_reason": ""
+        },
+        "https://www.cnbc.com/2026/11/16/japan-q3-gdp-energy-oil-prices.html": {
+            "status": "ACTIVE",
+            "headline": "Japan's economy unexpectedly contracts in third-quarter as elevated energy costs bite",
+            "source": "CNBC Economy",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3890.04,
+            "target": 3900.56,
+            "max_dd_usd": 0.74,
+            "atr_ratio_at_signal": 0.25,
+            "daily_atr_at_signal": 60.69,
+            "eur_chg_at_signal": -0.33,
+            "nas_chg_at_signal": 0.0,
+            "created_ts": 1794787885.0,
+            "date": "First Reported: 2026-11-16 00:11 UTC",
             "fail_reason": ""
         }
     }

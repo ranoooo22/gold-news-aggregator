@@ -981,6 +981,45 @@
         }
     },
     {
+        "main_date": "First Reported: 2026-11-16 14:49 UTC | Last Update: 2026-11-16 16:58 UTC",
+        "original_date": "2026-11-16 14:49",
+        "_timestamp": 1794848326.0,
+        "articles": [
+            {
+                "title": "Iranian leaders fret over public mood as gas shortages add to war ills",
+                "link": "https://www.investing.com/news/commodities-news/iranian-leaders-fret-over-public-mood-as-gas-shortages-add-to-war-ills-5030314",
+                "source": "Investing.com",
+                "date": "2026-11-16 14:49",
+                "description": "",
+                "_timestamp": 1794840540.0
+            },
+            {
+                "title": "Iran braces for natural gas shortages during winter energy imbalance",
+                "link": "https://www.aljazeera.com/news/2026/11/16/iran-braces-for-natural-gas-shortages-during-winter-energy-imbalance?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 16:58",
+                "description": "The gas infrastructure in Iran has suffered from underdevelopment and sanctions, and now damage from the war.",
+                "_timestamp": 1794848326.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-16 16:58 UTC",
+            "Facts": "[Update 2026-11-16 16:58 UTC via Al Jazeera English]: Iran's natural gas infrastructure faces severe winter deficits driven by military conflict damage, prolonged underdevelopment, and sanctions. | Iranian leadership is increasingly concerned over public discontent as domestic energy shortfalls compound broader wartime economic strains.",
+            "Macro_Context": "Worsening energy infrastructure instability in Iran feeds into the ongoing Iranian risk narrative, providing underlying safe-haven support for Gold near the $3880 resistance zone.",
+            "Impact_Timing": "Tactical (1-3 days)",
+            "Timeframe": "Daily",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 64,
+            "Orderflow_Price_Target": "$3880.20"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 17.01
+    },
+    {
         "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-16 16:56 UTC",
         "original_date": "2026-11-11 04:32",
         "_timestamp": 1794848210.0,
@@ -1194,6 +1233,69 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 18.93
+    },
+    {
+        "main_date": "First Reported: 2026-11-14 23:01 UTC | Last Update: 2026-11-16 16:56 UTC",
+        "original_date": "2026-11-14 23:01",
+        "_timestamp": 1794848206.0,
+        "articles": [
+            {
+                "title": "Netanyahu says only a unity government can guarantee Israel’s security",
+                "link": "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-14 23:01",
+                "description": "Eisenkot, in charge of forming a government, dismisses the appeal as ‘tricks’ as talks and a Knesset speaker vote loom.",
+                "_timestamp": 1794697290.0
+            },
+            {
+                "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel?",
+                "link": "https://www.aljazeera.com/news/2026/11/15/can-netanyahu-and-eisenkot-form-a-unity-government-in-israel?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-15 14:02",
+                "description": "Yashar and Likud are scheduled to hold talks on Sunday, but will need to overcome major differences to work together.",
+                "_timestamp": 1794751328.0
+            },
+            {
+                "title": "Eisenkot says Netanyahu can’t remain Israel PM amid alleged vote meddling",
+                "link": "https://www.aljazeera.com/news/2026/11/16/eisenkot-says-netanyahu-cant-remain-israel-pm-amid-alleged-vote-meddling?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 00:01",
+                "description": "Arab party members were reportedly arrested before Israeli elections based on unfounded evidence from the PM&#039;s office.",
+                "_timestamp": 1794787305.0
+            },
+            {
+                "title": "Report: Netanyahu's allies open to unity government without Ben Gvir’s party",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/report-netanyahus-allies-open-unity-government-without-ben-gvirs-party",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 06:43",
+                "description": "Report: Netanyahu's allies open to unity government without Ben Gvir’s party \n\n    \n    \n\n        \n    \n                Associates of Benjamin Netanyahu have told Yashar party leader Gadi Eisenkot’s team they would accept a unity government without National Security Minister Itamar Ben Gvir's party, according to the daily Israel Hayom.\n\nNetanyahu’s associates said that&nbsp;Likud could let go of&nbsp;Otzma Yehudit (Jewish Power) if negotiations o",
+                "_timestamp": 1794811421.0
+            },
+            {
+                "title": "Jerusalem Daily: Eisenkot wants Netanyahu out",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/16/jerusalem-daily-eisenkot-wants-netanyahu-out?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 16:56",
+                "description": "Israeli opposition leader Gadi Eisenkot appears to be pushing to oust Benjamin Netanyahu as Prime Minister.",
+                "_timestamp": 1794848206.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "2026-11-16 16:56 UTC",
+            "Facts": "[Update 2026-11-16 16:56 UTC via Al Jazeera English]: Israeli opposition leader Gadi Eisenkot is pushing to oust Benjamin Netanyahu as Prime Minister following vote meddling allegations. | Likud associates had previously explored forming a unity coalition without far-right partners to break parliamentary deadlock.",
+            "Macro_Context": "Domestic political coalition maneuvering in Israel generates internal administrative headlines but carries no direct transmission channel to Gold pricing or broader macro liquidity.",
+            "Impact_Timing": "Immediate / Intraday",
+            "Timeframe": "Intraday",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Orderflow_Price_Target": "$3867.58"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 7.02
     },
     {
         "main_date": "First Reported: 2026-11-16 16:53 UTC",
@@ -4337,37 +4439,6 @@
         "max_dd_usd": 1.1
     },
     {
-        "main_date": "First Reported: 2026-11-16 14:49 UTC",
-        "original_date": "2026-11-16 14:49",
-        "_timestamp": 1794840540.0,
-        "articles": [
-            {
-                "title": "Iranian leaders fret over public mood as gas shortages add to war ills",
-                "link": "https://www.investing.com/news/commodities-news/iranian-leaders-fret-over-public-mood-as-gas-shortages-add-to-war-ills-5030314",
-                "source": "Investing.com",
-                "date": "2026-11-16 14:49",
-                "description": "",
-                "_timestamp": 1794840540.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 14:49 UTC",
-            "Facts": "Iranian political leaders expressed growing concern over severe domestic gas shortages exacerbating public frustration amid active conflict conditions. The energy deficits highlight deepening internal economic strains within the country.",
-            "Macro_Context": "Internal energy strain and domestic socio-political fragility in Iran increase geopolitical uncertainty across the region, sustaining safe-haven support for Gold.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h-48h",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 58,
-            "Orderflow_Price_Target": "3880.21"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 17.01
-    },
-    {
         "main_date": "First Reported: 2026-11-15 17:33 UTC | Last Update: 2026-11-16 14:44 UTC",
         "original_date": "2026-11-15 17:33",
         "_timestamp": 1794840274.0,
@@ -6186,61 +6257,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 8.9
-    },
-    {
-        "main_date": "First Reported: 2026-11-14 23:01 UTC | Last Update: 2026-11-16 06:43 UTC",
-        "original_date": "2026-11-14 23:01",
-        "_timestamp": 1794811421.0,
-        "articles": [
-            {
-                "title": "Netanyahu says only a unity government can guarantee Israel’s security",
-                "link": "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-14 23:01",
-                "description": "Eisenkot, in charge of forming a government, dismisses the appeal as ‘tricks’ as talks and a Knesset speaker vote loom.",
-                "_timestamp": 1794697290.0
-            },
-            {
-                "title": "Can Netanyahu and Eisenkot form a ‘unity’ government in Israel?",
-                "link": "https://www.aljazeera.com/news/2026/11/15/can-netanyahu-and-eisenkot-form-a-unity-government-in-israel?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 14:02",
-                "description": "Yashar and Likud are scheduled to hold talks on Sunday, but will need to overcome major differences to work together.",
-                "_timestamp": 1794751328.0
-            },
-            {
-                "title": "Eisenkot says Netanyahu can’t remain Israel PM amid alleged vote meddling",
-                "link": "https://www.aljazeera.com/news/2026/11/16/eisenkot-says-netanyahu-cant-remain-israel-pm-amid-alleged-vote-meddling?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-16 00:01",
-                "description": "Arab party members were reportedly arrested before Israeli elections based on unfounded evidence from the PM&#039;s office.",
-                "_timestamp": 1794787305.0
-            },
-            {
-                "title": "Report: Netanyahu's allies open to unity government without Ben Gvir’s party",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/report-netanyahus-allies-open-unity-government-without-ben-gvirs-party",
-                "source": "Middle East Eye",
-                "date": "2026-11-16 06:43",
-                "description": "Report: Netanyahu's allies open to unity government without Ben Gvir’s party \n\n    \n    \n\n        \n    \n                Associates of Benjamin Netanyahu have told Yashar party leader Gadi Eisenkot’s team they would accept a unity government without National Security Minister Itamar Ben Gvir's party, according to the daily Israel Hayom.\n\nNetanyahu’s associates said that&nbsp;Likud could let go of&nbsp;Otzma Yehudit (Jewish Power) if negotiations o",
-                "_timestamp": 1794811421.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 06:43 UTC",
-            "Facts": "[Update 2026-11-16 06:43 UTC via Middle East Eye]: Associates of Benjamin Netanyahu indicated willingness to form a unity government without Itamar Ben Gvir's party. | Israeli political talks continue amid coalition discussions and internal security considerations. | Geopolitical restructuring in Israel impacts regional risk sentiment.",
-            "Macro_Context": "Ongoing Israeli political realignment reinforces Middle East uncertainty, sustaining safe-haven demand for XAU/USD.",
-            "Impact_Timing": "Short-term (Intraday)",
-            "Timeframe": "24h Intraday Pulse",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 62,
-            "Orderflow_Price_Target": "$3872.28"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 7.02
     },
     {
         "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-16 06:35 UTC",

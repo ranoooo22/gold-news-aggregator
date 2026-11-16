@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 867,
-    "hits": 548,
+    "total_evaluated": 868,
+    "hits": 549,
     "misses": 319,
     "win_rate": 63.2,
-    "active_signals": 10,
+    "active_signals": 12,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 462,
+                "hits": 463,
                 "misses": 282,
-                "total": 744,
+                "total": 745,
                 "win_rate": 62.1,
-                "avg_dd": 23.1
+                "avg_dd": 23.09
             },
             "Bearish": {
                 "hits": 86,
@@ -23,9 +23,9 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 521,
+                "hits": 522,
                 "misses": 305,
-                "total": 826,
+                "total": 827,
                 "win_rate": 63.1,
                 "avg_dd": 21.69
             },
@@ -60,9 +60,9 @@
                 "avg_dd": 17.8
             },
             "Against USD Headwind": {
-                "hits": 293,
+                "hits": 294,
                 "misses": 127,
-                "total": 420,
+                "total": 421,
                 "win_rate": 69.8,
                 "avg_dd": 20.42
             },
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 269,
+                "hits": 270,
                 "misses": 191,
-                "total": 460,
-                "win_rate": 58.5,
-                "avg_dd": 24.22
+                "total": 461,
+                "win_rate": 58.6,
+                "avg_dd": 24.2
             },
             "Fed, Rates & Macro": {
                 "hits": 35,
@@ -113,11 +113,11 @@
                 "avg_dd": 22.96
             },
             "High (65-74%)": {
-                "hits": 82,
+                "hits": 83,
                 "misses": 54,
-                "total": 136,
-                "win_rate": 60.3,
-                "avg_dd": 19.94
+                "total": 137,
+                "win_rate": 60.6,
+                "avg_dd": 19.92
             },
             "Extreme (>=75%)": {
                 "hits": 7,
@@ -15051,7 +15051,7 @@
             "prob": 58,
             "entry_price": 3859.89,
             "target": 3880.21,
-            "max_dd_usd": 3.42,
+            "max_dd_usd": 3.57,
             "atr_ratio_at_signal": 0.14,
             "daily_atr_at_signal": 67.08,
             "eur_chg_at_signal": -0.19,
@@ -15087,7 +15087,7 @@
             "prob": 77,
             "entry_price": 3858.99,
             "target": 3890.15,
-            "max_dd_usd": 2.52,
+            "max_dd_usd": 2.67,
             "atr_ratio_at_signal": 0.14,
             "daily_atr_at_signal": 67.08,
             "eur_chg_at_signal": -0.19,
@@ -15418,6 +15418,60 @@
             "nas_chg_at_signal": -0.83,
             "created_ts": 1794814409.0,
             "date": "First Reported: 2026-11-16 07:33 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/article/trump-acknowledges-different-views-among-aides-as-his-administration-advances-new-limits-on-semiconductor-exports-163639680.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Trump acknowledges 'different views' among aides as his administration advances new limits",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3858.8,
+            "target": 3880.29,
+            "max_dd_usd": 2.48,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 67.12,
+            "eur_chg_at_signal": -0.18,
+            "nas_chg_at_signal": -1.0,
+            "created_ts": 1794846999.0,
+            "date": "First Reported: 2026-11-16 16:36 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/commodities/articles/etfs-poised-benefit-oil-prices-144000517.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "ETFs Poised to Benefit as Oil Prices Retreat in a Month",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bearish",
+            "prob": 61,
+            "entry_price": 3878.45,
+            "target": 3839.7,
+            "max_dd_usd": 10.51,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 67.12,
+            "eur_chg_at_signal": -0.18,
+            "nas_chg_at_signal": -1.0,
+            "created_ts": 1794840000.0,
+            "date": "First Reported: 2026-11-16 14:40 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/exclusiverisk-of-nuclear-accident-in-ukraine-increasing-this-winter-atomic-safety-regulators-say-5029203": {
+            "status": "HIT",
+            "headline": "Exclusive-Risk of nuclear accident in Ukraine increasing this winter, atomic safety regula",
+            "source": "Investing.com",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3878.45,
+            "target": 3880.29,
+            "max_dd_usd": 17.01,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 67.12,
+            "eur_chg_at_signal": -0.18,
+            "nas_chg_at_signal": -1.0,
+            "created_ts": 1794838378.0,
+            "date": "First Reported: 2026-11-16 14:12 UTC",
             "fail_reason": ""
         }
     }

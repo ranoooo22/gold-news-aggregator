@@ -4,7 +4,7 @@
         "status": "ACTIVE",
         "direction": "LONG",
         "entry_price": 3845.61,
-        "current_price": 3845.61,
+        "current_price": 3848.88,
         "tp_price": 3870.0,
         "tp_distance_usd": 24.39,
         "sl_price": 3761.57,
@@ -15,11 +15,11 @@
         "opened_utc": "2026-11-16 18:21 UTC",
         "entry_ts": 1794853313.741553,
         "expires_utc": "2026-11-17 14:23 UTC",
-        "elapsed_hours": 0.0,
-        "remaining_hours": 20.0,
-        "max_dd_usd": 0.0,
-        "max_favorable_usd": 0.0,
-        "unrealized_pnl_usd": 0.0,
+        "elapsed_hours": 0.17,
+        "remaining_hours": 19.83,
+        "max_dd_usd": 4.4,
+        "max_favorable_usd": 10.93,
+        "unrealized_pnl_usd": 3.27,
         "setup_title": "Institutional Safe-Haven Breakout & Skew Confluence (LONG XAU/USD)",
         "detailed_rationale": "Die Makro- und Microstructure-Signale zeigen eine ausgeprägte zweiseitige Konfluenz für einen Long-Ausbruch im Gold (XAU/USD). Trotz des kurzfristigen RÜcksetzers auf $3845.61 impliziert das 3D-Volatilitätssurface eine massive Nachfrage nach Upside-Call-Optionen (Skew Score +1.41 bei einer ATM IV von 28.91%). Der 24/7 Perp Basis-Aufschlag von +$5.99 untermauert die institutionelle Kaufneigung im Derivatemarkt. Auf der Nachrichtenfront treffen zwei mächtige geopolitische und risikoseitige Treiber aufeinander: Die militärische Eskalation im Iran (Aktivierung von Luftabwehrsystemen in Isfahan) sowie der massive Sell-off im US-Tech-Sektor und regulatorische Maßnahmen gegen Nvidia, die eine flächendeckende Risk-Off-Stimmung an den globalen Aktienmärkten auslösen. Das primäre Kursziel liegt am COMEX/OANDA-Liquiditätscluster bei $3870.78, was ein attraktives Chance-Risiko-Verhältnis bietet.",
         "chart_orderbook_evidence": "Der Spotpreis notiert aktuell bei $3845.61. Oberhalb liegen ausgeprägte Liquiditätswände mit hoher COMEX-Confluence: $3870.78 (7.01% Gesamtvolumen, davon 19.12% COMEX Net Sell), $3880.22 (8.28% Volumen) und $3889.95 (6.44% Volumen). Unterhalb schützt die Unterstützung bei $3839.10 (3.81%) und $3830.01 (2.11%). Das Ziel bei $3870.00 nutzt den Anziehungsfaktor des Liquiditätspools bei $3870.78 vor Erreichen des Widerstands bei $3880.22.",
@@ -58,7 +58,9 @@
                 "detail": "Tech/AI category win rate 72.0%, Fresh Volatility (<0.8x ATR) win rate 63.4%.",
                 "url": "https://gmit.terminal/archive/regime-matrix"
             }
-        ]
+        ],
+        "last_check_utc": "2026-11-16 18:32 UTC",
+        "last_check_note": "The active long trade thesis remains entirely intact. Persistent risk-off sentiment driven by the broader tech and semiconductor sell-off, combined with escalating geopolitical tensions in the Middle East (including air defense activations in Isfahan and maritime transit threats near the Bab al-Mandab strait), continues to fuel robust safe-haven demand for gold. Spot prices are holding steady above the entry level with positive momentum toward the $3870 target."
     },
     "last_decision": {
         "timestamp_utc": "2026-11-16 18:21 UTC",

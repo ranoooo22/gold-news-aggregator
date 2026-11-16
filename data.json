@@ -3519,9 +3519,9 @@
         "max_dd_usd": 15.2
     },
     {
-        "main_date": "First Reported: 2026-11-15 14:55 UTC | Last Update: 2026-11-16 17:53 UTC",
+        "main_date": "First Reported: 2026-11-15 14:55 UTC | Last Update: 2026-11-16 22:46 UTC",
         "original_date": "2026-11-15 14:55",
-        "_timestamp": 1794851580.0,
+        "_timestamp": 1794869160.0,
         "articles": [
             {
                 "title": "Fascism built the AI bubble. What will burst it?",
@@ -3554,21 +3554,24 @@
                 "date": "2026-11-16 17:53",
                 "description": "The Federal Reserve staff is in the early days of developing various scenarios of how artificial intelligence’s growing role in business and daily life will impact the economy, Fed Chairman Kevin Warsh said Monday.",
                 "_timestamp": 1794851580.0
+            },
+            {
+                "title": "U.S. dollar’s AI-driven breakout could become a stock-market wrecking ball",
+                "link": "https://www.marketwatch.com/story/u-s-dollars-ai-driven-breakout-could-become-a-stock-market-wrecking-ball-18199b95?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-16 22:46",
+                "description": "The dollar recently climbed to its strongest level in a year and a half.",
+                "_timestamp": 1794869160.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 17:53 UTC",
-            "Facts": "[Update 2026-11-16 17:53 UTC via MarketWatch Macro]: Federal Reserve Chairman Kevin Warsh stated the Fed is analyzing artificial intelligence scenarios to assess potential productivity and interest rate implications. Meanwhile, the IMF warned that AI-related circular financing has hit $1 trillion, increasing systemic financial risks.",
-            "Macro_Context": "Federal Reserve uncertainty over AI productivity impacts coupled with IMF systemic debt warnings fosters macro risk premia, benefiting gold.",
-            "Impact_Timing": "Medium-term",
-            "Timeframe": "7d - 14d",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Orderflow_Price_Target": "$3870.72"
+            "Event_Timestamp": "2026-11-16 22:46 UTC",
+            "Facts": "[Update 2026-11-16 22:46 UTC via MarketWatch Macro]: The U.S. dollar climbed to its strongest level in a year and a half, driven by AI-related macroeconomic dynamics that threaten to impact the broader stock market. [Update 2026-11-16 17:53 UTC via MarketWatch Macro]: Federal Reserve Chairman Kevin Warsh stated that Fed staff are in the early stages of developing scenarios on how artificial intelligence will impact the economy. [Update 2026-11-16 09:14 UTC via CNBC Tech & AI]: IMF chief Kristalina Georgieva warned that circular financing among AI companies has reached over $1 trillion, with two-thirds in debt. Fed Chair Kevin Warsh is gathering AI leaders in San Francisco to evaluate whether AI productivity can run hot without overheating the economy, a factor critical for future interest rate decisions.",
+            "Macro_Context": "The intersection of artificial intelligence investments, sovereign debt levels, and productivity gains is heavily influencing the Federal Reserve's rate path trajectory, strengthening the U.S. dollar, and impacting global macroeconomic stability."
         },
         "eval_status": "MISS",
         "max_dd_usd": 52.22

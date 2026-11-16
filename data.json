@@ -5929,9 +5929,9 @@
         "max_dd_usd": 17.01
     },
     {
-        "main_date": "First Reported: 2026-11-14 23:01 UTC | Last Update: 2026-11-16 16:56 UTC",
+        "main_date": "First Reported: 2026-11-14 23:01 UTC | Last Update: 2026-11-16 19:09 UTC",
         "original_date": "2026-11-14 23:01",
-        "_timestamp": 1794848206.0,
+        "_timestamp": 1794856149.0,
         "articles": [
             {
                 "title": "Netanyahu says only a unity government can guarantee Israel’s security",
@@ -5972,21 +5972,24 @@
                 "date": "2026-11-16 16:56",
                 "description": "Israeli opposition leader Gadi Eisenkot appears to be pushing to oust Benjamin Netanyahu as Prime Minister.",
                 "_timestamp": 1794848206.0
+            },
+            {
+                "title": "Is Israel’s Eisenkot bloc less right wing than Netanyahu?",
+                "link": "https://www.aljazeera.com/news/2026/11/16/is-israels-opposition-less-right-wing-than-netanyahu?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 19:09",
+                "description": "An Israeli government without PM Netanyahu may be close, but a government without his politics is far less certain.",
+                "_timestamp": 1794856149.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 16:56 UTC",
-            "Facts": "[Update 2026-11-16 16:56 UTC via Al Jazeera English]: Israeli opposition leader Gadi Eisenkot is pushing to oust Benjamin Netanyahu as Prime Minister following vote meddling allegations. | Likud associates had previously explored forming a unity coalition without far-right partners to break parliamentary deadlock.",
-            "Macro_Context": "Domestic political coalition maneuvering in Israel generates internal administrative headlines but carries no direct transmission channel to Gold pricing or broader macro liquidity.",
-            "Impact_Timing": "Immediate / Intraday",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "$3867.58"
+            "Event_Timestamp": "2026-11-16 19:09 UTC",
+            "Facts": "Israeli opposition figures and opposition leader Gadi Eisenkot have pushed for Prime Minister Benjamin Netanyahu's removal amid allegations of vote meddling. Meanwhile, reports indicated Netanyahu's allies were open to forming a unity government excluding Itamar Ben Gvir's party.",
+            "Market_Context": "Political developments within the Israeli government and potential shifts in coalition dynamics."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -9678,9 +9681,9 @@
         "max_dd_usd": 41.87
     },
     {
-        "main_date": "First Reported: 2026-11-16 03:41 UTC | Last Update: 2026-11-16 18:58 UTC",
+        "main_date": "First Reported: 2026-11-16 03:41 UTC | Last Update: 2026-11-16 19:03 UTC",
         "original_date": "2026-11-16 03:41",
-        "_timestamp": 1794855503.0,
+        "_timestamp": 1794855801.0,
         "articles": [
             {
                 "title": "KOSPI Falls Near 3% as Friday's Nvidia Selloff Reaches Seoul",
@@ -9705,16 +9708,24 @@
                 "date": "2026-11-16 18:54",
                 "description": "Korea's HBM leader led the Kospi lower as Nvidia's leadership crisis revived AI bubble fears, wiping out weeks of gains.",
                 "_timestamp": 1794855297.0
+            },
+            {
+                "title": "SK Hynix Is Down 16% in a Month. What Will It Take to Get SKHY Stock Back to $150?",
+                "link": "https://247wallst.com/investing/2026/11/16/sk-hynix-is-down-16-in-a-month-what-will-it-take-to-get-skhy-stock-back-to-150/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:03",
+                "description": "SK Hynix is sliding with the rest of the memory group, yet it is falling the least among its peers. A price-fixing lawsuit, a looming NVIDIA earnings report, and China's rise all stand between the stock and a comeback.",
+                "_timestamp": 1794855801.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 18:58 UTC",
-            "Facts": "Asian equity markets experienced significant declines led by technology and semiconductor stocks following a previous Wall Street selloff in Nvidia. Major regional equities including South Korea's KOSPI and Japan's Nikkei fell sharply, impacting key suppliers and chipmakers.",
-            "Market_Context": "Tech sector liquidity and sentiment remain sensitive to Nvidia-led volatility, driving cross-border equity outflows and valuation corrections across major Asian semiconductor manufacturing hubs."
+            "Event_Timestamp": "2026-11-16 19:03 UTC",
+            "Facts": "Asian semiconductor and tech equities experienced sharp declines, led by a sell-off in South Korea's KOSPI and Japan's Nikkei. SK hynix dropped 7.89%, Advantest tumbled 11.12%, and foreign investors offloaded significant capital following a Nvidia-led market slide and renewed market scrutiny over artificial intelligence valuations.",
+            "Market_Context": "Global technology sector contagion spreading from U.S. markets to Asian semiconductor supply chains and equities."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 41.87
@@ -10734,6 +10745,30 @@
             "Event_Timestamp": "2026-11-16 18:38 UTC",
             "Facts": "Political developments highlighted Abdul El-Sayed's electoral victory, noting its implications for political representation, progressive political strategies, and integration of foreign policy discussions into domestic electoral campaigns.",
             "Market_Context": "Shifts in domestic political leadership and coalition building influence policy priorities and legislative agendas within the broader political landscape."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 19:09 UTC",
+        "original_date": "2026-11-16 19:09",
+        "_timestamp": 1794856144.0,
+        "articles": [
+            {
+                "title": "Customers of major US banks report outages days after Microsoft issues",
+                "link": "https://www.independent.co.uk/tech/us-bank-outages-chase-wells-fargo-zelle-b3085937.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:09",
+                "description": "Bank of America, Chase, J.P. Morgan, U.S. Bank, Wells Fargo and Zelle were flagged by users as down or experiencing problems",
+                "_timestamp": 1794856144.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 19:09 UTC",
+            "Facts": "Customers of major US financial institutions, including Bank of America, Chase, J.P. Morgan, U.S. Bank, Wells Fargo, and payment network Zelle, reported technical outages and service disruptions following recent Microsoft issues.",
+            "Market_Context": "Operational disruptions in major banking infrastructure affecting retail and institutional access."
         }
     }
 ]

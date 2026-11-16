@@ -52,12 +52,61 @@ CLUSTER_SUMMARY_SCHEMA = types.Schema(
     )
 )
 
+# Schema for Tab [4] Master AI Trade Decision & Active Trade Review
+MASTER_TRADE_SCHEMA = types.Schema(
+    type=types.Type.OBJECT,
+    properties={
+        "Decision": types.Schema(type=types.Type.STRING),  # "LONG", "SHORT", or "NO_TRADE"
+        "Confidence_Percent": types.Schema(type=types.Type.INTEGER),
+        "Take_Profit_Price": types.Schema(type=types.Type.NUMBER),
+        "Setup_Title": types.Schema(type=types.Type.STRING),
+        "Detailed_Rationale": types.Schema(type=types.Type.STRING),
+        "Chart_Orderbook_Evidence": types.Schema(type=types.Type.STRING),
+        "News_Catalyst_Evidence": types.Schema(type=types.Type.STRING),
+        "Surface_3D_Evidence": types.Schema(type=types.Type.STRING),
+        "Experience_Adjustment": types.Schema(type=types.Type.STRING),
+        "Invalidation_Note": types.Schema(type=types.Type.STRING),
+        "Cited_Sources": types.Schema(
+            type=types.Type.ARRAY,
+            items=types.Schema(
+                type=types.Type.OBJECT,
+                properties={
+                    "type": types.Schema(type=types.Type.STRING),   # "NEWS_LINK", "GRAPH_DATA", "ORDERBOOK", "WINRATE_STATS"
+                    "label": types.Schema(type=types.Type.STRING),
+                    "detail": types.Schema(type=types.Type.STRING),
+                    "url": types.Schema(type=types.Type.STRING)
+                },
+                required=["type", "label", "detail", "url"]
+            )
+        )
+    },
+    required=[
+        "Decision", "Confidence_Percent", "Take_Profit_Price", "Setup_Title",
+        "Detailed_Rationale", "Chart_Orderbook_Evidence", "News_Catalyst_Evidence",
+        "Surface_3D_Evidence", "Experience_Adjustment", "Invalidation_Note", "Cited_Sources"
+    ]
+)
+
+ACTIVE_TRADE_REVIEW_SCHEMA = types.Schema(
+    type=types.Type.OBJECT,
+    properties={
+        "Still_Valid": types.Schema(type=types.Type.BOOLEAN),
+        "Status_Note": types.Schema(type=types.Type.STRING)
+    },
+    required=["Still_Valid", "Status_Note"]
+)
+
 BATCH_SIZE = 6
 MAX_BATCH_CALLS_PER_RUN = 4
 
 MIN_EVAL_PROBABILITY = 51
 EVAL_HORIZON_HOURS = 20.0
 MAX_DRAWDOWN_ATR_MULT = 1.8
+
+# Tab [4] Master Trade Rules
+TRADE_EXPIRY_HOURS = 20.0
+TRADE_SL_ATR_MULT = 1.2
+TRADE_MIN_TP_DISTANCE_USD = 10.0
 
 # Maximum distance for orderbook zones (2.5% ~ $95 around spot to prevent chart stretching)
 MAX_ZONE_RADIUS_PCT = 0.025
@@ -105,13 +154,10 @@ TECH_SYSTEMIC_TRIGGERS = [
 
 DATA_FILE = "data.json"
 STATS_FILE = "performance_stats.json"
+TRADE_JOURNAL_FILE = "trade_journal.json"
 SIMILARITY_THRESHOLD = 0.54
 
 def fetch_capitalcom_tv_price():
-    """
-    Fetches the live CAPITALCOM:GOLD price directly from TradingView's scanner API.
-    Falls back to OANDA:XAUUSD or FOREXCOM:XAUUSD on TradingView if needed.
-    """
     url = "https://scanner.tradingview.com/global/scan"
     payload = {
         "symbols": {
@@ -963,7 +1009,6 @@ def fetch_oanda_price_and_volatility(tv_live_price=0.0):
             "move_to_daily_atr_ratio": 0.5
         }
 
-    # Sync latest H1 candle to live CAPITALCOM:GOLD price if available
     if tv_live_price > 0:
         parsed[-1]["c"] = tv_live_price
         parsed[-1]["h"] = max(parsed[-1]["h"], tv_live_price)
@@ -1220,6 +1265,381 @@ def format_performance_memory(stats):
         f"- By Category: {fmt_g(rm.get('by_category', {}))}\n"
     )
 
+# ==============================================================================
+# TAB [4] MASTER AI TRADE JOURNAL & SELF-LEARNING ENGINE
+# ==============================================================================
+def load_trade_journal():
+    default_journal = {
+        "active_trade": None,
+        "last_decision": None,
+        "stats": {
+            "total_closed": 0,
+            "wins": 0,
+            "losses": 0,
+            "expired": 0,
+            "invalidated": 0,
+            "win_rate": 0.0,
+            "net_pnl_usd": 0.0,
+            "avg_win_usd": 0.0,
+            "avg_loss_usd": 0.0
+        },
+        "archive": []
+    }
+    if os.path.exists(TRADE_JOURNAL_FILE):
+        try:
+            with open(TRADE_JOURNAL_FILE, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+                if isinstance(loaded, dict):
+                    default_journal.update(loaded)
+        except Exception:
+            pass
+    return default_journal
+
+def save_trade_journal(journal):
+    try:
+        with open(TRADE_JOURNAL_FILE, "w", encoding="utf-8") as f:
+            json.dump(journal, f, indent=4, ensure_ascii=False)
+    except Exception as e:
+        print(f"Error saving {TRADE_JOURNAL_FILE}: {e}")
+
+def recompute_trade_journal_stats(journal):
+    archive = journal.get("archive", [])
+    wins = [t for t in archive if t.get("status") == "WIN"]
+    losses = [t for t in archive if t.get("status") == "LOSS"]
+    expired = [t for t in archive if t.get("status") == "EXPIRED"]
+    invalidated = [t for t in archive if t.get("status") == "INVALIDATED"]
+
+    decisive_count = len(wins) + len(losses)
+    total_closed = len(archive)
+    net_pnl = round(sum(float(t.get("pnl_usd", 0.0)) for t in archive), 2)
+    avg_win = round(sum(float(t.get("pnl_usd", 0.0)) for t in wins) / len(wins), 2) if wins else 0.0
+    avg_loss = round(sum(float(t.get("pnl_usd", 0.0)) for t in losses) / len(losses), 2) if losses else 0.0
+
+    journal["stats"] = {
+        "total_closed": total_closed,
+        "wins": len(wins),
+        "losses": len(losses),
+        "expired": len(expired),
+        "invalidated": len(invalidated),
+        "win_rate": round((len(wins) / decisive_count) * 100.0, 1) if decisive_count > 0 else 0.0,
+        "net_pnl_usd": net_pnl,
+        "avg_win_usd": avg_win,
+        "avg_loss_usd": avg_loss
+    }
+
+def format_trade_journal_lessons(journal):
+    st = journal.get("stats", {})
+    archive = journal.get("archive", [])
+    if not archive:
+        return "=== MASTER TRADE ARCHIVE LESSONS ===\nNo closed master trades yet. Be highly selective: only issue LONG or SHORT if Chart Orderbook, News Catalysts, and 3D Surfaces align with >= $10.00 target distance."
+
+    lines = [
+        f"=== MASTER TRADE ARCHIVE LESSONS ({st.get('total_closed', 0)} Closed | Winrate: {st.get('win_rate', 0)}% | Net PnL: ${st.get('net_pnl_usd', 0):+.2f} | Avg Win: +${st.get('avg_win_usd', 0):.2f} | Avg Loss: ${st.get('avg_loss_usd', 0):.2f}) ===",
+        "Recent Closed Master Trades (Learn from wins, stop-outs, and expirations):"
+    ]
+    for t in archive[:8]:
+        lines.append(
+            f"- [{t.get('status')}] {t.get('direction')} @ ${t.get('entry_price')} -> TP ${t.get('tp_price')} | SL ${t.get('sl_price')} | "
+            f"Exit @ ${t.get('exit_price')} (PnL: ${t.get('pnl_usd', 0):+.2f}, MaxDD: -${t.get('max_dd_usd', 0):.2f}) | "
+            f"Setup: {t.get('setup_title')} | Outcome Note: {t.get('close_reason')}"
+        )
+    return "\n".join(lines)
+
+def call_gemini_structured(prompt_text, response_schema):
+    if not client:
+        return None
+    active_models = [m for m in FALLBACK_MODELS if m not in DEAD_MODELS] or ["gemini-3.5-flash-lite"]
+    for model_name in active_models:
+        for attempt in range(2):
+            try:
+                res = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt_text,
+                    config=types.GenerateContentConfig(
+                        response_mime_type="application/json",
+                        response_schema=response_schema
+                    )
+                )
+                raw = res.text.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+                return json.loads(raw)
+            except Exception as e:
+                err_str = str(e).splitlines()[0][:100]
+                if "404" in err_str or "NOT_FOUND" in err_str:
+                    DEAD_MODELS.add(model_name)
+                    break
+                time.sleep(3)
+    return None
+
+def manage_master_trade(current_spot, h1_candles, vol_metrics, oanda_zones_cache, macro_summary, crypto_basis_obj, taker_flow_obj, valid_clusters, drivers_24h, drivers_weekly, ob_surf, vol_surf, sess_surf, cluster_stats):
+    """
+    Evaluates any active Master Trade (TP, 1.2x ATR SL, 20h expiry, and AI thesis validity).
+    If no active trade remains, asks the AI to synthesize Tab [1], [2], and [3] plus historical archive lessons
+    into a high-conviction trade (min $10 TP distance) or NO_TRADE.
+    """
+    journal = load_trade_journal()
+    now_ts = datetime.now().timestamp()
+    now_utc_str = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    daily_atr = float((vol_metrics or {}).get("est_daily_atr", 38.0) or 38.0)
+
+    # Top relevant news summary for prompt context
+    rel_clusters = [
+        c for c in valid_clusters
+        if isinstance(c.get("summary"), dict) and c["summary"].get("Is_Gold_Relevant") is not False
+    ][:10]
+    news_briefs = []
+    for idx, c in enumerate(rel_clusters):
+        s = c["summary"]
+        arts = sorted(c.get("articles", []), key=lambda x: x.get("_timestamp", 0), reverse=True)
+        lead_art = arts[0] if arts else {}
+        news_briefs.append(
+            f"News #{idx+1} [{s.get('XAUUSD_Impact')} {s.get('Probability_Percent')}% | Driver: {s.get('Dominant_Driver')} | {c.get('main_date')}]: "
+            f"{s.get('Facts')} | Macro: {s.get('Macro_Context')} | Source: {lead_art.get('source', 'News')} ({lead_art.get('link', '')})"
+        )
+    news_context_block = "\n".join(news_briefs) if news_briefs else "No major breaking news clusters in the last 24h."
+
+    # 1. CHECK & UPDATE EXISTING ACTIVE TRADE
+    active = journal.get("active_trade")
+    if isinstance(active, dict) and active.get("status") == "ACTIVE":
+        entry_ts = float(active.get("entry_ts", now_ts))
+        entry_p = float(active.get("entry_price", current_spot))
+        tp_p = float(active.get("tp_price", 0.0))
+        sl_p = float(active.get("sl_price", 0.0))
+        direction = active.get("direction", "LONG")
+        elapsed_h = round((now_ts - entry_ts) / 3600.0, 2)
+
+        hit_tp, hit_sl = False, False
+        worst_dd = float(active.get("max_dd_usd", 0.0))
+        best_fav = float(active.get("max_favorable_usd", 0.0))
+
+        # Check H1 candles since trade opened + live spot price
+        relevant_bars = [c for c in (h1_candles or []) if c["ts"] + 3600 >= entry_ts]
+        for c in relevant_bars:
+            if direction == "LONG":
+                dd = round(max(0.0, entry_p - c["l"]), 2)
+                fav = round(max(0.0, c["h"] - entry_p), 2)
+                worst_dd = max(worst_dd, dd)
+                best_fav = max(best_fav, fav)
+                if c["l"] <= sl_p:
+                    hit_sl = True
+                    break
+                if c["h"] >= tp_p:
+                    hit_tp = True
+                    break
+            else:
+                dd = round(max(0.0, c["h"] - entry_p), 2)
+                fav = round(max(0.0, entry_p - c["l"]), 2)
+                worst_dd = max(worst_dd, dd)
+                best_fav = max(best_fav, fav)
+                if c["h"] >= sl_p:
+                    hit_sl = True
+                    break
+                if c["l"] <= tp_p:
+                    hit_tp = True
+                    break
+
+        # Also check current live spot price
+        if not hit_tp and not hit_sl and current_spot > 0:
+            if direction == "LONG":
+                worst_dd = max(worst_dd, round(max(0.0, entry_p - current_spot), 2))
+                best_fav = max(best_fav, round(max(0.0, current_spot - entry_p), 2))
+                if current_spot <= sl_p:
+                    hit_sl = True
+                elif current_spot >= tp_p:
+                    hit_tp = True
+            else:
+                worst_dd = max(worst_dd, round(max(0.0, current_spot - entry_p), 2))
+                best_fav = max(best_fav, round(max(0.0, entry_p - current_spot), 2))
+                if current_spot >= sl_p:
+                    hit_sl = True
+                elif current_spot <= tp_p:
+                    hit_tp = True
+
+        active["current_price"] = round(current_spot, 2)
+        active["elapsed_hours"] = elapsed_h
+        active["remaining_hours"] = round(max(0.0, TRADE_EXPIRY_HOURS - elapsed_h), 2)
+        active["max_dd_usd"] = worst_dd
+        active["max_favorable_usd"] = best_fav
+        active["unrealized_pnl_usd"] = round((current_spot - entry_p) if direction == "LONG" else (entry_p - current_spot), 2)
+
+        close_status = None
+        exit_price = current_spot
+        close_reason = ""
+
+        if hit_sl:
+            close_status = "LOSS"
+            exit_price = sl_p
+            close_reason = f"Stop-Loss (1.2x ATR) triggered at ${sl_p:.2f} after {elapsed_h}h."
+        elif hit_tp:
+            close_status = "WIN"
+            exit_price = tp_p
+            close_reason = f"Take-Profit target ${tp_p:.2f} reached after {elapsed_h}h (Max Drawdown: -${worst_dd:.2f})."
+        elif elapsed_h >= TRADE_EXPIRY_HOURS:
+            close_status = "EXPIRED"
+            exit_price = current_spot
+            close_reason = f"20-hour time limit expired at ${current_spot:.2f} (Max Favorable: +${best_fav:.2f}, Max DD: -${worst_dd:.2f})."
+        else:
+            # Ask AI if active trade thesis is still valid given latest news & orderbook
+            review_prompt = f"""You are a disciplined Gold (XAU/USD) Risk Manager.
+            Review this ACTIVE {direction} trade opened at ${entry_p:.2f} ({elapsed_h}h ago, {active['remaining_hours']}h remaining):
+            - Target TP: ${tp_p:.2f} | Hard SL (1.2x ATR): ${sl_p:.2f} \vert{} Current Spot:${current_spot:.2f}
+            - Original Thesis: {active.get('detailed_rationale')}
+            - Latest Breaking News:
+            {news_context_block}
+
+            Question: Does this trade thesis STILL make fundamental and technical sense, or has a major opposing shock invalidated it?
+            Set Still_Valid = true unless a strong contrary catalyst clearly invalidates the setup."""
+            rev_res = call_gemini_structured(review_prompt, ACTIVE_TRADE_REVIEW_SCHEMA)
+            if isinstance(rev_res, dict):
+                active["last_check_utc"] = now_utc_str
+                active["last_check_note"] = rev_res.get("Status_Note", "Thesis verified intact.")
+                if rev_res.get("Still_Valid") is False:
+                    close_status = "INVALIDATED"
+                    exit_price = current_spot
+                    close_reason = f"Invalidated by AI Risk Check at ${current_spot:.2f}: {rev_res.get('Status_Note', 'Thesis broken.')}"
+
+        if close_status:
+            pnl_usd = round((exit_price - entry_p) if direction == "LONG" else (entry_p - exit_price), 2)
+            active["status"] = close_status
+            active["exit_price"] = round(exit_price, 2)
+            active["closed_utc"] = now_utc_str
+            active["closed_ts"] = now_ts
+            active["pnl_usd"] = pnl_usd
+            active["close_reason"] = close_reason
+            journal["archive"].insert(0, active)
+            journal["archive"] = journal["archive"][:50]
+            journal["active_trade"] = None
+            recompute_trade_journal_stats(journal)
+            save_trade_journal(journal)
+            print(f"Master Trade Closed [{close_status}]: {direction} Entry ${entry_p} -> Exit ${exit_price} (PnL:${pnl_usd:+.2f})")
+        else:
+            save_trade_journal(journal)
+            print(f"Active Master Trade maintained: {direction} @ ${entry_p} -> TP${tp_p} ({active['remaining_hours']}h left)")
+            return journal
+
+    # 2. NO ACTIVE TRADE: GENERATE NEW MASTER TRADE PROPOSAL (OR NO_TRADE)
+    if current_spot <= 0:
+        return journal
+
+    sl_dist_usd = round(daily_atr * TRADE_SL_ATR_MULT, 2)
+    ob_str = fetch_oanda_orderbook(top_zones_cache=oanda_zones_cache)
+    archive_lessons = format_trade_journal_lessons(journal)
+    perf_str = format_performance_memory(cluster_stats)
+
+    # Summarize 3D Surface metrics for the AI
+    vol_s_summary = f"Model 1 (IV & Skew): Base ATM IV = {vol_surf.get('base_iv_pct')}% | Skew Score = {vol_surf.get('skew_score'):+.2f} ({vol_surf.get('skew_regime')})"
+    sess_s_summary = f"Model 3 (Session Profile): Best Asian Window = {sess_surf.get('best_asian_window')} | Current UTC Hour = {datetime.utcnow().strftime('%H:00 UTC')}"
+    ob_s_summary = f"Model 2 (Liquidity Canyon): Spot Ref = ${ob_surf.get('spot_price')} across 24 UTC snapshots"
+
+    master_prompt = f"""You are the Chief Quantitative & Macro Strategist for GMIT // XAU (Gold XAU/USD).
+    Synthesize ALL data across the entire terminal ([1] Chart & Orderbook, [2] News Intelligence, [3] 3D Surfaces, and the Historical Trade Archive) to decide whether to open a new XAU/USD trade right now.
+
+    STRICT MANDATORY RULES (ZERO EXCEPTIONS):
+    1. **Minimum Target Distance >= $10.00:** If you choose 'LONG', Take_Profit_Price MUST be at least ${current_spot + TRADE_MIN_TP_DISTANCE_USD:.2f} (+$10.00 above current spot ${current_spot:.2f}). If you choose 'SHORT', Take_Profit_Price MUST be at most${current_spot - TRADE_MIN_TP_DISTANCE_USD:.2f} (-$10.00 below current spot ${current_spot:.2f}).
+    2. **Selective High-Conviction Only ('NO_TRADE' when unclear):** Do NOT force a trade! If signals conflict, if ATR is already exhausted (>= 1.2x Daily ATR), or if no clean >= $10.00 setup exists, set Decision = 'NO_TRADE' and Take_Profit_Price = 0.
+    3. **Fixed Risk Parameters:** Every trade has a 20-hour expiration limit and an automatic Stop-Loss at 1.2x Daily ATR (${sl_dist_usd:.2f} distance -> Long SL: ${current_spot - sl_dist_usd:.2f} \vert{} Short SL:${current_spot + sl_dist_usd:.2f}). Ensure your TP aligns with real OANDA/COMEX liquidity walls.
+    4. **Concrete Source Attribution (German Language Output):** Write all explanations in clear, institutional German. Explicitly cite:
+       - Concrete news sources & URLs from the feed below (type='NEWS_LINK')
+       - Exact 3D surface metrics (type='GRAPH_DATA')
+       - Exact OANDA/COMEX orderbook levels & percentages (type='ORDERBOOK')
+       - Concrete lessons from the historical winrate / trade archive (type='WINRATE_STATS')
+
+    Current Time: {now_utc_str}
+    Current Live Spot Price (CAPITALCOM:GOLD): ${current_spot:.2f}
+    Volatility Telemetry: 4h Move ${vol_metrics.get('change_4h', 0):+.2f} \vert{} 24h Move${vol_metrics.get('change_24h', 0):+.2f} | Daily ATR: ${daily_atr:.2f} (4h Ratio: {vol_metrics.get('move_to_daily_atr_ratio', 0)}x) \vert{} 1.2x ATR SL Distance:${sl_dist_usd:.2f}
+    Taker & Perp Flow: {taker_flow_obj.get('state_label', 'N/A')} ({taker_flow_obj.get('taker_buy_pct', 50)}% Buy) | 24/7 Perp Basis: ${crypto_basis_obj.get('spread_usd', 0):+.2f} ({crypto_basis_obj.get('regime', 'N/A')})
+
+    === [1] CHART & ORDERBOOK ZONES ===
+    {ob_str}
+
+    === [2] VERIFIED GOLD NEWS CATALYSTS ===
+    {news_context_block}
+
+    === [3] 3D VOLATILITY, SKEW & SESSION SURFACES ===
+    - {vol_s_summary}
+    - {ob_s_summary}
+    - {sess_s_summary}
+
+    === [4] HISTORICAL EXPERIENCE & EMPIRICAL WINRATES ===
+    {archive_lessons}
+    {perf_str}"""
+
+    ai_decision = call_gemini_structured(master_prompt, MASTER_TRADE_SCHEMA)
+    if not isinstance(ai_decision, dict):
+        return journal
+
+    raw_dec = str(ai_decision.get("Decision", "NO_TRADE")).strip().upper()
+    tp_price = round(float(ai_decision.get("Take_Profit_Price", 0.0) or 0.0), 2)
+    tp_dist = abs(tp_price - current_spot)
+
+    # Hard enforcement of user rules: valid direction + minimum $10.00 distance to TP
+    is_valid_long = (raw_dec == "LONG" and (tp_price - current_spot) >= TRADE_MIN_TP_DISTANCE_USD)
+    is_valid_short = (raw_dec == "SHORT" and (current_spot - tp_price) >= TRADE_MIN_TP_DISTANCE_USD)
+
+    decision_record = {
+        "timestamp_utc": now_utc_str,
+        "spot_at_eval": round(current_spot, 2),
+        "decision": raw_dec if (is_valid_long or is_valid_short) else "NO_TRADE",
+        "raw_ai_decision": raw_dec,
+        "confidence_pct": int(ai_decision.get("Confidence_Percent", 0) or 0),
+        "setup_title": ai_decision.get("Setup_Title", "Marktanalyse"),
+        "detailed_rationale": ai_decision.get("Detailed_Rationale", ""),
+        "chart_orderbook_evidence": ai_decision.get("Chart_Orderbook_Evidence", ""),
+        "news_catalyst_evidence": ai_decision.get("News_Catalyst_Evidence", ""),
+        "surface_3d_evidence": ai_decision.get("Surface_3D_Evidence", ""),
+        "experience_adjustment": ai_decision.get("Experience_Adjustment", ""),
+        "invalidation_note": ai_decision.get("Invalidation_Note", ""),
+        "cited_sources": ai_decision.get("Cited_Sources", [])
+    }
+
+    if raw_dec in ("LONG", "SHORT") and not (is_valid_long or is_valid_short):
+        decision_record["filter_rejection_note"] = (
+            f"Prognose verworfen: Zielabstand betrug nur ${tp_dist:.2f} (Mindestabstand >= $10.00 erforderlich)."
+        )
+        print(f"Master Trade rejected by $10 minimum rule: {raw_dec} TP ${tp_price} vs Spot${current_spot}")
+
+    journal["last_decision"] = decision_record
+
+    if is_valid_long or is_valid_short:
+        sl_price = round(current_spot - sl_dist_usd, 2) if is_valid_long else round(current_spot + sl_dist_usd, 2)
+        expiry_dt = datetime.utcnow() + timedelta(hours=TRADE_EXPIRY_HOURS)
+        new_trade = {
+            "id": f"TRD-{int(now_ts)}",
+            "status": "ACTIVE",
+            "direction": raw_dec,
+            "entry_price": round(current_spot, 2),
+            "current_price": round(current_spot, 2),
+            "tp_price": tp_price,
+            "tp_distance_usd": round(tp_dist, 2),
+            "sl_price": sl_price,
+            "sl_distance_usd": sl_dist_usd,
+            "atr_at_entry": daily_atr,
+            "risk_reward_ratio": round(tp_dist / max(1.0, sl_dist_usd), 2),
+            "confidence_pct": decision_record["confidence_pct"],
+            "opened_utc": now_utc_str,
+            "entry_ts": now_ts,
+            "expires_utc": expiry_dt.strftime("%Y-%m-%d %H:%M UTC"),
+            "elapsed_hours": 0.0,
+            "remaining_hours": TRADE_EXPIRY_HOURS,
+            "max_dd_usd": 0.0,
+            "max_favorable_usd": 0.0,
+            "unrealized_pnl_usd": 0.0,
+            "setup_title": decision_record["setup_title"],
+            "detailed_rationale": decision_record["detailed_rationale"],
+            "chart_orderbook_evidence": decision_record["chart_orderbook_evidence"],
+            "news_catalyst_evidence": decision_record["news_catalyst_evidence"],
+            "surface_3d_evidence": decision_record["surface_3d_evidence"],
+            "experience_adjustment": decision_record["experience_adjustment"],
+            "invalidation_note": decision_record["invalidation_note"],
+            "cited_sources": decision_record["cited_sources"]
+        }
+        journal["active_trade"] = new_trade
+        print(f"NEW MASTER TRADE OPENED: {raw_dec} @ ${current_spot:.2f} | TP: ${tp_price:.2f} (+${tp_dist:.2f}) | SL: ${sl_price:.2f} (-${sl_dist_usd:.2f})")
+    else:
+        print(f"Master Trade Status: NO_TRADE ({decision_record['setup_title']})")
+
+    save_trade_journal(journal)
+    return journal
+
 def build_local_fallback_summary(cluster, oanda_zones_cache, vol_metrics, macro_summary, crypto_basis_obj=None, taker_flow_obj=None):
     articles = sorted(cluster.get("articles", []), key=lambda x: x.get("_timestamp", 0))
     oldest = articles[0] if articles else {}
@@ -1351,10 +1771,9 @@ def generate_batch_summaries(clusters_batch, orderbook_data, price_history_data,
     return {}
 
 def fetch_fallback_h4_candles(target_spot_price):
-    """Fetches recent Yahoo GC=F candles and calibrates them to CAPITALCOM:GOLD if OANDA H4 fails."""
     candles = []
     try:
-        url = "[https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1mo&interval=1h](https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1mo&interval=1h)"
+        url = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1mo&interval=1h"
         res = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
         if res.status_code == 200:
             result = res.json().get("chart", {}).get("result", [])
@@ -1369,7 +1788,6 @@ def fetch_fallback_h4_candles(target_spot_price):
                 if raw_1h:
                     last_f_close = raw_1h[-1]["close"]
                     basis_offset = (target_spot_price - last_f_close) if target_spot_price > 0 else 0.0
-                    # Group into 4-hour blocks
                     for i in range(0, len(raw_1h), 4):
                         chunk = raw_1h[i:i+4]
                         candles.append({
@@ -1397,7 +1815,7 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
         headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
         for attempt in range(2):
             try:
-                res_c = requests.get("[https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M](https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M)", headers=headers, timeout=10)
+                res_c = requests.get("https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=100&granularity=H4&price=M", headers=headers, timeout=10)
                 if res_c.status_code == 200:
                     for c in res_c.json().get("candles", []):
                         loaded_h4_candles.append({
@@ -1419,7 +1837,6 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
     curr_p, top_zones, sentiment, all_zones_dict = top_zones_cache if top_zones_cache else get_clustered_oanda_zones(zone_width=10.0)
     eff_spot = tv_live_price if tv_live_price > 0 else (curr_p if curr_p > 0 else (vol_metrics or {}).get("current_price", 0.0))
 
-    # If OANDA H4 failed or is stale (>36h old during weekdays), use calibrated fallback candles
     now_ts = int(time.time())
     if not loaded_h4_candles or (now_ts - loaded_h4_candles[-1]["time"] > 129600):
         fb_candles = fetch_fallback_h4_candles(eff_spot)
@@ -1429,11 +1846,9 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
         elif old_md.get("candles"):
             loaded_h4_candles = old_md["candles"]
 
-    # Always synchronize the latest H4 candle to the exact CAPITALCOM:GOLD price
     if loaded_h4_candles and eff_spot > 0:
         last_c = loaded_h4_candles[-1]
         if now_ts - last_c["time"] > 14400:
-            # Append a fresh 4H bar if the last bar is older than 4 hours
             loaded_h4_candles.append({
                 "time": (now_ts // 14400) * 14400,
                 "open": last_c["close"],
@@ -1497,6 +1912,8 @@ def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=Non
 
     with open("market_data.json", "w", encoding="utf-8") as f:
         json.dump(market_data, f)
+
+    return eff_spot, ob_surf, vol_surf, sess_surf
 
 def main():
     print("Loading embeddings model...")
@@ -1601,16 +2018,23 @@ def main():
             c["needs_update"] = True
 
     _, drivers_24h, drivers_weekly = compute_dual_horizon_drivers(valid_clusters, current_stats.get("history", {}))
-    evaluate_clusters(valid_clusters, h1_candles, vol_metrics=vol_metrics, macro_summary=macro_summary)
+    updated_stats = evaluate_clusters(valid_clusters, h1_candles, vol_metrics=vol_metrics, macro_summary=macro_summary)
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
 
     print("Updating Chart, CAPITALCOM:GOLD Spot Price & 3D Surfaces...")
-    update_market_data(
+    synced_spot, ob_surf, vol_surf, sess_surf = update_market_data(
         oanda_zones_cache, macro_summary, vol_metrics, crypto_basis_obj,
         taker_flow_obj, drivers_24h, drivers_weekly, multi_pos, h1_candles,
         tv_live_price=effective_spot_price, tv_source=tv_source
+    )
+
+    print("Running Tab [4] Master AI Trade Synthesis & Journal Evaluation...")
+    manage_master_trade(
+        synced_spot, h1_candles, vol_metrics, oanda_zones_cache, macro_summary,
+        crypto_basis_obj, taker_flow_obj, valid_clusters, drivers_24h, drivers_weekly,
+        ob_surf, vol_surf, sess_surf, updated_stats
     )
     print("Update completed.")
 

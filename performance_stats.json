@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 871,
-    "hits": 552,
+    "total_evaluated": 872,
+    "hits": 553,
     "misses": 319,
     "win_rate": 63.4,
-    "active_signals": 13,
+    "active_signals": 15,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 465,
+                "hits": 466,
                 "misses": 282,
-                "total": 747,
-                "win_rate": 62.2,
-                "avg_dd": 23.04
+                "total": 748,
+                "win_rate": 62.3,
+                "avg_dd": 23.01
             },
             "Bearish": {
                 "hits": 87,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 525,
+                "hits": 526,
                 "misses": 305,
-                "total": 830,
+                "total": 831,
                 "win_rate": 63.3,
-                "avg_dd": 21.62
+                "avg_dd": 21.59
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -60,11 +60,11 @@
                 "avg_dd": 17.35
             },
             "Against USD Headwind": {
-                "hits": 296,
+                "hits": 297,
                 "misses": 127,
-                "total": 423,
+                "total": 424,
                 "win_rate": 70.0,
-                "avg_dd": 20.36
+                "avg_dd": 20.31
             },
             "USD Neutral / Legacy": {
                 "hits": 221,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 272,
+                "hits": 273,
                 "misses": 191,
-                "total": 463,
-                "win_rate": 58.7,
-                "avg_dd": 24.1
+                "total": 464,
+                "win_rate": 58.8,
+                "avg_dd": 24.03
             },
             "Fed, Rates & Macro": {
                 "hits": 35,
@@ -113,11 +113,11 @@
                 "avg_dd": 22.9
             },
             "High (65-74%)": {
-                "hits": 84,
+                "hits": 85,
                 "misses": 54,
-                "total": 138,
-                "win_rate": 60.9,
-                "avg_dd": 19.81
+                "total": 139,
+                "win_rate": 61.2,
+                "avg_dd": 19.65
             },
             "Extreme (>=75%)": {
                 "hits": 7,
@@ -14719,14 +14719,14 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-reports-armed-men-boat-430-nautical-miles-yemens-socotra": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "UKMTO reports armed men on boat 430 nautical miles from Yemen’s Socotra",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
             "impact": "Bullish",
-            "prob": 55,
+            "prob": 65,
             "entry_price": 3834.11,
-            "target": 3889.75,
+            "target": 3880.3,
             "max_dd_usd": 1.65,
             "atr_ratio_at_signal": 0.5,
             "daily_atr_at_signal": 71.12,
@@ -15544,6 +15544,60 @@
             "nas_chg_at_signal": -1.35,
             "created_ts": 1794823915.0,
             "date": "First Reported: 2026-11-16 10:11 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/ai/articles/top-midday-stories-us-moves-170133183.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Top Midday Stories: US Moves to Block Remote Access to Advanced AI Chips; Telus Receives Q",
+            "source": "Yahoo Finance Oil",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 72,
+            "entry_price": 3867.24,
+            "target": 3880.3,
+            "max_dd_usd": 3.65,
+            "atr_ratio_at_signal": 0.02,
+            "daily_atr_at_signal": 66.37,
+            "eur_chg_at_signal": -0.16,
+            "nas_chg_at_signal": -1.46,
+            "created_ts": 1794848493.0,
+            "date": "First Reported: 2026-11-16 17:01 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tikr.com/blog/150-billion-of-anthropics-nvidia-tied-compute-can-be-ended-on-short-notice?ref=yahoofinance&tlnk=yf-261116-wg3cg694&.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "$150 Billion of Anthropic’s Nvidia-Tied Compute “Can Be Ended on Short Notice”",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3867.24,
+            "target": 3890.05,
+            "max_dd_usd": 3.65,
+            "atr_ratio_at_signal": 0.02,
+            "daily_atr_at_signal": 66.37,
+            "eur_chg_at_signal": -0.16,
+            "nas_chg_at_signal": -1.46,
+            "created_ts": 1794848435.0,
+            "date": "First Reported: 2026-11-16 16:33 UTC | Last Update: 2026-11-16 17:00 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249445/UKMTO-reports-a-vessel-hit-by-unknown-projectile-in-Hormuz": {
+            "status": "ACTIVE",
+            "headline": "UKMTO reports a vessel hit by unknown projectile in Hormuz",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 78,
+            "entry_price": 3860.14,
+            "target": 3890.05,
+            "max_dd_usd": 8.92,
+            "atr_ratio_at_signal": 0.02,
+            "daily_atr_at_signal": 66.37,
+            "eur_chg_at_signal": -0.16,
+            "nas_chg_at_signal": -1.46,
+            "created_ts": 1794818421.0,
+            "date": "First Reported: 2026-11-16 08:40 UTC",
             "fail_reason": ""
         }
     }

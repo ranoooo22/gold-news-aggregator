@@ -136,9 +136,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 21:03 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 21:26 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794862983.0,
+        "_timestamp": 1794864360.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -947,16 +947,24 @@
                 "date": "2026-11-16 21:03",
                 "description": "Investing.com -- NVIDIA (NVDA) trades at $155.70 (-4.39%) as of Nov 16, 3:28 PM EST. It is near the 52-week low of $148.80. Earnings are Nov 17 after the close. The stock is down -27.33% over 1 month and the market cap is about $3.75T.",
                 "_timestamp": 1794862983.0
+            },
+            {
+                "title": "Nvidia, Sandisk, SpaceX, L3Harris, Strategy, Tyson, and More Stocks That Explain Today’s Market",
+                "link": "https://finance.yahoo.com/m/a7938ba3-f917-3e6f-b865-2195ea15d9d5/nvidia%2C-sandisk%2C-spacex%2C.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:26",
+                "description": "Nvidia falls, extending a 25% decline over the past month following the resignation of former CEO Jensen Huang.",
+                "_timestamp": 1794864360.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 21:03 UTC",
-            "Facts": "[Update 2026-11-16 20:30 UTC via Yahoo Finance Nasdaq]: TSMC slumped nearly 6% and lost about $106 billion in market value amid AI debt fears and Jensen Huang's exit. [Update 2026-11-16 20:36 UTC via Yahoo Finance Nasdaq]: Ethereum plunged 28% in two weeks, which analyst Tom Lee blamed on Nvidia fallout and cash-raising ahead of Anthropic's IPO. [Update 2026-11-16 21:03 UTC via Yahoo Finance Nasdaq]: NVIDIA traded down 4.39% at $155.70, near its 52-week low ahead of earnings scheduled for November 17 after the close.",
-            "Macro_Context": "Technology equities and crypto assets experience volatile trading sessions as markets price in uncertainty surrounding Nvidia's leadership changes and upcoming earnings report."
+            "Event_Timestamp": "2026-11-16 21:26 UTC",
+            "Facts": "[Update 2026-11-16 21:26 UTC via Yahoo Finance Nasdaq]: Nvidia falls, extending a 25% decline over the past month following the resignation of former CEO Jensen Huang. TSMC slumps nearly 6% and loses $106 billion in market value, while Tom Lee blames Nvidia fallout and Anthropic IPO cash-raising for a 28% drop in Ethereum.",
+            "Macro_Context": "Broader technology sector sell-offs driven by semiconductor volatility and liquidity pressures ahead of Nvidia's earnings."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -3594,9 +3602,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 21:01 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 21:13 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794862881.0,
+        "_timestamp": 1794863604.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4413,16 +4421,24 @@
                 "date": "2026-11-16 21:01",
                 "description": "Following the recent allegations involving Nvidia CEO Jensen Huang, everybody on Wall Street is wondering what happens next. Two of our 24/7 Wall St. Analysts, Lee Jackson and Doug McIntyre, recently broke down what this all means for Nvidia as well as the future of the artificial intelligence boom. Despite a 115,000-signature petition and public remarks from President Donald Trump expressing openness to Huang’s return, it appears that legal and ",
                 "_timestamp": 1794862881.0
+            },
+            {
+                "title": "How the Nvidia scandal threatens financial services’ AI boom",
+                "link": "https://www.americanbanker.com/payments/news/how-the-nvidia-scandal-threatens-financial-services-ai-boom?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:13",
+                "description": "The technology company CEO's self-inflicted personal and professional wounds have a ripple effect that potentially makes payments and bank innovation more expensive, riskier and hamstrung by deeper regulatory scrutiny.",
+                "_timestamp": 1794863604.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 21:01 UTC",
-            "Facts": "[Update 2026-11-16 19:26 UTC via Yahoo Finance Nasdaq]: CoreWeave, Oracle, and Nebius plunged as Nvidia's CEO shake-up sent shockwaves through AI-related stocks. [Update 2026-11-16 21:01 UTC via Yahoo Finance Nasdaq]: Despite a 115,000-signature petition and public remarks from President Donald Trump expressing openness to Jensen Huang's return, corporate-governance experts and analysts indicate a triumphant return is unlikely following recent allegations.",
-            "Macro_Context": "Broader AI infrastructure stocks face severe selling pressure following management changes at Nvidia, while analysts evaluate the long-term governance and leadership outlook for the artificial intelligence boom."
+            "Event_Timestamp": "2026-11-16 21:13 UTC",
+            "Facts": "[Update 2026-11-16 21:13 UTC via Yahoo Finance Nasdaq]: Corporate-governance experts note that a triumphant return for Jensen Huang as Nvidia CEO is unlikely despite a 115,000-signature petition and remarks from President Donald Trump, as the scandal threatens AI booms across financial services.",
+            "Macro_Context": "Corporate governance concerns and regulatory risks stemming from leadership changes in foundational AI firms."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -10913,6 +10929,150 @@
             "Event_Timestamp": "2026-11-16 21:00 UTC",
             "Facts": "[Update 2026-11-16 21:00 UTC via Yahoo Finance Nasdaq]: Lumina Metals Corp. joined The Silver Institute and had its shares added to the Nasdaq Junior Silver Miners Index, the underlying index for the Amplify Junior Silver Miner.",
             "Macro_Context": "Precious metals equities experience index inclusions and institutional association updates, boosting market visibility for junior miners."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:18 UTC",
+        "original_date": "2026-11-16 21:18",
+        "_timestamp": 1794863939.0,
+        "articles": [
+            {
+                "title": "Nvidia to report Q3 earnings amid Huang scandal",
+                "link": "https://finance.yahoo.com/technology/article/nvidia-to-report-q3-earnings-amid-huang-scandal-211859827.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:18",
+                "description": "Nvidia will report its third quarter earnings after the bell Tuesday.",
+                "_timestamp": 1794863939.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 21:18 UTC",
+            "Facts": "[Update 2026-11-16 21:18 UTC via Yahoo Finance Nasdaq]: Nvidia is set to report its third-quarter earnings after the bell on Tuesday amid an ongoing executive scandal and heavy market scrutiny.",
+            "Macro_Context": "Heightened market sensitivity toward upcoming mega-cap technology earnings reports."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:13 UTC",
+        "original_date": "2026-11-16 21:13",
+        "_timestamp": 1794863580.0,
+        "articles": [
+            {
+                "title": "A Third Outage Strikes, This Time at Chase, Big Banks. The Stocks Are Falling.",
+                "link": "https://finance.yahoo.com/m/8966c28b-5797-3a88-8c32-01d28a7b29a1/a-third-outage-strikes%2C-this.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:13",
+                "description": "The tracking site Downdetector.com noted an uptick in messages just after 9 a.m. Monday morning.",
+                "_timestamp": 1794863580.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 21:13 UTC",
+            "Facts": "[Update 2026-11-16 21:13 UTC via Yahoo Finance Nasdaq]: A third major outage struck Chase and other big banks, as noted by tracking site Downdetector.com, contributing to falling bank stocks.",
+            "Macro_Context": "Operational disruptions in major financial institutions adding pressure to banking sector equities."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:06 UTC",
+        "original_date": "2026-11-16 21:06",
+        "_timestamp": 1794863192.0,
+        "articles": [
+            {
+                "title": "Why Arm Holdings Plunged Today",
+                "link": "https://www.fool.com/investing/2026/11/16/why-arm-holdings-plunged-today/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:06",
+                "description": "A sector-wide sell-off happened as a major industry research firm cut chip growth estimates ahead of Nvidia earnings.",
+                "_timestamp": 1794863192.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 21:06 UTC",
+            "Facts": "[Update 2026-11-16 21:06 UTC via Yahoo Finance Nasdaq]: Arm Holdings plunged alongside a sector-wide sell-off after a major industry research firm cut chip growth estimates ahead of Nvidia's earnings.",
+            "Macro_Context": "Downward revisions in semiconductor growth forecasts impacting component manufacturers."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:05 UTC",
+        "original_date": "2026-11-16 21:05",
+        "_timestamp": 1794863100.0,
+        "articles": [
+            {
+                "title": "Octave to Participate in Upcoming Investor Conferences",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/octave-participate-upcoming-investor-conferences-210500505.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:05",
+                "description": "HUNTSVILLE, Ala., Nov. 16, 2026 (GLOBE NEWSWIRE) -- Octave Intelligence plc (Nasdaq New York: OCTV and Nasdaq Stockholm: OCTV SDB), a global leader in software for the world’s most mission-critical facilities and infrastructure, today announced the company will be presenting at two upcoming investor conferences: The RBC TIMT Conference in New York, NY. The presentation is scheduled for Tuesday, November 17, 2026, at 11:20 a.m. ET.The NASDAQ Londo",
+                "_timestamp": 1794863100.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 21:05 UTC",
+            "Facts": "[Update 2026-11-16 21:05 UTC via Yahoo Finance Nasdaq]: Octave Intelligence plc announced it will present at the RBC TIMT Conference in New York on November 17, 2026.",
+            "Macro_Context": "Corporate investor relations events proceeding amid broader tech sector volatility."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:16 UTC",
+        "original_date": "2026-11-16 21:16",
+        "_timestamp": 1794863762.0,
+        "articles": [
+            {
+                "title": "Mamdani to disband NYPD unit deployed at Columbia protests",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/16/mamdani-to-disband-nypd-unit-deployed-at-columbia-protests?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 21:16",
+                "description": "New York City Mayor Zohran Mamdani says he is disbanding the NYPD’s Strategic Response Group or SRG.",
+                "_timestamp": 1794863762.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 21:16 UTC",
+            "Facts": "New York City Mayor Zohran Mamdani announced the disbandment of the NYPD's Strategic Response Group, which had been deployed at Columbia protests.",
+            "Macro_Context": "Local municipal policy and police department structural changes."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:06 UTC",
+        "original_date": "2026-11-16 21:06",
+        "_timestamp": 1794863179.0,
+        "articles": [
+            {
+                "title": "Sudanese army air attack kills 13 in western Sudan: Rights group",
+                "link": "https://www.aljazeera.com/news/2026/11/16/sudanese-army-air-attack-kills-13-in-western-sudan-rights-group?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 21:06",
+                "description": "&#039;Preliminary monitoring&#039; shows women and children killed, homes destroyed in West Kordofan, says Emergency Lawyers.",
+                "_timestamp": 1794863179.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 21:06 UTC",
+            "Facts": "A Sudanese army air attack in West Kordofan killed 13 people, including women and children, and destroyed homes, according to preliminary monitoring by the Emergency Lawyers rights group.",
+            "Macro_Context": "Ongoing conflict and civilian casualties in Sudan."
         }
     }
 ]

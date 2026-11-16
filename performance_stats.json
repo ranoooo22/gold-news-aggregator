@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 875,
-    "hits": 556,
+    "total_evaluated": 876,
+    "hits": 557,
     "misses": 319,
-    "win_rate": 63.5,
-    "active_signals": 24,
+    "win_rate": 63.6,
+    "active_signals": 27,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 468,
+                "hits": 469,
                 "misses": 282,
-                "total": 750,
-                "win_rate": 62.4,
-                "avg_dd": 22.94
+                "total": 751,
+                "win_rate": 62.5,
+                "avg_dd": 22.92
             },
             "Bearish": {
                 "hits": 88,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 529,
+                "hits": 530,
                 "misses": 305,
-                "total": 834,
-                "win_rate": 63.4,
-                "avg_dd": 21.52
+                "total": 835,
+                "win_rate": 63.5,
+                "avg_dd": 21.5
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -60,11 +60,11 @@
                 "avg_dd": 17.32
             },
             "Against USD Headwind": {
-                "hits": 299,
+                "hits": 300,
                 "misses": 127,
-                "total": 426,
-                "win_rate": 70.2,
-                "avg_dd": 20.21
+                "total": 427,
+                "win_rate": 70.3,
+                "avg_dd": 20.19
             },
             "USD Neutral / Legacy": {
                 "hits": 221,
@@ -97,20 +97,20 @@
                 "avg_dd": 18.28
             },
             "Commodities & Energy": {
-                "hits": 101,
+                "hits": 102,
                 "misses": 62,
-                "total": 163,
-                "win_rate": 62.0,
-                "avg_dd": 25.58
+                "total": 164,
+                "win_rate": 62.2,
+                "avg_dd": 25.49
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 463,
+                "hits": 464,
                 "misses": 249,
-                "total": 712,
-                "win_rate": 65.0,
-                "avg_dd": 22.85
+                "total": 713,
+                "win_rate": 65.1,
+                "avg_dd": 22.83
             },
             "High (65-74%)": {
                 "hits": 86,
@@ -15814,6 +15814,78 @@
             "nas_chg_at_signal": -2.58,
             "created_ts": 1794852615.0,
             "date": "First Reported: 2026-11-16 18:10 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249460/Iran-Russia-agree-on-1-36-bn-cost-for-Rasht-Astara-railway": {
+            "status": "ACTIVE",
+            "headline": "Iran, Russia agree on €1.36 bn cost for Rasht-Astara railway",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 59,
+            "entry_price": 3854.43,
+            "target": 3870.76,
+            "max_dd_usd": 13.22,
+            "atr_ratio_at_signal": 0.34,
+            "daily_atr_at_signal": 70.03,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": -2.13,
+            "created_ts": 1794854650.0,
+            "date": "First Reported: 2026-11-16 18:44 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/energy/articles/sector-energy-stocks-decline-premarket-142547112.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Sector Update: Energy Stocks Decline Premarket Monday",
+            "source": "Yahoo Finance Oil",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 62,
+            "entry_price": 3854.43,
+            "target": 3851.07,
+            "max_dd_usd": 13.22,
+            "atr_ratio_at_signal": 0.34,
+            "daily_atr_at_signal": 70.03,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": -2.13,
+            "created_ts": 1794854407.0,
+            "date": "First Reported: 2026-11-16 14:25 UTC | Last Update: 2026-11-16 18:40 UTC",
+            "fail_reason": ""
+        },
+        "https://www.fool.com/investing/2026/11/16/why-intel-stock-is-falling-monday/?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Why Intel Stock Is Falling Monday",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3854.43,
+            "target": 3870.76,
+            "max_dd_usd": 13.22,
+            "atr_ratio_at_signal": 0.34,
+            "daily_atr_at_signal": 70.03,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": -2.13,
+            "created_ts": 1794854102.0,
+            "date": "First Reported: 2026-11-16 18:35 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/markets/stocks/articles/3-australian-penny-stocks-72-181842472.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "3 Australian Penny Stocks With Up To 72% Discount To Fair Value",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 70,
+            "entry_price": 3854.43,
+            "target": 3870.76,
+            "max_dd_usd": 13.22,
+            "atr_ratio_at_signal": 0.34,
+            "daily_atr_at_signal": 70.03,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": -2.13,
+            "created_ts": 1794853122.0,
+            "date": "First Reported: 2026-11-16 18:18 UTC",
             "fail_reason": ""
         }
     }

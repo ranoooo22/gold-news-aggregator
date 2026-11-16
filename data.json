@@ -1,5 +1,75 @@
 [
     {
+        "main_date": "First Reported: 2026-11-16 18:44 UTC",
+        "original_date": "2026-11-16 18:44",
+        "_timestamp": 1794854650.0,
+        "articles": [
+            {
+                "title": "Iran, Russia agree on €1.36 bn cost for Rasht-Astara railway",
+                "link": "https://en.mehrnews.com/news/249460/Iran-Russia-agree-on-1-36-bn-cost-for-Rasht-Astara-railway",
+                "source": "Mehr News Agency",
+                "date": "2026-11-16 18:44",
+                "description": "TEHRAN, Nov. 16 (MNA) – Iran and Russia have reached a €1.36 billion agreement for the construction of the Rasht-Astara railway line, finalizing the technical and executive details for the project, a senior Iranian official said.",
+                "_timestamp": 1794854650.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-16 18:44 UTC",
+            "Facts": "Iran and Russia finalized technical and executive agreements for the €1.36 billion Rasht-Astara railway line project. This bilateral infrastructure deal strengthens economic and strategic ties between Tehran and Moscow amidst ongoing regional tensions.",
+            "Macro_Context": "Closer geopolitical and economic coordination between Iran and Russia reinforces safe-haven demand for XAU/USD through persistent Middle East supply and security risks.",
+            "Impact_Timing": "Intraday to 48 hours",
+            "Timeframe": "7-14d",
+            "XAUUSD_Impact": "Mild Bullish",
+            "Probability_Percent": 59,
+            "Orderflow_Price_Target": "$3870.76"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 13.22
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 14:25 UTC | Last Update: 2026-11-16 18:40 UTC",
+        "original_date": "2026-11-16 14:25",
+        "_timestamp": 1794854407.0,
+        "articles": [
+            {
+                "title": "Sector Update: Energy Stocks Decline Premarket Monday",
+                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-decline-premarket-142547112.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 14:25",
+                "description": "Energy stocks were declining premarket Monday, with the State Street Energy Select Sector SPDR ETF (",
+                "_timestamp": 1794839147.0
+            },
+            {
+                "title": "Sector Update: Energy Stocks Decline Monday Afternoon",
+                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-decline-monday-184007140.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 18:40",
+                "description": "Energy stocks were lower Monday afternoon, with the NYSE Energy Sector Index and the State Street En",
+                "_timestamp": 1794854407.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-16 18:40 UTC",
+            "Facts": "[Update 2026-11-16 18:40 UTC via Yahoo Finance Oil]: Energy stocks extended their losses into Monday afternoon, mirroring a sharp drop in Brent crude prices. Broader commodity weakness weighed heavily on sector indices throughout the session.",
+            "Macro_Context": "Declining energy prices and Brent oil drops create a mixed inflationary picture, but lower energy input costs can temporarily ease headline inflation metrics while boosting safe-haven liquidity.",
+            "Impact_Timing": "Immediate",
+            "Timeframe": "Intraday",
+            "XAUUSD_Impact": "Neutral to Bullish",
+            "Probability_Percent": 62,
+            "Orderflow_Price_Target": "$3851.07"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 13.22
+    },
+    {
         "main_date": "First Reported: 2026-11-15 06:36 UTC | Last Update: 2026-11-16 18:37 UTC",
         "original_date": "2026-11-15 06:36",
         "_timestamp": 1794854253.0,
@@ -63,114 +133,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:24 UTC",
-        "original_date": "2026-11-16 18:24",
-        "_timestamp": 1794853458.0,
-        "articles": [
-            {
-                "title": "Independence Gold Launches Diamond Drill Program at 3Ts Gold and Silver Project",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/independence-gold-launches-diamond-drill-182418645.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-16 18:24",
-                "description": "Independence Gold (IGO.V) began a 10,000-meter diamond drill program at its 3Ts Gold and Silver Proj",
-                "_timestamp": 1794853458.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 18:24 UTC",
-            "Facts": "Independence Gold initiated a 10,000-meter diamond drill program at its 3Ts Gold and Silver Project. | Routine junior mining exploration updates carry no macro or systemic transmission to spot XAU/USD pricing.",
-            "Macro_Context": "Corporate junior mining exploration activities have zero influence on macro gold bullion liquidity or spot pricing dynamics.",
-            "Impact_Timing": "None",
-            "Timeframe": "Structural Weekly Regime",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 10,
-            "Orderflow_Price_Target": "3847.32"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 18:20 UTC",
-        "original_date": "2026-11-16 18:20",
-        "_timestamp": 1794853202.0,
-        "articles": [
-            {
-                "title": "2 Stocks With Dividend Yields of 4% or More to Buy in November",
-                "link": "https://www.fool.com/investing/2026/11/16/2-stocks-with-dividend-yields-of-4-or-more-to-buy-in-november/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-16 18:20",
-                "description": "These two stocks can provide reliable income for your portfolio for years to come.",
-                "_timestamp": 1794853202.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 18:20 UTC",
-            "Facts": "A financial publication highlighted two dividend stocks offering yields of 4% or more for portfolio income. | General retail dividend roundups lack systemic macro relevance or direct transmission to monetary policy.",
-            "Macro_Context": "General equity dividend commentary does not impact Treasury yields, currency flows, or gold spot pricing.",
-            "Impact_Timing": "None",
-            "Timeframe": "Structural Weekly Regime",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 10,
-            "Orderflow_Price_Target": "3847.32"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-14 22:30 UTC | Last Update: 2026-11-16 18:19 UTC",
-        "original_date": "2026-11-14 22:30",
-        "_timestamp": 1794853165.0,
-        "articles": [
-            {
-                "title": "“Being Prudent”: TSMC Stock Has Surged 41% in a Year. Is It Too Late to Buy?",
-                "link": "https://www.tikr.com/blog/being-prudent-tsmc-stock-has-surged-41-in-a-year-is-it-too-late-to-buy?ref=yahoofinance&tlnk=yf-261114-6285hcp3&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-14 22:30",
-                "description": "Key TakeawaysTaiwan Semiconductor Manufacturing (TSM) has gained 41% over the past year, closing at $398. 73 on November 13, but remains 18% below its 52-week high.",
-                "_timestamp": 1794695454.0
-            },
-            {
-                "title": "What TSMC Doubters Got Wrong",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/tsmc-doubters-got-wrong-200527158.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 20:05",
-                "description": "If Taiwan Semiconductor Manufacturing was on your watchlist instead of in your portfolio over the last year, the gap in outcome may feel sharp. For Taiwan Semiconductor Manufacturing shareholders, the return over the past year was 66.4%, including dividends. That move now sits alongside record Q3 2026 profitability and fresh plans for heavier US expansion, inviting a tougher question. If analysts already flagged margin dilution risks from oversea",
-                "_timestamp": 1794773127.0
-            },
-            {
-                "title": "TSMC Stocks Slide 5.7% Despite October Sales Jumping 59.7% to a 2026 High",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/tsmc-stocks-slide-5-7-181925082.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-16 18:19",
-                "description": "Record monthly revenue and a $500 million Anthropic stake could not shield TSMC's ADRs from Monday's AI chip selloff.",
-                "_timestamp": 1794853165.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 18:19 UTC",
-            "Facts": "[Update 2026-11-16 18:19 UTC via Yahoo Finance Nasdaq]: TSMC ADRs slid 5.7% amid a broader AI chip selloff despite reporting record October monthly sales jumping 59.7% and a $500 million Anthropic stake. | Taiwan Semiconductor previously posted record Q3 2026 profitability alongside aggressive US expansion plans. | Widespread tech sector pullbacks impact broader equity liquidity and trigger cross-asset risk adjustments.",
-            "Macro_Context": "Intense tech sector volatility and Nasdaq weakness (down 2.58%) trigger broad risk-off margin adjustments, creating cross-asset liquidity flows that directly influence gold.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24h Intraday Pulse",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 70,
-            "Orderflow_Price_Target": "3870.77"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 52.22
-    },
-    {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 18:14 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 18:35 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794852873.0,
+        "_timestamp": 1794854106.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -915,6 +880,847 @@
                 "date": "2026-11-16 18:14",
                 "description": "Investing.com -- The big risk is not the personal scandal.",
                 "_timestamp": 1794852873.0
+            },
+            {
+                "title": "Why Alphabet (GOOGL) May Be the Most Complete NVIDIA Alternative",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/why-alphabet-googl-may-most-182432727.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:24",
+                "description": "Alphabet Inc. (NASDAQ:GOOGL) took 6th place on our list of 10 Stocks to Buy Following Jensen Huang’s Departure. For three years, the AI trade had one face. Now it has an interim CEO. On November 12, Jensen Huang resigned as chief executive and board member of one of the largest companies in the world, hours […]",
+                "_timestamp": 1794853472.0
+            },
+            {
+                "title": "Nvidia falls 49 spots on the Roundtable 100 following CEO's exit",
+                "link": "https://www.thestreet.com/crypto/markets/nvidia-falls-49-spots-on-the-roundtable-100-following-ceos-exit?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:29",
+                "description": "HIVE Digital executive chairman Frank Holmes says Nvidia’s leadership transition could matter more to investors than the personal scandal.",
+                "_timestamp": 1794853766.0
+            },
+            {
+                "title": "NVDA? ‘I Wouldn’t Touch It With a Barge Pole,’ Says Quantum Strategy’s David Roche",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63311476/nvidia-david-roche?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:35",
+                "description": "\"I wouldn’t touch it with a barge pole,\" Quantum Strategy’s David Roche said of Nvidia Corp. (NASDAQ:NVDA). He’s out of the AI trade and says Nvidia lost its main driver of growth when Jensen Huang resigned. Roche said Huang’s chances...",
+                "_timestamp": 1794854106.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 18:35 UTC",
+            "Facts": "[Update 2026-11-16 18:35 UTC via Yahoo Finance Nasdaq]: Nvidia faces intense market scrutiny following Jensen Huang's unexpected resignation and ongoing questions surrounding neocloud financing roles. Wall Street analysts and market commentators have voiced severe skepticism regarding the company's near-term growth drivers.",
+            "Macro_Context": "Systemic tech sector distress and equity market selloffs drive capital rotation away from mega-cap risk assets and into safe-haven gold bullion.",
+            "Impact_Timing": "Immediate",
+            "Timeframe": "7-14d",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 72,
+            "Orderflow_Price_Target": "$3880.16"
+        },
+        "eval_status": "HIT",
+        "max_dd_usd": 11.82
+    },
+    {
+        "main_date": "First Reported: 2026-11-14 15:25 UTC | Last Update: 2026-11-16 18:35 UTC",
+        "original_date": "2026-11-14 15:25",
+        "_timestamp": 1794854102.0,
+        "articles": [
+            {
+                "title": "Warren Buffett Said This 1 Mistake Cost Berkshire About $10 Billion. Here’s How Investors Can Avoid It.",
+                "link": "https://www.fool.com/investing/2026/11/14/warren-buffett-said-this-1-mistake-cost-berkshire-about-usd10-billion-here-s-how-investors-can-avoid-it/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-14 15:25",
+                "description": "Buffett said that hesitating over a small price gap on Walmart cost Berkshire about $10 billion. Here’s how to avoid the same trap.",
+                "_timestamp": 1794669903.0
+            },
+            {
+                "title": "Warren Buffett's Berkshire Compounded at More Than 19% a Year Over Six Decades, Nearly Double the S&P 500's 10% Return. Can Investors Still Apply That Playbook Today?",
+                "link": "https://www.fool.com/investing/2026/11/14/warren-buffetts-berkshire-compounded-at-more-than-19-a-year-over-six-decades-nearly-double-the-sp-500s-10-return-can-investors-still-apply-that-playbook-today/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-14 17:54",
+                "description": "Buffett’s wisdom is timeless.",
+                "_timestamp": 1794678842.0
+            },
+            {
+                "title": "Warren Buffett’s Berkshire Just Hit a Record High as Nvidia Sank. A 67-Year-Old Who Bought 1,000 Shares in 2016 Can Sell $106,000 of It This Year and Pay 0% on the Gain",
+                "link": "https://247wallst.com/investing/2026/11/14/warren-buffetts-berkshire-just-hit-a-record-high-as-nvidia-sank-a-67-year-old-who-bought-1000-shares-in-2016-can-sell-106000-of-it-this-year-and-pay-0-on-the-gain/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-14 23:53",
+                "description": "Berkshire Hathaway rose all five days and closed Friday at a record $592.94, up 3.9% in the week Nvidia lost its CEO and fell 12.7%. A 67-year-old who bought 1,000 Class B shares ten years ago at $157.93 holds $592,940 and a $435,010 gain in a stock that pays no dividend. Under 2026's 0% capital gains ceiling he can sell 179 shares, about $106,000, and owe nothing on the gain; the only cost is $2,075 of tax on Social Security that the sale makes ",
+                "_timestamp": 1794700380.0
+            },
+            {
+                "title": "This 27-Year-Old Warning From Warren Buffett Is More Important Than Ever for Investors Today",
+                "link": "https://www.fool.com/investing/2026/11/15/27-year-old-warning-warren-buffett-more-important-than-ever/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-15 19:50",
+                "description": "It's easy to predict that new technology will have a huge impact on society; it's not so easy to predict which companies will profit.",
+                "_timestamp": 1794772201.0
+            },
+            {
+                "title": "Nasdaq Stock Market Correction: These 6 Words From Warren Buffett Are More Relevant Than Ever",
+                "link": "https://www.fool.com/investing/2026/11/16/nasdaq-stock-market-correction-these-6-words-from-warren-buffett-are-more-relevant-than-ever/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:35",
+                "description": "The Nasdaq recently fell into correction territory.",
+                "_timestamp": 1794854102.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 18:35 UTC",
+            "Facts": "[Update 2026-11-16 18:35 UTC via Yahoo Finance Nasdaq]: Berkshire Hathaway shares hit record highs as investors revisited classic long-term value investing principles amid broader market corrections. Commentary focused on historical wisdom and tax efficiency rather than macroeconomic policy shifts.",
+            "Macro_Context": "Isolated equity performance of a single holding company has minimal direct transmission to spot gold or systemic liquidity channels.",
+            "Impact_Timing": "None",
+            "Timeframe": "Intraday",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 50,
+            "Orderflow_Price_Target": "$3854.43"
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 18:35 UTC",
+        "original_date": "2026-11-16 18:35",
+        "_timestamp": 1794854102.0,
+        "articles": [
+            {
+                "title": "Why Intel Stock Is Falling Monday",
+                "link": "https://www.fool.com/investing/2026/11/16/why-intel-stock-is-falling-monday/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:35",
+                "description": "Intel is getting hit along with the rest of the chip sector ahead of Nvidia's earnings, and a new lawsuit over its late-October plunge adds to the noise.",
+                "_timestamp": 1794854102.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 18:35 UTC",
+            "Facts": "Intel shares experienced sharp downward pressure alongside the broader semiconductor sector ahead of key tech earnings, compounded by a fresh shareholder lawsuit over prior losses. The developments add further friction to an already struggling hardware market.",
+            "Macro_Context": "Broad semiconductor sector weakness deepens Nasdaq correction pressures, prompting risk-off flows that support safe-haven gold demand.",
+            "Impact_Timing": "Immediate",
+            "Timeframe": "Intraday",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 70,
+            "Orderflow_Price_Target": "$3870.76"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 13.22
+    },
+    {
+        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-16 18:28 UTC",
+        "original_date": "2026-11-05 15:15",
+        "_timestamp": 1794853682.0,
+        "articles": [
+            {
+                "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
+                "link": "https://www.fool.com/investing/2026/11/05/nvidia-vs-taiwan-semiconductor-the-ai-revolution-i/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:22",
+                "description": "These semiconductor giants are among the biggest beneficiaries of the AI chip boom, and they are expected to sustain solid growth levels over the long run.",
+                "_timestamp": 1793892120.0
+            },
+            {
+                "title": "Amazon and Google Could Outperform Nvidia as AI Trade Enters New Phase, Says Joseph Carlson",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62926393/amazon-google-nvidia?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:15",
+                "description": "Amazon (NASDAQ:AMZN) and Alphabet (NASDAQ:GOOGL) could outperform Nvidia (NASDAQ:NVDA) as AI investors shift from companies selling the hardware to those turning it into revenue, YouTube investor Joseph Carlson argues. A day after Democrats swept Congress and data-center critics won key...",
+                "_timestamp": 1793891708.0
+            },
+            {
+                "title": "NVDA vs AMD: which stock has the better bounce setup",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvda-vs-amd-stock-better-155640375.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 15:56",
+                "description": "Investing.com -- The better tactical bounce candidate is NVIDIA Corporation (NVDA), not because its trend is healthy, but because Advanced Micro Devices Inc (AMD) is showing heavier damage and volatility.",
+                "_timestamp": 1793894200.0
+            },
+            {
+                "title": "Not Nvidia. Not Micron. This Dutch Company Controls a Key Bottleneck of AI Chip Production.",
+                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-micron-this-dutch-company-controls/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 17:57",
+                "description": "ASML makes the only machines that can print the world's most advanced chips, and its customers are already asking for delivery slots in 2029 and 2030.",
+                "_timestamp": 1793901420.0
+            },
+            {
+                "title": "Not Nvidia. Not AMD. 2 Chip Stocks I'd Buy Before the End of the Year.",
+                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-amd-2-chip-stocks-id-buy-in-2026/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 18:33",
+                "description": "Micron and Taiwan Semiconductor are key suppliers to the computing unit designers.",
+                "_timestamp": 1793903580.0
+            },
+            {
+                "title": "Advanced Micro Devices vs. Taiwan Semiconductor Manufacturing: The AI Sell-Off Is Exposing a Critical Difference Investors Shouldn't Ignore for 2027",
+                "link": "https://www.fool.com/coverage/better-buy/2026/11/05/advanced-micro-devices-vs-taiwan-semiconductor-manufacturing-the-ai-sell-off-is-exposing-a-critical-difference-investors-shouldn-t-ignore-for-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 20:20",
+                "description": "For investors looking toward 2027, profitability and pricing power could matter more than ever.",
+                "_timestamp": 1793910002.0
+            },
+            {
+                "title": "Prediction: These Will Be Nvidia's and Palantir's Stock Prices by 2027 (Hint: Only 1 Is a Buy)",
+                "link": "https://www.fool.com/investing/2026/11/05/prediction-these-will-be-nvidias-and-palantirs-sto/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-05 19:46",
+                "description": "Nvidia and Palantir are two popular AI picks, but only one makes sense right now.",
+                "_timestamp": 1793907960.0
+            },
+            {
+                "title": "Should You Buy Nvidia Stock Before Nov. 17?",
+                "link": "https://www.fool.com/investing/2026/11/05/should-you-buy-nvidia-stock-before-nov-17/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 02:20",
+                "description": "The AI chip maker is trading at a discount.",
+                "_timestamp": 1793931600.0
+            },
+            {
+                "title": "Should You Buy Nvidia Before Nov. 17? The Evidence is Piling Up and Here’s What It Shows.",
+                "link": "https://www.fool.com/investing/2026/11/06/should-you-buy-nvidia-before-nov-17-the-evidence-is-piling-up-and-here-s-what-it-shows/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 09:25",
+                "description": "Investing in Nvidia has been a sure bet in recent years.",
+                "_timestamp": 1793957102.0
+            },
+            {
+                "title": "Nvidia Shares Suffer Worst Day Since January 2025 -- AI Fears Trigger $450 Billion Rout",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-shares-suffer-worst-day-104000765.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 10:40",
+                "description": "Nvidia Stock Plunges as Texas Data Center Restrictions Put AI Boom at Risk",
+                "_timestamp": 1793961600.0
+            },
+            {
+                "title": "Nvidia Isn’t the Only AI Stock That Could Surprise Wall Street in 2027",
+                "link": "https://247wallst.com/investing/2026/11/06/nvidia-isnt-the-only-ai-stock-that-could-surprise-wall-street-in-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 14:03",
+                "description": "Memory chips were once the dullest corner of semiconductors, yet one stock has tripled while trading at a fraction of the market's earnings multiple. Wall Street and the market disagree sharply on what comes next, and the gap could close fast.",
+                "_timestamp": 1793973810.0
+            },
+            {
+                "title": "Forget Nvidia. Here’s the Company Behind the Chips",
+                "link": "https://247wallst.com/investing/2026/11/06/forget-nvidia-heres-the-company-behind-the-chips/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:03",
+                "description": "Every AI chip from Nvidia and Broadcom runs through one company's fabs, yet that company trades at a fraction of the valuation its customers command. The gap raises a question worth answering before the market closes it.",
+                "_timestamp": 1793984581.0
+            },
+            {
+                "title": "NVIDIA Corporation (NVDA) Is Taking AI Beyond Chips: Here’s What Could Drive Its Next Growth Phase",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-corporation-nvda-taking-ai-173307195.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 17:33",
+                "description": "Liontrust Investment Partners recently released its “GF Global Innovation Fund” Q3 2026 investor letter. A copy of the letter can be downloaded here. The Fund returned -3.0% in the third quarter of 2026, underperforming the MSCI AC World Index, which gained 1.6%. However, the Fund remained ahead year to date, returning 17.9% compared with 13.0% […]",
+                "_timestamp": 1793986387.0
+            },
+            {
+                "title": "Nvidia Is Reportedly Pouring Billions Into AI's Next Big Bottleneck: Advanced Chip Packaging",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63010319/nvidia-chip-packaging?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 20:30",
+                "description": "Nvidia (NASDAQ:NVDA) is reportedly financing billions of dollars in new factories and equipment to overcome a shortage limiting how many AI chips the industry can produce. The money is going to Taiwan’s Siliconware Precision Industries (SPIL), a subsidiary of ASE...",
+                "_timestamp": 1793997007.0
+            },
+            {
+                "title": "Dell vs. Nvidia: Chip Stocks Just Suffered Their Worst Sell-Off Since 2020. Which Is the Better Buy for 2027?",
+                "link": "https://www.fool.com/coverage/better-buy/2026/11/06/dell-vs-nvidia-chip-stocks-just-suffered-their-worst-sell-off-since-2020-which-is-the-better-buy-for-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 19:50",
+                "description": "Dell's cash flow and NVIDIA's margins tell very different stories, and a sizable valuation gap may matter more than either name suggests.",
+                "_timestamp": 1793994602.0
+            },
+            {
+                "title": "Micron vs. Nvidia: Which AI Stock Is a Better Buy for 2027?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/micron-vs-nvidia-ai-stock-211242383.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-06 21:12",
+                "description": "Micron (MU) and Nvidia (NVDA) have become major beneficiaries of the AI boom. Nvidia leads in AI chips, while Micron supplies memory used in AI systems. Both companies could benefit from continued spending on data centers in 2027. In terms of price performance, Micron stock has gained 130% year-to-date, while Nvidia stock has fallen about 3%. Still, analysts see room for both stocks to rise. TipRanks data shows Micron has greater forecast upside.",
+                "_timestamp": 1793999562.0
+            },
+            {
+                "title": "A Retiree Who Bought 1,000 Nvidia Shares at $122 Just Watched Chips Have Their Worst Day Since 2020",
+                "link": "https://247wallst.com/investing/2026/11/07/a-retiree-who-bought-1000-nvidia-shares-at-122-just-watched-chips-have-their-worst-day-since-2020/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 05:06",
+                "description": "Chip stocks had their worst day since 2020. Here is what it did to one retiree's 1,000 Nvidia shares, and the case for holding or trimming.",
+                "_timestamp": 1794028012.0
+            },
+            {
+                "title": "Not Nvidia. Not Micron. After the Chip Sell-Off, I'd Buy This AI Stock and Hold It Forever.",
+                "link": "https://www.fool.com/investing/2026/11/07/not-nvidia-not-micron-after-the-chip-sell-off-id-b/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 14:36",
+                "description": "The market is shifting away from chip stocks, but that could create some great opportunities for investors.",
+                "_timestamp": 1794062160.0
+            },
+            {
+                "title": "Nvidia Stock Has More Than 60% Upside According to Analysts' Average Price Target. Should You Buy While the AI Trade Wobbles?",
+                "link": "https://www.fool.com/investing/2026/11/07/nvidia-stock-has-more-than-60-upside-according-to/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-07 18:20",
+                "description": "Nvidia stock looks cheaper, and its growth prospects are well intact.",
+                "_timestamp": 1794075600.0
+            },
+            {
+                "title": "Why Nvidia at 13 Times Expected Earnings Still Isn’t Cheap",
+                "link": "https://247wallst.com/investing/2026/11/08/why-nvidia-at-13-times-expected-earnings-still-isnt-cheap/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 16:08",
+                "description": "Nvidia's earnings multiple looks like a bargain next to its AI growth, yet a few shaky assumptions could erase that discount fast. Three signals in the upcoming earnings report will show whether the cheapness is real or an illusion.",
+                "_timestamp": 1794154080.0
+            },
+            {
+                "title": "America’s AI Spending Boom Just Crossed a Staggering $1 Trillion Milestone",
+                "link": "https://247wallst.com/investing/2026/11/08/americas-ai-spending-boom-just-crossed-a-staggering-1-trillion-milestone/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 16:15",
+                "description": "Record shipments of AI hardware are pouring into American data centers, yet NVIDIA's stock has dropped more than 21% in a month. What does the import data reveal that the share price refuses to show, and who else profits?",
+                "_timestamp": 1794154533.0
+            },
+            {
+                "title": "This Stock Is a Nearly Guaranteed Winner From the AI Infrastructure Buildout",
+                "link": "https://www.fool.com/investing/2026/11/08/this-stock-is-a-nearly-guaranteed-winner-from-the/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 18:42",
+                "description": "Taiwan Semiconductor is a key supplier to almost every major logic chip designer.",
+                "_timestamp": 1794163320.0
+            },
+            {
+                "title": "AMD or Nvidia: Which AI Chip Stock Would I Buy With $1,000 Today?",
+                "link": "https://www.fool.com/investing/2026/11/08/amd-or-nvidia-which-ai-chip-stock-would-i-buy-with/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-08 23:05",
+                "description": "The leading GPU makers are two of the top AI investments in the market.",
+                "_timestamp": 1794179100.0
+            },
+            {
+                "title": "Asia stocks roar back as Taiwan jumps 6%, Nvidia probe rattles AI trade",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/asia-stocks-roar-back-taiwan-042552045.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 04:25",
+                "description": "Investing.com -- Asian stocks rallied on Monday, following a recovery on Wall Street, although concerns over an investigation involving Nvidia CEO Jensen Huang tempered gains as investors reassessed the outlook for the artificial intelligence trade.",
+                "_timestamp": 1794198352.0
+            },
+            {
+                "title": "3 US Chip Stocks for AI Exposure With Lower China Risk",
+                "link": "https://finance.yahoo.com/technology/ai/articles/3-us-chip-stocks-ai-021219756.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 02:12",
+                "description": "Nvidia’s internal probe into CEO Jensen Huang and possible foreign intelligence targeting has put governance and national security risk in the spotlight, and that ripple hits anything tied to the AI chip story. Investors hunting for exposure without leaning heavily on China are now scanning for alternatives that could benefit as attention broadens. This article walks through three U.S. listed semiconductor and chip equipment stocks from our low C",
+                "_timestamp": 1794190339.0
+            },
+            {
+                "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise with Nvidia stock, AI trade in focus",
+                "link": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 09:05",
+                "description": "All eyes will be on the artificial intelligence trade and Nvidia stock following a volatile post-election shake-up in markets and the revelation that Nvidia's board is opening an investigation into CEO Jensen Huang over his affair.",
+                "_timestamp": 1794215135.0
+            },
+            {
+                "title": "AI Chip Stocks to Watch After TSMC and Nvidia Lift Sentiment",
+                "link": "https://finance.yahoo.com/technology/ai/articles/ai-chip-stocks-watch-tsmc-100834448.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 10:08",
+                "description": "AI hardware and semiconductor stocks just swung from political worry to renewed excitement, as TSMC, Nvidia and their peers helped pull Asian markets off the mat and lent support to U.S. futures. For investors, that kind of sharp mood shift can quickly reprice both perceived winners and overlooked laggards. This article unpacks the news triggers and highlights three stocks exposed to these AI headlines that may warrant a closer look. The stocks c",
+                "_timestamp": 1794218914.0
+            },
+            {
+                "title": "Google Escalates Nvidia Rivalry With Specialized Versions of AI Chips",
+                "link": "https://finance.yahoo.com/technology/ai/articles/google-escalates-nvidia-rivalry-specialized-123000247.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 12:30",
+                "description": "Alphabet Inc.'s Google is rolling out a broader array of artificial intelligence chips, aiming to capitalize on its rapid ascent as a challenger to Nvidia Corp. in a market worth hundreds of billions of dollars.",
+                "_timestamp": 1794227400.0
+            },
+            {
+                "title": "Not AMD. Not Intel. This Is the Artificial Intelligence (AI) Chip Stock Nvidia Should Fear Most.",
+                "link": "https://www.fool.com/investing/2026/11/09/not-amd-not-intel-this-is-the-artificial-intellige/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 12:20",
+                "description": "AMD and Intel both offer alternative chip architectures to Nvidia's GPUs, but there's a bigger threat in the background.",
+                "_timestamp": 1794226800.0
+            },
+            {
+                "title": "Google's chip business is on a faster track than Nvidia's own AI boom",
+                "link": "https://finance.yahoo.com/markets/article/googles-chip-business-is-on-a-faster-track-than-nvidias-own-ai-boom-135447046.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 13:54",
+                "description": "As Nvidia investigates its CEO, Google is rolling out more chips built to win Nvidia's customers on price.",
+                "_timestamp": 1794232487.0
+            },
+            {
+                "title": "Nvidia vs. AMD: Why Lisa Su's company is a great alternative for investors",
+                "link": "https://finance.yahoo.com/video/nvidia-vs-amd-why-lisa-170000159.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 17:00",
+                "description": "Yahoo Finance Executive Editor Brian Sozzi looks back at his conversation with AMD (AMD) CEO Lisa Su to highlight viable alternatives for Nvidia (NVDA) investors to consider.",
+                "_timestamp": 1794243600.0
+            },
+            {
+                "title": "Nvidia's 'Robust' Demand Trends Support Strong Quarterly Outlook, RBC Says",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-apos-apos-robust-apos-164114568.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 16:41",
+                "description": "Nvidia (NVDA) is expected to deliver another \"strong quarter\" and provide an outlook above expectati",
+                "_timestamp": 1794242474.0
+            },
+            {
+                "title": "Trump’s Former AI Czar Says “I Get Really Worried About 2028”: That’s a Big Problem for Nvidia",
+                "link": "https://www.tikr.com/blog/trumps-former-ai-czar-says-i-get-really-worried-about-2028-thats-a-big-problem-for-nvidia?ref=yahoofinance&tlnk=yf-261109-7822xmhh&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 19:56",
+                "description": "Key TakeawaysOn the Nov. 7 episode of All-In, Trump’s former AI czar David Sacks said data center spending should still be meaningful in 2027, but he gets “really worried about 2028” because nobody will commit $50 billion to a gigawatt site under political uncertainty.",
+                "_timestamp": 1794254197.0
+            },
+            {
+                "title": "Nvidia vs. Alphabet: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
+                "link": "https://www.fool.com/investing/2026/11/09/nvidia-vs-alphabet-the-ai-revolution-is-big-enough/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 20:50",
+                "description": "Which part of the AI trade is more likely to better serve investors?",
+                "_timestamp": 1794257400.0
+            },
+            {
+                "title": "Nvidia Stock’s (NVDA) Sell-Off Looks Overdone Ahead of Q3",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-nvda-sell-off-211700494.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 21:17",
+                "description": "Nvidia (NVDA) stock’s sell-off looks overdone to me, ahead of Q3 earnings. The artificial intelligence (AI) computing giant remains about 22% below its 52-week high after Friday’s premarket rebound. Yet CEO Jensen Huang reminded us just two weeks ago that “Demand is extraordinary. Capacity is the constraint.” That hardly describes a business losing any momentum. I believe political uncertainty deserves attention, but recent deployments suggest th",
+                "_timestamp": 1794259020.0
+            },
+            {
+                "title": "Analyzing AMD as a near-term beneficiary of Nvidia’s leadership uncertainty",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/analyzing-amd-near-term-beneficiary-210952293.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-09 21:09",
+                "description": "Investing.com -- The tape suggests investors are already treating Advanced Micro Devices (AMD) as a relative winner. It trades at $513.73 (+14.41%) as of Nov 9, 3:38 PM EST. NVIDIA (NVDA) is at $177.20 (-5.06%) at the same time. That’s a roughly 19-point gap in one session. AMD is also up about 134% YTD but down 15.6% over the past month, so it isn’t a clean one-way run.",
+                "_timestamp": 1794258592.0
+            },
+            {
+                "title": "Market Chatter: Nvidia's Most Advanced Chips Accessed by China's Moonshot AI",
+                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-nvidia-apos-most-093250675.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 09:32",
+                "description": "Nvidia's (NVDA) B300 GPUs were accessed by China's Moonshot AI earlier this year, Bloomberg News rep",
+                "_timestamp": 1794303170.0
+            },
+            {
+                "title": "Nvidia “Hasn’t Really Had to Worry About Competition” for Four Years. AMD Is Closing In",
+                "link": "https://www.tikr.com/blog/nvidia-hasnt-really-had-to-worry-about-competition-for-four-years-amd-is-closing-in?ref=yahoofinance&tlnk=yf-261110-6fff25hv&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 10:20",
+                "description": "Key TakeawaysAMD rose Monday as Nvidia fell on a board inquiry involving CEO Jensen Huang. AMD’s data center sales are a tenth of Nvidia’s, but AMD expects 2027 revenue to grow more than 80%, faster than analysts expect from Nvidia.",
+                "_timestamp": 1794306010.0
+            },
+            {
+                "title": "What could NVIDIA’s latest risks mean for the AI chip ecosystem?",
+                "link": "https://finance.yahoo.com/technology/ai/articles/could-nvidia-latest-risks-mean-124641710.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 12:46",
+                "description": "Investing.com -- Analysts at Bank of America, Mizuho and Raymond James said in research notes that while governance concerns surrounding Nvidia (NASDAQ:NVDA) add near-term uncertainty, they are sticking with bullish ratings because the long-term fundamentals remain strong.",
+                "_timestamp": 1794314801.0
+            },
+            {
+                "title": "Microsoft Is Back Above $4 Trillion and Only $266 Billion Behind Nvidia",
+                "link": "https://247wallst.com/investing/2026/11/10/microsoft-is-back-above-4-trillion-and-only-266-billion-behind-nvidia/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 16:53",
+                "description": "Two AI giants just posted blockbuster quarters, yet only one is watching its stock slide while its CEO faces a board investigation. What separates their paths, and could the rankings flip after NVIDIA's next earnings report?",
+                "_timestamp": 1794329635.0
+            },
+            {
+                "title": "What Does Taiwan Semiconductor Manufacturing (TSM) AI Revenue Surge Mean For Investors?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/does-taiwan-semiconductor-manufacturing-tsm-181308572.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 18:13",
+                "description": "Taiwan Semiconductor Manufacturing (NYSE:TSM) reported newly disclosed revenue tied to AI chip production that sharply outpaces several semiconductor peers. The latest figures highlight a widening performance gap between TSMC and rival foundries that are reporting very different AI related trends. The revenue surge underscores TSMC's role as a key supplier for advanced AI processors used in data centers and high performance computing. The surge i",
+                "_timestamp": 1794334388.0
+            },
+            {
+                "title": "AMD Gains 25% Against NVDA in 2 Days: Chip Analyst Says Lisa Su Is ‘at Her Best’",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63115849/amd-lisa-su?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 19:30",
+                "description": "Advanced Micro Devices (NASDAQ:AMD) shares surged 13.3% Monday following an analyst upgrade and a new Google AI chip deal, while Nvidia (NASDAQ:NVDA) fell 4.3% amid an investigation involving CEO Jensen Huang. AMD is up around 25% against NVDA since the...",
+                "_timestamp": 1794339008.0
+            },
+            {
+                "title": "Will Jensen Huang Still Run Nvidia at the End of 2027? Two Analysts Disagree",
+                "link": "https://www.fool.com/investing/2026/11/10/will-jensen-huang-still-run-nvidia-at-the-end-of-2027-two-analysts-disagree/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 21:11",
+                "description": "Two Motley Fool analysts take sides on this hot topic.",
+                "_timestamp": 1794345061.0
+            },
+            {
+                "title": "Nvidia Stock Just Lost 10% in 1 Day. Should You Buy It Before It Reports Earnings on Nov. 17?",
+                "link": "https://www.fool.com/investing/2026/11/10/nvidia-stock-just-lost-10-in-1-day-should-you-buy-it-before-it-reports-earnings-on-nov-17/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 22:28",
+                "description": "The chipmaker usually beats expectations, but the market may be looking for more this time.",
+                "_timestamp": 1794349682.0
+            },
+            {
+                "title": "2 Reasons AMD Can Still Outperform by 2030",
+                "link": "https://www.fool.com/investing/2026/11/10/2-reasons-amd-can-still-outperform-by-2030/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-10 23:33",
+                "description": "After a pullback, AMD’s agentic AI CPU demand and multiyear GPU runway give it a path to beat the market through 2030.",
+                "_timestamp": 1794353582.0
+            },
+            {
+                "title": "Why it will be a ‘painful 2027’ for tech executives, especially Nvidia CEO Jensen Huang",
+                "link": "https://www.cnn.com/2026/11/10/business/video/breaksitdown-nvidia-final-bid-vod-hrzn?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 02:04",
+                "description": "On the latest episode of “CNN Breaks It Down” Phil Mattingly asks Hadas Gold about what we can expect from congressional investigative hearings into the Nvidia scandal and chip export controls to China. Stream new episodes of “CNN Breaks It Down.” Go to cnn.com/BreaksItDown to watch.",
+                "_timestamp": 1794362698.0
+            },
+            {
+                "title": "“Demand Is Higher Than Supply”: AMD Has Ripped 141% in 2026. Is It Too Late to Buy?",
+                "link": "https://www.tikr.com/blog/demand-is-higher-than-supply-amd-has-ripped-141-in-2026-is-it-too-late-to-buy?ref=yahoofinance&tlnk=yf-261111-hfx46hx6&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 07:35",
+                "description": "Key TakeawaysAMD stock is up 141% in 2026 on Meta’s 6-gigawatt GPU deal and back-to-back record quarters, though it’s still 21% below its October closing high. AMD guided to about $17 billion of fourth-quarter revenue, more than Intel expects, and CEO Lisa Su says demand for AMD’s chips is higher than supply as AI buyers line up a second supplier to Nvidia.",
+                "_timestamp": 1794382514.0
+            },
+            {
+                "title": "Is Nvidia Stock a Buy Before Nov. 17? Here's What I'm Doing.",
+                "link": "https://www.fool.com/investing/2026/11/11/is-nvidia-stock-a-buy-before-nov-17-heres-what-im/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 09:25",
+                "description": "Nvidia is a strong company, but other happenings could derail the investment.",
+                "_timestamp": 1794389100.0
+            },
+            {
+                "title": "Nvidia’s valuation tumbles to a 15-year low. A bargain or a falling knife?",
+                "link": "https://www.marketwatch.com/story/nvidias-valuation-tumbles-to-a-15-year-low-a-bargain-or-a-falling-knife-2ebf6085?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-11 12:16",
+                "description": "The AI giant now trades at a discount to the S&amp;P 500, by one measure. Plus, CoreWeave’s answer to its debt problem and a Veterans Day breather for bonds.",
+                "_timestamp": 1794399360.0
+            },
+            {
+                "title": "Nvidia’s chips are powering China’s AI revolution",
+                "link": "https://uk.finance.yahoo.com/news/nvidia-chips-powering-china-ai-130000071.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 13:00",
+                "description": "If you believe Jensen Huang, Nvidia is now a practical non-entity in China.",
+                "_timestamp": 1794402000.0
+            },
+            {
+                "title": "'Icarus' rise and fall': Analyst downgrades Nvidia stock amid Jensen Huang woes, highlights risks",
+                "link": "https://finance.yahoo.com/markets/article/icarus-rise-and-fall-analyst-downgrades-nvidia-stock-amid-jensen-huang-woes-highlights-risks-131204555.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 13:12",
+                "description": "Wall Street gets more cautious on Nvidia.",
+                "_timestamp": 1794402724.0
+            },
+            {
+                "title": "Analysis: Is Nvidia too big to fail? Its AI financing web raises the stakes",
+                "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+                "source": "CNBC Economy",
+                "date": "2026-11-11 18:09",
+                "description": "The tech giant's web of ties to other companies is raising the possibility that it could do far-reaching economic and financial damage.",
+                "_timestamp": 1794420590.0
+            },
+            {
+                "title": "Dell Technologies vs. Taiwan Semiconductor: Which Technology Stock Is a Better Buy for 2027?",
+                "link": "https://www.fool.com/coverage/better-buy/2026/11/11/dell-technologies-vs-taiwan-semiconductor-which-technology-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-11 23:50",
+                "description": "Dell trades at a far lower forward multiple, but Taiwan Semiconductor's 44.6% net margin tells a very different story about pricing power.",
+                "_timestamp": 1794441002.0
+            },
+            {
+                "title": "More Bad News for NVIDIA. With Board Planning to Boot Jensen Huang, Sam Altman Reveals Master Plan to Stop Buying Their Chips",
+                "link": "https://247wallst.com/investing/2026/11/11/more-bad-news-for-nvidia-with-board-planning-to-boot-jensen-huang-sam-altman-reveals-master-plan-to-stop-buying-their-chips/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 00:19",
+                "description": "Nvidia fell 7.9% after hours to $160.03 as the Wall Street Journal reported its board is preparing to oust Jensen Huang. The same day, Sam Altman's remarks to Samsung executives laid out OpenAI's plan: vertically integrated infrastructure cheaper than anyone's, including chips it designs itself, which means paying Nvidia less over time.",
+                "_timestamp": 1794442771.0
+            },
+            {
+                "title": "Nvidia vs. SK Hynix: Which AI Chip Stock Is a Better Buy for 2027?",
+                "link": "https://www.fool.com/coverage/better-buy/2026/11/11/nvidia-vs-sk-hynix-which-ai-chip-stock-is-a-better-buy-for-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 00:20",
+                "description": "Nvidia leads AI chips, but SK Hynix trades at a far lower valuation, so which semiconductor stock deserves a spot in your portfolio?",
+                "_timestamp": 1794442802.0
+            },
+            {
+                "title": "AMD Stock Gets Upgrade. What It Says About the Future of the AI Trade.",
+                "link": "https://finance.yahoo.com/m/e24000fb-771f-351d-965d-387bb526b5ce/amd-stock-gets-upgrade.-what.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 13:19",
+                "description": "Shares of Nvidia's rivals are rising as CEO Jensen Huang faces mounting pressure.",
+                "_timestamp": 1794489540.0
+            },
+            {
+                "title": "Nvidia vs. AMD: Which Is the Better Artificial Intelligence (AI) Stock for 2027 After the Tech Sell-Off?",
+                "link": "https://www.fool.com/investing/2026/11/12/nvidia-vs-amd-which-is-the-better-artificial-intelligence-ai-stock-for-2027-after-the-tech-sell-off/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-12 14:29",
+                "description": "Investors have an easy choice to make if they are looking to buy one of these two semiconductor stocks right now.",
+                "_timestamp": 1794493742.0
+            },
+            {
+                "title": "Asia stocks steady as chipmakers rebound after Nvidia leadership shock",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/asia-stocks-steady-chipmakers-rebound-042520486.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-13 04:25",
+                "description": "Investing.com -- Asian stocks regained some ground on Friday as investors looked beyond the upheaval at Nvidia and returned to technology shares, encouraged by renewed confidence in the artificial intelligence trade and strong demand for semiconductor infrastructure.",
+                "_timestamp": 1794543920.0
+            },
+            {
+                "title": "Nvidia has shed nearly $500 billion in market value this week. It’s still a $4 trillion AI behemoth.",
+                "link": "https://www.marketwatch.com/story/nvidia-has-shed-nearly-500-billion-in-market-value-this-week-its-still-a-4-trillion-ai-behemoth-2ca6eba7?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-13 12:25",
+                "description": "Can Nvidia keep its lead in AI chips without Jensen Huang? Plus, what investors are watching on inflation.",
+                "_timestamp": 1794572700.0
+            },
+            {
+                "title": "AMD’s Path to $700 Just Got Much Easier as Enterprise and Hyperscaler Diversification Tailwinds Rise",
+                "link": "https://247wallst.com/investing/2026/11/13/amds-path-to-700-just-got-much-easier-as-enterprise-and-hyperscaler-diversification-tailwinds-rise/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-13 13:45",
+                "description": "Turmoil at NVIDIA has pushed the biggest computing buyers to hunt for a second AI chip supplier, and AMD is already inside their data centers. But swelling inventory and a thin shipping record could still derail the rally.",
+                "_timestamp": 1794577508.0
+            },
+            {
+                "title": "Taiwan Semiconductor Just Became Even More of an AI Anchor On Nvidia’s -25% Plummet",
+                "link": "https://247wallst.com/investing/2026/11/13/taiwan-semiconductor-just-became-even-more-of-an-ai-anchor-on-nvidias-25-plummet/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-13 13:45",
+                "description": "While one AI chip giant spirals through scandal and a leadership vacuum, a quieter company keeps collecting a check on every chip that ships. One investor explains why he keeps buying it, and why he passes on a famous rival.",
+                "_timestamp": 1794577557.0
+            },
+            {
+                "title": "Nvidia scandal: What’s next for the US tech company?",
+                "link": "https://www.aljazeera.com/news/2026/11/13/nvidia-scandal-whats-next-for-the-us-tech-company?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-13 13:36",
+                "description": "What happens next at one of the world&#039;s most valuable companies will have repercussions far beyond Silicon Valley.",
+                "_timestamp": 1794576979.0
+            },
+            {
+                "title": "Insigneo’s Ahmed Riesgo Gauges State of AI Trade After Changes at Nvidia",
+                "link": "https://finance.yahoo.com/video/insigneo-ahmed-riesgo-gauges-state-155153751.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-13 15:51",
+                "description": "Can stocks continue climbing despite uncertainty surrounding interest rates, artificial intelligence, and geopolitics? In this NYSE Live interview, Ahmed Riesgo, Chief Investment Officer at Insigneo, discusses market volatility, the outlook for equities, Federal Reserve policy, AI-related investments, geopolitical developments, and what investors should watch as 2026 comes to a close. Kristen Scholer spoke with Riesgo about Nvidia, hyperscalers, ",
+                "_timestamp": 1794585113.0
+            },
+            {
+                "title": "Wall Street Is Writing Off Nvidia Stock. Here's Why That's a Mistake.",
+                "link": "https://www.fool.com/investing/2026/11/13/wall-street-is-writing-off-nvidia-stock-heres-why/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-13 19:37",
+                "description": "Analysts are cooling a bit on Nvidia.",
+                "_timestamp": 1794598620.0
+            },
+            {
+                "title": "Nvidia Scandal is Poking Real Holes in the AI Trade. But That Doesn’t Mean it’s Over.",
+                "link": "https://finance.yahoo.com/m/8cfa758b-f94e-38fb-92b4-fb2bde5383db/nvidia-scandal-is-poking-real.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-13 19:39",
+                "description": "The Huang rumpus aside, there are still opportunities to buy the dip.",
+                "_timestamp": 1794598740.0
+            },
+            {
+                "title": "Better Chip Stock: Nvidia vs. AMD",
+                "link": "https://www.fool.com/investing/2026/11/13/better-chip-stock-nvidia-vs-amd/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-13 21:43",
+                "description": "The things affecting Nvidia's stock price are not entirely related to the state of its business.",
+                "_timestamp": 1794606182.0
+            },
+            {
+                "title": "Why the biggest risk for investors in 2027 isn't Nvidia — it's inflation",
+                "link": "https://finance.yahoo.com/economy/article/why-the-biggest-risk-for-investors-in-2027-isnt-nvidia--its-inflation-160241059.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-14 16:02",
+                "description": "The Fed has its latest inflation problem to contend with.",
+                "_timestamp": 1794672161.0
+            },
+            {
+                "title": "Why the biggest risk for investors in 2027 isn't Nvidia — it's inflation",
+                "link": "https://finance.yahoo.com/economy/article/why-the-biggest-risk-for-investors-in-2027-isnt-nvidia--its-inflation-160241059.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-14 16:02",
+                "description": "The Fed has its latest inflation problem to contend with.",
+                "_timestamp": 1794672161.0
+            },
+            {
+                "title": "Nvidia earnings collide with Fed's biggest AI challenge under Warsh",
+                "link": "https://www.thestreet.com/fed/fed-warsh-ai-task-force-nvidia-earnings?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-15 14:03",
+                "description": "Fed AI task force takes on potential impact on U.S. economy including inflation, jobs.",
+                "_timestamp": 1794751380.0
+            },
+            {
+                "title": "Forget Jensen Huang’s Resignation. AMD May Be Nvidia’s Biggest Threat in 2027",
+                "link": "https://247wallst.com/investing/2026/11/15/forget-jensen-huangs-resignation-amd-may-be-nvidias-biggest-threat-in-2027/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-15 17:09",
+                "description": "AI labs that once treated NVIDIA as the only option are quietly rewriting their chip orders. One frontier lab says a switch that took a year now takes days, and that shift could reshape AMD's 2027.",
+                "_timestamp": 1794762563.0
+            },
+            {
+                "title": "AMD vs. Broadcom: With NVDA’s Jensen Huang Gone, Which AI Stock Wins the Most?",
+                "link": "https://247wallst.com/investing/2026/11/15/amd-vs-broadcom-with-nvdas-jensen-huang-gone-which-ai-stock-wins-the-most/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-15 17:16",
+                "description": "Nvidia's leadership vacuum handed AMD and Broadcom a brief rally before both stocks tumbled. One rewards patient retirees, the other bets on a GPU order shift. Three head-to-head tests reveal which chipmaker deserves your nest egg.",
+                "_timestamp": 1794763000.0
+            },
+            {
+                "title": "US Treasury chief wants answers soon from Nvidia",
+                "link": "https://finance.yahoo.com/technology/ai/articles/us-treasury-chief-wants-answers-183327447.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-15 18:33",
+                "description": "US Treasury Secretary Scott Bessent called on Nvidia Sunday to explain whether it knowingly allowed its most advanced AI chips to reach China, saying this was more important than ex-CEO Jensen Huang's affair with an alleged spy for Beijing.In late 2025, President Donald Trump did authorize sales of Nvidia chips called H200s to the Chinese -- but not the most advanced chips used to run AI models reshaping modern society.",
+                "_timestamp": 1794767607.0
+            },
+            {
+                "title": "Nvidia, Anthropic, Walmart, Home Depot, the Fed, Home Sales, and More to Watch This Week",
+                "link": "https://finance.yahoo.com/m/f8d75492-d543-31f8-a9e4-525c6a832328/nvidia%2C-anthropic%2C-walmart%2C.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-15 19:00",
+                "description": "In an especially big week for AI, Nvidia will report earnings and Anthropic will go public. Target, Walt Disney, and more will also report results. Economic releases will spotlight the Fed’s thinking on interest rates, and home construction and sales.",
+                "_timestamp": 1794769200.0
+            },
+            {
+                "title": "US Treasury chief wants answers soon from Nvidia",
+                "link": "https://finance.yahoo.com/technology/ai/articles/us-treasury-chief-wants-answers-202317355.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-15 20:23",
+                "description": "US Treasury Secretary Scott Bessent called on Nvidia Sunday to explain whether it knowingly allowed its most advanced AI chips to reach China, saying this was more important than ex-CEO Jensen Huang's affair with an alleged spy for Beijing.In late 2025, President Donald Trump did authorize sales of Nvidia chips called H200s to the Chinese -- but not the most advanced chips used to run AI models reshaping modern society.",
+                "_timestamp": 1794774197.0
+            },
+            {
+                "title": "Asia stocks slide as AI jitters deepen ahead of Nvidia results",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/asia-stocks-slide-ai-jitters-043337789.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 04:33",
+                "description": "Investing.com -- Asian stocks fell on Monday, led by Taiwan and South Korea, as renewed doubts over the AI trade and Nvidia’s leadership unsettled technology shares ahead of the chipmaker’s results. Weak Chinese data and Japan’s first economic contraction in a year added pressure.",
+                "_timestamp": 1794803617.0
+            },
+            {
+                "title": "Nvidia and Anthropic Will Really Test the Stock Market. Only One Thing Is Certain.",
+                "link": "https://finance.yahoo.com/m/0f3607ce-6aef-3837-bb1f-110209c2e287/nvidia-and-anthropic-will.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 16:05",
+                "description": "Nvidia earnings, the Anthropic IPO, Walmart and Lowe’s earnings, Fed minutes and a Trump/Putin/Xi summit. Buckle up.",
+                "_timestamp": 1794845100.0
+            },
+            {
+                "title": "Not Nvidia. Not Micron. These 2 Under-the-Radar AI Stocks Could Be Worth Holding Through 2030",
+                "link": "https://www.fool.com/investing/2026/11/16/not-nvidia-not-micron-these-2-under-the-radar-ai-s/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 16:30",
+                "description": "Investors should consider taking a closer look at these underrated AI infrastructure stocks given their terrific growth potential.",
+                "_timestamp": 1794846600.0
+            },
+            {
+                "title": "Why AMD Stock Was Sliding Today",
+                "link": "https://www.fool.com/investing/2026/11/16/why-amd-stock-was-sliding-today/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 16:51",
+                "description": "A new set of export restrictions on Southeast Asia poses a new threat to AMD and the chip sector.",
+                "_timestamp": 1794847908.0
+            },
+            {
+                "title": "Could Nvidia Be the Next Super Micro?",
+                "link": "https://www.fool.com/investing/2026/11/16/could-nvidia-be-the-next-super-micro/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:28",
+                "description": "Super Micro's stock has struggled to generate strong returns despite experiencing significant growth.",
+                "_timestamp": 1794853682.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 18:28 UTC",
+            "Facts": "[Update 2026-11-16 18:28 UTC via Yahoo Finance Nasdaq]: Super Micro Computer shares continue to struggle with valuation and return generation despite underlying business growth. Meanwhile, broader market participants brace for heavy upcoming catalysts including Nvidia earnings, the Anthropic IPO, and upcoming Federal Reserve meeting minutes.",
+            "Macro_Context": "Anticipation of major macroeconomic data releases and upcoming Fed minutes creates a cautious trading environment, favoring defensive positioning in precious metals.",
+            "Impact_Timing": "24-48 hours",
+            "Timeframe": "7-14d",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 75,
+            "Orderflow_Price_Target": "$3890.27"
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 0.0
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 18:24 UTC",
+        "original_date": "2026-11-16 18:24",
+        "_timestamp": 1794853458.0,
+        "articles": [
+            {
+                "title": "Independence Gold Launches Diamond Drill Program at 3Ts Gold and Silver Project",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/independence-gold-launches-diamond-drill-182418645.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 18:24",
+                "description": "Independence Gold (IGO.V) began a 10,000-meter diamond drill program at its 3Ts Gold and Silver Proj",
+                "_timestamp": 1794853458.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 18:24 UTC",
+            "Facts": "Independence Gold initiated a 10,000-meter diamond drill program at its 3Ts Gold and Silver Project. | Routine junior mining exploration updates carry no macro or systemic transmission to spot XAU/USD pricing.",
+            "Macro_Context": "Corporate junior mining exploration activities have zero influence on macro gold bullion liquidity or spot pricing dynamics.",
+            "Impact_Timing": "None",
+            "Timeframe": "Structural Weekly Regime",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 10,
+            "Orderflow_Price_Target": "3847.32"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 12:15 UTC | Last Update: 2026-11-16 18:22 UTC",
+        "original_date": "2026-11-16 12:15",
+        "_timestamp": 1794853335.0,
+        "articles": [
+            {
+                "title": "‘Many jobs will disappear forever’: Bill Gates warns AI could wipe out careers within a decade. Protect your paycheck",
+                "link": "https://finance.yahoo.com/technology/ai/articles/many-jobs-disappear-forever-bill-121500123.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 12:15",
+                "description": "The job market hasn't fallen apart, but workers may want a backup plan before they need one.",
+                "_timestamp": 1794831300.0
+            },
+            {
+                "title": "Bill Gates Issues Grim Warning That ‘Many Jobs Will Disappear Forever’ Due to ‘Turbulent AI Era’",
+                "link": "https://firstformoney.com/bill-gates-issues-grim-warning-that-many-jobs-will-disappear-forever-due-to-turbulent-ai-era/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:22",
+                "description": "Bill Gates has issued a grim warning amid the current growth of Artificial Intelligence (AI). The Microsoft cofounder, 71, published a 6,000-word essay earlier this year, titled “The turbulent AI era is here. The choices we make now are critical.” In the essay, Gates called for certain jobs to be “human reserved” and warned AI […]",
+                "_timestamp": 1794853335.0
             }
         ],
         "needs_update": false,
@@ -922,17 +1728,124 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 18:14 UTC",
-            "Facts": "[Update 2026-11-16 18:14 UTC via Yahoo Finance Nasdaq]: Nvidia faces deeper scrutiny over its neocloud financing roles following the CEO's departure and ongoing management scandals. | Multiple downgrades and supply chain contagion have pressured semiconductor peers like Micron while broader tech indexes retreat.",
-            "Macro_Context": "Widespread tech sector sell-offs and liquidity shocks increase safe-haven appeal, directing capital flows toward physical bullion.",
-            "Impact_Timing": "Intraday to 48 hours",
-            "Timeframe": "24h Intraday",
+            "Event_Timestamp": "2026-11-16 18:22 UTC",
+            "Facts": "[Update 2026-11-16 18:22 UTC via Source]: Microsoft co-founder Bill Gates warned in a major essay that the rapid expansion of artificial intelligence will permanently displace numerous careers within a decade. | This commentary underscores ongoing systemic labor shifts and tech disruption fears that influence broader market volatility and safe-haven dynamics.",
+            "Macro_Context": "Broader structural anxieties around AI-driven labor disruption reinforce safe-haven demand and market-wide hedging into gold.",
+            "Impact_Timing": "Intraday to Weekly",
+            "Timeframe": "7-14d",
             "XAUUSD_Impact": "Bullish",
             "Probability_Percent": 72,
-            "Orderflow_Price_Target": "$3880.21"
+            "Orderflow_Price_Target": "$3880.16"
         },
         "eval_status": "HIT",
-        "max_dd_usd": 11.82
+        "max_dd_usd": 4.14
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 18:20 UTC",
+        "original_date": "2026-11-16 18:20",
+        "_timestamp": 1794853202.0,
+        "articles": [
+            {
+                "title": "2 Stocks With Dividend Yields of 4% or More to Buy in November",
+                "link": "https://www.fool.com/investing/2026/11/16/2-stocks-with-dividend-yields-of-4-or-more-to-buy-in-november/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:20",
+                "description": "These two stocks can provide reliable income for your portfolio for years to come.",
+                "_timestamp": 1794853202.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-16 18:20 UTC",
+            "Facts": "A financial publication highlighted two dividend stocks offering yields of 4% or more for portfolio income. | General retail dividend roundups lack systemic macro relevance or direct transmission to monetary policy.",
+            "Macro_Context": "General equity dividend commentary does not impact Treasury yields, currency flows, or gold spot pricing.",
+            "Impact_Timing": "None",
+            "Timeframe": "Structural Weekly Regime",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 10,
+            "Orderflow_Price_Target": "3847.32"
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-14 22:30 UTC | Last Update: 2026-11-16 18:19 UTC",
+        "original_date": "2026-11-14 22:30",
+        "_timestamp": 1794853165.0,
+        "articles": [
+            {
+                "title": "“Being Prudent”: TSMC Stock Has Surged 41% in a Year. Is It Too Late to Buy?",
+                "link": "https://www.tikr.com/blog/being-prudent-tsmc-stock-has-surged-41-in-a-year-is-it-too-late-to-buy?ref=yahoofinance&tlnk=yf-261114-6285hcp3&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-14 22:30",
+                "description": "Key TakeawaysTaiwan Semiconductor Manufacturing (TSM) has gained 41% over the past year, closing at $398. 73 on November 13, but remains 18% below its 52-week high.",
+                "_timestamp": 1794695454.0
+            },
+            {
+                "title": "What TSMC Doubters Got Wrong",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/tsmc-doubters-got-wrong-200527158.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-15 20:05",
+                "description": "If Taiwan Semiconductor Manufacturing was on your watchlist instead of in your portfolio over the last year, the gap in outcome may feel sharp. For Taiwan Semiconductor Manufacturing shareholders, the return over the past year was 66.4%, including dividends. That move now sits alongside record Q3 2026 profitability and fresh plans for heavier US expansion, inviting a tougher question. If analysts already flagged margin dilution risks from oversea",
+                "_timestamp": 1794773127.0
+            },
+            {
+                "title": "TSMC Stocks Slide 5.7% Despite October Sales Jumping 59.7% to a 2026 High",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/tsmc-stocks-slide-5-7-181925082.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 18:19",
+                "description": "Record monthly revenue and a $500 million Anthropic stake could not shield TSMC's ADRs from Monday's AI chip selloff.",
+                "_timestamp": 1794853165.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 18:19 UTC",
+            "Facts": "[Update 2026-11-16 18:19 UTC via Yahoo Finance Nasdaq]: TSMC ADRs slid 5.7% amid a broader AI chip selloff despite reporting record October monthly sales jumping 59.7% and a $500 million Anthropic stake. | Taiwan Semiconductor previously posted record Q3 2026 profitability alongside aggressive US expansion plans. | Widespread tech sector pullbacks impact broader equity liquidity and trigger cross-asset risk adjustments.",
+            "Macro_Context": "Intense tech sector volatility and Nasdaq weakness (down 2.58%) trigger broad risk-off margin adjustments, creating cross-asset liquidity flows that directly influence gold.",
+            "Impact_Timing": "Immediate",
+            "Timeframe": "24h Intraday Pulse",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 70,
+            "Orderflow_Price_Target": "3870.77"
+        },
+        "eval_status": "MISS",
+        "max_dd_usd": 52.22
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 18:18 UTC",
+        "original_date": "2026-11-16 18:18",
+        "_timestamp": 1794853122.0,
+        "articles": [
+            {
+                "title": "3 Australian Penny Stocks With Up To 72% Discount To Fair Value",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-australian-penny-stocks-72-181842472.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 18:18",
+                "description": "Fresh scrutiny on AI chip exports and Nvidia after Jensen Huang’s exit has pushed many investors to reassess how much risk is tied to a handful of giant tech stocks. That spotlight on concentration risk creates a window for smaller Australian shares with sturdier balance sheets. This article walks through three financially disciplined penny stocks that screen for healthier fundamentals so you can explore ideas outside the usual headlines. The thr",
+                "_timestamp": 1794853122.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 18:18 UTC",
+            "Facts": "Recent regulatory scrutiny regarding AI chip exports and executive leadership movements at Nvidia have forced market participants to re-evaluate single-stock concentration risks. This tech sector reassessment highlights broader market vulnerabilities and portfolio rebalancing away from mega-cap equities.",
+            "Macro_Context": "Tech sector concentration risk and regulatory pressures on semiconductor giants support defensive asset rotation toward gold.",
+            "Impact_Timing": "Intraday",
+            "Timeframe": "24h",
+            "XAUUSD_Impact": "Bullish",
+            "Probability_Percent": 70,
+            "Orderflow_Price_Target": "$3870.76"
+        },
+        "eval_status": "ACTIVE",
+        "max_dd_usd": 13.22
     },
     {
         "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-16 18:10 UTC",
@@ -5087,653 +6000,6 @@
         "max_dd_usd": 23.03
     },
     {
-        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-16 16:51 UTC",
-        "original_date": "2026-11-05 15:15",
-        "_timestamp": 1794847908.0,
-        "articles": [
-            {
-                "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
-                "link": "https://www.fool.com/investing/2026/11/05/nvidia-vs-taiwan-semiconductor-the-ai-revolution-i/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:22",
-                "description": "These semiconductor giants are among the biggest beneficiaries of the AI chip boom, and they are expected to sustain solid growth levels over the long run.",
-                "_timestamp": 1793892120.0
-            },
-            {
-                "title": "Amazon and Google Could Outperform Nvidia as AI Trade Enters New Phase, Says Joseph Carlson",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/62926393/amazon-google-nvidia?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:15",
-                "description": "Amazon (NASDAQ:AMZN) and Alphabet (NASDAQ:GOOGL) could outperform Nvidia (NASDAQ:NVDA) as AI investors shift from companies selling the hardware to those turning it into revenue, YouTube investor Joseph Carlson argues. A day after Democrats swept Congress and data-center critics won key...",
-                "_timestamp": 1793891708.0
-            },
-            {
-                "title": "NVDA vs AMD: which stock has the better bounce setup",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvda-vs-amd-stock-better-155640375.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 15:56",
-                "description": "Investing.com -- The better tactical bounce candidate is NVIDIA Corporation (NVDA), not because its trend is healthy, but because Advanced Micro Devices Inc (AMD) is showing heavier damage and volatility.",
-                "_timestamp": 1793894200.0
-            },
-            {
-                "title": "Not Nvidia. Not Micron. This Dutch Company Controls a Key Bottleneck of AI Chip Production.",
-                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-micron-this-dutch-company-controls/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 17:57",
-                "description": "ASML makes the only machines that can print the world's most advanced chips, and its customers are already asking for delivery slots in 2029 and 2030.",
-                "_timestamp": 1793901420.0
-            },
-            {
-                "title": "Not Nvidia. Not AMD. 2 Chip Stocks I'd Buy Before the End of the Year.",
-                "link": "https://www.fool.com/investing/2026/11/05/not-nvidia-not-amd-2-chip-stocks-id-buy-in-2026/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 18:33",
-                "description": "Micron and Taiwan Semiconductor are key suppliers to the computing unit designers.",
-                "_timestamp": 1793903580.0
-            },
-            {
-                "title": "Advanced Micro Devices vs. Taiwan Semiconductor Manufacturing: The AI Sell-Off Is Exposing a Critical Difference Investors Shouldn't Ignore for 2027",
-                "link": "https://www.fool.com/coverage/better-buy/2026/11/05/advanced-micro-devices-vs-taiwan-semiconductor-manufacturing-the-ai-sell-off-is-exposing-a-critical-difference-investors-shouldn-t-ignore-for-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 20:20",
-                "description": "For investors looking toward 2027, profitability and pricing power could matter more than ever.",
-                "_timestamp": 1793910002.0
-            },
-            {
-                "title": "Prediction: These Will Be Nvidia's and Palantir's Stock Prices by 2027 (Hint: Only 1 Is a Buy)",
-                "link": "https://www.fool.com/investing/2026/11/05/prediction-these-will-be-nvidias-and-palantirs-sto/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-05 19:46",
-                "description": "Nvidia and Palantir are two popular AI picks, but only one makes sense right now.",
-                "_timestamp": 1793907960.0
-            },
-            {
-                "title": "Should You Buy Nvidia Stock Before Nov. 17?",
-                "link": "https://www.fool.com/investing/2026/11/05/should-you-buy-nvidia-stock-before-nov-17/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 02:20",
-                "description": "The AI chip maker is trading at a discount.",
-                "_timestamp": 1793931600.0
-            },
-            {
-                "title": "Should You Buy Nvidia Before Nov. 17? The Evidence is Piling Up and Here’s What It Shows.",
-                "link": "https://www.fool.com/investing/2026/11/06/should-you-buy-nvidia-before-nov-17-the-evidence-is-piling-up-and-here-s-what-it-shows/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 09:25",
-                "description": "Investing in Nvidia has been a sure bet in recent years.",
-                "_timestamp": 1793957102.0
-            },
-            {
-                "title": "Nvidia Shares Suffer Worst Day Since January 2025 -- AI Fears Trigger $450 Billion Rout",
-                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-shares-suffer-worst-day-104000765.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 10:40",
-                "description": "Nvidia Stock Plunges as Texas Data Center Restrictions Put AI Boom at Risk",
-                "_timestamp": 1793961600.0
-            },
-            {
-                "title": "Nvidia Isn’t the Only AI Stock That Could Surprise Wall Street in 2027",
-                "link": "https://247wallst.com/investing/2026/11/06/nvidia-isnt-the-only-ai-stock-that-could-surprise-wall-street-in-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 14:03",
-                "description": "Memory chips were once the dullest corner of semiconductors, yet one stock has tripled while trading at a fraction of the market's earnings multiple. Wall Street and the market disagree sharply on what comes next, and the gap could close fast.",
-                "_timestamp": 1793973810.0
-            },
-            {
-                "title": "Forget Nvidia. Here’s the Company Behind the Chips",
-                "link": "https://247wallst.com/investing/2026/11/06/forget-nvidia-heres-the-company-behind-the-chips/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:03",
-                "description": "Every AI chip from Nvidia and Broadcom runs through one company's fabs, yet that company trades at a fraction of the valuation its customers command. The gap raises a question worth answering before the market closes it.",
-                "_timestamp": 1793984581.0
-            },
-            {
-                "title": "NVIDIA Corporation (NVDA) Is Taking AI Beyond Chips: Here’s What Could Drive Its Next Growth Phase",
-                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-corporation-nvda-taking-ai-173307195.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 17:33",
-                "description": "Liontrust Investment Partners recently released its “GF Global Innovation Fund” Q3 2026 investor letter. A copy of the letter can be downloaded here. The Fund returned -3.0% in the third quarter of 2026, underperforming the MSCI AC World Index, which gained 1.6%. However, the Fund remained ahead year to date, returning 17.9% compared with 13.0% […]",
-                "_timestamp": 1793986387.0
-            },
-            {
-                "title": "Nvidia Is Reportedly Pouring Billions Into AI's Next Big Bottleneck: Advanced Chip Packaging",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63010319/nvidia-chip-packaging?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 20:30",
-                "description": "Nvidia (NASDAQ:NVDA) is reportedly financing billions of dollars in new factories and equipment to overcome a shortage limiting how many AI chips the industry can produce. The money is going to Taiwan’s Siliconware Precision Industries (SPIL), a subsidiary of ASE...",
-                "_timestamp": 1793997007.0
-            },
-            {
-                "title": "Dell vs. Nvidia: Chip Stocks Just Suffered Their Worst Sell-Off Since 2020. Which Is the Better Buy for 2027?",
-                "link": "https://www.fool.com/coverage/better-buy/2026/11/06/dell-vs-nvidia-chip-stocks-just-suffered-their-worst-sell-off-since-2020-which-is-the-better-buy-for-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 19:50",
-                "description": "Dell's cash flow and NVIDIA's margins tell very different stories, and a sizable valuation gap may matter more than either name suggests.",
-                "_timestamp": 1793994602.0
-            },
-            {
-                "title": "Micron vs. Nvidia: Which AI Stock Is a Better Buy for 2027?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/micron-vs-nvidia-ai-stock-211242383.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-06 21:12",
-                "description": "Micron (MU) and Nvidia (NVDA) have become major beneficiaries of the AI boom. Nvidia leads in AI chips, while Micron supplies memory used in AI systems. Both companies could benefit from continued spending on data centers in 2027. In terms of price performance, Micron stock has gained 130% year-to-date, while Nvidia stock has fallen about 3%. Still, analysts see room for both stocks to rise. TipRanks data shows Micron has greater forecast upside.",
-                "_timestamp": 1793999562.0
-            },
-            {
-                "title": "A Retiree Who Bought 1,000 Nvidia Shares at $122 Just Watched Chips Have Their Worst Day Since 2020",
-                "link": "https://247wallst.com/investing/2026/11/07/a-retiree-who-bought-1000-nvidia-shares-at-122-just-watched-chips-have-their-worst-day-since-2020/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 05:06",
-                "description": "Chip stocks had their worst day since 2020. Here is what it did to one retiree's 1,000 Nvidia shares, and the case for holding or trimming.",
-                "_timestamp": 1794028012.0
-            },
-            {
-                "title": "Not Nvidia. Not Micron. After the Chip Sell-Off, I'd Buy This AI Stock and Hold It Forever.",
-                "link": "https://www.fool.com/investing/2026/11/07/not-nvidia-not-micron-after-the-chip-sell-off-id-b/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 14:36",
-                "description": "The market is shifting away from chip stocks, but that could create some great opportunities for investors.",
-                "_timestamp": 1794062160.0
-            },
-            {
-                "title": "Nvidia Stock Has More Than 60% Upside According to Analysts' Average Price Target. Should You Buy While the AI Trade Wobbles?",
-                "link": "https://www.fool.com/investing/2026/11/07/nvidia-stock-has-more-than-60-upside-according-to/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-07 18:20",
-                "description": "Nvidia stock looks cheaper, and its growth prospects are well intact.",
-                "_timestamp": 1794075600.0
-            },
-            {
-                "title": "Why Nvidia at 13 Times Expected Earnings Still Isn’t Cheap",
-                "link": "https://247wallst.com/investing/2026/11/08/why-nvidia-at-13-times-expected-earnings-still-isnt-cheap/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 16:08",
-                "description": "Nvidia's earnings multiple looks like a bargain next to its AI growth, yet a few shaky assumptions could erase that discount fast. Three signals in the upcoming earnings report will show whether the cheapness is real or an illusion.",
-                "_timestamp": 1794154080.0
-            },
-            {
-                "title": "America’s AI Spending Boom Just Crossed a Staggering $1 Trillion Milestone",
-                "link": "https://247wallst.com/investing/2026/11/08/americas-ai-spending-boom-just-crossed-a-staggering-1-trillion-milestone/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 16:15",
-                "description": "Record shipments of AI hardware are pouring into American data centers, yet NVIDIA's stock has dropped more than 21% in a month. What does the import data reveal that the share price refuses to show, and who else profits?",
-                "_timestamp": 1794154533.0
-            },
-            {
-                "title": "This Stock Is a Nearly Guaranteed Winner From the AI Infrastructure Buildout",
-                "link": "https://www.fool.com/investing/2026/11/08/this-stock-is-a-nearly-guaranteed-winner-from-the/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 18:42",
-                "description": "Taiwan Semiconductor is a key supplier to almost every major logic chip designer.",
-                "_timestamp": 1794163320.0
-            },
-            {
-                "title": "AMD or Nvidia: Which AI Chip Stock Would I Buy With $1,000 Today?",
-                "link": "https://www.fool.com/investing/2026/11/08/amd-or-nvidia-which-ai-chip-stock-would-i-buy-with/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-08 23:05",
-                "description": "The leading GPU makers are two of the top AI investments in the market.",
-                "_timestamp": 1794179100.0
-            },
-            {
-                "title": "Asia stocks roar back as Taiwan jumps 6%, Nvidia probe rattles AI trade",
-                "link": "https://finance.yahoo.com/markets/world-indices/articles/asia-stocks-roar-back-taiwan-042552045.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 04:25",
-                "description": "Investing.com -- Asian stocks rallied on Monday, following a recovery on Wall Street, although concerns over an investigation involving Nvidia CEO Jensen Huang tempered gains as investors reassessed the outlook for the artificial intelligence trade.",
-                "_timestamp": 1794198352.0
-            },
-            {
-                "title": "3 US Chip Stocks for AI Exposure With Lower China Risk",
-                "link": "https://finance.yahoo.com/technology/ai/articles/3-us-chip-stocks-ai-021219756.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 02:12",
-                "description": "Nvidia’s internal probe into CEO Jensen Huang and possible foreign intelligence targeting has put governance and national security risk in the spotlight, and that ripple hits anything tied to the AI chip story. Investors hunting for exposure without leaning heavily on China are now scanning for alternatives that could benefit as attention broadens. This article walks through three U.S. listed semiconductor and chip equipment stocks from our low C",
-                "_timestamp": 1794190339.0
-            },
-            {
-                "title": "Stock market today: Dow, S&P 500, Nasdaq futures rise with Nvidia stock, AI trade in focus",
-                "link": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 09:05",
-                "description": "All eyes will be on the artificial intelligence trade and Nvidia stock following a volatile post-election shake-up in markets and the revelation that Nvidia's board is opening an investigation into CEO Jensen Huang over his affair.",
-                "_timestamp": 1794215135.0
-            },
-            {
-                "title": "AI Chip Stocks to Watch After TSMC and Nvidia Lift Sentiment",
-                "link": "https://finance.yahoo.com/technology/ai/articles/ai-chip-stocks-watch-tsmc-100834448.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 10:08",
-                "description": "AI hardware and semiconductor stocks just swung from political worry to renewed excitement, as TSMC, Nvidia and their peers helped pull Asian markets off the mat and lent support to U.S. futures. For investors, that kind of sharp mood shift can quickly reprice both perceived winners and overlooked laggards. This article unpacks the news triggers and highlights three stocks exposed to these AI headlines that may warrant a closer look. The stocks c",
-                "_timestamp": 1794218914.0
-            },
-            {
-                "title": "Google Escalates Nvidia Rivalry With Specialized Versions of AI Chips",
-                "link": "https://finance.yahoo.com/technology/ai/articles/google-escalates-nvidia-rivalry-specialized-123000247.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 12:30",
-                "description": "Alphabet Inc.'s Google is rolling out a broader array of artificial intelligence chips, aiming to capitalize on its rapid ascent as a challenger to Nvidia Corp. in a market worth hundreds of billions of dollars.",
-                "_timestamp": 1794227400.0
-            },
-            {
-                "title": "Not AMD. Not Intel. This Is the Artificial Intelligence (AI) Chip Stock Nvidia Should Fear Most.",
-                "link": "https://www.fool.com/investing/2026/11/09/not-amd-not-intel-this-is-the-artificial-intellige/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 12:20",
-                "description": "AMD and Intel both offer alternative chip architectures to Nvidia's GPUs, but there's a bigger threat in the background.",
-                "_timestamp": 1794226800.0
-            },
-            {
-                "title": "Google's chip business is on a faster track than Nvidia's own AI boom",
-                "link": "https://finance.yahoo.com/markets/article/googles-chip-business-is-on-a-faster-track-than-nvidias-own-ai-boom-135447046.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 13:54",
-                "description": "As Nvidia investigates its CEO, Google is rolling out more chips built to win Nvidia's customers on price.",
-                "_timestamp": 1794232487.0
-            },
-            {
-                "title": "Nvidia vs. AMD: Why Lisa Su's company is a great alternative for investors",
-                "link": "https://finance.yahoo.com/video/nvidia-vs-amd-why-lisa-170000159.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 17:00",
-                "description": "Yahoo Finance Executive Editor Brian Sozzi looks back at his conversation with AMD (AMD) CEO Lisa Su to highlight viable alternatives for Nvidia (NVDA) investors to consider.",
-                "_timestamp": 1794243600.0
-            },
-            {
-                "title": "Nvidia's 'Robust' Demand Trends Support Strong Quarterly Outlook, RBC Says",
-                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-apos-apos-robust-apos-164114568.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 16:41",
-                "description": "Nvidia (NVDA) is expected to deliver another \"strong quarter\" and provide an outlook above expectati",
-                "_timestamp": 1794242474.0
-            },
-            {
-                "title": "Trump’s Former AI Czar Says “I Get Really Worried About 2028”: That’s a Big Problem for Nvidia",
-                "link": "https://www.tikr.com/blog/trumps-former-ai-czar-says-i-get-really-worried-about-2028-thats-a-big-problem-for-nvidia?ref=yahoofinance&tlnk=yf-261109-7822xmhh&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 19:56",
-                "description": "Key TakeawaysOn the Nov. 7 episode of All-In, Trump’s former AI czar David Sacks said data center spending should still be meaningful in 2027, but he gets “really worried about 2028” because nobody will commit $50 billion to a gigawatt site under political uncertainty.",
-                "_timestamp": 1794254197.0
-            },
-            {
-                "title": "Nvidia vs. Alphabet: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
-                "link": "https://www.fool.com/investing/2026/11/09/nvidia-vs-alphabet-the-ai-revolution-is-big-enough/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 20:50",
-                "description": "Which part of the AI trade is more likely to better serve investors?",
-                "_timestamp": 1794257400.0
-            },
-            {
-                "title": "Nvidia Stock’s (NVDA) Sell-Off Looks Overdone Ahead of Q3",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-nvda-sell-off-211700494.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 21:17",
-                "description": "Nvidia (NVDA) stock’s sell-off looks overdone to me, ahead of Q3 earnings. The artificial intelligence (AI) computing giant remains about 22% below its 52-week high after Friday’s premarket rebound. Yet CEO Jensen Huang reminded us just two weeks ago that “Demand is extraordinary. Capacity is the constraint.” That hardly describes a business losing any momentum. I believe political uncertainty deserves attention, but recent deployments suggest th",
-                "_timestamp": 1794259020.0
-            },
-            {
-                "title": "Analyzing AMD as a near-term beneficiary of Nvidia’s leadership uncertainty",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/analyzing-amd-near-term-beneficiary-210952293.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-09 21:09",
-                "description": "Investing.com -- The tape suggests investors are already treating Advanced Micro Devices (AMD) as a relative winner. It trades at $513.73 (+14.41%) as of Nov 9, 3:38 PM EST. NVIDIA (NVDA) is at $177.20 (-5.06%) at the same time. That’s a roughly 19-point gap in one session. AMD is also up about 134% YTD but down 15.6% over the past month, so it isn’t a clean one-way run.",
-                "_timestamp": 1794258592.0
-            },
-            {
-                "title": "Market Chatter: Nvidia's Most Advanced Chips Accessed by China's Moonshot AI",
-                "link": "https://finance.yahoo.com/technology/ai/articles/market-chatter-nvidia-apos-most-093250675.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 09:32",
-                "description": "Nvidia's (NVDA) B300 GPUs were accessed by China's Moonshot AI earlier this year, Bloomberg News rep",
-                "_timestamp": 1794303170.0
-            },
-            {
-                "title": "Nvidia “Hasn’t Really Had to Worry About Competition” for Four Years. AMD Is Closing In",
-                "link": "https://www.tikr.com/blog/nvidia-hasnt-really-had-to-worry-about-competition-for-four-years-amd-is-closing-in?ref=yahoofinance&tlnk=yf-261110-6fff25hv&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 10:20",
-                "description": "Key TakeawaysAMD rose Monday as Nvidia fell on a board inquiry involving CEO Jensen Huang. AMD’s data center sales are a tenth of Nvidia’s, but AMD expects 2027 revenue to grow more than 80%, faster than analysts expect from Nvidia.",
-                "_timestamp": 1794306010.0
-            },
-            {
-                "title": "What could NVIDIA’s latest risks mean for the AI chip ecosystem?",
-                "link": "https://finance.yahoo.com/technology/ai/articles/could-nvidia-latest-risks-mean-124641710.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 12:46",
-                "description": "Investing.com -- Analysts at Bank of America, Mizuho and Raymond James said in research notes that while governance concerns surrounding Nvidia (NASDAQ:NVDA) add near-term uncertainty, they are sticking with bullish ratings because the long-term fundamentals remain strong.",
-                "_timestamp": 1794314801.0
-            },
-            {
-                "title": "Microsoft Is Back Above $4 Trillion and Only $266 Billion Behind Nvidia",
-                "link": "https://247wallst.com/investing/2026/11/10/microsoft-is-back-above-4-trillion-and-only-266-billion-behind-nvidia/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 16:53",
-                "description": "Two AI giants just posted blockbuster quarters, yet only one is watching its stock slide while its CEO faces a board investigation. What separates their paths, and could the rankings flip after NVIDIA's next earnings report?",
-                "_timestamp": 1794329635.0
-            },
-            {
-                "title": "What Does Taiwan Semiconductor Manufacturing (TSM) AI Revenue Surge Mean For Investors?",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/does-taiwan-semiconductor-manufacturing-tsm-181308572.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 18:13",
-                "description": "Taiwan Semiconductor Manufacturing (NYSE:TSM) reported newly disclosed revenue tied to AI chip production that sharply outpaces several semiconductor peers. The latest figures highlight a widening performance gap between TSMC and rival foundries that are reporting very different AI related trends. The revenue surge underscores TSMC's role as a key supplier for advanced AI processors used in data centers and high performance computing. The surge i",
-                "_timestamp": 1794334388.0
-            },
-            {
-                "title": "AMD Gains 25% Against NVDA in 2 Days: Chip Analyst Says Lisa Su Is ‘at Her Best’",
-                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63115849/amd-lisa-su?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 19:30",
-                "description": "Advanced Micro Devices (NASDAQ:AMD) shares surged 13.3% Monday following an analyst upgrade and a new Google AI chip deal, while Nvidia (NASDAQ:NVDA) fell 4.3% amid an investigation involving CEO Jensen Huang. AMD is up around 25% against NVDA since the...",
-                "_timestamp": 1794339008.0
-            },
-            {
-                "title": "Will Jensen Huang Still Run Nvidia at the End of 2027? Two Analysts Disagree",
-                "link": "https://www.fool.com/investing/2026/11/10/will-jensen-huang-still-run-nvidia-at-the-end-of-2027-two-analysts-disagree/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 21:11",
-                "description": "Two Motley Fool analysts take sides on this hot topic.",
-                "_timestamp": 1794345061.0
-            },
-            {
-                "title": "Nvidia Stock Just Lost 10% in 1 Day. Should You Buy It Before It Reports Earnings on Nov. 17?",
-                "link": "https://www.fool.com/investing/2026/11/10/nvidia-stock-just-lost-10-in-1-day-should-you-buy-it-before-it-reports-earnings-on-nov-17/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 22:28",
-                "description": "The chipmaker usually beats expectations, but the market may be looking for more this time.",
-                "_timestamp": 1794349682.0
-            },
-            {
-                "title": "2 Reasons AMD Can Still Outperform by 2030",
-                "link": "https://www.fool.com/investing/2026/11/10/2-reasons-amd-can-still-outperform-by-2030/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-10 23:33",
-                "description": "After a pullback, AMD’s agentic AI CPU demand and multiyear GPU runway give it a path to beat the market through 2030.",
-                "_timestamp": 1794353582.0
-            },
-            {
-                "title": "Why it will be a ‘painful 2027’ for tech executives, especially Nvidia CEO Jensen Huang",
-                "link": "https://www.cnn.com/2026/11/10/business/video/breaksitdown-nvidia-final-bid-vod-hrzn?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 02:04",
-                "description": "On the latest episode of “CNN Breaks It Down” Phil Mattingly asks Hadas Gold about what we can expect from congressional investigative hearings into the Nvidia scandal and chip export controls to China. Stream new episodes of “CNN Breaks It Down.” Go to cnn.com/BreaksItDown to watch.",
-                "_timestamp": 1794362698.0
-            },
-            {
-                "title": "“Demand Is Higher Than Supply”: AMD Has Ripped 141% in 2026. Is It Too Late to Buy?",
-                "link": "https://www.tikr.com/blog/demand-is-higher-than-supply-amd-has-ripped-141-in-2026-is-it-too-late-to-buy?ref=yahoofinance&tlnk=yf-261111-hfx46hx6&.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 07:35",
-                "description": "Key TakeawaysAMD stock is up 141% in 2026 on Meta’s 6-gigawatt GPU deal and back-to-back record quarters, though it’s still 21% below its October closing high. AMD guided to about $17 billion of fourth-quarter revenue, more than Intel expects, and CEO Lisa Su says demand for AMD’s chips is higher than supply as AI buyers line up a second supplier to Nvidia.",
-                "_timestamp": 1794382514.0
-            },
-            {
-                "title": "Is Nvidia Stock a Buy Before Nov. 17? Here's What I'm Doing.",
-                "link": "https://www.fool.com/investing/2026/11/11/is-nvidia-stock-a-buy-before-nov-17-heres-what-im/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 09:25",
-                "description": "Nvidia is a strong company, but other happenings could derail the investment.",
-                "_timestamp": 1794389100.0
-            },
-            {
-                "title": "Nvidia’s valuation tumbles to a 15-year low. A bargain or a falling knife?",
-                "link": "https://www.marketwatch.com/story/nvidias-valuation-tumbles-to-a-15-year-low-a-bargain-or-a-falling-knife-2ebf6085?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-11 12:16",
-                "description": "The AI giant now trades at a discount to the S&amp;P 500, by one measure. Plus, CoreWeave’s answer to its debt problem and a Veterans Day breather for bonds.",
-                "_timestamp": 1794399360.0
-            },
-            {
-                "title": "Nvidia’s chips are powering China’s AI revolution",
-                "link": "https://uk.finance.yahoo.com/news/nvidia-chips-powering-china-ai-130000071.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 13:00",
-                "description": "If you believe Jensen Huang, Nvidia is now a practical non-entity in China.",
-                "_timestamp": 1794402000.0
-            },
-            {
-                "title": "'Icarus' rise and fall': Analyst downgrades Nvidia stock amid Jensen Huang woes, highlights risks",
-                "link": "https://finance.yahoo.com/markets/article/icarus-rise-and-fall-analyst-downgrades-nvidia-stock-amid-jensen-huang-woes-highlights-risks-131204555.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 13:12",
-                "description": "Wall Street gets more cautious on Nvidia.",
-                "_timestamp": 1794402724.0
-            },
-            {
-                "title": "Analysis: Is Nvidia too big to fail? Its AI financing web raises the stakes",
-                "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-                "source": "CNBC Economy",
-                "date": "2026-11-11 18:09",
-                "description": "The tech giant's web of ties to other companies is raising the possibility that it could do far-reaching economic and financial damage.",
-                "_timestamp": 1794420590.0
-            },
-            {
-                "title": "Dell Technologies vs. Taiwan Semiconductor: Which Technology Stock Is a Better Buy for 2027?",
-                "link": "https://www.fool.com/coverage/better-buy/2026/11/11/dell-technologies-vs-taiwan-semiconductor-which-technology-stock-is-a-better-buy-for-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-11 23:50",
-                "description": "Dell trades at a far lower forward multiple, but Taiwan Semiconductor's 44.6% net margin tells a very different story about pricing power.",
-                "_timestamp": 1794441002.0
-            },
-            {
-                "title": "More Bad News for NVIDIA. With Board Planning to Boot Jensen Huang, Sam Altman Reveals Master Plan to Stop Buying Their Chips",
-                "link": "https://247wallst.com/investing/2026/11/11/more-bad-news-for-nvidia-with-board-planning-to-boot-jensen-huang-sam-altman-reveals-master-plan-to-stop-buying-their-chips/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 00:19",
-                "description": "Nvidia fell 7.9% after hours to $160.03 as the Wall Street Journal reported its board is preparing to oust Jensen Huang. The same day, Sam Altman's remarks to Samsung executives laid out OpenAI's plan: vertically integrated infrastructure cheaper than anyone's, including chips it designs itself, which means paying Nvidia less over time.",
-                "_timestamp": 1794442771.0
-            },
-            {
-                "title": "Nvidia vs. SK Hynix: Which AI Chip Stock Is a Better Buy for 2027?",
-                "link": "https://www.fool.com/coverage/better-buy/2026/11/11/nvidia-vs-sk-hynix-which-ai-chip-stock-is-a-better-buy-for-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 00:20",
-                "description": "Nvidia leads AI chips, but SK Hynix trades at a far lower valuation, so which semiconductor stock deserves a spot in your portfolio?",
-                "_timestamp": 1794442802.0
-            },
-            {
-                "title": "AMD Stock Gets Upgrade. What It Says About the Future of the AI Trade.",
-                "link": "https://finance.yahoo.com/m/e24000fb-771f-351d-965d-387bb526b5ce/amd-stock-gets-upgrade.-what.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 13:19",
-                "description": "Shares of Nvidia's rivals are rising as CEO Jensen Huang faces mounting pressure.",
-                "_timestamp": 1794489540.0
-            },
-            {
-                "title": "Nvidia vs. AMD: Which Is the Better Artificial Intelligence (AI) Stock for 2027 After the Tech Sell-Off?",
-                "link": "https://www.fool.com/investing/2026/11/12/nvidia-vs-amd-which-is-the-better-artificial-intelligence-ai-stock-for-2027-after-the-tech-sell-off/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-12 14:29",
-                "description": "Investors have an easy choice to make if they are looking to buy one of these two semiconductor stocks right now.",
-                "_timestamp": 1794493742.0
-            },
-            {
-                "title": "Asia stocks steady as chipmakers rebound after Nvidia leadership shock",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/asia-stocks-steady-chipmakers-rebound-042520486.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-13 04:25",
-                "description": "Investing.com -- Asian stocks regained some ground on Friday as investors looked beyond the upheaval at Nvidia and returned to technology shares, encouraged by renewed confidence in the artificial intelligence trade and strong demand for semiconductor infrastructure.",
-                "_timestamp": 1794543920.0
-            },
-            {
-                "title": "Nvidia has shed nearly $500 billion in market value this week. It’s still a $4 trillion AI behemoth.",
-                "link": "https://www.marketwatch.com/story/nvidia-has-shed-nearly-500-billion-in-market-value-this-week-its-still-a-4-trillion-ai-behemoth-2ca6eba7?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-13 12:25",
-                "description": "Can Nvidia keep its lead in AI chips without Jensen Huang? Plus, what investors are watching on inflation.",
-                "_timestamp": 1794572700.0
-            },
-            {
-                "title": "AMD’s Path to $700 Just Got Much Easier as Enterprise and Hyperscaler Diversification Tailwinds Rise",
-                "link": "https://247wallst.com/investing/2026/11/13/amds-path-to-700-just-got-much-easier-as-enterprise-and-hyperscaler-diversification-tailwinds-rise/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-13 13:45",
-                "description": "Turmoil at NVIDIA has pushed the biggest computing buyers to hunt for a second AI chip supplier, and AMD is already inside their data centers. But swelling inventory and a thin shipping record could still derail the rally.",
-                "_timestamp": 1794577508.0
-            },
-            {
-                "title": "Taiwan Semiconductor Just Became Even More of an AI Anchor On Nvidia’s -25% Plummet",
-                "link": "https://247wallst.com/investing/2026/11/13/taiwan-semiconductor-just-became-even-more-of-an-ai-anchor-on-nvidias-25-plummet/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-13 13:45",
-                "description": "While one AI chip giant spirals through scandal and a leadership vacuum, a quieter company keeps collecting a check on every chip that ships. One investor explains why he keeps buying it, and why he passes on a famous rival.",
-                "_timestamp": 1794577557.0
-            },
-            {
-                "title": "Nvidia scandal: What’s next for the US tech company?",
-                "link": "https://www.aljazeera.com/news/2026/11/13/nvidia-scandal-whats-next-for-the-us-tech-company?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-13 13:36",
-                "description": "What happens next at one of the world&#039;s most valuable companies will have repercussions far beyond Silicon Valley.",
-                "_timestamp": 1794576979.0
-            },
-            {
-                "title": "Insigneo’s Ahmed Riesgo Gauges State of AI Trade After Changes at Nvidia",
-                "link": "https://finance.yahoo.com/video/insigneo-ahmed-riesgo-gauges-state-155153751.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-13 15:51",
-                "description": "Can stocks continue climbing despite uncertainty surrounding interest rates, artificial intelligence, and geopolitics? In this NYSE Live interview, Ahmed Riesgo, Chief Investment Officer at Insigneo, discusses market volatility, the outlook for equities, Federal Reserve policy, AI-related investments, geopolitical developments, and what investors should watch as 2026 comes to a close. Kristen Scholer spoke with Riesgo about Nvidia, hyperscalers, ",
-                "_timestamp": 1794585113.0
-            },
-            {
-                "title": "Wall Street Is Writing Off Nvidia Stock. Here's Why That's a Mistake.",
-                "link": "https://www.fool.com/investing/2026/11/13/wall-street-is-writing-off-nvidia-stock-heres-why/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-13 19:37",
-                "description": "Analysts are cooling a bit on Nvidia.",
-                "_timestamp": 1794598620.0
-            },
-            {
-                "title": "Nvidia Scandal is Poking Real Holes in the AI Trade. But That Doesn’t Mean it’s Over.",
-                "link": "https://finance.yahoo.com/m/8cfa758b-f94e-38fb-92b4-fb2bde5383db/nvidia-scandal-is-poking-real.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-13 19:39",
-                "description": "The Huang rumpus aside, there are still opportunities to buy the dip.",
-                "_timestamp": 1794598740.0
-            },
-            {
-                "title": "Better Chip Stock: Nvidia vs. AMD",
-                "link": "https://www.fool.com/investing/2026/11/13/better-chip-stock-nvidia-vs-amd/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-13 21:43",
-                "description": "The things affecting Nvidia's stock price are not entirely related to the state of its business.",
-                "_timestamp": 1794606182.0
-            },
-            {
-                "title": "Why the biggest risk for investors in 2027 isn't Nvidia — it's inflation",
-                "link": "https://finance.yahoo.com/economy/article/why-the-biggest-risk-for-investors-in-2027-isnt-nvidia--its-inflation-160241059.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-14 16:02",
-                "description": "The Fed has its latest inflation problem to contend with.",
-                "_timestamp": 1794672161.0
-            },
-            {
-                "title": "Why the biggest risk for investors in 2027 isn't Nvidia — it's inflation",
-                "link": "https://finance.yahoo.com/economy/article/why-the-biggest-risk-for-investors-in-2027-isnt-nvidia--its-inflation-160241059.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-14 16:02",
-                "description": "The Fed has its latest inflation problem to contend with.",
-                "_timestamp": 1794672161.0
-            },
-            {
-                "title": "Nvidia earnings collide with Fed's biggest AI challenge under Warsh",
-                "link": "https://www.thestreet.com/fed/fed-warsh-ai-task-force-nvidia-earnings?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 14:03",
-                "description": "Fed AI task force takes on potential impact on U.S. economy including inflation, jobs.",
-                "_timestamp": 1794751380.0
-            },
-            {
-                "title": "Forget Jensen Huang’s Resignation. AMD May Be Nvidia’s Biggest Threat in 2027",
-                "link": "https://247wallst.com/investing/2026/11/15/forget-jensen-huangs-resignation-amd-may-be-nvidias-biggest-threat-in-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 17:09",
-                "description": "AI labs that once treated NVIDIA as the only option are quietly rewriting their chip orders. One frontier lab says a switch that took a year now takes days, and that shift could reshape AMD's 2027.",
-                "_timestamp": 1794762563.0
-            },
-            {
-                "title": "AMD vs. Broadcom: With NVDA’s Jensen Huang Gone, Which AI Stock Wins the Most?",
-                "link": "https://247wallst.com/investing/2026/11/15/amd-vs-broadcom-with-nvdas-jensen-huang-gone-which-ai-stock-wins-the-most/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 17:16",
-                "description": "Nvidia's leadership vacuum handed AMD and Broadcom a brief rally before both stocks tumbled. One rewards patient retirees, the other bets on a GPU order shift. Three head-to-head tests reveal which chipmaker deserves your nest egg.",
-                "_timestamp": 1794763000.0
-            },
-            {
-                "title": "US Treasury chief wants answers soon from Nvidia",
-                "link": "https://finance.yahoo.com/technology/ai/articles/us-treasury-chief-wants-answers-183327447.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 18:33",
-                "description": "US Treasury Secretary Scott Bessent called on Nvidia Sunday to explain whether it knowingly allowed its most advanced AI chips to reach China, saying this was more important than ex-CEO Jensen Huang's affair with an alleged spy for Beijing.In late 2025, President Donald Trump did authorize sales of Nvidia chips called H200s to the Chinese -- but not the most advanced chips used to run AI models reshaping modern society.",
-                "_timestamp": 1794767607.0
-            },
-            {
-                "title": "Nvidia, Anthropic, Walmart, Home Depot, the Fed, Home Sales, and More to Watch This Week",
-                "link": "https://finance.yahoo.com/m/f8d75492-d543-31f8-a9e4-525c6a832328/nvidia%2C-anthropic%2C-walmart%2C.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 19:00",
-                "description": "In an especially big week for AI, Nvidia will report earnings and Anthropic will go public. Target, Walt Disney, and more will also report results. Economic releases will spotlight the Fed’s thinking on interest rates, and home construction and sales.",
-                "_timestamp": 1794769200.0
-            },
-            {
-                "title": "US Treasury chief wants answers soon from Nvidia",
-                "link": "https://finance.yahoo.com/technology/ai/articles/us-treasury-chief-wants-answers-202317355.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 20:23",
-                "description": "US Treasury Secretary Scott Bessent called on Nvidia Sunday to explain whether it knowingly allowed its most advanced AI chips to reach China, saying this was more important than ex-CEO Jensen Huang's affair with an alleged spy for Beijing.In late 2025, President Donald Trump did authorize sales of Nvidia chips called H200s to the Chinese -- but not the most advanced chips used to run AI models reshaping modern society.",
-                "_timestamp": 1794774197.0
-            },
-            {
-                "title": "Asia stocks slide as AI jitters deepen ahead of Nvidia results",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/asia-stocks-slide-ai-jitters-043337789.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-16 04:33",
-                "description": "Investing.com -- Asian stocks fell on Monday, led by Taiwan and South Korea, as renewed doubts over the AI trade and Nvidia’s leadership unsettled technology shares ahead of the chipmaker’s results. Weak Chinese data and Japan’s first economic contraction in a year added pressure.",
-                "_timestamp": 1794803617.0
-            },
-            {
-                "title": "Nvidia and Anthropic Will Really Test the Stock Market. Only One Thing Is Certain.",
-                "link": "https://finance.yahoo.com/m/0f3607ce-6aef-3837-bb1f-110209c2e287/nvidia-and-anthropic-will.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-16 16:05",
-                "description": "Nvidia earnings, the Anthropic IPO, Walmart and Lowe’s earnings, Fed minutes and a Trump/Putin/Xi summit. Buckle up.",
-                "_timestamp": 1794845100.0
-            },
-            {
-                "title": "Not Nvidia. Not Micron. These 2 Under-the-Radar AI Stocks Could Be Worth Holding Through 2030",
-                "link": "https://www.fool.com/investing/2026/11/16/not-nvidia-not-micron-these-2-under-the-radar-ai-s/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-16 16:30",
-                "description": "Investors should consider taking a closer look at these underrated AI infrastructure stocks given their terrific growth potential.",
-                "_timestamp": 1794846600.0
-            },
-            {
-                "title": "Why AMD Stock Was Sliding Today",
-                "link": "https://www.fool.com/investing/2026/11/16/why-amd-stock-was-sliding-today/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-16 16:51",
-                "description": "A new set of export restrictions on Southeast Asia poses a new threat to AMD and the chip sector.",
-                "_timestamp": 1794847908.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 16:51 UTC",
-            "Facts": "[Update 2026-11-16 16:51 UTC via Yahoo Finance Nasdaq]: AMD shares traded lower after the U.S. government announced expanded export restrictions targeting chip sales across Southeast Asia. The news contributed to a broad slump in Asian tech equities ahead of major semiconductor earnings reports.",
-            "Macro_Context": "Tightening technology trade controls and regional stock declines spark equity market de-risking, driving safe-haven demand toward bullion.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24-48 Hours",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Orderflow_Price_Target": "3880.30"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
         "main_date": "First Reported: 2026-11-16 16:50 UTC",
         "original_date": "2026-11-16 16:50",
         "_timestamp": 1794847802.0,
@@ -6802,35 +7068,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 14:25 UTC",
-        "original_date": "2026-11-16 14:25",
-        "_timestamp": 1794839147.0,
-        "articles": [
-            {
-                "title": "Sector Update: Energy Stocks Decline Premarket Monday",
-                "link": "https://finance.yahoo.com/energy/articles/sector-energy-stocks-decline-premarket-142547112.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-16 14:25",
-                "description": "Energy stocks were declining premarket Monday, with the State Street Energy Select Sector SPDR ETF (",
-                "_timestamp": 1794839147.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 14:25 UTC",
-            "Facts": "US energy sector equities and the State Street Energy Select Sector SPDR ETF experienced premarket declines on Monday.",
-            "Macro_Context": "Routine equity sector price movements without broad systemic market distress offer no direct price impulse for XAU/USD.",
-            "Impact_Timing": "Neutral",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "$3858.78"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-16 11:40 UTC | Last Update: 2026-11-16 14:20 UTC",
         "original_date": "2026-11-16 11:40",
         "_timestamp": 1794838852.0,
@@ -7679,37 +7916,6 @@
             "Probability_Percent": 0,
             "Orderflow_Price_Target": "3869.99"
         }
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 12:15 UTC",
-        "original_date": "2026-11-16 12:15",
-        "_timestamp": 1794831300.0,
-        "articles": [
-            {
-                "title": "‘Many jobs will disappear forever’: Bill Gates warns AI could wipe out careers within a decade. Protect your paycheck",
-                "link": "https://finance.yahoo.com/technology/ai/articles/many-jobs-disappear-forever-bill-121500123.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-16 12:15",
-                "description": "The job market hasn't fallen apart, but workers may want a backup plan before they need one.",
-                "_timestamp": 1794831300.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 12:15 UTC",
-            "Facts": "Bill Gates issued commentary regarding potential labor market displacement driven by artificial intelligence adoption over the next decade. He emphasized the importance of workers developing adaptive skills as automation expands across corporate sectors.",
-            "Macro_Context": "Broad long-term opinion statements on decadal labor trends do not create short-term market liquidity shocks or impact safe-haven demand.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday (1-24h)",
-            "XAUUSD_Impact": "Neutral / No Direct Transmission",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3869.99"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 4.14
     },
     {
         "main_date": "First Reported: 2026-11-16 12:11 UTC",
@@ -10207,61 +10413,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-14 15:25 UTC | Last Update: 2026-11-15 19:50 UTC",
-        "original_date": "2026-11-14 15:25",
-        "_timestamp": 1794772201.0,
-        "articles": [
-            {
-                "title": "Warren Buffett Said This 1 Mistake Cost Berkshire About $10 Billion. Here’s How Investors Can Avoid It.",
-                "link": "https://www.fool.com/investing/2026/11/14/warren-buffett-said-this-1-mistake-cost-berkshire-about-usd10-billion-here-s-how-investors-can-avoid-it/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-14 15:25",
-                "description": "Buffett said that hesitating over a small price gap on Walmart cost Berkshire about $10 billion. Here’s how to avoid the same trap.",
-                "_timestamp": 1794669903.0
-            },
-            {
-                "title": "Warren Buffett's Berkshire Compounded at More Than 19% a Year Over Six Decades, Nearly Double the S&P 500's 10% Return. Can Investors Still Apply That Playbook Today?",
-                "link": "https://www.fool.com/investing/2026/11/14/warren-buffetts-berkshire-compounded-at-more-than-19-a-year-over-six-decades-nearly-double-the-sp-500s-10-return-can-investors-still-apply-that-playbook-today/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-14 17:54",
-                "description": "Buffett’s wisdom is timeless.",
-                "_timestamp": 1794678842.0
-            },
-            {
-                "title": "Warren Buffett’s Berkshire Just Hit a Record High as Nvidia Sank. A 67-Year-Old Who Bought 1,000 Shares in 2016 Can Sell $106,000 of It This Year and Pay 0% on the Gain",
-                "link": "https://247wallst.com/investing/2026/11/14/warren-buffetts-berkshire-just-hit-a-record-high-as-nvidia-sank-a-67-year-old-who-bought-1000-shares-in-2016-can-sell-106000-of-it-this-year-and-pay-0-on-the-gain/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-14 23:53",
-                "description": "Berkshire Hathaway rose all five days and closed Friday at a record $592.94, up 3.9% in the week Nvidia lost its CEO and fell 12.7%. A 67-year-old who bought 1,000 Class B shares ten years ago at $157.93 holds $592,940 and a $435,010 gain in a stock that pays no dividend. Under 2026's 0% capital gains ceiling he can sell 179 shares, about $106,000, and owe nothing on the gain; the only cost is $2,075 of tax on Social Security that the sale makes ",
-                "_timestamp": 1794700380.0
-            },
-            {
-                "title": "This 27-Year-Old Warning From Warren Buffett Is More Important Than Ever for Investors Today",
-                "link": "https://www.fool.com/investing/2026/11/15/27-year-old-warning-warren-buffett-more-important-than-ever/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 19:50",
-                "description": "It's easy to predict that new technology will have a huge impact on society; it's not so easy to predict which companies will profit.",
-                "_timestamp": 1794772201.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-15 19:50 UTC",
-            "Facts": "[Update 2026-11-15 19:50 UTC via Yahoo Finance Nasdaq]: Berkshire Hathaway shares reached record highs, closing up 3.9% over a week where major tech equities experienced sharp drawdowns. Long-term investors are increasingly rotating capital into defensive value stocks as growth sector volatility mounts.",
-            "Macro_Context": "Capital rotation out of volatile tech equities and into defensive macro value assets highlights shifting risk appetite that frequently precedes safe-haven allocation into gold.",
-            "Impact_Timing": "Short-term (1-3 days)",
-            "Timeframe": "Weekly",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Orderflow_Price_Target": "$3899.42"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
         "main_date": "First Reported: 2026-11-10 17:24 UTC | Last Update: 2026-11-15 19:26 UTC",
         "original_date": "2026-11-10 17:24",
         "_timestamp": 1794770819.0,
@@ -10495,34 +10646,5 @@
         },
         "eval_status": "MISS",
         "max_dd_usd": 52.22
-    },
-    {
-        "main_date": "First Reported: 2026-11-15 18:50 UTC",
-        "original_date": "2026-11-15 18:50",
-        "_timestamp": 1794768602.0,
-        "articles": [
-            {
-                "title": "This Dividend King Yields 5 Times the S&P 500. Is It a Buy Now?",
-                "link": "https://www.fool.com/investing/2026/11/15/this-dividend-king-yields-5-times-the-s-and-p-500-is-it-a-buy-now/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 18:50",
-                "description": "It has a yield of more than 5%, but is it a trap?",
-                "_timestamp": 1794768602.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-15 18:50 UTC",
-            "Facts": "An isolated equity analysis discusses the dividend yield and investment merits of a specific stock relative to the broader S&P 500 index.",
-            "Macro_Context": "Individual stock dividend evaluations lack macro transmission channels to impact global gold prices or systemic risk.",
-            "Impact_Timing": "None",
-            "Timeframe": "Neutral",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 10,
-            "Orderflow_Price_Target": "$3884.68"
-        }
     }
 ]

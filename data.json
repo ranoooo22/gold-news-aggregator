@@ -133,9 +133,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 19:02 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 19:26 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794855738.0,
+        "_timestamp": 1794857160.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -912,6 +912,14 @@
                 "date": "2026-11-16 19:02",
                 "description": "Leveraged exposure to NVIDIA (NASDAQ:NVDA) is taking an oversized hit as the chipmaker extends its slide on the fallout from Jensen Huang’s resignation as CEO. The GraniteShares 2x Long NVDA Daily ETF (NASDAQ:NVDL) is at $16.21, down 9% in afternoon trading. The fund targets 2x NVIDIA’s daily return, so it amplifies every move in the […]",
                 "_timestamp": 1794855738.0
+            },
+            {
+                "title": "Jensen Huang Passed Billions in Nvidia Stock to His Heirs Months Before His Downfall",
+                "link": "https://finance.yahoo.com/m/f93688e0-5c36-372b-855e-b722a7cce11d/jensen-huang-passed-billions.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:26",
+                "description": "A decade-long estate-planning strategy moved nearly 60 million Nvidia shares into a family trust. It illustrates how soaring stocks can help wealthy families transfer fortunes without gift or estate taxes.",
+                "_timestamp": 1794857160.0
             }
         ],
         "needs_update": false,
@@ -919,9 +927,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 19:02 UTC",
-            "Facts": "Nvidia shares and related leveraged ETFs declined following the resignation of CEO Jensen Huang. Analysts and market commentators discussed alternative investments and leadership transitions in the semiconductor sector.",
-            "Market_Context": "Tech sector volatility driven by executive departures and upcoming corporate earnings."
+            "Event_Timestamp": "2026-11-16 19:26 UTC",
+            "Facts": "Nvidia shares and related leveraged ETFs declined following the resignation of CEO Jensen Huang and his prior transfer of millions of shares into a family trust. Market commentary highlighted leadership transition concerns and a shift in investor sentiment surrounding the company's growth drivers ahead of earnings.",
+            "Market_Context": "Broader equity market technology sector reacting to corporate governance changes and executive departure at a major semiconductor firm."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -10748,6 +10756,30 @@
             "Event_Timestamp": "2026-11-16 19:11 UTC",
             "Facts": "An ongoing sell-off in artificial intelligence and technology stocks led to capital rotation into defensive equities on Monday, with companies like Tyson and Starbucks leading gains in the S&P 500 and Nasdaq 100.",
             "Market_Context": "Investors are shifting portfolios toward defensive assets amidst a broader contraction in technology sector valuations."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 19:58 UTC",
+        "original_date": "2026-11-16 19:58",
+        "_timestamp": 1794859130.0,
+        "articles": [
+            {
+                "title": "Saudi, Qatari foreign ministers discuss efforts to de-escalate regional tensions",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-qatari-foreign-ministers-discuss-efforts-de-escalate-regional",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 19:58",
+                "description": "Saudi, Qatari foreign ministers discuss efforts to de-escalate regional tensions\n\n    \n    \n\n        \n    \n                \n\nSaudi Foreign Minister Prince Faisal bin Farhan held a phone call on Monday with his Qatari counterpart, Sheikh Mohammed bin Abdulrahman bin Jassim Al Thani, to discuss the escalation in the region, the Saudi Foreign Ministry said in a statement.\n\n“The call discussed the current regional escalation and efforts to de-escalat",
+                "_timestamp": 1794859130.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 19:58 UTC",
+            "Facts": "Saudi Foreign Minister Prince Faisal bin Farhan held a telephone discussion with Qatari counterpart Sheikh Mohammed bin Abdulrahman bin Jassim Al Thani to address ongoing regional escalation and coordinate de-escalation efforts.",
+            "Market_Context": "Geopolitical diplomatic engagement in the Middle East focused on regional stability and conflict mitigation."
         }
     }
 ]

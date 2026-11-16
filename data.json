@@ -136,9 +136,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 22:20 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 23:12 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794867635.0,
+        "_timestamp": 1794870779.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -987,9 +987,17 @@
                 "date": "2026-11-16 22:20",
                 "description": "Details of Berkshire Hathaway's Q3 buys and sells came in a 13F filing after Monday's close.",
                 "_timestamp": 1794867635.0
+            },
+            {
+                "title": "Broadcom Is “the Best Play” on Nvidia’s CEO Exit, One Investor Argues. The Reason Is China",
+                "link": "https://www.tikr.com/blog/broadcom-is-the-best-play-on-nvidias-ceo-exit-one-investor-argues-the-reason-is-china?ref=yahoofinance&tlnk=yf-261116-w5j2pv86&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:12",
+                "description": "Key TakeawaysBroadcom (AVGO) surged 5. 5% on November 12 following NVIDIA (NVDA) CEO Jensen Huang’s departure, before retreating to $333.",
+                "_timestamp": 1794870779.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
@@ -11554,8 +11562,15 @@
                 "_timestamp": 1794870062.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 23:01 UTC",
+            "Facts": "Four prominent AI chip stocks are trading as much as 36% below their record highs, presenting potential long-term buy-and-hold opportunities for the next decade.",
+            "Macro_Context": "Tech sector liquidity and semiconductor valuations fluctuate amid market corrections and investor interest in long-term artificial intelligence infrastructure growth."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 23:10 UTC",
@@ -11579,6 +11594,30 @@
             "Event_Timestamp": "2026-11-16 23:10 UTC",
             "Facts": "United Airlines reported a system outage Monday evening while the airline industry continues to recover from disruptions caused by a nationwide FAA ground stop from the previous week.",
             "Macro_Context": "Aviation sector operational disruptions following an FAA ground stop order."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:05 UTC",
+        "original_date": "2026-11-16 23:05",
+        "_timestamp": 1794870312.0,
+        "articles": [
+            {
+                "title": "Aschenbrenner’s Situational Awareness made AI bets again before October rout",
+                "link": "https://www.cnbc.com/2026/11/16/situational-awareness-aschenbrenner-new-ai-bets.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-16 23:05",
+                "description": "Leopold Aschenbrenner's hedge fund, which almost collapsed over the summer, bought AI stocks before shares began tumbling.",
+                "_timestamp": 1794870312.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 23:05 UTC",
+            "Facts": "Leopold Aschenbrenner's hedge fund, Situational Awareness, which nearly collapsed during the summer, repurchased artificial intelligence stocks shortly before the market rout in October.",
+            "Macro_Context": "Hedge fund positioning and risk management strategies in artificial intelligence-focused equities highlight ongoing volatility in the tech sector."
         }
     }
 ]

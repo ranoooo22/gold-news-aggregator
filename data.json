@@ -7236,9 +7236,9 @@
         "max_dd_usd": 17.01
     },
     {
-        "main_date": "First Reported: 2026-11-16 14:17 UTC",
+        "main_date": "First Reported: 2026-11-16 14:17 UTC | Last Update: 2026-11-16 20:17 UTC",
         "original_date": "2026-11-16 14:17",
-        "_timestamp": 1794838673.0,
+        "_timestamp": 1794860247.0,
         "articles": [
             {
                 "title": "4 High-Yield Energy Stocks That Get Paid to Move Oil and Gas",
@@ -7247,21 +7247,24 @@
                 "date": "2026-11-16 14:17",
                 "description": "Four pipeline partnerships collect fees on every barrel and cubic foot that flows through, and one pays out far more than the rest. But the biggest check comes with the most homework, and the tax paperwork can surprise unprepared investors.",
                 "_timestamp": 1794838673.0
+            },
+            {
+                "title": "4 High-Yield Big Oil Stocks Built to Keep Paying Dividends as Crude Prices Fall",
+                "link": "https://247wallst.com/investing/2026/11/16/4-high-yield-big-oil-stocks-built-to-keep-paying-dividends-as-crude-prices-fall/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 20:17",
+                "description": "Crude is slipping after a $97 quarter, and not every oil major's payout will survive the cooldown. Four NYSE-listed giants all promise income, but their cut histories, currency risks, and payout ratios tell very different stories.",
+                "_timestamp": 1794860247.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 14:17 UTC",
-            "Facts": "An energy sector report outlines master limited partnerships collecting toll fees on oil and gas transport. It details tax reporting complexities and yield structures for retail investors considering midstream pipeline stocks.",
-            "Macro_Context": "Routine single-sector investment advice has zero transmission channel to global energy benchmarks or spot Gold pricing.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24h Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "3858.78"
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-16 20:17 UTC",
+            "Facts": "As crude prices slip following a strong quarter, energy markets are evaluating high-yield pipeline partnerships and NYSE-listed oil majors to determine which dividend payouts and fee-based revenue models remain sustainable amidst falling crude prices.",
+            "Macro_Context": "Crude oil price cooling creates divergence in equity performance and dividend sustainability among energy sector stocks and midstream pipeline operators."
         }
     },
     {
@@ -10440,45 +10443,6 @@
             "Probability_Percent": 10,
             "Orderflow_Price_Target": "N/A"
         }
-    },
-    {
-        "main_date": "First Reported: 2026-11-15 18:07 UTC | Last Update: 2026-11-15 20:31 UTC",
-        "original_date": "2026-11-15 18:07",
-        "_timestamp": 1794774678.0,
-        "articles": [
-            {
-                "title": "Estonia to close border crossings with Russia after attack on drone maker",
-                "link": "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 18:07",
-                "description": "Eight arrests made in connection with an attempted arson, which Tallinn says was ordered by Russian intelligence.",
-                "_timestamp": 1794766022.0
-            },
-            {
-                "title": "Estonia to close border crossings with Russia after alleged arson attack",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/15/estonia-to-close-border-crossings-with-russia-after-alleged-arson-attack?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 20:31",
-                "description": "Estonia is closing its border crossings with Russia following an alleged arson attempt at a drone factory.",
-                "_timestamp": 1794774678.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Geopolitics & War",
-            "Event_Timestamp": "2026-11-15 20:31 UTC",
-            "Facts": "[Update 2026-11-15 20:31 UTC via Al Jazeera English]: Estonia is moving to close border crossings with Russia following an attempted arson attack on a local drone manufacturing facility. | Authorities have arrested eight individuals linked to the sabotage operation allegedly orchestrated by Russian intelligence.",
-            "Macro_Context": "Escalating Baltic-Russia border frictions increase regional security anxieties, reinforcing safe-haven demand for bullion.",
-            "Impact_Timing": "Next 24 hours",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 62,
-            "Orderflow_Price_Target": "$3864.00"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 7.02
     },
     {
         "main_date": "First Reported: 2026-11-16 18:54 UTC",

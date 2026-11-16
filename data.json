@@ -8582,9 +8582,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 08:40 UTC",
+        "main_date": "First Reported: 2026-11-16 08:40 UTC | Last Update: 2026-11-16 21:51 UTC",
         "original_date": "2026-11-16 08:40",
-        "_timestamp": 1794818421.0,
+        "_timestamp": 1794865877.0,
         "articles": [
             {
                 "title": "UKMTO reports a vessel hit by unknown projectile in Hormuz",
@@ -8593,9 +8593,17 @@
                 "date": "2026-11-16 08:40",
                 "description": "TEHRAN, Nov. 16 (MNA) – UK Maritime Trade Operations (UKMTO) reported that a vessel was struck by an unknown projectile while transiting out of Strait of Hormuz.",
                 "_timestamp": 1794818421.0
+            },
+            {
+                "title": "UKMTO: Tanker transiting Strait of Hormuz attacked near Oman",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-tanker-transiting-strait-hormuz-attacked-near-oman",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 21:51",
+                "description": "UKMTO: Tanker transiting Strait of Hormuz attacked near Oman \n\n    \n    \n\n        \n    \n                A tanker transiting the Strait of Hormuz was attacked seven nautical miles north of Khasab, Oman, the United Kingdom Maritime Trade Operations (UKMTO) said on Monday.\n\nCiting a third-party agency, UKMTO said that the attack disabled the vessel and caused fire in the engine room. The crew was reported safe.\n\nThe extent of the damage is not known",
+                "_timestamp": 1794865877.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 5,
             "Is_Gold_Relevant": true,
@@ -11100,8 +11108,15 @@
                 "_timestamp": 1794864512.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-16 21:28 UTC",
+            "Facts": "Chevron is reportedly nearing a deal to acquire a majority stake in Blackstone-backed Beacon Offshore Energy, valuing the U.S. Gulf producer at approximately $5 billion.",
+            "Macro_Context": "Energy sector consolidation continues as major producers target offshore assets."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 21:29 UTC",
@@ -11149,6 +11164,54 @@
             "Event_Timestamp": "2026-11-16 21:13 UTC",
             "Facts": "A broad technology sector sell-off in Asia, triggered by leadership issues at Nvidia and heightened scrutiny of advanced chips, has shifted investor focus toward alternative asset classes and overlooked equities. Financial analysts are highlighting hidden gem small-cap Australian stocks with strong balance sheets as potential entry points.",
             "Macro_Context": "Broader tech sector volatility and equity market corrections often drive capital rotation into defensive assets and alternative commodity-linked equities, including gold and precious metals."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:38 UTC",
+        "original_date": "2026-11-16 21:38",
+        "_timestamp": 1794865108.0,
+        "articles": [
+            {
+                "title": "Western Canada Select crude discount to WTI widens on Monday",
+                "link": "https://www.investing.com/news/commodities-news/western-canada-select-crude-discount-to-wti-widens-on-monday-93CH-5031040",
+                "source": "Investing.com",
+                "date": "2026-11-16 21:38",
+                "description": "",
+                "_timestamp": 1794865108.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-16 21:38 UTC",
+            "Facts": "The discount of Western Canada Select (WCS) crude relative to WTI widened on Monday.",
+            "Macro_Context": "Shifts in North American heavy crude differentials reflect changing regional supply and pipeline dynamics."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:49 UTC",
+        "original_date": "2026-11-16 21:49",
+        "_timestamp": 1794865740.0,
+        "articles": [
+            {
+                "title": "Chase says ‘software bug’ could be causing disruptions at major U.S. banks",
+                "link": "https://www.marketwatch.com/story/customers-of-chase-bank-of-america-and-other-u-s-banks-report-service-outages-18fe23b8?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-16 21:49",
+                "description": "Some customers are saying they can’t access their accounts or their unable to withdraw funds.",
+                "_timestamp": 1794865740.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 21:49 UTC",
+            "Facts": "Chase reported that a software bug could be causing customer disruptions at major U.S. banks, with some users unable to access accounts or withdraw funds.",
+            "Macro_Context": "Operational and software issues at major financial institutions impact retail account accessibility."
         }
     }
 ]

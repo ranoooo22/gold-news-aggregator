@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GMIT // XAU — Gold & Macro Data Terminal</title>
-    <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="[https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js](https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js)"></script>
+    <script src="[https://cdn.plot.ly/plotly-2.27.0.min.js](https://cdn.plot.ly/plotly-2.27.0.min.js)"></script>
     <style>
         :root {
             --bg-main: #06080c;
@@ -216,6 +216,12 @@
         .tag-buy { background: rgba(0, 230, 118, 0.18); color: var(--bull-green); }
         .ladder-right { font-size: 0.71rem; color: var(--text-secondary); }
         .ladder-tot-vol { font-weight: 800; color: var(--bb-amber); }
+        .ladder-split-line {
+            position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.67rem; color: var(--text-secondary); padding-top: 3px; border-top: 1px dashed rgba(255, 255, 255, 0.07);
+        }
+        .split-oanda { color: var(--bb-cyan); font-weight: 700; }
+        .split-comex { color: #c084fc; font-weight: 700; }
         .ladder-spot-divider {
             background: #000000; border: 1px solid var(--bb-amber); color: var(--bb-amber);
             padding: 7px 10px; border-radius: 3px; display: flex; justify-content: space-between; align-items: center;
@@ -230,12 +236,29 @@
         .plotly-box { width: 100%; height: 410px; border-radius: var(--radius-md); background: #0d1117; }
         .surface-caption { margin-top: 8px; padding-top: 7px; border-top: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.71rem; color: var(--text-secondary); display: flex; justify-content: space-between; }
 
-        .news-card { background-color: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color); border-left: 4px solid var(--text-muted); margin-bottom: 8px; overflow: hidden; }
+        /* News Tab Styling & Pinned Cards */
+        .controls-panel {
+            background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg);
+            padding: 10px 14px; margin-bottom: 11px; display: flex; justify-content: space-between; align-items: center;
+        }
+        .search-input { padding: 6px 10px; border-radius: var(--radius-md); border: 1px solid var(--border-color); background-color: var(--bg-subtle); color: var(--text-primary); font-family: var(--font-mono); font-size: 0.76rem; width: 100%; outline: none; }
+        .search-input:focus { border-color: var(--bb-amber); }
+
+        .news-card {
+            background-color: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color);
+            border-left: 4px solid var(--text-muted); margin-bottom: 8px; overflow: hidden;
+        }
+        .news-card.is-pinned { border: 1px solid var(--bb-amber); border-left: 5px solid var(--bb-amber); background: linear-gradient(to bottom, rgba(255, 153, 0, 0.07) 0%, var(--bg-card) 75px); }
         .card-accordion-header { padding: 10px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 5px; }
         .card-accordion-header:hover { background-color: var(--bg-subtle); }
         .card-top-row { display: flex; justify-content: space-between; align-items: center; }
         .date-header { color: var(--bb-amber); font-family: var(--font-mono); font-size: 0.73rem; }
         .cluster-headline { font-size: 0.93rem; font-weight: 700; color: #ffffff; margin: 0; }
+        .pin-btn { background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-color); padding: 2px 8px; border-radius: 3px; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; cursor: pointer; }
+        .pin-btn:hover { border-color: var(--bb-amber); color: var(--bb-amber); }
+        .pin-btn.active { background: var(--bb-amber); color: #000000; border-color: var(--bb-amber); }
+        .pinned-tag { background: var(--bb-amber); color: #000000; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 800; padding: 1px 6px; border-radius: 2px; text-transform: uppercase; }
+
         .card-accordion-body { display: none; padding: 12px 14px; border-top: 1px solid var(--border-color); background: var(--bg-card); font-size: 0.85rem; line-height: 1.5; }
         .news-card.is-expanded .card-accordion-body { display: block; }
 
@@ -322,6 +345,9 @@
 
         <!-- TAB 2: NEWS FEED -->
         <div id="news-tab" class="tab-content">
+            <div class="controls-panel">
+                <input type="text" id="search-query" class="search-input" placeholder="Search headlines, drivers, sources..." oninput="renderNews()">
+            </div>
             <div id="news-container">
                 <p style="text-align:center; padding: 30px; color:#64748b; font-family:var(--font-mono);">Loading objective news feed...</p>
             </div>
@@ -352,6 +378,7 @@
         let chartResizeObserver = null;
         const MAX_ZONE_RADIUS_PCT = 0.025;
         let m2ViewMode = '3d';
+        const PINNED_STORAGE_KEY = 'gold_terminal_pinned_clusters_v1';
 
         function switchTab(event, tabId) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
@@ -367,6 +394,27 @@
 
         function escapeHtml(str) {
             return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
+        function loadPinnedMap() {
+            try { const raw = localStorage.getItem(PINNED_STORAGE_KEY); return raw ? JSON.parse(raw) : {}; } catch(e) { return {}; }
+        }
+        function savePinnedMap(mapObj) {
+            try { localStorage.setItem(PINNED_STORAGE_KEY, JSON.stringify(mapObj)); } catch(e) {}
+        }
+        function togglePinCluster(clusterKey, event) {
+            if (event) event.stopPropagation();
+            const map = loadPinnedMap();
+            if (map[clusterKey]) delete map[clusterKey];
+            else {
+                const found = allClusters.find(c => getClusterKey(c) === clusterKey);
+                if (found) map[clusterKey] = { pinned_at: Date.now(), snapshot: found };
+            }
+            savePinnedMap(map);
+            renderNews();
+        }
+        function getClusterKey(cluster) {
+            return (cluster.articles && cluster.articles[0]) ? cluster.articles[0].link : String(cluster._timestamp || '');
         }
 
         function renderLiquidityLadder(orderbookZones, spotPrice) {
@@ -390,7 +438,11 @@
                                 <span class="ladder-price">$${z.price.toFixed(2)}</span>
                                 <span class="ladder-side-tag ${isBuy ? 'tag-buy' : 'tag-sell'}">${z.dominance}</span>
                             </div>
-                            <div class="ladder-right"><span class="ladder-tot-vol">Vol: ${z.volume.toFixed(2)}%</span></div>
+                            <div class="ladder-right"><span class="ladder-tot-vol">Tot: ${z.volume.toFixed(2)}%</span></div>
+                        </div>
+                        <div class="ladder-split-line">
+                            <span>OANDA: <span class="split-oanda">${z.oanda_vol.toFixed(2)}%</span></span>
+                            <span>COMEX: <span class="split-comex">${z.comex_vol.toFixed(2)}%</span></span>
                         </div>
                     </div>`;
             };
@@ -414,7 +466,7 @@
         async function pollLiveBrowserPrice() {
             if (document.visibilityState !== 'visible') return;
             try {
-                const res = await fetch('https://scanner.tradingview.com/global/scan', {
+                const res = await fetch('[https://scanner.tradingview.com/global/scan](https://scanner.tradingview.com/global/scan)', {
                     method: 'POST',
                     headers: {'Content-Type': 'text/plain'},
                     body: JSON.stringify({symbols: {tickers: ["CAPITALCOM:GOLD", "OANDA:XAUUSD"]}, columns: ["close"]})
@@ -518,27 +570,69 @@
             const container = document.getElementById('news-container');
             try {
                 const res = await fetch('data.json?t=' + Date.now());
-                const clusters = await res.json();
-                container.innerHTML = '';
-                clusters.forEach(c => {
-                    const s = c.summary || {};
-                    const card = document.createElement('div');
-                    card.className = 'news-card';
-                    card.innerHTML = `
-                        <div class="card-accordion-header" onclick="this.parentElement.classList.toggle('is-expanded')">
-                            <div class="card-top-row">
+                allClusters = await res.json();
+                renderNews();
+            } catch(e) { container.innerHTML = `<p style="color:#ff3b30;">Error loading news.</p>`; }
+        }
+
+        function renderNews() {
+            const container = document.getElementById('news-container');
+            container.innerHTML = '';
+            const searchQuery = (document.getElementById('search-query')?.value || '').trim().toLowerCase();
+            const pinnedMap = loadPinnedMap();
+
+            let filtered = allClusters.filter(c => {
+                if (searchQuery) {
+                    const text = [c.summary?.Dominant_Driver, c.summary?.Facts, ...(c.articles || []).map(a => a.title + ' ' + a.source)].join(' ').toLowerCase();
+                    return text.includes(searchQuery);
+                }
+                return true;
+            });
+
+            filtered.sort((a, b) => {
+                const pinA = Boolean(pinnedMap[getClusterKey(a)]);
+                const pinB = Boolean(pinnedMap[getClusterKey(b)]);
+                if (pinA && !pinB) return -1;
+                if (!pinA && pinB) return 1;
+                return (b._timestamp || 0) - (a._timestamp || 0);
+            });
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<p style="text-align:center; padding: 30px; color:#64748b; font-family:var(--font-mono);">No matching news found.</p>';
+                return;
+            }
+
+            filtered.forEach(c => {
+                const key = getClusterKey(c);
+                const pinned = Boolean(pinnedMap[key]);
+                const s = c.summary || {};
+                const articles = c.articles || [];
+                const card = document.createElement('div');
+                card.className = `news-card ${pinned ? 'is-pinned' : ''}`;
+
+                let sourcesHtml = articles.map(a => `<div style="margin-bottom:4px;"><a href="${escapeHtml(a.link)}" target="_blank" style="color:var(--bb-cyan);">${escapeHtml(a.title)}</a> <span style="color:var(--text-muted);">(${escapeHtml(a.source)} - ${escapeHtml(a.date)})</span></div>`).join('');
+
+                card.innerHTML = `
+                    <div class="card-accordion-header" onclick="this.parentElement.classList.toggle('is-expanded')">
+                        <div class="card-top-row">
+                            <div style="display:flex; align-items:center; gap:8px;">
+                                ${pinned ? '<span class="pinned-tag">PINNED</span>' : ''}
                                 <span class="date-header">${escapeHtml(c.main_date)}</span>
                                 <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--bb-cyan);">${escapeHtml(s.Dominant_Driver || 'News')}</span>
                             </div>
-                            <h2 class="cluster-headline">${escapeHtml((c.articles[0] || {}).title || 'News Update')}</h2>
+                            <button class="pin-btn ${pinned ? 'active' : ''}" onclick="togglePinCluster('${escapeHtml(key)}', event)">${pinned ? 'UNPIN' : 'PIN'}</button>
                         </div>
-                        <div class="card-accordion-body">
-                            <p><strong>Facts:</strong> ${escapeHtml(s.Facts)}</p>
-                            <p><strong>Market-Context:</strong> ${escapeHtml(s.Market_Context)}</p>
-                        </div>`;
-                    container.appendChild(card);
-                });
-            } catch(e) { container.innerHTML = `<p style="color:#ff3b30;">Error loading news.</p>`; }
+                        <h2 class="cluster-headline">${escapeHtml((articles[0] || {}).title || 'News Update')}</h2>
+                    </div>
+                    <div class="card-accordion-body">
+                        <p><strong>Facts:</strong> ${escapeHtml(s.Facts)}</p>
+                        <p><strong>Market Context:</strong> ${escapeHtml(s.Market_Context)}</p>
+                        <hr style="border:0; border-top:1px solid var(--border-color); margin:10px 0;">
+                        <strong style="font-family:var(--font-mono); font-size:0.75rem; color:var(--bb-amber);">Sources (${articles.length}):</strong>
+                        <div style="margin-top:6px;">${sourcesHtml}</div>
+                    </div>`;
+                container.appendChild(card);
+            });
         }
 
         loadChart();

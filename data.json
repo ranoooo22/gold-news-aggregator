@@ -3666,9 +3666,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 21:13 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 22:07 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794863604.0,
+        "_timestamp": 1794866877.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4493,16 +4493,24 @@
                 "date": "2026-11-16 21:13",
                 "description": "The technology company CEO's self-inflicted personal and professional wounds have a ripple effect that potentially makes payments and bank innovation more expensive, riskier and hamstrung by deeper regulatory scrutiny.",
                 "_timestamp": 1794863604.0
+            },
+            {
+                "title": "Jenny Harrington Says Jensen Huang ‘Incinerated Over $1 Trillion.’ Why She Thinks Nvidia’s Recovery Will Take Longer",
+                "link": "https://247wallst.com/investing/2026/11/16/jenny-harrington-says-jensen-huang-incinerated-over-1-trillion-why-she-thinks-nvidias-recovery-will-take-longer/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:07",
+                "description": "Nvidia reports earnings tomorrow with a strong quarter expected, yet one CNBC panelist says the real damage has nothing to do with revenue. Her case turns on trust, a financing model, and who was vouching for it.",
+                "_timestamp": 1794866877.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 21:13 UTC",
-            "Facts": "[Update 2026-11-16 21:13 UTC via Yahoo Finance Nasdaq]: Corporate-governance experts note that a triumphant return for Jensen Huang as Nvidia CEO is unlikely despite a 115,000-signature petition and remarks from President Donald Trump, as the scandal threatens AI booms across financial services.",
-            "Macro_Context": "Corporate governance concerns and regulatory risks stemming from leadership changes in foundational AI firms."
+            "Event_Timestamp": "2026-11-16 22:07 UTC",
+            "Facts": "[Update 2026-11-16 22:07 UTC via Yahoo Finance Nasdaq]: CNBC panelist Jenny Harrington noted that Jensen Huang incinerated over $1 trillion in market value, pointing out that Nvidia's recovery will be prolonged due to damaged trust and questions surrounding its financing model. Corporate governance experts and analysts discuss the unlikelihood of his return despite a 115,000-signature petition and public remarks from President Donald Trump, while the ongoing fallout threatens the broader financial services AI boom.",
+            "Macro_Context": "Corporate leadership crisis at Nvidia impacting broader AI sector sentiment and financial tech innovation."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -4733,9 +4741,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 21:52 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 22:03 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794865947.0,
+        "_timestamp": 1794866627.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -4792,16 +4800,24 @@
                 "date": "2026-11-16 21:52",
                 "description": "(Updates with market moves at the end of the day, and other changes, if any.) The Nasdaq Composit",
                 "_timestamp": 1794865947.0
+            },
+            {
+                "title": "Tower Semiconductor (TSEM) Expects Profit to Outrun Sales. What’s Behind It?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/tower-semiconductor-tsem-expects-profit-220347110.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:03",
+                "description": "We just shared our list of 11 Unstoppable Stocks to Buy According to Analysts, and Tower Semiconductor (NASDAQ:TSEM) is 9th on it. AI stocks had a brutal week. Last Thursday, the S&amp;P 500 fell 4.4%, its biggest one-day drop since the April 2025 tariff shock. The Dow Jones Industrial Average lost more than 1,800 points, […]",
+                "_timestamp": 1794866627.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 21:52 UTC",
-            "Facts": "[Update 2026-11-16 21:52 UTC via Yahoo Finance Nasdaq]: Nasdaq and S&P 500 fell for the third consecutive day as tech and crypto markets experience heavy selling pressure. Bitcoin slid toward the $62,000 level amid rising Treasury yields and pre-earnings jitters.",
-            "Macro_Context": "Broader financial market weakness characterized by rising yields and risk-off sentiment across equities and crypto."
+            "Event_Timestamp": "2026-11-16 22:03 UTC",
+            "Facts": "[Update 2026-11-16 22:03 UTC via Yahoo Finance Nasdaq]: U.S. equities extended losses, with the Nasdaq and S&P 500 falling for a third consecutive day amid an ongoing Nvidia sell-off. The Dow Jones dropped significantly following comments from President Trump regarding Jensen Huang and Howard Lutnick, while crypto markets experienced their worst week since June with Bitcoin sliding toward $62,000.",
+            "Macro_Context": "Broader market correction driven by tech sector turmoil, political commentary, and risk-off sentiment across equities and crypto."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
@@ -11185,8 +11201,15 @@
                 "_timestamp": 1794865570.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 21:46 UTC",
+            "Facts": "[Update 2026-11-16 21:46 UTC via Yahoo Finance Nasdaq]: Benchmark Company general partner Bill Gurley discussed concerns regarding circular financing models associated with Nvidia, specifically questioning the stability of the 'bank of Nvidia' following the departure of chief executive Jensen Huang.",
+            "Macro_Context": "Scrutiny over semiconductor financing structures and corporate governance risks in the AI ecosystem."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 21:35 UTC",
@@ -11202,8 +11225,15 @@
                 "_timestamp": 1794864951.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 21:35 UTC",
+            "Facts": "[Update 2026-11-16 21:35 UTC via Al Jazeera English]: The State of California, through Attorney General Rob Bonta, filed a lawsuit against OpenAI citing a lack of proper safety safeguards and arguing that recent vulnerabilities like the Hugging Face attack were an entirely predictable consequence of prioritizing rapid growth.",
+            "Macro_Context": "Increasing regulatory and legal pressure on artificial intelligence developers regarding safety protocols and risk management."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 22:00 UTC",
@@ -11219,8 +11249,15 @@
                 "_timestamp": 1794866400.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 22:00 UTC",
+            "Facts": "[Update 2026-11-16 22:00 UTC via Yahoo Finance Gold]: K92 Mining reported its Q3 2026 financial results, highlighting record cash and net cash positions alongside strong quarterly production of 49,776 ounces gold equivalent (including 46,063 ounces of gold), representing its second-highest quarterly production to date as the Stage 3 expansion ramp-up gains momentum.",
+            "Macro_Context": "Positive operational performance and robust liquidity generation among mid-tier gold and copper producers."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 22:05 UTC",
@@ -11236,8 +11273,15 @@
                 "_timestamp": 1794866700.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-16 22:05 UTC",
+            "Facts": "[Update 2026-11-16 22:05 UTC via Yahoo Finance Oil]: Oil prices fell on signs that oil flows through the Strait of Hormuz are recovering, reinforcing expectations of surplus supply. Concurrently, the U.S. Energy Information Administration published new quarterly tanker figures, an outbound tanker reported being struck, and two North American energy producers announced corporate acquisitions.",
+            "Macro_Context": "Fluctuating crude oil prices responding to Middle East transit updates, supply surplus expectations, and sector M&A activity."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 22:00 UTC",
@@ -11253,7 +11297,102 @@
                 "_timestamp": 1794866400.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-16 22:00 UTC",
+            "Facts": "Obsidian Energy announced a transition from its current functional model to two dedicated asset teams focused on Heavy Oil and Light Oil, effective December 1, 2026, to sharpen execution and accelerate growth.",
+            "Macro_Context": "Energy sector corporate restructuring aimed at optimizing asset platforms."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:04 UTC",
+        "original_date": "2026-11-16 22:04",
+        "_timestamp": 1794866646.0,
+        "articles": [
+            {
+                "title": "Lumentum (LITE) Got a Takeover Offer. What Does It Mean for Holders? (",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/lumentum-lite-got-takeover-offer-220406453.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:04",
+                "description": "Lumentum (NASDAQ:LITE) took the 10th spot on our latest list, 11 Unstoppable Stocks to Buy According to Analysts. AI stocks had a brutal week. Last Thursday, the S&amp;P 500 fell 4.4%, its biggest one-day drop since the April 2025 tariff shock. The Dow Jones Industrial Average lost more than 1,800 points, and the Nasdaq Composite […]",
+                "_timestamp": 1794866646.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 22:04 UTC",
+            "Facts": "Lumentum (NASDAQ:LITE) received a takeover offer and was featured as the 10th spot on a list of unstoppable stocks by analysts, following a turbulent week for AI stocks and broader equity markets.",
+            "Macro_Context": "Broader technology sector volatility following a significant one-day drop in major US indices."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:03 UTC | Last Update: 2026-11-16 22:03 UTC",
+        "original_date": "2026-11-16 22:03",
+        "_timestamp": 1794866607.0,
+        "articles": [
+            {
+                "title": "Ciena (CIEN) Raised Its Forecast After a Record Quarter. What Drove It?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/ciena-cien-raised-forecast-record-220327219.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:03",
+                "description": "Ciena (NYSE:CIEN) came in 8th on the list of 11 Unstoppable Stocks to Buy According to Analysts that we just published. AI stocks had a brutal week. Last Thursday, the S&amp;P 500 fell 4.4%, its biggest one-day drop since the April 2025 tariff shock. The Dow Jones Industrial Average lost more than 1,800 points, and […]",
+                "_timestamp": 1794866607.0
+            },
+            {
+                "title": "Semtech (SMTC) Is Among Stocks Analysts See Big Upside In. Why?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/semtech-smtc-among-stocks-analysts-220253352.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:02",
+                "description": "We just published the list of 11 Unstoppable Stocks to Buy According to Analysts and Semtech (NASDAQ:SMTC) ranks 6th on this list. AI stocks had a brutal week. Last Thursday, the S&amp;P 500 fell 4.4%, its biggest one-day drop since the April 2025 tariff shock. The Dow Jones Industrial Average lost more than 1,800 points, […]",
+                "_timestamp": 1794866573.0
+            },
+            {
+                "title": "5 Unstoppable Stocks to Buy According to Analysts",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/5-unstoppable-stocks-buy-according-220213130.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:02",
+                "description": "AI stocks had a brutal week. Last Thursday, the S&amp;P 500 fell 4.4%, its biggest one-day drop since the April 2025 tariff shock. The Dow Jones Industrial Average lost more than 1,800 points, and the Nasdaq Composite tumbled 5.5%. The slide erased the market’s gain from the day before, its best in three months. Stock […]",
+                "_timestamp": 1794866533.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 22:02 UTC",
+            "Facts": "[Update 2026-11-16 22:03 UTC via Yahoo Finance Nasdaq]: Ciena (CIEN) raised its forecast after a record quarter, ranking 8th on the list of unstoppable stocks. [Update 2026-11-16 22:02 UTC via Yahoo Finance Nasdaq]: Semtech (SMTC) ranks 6th on the analyst list, highlighting significant upside potential amid AI stock volatility.",
+            "Macro_Context": "Broader market correction characterized by the S&P 500 falling 4.4% in its largest one-day drop since the April 2025 tariff shock."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:03 UTC",
+        "original_date": "2026-11-16 22:03",
+        "_timestamp": 1794866590.0,
+        "articles": [
+            {
+                "title": "DigitalOcean (DOCN) Is Growing Faster Than It Has in a Decade. How?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/digitalocean-docn-growing-faster-decade-220310037.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:03",
+                "description": "DigitalOcean (NYSE:DOCN) ranks 7th on our newly published list of 11 Unstoppable Stocks to Buy According to Analysts. AI stocks had a brutal week. Last Thursday, the S&amp;P 500 fell 4.4%, its biggest one-day drop since the April 2025 tariff shock. The Dow Jones Industrial Average lost more than 1,800 points, and the Nasdaq Composite […]",
+                "_timestamp": 1794866590.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 22:03 UTC",
+            "Facts": "DigitalOcean (NYSE:DOCN) ranks 7th on a list of unstoppable stocks by analysts, reporting growth rates faster than it has seen in a decade.",
+            "Macro_Context": "Technology and cloud services growth highlighted amid broader market sell-offs."
+        }
     }
 ]

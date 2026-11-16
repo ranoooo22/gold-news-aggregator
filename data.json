@@ -8904,9 +8904,9 @@
         "max_dd_usd": 1.65
     },
     {
-        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-16 19:03 UTC",
+        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-16 19:53 UTC",
         "original_date": "2026-11-12 13:02",
-        "_timestamp": 1794855780.0,
+        "_timestamp": 1794858788.0,
         "articles": [
             {
                 "title": "Musk Says it Would be an 'Honor' to Hire Jensen Huang as Nvidia's Board Reportedly Gears up to Remove Him",
@@ -9131,16 +9131,24 @@
                 "date": "2026-11-16 19:03",
                 "description": "Market Hang host Mark Malek, Siebert Financial's chief investment officer, and his panel of experts weigh in on whether Jensen Huang would start a new venture rather than return to Nvidia (NVDA). Today's panel includes Neostellar Principal Willy Lee, FAS Wealth Partners Chief Investment Strategist Mike Rode, Lopez Research Founder Maribel Lopez, and Macro Talk News founder Hope King,",
                 "_timestamp": 1794855780.0
+            },
+            {
+                "title": "Nearly a tenth of the S&P 500 is tied to three men with no clear successors",
+                "link": "https://washingtonpost.com/technology/2026/11/16/probably-biggest-fear-elon-has-why-huangs-exit-looms-over-musk/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:53",
+                "description": "In the wake of Jensen Huang’s resignation from Nvidia last week, Elon Musk stumbled upon an X post in which a user lamented: “one does not just simply replace the founder.” “True words,” Musk replied. Subscribe to The Post Most newsletter for the most important and interesting stories from The Washington Post. Inside Musk’s own companies, that message has reverberated for years. Tesla and SpaceX have long grappled with investors’ concerns about t",
+                "_timestamp": 1794858788.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 19:03 UTC",
-            "Facts": "Public debate regarding Jensen Huang's departure from Nvidia continued, involving public figures calling for his reinstatement alongside corporate investigations linked to former associates.",
-            "Market_Context": "Corporate news flow and industry-wide attention concentrated on high-profile executive management changes in the technology sector."
+            "Event_Timestamp": "2026-11-16 19:53 UTC",
+            "Facts": "[Update 2026-11-16 04:46 UTC via Al Jazeera English]: Singapore-based firm Megaspeed stated that Chinese tech executive Alice Huang, romantically linked to the ex-Nvidia CEO, left the company in August 2025. [Update 2026-11-16 19:03 UTC via Yahoo Finance Nasdaq]: Market experts discussed whether Jensen Huang might launch a new startup within six months rather than return. [Update 2026-11-16 19:53 UTC via Yahoo Finance Nasdaq]: Nearly a tenth of the S&P 500 is tied to three key figures lacking clear successors following Huang's resignation. Elon Musk and over 158,000 signatories signed an open letter calling for Jensen Huang's reinstatement at Nvidia, though US Treasury Secretary Scott Bessent argued Nvidia should look outside the company for its next chief.",
+            "Macro_Context": "The sudden departure of Nvidia's chief has sparked broader market concerns regarding key-man risk across major technology conglomerates and leadership succession planning within the S&P 500."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.62

@@ -4715,9 +4715,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-16 19:05 UTC",
+        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-16 20:38 UTC",
         "original_date": "2026-11-02 21:53",
-        "_timestamp": 1794855918.0,
+        "_timestamp": 1794861480.0,
         "articles": [
             {
                 "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
@@ -5422,16 +5422,24 @@
                 "date": "2026-11-16 19:05",
                 "description": "TEHRAN, Nov. 16 (MNA) – The Iranian Army’s Public Relations Office announced that an MQ-1 drone was struck and destroyed over the Strait of Hormuz by domestically developed systems operated by the Army’s Air Defense Force.",
                 "_timestamp": 1794855918.0
+            },
+            {
+                "title": "Iranian TV: Tanker ablaze after hitting mine in Strait of Hormuz, fourth in 24 hours",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-tv-tanker-ablaze-after-hitting-mine-strait-hormuz-fourth-24",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 20:38",
+                "description": "Iranian TV: Tanker ablaze after hitting mine in Strait of Hormuz, fourth in 24 hours\n\n    \n    \n\n        \n    \n                A tanker caught fire after hitting a mine in the Strait of Hormuz, the fourth such incident in 24 hours, Iranian state TV reported.",
+                "_timestamp": 1794861480.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 19:05 UTC",
-            "Facts": "The Iranian military reported shooting down a U.S. MQ-1 drone over the Strait of Hormuz. Additionally, Iranian state media reported that multiple oil tankers struck naval mines and exploded in prohibited areas.",
-            "Market_Context": "Heightened geopolitical friction and maritime security risks in a critical global energy transit chokepoint."
+            "Event_Timestamp": "2026-11-16 20:38 UTC",
+            "Facts": "[Update 2026-11-16 19:05 UTC via Mehr News Agency]: The Iranian Army shot down an MQ-1 drone over the Strait of Hormuz using domestically developed air defense systems. [Update 2026-11-16 16:40 UTC via Mehr News Agency]: The Iranian Navy reported that multiple oil tankers violating maritime regulations exploded after striking naval mines in prohibited areas east of the Strait of Hormuz. A fourth tanker caught fire within a 24-hour period.",
+            "Macro_Context": "Escalating military tensions and maritime disruptions in the Strait of Hormuz directly threaten global crude oil supply routes, increasing safe-haven demand for gold."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0

@@ -3542,9 +3542,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 19:05 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 19:19 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794855902.0,
+        "_timestamp": 1794856744.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4321,9 +4321,25 @@
                 "date": "2026-11-16 18:51",
                 "description": "Nvidia’s board is focused on a national security investigation into Huang and is not discussing his return, CNBC reported.",
                 "_timestamp": 1794855086.0
+            },
+            {
+                "title": "Why Nvidia may need an operator as CEO — not a visionary",
+                "link": "https://finance.yahoo.com/video/why-nvidia-may-need-an-operator-as-ceo--not-a-visionary-191904373.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:19",
+                "description": "Siebert Financial chief investment officer Mark Malek and his panel of experts weigh in on what type of CEO Nvidia (NVDA) needs. Today's panel includes Neostellar principal Willy Lee, FAS Wealth Partners chief investment strategist Mike Rode, Lopez Research founder Maribel Lopez, and Macro Talk News founder Hope King.",
+                "_timestamp": 1794856744.0
+            },
+            {
+                "title": "Nvidia faces earnings test amid calls for Huang comeback",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-braces-first-earnings-without-173610594.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:15",
+                "description": "AI chip juggernaut Nvidia entered its first full week without Jensen Huang as CEO, with Wall Street nervously eyeing Tuesday’s earnings report for signs of whether the AI boom can withstand the widening scandal that toppled him.That could ripple across the AI investment boom propping up the US economy, with Nvidia backing major labs including Anthropic, the maker of the Claude chatbot, which is expected to begin trading on Wall Street on Thursday",
+                "_timestamp": 1794856556.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
@@ -10566,9 +10582,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 19:09 UTC",
+        "main_date": "First Reported: 2026-11-16 19:09 UTC | Last Update: 2026-11-16 19:30 UTC",
         "original_date": "2026-11-16 19:09",
-        "_timestamp": 1794856144.0,
+        "_timestamp": 1794857415.0,
         "articles": [
             {
                 "title": "Customers of major US banks report outages days after Microsoft issues",
@@ -10577,9 +10593,17 @@
                 "date": "2026-11-16 19:09",
                 "description": "Bank of America, Chase, J.P. Morgan, U.S. Bank, Wells Fargo and Zelle were flagged by users as down or experiencing problems",
                 "_timestamp": 1794856144.0
+            },
+            {
+                "title": "Customer reports of bank app outages surge",
+                "link": "https://finance.yahoo.com/markets/article/customer-reports-of-bank-app-outages-surge-193015352.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:30",
+                "description": "Reports of bank app outages surged on Monday, sparking widespread alarm days after last week's major Microsoft Outlook outage.",
+                "_timestamp": 1794857415.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
@@ -10635,6 +10659,75 @@
             "Event_Timestamp": "2026-11-16 19:24 UTC",
             "Facts": "Incoming Texas Governor-elect Gina Hinojosa stated intentions to reverse a terror designation applied to a Muslim civil liberties group, arguing that targeting nonprofits fails to improve public safety.",
             "Market_Context": "State-level political and administrative policy shifts regarding civil liberties organizations."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 19:27 UTC",
+        "original_date": "2026-11-16 19:27",
+        "_timestamp": 1794857223.0,
+        "articles": [
+            {
+                "title": "Why Intel's turnaround will take years",
+                "link": "https://finance.yahoo.com/video/why-intels-turnaround-will-take-years-192703292.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:27",
+                "description": "Market Hang host Mark Malek, Siebert Financial chief investment officer, and his panel of experts weigh in on Intel's (INTC) year-to-date performance and how long its turnaround may take. Today's panel includes Neostellar Principal Willy Lee, FAS Wealth Partners Chief Investment Strategist Mike Rode, Lopez Research Founder Maribel Lopez, and Macro Talk News founder Hope King,",
+                "_timestamp": 1794857223.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Macro",
+            "Event_Timestamp": "First reported: 2026-11-16 19:27 UTC",
+            "Facts": "Market Hang host Mark Malek, Siebert Financial chief investment officer, and his panel of experts weigh in on Intel's (INTC) year-to-date performance and how long its turnaround may take. Today's panel includes Neostellar Principal Willy Lee, FAS Wealth Partners Chief Investment Strategist Mike Rode, Lopez Research Founder Maribel Lopez, and Macro Talk News founder Hope King,",
+            "Market_Context": "Objective news feed item without speculative prediction."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 19:11 UTC",
+        "original_date": "2026-11-16 19:11",
+        "_timestamp": 1794856307.0,
+        "articles": [
+            {
+                "title": "3 Stocks to Watch as Proxy Voting Demand Puts Broadridge Stock in Focus",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-stocks-watch-proxy-voting-191147513.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:11",
+                "description": "Jensen Huang’s sudden exit from Nvidia has turned boardrooms and ballot boxes into the real action point for investors. Control of a company’s direction now sits under a sharper spotlight, and that can create opportunity for anyone paying attention to who shapes the votes. This article walks through 3 stocks from a shareholder activism and proxy advisory screener that could be influenced by this governance shock and explains why they deserve a cl",
+                "_timestamp": 1794856307.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Macro",
+            "Event_Timestamp": "First reported: 2026-11-16 19:11 UTC",
+            "Facts": "Jensen Huang’s sudden exit from Nvidia has turned boardrooms and ballot boxes into the real action point for investors. Control of a company’s direction now sits under a sharper spotlight, and that can create opportunity for anyone paying attention to who shapes the votes. This article walks through 3 stocks from a shareholder activism and proxy advisory screener that could be influenced by this governance shock and explains why they deserve a cl",
+            "Market_Context": "Objective news feed item without speculative prediction."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 19:11 UTC",
+        "original_date": "2026-11-16 19:11",
+        "_timestamp": 1794856283.0,
+        "articles": [
+            {
+                "title": "Tyson, Starbucks Lead The S&P 500, Nasdaq 100 As Investors Play Defense",
+                "link": "https://finance.yahoo.com/m/39ef7153-50f4-318d-98b9-fae6150d7fe4/tyson%2C-starbucks-lead-the-s%26p.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:11",
+                "description": "The AI sell-off steepened on Monday. Defensive stocks made strides amid rotation out of tech. Starbucks jumped on the Nasdaq-100.",
+                "_timestamp": 1794856283.0
+            }
+        ],
+        "needs_update": true,
+        "summary": {
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Macro",
+            "Event_Timestamp": "First reported: 2026-11-16 19:11 UTC",
+            "Facts": "The AI sell-off steepened on Monday. Defensive stocks made strides amid rotation out of tech. Starbucks jumped on the Nasdaq-100.",
+            "Market_Context": "Objective news feed item without speculative prediction."
         }
     }
 ]

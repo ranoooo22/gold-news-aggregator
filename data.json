@@ -136,9 +136,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 21:49 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 22:20 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794865751.0,
+        "_timestamp": 1794867635.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -979,6 +979,14 @@
                 "date": "2026-11-16 21:49",
                 "description": "Nvidia led another sell-off in technology stocks and helped drag the U. The weakness for tech stocks pulled the Nasdaq composite down 2.",
                 "_timestamp": 1794865751.0
+            },
+            {
+                "title": "Berkshire Hathaway Slashes This Big Bank Stock; Nvidia Boosts SpaceX",
+                "link": "https://finance.yahoo.com/m/481d5163-b671-396e-a2dc-5c0e57fb9c0b/berkshire-hathaway-slashes.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:20",
+                "description": "Details of Berkshire Hathaway's Q3 buys and sells came in a 13F filing after Monday's close.",
+                "_timestamp": 1794867635.0
             }
         ],
         "needs_update": false,
@@ -986,9 +994,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 21:49 UTC",
-            "Facts": "[Update 2026-11-16 21:49 UTC via Yahoo Finance Nasdaq]: Nvidia led another major sell-off in technology stocks, dragging down the Nasdaq composite and extending a 25% decline over the past month. The losses follow the unexpected resignation of former CEO Jensen Huang, leaving Microsoft and other key customers navigating an interim leadership structure.",
-            "Macro_Context": "Broader equity markets faced downward pressure from the tech sector correction following leadership changes at major artificial intelligence bellwethers."
+            "Event_Timestamp": "2026-11-16 22:20 UTC",
+            "Facts": "[Update 2026-11-16 22:20 UTC via Yahoo Finance Nasdaq]: Berkshire Hathaway disclosed its Q3 buys and sells via a 13F filing. Nvidia's leadership crisis and subsequent tech sell-off dragged down US indexes, including the Nasdaq and Microsoft stock.",
+            "Macro_Context": "Broader technology sector correction driven by Nvidia's interim CEO transition and falling tech valuations."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -1047,19 +1055,14 @@
                 "_timestamp": 1794867602.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 18:35 UTC",
-            "Facts": "[Update 2026-11-16 18:35 UTC via Yahoo Finance Nasdaq]: Berkshire Hathaway shares hit record highs as investors revisited classic long-term value investing principles amid broader market corrections. Commentary focused on historical wisdom and tax efficiency rather than macroeconomic policy shifts.",
-            "Macro_Context": "Isolated equity performance of a single holding company has minimal direct transmission to spot gold or systemic liquidity channels.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "$3854.43"
+            "Event_Timestamp": "2026-11-16 22:20 UTC",
+            "Facts": "[Update 2026-11-16 22:20 UTC via Yahoo Finance Nasdaq]: Investors are assessing Nvidia's reduced valuation and moat through a Warren Buffett lens as Berkshire Hathaway hits record highs during the Nasdaq correction.",
+            "Macro_Context": "Rotation out of high-flying technology and AI stocks into defensive, value-oriented holdings like Berkshire Hathaway."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -3036,9 +3039,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:04 UTC | Last Update: 2026-11-16 21:32 UTC",
+        "main_date": "First Reported: 2026-11-16 18:04 UTC | Last Update: 2026-11-16 22:20 UTC",
         "original_date": "2026-11-16 18:04",
-        "_timestamp": 1794864768.0,
+        "_timestamp": 1794867633.0,
         "articles": [
             {
                 "title": "Update: Chipmakers Push US Equity Indexes Lower as Commerce Department Plans to Curb Access to Advanced AI Infrastructure",
@@ -3063,6 +3066,14 @@
                 "date": "2026-11-16 21:32",
                 "description": "US equity indexes ended lower Monday after a sell-off in mega-cap chipmakers, following the US Comme",
                 "_timestamp": 1794864768.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 16: Amazon Falls on New AI Chip Export Rule and Leo Satellite Launch Failure",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/16/stock-market-today-nov-16-amazon-falls-on-new-ai-chip-export-rule-and-leo-satellite-launch-failure/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:20",
+                "description": "Today, Nov. 16, 2026, Amazon shares slid as a new U.S. AI chip access rule and a $5 billion AWS data center deal kept AI spending in focus.",
+                "_timestamp": 1794867633.0
             }
         ],
         "needs_update": false,
@@ -3070,9 +3081,9 @@
             "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 21:32 UTC",
-            "Facts": "[Update 2026-11-16 21:32 UTC via Yahoo Finance Oil]: US equity markets closed lower as mega-cap chipmakers sold off sharply following the US Commerce Department's announcement of planned restrictions targeting advanced AI infrastructure access.",
-            "Macro_Context": "Regulatory crackdowns on semiconductor supply chains and infrastructure access are dampening liquidity and risk appetite in the technology sector."
+            "Event_Timestamp": "2026-11-16 22:20 UTC",
+            "Facts": "[Update 2026-11-16 22:20 UTC via Yahoo Finance Nasdaq]: Amazon shares slid following new US AI chip export rules and a Leo satellite launch failure, compounding pressure on mega-cap chipmakers and US equity indexes.",
+            "Macro_Context": "Regulatory headwinds from the Commerce Department regarding advanced AI infrastructure access weighing heavily on mega-cap tech."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.24
@@ -4749,9 +4760,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 22:03 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 22:25 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794866627.0,
+        "_timestamp": 1794867902.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -4816,16 +4827,32 @@
                 "date": "2026-11-16 22:03",
                 "description": "We just shared our list of 11 Unstoppable Stocks to Buy According to Analysts, and Tower Semiconductor (NASDAQ:TSEM) is 9th on it. AI stocks had a brutal week. Last Thursday, the S&amp;P 500 fell 4.4%, its biggest one-day drop since the April 2025 tariff shock. The Dow Jones Industrial Average lost more than 1,800 points, […]",
                 "_timestamp": 1794866627.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 16: Tech Selloff Deepens as AI Leadership Crisis Rattles Nasdaq",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/16/stock-market-today-nov-16-tech-selloff-deepens-as-ai-leadership-crisis-rattles-nasdaq/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 22:25",
+                "description": "Investors weighed a Nvidia leadership shakeup, rising Treasury yields, and fresh chip export curbs as tech stocks slid across the board, today, Nov. 16, 2026.",
+                "_timestamp": 1794867902.0
+            },
+            {
+                "title": "Stock Market Today, Nov. 16: Tech Selloff Deepens as AI Leadership Crisis Rattles Nasdaq",
+                "link": "https://www.fool.com/coverage/stock-market-today/2026/11/16/stock-market-today-nov-16-tech-selloff-deepens-as-ai-leadership-crisis-rattles-nasdaq/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:25",
+                "description": "Investors weighed a Nvidia leadership shakeup, rising Treasury yields, and fresh chip export curbs as tech stocks slid across the board, today, Nov. 16, 2026.",
+                "_timestamp": 1794867902.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": false,
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 22:03 UTC",
-            "Facts": "[Update 2026-11-16 22:03 UTC via Yahoo Finance Nasdaq]: U.S. equities extended losses, with the Nasdaq and S&P 500 falling for a third consecutive day amid an ongoing Nvidia sell-off. The Dow Jones dropped significantly following comments from President Trump regarding Jensen Huang and Howard Lutnick, while crypto markets experienced their worst week since June with Bitcoin sliding toward $62,000.",
-            "Macro_Context": "Broader market correction driven by tech sector turmoil, political commentary, and risk-off sentiment across equities and crypto."
+            "Event_Timestamp": "2026-11-16 22:25 UTC",
+            "Facts": "[Update 2026-11-16 22:25 UTC via Yahoo Finance Gold]: Markets weighed a combination of the Nvidia leadership shakeup, rising Treasury yields, and fresh chip export curbs as the Nasdaq and S&P 500 fell for a third consecutive day.",
+            "Macro_Context": "Rising Treasury yields and tighter monetary/trade conditions exacerbating the broader tech sector sell-off."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
@@ -5809,9 +5836,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-16 17:17 UTC",
+        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-16 22:41 UTC",
         "original_date": "2026-11-16 12:25",
-        "_timestamp": 1794849437.0,
+        "_timestamp": 1794868877.0,
         "articles": [
             {
                 "title": "Jericho settlers harass Al Jazeera reporter after stealing Palestinian home",
@@ -5844,21 +5871,32 @@
                 "date": "2026-11-16 16:56",
                 "description": "Israeli forces demolished the homes of two Palestinian prisoners as Al Jazeera’s Nida Ibrahim was reporting",
                 "_timestamp": 1794848214.0
+            },
+            {
+                "title": "Israeli settlers shoot, wound five Palestinians near Jericho, Red Crescent says",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-shoot-wound-five-palestinians-near-jericho-red-0",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 22:41",
+                "description": "Israeli settlers shoot, wound five Palestinians near Jericho, Red Crescent says\n\n    \n    \n\n        \n    \n                Five Palestinians were shot and wounded by Israeli settlers in the village of al-Duyuk al-Tahta near Jericho in the occupied West Bank, the Palestinian Red Crescent said.",
+                "_timestamp": 1794868877.0
+            },
+            {
+                "title": "Israeli settlers shoot, wound five Palestinians near Jericho, Red Crescent says",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-settlers-shoot-wound-five-palestinians-near-jericho-red-crescent",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 22:41",
+                "description": "Israeli settlers shoot, wound five Palestinians near Jericho, Red Crescent says\n\n    \n    \n\n        \n    \n                Five Palestinians were shot and wounded by Israeli settlers in the village of al-Duyuk al-Tahta near Jericho in the occupied West Bank, the Palestinian Red Crescent said.",
+                "_timestamp": 1794868867.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 4,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 17:17 UTC",
-            "Facts": "[Update 2026-11-16 17:17 UTC via Middle East Eye]: Tensions escalated in the West Bank as an Israeli settler vehicle struck a group of Palestinians in Tuqu, while Israeli forces demolished two prisoner residences. | The Israeli military confirmed it will not evacuate settlers occupying Palestinian homes in Jericho.",
-            "Macro_Context": "Localized West Bank incidents remain contained and lack macro transmission channels to energy markets, USD liquidity, or broader gold safe-haven bidding.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "3867.46"
+            "Event_Timestamp": "2026-11-16 22:41 UTC",
+            "Facts": "[Update 2026-11-16 22:41 UTC via Middle East Eye]: Five Palestinians were shot and wounded by Israeli settlers in the village of al-Duyuk al-Tahta near Jericho, following home demolitions and a car ramming incident in Tuqu.",
+            "Macro_Context": "Ongoing localized clashes and violence in the occupied West Bank."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.2
@@ -9330,14 +9368,14 @@
                 "_timestamp": 1794867362.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 5,
             "Is_Gold_Relevant": false,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 19:53 UTC",
-            "Facts": "[Update 2026-11-16 04:46 UTC via Al Jazeera English]: Singapore-based firm Megaspeed stated that Chinese tech executive Alice Huang, romantically linked to the ex-Nvidia CEO, left the company in August 2025. [Update 2026-11-16 19:03 UTC via Yahoo Finance Nasdaq]: Market experts discussed whether Jensen Huang might launch a new startup within six months rather than return. [Update 2026-11-16 19:53 UTC via Yahoo Finance Nasdaq]: Nearly a tenth of the S&P 500 is tied to three key figures lacking clear successors following Huang's resignation. Elon Musk and over 158,000 signatories signed an open letter calling for Jensen Huang's reinstatement at Nvidia, though US Treasury Secretary Scott Bessent argued Nvidia should look outside the company for its next chief.",
-            "Macro_Context": "The sudden departure of Nvidia's chief has sparked broader market concerns regarding key-man risk across major technology conglomerates and leadership succession planning within the S&P 500."
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-16 22:16 UTC",
+            "Facts": "[Update 2026-11-16 22:16 UTC via Yahoo Finance Nasdaq]: Elon Musk expressed support for Jensen Huang's return to Nvidia as markets navigate a heavy week featuring upcoming Nvidia earnings, Fed minutes, and Anthropic's IPO.",
+            "Macro_Context": "Intense market focus on key corporate governance structures, upcoming macroeconomic data, and central bank communications."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.62
@@ -10349,53 +10387,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 22:06 UTC | Last Update: 2026-11-15 22:36 UTC",
-        "original_date": "2026-11-15 22:06",
-        "_timestamp": 1794782160.0,
-        "articles": [
-            {
-                "title": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
-                "link": "https://www.investing.com/news/commodities-news/ubs-sees-brent-hitting-110-as-tight-supply-buffers-leave-oil-vulnerable-5028142",
-                "source": "Investing.com",
-                "date": "2026-11-15 22:06",
-                "description": "",
-                "_timestamp": 1794780360.0
-            },
-            {
-                "title": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
-                "link": "https://finance.yahoo.com/energy/articles/ubs-sees-brent-hitting-110-223600200.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-15 22:36",
-                "description": "Investing.com -- UBS’s Chief Investment Office expects Brent crude prices to reach $110 a barrel by year-end, saying limited supply buffers leave the market vulnerable despite recent price swings.",
-                "_timestamp": 1794782160.0
-            },
-            {
-                "title": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
-                "link": "https://finance.yahoo.com/energy/articles/ubs-sees-brent-hitting-110-223600200.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-15 22:36",
-                "description": "Investing.com -- UBS’s Chief Investment Office expects Brent crude prices to reach $110 a barrel by year-end, saying limited supply buffers leave the market vulnerable despite recent price swings.",
-                "_timestamp": 1794782160.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-15 22:36 UTC",
-            "Facts": "[Update 2026-11-15 22:36 UTC via Yahoo Finance Gold]: UBS forecasts Brent crude prices to escalate toward $110 per barrel by the end of the year due to tightening global supply buffers. The analysis highlights that current market volatility fails to reflect the underlying vulnerability in energy inventories.",
-            "Macro_Context": "Rising energy prices heighten long-term inflationary pressures, increasing safe-haven demand and reinforcing structural bullish drivers for gold.",
-            "Impact_Timing": "1-3 Hours",
-            "Timeframe": "Structural Weekly Regime",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Orderflow_Price_Target": "3889.65"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 7.02
-    },
-    {
         "main_date": "First Reported: 2026-11-15 21:50 UTC | Last Update: 2026-11-16 18:42 UTC",
         "original_date": "2026-11-15 21:50",
         "_timestamp": 1794854521.0,
@@ -11201,14 +11192,14 @@
                 "_timestamp": 1794867287.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 21:49 UTC",
-            "Facts": "Chase reported that a software bug could be causing customer disruptions at major U.S. banks, with some users unable to access accounts or withdraw funds.",
-            "Macro_Context": "Operational and software issues at major financial institutions impact retail account accessibility."
+            "Event_Timestamp": "2026-11-16 22:14 UTC",
+            "Facts": "[Update 2026-11-16 22:14 UTC via CNBC Tech & AI]: JPMorgan Chase reported that a temporary software bug is affecting consumer banking, with Eamon Javers confirming no indication of bad actors or impact on multiple banks. Chase previously stated a software bug could be causing disruptions affecting customer account access and fund withdrawals at major U.S. banks.",
+            "Macro_Context": "Technological and operational disruptions in major consumer banking institutions."
         }
     },
     {
@@ -11433,8 +11424,15 @@
                 "_timestamp": 1794867600.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 22:20 UTC",
+            "Facts": "Warren Buffett advises investors to gain perspective when market temperament is being tested.",
+            "Macro_Context": "Investor psychology and long-term equity market strategy amid volatility."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 22:15 UTC",
@@ -11450,7 +11448,14 @@
                 "_timestamp": 1794867328.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 22:15 UTC",
+            "Facts": "Traders are pricing Anthropic 40% higher ahead of its IPO, with the AI giant eyeing a valuation of $1.4 trillion.",
+            "Macro_Context": "Venture capital, artificial intelligence sector valuations, and upcoming high-profile IPO pricing."
+        }
     }
 ]

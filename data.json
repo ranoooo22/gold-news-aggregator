@@ -1107,9 +1107,9 @@
         "max_dd_usd": 13.22
     },
     {
-        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-16 18:54 UTC",
+        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-16 21:43 UTC",
         "original_date": "2026-11-05 15:15",
-        "_timestamp": 1794855240.0,
+        "_timestamp": 1794865398.0,
         "articles": [
             {
                 "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
@@ -1750,16 +1750,24 @@
                 "date": "2026-11-16 18:54",
                 "description": "Investors are jittery about Nvidia’s upcoming earnings and whether the company will scale back its financing of the AI ecosystem.",
                 "_timestamp": 1794855240.0
+            },
+            {
+                "title": "Is AMD Stock Still a Buy After Its Post-Earnings Jump?",
+                "link": "https://www.fool.com/investing/2026/11/16/is-advanced-micro-devices-amd-stock-still-buy-after-post-earnings-jump/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:43",
+                "description": "Advanced Micro Devices has benefited from Nvidia's turmoil.",
+                "_timestamp": 1794865398.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 18:54 UTC",
-            "Facts": "Artificial intelligence and semiconductor stocks, including AMD and Micron, experienced a broad selloff amid concerns regarding export restrictions and upcoming corporate earnings reports.",
-            "Market_Context": "Broader chip sector weakness and investor caution regarding AI infrastructure financing."
+            "Event_Timestamp": "2026-11-16 21:43 UTC",
+            "Facts": "[Update 2026-11-16 21:43 UTC via Yahoo Finance Nasdaq]: Is AMD Stock Still a Buy After Its Post-Earnings Jump? Advanced Micro Devices has benefited from Nvidia's turmoil. AI-related semiconductor stocks slid broadly due to new export restrictions targeting Southeast Asia and investor anxiety regarding upcoming earnings and potential scaling back of ecosystem financing.",
+            "Macro_Context": "Tech sector selloffs driven by regulatory trade headwinds and concerns over AI spending sustainability."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -3159,9 +3167,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-16 21:13 UTC",
+        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-16 21:54 UTC",
         "original_date": "2026-11-11 04:32",
-        "_timestamp": 1794863602.0,
+        "_timestamp": 1794866040.0,
         "articles": [
             {
                 "title": "3 Data Center Infrastructure Stocks Retail Investors Are Watching Beyond Nvidia",
@@ -3378,16 +3386,24 @@
                 "date": "2026-11-16 21:13",
                 "description": "US efforts to tighten chip export rules on China are reshaping where capital flows in semiconductor manufacturing, and Nvidia now sits in the middle of that story. Policy risk is colliding with the long buildout of onshore fabs and advanced packaging, creating potential winners for investors who can distinguish headline noise from real business exposure. This article discusses three US onshoring-focused semiconductor stocks that appear positively",
                 "_timestamp": 1794863602.0
+            },
+            {
+                "title": "Nvidia Earnings Preview: Can Data Center Growth Sustain Its Profit Boom?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-earnings-preview-data-center-215400285.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:54",
+                "description": "Nvidia (NVDA) is set to report its fiscal third-quarter 2027 results on November 17, after the market closes. Investors will be closely watching its Data Center business, which accounts for the bulk of the company’s revenue and remains central to its AI growth story. Meanwhile, NVDA stock has been under pressure, following reports about CEO Jensen Huang’s alleged affairs and his subsequent resignation. CFO Colette Kress has taken over as interim ",
+                "_timestamp": 1794866040.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 21:13 UTC",
-            "Facts": "[Update 2026-11-16 21:13 UTC via Yahoo Finance Nasdaq]: U.S. export controls and probe shifts have expanded to target AI chip smuggling into China, alongside new remote-access blocking rules affecting data centers in Singapore, Malaysia, Thailand, Indonesia, and Brazil. While analysts expect strong quarterly revenue for Nvidia, these export curbs and leadership transitions are driving a reallocation of capital into domestic U.S. fab-exposed semiconductor stocks.",
-            "Macro_Context": "Geopolitical export controls are actively reshaping semiconductor supply chains, forcing capital rotation toward domestic manufacturing alternatives."
+            "Event_Timestamp": "2026-11-16 21:54 UTC",
+            "Facts": "[Update 2026-11-16 21:54 UTC via Yahoo Finance Nasdaq]: Nvidia Export Curbs Could Lift These Semiconductor Stocks With US Fab Exposure. Nvidia is set to report earnings amid executive transition news involving CEO Jensen Huang and CFO Colette Kress taking over as interim. New U.S. export controls also restrict remote access to advanced chips and target overseas data centers in several countries.",
+            "Macro_Context": "Stricter semiconductor trade controls impacting multinational chip operations and shifting capital to domestic fabs."
         },
         "eval_status": "HIT",
         "max_dd_usd": 18.93
@@ -4717,9 +4733,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 20:28 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 21:52 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794860883.0,
+        "_timestamp": 1794865947.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -4768,16 +4784,24 @@
                 "date": "2026-11-16 20:28",
                 "description": "Stocks held their ground while BTC slid toward $62k. Here’s what drove the weekend flush and what’s coming next.",
                 "_timestamp": 1794860883.0
+            },
+            {
+                "title": "Update: Nasdaq, S&P 500 Fall For Third Day as Nvidia Sell-Off Continues",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nasdaq-p-500-fall-third-215227730.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:52",
+                "description": "(Updates with market moves at the end of the day, and other changes, if any.) The Nasdaq Composit",
+                "_timestamp": 1794865947.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 20:28 UTC",
-            "Facts": "[Update 2026-11-16 20:28 UTC via Yahoo Finance Nasdaq]: Stocks and crypto drop as Treasury yields rise and Wall Street braces for Nvidia's upcoming earnings report. The Dow falls amid presidential commentary on tech leadership.",
-            "Macro_Context": "Rising Treasury yields and risk-off sentiment in equities and crypto ahead of high-stakes corporate reporting."
+            "Event_Timestamp": "2026-11-16 21:52 UTC",
+            "Facts": "[Update 2026-11-16 21:52 UTC via Yahoo Finance Nasdaq]: Nasdaq and S&P 500 fell for the third consecutive day as tech and crypto markets experience heavy selling pressure. Bitcoin slid toward the $62,000 level amid rising Treasury yields and pre-earnings jitters.",
+            "Macro_Context": "Broader financial market weakness characterized by rising yields and risk-off sentiment across equities and crypto."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
@@ -6443,9 +6467,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-16 06:00 UTC | Last Update: 2026-11-16 16:30 UTC",
+        "main_date": "First Reported: 2026-11-16 06:00 UTC | Last Update: 2026-11-16 22:00 UTC",
         "original_date": "2026-11-16 06:00",
-        "_timestamp": 1794846600.0,
+        "_timestamp": 1794866400.0,
         "articles": [
             {
                 "title": "Aurania Intersects 10.10 g/t Gold over 4.15 Metres in Initial Drill Results from the Thormodsdalur Gold Project in Iceland",
@@ -6470,21 +6494,24 @@
                 "date": "2026-11-16 16:30",
                 "description": "TORONTO, ON / ACCESS Newswire / November 16, 2026 / (TSXV:PPX)(BVL:PPX) (the \"Company\" or \"PPX\"), announces results from its 2026 diamond drilling program at the Portachuelos target of the Igor Project, La Libertad, Peru. The results from drill hole PO-26-01 provide new information on gold, silver and copper mineralization in an area where several mineralized structures converge.",
                 "_timestamp": 1794846600.0
+            },
+            {
+                "title": "Endeavour Silver Intersects 3,431 g/t Silver Equivalent over 1.42 Metres at Guanaceví; Multiple High-Grade Intercepts Highlight Contraria Vein Potential",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/endeavour-silver-intersects-3-431-220000131.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 22:00",
+                "description": "VANCOUVER, British Columbia, Nov. 16, 2026 (GLOBE NEWSWIRE) -- Endeavour Silver Corp. (“Endeavour” or the “Company”) (TSX: EDR, NYSE: EXK) is pleased to announce high-grade drill results from its 2026 exploration program at the Guanaceví mine in Durango, Mexico. The 20-hole, 5,855-metre program tested the Santa Cruz vein system and nearby parallel structures at Alondra-P2 and El Milache, returning multiple high-grade silver-gold intersections. Dr",
+                "_timestamp": 1794866400.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
-            "Is_Gold_Relevant": false,
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": true,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 16:30 UTC",
-            "Facts": "[Update 2026-11-16 16:30 UTC via Yahoo Finance Gold]: Junior exploration companies PPX Mining, LaFleur Minerals, and Aurania Resources released routine drill core assays from projects in Peru, Canada, and Iceland. | The drill updates detail localized high-grade gold, silver, and copper mineralized intercepts.",
-            "Macro_Context": "Micro-cap mining exploration results represent microeconomic corporate news and do not influence physical Gold market supply-demand dynamics or spot liquidity.",
-            "Impact_Timing": "Structural",
-            "Timeframe": "Structural Weekly Regime",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "$3858.80"
+            "Event_Timestamp": "2026-11-16 22:00 UTC",
+            "Facts": "[Update 2026-11-16 22:00 UTC via GlobeNewswire]: Endeavour Silver Intersects 3,431 g/t Silver Equivalent over 1.42 Metres at Guanaceví. Multiple mining companies released strong drill and assay results, including Aurania in Iceland, LaFleur Minerals in Canada, PPX in Peru, and Endeavour Silver in Mexico.",
+            "Macro_Context": "Ongoing exploration progress and positive high-grade drill assays supporting precious metals project developments."
         }
     },
     {
@@ -8625,19 +8652,14 @@
                 "_timestamp": 1794865877.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 08:40 UTC",
-            "Facts": "UK Maritime Trade Operations reported that a commercial vessel was hit by an unknown projectile while transiting out of the Strait of Hormuz. The strike highlights immediate security risks in the vital oil transit corridor.",
-            "Macro_Context": "Direct military strikes against shipping in the Strait of Hormuz elevate Middle East geopolitical risk premiums and bolster immediate safe-haven bid for XAU/USD.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24-48 Hours",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 78,
-            "Orderflow_Price_Target": "3890.05"
+            "Event_Timestamp": "2026-11-16 21:51 UTC",
+            "Facts": "[Update 2026-11-16 21:51 UTC via Middle East Eye]: A tanker transiting the Strait of Hormuz was attacked seven nautical miles north of Khasab, Oman, disabling the vessel and causing an engine room fire. The crew was confirmed safe.",
+            "Macro_Context": "Geopolitical friction and maritime security threats impacting commercial shipping lanes in the Middle East."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 18.93
@@ -10342,93 +10364,6 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-13 07:35 UTC | Last Update: 2026-11-15 22:06 UTC",
-        "original_date": "2026-11-13 07:35",
-        "_timestamp": 1794780398.0,
-        "articles": [
-            {
-                "title": "Watch: 53 nations and organisations urge Israel to allow aid into Gaza",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-53-nations-and-organisations-urge-israel-allow-aid-gaza",
-                "source": "Middle East Eye",
-                "date": "2026-11-13 07:35",
-                "description": "Watch: 53 nations and organisations urge Israel to allow aid into Gaza\n\n    \n    \n\n        \n    \n                Fifty-three nations and organisations urged Israel on Thursday to allow urgent aid and unimpeded humanitarian access into Gaza.\n\nSpeaking on behalf of the co-signatories of the Gaza Call to Action on Humanitarian Access and Health, Sarah MacIntosh, British ambassador to the UN, also called on Israel’s incoming government to facilitate ",
-                "_timestamp": 1794555306.0
-            },
-            {
-                "title": "UN, partners urge Israel to lift restrictions on aid into Gaza",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/un-partners-urge-israel-lift-restrictions-aid-gaza",
-                "source": "Middle East Eye",
-                "date": "2026-11-14 01:02",
-                "description": "UN, partners urge Israel to lift restrictions on aid into Gaza\n\n    \n    \n\n        \n    \n                The UN and its humanitarian partners have called on Israel to lift restrictions on aid deliveries to Gaza, warning that deadly rainstorms have killed children and adults, destroyed shelters and flooded thousands of family tents.\n\nMore than 150,000 tents remain outside Gaza, ready for dispatch, as restrictions on supplies and access continue to",
-                "_timestamp": 1794618139.0
-            },
-            {
-                "title": "EU calls for immediate humanitarian access to Gaza",
-                "link": "https://www.aljazeera.com/news/2026/11/14/eu-calls-for-immediate-humanitarian-access-to-gaza?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-14 15:57",
-                "description": "The EU said that “Israel must enable the work of the UN and its agencies&quot; after the group was blocked access into Gaza.",
-                "_timestamp": 1794671842.0
-            },
-            {
-                "title": "Hamas calls for urgent repairs to Gaza’s sewage and drainage systems",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-calls-urgent-repairs-gazas-sewage-and-drainage-systems",
-                "source": "Middle East Eye",
-                "date": "2026-11-14 18:20",
-                "description": "Hamas calls for urgent repairs to Gaza’s sewage and drainage systems\n\n    \n    \n\n        \n    \n                Hamas political bureau chief Khalil al-Hayya has called for “urgent action” to fix Gaza’s sewers and improve rainwater drainage after heavy rains destroyed tens of thousands of tents.\n\nAl-Hayya called for “unhindered” access for aid groups and urged Israel to let more food and fuel into Gaza. Israeli restrictions on aid have hampered eff",
-                "_timestamp": 1794680445.0
-            },
-            {
-                "title": "Israel's data shows it allowed half of the promised aid trucks into Gaza",
-                "link": "https://www.middleeasteye.net/news/israels-data-shows-allowed-half-promised-aid-trucks-gaza",
-                "source": "Middle East Eye",
-                "date": "2026-11-15 15:01",
-                "description": "Israel's data shows it allowed half of the promised aid trucks into Gaza\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nSun, 11/15/2026 - 14:15\n\n        \n      \n    \n      \n    \n                Israeli military data shows deliveries to Gaza have fallen well short of the 4,200 trucks a week promised under the ceasefire deal in most months\n                      \n                  \n                  \n\n  \n\n\n                ",
-                "_timestamp": 1794754902.0
-            },
-            {
-                "title": "Who can force Israel to implement Gaza ceasefire deal?",
-                "link": "https://www.aljazeera.com/video/inside-story/2026/11/15/who-can-force-israel-to-implement-gaza-ceasefire-deal?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 20:37",
-                "description": "Storms batter Palestinian territory as Israel restricts entry of aid.",
-                "_timestamp": 1794775063.0
-            },
-            {
-                "title": "Israel's data shows it allowed half of the promised aid trucks into Gaza",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israels-data-shows-it-allowed-half-promised-aid-trucks-gaza",
-                "source": "Middle East Eye",
-                "date": "2026-11-15 20:48",
-                "description": "Israel's data shows it allowed half of the promised aid trucks into Gaza\n\n    \n    \n\n        \n    \n                Israel&nbsp;has failed to meet its commitments under the Gaza ceasefire deal, allowing in only around half the agreed volume of humanitarian and commercial goods each month since March, Israeli military data shows.\n\nData obtained by Haaretz newspaper&nbsp;showed&nbsp;a growing shortfall in food deliveries to Gaza, alongside severe sh",
-                "_timestamp": 1794775697.0
-            },
-            {
-                "title": "Australia, Canada, Italy and the UK urge Israel to allow aid into Gaza",
-                "link": "https://www.aljazeera.com/news/2026/11/15/australia-canada-italy-and-the-uk-urge-israel-to-allow-aid-into-gaza?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 22:06",
-                "description": "The countries accuse Israel of preventing tents and other supplies from entering Gaza, despite the humanitarian crisis.",
-                "_timestamp": 1794780398.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-15 22:06 UTC",
-            "Facts": "[Update 2026-11-15 22:06 UTC via Al Jazeera English]: Western nations are accusing Israel of restricting tents and humanitarian supplies amid severe winter storms in Gaza. | Israeli military data has revealed that deliveries have fallen to about half of the promised 4,200 trucks weekly under the ceasefire agreement.",
-            "Macro_Context": "Persistent Middle East humanitarian bottlenecks and regional tensions maintain safe-haven geopolitical bids supporting gold bullion.",
-            "Impact_Timing": "Short-term intraday",
-            "Timeframe": "24-48 hours",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Orderflow_Price_Target": "$3898.97"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
         "main_date": "First Reported: 2026-11-15 21:50 UTC | Last Update: 2026-11-16 18:42 UTC",
         "original_date": "2026-11-15 21:50",
         "_timestamp": 1794854521.0,
@@ -11082,14 +11017,14 @@
                 "_timestamp": 1794865123.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 5,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 21:16 UTC",
-            "Facts": "New York City Mayor Zohran Mamdani announced the disbandment of the NYPD's Strategic Response Group, which had been deployed at Columbia protests.",
-            "Macro_Context": "Local municipal policy and police department structural changes."
+            "Event_Timestamp": "2026-11-16 21:38 UTC",
+            "Facts": "[Update 2026-11-16 21:38 UTC via Middle East Eye]: New York City Mayor Zohran Mamdani announced the disbandment of the NYPD’s Strategic Response Group (SRG), a specialized police unit previously deployed at protests which faced heavy criticism for aggressive tactics.",
+            "Macro_Context": "Local municipal policy shifts regarding policing methods during public demonstrations."
         }
     },
     {
@@ -11265,6 +11200,57 @@
                 "date": "2026-11-16 21:35",
                 "description": "Attorney General Rob Bonta says Hugging Face attack was &#039;entirely predictable&#039; result of emphasis on rapid growth.",
                 "_timestamp": 1794864951.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:00 UTC",
+        "original_date": "2026-11-16 22:00",
+        "_timestamp": 1794866400.0,
+        "articles": [
+            {
+                "title": "K92 Mining Announces Q3 2026 Financial Results – Record Cash and Net Cash Positions, Multiple Operational Records as Stage 3 Expansion Ramp-Up Gains Momentum",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/k92-mining-announces-q3-2026-220000899.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 22:00",
+                "description": "VANCOUVER, British Columbia, Nov. 16, 2026 (GLOBE NEWSWIRE) -- K92 Mining Inc. (“K92” or the “Company”) (TSX: KNT; OTCQX: KNTNF) is pleased to announce financial results for the three and nine months ended September 30, 2026. Production Strong quarterly production of 49,776 ounces gold equivalent (“AuEq”)(1) or 46,063 oz gold, 1,948,951 lbs copper and 55,746 oz silver (Figure 1), representing the second-highest quarterly production to date.Net of",
+                "_timestamp": 1794866400.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:05 UTC",
+        "original_date": "2026-11-16 22:05",
+        "_timestamp": 1794866700.0,
+        "articles": [
+            {
+                "title": "On Monday in Oil and Gas, Federal Hormuz Data Lands as Two Acquisitions Are Announced",
+                "link": "https://finance.yahoo.com/news/monday-oil-gas-federal-hormuz-220500009.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 22:05",
+                "description": "Oil Market Daily News Commentary - Oil prices fell on Monday, Reuters reported, citing signs that oil flows through the Strait of Hormuz are recovering, which it said reinforced expectations of surplus supply. The same day, the U.S. Energy Information Administration published new quarterly figures on oil moving through the strait, a tanker transiting it outbound reported being struck, and two North American producers announced acquisitions. The D",
+                "_timestamp": 1794866700.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:00 UTC",
+        "original_date": "2026-11-16 22:00",
+        "_timestamp": 1794866400.0,
+        "articles": [
+            {
+                "title": "Obsidian Energy Announces New Asset-Based Organizational Structure with Heavy Oil and Light Oil Teams",
+                "link": "https://finance.yahoo.com/energy/articles/obsidian-energy-announces-asset-based-220000750.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 22:00",
+                "description": "New structure extends the growth strategy to sharpen execution and accelerate growth across its two core platformsCalgary, Alberta--(Newsfile Corp. - November 16, 2026) - Obsidian Energy Ltd. (\"Obsidian Energy\" or the \"Company\") today announced it will move from our current functional model to two dedicated asset teams, Heavy Oil and Light Oil, effective December 1, 2026. This organizational structure supports the Company's growth across both pla",
+                "_timestamp": 1794866400.0
             }
         ],
         "needs_update": true,

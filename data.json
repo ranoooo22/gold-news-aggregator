@@ -994,9 +994,9 @@
         "max_dd_usd": 11.82
     },
     {
-        "main_date": "First Reported: 2026-11-14 15:25 UTC | Last Update: 2026-11-16 18:35 UTC",
+        "main_date": "First Reported: 2026-11-14 15:25 UTC | Last Update: 2026-11-16 22:20 UTC",
         "original_date": "2026-11-14 15:25",
-        "_timestamp": 1794854102.0,
+        "_timestamp": 1794867602.0,
         "articles": [
             {
                 "title": "Warren Buffett Said This 1 Mistake Cost Berkshire About $10 Billion. Here’s How Investors Can Avoid It.",
@@ -1037,9 +1037,17 @@
                 "date": "2026-11-16 18:35",
                 "description": "The Nasdaq recently fell into correction territory.",
                 "_timestamp": 1794854102.0
+            },
+            {
+                "title": "Nvidia Stock: What Would Warren Buffett Do?",
+                "link": "https://www.fool.com/investing/2026/11/16/nvidia-stock-what-would-warren-buffett-do/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:20",
+                "description": "The tech giant has the wide moat that the billionaire investor often seeks out in a business, and now, it's also trading at a significantly reduced valuation.",
+                "_timestamp": 1794867602.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
@@ -9077,9 +9085,9 @@
         "max_dd_usd": 1.65
     },
     {
-        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-16 19:53 UTC",
+        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-16 22:16 UTC",
         "original_date": "2026-11-12 13:02",
-        "_timestamp": 1794858788.0,
+        "_timestamp": 1794867362.0,
         "articles": [
             {
                 "title": "Musk Says it Would be an 'Honor' to Hire Jensen Huang as Nvidia's Board Reportedly Gears up to Remove Him",
@@ -9312,9 +9320,17 @@
                 "date": "2026-11-16 19:53",
                 "description": "In the wake of Jensen Huang’s resignation from Nvidia last week, Elon Musk stumbled upon an X post in which a user lamented: “one does not just simply replace the founder.” “True words,” Musk replied. Subscribe to The Post Most newsletter for the most important and interesting stories from The Washington Post. Inside Musk’s own companies, that message has reverberated for years. Tesla and SpaceX have long grappled with investors’ concerns about t",
                 "_timestamp": 1794858788.0
+            },
+            {
+                "title": "This Is a Huge Week for the Stock Market: Nvidia Earnings, Fed Minutes, and Anthropic’s IPO",
+                "link": "https://www.fool.com/investing/2026/11/16/this-is-a-huge-week-for-the-stock-market-nvidia-earnings-fed-minutes-and-anthropics-ipo/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:16",
+                "description": "Elon Musk wants Jensen Huang back at Nvidia and has real money on the line, since SpaceX builds its AI data centers on Nvidia chips and Nvidia owns a multibillion-dollar stake in SpaceX.",
+                "_timestamp": 1794867362.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
@@ -11164,9 +11180,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 21:49 UTC",
+        "main_date": "First Reported: 2026-11-16 21:49 UTC | Last Update: 2026-11-16 22:14 UTC",
         "original_date": "2026-11-16 21:49",
-        "_timestamp": 1794865740.0,
+        "_timestamp": 1794867287.0,
         "articles": [
             {
                 "title": "Chase says ‘software bug’ could be causing disruptions at major U.S. banks",
@@ -11175,9 +11191,17 @@
                 "date": "2026-11-16 21:49",
                 "description": "Some customers are saying they can’t access their accounts or their unable to withdraw funds.",
                 "_timestamp": 1794865740.0
+            },
+            {
+                "title": "JPMorgan Chase says temporary software bug is affecting consumer banking",
+                "link": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-16 22:14",
+                "description": "CNBC's Eamon Javers reported there was no indication of bad actors involved and likewise no indication that a bug was impacting multiple banks at the same time.",
+                "_timestamp": 1794867287.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
@@ -11394,5 +11418,39 @@
             "Facts": "DigitalOcean (NYSE:DOCN) ranks 7th on a list of unstoppable stocks by analysts, reporting growth rates faster than it has seen in a decade.",
             "Macro_Context": "Technology and cloud services growth highlighted amid broader market sell-offs."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:20 UTC",
+        "original_date": "2026-11-16 22:20",
+        "_timestamp": 1794867600.0,
+        "articles": [
+            {
+                "title": "Nervous About the Stock Market? Here's Warren Buffett's Best Advice.",
+                "link": "https://www.fool.com/investing/2026/11/16/nervous-stock-market-warren-buffett-advice/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:20",
+                "description": "When your temperament is constantly being tested, gaining perspective is often the best remedy.",
+                "_timestamp": 1794867600.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:15 UTC",
+        "original_date": "2026-11-16 22:15",
+        "_timestamp": 1794867328.0,
+        "articles": [
+            {
+                "title": "Traders are pricing Anthropic 40% higher ahead of IPO",
+                "link": "https://www.thestreet.com/crypto/artificial-intelligence/traders-are-pricing-anthropic-40-higher-ahead-of-ipo?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 22:15",
+                "description": "The AI giant Anthropic eyes $1.4 trillion in IPO valuation.",
+                "_timestamp": 1794867328.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

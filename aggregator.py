@@ -1487,7 +1487,6 @@ def manage_master_trade(current_spot, h1_candles, vol_metrics, oanda_zones_cache
             {news_context_block}
 
             Question: Does this trade thesis STILL make fundamental and technical sense, or has a major opposing shock invalidated it?
-            Set Still_Valid = true unless a strong contrary catalyst clearly invalidates the setup."""
             rev_res = call_gemini_structured(review_prompt, ACTIVE_TRADE_REVIEW_SCHEMA)
             if isinstance(rev_res, dict):
                 active["last_check_utc"] = now_utc_str

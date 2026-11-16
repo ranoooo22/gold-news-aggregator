@@ -136,9 +136,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 21:30 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 21:49 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794864625.0,
+        "_timestamp": 1794865751.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -963,16 +963,32 @@
                 "date": "2026-11-16 21:30",
                 "description": "We just published our list of the 10 Stocks to Buy Following Jensen Huang’s Departure, and Microsoft Corporation (NASDAQ:MSFT) rounds it out at number 10. For three years, the AI trade had one face. Now it has an interim CEO. On November 12, Jensen Huang resigned as NVIDIA’s chief executive and board member, hours after nerves […]",
                 "_timestamp": 1794864625.0
+            },
+            {
+                "title": "How major US stock indexes fared Monday 11/16/2026",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-214911876.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 21:49",
+                "description": "Nvidia led another sell-off in technology stocks and helped drag the U. The weakness for tech stocks pulled the Nasdaq composite down 2.",
+                "_timestamp": 1794865751.0
+            },
+            {
+                "title": "How major US stock indexes fared Monday 11/16/2026",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-214911876.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:49",
+                "description": "Nvidia led another sell-off in technology stocks and helped drag the U. The weakness for tech stocks pulled the Nasdaq composite down 2.",
+                "_timestamp": 1794865751.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 21:26 UTC",
-            "Facts": "[Update 2026-11-16 21:26 UTC via Yahoo Finance Nasdaq]: Nvidia falls, extending a 25% decline over the past month following the resignation of former CEO Jensen Huang. TSMC slumps nearly 6% and loses $106 billion in market value, while Tom Lee blames Nvidia fallout and Anthropic IPO cash-raising for a 28% drop in Ethereum.",
-            "Macro_Context": "Broader technology sector sell-offs driven by semiconductor volatility and liquidity pressures ahead of Nvidia's earnings."
+            "Event_Timestamp": "2026-11-16 21:49 UTC",
+            "Facts": "[Update 2026-11-16 21:49 UTC via Yahoo Finance Nasdaq]: Nvidia led another major sell-off in technology stocks, dragging down the Nasdaq composite and extending a 25% decline over the past month. The losses follow the unexpected resignation of former CEO Jensen Huang, leaving Microsoft and other key customers navigating an interim leadership structure.",
+            "Macro_Context": "Broader equity markets faced downward pressure from the tech sector correction following leadership changes at major artificial intelligence bellwethers."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -1041,9 +1057,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-16 20:03 UTC",
+        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-16 21:42 UTC",
         "original_date": "2026-11-16 18:35",
-        "_timestamp": 1794859392.0,
+        "_timestamp": 1794865352.0,
         "articles": [
             {
                 "title": "Why Intel Stock Is Falling Monday",
@@ -1068,16 +1084,24 @@
                 "date": "2026-11-16 20:03",
                 "description": "Intel is up big this year, yet the fund built to double its moves is sitting in the red. A daily reset quirk explains the gap, and it matters for anyone tempted to buy this dip.",
                 "_timestamp": 1794859392.0
+            },
+            {
+                "title": "Wall Street's AI Rally Faces New Test as Tech Stocks Tumble Ahead of Nvidia's Earnings Report",
+                "link": "https://www.ibtimes.com/us-stocks-slide-ahead-nvidia-earnings-3809840?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:42",
+                "description": "The S&amp;P 500 fell 1.9% and the Nasdaq dropped 2.5% as high bond yields, China chip restrictions and uncertainty over AI demand weighed on markets.",
+                "_timestamp": 1794865352.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 20:03 UTC",
-            "Facts": "[Update 2026-11-16 19:15 UTC via Yahoo Finance Nasdaq]: US stock markets declined intraday Monday as equities tumbled with Nvidia sliding and Fed's Warsh discussing AI impact. Intel stock fell along with the wider chip sector ahead of Nvidia's earnings, facing additional pressure from a new shareholder lawsuit over its late-October plunge. The INTW 2X Intel ETF dropped 13% while Taiwan Semiconductor fell 5%.",
-            "Macro_Context": "Broader equity markets are experiencing a pullback driven by chip sector volatility and ongoing macroeconomic discussions regarding AI and Fed policy."
+            "Event_Timestamp": "2026-11-16 21:42 UTC",
+            "Facts": "[Update 2026-11-16 21:42 UTC via Yahoo Finance Nasdaq]: The S&P 500 fell 1.9% and the Nasdaq dropped 2.5% as high bond yields, China chip restrictions, and ongoing uncertainty regarding AI demand weighed heavily on market sentiment. Intel also slid amid a broader chip sector sell-off and a new shareholder lawsuit over its late-October price drop.",
+            "Macro_Context": "Elevated bond yields and restrictive technology trade policies create headwinds for equity valuations across growth-heavy indices."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 13.22
@@ -3025,14 +3049,14 @@
                 "_timestamp": 1794864768.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 19:22 UTC",
-            "Facts": "US equity indexes fell as the Commerce Department planned curbs on advanced AI infrastructure access, weighing on big tech stocks.",
-            "Market_Context": "Regulatory actions targeting AI infrastructure directly impact major technology equities and broader market indices."
+            "Event_Timestamp": "2026-11-16 21:32 UTC",
+            "Facts": "[Update 2026-11-16 21:32 UTC via Yahoo Finance Oil]: US equity markets closed lower as mega-cap chipmakers sold off sharply following the US Commerce Department's announcement of planned restrictions targeting advanced AI infrastructure access.",
+            "Macro_Context": "Regulatory crackdowns on semiconductor supply chains and infrastructure access are dampening liquidity and risk appetite in the technology sector."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.24
@@ -3356,14 +3380,14 @@
                 "_timestamp": 1794863602.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 19:15 UTC",
-            "Facts": "The US Commerce Department introduced rules to block China's remote access to advanced chips, imposing licensing requirements on five countries, while investigations shifted toward chip smuggling into China and Nvidia prepared for an upcoming earnings report.",
-            "Market_Context": "Stricter export controls and supply chain restrictions alter compliance frameworks for semiconductor manufacturers operating internationally."
+            "Event_Timestamp": "2026-11-16 21:13 UTC",
+            "Facts": "[Update 2026-11-16 21:13 UTC via Yahoo Finance Nasdaq]: U.S. export controls and probe shifts have expanded to target AI chip smuggling into China, alongside new remote-access blocking rules affecting data centers in Singapore, Malaysia, Thailand, Indonesia, and Brazil. While analysts expect strong quarterly revenue for Nvidia, these export curbs and leadership transitions are driving a reallocation of capital into domestic U.S. fab-exposed semiconductor stocks.",
+            "Macro_Context": "Geopolitical export controls are actively reshaping semiconductor supply chains, forcing capital rotation toward domestic manufacturing alternatives."
         },
         "eval_status": "HIT",
         "max_dd_usd": 18.93
@@ -5850,9 +5874,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 17:02 UTC",
+        "main_date": "First Reported: 2026-11-16 17:02 UTC | Last Update: 2026-11-16 21:38 UTC",
         "original_date": "2026-11-16 17:02",
-        "_timestamp": 1794848538.0,
+        "_timestamp": 1794865080.0,
         "articles": [
             {
                 "title": "ServiceNow Stock Crashed 27%. Wall Street Still Sees Big Upside",
@@ -5861,21 +5885,24 @@
                 "date": "2026-11-16 17:02",
                 "description": "The enterprise software company's record selloff has lowered its earnings multiple, while analysts see nearly 60% potential upside.",
                 "_timestamp": 1794848538.0
+            },
+            {
+                "title": "ServiceNow Stock’s (NOW) Historic Sell-Off May Have Gone Too Far",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/servicenow-stock-now-historic-sell-213800295.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:38",
+                "description": "ServiceNow (NOW) stock’s historic sell-off looks excessive to me. The enterprise workflow software provider disappointed investors with its Q3 earnings and outlook. I understand the frustration. Yet CFO Gina Mastantuono said, “Our AI momentum continues to build,” and the numbers support that view. Subscription revenue grew 21%, while management raised its cash-flow outlook. The stock now trades at roughly 21x next year’s expected earnings. That g",
+                "_timestamp": 1794865080.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 4,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 17:02 UTC",
-            "Facts": "An enterprise software company experienced a record selloff that reduced its earnings multiple while analysts maintain high upside price targets. The development is confined entirely to corporate equity valuation.",
-            "Macro_Context": "Individual corporate earnings dislocations have no material effect on global macro policy or XAU/USD flows.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 15,
-            "Orderflow_Price_Target": "None"
+            "Event_Timestamp": "2026-11-16 21:38 UTC",
+            "Facts": "[Update 2026-11-16 21:38 UTC via Yahoo Finance Nasdaq]: ServiceNow shares experienced a historic 27% crash following Q3 earnings and outlook disappointments. However, analysts and management note that subscription revenue grew 21%, cash-flow outlooks were raised, and the current valuation trades at roughly 21x next year's expected earnings, signaling potential long-term upside despite the near-term sell-off.",
+            "Macro_Context": "Enterprise software valuations are undergoing aggressive recalibration as markets weigh strong fundamental growth metrics against lowered near-term guidance."
         }
     },
     {
@@ -6894,19 +6921,14 @@
                 "_timestamp": 1794864495.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 5,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 15:27 UTC",
-            "Facts": "[Update 2026-11-16 15:27 UTC via Yahoo Finance Oil]: The S&P/TSX Composite Index declined mid-morning on broad selling across Canadian mining and energy stocks. | The movement reflects routine sector rotation within Toronto equity markets.",
-            "Macro_Context": "Routine equity sector fluctuations in Canadian resource stocks carry zero macro transmission channel to gold or international market liquidity.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "3859.89"
+            "Event_Timestamp": "2026-11-16 21:28 UTC",
+            "Facts": "[Update 2026-11-16 21:28 UTC via Yahoo Finance Oil]: The S&P/TSX Composite Index closed sharply lower, dropping 380 points on Monday as broad-based weakness in base metals, energy, and financial stocks weighed on Canadian equities.",
+            "Macro_Context": "Commodity-linked markets faced downward pressure alongside global risk-off sentiment in equities and softening industrial metal prices."
         }
     },
     {
@@ -11213,5 +11235,39 @@
             "Facts": "Chase reported that a software bug could be causing customer disruptions at major U.S. banks, with some users unable to access accounts or withdraw funds.",
             "Macro_Context": "Operational and software issues at major financial institutions impact retail account accessibility."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:46 UTC",
+        "original_date": "2026-11-16 21:46",
+        "_timestamp": 1794865570.0,
+        "articles": [
+            {
+                "title": "The cost of ousting a founder: Is the 'bank of Nvidia' at risk?",
+                "link": "https://finance.yahoo.com/video/the-cost-of-ousting-a-founder-is-the-bank-of-nvidia-at-risk-214610525.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:46",
+                "description": "Benchmark Company general partner Bill Gurley sits down with Deirdre Bosa to share his thoughts on circular financing concerns surrounding Nvidia (NVDA), especially in the absence of Jensen Huang as chief executive.",
+                "_timestamp": 1794865570.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:35 UTC",
+        "original_date": "2026-11-16 21:35",
+        "_timestamp": 1794864951.0,
+        "articles": [
+            {
+                "title": "California files lawsuit against OpenAI alleging lack of proper safeguards",
+                "link": "https://www.aljazeera.com/news/2026/11/16/california-files-lawsuit-against-openai-alleging-lack-of-proper-safeguards?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 21:35",
+                "description": "Attorney General Rob Bonta says Hugging Face attack was &#039;entirely predictable&#039; result of emphasis on rapid growth.",
+                "_timestamp": 1794864951.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

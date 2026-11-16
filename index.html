@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GMIT // XAU — Gold & Macro Data Terminal</title>
-    <script src="[https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js](https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js)"></script>
-    <script src="[https://cdn.plot.ly/plotly-2.27.0.min.js](https://cdn.plot.ly/plotly-2.27.0.min.js)"></script>
+    <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <style>
         :root {
             --bg-main: #06080c;
@@ -348,10 +348,8 @@
         let candleSeriesRef = null;
         let latestCandleBar = null;
         let nearSpotOrderbookRef = [];
-        let calibratedSpreadUsd = 0.0;
         let liveTickerInterval = null;
         let chartResizeObserver = null;
-        const expandedCardKeys = new Set();
         const MAX_ZONE_RADIUS_PCT = 0.025;
         let m2ViewMode = '3d';
 
@@ -416,7 +414,7 @@
         async function pollLiveBrowserPrice() {
             if (document.visibilityState !== 'visible') return;
             try {
-                const res = await fetch('[https://scanner.tradingview.com/global/scan](https://scanner.tradingview.com/global/scan)', {
+                const res = await fetch('https://scanner.tradingview.com/global/scan', {
                     method: 'POST',
                     headers: {'Content-Type': 'text/plain'},
                     body: JSON.stringify({symbols: {tickers: ["CAPITALCOM:GOLD", "OANDA:XAUUSD"]}, columns: ["close"]})
@@ -429,6 +427,13 @@
                     }
                 }
             } catch(e) {}
+        }
+
+        function setModel2View(mode) {
+            m2ViewMode = mode;
+            document.getElementById('m2-view-3d').classList.toggle('active', mode === '3d');
+            document.getElementById('m2-view-2d').classList.toggle('active', mode === '2d');
+            renderModel2();
         }
 
         function renderModel2() {
@@ -529,7 +534,7 @@
                         </div>
                         <div class="card-accordion-body">
                             <p><strong>Fakten:</strong> ${escapeHtml(s.Facts)}</p>
-                            <p><strong>Makro-Kontext:</strong> ${escapeHtml(s.Market_Context)}</p>
+                            <p><strong>Markt-Kontext:</strong> ${escapeHtml(s.Market_Context)}</p>
                         </div>`;
                     container.appendChild(card);
                 });

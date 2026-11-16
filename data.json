@@ -3688,9 +3688,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 22:07 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 23:00 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794866877.0,
+        "_timestamp": 1794870000.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4523,9 +4523,17 @@
                 "date": "2026-11-16 22:07",
                 "description": "Nvidia reports earnings tomorrow with a strong quarter expected, yet one CNBC panelist says the real damage has nothing to do with revenue. Her case turns on trust, a financing model, and who was vouching for it.",
                 "_timestamp": 1794866877.0
+            },
+            {
+                "title": "Huang’s ‘trillion-dollar dinners’ with Taiwan chip bosses were Nvidia’s secret weapon. Now he’s out. Can he be replaced?",
+                "link": "https://finance.yahoo.com/technology/articles/huang-trillion-dollar-dinners-taiwan-230000506.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:00",
+                "description": "“With a new CEO, those relationships won’t be as close as they were with Jensen Huang.\"",
+                "_timestamp": 1794870000.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
@@ -11492,5 +11500,90 @@
             "Facts": "[Update 2026-11-16 22:40 UTC via Al Jazeera English]: The US Pentagon formally rejected allegations linking deputy Steve Feinberg to a Goldman Sachs banker, defending him against Bloomberg claims that he encouraged defense contractors to utilize a specific banker.",
             "Macro_Context": "Scrutiny over defense procurement and financial ties involving high-ranking Pentagon officials."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:00 UTC",
+        "original_date": "2026-11-16 23:00",
+        "_timestamp": 1794870000.0,
+        "articles": [
+            {
+                "title": "Daura Gold Announces Grant of Options",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/daura-gold-announces-grant-options-230000375.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 23:00",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 16, 2026) - Daura Gold Corp. (TSXV: DGC) (OTCQB: DGCOF) (the \"Company\" or \"Daura\") announced today that it has granted a total of 2,000,000 incentive stock options to certain of its executive officers, investor relations and other key consultants, in accordance with the Company's stock option plan. Each option is exercisable into one common share of the Company at a price of $0.26 per share,",
+                "_timestamp": 1794870000.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:41 UTC",
+        "original_date": "2026-11-16 22:41",
+        "_timestamp": 1794868906.0,
+        "articles": [
+            {
+                "title": "This Isn’t a Crypto Crash. Fed Hike Bets Are Hitting Everything",
+                "link": "https://beincrypto.com/crypto-crash-fed-rate-hike-bets/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 22:41",
+                "description": "Bitcoin, stocks and gold all fell as Fed hike bets grew, showing the crypto crash is part of a wider rates shock.",
+                "_timestamp": 1794868906.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:09 UTC",
+        "original_date": "2026-11-16 23:09",
+        "_timestamp": 1794870540.0,
+        "articles": [
+            {
+                "title": "Armada Named a Priority Team Leader in the American SI Exports Program",
+                "link": "https://finance.yahoo.com/technology/articles/armada-named-priority-team-leader-230900257.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:09",
+                "description": "Armada, the Sovereign SI Infrastructure company, today was named a priority team leader in the American SI Exports Program, the U.S. Department of Commerce's national accelerator for bringing complete American Super Intelligence (SI) technology solutions to global markets. Armada leads the American Sovereign SI Stack, a consortium with Microsoft and Dell.",
+                "_timestamp": 1794870540.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:00 UTC",
+        "original_date": "2026-11-16 23:00",
+        "_timestamp": 1794870000.0,
+        "articles": [
+            {
+                "title": "PEGATRON Advances Agentic AI and HPC Infrastructure with High-Density Computing Solutions at SC26",
+                "link": "https://finance.yahoo.com/technology/ai/articles/pegatron-advances-agentic-ai-hpc-230000015.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:00",
+                "description": "PEGATRON, a globally recognized provider of comprehensive AI infrastructure and server solutions, will showcase its latest AI and high-performance computing (HPC) platforms at SC26, demonstrating how high-density CPU infrastructure, GPU-accelerated systems, and high-performance storage can address the evolving demands of agentic AI and HPC. Its portfolio spans CPU-intensive execution and data processing to accelerated computing, providing flexibl",
+                "_timestamp": 1794870000.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:01 UTC",
+        "original_date": "2026-11-16 23:01",
+        "_timestamp": 1794870062.0,
+        "articles": [
+            {
+                "title": "4 Chip Stocks Down as Much as 36% From Their Highs to Buy and Hold for the Next Decade",
+                "link": "https://www.fool.com/investing/2026/11/16/4-chip-stocks-down-as-much-as-36-from-their-highs-to-buy-and-hold-for-the-next-decade/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:01",
+                "description": "Four AI chip stocks trade as much as a third under their records. Which would I want to own for 10 years?",
+                "_timestamp": 1794870062.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

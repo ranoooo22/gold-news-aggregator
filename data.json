@@ -10878,9 +10878,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 21:00 UTC",
+        "main_date": "First Reported: 2026-11-16 21:00 UTC | Last Update: 2026-11-16 22:56 UTC",
         "original_date": "2026-11-16 21:00",
-        "_timestamp": 1794862800.0,
+        "_timestamp": 1794869769.0,
         "articles": [
             {
                 "title": "Orezone Gold Reports Third Quarter 2026 Results",
@@ -10889,16 +10889,24 @@
                 "date": "2026-11-16 21:00",
                 "description": "All dollar amounts are in USD unless otherwise indicated VANCOUVER, British Columbia, Nov. 16, 2026 (GLOBE NEWSWIRE) -- Orezone Gold Corporation (TSX: ORE | ASX: ORE | OTCQX: ORZCF) (the “Company” or “Orezone”) is pleased to report its operational and financial results for the third quarter of 2026. The Company will host a conference call and webcast today at 3:00pm PT / 5:00pm ET to discuss the results. Details to join the conference call and we",
                 "_timestamp": 1794862800.0
+            },
+            {
+                "title": "Orezone revenue more than triples as record gold output lifts Q3 results",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/orezone-revenue-more-triples-record-225609453.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 22:56",
+                "description": "Investing.com -- Canada’s Orezone Gold Corporation reported a more than threefold increase in third-quarter revenue, supported by record gold production and higher throughput at its Bomboré mine in Burkina Faso, as the company completed a major expansion project and repaid its Phase I project debt.",
+                "_timestamp": 1794869769.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 21:00 UTC",
-            "Facts": "[Update 2026-11-16 21:00 UTC via Yahoo Finance Gold]: Orezone Gold Corporation reported its operational and financial results for the third quarter of 2026 and hosted a conference call and webcast to discuss the figures.",
-            "Macro_Context": "Mining companies continue to release quarterly operational reports, offering transparency into production metrics within the gold sector."
+            "Event_Timestamp": "2026-11-16 22:56 UTC",
+            "Facts": "[Update 2026-11-16 22:56 UTC via Investing.com]: Canada's Orezone Gold Corporation reported a more than threefold increase in third-quarter revenue, supported by record gold production and higher throughput at its Bombor&eacute; mine in Burkina Faso, following a major expansion project and the repayment of Phase I project debt. Orezone previously scheduled a conference call and webcast for November 16, 2026, at 3:00pm PT / 5:00pm ET to discuss its operational and financial results.",
+            "Macro_Context": "Mining companies are benefiting from operational expansions and solid production volumes amid strong gold sector fundamentals."
         }
     },
     {
@@ -11459,6 +11467,30 @@
             "Event_Timestamp": "2026-11-16 22:15 UTC",
             "Facts": "Traders are pricing Anthropic 40% higher ahead of its IPO, with the AI giant eyeing a valuation of $1.4 trillion.",
             "Macro_Context": "Venture capital, artificial intelligence sector valuations, and upcoming high-profile IPO pricing."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 22:40 UTC",
+        "original_date": "2026-11-16 22:40",
+        "_timestamp": 1794868807.0,
+        "articles": [
+            {
+                "title": "US Pentagon rejects allegations linking deputy to a Goldman Sachs banker",
+                "link": "https://www.aljazeera.com/news/2026/11/16/us-pentagon-rejects-allegations-linking-deputy-to-a-goldman-sachs-banker?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 22:40",
+                "description": "Pentagon defends Steve Feinberg, amid claims in Bloomberg he encouraged defence contractors to use a specific banker.",
+                "_timestamp": 1794868807.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 22:40 UTC",
+            "Facts": "[Update 2026-11-16 22:40 UTC via Al Jazeera English]: The US Pentagon formally rejected allegations linking deputy Steve Feinberg to a Goldman Sachs banker, defending him against Bloomberg claims that he encouraged defense contractors to utilize a specific banker.",
+            "Macro_Context": "Scrutiny over defense procurement and financial ties involving high-ranking Pentagon officials."
         }
     }
 ]

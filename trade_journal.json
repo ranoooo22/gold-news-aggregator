@@ -1,48 +1,108 @@
 {
-    "active_trade": null,
-    "last_decision": {
-        "timestamp_utc": "2026-11-16 18:20 UTC",
-        "spot_at_eval": 3846.45,
-        "decision": "NO_TRADE",
-        "raw_ai_decision": "NO_TRADE",
-        "confidence_pct": 40,
-        "setup_title": "Kein Trade - Aggressive Abverkäufe und unzureichende Konfluenz",
-        "detailed_rationale": "Trotz starker bullischer Makro- und Geopolitik-Katalysatoren zeigen die Orderbuch- und Flow-Daten (AGRESSIVER MARKTVERKAUF mit nur 34.2% Käufern im Taker-Flow) einen akuten Abwärtsdruck. Spot liegt bei $3846.45, mit einem 4-Stunden-Rückgang von $-32.01. Da die Marktstruktur kurzfristig bärisch prägt und das Risiko eines Fehlausbruchs bei unklaren Liquiditätszonen hoch ist, wird gemäß den Regeln keine erzwungene Position eingegangen.",
-        "chart_orderbook_evidence": "OANDA Retail zeigt 65.5% Long-Positionen. Der Taker & Perp Flow verzeichnet aggressive Marktverkäufe mit lediglich 34.2% Buy-Anteil. Der nächste relevante Liquiditäts-Cluster liegt bei $3880.21 (ABOVE price) mit kombinierten 8.58% Volumen [OANDA: 2.57% | COMEX: 24.04%], während unter dem Preis die Zonen erst bei $3839.46 (Combined Vol: 3.54%) Unterstützung bieten.",
-        "news_catalyst_evidence": "Mehrere stark bullische Nachrichten unterstützen Gold als sicheren Hafen, darunter US-Sanktionen und Exportrestriktionen gegen Chinas AI-Chips (Yahoo Finance Nasdaq, https://finance.yahoo.com/technology/ai/articles/chipmakers-push-us-equity-indexes-180432243.html?.tsrc=rss) sowie militärische Spannungen im Nahen Osten und der Golfregion (Tehran Times, https://www.tehrantimes.com/news/532232/Persian-Gulf-s-Security-Conundrum-Arab-Capitals-Heavy-Cost).",
-        "surface_3d_evidence": "Modell 1 (IV & Skew) zeigt eine Basis ATM IV von 28.9% und einen Skew Score von +1.43 (BULLISH CALL SKEW - Upside Breakout Demand). Modell 3 (Session Profile) verweist auf die asiatische Fensterzeit um 01:00 UTC, während sich der Markt aktuell in der Stunde 18:00 UTC befindet.",
-        "experience_adjustment": "Der historische Master Trade Archive weist noch keine geschlossenen Trades auf. Die empirische Regime-Matrix zeigt für bullische Setups eine historische Win-Rate von 62.4% (468/750) sowie für Geopolitik-Setups 59.1% (276/467). Wegen des starken kurzfristigen Verkaufsdrucks wird jedoch Disziplin gewahrt.",
-        "invalidation_note": "Sollte der Kurs unter $3830.00 durchbrechen oder der Taker-Flow signifikant in den grünen Bereich wechseln, wird die Marktlage neu bewertet.",
+    "active_trade": {
+        "id": "TRD-1794853313",
+        "status": "ACTIVE",
+        "direction": "LONG",
+        "entry_price": 3845.61,
+        "current_price": 3845.61,
+        "tp_price": 3870.0,
+        "tp_distance_usd": 24.39,
+        "sl_price": 3761.57,
+        "sl_distance_usd": 84.04,
+        "atr_at_entry": 70.03,
+        "risk_reward_ratio": 0.29,
+        "confidence_pct": 78,
+        "opened_utc": "2026-11-16 18:21 UTC",
+        "entry_ts": 1794853313.741553,
+        "expires_utc": "2026-11-17 14:23 UTC",
+        "elapsed_hours": 0.0,
+        "remaining_hours": 20.0,
+        "max_dd_usd": 0.0,
+        "max_favorable_usd": 0.0,
+        "unrealized_pnl_usd": 0.0,
+        "setup_title": "Institutional Safe-Haven Breakout & Skew Confluence (LONG XAU/USD)",
+        "detailed_rationale": "Die Makro- und Microstructure-Signale zeigen eine ausgeprägte zweiseitige Konfluenz für einen Long-Ausbruch im Gold (XAU/USD). Trotz des kurzfristigen RÜcksetzers auf $3845.61 impliziert das 3D-Volatilitätssurface eine massive Nachfrage nach Upside-Call-Optionen (Skew Score +1.41 bei einer ATM IV von 28.91%). Der 24/7 Perp Basis-Aufschlag von +$5.99 untermauert die institutionelle Kaufneigung im Derivatemarkt. Auf der Nachrichtenfront treffen zwei mächtige geopolitische und risikoseitige Treiber aufeinander: Die militärische Eskalation im Iran (Aktivierung von Luftabwehrsystemen in Isfahan) sowie der massive Sell-off im US-Tech-Sektor und regulatorische Maßnahmen gegen Nvidia, die eine flächendeckende Risk-Off-Stimmung an den globalen Aktienmärkten auslösen. Das primäre Kursziel liegt am COMEX/OANDA-Liquiditätscluster bei $3870.78, was ein attraktives Chance-Risiko-Verhältnis bietet.",
+        "chart_orderbook_evidence": "Der Spotpreis notiert aktuell bei $3845.61. Oberhalb liegen ausgeprägte Liquiditätswände mit hoher COMEX-Confluence: $3870.78 (7.01% Gesamtvolumen, davon 19.12% COMEX Net Sell), $3880.22 (8.28% Volumen) und $3889.95 (6.44% Volumen). Unterhalb schützt die Unterstützung bei $3839.10 (3.81%) und $3830.01 (2.11%). Das Ziel bei $3870.00 nutzt den Anziehungsfaktor des Liquiditätspools bei $3870.78 vor Erreichen des Widerstands bei $3880.22.",
+        "news_catalyst_evidence": "Mehrere hochgradig bullische Katalysatoren stützen den Safe-Haven-Status von Gold: 1) Middle East Eye meldet die Aktivierung von Luftabwehrsystemen in Isfahan nach dem Abschuss einer US-Drohne (Bullish 89%). 2) Yahoo Finance Nasdaq berichtet über tiefgreifende Kursverluste und Führungs-Scandals im Halbleitersektor (Nvidia, US-Exportbeschränkungen), was zu Aktienverkäufen und Kapitalumschichtungen in Edelmetalle führt (Bullish 72% / 75%). 3) Tehran Times dokumentiert eskalierende Risiken im Bab al-Mandab Seeweg (Bullish 75%).",
+        "surface_3d_evidence": "Model 1 zeigt eine implizite Volatilität (ATM IV) von 28.91% und einen deutlich positiven Skew Score von +1.41 (Bullish Call Skew / Upside Breakout Demand). Die Volatilität im 4h-Fenster ist mit einer ATR-Ratio von 0.47x verhältnismäßig frisch und nicht erschöpft, was Raum für einen ausgedehnten Impuls bietet. Der positive Perp Basis Aufschlag von +$5.99 bestätigt die Long-Prämie im Markt.",
+        "experience_adjustment": "Die empirische Regimematrix (875 evaluierte Setups) belegt eine Winrate von 72.0% für Setups in den Kategorien Tech, AI & Equities sowie 63.4% für frische Volatilitätsregime (<0.8x ATR). Die Kombination aus frischer ATR (0.47x) und starkem Call-Skew erhöht die statistische Wahrscheinlichkeit einer erfolgreichen Bewegung in Richtung der oberen Orderbuch-Liquidität.",
+        "invalidation_note": "Das Setup wird ungültig, wenn der Kurs unter das Stop-Loss-Niveau von $3761.57 (1.2x Daily ATR, Distance $84.04) fällt oder das Zeitlimit von 20 Stunden ohne Erreichen des Take-Profit-Ziels von $3870.00 abläuft.",
         "cited_sources": [
             {
                 "type": "NEWS_LINK",
-                "label": "Yahoo Finance Nasdaq",
-                "detail": "U.S. equity indexes slide following news that the Commerce Department plans to curb access to advanced AI infrastructure.",
-                "url": "https://finance.yahoo.com/technology/ai/articles/chipmakers-push-us-equity-indexes-180432243.html?.tsrc=rss"
+                "label": "Middle East Eye - Iranian Air Defence Activated in Isfahan",
+                "detail": "Kinetic friction in central Iran drives safe-haven gold demand.",
+                "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-media-air-defence-systems-activated-isfahan"
             },
             {
                 "type": "NEWS_LINK",
-                "label": "Tehran Times",
-                "detail": "Persian Gulf's Security Conundrum & Stalled US Negotiations",
-                "url": "https://www.tehrantimes.com/news/532232/Persian-Gulf-s-Security-Conundrum-Arab-Capitals-Heavy-Cost"
-            },
-            {
-                "type": "ORDERBOOK",
-                "label": "OANDA+COMEX Zone $3880.21",
-                "detail": "Combined Vol: 8.58% [OANDA: 2.57% | COMEX: 24.04%] (Net BUY)",
-                "url": "internal://orderbook/zone-3880-21"
+                "label": "Yahoo Finance Nasdaq - Tech Equities Slump & Nvidia Scrutiny",
+                "detail": "Broad market risk-off sentiment driven by tech sell-off and US export restrictions.",
+                "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-financing-role-neoclouds-faces-181433179.html?.tsrc=rss"
             },
             {
                 "type": "GRAPH_DATA",
-                "label": "Model 1 IV & Skew",
-                "detail": "Base ATM IV = 28.9% | Skew Score = +1.43",
-                "url": "internal://surface/model-1"
+                "label": "3D Surface Model 1 Skew Score",
+                "detail": "Skew Score +1.41 (Bullish Call Skew), Base ATM IV 28.91%, Live Perp Basis +$5.99.",
+                "url": "https://gmit.terminal/surfaces/vol-skew"
+            },
+            {
+                "type": "ORDERBOOK",
+                "label": "COMEX/OANDA Confluence Liquidity Zones",
+                "detail": "Liquidity Wall at $3870.78 (7.01% Vol) and $3880.22 (8.28% Vol).",
+                "url": "https://gmit.terminal/orderbook/xauusd"
             },
             {
                 "type": "WINRATE_STATS",
-                "label": "Empirical Regime Matrix",
-                "detail": "Bullish setups win rate 62.4% (468/750); Geopolitics category win rate 59.1% (276/467)",
-                "url": "internal://archive/regime-matrix"
+                "label": "Empirical Regime Matrix - Tech/AI & Volatility",
+                "detail": "Tech/AI category win rate 72.0%, Fresh Volatility (<0.8x ATR) win rate 63.4%.",
+                "url": "https://gmit.terminal/archive/regime-matrix"
+            }
+        ]
+    },
+    "last_decision": {
+        "timestamp_utc": "2026-11-16 18:21 UTC",
+        "spot_at_eval": 3845.61,
+        "decision": "LONG",
+        "raw_ai_decision": "LONG",
+        "confidence_pct": 78,
+        "setup_title": "Institutional Safe-Haven Breakout & Skew Confluence (LONG XAU/USD)",
+        "detailed_rationale": "Die Makro- und Microstructure-Signale zeigen eine ausgeprägte zweiseitige Konfluenz für einen Long-Ausbruch im Gold (XAU/USD). Trotz des kurzfristigen RÜcksetzers auf $3845.61 impliziert das 3D-Volatilitätssurface eine massive Nachfrage nach Upside-Call-Optionen (Skew Score +1.41 bei einer ATM IV von 28.91%). Der 24/7 Perp Basis-Aufschlag von +$5.99 untermauert die institutionelle Kaufneigung im Derivatemarkt. Auf der Nachrichtenfront treffen zwei mächtige geopolitische und risikoseitige Treiber aufeinander: Die militärische Eskalation im Iran (Aktivierung von Luftabwehrsystemen in Isfahan) sowie der massive Sell-off im US-Tech-Sektor und regulatorische Maßnahmen gegen Nvidia, die eine flächendeckende Risk-Off-Stimmung an den globalen Aktienmärkten auslösen. Das primäre Kursziel liegt am COMEX/OANDA-Liquiditätscluster bei $3870.78, was ein attraktives Chance-Risiko-Verhältnis bietet.",
+        "chart_orderbook_evidence": "Der Spotpreis notiert aktuell bei $3845.61. Oberhalb liegen ausgeprägte Liquiditätswände mit hoher COMEX-Confluence: $3870.78 (7.01% Gesamtvolumen, davon 19.12% COMEX Net Sell), $3880.22 (8.28% Volumen) und $3889.95 (6.44% Volumen). Unterhalb schützt die Unterstützung bei $3839.10 (3.81%) und $3830.01 (2.11%). Das Ziel bei $3870.00 nutzt den Anziehungsfaktor des Liquiditätspools bei $3870.78 vor Erreichen des Widerstands bei $3880.22.",
+        "news_catalyst_evidence": "Mehrere hochgradig bullische Katalysatoren stützen den Safe-Haven-Status von Gold: 1) Middle East Eye meldet die Aktivierung von Luftabwehrsystemen in Isfahan nach dem Abschuss einer US-Drohne (Bullish 89%). 2) Yahoo Finance Nasdaq berichtet über tiefgreifende Kursverluste und Führungs-Scandals im Halbleitersektor (Nvidia, US-Exportbeschränkungen), was zu Aktienverkäufen und Kapitalumschichtungen in Edelmetalle führt (Bullish 72% / 75%). 3) Tehran Times dokumentiert eskalierende Risiken im Bab al-Mandab Seeweg (Bullish 75%).",
+        "surface_3d_evidence": "Model 1 zeigt eine implizite Volatilität (ATM IV) von 28.91% und einen deutlich positiven Skew Score von +1.41 (Bullish Call Skew / Upside Breakout Demand). Die Volatilität im 4h-Fenster ist mit einer ATR-Ratio von 0.47x verhältnismäßig frisch und nicht erschöpft, was Raum für einen ausgedehnten Impuls bietet. Der positive Perp Basis Aufschlag von +$5.99 bestätigt die Long-Prämie im Markt.",
+        "experience_adjustment": "Die empirische Regimematrix (875 evaluierte Setups) belegt eine Winrate von 72.0% für Setups in den Kategorien Tech, AI & Equities sowie 63.4% für frische Volatilitätsregime (<0.8x ATR). Die Kombination aus frischer ATR (0.47x) und starkem Call-Skew erhöht die statistische Wahrscheinlichkeit einer erfolgreichen Bewegung in Richtung der oberen Orderbuch-Liquidität.",
+        "invalidation_note": "Das Setup wird ungültig, wenn der Kurs unter das Stop-Loss-Niveau von $3761.57 (1.2x Daily ATR, Distance $84.04) fällt oder das Zeitlimit von 20 Stunden ohne Erreichen des Take-Profit-Ziels von $3870.00 abläuft.",
+        "cited_sources": [
+            {
+                "type": "NEWS_LINK",
+                "label": "Middle East Eye - Iranian Air Defence Activated in Isfahan",
+                "detail": "Kinetic friction in central Iran drives safe-haven gold demand.",
+                "url": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-media-air-defence-systems-activated-isfahan"
+            },
+            {
+                "type": "NEWS_LINK",
+                "label": "Yahoo Finance Nasdaq - Tech Equities Slump & Nvidia Scrutiny",
+                "detail": "Broad market risk-off sentiment driven by tech sell-off and US export restrictions.",
+                "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-financing-role-neoclouds-faces-181433179.html?.tsrc=rss"
+            },
+            {
+                "type": "GRAPH_DATA",
+                "label": "3D Surface Model 1 Skew Score",
+                "detail": "Skew Score +1.41 (Bullish Call Skew), Base ATM IV 28.91%, Live Perp Basis +$5.99.",
+                "url": "https://gmit.terminal/surfaces/vol-skew"
+            },
+            {
+                "type": "ORDERBOOK",
+                "label": "COMEX/OANDA Confluence Liquidity Zones",
+                "detail": "Liquidity Wall at $3870.78 (7.01% Vol) and $3880.22 (8.28% Vol).",
+                "url": "https://gmit.terminal/orderbook/xauusd"
+            },
+            {
+                "type": "WINRATE_STATS",
+                "label": "Empirical Regime Matrix - Tech/AI & Volatility",
+                "detail": "Tech/AI category win rate 72.0%, Fresh Volatility (<0.8x ATR) win rate 63.4%.",
+                "url": "https://gmit.terminal/archive/regime-matrix"
             }
         ]
     },

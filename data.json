@@ -2331,19 +2331,19 @@
                 "_timestamp": 1794851545.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 12:14 UTC",
-            "Facts": "Demonstrations took place in Bahrain's Sitra district to protest judicial rulings against local Shiite scholars. Protesters voiced opposition to legal decisions issued by the governing administration.",
-            "Macro_Context": "Localized civil protests in Bahrain without energy infrastructure threats or regional state military escalation do not alter Middle East risk premiums for Gold.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday (1-24h)",
-            "XAUUSD_Impact": "Neutral / No Direct Transmission",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3869.99"
+            "Event_Timestamp": "2026-11-16 17:52 UTC",
+            "Facts": "Bahrain's ruling regime has handed down life imprisonment sentences to numerous Shiite scholars following a mass trial, intensifying domestic sectarian tensions. Local protests have erupted in response to the severe judicial crackdown.",
+            "Macro_Context": "Domestic judicial crackdowns in Bahrain remain localized political developments with negligible spillover into international bullion flows or broader risk sentiment.",
+            "Impact_Timing": "Intraday",
+            "Timeframe": "24h",
+            "XAUUSD_Impact": "Neutral",
+            "Probability_Percent": 20,
+            "Orderflow_Price_Target": "3845.61"
         }
     },
     {
@@ -2400,19 +2400,19 @@
                 "_timestamp": 1794851515.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Red Sea & Yemen Conflict",
-            "Event_Timestamp": "2026-11-16 14:44 UTC",
-            "Facts": "[Update 2026-11-16 14:44 UTC via Middle East Eye]: Saudi-backed Southern Armed Forces retreated from positions overlooking the Bab al-Mandeb strait to reinforce Aden. | Houthi forces advanced across the strategic coastline, raising acute concerns over the security of vital global maritime transit routes. | Riyadh has also dismissed the commander of the military coalition supporting the Yemeni government.",
-            "Macro_Context": "Escalating maritime chokepoint risks near Bab al-Mandeb directly threaten global supply chains and elevate geopolitical risk premiums, bolstering gold.",
-            "Impact_Timing": "Immediate (0-4 hours)",
-            "Timeframe": "24h Intraday",
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-16 17:51 UTC",
+            "Facts": "[Update 2026-11-16 17:51 UTC via Tehran Times]: Saudi King Salman dismissed coalition commander Fahd Al-Salman amid mounting regional command disarray following Houthi advances. Yemeni government and Saudi-backed forces have retreated from the Bab al-Mandab strait to reinforce Aden, directly threatening global maritime trade routes.",
+            "Macro_Context": "Escalating maritime and geopolitical risks around the Bab al-Mandab strait amplify safe-haven demand for Gold, supporting upward momentum.",
+            "Impact_Timing": "Immediate",
+            "Timeframe": "24h",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 78,
-            "Orderflow_Price_Target": "$3890.14"
+            "Probability_Percent": 75,
+            "Orderflow_Price_Target": "$3880.22"
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -3214,18 +3214,19 @@
                 "_timestamp": 1794851479.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "First reported: 2026-11-16 17:51 UTC (~0.5h ago)",
-            "Facts": "TEHRAN – Contemporary Palestinian history should be read in two chapters: before October 7, 2023, and after it.",
-            "Macro_Context": "OANDA Retail: 65.5% Long | 4h Move: $-32.01 (0.46x Daily ATR).",
-            "Impact_Timing": "Present",
-            "Timeframe": "Days/Weeks",
+            "Event_Timestamp": "2026-11-16 17:51 UTC",
+            "Facts": "An opinion piece argues that contemporary Palestinian history is defined by the structural pivot surrounding the October 7, 2023 events. The commentary focuses on ideological reflections rather than new macroeconomic or geopolitical catalysts.",
+            "Macro_Context": "Opinion commentary lacks actionable market data or new transmission channels affecting immediate XAU/USD pricing.",
+            "Impact_Timing": "None",
+            "Timeframe": "24h",
             "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 40,
-            "Orderflow_Price_Target": "N/A"
+            "Probability_Percent": 10,
+            "Orderflow_Price_Target": "3845.61"
         }
     },
     {
@@ -3462,19 +3463,19 @@
                 "_timestamp": 1794851102.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 13:56 UTC",
-            "Facts": "[Update 2026-11-16 13:56 UTC via Yahoo Finance Oil]: US equity futures trade lower pre-bell as market participants await key corporate earnings and economic data releases. | Wall Street is bracing for Nvidia's upcoming quarterly results, the Anthropic IPO, and upcoming Federal Reserve minutes against a backdrop of geopolitical and tech sector uncertainty.",
-            "Macro_Context": "Weakness in major equity indices like the Nasdaq alongside tech liquidity concerns drives risk-off flows, frequently spilling over into safe-haven gold demand.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday",
+            "Event_Timestamp": "2026-11-16 17:45 UTC",
+            "Facts": "[Update 2026-11-16 17:45 UTC via Yahoo Finance]: Rising Treasury yields and heavy selling pressure across tech and cryptocurrency assets are pressuring broader equity markets. Investors are positioning defensively ahead of Nvidia earnings, upcoming Fed minutes, and key macroeconomic data releases.",
+            "Macro_Context": "Elevated Treasury yields and broader equity liquidations create cross-asset headwinds, though heightened market volatility reinforces safe-haven appeal for Gold.",
+            "Impact_Timing": "Near-term",
+            "Timeframe": "24h",
             "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 72,
-            "Orderflow_Price_Target": "3890.14"
+            "Probability_Percent": 68,
+            "Orderflow_Price_Target": "$3870.78"
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78

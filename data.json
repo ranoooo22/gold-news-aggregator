@@ -997,14 +997,14 @@
                 "_timestamp": 1794870779.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 22:20 UTC",
-            "Facts": "[Update 2026-11-16 22:20 UTC via Yahoo Finance Nasdaq]: Berkshire Hathaway disclosed its Q3 buys and sells via a 13F filing. Nvidia's leadership crisis and subsequent tech sell-off dragged down US indexes, including the Nasdaq and Microsoft stock.",
-            "Macro_Context": "Broader technology sector correction driven by Nvidia's interim CEO transition and falling tech valuations."
+            "Event_Timestamp": "2026-11-16 23:12 UTC",
+            "Facts": "[Update 2026-11-16 23:12 UTC via Yahoo Finance Nasdaq]: Broadcom surged 5.5% following Nvidia's CEO exit. Major US stock indices fell on Monday, 11/16/2026, led by a Nvidia-driven tech sell-off that pulled down the Nasdaq composite by 2%. Berkshire Hathaway disclosed Q3 portfolio changes in its 13F filing.",
+            "Macro_Context": "Tech sector volatility driven by leadership changes and institutional portfolio adjustments."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -4541,14 +4541,14 @@
                 "_timestamp": 1794870000.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 22:07 UTC",
-            "Facts": "[Update 2026-11-16 22:07 UTC via Yahoo Finance Nasdaq]: CNBC panelist Jenny Harrington noted that Jensen Huang incinerated over $1 trillion in market value, pointing out that Nvidia's recovery will be prolonged due to damaged trust and questions surrounding its financing model. Corporate governance experts and analysts discuss the unlikelihood of his return despite a 115,000-signature petition and public remarks from President Donald Trump, while the ongoing fallout threatens the broader financial services AI boom.",
-            "Macro_Context": "Corporate leadership crisis at Nvidia impacting broader AI sector sentiment and financial tech innovation."
+            "Event_Timestamp": "2026-11-16 23:00 UTC",
+            "Facts": "[Update 2026-11-16 23:00 UTC via Yahoo Finance Nasdaq]: Discussions continue regarding Nvidia CEO Jensen Huang's departure, a 115,000-signature petition, and potential impacts on financial services AI innovation, regulatory scrutiny, and irreplaceable industry relationships with Taiwan chip bosses.",
+            "Macro_Context": "Corporate governance and key-person risk impacting artificial intelligence market sentiment."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -9142,9 +9142,9 @@
         "max_dd_usd": 1.65
     },
     {
-        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-16 22:16 UTC",
+        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-16 23:19 UTC",
         "original_date": "2026-11-12 13:02",
-        "_timestamp": 1794867362.0,
+        "_timestamp": 1794871193.0,
         "articles": [
             {
                 "title": "Musk Says it Would be an 'Honor' to Hire Jensen Huang as Nvidia's Board Reportedly Gears up to Remove Him",
@@ -9385,16 +9385,24 @@
                 "date": "2026-11-16 22:16",
                 "description": "Elon Musk wants Jensen Huang back at Nvidia and has real money on the line, since SpaceX builds its AI data centers on Nvidia chips and Nvidia owns a multibillion-dollar stake in SpaceX.",
                 "_timestamp": 1794867362.0
+            },
+            {
+                "title": "3 Founder Led Stocks With Revenue Growth Over 32%",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-founder-led-stocks-revenue-231953046.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:19",
+                "description": "Export controls on advanced chips are tightening after U.S. officials moved to close loopholes that let Chinese firms tap Nvidia’s computing power. When rules shift this hard, capital often looks for leaders with real skin in the game. Founder led businesses with high insider ownership and solid balance sheets can be one way to lean into that. This article walks through three such stocks from our curated screener. The three founder led businesses",
+                "_timestamp": 1794871193.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 22:16 UTC",
-            "Facts": "[Update 2026-11-16 22:16 UTC via Yahoo Finance Nasdaq]: Elon Musk expressed support for Jensen Huang's return to Nvidia as markets navigate a heavy week featuring upcoming Nvidia earnings, Fed minutes, and Anthropic's IPO.",
-            "Macro_Context": "Intense market focus on key corporate governance structures, upcoming macroeconomic data, and central bank communications."
+            "Event_Timestamp": "2026-11-16 23:19 UTC",
+            "Facts": "[Update 2026-11-16 23:19 UTC via Yahoo Finance Nasdaq]: Export controls on advanced chips are tightening to prevent Chinese firms from bypassing restrictions. Meanwhile, Elon Musk voiced support for Jensen Huang, while markets focus on upcoming Nvidia earnings, Fed minutes, and Anthropic's IPO.",
+            "Macro_Context": "Geopolitical tech restrictions and founder dependency risks across major technology firms."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.62
@@ -11494,8 +11502,15 @@
                 "_timestamp": 1794870000.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 23:00 UTC",
+            "Facts": "[Update 2026-11-16 23:00 UTC via Yahoo Finance Gold]: Daura Gold Corp announced the grant of a total of 2,000,000 incentive stock options to executive officers, investor relations, and key consultants at an exercise price of $0.26 per share.",
+            "Macro_Context": "Micro-level equity compensation and corporate actions in the junior mining sector."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 22:41 UTC",
@@ -11511,8 +11526,15 @@
                 "_timestamp": 1794868906.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-16 22:41 UTC",
+            "Facts": "[Update 2026-11-16 22:41 UTC via Yahoo Finance Gold]: Bitcoin, broader equities, and gold all experienced declines as market expectations for Federal Reserve interest rate hikes intensified, reflecting a broad macroeconomic rates shock.",
+            "Macro_Context": "Tightening monetary policy expectations weighing on multiple asset classes simultaneously."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 23:09 UTC",
@@ -11528,8 +11550,15 @@
                 "_timestamp": 1794870540.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 23:09 UTC",
+            "Facts": "[Update 2026-11-16 23:09 UTC via Yahoo Finance Nasdaq]: Armada was named a priority team leader in the American SI Exports Program by the U.S. Department of Commerce, leading the American Sovereign SI Stack consortium alongside Microsoft and Dell.",
+            "Macro_Context": "Government-backed technological infrastructure expansion and global market export initiatives."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 23:00 UTC",
@@ -11619,5 +11648,39 @@
             "Facts": "Leopold Aschenbrenner's hedge fund, Situational Awareness, which nearly collapsed during the summer, repurchased artificial intelligence stocks shortly before the market rout in October.",
             "Macro_Context": "Hedge fund positioning and risk management strategies in artificial intelligence-focused equities highlight ongoing volatility in the tech sector."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:00 UTC",
+        "original_date": "2026-11-16 23:00",
+        "_timestamp": 1794870000.0,
+        "articles": [
+            {
+                "title": "Uganda Pushes First Oil to Mid-2027 as Iran War Holds Up Equipment",
+                "link": "https://finance.yahoo.com/energy/articles/uganda-pushes-first-oil-mid-230000000.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 23:00",
+                "description": "Uganda's first oil and exports slip to mid-2027 as the Iran war delays pipeline gear, costing it a positive S&amp;P outlook and budget revenue.",
+                "_timestamp": 1794870000.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:19 UTC",
+        "original_date": "2026-11-16 23:19",
+        "_timestamp": 1794871169.0,
+        "articles": [
+            {
+                "title": "Learn Why The Bull Case For IBM Stock Could Change Following Quantum Computing Expansion",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/learn-why-bull-case-ibm-231929118.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:19",
+                "description": "International Business Machines recently announced a series of quantum and AI moves, including new Nighthawk processors, a Chicago Quantum System Two deployment, multiple co-design platforms with partners such as NVIDIA, AMD, Fermilab, and Oak Ridge, and an AI agent platform collaboration with Microsoft. These projects point to IBM leaning heavily into capital-intensive, research-heavy quantum and enterprise AI infrastructure. This could influenc",
+                "_timestamp": 1794871169.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

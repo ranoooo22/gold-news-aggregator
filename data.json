@@ -10369,35 +10369,6 @@
         "max_dd_usd": 9.47
     },
     {
-        "main_date": "First Reported: 2026-11-15 23:15 UTC",
-        "original_date": "2026-11-15 23:15",
-        "_timestamp": 1794784502.0,
-        "articles": [
-            {
-                "title": "Is SpaceX Stock Worth Buying and Holding for 10 Years?",
-                "link": "https://www.fool.com/investing/2026/11/15/is-spacex-stock-worth-buying-and-holding-for-10-years/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 23:15",
-                "description": "SpaceX aims to generate $1 trillion in revenue by 2030. That does not make its stock a buy today.",
-                "_timestamp": 1794784502.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-15 23:15 UTC",
-            "Facts": "Private aerospace firm SpaceX has projected ambitious long-term revenue targets approaching one trillion dollars by the end of the decade. Financial analysts continue to evaluate the private valuation metrics and long-term investment viability of the enterprise.",
-            "Macro_Context": "Isolated corporate financial projections carry no direct transmission channel to macroeconomic policy or precious metals pricing.",
-            "Impact_Timing": "Delayed",
-            "Timeframe": "Structural Weekly",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 10,
-            "Orderflow_Price_Target": "$3893.79"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-15 21:50 UTC | Last Update: 2026-11-16 18:42 UTC",
         "original_date": "2026-11-15 21:50",
         "_timestamp": 1794854521.0,
@@ -11585,5 +11556,29 @@
         ],
         "needs_update": true,
         "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:10 UTC",
+        "original_date": "2026-11-16 23:10",
+        "_timestamp": 1794870600.0,
+        "articles": [
+            {
+                "title": "United Airlines suffers system outage amid lingering FAA ground-stop delays",
+                "link": "https://www.marketwatch.com/story/united-airlines-suffers-system-outage-amid-lingering-faa-ground-stop-delays-5e33f94c?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-16 23:10",
+                "description": "United Airlines reported a system outage Monday evening, as the airline industry is still recovering from disruptions caused by a nationwide ground stop ordered by the Federal Aviation Administration last week.",
+                "_timestamp": 1794870600.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 23:10 UTC",
+            "Facts": "United Airlines reported a system outage Monday evening while the airline industry continues to recover from disruptions caused by a nationwide FAA ground stop from the previous week.",
+            "Macro_Context": "Aviation sector operational disruptions following an FAA ground stop order."
+        }
     }
 ]

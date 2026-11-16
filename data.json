@@ -133,9 +133,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 19:26 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 20:36 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794857160.0,
+        "_timestamp": 1794861363.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -920,6 +920,22 @@
                 "date": "2026-11-16 19:26",
                 "description": "A decade-long estate-planning strategy moved nearly 60 million Nvidia shares into a family trust. It illustrates how soaring stocks can help wealthy families transfer fortunes without gift or estate taxes.",
                 "_timestamp": 1794857160.0
+            },
+            {
+                "title": "Tom Lee Blames Nvidia and Anthropic IPO for Ethereum Plunge as Bitmine Buys the Dip",
+                "link": "https://decrypt.co/383364/tom-lee-blames-nvidia-anthropic-ipo-ethereum-plunge-bitmine-buys?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 20:36",
+                "description": "The firm’s stash fell to $11.8 billion from $14.3 billion a week earlier as ETH slid 28% in two weeks, a “waterfall” drop chairman Tom Lee blames on Nvidia fallout and cash-raising ahead of Anthropic’s IPO.",
+                "_timestamp": 1794861363.0
+            },
+            {
+                "title": "TSMC Slumps Nearly 6% as Jensen Huang’s Exit and AI Debt Fears Rattle Investors Ahead of Nvidia Earnings",
+                "link": "https://www.benzinga.com/markets/prediction-markets/26/11/63319299/tsmc-nvidia-financing?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 20:30",
+                "description": "Six days after reporting record monthly sales, Taiwan Semiconductor Manufacturing Co. (NYSE:TSM) lost about $106 billion in market value in Taipei on Monday. Nvidia Corp. (NASDAQ:NVDA) holds its first earnings call since Jensen Huang resigned on Tuesday. Investors will be...",
+                "_timestamp": 1794861009.0
             }
         ],
         "needs_update": false,
@@ -927,9 +943,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 19:26 UTC",
-            "Facts": "Nvidia shares and related leveraged ETFs declined following the resignation of CEO Jensen Huang and his prior transfer of millions of shares into a family trust. Market commentary highlighted leadership transition concerns and a shift in investor sentiment surrounding the company's growth drivers ahead of earnings.",
-            "Market_Context": "Broader equity market technology sector reacting to corporate governance changes and executive departure at a major semiconductor firm."
+            "Event_Timestamp": "2026-11-16 20:36 UTC",
+            "Facts": "[Update 2026-11-16 20:36 UTC via Yahoo Finance Nasdaq]: Tom Lee blames Nvidia and Anthropic IPO for Ethereum plunge as Bitmine buys the dip. Leveraged ETFs and major chipmakers like TSMC and AMD sink following Jensen Huang's resignation and estate-planning asset transfers ahead of earnings.",
+            "Macro_Context": "Broader semiconductor sell-off and crypto market correction ahead of pivotal corporate earnings and technology IPOs."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -4618,9 +4634,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 18:44 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 20:28 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794854694.0,
+        "_timestamp": 1794860883.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -4661,16 +4677,24 @@
                 "date": "2026-11-16 18:44",
                 "description": "The Dow Jones index falls. President Trump speaks on Nvidia, Jensen Huang and Howard Lutnick. Chip plays skid.",
                 "_timestamp": 1794854694.0
+            },
+            {
+                "title": "Crypto’s Worst Week Since June",
+                "link": "https://www.bankless.com/read/cryptos-worst-week-since-june?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 20:28",
+                "description": "Stocks held their ground while BTC slid toward $62k. Here’s what drove the weekend flush and what’s coming next.",
+                "_timestamp": 1794860883.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 18:44 UTC",
-            "Facts": "U.S. equity futures and major indices traded lower as markets reacted to geopolitical tensions, tech sector turbulence, rising Treasury yields, and preparations for upcoming earnings releases.",
-            "Market_Context": "Macroeconomic pressure from rising yields and cross-asset risk aversion affecting equities and cryptocurrencies."
+            "Event_Timestamp": "2026-11-16 20:28 UTC",
+            "Facts": "[Update 2026-11-16 20:28 UTC via Yahoo Finance Nasdaq]: Stocks and crypto drop as Treasury yields rise and Wall Street braces for Nvidia's upcoming earnings report. The Dow falls amid presidential commentary on tech leadership.",
+            "Macro_Context": "Rising Treasury yields and risk-off sentiment in equities and crypto ahead of high-stakes corporate reporting."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
@@ -7014,9 +7038,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 23:45 UTC | Last Update: 2026-11-16 14:52 UTC",
+        "main_date": "First Reported: 2026-11-15 23:45 UTC | Last Update: 2026-11-16 20:30 UTC",
         "original_date": "2026-11-15 23:45",
-        "_timestamp": 1794840734.0,
+        "_timestamp": 1794861000.0,
         "articles": [
             {
                 "title": "Oil prices dip as markets look to recovering supplies, M.East tensions",
@@ -7065,21 +7089,24 @@
                 "date": "2026-11-16 14:52",
                 "description": "Crude oil prices were lower mid-morning Monday despite numerous media outlets reporting heightened u",
                 "_timestamp": 1794840734.0
+            },
+            {
+                "title": "Oil Prices Retreat as Market Digests Global Surplus Expectations",
+                "link": "https://www.wsj.com/finance/commodities-futures/oil-prices-rise-as-fresh-attacks-renew-middle-east-supply-concerns-bee22d97?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 20:30",
+                "description": "Oil prices fell as traders weighed expectations of a global supply surplus against renewed threats to Middle Eastern oil shipments.",
+                "_timestamp": 1794861000.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 14:52 UTC",
-            "Facts": "[Update 2026-11-16 14:52 UTC via Yahoo Finance Oil]: Crude oil prices fell with Brent dropping below $95 per barrel as markets priced in an impending global supply surplus and recovering Middle Eastern exports. | Ongoing attacks on commercial shipping vessels in Middle Eastern waters failed to counter mounting surplus concerns and weak demand expectations.",
-            "Macro_Context": "Falling energy prices reduce global headline inflation pressures and lower bond yield compensation for inflation risk, exerting mild downward pressure on Gold.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 65,
-            "Orderflow_Price_Target": "3851.62"
+            "Event_Timestamp": "2026-11-16 20:30 UTC",
+            "Facts": "[Update 2026-11-16 20:30 UTC via Yahoo Finance Oil]: Brent crude falls below $95 a barrel as recovering Middle Eastern exports and global supply surplus expectations outweigh ongoing shipping disruption concerns.",
+            "Macro_Context": "Energy markets focusing on supply surplus expectations and demand indicators despite regional geopolitical tensions."
         },
         "eval_status": "HIT",
         "max_dd_usd": 1.1
@@ -10424,35 +10451,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 20:50 UTC",
-        "original_date": "2026-11-15 20:50",
-        "_timestamp": 1794775815.0,
-        "articles": [
-            {
-                "title": "Palestinians reclaim Gaza’s shores with a swim for hope",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/15/palestinians-reclaim-gazas-shores-with-a-swim-for-hope?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 20:50",
-                "description": "For the first time in more than three years, Gaza’s swimming federation has held a competition.",
-                "_timestamp": 1794775815.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-15 20:50 UTC",
-            "Facts": "Gaza's swimming federation organized a local sports competition along the shores. | The event marked a rare recreational gathering amid ongoing regional hardships.",
-            "Macro_Context": "This is a localized human interest story with no measurable transmission channel to global macro markets or XAU/USD.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 10,
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-16 18:54 UTC",
         "original_date": "2026-11-16 18:54",
         "_timestamp": 1794855266.0,
@@ -10549,9 +10547,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 19:09 UTC | Last Update: 2026-11-16 19:30 UTC",
+        "main_date": "First Reported: 2026-11-16 19:09 UTC | Last Update: 2026-11-16 20:43 UTC",
         "original_date": "2026-11-16 19:09",
-        "_timestamp": 1794857415.0,
+        "_timestamp": 1794861804.0,
         "articles": [
             {
                 "title": "Customers of major US banks report outages days after Microsoft issues",
@@ -10568,16 +10566,24 @@
                 "date": "2026-11-16 19:30",
                 "description": "Reports of bank app outages surged on Monday, sparking widespread alarm days after last week's major Microsoft Outlook outage.",
                 "_timestamp": 1794857415.0
+            },
+            {
+                "title": "FAA, Microsoft outages show the perils of system upgrades",
+                "link": "https://www.americanbanker.com/news/faa-microsoft-outages-show-the-perils-of-system-upgrades?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 20:43",
+                "description": "Key insight: The system outages at Microsoft and the FAA are similar to tech failures banks have experienced when they’ve tried to upgrade networks and core systems. Expert quote: “Large-scale modernization needs deft management. At times I have described it as fixing the plane while it’s flying. Last week that stopped being a metaphor.” — […]",
+                "_timestamp": 1794861804.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 19:30 UTC",
-            "Facts": "Customers reported widespread outages and technical issues across major US banks including Bank of America, Chase, J.P. Morgan, U.S. Bank, Wells Fargo, and Zelle.",
-            "Market_Context": "Technical disruptions affecting major retail banking applications impact customer access and digital financial service operations."
+            "Event_Timestamp": "2026-11-16 20:43 UTC",
+            "Facts": "[Update 2026-11-16 20:43 UTC via Yahoo Finance Nasdaq]: Customers of major US banks, including Bank of America, Chase, Wells Fargo, and Zelle, report widespread mobile app outages following recent Microsoft system upgrade issues.",
+            "Macro_Context": "Operational resilience and software infrastructure challenges impacting major financial institutions and critical services."
         }
     },
     {
@@ -10794,6 +10800,30 @@
             "Event_Timestamp": "2026-11-16 20:00 UTC",
             "Facts": "[Update 2026-11-16 20:00 UTC via Al Jazeera English]: Israeli opposition leaders have accused Prime Minister Benjamin Netanyahu of an attempted 'coup' and called for investigations into reports that the prime minister's office attempted to frame Arab parties.",
             "Macro_Context": "Domestic political turmoil adds further complexity to the ongoing governance and security challenges in the region."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 20:50 UTC",
+        "original_date": "2026-11-16 20:50",
+        "_timestamp": 1794862252.0,
+        "articles": [
+            {
+                "title": "Iran still retains up to 2,500 ballistic missiles: Report",
+                "link": "https://www.middleeasteye.net/news/iran-still-retains-2500-ballistic-missiles-report",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 20:50",
+                "description": "Iran still retains up to 2,500 ballistic missiles: Report \n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nMon, 11/16/2026 - 19:45\n\n        \n      \n    \n      \n    \n                US intelligence assessment comes as Trump says it would be a 'defeat' if Islamic Republic is still in power when he leaves office\n                      \n                  \n                  \n\n  \n\n\n                  Children stand on a surface-",
+                "_timestamp": 1794862252.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-16 20:50 UTC",
+            "Facts": "[Update 2026-11-16 20:50 UTC via Middle East Eye]: A US intelligence assessment indicates Iran still retains up to 2,500 ballistic missiles, coinciding with political statements regarding the Islamic Republic's governance.",
+            "Macro_Context": "Geopolitical friction and intelligence assessments concerning Middle Eastern military capabilities and regional strategy."
         }
     }
 ]

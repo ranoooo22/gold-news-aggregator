@@ -1,9 +1,9 @@
 {
-    "total_evaluated": 874,
-    "hits": 555,
+    "total_evaluated": 875,
+    "hits": 556,
     "misses": 319,
     "win_rate": 63.5,
-    "active_signals": 20,
+    "active_signals": 23,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -14,18 +14,18 @@
                 "avg_dd": 22.94
             },
             "Bearish": {
-                "hits": 87,
+                "hits": 88,
                 "misses": 37,
-                "total": 124,
-                "win_rate": 70.2,
-                "avg_dd": 17.9
+                "total": 125,
+                "win_rate": 70.4,
+                "avg_dd": 17.88
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 528,
+                "hits": 529,
                 "misses": 305,
-                "total": 833,
+                "total": 834,
                 "win_rate": 63.4,
                 "avg_dd": 21.52
             },
@@ -53,11 +53,11 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 35,
+                "hits": 36,
                 "misses": 5,
-                "total": 40,
-                "win_rate": 87.5,
-                "avg_dd": 17.35
+                "total": 41,
+                "win_rate": 87.8,
+                "avg_dd": 17.32
             },
             "Against USD Headwind": {
                 "hits": 299,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 275,
+                "hits": 276,
                 "misses": 191,
-                "total": 466,
-                "win_rate": 59.0,
-                "avg_dd": 23.91
+                "total": 467,
+                "win_rate": 59.1,
+                "avg_dd": 23.89
             },
             "Fed, Rates & Macro": {
                 "hits": 35,
@@ -106,11 +106,11 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 462,
+                "hits": 463,
                 "misses": 249,
-                "total": 711,
+                "total": 712,
                 "win_rate": 65.0,
-                "avg_dd": 22.86
+                "avg_dd": 22.85
             },
             "High (65-74%)": {
                 "hits": 86,
@@ -15051,7 +15051,7 @@
             "prob": 58,
             "entry_price": 3859.89,
             "target": 3880.21,
-            "max_dd_usd": 3.57,
+            "max_dd_usd": 18.68,
             "atr_ratio_at_signal": 0.14,
             "daily_atr_at_signal": 67.08,
             "eur_chg_at_signal": -0.19,
@@ -15087,7 +15087,7 @@
             "prob": 77,
             "entry_price": 3858.99,
             "target": 3890.15,
-            "max_dd_usd": 2.67,
+            "max_dd_usd": 17.78,
             "atr_ratio_at_signal": 0.14,
             "daily_atr_at_signal": 67.08,
             "eur_chg_at_signal": -0.19,
@@ -15385,7 +15385,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249450/Global-coalition-to-combat-scientific-apartheid": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Global coalition to combat scientific apartheid",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -15429,7 +15429,7 @@
             "prob": 68,
             "entry_price": 3858.8,
             "target": 3880.29,
-            "max_dd_usd": 2.48,
+            "max_dd_usd": 17.59,
             "atr_ratio_at_signal": 0.16,
             "daily_atr_at_signal": 67.12,
             "eur_chg_at_signal": -0.18,
@@ -15501,7 +15501,7 @@
             "prob": 65,
             "entry_price": 3864.24,
             "target": 3880.31,
-            "max_dd_usd": 7.92,
+            "max_dd_usd": 23.03,
             "atr_ratio_at_signal": 0.06,
             "daily_atr_at_signal": 66.37,
             "eur_chg_at_signal": -0.2,
@@ -15555,7 +15555,7 @@
             "prob": 72,
             "entry_price": 3867.24,
             "target": 3880.3,
-            "max_dd_usd": 10.24,
+            "max_dd_usd": 26.03,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 66.37,
             "eur_chg_at_signal": -0.16,
@@ -15573,7 +15573,7 @@
             "prob": 68,
             "entry_price": 3867.24,
             "target": 3890.05,
-            "max_dd_usd": 10.24,
+            "max_dd_usd": 26.03,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 66.37,
             "eur_chg_at_signal": -0.16,
@@ -15591,7 +15591,7 @@
             "prob": 78,
             "entry_price": 3860.14,
             "target": 3890.05,
-            "max_dd_usd": 8.92,
+            "max_dd_usd": 18.93,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 66.37,
             "eur_chg_at_signal": -0.16,
@@ -15609,7 +15609,7 @@
             "prob": 59,
             "entry_price": 3868.79,
             "target": 3880.2,
-            "max_dd_usd": 11.8,
+            "max_dd_usd": 27.58,
             "atr_ratio_at_signal": 0.05,
             "daily_atr_at_signal": 66.42,
             "eur_chg_at_signal": -0.17,
@@ -15627,7 +15627,7 @@
             "prob": 72,
             "entry_price": 3864.24,
             "target": 3890.25,
-            "max_dd_usd": 7.92,
+            "max_dd_usd": 23.03,
             "atr_ratio_at_signal": 0.05,
             "daily_atr_at_signal": 66.42,
             "eur_chg_at_signal": -0.17,
@@ -15645,7 +15645,7 @@
             "prob": 59,
             "entry_price": 3867.46,
             "target": 3880.5,
-            "max_dd_usd": 10.47,
+            "max_dd_usd": 26.25,
             "atr_ratio_at_signal": 0.03,
             "daily_atr_at_signal": 66.42,
             "eur_chg_at_signal": -0.16,
@@ -15663,7 +15663,7 @@
             "prob": 75,
             "entry_price": 3858.3,
             "target": 3880.19,
-            "max_dd_usd": 1.31,
+            "max_dd_usd": 17.09,
             "atr_ratio_at_signal": 0.11,
             "daily_atr_at_signal": 68.21,
             "eur_chg_at_signal": -0.21,
@@ -15681,7 +15681,7 @@
             "prob": 59,
             "entry_price": 3858.3,
             "target": 3880.19,
-            "max_dd_usd": 1.31,
+            "max_dd_usd": 17.09,
             "atr_ratio_at_signal": 0.11,
             "daily_atr_at_signal": 68.21,
             "eur_chg_at_signal": -0.21,
@@ -15724,6 +15724,78 @@
             "nas_chg_at_signal": -1.63,
             "created_ts": 1794851318.0,
             "date": "First Reported: 2026-11-16 17:48 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/ai/articles/chipmakers-push-us-equity-indexes-180432243.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Update: Chipmakers Push US Equity Indexes Lower as Commerce Department Plans to Curb Acces",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3846.45,
+            "target": 3870.72,
+            "max_dd_usd": 5.24,
+            "atr_ratio_at_signal": 0.46,
+            "daily_atr_at_signal": 70.03,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": -2.2,
+            "created_ts": 1794852272.0,
+            "date": "First Reported: 2026-11-16 18:04 UTC",
+            "fail_reason": ""
+        },
+        "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-media-air-defence-systems-activated-isfahan": {
+            "status": "ACTIVE",
+            "headline": "Iranian media: Air defence systems activated in Isfahan",
+            "source": "Middle East Eye",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 89,
+            "entry_price": 3846.45,
+            "target": 3890.2,
+            "max_dd_usd": 5.24,
+            "atr_ratio_at_signal": 0.46,
+            "daily_atr_at_signal": 70.03,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": -2.2,
+            "created_ts": 1794852004.0,
+            "date": "First Reported: 2026-11-16 18:00 UTC",
+            "fail_reason": ""
+        },
+        "https://uk.finance.yahoo.com/news/wall-street-slides-nvidia-casts-175434575.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "Wall Street slides as Nvidia casts shadow over tech stocks",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3856.41,
+            "target": 3880.21,
+            "max_dd_usd": 15.2,
+            "atr_ratio_at_signal": 0.46,
+            "daily_atr_at_signal": 70.03,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": -2.2,
+            "created_ts": 1794851674.0,
+            "date": "First Reported: 2026-11-16 17:54 UTC",
+            "fail_reason": ""
+        },
+        "https://www.thestreet.com/crypto/markets/this-390-year-old-university-is-quietly-betting-big-on-bitcoin-and-gold?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "390-year-old Ivy League university quietly hoards Bitcoin and gold",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 72,
+            "entry_price": 3856.41,
+            "target": 3890.2,
+            "max_dd_usd": 15.2,
+            "atr_ratio_at_signal": 0.46,
+            "daily_atr_at_signal": 70.03,
+            "eur_chg_at_signal": -0.25,
+            "nas_chg_at_signal": -2.2,
+            "created_ts": 1794851638.0,
+            "date": "First Reported: 2026-11-16 17:53 UTC",
             "fail_reason": ""
         }
     }

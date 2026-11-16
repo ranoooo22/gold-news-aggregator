@@ -1,0 +1,61 @@
+{
+    "active_trade": null,
+    "last_decision": {
+        "timestamp_utc": "2026-11-16 18:20 UTC",
+        "spot_at_eval": 3846.45,
+        "decision": "NO_TRADE",
+        "raw_ai_decision": "NO_TRADE",
+        "confidence_pct": 40,
+        "setup_title": "Kein Trade - Aggressive Abverkäufe und unzureichende Konfluenz",
+        "detailed_rationale": "Trotz starker bullischer Makro- und Geopolitik-Katalysatoren zeigen die Orderbuch- und Flow-Daten (AGRESSIVER MARKTVERKAUF mit nur 34.2% Käufern im Taker-Flow) einen akuten Abwärtsdruck. Spot liegt bei $3846.45, mit einem 4-Stunden-Rückgang von $-32.01. Da die Marktstruktur kurzfristig bärisch prägt und das Risiko eines Fehlausbruchs bei unklaren Liquiditätszonen hoch ist, wird gemäß den Regeln keine erzwungene Position eingegangen.",
+        "chart_orderbook_evidence": "OANDA Retail zeigt 65.5% Long-Positionen. Der Taker & Perp Flow verzeichnet aggressive Marktverkäufe mit lediglich 34.2% Buy-Anteil. Der nächste relevante Liquiditäts-Cluster liegt bei $3880.21 (ABOVE price) mit kombinierten 8.58% Volumen [OANDA: 2.57% | COMEX: 24.04%], während unter dem Preis die Zonen erst bei $3839.46 (Combined Vol: 3.54%) Unterstützung bieten.",
+        "news_catalyst_evidence": "Mehrere stark bullische Nachrichten unterstützen Gold als sicheren Hafen, darunter US-Sanktionen und Exportrestriktionen gegen Chinas AI-Chips (Yahoo Finance Nasdaq, https://finance.yahoo.com/technology/ai/articles/chipmakers-push-us-equity-indexes-180432243.html?.tsrc=rss) sowie militärische Spannungen im Nahen Osten und der Golfregion (Tehran Times, https://www.tehrantimes.com/news/532232/Persian-Gulf-s-Security-Conundrum-Arab-Capitals-Heavy-Cost).",
+        "surface_3d_evidence": "Modell 1 (IV & Skew) zeigt eine Basis ATM IV von 28.9% und einen Skew Score von +1.43 (BULLISH CALL SKEW - Upside Breakout Demand). Modell 3 (Session Profile) verweist auf die asiatische Fensterzeit um 01:00 UTC, während sich der Markt aktuell in der Stunde 18:00 UTC befindet.",
+        "experience_adjustment": "Der historische Master Trade Archive weist noch keine geschlossenen Trades auf. Die empirische Regime-Matrix zeigt für bullische Setups eine historische Win-Rate von 62.4% (468/750) sowie für Geopolitik-Setups 59.1% (276/467). Wegen des starken kurzfristigen Verkaufsdrucks wird jedoch Disziplin gewahrt.",
+        "invalidation_note": "Sollte der Kurs unter $3830.00 durchbrechen oder der Taker-Flow signifikant in den grünen Bereich wechseln, wird die Marktlage neu bewertet.",
+        "cited_sources": [
+            {
+                "type": "NEWS_LINK",
+                "label": "Yahoo Finance Nasdaq",
+                "detail": "U.S. equity indexes slide following news that the Commerce Department plans to curb access to advanced AI infrastructure.",
+                "url": "https://finance.yahoo.com/technology/ai/articles/chipmakers-push-us-equity-indexes-180432243.html?.tsrc=rss"
+            },
+            {
+                "type": "NEWS_LINK",
+                "label": "Tehran Times",
+                "detail": "Persian Gulf's Security Conundrum & Stalled US Negotiations",
+                "url": "https://www.tehrantimes.com/news/532232/Persian-Gulf-s-Security-Conundrum-Arab-Capitals-Heavy-Cost"
+            },
+            {
+                "type": "ORDERBOOK",
+                "label": "OANDA+COMEX Zone $3880.21",
+                "detail": "Combined Vol: 8.58% [OANDA: 2.57% | COMEX: 24.04%] (Net BUY)",
+                "url": "internal://orderbook/zone-3880-21"
+            },
+            {
+                "type": "GRAPH_DATA",
+                "label": "Model 1 IV & Skew",
+                "detail": "Base ATM IV = 28.9% | Skew Score = +1.43",
+                "url": "internal://surface/model-1"
+            },
+            {
+                "type": "WINRATE_STATS",
+                "label": "Empirical Regime Matrix",
+                "detail": "Bullish setups win rate 62.4% (468/750); Geopolitics category win rate 59.1% (276/467)",
+                "url": "internal://archive/regime-matrix"
+            }
+        ]
+    },
+    "stats": {
+        "total_closed": 0,
+        "wins": 0,
+        "losses": 0,
+        "expired": 0,
+        "invalidated": 0,
+        "win_rate": 0.0,
+        "net_pnl_usd": 0.0,
+        "avg_win_usd": 0.0,
+        "avg_loss_usd": 0.0
+    },
+    "archive": []
+}

@@ -6884,9 +6884,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 15:00 UTC",
+        "main_date": "First Reported: 2026-11-16 15:00 UTC | Last Update: 2026-11-16 20:00 UTC",
         "original_date": "2026-11-16 15:00",
-        "_timestamp": 1794841234.0,
+        "_timestamp": 1794859218.0,
         "articles": [
             {
                 "title": "BC-Crude Oil Futures",
@@ -6903,21 +6903,32 @@
                 "date": "2026-11-16 15:00",
                 "description": "NEW YORK (AP) — Prices as of 10:00:00 AM Monday, November 16.Contract Open High Low Last Change Today's Volume Friday's Volume  Nov 26 3862.",
                 "_timestamp": 1794841234.0
+            },
+            {
+                "title": "BC-Gold-Silver",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-gold-silver-200014301.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 20:00",
+                "description": "NEW YORK (AP) — Futures trading on the NY Merc Monday:Open High Low Settle Chg.'s open int 407,128 down 2,238  SILVER  5,000 troy oz.",
+                "_timestamp": 1794859214.0
+            },
+            {
+                "title": "BC-OILS",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/bc-oils-200018815.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-16 20:00",
+                "description": "NEW YORK (AP) — Futures trading on the New York Mercantile Exchange Monday:Open High Low Settle Chg.'s open int 1,935,691 down 31,543  HEATING OIL  42,000 gal, cents per gal  Dec 26 430.",
+                "_timestamp": 1794859218.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": false,
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 15:00 UTC",
-            "Facts": "Automated price reporting services published routine morning futures price quotes for crude oil and gold contracts. The updates contained standard exchange ticker data without any fundamental news or macro developments.",
-            "Macro_Context": "Routine futures ticker updates provide no new market catalysts for XAU/USD price action.",
-            "Impact_Timing": "Irrelevant",
-            "Timeframe": "Irrelevant",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3859.89"
+            "Event_Timestamp": "2026-11-16 20:00:00 UTC",
+            "Facts": "New York Mercantile Exchange reported trading data for crude oil, gold, silver, and heating oil futures contracts on Monday, November 16, 2026.",
+            "Market_Context": "Routine reporting of exchange futures settlement prices, open interest changes, and contract volumes for commodities."
         }
     },
     {
@@ -10780,6 +10791,30 @@
             "Event_Timestamp": "2026-11-16 19:58 UTC",
             "Facts": "Saudi Foreign Minister Prince Faisal bin Farhan held a telephone discussion with Qatari counterpart Sheikh Mohammed bin Abdulrahman bin Jassim Al Thani to address ongoing regional escalation and coordinate de-escalation efforts.",
             "Market_Context": "Geopolitical diplomatic engagement in the Middle East focused on regional stability and conflict mitigation."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 20:05 UTC",
+        "original_date": "2026-11-16 20:05",
+        "_timestamp": 1794859514.0,
+        "articles": [
+            {
+                "title": "Somali-American Uber driver left in coma after alleged hate crime in Minnesota",
+                "link": "https://www.middleeasteye.net/trending/somali-american-uber-driver-left-coma-after-alleged-hate-crime-minnesota",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 20:05",
+                "description": "Somali-American Uber driver left in coma after alleged hate crime in Minnesota\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nMon, 11/16/2026 - 18:46\n\n        \n      \n    \n      \n    \n                Mohamed Yusuf was reportedly run over multiple times with his own vehicle after a passenger said he disliked his Muslim name\n                      \n                  \n                  \n\n  \n\n\n                  A screenshot ",
+                "_timestamp": 1794859514.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 20:05:00 UTC",
+            "Facts": "A Somali-American Uber driver named Mohamed Yusuf was hospitalized in a coma following an alleged hate crime in Minnesota.",
+            "Market_Context": "General news report concerning a localized criminal incident and civil safety."
         }
     }
 ]

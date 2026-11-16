@@ -3,7 +3,7 @@
     "hits": 556,
     "misses": 319,
     "win_rate": 63.5,
-    "active_signals": 23,
+    "active_signals": 24,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -15796,6 +15796,24 @@
             "nas_chg_at_signal": -2.2,
             "created_ts": 1794851638.0,
             "date": "First Reported: 2026-11-16 17:53 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/technology/ai/articles/softbank-group-stocks-fall-3-181015417.html?.tsrc=rss": {
+            "status": "ACTIVE",
+            "headline": "SoftBank Group Stocks Fall 3.69% as AI Jitters Hit Its $64.6 Billion OpenAI Bet",
+            "source": "Yahoo Finance Nasdaq",
+            "category": "Tech, AI & Equities",
+            "impact": "Bullish",
+            "prob": 68,
+            "entry_price": 3847.32,
+            "target": 3870.77,
+            "max_dd_usd": 6.11,
+            "atr_ratio_at_signal": 0.44,
+            "daily_atr_at_signal": 70.03,
+            "eur_chg_at_signal": -0.29,
+            "nas_chg_at_signal": -2.58,
+            "created_ts": 1794852615.0,
+            "date": "First Reported: 2026-11-16 18:10 UTC",
             "fail_reason": ""
         }
     }

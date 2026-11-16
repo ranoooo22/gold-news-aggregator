@@ -1,33 +1,33 @@
 {
-    "total_evaluated": 803,
-    "hits": 493,
-    "misses": 310,
-    "win_rate": 61.4,
-    "active_signals": 33,
+    "total_evaluated": 828,
+    "hits": 517,
+    "misses": 311,
+    "win_rate": 62.4,
+    "active_signals": 9,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 412,
+                "hits": 433,
                 "misses": 274,
-                "total": 686,
-                "win_rate": 60.1,
-                "avg_dd": 23.8
+                "total": 707,
+                "win_rate": 61.2,
+                "avg_dd": 23.17
             },
             "Bearish": {
-                "hits": 81,
-                "misses": 36,
-                "total": 117,
-                "win_rate": 69.2,
-                "avg_dd": 18.48
+                "hits": 84,
+                "misses": 37,
+                "total": 121,
+                "win_rate": 69.4,
+                "avg_dd": 18.2
             }
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 466,
-                "misses": 296,
-                "total": 762,
-                "win_rate": 61.2,
-                "avg_dd": 22.3
+                "hits": 490,
+                "misses": 297,
+                "total": 787,
+                "win_rate": 62.3,
+                "avg_dd": 21.7
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -53,78 +53,78 @@
         },
         "by_macro_alignment": {
             "With USD Tailwind": {
-                "hits": 30,
-                "misses": 4,
-                "total": 34,
-                "win_rate": 88.2,
-                "avg_dd": 18.08
+                "hits": 32,
+                "misses": 5,
+                "total": 37,
+                "win_rate": 86.5,
+                "avg_dd": 17.96
             },
             "Against USD Headwind": {
-                "hits": 245,
+                "hits": 264,
                 "misses": 119,
-                "total": 364,
-                "win_rate": 67.3,
-                "avg_dd": 21.06
+                "total": 383,
+                "win_rate": 68.9,
+                "avg_dd": 20.26
             },
             "USD Neutral / Legacy": {
-                "hits": 218,
+                "hits": 221,
                 "misses": 187,
-                "total": 405,
-                "win_rate": 53.8,
-                "avg_dd": 26.19
+                "total": 408,
+                "win_rate": 54.2,
+                "avg_dd": 25.95
             }
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 232,
+                "hits": 248,
                 "misses": 187,
-                "total": 419,
-                "win_rate": 55.4,
-                "avg_dd": 25.4
+                "total": 435,
+                "win_rate": 57.0,
+                "avg_dd": 24.54
             },
             "Fed, Rates & Macro": {
-                "hits": 32,
+                "hits": 33,
                 "misses": 10,
-                "total": 42,
-                "win_rate": 76.2,
-                "avg_dd": 13.27
+                "total": 43,
+                "win_rate": 76.7,
+                "avg_dd": 13.09
             },
             "Tech, AI & Equities": {
-                "hits": 138,
-                "misses": 53,
-                "total": 191,
+                "hits": 141,
+                "misses": 54,
+                "total": 195,
                 "win_rate": 72.3,
-                "avg_dd": 18.21
+                "avg_dd": 17.99
             },
             "Commodities & Energy": {
-                "hits": 91,
+                "hits": 95,
                 "misses": 60,
-                "total": 151,
-                "win_rate": 60.3,
-                "avg_dd": 26.32
+                "total": 155,
+                "win_rate": 61.3,
+                "avg_dd": 25.73
             }
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 426,
+                "hits": 437,
                 "misses": 249,
-                "total": 675,
-                "win_rate": 63.1,
-                "avg_dd": 23.7
+                "total": 686,
+                "win_rate": 63.7,
+                "avg_dd": 23.38
             },
             "High (65-74%)": {
-                "hits": 63,
+                "hits": 74,
                 "misses": 51,
-                "total": 114,
-                "win_rate": 55.3,
-                "avg_dd": 20.71
+                "total": 125,
+                "win_rate": 59.2,
+                "avg_dd": 19.22
             },
             "Extreme (>=75%)": {
-                "hits": 4,
-                "misses": 10,
-                "total": 14,
-                "win_rate": 28.6,
-                "avg_dd": 16.74
+                "hits": 6,
+                "misses": 11,
+                "total": 17,
+                "win_rate": 35.3,
+                "avg_dd": 15.24
             }
         }
     },
@@ -14071,7 +14071,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249412/Don-t-count-your-chicken-before-they-are-hatched": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Don’t count your chicken before they are hatched!",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -14079,7 +14079,7 @@
             "prob": 72,
             "entry_price": 3884.68,
             "target": 3899.57,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14089,7 +14089,7 @@
             "fail_reason": ""
         },
         "https://www.middleeasteye.net/live-blog/live-blog-update/bahrains-ministry-interior-issues-hazard-alert-urges-citizens-stay-calm": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Bahrain's ministry of interior issues 'hazard' alert, urges citizens to stay calm",
             "source": "Middle East Eye",
             "category": "Geopolitics & War",
@@ -14097,7 +14097,7 @@
             "prob": 85,
             "entry_price": 3884.68,
             "target": 3899.57,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14107,7 +14107,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/15/asean-summit-whos-attending-and-whats-at-stake?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "ASEAN summit: Who’s attending and what’s at stake?",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -14115,7 +14115,7 @@
             "prob": 70,
             "entry_price": 3884.68,
             "target": 3899.57,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14125,7 +14125,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249410/Iran-not-remain-in-state-of-neither-war-nor-peace-Ghalibaf": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iran not remain in state of ‘neither war nor peace’: Ghalibaf",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -14133,7 +14133,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3870.0,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14143,7 +14143,7 @@
             "fail_reason": ""
         },
         "https://www.fool.com/investing/2026/11/14/november-25-will-be-a-critical-day-for-the-stock-market/?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "MISS",
             "headline": "Nov. 25 Will Be a Critical Day for the Stock Market",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -14151,7 +14151,7 @@
             "prob": 75,
             "entry_price": 3884.68,
             "target": 3871.81,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 16.69,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14179,7 +14179,7 @@
             "fail_reason": ""
         },
         "https://finance.yahoo.com/energy/articles/u-diesel-prices-fall-below-033225657.html?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "U.S. diesel prices fall below $6 a gallon to two-month low",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -14187,7 +14187,7 @@
             "prob": 58,
             "entry_price": 3884.68,
             "target": 3880.93,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 16.69,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14197,7 +14197,7 @@
             "fail_reason": ""
         },
         "https://stocktwits.com/news-articles/markets/equity/what-to-expect-markets-this-week-nov-15-2026/cNbEXadR9Qu?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "What To Expect In Markets This Week: NVDA, PANW, DIS, HD, TGT, WMT, GRRR Earnings, Kevin W",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -14205,7 +14205,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3899.57,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14223,7 +14223,7 @@
             "prob": 76,
             "entry_price": 3884.68,
             "target": 4049.05,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14233,7 +14233,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249413/US-attaches-no-value-to-international-law-Iran-FM-spox": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Countries put airspace for attack on Iran must pay reparation",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -14241,7 +14241,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3899.57,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14259,7 +14259,7 @@
             "prob": 68,
             "entry_price": 3884.68,
             "target": 3920.95,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14269,7 +14269,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/14/netanyahu-says-only-a-unity-government-can-guarantee-israels-security?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Netanyahu says only a unity government can guarantee Israel’s security",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -14277,7 +14277,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3889.6,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14295,7 +14295,7 @@
             "prob": 75,
             "entry_price": 3884.68,
             "target": 4049.03,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14305,7 +14305,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532169/What-is-the-proposed-Cyrus-Accords-between-Israel-and-anti-Iran": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "What is the proposed \"Cyrus Accords\" between Israel and anti-Iran monarchists?",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -14313,7 +14313,7 @@
             "prob": 56,
             "entry_price": 3884.68,
             "target": 3889.43,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 16.69,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14331,7 +14331,7 @@
             "prob": 75,
             "entry_price": 3884.68,
             "target": 3920.95,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14341,7 +14341,7 @@
             "fail_reason": ""
         },
         "https://www.marketwatch.com/story/gold-and-silver-are-supposed-to-protect-against-inflation-so-why-are-both-metals-tumbling-instead-1735eca7?mod=mw_rss_topstories": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Gold and silver are supposed to protect against inflation. So why are both metals tumbling",
             "source": "MarketWatch Macro",
             "category": "Fed, Rates & Macro",
@@ -14349,7 +14349,7 @@
             "prob": 60,
             "entry_price": 3884.68,
             "target": 3871.81,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14359,7 +14359,7 @@
             "fail_reason": ""
         },
         "https://www.thestreet.com/investing/stocks/goldman-sachs-reset-sp-500-price-target-for-2027?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Goldman Sachs reset S&P 500 price target for 2027",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -14367,7 +14367,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3889.43,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14377,7 +14377,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532187/Iran-prepares-to-commission-first-fully-indigenous-nuclear-fusion": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iran prepares to commission first fully indigenous nuclear fusion system",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -14385,7 +14385,7 @@
             "prob": 55,
             "entry_price": 3884.68,
             "target": 3860.0,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14395,7 +14395,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/15/yemeni-government-forces-redeploy-from-bab-al-mandeb-to-defend-aden?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Yemeni government forces redeploy from Bab al-Mandeb to defend Aden",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -14403,7 +14403,7 @@
             "prob": 60,
             "entry_price": 3884.68,
             "target": 3899.57,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14421,7 +14421,7 @@
             "prob": 73,
             "entry_price": 3884.68,
             "target": 3970.61,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14431,7 +14431,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532183/NYT-investigation-links-Mossad-to-abduction-and-killing-of-Iranian": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "NYT investigation links Mossad to abduction and killing of Iranian general Alireza Asgari",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -14439,7 +14439,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3899.41,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14457,7 +14457,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3871.81,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 16.69,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14467,7 +14467,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532179/Criminals-hosts-bill-the-victim": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Criminals' hosts bill the victim",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -14475,7 +14475,7 @@
             "prob": 75,
             "entry_price": 3884.68,
             "target": 3899.57,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14485,7 +14485,7 @@
             "fail_reason": ""
         },
         "https://www.tikr.com/blog/megaspeed-launches-internal-probe-as-nvidia-scrutiny-grows-claims-not-supported-by-verifiable-evidence?ref=yahoofinance&tlnk=yf-261115-5mc8wp7x&.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Megaspeed Launches Internal Probe as Nvidia Scrutiny Grows: Claims “Not Supported by Verif",
             "source": "Yahoo Finance Nasdaq",
             "category": "Tech, AI & Equities",
@@ -14493,7 +14493,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3899.57,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14511,7 +14511,7 @@
             "prob": 76,
             "entry_price": 3884.68,
             "target": 4049.05,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14521,7 +14521,7 @@
             "fail_reason": ""
         },
         "https://www.thestreet.com/economy/goldman-sachs-2027-forecast?.tsrc=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Goldman Sachs’ calm 2027 forecast comes with a catch",
             "source": "Yahoo Finance Oil",
             "category": "Commodities & Energy",
@@ -14529,7 +14529,7 @@
             "prob": 55,
             "entry_price": 3884.68,
             "target": 3899.42,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14547,7 +14547,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3920.95,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14565,7 +14565,7 @@
             "prob": 75,
             "entry_price": 3884.68,
             "target": 3920.95,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14575,7 +14575,7 @@
             "fail_reason": ""
         },
         "https://en.mehrnews.com/news/249415/Iran-s-top-diplomat-to-travel-to-Pakistan-for-ECO-meeting": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Iran’s top diplomat to travel to Pakistan for ECO meeting",
             "source": "Mehr News Agency",
             "category": "Geopolitics & War",
@@ -14583,7 +14583,7 @@
             "prob": 55,
             "entry_price": 3884.68,
             "target": 3889.65,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14593,7 +14593,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/video/newsfeed/2026/11/15/israeli-drone-filmed-flying-low-outside-homes-in-southern-lebanon?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Israeli drone filmed flying low outside homes in southern Lebanon",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -14601,7 +14601,7 @@
             "prob": 58,
             "entry_price": 3884.68,
             "target": 3889.65,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14611,7 +14611,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532188/Yemeni-Armed-Forces-force-Saudi-backed-militia-to-retreat-from": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Saudi-backed militia retreat from Bab el-Mandeb Strait",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -14619,7 +14619,7 @@
             "prob": 65,
             "entry_price": 3884.68,
             "target": 3899.42,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.31,
@@ -14629,7 +14629,7 @@
             "fail_reason": ""
         },
         "https://www.aljazeera.com/news/2026/11/15/estonia-to-close-border-crossings-with-russia-after-attack-on-drone-maker?traffic_source=rss": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Estonia to close border crossings with Russia after attack on drone maker",
             "source": "Al Jazeera English",
             "category": "Geopolitics & War",
@@ -14637,7 +14637,7 @@
             "prob": 62,
             "entry_price": 3884.68,
             "target": 3864.0,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": 0.0,
@@ -14647,7 +14647,7 @@
             "fail_reason": ""
         },
         "https://www.tehrantimes.com/news/532189/Regional-developments-under-the-shadow-of-political-deadlock": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "Regional developments under the shadow of political deadlock",
             "source": "Tehran Times",
             "category": "Geopolitics & War",
@@ -14655,7 +14655,7 @@
             "prob": 58,
             "entry_price": 3884.68,
             "target": 3862.0,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": 0.0,
@@ -14665,7 +14665,7 @@
             "fail_reason": ""
         },
         "https://www.investing.com/news/commodities-news/ubs-sees-brent-hitting-110-as-tight-supply-buffers-leave-oil-vulnerable-5028142": {
-            "status": "ACTIVE",
+            "status": "HIT",
             "headline": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
             "source": "Investing.com",
             "category": "Commodities & Energy",
@@ -14673,13 +14673,31 @@
             "prob": 68,
             "entry_price": 3884.68,
             "target": 3889.65,
-            "max_dd_usd": 0.0,
+            "max_dd_usd": 7.02,
             "atr_ratio_at_signal": 0.01,
             "daily_atr_at_signal": 56.4,
             "eur_chg_at_signal": -0.24,
             "nas_chg_at_signal": -1.68,
             "created_ts": 1794780360.0,
             "date": "First Reported: 2026-11-15 22:06 UTC",
+            "fail_reason": ""
+        },
+        "https://www.investing.com/news/commodities-news/oil-prices-dip-as-markets-look-to-recovering-supplies-meast-tensions-5028198": {
+            "status": "HIT",
+            "headline": "Oil prices dip as markets look to recovering supplies, M.East tensions",
+            "source": "Investing.com",
+            "category": "Commodities & Energy",
+            "impact": "Bearish",
+            "prob": 56,
+            "entry_price": 3900.27,
+            "target": 3880.8,
+            "max_dd_usd": 1.1,
+            "atr_ratio_at_signal": 0.32,
+            "daily_atr_at_signal": 59.66,
+            "eur_chg_at_signal": 0.0,
+            "nas_chg_at_signal": -0.89,
+            "created_ts": 1794786333.0,
+            "date": "First Reported: 2026-11-15 23:45 UTC",
             "fail_reason": ""
         }
     }

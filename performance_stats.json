@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 868,
-    "hits": 549,
+    "total_evaluated": 869,
+    "hits": 550,
     "misses": 319,
-    "win_rate": 63.2,
+    "win_rate": 63.3,
     "active_signals": 12,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 463,
+                "hits": 464,
                 "misses": 282,
-                "total": 745,
-                "win_rate": 62.1,
-                "avg_dd": 23.09
+                "total": 746,
+                "win_rate": 62.2,
+                "avg_dd": 23.06
             },
             "Bearish": {
                 "hits": 86,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 522,
+                "hits": 523,
                 "misses": 305,
-                "total": 827,
-                "win_rate": 63.1,
-                "avg_dd": 21.69
+                "total": 828,
+                "win_rate": 63.2,
+                "avg_dd": 21.66
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -60,11 +60,11 @@
                 "avg_dd": 17.8
             },
             "Against USD Headwind": {
-                "hits": 294,
+                "hits": 295,
                 "misses": 127,
-                "total": 421,
-                "win_rate": 69.8,
-                "avg_dd": 20.42
+                "total": 422,
+                "win_rate": 69.9,
+                "avg_dd": 20.38
             },
             "USD Neutral / Legacy": {
                 "hits": 221,
@@ -97,11 +97,11 @@
                 "avg_dd": 18.28
             },
             "Commodities & Energy": {
-                "hits": 100,
+                "hits": 101,
                 "misses": 62,
-                "total": 162,
-                "win_rate": 61.7,
-                "avg_dd": 25.71
+                "total": 163,
+                "win_rate": 62.0,
+                "avg_dd": 25.58
             }
         },
         "by_confidence": {
@@ -113,11 +113,11 @@
                 "avg_dd": 22.96
             },
             "High (65-74%)": {
-                "hits": 83,
+                "hits": 84,
                 "misses": 54,
-                "total": 137,
-                "win_rate": 60.6,
-                "avg_dd": 19.92
+                "total": 138,
+                "win_rate": 60.9,
+                "avg_dd": 19.81
             },
             "Extreme (>=75%)": {
                 "hits": 7,
@@ -15472,6 +15472,24 @@
             "nas_chg_at_signal": -1.0,
             "created_ts": 1794838378.0,
             "date": "First Reported: 2026-11-16 14:12 UTC",
+            "fail_reason": ""
+        },
+        "https://finance.yahoo.com/video/horizon-gold-targets-880-000oz-050003419.html?.tsrc=rss": {
+            "status": "HIT",
+            "headline": "Horizon Gold targets 880,000oz gold production and A$1.85bn cash flow at Gum Creek",
+            "source": "Yahoo Finance Gold",
+            "category": "Commodities & Energy",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3869.28,
+            "target": 3880.28,
+            "max_dd_usd": 7.85,
+            "atr_ratio_at_signal": 0.16,
+            "daily_atr_at_signal": 67.12,
+            "eur_chg_at_signal": -0.18,
+            "nas_chg_at_signal": -1.06,
+            "created_ts": 1794832541.0,
+            "date": "First Reported: 2026-11-16 05:00 UTC | Last Update: 2026-11-16 12:35 UTC",
             "fail_reason": ""
         }
     }

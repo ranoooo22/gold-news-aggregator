@@ -990,9 +990,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:35 UTC",
+        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-16 19:15 UTC",
         "original_date": "2026-11-16 18:35",
-        "_timestamp": 1794854102.0,
+        "_timestamp": 1794856503.0,
         "articles": [
             {
                 "title": "Why Intel Stock Is Falling Monday",
@@ -1001,21 +1001,24 @@
                 "date": "2026-11-16 18:35",
                 "description": "Intel is getting hit along with the rest of the chip sector ahead of Nvidia's earnings, and a new lawsuit over its late-October plunge adds to the noise.",
                 "_timestamp": 1794854102.0
+            },
+            {
+                "title": "Update: Equities Tumble Intraday as Nvidia Slides, Fed's Warsh Discusses AI Impact",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/equities-tumble-intraday-nvidia-slides-191503897.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:15",
+                "description": "(Updates with latest market prices and developments.) US stock markets declined intraday Monday a",
+                "_timestamp": 1794856503.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 18:35 UTC",
-            "Facts": "Intel shares experienced sharp downward pressure alongside the broader semiconductor sector ahead of key tech earnings, compounded by a fresh shareholder lawsuit over prior losses. The developments add further friction to an already struggling hardware market.",
-            "Macro_Context": "Broad semiconductor sector weakness deepens Nasdaq correction pressures, prompting risk-off flows that support safe-haven gold demand.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 70,
-            "Orderflow_Price_Target": "$3870.76"
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-16 19:15 UTC",
+            "Facts": "US equities declined intraday, driven by losses across the semiconductor sector ahead of Nvidia's earnings and comments from Fed official Warsh regarding the economic impact of artificial intelligence, alongside a new lawsuit against Intel.",
+            "Market_Context": "Broader equity market pullback led by technology and chipmaker sectors amid policy and earnings scrutiny."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 13.22
@@ -3465,9 +3468,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 17:33 UTC | Last Update: 2026-11-16 17:51 UTC",
+        "main_date": "First Reported: 2026-11-15 17:33 UTC | Last Update: 2026-11-16 19:19 UTC",
         "original_date": "2026-11-15 17:33",
-        "_timestamp": 1794851515.0,
+        "_timestamp": 1794856761.0,
         "articles": [
             {
                 "title": "Yemeni government forces redeploy from Bab al-Mandeb to defend Aden",
@@ -3516,21 +3519,24 @@
                 "date": "2026-11-16 17:51",
                 "description": "TEHRAN – Facing advances by Yemen’s Ansarallah forces toward Aden and other strategic areas held by the Riyadh-backed government, Saudi King Salman bin Abdulaziz issued a royal decree on Monday dismissing Fahd Al-Salman as commander of the forces fighting Ansarallah, also known as the Yemeni Armed Forces (YAF).",
                 "_timestamp": 1794851515.0
+            },
+            {
+                "title": "Saudi Arabia dismisses commander of coalition forces fighting Houthis",
+                "link": "https://www.aljazeera.com/news/2026/11/16/saudi-arabia-dismisses-commander-of-coalition-forces-fighting-houthis?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 19:19",
+                "description": "Move comes as government forces withdraw from Red Sea coast to halt Houthi approach to interim capital Aden.",
+                "_timestamp": 1794856761.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 17:51 UTC",
-            "Facts": "[Update 2026-11-16 17:51 UTC via Tehran Times]: Saudi King Salman dismissed coalition commander Fahd Al-Salman amid mounting regional command disarray following Houthi advances. Yemeni government and Saudi-backed forces have retreated from the Bab al-Mandab strait to reinforce Aden, directly threatening global maritime trade routes.",
-            "Macro_Context": "Escalating maritime and geopolitical risks around the Bab al-Mandab strait amplify safe-haven demand for Gold, supporting upward momentum.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24h",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "$3880.22"
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Red Sea & Yemen Conflict",
+            "Event_Timestamp": "2026-11-16 19:19 UTC",
+            "Facts": "Yemeni forces and Saudi-backed troops retreated from the Bab al-Mandeb strait and Red Sea coast, allowing Houthi forces to advance toward Aden. In response, Saudi King Salman dismissed the commander of the coalition forces.",
+            "Market_Context": "Geopolitical instability in the Red Sea region impacting strategic maritime choke points and regional security alignments."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -10464,194 +10470,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-10 17:24 UTC | Last Update: 2026-11-15 19:26 UTC",
-        "original_date": "2026-11-10 17:24",
-        "_timestamp": 1794770819.0,
-        "articles": [
-            {
-                "title": "Federal Reserve Research Reveals New Inflation Threat",
-                "link": "https://finance.yahoo.com/economy/policy/articles/federal-research-reveals-inflation-threat-172430610.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-10 17:24",
-                "description": "A familiar economic threat may be more dangerous now.",
-                "_timestamp": 1794331470.0
-            },
-            {
-                "title": "Energy prices matter way more for inflation than they used to: Fed report",
-                "link": "https://finance.yahoo.com/economy/article/energy-prices-matter-way-more-for-inflation-than-they-used-to-fed-report-110000366.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 11:00",
-                "description": "Inflation in the post-pandemic economy sticks around for longer, new Fed research shows, and oil shocks more strongly pass into core inflation.",
-                "_timestamp": 1794394800.0
-            },
-            {
-                "title": "As higher prices seep into broader economy, Fed officials consider faster hikes",
-                "link": "https://finance.yahoo.com/economy/policy/articles/higher-prices-seep-broader-economy-130223864.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 13:02",
-                "description": "WASHINGTON (AP) — More evidence this week of hot inflation in the U. was unpleasant news for the Federal Reserve, not to mention consumers: Rising prices may be spreading beyond the one-time shocks from tariffs and high gas prices into the wider economy, meaning that mortgages, credit cards and other forms of borrowing are likely to become increasingly expensive.",
-                "_timestamp": 1794402143.0
-            },
-            {
-                "title": "Inflation Is Running Above 3%. These 3 Energy Dividend Stocks Can Keep Up.",
-                "link": "https://247wallst.com/investing/2026/11/11/inflation-is-running-above-3-these-3-energy-dividend-stocks-can-keep-up/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-11 14:32",
-                "description": "Energy prices drive the inflation consumers feel, but the same commodity swings that protect income can also wipe out a dividend. Three payers sit at different points in the energy chain, and only one has never cut its payout.",
-                "_timestamp": 1794407571.0
-            },
-            {
-                "title": "Falling oil prices are no longer enough to bring down borrowing costs in the world’s most important bond market",
-                "link": "https://www.marketwatch.com/story/falling-oil-prices-are-no-longer-enough-to-bring-down-borrowing-costs-in-the-worlds-most-important-bond-market-3176d25a?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-11 21:42",
-                "description": "The tight trading relationship between oil prices and Treasury yields has broken down. It’s a sign that inflation concerns are extending beyond the energy shock.",
-                "_timestamp": 1794433320.0
-            },
-            {
-                "title": "U.S. inflation is already bad enough. It might get worse.",
-                "link": "https://www.marketwatch.com/story/u-s-inflation-is-already-bad-enough-it-might-get-worse-bae54da9?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-12 18:39",
-                "description": "Federal Reserve Chairman Kevin Warsh has vowed the Fed will smite high inflation — but the death blows won’t come fast or easy.",
-                "_timestamp": 1794508740.0
-            },
-            {
-                "title": "Daly Says More Fed Rates Hikes Likely Needed",
-                "link": "https://finance.yahoo.com/video/daly-says-more-fed-rates-193428243.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-12 19:34",
-                "description": "Federal Reserve Bank of San Francisco President Mary Daly says further interest-rate increases will likely be needed to bring down inflation, adding that businesses are increasingly contemplating raising prices. She speaks at the Stanford Institute for Economic Policy Research.",
-                "_timestamp": 1794512068.0
-            },
-            {
-                "title": "Bond yields just saw their biggest surge since 2022 as expectations grow for more Fed rate hikes",
-                "link": "https://www.marketwatch.com/story/bond-yields-just-saw-their-biggest-surge-since-2022-as-expectations-grow-for-more-fed-rate-hikes-d0a4f195?mod=mw_rss_topstories",
-                "source": "MarketWatch Macro",
-                "date": "2026-11-12 22:16",
-                "description": "Fed Chair Warsh’s quiet style of communicating interest-rate policy has led to more volatile markets.",
-                "_timestamp": 1794521760.0
-            },
-            {
-                "title": "The Fed expected rate cuts this year. Now it’s bracing for another inflation fight",
-                "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-                "source": "CNBC Economy",
-                "date": "2026-11-13 10:00",
-                "description": "The most recent inflation reading for October had beaten expectations, coming in at 0.4% for the month.",
-                "_timestamp": 1794564026.0
-            },
-            {
-                "title": "US Treasury warns against rate hikes during US-Iran war energy ‘shock’",
-                "link": "https://www.aljazeera.com/economy/2026/11/13/us-treasury-warns-against-rate-hikes-during-us-iran-war-energy-shock?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-13 16:22",
-                "description": "Despite Treasury&#039;s Scott Bessent&#039;s remarks, financial tracker CME Fed Watch forecasts rate hike in December likely.",
-                "_timestamp": 1794586953.0
-            },
-            {
-                "title": "New Inflation Data Offers Terrible News for President Donald Trump's Economy and the AI-Driven Bull Market",
-                "link": "https://www.fool.com/investing/2026/11/14/new-inflation-data-offers-terrible-news-donald-trump-economy-and-ai-driven-bull-market/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-14 09:26",
-                "description": "Trumpflation and Wall Street’s No. 1 catalyst have put the Federal Reserve in quite a bind.",
-                "_timestamp": 1794648362.0
-            },
-            {
-                "title": "A Larger-Than-Normal Fed Rate Hike in December Now Looks More Likely. Here's Why.",
-                "link": "https://www.fool.com/investing/2026/11/14/a-larger-than-normal-fed-rate-hike-in-december-now-looks-more-likely-here-s-why/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-14 17:35",
-                "description": "Hotter-than-expected inflation in October means the Fed may raise its target rate by a half percentage point next month.",
-                "_timestamp": 1794677701.0
-            },
-            {
-                "title": "Fed's Goolsbee Warns Stubborn Inflation Could Force More Aggressive Rate Hikes — 'We're Not On Path Back To 2%'",
-                "link": "https://stocktwits.com/news-articles/markets/equity/fed-goolsbee-warns-stubborn-inflation-more-aggressive-rate-hikes/cNbEh7KR9Qw?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-15 11:37",
-                "description": "During an interview with CNBC, Goolsbee said inflation is proving more persistent than policymakers had anticipated, raising concerns about the Fed's ability to bring it back to its 2% target.",
-                "_timestamp": 1794742653.0
-            },
-            {
-                "title": "Vanguard Economists Say: Inflation Might Be Better Than It Looks. Here's Why That's Good News for Stocks.",
-                "link": "https://www.fool.com/investing/2026/11/15/vanguard-economists-say-inflation-might-be-better-than-it-looks-here-s-why-that-s-good-news-for-stocks/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 18:35",
-                "description": "Trump's tariffs haven’t gone away, but their impact on inflation might fade away in 2027.",
-                "_timestamp": 1794767702.0
-            },
-            {
-                "title": "Goldman Sachs 2027 Economic Outlook For Investors",
-                "link": "https://beincrypto.com/goldman-sachs-2027-economic-outlook/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-15 19:26",
-                "description": "Goldman Sachs expects cheaper energy to lift global growth in 2027, even as the Fed keeps raising rates into March.",
-                "_timestamp": 1794770819.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-15 19:26 UTC",
-            "Facts": "[Update 2026-11-15 19:26 UTC via Yahoo Finance Oil]: Goldman Sachs expects cheaper global energy to support growth into 2027 even as the Federal Reserve contemplates continued rate hikes. | Fed officials like Goolsbee warn that persistent inflation is keeping policymakers on high alert regarding the 2% target. | Hotter October CPI data has sparked market discussions around potential larger-than-normal rate hikes.",
-            "Macro_Context": "Persistent inflation fears and hawkish Fed rate expectations create a strong USD headwind, challenging non-yielding gold upside despite safe-haven flows.",
-            "Impact_Timing": "Short-term (1-3 days)",
-            "Timeframe": "Structural Weekly Regime",
-            "XAUUSD_Impact": "Neutral / Bearish",
-            "Probability_Percent": 62,
-            "Orderflow_Price_Target": "$3881.16"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 3.78
-    },
-    {
-        "main_date": "First Reported: 2026-11-14 17:50 UTC | Last Update: 2026-11-15 19:25 UTC",
-        "original_date": "2026-11-14 17:50",
-        "_timestamp": 1794770705.0,
-        "articles": [
-            {
-                "title": "Credo Technology Group vs. Marvell Technology: Which Technology Stock Is a Better Buy for 2027?",
-                "link": "https://www.fool.com/coverage/better-buy/2026/11/14/credo-technology-group-vs-marvell-technology-which-technology-stock-is-a-better-buy-for-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-14 17:50",
-                "description": "Credo's revenue surged past 160% in the latest twelve months, but Marvell's $9.5 billion scale and heavier debt load tell a very different story for investors.",
-                "_timestamp": 1794678602.0
-            },
-            {
-                "title": "Is Credo Technology a Better AI Networking Buy Than Broadcom?",
-                "link": "https://www.fool.com/investing/2026/11/15/is-credo-technology-a-better-ai-networking-buy-than-broadcom/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 13:57",
-                "description": "Does Broadcom's massive scale make it the ultimate artificial intelligence stock? Credo Technology's triple-digit growth rate might offer a more lucrative alternative for risk-tolerant investors.",
-                "_timestamp": 1794751021.0
-            },
-            {
-                "title": "Rigetti Computing vs. SoundHound AI: Which Technology Stock Is a Better Buy for 2027?",
-                "link": "https://www.fool.com/coverage/better-buy/2026/11/15/rigetti-computing-vs-soundhound-ai-which-technology-stock-is-a-better-buy-for-2027/?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-15 19:25",
-                "description": "Rigetti's quantum hardware bet and SoundHound's voice AI revenue surge take very different paths, and one trades at a far steeper sales multiple.",
-                "_timestamp": 1794770705.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-15 19:25 UTC",
-            "Facts": "Financial analyses compare growth metrics and debt profiles of technology and artificial intelligence equities such as Credo Technology, Marvell, and SoundHound AI. | These reports focus on individual corporate valuations, revenue surges, and sales multiples for specific tech firms.",
-            "Macro_Context": "Routine equity stock picking and individual company fundamental comparisons have no direct transmission channel to macro liquidity or spot gold pricing.",
-            "Impact_Timing": "Irrelevant",
-            "Timeframe": "Structural Weekly Regime",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 10,
-            "Orderflow_Price_Target": "$3884.68"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-16 18:54 UTC",
         "original_date": "2026-11-16 18:54",
         "_timestamp": 1794855266.0,
@@ -10769,6 +10587,54 @@
             "Event_Timestamp": "2026-11-16 19:09 UTC",
             "Facts": "Customers of major US financial institutions, including Bank of America, Chase, J.P. Morgan, U.S. Bank, Wells Fargo, and payment network Zelle, reported technical outages and service disruptions following recent Microsoft issues.",
             "Market_Context": "Operational disruptions in major banking infrastructure affecting retail and institutional access."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 19:20 UTC",
+        "original_date": "2026-11-16 19:20",
+        "_timestamp": 1794856800.0,
+        "articles": [
+            {
+                "title": "HELOC balances jump $23 billion in one quarter as Americans tap $310K in average home equity at fastest pace since 2005",
+                "link": "https://finance.yahoo.com/real-estate/articles/heloc-balances-jump-23-billion-192000884.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 19:20",
+                "description": "HELOCs are popular right now, allowing homeowners to tap their home equity at lower rates than many other loans. But they come with risk, too.",
+                "_timestamp": 1794856800.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 19:20 UTC",
+            "Facts": "US Home Equity Lines of Credit (HELOC) balances increased by $23 billion in a single quarter as homeowners utilized accumulated home equity at a pace not seen since 2005.",
+            "Market_Context": "Consumer borrowing trends and liquidity extraction through residential real estate assets."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 19:24 UTC",
+        "original_date": "2026-11-16 19:24",
+        "_timestamp": 1794857094.0,
+        "articles": [
+            {
+                "title": "Incoming Texas governor to reverse terror designation for Muslim civil liberties group",
+                "link": "https://www.middleeasteye.net/news/incoming-texas-governor-reverse-terror-designation-muslim-civil-liberties-group",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 19:24",
+                "description": "Incoming Texas governor to reverse terror designation for Muslim civil liberties group\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nMon, 11/16/2026 - 15:57\n\n        \n      \n    \n      \n    \n                Gina Hinojosa said cracking down on nonprofits does not increase public safety\n                      \n                  \n                  \n\n  \n\n\n                  Texas Democratic governor-elect Gina Hinojosa appea",
+                "_timestamp": 1794857094.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 19:24 UTC",
+            "Facts": "Incoming Texas Governor-elect Gina Hinojosa stated intentions to reverse a terror designation applied to a Muslim civil liberties group, arguing that targeting nonprofits fails to improve public safety.",
+            "Market_Context": "State-level political and administrative policy shifts regarding civil liberties organizations."
         }
     }
 ]

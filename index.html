@@ -87,7 +87,7 @@
             font-family: var(--font-mono);
         }
 
-        /* Single-Line Navigation Bar */
+        /* Single-Line Navigation Bar (4 Tabs) */
         .nav-actions {
             display: flex;
             align-items: center;
@@ -108,9 +108,9 @@
             border: none;
             color: var(--text-secondary);
             font-family: var(--font-mono);
-            font-size: 0.74rem;
+            font-size: 0.72rem;
             font-weight: 700;
-            padding: 6px 11px;
+            padding: 6px 9px;
             border-radius: 3px;
             cursor: pointer;
             text-transform: uppercase;
@@ -194,7 +194,7 @@
             padding: 0 14px;
         }
 
-        /* 2. DUAL-HORIZON DRIVERS PANEL (WEEKLY + 24H) */
+        /* 2. DUAL-HORIZON DRIVERS PANEL */
         .dual-drivers-box {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -309,7 +309,6 @@
         .legend-item { display: flex; align-items: center; gap: 5px; }
         .legend-dot { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
 
-        /* RIGHT SIDEBAR: CLEAN ORDERBOOK LADDER ONLY */
         .orderflow-sidebar {
             display: flex;
             flex-direction: column;
@@ -354,7 +353,7 @@
             border: 1px solid var(--border-color);
         }
 
-        /* OANDA + COMEX Vertical Liquidity Price Ladder */
+        /* Price Ladder */
         .ladder-container {
             display: flex;
             flex-direction: column;
@@ -448,7 +447,7 @@
             margin: 2px 0;
         }
 
-        /* 3D / 2D SURFACE PANELS & TOGGLE CONTROLS */
+        /* Surface Panels */
         .surface-section-card {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -486,14 +485,8 @@
             cursor: pointer;
             text-transform: uppercase;
         }
-        .mode-btn.active {
-            background: var(--bb-amber);
-            color: #000000;
-        }
-        .mode-btn.active-cyan {
-            background: var(--bb-cyan);
-            color: #000000;
-        }
+        .mode-btn.active { background: var(--bb-amber); color: #000000; }
+        .mode-btn.active-cyan { background: var(--bb-cyan); color: #000000; }
         .plotly-box {
             width: 100%;
             height: 410px;
@@ -514,7 +507,127 @@
             gap: 8px;
         }
 
-        /* NEWS TAB & STREAMLINED ACCORDION CARDS */
+        /* TAB [4] TRADE STYLES */
+        .trade-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 14px;
+        }
+        .active-trade-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 16px;
+            font-variant-numeric: tabular-nums;
+        }
+        .trade-header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border-color);
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .trade-badge-dir {
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            font-weight: 800;
+            padding: 3px 10px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        .badge-long { background: rgba(0, 230, 118, 0.2); color: var(--bull-green); border: 1px solid rgba(0, 230, 118, 0.4); }
+        .badge-short { background: rgba(255, 59, 48, 0.2); color: var(--bear-red); border: 1px solid rgba(255, 59, 48, 0.4); }
+        .badge-notrade { background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-color); }
+
+        .trade-metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            margin-bottom: 14px;
+            font-family: var(--font-mono);
+        }
+        .t-metric-card {
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            padding: 8px 10px;
+            border-radius: var(--radius-md);
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        .tm-label { font-size: 0.65rem; color: var(--text-muted); text-transform: uppercase; font-weight: 700; }
+        .tm-val { font-size: 0.9rem; font-weight: 800; color: #ffffff; }
+
+        .trade-rationale-box {
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 12px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 14px;
+        }
+        .tr-section { margin-bottom: 8px; }
+        .tr-section:last-child { margin-bottom: 0; }
+        .tr-title { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 800; color: var(--bb-amber); text-transform: uppercase; display: block; margin-bottom: 2px; }
+
+        .sources-chips-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .source-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-size: 0.71rem;
+            color: var(--bb-cyan);
+            text-decoration: none;
+        }
+        .source-chip:hover { border-color: var(--bb-amber); color: var(--bb-amber); }
+
+        .archive-table-wrap {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 14px;
+            overflow-x: auto;
+        }
+        .archive-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            white-space: nowrap;
+        }
+        .archive-table th {
+            text-align: left;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color);
+            padding: 6px 8px;
+            font-size: 0.68rem;
+            text-transform: uppercase;
+        }
+        .archive-table td {
+            padding: 8px 8px;
+            border-bottom: 1px solid #161d2a;
+            color: var(--text-primary);
+        }
+        .status-win { color: var(--bull-green); font-weight: 800; }
+        .status-loss { color: var(--bear-red); font-weight: 800; }
+        .status-expired { color: var(--bb-amber); font-weight: 800; }
+        .status-invalid { color: var(--text-muted); font-weight: 800; }
+
+        /* News Tab */
         .controls-panel {
             background: var(--bg-card);
             border: 1px solid var(--border-color);
@@ -792,8 +905,8 @@
         @media (max-width: 720px) {
             .top-header { padding: 8px 10px; }
             .nav-actions { width: 100%; justify-content: space-between; gap: 5px; }
-            .tab-btn { font-size: 0.69rem; padding: 6px 6px; }
-            .refresh-btn { font-size: 0.69rem; padding: 6px 8px; }
+            .tab-btn { font-size: 0.66rem; padding: 6px 4px; }
+            .refresh-btn { font-size: 0.68rem; padding: 6px 8px; }
             .telemetry-ribbon { padding: 7px 12px; }
             .t-divider { display: none; }
             .controls-left { flex-direction: column; align-items: stretch; }
@@ -811,13 +924,14 @@
             <div class="brand-block">
                 <span class="brand-tag">GMIT // XAU</span>
                 <h1>Gold & Macro Intelligence Terminal</h1>
-                <span class="brand-sub">CAPITALCOM:GOLD Synced &bull; OANDA + COMEX Zones &bull; 3D Surfaces</span>
+                <span class="brand-sub">CAPITALCOM:GOLD Synced &bull; 3D Surfaces &bull; Master Trade Journal</span>
             </div>
             <div class="nav-actions">
                 <div class="tab-group">
                     <button class="tab-btn active" id="tab-btn-chart" onclick="switchTab(event, 'chart-tab')">[1] Chart</button>
                     <button class="tab-btn" id="tab-btn-news" onclick="switchTab(event, 'news-tab')">[2] News</button>
                     <button class="tab-btn" id="tab-btn-3d" onclick="switchTab(event, '3d-tab')">[3] Graphs</button>
+                    <button class="tab-btn" id="tab-btn-trade" onclick="switchTab(event, 'trade-tab')">[4] Trade</button>
                 </div>
                 <button class="refresh-btn" onclick="refreshAllData()">Refresh</button>
             </div>
@@ -876,11 +990,10 @@
         </div>
 
         <!-- ========================================================= -->
-        <!-- TAB 1: CHART, ORDERBOOK LADDER & MODEL 2 (LIQUIDITY CANYON) -->
+        <!-- TAB 1: CHART, ORDERBOOK LADDER & MODEL 2                  -->
         <!-- ========================================================= -->
         <div id="chart-tab" class="tab-content active">
             <div class="cockpit-grid">
-                <!-- LEFT: CLEAN SPOT CHART WITH ORDERBOOK ZONES -->
                 <div class="chart-panel">
                     <div id="chart-container"></div>
                     <div class="chart-legend">
@@ -890,7 +1003,6 @@
                     </div>
                 </div>
 
-                <!-- RIGHT: CLEAN OANDA + COMEX LIQUIDITY LADDER ONLY -->
                 <div class="orderflow-sidebar">
                     <div class="hud-card">
                         <div class="hud-header">
@@ -904,7 +1016,6 @@
                 </div>
             </div>
 
-            <!-- BELOW CHART: MODEL 2 — 3D/2D ORDERBOOK TOPOGRAPHY OVER TIME (LIQUIDITY CANYON) -->
             <div class="surface-section-card">
                 <div class="hud-header">
                     <div>
@@ -979,11 +1090,10 @@
         </div>
 
         <!-- ========================================================= -->
-        <!-- TAB 3: 3D GRAPHS LAB (MODEL 1 & MODEL 3)                  -->
+        <!-- TAB 3: 3D GRAPHS LAB                                      -->
         <!-- ========================================================= -->
         <div id="3d-tab" class="tab-content">
             <div class="surface-grid-two">
-                <!-- MODEL 1: 3D IMPLIED VOLATILITY & SKEW SURFACE -->
                 <div class="surface-section-card" style="margin-top:0;">
                     <div class="hud-header">
                         <div>
@@ -1004,7 +1114,6 @@
                     </div>
                 </div>
 
-                <!-- MODEL 3: 30-DAY SESSION & VOLATILITY PROFILE (ASIAN / LONDON / NY) -->
                 <div class="surface-section-card" style="margin-top:0;">
                     <div class="hud-header">
                         <div>
@@ -1030,6 +1139,46 @@
                 </div>
             </div>
         </div>
+
+        <!-- ========================================================= -->
+        <!-- TAB 4: TRADE (MASTER AI TRADE JOURNAL & SELF-LEARNING)    -->
+        <!-- ========================================================= -->
+        <div id="trade-tab" class="tab-content">
+            <div class="trade-grid">
+                <!-- ACTIVE TRADE CARD -->
+                <div class="active-trade-box" id="ui-active-trade-card">
+                    <div style="font-size:0.8rem; color:#64748b; font-family:var(--font-mono); text-align:center; padding:20px;">Loading Master Trade Signal...</div>
+                </div>
+
+                <!-- TRADE ARCHIVE & LESSONS TABLE -->
+                <div class="archive-table-wrap">
+                    <div class="hud-header">
+                        <span class="hud-title">Master Trade Archive & Self-Learning History</span>
+                        <span class="hud-badge" id="ui-archive-stats">Stats: --</span>
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table class="archive-table">
+                            <thead>
+                                <tr>
+                                    <th>Status</th>
+                                    <th>Direction</th>
+                                    <th>Setup Title</th>
+                                    <th>Entry</th>
+                                    <th>Target (TP)</th>
+                                    <th>Stop-Loss (SL)</th>
+                                    <th>Exit</th>
+                                    <th>PnL ($)</th>
+                                    <th>Outcome / Reason</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ui-archive-tbody">
+                                <tr><td colspan="9" style="text-align:center; color:#64748b; padding:15px;">Loading trade archive...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -1044,7 +1193,6 @@
         let chartResizeObserver = null;
         const expandedCardKeys = new Set();
 
-        // Max radius (2.5% ~ $95 around spot) so distant outlier walls ($4049) never stretch the chart
         const MAX_ZONE_RADIUS_PCT = 0.025;
 
         const isMobileScreen = window.innerWidth < 720;
@@ -1231,6 +1379,8 @@
                     renderModel1();
                     renderModel3();
                 }, 60);
+            } else if (tabId === 'trade-tab') {
+                loadTradeJournalTab();
             }
         }
 
@@ -1239,26 +1389,7 @@
             loadChart();
             loadStats();
             loadNews();
-        }
-
-        function renderDriverPillsToContainer(containerId, driversList) {
-            const grid = document.getElementById(containerId);
-            if (!grid || !driversList || driversList.length === 0) return;
-
-            grid.innerHTML = driversList.map((d, i) => {
-                const isBull = (d.net_bias || '').includes('Bullish');
-                const isBear = (d.net_bias || '').includes('Bearish');
-                const borderClass = isBull ? 'drv-bull' : (isBear ? 'drv-bear' : '');
-                const biasColor = isBull ? '#00e676' : (isBear ? '#ff3b30' : '#94a3b8');
-                const safeName = (d.narrative || '').replace(/'/g, "\\'");
-                return `
-                    <div class="driver-pill ${borderClass}" onclick="filterByDriver('${safeName}')" title="Click to filter news by ${d.narrative}">
-                        <span class="dp-name">#${i + 1} ${d.narrative}</span>
-                        <span class="dp-share">${d.share_pct}%</span>
-                        <span class="dp-bias" style="color:${biasColor};">${d.net_bias} (${d.avg_prob}%)</span>
-                    </div>
-                `;
-            }).join('');
+            loadTradeJournalTab();
         }
 
         function renderLiquidityLadder(orderbookZones, spotPrice) {
@@ -1326,9 +1457,128 @@
         }
 
         // ======================================================================
-        // LIVE 5-SECOND BROWSER TICKER (Updates Chart Candle & Ladder in-place)
+        // LOAD & RENDER TAB [4] TRADE JOURNAL
         // ======================================================================
-        function applyLiveSpotTick(newSpotPrice, livePerpPrice = 0) {
+        async function loadTradeJournalTab() {
+            const cardEl = document.getElementById('ui-active-trade-card');
+            const statsEl = document.getElementById('ui-archive-stats');
+            const tbodyEl = document.getElementById('ui-archive-tbody');
+
+            try {
+                const res = await fetch('trade_journal.json?t=' + new Date().getTime());
+                if (!res.ok) {
+                    cardEl.innerHTML = `<div style="text-align:center; color:#64748b; padding:20px;">Awaiting trade journal generation...</div>`;
+                    return;
+                }
+                const journal = await res.json();
+                const active = journal.active_trade;
+                const lastDec = journal.last_decision;
+                const st = journal.stats || {};
+                const archive = journal.archive || [];
+
+                statsEl.innerText = `Win: ${st.win_rate || 0}% (${st.wins || 0}W/${st.losses || 0}L) | Net: $${(st.net_pnl_usd || 0).toFixed(2)}`;
+
+                // Render Active Trade Card
+                if (active && active.status === 'ACTIVE') {
+                    const isLong = active.direction === 'LONG';
+                    const dirClass = isLong ? 'badge-long' : 'badge-short';
+                    const pnlSign = active.unrealized_pnl_usd >= 0 ? '+' : '';
+                    const pnlColor = active.unrealized_pnl_usd >= 0 ? 'var(--bull-green)' : 'var(--bear-red)';
+
+                    let sourcesHTML = (active.cited_sources || []).map(src => `
+                        <a href="${src.url || '#'}" target="_blank" rel="noopener noreferrer" class="source-chip">
+                            [${src.type}] ${src.label}: ${src.detail}
+                        </a>
+                    `).join('');
+
+                    cardEl.innerHTML = `
+                        <div class="trade-header-row">
+                            <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                                <span class="trade-badge-dir ${dirClass}">${active.direction} SETUP</span>
+                                <strong style="font-size:0.95rem; color:#ffffff;">${active.setup_title}</strong>
+                            </div>
+                            <span style="font-family:var(--font-mono); font-size:0.73rem; color:var(--bb-amber);">Opened: ${active.opened_utc}</span>
+                        </div>
+                        <div class="trade-metrics-grid">
+                            <div class="t-metric-card"><span class="tm-label">Entry Price</span><span class="tm-val">$${active.entry_price}</span></div>
+                            <div class="t-metric-card"><span class="tm-label">Current Spot</span><span class="tm-val">$${active.current_price}</span></div>
+                            <div class="t-metric-card"><span class="tm-label">Take-Profit (TP)</span><span class="tm-val" style="color:var(--bull-green);">$${active.tp_price} (+$${active.tp_distance_usd})</span></div>
+                            <div class="t-metric-card"><span class="tm-label">Stop-Loss (1.2x ATR)</span><span class="tm-val" style="color:var(--bear-red);">$${active.sl_price} (-$${active.sl_distance_usd})</span></div>
+                            <div class="t-metric-card"><span class="tm-label">Unrealized PnL</span><span class="tm-val" style="color:${pnlColor};">${pnlSign}$${active.unrealized_pnl_usd.toFixed(2)}</span></div>
+                            <div class="t-metric-card"><span class="tm-label">Time Remaining</span><span class="tm-val">${active.remaining_hours}h / 20h</span></div>
+                        </div>
+                        <div class="trade-rationale-box">
+                            <div class="tr-section"><span class="tr-title">Detaillierte Handelsbegründung</span>${active.detailed_rationale}</div>
+                            <div class="tr-section" style="margin-top:8px;"><span class="tr-title">Chart & Orderbook Evidenz</span>${active.chart_orderbook_evidence}</div>
+                            <div class="tr-section" style="margin-top:8px;"><span class="tr-title">News Katalysator</span>${active.news_catalyst_evidence}</div>
+                            <div class="tr-section" style="margin-top:8px;"><span class="tr-title">3D Oberflächen & Skew</span>${active.surface_3d_evidence}</div>
+                            <div class="tr-section" style="margin-top:8px;"><span class="tr-title">Erfahrungs-Anpassung</span>${active.experience_adjustment}</div>
+                            <div class="sources-chips-wrap">${sourcesHTML}</div>
+                        </div>
+                    `;
+                } else if (lastDec && lastDec.decision === 'NO_TRADE') {
+                    let sourcesHTML = (lastDec.cited_sources || []).map(src => `
+                        <a href="${src.url || '#'}" target="_blank" rel="noopener noreferrer" class="source-chip">
+                            [${src.type}] ${src.label}: ${src.detail}
+                        </a>
+                    `).join('');
+
+                    cardEl.innerHTML = `
+                        <div class="trade-header-row">
+                            <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                                <span class="trade-badge-dir badge-notrade">NO_TRADE (Kein klarer Edge)</span>
+                                <strong style="font-size:0.95rem; color:#ffffff;">${lastDec.setup_title}</strong>
+                            </div>
+                            <span style="font-family:var(--font-mono); font-size:0.73rem; color:var(--text-muted);">${lastDec.timestamp_utc}</span>
+                        </div>
+                        <div class="trade-rationale-box">
+                            <div class="tr-section"><span class="tr-title">Analyse & Begründung</span>${lastDec.detailed_rationale}</div>
+                            ${lastDec.filter_rejection_note ? `<div class="tr-section" style="margin-top:6px; color:var(--bear-red);"><strong>Regel-Filter:</strong> ${lastDec.filter_rejection_note}</div>` : ''}
+                            <div class="sources-chips-wrap" style="margin-top:8px;">${sourcesHTML}</div>
+                        </div>
+                    `;
+                } else {
+                    cardEl.innerHTML = `
+                        <div class="trade-header-row"><span class="hud-title">Master AI Trade Signal</span><span class="trade-badge-dir badge-notrade">Warte auf Lauf</span></div>
+                        <p style="text-align:center; color:#64748b; font-family:var(--font-mono); padding:20px;">Kein aktives Setup oder Signal vorhanden.</p>
+                    `;
+                }
+
+                // Render Archive Table
+                if (archive.length === 0) {
+                    tbodyEl.innerHTML = `<tr><td colspan="9" style="text-align:center; color:#64748b; padding:15px;">Noch keine abgeschlossenen Trades im Archiv.</td></tr>`;
+                } else {
+                    tbodyEl.innerHTML = archive.map(t => {
+                        let stClass = 'status-expired';
+                        if (t.status === 'WIN') stClass = 'status-win';
+                        else if (t.status === 'LOSS') stClass = 'status-loss';
+                        else if (t.status === 'INVALIDATED') stClass = 'status-invalid';
+
+                        const pnlSign = Number(t.pnl_usd || 0) >= 0 ? '+' : '';
+                        const pnlColor = Number(t.pnl_usd || 0) >= 0 ? 'var(--bull-green)' : 'var(--bear-red)';
+
+                        return `
+                            <tr>
+                                <td><span class="${stClass}">${t.status}</span></td>
+                                <td><strong style="color:${t.direction === 'LONG' ? 'var(--bull-green)' : 'var(--bear-red)'};">${t.direction}</strong></td>
+                                <td>${t.setup_title}</td>
+                                <td>$${t.entry_price}</td>
+                                <td style="color:var(--bull-green);">$${t.tp_price}</td>
+                                <td style="color:var(--bear-red);">$${t.sl_price}</td>
+                                <td>$${t.exit_price}</td>
+                                <td style="color:${pnlColor}; font-weight:800;">${pnlSign}$${Number(t.pnl_usd || 0).toFixed(2)}</td>
+                                <td style="color:var(--text-secondary); max-width:280px; overflow:hidden; text-overflow:ellipsis;" title="${t.close_reason}">${t.close_reason}</td>
+                            </tr>
+                        `;
+                    }).join('');
+                }
+
+            } catch (e) {
+                cardEl.innerHTML = `<div style="text-align:center; color:#ff3b30; padding:20px;">Error loading trade journal: ${e.message}</div>`;
+            }
+        }
+
+        function applyLiveSpotTick(newSpotPrice) {
             if (!newSpotPrice || newSpotPrice <= 0) return;
             const roundedSpot = Math.round(newSpotPrice * 100) / 100;
 
@@ -1338,7 +1588,6 @@
             const m2Badge = document.getElementById('ui-m2-spot-badge');
             if (m2Badge) m2Badge.innerText = `Spot Ref: $${roundedSpot.toFixed(2)}`;
 
-            // Update last candle on LightweightCharts without resetting user zoom
             if (candleSeriesRef && latestCandleBar) {
                 latestCandleBar = {
                     time: latestCandleBar.time,
@@ -1352,27 +1601,13 @@
                 } catch (e) {}
             }
 
-            // Update Orderbook Ladder distances and position around live spot
             if (nearSpotOrderbookRef && nearSpotOrderbookRef.length > 0) {
                 renderLiquidityLadder(nearSpotOrderbookRef, roundedSpot);
-            }
-
-            // Update 24/7 Perp Basis display if available
-            if (livePerpPrice > 0) {
-                const sp = Math.round((livePerpPrice - roundedSpot) * 100) / 100;
-                const spColor = sp > 2 ? '#00e676' : (sp < -2 ? '#ff3b30' : '#94a3b8');
-                const spSign = sp >= 0 ? '+' : '';
-                const cbEl = document.getElementById('ui-crypto-basis');
-                if (cbEl) {
-                    cbEl.innerHTML = `$${livePerpPrice.toFixed(2)} <span style="color:${spColor};">(${spSign}$${sp.toFixed(2)})</span>`;
-                }
             }
         }
 
         async function pollLiveBrowserPrice() {
             if (document.visibilityState !== 'visible') return;
-
-            // 1. Try direct TradingView Scanner API for CAPITALCOM:GOLD
             try {
                 const tvRes = await fetch('https://scanner.tradingview.com/global/scan', {
                     method: 'POST',
@@ -1386,16 +1621,12 @@
                     const tvJson = await tvRes.json();
                     const rows = tvJson.data || [];
                     if (rows.length > 0 && rows[0].d && rows[0].d[0] > 0) {
-                        const liveTvSpot = Number(rows[0].d[0]);
-                        applyLiveSpotTick(liveTvSpot);
+                        applyLiveSpotTick(Number(rows[0].d[0]));
                         return;
                     }
                 }
-            } catch (e) {
-                // If browser CORS blocks direct TradingView call, fall through to calibrated OKX tick
-            }
+            } catch (e) {}
 
-            // 2. CORS-safe 24/7 Live Tick via OKX XAU-USDT-SWAP calibrated to CAPITALCOM:GOLD spread
             try {
                 const okxRes = await fetch('https://www.okx.com/api/v5/market/ticker?instId=XAU-USDT-SWAP');
                 if (okxRes.ok) {
@@ -1403,11 +1634,8 @@
                     const dataArr = okxJson.data || [];
                     if (dataArr.length > 0 && dataArr[0].last) {
                         const livePerp = Number(dataArr[0].last);
-                        const isWeekend = latestMarketData?.crypto_basis?.is_weekend;
-                        const impliedSpot = isWeekend
-                            ? Number(latestMarketData?.spot_price || livePerp - calibratedSpreadUsd)
-                            : (livePerp - calibratedSpreadUsd);
-                        applyLiveSpotTick(impliedSpot, livePerp);
+                        const impliedSpot = livePerp - calibratedSpreadUsd;
+                        applyLiveSpotTick(impliedSpot);
                     }
                 }
             } catch (e) {}
@@ -1683,7 +1911,6 @@
                     }
                 });
 
-                // SINGLE SOURCE OF TRUTH: Use CAPITALCOM:GOLD synced spot_price or latest candle close
                 let currentSpotPrice = Number(data.spot_price || uniqueCandles[uniqueCandles.length - 1].close || 0);
                 if (uniqueCandles.length > 0 && currentSpotPrice > 0) {
                     let lastBar = uniqueCandles[uniqueCandles.length - 1];
@@ -1727,7 +1954,6 @@
                     document.getElementById('ui-macro').innerText = `${eur} | ${us10} | ${nas} | ${bco}`;
                 }
 
-                // Filter out distant outliers (>2.5% from spot)
                 nearSpotOrderbookRef = (data.orderbook || []).filter(z => {
                     if (!currentSpotPrice || currentSpotPrice <= 0) return true;
                     return Math.abs(z.price - currentSpotPrice) / currentSpotPrice <= MAX_ZONE_RADIUS_PCT;
@@ -1798,7 +2024,6 @@
                     });
                 }
 
-                // Start 5-second live ticker in browser
                 if (liveTickerInterval) clearInterval(liveTickerInterval);
                 pollLiveBrowserPrice();
                 liveTickerInterval = setInterval(pollLiveBrowserPrice, 5000);

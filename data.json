@@ -2937,9 +2937,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:04 UTC",
+        "main_date": "First Reported: 2026-11-16 18:04 UTC | Last Update: 2026-11-16 19:22 UTC",
         "original_date": "2026-11-16 18:04",
-        "_timestamp": 1794852272.0,
+        "_timestamp": 1794856965.0,
         "articles": [
             {
                 "title": "Update: Chipmakers Push US Equity Indexes Lower as Commerce Department Plans to Curb Access to Advanced AI Infrastructure",
@@ -2948,21 +2948,24 @@
                 "date": "2026-11-16 18:04",
                 "description": "(Updates with index/price moves and company news from the first paragraph.) US equity indexes slu",
                 "_timestamp": 1794852272.0
+            },
+            {
+                "title": "Update: US Equity Indexes Sink as Big Tech Dives After Commerce Department Plans Curbs to Advanced AI Infrastructure Access",
+                "link": "https://finance.yahoo.com/technology/ai/articles/us-equity-indexes-sink-big-192245914.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:22",
+                "description": "(Updates with index/price moves, macroeconomic data, and company news from the first paragraph.)",
+                "_timestamp": 1794856965.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 18:04 UTC",
-            "Facts": "U.S. equity indexes slide following news that the Commerce Department plans to curb access to advanced AI infrastructure. | Semiconductor manufacturers face immediate downside pressure as export restrictions tighten.",
-            "Macro_Context": "Broad equity sell-offs driven by regulatory and trade constraints foster risk-off conditions, supporting safe-haven gold.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h Intraday",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Orderflow_Price_Target": "$3870.72"
+            "Event_Timestamp": "2026-11-16 19:22 UTC",
+            "Facts": "US equity indexes fell as the Commerce Department planned curbs on advanced AI infrastructure access, weighing on big tech stocks.",
+            "Market_Context": "Regulatory actions targeting AI infrastructure directly impact major technology equities and broader market indices."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.24
@@ -2999,9 +3002,9 @@
         "max_dd_usd": 5.24
     },
     {
-        "main_date": "First Reported: 2026-11-15 16:49 UTC | Last Update: 2026-11-16 18:00 UTC",
+        "main_date": "First Reported: 2026-11-15 16:49 UTC | Last Update: 2026-11-16 19:29 UTC",
         "original_date": "2026-11-15 16:49",
-        "_timestamp": 1794852001.0,
+        "_timestamp": 1794857353.0,
         "articles": [
             {
                 "title": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
@@ -3042,29 +3045,32 @@
                 "date": "2026-11-16 18:00",
                 "description": "During an interview with Fox News over the weekend, Bessent did not hold back about his concerns on the unfolding scandal at Nvidia.",
                 "_timestamp": 1794852001.0
+            },
+            {
+                "title": "Trump to Name Nvidia, Amazon and Microsoft AI “National Champions” as Bessent Demands a Shakeup",
+                "link": "https://www.tikr.com/blog/trump-to-name-nvidia-amazon-and-microsoft-ai-national-champions-as-bessent-demands-a-shakeup?ref=yahoofinance&tlnk=yf-261116-r77v6cf3&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:29",
+                "description": "Key TakeawaysThe Trump administration plans to name NVIDIA, Amazon, Microsoft, OpenAI and Anthropic among more than two dozen AI “national champions,” the Wall Street Journal reported on Sunday. The same day, Treasury Secretary Scott Bessent called for a “dramatic shakeup” at NVIDIA and urged its board to hire an outside CEO.",
+                "_timestamp": 1794857353.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 18:00 UTC",
-            "Facts": "[Update 2026-11-16 18:00 UTC via Yahoo Finance Nasdaq]: U.S. Treasury Secretary Scott Bessent demanded a dramatic leadership shakeup at Nvidia, urging its board to hire an outside CEO within 10 days following suspect chip sales to China. The warning escalates government scrutiny over export control violations after Jensen Huang's departure.",
-            "Macro_Context": "Severe regulatory disruption at market-leading tech firms threatens broader market liquidity and triggers risk-off sentiment, supporting safe-haven flows into gold.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24h - 7d",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "$3880.21"
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-16 19:29 UTC",
+            "Facts": "Treasury Secretary Scott Bessent demanded a dramatic leadership shakeup at Nvidia, urging the board to hire an outside CEO and comply with export controls, while the Trump administration plans to name several major tech firms as AI national champions.",
+            "Market_Context": "Government intervention and public statements from executive branch officials regarding corporate governance at major semiconductor firms create policy uncertainty for the tech sector."
         },
         "eval_status": "MISS",
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-16 17:55 UTC",
+        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-16 19:15 UTC",
         "original_date": "2026-11-11 04:32",
-        "_timestamp": 1794851715.0,
+        "_timestamp": 1794856500.0,
         "articles": [
             {
                 "title": "3 Data Center Infrastructure Stocks Retail Investors Are Watching Beyond Nvidia",
@@ -3265,21 +3271,24 @@
                 "date": "2026-11-16 17:55",
                 "description": "New U.S. export controls cover advanced AI chips supplied to overseas data centers serving Chinese companies, with additional licensing requirements for Singapore, Malaysia, Thailand, Indonesia and Brazil.",
                 "_timestamp": 1794851715.0
+            },
+            {
+                "title": "Nvidia faces CEO transition and China risks as UBS and Bank of America assess earnings outlook",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101869/nvidia-faces-ceo-transition-and-china-risks-as-ubs-and-bank-of-america-assess-earnings-outlook-1101869.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:15",
+                "description": "Nvidia Corp (NASDAQ:NVDA, XETRA:NVD) is expected to deliver stronger-than-anticipated quarterly revenue, but uncertainty surrounding its leadership transition, China-related sales restrictions and longer-term data center demand could weigh on investor sentiment, according to UBS and Bank of...",
+                "_timestamp": 1794856500.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Tariffs, Sanctions & Geoeconomics",
-            "Event_Timestamp": "2026-11-16 17:55 UTC",
-            "Facts": "[Update 2026-11-16 17:55 UTC via Yahoo Finance Nasdaq]: The U.S. Commerce Department introduced new restrictions targeting China's remote access to advanced AI chips, expanding licensing requirements to five additional countries. Investigations into Nvidia have intensified around suspected AI chip smuggling into China.",
-            "Macro_Context": "Escalating U.S.-China technology trade restrictions amplify macroeconomic geopolitical risks, bolstering structural demand for precious metals.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h - 7d",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 70,
-            "Orderflow_Price_Target": "$3870.72"
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 19:15 UTC",
+            "Facts": "The US Commerce Department introduced rules to block China's remote access to advanced chips, imposing licensing requirements on five countries, while investigations shifted toward chip smuggling into China and Nvidia prepared for an upcoming earnings report.",
+            "Market_Context": "Stricter export controls and supply chain restrictions alter compliance frameworks for semiconductor manufacturers operating internationally."
         },
         "eval_status": "HIT",
         "max_dd_usd": 18.93
@@ -3542,9 +3551,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 19:19 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 19:26 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794856744.0,
+        "_timestamp": 1794857212.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4337,16 +4346,24 @@
                 "date": "2026-11-16 19:15",
                 "description": "AI chip juggernaut Nvidia entered its first full week without Jensen Huang as CEO, with Wall Street nervously eyeing Tuesday’s earnings report for signs of whether the AI boom can withstand the widening scandal that toppled him.That could ripple across the AI investment boom propping up the US economy, with Nvidia backing major labs including Anthropic, the maker of the Claude chatbot, which is expected to begin trading on Wall Street on Thursday",
                 "_timestamp": 1794856556.0
+            },
+            {
+                "title": "CoreWeave, Oracle and Nebius Plunge as Nvidia Fallout Rattles AI Stocks",
+                "link": "https://finance.yahoo.com/technology/ai/articles/coreweave-oracle-nebius-plunge-nvidia-192652785.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 19:26",
+                "description": "Nvidia's CEO Shake-Up Sends Shockwaves Through AI Stocks Ahead of Earnings",
+                "_timestamp": 1794857212.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 19:05 UTC",
-            "Facts": "Nvidia's board refuted plans to reinstate Jensen Huang as CEO amid ongoing investigations and external commentary from government officials, while figures like Donald Trump and Sam Altman commented on the leadership situation.",
-            "Market_Context": "Corporate governance scrutiny intersecting with regulatory and national security investigations."
+            "Event_Timestamp": "2026-11-16 19:26 UTC",
+            "Facts": "Nvidia entered its first week without Jensen Huang as CEO amid ongoing management discussions, causing sharp declines in partner stocks such as CoreWeave, Oracle, and Nebius ahead of corporate earnings.",
+            "Market_Context": "Leadership transitions and associated scandals in key technology market leaders create volatility across the broader artificial intelligence supply chain."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -10603,14 +10620,14 @@
                 "_timestamp": 1794857415.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 4,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 19:09 UTC",
-            "Facts": "Customers of major US financial institutions, including Bank of America, Chase, J.P. Morgan, U.S. Bank, Wells Fargo, and payment network Zelle, reported technical outages and service disruptions following recent Microsoft issues.",
-            "Market_Context": "Operational disruptions in major banking infrastructure affecting retail and institutional access."
+            "Event_Timestamp": "2026-11-16 19:30 UTC",
+            "Facts": "Customers reported widespread outages and technical issues across major US banks including Bank of America, Chase, J.P. Morgan, U.S. Bank, Wells Fargo, and Zelle.",
+            "Market_Context": "Technical disruptions affecting major retail banking applications impact customer access and digital financial service operations."
         }
     },
     {
@@ -10675,13 +10692,14 @@
                 "_timestamp": 1794857223.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Gold Bullion & Macro",
-            "Event_Timestamp": "First reported: 2026-11-16 19:27 UTC",
-            "Facts": "Market Hang host Mark Malek, Siebert Financial chief investment officer, and his panel of experts weigh in on Intel's (INTC) year-to-date performance and how long its turnaround may take. Today's panel includes Neostellar Principal Willy Lee, FAS Wealth Partners Chief Investment Strategist Mike Rode, Lopez Research Founder Maribel Lopez, and Macro Talk News founder Hope King,",
-            "Market_Context": "Objective news feed item without speculative prediction."
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 19:27 UTC",
+            "Facts": "Market analysts and industry experts discussed Intel's ongoing year-to-date performance and projected that the company's operational turnaround will take years.",
+            "Market_Context": "Long-term corporate restructuring efforts within legacy semiconductor firms remain subject to extended execution timelines."
         }
     },
     {
@@ -10698,13 +10716,14 @@
                 "_timestamp": 1794856307.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Gold Bullion & Macro",
-            "Event_Timestamp": "First reported: 2026-11-16 19:11 UTC",
-            "Facts": "Jensen Huang’s sudden exit from Nvidia has turned boardrooms and ballot boxes into the real action point for investors. Control of a company’s direction now sits under a sharper spotlight, and that can create opportunity for anyone paying attention to who shapes the votes. This article walks through 3 stocks from a shareholder activism and proxy advisory screener that could be influenced by this governance shock and explains why they deserve a cl",
-            "Market_Context": "Objective news feed item without speculative prediction."
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Corporate Governance & Shareholder Activism",
+            "Event_Timestamp": "2026-11-16 19:11 UTC",
+            "Facts": "Jensen Huang's sudden exit from Nvidia has intensified focus on corporate governance, boardrooms, and proxy voting demand, drawing investor attention toward shareholder activism and proxy advisory screening.",
+            "Market_Context": "Changes in corporate leadership and board control are prompting increased screening of stocks influenced by proxy voting and governance shifts."
         }
     },
     {
@@ -10721,13 +10740,14 @@
                 "_timestamp": 1794856283.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Gold Bullion & Macro",
-            "Event_Timestamp": "First reported: 2026-11-16 19:11 UTC",
-            "Facts": "The AI sell-off steepened on Monday. Defensive stocks made strides amid rotation out of tech. Starbucks jumped on the Nasdaq-100.",
-            "Market_Context": "Objective news feed item without speculative prediction."
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Sector Rotation & Defensive Equities",
+            "Event_Timestamp": "2026-11-16 19:11 UTC",
+            "Facts": "An ongoing sell-off in artificial intelligence and technology stocks led to capital rotation into defensive equities on Monday, with companies like Tyson and Starbucks leading gains in the S&P 500 and Nasdaq 100.",
+            "Market_Context": "Investors are shifting portfolios toward defensive assets amidst a broader contraction in technology sector valuations."
         }
     }
 ]

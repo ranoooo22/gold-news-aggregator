@@ -60,19 +60,14 @@
                 "_timestamp": 1794862694.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 18:40 UTC",
-            "Facts": "[Update 2026-11-16 18:40 UTC via Yahoo Finance Oil]: Energy stocks extended their losses into Monday afternoon, mirroring a sharp drop in Brent crude prices. Broader commodity weakness weighed heavily on sector indices throughout the session.",
-            "Macro_Context": "Declining energy prices and Brent oil drops create a mixed inflationary picture, but lower energy input costs can temporarily ease headline inflation metrics while boosting safe-haven liquidity.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral to Bullish",
-            "Probability_Percent": 62,
-            "Orderflow_Price_Target": "$3851.07"
+            "Event_Timestamp": "2026-11-16 20:58 UTC",
+            "Facts": "[Update 2026-11-16 18:40 UTC via Yahoo Finance Oil]: Energy stocks were lower Monday afternoon, with the NYSE Energy Sector Index and State Street Energy Select Sector SPDR ETF declining. [Update 2026-11-16 20:58 UTC via Yahoo Finance Oil]: Energy stocks extended losses late Monday afternoon, with the NYSE Energy Sector Index falling 2.1%. Energy stocks traded lower throughout the day on Monday, driven by a broad sector retreat.",
+            "Macro_Context": "Energy sector equities faced persistent downward pressure during premarket and regular trading sessions on Monday."
         },
         "eval_status": "HIT",
         "max_dd_usd": 13.22
@@ -141,9 +136,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 20:36 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 21:03 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794861363.0,
+        "_timestamp": 1794862983.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -944,16 +939,24 @@
                 "date": "2026-11-16 20:30",
                 "description": "Six days after reporting record monthly sales, Taiwan Semiconductor Manufacturing Co. (NYSE:TSM) lost about $106 billion in market value in Taipei on Monday. Nvidia Corp. (NASDAQ:NVDA) holds its first earnings call since Jensen Huang resigned on Tuesday. Investors will be...",
                 "_timestamp": 1794861009.0
+            },
+            {
+                "title": "Nvidia earnings scenarios: what a guidance cut could mean for the stock",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-earnings-scenarios-guidance-cut-210303183.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:03",
+                "description": "Investing.com -- NVIDIA (NVDA) trades at $155.70 (-4.39%) as of Nov 16, 3:28 PM EST. It is near the 52-week low of $148.80. Earnings are Nov 17 after the close. The stock is down -27.33% over 1 month and the market cap is about $3.75T.",
+                "_timestamp": 1794862983.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 20:36 UTC",
-            "Facts": "[Update 2026-11-16 20:36 UTC via Yahoo Finance Nasdaq]: Tom Lee blames Nvidia and Anthropic IPO for Ethereum plunge as Bitmine buys the dip. Leveraged ETFs and major chipmakers like TSMC and AMD sink following Jensen Huang's resignation and estate-planning asset transfers ahead of earnings.",
-            "Macro_Context": "Broader semiconductor sell-off and crypto market correction ahead of pivotal corporate earnings and technology IPOs."
+            "Event_Timestamp": "2026-11-16 21:03 UTC",
+            "Facts": "[Update 2026-11-16 20:30 UTC via Yahoo Finance Nasdaq]: TSMC slumped nearly 6% and lost about $106 billion in market value amid AI debt fears and Jensen Huang's exit. [Update 2026-11-16 20:36 UTC via Yahoo Finance Nasdaq]: Ethereum plunged 28% in two weeks, which analyst Tom Lee blamed on Nvidia fallout and cash-raising ahead of Anthropic's IPO. [Update 2026-11-16 21:03 UTC via Yahoo Finance Nasdaq]: NVIDIA traded down 4.39% at $155.70, near its 52-week low ahead of earnings scheduled for November 17 after the close.",
+            "Macro_Context": "Technology equities and crypto assets experience volatile trading sessions as markets price in uncertainty surrounding Nvidia's leadership changes and upcoming earnings report."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -3591,9 +3594,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 20:17 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 21:01 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794860220.0,
+        "_timestamp": 1794862881.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4402,16 +4405,24 @@
                 "date": "2026-11-16 20:17",
                 "description": "Corporate-governance experts point to issues that would make a triumphant return difficult.",
                 "_timestamp": 1794860220.0
+            },
+            {
+                "title": "Jensen Huang Is Gone. Will AI Collapse?",
+                "link": "https://247wallst.com/videos/jensen-huang-is-gone-will-ai-collapse/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:01",
+                "description": "Following the recent allegations involving Nvidia CEO Jensen Huang, everybody on Wall Street is wondering what happens next. Two of our 24/7 Wall St. Analysts, Lee Jackson and Doug McIntyre, recently broke down what this all means for Nvidia as well as the future of the artificial intelligence boom. Despite a 115,000-signature petition and public remarks from President Donald Trump expressing openness to Huang’s return, it appears that legal and ",
+                "_timestamp": 1794862881.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 20:17 UTC",
-            "Facts": "[Update 2026-11-16 19:26 UTC via Yahoo Finance Nasdaq]: Nvidia's CEO shake-up sent shockwaves through AI stocks, with CoreWeave, Oracle, and Nebius plunging ahead of Nvidia's upcoming earnings report. Wall Street is closely watching for signs of whether the AI boom can withstand the scandal that toppled Jensen Huang. Corporate-governance experts note that a triumphant return for Huang is unlikely.",
-            "Macro_Context": "Uncertainty surrounding leadership at a key AI bellwether is rattling the broader technology and AI-related investment ecosystem."
+            "Event_Timestamp": "2026-11-16 21:01 UTC",
+            "Facts": "[Update 2026-11-16 19:26 UTC via Yahoo Finance Nasdaq]: CoreWeave, Oracle, and Nebius plunged as Nvidia's CEO shake-up sent shockwaves through AI-related stocks. [Update 2026-11-16 21:01 UTC via Yahoo Finance Nasdaq]: Despite a 115,000-signature petition and public remarks from President Donald Trump expressing openness to Jensen Huang's return, corporate-governance experts and analysts indicate a triumphant return is unlikely following recent allegations.",
+            "Macro_Context": "Broader AI infrastructure stocks face severe selling pressure following management changes at Nvidia, while analysts evaluate the long-term governance and leadership outlook for the artificial intelligence boom."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -10401,35 +10412,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 21:19 UTC",
-        "original_date": "2026-11-15 21:19",
-        "_timestamp": 1794777548.0,
-        "articles": [
-            {
-                "title": "Yemen’s Houthis unilaterally release 600 war detainees",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/15/yemens-houthis-unilaterally-release-600-war-detainees?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 21:19",
-                "description": "Yemen’s Houthis have released 600 people imprisoned during the country’s civil war.",
-                "_timestamp": 1794777548.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Red Sea & Yemen Conflict",
-            "Event_Timestamp": "2026-11-15 21:19 UTC",
-            "Facts": "Yemen's Houthis have unilaterally released 600 individuals who were imprisoned during the domestic civil war. This localized humanitarian gesture occurs independently of regional shipping disruptions or Red Sea military operations.",
-            "Macro_Context": "Internal prisoner releases within Yemen do not directly alter the broader geopolitical risk premium or maritime security paths affecting precious metals.",
-            "Impact_Timing": "Beyond 7 Days",
-            "Timeframe": "Structural Weekly Regime",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 10,
-            "Orderflow_Price_Target": "$3884.68"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-16 18:54 UTC",
         "original_date": "2026-11-16 18:54",
         "_timestamp": 1794855266.0,
@@ -10782,9 +10764,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 20:50 UTC",
+        "main_date": "First Reported: 2026-11-16 20:50 UTC | Last Update: 2026-11-16 21:15 UTC",
         "original_date": "2026-11-16 20:50",
-        "_timestamp": 1794862252.0,
+        "_timestamp": 1794863756.0,
         "articles": [
             {
                 "title": "Iran still retains up to 2,500 ballistic missiles: Report",
@@ -10793,16 +10775,24 @@
                 "date": "2026-11-16 20:50",
                 "description": "Iran still retains up to 2,500 ballistic missiles: Report \n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE staff\n on \nMon, 11/16/2026 - 19:45\n\n        \n      \n    \n      \n    \n                US intelligence assessment comes as Trump says it would be a 'defeat' if Islamic Republic is still in power when he leaves office\n                      \n                  \n                  \n\n  \n\n\n                  Children stand on a surface-",
                 "_timestamp": 1794862252.0
+            },
+            {
+                "title": "Iran still retains up to 2,500 ballistic missiles: Report",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-still-retains-2500-ballistic-missiles-report",
+                "source": "Middle East Eye",
+                "date": "2026-11-16 21:15",
+                "description": "Iran still retains up to 2,500 ballistic missiles: Report\n\n    \n    \n\n        \n    \n                \n\nThe&nbsp;US&nbsp;believes&nbsp;Iran&nbsp;has between 1,500 and 2,500 ballistic missiles in its arsenal, a substantial number that contradicts the Trump administration’s claims that Iran has been militarily decimated.\n\nThe US intelligence community ranked the assessment “low confidence”, The Wall Street Journal reported on Sunday, but the American",
+                "_timestamp": 1794863756.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 20:50 UTC",
-            "Facts": "[Update 2026-11-16 20:50 UTC via Middle East Eye]: A US intelligence assessment indicates Iran still retains up to 2,500 ballistic missiles, coinciding with political statements regarding the Islamic Republic's governance.",
-            "Macro_Context": "Geopolitical friction and intelligence assessments concerning Middle Eastern military capabilities and regional strategy."
+            "Event_Timestamp": "2026-11-16 21:15 UTC",
+            "Facts": "[Update 2026-11-16 21:15 UTC via Middle East Eye]: US intelligence assesses that Iran retains between 1,500 and 2,500 ballistic missiles in its arsenal, though the assessment was ranked with 'low confidence'. This total contrasts with Trump administration claims that Iran's military capabilities have been decimated.",
+            "Macro_Context": "Geopolitical tensions remain elevated as intelligence reports regarding Iran's missile inventory emerge amid ongoing regional confrontations."
         }
     },
     {
@@ -10891,7 +10881,38 @@
                 "_timestamp": 1794862800.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 21:00 UTC",
+            "Facts": "[Update 2026-11-16 21:00 UTC via Yahoo Finance Gold]: Orezone Gold Corporation reported its operational and financial results for the third quarter of 2026 and hosted a conference call and webcast to discuss the figures.",
+            "Macro_Context": "Mining companies continue to release quarterly operational reports, offering transparency into production metrics within the gold sector."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 21:00 UTC",
+        "original_date": "2026-11-16 21:00",
+        "_timestamp": 1794862800.0,
+        "articles": [
+            {
+                "title": "Lumina Metals Joins the Silver Institute and Its Shares Are Added to the Nasdaq Junior Silver Miners Index",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/lumina-metals-joins-silver-institute-210000534.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 21:00",
+                "description": "Warsaw, Poland--(Newsfile Corp. - November 16, 2026) - Lumina Metals Corp. (TSX: LMCU) (WSE: LMCU) (\"Lumina\" or the \"Company\") is pleased to announce it has joined The Silver Institute, an international association representing companies across the global silver industry. In addition, Lumina is also pleased to announce that its shares have been added to the Nasdaq Junior Silver Miners Index, the underlying index of the Amplify Junior Silver Miner",
+                "_timestamp": 1794862800.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 21:00 UTC",
+            "Facts": "[Update 2026-11-16 21:00 UTC via Yahoo Finance Nasdaq]: Lumina Metals Corp. joined The Silver Institute and had its shares added to the Nasdaq Junior Silver Miners Index, the underlying index for the Amplify Junior Silver Miner.",
+            "Macro_Context": "Precious metals equities experience index inclusions and institutional association updates, boosting market visibility for junior miners."
+        }
     }
 ]

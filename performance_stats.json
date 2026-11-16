@@ -3,7 +3,7 @@
     "hits": 553,
     "misses": 319,
     "win_rate": 63.4,
-    "active_signals": 17,
+    "active_signals": 18,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
@@ -15634,6 +15634,24 @@
             "nas_chg_at_signal": -1.65,
             "created_ts": 1794847802.0,
             "date": "First Reported: 2026-11-16 16:50 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532223/After-the-strikes-Iran-rethinks-the-nuclear-threshold": {
+            "status": "ACTIVE",
+            "headline": "After the strikes, Iran rethinks the nuclear threshold",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 59,
+            "entry_price": 3867.46,
+            "target": 3880.5,
+            "max_dd_usd": 3.88,
+            "atr_ratio_at_signal": 0.03,
+            "daily_atr_at_signal": 66.42,
+            "eur_chg_at_signal": -0.16,
+            "nas_chg_at_signal": -1.74,
+            "created_ts": 1794850140.0,
+            "date": "First Reported: 2026-11-16 17:29 UTC",
             "fail_reason": ""
         }
     }

@@ -1,17 +1,17 @@
 {
-    "total_evaluated": 872,
-    "hits": 553,
+    "total_evaluated": 874,
+    "hits": 555,
     "misses": 319,
-    "win_rate": 63.4,
-    "active_signals": 18,
+    "win_rate": 63.5,
+    "active_signals": 20,
     "regime_matrix": {
         "by_direction": {
             "Bullish": {
-                "hits": 466,
+                "hits": 468,
                 "misses": 282,
-                "total": 748,
-                "win_rate": 62.3,
-                "avg_dd": 23.01
+                "total": 750,
+                "win_rate": 62.4,
+                "avg_dd": 22.94
             },
             "Bearish": {
                 "hits": 87,
@@ -23,11 +23,11 @@
         },
         "by_atr_regime": {
             "Fresh (<0.8x ATR)": {
-                "hits": 526,
+                "hits": 528,
                 "misses": 305,
-                "total": 831,
-                "win_rate": 63.3,
-                "avg_dd": 21.59
+                "total": 833,
+                "win_rate": 63.4,
+                "avg_dd": 21.52
             },
             "Moderate (0.8x-1.2x ATR)": {
                 "hits": 27,
@@ -60,11 +60,11 @@
                 "avg_dd": 17.35
             },
             "Against USD Headwind": {
-                "hits": 297,
+                "hits": 299,
                 "misses": 127,
-                "total": 424,
-                "win_rate": 70.0,
-                "avg_dd": 20.31
+                "total": 426,
+                "win_rate": 70.2,
+                "avg_dd": 20.21
             },
             "USD Neutral / Legacy": {
                 "hits": 221,
@@ -76,11 +76,11 @@
         },
         "by_category": {
             "Geopolitics & War": {
-                "hits": 273,
+                "hits": 275,
                 "misses": 191,
-                "total": 464,
-                "win_rate": 58.8,
-                "avg_dd": 24.03
+                "total": 466,
+                "win_rate": 59.0,
+                "avg_dd": 23.91
             },
             "Fed, Rates & Macro": {
                 "hits": 35,
@@ -106,18 +106,18 @@
         },
         "by_confidence": {
             "Moderate (51-64%)": {
-                "hits": 461,
+                "hits": 462,
                 "misses": 249,
-                "total": 710,
-                "win_rate": 64.9,
-                "avg_dd": 22.9
+                "total": 711,
+                "win_rate": 65.0,
+                "avg_dd": 22.86
             },
             "High (65-74%)": {
-                "hits": 85,
+                "hits": 86,
                 "misses": 54,
-                "total": 139,
-                "win_rate": 61.2,
-                "avg_dd": 19.65
+                "total": 140,
+                "win_rate": 61.4,
+                "avg_dd": 19.49
             },
             "Extreme (>=75%)": {
                 "hits": 7,
@@ -15555,7 +15555,7 @@
             "prob": 72,
             "entry_price": 3867.24,
             "target": 3880.3,
-            "max_dd_usd": 3.65,
+            "max_dd_usd": 10.24,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 66.37,
             "eur_chg_at_signal": -0.16,
@@ -15573,7 +15573,7 @@
             "prob": 68,
             "entry_price": 3867.24,
             "target": 3890.05,
-            "max_dd_usd": 3.65,
+            "max_dd_usd": 10.24,
             "atr_ratio_at_signal": 0.02,
             "daily_atr_at_signal": 66.37,
             "eur_chg_at_signal": -0.16,
@@ -15609,7 +15609,7 @@
             "prob": 59,
             "entry_price": 3868.79,
             "target": 3880.2,
-            "max_dd_usd": 5.2,
+            "max_dd_usd": 11.8,
             "atr_ratio_at_signal": 0.05,
             "daily_atr_at_signal": 66.42,
             "eur_chg_at_signal": -0.17,
@@ -15645,13 +15645,85 @@
             "prob": 59,
             "entry_price": 3867.46,
             "target": 3880.5,
-            "max_dd_usd": 3.88,
+            "max_dd_usd": 10.47,
             "atr_ratio_at_signal": 0.03,
             "daily_atr_at_signal": 66.42,
             "eur_chg_at_signal": -0.16,
             "nas_chg_at_signal": -1.74,
             "created_ts": 1794850140.0,
             "date": "First Reported: 2026-11-16 17:29 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532225/Iran-rejects-allegations-of-plot-to-assassinate-US-officials": {
+            "status": "ACTIVE",
+            "headline": "Iran rejects allegations of plot to assassinate US officials, cites Israeli disinformation",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 75,
+            "entry_price": 3858.3,
+            "target": 3880.19,
+            "max_dd_usd": 1.31,
+            "atr_ratio_at_signal": 0.11,
+            "daily_atr_at_signal": 68.21,
+            "eur_chg_at_signal": -0.21,
+            "nas_chg_at_signal": -1.63,
+            "created_ts": 1794850518.0,
+            "date": "First Reported: 2026-11-16 17:35 UTC",
+            "fail_reason": ""
+        },
+        "https://en.mehrnews.com/news/249444/Ayatollah-Sheikh-Isa-Qassim-sentenced-to-life-imprisonment": {
+            "status": "ACTIVE",
+            "headline": "Grand Ayat. Sheikh Isa Qassim sentenced to life imprisonment",
+            "source": "Mehr News Agency",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 59,
+            "entry_price": 3858.3,
+            "target": 3880.19,
+            "max_dd_usd": 1.31,
+            "atr_ratio_at_signal": 0.11,
+            "daily_atr_at_signal": 68.21,
+            "eur_chg_at_signal": -0.21,
+            "nas_chg_at_signal": -1.63,
+            "created_ts": 1794851446.0,
+            "date": "First Reported: 2026-11-16 08:10 UTC | Last Update: 2026-11-16 17:50 UTC",
+            "fail_reason": ""
+        },
+        "https://www.aljazeera.com/news/2026/11/16/israeli-court-upholds-detention-of-palestinian-land-activist-ghassan-najjar?traffic_source=rss": {
+            "status": "HIT",
+            "headline": "Israeli court upholds detention of Palestinian land activist Ghassan Najjar",
+            "source": "Al Jazeera English",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 58,
+            "entry_price": 3858.3,
+            "target": 3870.33,
+            "max_dd_usd": 1.31,
+            "atr_ratio_at_signal": 0.11,
+            "daily_atr_at_signal": 68.21,
+            "eur_chg_at_signal": -0.21,
+            "nas_chg_at_signal": -1.63,
+            "created_ts": 1794851356.0,
+            "date": "First Reported: 2026-11-16 17:49 UTC",
+            "fail_reason": ""
+        },
+        "https://www.tehrantimes.com/news/532229/Rafael-s-war-code": {
+            "status": "HIT",
+            "headline": "Rafael’s war code",
+            "source": "Tehran Times",
+            "category": "Geopolitics & War",
+            "impact": "Bullish",
+            "prob": 65,
+            "entry_price": 3858.3,
+            "target": 3870.33,
+            "max_dd_usd": 1.31,
+            "atr_ratio_at_signal": 0.11,
+            "daily_atr_at_signal": 68.21,
+            "eur_chg_at_signal": -0.21,
+            "nas_chg_at_signal": -1.63,
+            "created_ts": 1794851318.0,
+            "date": "First Reported: 2026-11-16 17:48 UTC",
             "fail_reason": ""
         }
     }

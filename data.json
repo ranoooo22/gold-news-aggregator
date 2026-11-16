@@ -998,9 +998,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-16 19:15 UTC",
+        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-16 20:03 UTC",
         "original_date": "2026-11-16 18:35",
-        "_timestamp": 1794856503.0,
+        "_timestamp": 1794859392.0,
         "articles": [
             {
                 "title": "Why Intel Stock Is Falling Monday",
@@ -1017,6 +1017,14 @@
                 "date": "2026-11-16 19:15",
                 "description": "(Updates with latest market prices and developments.) US stock markets declined intraday Monday a",
                 "_timestamp": 1794856503.0
+            },
+            {
+                "title": "INTW 2X Intel ETF Tumbles 13% as Intel Drops Amid Shareholder Lawsuit and AI Chip Selloff; Taiwan Semiconductor Falls 5%",
+                "link": "https://247wallst.com/investing/2026/11/16/intw-2x-intel-etf-tumbles-13-as-intel-drops-amid-shareholder-lawsuit-and-ai-chip-selloff-taiwan-semiconductor-falls-5/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 20:03",
+                "description": "Intel is up big this year, yet the fund built to double its moves is sitting in the red. A daily reset quirk explains the gap, and it matters for anyone tempted to buy this dip.",
+                "_timestamp": 1794859392.0
             }
         ],
         "needs_update": false,
@@ -1024,9 +1032,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 19:15 UTC",
-            "Facts": "US equities declined intraday, driven by losses across the semiconductor sector ahead of Nvidia's earnings and comments from Fed official Warsh regarding the economic impact of artificial intelligence, alongside a new lawsuit against Intel.",
-            "Market_Context": "Broader equity market pullback led by technology and chipmaker sectors amid policy and earnings scrutiny."
+            "Event_Timestamp": "2026-11-16 20:03 UTC",
+            "Facts": "[Update 2026-11-16 19:15 UTC via Yahoo Finance Nasdaq]: US stock markets declined intraday Monday as equities tumbled with Nvidia sliding and Fed's Warsh discussing AI impact. Intel stock fell along with the wider chip sector ahead of Nvidia's earnings, facing additional pressure from a new shareholder lawsuit over its late-October plunge. The INTW 2X Intel ETF dropped 13% while Taiwan Semiconductor fell 5%.",
+            "Macro_Context": "Broader equity markets are experiencing a pullback driven by chip sector volatility and ongoing macroeconomic discussions regarding AI and Fed policy."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 13.22
@@ -3559,9 +3567,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 19:26 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 20:17 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794857212.0,
+        "_timestamp": 1794860220.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4362,16 +4370,24 @@
                 "date": "2026-11-16 19:26",
                 "description": "Nvidia's CEO Shake-Up Sends Shockwaves Through AI Stocks Ahead of Earnings",
                 "_timestamp": 1794857212.0
+            },
+            {
+                "title": "Jensen Huang’s fans want him back as Nvidia CEO. This is why that’s unlikely.",
+                "link": "https://www.marketwatch.com/story/jensen-huangs-fans-want-him-back-as-nvidia-ceo-this-is-why-thats-unlikely-2be28ac2?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-16 20:17",
+                "description": "Corporate-governance experts point to issues that would make a triumphant return difficult.",
+                "_timestamp": 1794860220.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 19:26 UTC",
-            "Facts": "Nvidia entered its first week without Jensen Huang as CEO amid ongoing management discussions, causing sharp declines in partner stocks such as CoreWeave, Oracle, and Nebius ahead of corporate earnings.",
-            "Market_Context": "Leadership transitions and associated scandals in key technology market leaders create volatility across the broader artificial intelligence supply chain."
+            "Event_Timestamp": "2026-11-16 20:17 UTC",
+            "Facts": "[Update 2026-11-16 19:26 UTC via Yahoo Finance Nasdaq]: Nvidia's CEO shake-up sent shockwaves through AI stocks, with CoreWeave, Oracle, and Nebius plunging ahead of Nvidia's upcoming earnings report. Wall Street is closely watching for signs of whether the AI boom can withstand the scandal that toppled Jensen Huang. Corporate-governance experts note that a triumphant return for Huang is unlikely.",
+            "Macro_Context": "Uncertainty surrounding leadership at a key AI bellwether is rattling the broader technology and AI-related investment ecosystem."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -7491,9 +7507,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 13:28 UTC",
+        "main_date": "First Reported: 2026-11-16 13:28 UTC | Last Update: 2026-11-16 20:12 UTC",
         "original_date": "2026-11-16 13:28",
-        "_timestamp": 1794835703.0,
+        "_timestamp": 1794859941.0,
         "articles": [
             {
                 "title": "Russian attacks kill three in Ukraine, EU accuses Moscow of prolonging war",
@@ -7502,21 +7518,24 @@
                 "date": "2026-11-16 13:28",
                 "description": "EU foreign policy chief Kaja Kallas says Russian President Vladimir Putin is making maximalist demands.",
                 "_timestamp": 1794835703.0
+            },
+            {
+                "title": "What will Europe do next in Ukraine?",
+                "link": "https://www.aljazeera.com/video/inside-story/2026/11/16/what-will-europe-do-next-in-ukraine?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 20:12",
+                "description": "There is division within the European Union over diplomatic strategy for efforts to end the Russia-Ukraine war.",
+                "_timestamp": 1794859941.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Geopolitics & War",
-            "Event_Timestamp": "2026-11-16 13:28 UTC",
-            "Facts": "EU foreign policy chief Kaja Kallas stated that Russian President Vladimir Putin continues to push maximalist demands regarding the Ukraine conflict. The statements follow renewed military strikes that resulted in civilian casualties in Ukraine.",
-            "Macro_Context": "Persistent geopolitical escalation between Russia and Western nations maintains ongoing safe-haven demand for Gold.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24h-72h",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 58,
-            "Orderflow_Price_Target": "$3880.28"
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 20:12 UTC",
+            "Facts": "[Update 2026-11-16 20:12 UTC via Al Jazeera English]: Division persists within the European Union regarding diplomatic strategy for efforts to end the Russia-Ukraine war, following Russian attacks that killed three in Ukraine and EU foreign policy chief Kaja Kallas accusing Moscow of prolonging the conflict through maximalist demands.",
+            "Macro_Context": "Geopolitical tensions in Eastern Europe continue to strain relations and create policy divisions among European allies."
         },
         "eval_status": "HIT",
         "max_dd_usd": 3.52
@@ -10747,6 +10766,54 @@
             "Event_Timestamp": "2026-11-16 20:05:00 UTC",
             "Facts": "A Somali-American Uber driver named Mohamed Yusuf was hospitalized in a coma following an alleged hate crime in Minnesota.",
             "Market_Context": "General news report concerning a localized criminal incident and civil safety."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 20:11 UTC",
+        "original_date": "2026-11-16 20:11",
+        "_timestamp": 1794859867.0,
+        "articles": [
+            {
+                "title": "Bloom Energy Is Down 26% in a Month. What Will It Take to Get BE Stock Back to $250?",
+                "link": "https://247wallst.com/investing/2026/11/16/bloom-energy-is-down-26-in-a-month-what-will-it-take-to-get-be-stock-back-to-250/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 20:11",
+                "description": "After one of the strongest runs in the artificial intelligence (AI) power trade, Bloom Energy (NYSE:BE) is giving back ground as the market reassesses how much growth its valuation already reflects. Bloom Energy stock is down 26% over the past month to $177.71, with a broad market pullback adding the latest leg lower. The stock […]",
+                "_timestamp": 1794859867.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-16 20:11 UTC",
+            "Facts": "[Update 2026-11-16 20:11 UTC via Yahoo Finance Nasdaq]: Bloom Energy shares are down 26% over the past month to $177.71 as the market reassesses valuation following a strong run in the AI power trade, compounded by a broader market pullback.",
+            "Macro_Context": "Energy infrastructure and power trade stocks tied to AI data center demand are undergoing valuation corrections amid broader market declines."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 20:00 UTC",
+        "original_date": "2026-11-16 20:00",
+        "_timestamp": 1794859207.0,
+        "articles": [
+            {
+                "title": "Israeli opposition accuses Netanyahu of attempted ‘coup’",
+                "link": "https://www.aljazeera.com/news/2026/11/16/israeli-opposition-accuses-netanyahu-of-attempted-coup?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 20:00",
+                "description": "Rivals call for investigation into reports that PM&#039;s office tried to frame Arab parties.",
+                "_timestamp": 1794859207.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "2026-11-16 20:00 UTC",
+            "Facts": "[Update 2026-11-16 20:00 UTC via Al Jazeera English]: Israeli opposition leaders have accused Prime Minister Benjamin Netanyahu of an attempted 'coup' and called for investigations into reports that the prime minister's office attempted to frame Arab parties.",
+            "Macro_Context": "Domestic political turmoil adds further complexity to the ongoing governance and security challenges in the region."
         }
     }
 ]

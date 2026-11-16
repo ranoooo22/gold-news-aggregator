@@ -27,7 +27,6 @@ FALLBACK_MODELS = [
 ]
 DEAD_MODELS = set()
 
-# Simplified schema: Only pure objective summarization of facts, without trading opinions or predictions
 CLUSTER_SUMMARY_SCHEMA = types.Schema(
     type=types.Type.ARRAY,
     items=types.Schema(
@@ -38,11 +37,11 @@ CLUSTER_SUMMARY_SCHEMA = types.Schema(
             "Dominant_Driver": types.Schema(type=types.Type.STRING),
             "Event_Timestamp": types.Schema(type=types.Type.STRING),
             "Facts": types.Schema(type=types.Type.STRING),
-            "Market_Context": types.Schema(type=types.Type.STRING),
+            "Macro_Context": types.Schema(type=types.Type.STRING),
         },
         required=[
             "Cluster_ID", "Is_Gold_Relevant", "Dominant_Driver", "Event_Timestamp",
-            "Facts", "Market_Context"
+            "Facts", "Macro_Context"
         ]
     )
 )
@@ -273,35 +272,9 @@ def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
         print(f"Note: Yahoo Finance Futures unreachable ({e})")
     return comex_zones
 
-def fetch_multi_positioning(oanda_sentiment):
-    headers = {"User-Agent": "Mozilla/5.0"}
-    okx_long_pct = 50.0
-    cot_mm_long_pct = 0.0
-    cot_report_date = "N/A"
-    try:
-        cot_url = "https://publicreporting.cftc.gov/resource/72hh-3qpy.json?$where=cftc_contract_market_code='088691'&$order=report_date_as_yyyy_mm_dd%20DESC&$limit=1"
-        res_cot = requests.get(cot_url, headers=headers, timeout=6)
-        if res_cot.status_code == 200:
-            rows = res_cot.json()
-            if rows:
-                r = rows[0]
-                mm_l = float(r.get("m_money_positions_long_all", 0))
-                mm_s = float(r.get("m_money_positions_short_all", 0))
-                if (mm_l + mm_s) > 0:
-                    cot_mm_long_pct = round((mm_l / (mm_l + mm_s)) * 100.0, 1)
-                    cot_report_date = str(r.get("report_date_as_yyyy_mm_dd", ""))[:10]
-    except Exception:
-        pass
-    return {
-        "oanda_long_pct": oanda_sentiment.get("long_pct", 50.0),
-        "cot_mm_long_pct": cot_mm_long_pct,
-        "cot_date": cot_report_date
-    }
-
 def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
     current_price = float(fallback_price) if fallback_price else 0.0
     combined_buckets = {}
-    total_pos_long, total_pos_short = 0.0, 0.0
     if OANDA_API_KEY:
         headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
         url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
@@ -319,29 +292,6 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
                         combined_buckets[p] = {"long": float(b.get("longCountPercent", 0)), "short": float(b.get("shortCountPercent", 0))}
         except Exception:
             pass
-        try:
-            res_pb = requests.get(url_pb, headers=headers, timeout=10)
-            if res_pb.status_code == 200:
-                pb_data = res_pb.json().get("positionBook", {})
-                for b in pb_data.get("buckets", []):
-                    p = float(b.get("price", 0))
-                    l_pct = float(b.get("longCountPercent", 0))
-                    s_pct = float(b.get("shortCountPercent", 0))
-                    total_pos_long += l_pct
-                    total_pos_short += s_pct
-                    if current_price > 0 and abs(p - current_price) / current_price <= MAX_ZONE_RADIUS_PCT:
-                        if p not in combined_buckets:
-                            combined_buckets[p] = {"long": 0.0, "short": 0.0}
-                        combined_buckets[p]["long"] += l_pct
-                        combined_buckets[p]["short"] += s_pct
-        except Exception:
-            pass
-
-    pos_sum = total_pos_long + total_pos_short
-    sentiment = {
-        "long_pct": round((total_pos_long / pos_sum) * 100, 1) if pos_sum > 0 else 50.0,
-        "short_pct": round((total_pos_short / pos_sum) * 100, 1) if pos_sum > 0 else 50.0
-    }
 
     zones = {}
     for p, vols in combined_buckets.items():
@@ -363,14 +313,12 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
         scaled_tot = f_data["total"] * weight
         if z_key not in zones:
             zones[z_key] = {"long": 0.0, "short": 0.0, "total": 0.0, "weighted_price_sum": 0.0, "oanda_vol": 0.0, "comex_vol": 0.0}
-        zones[z_key]["long"] += scaled_tot / 2.0
-        zones[z_key]["short"] += scaled_tot / 2.0
         zones[z_key]["total"] += scaled_tot
         zones[z_key]["comex_vol"] += f_data["total"]
         zones[z_key]["weighted_price_sum"] += f_data["weighted_price_sum"] * weight
 
     if not zones or current_price == 0:
-        return current_price, [], sentiment, {}
+        return current_price, [], {"long_pct": 50.0, "short_pct": 50.0}, {}
 
     above_zones, below_zones = [], []
     all_zone_objects = {}
@@ -379,11 +327,13 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
             vwap_price = round(z_data["weighted_price_sum"] / z_data["total"], 2)
             net_diff = round(z_data["long"] - z_data["short"], 2)
             dominance = "BUY" if net_diff >= 0 else "SELL"
+            
             active_src = []
-            if z_data["oanda_vol"] >= 0.4: active_src.append("OANDA")
-            if z_data["comex_vol"] >= 0.5: active_src.append("COMEX")
+            if z_data["oanda_vol"] > 0: active_src.append("OANDA")
+            if z_data["comex_vol"] > 0: active_src.append("COMEX")
             is_overlap = len(active_src) >= 2
             sources_label = "+".join(active_src) if active_src else "OANDA"
+
             zone_obj = {
                 "price": vwap_price,
                 "zone_center": z_key,
@@ -403,7 +353,7 @@ def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
     below_zones.sort(key=lambda x: x["volume"], reverse=True)
     selected_zones = above_zones[:3] + below_zones[:3]
     selected_zones.sort(key=lambda x: x["price"], reverse=True)
-    return current_price, selected_zones, sentiment, all_zone_objects
+    return current_price, selected_zones, {"long_pct": 50.0, "short_pct": 50.0}, all_zone_objects
 
 def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, old_ob_history=None):
     spot = current_price if current_price > 0 else (h1_candles[-1]["c"] if h1_candles else 3850.0)
@@ -419,7 +369,7 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, ol
             sign = 1.0 if z_item["dominance"] == "BUY" else -1.0
             curr_snapshot_levels[str(p_lvl)] = {
                 "vol": round(z_item["volume"], 2),
-                "signed_vol": round(z_item["net"], 2)
+                "signed_vol": round(z_item["volume"] * sign, 2)
             }
         else:
             curr_snapshot_levels[str(p_lvl)] = {
@@ -453,11 +403,9 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, ol
         "spot_price": round(spot, 2)
     }
 
-    # Model 3: 30-Day Session & Volatility Profile (Pure factual historical stats)
     days_labels = ["Mon", "Tue", "Wed", "Thu", "Fri"]
     hours_labels = [f"{h:02d}:00" for h in range(24)]
     range_sums = [[0.0 for _ in range(24)] for _ in range(5)]
-    bias_sums = [[0.0 for _ in range(24)] for _ in range(5)]
     counts = [[0 for _ in range(24)] for _ in range(5)]
 
     for c in (h1_candles or []):
@@ -466,31 +414,18 @@ def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, ol
         if w_day > 4: continue
         hr = dt_obj.hour
         rng = max(0.2, c["h"] - c["l"])
-        net_move = c["c"] - c["o"]
         range_sums[w_day][hr] += rng
-        bias_sums[w_day][hr] += net_move
         counts[w_day][hr] += 1
 
-    range_matrix, bias_matrix = [], []
+    range_matrix = []
     for d_i in range(5):
-        r_row, b_row = [], []
+        r_row = []
         for h_i in range(24):
             cnt = counts[d_i][h_i]
-            if cnt > 0:
-                r_row.append(round(range_sums[d_i][h_i] / cnt, 2))
-                b_row.append(round(bias_sums[d_i][h_i] / cnt, 2))
-            else:
-                r_row.append(10.0)
-                b_row.append(0.0)
+            r_row.append(round(range_sums[d_i][h_i] / cnt, 2) if cnt > 0 else 10.0)
         range_matrix.append(r_row)
-        bias_matrix.append(b_row)
 
-    session_surface = {
-        "hours": hours_labels,
-        "days": days_labels,
-        "range_matrix": range_matrix,
-        "bias_matrix": bias_matrix
-    }
+    session_surface = {"hours": hours_labels, "days": days_labels, "range_matrix": range_matrix}
     return ob_surface, session_surface, history_list
 
 def fetch_oanda_price_and_volatility(tv_live_price=0.0):
@@ -562,19 +497,6 @@ def fetch_macro_context():
             pass
     return macro_summary
 
-def build_local_fallback_summary(cluster):
-    articles = sorted(cluster.get("articles", []), key=lambda x: x.get("_timestamp", 0))
-    oldest = articles[0] if articles else {}
-    newest = articles[-1] if articles else {}
-    facts_list = [f"[Update {newest.get('date', '')} UTC via {newest.get('source', '')}]: {newest.get('description', '')}" if len(articles) > 1 else oldest.get('description', '')]
-    return {
-        "Is_Gold_Relevant": True,
-        "Dominant_Driver": "Gold Bullion & Macro",
-        "Event_Timestamp": f"First reported: {oldest.get('date', 'Unknown')} UTC",
-        "Facts": " | ".join(facts_list),
-        "Market_Context": "Objective news feed item without speculative prediction."
-    }
-
 def generate_batch_summaries(clusters_batch):
     if not client or not clusters_batch:
         return {}
@@ -586,7 +508,8 @@ def generate_batch_summaries(clusters_batch):
         clusters_input.append(f"=== CLUSTER_ID: {idx} | DRIVER: {specific_drv} ===\n" + "\n".join(arts_lines))
 
     prompt = f"""You are a neutral news summarizer for a financial terminal.
-    Summarize these {len(clusters_batch)} news clusters objectively. DO NOT predict prices, DO NOT give trading advice, DO NOT assign bullish/bearish probabilities. Only summarize the core factual news events and their macro transmission channels.
+    Summarize these {len(clusters_batch)} news clusters objectively in English. 
+    CRITICAL RULE FOR UPDATES: If a cluster has multiple articles or has been updated with new sources, explicitly include the new information prefixed with '[Update YYYY-MM-DD HH:MM UTC via Source]: <New Info>' before the core background. Do not output generic summaries if new facts arrived.
 
     Clusters:
     {chr(10).join(clusters_input)}"""
@@ -678,7 +601,6 @@ def main():
     crypto_basis_obj = fetch_crypto_gold_basis(effective_spot_price)
     macro_summary = fetch_macro_context()
 
-    # Clean up old data and keep strictly 24h window based on original date
     cutoff_timestamp = (datetime.now() - timedelta(hours=24)).timestamp()
     valid_clusters = [c for c in existing_data if float(c.get("_timestamp", 0)) > cutoff_timestamp]
 
@@ -723,15 +645,11 @@ def main():
                     cluster["summary"] = batch_results[idx_in_batch]
                     cluster["needs_update"] = False
 
-    for c in valid_clusters:
-        if not isinstance(c.get("summary"), dict):
-            c["summary"] = build_local_fallback_summary(c)
-
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
 
     update_market_data(oanda_zones_cache, macro_summary, vol_metrics, crypto_basis_obj, h1_candles, tv_live_price=effective_spot_price, tv_source=tv_source)
-    print("Update completed (Pure Data Terminal Mode).")
+    print("Update completed.")
 
 if __name__ == "__main__":
     main()

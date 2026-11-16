@@ -1481,12 +1481,13 @@ def manage_master_trade(current_spot, h1_candles, vol_metrics, oanda_zones_cache
             # Ask AI if active trade thesis is still valid given latest news & orderbook
             review_prompt = f"""You are a disciplined Gold (XAU/USD) Risk Manager.
             Review this ACTIVE {direction} trade opened at ${entry_p:.2f} ({elapsed_h}h ago, {active['remaining_hours']}h remaining):
-            - Target TP: ${tp_p:.2f} | Hard SL (1.2x ATR): ${sl_p:.2f} \vert{} Current Spot:${current_spot:.2f}
+            - Target TP: ${tp_p:.2f} | Hard SL (1.2x ATR): ${sl_p:.2f} | Current Spot: ${current_spot:.2f}
             - Original Thesis: {active.get('detailed_rationale')}
             - Latest Breaking News:
             {news_context_block}
 
             Question: Does this trade thesis STILL make fundamental and technical sense, or has a major opposing shock invalidated it?
+            Set Still_Valid = true unless a strong contrary catalyst clearly invalidates the setup."""
             rev_res = call_gemini_structured(review_prompt, ACTIVE_TRADE_REVIEW_SCHEMA)
             if isinstance(rev_res, dict):
                 active["last_check_utc"] = now_utc_str
@@ -1509,10 +1510,10 @@ def manage_master_trade(current_spot, h1_candles, vol_metrics, oanda_zones_cache
             journal["active_trade"] = None
             recompute_trade_journal_stats(journal)
             save_trade_journal(journal)
-            print(f"Master Trade Closed [{close_status}]: {direction} Entry ${entry_p} -> Exit ${exit_price} (PnL:${pnl_usd:+.2f})")
+            print(f"Master Trade Closed [{close_status}]: {direction} Entry ${entry_p} -> Exit ${exit_price} (PnL: ${pnl_usd:+.2f})")
         else:
             save_trade_journal(journal)
-            print(f"Active Master Trade maintained: {direction} @ ${entry_p} -> TP${tp_p} ({active['remaining_hours']}h left)")
+            print(f"Active Master Trade maintained: {direction} @ ${entry_p} -> TP ${tp_p} ({active['remaining_hours']}h left)")
             return journal
 
     # 2. NO ACTIVE TRADE: GENERATE NEW MASTER TRADE PROPOSAL (OR NO_TRADE)
@@ -1533,9 +1534,9 @@ def manage_master_trade(current_spot, h1_candles, vol_metrics, oanda_zones_cache
     Synthesize ALL data across the entire terminal ([1] Chart & Orderbook, [2] News Intelligence, [3] 3D Surfaces, and the Historical Trade Archive) to decide whether to open a new XAU/USD trade right now.
 
     STRICT MANDATORY RULES (ZERO EXCEPTIONS):
-    1. **Minimum Target Distance >= $10.00:** If you choose 'LONG', Take_Profit_Price MUST be at least ${current_spot + TRADE_MIN_TP_DISTANCE_USD:.2f} (+$10.00 above current spot ${current_spot:.2f}). If you choose 'SHORT', Take_Profit_Price MUST be at most${current_spot - TRADE_MIN_TP_DISTANCE_USD:.2f} (-$10.00 below current spot ${current_spot:.2f}).
+    1. **Minimum Target Distance >= $10.00:** If you choose 'LONG', Take_Profit_Price MUST be at least ${current_spot + TRADE_MIN_TP_DISTANCE_USD:.2f} (+$10.00 above current spot ${current_spot:.2f}). If you choose 'SHORT', Take_Profit_Price MUST be at most ${current_spot - TRADE_MIN_TP_DISTANCE_USD:.2f} (-$10.00 below current spot ${current_spot:.2f}).
     2. **Selective High-Conviction Only ('NO_TRADE' when unclear):** Do NOT force a trade! If signals conflict, if ATR is already exhausted (>= 1.2x Daily ATR), or if no clean >= $10.00 setup exists, set Decision = 'NO_TRADE' and Take_Profit_Price = 0.
-    3. **Fixed Risk Parameters:** Every trade has a 20-hour expiration limit and an automatic Stop-Loss at 1.2x Daily ATR (${sl_dist_usd:.2f} distance -> Long SL: ${current_spot - sl_dist_usd:.2f} \vert{} Short SL:${current_spot + sl_dist_usd:.2f}). Ensure your TP aligns with real OANDA/COMEX liquidity walls.
+    3. **Fixed Risk Parameters:** Every trade has a 20-hour expiration limit and an automatic Stop-Loss at 1.2x Daily ATR (${sl_dist_usd:.2f} distance -> Long SL: ${current_spot - sl_dist_usd:.2f} | Short SL: ${current_spot + sl_dist_usd:.2f}). Ensure your TP aligns with real OANDA/COMEX liquidity walls.
     4. **Concrete Source Attribution (German Language Output):** Write all explanations in clear, institutional German. Explicitly cite:
        - Concrete news sources & URLs from the feed below (type='NEWS_LINK')
        - Exact 3D surface metrics (type='GRAPH_DATA')
@@ -1544,7 +1545,7 @@ def manage_master_trade(current_spot, h1_candles, vol_metrics, oanda_zones_cache
 
     Current Time: {now_utc_str}
     Current Live Spot Price (CAPITALCOM:GOLD): ${current_spot:.2f}
-    Volatility Telemetry: 4h Move ${vol_metrics.get('change_4h', 0):+.2f} \vert{} 24h Move${vol_metrics.get('change_24h', 0):+.2f} | Daily ATR: ${daily_atr:.2f} (4h Ratio: {vol_metrics.get('move_to_daily_atr_ratio', 0)}x) \vert{} 1.2x ATR SL Distance:${sl_dist_usd:.2f}
+    Volatility Telemetry: 4h Move ${vol_metrics.get('change_4h', 0):+.2f} | 24h Move: ${vol_metrics.get('change_24h', 0):+.2f} | Daily ATR: ${daily_atr:.2f} (4h Ratio: {vol_metrics.get('move_to_daily_atr_ratio', 0)}x) | 1.2x ATR SL Distance: ${sl_dist_usd:.2f}
     Taker & Perp Flow: {taker_flow_obj.get('state_label', 'N/A')} ({taker_flow_obj.get('taker_buy_pct', 50)}% Buy) | 24/7 Perp Basis: ${crypto_basis_obj.get('spread_usd', 0):+.2f} ({crypto_basis_obj.get('regime', 'N/A')})
 
     === [1] CHART & ORDERBOOK ZONES ===
@@ -1594,7 +1595,7 @@ def manage_master_trade(current_spot, h1_candles, vol_metrics, oanda_zones_cache
         decision_record["filter_rejection_note"] = (
             f"Prognose verworfen: Zielabstand betrug nur ${tp_dist:.2f} (Mindestabstand >= $10.00 erforderlich)."
         )
-        print(f"Master Trade rejected by $10 minimum rule: {raw_dec} TP ${tp_price} vs Spot${current_spot}")
+        print(f"Master Trade rejected by $10 minimum rule: {raw_dec} TP ${tp_price} vs Spot ${current_spot}")
 
     journal["last_decision"] = decision_record
 

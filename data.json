@@ -5031,9 +5031,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-17 03:39 UTC",
+        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-17 03:42 UTC",
         "original_date": "2026-11-02 21:53",
-        "_timestamp": 1794886754.0,
+        "_timestamp": 1794886930.0,
         "articles": [
             {
                 "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
@@ -5770,6 +5770,14 @@
                 "date": "2026-11-17 03:39",
                 "description": "TEHRAN, Nov. 17 (MNA) – The IRGC said its Aerospace Force seized another U.S. MQM-170 drone over southern Qeshm in a successful electronic warfare operation and landed it intact, bringing the number of captured drones of this type to nine.",
                 "_timestamp": 1794886754.0
+            },
+            {
+                "title": "IRGC says forces seized US drone near Hormuz Strait",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-forces-seized-us-drone-near-hormuz-strait",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 03:42",
+                "description": "IRGC says forces seized US drone near Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran’s Islamic Revolutionary Guard Corps (IRGC) announced early on Tuesday that its forces seized control of a US &nbsp;MQM-170 drone flying south of Qeshm Island, near the Strait of Hormuz.",
+                "_timestamp": 1794886930.0
             }
         ],
         "needs_update": false,
@@ -5777,9 +5785,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-17 03:39 UTC",
-            "Facts": "[Update 2026-11-17 03:39 UTC via Mehr News Agency]: The IRGC announced it captured another U.S. MQM-170 drone over southern Qeshm using electronic warfare, bringing the total captured to nine. [Update 2026-11-17 03:12 UTC via Al Jazeera English]: A drone alert was reported at an Iraq gas field alongside the arrival of a US aircraft carrier. [Update 2026-11-16 23:57 UTC via Al Jazeera English]: Iran-aligned Houthi fighters advanced in southern Yemen while oil tankers continued to hit sea mines in the Strait of Hormuz. Iranian state television reported that a tanker caught fire after striking a mine in the Strait of Hormuz, marking the fourth such incident within a 24-hour period.",
-            "Macro_Context": "Escalating geopolitical tensions in the Middle East, including disruptions in the Strait of Hormuz, drone captures, and heightened security around energy infrastructure, act as a primary safe-haven driver for gold prices."
+            "Event_Timestamp": "2026-11-17 03:42 UTC",
+            "Facts": "[Update 2026-11-17 03:39 UTC via Mehr News Agency]: Iran's IRGC announced its Aerospace Force seized a US MQM-170 drone over southern Qeshm Island near the Strait of Hormuz using electronic warfare, bringing total captured drones of this type to nine. Oil tankers also struck sea mines in the Strait of Hormuz while Houthi fighters advanced in Yemen, escalating regional tensions alongside a drone alert at an Iraq gas field and the deployment of a US aircraft carrier.",
+            "Macro_Context": "Geopolitical escalation in the Strait of Hormuz and surrounding Middle Eastern chokepoints significantly threatens global energy supplies and maritime trade routes, driving safe-haven demand for gold."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -10165,66 +10173,6 @@
         "max_dd_usd": 41.87
     },
     {
-        "main_date": "First Reported: 2026-11-16 03:51 UTC",
-        "original_date": "2026-11-16 03:51",
-        "_timestamp": 1794801103.0,
-        "articles": [
-            {
-                "title": "Shophouse fire kills at least 11 in Phuket",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/16/shophouse-fire-kills-at-least-11-in-phuket?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-16 03:51",
-                "description": "Fire engulfed buildings in Thailand’s popular tourist town of Patong, killing several people and injuring many others.",
-                "_timestamp": 1794801103.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 03:51 UTC",
-            "Facts": "A major shophouse fire in Thailand's tourist town of Patong resulted in multiple fatalities and injuries. Local emergency services responded to the localized structural disaster.",
-            "Macro_Context": "This is a localized tragedy with no macro transmission channel to monetary policy, inflation, or precious metals.",
-            "Impact_Timing": "None",
-            "Timeframe": "None",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 10,
-            "Orderflow_Price_Target": "N/A"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 03:47 UTC",
-        "original_date": "2026-11-16 03:47",
-        "_timestamp": 1794800854.0,
-        "articles": [
-            {
-                "title": "IRGC dismantles PJAK terrorist team at western border",
-                "link": "https://en.mehrnews.com/news/249431/IRGC-dismantles-PJAK-terrorist-team-at-western-border",
-                "source": "Mehr News Agency",
-                "date": "2026-11-16 03:47",
-                "description": "TEHRAN, Nov. 16 (MNA) – The IRGC Ground Forces said its forces dismantled a PJAK terrorist team that was trying to enter Iran and carry out attacks on the western border.",
-                "_timestamp": 1794800854.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 03:47 UTC",
-            "Facts": "IRGC Ground Forces successfully dismantled a PJAK militant team attempting to infiltrate western Iran to conduct attacks. Border security forces remain on high alert following the engagement.",
-            "Macro_Context": "Domestic security operations in Iran reinforce overall Middle East risk premium factors affecting gold.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h Intraday",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Orderflow_Price_Target": "$3889.75"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 41.87
-    },
-    {
         "main_date": "First Reported: 2026-11-16 03:41 UTC | Last Update: 2026-11-16 19:03 UTC",
         "original_date": "2026-11-16 03:41",
         "_timestamp": 1794855801.0,
@@ -12176,6 +12124,30 @@
             "Event_Timestamp": "2026-11-17 03:25 UTC",
             "Facts": "[Update 2026-11-17 03:25 UTC via Yahoo Finance Nasdaq]: Munich-based Physical AI company Agile Robots raised $500 million in a Series F funding round led by SoftBank Group, with participation from NVIDIA, Hitachi Group, and T.Capital, bringing its valuation to $8.5 billion and total invested capital to $2 billion.",
             "Macro_Context": "Continued venture capital and strategic corporate investments flowing into physical AI and robotics sectors."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 03:25 UTC",
+        "original_date": "2026-11-17 03:25",
+        "_timestamp": 1794885900.0,
+        "articles": [
+            {
+                "title": "BlueQubit Names Quantum Flywheel Awardees, Backed by IBM, AWS, and NVIDIA Accelerated Computing",
+                "link": "https://finance.yahoo.com/technology/ai/articles/bluequbit-names-quantum-flywheel-awardees-032500624.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 03:25",
+                "description": "SAN FRANCISCO, November 17, 2026--BlueQubit today announced the research teams selected for its Quantum Flywheel grant program, a $150,000 initiative created with support from IBM, Amazon Web Services (AWS), and NVIDIA Accelerated Computing. Awardees receive three months of credits for AI tokens and classical and quantum compute, with awards ranging from $10,000 to $40,000 per proposal.",
+                "_timestamp": 1794885900.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-17 03:25 UTC",
+            "Facts": "[Update 2026-11-17 03:25 UTC via Yahoo Finance Nasdaq]: BlueQubit announced the recipients of its Quantum Flywheel grant program, a $150,000 initiative supported by IBM, AWS, and NVIDIA to provide computing credits and AI tokens for quantum and classical research.",
+            "Macro_Context": "Microeconomic developments in the quantum computing and AI sector have no direct impact on macroeconomic inflation indicators or Federal Reserve monetary policy paths."
         }
     }
 ]

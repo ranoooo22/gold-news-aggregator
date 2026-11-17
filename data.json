@@ -3720,9 +3720,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 23:35 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 01:00 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794872102.0,
+        "_timestamp": 1794877213.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4571,9 +4571,17 @@
                 "date": "2026-11-16 23:35",
                 "description": "Jensen Huang resigned last week amid turmoil.",
                 "_timestamp": 1794872102.0
+            },
+            {
+                "title": "Tesla board member Joe Gebbia: Nvidia should “reinstate” Jensen Huang to let investigation play out",
+                "link": "https://finance.yahoo.com/video/tesla-board-member-joe-gebbia-010013441.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 01:00",
+                "description": "Joe Gebbia, the U.S. chief design officer, Airbnb cofounder, and Tesla board member, told Alyson Shontell that Nvidia should reinstate Jensen Huang as CEO and then run a due diligence process. “Nvidia is one of the greatest companies ever of all time, and it got there because of founder mode,” Gebbia said at the F500 Innovation Forum.",
+                "_timestamp": 1794877213.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
@@ -7294,9 +7302,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 23:45 UTC | Last Update: 2026-11-16 20:30 UTC",
+        "main_date": "First Reported: 2026-11-15 23:45 UTC | Last Update: 2026-11-17 01:04 UTC",
         "original_date": "2026-11-15 23:45",
-        "_timestamp": 1794861000.0,
+        "_timestamp": 1794877450.0,
         "articles": [
             {
                 "title": "Oil prices dip as markets look to recovering supplies, M.East tensions",
@@ -7353,9 +7361,17 @@
                 "date": "2026-11-16 20:30",
                 "description": "Oil prices fell as traders weighed expectations of a global supply surplus against renewed threats to Middle Eastern oil shipments.",
                 "_timestamp": 1794861000.0
+            },
+            {
+                "title": "Oil prices fall further on supply glut concerns; strong dollar weighs",
+                "link": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393",
+                "source": "Investing.com",
+                "date": "2026-11-17 01:04",
+                "description": "",
+                "_timestamp": 1794877450.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
@@ -11957,5 +11973,39 @@
             "Facts": "[Update 2026-11-17 00:33 UTC via Yahoo Finance Gold]: Largo Inc. reported its Q3 2026 financial results, highlighting a successful diversification strategy into copper, gold, and platinum group metals as by-products of its core vanadium business, alongside generating $3.5 million in operating cash flow.",
             "Macro_Context": "Mining firms are expanding diversification into precious and industrial metals to capture robust demand dynamics and strengthen operating cash flows."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 00:53 UTC",
+        "original_date": "2026-11-17 00:53",
+        "_timestamp": 1794876781.0,
+        "articles": [
+            {
+                "title": "Warren Buffett's Successor, Greg Abel, Overhauled Berkshire's Portfolio for a 3rd Straight Quarter, Reducing 6 Stocks and Piling Into a Hot Tech IPO",
+                "link": "https://www.fool.com/investing/2026/11/16/warren-buffett-successor-greg-abel-overhaul-berkshire-portfolio-3rd-straight-quarter-reduce-6-stocks-buy-hot-tech-ipo/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 00:53",
+                "description": "This isn’t your grandparents’ Berkshire Hathaway any longer.",
+                "_timestamp": 1794876781.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 00:45 UTC",
+        "original_date": "2026-11-17 00:45",
+        "_timestamp": 1794876311.0,
+        "articles": [
+            {
+                "title": "Ukraine holds peace talks with US, Europe as conflict escalates",
+                "link": "https://www.aljazeera.com/news/2026/11/17/ukraine-holds-peace-talks-with-us-europe-as-conflict-escalates?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 00:45",
+                "description": "Kushner reports progress towards a deal, but Moscow says it has not agreed to European participation in the next talks.",
+                "_timestamp": 1794876311.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

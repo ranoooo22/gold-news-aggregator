@@ -96,6 +96,8 @@ const settings = Object.assign({
     rangePct: 1,         // show depth within ±range% of spot
     align: true,         // shift each venue by its offset to spot
     walls: true,         // draw largest levels as lines
+    smooth: 5,           // minutes of time-averaging for the depth (0 = live)
+    levels: 'larger',    // 'all' | 'larger' | 'largest': which levels are drawn on the chart
     enabled: {},         // venue id -> false when switched off
 }, store.get('gt_market_settings', {}));
 
@@ -104,6 +106,7 @@ function saveSettings() { store.set('gt_market_settings', settings); }
 const state = {
     spot: null, open24h: null, spotTs: 0,
     candles: [], venues: {}, buckets: [], maxOz: 0,
+    smoothed: new Map(), lastAggregate: 0, threshold: 0, wallKeys: '',
     chart: null, series: null, wallLines: [], overlay: null,
     tvLoaded: false, oanda: null,
 };
@@ -217,29 +220,40 @@ async function pollBooks() {
     renderWalls();
 }
 
+// Builds the combined book from the latest snapshots, then time-averages it.
+// Each price level (per venue, per side) is an exponential moving average with a time
+// constant of `settings.smooth` minutes: an order has to rest for a few minutes to show
+// at full size, and orders that flash in and out fade away instead of flickering.
 function aggregateBooks() {
     const spot = state.spot;
-    const buckets = new Map();
-    state.maxOz = 0;
-    if (!spot) { state.buckets = []; return; }
+    if (!spot) { state.buckets = []; state.maxOz = 0; return; }
     const lo = spot * (1 - settings.rangePct / 100);
     const hi = spot * (1 + settings.rangePct / 100);
     const step = settings.step;
 
+    const now = Date.now() / 1000;
+    const dt = state.lastAggregate ? Math.min(now - state.lastAggregate, 60) : 0;
+    state.lastAggregate = now;
+    const tau = settings.smooth * 60;
+    const alpha = tau > 0 && dt > 0 ? 1 - Math.exp(-dt / tau) : 1;
+    // venue-to-spot gaps are always smoothed a little, otherwise aligned levels jump between buckets
+    const offsetAlpha = dt > 0 ? 1 - Math.exp(-dt / Math.max(tau, 60)) : 1;
+
+    const raw = new Map();
     VENUES.forEach((v) => {
         const vs = state.venues[v.id];
         if (vs.status !== 'ok') return;
         vs.offset = vs.mid - spot;
-        const shift = settings.align ? vs.offset : 0;
+        vs.offsetSmooth = isFinite(vs.offsetSmooth) ? vs.offsetSmooth + offsetAlpha * (vs.offset - vs.offsetSmooth) : vs.offset;
+        const shift = settings.align ? vs.offsetSmooth : 0;
         vs.bidOz = 0; vs.askOz = 0;
         const add = (side, rows) => {
             for (const [px, oz] of rows) {
                 const p = px - shift;
                 if (p < lo || p > hi) continue;
                 const key = Math.round(p / step) * step;
-                let b = buckets.get(key);
-                if (!b) { b = { price: key, bid: 0, ask: 0, bidBy: {}, askBy: {} }; buckets.set(key, b); }
-                b[side] += oz;
+                let b = raw.get(key);
+                if (!b) { b = { bidBy: {}, askBy: {} }; raw.set(key, b); }
                 b[side + 'By'][v.id] = (b[side + 'By'][v.id] || 0) + oz;
                 vs[side + 'Oz'] += oz;
             }
@@ -247,8 +261,49 @@ function aggregateBooks() {
         add('bid', vs.bids);
         add('ask', vs.asks);
     });
-    state.buckets = [...buckets.values()].sort((a, b) => b.price - a.price);
-    state.buckets.forEach((b) => { state.maxOz = Math.max(state.maxOz, b.bid, b.ask); });
+
+    const smoothed = state.smoothed;
+    const seed = smoothed.size === 0;
+    for (const key of new Set([...smoothed.keys(), ...raw.keys()])) {
+        if (key < lo || key > hi) { smoothed.delete(key); continue; }
+        const r = raw.get(key) || { bidBy: {}, askBy: {} };
+        let s = smoothed.get(key);
+        if (!s) { s = { price: key, bidBy: {}, askBy: {} }; smoothed.set(key, s); }
+        for (const side of ['bidBy', 'askBy']) {
+            for (const id of new Set([...Object.keys(s[side]), ...Object.keys(r[side])])) {
+                const target = r[side][id] || 0;
+                const next = seed ? target : (s[side][id] || 0) + alpha * (target - (s[side][id] || 0));
+                if (next < 0.005) delete s[side][id]; else s[side][id] = next;
+            }
+        }
+        s.bid = Object.values(s.bidBy).reduce((a, x) => a + x, 0);
+        s.ask = Object.values(s.askBy).reduce((a, x) => a + x, 0);
+        if (!s.bid && !s.ask) smoothed.delete(key);
+    }
+
+    state.buckets = [...smoothed.values()].sort((a, b) => b.price - a.price);
+    state.maxOz = 0;
+    const sizes = [];
+    state.buckets.forEach((b) => {
+        state.maxOz = Math.max(state.maxOz, b.bid, b.ask);
+        if (b.bid) sizes.push(b.bid);
+        if (b.ask) sizes.push(b.ask);
+    });
+    // "significant" = clearly larger than a typical level in the current range
+    sizes.sort((a, b) => a - b);
+    const median = sizes.length ? sizes[Math.floor(sizes.length / 2)] : 0;
+    state.threshold = (LEVEL_FILTERS[settings.levels] || 0) * median;
+}
+
+const LEVEL_FILTERS = { all: 0, larger: 1.5, largest: 3 };
+
+function isSignificant(size) {
+    return size > 0 && size >= state.threshold;
+}
+
+function resetDepthHistory() {
+    state.smoothed.clear();
+    state.lastAggregate = 0;
 }
 
 function stackedBar(by, total, side) {
@@ -284,10 +339,12 @@ function renderLadder() {
         }
         const tipBid = escapeHtml(venueBreakdown(b.bidBy));
         const tipAsk = escapeHtml(venueBreakdown(b.askBy));
+        const faintBid = isSignificant(b.bid) ? '' : ' faint';
+        const faintAsk = isSignificant(b.ask) ? '' : ' faint';
         rows.push(`<div class="dom-row">
-            <div class="dom-side bid" title="${tipBid}">${stackedBar(b.bidBy, b.bid, 'bid')}<span class="dom-qty">${b.bid ? fmt(b.bid, 1) : ''}</span></div>
+            <div class="dom-side bid${faintBid}" title="${tipBid}">${stackedBar(b.bidBy, b.bid, 'bid')}<span class="dom-qty">${b.bid >= 0.05 ? fmt(b.bid, 1) : ''}</span></div>
             <div class="dom-px">${fmt(b.price, decimals)}</div>
-            <div class="dom-side ask" title="${tipAsk}">${stackedBar(b.askBy, b.ask, 'ask')}<span class="dom-qty">${b.ask ? fmt(b.ask, 1) : ''}</span></div>
+            <div class="dom-side ask${faintAsk}" title="${tipAsk}">${stackedBar(b.askBy, b.ask, 'ask')}<span class="dom-qty">${b.ask >= 0.05 ? fmt(b.ask, 1) : ''}</span></div>
         </div>`);
     }
     if (!spotInserted) rows.push(`<div class="dom-spot" id="dom-spot-row"><span>SPOT</span><span>${fmt(state.spot)}</span></div>`);
@@ -387,8 +444,8 @@ function drawDepthOverlay() {
         const h = Math.max(1, Math.abs(yBot - yTop) - 1);
         const y = Math.min(yTop, yBot);
         // bids and asks for the same bucket are drawn stacked (bid first, then ask)
-        const bidLen = (b.bid / state.maxOz) * maxLen;
-        const askLen = (b.ask / state.maxOz) * maxLen;
+        const bidLen = isSignificant(b.bid) ? (b.bid / state.maxOz) * maxLen : 0;
+        const askLen = isSignificant(b.ask) ? (b.ask / state.maxOz) * maxLen : 0;
         if (bidLen) {
             ctx.fillStyle = 'rgba(0, 194, 110, 0.45)';
             ctx.fillRect(paneWidth - bidLen - askLen, y, bidLen, h);
@@ -400,16 +457,43 @@ function drawDepthOverlay() {
     }
 }
 
-function renderWalls() {
+// Marks the 3 largest bid and ask levels. A marked level keeps its line while it stays
+// among the 5 largest, so near-equal levels don't make the lines hop back and forth.
+const WALL_COUNT = 3;
+const WALL_KEEP_RANK = 5;
+let lastWallSet = { bid: [], ask: [] };
+let lastWallDraw = 0;
+
+function pickWalls(side) {
+    const ranked = state.buckets.filter((b) => isSignificant(b[side])).sort((a, b) => b[side] - a[side]);
+    const keepable = new Set(ranked.slice(0, WALL_KEEP_RANK).map((b) => b.price));
+    const chosen = lastWallSet[side].filter((p) => keepable.has(p)).slice(0, WALL_COUNT);
+    for (const b of ranked) {
+        if (chosen.length >= WALL_COUNT) break;
+        if (!chosen.includes(b.price)) chosen.push(b.price);
+    }
+    return chosen;
+}
+
+function renderWalls(force = false) {
     if (!state.series) return;
+    const show = settings.walls && settings.chartMode === 'spot';
+    const next = show ? { bid: pickWalls('bid'), ask: pickWalls('ask') } : { bid: [], ask: [] };
+    const key = JSON.stringify(next);
+    // redraw when the marked levels change, otherwise only every 30 s to refresh the oz labels
+    if (!force && key === state.wallKeys && Date.now() - lastWallDraw < 30000) return;
+    state.wallKeys = key;
+    lastWallSet = next;
+    lastWallDraw = Date.now();
     state.wallLines.forEach((l) => state.series.removePriceLine(l));
     state.wallLines = [];
-    if (!settings.walls || settings.chartMode !== 'spot') return;
-    const top = (side) => [...state.buckets].filter((b) => b[side] > 0).sort((a, b) => b[side] - a[side]).slice(0, 3);
+    const byPrice = new Map(state.buckets.map((b) => [b.price, b]));
     for (const [side, color] of [['bid', '#00c26e'], ['ask', '#ff4d4f']]) {
-        top(side).forEach((b) => {
+        next[side].forEach((price) => {
+            const b = byPrice.get(price);
+            if (!b) return;
             state.wallLines.push(state.series.createPriceLine({
-                price: b.price, color, lineWidth: 1, lineStyle: LightweightCharts.LineStyle.Dashed,
+                price, color, lineWidth: 1, lineStyle: LightweightCharts.LineStyle.Dashed,
                 axisLabelVisible: true, title: `${side} ${fmt(b[side], 0)} oz`,
             }));
         });
@@ -490,13 +574,15 @@ function syncControls() {
     $('opt-step').value = String(settings.step);
     $('opt-range').value = String(settings.rangePct);
     $('opt-align').checked = settings.align;
+    $('opt-smooth').value = String(settings.smooth);
+    $('opt-levels').value = settings.levels;
     $('opt-walls').checked = settings.walls;
     const spotMode = settings.chartMode === 'spot';
     $('spot-chart-wrap').hidden = !spotMode;
     $('tv-widget').hidden = spotMode;
     $('tf-group').hidden = !spotMode;
     $('chart-caption').innerHTML = spotMode
-        ? 'Candles: OKX XAU/USD spot index. Bars on the right: combined order books of the venues below (green bids, red asks).'
+        ? `Candles: OKX XAU/USD spot index. Bars on the right: combined order books of the venues below (green bids, red asks)${settings.smooth ? `, averaged over ${settings.smooth} min` : ', live'}.`
         : 'TradingView chart, Capital.com GOLD feed. Order book levels cannot be drawn on this widget; see the ladder.';
 }
 
@@ -504,15 +590,17 @@ function bindControls() {
     document.querySelectorAll('[data-chart-mode]').forEach((b) => b.addEventListener('click', () => {
         settings.chartMode = b.dataset.chartMode; saveSettings(); syncControls();
         if (settings.chartMode === 'tradingview') loadTradingView();
-        renderWalls();
+        renderWalls(true);
     }));
     document.querySelectorAll('[data-tf]').forEach((b) => b.addEventListener('click', () => {
         settings.tf = b.dataset.tf; saveSettings(); syncControls(); loadCandles();
     }));
-    $('opt-step').addEventListener('change', (e) => { settings.step = Number(e.target.value); saveSettings(); refreshDepthViews(); });
+    $('opt-step').addEventListener('change', (e) => { settings.step = Number(e.target.value); saveSettings(); resetDepthHistory(); refreshDepthViews(); });
     $('opt-range').addEventListener('change', (e) => { settings.rangePct = Number(e.target.value); saveSettings(); ladderCentered = false; refreshDepthViews(); });
-    $('opt-align').addEventListener('change', (e) => { settings.align = e.target.checked; saveSettings(); refreshDepthViews(); });
-    $('opt-walls').addEventListener('change', (e) => { settings.walls = e.target.checked; saveSettings(); renderWalls(); });
+    $('opt-align').addEventListener('change', (e) => { settings.align = e.target.checked; saveSettings(); resetDepthHistory(); refreshDepthViews(); });
+    $('opt-smooth').addEventListener('change', (e) => { settings.smooth = Number(e.target.value); saveSettings(); syncControls(); refreshDepthViews(); });
+    $('opt-levels').addEventListener('change', (e) => { settings.levels = e.target.value; saveSettings(); refreshDepthViews(); });
+    $('opt-walls').addEventListener('change', (e) => { settings.walls = e.target.checked; saveSettings(); renderWalls(true); });
     $('venue-table-body').addEventListener('change', (e) => {
         const id = e.target.dataset.venue;
         if (!id) return;
@@ -525,7 +613,7 @@ function bindControls() {
 }
 
 function refreshDepthViews() {
-    aggregateBooks(); renderLadder(); renderVenueTable(); renderWalls();
+    aggregateBooks(); renderLadder(); renderVenueTable(); renderWalls(true);
 }
 
 // ---------------------------------------------------------------- start

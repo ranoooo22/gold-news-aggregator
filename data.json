@@ -3229,9 +3229,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-17 00:21 UTC",
+        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-17 02:38 UTC",
         "original_date": "2026-11-11 04:32",
-        "_timestamp": 1794874860.0,
+        "_timestamp": 1794883128.0,
         "articles": [
             {
                 "title": "3 Data Center Infrastructure Stocks Retail Investors Are Watching Beyond Nvidia",
@@ -3464,16 +3464,24 @@
                 "date": "2026-11-17 00:21",
                 "description": "Nvidia’s sudden CEO vacuum and the recent 10% slide in its share price have rattled expectations around cheap, abundant AI compute, yet that shock also throws a spotlight on which enterprises can absorb higher infrastructure costs without breaking their business models. Investors who ignore this shift risk missing where resilience could build next. This article unpacks three stocks exposed to that Nvidia news, all drawn from our AI Cost-Resilient",
                 "_timestamp": 1794874860.0
+            },
+            {
+                "title": "Asian stocks sink as scandal-hit Nvidia prepares for earnings",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-sink-scandal-hit-023848163.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 02:38",
+                "description": "Tech firms dragged Asian stock markets down again Tuesday as the fallout from the Nvidia crisis continued to rattle trading floors, with US moves to tighten restrictions on Chinese access to chips adding to uncertainty.Adding to the downbeat mood was news that the US Commerce Department moved on Monday to close a loophole that allowed Chinese companies to access Nvidia's powerful AI chips remotely.",
+                "_timestamp": 1794883128.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 00:21 UTC",
-            "Facts": "[Update 2026-11-17 00:21 UTC via Yahoo Finance Nasdaq]: UiPath and other software stocks are gaining attention for their ability to absorb higher AI infrastructure costs following Nvidia's 10% share price slide and sudden leadership vacuum. Nvidia prepares for its fiscal third-quarter 2027 earnings report on November 17, with attention centering on its Data Center business, China export restrictions, and interim leadership under CFO Colette Kress following Jensen Huang's resignation.",
-            "Macro_Context": "Corporate governance changes and tighter export controls are colliding with high-growth AI infrastructure narratives, shifting capital flows across the semiconductor and software sectors."
+            "Event_Timestamp": "2026-11-17 02:38 UTC",
+            "Facts": "[Update 2026-11-17 02:38 UTC via Yahoo Finance Nasdaq]: Asian stocks sank as the US Commerce Department moved on Monday to close a loophole allowing Chinese companies remote access to Nvidia chips, compounding fallout from CEO Jensen Huang's resignation. Nvidia faces an earnings report on November 17, 2026, with interim CEO Colette Kress taking over amid a 10% slide in share price.",
+            "Macro_Context": "Tech equity liquidity and semiconductor supply chains are under severe strain due to tightening US export restrictions on China and unexpected leadership turmoil at industry bellwether Nvidia."
         },
         "eval_status": "HIT",
         "max_dd_usd": 18.93
@@ -10345,43 +10353,6 @@
         "max_dd_usd": 41.87
     },
     {
-        "main_date": "First Reported: 2026-11-15 08:07 UTC | Last Update: 2026-11-16 02:46 UTC",
-        "original_date": "2026-11-15 08:07",
-        "_timestamp": 1794797195.0,
-        "articles": [
-            {
-                "title": "Pact on South China Sea code of conduct unlikely, as ASEAN leaders gather",
-                "link": "https://www.aljazeera.com/economy/2026/11/15/pact-on-south-china-sea-code-of-conduct-unlikely-as-asean-leaders-gather?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 08:07",
-                "description": "Finishing negotiations for disputed South China Sea agreement will be a &#039;tall order&#039;, analysts say.",
-                "_timestamp": 1794730028.0
-            },
-            {
-                "title": "ASEAN, China fall short of agreeing on South China Sea code",
-                "link": "https://www.aljazeera.com/news/2026/11/16/asean-china-fall-short-of-agreeing-on-south-china-sea-code?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-16 02:46",
-                "description": "Southeast Asian leaders also denounce violence in Myanmar and extend ban on country&#039;s leader attending bloc&#039;s summits.",
-                "_timestamp": 1794797195.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Global Growth, Debt & China Macro",
-            "Event_Timestamp": "2026-11-16 02:46 UTC",
-            "Facts": "[Update 2026-11-16 02:46 UTC via Al Jazeera English]: ASEAN leaders concluded their summit without finalizing a South China Sea code of conduct with Beijing. | Member nations also condemned violence in Myanmar while maintaining their summit exclusion of the country's military leadership.",
-            "Macro_Context": "Routine diplomatic stalemates at regional ASEAN summits do not present immediate global market spillover or actionable channels for XAU/USD.",
-            "Impact_Timing": "Immediate / Intra-session",
-            "Timeframe": "Intraday (1-24h)",
-            "XAUUSD_Impact": "Neutral / Rangebound",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "3852.55"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-15 21:50 UTC | Last Update: 2026-11-16 18:42 UTC",
         "original_date": "2026-11-15 21:50",
         "_timestamp": 1794854521.0,
@@ -12107,6 +12078,54 @@
             "Event_Timestamp": "2026-11-17 02:12 UTC",
             "Facts": "[Update 2026-11-17 02:12 UTC via Yahoo Finance Oil]: Paz Retail And Energy stock is facing valuation questions after a multi-year rally, operating against the backdrop of fresh headlines concerning global oil prices and Gulf supply stability.",
             "Macro_Context": "Regional energy market valuations responding to broader crude oil price movements and supply stability indicators."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 01:30 UTC",
+        "original_date": "2026-11-17 01:30",
+        "_timestamp": 1794879015.0,
+        "articles": [
+            {
+                "title": "AOC Says Five Guys in Tuxedos Shouldn’t Control the Economy: ‘We Need to Check These Guys Power’",
+                "link": "https://finance.yahoo.com/economy/policy/articles/aoc-says-five-guys-tuxedos-013015825.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 01:30",
+                "description": "U.S. Alexandria Ocasio-Cortez (D-N.Y.) did not hold back in her criticism of Nvidia Corp. or former CEO Jensen Huang when asked about the recent company scandal. AOC on Nvidia Ocasio-Cortez was recently asked by TMZ about the scandal in which...",
+                "_timestamp": 1794879015.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 01:30 UTC",
+            "Facts": "[Update 2026-11-17 01:30 UTC via Yahoo Finance Nasdaq]: US Representative Alexandria Ocasio-Cortez criticized Nvidia Corp. and former CEO Jensen Huang following recent scandals, stating that economic power concentration needs to be checked.",
+            "Macro_Context": "Political scrutiny over corporate power structures intersects with technology sector volatility, affecting broader market sentiment."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 02:49 UTC",
+        "original_date": "2026-11-17 02:49",
+        "_timestamp": 1794883766.0,
+        "articles": [
+            {
+                "title": "Netanyahu claims Israel’s ‘fighting’ battle for Western civilisation",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-claims-israels-fighting-battle-western-civilisation",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 02:49",
+                "description": "Netanyahu claims Israel’s ‘fighting’ battle for Western civilisation\n\n    \n    \n\n        \n    \n                Israeli Prime Minister Benjamin Netanyahu, speaking alongside Czech Prime Minister Andrej Babis in Jerusalem on Monday, said that Israel is \"fighting the battle of Western civilisation\".\n\n\nIsraeli Prime Minister Benjamin Netanyahu, speaking alongside Czech Prime Minister Andrej Babis in Jerusalem on Monday, said that Israel is “fighting ",
+                "_timestamp": 1794883766.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "2026-11-17 02:49 UTC",
+            "Facts": "[Update 2026-11-17 02:49 UTC via Middle East Eye]: Israeli Prime Minister Benjamin Netanyahu, speaking alongside Czech Prime Minister Andrej Babis in Jerusalem on Monday, stated that Israel is fighting the battle of Western civilisation.",
+            "Macro_Context": "Geopolitical rhetoric in the Middle East remains elevated as regional leaders align diplomatic stances amid ongoing military engagements."
         }
     }
 ]

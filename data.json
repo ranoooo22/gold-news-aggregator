@@ -147,9 +147,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-17 09:47 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-17 10:15 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794908879.0,
+        "_timestamp": 1794910500.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -1062,9 +1062,17 @@
                 "date": "2026-11-17 09:37",
                 "description": "Nvidia lost its CEO and its crown, but the sell-off could be a gift for patient investors.",
                 "_timestamp": 1794908222.0
+            },
+            {
+                "title": "‘Nvidia spooked me’: Should I sell my stocks or ride out the market turmoil?",
+                "link": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
+                "source": "MarketWatch Macro",
+                "date": "2026-11-17 10:15",
+                "description": "“Real estate here in Florida seems to be presenting some interesting opportunities.”",
+                "_timestamp": 1794910500.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
@@ -3341,9 +3349,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-17 02:38 UTC",
+        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-17 10:00 UTC",
         "original_date": "2026-11-11 04:32",
-        "_timestamp": 1794883128.0,
+        "_timestamp": 1794909600.0,
         "articles": [
             {
                 "title": "3 Data Center Infrastructure Stocks Retail Investors Are Watching Beyond Nvidia",
@@ -3584,9 +3592,17 @@
                 "date": "2026-11-17 02:38",
                 "description": "Tech firms dragged Asian stock markets down again Tuesday as the fallout from the Nvidia crisis continued to rattle trading floors, with US moves to tighten restrictions on Chinese access to chips adding to uncertainty.Adding to the downbeat mood was news that the US Commerce Department moved on Monday to close a loophole that allowed Chinese companies to access Nvidia's powerful AI chips remotely.",
                 "_timestamp": 1794883128.0
+            },
+            {
+                "title": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
+                "link": "https://finance.yahoo.com/technology/articles/nvidia-board-directors-establishes-national-100000145.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 10:00",
+                "description": "News Summary Committee to provide oversight over NVIDIA’s national security and global trade compliance programsCommittee will retain independent, outside experts to provide legal, national security and trade compliance expertise to support the CommitteeDirector Suzanne Nora Johnson appointed Committee Chair SANTA CLARA, Calif., Nov. 17, 2026 (GLOBE NEWSWIRE) -- NVIDIA (NASDAQ: NVDA) today announced that the Board of Directors has established the",
+                "_timestamp": 1794909600.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
@@ -12723,6 +12739,23 @@
                 "date": "2026-11-17 09:51",
                 "description": "Pigs are big business in Denmark. Now their waste is being turned into biogas, which powers the national grid.",
                 "_timestamp": 1794909062.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 10:00 UTC",
+        "original_date": "2026-11-17 10:00",
+        "_timestamp": 1794909600.0,
+        "articles": [
+            {
+                "title": "Quorum Cyber Completes Acquisition of Ontinue, Advancing Its Vision for Microsoft-First Autonomous Cyber Defense",
+                "link": "https://finance.yahoo.com/technology/ai/articles/quorum-cyber-completes-acquisition-ontinue-100000436.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 10:00",
+                "description": "Quorum Cyber, an award-winning Microsoft-centric cybersecurity services provider, today announced that it has completed its acquisition of",
+                "_timestamp": 1794909600.0
             }
         ],
         "needs_update": true,

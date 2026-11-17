@@ -126,19 +126,14 @@
                 "_timestamp": 1794882266.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 18:37 UTC",
-            "Facts": "[Update 2026-11-16 18:37 UTC via Mehr News Agency]: Iranian officials declared that ending the war in Lebanon and restoring sovereignty is a mandatory prerequisite for regional peace while hardening stances against Washington. | Iranian parliamentary leadership previously warned that Tehran will reject the prolonged state of 'neither war nor peace' and that any new conflict would defy US calculations. | These persistent geopolitical friction points sustain safe-haven hedging across Middle Eastern supply routes.",
-            "Macro_Context": "Ongoing Middle East tensions and threats regarding the Strait of Hormuz underpin safe-haven demand, supporting XAU/USD despite broader intraday selling pressure.",
-            "Impact_Timing": "Immediate to Short-Term",
-            "Timeframe": "24h Intraday Pulse",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "3880.16"
+            "Event_Timestamp": "2026-11-17 02:24 UTC",
+            "Facts": "[Update 2026-11-17 02:24 UTC via Middle East Eye]: US Vice President JD Vance stated that a conflict with Iran will not become a long-term commitment, noting that while the Iranian nuclear program is a threat, Washington will not allow the engagement to stretch into a multi-year commitment. Meanwhile, Iranian officials warned that Tehran will not allow adversaries to dictate the scope of any conflict and insisted that ending the Israeli war on Lebanon is a prerequisite for regional peace.",
+            "Macro_Context": "Geopolitical tensions in the Middle East and concerns over potential supply disruptions in the Strait of Hormuz directly impact safe-haven demand for gold."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -1019,16 +1014,24 @@
                 "date": "2026-11-17 02:12",
                 "description": "GDS Holdings Ltd. (NASDAQ:GDS) is one of the 10 Stocks Investors Are Dumping Right Now. GDS Holdings Ltd. (NASDAQ:GDS) fell by 14.69 percent on Monday to finish at $16.90, mimicking a broader decline in the US markets, dampened by uncertainties surrounding Nvidia Corp. and its impact on the broader artificial intelligence sector. Considered the bellwether […]",
                 "_timestamp": 1794881568.0
+            },
+            {
+                "title": "Why Is Sandisk (SNDK) Stock Sliding After A Shock AI Leadership Exit?",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/why-sandisk-sndk-stock-sliding-020722050.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 02:07",
+                "description": "Sandisk (NasdaqGS:SNDK) traded lower on 16 November 2026 after Nvidia CEO Jensen Huang resigned following personal controversy reports. The leadership change at Nvidia coincided with a broad retreat in AI focused semiconductor stocks that are linked through shared demand trends. Sandisk, which supplies memory products used in AI and data infrastructure, moved in line with other chipmakers during the sector pullback. Jensen Huang's sudden resignat",
+                "_timestamp": 1794881242.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 00:27 UTC",
-            "Facts": "[Update 2026-11-17 00:27 UTC via Yahoo Finance Nasdaq]: Qualcomm CEO Cristiano Amon stated there is no AI correction at his company, pointing to strong semiconductor demand despite a tech sell-off, while Nvidia prepares for its November 17 earnings report following CEO Jensen Huang's departure. Major US stock indexes fell Monday led by technology sell-offs, and Berkshire Hathaway released its Q3 13F filing showing major portfolio adjustments.",
-            "Macro_Context": "Broader equity markets face downward pressure as technology sector sell-offs intensify ahead of key corporate earnings and regulatory developments."
+            "Event_Timestamp": "2026-11-17 02:12 UTC",
+            "Facts": "[Update 2026-11-17 02:12 UTC via Yahoo Finance Nasdaq]: Semiconductor and AI-linked stocks experienced volatility following the sudden resignation of Nvidia CEO Jensen Huang. Companies like Broadcom, Qualcomm, Sandisk, and GDS Holdings reacted to leadership changes and demand outlooks, driving broader sector pullbacks.",
+            "Macro_Context": "Technology sector sentiment shifts driven by individual corporate leadership developments and macroeconomic growth forecasts for AI infrastructure."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -6479,19 +6482,14 @@
                 "_timestamp": 1794881331.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 16:48 UTC",
-            "Facts": "Canadian Natural Resources agreed to acquire Advantage Energy Ltd in an all-cash deal valued at approximately $2.53 billion ($13.55 per share). Advantage Energy shares surged 23% in Canadian trading following the deal announcement.",
-            "Macro_Context": "Isolated corporate energy sector acquisition with no macro transmission channel to global liquidity or gold pricing.",
-            "Impact_Timing": "Trivial",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "$3869.99"
+            "Event_Timestamp": "2026-11-17 02:08 UTC",
+            "Facts": "[Update 2026-11-17 02:08 UTC via Yahoo Finance Oil]: Canadian Natural Resources Ltd agreed to acquire Advantage Energy Ltd in an all-cash transaction valued at approximately $2.53 billion, expanding its footprint in the Montney and Charlie Lake resource plays.",
+            "Macro_Context": "Consolidation within the Canadian energy sector reflects ongoing corporate positioning amid shifting commodity price dynamics."
         }
     },
     {
@@ -12101,7 +12099,14 @@
                 "_timestamp": 1794881555.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-17 02:12 UTC",
+            "Facts": "[Update 2026-11-17 02:12 UTC via Yahoo Finance Oil]: Paz Retail And Energy stock is facing valuation questions after a multi-year rally, operating against the backdrop of fresh headlines concerning global oil prices and Gulf supply stability.",
+            "Macro_Context": "Regional energy market valuations responding to broader crude oil price movements and supply stability indicators."
+        }
     }
 ]

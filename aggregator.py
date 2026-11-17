@@ -41,6 +41,8 @@ ARTICLES_PER_PROMPT = 10    # first report + newest 9
 GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash"]
 EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 HTTP_HEADERS = {"User-Agent": "Mozilla/5.0"}
+GOOGLE_NEWS_GAP_S = 1.5        # pause between Google News searches (it rate-limits bursts)
+RATE_LIMIT_RETRY_S = 8         # wait before the single retry after an HTTP 429
 
 
 def google_news(query):
@@ -51,9 +53,7 @@ def google_news(query):
 # Publisher feeds, plus Google News searches. Google News brings in Reuters, AP,
 # Bloomberg, FT, Kitco etc. and outlets whose own feeds block bots (Times of Israel, Arab News).
 FEEDS = {
-    "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
     "CNBC Economy": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
-    "MarketWatch": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
     "Investing.com": "https://www.investing.com/rss/news_11.rss",
     "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml",
     "Middle East Eye": "https://www.middleeasteye.net/rss",
@@ -157,6 +157,9 @@ def fetch_feed(item):
     articles = []
     try:
         res = requests.get(url, headers=HTTP_HEADERS, timeout=12)
+        if res.status_code == 429:  # rate limited: wait once and retry
+            time.sleep(RATE_LIMIT_RETRY_S)
+            res = requests.get(url, headers=HTTP_HEADERS, timeout=12)
         if res.status_code != 200:
             stats["status"] = f"HTTP {res.status_code}"
             return articles, stats
@@ -201,12 +204,26 @@ def fetch_feed(item):
     return articles, stats
 
 
+def fetch_sequentially(items):
+    results = []
+    for i, item in enumerate(items):
+        if i:
+            time.sleep(GOOGLE_NEWS_GAP_S)
+        results.append(fetch_feed(item))
+    return results
+
+
 def fetch_all_feeds():
+    """Publisher feeds in parallel; Google News searches one after another (it rate-limits bursts)."""
+    google = [i for i in FEEDS.items() if i[0].startswith("GN ")]
+    direct = [i for i in FEEDS.items() if not i[0].startswith("GN ")]
+    with ThreadPoolExecutor(max_workers=len(direct) + 1) as pool:
+        google_future = pool.submit(fetch_sequentially, google)
+        results = list(pool.map(fetch_feed, direct)) + google_future.result()
     articles, health = [], []
-    with ThreadPoolExecutor(max_workers=len(FEEDS)) as pool:
-        for arts, stats in pool.map(fetch_feed, FEEDS.items()):
-            articles.extend(arts)
-            health.append(stats)
+    for arts, stats in results:
+        articles.extend(arts)
+        health.append(stats)
     for s in health:
         print(f"  feed {s['feed']:<20} {s['status']:<14} items={s['items']:<4} kept={s['kept']}")
     return articles, health

@@ -1072,14 +1072,14 @@
                 "_timestamp": 1794910500.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 09:47 UTC",
-            "Facts": "[Update 2026-11-17 09:47 UTC via CNBC Tech & AI]: Nvidia shares are down slightly following days of decline ahead of earnings as investors weigh the fallout from former CEO Jensen Huang's resignation. Nvidia stock fell below $170, while peers like Micron and Advanced Micro Devices face shifting market dynamics.",
-            "Macro_Context": "Tech sector volatility driven by leadership changes at Nvidia and impending corporate earnings reports."
+            "Event_Timestamp": "2026-11-17 10:15 UTC",
+            "Facts": "[Update 2026-11-17 10:15 UTC via MarketWatch Macro]: Investors are weighing market turmoil and real estate opportunities in Florida amid the recent tech sector sell-off. Micron and SK hynix fell ahead of Nvidia's earnings. Nvidia stock dropped below $170 following former CEO Jensen Huang's resignation.",
+            "Macro_Context": "Tech sector volatility and fallout from executive departures are driving broad market reassessments, though macroeconomic data and central bank paths remain key underlying factors for equities."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -3602,14 +3602,14 @@
                 "_timestamp": 1794909600.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 02:38 UTC",
-            "Facts": "[Update 2026-11-17 02:38 UTC via Yahoo Finance Nasdaq]: Asian stocks sank as the US Commerce Department moved on Monday to close a loophole allowing Chinese companies remote access to Nvidia chips, compounding fallout from CEO Jensen Huang's resignation. Nvidia faces an earnings report on November 17, 2026, with interim CEO Colette Kress taking over amid a 10% slide in share price.",
-            "Macro_Context": "Tech equity liquidity and semiconductor supply chains are under severe strain due to tightening US export restrictions on China and unexpected leadership turmoil at industry bellwether Nvidia."
+            "Event_Timestamp": "2026-11-17 10:00 UTC",
+            "Facts": "[Update 2026-11-17 10:00 UTC via Yahoo Finance Nasdaq]: NVIDIA's Board of Directors established a National Security and Export Control Oversight Committee chaired by Suzanne Nora Johnson, employing independent experts for compliance programs. CFO Colette Kress has taken over as interim leader following Jensen Huang's resignation, while the US Commerce Department closed a loophole restricting Chinese remote access to advanced chips.",
+            "Macro_Context": "Semiconductor markets face mounting pressure from tightening US export controls on China and internal corporate governance shocks, raising questions over the sustainability of AI compute infrastructure costs."
         },
         "eval_status": "HIT",
         "max_dd_usd": 18.93
@@ -4819,14 +4819,14 @@
                 "_timestamp": 1794909272.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-17 06:38 UTC",
-            "Facts": "[Update 2026-11-17 06:38 UTC via Yahoo Finance Nasdaq]: Jensen Huang resigned from Nvidia following multiple affairs, including one with a subordinate and another with a woman feared to be linked to Chinese intelligence. Nvidia is preparing for its first earnings call since his departure, while tech elites and executives like Nader Khalil warn of talent loss and urge the board to reinstate him as NVDA stock slips.",
-            "Macro_Context": "Tech governance and corporate leadership stability within major US semiconductor firms amid geopolitical tensions."
+            "Event_Timestamp": "2026-11-17 09:54 UTC",
+            "Facts": "[Update 2026-11-17 09:54 UTC via Yahoo Finance Nasdaq]: The Nvidia board is reportedly not considering the return of ousted co-founder Jensen Huang despite backing from Donald Trump and Elon Musk and an internal petition led by director of developer technology Nader Khalil warning of an 'irreplaceable talent' exodus. Huang's resignation followed reports of multiple affairs, including one with a subordinate and another involving potential security risks.",
+            "Macro_Context": "Corporate governance crises at major market-driving technology firms can create localized liquidity and sentiment shocks that ripple through broader equity benchmarks."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -5063,9 +5063,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-17 09:15 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-17 10:24 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794906946.0,
+        "_timestamp": 1794911054.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -5186,16 +5186,24 @@
                 "date": "2026-11-17 09:15",
                 "description": "The focus is on Nvidia's earnings report after the bell following a sharp sell-off on Monday.",
                 "_timestamp": 1794906946.0
+            },
+            {
+                "title": "US Stock Futures Edge Lower After Tech Sell-Off — NVDA Earnings, AMD, SPCX, DIS In Focus",
+                "link": "https://stocktwits.com/news-articles/markets/equity/us-stock-futures-edge-lower-after-tech-sell-off-nvda-earnings-amd-spcx-dis-in-focus/cNbaAmCR9Wf?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 10:24",
+                "description": "Oil prices slipped and then recovered as recovering Middle East exports and expectations of a global supply surplus outweighed concerns over tanker attacks.",
+                "_timestamp": 1794911054.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 09:15 UTC",
-            "Facts": "[Update 2026-11-17 09:15 UTC via Yahoo Finance Nasdaq]: Stock market futures are mixed, with Dow and S&P 500 futures slipping while Nasdaq futures rise as markets countdown to Nvidia's earnings report following a sharp Monday sell-off. The week also features upcoming Fed meeting minutes and Anthropic's highly anticipated public debut.",
-            "Macro_Context": "Wall Street enters a high-stakes week characterized by major corporate events, upcoming Federal Reserve minutes, and significant tests of investor appetite for artificial intelligence."
+            "Event_Timestamp": "2026-11-17 10:24 UTC",
+            "Facts": "[Update 2026-11-17 10:24 UTC via Yahoo Finance Oil]: US stock futures edged lower following a tech sell-off, with focus turning to upcoming Nvidia earnings, the Fed's meeting minutes, and Anthropic's public debut. Anthropic's listing is expected to value the company above $1.4 trillion, testing Wall Street's appetite for AI.",
+            "Macro_Context": "Investors are navigating a pivotal week featuring critical Federal Reserve communications, massive tech IPOs, and high-profile corporate earnings that could define market direction for the remainder of the quarter."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
@@ -8994,9 +9002,9 @@
         "max_dd_usd": 16.16
     },
     {
-        "main_date": "First Reported: 2026-11-16 10:11 UTC | Last Update: 2026-11-17 09:42 UTC",
+        "main_date": "First Reported: 2026-11-16 10:11 UTC | Last Update: 2026-11-17 10:12 UTC",
         "original_date": "2026-11-16 10:11",
-        "_timestamp": 1794908549.0,
+        "_timestamp": 1794910349.0,
         "articles": [
             {
                 "title": "European gas slips as U.S. shipping waivers override Middle East turmoil",
@@ -9013,16 +9021,24 @@
                 "date": "2026-11-17 09:42",
                 "description": "",
                 "_timestamp": 1794908549.0
+            },
+            {
+                "title": "European gas futures climb as recovering oil exports overshadow shipping attacks",
+                "link": "https://finance.yahoo.com/energy/articles/european-gas-futures-climb-recovering-101229440.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 10:12",
+                "description": "Investing.com - European wholesale natural gas prices edged higher on Tuesday, decoupling from a broader sell-off across the global petroleum complex as traders balanced localized winter supply fundamentals against a surprisingly bearish oil surplus forecast from the International Energy Agency.",
+                "_timestamp": 1794910349.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 4,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-17 09:42 UTC",
-            "Facts": "[Update 2026-11-17 09:42 UTC via Investing.com]: European gas futures climbed as recovering oil exports overshadowed ongoing shipping attacks in the region.",
-            "Macro_Context": "Fluctuations in European natural gas markets driven by geopolitical shipping disruptions and shifting export recoveries."
+            "Event_Timestamp": "2026-11-17 10:12 UTC",
+            "Facts": "[Update 2026-11-17 10:12 UTC via Yahoo Finance Oil]: European wholesale natural gas prices edged higher, decoupling from the wider petroleum complex sell-off, as traders weighed winter supply fundamentals against IEA global surplus forecasts and recovering Middle East exports.",
+            "Macro_Context": "Energy markets remain sensitive to competing fundamentals, where localized winter heating demands and shipping developments offset broader concerns over global petroleum and gas surplus forecasts."
         },
         "eval_status": "HIT",
         "max_dd_usd": 0.68
@@ -12741,8 +12757,15 @@
                 "_timestamp": 1794909062.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-17 09:51 UTC",
+            "Facts": "[Update 2026-11-17 09:51 UTC via Al Jazeera English]: Denmark has successfully transformed pig waste into biogas to help power its national grid, highlighting innovative alternative energy generation methods in Europe.",
+            "Macro_Context": "Diversification into agricultural and renewable biogas sources reflects ongoing European efforts to enhance energy security and local grid independence."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-17 10:00 UTC",
@@ -12758,7 +12781,38 @@
                 "_timestamp": 1794909600.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 10:00 UTC",
+            "Facts": "Quorum Cyber completed its acquisition of Ontinue to advance its vision for Microsoft-first autonomous cyber defense.",
+            "Macro_Context": "Corporate mergers and acquisitions in the cybersecurity sector."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 10:23 UTC",
+        "original_date": "2026-11-17 10:23",
+        "_timestamp": 1794911019.0,
+        "articles": [
+            {
+                "title": "VIDEO: Tanker with navigation sys. switched off catches fire",
+                "link": "https://en.mehrnews.com/news/249482/VIDEO-Tanker-with-navigation-sys-switched-off-catches-fire",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 10:23",
+                "description": "TEHRAN, Nov. 17 (MNA) – The footage shows an oil tanker with its navigation systems switched off caught fire and suffered extensive damage after striking a naval mine while operating in an unauthorized zone east of the Strait of Hormuz.",
+                "_timestamp": 1794911019.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 10:23 UTC",
+            "Facts": "An oil tanker with its navigation systems switched off caught fire and suffered extensive damage after striking a naval mine east of the Strait of Hormuz.",
+            "Macro_Context": "Geopolitical tensions and maritime security risks in Middle Eastern shipping lanes."
+        }
     }
 ]

@@ -3551,9 +3551,9 @@
         "max_dd_usd": 15.2
     },
     {
-        "main_date": "First Reported: 2026-11-15 14:55 UTC | Last Update: 2026-11-16 22:46 UTC",
+        "main_date": "First Reported: 2026-11-15 14:55 UTC | Last Update: 2026-11-17 00:42 UTC",
         "original_date": "2026-11-15 14:55",
-        "_timestamp": 1794869160.0,
+        "_timestamp": 1794876153.0,
         "articles": [
             {
                 "title": "Fascism built the AI bubble. What will burst it?",
@@ -3594,16 +3594,24 @@
                 "date": "2026-11-16 22:46",
                 "description": "The dollar recently climbed to its strongest level in a year and a half.",
                 "_timestamp": 1794869160.0
+            },
+            {
+                "title": "Analysis: The Fed's chairman sees an AI revolution coming. Now he has to figure out what it means",
+                "link": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
+                "source": "CNBC Economy",
+                "date": "2026-11-17 00:42",
+                "description": "Kevin Warsh sees AI at a turning point. He faces tough questions on jobs and interest rates.",
+                "_timestamp": 1794876153.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 22:46 UTC",
-            "Facts": "[Update 2026-11-16 22:46 UTC via MarketWatch Macro]: The U.S. dollar climbed to its strongest level in a year and a half, driven by AI-related macroeconomic dynamics that threaten to impact the broader stock market. [Update 2026-11-16 17:53 UTC via MarketWatch Macro]: Federal Reserve Chairman Kevin Warsh stated that Fed staff are in the early stages of developing scenarios on how artificial intelligence will impact the economy. [Update 2026-11-16 09:14 UTC via CNBC Tech & AI]: IMF chief Kristalina Georgieva warned that circular financing among AI companies has reached over $1 trillion, with two-thirds in debt. Fed Chair Kevin Warsh is gathering AI leaders in San Francisco to evaluate whether AI productivity can run hot without overheating the economy, a factor critical for future interest rate decisions.",
-            "Macro_Context": "The intersection of artificial intelligence investments, sovereign debt levels, and productivity gains is heavily influencing the Federal Reserve's rate path trajectory, strengthening the U.S. dollar, and impacting global macroeconomic stability."
+            "Event_Timestamp": "2026-11-17 00:42 UTC",
+            "Facts": "[Update 2026-11-17 00:42 UTC via CNBC Economy]: Kevin Warsh sees AI at a turning point, facing tough questions on jobs and interest rates. Federal Reserve staff are developing scenarios on how AI impacts the economy, while IMF chief Kristalina Georgieva warned of $1 trillion in AI circular financing. Meanwhile, the U.S. dollar climbed to a 1.5-year high amid AI-driven market shifts.",
+            "Macro_Context": "Global macroeconomic focus on artificial intelligence integration into economic modeling, debt accumulation in the tech sector, and the strengthening U.S. dollar."
         },
         "eval_status": "MISS",
         "max_dd_usd": 52.22
@@ -4581,14 +4589,14 @@
                 "_timestamp": 1794877213.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 23:35 UTC",
-            "Facts": "[Update 2026-11-16 23:35 UTC via Yahoo Finance Nasdaq]: Tech leaders want Jensen Huang to return to Nvidia following his resignation last week. Nvidia CEO Jensen Huang's recent departure and self-inflicted personal and professional troubles threaten financial services' AI boom, making bank innovation riskier and more regulated. CNBC panelists note he incinerated over $1 trillion in market trust, with recovery depending heavily on leadership changes and fragile Taiwan chip boss relationships.",
-            "Macro_Context": "Tech sector leadership turmoil impacting AI infrastructure financing and banking innovation."
+            "Event_Timestamp": "2026-11-17 01:00 UTC",
+            "Facts": "[Update 2026-11-17 01:00 UTC via Yahoo Finance Nasdaq]: Tesla board member Joe Gebbia stated that Nvidia should reinstate Jensen Huang as CEO to let investigations play out, following Huang's resignation amid corporate turmoil and substantial market value destruction.",
+            "Macro_Context": "Corporate governance updates and leadership uncertainty surrounding Nvidia following the departure of its long-standing CEO."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -5919,9 +5927,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-16 22:41 UTC",
+        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-17 01:21 UTC",
         "original_date": "2026-11-16 12:25",
-        "_timestamp": 1794868877.0,
+        "_timestamp": 1794878484.0,
         "articles": [
             {
                 "title": "Jericho settlers harass Al Jazeera reporter after stealing Palestinian home",
@@ -5970,16 +5978,24 @@
                 "date": "2026-11-16 22:41",
                 "description": "Israeli settlers shoot, wound five Palestinians near Jericho, Red Crescent says\n\n    \n    \n\n        \n    \n                Five Palestinians were shot and wounded by Israeli settlers in the village of al-Duyuk al-Tahta near Jericho in the occupied West Bank, the Palestinian Red Crescent said.",
                 "_timestamp": 1794868867.0
+            },
+            {
+                "title": "Casualties in Israeli settler attack rises",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/casualties-israeli-settler-attack-rises",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 01:21",
+                "description": "Casualties in Israeli settler attack rises\n\n    \n    \n\n        \n    \n                Israeli settlers opened fire on Palestinians in the village of al-Duyuk al-Tahta, near Jericho in the occupied West Bank, killing a 60 year-old woman.\n\nMeanwhile, more people have been reported as wounded, including a 65 year-old man among the 10 injured.&nbsp;\n\n\n&nbsp;",
+                "_timestamp": 1794878484.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 22:41 UTC",
-            "Facts": "[Update 2026-11-16 22:41 UTC via Middle East Eye]: Five Palestinians were shot and wounded by Israeli settlers in the village of al-Duyuk al-Tahta near Jericho, following home demolitions and a car ramming incident in Tuqu.",
-            "Macro_Context": "Ongoing localized clashes and violence in the occupied West Bank."
+            "Event_Timestamp": "2026-11-17 01:21 UTC",
+            "Facts": "[Update 2026-11-17 01:21 UTC via Middle East Eye]: Casualties in the West Bank rose after an Israeli settler attack in al-Duyuk al-Tahta near Jericho, resulting in the death of a 60-year-old woman and 10 injuries, following an earlier vehicle ramming incident in Tuqu that injured eight Palestinians.",
+            "Macro_Context": "Ongoing violence and rising tensions in the occupied West Bank involving Israeli settlers and Palestinians."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.2
@@ -7371,14 +7387,14 @@
                 "_timestamp": 1794877450.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 20:30 UTC",
-            "Facts": "[Update 2026-11-16 20:30 UTC via Yahoo Finance Oil]: Brent crude falls below $95 a barrel as recovering Middle Eastern exports and global supply surplus expectations outweigh ongoing shipping disruption concerns.",
-            "Macro_Context": "Energy markets focusing on supply surplus expectations and demand indicators despite regional geopolitical tensions."
+            "Event_Timestamp": "2026-11-17 01:04 UTC",
+            "Facts": "[Update 2026-11-17 01:04 UTC via Investing.com]: Oil prices fell further as markets continued to digest expectations of a global supply surplus, alongside a strong U.S. dollar, outweighing ongoing maritime security risks in the Middle East.",
+            "Macro_Context": "Energy markets trading lower due to global surplus projections and currency pressures despite geopolitical risks."
         },
         "eval_status": "HIT",
         "max_dd_usd": 1.1
@@ -11988,8 +12004,15 @@
                 "_timestamp": 1794876781.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 00:53 UTC",
+            "Facts": "[Update 2026-11-17 00:53 UTC via Yahoo Finance Nasdaq]: Berkshire Hathaway's portfolio has been overhauled for a third consecutive quarter by successor Greg Abel, reducing stakes in six stocks and investing in a major tech IPO.",
+            "Macro_Context": "Shifting institutional investment strategies and portfolio realignments at major conglomerates."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-17 00:45 UTC",
@@ -12005,7 +12028,14 @@
                 "_timestamp": 1794876311.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 00:45 UTC",
+            "Facts": "[Update 2026-11-17 00:45 UTC via Al Jazeera English]: Ukraine held peace talks with the U.S. and Europe as the conflict escalates, with Kushner reporting progress toward a deal, though Moscow stated it has not agreed to European participation in upcoming talks.",
+            "Macro_Context": "Geopolitical diplomatic negotiations and conflict escalation regarding the war in Ukraine."
+        }
     }
 ]

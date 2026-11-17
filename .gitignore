@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# fastembed model cache (restored by the workflow cache)
+.model_cache/

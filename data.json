@@ -10815,9 +10815,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 20:00 UTC",
+        "main_date": "First Reported: 2026-11-16 20:00 UTC | Last Update: 2026-11-17 00:57 UTC",
         "original_date": "2026-11-16 20:00",
-        "_timestamp": 1794859207.0,
+        "_timestamp": 1794877064.0,
         "articles": [
             {
                 "title": "Israeli opposition accuses Netanyahu of attempted ‘coup’",
@@ -10826,16 +10826,24 @@
                 "date": "2026-11-16 20:00",
                 "description": "Rivals call for investigation into reports that PM&#039;s office tried to frame Arab parties.",
                 "_timestamp": 1794859207.0
+            },
+            {
+                "title": "Watch: Arab-Israeli party denounces Netanyahu over 'attempted coup'",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/watch-arab-israeli-party-denounces-netanyahu-over-attempted-coup",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 00:57",
+                "description": "Watch: Arab-Israeli party denounces Netanyahu over 'attempted coup'\n\n    \n    \n\n        \n    \n                Israeli Joint List leader Yousef Jabareen denounced an \"attempted coup\" following media reports that outgoing Prime Minister Benjamin Netanyahu’s office had tried to frame members of an Arab-Israeli party ahead of last month’s election.\n&nbsp;\n\"We cannot simply move on as if nothing happened, given the severity of the attempted coup by th",
+                "_timestamp": 1794877064.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 20:00 UTC",
-            "Facts": "[Update 2026-11-16 20:00 UTC via Al Jazeera English]: Israeli opposition leaders have accused Prime Minister Benjamin Netanyahu of an attempted 'coup' and called for investigations into reports that the prime minister's office attempted to frame Arab parties.",
-            "Macro_Context": "Domestic political turmoil adds further complexity to the ongoing governance and security challenges in the region."
+            "Event_Timestamp": "2026-11-17 00:57 UTC",
+            "Facts": "[Update 2026-11-17 00:57 UTC via Middle East Eye]: Arab-Israeli party denounced Netanyahu over an attempted coup after reports that the prime minister's office tried to frame Arab parties. Israeli opposition figures accused Benjamin Netanyahu of an attempted coup and called for a formal investigation into the reports.",
+            "Macro_Context": "Political instability in Israel following allegations against the prime minister's office regarding election interference."
         }
     },
     {

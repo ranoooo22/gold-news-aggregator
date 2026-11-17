@@ -2122,9 +2122,9 @@
         "max_dd_usd": 13.22
     },
     {
-        "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-16 18:10 UTC",
+        "main_date": "First Reported: 2026-11-02 17:15 UTC | Last Update: 2026-11-17 11:25 UTC",
         "original_date": "2026-11-02 17:15",
-        "_timestamp": 1794852658.0,
+        "_timestamp": 1794914727.0,
         "articles": [
             {
                 "title": "Morning update",
@@ -3093,21 +3093,24 @@
                 "date": "2026-11-16 18:10",
                 "description": "TEHRAN- The Saudi’s senior security and military officials’ visit to Tehran, accompanied by their transregional partners, reveals a bitter truth: the Arab capitals of the Persian Gulf which at the outset of the war encouraged the US to confront Iran decisively due to their optimistic calculations, now find themselves as hostages of the geopolitics of the battleground. A war that was launched with the expectation of a swift victory has now exceede",
                 "_timestamp": 1794852658.0
+            },
+            {
+                "title": "Where does Iran get its weapons, and can the US really stop the flow?",
+                "link": "https://www.middleeasteye.net/explainers/iran-weapons-routes-us-iron-gate",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 11:25",
+                "description": "Where does Iran get its weapons, and can the US really stop the flow?\n\n    \n    \n\n          \n      \n      \n        Submitted by \nDaniel Tester\n on \nMon, 11/16/2026 - 11:14\n\n        \n      \n    \n      \n    \n                Task Force Iron Gate is intended to stop armaments, missile and drone parts, entering the Islamic Republic from Pakistan, Iraq and Central Asia among others\n                      \n                  \n                  \n\n  \n\n\n    ",
+                "_timestamp": 1794914727.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 18:10 UTC",
-            "Facts": "[Update 2026-11-16 18:10 UTC via Tehran Times]: Iranian officials report that regional Gulf capitals are bearing heavy costs and security risks amid stalled U.S. negotiations. | Tehran maintains readiness for multiple contingencies including economic blockades and military confrontation, keeping geopolitical tensions elevated.",
-            "Macro_Context": "Persistently high Middle East tensions and risks surrounding key energy transit corridors structurally underwrite safe-haven demand for gold.",
-            "Impact_Timing": "1-7 days",
-            "Timeframe": "Structural Weekly",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 84,
-            "Orderflow_Price_Target": "$3890.2"
+            "Event_Timestamp": "2026-11-17 11:25 UTC",
+            "Facts": "[Update 2026-11-17 11:25 UTC via Middle East Eye]: Task Force Iron Gate was launched to halt armaments, missile and drone parts entering Iran from Pakistan, Iraq, and Central Asia. Iranian Foreign Minister Seyyed Abbas Araghchi called for the immediate formation of regional dialogues to ensure security. Meanwhile, Deputy Foreign Minister Kazem Gharibabadi stated that Iran is prepared for diplomacy, an economic blockade, and military confrontation with the United States.",
+            "Macro_Context": "Geopolitical tensions in the Middle East and Persian Gulf region involving Iran, regional Arab capitals, and the United States impacting security and trade routes."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -8977,95 +8980,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 11:26 UTC",
-        "original_date": "2026-11-16 11:26",
-        "_timestamp": 1794828408.0,
-        "articles": [
-            {
-                "title": "National Cancer Institute plans to become nano-oncology hub in Islamic world",
-                "link": "https://www.tehrantimes.com/news/532199/National-Cancer-Institute-plans-to-become-nano-oncology-hub-in",
-                "source": "Tehran Times",
-                "date": "2026-11-16 11:26",
-                "description": "TEHRAN – The National Cancer Institute, affiliated with the Academic Center for Education, Culture, and Research (ACECR), aims to establish a cohesive international structure that links the research, technological, clinical, educational, and economic capacities of Islamic nations in the fields of nano-medicine and cancer so that it turns into a leading reference hub in nano-oncology in the Islamic world.",
-                "_timestamp": 1794828408.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 11:26 UTC",
-            "Facts": "Iran's National Cancer Institute aims to establish an international structure linking research, technological, and clinical capacities of Islamic nations in nano-medicine.",
-            "Macro_Context": "Medical research cooperation initiatives carry zero macro spillovers for currency markets, yields, or safe-haven assets.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3869.99"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 11:23 UTC",
-        "original_date": "2026-11-16 11:23",
-        "_timestamp": 1794828227.0,
-        "articles": [
-            {
-                "title": "Tehran ready to boost ties with Muscat in combating narcotics",
-                "link": "https://www.tehrantimes.com/news/532197/Tehran-ready-to-boost-ties-with-Muscat-in-combating-narcotics",
-                "source": "Tehran Times",
-                "date": "2026-11-16 11:23",
-                "description": "TEHRAN – Brigadier General Hossein Zolfaqari, the secretary general of the Drug Control Headquarters (DCHQ), in a meeting with Oman’s ambassador to Iran, Yarub bin Qahtan bin Nasser al Busaidi, has announced the country’s readiness to develop joint efforts with Oman in the fight against drugs and related crimes.",
-                "_timestamp": 1794828227.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 11:23 UTC",
-            "Facts": "The secretary general of Iran's Drug Control Headquarters met with Oman's ambassador to discuss developing joint efforts in combating narcotics and related crimes.",
-            "Macro_Context": "Bilateral law enforcement cooperation between regional states has no direct impact on global market liquidity, equities, or bullion.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3869.99"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 11:21 UTC",
-        "original_date": "2026-11-16 11:21",
-        "_timestamp": 1794828105.0,
-        "articles": [
-            {
-                "title": "Postwar reconstruction must prioritize green recovery, sustainable development: DOE chief",
-                "link": "https://www.tehrantimes.com/news/532195/Postwar-reconstruction-must-prioritize-green-recovery-sustainable",
-                "source": "Tehran Times",
-                "date": "2026-11-16 11:21",
-                "description": "TEHRAN – Reconstruction after the war should be viewed as an opportunity not merely to restore pre-war conditions, but to promote green recovery, advance sustainable development, and address environmentally harmful development patterns, Shina Ansari, head of the Department of Environment (DOE), has said.",
-                "_timestamp": 1794828105.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 11:21 UTC",
-            "Facts": "The head of Iran's Department of Environment stated that postwar reconstruction should prioritize green recovery, sustainable development, and environmental protection.",
-            "Macro_Context": "General environmental policy statements on theoretical postwar planning lack immediate market transmission channels for XAU/USD.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3869.99"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 3.37
-    },
-    {
         "main_date": "First Reported: 2026-11-16 10:11 UTC | Last Update: 2026-11-17 10:12 UTC",
         "original_date": "2026-11-16 10:11",
         "_timestamp": 1794910349.0,
@@ -11920,9 +11834,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 02:52 UTC | Last Update: 2026-11-17 08:17 UTC",
+        "main_date": "First Reported: 2026-11-17 02:52 UTC | Last Update: 2026-11-17 11:04 UTC",
         "original_date": "2026-11-17 02:52",
-        "_timestamp": 1794903474.0,
+        "_timestamp": 1794913496.0,
         "articles": [
             {
                 "title": "US moves to block China’s remote access to AI chips amid Nvidia scandal",
@@ -11963,6 +11877,14 @@
                 "date": "2026-11-17 08:17",
                 "description": "Investing.com -- Nvidia (NASDAQ:NVDA) has told customers it will stop selling chips to data-centre operators that rent more than half of their graphics processing units (GPUs) to Chinese companies, CNBC reported on Tuesday, as Washington moves to tighten restrictions on China’s access to U.S. artificial intelligence technology.",
                 "_timestamp": 1794903474.0
+            },
+            {
+                "title": "Nvidia (NVDA) Sends Stark Warning to Customers Over Chinese Access to Its AI Chips",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-sends-stark-warning-110456299.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 11:04",
+                "description": "Nvidia Slams the Door on Buyers Who Rent Out Over Half Their Chips to China",
+                "_timestamp": 1794913496.0
             }
         ],
         "needs_update": false,
@@ -11970,9 +11892,9 @@
             "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 08:17 UTC",
-            "Facts": "[Update 2026-11-17 08:17 UTC via Yahoo Finance Nasdaq]: Nvidia has informed customers it will halt chip sales to data-centre operators that rent more than half of their GPUs to Chinese companies. This follows the Trump administration's moves to curb remote access to advanced chips via intermediary countries like Brazil and Southeast Asian nations, alongside Nvidia warning chip buyers of legal risks.",
-            "Macro_Context": "Stricter U.S. export controls and enforcement actions are closing loopholes for Chinese access to advanced hardware, reshaping global chip supply chains."
+            "Event_Timestamp": "2026-11-17 11:04 UTC",
+            "Facts": "[Update 2026-11-17 11:04 UTC via Yahoo Finance Nasdaq]: The Trump administration is moving to limit remote access to advanced AI chips for Chinese companies, requiring US government licenses for several Southeast Asian nations and Brazil. In response to tightening U.S. Commerce Department export controls, Nvidia has warned chip buyers of legal risks and told customers it will halt sales to data-center operators that rent out more than half of their GPUs to Chinese entities.",
+            "Macro_Context": "U.S.-China technology competition, semiconductor export controls, and regulatory compliance for major chipmakers like Nvidia."
         }
     },
     {
@@ -13173,6 +13095,54 @@
             "Event_Timestamp": "2026-11-17 11:17 UTC",
             "Facts": "[Update 2026-11-17 11:17 UTC via Mehr News Agency]: Iran's deputy foreign minister for Legal and International Affairs criticized US policies against nations like Venezuela and Cuba, stating that the destiny of states is determined by the will of the people rather than the United States.",
             "Macro_Context": "Bilateral political rhetoric and diplomatic friction persist between Iran and US-led foreign policy positions."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:03 UTC",
+        "original_date": "2026-11-17 11:03",
+        "_timestamp": 1794913429.0,
+        "articles": [
+            {
+                "title": "State Street SPDR Portfolio S&P 500 (SPYM) Adds Apple and Nvidia on Nov. 13",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/state-street-spdr-portfolio-p-110349995.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 11:03",
+                "description": "The fund bought $363.6 million of stock and sold nothing, lifting 502 positions and trimming none.",
+                "_timestamp": 1794913429.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-17 11:03 UTC",
+            "Facts": "[Update 2026-11-17 11:03 UTC via Yahoo Finance Nasdaq]: The State Street SPDR Portfolio S&P 500 fund added Apple and Nvidia on November 13, purchasing $363.6 million of stock while selling nothing, lifting 502 positions without trimming any.",
+            "Macro_Context": "Institutional portfolio rebalancing and equity fund flows into major large-cap technology stocks."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:15 UTC",
+        "original_date": "2026-11-17 11:15",
+        "_timestamp": 1794914100.0,
+        "articles": [
+            {
+                "title": "Akash Unveils Akash Forwards, Bringing Commodity-Style Forward Trading to AI Compute",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/akash-unveils-akash-forwards-bringing-111500249.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 11:15",
+                "description": "LONDON, November 17, 2026--Today, Akash, the open compute platform built for the AI and inference era, unveiled Akash Forwards, a forwards marketplace that will allow AI companies to buy GPU capacity ahead of time at a fixed price, with contracts designed to settle through the delivery of physical compute. Announced by founder Greg Osuri during his keynote at Solana Breakpoint, Akash Forwards will be available first to certified participants thro",
+                "_timestamp": 1794914100.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-17 11:15 UTC",
+            "Facts": "[Update 2026-11-17 11:15 UTC via Yahoo Finance Nasdaq]: Open compute platform Akash unveiled Akash Forwards, a forwards marketplace enabling AI companies to purchase GPU capacity ahead of time at fixed prices, with contracts settling through the delivery of physical compute.",
+            "Macro_Context": "Evolution of decentralized and open compute infrastructure markets for artificial intelligence training and inference workloads."
         }
     }
 ]

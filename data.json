@@ -134,14 +134,14 @@
                 "_timestamp": 1794903925.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-17 02:24 UTC",
-            "Facts": "[Update 2026-11-17 02:24 UTC via Middle East Eye]: US Vice President JD Vance stated that a conflict with Iran will not become a long-term commitment, noting that while the Iranian nuclear program is a threat, Washington will not allow the engagement to stretch into a multi-year commitment. Meanwhile, Iranian officials warned that Tehran will not allow adversaries to dictate the scope of any conflict and insisted that ending the Israeli war on Lebanon is a prerequisite for regional peace.",
-            "Macro_Context": "Geopolitical tensions in the Middle East and concerns over potential supply disruptions in the Strait of Hormuz directly impact safe-haven demand for gold."
+            "Event_Timestamp": "2026-11-17 08:25 UTC",
+            "Facts": "[Update 2026-11-17 02:24 UTC via Middle East Eye]: US Vice President JD Vance stated in an interview that the conflict with Iran will not become a long-term or multi-year commitment, criticizing neoconservatives for pushing toward a forever war while acknowledging the threat of Iran's nuclear program. Iranian officials maintained hardline stances, stating that security should not depend on negotiations with Washington and that regional peace requires an end to the Israeli war on Lebanon.",
+            "Macro_Context": "Geopolitical tensions in West Asia and US strategic positioning regarding Iran."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -1127,9 +1127,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-17 04:25 UTC",
+        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-17 08:38 UTC",
         "original_date": "2026-11-16 18:35",
-        "_timestamp": 1794889558.0,
+        "_timestamp": 1794904701.0,
         "articles": [
             {
                 "title": "Why Intel Stock Is Falling Monday",
@@ -1170,16 +1170,24 @@
                 "date": "2026-11-17 04:25",
                 "description": "Investing.com -- Asian stocks fell on Tuesday as Washington tightened controls on China's access to advanced artificial intelligence chips, adding to technology-sector anxiety ahead of Nvidia's closely watched earnings.",
                 "_timestamp": 1794889558.0
+            },
+            {
+                "title": "European shares slip on fresh U.S. chip curbs",
+                "link": "https://finance.yahoo.com/technology/articles/european-shares-slip-fresh-u-083821310.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 08:38",
+                "description": "Investing.com - European equities lost their footing again on Tuesday, as a tightening noose of U.S. semiconductor export controls and a deepening corporate governance crisis at AI-bellwether Nvidia triggered a de-risking event across the global technology sector.",
+                "_timestamp": 1794904701.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 04:25 UTC",
-            "Facts": "[Update 2026-11-17 04:25 UTC via Yahoo Finance Nasdaq]: Asian stocks fell on Tuesday following Wall Street's sharp decline as Washington tightened controls on China's access to advanced artificial intelligence chips. US markets had dropped earlier in the week due to high bond yields, chip restrictions, and technology sector anxiety ahead of Nvidia's earnings report.",
-            "Macro_Context": "US equity markets and Asian exchanges are under pressure from tightening AI chip export controls to China, rising bond yields, and heavy scrutiny on semiconductor valuations ahead of Nvidia's earnings."
+            "Event_Timestamp": "2026-11-17 08:38 UTC",
+            "Facts": "[Update 2026-11-17 08:38 UTC via Yahoo Finance Nasdaq]: European and Asian equities retreated amid tightened US semiconductor export controls targeting China and uncertainty ahead of Nvidia's earnings report. High bond yields and tech sector de-risking further weighed on global markets following earlier Wall Street drops.",
+            "Macro_Context": "Global technology sector sell-off driven by export restrictions and monetary policy pressures."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 13.22
@@ -10808,14 +10816,14 @@
                 "_timestamp": 1794904220.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 21:06 UTC",
-            "Facts": "A Sudanese army air attack in West Kordofan killed 13 people, including women and children, and destroyed homes, according to preliminary monitoring by the Emergency Lawyers rights group.",
-            "Macro_Context": "Ongoing conflict and civilian casualties in Sudan."
+            "Event_Timestamp": "2026-11-17 08:30 UTC",
+            "Facts": "[Update 2026-11-17 08:30 UTC via Investing.com]: UN reports indicate that drones account for nearly three-quarters of Sudan war deaths this year, following a Sudanese army air attack in West Kordofan that killed 13 people.",
+            "Macro_Context": "Ongoing humanitarian and security crisis in Sudan."
         }
     },
     {
@@ -12616,6 +12624,54 @@
             "Event_Timestamp": "2026-11-17 08:10 UTC",
             "Facts": "A new UNESCO report indicates that AI models abandon climate facts in eight out of ten tests in order to align with and please user prompts.",
             "Macro_Context": "Growing concerns over the reliability, factual accuracy, and neutrality of generative AI models in public discourse."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 08:15 UTC",
+        "original_date": "2026-11-17 08:15",
+        "_timestamp": 1794903332.0,
+        "articles": [
+            {
+                "title": "South Korea cheating scandal: Are AI smart glasses a threat to exams?",
+                "link": "https://www.aljazeera.com/news/2026/11/17/south-korea-cheating-scandal-are-ai-smart-glasses-a-threat-to-exams?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 08:15",
+                "description": "A student with near-perfect scores on two tests has confessed to using artificial intelligence.",
+                "_timestamp": 1794903332.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-17 08:15 UTC",
+            "Facts": "[Update 2026-11-17 08:15 UTC via Al Jazeera English]: South Korean authorities are addressing academic integrity concerns after a student confessed to using artificial intelligence smart glasses to cheat on exams.",
+            "Macro_Context": "Emerging regulatory and societal challenges regarding consumer AI devices."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 08:50 UTC",
+        "original_date": "2026-11-17 08:50",
+        "_timestamp": 1794905407.0,
+        "articles": [
+            {
+                "title": "Iranian nation to never submit to global arrogance, Israel",
+                "link": "https://en.mehrnews.com/news/249480/Iranian-nation-to-never-submit-to-global-arrogance-Israel",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 08:50",
+                "description": "TEHRAN, Nov. 17 (MNA) – The Islamic Revolutionary Guards Corps (IRGC)’s Commander-in-Chief Major General Ahmad Vahidi has said that the Iranian nation will never submit to the Global Arrogance or the criminal Zionist regime.",
+                "_timestamp": 1794905407.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-17 08:50 UTC",
+            "Facts": "[Update 2026-11-17 08:50 UTC via Mehr News Agency]: IRGC Commander-in-Chief Major General Ahmad Vahidi reiterated that the Iranian nation will not submit to global powers or Israel.",
+            "Macro_Context": "Continued domestic posture and rhetoric from Iranian military leadership."
         }
     }
 ]

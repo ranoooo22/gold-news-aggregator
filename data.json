@@ -1054,6 +1054,14 @@
                 "date": "2026-11-17 09:47",
                 "description": "Investors have been weighing the fallout from former CEO Jensen Huang's resignation.",
                 "_timestamp": 1794908879.0
+            },
+            {
+                "title": "Nvidia Stock Fell Below $170. Here’s Why It Could Be a Screaming Buy.",
+                "link": "https://www.fool.com/investing/2026/11/17/nvidia-stock-fell-below-170-heres-why-it-could-be-a-screaming-buy/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 09:37",
+                "description": "Nvidia lost its CEO and its crown, but the sell-off could be a gift for patient investors.",
+                "_timestamp": 1794908222.0
             }
         ],
         "needs_update": false,
@@ -1062,8 +1070,8 @@
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
             "Event_Timestamp": "2026-11-17 09:47 UTC",
-            "Facts": "[Update 2026-11-17 09:47 UTC via CNBC Tech & AI]: Nvidia shares are down slightly after days of decline ahead of earnings as investors weigh fallout from former CEO Jensen Huang's resignation. GDS Holdings plunged 14.69 percent following broader market declines tied to Nvidia and AI sector uncertainties. Micron and SK hynix also fell ahead of Nvidia's upcoming earnings report.",
-            "Macro_Context": "Broader US equity markets and semiconductor stocks experienced volatility driven by uncertainty around Nvidia's leadership transition and the health of the artificial intelligence sector."
+            "Facts": "[Update 2026-11-17 09:47 UTC via CNBC Tech & AI]: Nvidia shares are down slightly following days of decline ahead of earnings as investors weigh the fallout from former CEO Jensen Huang's resignation. Nvidia stock fell below $170, while peers like Micron and Advanced Micro Devices face shifting market dynamics.",
+            "Macro_Context": "Tech sector volatility driven by leadership changes at Nvidia and impending corporate earnings reports."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -8962,9 +8970,9 @@
         "max_dd_usd": 16.16
     },
     {
-        "main_date": "First Reported: 2026-11-16 10:11 UTC",
+        "main_date": "First Reported: 2026-11-16 10:11 UTC | Last Update: 2026-11-17 09:42 UTC",
         "original_date": "2026-11-16 10:11",
-        "_timestamp": 1794823915.0,
+        "_timestamp": 1794908549.0,
         "articles": [
             {
                 "title": "European gas slips as U.S. shipping waivers override Middle East turmoil",
@@ -8973,21 +8981,24 @@
                 "date": "2026-11-16 10:11",
                 "description": "",
                 "_timestamp": 1794823915.0
+            },
+            {
+                "title": "European gas futures climb as recovering oil exports overshadow shipping attacks",
+                "link": "https://www.investing.com/news/commodities-news/european-gas-futures-climb-as-recovering-oil-exports-overshadow-shipping-attacks-5031845",
+                "source": "Investing.com",
+                "date": "2026-11-17 09:42",
+                "description": "",
+                "_timestamp": 1794908549.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 10:11 UTC",
-            "Facts": "European natural gas benchmarks declined after new U.S. shipping waivers alleviated immediate fears regarding Middle East energy supply disruptions. The regulatory action tempered short-term geopolitical risk premiums across regional energy markets.",
-            "Macro_Context": "Softening energy supply risk premiums and falling crude prices (-3.01%) reduce immediate inflation pressure, slightly suppressing safe-haven demand for gold.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24-48h",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 62,
-            "Orderflow_Price_Target": "3860.85"
+            "Event_Timestamp": "2026-11-17 09:42 UTC",
+            "Facts": "[Update 2026-11-17 09:42 UTC via Investing.com]: European gas futures climbed as recovering oil exports overshadowed ongoing shipping attacks in the region.",
+            "Macro_Context": "Fluctuations in European natural gas markets driven by geopolitical shipping disruptions and shifting export recoveries."
         },
         "eval_status": "HIT",
         "max_dd_usd": 0.68
@@ -12498,9 +12509,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 08:12 UTC",
+        "main_date": "First Reported: 2026-11-17 08:12 UTC | Last Update: 2026-11-17 09:54 UTC",
         "original_date": "2026-11-17 08:12",
-        "_timestamp": 1794903126.0,
+        "_timestamp": 1794909281.0,
         "articles": [
             {
                 "title": "Ukraine drone attack kills two in Crimea as Kyiv targets bridge to Russia",
@@ -12509,16 +12520,24 @@
                 "date": "2026-11-17 08:12",
                 "description": "Moscow-installed governor says traffic suspended after second attack on bridge in two days.",
                 "_timestamp": 1794903126.0
+            },
+            {
+                "title": "Ukraine strikes Crimean bridge for second day as Russia pounds Kyiv bridges",
+                "link": "https://www.investing.com/news/commodities-news/ukraine-strikes-crimean-bridge-for-second-day-as-russia-pounds-kyiv-bridges-5032113",
+                "source": "Investing.com",
+                "date": "2026-11-17 09:54",
+                "description": "",
+                "_timestamp": 1794909281.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-17 08:12 UTC",
-            "Facts": "A Ukrainian drone attack in Crimea killed two people and targeted a bridge to Russia, prompting Moscow-installed authorities to suspend traffic following the second attack in two days.",
-            "Macro_Context": "Geopolitical tensions in Eastern Europe continue to pose episodic supply and safe-haven catalysts for commodities such as gold and crude oil."
+            "Event_Timestamp": "2026-11-17 09:54 UTC",
+            "Facts": "[Update 2026-11-17 09:54 UTC via Investing.com]: Ukraine struck the Crimean bridge for the second consecutive day while Russia retaliated by pounding bridges in Kyiv, following an earlier drone attack that killed two in Crimea and prompted traffic suspension.",
+            "Macro_Context": "Escalating geopolitical conflict in Eastern Europe impacting regional infrastructure and safe-haven asset dynamics."
         }
     },
     {

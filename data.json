@@ -1196,14 +1196,14 @@
                 "_timestamp": 1794905769.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
             "Event_Timestamp": "2026-11-17 08:56 UTC",
-            "Facts": "[Update 2026-11-17 08:56 UTC via Yahoo Finance Gold]: FTSE 100 falls as miners slide and new U.S. chip curbs outweigh UK jobs data showing unemployment unexpectedly dropping to 4.6%. Asian and European shares also slid as Washington tightened controls on China's access to advanced AI chips, triggering a global tech sector de-risking event ahead of Nvidia's earnings.",
-            "Macro_Context": "Global equities faced downward pressure driven by tightened U.S. semiconductor export controls targeting China, impacting technology and mining sectors across Asia and Europe."
+            "Facts": "[Update 2026-11-17 08:56 UTC via Yahoo Finance Gold]: British stocks fell on Tuesday as a slide in mining shares and new U.S. curbs on China’s access to advanced AI chips weighed, even as data showed UK unemployment unexpectedly fell to 4.6%.; [Update 2026-11-17 08:38 UTC via Yahoo Finance Nasdaq]: European equities lost their footing on Tuesday, as U.S. semiconductor export controls and a corporate governance crisis at Nvidia triggered de-risking across the tech sector. Global markets retreated as the U.S. tightened restrictions on advanced AI chip access for China ahead of Nvidia earnings.",
+            "Macro_Context": "Global equities decline as semiconductor trade curbs and technology sector jitters trigger widespread risk aversion."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 13.22
@@ -8663,9 +8663,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 12:15 UTC | Last Update: 2026-11-17 07:58 UTC",
+        "main_date": "First Reported: 2026-11-16 12:15 UTC | Last Update: 2026-11-17 09:10 UTC",
         "original_date": "2026-11-16 12:15",
-        "_timestamp": 1794902280.0,
+        "_timestamp": 1794906643.0,
         "articles": [
             {
                 "title": "Sranan Gold Discovers New Gold Zone at Lawatino 300 m Northeast of the 101 Zone",
@@ -8682,16 +8682,24 @@
                 "date": "2026-11-17 07:58",
                 "description": "Arkadian Strategic Metals PLC (AIM:AKN, OTC:ALBAF) is processing a further 1.7 tonnes of material from the floor around Shaft 2 at its Clogau-St David’s mine in north Wales after recovering 0.81 grams of gold from an initial 100kg sample. The first sample would yield 8.1 grams of gold per tonne...",
                 "_timestamp": 1794902280.0
+            },
+            {
+                "title": "Arkadian Strategic Metals, ACG, Pantheon Resources, Buccaneer Energy, IXICO, Allergy Therapeutics",
+                "link": "https://finance.yahoo.com/video/arkadian-strategic-metals-acg-pantheon-091043923.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 09:10",
+                "description": "Arkadian Strategic Metals PLC (AIM:AKN, OTC:ALBAF) is processing a further 1.7 tonnes of floor material at its Clogau-St David’s gold mine in north Wales. An initial 100kg sample recovered 0.81 grams of gold. ACG Metals Ltd (LSE:ACG, OTC:ACGAF) has issued $325 million of bonds to repay its existing $200 million bond. The balance will help fund its Gediktepe copper mine in Türkiye. Pantheon Resources PLC (AIM:PANR, OTCQX:PTHRF) has raised £7.5 mil",
+                "_timestamp": 1794906643.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 07:58 UTC",
-            "Facts": "[Update 2026-11-17 07:58 UTC via Yahoo Finance Gold]: Arkadian Strategic Metals PLC is processing an additional 1.7 tonnes of material from Shaft 2 at the Clogau-St David's mine in north Wales following a successful initial 100kg sample yielding 8.1 grams per tonne. Sranan Gold Corp. announced the discovery of the new RB Zone gold mineralization showing at its Lawatino Gold Project in southeastern Suriname, located 300 metres northeast of the 101 Zone.",
-            "Macro_Context": "Mining exploration updates and minor project developments across global junior gold miners."
+            "Event_Timestamp": "2026-11-17 09:10 UTC",
+            "Facts": "[Update 2026-11-17 09:10 UTC via Yahoo Finance Gold]: Arkadian Strategic Metals is processing an additional 1.7 tonnes of material at its Clogau-St David's mine following initial positive gold recoveries. Meanwhile, ACG Metals issued $325 million in bonds to refinance debt and fund its Gediktepe copper mine, and Pantheon Resources raised £7.5 million.; [Update 2026-11-16 12:15 UTC via Yahoo Finance Gold]: Sranan Gold discovered a new gold mineralization zone, the RB Zone, 300 meters northeast of the 101 Zone at its Lawatino Gold Project in Suriname.",
+            "Macro_Context": "Mining and exploration updates highlight ongoing junior gold discoveries and strategic capital raising across resource firms."
         }
     },
     {
@@ -12683,7 +12691,14 @@
                 "_timestamp": 1794906697.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-17 09:11 UTC",
+            "Facts": "[Update 2026-11-17 09:11 UTC via Mehr News Agency]: Iran Armed Forces Chief of Staff, Major General Ali Abdollahi, stated that Iranian people and fighters successfully overcame war challenges through steadfastness and resistance.",
+            "Macro_Context": "Geopolitical rhetoric from Iranian military leadership emphasizing national resilience and defense capability."
+        }
     }
 ]

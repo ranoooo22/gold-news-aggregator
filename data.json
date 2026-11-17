@@ -9212,9 +9212,9 @@
         "max_dd_usd": 8.9
     },
     {
-        "main_date": "First Reported: 2026-11-15 02:07 UTC | Last Update: 2026-11-17 07:06 UTC",
+        "main_date": "First Reported: 2026-11-15 02:07 UTC | Last Update: 2026-11-17 07:25 UTC",
         "original_date": "2026-11-15 02:07",
-        "_timestamp": 1794899190.0,
+        "_timestamp": 1794900339.0,
         "articles": [
             {
                 "title": "Bahrain's ministry of interior issues 'hazard' alert, urges citizens to stay calm",
@@ -9295,16 +9295,24 @@
                 "date": "2026-11-17 07:06",
                 "description": "Bahrain issues alert of potential threat \n\n    \n    \n\n        \n    \n                Bahrain's interior ministry has warned of a potential danger on Tuesday, urging its residents to seek safety without specifying the nature of the threat.",
                 "_timestamp": 1794899190.0
+            },
+            {
+                "title": "IRGC attacks U.S. radar system at Sheikh Isa base in Bahrain",
+                "link": "https://en.mehrnews.com/news/249478/IRGC-attacks-U-S-radar-system-at-Sheikh-Isa-base-in-Bahrain",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 07:25",
+                "description": "TEHRAN, Nov. 17 (MNA) – The IRGC said its combat drones targeted a U.S. radar system at Sheikh Isa base in Bahrain, saying the attack was a response to continued U.S. drone violations of Iran's airspace.",
+                "_timestamp": 1794900339.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-17 07:06 UTC",
-            "Facts": "[Update 2026-11-17 07:06 UTC via Middle East Eye]: Bahrain's interior ministry issued an alert warning of potential danger and urging residents to seek safety, while a separate drone strike targeted an Iranian separatist group headquarters in Iraq's Kurdistan region. This follows earlier accusations by Bahrain against Iran for attacks and subsequent US Embassy security warnings.",
-            "Macro_Context": "Heightened geopolitical tensions in the Middle East involving Iran, regional proxies, and security threats affecting Gulf states, which typically support safe-haven demand for gold."
+            "Event_Timestamp": "2026-11-17 07:25 UTC",
+            "Facts": "[Update 2026-11-17 07:25 UTC via Mehr News Agency]: The IRGC stated its combat drones targeted a U.S. radar system at the Sheikh Isa base in Bahrain in retaliation for alleged U.S. drone violations of Iranian airspace. [Update 2026-11-17 07:06 UTC via Middle East Eye]: Bahrain's interior ministry issued an alert warning of potential danger and urging residents to seek safety. [Update 2026-11-17 04:07 UTC via Mehr News Agency]: A drone also targeted the headquarters of an Iranian separatist group in Dokan, Iraq's Kurdistan region. These events follow the U.S. Embassy in Bahrain urging citizens on November 16 to exercise heightened vigilance due to threats from Iranian-supported groups.",
+            "Macro_Context": "Rising geopolitical tensions and direct military actions in the Persian Gulf region threaten critical infrastructure and regional stability, influencing safe-haven asset demand."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -12443,6 +12451,30 @@
             "Event_Timestamp": "2026-11-17 06:53 UTC",
             "Facts": "[Update 2026-11-17 06:53 UTC via Al Jazeera English]: Political analysis debates whether Israeli Prime Minister Benjamin Netanyahu will lose power amidst mounting domestic and regional pressures, noting that while he has historically survived numerous political crises, current conditions present unique challenges.",
             "Macro_Context": "Israeli domestic politics and regional leadership stability."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 07:11 UTC",
+        "original_date": "2026-11-17 07:11",
+        "_timestamp": 1794899486.0,
+        "articles": [
+            {
+                "title": "What Does Woodside Energy Group (ASX:WDS) Face In A Global Oil Surplus?",
+                "link": "https://finance.yahoo.com/energy/articles/does-woodside-energy-group-asx-071126078.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 07:11",
+                "description": "Woodside Energy Group (ASX:WDS) faces a global oil supply surplus, as producers are now expected to exceed demand through at least 2027. The International Energy Agency cites recovering Middle East exports and softer Chinese consumption as key drivers of the emerging surplus outlook. A sustained imbalance between global oil supply and demand could affect Woodside's future revenue mix and its oil linked operating cash flows. This prospect of a pro",
+                "_timestamp": 1794899486.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-17 07:11 UTC",
+            "Facts": "[Update 2026-11-17 07:11 UTC via Yahoo Finance Oil]: Woodside Energy Group and other global producers face an emerging global oil supply surplus, with supply expected to exceed demand through at least 2027 according to the International Energy Agency. Recovering Middle East exports and softer Chinese consumption are cited as key drivers.",
+            "Macro_Context": "Persistent global oil surpluses and weaker consumption trends weigh on energy sector revenue mixes and operating cash flows."
         }
     }
 ]

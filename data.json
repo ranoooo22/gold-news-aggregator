@@ -1127,9 +1127,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-17 08:38 UTC",
+        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-17 08:56 UTC",
         "original_date": "2026-11-16 18:35",
-        "_timestamp": 1794904701.0,
+        "_timestamp": 1794905769.0,
         "articles": [
             {
                 "title": "Why Intel Stock Is Falling Monday",
@@ -1178,9 +1178,25 @@
                 "date": "2026-11-17 08:38",
                 "description": "Investing.com - European equities lost their footing again on Tuesday, as a tightening noose of U.S. semiconductor export controls and a deepening corporate governance crisis at AI-bellwether Nvidia triggered a de-risking event across the global technology sector.",
                 "_timestamp": 1794904701.0
+            },
+            {
+                "title": "FTSE 100 today: Stocks fall as miners slide, U.S. chip curbs outweigh UK jobs data",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-fall-085609114.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 08:56",
+                "description": "Investing.com -- British stocks fell on Tuesday as a slide in mining shares and new U.S. curbs on China’s access to advanced AI chips weighed, even as data showed UK unemployment unexpectedly fell to 4.6%.",
+                "_timestamp": 1794905769.0
+            },
+            {
+                "title": "FTSE 100 today: Stocks fall as miners slide, U.S. chip curbs outweigh UK jobs data",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/ftse-100-today-stocks-fall-085609114.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 08:56",
+                "description": "Investing.com -- British stocks fell on Tuesday as a slide in mining shares and new U.S. curbs on China’s access to advanced AI chips weighed, even as data showed UK unemployment unexpectedly fell to 4.6%.",
+                "_timestamp": 1794905769.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
@@ -12644,5 +12660,22 @@
             "Facts": "[Update 2026-11-17 08:50 UTC via Mehr News Agency]: IRGC Commander-in-Chief Major General Ahmad Vahidi reiterated that the Iranian nation will not submit to global powers or Israel.",
             "Macro_Context": "Continued domestic posture and rhetoric from Iranian military leadership."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 09:11 UTC",
+        "original_date": "2026-11-17 09:11",
+        "_timestamp": 1794906697.0,
+        "articles": [
+            {
+                "title": "Iran’s Armed Forces overcome war challenges via steadfastness",
+                "link": "https://en.mehrnews.com/news/249481/Iran-s-Armed-Forces-overcome-war-challenges-via-steadfastness",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 09:11",
+                "description": "TEHRAN, Nov. 17 (MNA) – Iran Armed Forces Chief of Staff, Major General Ali Abdollahi has said Iranian people and the country’s fighters had successfully overcome the challenges of war through steadfastness and resistance, paving the way for victory.",
+                "_timestamp": 1794906697.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

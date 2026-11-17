@@ -147,9 +147,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-17 06:49 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-17 09:47 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794898178.0,
+        "_timestamp": 1794908879.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -1046,6 +1046,14 @@
                 "date": "2026-11-17 06:49",
                 "description": "Key TakeawaysMicron and SK hynix fell on Nov. 16 ahead of Nvidia’s earnings, even after Micron earned a record $74.",
                 "_timestamp": 1794898178.0
+            },
+            {
+                "title": "Nvidia shares down slightly after days of decline ahead of earnings",
+                "link": "https://www.cnbc.com/2026/11/17/nvidia-stock-earnings-jensen-huang-resignation.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-17 09:47",
+                "description": "Investors have been weighing the fallout from former CEO Jensen Huang's resignation.",
+                "_timestamp": 1794908879.0
             }
         ],
         "needs_update": false,
@@ -1053,9 +1061,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 06:49 UTC",
-            "Facts": "[Update 2026-11-17 06:49 UTC via Yahoo Finance Nasdaq]: Micron and SK hynix shares fell ahead of Nvidia's earnings. Semiconductor and AI-linked stocks experienced a broad sell-off following the unexpected resignation of Nvidia CEO Jensen Huang due to personal controversy reports, impacting companies like Sandisk, GDS Holdings, and AMD.",
-            "Macro_Context": "Tech sector volatility driven by sudden corporate leadership changes and sentiment shifts in artificial intelligence hardware markets."
+            "Event_Timestamp": "2026-11-17 09:47 UTC",
+            "Facts": "[Update 2026-11-17 09:47 UTC via CNBC Tech & AI]: Nvidia shares are down slightly after days of decline ahead of earnings as investors weigh fallout from former CEO Jensen Huang's resignation. GDS Holdings plunged 14.69 percent following broader market declines tied to Nvidia and AI sector uncertainties. Micron and SK hynix also fell ahead of Nvidia's upcoming earnings report.",
+            "Macro_Context": "Broader US equity markets and semiconductor stocks experienced volatility driven by uncertainty around Nvidia's leadership transition and the health of the artificial intelligence sector."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -3674,9 +3682,9 @@
         "max_dd_usd": 15.2
     },
     {
-        "main_date": "First Reported: 2026-11-15 14:55 UTC | Last Update: 2026-11-17 00:42 UTC",
+        "main_date": "First Reported: 2026-11-15 14:55 UTC | Last Update: 2026-11-17 09:33 UTC",
         "original_date": "2026-11-15 14:55",
-        "_timestamp": 1794876153.0,
+        "_timestamp": 1794908026.0,
         "articles": [
             {
                 "title": "Fascism built the AI bubble. What will burst it?",
@@ -3725,16 +3733,24 @@
                 "date": "2026-11-17 00:42",
                 "description": "Kevin Warsh sees AI at a turning point. He faces tough questions on jobs and interest rates.",
                 "_timestamp": 1794876153.0
+            },
+            {
+                "title": "Head of China's Baidu warns of AI 'bubble' ahead of APEC talks",
+                "link": "https://finance.yahoo.com/technology/ai/articles/head-chinas-baidu-warns-ai-093346870.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 09:33",
+                "description": "Artificial intelligence adoption is not boosting profits for most companies, the head of Chinese internet giant Baidu said Tuesday, ahead of talks between Donald Trump and Xi Jinping expected to address the risks posed by the sensitive technology.\"Can we say that companies are seeing higher revenues or increased profits after adopting AI?\"",
+                "_timestamp": 1794908026.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 00:42 UTC",
-            "Facts": "[Update 2026-11-17 00:42 UTC via CNBC Economy]: Kevin Warsh sees AI at a turning point, facing tough questions on jobs and interest rates. Federal Reserve staff are developing scenarios on how AI impacts the economy, while IMF chief Kristalina Georgieva warned of $1 trillion in AI circular financing. Meanwhile, the U.S. dollar climbed to a 1.5-year high amid AI-driven market shifts.",
-            "Macro_Context": "Global macroeconomic focus on artificial intelligence integration into economic modeling, debt accumulation in the tech sector, and the strengthening U.S. dollar."
+            "Event_Timestamp": "2026-11-17 09:33 UTC",
+            "Facts": "[Update 2026-11-17 09:33 UTC via Yahoo Finance Nasdaq]: Baidu's head warned of an AI bubble ahead of APEC talks, noting that AI adoption is not boosting profits for most companies. This follows Fed Chairman Kevin Warsh's statements that Federal Reserve staff are developing scenarios regarding how artificial intelligence will impact the economy, labor markets, and interest rates.",
+            "Macro_Context": "The US dollar reached a multi-year high amid macroeconomic integration of AI economic scenarios, while international tech executives expressed caution over monetization and tech valuations."
         },
         "eval_status": "MISS",
         "max_dd_usd": 52.22
@@ -9006,133 +9022,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-12 00:00 UTC | Last Update: 2026-11-16 09:51 UTC",
-        "original_date": "2026-11-12 00:00",
-        "_timestamp": 1794822697.0,
-        "articles": [
-            {
-                "title": "Iran war live: Tehran warns of wider retaliation; Israel kills in Gaza",
-                "link": "https://www.aljazeera.com/news/liveblog/2026/11/12/iran-war-live-tehran-warns-of-wider-retaliation-israel-kills-in-gaza?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-12 00:00",
-                "description": "Israel orders military to step up preparations for possible attack on Iran as Tehran says it will retaliate if attacked.",
-                "_timestamp": 1794441644.0
-            },
-            {
-                "title": "Iran warns of expanded retaliation as Israel reportedly readies to attack",
-                "link": "https://www.aljazeera.com/news/2026/11/12/iran-warns-of-expanded-retaliation-as-israel-reportedly-readies-to-attack?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-12 03:50",
-                "description": "Israeli security cabinet orders military to step up preparations for a possible attack on Iran, Israeli media reports.",
-                "_timestamp": 1794455442.0
-            },
-            {
-                "title": "Tehran warns countries against backing US war on Iran",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/tehran-warns-countries-against-backing-us-war-iran",
-                "source": "Middle East Eye",
-                "date": "2026-11-12 19:13",
-                "description": "Tehran warns countries against backing US war on Iran\n\n    \n    \n\n        \n    \n                Iranian Foreign Ministry spokesperson Esmaeil Baghaei warned countries against taking part in US attacks or “economic terrorism” against Iran.\n\nBaghaei said in a post on X&nbsp;that the warning covered direct and indirect support, including sending naval forces or providing military and logistical equipment and personnel.\n\nAny such involvement, he said",
-                "_timestamp": 1794510805.0
-            },
-            {
-                "title": "Iran war live: Trump says Gulf allies urged pause in Iran strikes",
-                "link": "https://www.aljazeera.com/news/liveblog/2026/11/13/iran-war-live-riyadh-china-discuss-houthis-as-group-claims-aramco-attacks?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-13 00:00",
-                "description": "Speaking at the White House, Trump says Gulf countries asked him to hold off on further attacks against Iran.",
-                "_timestamp": 1794528026.0
-            },
-            {
-                "title": "Iran warns states against assisting US-Israeli aggression, says they will bear full responsibility",
-                "link": "https://www.tehrantimes.com/news/532110/Iran-warns-states-against-assisting-US-Israeli-aggression-says",
-                "source": "Tehran Times",
-                "date": "2026-11-13 17:48",
-                "description": "TEHRAN – Iranian Foreign Ministry Spokesman Esmaeil Baqaei has warned that any country providing direct or indirect support for US aggression against Iran, including military and logistical assistance or the deployment of naval forces, will be considered a participant in the aggression and held fully responsible for its consequences.",
-                "_timestamp": 1794592114.0
-            },
-            {
-                "title": "Iran war live: Fighting grips Yemen as Qatar, Turkiye sign defence deal",
-                "link": "https://www.aljazeera.com/news/liveblog/2026/11/14/iran-war-live-fighting-grips-yemen-as-qatar-turkiye-sign-defence-deal?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-14 00:00",
-                "description": "Doha, Ankara agreement pledges joint action against external attacks as fighting in Yemen displaces civilians.",
-                "_timestamp": 1794614425.0
-            },
-            {
-                "title": "Iran warns of 'immediate response' to any US-Israeli attack, slams Gulf nations",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-immediate-response-any-us-israeli-attack-slams-gulf-nations",
-                "source": "Middle East Eye",
-                "date": "2026-11-14 01:32",
-                "description": "Iran warns of 'immediate response' to any US-Israeli attack, slams Gulf nations\n\n    \n    \n\n        \n    \n                Iran has said that&nbsp;any renewed US-Israeli attacks on its territory would trigger an immediate response, while accusing Bahrain and other Gulf countries of facilitating Washington’s military operations against Tehran.\n\n“Any renewed war of aggression by the United States and the Israeli regime will be met with an immediate ",
-                "_timestamp": 1794619974.0
-            },
-            {
-                "title": "Iran war; turning point for World Order, US hegemony declines",
-                "link": "https://en.mehrnews.com/news/249389/Iran-war-turning-point-for-World-Order-US-hegemony-decline",
-                "source": "Mehr News Agency",
-                "date": "2026-11-14 11:36",
-                "description": "TEHRAN, Nov. 14 (MNA) – A military aggression imposed by US and Israel against Iran is not merely a military confrontation in West Asia; rather, it serves as a test of credibility of American power, future of deterrence, and structure of world order.",
-                "_timestamp": 1794656200.0
-            },
-            {
-                "title": "Iran war live: Israel vows Gaza ‘offensive policy’ despite caretaker status",
-                "link": "https://www.aljazeera.com/news/liveblog/2026/11/15/iran-war-live-israel-vows-gaza-offensive-policy-despite-caretaker-status?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 00:00",
-                "description": "Israel has pledged to continue its &#039;offensive policy&#039; on Gaza, as fighting in Yemen grips the region.",
-                "_timestamp": 1794700808.0
-            },
-            {
-                "title": "Iran blasts intl. human rights bodies’ silence on Gaza",
-                "link": "https://en.mehrnews.com/news/249420/Iran-blasts-intl-human-rights-bodies-silence-on-Gaza",
-                "source": "Mehr News Agency",
-                "date": "2026-11-15 13:16",
-                "description": "TEHRAN, Nov. 15 (MNA) – Iran’s High Council for Human Rights has condemned the silence and inaction of international human rights bodies over the continued Israeli crimes in Gaza, calling for an end to impunity and for exercising human rights there.",
-                "_timestamp": 1794748606.0
-            },
-            {
-                "title": "IHR Council condemns continued Israeli attacks on Gaza",
-                "link": "https://www.tehrantimes.com/news/532190/IHR-Council-condemns-continued-Israeli-attacks-on-Gaza",
-                "source": "Tehran Times",
-                "date": "2026-11-15 17:56",
-                "description": "TEHRAN – Iran’s High Council for Human Rights has condemned continued Israeli attacks and violations in the Gaza Strip, denouncing the silence and inaction of international human rights bodies amid the ongoing humanitarian crisis.",
-                "_timestamp": 1794765419.0
-            },
-            {
-                "title": "Gaza death toll surpasses 1,600 since October 2025 ceasefire",
-                "link": "https://en.mehrnews.com/news/249435/Gaza-death-toll-surpasses-1-600-since-October-2025-ceasefire",
-                "source": "Mehr News Agency",
-                "date": "2026-11-16 04:05",
-                "description": "TEHRAN, Nov. 16 (MNA) – Gaza’s Health Ministry reported four more deaths on Sunday, taking the number of people killed since the October 11, 2025, “ceasefire” to 1,647.",
-                "_timestamp": 1794801931.0
-            },
-            {
-                "title": "Iran not need to imitate terror methods to defeat aggressor",
-                "link": "https://en.mehrnews.com/news/249447/Iran-not-need-to-imitate-terror-methods-to-defeat-aggressor",
-                "source": "Mehr News Agency",
-                "date": "2026-11-16 09:51",
-                "description": "TEHRAN, Nov. 16 (MNA) – Criticizing media psychological warfare waged by Israel against Iran, foreign ministry spokesman stressed Iran has neither need to resort to terror violence, like its enemies do, nor any reason to disrupt people's daily lives.",
-                "_timestamp": 1794822697.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 09:51 UTC",
-            "Facts": "[Update 2026-11-16 09:51 UTC via Mehr News Agency]: Iran's foreign ministry announced that Tehran does not need to adopt terror tactics to counter regional aggressions as Gaza casualties continue to rise. This follows earlier reports of Israeli military preparations for potential strikes against Iranian targets.",
-            "Macro_Context": "Sustained geopolitical friction in the Middle East maintains an underlying safe-haven bid for XAU/USD despite broader risk-asset fluctuations.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "24-48h",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 59,
-            "Orderflow_Price_Target": "3880.31"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 92.61
-    },
-    {
         "main_date": "First Reported: 2026-11-16 08:40 UTC | Last Update: 2026-11-16 21:51 UTC",
         "original_date": "2026-11-16 08:40",
         "_timestamp": 1794865877.0,
@@ -9347,9 +9236,9 @@
         "max_dd_usd": 54.84
     },
     {
-        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-17 01:35 UTC",
+        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-17 09:37 UTC",
         "original_date": "2026-11-12 13:02",
-        "_timestamp": 1794879300.0,
+        "_timestamp": 1794908248.0,
         "articles": [
             {
                 "title": "Musk Says it Would be an 'Honor' to Hire Jensen Huang as Nvidia's Board Reportedly Gears up to Remove Him",
@@ -9614,16 +9503,24 @@
                 "date": "2026-11-17 01:35",
                 "description": "Nouriel Roubini says Nvidia CEO Jensen Huang's exit will help the US block China from frontier AI chips and models.",
                 "_timestamp": 1794879300.0
+            },
+            {
+                "title": "Nvidia earnings in focus amid Huang exit fallout - what’s moving markets",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-earnings-focus-amid-huang-093728228.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 09:37",
+                "description": "Investing.com - Futures linked to the main U.S. stock indices inch down, ahead of earnings from Nvidia that could heavily influence the outlook for an artificial intelligence boom that has propped up the American economy. The chip giant’s strategy and guidance following the departure of scandal-plagued former CEO Jensen Huang will be in sharp focus, while the U.S. government moves to tighten restrictions on the remote access Chinese companies hav",
+                "_timestamp": 1794908248.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 01:35 UTC",
-            "Facts": "[Update 2026-11-17 01:35 UTC via Yahoo Finance Nasdaq]: Nouriel Roubini stated that Nvidia CEO Jensen Huang's exit will assist the U.S. in locking China out of frontier AI chips and models. Additionally, markets are focusing on a heavy week featuring upcoming Nvidia earnings, Federal Reserve minutes, Anthropic's IPO, and tightening export controls on advanced semiconductors.",
-            "Macro_Context": "Broader financial markets are reacting to tightening export controls on advanced chips destined for China, ongoing developments in AI leadership, and anticipation surrounding upcoming Federal Reserve minutes."
+            "Event_Timestamp": "2026-11-17 09:37 UTC",
+            "Facts": "[Update 2026-11-17 09:37 UTC via Investing.com]: U.S. stock index futures are edging down ahead of Nvidia earnings and guidance following Jensen Huang's exit. Meanwhile, the U.S. government is tightening export controls and restrictions to close loopholes allowing Chinese firms to access advanced AI computing power, a move Nouriel Roubini notes will help lock China out of frontier AI.",
+            "Macro_Context": "Stricter geopolitical export controls targeting advanced semiconductors intersect with critical corporate leadership shifts in the artificial intelligence sector, heavily influencing market sentiment."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.62
@@ -12177,9 +12074,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 04:39 UTC",
+        "main_date": "First Reported: 2026-11-17 04:39 UTC | Last Update: 2026-11-17 09:18 UTC",
         "original_date": "2026-11-17 04:39",
-        "_timestamp": 1794890385.0,
+        "_timestamp": 1794907113.0,
         "articles": [
             {
                 "title": "Elite Undervalued Stocks To Own In November 2026",
@@ -12188,6 +12085,14 @@
                 "date": "2026-11-17 04:39",
                 "description": "Rising interest rates in Australia have put fresh pressure on companies that rely heavily on borrowed money, which has pushed many investors toward businesses that can fund themselves through solid cash generation. When cash flows look healthy but share prices still lag fair value estimates, that gap can spell opportunity for value hunters. This article highlights three stocks that appear mispriced based on their future cash potential. The three ",
                 "_timestamp": 1794890385.0
+            },
+            {
+                "title": "3 Undervalued Stocks Trading Up To 47% Below Fair Value",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-undervalued-stocks-trading-47-091833258.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 09:18",
+                "description": "AI chip exports to China now face tighter US controls, which has pushed investors to rethink what they pay for future growth stories. Cash rich businesses trading below estimated fair value can suddenly look a lot more interesting than crowded momentum trades. This article walks through three stocks that screen as potentially mispriced on their cash flows and shows where disciplined buyers might see opportunity. The three stocks highlighted next ",
+                "_timestamp": 1794907113.0
             }
         ],
         "needs_update": false,
@@ -12195,9 +12100,9 @@
             "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-17 04:39 UTC",
-            "Facts": "[Update 2026-11-17 04:39 UTC via Yahoo Finance Nasdaq]: Rising interest rates in Australia have pressured debt-reliant companies, steering investors toward cash-generating, undervalued equities.",
-            "Macro_Context": "Higher interest rate environments are prompting a flight toward self-funding companies with solid cash generation and discounted valuations."
+            "Event_Timestamp": "2026-11-17 09:18 UTC",
+            "Facts": "[Update 2026-11-17 09:18 UTC via Yahoo Finance Nasdaq]: Tighter US controls on AI chip exports to China have driven investors to reevaluate high-growth momentum stories, turning attention toward cash-rich, undervalued businesses trading below fair value that can fund operations through solid internal cash generation amidst rising global interest rates.",
+            "Macro_Context": "Shifting monetary conditions and tightening tech trade restrictions are prompting a rotation in equity markets from speculative growth momentum toward fundamental cash-flow value."
         }
     },
     {
@@ -12758,6 +12663,54 @@
             "Event_Timestamp": "2026-11-17 09:33 UTC",
             "Facts": "[Update 2026-11-17 09:33 UTC via Tehran Times]: The Besiktas wheelchair basketball team has signed four Iranian players to strengthen its squad.",
             "Macro_Context": "International sports transfers involving Iranian athletes."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 09:17 UTC",
+        "original_date": "2026-11-17 09:17",
+        "_timestamp": 1794907045.0,
+        "articles": [
+            {
+                "title": "Rockwell Automation (ROK) Stock Appears Overvalued Following Its 49% Three Year Run",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/rockwell-automation-rok-stock-appears-091725159.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 09:17",
+                "description": "Rockwell Automation has delivered a strong 48.9% total return over the past three years, yet recent share price softness has put the spotlight back on a simple question for investors: Is the current US$384.90 price adequately backed by the cash flows the business is expected to generate over time? A 48.9% gain over three years puts long term holders in a solid position. This raises the stakes for anyone asking whether that run is fully supported ",
+                "_timestamp": 1794907045.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 09:17 UTC",
+            "Facts": "[Update 2026-11-17 09:17 UTC via Yahoo Finance Nasdaq]: Rockwell Automation (ROK) stock has faced recent price softness, raising questions among investors regarding whether its current US$384.90 price is fully backed by anticipated long-term cash flows following a strong 48.9 percent total return over the past three years.",
+            "Macro_Context": "Industrial equities face valuation scrutiny as investors reassess historical gains against forward-looking cash generation metrics in a shifting interest rate environment."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 09:26 UTC",
+        "original_date": "2026-11-17 09:26",
+        "_timestamp": 1794907562.0,
+        "articles": [
+            {
+                "title": "President Donald Trump Claims to \"Have a Very Powerful Power\" in the Veto, but a Midterm Election Surprise Can Shake Things Up for the AI Trade",
+                "link": "https://www.fool.com/investing/2026/11/17/donald-trump-claims-to-have-very-powerful-veto-midterm-election-surprise-shake-things-up-ai-trade/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 09:26",
+                "description": "President Trump no longer has firm control over the future of artificial intelligence (AI) regulation.",
+                "_timestamp": 1794907562.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-17 09:26 UTC",
+            "Facts": "[Update 2026-11-17 09:26 UTC via Yahoo Finance Nasdaq]: President Donald Trump claimed to possess significant veto powers regarding technology policy, though analysts note potential midterm election surprises could introduce volatility and alter the trajectory of the artificial intelligence trade and federal regulation.",
+            "Macro_Context": "Political oversight and potential regulatory intervention pose ongoing structural risks and catalysts for the domestic technology and artificial intelligence sectors."
         }
     }
 ]

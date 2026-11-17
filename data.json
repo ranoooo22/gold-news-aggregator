@@ -1080,14 +1080,14 @@
                 "_timestamp": 1794912180.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 10:15 UTC",
-            "Facts": "[Update 2026-11-17 10:15 UTC via MarketWatch Macro]: Investors are weighing market turmoil and real estate opportunities in Florida amid the recent tech sector sell-off. Micron and SK hynix fell ahead of Nvidia's earnings. Nvidia stock dropped below $170 following former CEO Jensen Huang's resignation.",
-            "Macro_Context": "Tech sector volatility and fallout from executive departures are driving broad market reassessments, though macroeconomic data and central bank paths remain key underlying factors for equities."
+            "Event_Timestamp": "2026-11-17 10:43 UTC",
+            "Facts": "[Update 2026-11-17 10:43 UTC via Yahoo Finance Nasdaq]: Jim Simons' firm Renaissance Technologies heavily trimmed its Nvidia stake prior to the recent sell-off, cutting its position from over 7 million shares down to just 23,170 shares by the end of September. Nvidia shares dropped below $170 amid continued fallout from the resignation of former CEO Jensen Huang, though some analysts view the pullback as a potential buying opportunity ahead of upcoming earnings.",
+            "Macro_Context": "Tech sector volatility and insider/institutional repositioning amid leadership turmoil."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -1154,14 +1154,14 @@
                 "_timestamp": 1794910920.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 22:20 UTC",
-            "Facts": "[Update 2026-11-16 22:20 UTC via Yahoo Finance Nasdaq]: Investors are assessing Nvidia's reduced valuation and moat through a Warren Buffett lens as Berkshire Hathaway hits record highs during the Nasdaq correction.",
-            "Macro_Context": "Rotation out of high-flying technology and AI stocks into defensive, value-oriented holdings like Berkshire Hathaway."
+            "Event_Timestamp": "2026-11-17 10:22 UTC",
+            "Facts": "[Update 2026-11-17 10:22 UTC via Yahoo Finance Nasdaq]: Amid the Nasdaq correction, financial commentators have highlighted classic Warren Buffett principles regarding market downturns, the risks of using borrowed money to purchase stocks, and identifying businesses with wide economic moats like Nvidia.",
+            "Macro_Context": "Broader market correction prompting a re-evaluation of long-term investment strategies and leverage."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -1934,14 +1934,14 @@
                 "_timestamp": 1794910082.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 05:18 UTC",
-            "Facts": "[Update 2026-11-17 05:18 UTC via Yahoo Finance Nasdaq]: The U.S. Department of Commerce stated it investigated Nvidia cloud partner Megaspeed for potential export violations in 2024. Advanced Micro Devices (AMD) shares gained following Nvidia's recent volatility, while Taiwan Semiconductor shares dropped nearly 10% over three days despite posting record monthly revenue.",
-            "Macro_Context": "Markets are closely evaluating semiconductor supply chains, regulatory scrutiny, and upcoming corporate earnings amid shifting tech valuations."
+            "Event_Timestamp": "2026-11-17 10:08 UTC",
+            "Facts": "[Update 2026-11-17 10:08 UTC via Yahoo Finance Nasdaq]: Taiwan Semiconductor experienced a nearly 10% drop over three days despite posting record monthly revenue of NT$587 billion. Additionally, disclosures revealed that the U.S. Commerce Department and DOJ investigated Singapore-based Nvidia cloud partner Megaspeed in 2024 for potential export violations, setting a cautious tone ahead of Nvidia's Q3 earnings.",
+            "Macro_Context": "Semiconductor supply chain pressures, regulatory scrutiny, and high-stakes upcoming corporate earnings."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -3263,14 +3263,14 @@
                 "_timestamp": 1794910280.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 05:25 UTC",
-            "Facts": "[Update 2026-11-17 05:25 UTC via Yahoo Finance Nasdaq]: Chinese technology heavyweights fell after Washington implemented fresh restrictions targeting access to advanced U.S. AI chips via overseas data centers in regions like Southeast Asia and Brazil. US equities also closed lower due to the sell-off in mega-cap chipmakers following the Commerce Department's announcement.",
-            "Macro_Context": "Stricter U.S. export controls continue to pressure global tech equities and cross-border semiconductor trade dynamics."
+            "Event_Timestamp": "2026-11-17 10:11 UTC",
+            "Facts": "[Update 2026-11-17 10:11 UTC via Yahoo Finance Nasdaq]: New U.S. interim export regulations require data center operators in regions like Southeast Asia and Brazil to obtain licenses before purchasing advanced AI chips from manufacturers like Nvidia. These restrictions have triggered a sell-off in Chinese megacap tech stocks and prompted investors to look closely at companies with onshore manufacturing and domestic infrastructure exposure.",
+            "Macro_Context": "Geopolitical tech restrictions and shifts in global AI supply chain demand."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.24
@@ -3642,14 +3642,14 @@
                 "_timestamp": 1794912923.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 4,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 10:00 UTC",
-            "Facts": "[Update 2026-11-17 10:00 UTC via Yahoo Finance Nasdaq]: NVIDIA's Board of Directors established a National Security and Export Control Oversight Committee chaired by Suzanne Nora Johnson, employing independent experts for compliance programs. CFO Colette Kress has taken over as interim leader following Jensen Huang's resignation, while the US Commerce Department closed a loophole restricting Chinese remote access to advanced chips.",
-            "Macro_Context": "Semiconductor markets face mounting pressure from tightening US export controls on China and internal corporate governance shocks, raising questions over the sustainability of AI compute infrastructure costs."
+            "Event_Timestamp": "2026-11-17 10:55 UTC",
+            "Facts": "[Update 2026-11-17 10:55 UTC via Yahoo Finance Nasdaq]: In response to recent national security concerns and export control pressures, Nvidia's Board of Directors established a National Security and Export Control Oversight Committee, appointing Suzanne Nora Johnson as Chair. The committee will utilize independent outside experts to oversee global trade compliance programs.",
+            "Macro_Context": "Corporate governance adaptation to heightened geopolitical and regulatory oversight."
         },
         "eval_status": "HIT",
         "max_dd_usd": 18.93
@@ -4875,14 +4875,14 @@
                 "_timestamp": 1794911460.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 5,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-17 09:54 UTC",
-            "Facts": "[Update 2026-11-17 09:54 UTC via Yahoo Finance Nasdaq]: The Nvidia board is reportedly not considering the return of ousted co-founder Jensen Huang despite backing from Donald Trump and Elon Musk and an internal petition led by director of developer technology Nader Khalil warning of an 'irreplaceable talent' exodus. Huang's resignation followed reports of multiple affairs, including one with a subordinate and another involving potential security risks.",
-            "Macro_Context": "Corporate governance crises at major market-driving technology firms can create localized liquidity and sentiment shocks that ripple through broader equity benchmarks."
+            "Event_Timestamp": "2026-11-17 10:32 UTC",
+            "Facts": "[Update 2026-11-17 10:32 UTC via Yahoo Finance Nasdaq]: Nvidia's board confirmed it is not considering the return of co-founder Jensen Huang despite public support from figures like Donald Trump and Elon Musk. Huang resigned following revelations of extramarital affairs, including one with an individual suspected of ties to Chinese intelligence.",
+            "Macro_Context": "Corporate leadership crisis intersecting with international security concerns."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -5119,9 +5119,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-17 10:32 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-17 11:13 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794911522.0,
+        "_timestamp": 1794914028.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -5266,16 +5266,24 @@
                 "date": "2026-11-17 10:13",
                 "description": "US stock futures moved lower on Tuesday, November 17, 2026, as investors awaited quarterly results from Nvidia (NASDAQ:NVDA) and assessed developments surrounding the semiconductor company’s leadership, new US restrictions on artificial intelligence chip exports and the outlook for interest rates. At 08:50 GMT, Nasdaq 100 futures were down 31 points, or 0.",
                 "_timestamp": 1794910384.0
+            },
+            {
+                "title": "Nvidia, AI Angst Dim Wall Street Pre-Bell; Asia, Europe Off",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-ai-angst-dim-wall-111348366.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 11:13",
+                "description": "Wall Street futures pointed moderately lower pre-bell Tuesday as traders mulled Nvidia (NVDA) succes",
+                "_timestamp": 1794914028.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 10:32 UTC",
-            "Facts": "[Update 2026-11-17 10:32 UTC via Yahoo Finance Nasdaq]: US stock futures declined as investors braced for Nvidia's quarterly earnings report and awaited Federal Reserve meeting minutes. [Update 2026-11-17 10:24 UTC via Yahoo Finance Oil]: Oil prices dipped and subsequently recovered amid fluctuating Middle East shipping concerns and anticipation of global supply dynamics.",
-            "Macro_Context": "Wall Street is preparing for a high-impact week driven by tech sector earnings and monetary policy expectations."
+            "Event_Timestamp": "2026-11-17 11:13 UTC",
+            "Facts": "[Update 2026-11-17 10:24 UTC via Yahoo Finance Oil]: Oil prices slipped and then recovered on recovering Middle East exports and expectations of a global supply surplus. US stock futures edged lower following a tech sell-off as traders focused on upcoming Nvidia earnings and Federal Reserve meeting minutes.",
+            "Macro_Context": "Investors are weighing upcoming corporate earnings from semiconductor leader Nvidia alongside macroeconomic expectations regarding the Federal Reserve's interest rate trajectory."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
@@ -7058,9 +7066,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-16 06:00 UTC | Last Update: 2026-11-16 22:00 UTC",
+        "main_date": "First Reported: 2026-11-16 06:00 UTC | Last Update: 2026-11-17 11:08 UTC",
         "original_date": "2026-11-16 06:00",
-        "_timestamp": 1794866400.0,
+        "_timestamp": 1794913680.0,
         "articles": [
             {
                 "title": "Aurania Intersects 10.10 g/t Gold over 4.15 Metres in Initial Drill Results from the Thormodsdalur Gold Project in Iceland",
@@ -7093,16 +7101,24 @@
                 "date": "2026-11-16 22:00",
                 "description": "VANCOUVER, British Columbia, Nov. 16, 2026 (GLOBE NEWSWIRE) -- Endeavour Silver Corp. (“Endeavour” or the “Company”) (TSX: EDR, NYSE: EXK) is pleased to announce high-grade drill results from its 2026 exploration program at the Guanaceví mine in Durango, Mexico. The 20-hole, 5,855-metre program tested the Santa Cruz vein system and nearby parallel structures at Alondra-P2 and El Milache, returning multiple high-grade silver-gold intersections. Dr",
                 "_timestamp": 1794866400.0
+            },
+            {
+                "title": "Goliath Drills 13.45 g/t AuEq Over 4.85 Meters Expanding The High-Grade Golden Gate Zone By 130 Meters At The Surebet Gold Discovery That Remains Open For Expansion, Golddigger Property, Golden Triangle, B.C.",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/goliath-drills-13-45-g-110800467.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 11:08",
+                "description": "Figure 1. GD-26-478 Highlights Figure 2. High-grade Golden Gate lode highlighting drill hole GD-26-478 reported in this news release. Figure 3. Golden Gate Zone – plan view expansion map. Figure 4a. VG-NE Figure 4b VG-NE Figure 4c VG-NE Figure 4d VG-NE Figure 4e VG-NE Figure 4f VG-NE Figure 4g VG-NE Figure 5 Plan view of VG-NE distribution. Figure 6 Isometric view of the Surebet Discovery Ore Mineralization Model resulting from the 2021 – 2025 dr",
+                "_timestamp": 1794913680.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 22:00 UTC",
-            "Facts": "[Update 2026-11-16 22:00 UTC via GlobeNewswire]: Endeavour Silver Intersects 3,431 g/t Silver Equivalent over 1.42 Metres at Guanaceví. Multiple mining companies released strong drill and assay results, including Aurania in Iceland, LaFleur Minerals in Canada, PPX in Peru, and Endeavour Silver in Mexico.",
-            "Macro_Context": "Ongoing exploration progress and positive high-grade drill assays supporting precious metals project developments."
+            "Event_Timestamp": "2026-11-17 11:08 UTC",
+            "Facts": "[Update 2026-11-17 11:08 UTC via Yahoo Finance Gold]: Goliath Resources reported drilling 13.45 g/t AuEq over 4.85 meters, expanding the high-grade Golden Gate Zone by 130 meters at the Surebet Gold Discovery. This follows prior announcements regarding successful drill results from LaFleur Minerals, PPX, and Endeavour Silver.",
+            "Macro_Context": "Mining exploration companies continue to report strong drill assay results for gold, silver, and copper deposits across various global jurisdictions."
         }
     },
     {
@@ -9048,37 +9064,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 3.37
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 11:17 UTC",
-        "original_date": "2026-11-16 11:17",
-        "_timestamp": 1794827860.0,
-        "articles": [
-            {
-                "title": "Can Hezbollah salvage Syrian networks without clashing with Damascus?",
-                "link": "https://www.middleeasteye.net/news/can-hezbollah-salvage-syrian-network-without-clashing-damascus",
-                "source": "Middle East Eye",
-                "date": "2026-11-16 11:17",
-                "description": "Can Hezbollah salvage Syrian networks without clashing with Damascus?\n\n    \n    \n\n          \n      \n      \n        Submitted by \nReem Aouir\n on \nWed, 11/11/2026 - 11:31\n\n        \n      \n    \n      \n    \n                With its old supply corridor gone, Hezbollah is seeking alternatives and a manageable relationship with Damascus, analysts say\n\n                      \n                  \n                  \n\n  \n\n\n                  Syrian army soldie",
-                "_timestamp": 1794827860.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 11:17 UTC",
-            "Facts": "With its traditional supply corridors altered, Hezbollah is reportedly seeking alternative logistics networks and manageable relations within Syria. Analysts note the strategic pivot aims to maintain operational continuity without causing direct friction with Damascus.",
-            "Macro_Context": "Ongoing regional realignments and Middle East friction reinforce persistent geopolitical risk premiums supporting safe-haven gold flows.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "7-14d",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 61,
-            "Orderflow_Price_Target": "3880.31"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 12.26
     },
     {
         "main_date": "First Reported: 2026-11-16 10:11 UTC | Last Update: 2026-11-17 10:12 UTC",
@@ -13140,6 +13125,54 @@
             "Event_Timestamp": "2026-11-17 11:04 UTC",
             "Facts": "[Update 2026-11-17 11:04 UTC via Tehran Times]: The Iran Volleyball Federation decided not to renew the contract of Italian head coach Roberto Piazza, with plans to search for a new world-class coach for the national team.",
             "Macro_Context": "Domestic sports administration news within Iran with no macroeconomic or geopolitical impact."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:16 UTC",
+        "original_date": "2026-11-17 11:16",
+        "_timestamp": 1794914176.0,
+        "articles": [
+            {
+                "title": "Britain sanctions Israeli settlement builders, Gaza aid-blocking activists",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/britain-sanctions-israeli-settlement-builders-gaza-aid-blocking",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 11:16",
+                "description": "Britain sanctions Israeli settlement builders, Gaza aid-blocking activists\n\n    \n    \n\n        \n    \n                The British government announced on Tuesday it would impose sanctions on eight Israeli construction companies involved in building settlements in the occupied West Bank and an activist group that prevents the delivery of aid to Gaza.\n\nBritain announced asset freezes and director disqualifications on the eight companies including Ha",
+                "_timestamp": 1794914176.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "2026-11-17 11:16 UTC",
+            "Facts": "[Update 2026-11-17 11:16 UTC via Middle East Eye]: The British government announced sanctions on eight Israeli construction companies involved in West Bank settlements and an activist group accused of blocking aid delivery to Gaza, applying asset freezes and director disqualifications.",
+            "Macro_Context": "Geopolitical tensions and diplomatic measures continue regarding the Israel-Palestine conflict and West Bank settlements."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:17 UTC",
+        "original_date": "2026-11-17 11:17",
+        "_timestamp": 1794914223.0,
+        "articles": [
+            {
+                "title": "Fate of nations determined not by US but by will of people",
+                "link": "https://en.mehrnews.com/news/249483/Fate-of-nations-determined-not-by-US-but-by-will-of-people",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 11:17",
+                "description": "TEHRAN, Nov. 17 (MNA) –Criticizing US policies adopted against countries, including Venezuela and Cuba, Iran’s deputy foreign minister for Legal and International Affairs says destiny of states is not determined by US, rather, by will of the people.",
+                "_timestamp": 1794914223.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 11:17 UTC",
+            "Facts": "[Update 2026-11-17 11:17 UTC via Mehr News Agency]: Iran's deputy foreign minister for Legal and International Affairs criticized US policies against nations like Venezuela and Cuba, stating that the destiny of states is determined by the will of the people rather than the United States.",
+            "Macro_Context": "Bilateral political rhetoric and diplomatic friction persist between Iran and US-led foreign policy positions."
         }
     }
 ]

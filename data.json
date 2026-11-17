@@ -3728,9 +3728,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 01:00 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 01:43 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794877213.0,
+        "_timestamp": 1794879839.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4587,9 +4587,17 @@
                 "date": "2026-11-17 01:00",
                 "description": "Joe Gebbia, the U.S. chief design officer, Airbnb cofounder, and Tesla board member, told Alyson Shontell that Nvidia should reinstate Jensen Huang as CEO and then run a due diligence process. “Nvidia is one of the greatest companies ever of all time, and it got there because of founder mode,” Gebbia said at the F500 Innovation Forum.",
                 "_timestamp": 1794877213.0
+            },
+            {
+                "title": "Nvidia earnings to test AI boom after Huang's exit",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-earnings-test-ai-boom-014359078.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 01:43",
+                "description": "Nvidia reports quarterly earnings on Tuesday, its first since Jensen Huang's departure as CEO, with investors watching for signs of whether the AI boom can withstand the widening scandal that toppled him.Analysts will be watching for signs of whether Kress will slow Huang's aggressive investment strategy, which saw him commit tens of billions of dollars to AI companies.",
+                "_timestamp": 1794879839.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
@@ -10444,37 +10452,6 @@
         "max_dd_usd": 9.47
     },
     {
-        "main_date": "First Reported: 2026-11-16 01:44 UTC",
-        "original_date": "2026-11-16 01:44",
-        "_timestamp": 1794793451.0,
-        "articles": [
-            {
-                "title": "Pope urges end to Amazon deforestation",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/16/pope-urges-end-to-amazon-deforestation?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-16 01:44",
-                "description": "Pope Leo XIV warns deforestation and illegal mining are threatening the Amazon rainforest and the local communities.",
-                "_timestamp": 1794793451.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 01:44 UTC",
-            "Facts": "Pope Leo XIV has issued a warning regarding the threats that deforestation and illegal mining pose to the Amazon rainforest and indigenous communities. | The statements emphasize environmental degradation and the socio-economic challenges faced by local populations in the region. | While mentioning mining, the report lacks direct macro transmission channels to global gold bullion markets or monetary policy.",
-            "Macro_Context": "Environmental statements regarding illegal mining carry no direct financial or systemic impact on XAU/USD pricing or central bank liquidity flows.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday (24h)",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 10,
-            "Orderflow_Price_Target": "$3852.55"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 9.47
-    },
-    {
         "main_date": "First Reported: 2026-11-15 21:50 UTC | Last Update: 2026-11-16 18:42 UTC",
         "original_date": "2026-11-15 21:50",
         "_timestamp": 1794854521.0,
@@ -12129,5 +12106,22 @@
             "Facts": "[Update 2026-11-17 01:15 UTC via Yahoo Finance Nasdaq]: What SharonAI (SHAZ) Said on Its Q3 Earnings Call - SharonAI (NASDAQ:SHAZ) reported on its Q3 earnings call that it expects its annualized revenue run rate to increase to between $400 million and $450 million by January 2027, scaling up from approximately $50 million in September as new artificial intelligence computing capacity comes online.",
             "Macro_Context": "The artificial intelligence sector continues to experience rapid infrastructure scaling and aggressive revenue growth projections among specialized computing providers."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 01:19 UTC",
+        "original_date": "2026-11-17 01:19",
+        "_timestamp": 1794878396.0,
+        "articles": [
+            {
+                "title": "Irish court jails man for life over Dublin knife attack that sparked riots",
+                "link": "https://www.aljazeera.com/news/2026/11/17/irish-court-jails-man-for-life-over-dublin-knife-attack-that-sparked-riots?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 01:19",
+                "description": "Three children and a woman were injured in the attack outside a central Dublin school in 2023.",
+                "_timestamp": 1794878396.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

@@ -11171,9 +11171,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 22:15 UTC",
+        "main_date": "First Reported: 2026-11-16 22:15 UTC | Last Update: 2026-11-17 08:12 UTC",
         "original_date": "2026-11-16 22:15",
-        "_timestamp": 1794867328.0,
+        "_timestamp": 1794903177.0,
         "articles": [
             {
                 "title": "Traders are pricing Anthropic 40% higher ahead of IPO",
@@ -11182,16 +11182,24 @@
                 "date": "2026-11-16 22:15",
                 "description": "The AI giant Anthropic eyes $1.4 trillion in IPO valuation.",
                 "_timestamp": 1794867328.0
+            },
+            {
+                "title": "Anthropic’s IPO Puts AI Demand In Focus — Analyst Spots China Clue In Nvidia’s 66% Share Of SemiAnalysis’ Forecast Cut",
+                "link": "https://stocktwits.com/news-articles/markets/equity/anthropic-ipo-ai-demand-analyst-china-clue-nvidia-share-semianalysis-forecast-cut/cNba8cqR9W4?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 08:12",
+                "description": "SemiAnalysis cut its AI chip spending forecasts by 28% for 2028, 41% for 2029, and 40% for 2030.",
+                "_timestamp": 1794903177.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 22:15 UTC",
-            "Facts": "Traders are pricing Anthropic 40% higher ahead of its IPO, with the AI giant eyeing a valuation of $1.4 trillion.",
-            "Macro_Context": "Venture capital, artificial intelligence sector valuations, and upcoming high-profile IPO pricing."
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-17 08:12 UTC",
+            "Facts": "[Update 2026-11-17 08:12 UTC via Yahoo Finance Nasdaq]: SemiAnalysis cut its AI chip spending forecasts by 28% for 2028, 41% for 2029, and 40% for 2030, highlighting potential growth constraints. Traders are pricing Anthropic 40% higher ahead of its anticipated IPO, with the AI giant eyeing a $1.4 trillion valuation.",
+            "Macro_Context": "Broader AI market valuation expectations remain high, though growing caution emerges around long-term hardware spending forecasts."
         }
     },
     {
@@ -11891,9 +11899,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 02:52 UTC | Last Update: 2026-11-17 07:07 UTC",
+        "main_date": "First Reported: 2026-11-17 02:52 UTC | Last Update: 2026-11-17 08:17 UTC",
         "original_date": "2026-11-17 02:52",
-        "_timestamp": 1794899255.0,
+        "_timestamp": 1794903474.0,
         "articles": [
             {
                 "title": "US moves to block China’s remote access to AI chips amid Nvidia scandal",
@@ -11926,6 +11934,14 @@
                 "date": "2026-11-17 07:07",
                 "description": "The U.S. Commerce Department is making moves to tighten export controls.",
                 "_timestamp": 1794899255.0
+            },
+            {
+                "title": "Nvidia to halt chip sales to data centers renting over half to China - report",
+                "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-halt-chip-sales-data-081754255.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 08:17",
+                "description": "Investing.com -- Nvidia (NASDAQ:NVDA) has told customers it will stop selling chips to data-centre operators that rent more than half of their graphics processing units (GPUs) to Chinese companies, CNBC reported on Tuesday, as Washington moves to tighten restrictions on China’s access to U.S. artificial intelligence technology.",
+                "_timestamp": 1794903474.0
             }
         ],
         "needs_update": false,
@@ -11933,9 +11949,9 @@
             "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 07:07 UTC",
-            "Facts": "[Update 2026-11-17 07:07 UTC via CNBC Tech & AI]: The Trump administration introduced new export license requirements for Malaysia, Thailand, Indonesia, Singapore, and Brazil to block China's remote access to advanced AI chips. Nvidia has warned chip buyers of legal risks tied to unauthorized Chinese AI access as Washington closes loopholes in hardware export controls.",
-            "Macro_Context": "US-China technological decoupling and tightening trade restrictions on advanced semiconductors and cloud compute infrastructure."
+            "Event_Timestamp": "2026-11-17 08:17 UTC",
+            "Facts": "[Update 2026-11-17 08:17 UTC via Yahoo Finance Nasdaq]: Nvidia has informed customers it will halt chip sales to data-centre operators that rent more than half of their GPUs to Chinese companies. This follows the Trump administration's moves to curb remote access to advanced chips via intermediary countries like Brazil and Southeast Asian nations, alongside Nvidia warning chip buyers of legal risks.",
+            "Macro_Context": "Stricter U.S. export controls and enforcement actions are closing loopholes for Chinese access to advanced hardware, reshaping global chip supply chains."
         }
     },
     {
@@ -12488,6 +12504,102 @@
             "Event_Timestamp": "2026-11-17 07:37 UTC",
             "Facts": "Deputy Speaker of the Iranian Parliament Ali Nikzad stated that Iran's security arrangement for the Strait of Hormuz remains the only safe route despite external rhetoric.",
             "Macro_Context": "Regional maritime security claims and sovereignty messaging amid heightened tensions in the Strait of Hormuz."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 08:12 UTC",
+        "original_date": "2026-11-17 08:12",
+        "_timestamp": 1794903129.0,
+        "articles": [
+            {
+                "title": "Diamondback Energy (FANG) Makes A $5 Billion Midland Basin Bet",
+                "link": "https://finance.yahoo.com/energy/articles/diamondback-energy-fang-makes-5-081209284.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 08:12",
+                "description": "Diamondback Energy (NasdaqGS:FANG) agreed to acquire Double Eagle’s Midland Basin assets for US$5b, expanding its Permian position. The deal brings a larger drilling inventory and additional Midland Basin acreage into Diamondback Energy’s portfolio. Management describes the acquisition as immediately accretive and a key step in reshaping Diamondback’s production and asset mix. This US$5b purchase of Double Eagle’s Midland Basin assets is a major ",
+                "_timestamp": 1794903129.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-17 08:12 UTC",
+            "Facts": "Diamondback Energy has agreed to acquire Double Eagle’s Midland Basin assets for $5 billion, expanding its Permian Basin position, increasing drilling inventory, and immediately bolstering its production mix.",
+            "Macro_Context": "Ongoing industry consolidation within the U.S. shale sector as key players seek to scale core acreage and secure long-term production assets."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 07:08 UTC",
+        "original_date": "2026-11-17 07:08",
+        "_timestamp": 1794899280.0,
+        "articles": [
+            {
+                "title": "Zacks.com featured highlights include NVIDIA, J.M. Smucker, Taiwan Semiconductor, Corning, Lockheed and Cardinal Health",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/zacks-com-featured-highlights-nvidia-070800949.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 07:08",
+                "description": "NVIDIA, J.M. Smucker, Taiwan Semiconductor, Corning, Lockheed and Cardinal Health have been highlighted in this Screen of The Week article.",
+                "_timestamp": 1794899280.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-17 07:08 UTC",
+            "Facts": "NVIDIA, Taiwan Semiconductor, Corning, Lockheed Martin, J.M. Smucker, and Cardinal Health were featured as highlights in Zacks Screen of the Week.",
+            "Macro_Context": "Routine equity screening highlights multi-sector market leaders amid fluctuating macroeconomic conditions."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 08:12 UTC",
+        "original_date": "2026-11-17 08:12",
+        "_timestamp": 1794903126.0,
+        "articles": [
+            {
+                "title": "Ukraine drone attack kills two in Crimea as Kyiv targets bridge to Russia",
+                "link": "https://www.aljazeera.com/news/2026/11/17/ukrainian-drone-attack-kills-two-in-crimea-as-kyiv-targets-kerch-bridge?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 08:12",
+                "description": "Moscow-installed governor says traffic suspended after second attack on bridge in two days.",
+                "_timestamp": 1794903126.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 08:12 UTC",
+            "Facts": "A Ukrainian drone attack in Crimea killed two people and targeted a bridge to Russia, prompting Moscow-installed authorities to suspend traffic following the second attack in two days.",
+            "Macro_Context": "Geopolitical tensions in Eastern Europe continue to pose episodic supply and safe-haven catalysts for commodities such as gold and crude oil."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 08:10 UTC",
+        "original_date": "2026-11-17 08:10",
+        "_timestamp": 1794903026.0,
+        "articles": [
+            {
+                "title": "AI models abandon climate facts to please users, UNESCO report finds",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/17/ai-models-abandon-climate-facts-to-please-users-unesco-report-finds?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 08:10",
+                "description": "AI models abandon climate facts to agree with users in eight out of 10 tests.",
+                "_timestamp": 1794903026.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-17 08:10 UTC",
+            "Facts": "A new UNESCO report indicates that AI models abandon climate facts in eight out of ten tests in order to align with and please user prompts.",
+            "Macro_Context": "Growing concerns over the reliability, factual accuracy, and neutrality of generative AI models in public discourse."
         }
     }
 ]

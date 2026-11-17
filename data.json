@@ -1111,9 +1111,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-16 21:42 UTC",
+        "main_date": "First Reported: 2026-11-16 18:35 UTC | Last Update: 2026-11-17 04:25 UTC",
         "original_date": "2026-11-16 18:35",
-        "_timestamp": 1794865352.0,
+        "_timestamp": 1794889558.0,
         "articles": [
             {
                 "title": "Why Intel Stock Is Falling Monday",
@@ -1146,9 +1146,17 @@
                 "date": "2026-11-16 21:42",
                 "description": "The S&amp;P 500 fell 1.9% and the Nasdaq dropped 2.5% as high bond yields, China chip restrictions and uncertainty over AI demand weighed on markets.",
                 "_timestamp": 1794865352.0
+            },
+            {
+                "title": "Asia stocks slide as U.S. tightens AI chip curbs ahead of Nvidia results",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/asia-stocks-slide-u-tightens-042558888.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 04:25",
+                "description": "Investing.com -- Asian stocks fell on Tuesday as Washington tightened controls on China's access to advanced artificial intelligence chips, adding to technology-sector anxiety ahead of Nvidia's closely watched earnings.",
+                "_timestamp": 1794889558.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
@@ -4774,9 +4782,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 17:49 UTC",
+        "main_date": "First Reported: 2026-11-16 17:49 UTC | Last Update: 2026-11-17 04:47 UTC",
         "original_date": "2026-11-16 17:49",
-        "_timestamp": 1794851390.0,
+        "_timestamp": 1794890856.0,
         "articles": [
             {
                 "title": "Iran, Armenia to expand cultural cooperation",
@@ -4785,9 +4793,17 @@
                 "date": "2026-11-16 17:49",
                 "description": "TEHRAN – In a specialized meeting in Yerevan, Armenia, A high-level delegation of the Islamic Republic of Iran, led by Vice President Seyed Hamid Pourmohammadi, held talks with Armenian officials, including Armenian Deputy Minister of Education, Science, Culture and Sports Alfred Kocharyan, and discussed strategies for developing cultural relations between the two countries.",
                 "_timestamp": 1794851390.0
+            },
+            {
+                "title": "Iran, China discuss regional stability, cooperation",
+                "link": "https://en.mehrnews.com/news/249470/Iran-China-discuss-regional-stability-cooperation",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 04:47",
+                "description": "TEHRAN, Nov. 17 (MNA) – Iran's deputy foreign minister for legal and international affairs said he discussed international developments, regional peace and stability and ways to expand bilateral cooperation with China's ambassador.",
+                "_timestamp": 1794890856.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
@@ -5063,9 +5079,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-17 03:42 UTC",
+        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-17 04:43 UTC",
         "original_date": "2026-11-02 21:53",
-        "_timestamp": 1794886930.0,
+        "_timestamp": 1794890604.0,
         "articles": [
             {
                 "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
@@ -5810,9 +5826,17 @@
                 "date": "2026-11-17 03:42",
                 "description": "IRGC says forces seized US drone near Hormuz Strait\n\n    \n    \n\n        \n    \n                Iran’s Islamic Revolutionary Guard Corps (IRGC) announced early on Tuesday that its forces seized control of a US &nbsp;MQM-170 drone flying south of Qeshm Island, near the Strait of Hormuz.",
                 "_timestamp": 1794886930.0
+            },
+            {
+                "title": "Oil tanker burns in Strait of Hormuz after hitting mine",
+                "link": "https://en.mehrnews.com/news/249469/Oil-tanker-burns-in-Strait-of-Hormuz-after-hitting-mine",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 04:43",
+                "description": "TEHRAN, Nov. 17 (MNA) – Another oil tanker that switched off its navigation systems caught fire and was heavily damaged after striking a naval mine in the prohibited zone east of the Strait of Hormuz, Iran's Army said.",
+                "_timestamp": 1794890604.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,

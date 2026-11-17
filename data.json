@@ -1156,14 +1156,14 @@
                 "_timestamp": 1794889558.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 21:42 UTC",
-            "Facts": "[Update 2026-11-16 21:42 UTC via Yahoo Finance Nasdaq]: The S&P 500 fell 1.9% and the Nasdaq dropped 2.5% as high bond yields, China chip restrictions, and ongoing uncertainty regarding AI demand weighed heavily on market sentiment. Intel also slid amid a broader chip sector sell-off and a new shareholder lawsuit over its late-October price drop.",
-            "Macro_Context": "Elevated bond yields and restrictive technology trade policies create headwinds for equity valuations across growth-heavy indices."
+            "Event_Timestamp": "2026-11-17 04:25 UTC",
+            "Facts": "[Update 2026-11-17 04:25 UTC via Yahoo Finance Nasdaq]: Asian stocks fell on Tuesday following Wall Street's sharp decline as Washington tightened controls on China's access to advanced artificial intelligence chips. US markets had dropped earlier in the week due to high bond yields, chip restrictions, and technology sector anxiety ahead of Nvidia's earnings report.",
+            "Macro_Context": "US equity markets and Asian exchanges are under pressure from tightening AI chip export controls to China, rising bond yields, and heavy scrutiny on semiconductor valuations ahead of Nvidia's earnings."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 13.22
@@ -3684,9 +3684,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-16 12:14 UTC | Last Update: 2026-11-16 17:52 UTC",
+        "main_date": "First Reported: 2026-11-16 12:14 UTC | Last Update: 2026-11-17 04:54 UTC",
         "original_date": "2026-11-16 12:14",
-        "_timestamp": 1794851545.0,
+        "_timestamp": 1794891252.0,
         "articles": [
             {
                 "title": "Protesters denounce sentences against Shiites in Bahrain",
@@ -3703,21 +3703,24 @@
                 "date": "2026-11-16 17:52",
                 "description": "BEIRUT — Bahrain has witnessed a major escalation in its campaign against Shiite religious authorities, as the ruling Al Khalifa regime handed life imprisonment sentences to the majority of Shiite scholars prosecuted in a mass trial on November 16, including those tried in absentia and those who appeared before the court.",
                 "_timestamp": 1794851545.0
+            },
+            {
+                "title": "Iran condemns Bahrain's life sentences for scholars",
+                "link": "https://en.mehrnews.com/news/249471/Iran-condemns-Bahrain-s-life-sentences-for-scholars",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 04:54",
+                "description": "TEHRAN, Nov. 17 (MNA) – Iran's Foreign Ministry strongly condemned Bahrain's issuance of life sentences and asset confiscation against a group of scholars and citizens, calling it systematic and widespread violation of human rights.",
+                "_timestamp": 1794891252.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 17:52 UTC",
-            "Facts": "Bahrain's ruling regime has handed down life imprisonment sentences to numerous Shiite scholars following a mass trial, intensifying domestic sectarian tensions. Local protests have erupted in response to the severe judicial crackdown.",
-            "Macro_Context": "Domestic judicial crackdowns in Bahrain remain localized political developments with negligible spillover into international bullion flows or broader risk sentiment.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 20,
-            "Orderflow_Price_Target": "3845.61"
+            "Event_Timestamp": "2026-11-17 04:54 UTC",
+            "Facts": "[Update 2026-11-17 04:54 UTC via Mehr News Agency]: Iran's Foreign Ministry strongly condemned Bahrain's recent life imprisonment sentences and asset confiscation against Shiite scholars and citizens, labeling the rulings as a systematic human rights violation following mass trials.",
+            "Macro_Context": "Diplomatic tensions between Iran and Bahrain are escalating over the legal persecution and sentencing of Bahraini Shiite religious scholars."
         }
     },
     {
@@ -4803,19 +4806,14 @@
                 "_timestamp": 1794890856.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 17:49 UTC",
-            "Facts": "An Iranian high-level delegation led by Vice President Seyed Hamid Pourmohammadi met with Armenian officials in Yerevan to expand bilateral cultural relations.",
-            "Macro_Context": "Bilateral cultural cooperation between Iran and Armenia lacks systemic market impact and does not affect global commodity or currency flows.",
-            "Impact_Timing": "None",
-            "Timeframe": "None",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "None"
+            "Event_Timestamp": "2026-11-17 04:47 UTC",
+            "Facts": "[Update 2026-11-17 04:47 UTC via Mehr News Agency]: Iran's deputy foreign minister for legal and international affairs met with China's ambassador to discuss regional peace, stability, and ways to expand bilateral cooperation amid broader diplomatic engagements.",
+            "Macro_Context": "Iran continues to strengthen diplomatic ties and strategic dialogue with regional and international partners such as Armenia and China."
         }
     },
     {
@@ -5836,14 +5834,14 @@
                 "_timestamp": 1794890604.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-17 03:42 UTC",
-            "Facts": "[Update 2026-11-17 03:39 UTC via Mehr News Agency]: Iran's IRGC announced its Aerospace Force seized a US MQM-170 drone over southern Qeshm Island near the Strait of Hormuz using electronic warfare, bringing total captured drones of this type to nine. Oil tankers also struck sea mines in the Strait of Hormuz while Houthi fighters advanced in Yemen, escalating regional tensions alongside a drone alert at an Iraq gas field and the deployment of a US aircraft carrier.",
-            "Macro_Context": "Geopolitical escalation in the Strait of Hormuz and surrounding Middle Eastern chokepoints significantly threatens global energy supplies and maritime trade routes, driving safe-haven demand for gold."
+            "Event_Timestamp": "2026-11-17 04:43 UTC",
+            "Facts": "[Update 2026-11-17 04:43 UTC via Mehr News Agency]: An oil tanker that disabled its navigation systems caught fire and suffered heavy damage after striking a naval mine east of the Strait of Hormuz, coinciding with the IRGC's seizure of a US MQM-170 drone near Qeshm Island.",
+            "Macro_Context": "Surging military tensions in the Strait of Hormuz, including drone interceptions and naval mine strikes on oil tankers, pose direct threats to global crude energy transit and supply routes."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -9386,37 +9384,6 @@
         "max_dd_usd": 54.84
     },
     {
-        "main_date": "First Reported: 2026-11-16 05:01 UTC",
-        "original_date": "2026-11-16 05:01",
-        "_timestamp": 1794805294.0,
-        "articles": [
-            {
-                "title": "Iran’s Leader forwarded special message to Russia’s Putin",
-                "link": "https://en.mehrnews.com/news/249437/Iran-s-Leader-forwarded-special-message-to-Russia-s-Putin",
-                "source": "Mehr News Agency",
-                "date": "2026-11-16 05:01",
-                "description": "TEHRAN, Nov. 16 (MNA)– Iran ambassador has termed a recent letter sent by Leader of the Islamic Revolution Ayatollah Seyyed Mojtaba Khamenei to Russian President Vladimir Putin as special, noting significance of strategic ties between the two states.",
-                "_timestamp": 1794805294.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 05:01 UTC",
-            "Facts": "The Iranian ambassador characterized a recent message from Iran's Supreme Leader to Russian President Vladimir Putin as a special communication underscoring deep bilateral ties. | This diplomatic outreach highlights strengthening axis coordination amidst broader Middle East and global sanctions pressures.",
-            "Macro_Context": "Deepening strategic coordination between Iran and Russia reinforces geopolitical fragmentation, supporting structural bullion appeal.",
-            "Impact_Timing": "Medium-term (24-72h)",
-            "Timeframe": "Daily",
-            "XAUUSD_Impact": "Slightly Bullish",
-            "Probability_Percent": 60,
-            "Orderflow_Price_Target": "$3880.82"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 1.65
-    },
-    {
         "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-17 01:35 UTC",
         "original_date": "2026-11-12 13:02",
         "_timestamp": 1794879300.0,
@@ -12116,8 +12083,15 @@
                 "_timestamp": 1794888763.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-17 04:12 UTC",
+            "Facts": "[Update 2026-11-17 04:12 UTC via Mehr News Agency]: A recent poll indicates that only 31 percent of US adults support a military conflict or war against Iran.",
+            "Macro_Context": "Public opinion in the United States remains largely opposed to military intervention against Iran amid rising geopolitical flashpoints in the Persian Gulf."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-17 04:30 UTC",
@@ -12141,6 +12115,30 @@
             "Event_Timestamp": "2026-11-17 04:30 UTC",
             "Facts": "Grand Ayatollah Hossein Vahid Khorasani, a leading Shia authority and senior teacher of the Qom seminary, passed away on Tuesday.",
             "Macro_Context": "The passing of a senior religious authority in Iran is a significant domestic and regional political event, though it has no direct connection to gold bullion markets or central bank monetary policies."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 04:34 UTC",
+        "original_date": "2026-11-17 04:34",
+        "_timestamp": 1794890054.0,
+        "articles": [
+            {
+                "title": "Why Is Suncor Energy (TSX:SU) Rethinking Its In Situ Growth Plans?",
+                "link": "https://finance.yahoo.com/energy/articles/why-suncor-energy-tsx-su-043414518.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 04:34",
+                "description": "Suncor Energy (TSX:SU) is weighing faster timelines for new in situ oilsands projects after recent policy shifts in Alberta. Alberta's government has set a target to double oilsands production within about ten years, backed by new supportive measures. Suncor's CEO has outlined the potential for expanded in situ development over the coming years, linking future projects to evolving regulations. Suncor's possible acceleration of in situ projects un",
+                "_timestamp": 1794890054.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-17 04:34 UTC",
+            "Facts": "[Update 2026-11-17 04:34 UTC via Yahoo Finance Oil]: Suncor Energy is evaluating faster timelines for new in situ oilsands projects in response to Alberta's policy shifts and government targets aimed at doubling oilsands production over the next decade.",
+            "Macro_Context": "Favorable regulatory changes and policy targets in Alberta are encouraging Canadian energy firms to accelerate production timelines and expand oilsands development."
         }
     }
 ]

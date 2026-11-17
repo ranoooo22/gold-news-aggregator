@@ -3171,9 +3171,9 @@
         "max_dd_usd": 5.24
     },
     {
-        "main_date": "First Reported: 2026-11-15 16:49 UTC | Last Update: 2026-11-16 19:29 UTC",
+        "main_date": "First Reported: 2026-11-15 16:49 UTC | Last Update: 2026-11-17 03:43 UTC",
         "original_date": "2026-11-15 16:49",
-        "_timestamp": 1794857353.0,
+        "_timestamp": 1794887022.0,
         "articles": [
             {
                 "title": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
@@ -3222,16 +3222,24 @@
                 "date": "2026-11-16 19:29",
                 "description": "Key TakeawaysThe Trump administration plans to name NVIDIA, Amazon, Microsoft, OpenAI and Anthropic among more than two dozen AI “national champions,” the Wall Street Journal reported on Sunday. The same day, Treasury Secretary Scott Bessent called for a “dramatic shakeup” at NVIDIA and urged its board to hire an outside CEO.",
                 "_timestamp": 1794857353.0
+            },
+            {
+                "title": "Bessent Says Nvidia Needs A “Dramatic Shakeup,” As A Singapore Firm Reportedly Moved At Least $7.5 Billion Of Nvidia Chips To China.",
+                "link": "https://247wallst.com/investing/2026/11/16/bessent-says-nvidia-needs-a-dramatic-shakeup-as-a-singapore-firm-reportedly-moved-at-least-7-5-billion-of-nvidia-chips-to-china/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 03:43",
+                "description": "Treasury's top official compared the world's most valuable chipmaker to a bank regulators would storm, and he wants its board to look outside for new leadership. With earnings days away, one question could define what Nvidia owes investors.",
+                "_timestamp": 1794887022.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 19:29 UTC",
-            "Facts": "Treasury Secretary Scott Bessent demanded a dramatic leadership shakeup at Nvidia, urging the board to hire an outside CEO and comply with export controls, while the Trump administration plans to name several major tech firms as AI national champions.",
-            "Market_Context": "Government intervention and public statements from executive branch officials regarding corporate governance at major semiconductor firms create policy uncertainty for the tech sector."
+            "Event_Timestamp": "2026-11-17 03:43 UTC",
+            "Facts": "[Update 2026-11-17 03:43 UTC via Yahoo Finance Nasdaq]: Treasury Secretary Scott Bessent demanded a dramatic shakeup at Nvidia, giving its board 10 days to prove compliance with US export controls and urging the hiring of an outside CEO following reports that a Singapore firm moved at least $7.5 billion of Nvidia chips to China. Meanwhile, the Trump administration plans to designate Nvidia, Amazon, Microsoft, OpenAI, and Anthropic as AI national champions.",
+            "Macro_Context": "Ongoing geopolitical and regulatory scrutiny over advanced semiconductor supply chains, US export controls, and strategic national technology policies."
         },
         "eval_status": "MISS",
         "max_dd_usd": 52.22
@@ -5824,9 +5832,9 @@
         "max_dd_usd": 17.09
     },
     {
-        "main_date": "First Reported: 2026-11-16 17:29 UTC",
+        "main_date": "First Reported: 2026-11-16 17:29 UTC | Last Update: 2026-11-17 04:00 UTC",
         "original_date": "2026-11-16 17:29",
-        "_timestamp": 1794850140.0,
+        "_timestamp": 1794888034.0,
         "articles": [
             {
                 "title": "After the strikes, Iran rethinks the nuclear threshold",
@@ -5835,21 +5843,24 @@
                 "date": "2026-11-16 17:29",
                 "description": "MADRID - More than eight months have passed since Trump and Netanyahu launched their war on Iran, a war Trump thought would be over within days. Where does it stand today?",
                 "_timestamp": 1794850140.0
+            },
+            {
+                "title": "Double standards undermine nuclear-free Mideast efforts",
+                "link": "https://en.mehrnews.com/news/249463/Double-standards-undermine-nuclear-free-Mideast-efforts",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 04:00",
+                "description": "TEHRAN, Nov. 17 (MNA) – Iran's UN envoy said Tehran seeks a Middle East free of nuclear and other weapons of mass destruction, warning that Israeli refusal to join the NPT and Western double standards are the main obstacles.",
+                "_timestamp": 1794888034.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 17:29 UTC",
-            "Facts": "An analytical update evaluates the eight-month military conflict between the US, Israel, and Iran, highlighting that prolonged hostilities are forcing Tehran to rethink its nuclear threshold. The assessment notes strategic miscalculations regarding the war's duration and scope.",
-            "Macro_Context": "Ongoing war risk involving Iran sustains structural safe-haven demand for Gold, with long-term strategic uncertainty hedging against broader escalation.",
-            "Impact_Timing": "Structural",
-            "Timeframe": "7-14d",
-            "XAUUSD_Impact": "Mild Bullish",
-            "Probability_Percent": 59,
-            "Orderflow_Price_Target": "3880.50"
+            "Event_Timestamp": "2026-11-17 04:00 UTC",
+            "Facts": "[Update 2026-11-17 04:00 UTC via Mehr News Agency]: Iran's UN envoy stated that Tehran seeks a Middle East free of weapons of mass destruction while criticizing Western double standards and Israel's refusal to join the NPT as the primary obstacles to regional disarmament, following months of ongoing conflict.",
+            "Macro_Context": "Persistent Middle Eastern geopolitical tensions, regional nuclear policy debates, and ongoing security concerns impacting international diplomacy."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 26.25
@@ -10019,160 +10030,6 @@
         "max_dd_usd": 103.5
     },
     {
-        "main_date": "First Reported: 2026-11-16 04:01 UTC",
-        "original_date": "2026-11-16 04:01",
-        "_timestamp": 1794801717.0,
-        "articles": [
-            {
-                "title": "Iraq’s president urges Trump to fulfill pledge to end wars",
-                "link": "https://en.mehrnews.com/news/249434/Iraq-s-president-urges-Trump-to-fulfill-pledge-to-end-global",
-                "source": "Mehr News Agency",
-                "date": "2026-11-16 04:01",
-                "description": "TEHRAN, Nov. 16 (MNA) – Iraq’s President Nizar Amedi says that Trump should focus on ending wars, as he promised to do in his 2024 presidential campaign.",
-                "_timestamp": 1794801717.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 04:01 UTC",
-            "Facts": "Iraq’s President Nizar Amedi publicly urged U.S. leadership to honor campaign pledges aimed at terminating ongoing regional conflicts. Diplomatic appeals highlight the acute sensitivity of Middle Eastern stability to upcoming foreign policy shifts.",
-            "Macro_Context": "Uncertainty surrounding future U.S. intervention policies in the Middle East reinforces defensive positioning in precious metals.",
-            "Impact_Timing": "Medium-term",
-            "Timeframe": "7-14d",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Orderflow_Price_Target": "3880.82"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 35.32
-    },
-    {
-        "main_date": "First Reported: 2026-11-15 00:18 UTC | Last Update: 2026-11-16 03:55 UTC",
-        "original_date": "2026-11-15 00:18",
-        "_timestamp": 1794801348.0,
-        "articles": [
-            {
-                "title": "Hamas commander Samir Abu Younis killed in Israeli strike on Khan Younis",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-commander-samir-abu-younis-killed-israeli-strike-khan-younis",
-                "source": "Middle East Eye",
-                "date": "2026-11-15 00:18",
-                "description": "Hamas commander Samir Abu Younis killed in Israeli strike on Khan Younis\n\n    \n    \n\n        \n    \n                Hamas' armed wing said on Sunday that a senior commander who helped plan and oversee the 7 October 2023 attack on Israel had been killed in an Israeli airstrike.\n\nThe Al-Qassam Brigades identified the commander as Samir Abu Younis, 53, the commander of its Rafah brigade, and said he was killed on Saturday.\n\nThe Israeli military said ",
-                "_timestamp": 1794701887.0
-            },
-            {
-                "title": "Israeli air strike kills senior Hamas commander in Gaza",
-                "link": "https://www.aljazeera.com/news/2026/11/15/israeli-air-strike-kills-senior-hamas-commander-in-gaza?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-15 01:00",
-                "description": "Hamas confirms the death of Rafah brigade commander Samir Abu Younis in an attack on Khan Younis on Saturday.",
-                "_timestamp": 1794704442.0
-            },
-            {
-                "title": "Israeli drone strike kills one in Gaza’s al-Mawasi",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-drone-strike-kills-one-gazas-al-mawasi",
-                "source": "Middle East Eye",
-                "date": "2026-11-15 17:31",
-                "description": "Israeli drone strike kills one in Gaza’s al-Mawasi\n\n    \n    \n\n        \n    \n                Gaza’s Civil Defence says an Israeli drone struck al-Mawasi in the south of the Strip, killing one person and wounding many others.",
-                "_timestamp": 1794763902.0
-            },
-            {
-                "title": "Israel kills Palestinian commander in al-Mawasi, an area it once called a ‘humanitarian zone’",
-                "link": "https://www.tehrantimes.com/news/532175/Israel-kills-Palestinian-commander-in-al-Mawasi-an-area-it-once",
-                "source": "Tehran Times",
-                "date": "2026-11-15 18:06",
-                "description": "TEHRAN — Hamas confirmed on Sunday that Samir Abu Younis, commander of the al-Qassam Brigades’ Rafah Brigade, was killed in an Israeli drone strike on a tent in al-Mawasi, west of Khan Younis. He was martyred in a coastal strip where displaced families have lived in tents for months, more than a year into a ceasefire that Israel treats as optional.",
-                "_timestamp": 1794766017.0
-            },
-            {
-                "title": "Hamas condemns deadly Israeli attack on civilian checkpoint",
-                "link": "https://en.mehrnews.com/news/249433/Hamas-condemns-deadly-Israeli-attack-on-civilian-checkpoint",
-                "source": "Mehr News Agency",
-                "date": "2026-11-16 03:55",
-                "description": "TEHRAN, Nov. 16 (MNA) – The Gaza Government Media Office has condemned an Israeli attack on a security checkpoint that killed several Ministry of National Economy employees on October 28.",
-                "_timestamp": 1794801348.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 03:55 UTC",
-            "Facts": "[Update 2026-11-16 03:55 UTC via Mehr News Agency]: Gaza authorities condemned recent strikes on civilian infrastructure following the targeted killing of senior Hamas commander Samir Abu Younis. | Ongoing targeted military operations and localized drone strikes continue to undermine fragile regional ceasefires.",
-            "Macro_Context": "Continuous military skirmishes prevent any de-escalation of risk premiums, sustaining steady institutional demand for gold.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday (0-24h)",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "3889.75"
-        },
-        "eval_status": "MISS",
-        "max_dd_usd": 0.0
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 03:54 UTC",
-        "original_date": "2026-11-16 03:54",
-        "_timestamp": 1794801244.0,
-        "articles": [
-            {
-                "title": "Pope Leo flies to mass in the Papacoptero",
-                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/16/pope-leo-flies-to-mass-in-the-papacoptero?traffic_source=rss",
-                "source": "Al Jazeera English",
-                "date": "2026-11-16 03:54",
-                "description": "Pope Leo was filmed flying in the cockpit of an army helicopter to celebrate mass",
-                "_timestamp": 1794801244.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 03:54 UTC",
-            "Facts": "Pope Leo was filmed traveling in the cockpit of an army helicopter to celebrate mass. This is a routine cultural and religious report carrying no macroeconomic significance.",
-            "Macro_Context": "This event has zero transmission channels to monetary policy, inflation metrics, or currency valuations, rendering it irrelevant for gold.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday (0-24h)",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3834.11"
-        }
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 03:53 UTC",
-        "original_date": "2026-11-16 03:53",
-        "_timestamp": 1794801190.0,
-        "articles": [
-            {
-                "title": "Araghchi advises Hegseth to learn from history",
-                "link": "https://en.mehrnews.com/news/249432/Araghchi-advises-Hegseth-to-learn-from-history",
-                "source": "Mehr News Agency",
-                "date": "2026-11-16 03:53",
-                "description": "TEHRAN, Nov. 16 (MNA) – Iran's foreign minister responded to U.S. Defense Secretary Pete Hegseth with a pointed historical warning, saying those who cannot remember the past are condemned to repeat it.",
-                "_timestamp": 1794801190.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 03:53 UTC",
-            "Facts": "Iranian foreign minister issued a pointed historical warning to U.S. Defense Secretary Pete Hegseth. This exchange highlights ongoing diplomatic friction and lingering tensions between Washington and Tehran.",
-            "Macro_Context": "Persisting rhetoric regarding regional conflicts underpins safe-haven demand for XAU/USD amid broader geopolitical anxiety.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h Intraday",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Orderflow_Price_Target": "$3889.75"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 41.87
-    },
-    {
         "main_date": "First Reported: 2026-11-16 03:41 UTC | Last Update: 2026-11-16 19:03 UTC",
         "original_date": "2026-11-16 03:41",
         "_timestamp": 1794855801.0,
@@ -12148,6 +12005,30 @@
             "Event_Timestamp": "2026-11-17 03:25 UTC",
             "Facts": "[Update 2026-11-17 03:25 UTC via Yahoo Finance Nasdaq]: BlueQubit announced the recipients of its Quantum Flywheel grant program, a $150,000 initiative supported by IBM, AWS, and NVIDIA to provide computing credits and AI tokens for quantum and classical research.",
             "Macro_Context": "Microeconomic developments in the quantum computing and AI sector have no direct impact on macroeconomic inflation indicators or Federal Reserve monetary policy paths."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 03:47 UTC",
+        "original_date": "2026-11-17 03:47",
+        "_timestamp": 1794887220.0,
+        "articles": [
+            {
+                "title": "Goldman Sachs just revamped its 2027 gold target for the second time",
+                "link": "https://www.thestreet.com/investing/goldman-sachs-2027-gold-forecast-cut?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 03:47",
+                "description": "The bigger test for gold lies ahead.",
+                "_timestamp": 1794887220.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 03:47 UTC",
+            "Facts": "[Update 2026-11-17 03:47 UTC via Yahoo Finance Gold]: Goldman Sachs has updated its 2027 gold price target for the second time, pointing to forthcoming market tests for the precious metal.",
+            "Macro_Context": "Macroeconomic adjustments, evolving central bank policies, and institutional revisions of long-term bullion valuation forecasts."
         }
     }
 ]

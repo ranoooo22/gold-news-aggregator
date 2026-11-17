@@ -1830,14 +1830,14 @@
                 "_timestamp": 1794885835.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 00:41 UTC",
-            "Facts": "[Update 2026-11-17 00:41 UTC via Yahoo Finance Nasdaq]: Taiwan Semiconductor closed down 9.7% over three days despite reporting a record monthly revenue of NT$587 billion. The broader chip sector, including Micron and AMD, experienced a steep sell-off as investors grew jittery ahead of Nvidia's upcoming earnings report.",
-            "Macro_Context": "Semiconductor equities face broad liquidation and volatility as investors reassess valuation multiples and risk exposure ahead of major sector earnings."
+            "Event_Timestamp": "2026-11-17 03:23 UTC",
+            "Facts": "[Update 2026-11-17 03:23 UTC via Yahoo Finance Nasdaq]: Investor Gene Munster compared Nvidia to Apple on X, stating Nvidia could secure a higher earnings multiple if growth slows and customers return for chip upgrades. Artificial intelligence stocks including Micron, AMD, and Nvidia faced selling pressure amid investor anxiety over upcoming earnings reports and future ecosystem financing.",
+            "Macro_Context": "Broader semiconductor sector sell-offs driven by caution regarding Nvidia's upcoming earnings and AI infrastructure spending sustainability."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -3143,14 +3143,14 @@
                 "_timestamp": 1794888260.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 22:20 UTC",
-            "Facts": "[Update 2026-11-16 22:20 UTC via Yahoo Finance Nasdaq]: Amazon shares slid following new US AI chip export rules and a Leo satellite launch failure, compounding pressure on mega-cap chipmakers and US equity indexes.",
-            "Macro_Context": "Regulatory headwinds from the Commerce Department regarding advanced AI infrastructure access weighing heavily on mega-cap tech."
+            "Event_Timestamp": "2026-11-17 04:04 UTC",
+            "Facts": "[Update 2026-11-17 04:04 UTC via Yahoo Finance Nasdaq]: Data center operators in Southeast Asia and Brazil now require a U.S. license to purchase advanced AI chips from manufacturers like Nvidia under new interim rules introduced by the Commerce Department. The regulatory restrictions triggered a broader sell-off across mega-cap chipmakers and tech equities.",
+            "Macro_Context": "U.S. regulatory clampdown on advanced AI infrastructure access and chip exports to specific foreign markets creates severe headwinds for major tech equities."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.24
@@ -5011,14 +5011,14 @@
                 "_timestamp": 1794888382.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 01:10 UTC",
-            "Facts": "[Update 2026-11-17 01:10 UTC via Yahoo Finance Nasdaq]: This is a massive week for markets featuring Nvidia's earnings after Jensen Huang's resignation, the upcoming Fed meeting minutes, and Anthropic's IPO. Wall Street indices closed the previous week higher despite a tech selloff driven by an AI leadership crisis, rising Treasury yields, and fresh chip export curbs.",
-            "Macro_Context": "Tech sector volatility persists amid shifting monetary policy expectations and leadership transitions in major AI firms."
+            "Event_Timestamp": "2026-11-17 04:06 UTC",
+            "Facts": "[Update 2026-11-17 04:06 UTC via Yahoo Finance Nasdaq]: Anthropic's upcoming public listing, expected on Wednesday, is projected to reach a valuation exceeding $1.4 trillion, presenting a key test for market appetite. Wall Street indexes face a heavy week featuring Nvidia's earnings and upcoming Federal Reserve meeting minutes.",
+            "Macro_Context": "Major macroeconomic and corporate catalysts dictate market direction as Wall Street processes weekly gains against technical resistance levels."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
@@ -6114,14 +6114,14 @@
                 "_timestamp": 1794889093.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-17 04:00 UTC",
-            "Facts": "[Update 2026-11-17 04:00 UTC via Al Jazeera English]: Israeli settlers opened fire in the village of al Duyuk near Jericho killing one woman and injuring several others. [Update 2026-11-17 01:21 UTC via Middle East Eye]: Casualties in the Israeli settler attack rose to one 60-year-old woman killed and approximately 10 injured, including a 65-year-old man. Five Palestinians were initially reported shot and wounded in the village of al-Duyuk al-Tahta near Jericho in the occupied West Bank by the Palestinian Red Crescent.",
-            "Macro_Context": "Ongoing violence in the occupied West Bank contributes to regional geopolitical instability, driving safe-haven demand for gold bullion."
+            "Event_Timestamp": "2026-11-17 04:18 UTC",
+            "Facts": "[Update 2026-11-17 04:18 UTC via Mehr News Agency]: Israeli settler attacks in the village of al-Duyuk al-Tahta near Jericho in the occupied West Bank resulted in one fatality and multiple injuries among Palestinians, with total casualties reaching at least 11 according to reports.",
+            "Macro_Context": "Ongoing violence and settler attacks in the West Bank heighten localized conflict metrics and regional tension."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.2
@@ -6673,9 +6673,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 10:33 UTC | Last Update: 2026-11-16 16:33 UTC",
+        "main_date": "First Reported: 2026-11-15 10:33 UTC | Last Update: 2026-11-17 04:36 UTC",
         "original_date": "2026-11-15 10:33",
-        "_timestamp": 1794846792.0,
+        "_timestamp": 1794890199.0,
         "articles": [
             {
                 "title": "Iran’s top diplomat to travel to Pakistan for ECO meeting",
@@ -6740,21 +6740,24 @@
                 "date": "2026-11-16 16:33",
                 "description": "TEHRAN, Nov. 16 (MNA) – Pakistani Prime Minister Shehbaz Sharif held a joint meeting with the heads of delegations attending the 30th ECO Council of Ministers, including Iranian Foreign Minister Abbas Araghchi.",
                 "_timestamp": 1794846792.0
+            },
+            {
+                "title": "Araghchi in Muscat for talks with Omani officials",
+                "link": "https://en.mehrnews.com/news/249468/Araghchi-in-Muscat-for-talks-with-Omani-officials",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 04:36",
+                "description": "TEHRAN, Nov. 17 (MNA) – Iranian Foreign Minister Abbas Araghchi is visiting Muscat to hold talks with senior Omani officials on bilateral relations and regional developments.",
+                "_timestamp": 1794890199.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 16:33 UTC",
-            "Facts": "[Update 2026-11-16 16:33 UTC via Mehr News Agency]: Iranian Foreign Minister Abbas Araghchi met with Pakistani Prime Minister Shehbaz Sharif and Army Chief Asim Munir in Islamabad to discuss security and mediation. | High-level diplomatic talks are underway to manage bilateral ties and regional stability amid ongoing conflict with the US.",
-            "Macro_Context": "Active regional diplomatic negotiations may slightly cool immediate geopolitical tail-risk expectations, neutralizing short-term Gold safe-haven momentum.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h Intraday Pulse",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 55,
-            "Orderflow_Price_Target": "$3851.33"
+            "Event_Timestamp": "2026-11-17 04:36 UTC",
+            "Facts": "[Update 2026-11-17 04:36 UTC via Mehr News Agency]: Iranian Foreign Minister Abbas Araghchi traveled to Muscat for diplomatic discussions with senior Omani officials concerning bilateral relations and regional security developments, following high-level meetings in Islamabad.",
+            "Macro_Context": "Intensified regional diplomatic outreach by Iranian officials amid persistent geopolitical tensions involving Western actors."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -9672,37 +9675,6 @@
         "max_dd_usd": 10.62
     },
     {
-        "main_date": "First Reported: 2026-11-16 04:32 UTC",
-        "original_date": "2026-11-16 04:32",
-        "_timestamp": 1794803561.0,
-        "articles": [
-            {
-                "title": "‘The FBI Doesn’t Take Petitions’: Anthony Scaramucci Says ‘Stop Comparing’ Jensen Huang With Sam Altman",
-                "link": "https://finance.yahoo.com/markets/stocks/articles/fbi-doesn-t-petitions-anthony-043241961.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-16 04:32",
-                "description": "Former White House communications director Anthony Scaramucci rejected comparisons between Jensen Huang’s resignation from Nvidia Corp. (NASDAQ:NVDA) and Sam Altman’s brief 2023 ouster from OpenAI, arguing that federal investigations make the circumstances fundamentally different. Scaramucci Warns Federal Investigations Change Everything \"Stop comparing Jensen to Sam Altman,\" Scaramucci wrote in an X post on Sunday. \"No FBI. No DOJ. No Congress. ",
-                "_timestamp": 1794803561.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 04:32 UTC",
-            "Facts": "Former White House official Anthony Scaramucci dismissed comparisons between Nvidia leadership changes and past tech executive ousters, highlighting that active federal investigations involving the DOJ and FBI create unique legal circumstances. This legal scrutiny underscores heightened regulatory oversight across major technology conglomerates.",
-            "Macro_Context": "Tech sector legal probes drive broader equity volatility, periodically triggering safe-haven flows into XAU/USD as institutional liquidity repositions.",
-            "Impact_Timing": "Short-term",
-            "Timeframe": "Intraday (0-24h)",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 70,
-            "Orderflow_Price_Target": "3889.75"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 35.32
-    },
-    {
         "main_date": "First Reported: 2026-11-09 19:00 UTC | Last Update: 2026-11-17 01:38 UTC",
         "original_date": "2026-11-09 19:00",
         "_timestamp": 1794879493.0,
@@ -10848,14 +10820,14 @@
                 "_timestamp": 1794889353.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 5,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 21:38 UTC",
-            "Facts": "[Update 2026-11-16 21:38 UTC via Middle East Eye]: New York City Mayor Zohran Mamdani announced the disbandment of the NYPD’s Strategic Response Group (SRG), a specialized police unit previously deployed at protests which faced heavy criticism for aggressive tactics.",
-            "Macro_Context": "Local municipal policy shifts regarding policing methods during public demonstrations."
+            "Event_Timestamp": "2026-11-17 04:22 UTC",
+            "Facts": "[Update 2026-11-17 04:22 UTC via Middle East Eye]: New York City Mayor Zohran Mamdani announced the disbandment of the NYPD's Strategic Response Group (SRG), a specialized protest-deployment unit criticized for aggressive tactics, replacing it with de-escalation groups.",
+            "Macro_Context": "Municipal policy shifts in New York City regarding law enforcement tactics during civil protests."
         }
     },
     {

@@ -8623,9 +8623,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 12:15 UTC",
+        "main_date": "First Reported: 2026-11-16 12:15 UTC | Last Update: 2026-11-17 07:58 UTC",
         "original_date": "2026-11-16 12:15",
-        "_timestamp": 1794831300.0,
+        "_timestamp": 1794902280.0,
         "articles": [
             {
                 "title": "Sranan Gold Discovers New Gold Zone at Lawatino 300 m Northeast of the 101 Zone",
@@ -8634,21 +8634,24 @@
                 "date": "2026-11-16 12:15",
                 "description": "Vancouver, British Columbia--(Newsfile Corp. - November 16, 2026) - Sranan Gold Corp. (CSE: SRAN) (OTCQB: SRANF) (FSE: P84) (Tradegate: P84) (\"Sranan\" or the \"Company\") announces the discovery of a new showing of gold mineralization, the RB Zone, located approximately 300 metres northeast of the 101 Zone within its 18,468-hectare Lawatino Gold Project in southeastern Suriname. Field crews recovered numerous visible gold grains by panning samples ",
                 "_timestamp": 1794831300.0
+            },
+            {
+                "title": "Arkadian Strategic Metals pursues opportunities to recover gold and advance Clogau mine",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101895/arkadian-strategic-metals-pursues-opportunities-to-recover-gold-and-advance-clogau-mine-1101895.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 07:58",
+                "description": "Arkadian Strategic Metals PLC (AIM:AKN, OTC:ALBAF) is processing a further 1.7 tonnes of material from the floor around Shaft 2 at its Clogau-St David’s mine in north Wales after recovering 0.81 grams of gold from an initial 100kg sample. The first sample would yield 8.1 grams of gold per tonne...",
+                "_timestamp": 1794902280.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 12:15 UTC",
-            "Facts": "Sranan Gold Corp identified a new gold mineralized target named the RB Zone at its Lawatino project in Suriname. Initial surface field sampling recovered visible gold grains approximately 300 meters from existing target areas.",
-            "Macro_Context": "Early-stage exploration updates from micro-cap junior exploration firms do not impact global gold reserves or institutional trading dynamics.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday (1-24h)",
-            "XAUUSD_Impact": "Neutral / No Direct Transmission",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3869.99"
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-17 07:58 UTC",
+            "Facts": "[Update 2026-11-17 07:58 UTC via Yahoo Finance Gold]: Arkadian Strategic Metals PLC is processing an additional 1.7 tonnes of material from Shaft 2 at the Clogau-St David's mine in north Wales following a successful initial 100kg sample yielding 8.1 grams per tonne. Sranan Gold Corp. announced the discovery of the new RB Zone gold mineralization showing at its Lawatino Gold Project in southeastern Suriname, located 300 metres northeast of the 101 Zone.",
+            "Macro_Context": "Mining exploration updates and minor project developments across global junior gold miners."
         }
     },
     {
@@ -9140,45 +9143,6 @@
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 18.93
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 05:39 UTC | Last Update: 2026-11-16 08:08 UTC",
-        "original_date": "2026-11-16 05:39",
-        "_timestamp": 1794816533.0,
-        "articles": [
-            {
-                "title": "UKMTO reports armed men on boat 430 nautical miles from Yemen’s Socotra",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/ukmto-reports-armed-men-boat-430-nautical-miles-yemens-socotra",
-                "source": "Middle East Eye",
-                "date": "2026-11-16 05:39",
-                "description": "UKMTO reports armed men on boat 430 nautical miles from Yemen’s Socotra\n\n    \n    \n\n        \n    \n                The UK Maritime Trade Operations (UKMTO) agency has reported an incident 430 nautical miles (800km) east of the Yemeni island of Socotra.\n\nAccording to UKMTO, four armed men were reported on board a skiff with a ladder also visible.&nbsp;\n\n\"Vessels are advised to transit with caution and report any suspicious activity to UKMTO, whilst",
-                "_timestamp": 1794807599.0
-            },
-            {
-                "title": "Morning update",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-671",
-                "source": "Middle East Eye",
-                "date": "2026-11-16 08:08",
-                "description": "Morning update\n\n    \n    \n\n        \n    \n                Good morning, Middle East Eye readers,\n\nHere are the latest developments:&nbsp;\n\n\n\t\n\tThe United Kingdom Maritime Trade Operations (UKMTO) agency said it received a report of an incident in the Strait of Hormuz where a vessel was struck by an \"unknown projectile\" while transiting&nbsp;outbound.&nbsp;\n\t\n\t\n\tThe UKMTO also reported an incident 430 nautical miles (800km) east of the Yemeni islan",
-                "_timestamp": 1794816533.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 08:08 UTC",
-            "Facts": "[Update 2026-11-16 08:08 UTC via Middle East Eye]: The UKMTO reported a vessel struck by an unknown projectile in the Strait of Hormuz alongside a separate sighting of armed men on a skiff east of Socotra. These maritime disruptions underscore ongoing security threats to crucial shipping lanes in the Middle East. | Maritime incidents in the Strait of Hormuz and surrounding chokepoints consistently heighten risk premiums across energy and safe-haven assets.",
-            "Macro_Context": "Ongoing shipping disruptions in the Strait of Hormuz amplify regional security anxieties, reinforcing safe-haven demand for Gold while keeping energy supply risks elevated.",
-            "Impact_Timing": "Immediate (0-2 hours)",
-            "Timeframe": "Intraday Pulse",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 65,
-            "Orderflow_Price_Target": "3880.3"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 1.65
     },
     {
         "main_date": "First Reported: 2026-11-15 02:07 UTC | Last Update: 2026-11-17 07:52 UTC",
@@ -12375,9 +12339,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 06:59 UTC",
+        "main_date": "First Reported: 2026-11-17 06:59 UTC | Last Update: 2026-11-17 07:54 UTC",
         "original_date": "2026-11-17 06:59",
-        "_timestamp": 1794898782.0,
+        "_timestamp": 1794902051.0,
         "articles": [
             {
                 "title": "U.S. agencies say they initiated investigation into Nvidia partner Megaspeed in 2024",
@@ -12386,16 +12350,24 @@
                 "date": "2026-11-17 06:59",
                 "description": "The Commerce and Justice departments said in a joint statement that U.S. investigations into Megaspeed began in 2024.",
                 "_timestamp": 1794898782.0
+            },
+            {
+                "title": "Ahead Of Nvidia’s Earnings, US Confirms Megaspeed On ‘No-Sell’ List — But Doesn't Mention Jensen Huang",
+                "link": "https://stocktwits.com/news-articles/markets/equity/ahead-of-nvidia-s-earnings-us-confirms-megaspeed-on-no-sell-list-but-doesn-t-mention-jensen-huang/cNbanliR9Wd?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 07:54",
+                "description": "The Commerce Department and Secretary Howard Lutnick have come under pressure over possible oversight in the Megaspeed-Nvidia dealings.",
+                "_timestamp": 1794902051.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 06:59 UTC",
-            "Facts": "The Commerce and Justice departments issued a joint statement revealing that U.S. investigations into Nvidia partner Megaspeed were initiated in 2024.",
-            "Macro_Context": "Ongoing U.S. regulatory scrutiny and investigations involving major artificial intelligence hardware partners and semiconductor supply chains."
+            "Event_Timestamp": "2026-11-17 07:54 UTC",
+            "Facts": "[Update 2026-11-17 07:54 UTC via Yahoo Finance Nasdaq]: The U.S. Commerce Department confirmed that Nvidia partner Megaspeed has been placed on a 'no-sell' list ahead of Nvidia's earnings release. [Update 2026-11-17 06:59 UTC via CNBC Tech & AI]: The Commerce and Justice departments jointly stated that investigations into Megaspeed were originally initiated in 2024.",
+            "Macro_Context": "Regulatory scrutiny and export control investigations impacting key semiconductor supply chains and major tech firms."
         }
     },
     {

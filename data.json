@@ -1169,9 +1169,9 @@
         "max_dd_usd": 13.22
     },
     {
-        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-17 03:23 UTC",
+        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-17 05:18 UTC",
         "original_date": "2026-11-05 15:15",
-        "_timestamp": 1794885835.0,
+        "_timestamp": 1794892714.0,
         "articles": [
             {
                 "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
@@ -1836,6 +1836,14 @@
                 "date": "2026-11-17 03:23",
                 "description": "View more earnings on NVDA Nvidia Corp. (NASDAQ:NVDA) could earn a higher earnings multiple even if growth slows, investor Gene Munster said Monday, as long as customers return for chip upgrades. Sees Apple Playbook for Nvidia In a post on X, the managing partner at Deepwater Asset Management compared Nvidia with Apple Inc. (NASDAQ:AAPL), asking what would happen to the chipmaker’s earnings multiple “if investors could sleep well.” Apple’s multip",
                 "_timestamp": 1794885835.0
+            },
+            {
+                "title": "U.S. Commerce Dept, DOJ say they investigated Nvidia partner Megaspeed in 2024",
+                "link": "https://finance.yahoo.com/technology/ai/articles/u-commerce-dept-doj-investigated-051834040.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 05:18",
+                "description": "Investing.com-- The U.S. Department of Commerce said on Monday it had investigated Singapore-based Nvidia cloud partner Megaspeed for potential export violations in 2024.",
+                "_timestamp": 1794892714.0
             }
         ],
         "needs_update": false,
@@ -1843,9 +1851,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 03:23 UTC",
-            "Facts": "[Update 2026-11-17 03:23 UTC via Yahoo Finance Nasdaq]: Investor Gene Munster compared Nvidia to Apple on X, stating Nvidia could secure a higher earnings multiple if growth slows and customers return for chip upgrades. Artificial intelligence stocks including Micron, AMD, and Nvidia faced selling pressure amid investor anxiety over upcoming earnings reports and future ecosystem financing.",
-            "Macro_Context": "Broader semiconductor sector sell-offs driven by caution regarding Nvidia's upcoming earnings and AI infrastructure spending sustainability."
+            "Event_Timestamp": "2026-11-17 05:18 UTC",
+            "Facts": "[Update 2026-11-17 05:18 UTC via Yahoo Finance Nasdaq]: The U.S. Department of Commerce stated it investigated Nvidia cloud partner Megaspeed for potential export violations in 2024. Advanced Micro Devices (AMD) shares gained following Nvidia's recent volatility, while Taiwan Semiconductor shares dropped nearly 10% over three days despite posting record monthly revenue.",
+            "Macro_Context": "Markets are closely evaluating semiconductor supply chains, regulatory scrutiny, and upcoming corporate earnings amid shifting tech valuations."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -3106,9 +3114,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 18:04 UTC | Last Update: 2026-11-17 04:04 UTC",
+        "main_date": "First Reported: 2026-11-16 18:04 UTC | Last Update: 2026-11-17 05:25 UTC",
         "original_date": "2026-11-16 18:04",
-        "_timestamp": 1794888260.0,
+        "_timestamp": 1794893121.0,
         "articles": [
             {
                 "title": "Update: Chipmakers Push US Equity Indexes Lower as Commerce Department Plans to Curb Access to Advanced AI Infrastructure",
@@ -3149,6 +3157,14 @@
                 "date": "2026-11-17 04:04",
                 "description": "Data center operators in Southeast Asia and Brazil now need a U.S. license for buying advanced AI chips from Nvidia and other U.S. manufacturers for certain customers, according to new interim rules.",
                 "_timestamp": 1794888260.0
+            },
+            {
+                "title": "China megacap tech stocks fall as U.S. tightens curbs on AI chip access",
+                "link": "https://finance.yahoo.com/technology/ai/articles/china-megacap-tech-stocks-fall-052521839.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 05:25",
+                "description": "Investing.com-- Chinese technology heavyweights fell on Tuesday after Washington announced fresh restrictions aimed at preventing Chinese companies from accessing advanced U.S. artificial intelligence chips through overseas data centres.",
+                "_timestamp": 1794893121.0
             }
         ],
         "needs_update": false,
@@ -3156,9 +3172,9 @@
             "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 04:04 UTC",
-            "Facts": "[Update 2026-11-17 04:04 UTC via Yahoo Finance Nasdaq]: Data center operators in Southeast Asia and Brazil now require a U.S. license to purchase advanced AI chips from manufacturers like Nvidia under new interim rules introduced by the Commerce Department. The regulatory restrictions triggered a broader sell-off across mega-cap chipmakers and tech equities.",
-            "Macro_Context": "U.S. regulatory clampdown on advanced AI infrastructure access and chip exports to specific foreign markets creates severe headwinds for major tech equities."
+            "Event_Timestamp": "2026-11-17 05:25 UTC",
+            "Facts": "[Update 2026-11-17 05:25 UTC via Yahoo Finance Nasdaq]: Chinese technology heavyweights fell after Washington implemented fresh restrictions targeting access to advanced U.S. AI chips via overseas data centers in regions like Southeast Asia and Brazil. US equities also closed lower due to the sell-off in mega-cap chipmakers following the Commerce Department's announcement.",
+            "Macro_Context": "Stricter U.S. export controls continue to pressure global tech equities and cross-border semiconductor trade dynamics."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.24
@@ -3798,9 +3814,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 05:02 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 05:16 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794891754.0,
+        "_timestamp": 1794892610.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4673,16 +4689,32 @@
                 "date": "2026-11-17 05:02",
                 "description": "Nvidia is set to hold its first earnings call since former CEO Jensen Huang resigned. Here's how to watch.",
                 "_timestamp": 1794891754.0
+            },
+            {
+                "title": "Tech elite lament Jensen Huang's fall, celebrate his AI leadership",
+                "link": "https://finance.yahoo.com/technology/ai/articles/tech-elite-lament-jensen-huangs-051650955.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 05:16",
+                "description": "As finger-pointing unfolds in Washington, tech industry elites who gathered at an exclusive conference in Silicon Valley on Monday lamented the swift downfall of chips titan Jensen Huang, who resigned from Nvidia last week amid multiple scandals.Despite Huang's absence from Semafor's inaugural Silicon Valley and the World summit -– a mini Davos-like event which he was originally scheduled to attend -– questions about the scandal permeated the on-",
+                "_timestamp": 1794892610.0
+            },
+            {
+                "title": "New images emerge of suspected spy linked to Nvidia’s ex-boss",
+                "link": "https://www.cnn.com/2026/11/16/business/video/ebof-will-ripley-alice-huang-affair-nvidia-jensen-huang-hnk-digvid?cid=external-feeds_iluminar_yahoo&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 04:41",
+                "description": "Jensen Huang resigned from Nvidia after 33 years, following reports that he had had an affair with Chinese businesswoman Alice Huang, who is suspected of being an intelligence asset. Images taken before the scandal emerged reveal that she had been part of his inner circle for years. CNN’s Will Ripley reports for OutFront.",
+                "_timestamp": 1794890511.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-17 05:02 UTC",
-            "Facts": "[Update 2026-11-17 01:00 UTC via Yahoo Finance Nasdaq]: Tesla board member Joe Gebbia stated that Nvidia should reinstate Jensen Huang as CEO and allow due diligence to play out. [Update 2026-11-17 01:43 UTC via Yahoo Finance Nasdaq]: Nvidia prepares for its quarterly earnings report on Tuesday, marking its first since Huang's departure, with investors scrutinizing whether the AI investment strategy will continue under Kress.",
-            "Macro_Context": "Nvidia faces executive leadership turmoil and investor scrutiny ahead of its quarterly earnings following the resignation of CEO Jensen Huang."
+            "Event_Timestamp": "2026-11-17 05:16 UTC",
+            "Facts": "[Update 2026-11-17 05:16 UTC via Yahoo Finance Nasdaq]: Nvidia is preparing for its first earnings call and report since the resignation of CEO Jensen Huang following multiple scandals. Industry elites discussed his sudden downfall at a Silicon Valley summit while analysts monitor executive strategy adjustments under the new leadership.",
+            "Macro_Context": "Corporate governance and leadership transitions at key market-leading tech firms are introducing volatility ahead of crucial financial results."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -6286,9 +6318,9 @@
         "max_dd_usd": 26.03
     },
     {
-        "main_date": "First Reported: 2026-11-16 16:33 UTC | Last Update: 2026-11-16 23:51 UTC",
+        "main_date": "First Reported: 2026-11-16 16:33 UTC | Last Update: 2026-11-17 05:03 UTC",
         "original_date": "2026-11-16 16:33",
-        "_timestamp": 1794873109.0,
+        "_timestamp": 1794891780.0,
         "articles": [
             {
                 "title": "$150 Billion of Anthropic’s Nvidia-Tied Compute “Can Be Ended on Short Notice”",
@@ -6313,16 +6345,24 @@
                 "date": "2026-11-16 23:51",
                 "description": "Hive CEO Aydin Kilic says Nvidia chips bought in 2021 still generate cash, challenging Wall Street’s view that GPUs lose all value.",
                 "_timestamp": 1794873109.0
+            },
+            {
+                "title": "Nvidia faces alarming revenue questions before earnings",
+                "link": "https://www.thestreet.com/investing/nvidia-faces-alarming-revenue-questions-before-earnings?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 05:03",
+                "description": "A warning from the Treasury secretary puts the AI chipmaker’s extraordinary growth under fresh scrutiny.",
+                "_timestamp": 1794891780.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 23:51 UTC",
-            "Facts": "[Update 2026-11-16 23:51 UTC via Yahoo Finance Nasdaq]: Hive Digital CEO Aydin Kilic states that five-year-old Nvidia GPUs still generate reliable cash flow, challenging Wall Street assumptions. Meanwhile, analysts warn that $150 billion of Anthropic's Nvidia-tied compute can be canceled on short notice, though rising R&D compute requirements from AI labs continue to support long-term chip demand for giants like Nvidia, Broadcom, and TSMC.",
-            "Macro_Context": "Semiconductor demand sustainability and longevity of enterprise AI compute infrastructure."
+            "Event_Timestamp": "2026-11-17 05:03 UTC",
+            "Facts": "[Update 2026-11-17 05:03 UTC via Yahoo Finance Nasdaq]: Nvidia faces fresh revenue and growth scrutiny ahead of its earnings following a warning from the Treasury secretary. Meanwhile, analysts debate the sustainability of extensive AI compute spending and the lifespan of older-generation enterprise hardware.",
+            "Macro_Context": "Intense capital expenditure requirements for artificial intelligence infrastructure are facing increasing macroeconomic and fiscal scrutiny."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 26.03
@@ -9327,45 +9367,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 05:30 UTC",
-        "original_date": "2026-11-16 05:30",
-        "_timestamp": 1794807000.0,
-        "articles": [
-            {
-                "title": "NABEP selects Sulzer to rebuild Petrocedeño tower destroyed in 2025 incident",
-                "link": "https://finance.yahoo.com/energy/articles/nabep-selects-sulzer-rebuild-petrocede-053000409.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-16 05:30",
-                "description": "North American Blue Energy Partners (NABEP) is partnering with Sulzer, a Swiss engineering company and global leader in critical applications for core infrastructure and processes in the water, energy and chemical industries. Under the agreement, Sulzer will deliver state of the art separation technologies and equipment for a new crude tower as well as revamp of preflash and vacuum towers at the Petrocedeño upgrader in the Jose complex close to B",
-                "_timestamp": 1794807000.0
-            },
-            {
-                "title": "NABEP selects Sulzer to rebuild Petrocedeño tower destroyed in 2025 incident",
-                "link": "https://finance.yahoo.com/news/nabep-selects-sulzer-rebuild-petrocede-053000683.html?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-16 05:30",
-                "description": "North American Blue Energy Partners (NABEP) is partnering with Sulzer, a Swiss engineering company and global leader in critical applications for core infrastructure and processes in the water, energy and chemical industries. Under the agreement, Sulzer will deliver state of the art separation technologies and equipment for a new crude tower as well as revamp of preflash and vacuum towers at the Petrocedeño upgrader in the Jose complex close to B",
-                "_timestamp": 1794807000.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 05:30 UTC",
-            "Facts": "[Update 2026-11-16 05:30 UTC via Yahoo Finance Oil]: North American Blue Energy Partners partnered with Sulzer to supply advanced separation technologies and rebuild the Petrocedeño crude upgrader tower. This infrastructure restoration project aims to recover processing capabilities at the key Venezuelan heavy oil facility following a previous 2025 incident.",
-            "Macro_Context": "Progress in restoring key energy infrastructure contributes to longer-term supply normalization, easing broader commodity-driven inflation fears that indirectly impact safe-haven demand.",
-            "Impact_Timing": "Medium-term",
-            "Timeframe": "7-14d",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 55,
-            "Orderflow_Price_Target": "3829.86"
-        },
-        "eval_status": "ACTIVE",
-        "max_dd_usd": 51.74
-    },
-    {
         "main_date": "First Reported: 2026-11-16 02:13 UTC | Last Update: 2026-11-17 01:39 UTC",
         "original_date": "2026-11-16 02:13",
         "_timestamp": 1794879546.0,
@@ -10691,14 +10692,14 @@
                 "_timestamp": 1794891652.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 4,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 22:56 UTC",
-            "Facts": "[Update 2026-11-16 22:56 UTC via Investing.com]: Canada's Orezone Gold Corporation reported a more than threefold increase in third-quarter revenue, supported by record gold production and higher throughput at its Bombor&eacute; mine in Burkina Faso, following a major expansion project and the repayment of Phase I project debt. Orezone previously scheduled a conference call and webcast for November 16, 2026, at 3:00pm PT / 5:00pm ET to discuss its operational and financial results.",
-            "Macro_Context": "Mining companies are benefiting from operational expansions and solid production volumes amid strong gold sector fundamentals."
+            "Event_Timestamp": "2026-11-17 05:00 UTC",
+            "Facts": "[Update 2026-11-17 05:00 UTC via Yahoo Finance Gold]: Orezone Gold Corporation reported a more than threefold increase in third-quarter revenue, reaching record quarterly production of 59,674 ounces and $112 million in adjusted EBITDA, supported by increased throughput at the Bomboré mine in Burkina Faso.",
+            "Macro_Context": "Mining sector operators are reporting strong operational metrics and robust cash flows driven by favorable precious metal production levels."
         }
     },
     {
@@ -10982,9 +10983,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 21:49 UTC | Last Update: 2026-11-16 22:14 UTC",
+        "main_date": "First Reported: 2026-11-16 21:49 UTC | Last Update: 2026-11-17 05:19 UTC",
         "original_date": "2026-11-16 21:49",
-        "_timestamp": 1794867287.0,
+        "_timestamp": 1794892774.0,
         "articles": [
             {
                 "title": "Chase says ‘software bug’ could be causing disruptions at major U.S. banks",
@@ -11001,16 +11002,24 @@
                 "date": "2026-11-16 22:14",
                 "description": "CNBC's Eamon Javers reported there was no indication of bad actors involved and likewise no indication that a bug was impacting multiple banks at the same time.",
                 "_timestamp": 1794867287.0
+            },
+            {
+                "title": "US bank outage: What caused Chase problems and Zelle payment delays?",
+                "link": "https://www.aljazeera.com/news/2026/11/17/us-bank-outage-what-caused-chase-problems-and-zelle-payment-delays?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 05:19",
+                "description": "A Chase software bug disrupted US banking transactions and delayed some Zelle payments. Here&#039;s what happened.",
+                "_timestamp": 1794892774.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 5,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 22:14 UTC",
-            "Facts": "[Update 2026-11-16 22:14 UTC via CNBC Tech & AI]: JPMorgan Chase reported that a temporary software bug is affecting consumer banking, with Eamon Javers confirming no indication of bad actors or impact on multiple banks. Chase previously stated a software bug could be causing disruptions affecting customer account access and fund withdrawals at major U.S. banks.",
-            "Macro_Context": "Technological and operational disruptions in major consumer banking institutions."
+            "Event_Timestamp": "2026-11-17 05:19 UTC",
+            "Facts": "[Update 2026-11-17 05:19 UTC via Al Jazeera English]: JPMorgan Chase confirmed that a temporary software bug caused consumer banking disruptions and delayed Zelle payments for some customers. Officials indicated there was no evidence of bad actors or a broader multi-bank outage.",
+            "Macro_Context": "Operational resilience and software infrastructure integrity across major financial institutions remain under active observation."
         }
     },
     {

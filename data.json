@@ -10662,9 +10662,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 21:00 UTC | Last Update: 2026-11-16 22:56 UTC",
+        "main_date": "First Reported: 2026-11-16 21:00 UTC | Last Update: 2026-11-17 05:00 UTC",
         "original_date": "2026-11-16 21:00",
-        "_timestamp": 1794869769.0,
+        "_timestamp": 1794891652.0,
         "articles": [
             {
                 "title": "Orezone Gold Reports Third Quarter 2026 Results",
@@ -10681,9 +10681,17 @@
                 "date": "2026-11-16 22:56",
                 "description": "Investing.com -- Canada’s Orezone Gold Corporation reported a more than threefold increase in third-quarter revenue, supported by record gold production and higher throughput at its Bomboré mine in Burkina Faso, as the company completed a major expansion project and repaid its Phase I project debt.",
                 "_timestamp": 1794869769.0
+            },
+            {
+                "title": "Orezone Gold Corp (ORZCF) (Q3 2026) Earnings Call Highlights: Record Gold Production and Strong ...",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/orezone-gold-corp-orzcf-q3-050052876.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 05:00",
+                "description": "Orezone Gold Corp (ORZCF) posts record quarterly gold production of 59,674 ounces and $112 million in adjusted EBITDA, while outlining a path to 300,000 ounces of annual output.",
+                "_timestamp": 1794891652.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,

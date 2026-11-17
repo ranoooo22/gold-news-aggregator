@@ -95,6 +95,8 @@ input[type="checkbox"] { accent-color: var(--amber); }
 .dom-qty { position: relative; padding: 0 5px; font-weight: 700; text-shadow: 0 0 3px #000, 0 0 3px #000; }
 .dom-side.bid .dom-qty { color: #5cf0a8; }
 .dom-side.ask .dom-qty { color: #ff8a8c; }
+.dom-side.faint .dom-bar { opacity: 0.18; }
+.dom-side.faint .dom-qty { opacity: 0.45; font-weight: 400; }
 .dom-side.bid { background: linear-gradient(to left, rgba(0, 194, 110, 0.07), transparent); }
 .dom-side.ask { background: linear-gradient(to right, rgba(255, 77, 79, 0.07), transparent); }
 .dom-spot { display: flex; justify-content: space-between; padding: 3px 8px; margin: 2px 0; background: #000; border: 1px solid var(--amber); border-radius: 3px; color: var(--amber); font-weight: 800; }

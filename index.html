@@ -44,6 +44,14 @@
                     <label>Range <select id="opt-range">
                         <option value="0.5">±0.5%</option><option value="1">±1%</option><option value="2">±2%</option>
                     </select></label>
+                    <label title="Averages each price level over time: orders that stay put show at full size, orders that flash in and out fade away.">Smoothing <select id="opt-smooth">
+                        <option value="0">Live</option><option value="1">1 min</option>
+                        <option value="5">5 min</option><option value="15">15 min</option>
+                    </select></label>
+                    <label title="Which levels are drawn on the chart. 'Larger' = at least 1.5x a typical level, 'Largest' = at least 3x.">Show <select id="opt-levels">
+                        <option value="all">All levels</option><option value="larger">Larger levels</option>
+                        <option value="largest">Largest levels</option>
+                    </select></label>
                     <label class="check" title="Each venue trades a few dollars away from spot. When on, its book is shifted by that difference so levels line up with the spot chart.">
                         <input type="checkbox" id="opt-align"> Align venues to spot</label>
                     <label class="check"><input type="checkbox" id="opt-walls"> Mark largest levels</label>

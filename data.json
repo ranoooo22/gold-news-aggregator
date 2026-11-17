@@ -4715,14 +4715,14 @@
                 "_timestamp": 1794889916.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
             "Event_Timestamp": "2026-11-17 05:16 UTC",
-            "Facts": "[Update 2026-11-17 05:16 UTC via Yahoo Finance Nasdaq]: Nvidia is preparing for its first earnings call and report since the resignation of CEO Jensen Huang following multiple scandals. Industry elites discussed his sudden downfall at a Silicon Valley summit while analysts monitor executive strategy adjustments under the new leadership.",
-            "Macro_Context": "Corporate governance and leadership transitions at key market-leading tech firms are introducing volatility ahead of crucial financial results."
+            "Facts": "[Update 2026-11-17 04:31 UTC via Yahoo Finance Nasdaq]: OpenAI CEO Sam Altman expressed sympathy for Jensen Huang regarding leadership turmoil, drawing parallels to his own ouster. [Update 2026-11-17 04:41 UTC via Yahoo Finance Nasdaq]: Jensen Huang resigned after 33 years following an affair with Chinese businesswoman Alice Huang, who is suspected of being an intelligence asset. [Update 2026-11-17 05:02 UTC via Yahoo Finance Nasdaq]: Nvidia is preparing for its first earnings call since Huang's resignation. Nvidia co-founder Jensen Huang resigned following multiple scandals, prompting discussions among tech leaders at a Silicon Valley conference.",
+            "Macro_Context": "Corporate governance developments within the major technology sector."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -4757,9 +4757,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 08:10 UTC | Last Update: 2026-11-16 17:50 UTC",
+        "main_date": "First Reported: 2026-11-16 08:10 UTC | Last Update: 2026-11-17 06:15 UTC",
         "original_date": "2026-11-16 08:10",
-        "_timestamp": 1794851446.0,
+        "_timestamp": 1794896107.0,
         "articles": [
             {
                 "title": "Grand Ayat. Sheikh Isa Qassim sentenced to life imprisonment",
@@ -4784,21 +4784,24 @@
                 "date": "2026-11-16 17:50",
                 "description": "TEHRAN — A Bahraini court on Monday sentenced 64 people, most of them Shia scholars, to life in prison, among them Sheikh Isa Qassim, the country’s senior religious authority. Five others got 15 years.",
                 "_timestamp": 1794851446.0
+            },
+            {
+                "title": "Top Shia cleric Qassim denounces life sentence imposed on him",
+                "link": "https://en.mehrnews.com/news/249476/Top-Shia-cleric-Qassim-denounces-life-sentence-imposed-on-him",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 06:15",
+                "description": "TEHRAN, Nov. 17 (MNA) – Leader of Bahrain’s Shia community Ayatollah Sheikh Issa Qassim has strongly condemned the life sentences imposed on himself and other prominent clerics as unjust.",
+                "_timestamp": 1794896107.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 17:50 UTC",
-            "Facts": "[Update 2026-11-16 17:50 UTC via Tehran Times]: A Bahraini court sentenced 64 people, including top Shia religious authority Grand Ayatollah Sheikh Isa Qassim, to life in prison. | The controversial rulings have triggered street protests in Bahrain and heightened sectarian tensions across the Persian Gulf region.",
-            "Macro_Context": "Regional instability in the Gulf elevates Middle East geopolitical risk premiums, offering underlying safe-haven support for bullion.",
-            "Impact_Timing": "Intraday (0-24h)",
-            "Timeframe": "Intraday Pulse",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 59,
-            "Orderflow_Price_Target": "3880.19"
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 06:15 UTC",
+            "Facts": "[Update 2026-11-17 06:15 UTC via Mehr News Agency]: Bahrain's senior religious authority Ayatollah Sheikh Isa Qassim strongly condemned his life sentence as unjust. Bahrain's highest religious authority Grand Ayatollah Sheikh Isa Qassim and 63 other individuals, mostly Shia scholars, were sentenced to life imprisonment in Bahrain following a trial that sparked protests and widespread condemnation.",
+            "Macro_Context": "Regional judicial actions and sectarian tensions in Bahrain."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 17.09
@@ -6836,14 +6839,14 @@
                 "_timestamp": 1794894581.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-17 04:36 UTC",
-            "Facts": "[Update 2026-11-17 04:36 UTC via Mehr News Agency]: Iranian Foreign Minister Abbas Araghchi traveled to Muscat for diplomatic discussions with senior Omani officials concerning bilateral relations and regional security developments, following high-level meetings in Islamabad.",
-            "Macro_Context": "Intensified regional diplomatic outreach by Iranian officials amid persistent geopolitical tensions involving Western actors."
+            "Event_Timestamp": "2026-11-17 05:49 UTC",
+            "Facts": "[Update 2026-11-17 05:49 UTC via Middle East Eye]: Iranian Foreign Minister Abbas Araghchi met with Omani Foreign Minister Badr Albusaidi in Muscat to review bilateral relations and regional cooperation. Araghchi previously held diplomatic meetings in Pakistan with the country's Army Chief and Prime Minister on regional security.",
+            "Macro_Context": "Diplomatic engagements involving Iran across regional partners."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -7624,14 +7627,14 @@
                 "_timestamp": 1794879250.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 3,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
             "Event_Timestamp": "2026-11-17 01:42 UTC",
-            "Facts": "[Update 2026-11-17 01:42 UTC via Investing.com]: Oil prices fell further on supply surplus concerns and a strong US dollar, slipping despite ongoing Gulf tensions and Middle East unrests.",
-            "Macro_Context": "Energy markets focusing on global supply surpluses rather than localized geopolitical risks."
+            "Facts": "[Update 2026-11-17 01:34 UTC via Yahoo Finance Oil]: Oil prices fell further in early trade, extending prior losses due to supply surplus expectations and a strong dollar. Global crude markets are weighing expected supply gluts against ongoing Middle Eastern geopolitical tensions.",
+            "Macro_Context": "Energy markets reacting to macroeconomic surplus forecasts and currency strength."
         },
         "eval_status": "HIT",
         "max_dd_usd": 1.1
@@ -7786,19 +7789,14 @@
                 "_timestamp": 1794894629.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
+            "Cluster_ID": 4,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 14:20 UTC",
-            "Facts": "A nine-month-old infant died from hypothermia in a displacement tent in Gaza as winter weather returned to the enclave.",
-            "Macro_Context": "Humanitarian distress, while tragic, lacks direct financial market spillover to shift Gold volatility or macro positioning.",
-            "Impact_Timing": "Neutral",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "$3858.78"
+            "Event_Timestamp": "2026-11-17 05:50 UTC",
+            "Facts": "[Update 2026-11-17 05:50 UTC via Al Jazeera English]: Ongoing Israeli military strikes continue to severely impact civilians in southern Lebanon. A nine-month-old baby died from hypothermia inside a displacement tent in Gaza as winter weather sets in.",
+            "Macro_Context": "Humanitarian and civilian impacts arising from ongoing regional conflicts."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.01
@@ -9277,37 +9275,6 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-16 06:13 UTC",
-        "original_date": "2026-11-16 06:13",
-        "_timestamp": 1794809633.0,
-        "articles": [
-            {
-                "title": "Microsoft (MSFT) Strikes AI Deal That Broadens Its Chip Supplier Base",
-                "link": "https://finance.yahoo.com/technology/ai/articles/microsoft-msft-strikes-ai-deal-061353570.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-16 06:13",
-                "description": "Microsoft (NasdaqGS:MSFT) has entered a new AI partnership with Cerebras that shifts part of its chip focus away from Nvidia. The arrangement centers on Cerebras AI hardware and software being used within Microsoft's AI infrastructure to support future AI workloads. The deal introduces another specialist AI chip supplier into Microsoft's ecosystem, increasing supplier diversity in high performance computing. Microsoft's move toward Cerebras chips",
-                "_timestamp": 1794809633.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 5,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 06:13 UTC",
-            "Facts": "[Initial Report | 2026-11-16 06:13 UTC | Yahoo Finance Nasdaq]: Microsoft entered an AI partnership with Cerebras to diversify its high-performance chip supply. | The move reduces sole reliance on Nvidia infrastructure for future AI workloads. | Corporate supply chain adjustments reflect shifting dynamics in the tech hardware ecosystem.",
-            "Macro_Context": "Tech sector supply diversification and liquidity rotation support broader market risk reassessments, favoring gold stability.",
-            "Impact_Timing": "Short-term (Intraday)",
-            "Timeframe": "7-14d Structural Regime",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Orderflow_Price_Target": "$3872.28"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 17.78
-    },
-    {
         "main_date": "First Reported: 2026-11-16 02:13 UTC | Last Update: 2026-11-17 01:39 UTC",
         "original_date": "2026-11-16 02:13",
         "_timestamp": 1794879546.0,
@@ -10529,14 +10496,14 @@
                 "_timestamp": 1794894639.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 5,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 21:15 UTC",
-            "Facts": "[Update 2026-11-16 21:15 UTC via Middle East Eye]: US intelligence assesses that Iran retains between 1,500 and 2,500 ballistic missiles in its arsenal, though the assessment was ranked with 'low confidence'. This total contrasts with Trump administration claims that Iran's military capabilities have been decimated.",
-            "Macro_Context": "Geopolitical tensions remain elevated as intelligence reports regarding Iran's missile inventory emerge amid ongoing regional confrontations."
+            "Event_Timestamp": "2026-11-17 05:50 UTC",
+            "Facts": "[Update 2026-11-17 05:50 UTC via Mehr News Agency]: Iranian military statements raise questions regarding whether Tehran is prepared to develop missiles surpassing its current 2,000-kilometer range limit. A US intelligence assessment indicates Iran retains between 1,500 and 2,500 ballistic missiles, challenging assertions that its military capacity has been heavily degraded.",
+            "Macro_Context": "Geopolitical military capabilities and intelligence assessments concerning Iran."
         }
     },
     {
@@ -11945,14 +11912,14 @@
                 "_timestamp": 1794895232.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 02:52 UTC",
-            "Facts": "[Update 2026-11-17 02:52 UTC via Al Jazeera English]: The Trump administration introduced export license requirements for Malaysia, Thailand, Indonesia, Singapore, and Brazil in a move to block China's remote access to AI chips amid an ongoing Nvidia scandal.",
-            "Macro_Context": "Geopolitical export controls on semiconductors are tightening to restrict foreign indirect access to advanced US AI technology."
+            "Event_Timestamp": "2026-11-17 06:00 UTC",
+            "Facts": "[Update 2026-11-17 06:00 UTC via Yahoo Finance Nasdaq]: Washington closed the back door through which China was still reaching top-tier Nvidia compute, a move that strengthens Beijing's case for domestic chips and could benefit local chipmakers. The Trump administration has introduced export license requirements for Malaysia, Thailand, Indonesia, Singapore, and Brazil to block China's remote access to AI chips.",
+            "Macro_Context": "U.S. tightening export controls and closing loopholes on advanced AI chip access to China, impacting regional supply chains and domestic Chinese semiconductor alternatives."
         }
     },
     {

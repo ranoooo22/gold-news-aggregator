@@ -1249,9 +1249,9 @@
         "max_dd_usd": 13.22
     },
     {
-        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-17 10:08 UTC",
+        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-17 11:30 UTC",
         "original_date": "2026-11-05 15:15",
-        "_timestamp": 1794910082.0,
+        "_timestamp": 1794915017.0,
         "articles": [
             {
                 "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
@@ -1932,16 +1932,24 @@
                 "date": "2026-11-17 10:08",
                 "description": "Nvidia's third-quarter earnings report could send shockwaves through the stock market.",
                 "_timestamp": 1794910082.0
+            },
+            {
+                "title": "Nvidia Stock Hasn't Been This Cheap in Years -- It's Now the Cheapest Among the Magnificent Seven",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-hasnt-cheap-years-113017178.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 11:30",
+                "description": "Nvidia's Valuation Crashes to a Multi-Year Low as China Curbs and AI Spending Fears Mount",
+                "_timestamp": 1794915017.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 10:08 UTC",
-            "Facts": "[Update 2026-11-17 10:08 UTC via Yahoo Finance Nasdaq]: Taiwan Semiconductor experienced a nearly 10% drop over three days despite posting record monthly revenue of NT$587 billion. Additionally, disclosures revealed that the U.S. Commerce Department and DOJ investigated Singapore-based Nvidia cloud partner Megaspeed in 2024 for potential export violations, setting a cautious tone ahead of Nvidia's Q3 earnings.",
-            "Macro_Context": "Semiconductor supply chain pressures, regulatory scrutiny, and high-stakes upcoming corporate earnings."
+            "Event_Timestamp": "2026-11-17 11:30 UTC",
+            "Facts": "[Update 2026-11-17 11:30 UTC via Yahoo Finance Nasdaq]: Nvidia's stock valuation has dropped to multi-year lows, becoming the cheapest among the Magnificent Seven amid mounting fears over China curbs and AI spending. Investor Gene Munster compared Nvidia's potential trajectory to Apple if customer chip upgrades persist. Meanwhile, the U.S. Commerce Department and DOJ revealed they investigated Nvidia partner Megaspeed for export violations in 2024 ahead of the upcoming Q3 earnings report.",
+            "Macro_Context": "Tech sector valuations and semiconductor export controls continue to face regulatory scrutiny and shifting investor sentiment."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -3937,9 +3945,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 10:32 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 11:24 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794911543.0,
+        "_timestamp": 1794914697.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4876,16 +4884,24 @@
                 "date": "2026-11-17 10:31",
                 "description": "AI chip giant Nvidia reports its first earnings on Tuesday since a spy scandal forced co-founder Jensen Huang to quit. Investors will scrutinise what the chipmaker says about its future and whether its customers will keep spending heavily on AI data centres.View on euronews",
                 "_timestamp": 1794911460.0
+            },
+            {
+                "title": "Nvidia Board Reportedly Rules Out Jensen Huang Return Despite Growing Support Campaign",
+                "link": "https://investorshub.advfn.com/market-news/article/40184/nvidia-board-reportedly-rules-out-jensen-huang-return-despite-growing-support-campaign?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 11:24",
+                "description": "Nvidia (NASDAQ:NVDA) is not considering reinstating former Chief Executive Jensen Huang, according to a Reuters report citing three people familiar with the matter, despite a campaign supporting his return following his resignation last week. More than 180,200 people have signed a petition calling for Huang to be reinstated, with supporters including Tesla and SpaceX Chief Executive Elon Musk and thousands of individuals identifying themselves as",
+                "_timestamp": 1794914697.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-17 10:32 UTC",
-            "Facts": "[Update 2026-11-17 10:32 UTC via Yahoo Finance Nasdaq]: Nvidia's board confirmed it is not considering the return of co-founder Jensen Huang despite public support from figures like Donald Trump and Elon Musk. Huang resigned following revelations of extramarital affairs, including one with an individual suspected of ties to Chinese intelligence.",
-            "Macro_Context": "Corporate leadership crisis intersecting with international security concerns."
+            "Event_Timestamp": "2026-11-17 11:24 UTC",
+            "Facts": "[Update 2026-11-17 11:24 UTC via Yahoo Finance Nasdaq]: The Nvidia board has reportedly ruled out reinstating former CEO Jensen Huang despite a public petition signed by over 180,200 individuals and backing from prominent figures like Elon Musk and Donald Trump. The company is preparing for its first earnings report since Huang's resignation amid a spy scandal involving an alleged Chinese spy.",
+            "Macro_Context": "Corporate governance crises and geopolitical espionage implications weigh on high-profile technology firms."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -8951,35 +8967,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 11:36 UTC",
-        "original_date": "2026-11-16 11:36",
-        "_timestamp": 1794828975.0,
-        "articles": [
-            {
-                "title": "Iran’s generational shift will continue : Ghalenoei",
-                "link": "https://www.tehrantimes.com/news/532200/Iran-s-generational-shift-will-continue-in-Iran-football-Ghalenoei",
-                "source": "Tehran Times",
-                "date": "2026-11-16 11:36",
-                "description": "TEHRAN - Amir Ghalenoei, head coach of Iran's national football team, has announced that the process of introducing younger players and rebuilding the squad will continue at an accelerated pace.",
-                "_timestamp": 1794828975.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 11:36 UTC",
-            "Facts": "The head coach of Iran's national football team announced that the rebuilding of the squad with younger players will continue at an accelerated pace.",
-            "Macro_Context": "Domestic sports news regarding national athletic team management has no transmission channel to macroeconomic conditions or gold pricing.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3869.99"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-16 10:11 UTC | Last Update: 2026-11-17 10:12 UTC",
         "original_date": "2026-11-16 10:11",
         "_timestamp": 1794910349.0,
@@ -10738,9 +10725,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 21:28 UTC",
+        "main_date": "First Reported: 2026-11-16 21:28 UTC | Last Update: 2026-11-17 11:21 UTC",
         "original_date": "2026-11-16 21:28",
-        "_timestamp": 1794864512.0,
+        "_timestamp": 1794914462.0,
         "articles": [
             {
                 "title": "Chevron Reportedly Moves Ahead in Talks to Buy Majority Stake in Gulf Oil Producer Beacon",
@@ -10749,16 +10736,24 @@
                 "date": "2026-11-16 21:28",
                 "description": "Chevron is nearing a potential deal for a majority stake in Blackstone-backed Beacon Offshore Energy, in a transaction valuing the U.S. Gulf producer at about $5 billion.",
                 "_timestamp": 1794864512.0
+            },
+            {
+                "title": "Chevron Reportedly Nears $5 Billion Deal to Acquire Majority Stake in Beacon Offshore Energy",
+                "link": "https://investorshub.advfn.com/market-news/article/40180/chevron-reportedly-nears-5-billion-deal-to-acquire-majority-stake-in-beacon-offshore-energy?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 11:21",
+                "description": "Chevron Corp (NYSE:CVX) is reportedly close to reaching an agreement to acquire a majority stake in Beacon Offshore Energy in a transaction valued at approximately $5 billion, according to a Financial Times report published on Monday. The US oil producer has moved ahead of competing bidders in the acquisition process, although a final agreement has not yet been announced.",
+                "_timestamp": 1794914462.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-16 21:28 UTC",
-            "Facts": "Chevron is reportedly nearing a deal to acquire a majority stake in Blackstone-backed Beacon Offshore Energy, valuing the U.S. Gulf producer at approximately $5 billion.",
-            "Macro_Context": "Energy sector consolidation continues as major producers target offshore assets."
+            "Event_Timestamp": "2026-11-17 11:21 UTC",
+            "Facts": "[Update 2026-11-17 11:21 UTC via Yahoo Finance Oil]: Chevron is reportedly nearing an agreement to acquire a majority stake in Blackstone-backed Beacon Offshore Energy in a transaction valuing the U.S. Gulf producer at approximately $5 billion, outpacing competing bidders.",
+            "Macro_Context": "Consolidation trends persist within the U.S. energy sector as major producers seek strategic asset acquisitions."
         }
     },
     {
@@ -13143,6 +13138,102 @@
             "Event_Timestamp": "2026-11-17 11:15 UTC",
             "Facts": "[Update 2026-11-17 11:15 UTC via Yahoo Finance Nasdaq]: Open compute platform Akash unveiled Akash Forwards, a forwards marketplace enabling AI companies to purchase GPU capacity ahead of time at fixed prices, with contracts settling through the delivery of physical compute.",
             "Macro_Context": "Evolution of decentralized and open compute infrastructure markets for artificial intelligence training and inference workloads."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:30 UTC",
+        "original_date": "2026-11-17 11:30",
+        "_timestamp": 1794915000.0,
+        "articles": [
+            {
+                "title": "Cabral Gold Strengthens Executive Management Team with Appointment of Chief Operating Officer and Chief Development Officer",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/cabral-gold-strengthens-executive-management-113000253.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 11:30",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 17, 2026) - Cabral Gold Inc. (TSXV: CBR) (OTCQX: CBGZF) (\"Cabral\" or the \"Company\") is pleased to announce that it has appointed David Londono as Chief Operating Officer (\"COO\"), and John Sestan has been promoted to the role of Chief Development Officer (\"CDO\").Alan Carter, Cabral's President and CEO commented, \"I am delighted that David has agreed to join Cabral as Chief Operating Officer. ",
+                "_timestamp": 1794915000.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 11:30 UTC",
+            "Facts": "[Update 2026-11-17 11:30 UTC via Yahoo Finance Gold]: Cabral Gold Inc. strengthened its executive management team by appointing David Londono as Chief Operating Officer and promoting John Sestan to Chief Development Officer.",
+            "Macro_Context": "Mining sector executive restructuring reflects ongoing corporate development initiatives among junior producers."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:00 UTC",
+        "original_date": "2026-11-17 11:00",
+        "_timestamp": 1794913200.0,
+        "articles": [
+            {
+                "title": "Rising real rates are a real problem for debt-heavy governments",
+                "link": "https://financialpost.com/opinion/fp-comment/rising-real-rates-real-problem-debt-heavy-governments/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 11:00",
+                "description": "A vicious debt circle of borrowing to cover interest payments could mean financial disaster",
+                "_timestamp": 1794913200.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-17 11:00 UTC",
+            "Facts": "[Update 2026-11-17 11:00 UTC via Yahoo Finance Oil]: Rising real interest rates are exacerbating debt burdens for sovereign governments, fueling concerns over a vicious borrowing cycle to cover escalating interest payments.",
+            "Macro_Context": "Macroeconomic pressures from elevated real interest rates present ongoing fiscal challenges for debt-heavy governments."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:00 UTC",
+        "original_date": "2026-11-17 11:00",
+        "_timestamp": 1794913200.0,
+        "articles": [
+            {
+                "title": "Strathcona says it has more financial firepower for its oil-by-rail route to northern B.C.",
+                "link": "https://financialpost.com/energy/oil-gas/strathcona-says-it-has-more-financial-firepower-for-its-oil-by-rail-route-to-northern-b-c/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 11:00",
+                "description": "Analysts say the project lives or dies by Ottawa granting an exemption to the federal tanker ban on B.C.'s northern coast",
+                "_timestamp": 1794913200.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-17 11:00 UTC",
+            "Facts": "[Update 2026-11-17 11:00 UTC via Yahoo Finance Oil]: Strathcona indicated it possesses enhanced financial firepower for its oil-by-rail route to northern British Columbia, though analysts note the project depends heavily on Ottawa granting an exemption to the federal tanker ban.",
+            "Macro_Context": "Energy logistics and infrastructure projects remain constrained by regulatory hurdles and federal environmental policies."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:39 UTC",
+        "original_date": "2026-11-17 11:39",
+        "_timestamp": 1794915566.0,
+        "articles": [
+            {
+                "title": "Iran secure 2027 AFC U17 Asian Cup spot",
+                "link": "https://www.tehrantimes.com/news/532236/Iran-secure-2027-AFC-U17-Asian-Cup-spot",
+                "source": "Tehran Times",
+                "date": "2026-11-17 11:39",
+                "description": "TEHRAN - Iran secured their ticket to the AFC U17 Asian Cup Uzbekistan 2027 after defeating Jordan 3-0 in their Qualifiers Group D match on Tuesday.",
+                "_timestamp": 1794915566.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-17 11:39 UTC",
+            "Facts": "Iran secured a spot in the 2027 AFC U17 Asian Cup in Uzbekistan after defeating Jordan 3-0 in their Qualifiers Group D match on Tuesday.",
+            "Macro_Context": "Sports news regarding regional soccer qualifications in Asia."
         }
     }
 ]

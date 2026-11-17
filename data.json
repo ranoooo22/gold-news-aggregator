@@ -4827,9 +4827,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-17 00:23 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-17 01:10 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794874980.0,
+        "_timestamp": 1794877801.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -4926,16 +4926,24 @@
                 "date": "2026-11-17 00:23",
                 "description": "Stock Preachers News Commentary - Wall Street heads into the new week with solid weekly gains behind it, even after Friday's pullback. The Dow Jones Industrial Average, S&amp;P 500, Nasdaq Composite and Russell 2000 all closed the week higher, while the VIX and VXN volatility gauges fell sharply from a week earlier, even as both ticked up on Friday. Gold, silver, copper and WTI crude all lost ground on the week, while natural gas rose and the 10-",
                 "_timestamp": 1794874980.0
+            },
+            {
+                "title": "This Is a Huge Week for the Stock Market: Nvidia Earnings, Fed Minutes, and Anthropic’s IPO",
+                "link": "https://www.fool.com/investing/2026/11/16/this-is-a-huge-week-for-the-stock-market-nvidia-earnings-fed-minutes-and-anthropic-s-ipo/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 01:10",
+                "description": "Nvidia's first earnings report since Jensen Huang resigned, the Fed's meeting minutes, and Anthropic's massive public debut all land this week, and together they could help decide whether the pain in stocks continues or a comeback gets started.",
+                "_timestamp": 1794877801.0
             }
         ],
         "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 00:23 UTC",
-            "Facts": "[Update 2026-11-17 00:23 UTC via Yahoo Finance Gold]: Wall Street heads into the new week with solid weekly gains behind it despite Friday's pullback, while precious metals including gold and silver lost ground on the week. Stock markets previously faced a tech selloff driven by rising Treasury yields, an Nvidia leadership shakeup, and fresh chip export curbs.",
-            "Macro_Context": "Rising Treasury yields and macroeconomic headwinds put pressure on gold and tech equities as investors navigate changing Fed rate paths and market volatility."
+            "Event_Timestamp": "2026-11-17 01:10 UTC",
+            "Facts": "[Update 2026-11-17 01:10 UTC via Yahoo Finance Nasdaq]: This is a massive week for markets featuring Nvidia's earnings after Jensen Huang's resignation, the upcoming Fed meeting minutes, and Anthropic's IPO. Wall Street indices closed the previous week higher despite a tech selloff driven by an AI leadership crisis, rising Treasury yields, and fresh chip export curbs.",
+            "Macro_Context": "Tech sector volatility persists amid shifting monetary policy expectations and leadership transitions in major AI firms."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
@@ -7154,9 +7162,9 @@
         "max_dd_usd": 0.77
     },
     {
-        "main_date": "First Reported: 2026-11-16 15:16 UTC",
+        "main_date": "First Reported: 2026-11-16 15:16 UTC | Last Update: 2026-11-17 01:08 UTC",
         "original_date": "2026-11-16 15:16",
-        "_timestamp": 1794842186.0,
+        "_timestamp": 1794877705.0,
         "articles": [
             {
                 "title": "Barrick Mining And 2 Other Canadian Undervalued Stocks To Own",
@@ -7165,21 +7173,24 @@
                 "date": "2026-11-16 15:16",
                 "description": "Global markets are on edge as central banks signal higher interest rates to contain inflation, which can pressure highly priced growth stocks and reward companies with sturdier cash generation. For Canadian investors, that puts quietly cash rich businesses trading below estimated fair value in sharper focus. This article highlights three Canadian stocks flagged by a discounted cash flow screen that may appeal to patient, value oriented buyers. Th",
                 "_timestamp": 1794842186.0
+            },
+            {
+                "title": "Atalaya Mining Copper And 2 British Undervalued Stocks To Watch",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/atalaya-mining-copper-2-british-010825364.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 01:08",
+                "description": "Britain’s short term borrowing costs recently hit a three year high as markets brace for more interest rate hikes from the Bank of England. Higher rates punish highly leveraged businesses, but they also reward solid cash generators that can keep funding operations without relying heavily on new borrowing. This article highlights three United Kingdom stocks where discounted cash flow analysis suggests the share price may not fully reflect their ca",
+                "_timestamp": 1794877705.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 15:16 UTC",
-            "Facts": "Global equity markets face headwind signals from central banks keeping interest rates elevated to curb inflation. Investors are turning attention to defensive equity screeners highlighting undervalued Canadian stocks.",
-            "Macro_Context": "Generic stock screener commentary provides no new macroeconomic data or monetary policy shift to influence spot gold dynamics.",
-            "Impact_Timing": "None",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "3859.89"
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 01:08 UTC",
+            "Facts": "[Update 2026-11-17 01:08 UTC via Yahoo Finance Gold]: UK short-term borrowing costs hit a three-year high as markets price in further Bank of England rate hikes, putting focus on cash-generating businesses. Central bank signals for higher interest rates to contain inflation continue to pressure growth valuations globally.",
+            "Macro_Context": "Central bank tightening cycles and elevated borrowing costs drive investors toward sturdy cash generators and value-oriented assets."
         }
     },
     {
@@ -9233,9 +9244,9 @@
         "max_dd_usd": 1.65
     },
     {
-        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-16 23:19 UTC",
+        "main_date": "First Reported: 2026-11-12 13:02 UTC | Last Update: 2026-11-17 00:59 UTC",
         "original_date": "2026-11-12 13:02",
-        "_timestamp": 1794871193.0,
+        "_timestamp": 1794877141.0,
         "articles": [
             {
                 "title": "Musk Says it Would be an 'Honor' to Hire Jensen Huang as Nvidia's Board Reportedly Gears up to Remove Him",
@@ -9484,6 +9495,14 @@
                 "date": "2026-11-16 23:19",
                 "description": "Export controls on advanced chips are tightening after U.S. officials moved to close loopholes that let Chinese firms tap Nvidia’s computing power. When rules shift this hard, capital often looks for leaders with real skin in the game. Founder led businesses with high insider ownership and solid balance sheets can be one way to lean into that. This article walks through three such stocks from our curated screener. The three founder led businesses",
                 "_timestamp": 1794871193.0
+            },
+            {
+                "title": "Elon Musk Wants Jensen Huang Back at Nvidia. Here’s What’s at Stake for SpaceX",
+                "link": "https://www.fool.com/investing/2026/11/16/elon-musk-wants-jensen-huang-back-at-nvidia-here-s-what-s-at-stake-for-spacex/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 00:59",
+                "description": "Elon Musk wants Jensen Huang back at Nvidia and has real money on the line, since SpaceX builds its AI data centers on Nvidia chips and Nvidia owns a multibillion-dollar stake in SpaceX.",
+                "_timestamp": 1794877141.0
             }
         ],
         "needs_update": false,
@@ -9491,9 +9510,9 @@
             "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 23:19 UTC",
-            "Facts": "[Update 2026-11-16 23:19 UTC via Yahoo Finance Nasdaq]: Export controls on advanced chips are tightening to prevent Chinese firms from bypassing restrictions. Meanwhile, Elon Musk voiced support for Jensen Huang, while markets focus on upcoming Nvidia earnings, Fed minutes, and Anthropic's IPO.",
-            "Macro_Context": "Geopolitical tech restrictions and founder dependency risks across major technology firms."
+            "Event_Timestamp": "2026-11-17 00:59 UTC",
+            "Facts": "[Update 2026-11-17 00:59 UTC via Yahoo Finance Nasdaq]: Elon Musk has expressed a desire for Jensen Huang to return to Nvidia, noting significant financial stakes as SpaceX builds data centers using Nvidia chips and Nvidia holds a multibillion-dollar stake in SpaceX. Meanwhile, U.S. officials tightened export controls on advanced chips to close loopholes.",
+            "Macro_Context": "Key founder-led tech companies face leadership transition concerns and heightened regulatory scrutiny over advanced semiconductor exports."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.62
@@ -12036,6 +12055,54 @@
             "Event_Timestamp": "2026-11-17 00:45 UTC",
             "Facts": "[Update 2026-11-17 00:45 UTC via Al Jazeera English]: Ukraine held peace talks with the U.S. and Europe as the conflict escalates, with Kushner reporting progress toward a deal, though Moscow stated it has not agreed to European participation in upcoming talks.",
             "Macro_Context": "Geopolitical diplomatic negotiations and conflict escalation regarding the war in Ukraine."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 01:22 UTC",
+        "original_date": "2026-11-17 01:22",
+        "_timestamp": 1794878548.0,
+        "articles": [
+            {
+                "title": "Singapore non-oil exports jump 79.8% in October",
+                "link": "https://finance.yahoo.com/economy/articles/singapore-non-oil-exports-jump-012228559.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 01:22",
+                "description": "Investing.com-- Singapore’s non-oil exports climbed 79.8% year-on-year in October, according to data released by Enterprise Singapore on Tuesday.",
+                "_timestamp": 1794878548.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Crude Oil & Energy Supply",
+            "Event_Timestamp": "2026-11-17 01:22 UTC",
+            "Facts": "[Update 2026-11-17 01:22 UTC via Yahoo Finance Oil]: Singapore's non-oil domestic exports surged 79.8% year-on-year in October, according to official data released by Enterprise Singapore.",
+            "Macro_Context": "Regional trade data highlights robust export momentum in key Asian shipping and manufacturing hubs."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 01:00 UTC",
+        "original_date": "2026-11-17 01:00",
+        "_timestamp": 1794877200.0,
+        "articles": [
+            {
+                "title": "Tom Lee Sees No Cracks in the AI Trade Despite Nasdaq's 12% Drop",
+                "link": "https://beincrypto.com/tom-lee-ai-trade-nasdaq-drop/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 01:00",
+                "description": "Tom Lee says the AI trade is intact even after the Nasdaq fell nearly 12% from its record, as Nvidia faces earnings.",
+                "_timestamp": 1794877200.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-17 01:00 UTC",
+            "Facts": "[Update 2026-11-17 01:00 UTC via Yahoo Finance Nasdaq]: Tom Lee stated that the underlying AI trade remains intact despite the Nasdaq experiencing a roughly 12% drop from its record highs, ahead of crucial Nvidia earnings.",
+            "Macro_Context": "Market participants debate structural health versus cyclical correction in artificial intelligence-related equities."
         }
     }
 ]

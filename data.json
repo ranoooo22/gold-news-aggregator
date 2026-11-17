@@ -10291,37 +10291,6 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 03:04 UTC",
-        "original_date": "2026-11-16 03:04",
-        "_timestamp": 1794798261.0,
-        "articles": [
-            {
-                "title": "Oil Traders Shrug Off Iranian Drones Over Bahrain as Gulf Barrels Flow Back",
-                "link": "https://beincrypto.com/oil-prices-fall-iran-bahrain-attacks/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-16 03:04",
-                "description": "Brent fell to $95 on Monday despite Iranian drone attacks on Bahrain, as IEA data points to an oil supply surplus.",
-                "_timestamp": 1794798261.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 03:04 UTC",
-            "Facts": "Iranian military drones launched strikes targeting Bahrain, though Brent crude prices relaxed toward $95 per barrel as IEA metrics indicated an emerging global oil surplus. Crude exports from Gulf producers continued to flow without major physical interruption.",
-            "Macro_Context": "Direct military strikes by Iran in Bahrain maintain an active geopolitical risk premium for XAU/USD, even as easing crude oil prices temper immediate energy inflation fears.",
-            "Impact_Timing": "Immediate / Intra-session",
-            "Timeframe": "Intraday (1-24h)",
-            "XAUUSD_Impact": "Bullish / Upside Push",
-            "Probability_Percent": 62,
-            "Orderflow_Price_Target": "3872.28"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 41.87
-    },
-    {
         "main_date": "First Reported: 2026-11-15 21:50 UTC | Last Update: 2026-11-16 18:42 UTC",
         "original_date": "2026-11-15 21:50",
         "_timestamp": 1794854521.0,
@@ -12071,6 +12040,30 @@
             "Event_Timestamp": "2026-11-17 02:49 UTC",
             "Facts": "[Update 2026-11-17 02:49 UTC via Middle East Eye]: Israeli Prime Minister Benjamin Netanyahu, speaking alongside Czech Prime Minister Andrej Babis in Jerusalem on Monday, stated that Israel is fighting the battle of Western civilisation.",
             "Macro_Context": "Geopolitical rhetoric in the Middle East remains elevated as regional leaders align diplomatic stances amid ongoing military engagements."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 03:06 UTC",
+        "original_date": "2026-11-17 03:06",
+        "_timestamp": 1794884779.0,
+        "articles": [
+            {
+                "title": "Bitcoin Bears Target $60K As Nvidia Earnings, Anthropic IPO, Bond Yields And Fed Hike Odds Weigh On Crypto Recovery",
+                "link": "https://stocktwits.com/news-articles/markets/cryptocurrency/bitcoin-bear-nvidia-earnings-anthropic-fed-rate-hike-weighs-on-crypto-recovery/cNbaiD6R9gp?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 03:06",
+                "description": "A weak Nvidia report could cause a new wave of selling in crypto, says Nansen’s Nicolai Søndergaard, while Anthony Pompliano blames part of the slide on Anthropic’s upcoming IPO.",
+                "_timestamp": 1794884779.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
+            "Event_Timestamp": "2026-11-17 03:06 UTC",
+            "Facts": "Bitcoin bears are targeting the $60,000 level as macroeconomic factors, bond yields, and rising Federal Reserve rate hike odds pressure the crypto market. Analysts warn that a weak earnings report from Nvidia could trigger further sell-offs in digital assets, while upcoming equity events like the Anthropic IPO are also cited as contributing to recent crypto market declines.",
+            "Macro_Context": "Rising bond yields and shifting Federal Reserve rate hike expectations are driving risk-off sentiment across speculative markets, weighing heavily on cryptocurrencies alongside upcoming high-profile tech earnings and public offerings."
         }
     }
 ]

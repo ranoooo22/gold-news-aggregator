@@ -3878,9 +3878,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 06:38 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 09:54 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794897526.0,
+        "_timestamp": 1794909272.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4793,9 +4793,17 @@
                 "date": "2026-11-17 06:04",
                 "description": "A senior executive at Nvidia Corp. (NASDAQ:NVDA) has warned that the company risks losing \"irreplaceable talent\" unless it reinstates former CEO Jensen Huang, as an employee-led campaign demanding his return intensifies following his resignation last week. Nvidia Executive Warns Board Of Talent Exodus Nader Khalil, Nvidia’s director of developer technology, sent a letter to the company’s board and senior executives urging them to reconsider Huang",
                 "_timestamp": 1794895486.0
+            },
+            {
+                "title": "Nvidia Board Not Considering Jensen Huang's Return: Report",
+                "link": "https://decrypt.co/383411/nvidia-board-not-considering-jensen-huangs-return-report?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 09:54",
+                "description": "The board is focused on its probe into the ousted co-founder, a source told CNBC, despite Donald Trump and Elon Musk backing his return.",
+                "_timestamp": 1794909272.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
@@ -9004,35 +9012,6 @@
         "max_dd_usd": 0.68
     },
     {
-        "main_date": "First Reported: 2026-11-16 10:04 UTC",
-        "original_date": "2026-11-16 10:04",
-        "_timestamp": 1794823494.0,
-        "articles": [
-            {
-                "title": "Jordan bans Telegram, accusing it of promoting 'extremism'",
-                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/jordan-bans-telegram-accusing-it-promoting-extremism",
-                "source": "Middle East Eye",
-                "date": "2026-11-16 10:04",
-                "description": "Jordan bans Telegram, accusing it of promoting 'extremism'\n\n    \n    \n\n        \n    \n                Jordan announced a ban on the Telegram network on Monday, accusing it of contributing to the spread of \"extremism\" within the kingdom.\n\n\"We are announcing the blocking of the Telegram application as part of efforts to strengthen digital security and protect users,\" the Public Security Directorate stated in a press release.\n\nThe move is intended to",
-                "_timestamp": 1794823494.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 10:04 UTC",
-            "Facts": "Jordanian security authorities announced a nationwide ban on the Telegram messaging platform citing digital security concerns and extremism prevention. The move is aimed at enforcing tighter regulatory oversight within national borders.",
-            "Macro_Context": "Isolated domestic cybersecurity action in Jordan with no transmission to global macro liquidity or precious metals.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 0,
-            "Orderflow_Price_Target": "3869.99"
-        }
-    },
-    {
         "main_date": "First Reported: 2026-11-16 08:40 UTC | Last Update: 2026-11-16 21:51 UTC",
         "original_date": "2026-11-16 08:40",
         "_timestamp": 1794865877.0,
@@ -12731,5 +12710,22 @@
             "Facts": "[Update 2026-11-17 09:26 UTC via Yahoo Finance Nasdaq]: President Donald Trump claimed to possess significant veto powers regarding technology policy, though analysts note potential midterm election surprises could introduce volatility and alter the trajectory of the artificial intelligence trade and federal regulation.",
             "Macro_Context": "Political oversight and potential regulatory intervention pose ongoing structural risks and catalysts for the domestic technology and artificial intelligence sectors."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 09:51 UTC",
+        "original_date": "2026-11-17 09:51",
+        "_timestamp": 1794909062.0,
+        "articles": [
+            {
+                "title": "Powering towns on pig manure: How Denmark has transformed energy generation",
+                "link": "https://www.aljazeera.com/economy/2026/11/17/powering-towns-on-pig-manure-how-denmark-has-transformed-energy-generation?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 09:51",
+                "description": "Pigs are big business in Denmark. Now their waste is being turned into biogas, which powers the national grid.",
+                "_timestamp": 1794909062.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

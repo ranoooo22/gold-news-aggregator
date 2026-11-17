@@ -11483,9 +11483,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 23:00 UTC",
+        "main_date": "First Reported: 2026-11-16 23:00 UTC | Last Update: 2026-11-17 03:15 UTC",
         "original_date": "2026-11-16 23:00",
-        "_timestamp": 1794870000.0,
+        "_timestamp": 1794885300.0,
         "articles": [
             {
                 "title": "PEGATRON Advances Agentic AI and HPC Infrastructure with High-Density Computing Solutions at SC26",
@@ -11494,16 +11494,24 @@
                 "date": "2026-11-16 23:00",
                 "description": "PEGATRON, a globally recognized provider of comprehensive AI infrastructure and server solutions, will showcase its latest AI and high-performance computing (HPC) platforms at SC26, demonstrating how high-density CPU infrastructure, GPU-accelerated systems, and high-performance storage can address the evolving demands of agentic AI and HPC. Its portfolio spans CPU-intensive execution and data processing to accelerated computing, providing flexibl",
                 "_timestamp": 1794870000.0
+            },
+            {
+                "title": "MiTAC Computing Scales Agentic AI with Full-Stack Infrastructure at SC26",
+                "link": "https://finance.yahoo.com/technology/ai/articles/mitac-computing-scales-agentic-ai-031500525.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 03:15",
+                "description": "MiTAC Computing Technology Corporation, a subsidiary of MiTAC Holdings Corporation (TWSE: 3706) and a global leader in high-performance server solutions, today unveiled its comprehensive AI infrastructure ecosystem at SC26. At Booth 4615, themed \"Scaling Agentic AI. Built on Full-Stack Infrastructure,\" MiTAC demonstrates how full-stack innovation overcomes the compute, thermal, and data bottlenecks of enterprise AI deployment. As Agentic AI drive",
+                "_timestamp": 1794885300.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 23:00 UTC",
-            "Facts": "[Update 2026-11-16 23:00 UTC via Yahoo Finance Nasdaq]: PEGATRON is showcasing its newest AI and high-performance computing (HPC) platforms at SC26. The portfolio includes high-density CPU infrastructure, GPU-accelerated systems, and high-performance storage designed to handle the complex requirements of agentic AI and HPC workloads.",
-            "Macro_Context": "Expansion of enterprise hardware capabilities to support agentic AI and advanced computing workloads."
+            "Event_Timestamp": "2026-11-17 03:15 UTC",
+            "Facts": "[Update 2026-11-17 03:15 UTC via Yahoo Finance Nasdaq]: MiTAC Computing Technology Corporation unveiled its comprehensive AI infrastructure ecosystem at SC26, focusing on full-stack innovation to overcome compute, thermal, and data bottlenecks for enterprise AI deployment. PEGATRON also showcased its latest AI and high-performance computing platforms, featuring high-density CPU infrastructure and GPU-accelerated systems for agentic AI.",
+            "Macro_Context": "Tech hardware providers are scaling infrastructure solutions to address growing enterprise demands for agentic AI and high-performance computing."
         }
     },
     {
@@ -12064,6 +12072,30 @@
             "Event_Timestamp": "2026-11-17 03:06 UTC",
             "Facts": "Bitcoin bears are targeting the $60,000 level as macroeconomic factors, bond yields, and rising Federal Reserve rate hike odds pressure the crypto market. Analysts warn that a weak earnings report from Nvidia could trigger further sell-offs in digital assets, while upcoming equity events like the Anthropic IPO are also cited as contributing to recent crypto market declines.",
             "Macro_Context": "Rising bond yields and shifting Federal Reserve rate hike expectations are driving risk-off sentiment across speculative markets, weighing heavily on cryptocurrencies alongside upcoming high-profile tech earnings and public offerings."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 02:52 UTC",
+        "original_date": "2026-11-17 02:52",
+        "_timestamp": 1794883976.0,
+        "articles": [
+            {
+                "title": "US moves to block China’s remote access to AI chips amid Nvidia scandal",
+                "link": "https://www.aljazeera.com/economy/2026/11/17/us-moves-to-block-chinas-remote-access-to-ai-chips-amid-nvidia-scandal?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 02:52",
+                "description": "The Trump administration introduces export licence requirement for Malaysia, Thailand, Indonesia, Singapore and Brazil.",
+                "_timestamp": 1794883976.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-17 02:52 UTC",
+            "Facts": "[Update 2026-11-17 02:52 UTC via Al Jazeera English]: The Trump administration introduced export license requirements for Malaysia, Thailand, Indonesia, Singapore, and Brazil in a move to block China's remote access to AI chips amid an ongoing Nvidia scandal.",
+            "Macro_Context": "Geopolitical export controls on semiconductors are tightening to restrict foreign indirect access to advanced US AI technology."
         }
     }
 ]

@@ -1198,12 +1198,12 @@
         ],
         "needs_update": true,
         "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": false,
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 08:38 UTC",
-            "Facts": "[Update 2026-11-17 08:38 UTC via Yahoo Finance Nasdaq]: European and Asian equities retreated amid tightened US semiconductor export controls targeting China and uncertainty ahead of Nvidia's earnings report. High bond yields and tech sector de-risking further weighed on global markets following earlier Wall Street drops.",
-            "Macro_Context": "Global technology sector sell-off driven by export restrictions and monetary policy pressures."
+            "Event_Timestamp": "2026-11-17 08:56 UTC",
+            "Facts": "[Update 2026-11-17 08:56 UTC via Yahoo Finance Gold]: FTSE 100 falls as miners slide and new U.S. chip curbs outweigh UK jobs data showing unemployment unexpectedly dropping to 4.6%. Asian and European shares also slid as Washington tightened controls on China's access to advanced AI chips, triggering a global tech sector de-risking event ahead of Nvidia's earnings.",
+            "Macro_Context": "Global equities faced downward pressure driven by tightened U.S. semiconductor export controls targeting China, impacting technology and mining sectors across Asia and Europe."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 13.22
@@ -5015,9 +5015,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-17 04:06 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-17 09:15 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794888382.0,
+        "_timestamp": 1794906946.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -5130,16 +5130,24 @@
                 "date": "2026-11-17 04:06",
                 "description": "Anthropic’s public listing, expected on Wednesday, could top $1.4 trillion in valuation, stoking a key test for Wall Street's AI appetite.",
                 "_timestamp": 1794888382.0
+            },
+            {
+                "title": "Stock market today: Dow and S&P 500 futures slip, Nasdaq futures rise in countdown to Nvidia earnings",
+                "link": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-091546152.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 09:15",
+                "description": "The focus is on Nvidia's earnings report after the bell following a sharp sell-off on Monday.",
+                "_timestamp": 1794906946.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 04:06 UTC",
-            "Facts": "[Update 2026-11-17 04:06 UTC via Yahoo Finance Nasdaq]: Anthropic's upcoming public listing, expected on Wednesday, is projected to reach a valuation exceeding $1.4 trillion, presenting a key test for market appetite. Wall Street indexes face a heavy week featuring Nvidia's earnings and upcoming Federal Reserve meeting minutes.",
-            "Macro_Context": "Major macroeconomic and corporate catalysts dictate market direction as Wall Street processes weekly gains against technical resistance levels."
+            "Event_Timestamp": "2026-11-17 09:15 UTC",
+            "Facts": "[Update 2026-11-17 09:15 UTC via Yahoo Finance Nasdaq]: Stock market futures are mixed, with Dow and S&P 500 futures slipping while Nasdaq futures rise as markets countdown to Nvidia's earnings report following a sharp Monday sell-off. The week also features upcoming Fed meeting minutes and Anthropic's highly anticipated public debut.",
+            "Macro_Context": "Wall Street enters a high-stakes week characterized by major corporate events, upcoming Federal Reserve minutes, and significant tests of investor appetite for artificial intelligence."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78

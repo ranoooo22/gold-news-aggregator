@@ -3696,9 +3696,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 23:00 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-16 23:35 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794870000.0,
+        "_timestamp": 1794872102.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4539,16 +4539,24 @@
                 "date": "2026-11-16 23:00",
                 "description": "“With a new CEO, those relationships won’t be as close as they were with Jensen Huang.\"",
                 "_timestamp": 1794870000.0
+            },
+            {
+                "title": "Tech Leaders Want Jensen Huang to Return to Nvidia. Here’s What That Would Mean for the Stock Price.",
+                "link": "https://www.fool.com/investing/2026/11/16/tech-leaders-want-jensen-huang-to-return-to-nvidia-here-s-what-that-would-mean-for-the-stock-price/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:35",
+                "description": "Jensen Huang resigned last week amid turmoil.",
+                "_timestamp": 1794872102.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-16 23:00 UTC",
-            "Facts": "[Update 2026-11-16 23:00 UTC via Yahoo Finance Nasdaq]: Discussions continue regarding Nvidia CEO Jensen Huang's departure, a 115,000-signature petition, and potential impacts on financial services AI innovation, regulatory scrutiny, and irreplaceable industry relationships with Taiwan chip bosses.",
-            "Macro_Context": "Corporate governance and key-person risk impacting artificial intelligence market sentiment."
+            "Event_Timestamp": "2026-11-16 23:35 UTC",
+            "Facts": "[Update 2026-11-16 23:35 UTC via Yahoo Finance Nasdaq]: Tech leaders want Jensen Huang to return to Nvidia following his resignation last week. Nvidia CEO Jensen Huang's recent departure and self-inflicted personal and professional troubles threaten financial services' AI boom, making bank innovation riskier and more regulated. CNBC panelists note he incinerated over $1 trillion in market trust, with recovery depending heavily on leadership changes and fragile Taiwan chip boss relationships.",
+            "Macro_Context": "Tech sector leadership turmoil impacting AI infrastructure financing and banking innovation."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -6050,9 +6058,9 @@
         "max_dd_usd": 26.03
     },
     {
-        "main_date": "First Reported: 2026-11-16 16:33 UTC | Last Update: 2026-11-16 17:00 UTC",
+        "main_date": "First Reported: 2026-11-16 16:33 UTC | Last Update: 2026-11-16 23:51 UTC",
         "original_date": "2026-11-16 16:33",
-        "_timestamp": 1794848435.0,
+        "_timestamp": 1794873109.0,
         "articles": [
             {
                 "title": "$150 Billion of Anthropic’s Nvidia-Tied Compute “Can Be Ended on Short Notice”",
@@ -6069,21 +6077,24 @@
                 "date": "2026-11-16 17:00",
                 "description": "Key TakeawaysDwarkesh Patel says AI labs must quadruple R&amp;D compute yearly just to keep the same pace of progress. That ties chip demand to the race itself, favoring NVIDIA, Broadcom and TSMC while the spending lasts.",
                 "_timestamp": 1794848435.0
+            },
+            {
+                "title": "Hive Digital CEO says its five-year-old Nvidia GPUs still produce cash flow",
+                "link": "https://www.thestreet.com/crypto/innovation/hive-digital-ceo-says-its-five-year-old-nvidia-gpus-still-produce-cash-flow?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:51",
+                "description": "Hive CEO Aydin Kilic says Nvidia chips bought in 2021 still generate cash, challenging Wall Street’s view that GPUs lose all value.",
+                "_timestamp": 1794873109.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 17:00 UTC",
-            "Facts": "[Update 2026-11-16 17:00 UTC via Yahoo Finance Nasdaq]: Industry experts note that AI labs must continuously quadruple annual research and development compute to maintain progress, tethering massive capital expenditure directly to semiconductor suppliers. | Meanwhile, analysts highlight that substantial portions of Nvidia-linked compute commitments remain short-term and contractually flexible.",
-            "Macro_Context": "Intense capital expenditure cycles and shifting tech liquidity expectations influence broader risk sentiment and safe-haven allocation into XAU/USD.",
-            "Impact_Timing": "Short-term",
-            "Timeframe": "Weekly",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 68,
-            "Orderflow_Price_Target": "$3890.05"
+            "Event_Timestamp": "2026-11-16 23:51 UTC",
+            "Facts": "[Update 2026-11-16 23:51 UTC via Yahoo Finance Nasdaq]: Hive Digital CEO Aydin Kilic states that five-year-old Nvidia GPUs still generate reliable cash flow, challenging Wall Street assumptions. Meanwhile, analysts warn that $150 billion of Anthropic's Nvidia-tied compute can be canceled on short notice, though rising R&D compute requirements from AI labs continue to support long-term chip demand for giants like Nvidia, Broadcom, and TSMC.",
+            "Macro_Context": "Semiconductor demand sustainability and longevity of enterprise AI compute infrastructure."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 26.03
@@ -11574,8 +11585,15 @@
                 "_timestamp": 1794870000.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 23:00 UTC",
+            "Facts": "[Update 2026-11-16 23:00 UTC via Yahoo Finance Nasdaq]: PEGATRON is showcasing its newest AI and high-performance computing (HPC) platforms at SC26. The portfolio includes high-density CPU infrastructure, GPU-accelerated systems, and high-performance storage designed to handle the complex requirements of agentic AI and HPC workloads.",
+            "Macro_Context": "Expansion of enterprise hardware capabilities to support agentic AI and advanced computing workloads."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 23:01 UTC",
@@ -11663,8 +11681,15 @@
                 "_timestamp": 1794870000.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-16 23:00 UTC",
+            "Facts": "[Update 2026-11-16 23:00 UTC via Yahoo Finance Oil]: Uganda's first oil production and export schedule has been pushed back to mid-2027 due to ongoing delays in pipeline equipment caused by the Iran war, resulting in a negative S&P outlook and reduced budget revenues.",
+            "Macro_Context": "Geopolitical conflict in the Middle East disrupting global supply chains and energy projects."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-16 23:19 UTC",
@@ -11680,7 +11705,70 @@
                 "_timestamp": 1794871169.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 23:19 UTC",
+            "Facts": "[Update 2026-11-16 23:19 UTC via Yahoo Finance Nasdaq]: International Business Machines (IBM) announced several quantum and AI initiatives, featuring new Nighthawk processors, Chicago Quantum System Two deployment, multi-partner co-design platforms with NVIDIA, AMD, Fermilab, and Oak Ridge, and a Microsoft AI agent collaboration, signaling a heavy shift into research-heavy infrastructure.",
+            "Macro_Context": "Corporate pivot toward capital-intensive quantum computing and enterprise AI integration."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:15 UTC | Last Update: 2026-11-16 23:15 UTC",
+        "original_date": "2026-11-16 23:15",
+        "_timestamp": 1794870900.0,
+        "articles": [
+            {
+                "title": "Stocks, Gold, and Asia Bleed $2.2 Trillion: Top 5 Factors That Triggered the Crash",
+                "link": "https://beincrypto.com/market-bloodbath-2-trillion-5-factors/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 23:15",
+                "description": "Global markets lost roughly $2.2 trillion in a single session as US stocks, precious metals, and Asian equities sank together.",
+                "_timestamp": 1794870900.0
+            },
+            {
+                "title": "Stocks, Gold, and Asia Bleed $2.2 Trillion: Top 5 Factors That Triggered the Crash",
+                "link": "https://beincrypto.com/market-bloodbath-2-trillion-5-factors/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:15",
+                "description": "Global markets lost roughly $2.2 trillion in a single session as US stocks, precious metals, and Asian equities sank together.",
+                "_timestamp": 1794870900.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 23:15 UTC",
+            "Facts": "[Update 2026-11-16 23:15 UTC via Yahoo Finance Gold]: Global financial markets suffered a massive sell-off, bleeding roughly $2.2 trillion in a single trading session as US stocks, precious metals including gold, and Asian equities experienced a synchronized market crash driven by multiple compounding factors.",
+            "Macro_Context": "Broad-based liquidation event across global asset classes, including precious metals and equities."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:48 UTC",
+        "original_date": "2026-11-16 23:48",
+        "_timestamp": 1794872918.0,
+        "articles": [
+            {
+                "title": "Why Navitas Semiconductor Stock Sank by 12% on Monday",
+                "link": "https://www.fool.com/investing/2026/11/16/why-navitas-semiconductor-stock-sank-by-12-on-monday/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:48",
+                "description": "The latest scandal in the AI space was dinging advanced semi stocks.",
+                "_timestamp": 1794872918.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 23:48 UTC",
+            "Facts": "Navitas Semiconductor stock declined by 12% on Monday amid a broader market impact on advanced semiconductor equities following a new sector scandal.",
+            "Macro_Context": "Tech sector liquidity and semiconductor valuations are currently sensitive to negative sentiment and scandals within the AI space."
+        }
     }
 ]

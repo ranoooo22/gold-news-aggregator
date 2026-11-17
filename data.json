@@ -6013,9 +6013,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-17 01:21 UTC",
+        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-17 04:00 UTC",
         "original_date": "2026-11-16 12:25",
-        "_timestamp": 1794878484.0,
+        "_timestamp": 1794888008.0,
         "articles": [
             {
                 "title": "Jericho settlers harass Al Jazeera reporter after stealing Palestinian home",
@@ -6072,16 +6072,24 @@
                 "date": "2026-11-17 01:21",
                 "description": "Casualties in Israeli settler attack rises\n\n    \n    \n\n        \n    \n                Israeli settlers opened fire on Palestinians in the village of al-Duyuk al-Tahta, near Jericho in the occupied West Bank, killing a 60 year-old woman.\n\nMeanwhile, more people have been reported as wounded, including a 65 year-old man among the 10 injured.&nbsp;\n\n\n&nbsp;",
                 "_timestamp": 1794878484.0
+            },
+            {
+                "title": "Gunfire erupts in occupied West Bank settler attack",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/17/gunfire-erupts-in-occupied-west-bank-settler-attack?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 04:00",
+                "description": "Israeli settlers opened fire in the village of al Duyuk near Jericho killing one woman and injuring several others.",
+                "_timestamp": 1794888008.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
-            "Is_Gold_Relevant": false,
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-17 01:21 UTC",
-            "Facts": "[Update 2026-11-17 01:21 UTC via Middle East Eye]: Casualties in the West Bank rose after an Israeli settler attack in al-Duyuk al-Tahta near Jericho, resulting in the death of a 60-year-old woman and 10 injuries, following an earlier vehicle ramming incident in Tuqu that injured eight Palestinians.",
-            "Macro_Context": "Ongoing violence and rising tensions in the occupied West Bank involving Israeli settlers and Palestinians."
+            "Event_Timestamp": "2026-11-17 04:00 UTC",
+            "Facts": "[Update 2026-11-17 04:00 UTC via Al Jazeera English]: Israeli settlers opened fire in the village of al Duyuk near Jericho killing one woman and injuring several others. [Update 2026-11-17 01:21 UTC via Middle East Eye]: Casualties in the Israeli settler attack rose to one 60-year-old woman killed and approximately 10 injured, including a 65-year-old man. Five Palestinians were initially reported shot and wounded in the village of al-Duyuk al-Tahta near Jericho in the occupied West Bank by the Palestinian Red Crescent.",
+            "Macro_Context": "Ongoing violence in the occupied West Bank contributes to regional geopolitical instability, driving safe-haven demand for gold bullion."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 5.2
@@ -9018,9 +9026,9 @@
         "max_dd_usd": 8.9
     },
     {
-        "main_date": "First Reported: 2026-11-15 02:07 UTC | Last Update: 2026-11-16 06:32 UTC",
+        "main_date": "First Reported: 2026-11-15 02:07 UTC | Last Update: 2026-11-17 04:07 UTC",
         "original_date": "2026-11-15 02:07",
-        "_timestamp": 1794810749.0,
+        "_timestamp": 1794888453.0,
         "articles": [
             {
                 "title": "Bahrain's ministry of interior issues 'hazard' alert, urges citizens to stay calm",
@@ -9085,21 +9093,24 @@
                 "date": "2026-11-16 06:32",
                 "description": "US Embassy in Bahrain urges Americans to exercise 'heightened vigilance'\n\n    \n    \n\n        \n    \n                The US Embassy in Bahrain urged its citizens on Sunday to exercise \"heightened vigilance\" amid escalating regional instability.&nbsp;\n\n\"Americans in Bahrain should exercise heightened vigilance due to the increased threat of armed attacks by Iranian-supported Houthis and Iranian efforts to target U.S. government officials and facilit",
                 "_timestamp": 1794810749.0
+            },
+            {
+                "title": "Drone attack targets anti-Iran group base in Iraq's Kurdistan",
+                "link": "https://en.mehrnews.com/news/249464/Drone-attack-hits-anti-Iran-group-base-in-Iraq-s-Kurdistan",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 04:07",
+                "description": "TEHRAN, Nov. 17 (MNA) – Media reports said a drone targeted a headquarters of an Iranian separatist group in Dokan, in Iraq's Kurdistan region.",
+                "_timestamp": 1794888453.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 06:32 UTC",
-            "Facts": "[Update 2026-11-16 06:32 UTC via Middle East Eye]: The US Embassy in Bahrain urged citizens to exercise heightened vigilance amid regional instability. | Iranian drone and missile strikes have targeted installations in Bahrain, drawing regional condemnation from Saudi Arabia. | Tehran defends its regional air actions as justified responses tied to foreign military cooperation.",
-            "Macro_Context": "Expanding conflict vectors across Gulf states heighten systemic geopolitical risks, lifting XAU/USD safe-haven flows.",
-            "Impact_Timing": "Immediate (0-4h)",
-            "Timeframe": "24h Intraday Pulse",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 70,
-            "Orderflow_Price_Target": "$3880.65"
+            "Event_Timestamp": "2026-11-17 04:07 UTC",
+            "Facts": "[Update 2026-11-17 04:07 UTC via Mehr News Agency]: A drone targeted a headquarters of an Iranian separatist group in Dokan, Iraq's Kurdistan region. [Update 2026-11-16 06:32 UTC via Middle East Eye]: The US Embassy in Bahrain urged citizens to exercise heightened vigilance due to increased threat of armed attacks. Iran previously launched six drones at a US radar installation in Bahrain, leading Bahrain to accuse Iran of attacking its territory.",
+            "Macro_Context": "Escalating military friction between Iran, regional proxies, and US installations raises geopolitical risk premiums, supporting gold prices."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -12029,6 +12040,30 @@
             "Event_Timestamp": "2026-11-17 03:47 UTC",
             "Facts": "[Update 2026-11-17 03:47 UTC via Yahoo Finance Gold]: Goldman Sachs has updated its 2027 gold price target for the second time, pointing to forthcoming market tests for the precious metal.",
             "Macro_Context": "Macroeconomic adjustments, evolving central bank policies, and institutional revisions of long-term bullion valuation forecasts."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 04:01 UTC",
+        "original_date": "2026-11-17 04:01",
+        "_timestamp": 1794888108.0,
+        "articles": [
+            {
+                "title": "Asian shares decline following stocks tumbled on Wall Street",
+                "link": "https://finance.yahoo.com/markets/world-indices/articles/asian-shares-decline-following-stocks-040148315.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 04:01",
+                "description": "HONG KONG (AP) — Asian shares declined Tuesday, following more drops for stocks in the artificial intelligence industry on Wall Street ahead of Nvidia's earnings results. futures were mixed and oil prices edged lower.",
+                "_timestamp": 1794888108.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 04:01 UTC",
+            "Facts": "[Update 2026-11-17 04:01 UTC via Yahoo Finance Oil]: Asian shares declined following Wall Street stock drops driven by the artificial intelligence industry ahead of Nvidia earnings results, while futures remained mixed and oil prices edged lower.",
+            "Macro_Context": "Broader equity market weakness and tech sector volatility enhance the safe-haven appeal of gold bullion and precious metals."
         }
     }
 ]

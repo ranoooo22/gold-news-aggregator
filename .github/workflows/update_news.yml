@@ -1,5 +1,6 @@
 name: Update Gold News
 
+# Triggered externally every 15 min (cron-job.org) and manually when needed.
 on:
   workflow_dispatch:
 
@@ -21,12 +22,18 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: pip
 
       - name: Install dependencies
-        run: |
-          pip install requests feedparser sentence-transformers google-genai torch --extra-index-url https://download.pytorch.org/whl/cpu
+        run: pip install -r requirements.txt
 
-      - name: Run aggregator script
+      - name: Cache embedding model
+        uses: actions/cache@v4
+        with:
+          path: .model_cache
+          key: fastembed-all-MiniLM-L6-v2
+
+      - name: Run aggregator
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OANDA_API_KEY: ${{ secrets.OANDA_API_KEY }}
@@ -36,9 +43,10 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data.json market_data.json
+          git add data.json oanda_book.json 2>/dev/null || git add data.json
           if ! git diff --staged --quiet; then
-            git commit -m "Auto-update intelligence data"
-            git pull --rebase -X ours origin main
+            git commit -m "Auto-update news data"
+            # on a conflict keep this run's freshly generated files
+            git pull --rebase -X theirs origin main
             git push
           fi

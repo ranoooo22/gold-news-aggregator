@@ -1,655 +1,424 @@
-import os
+"""News pipeline for the gold terminal.
+
+Every run (triggered every 15 min):
+  1. Fetch RSS feeds (publisher feeds + Google News searches).
+  2. Keep articles that mention gold-relevant topics (keyword filter).
+  3. Group articles about the same event into clusters (sentence embeddings).
+  4. Have Gemini write a strictly factual summary for new/updated clusters.
+  5. Write data.json for the website.
+It also saves a snapshot of OANDA's public order book (oanda_book.json),
+which OANDA itself only refreshes every 20 minutes.
+
+Market prices and exchange order books are NOT fetched here: the website
+loads them live in the browser.
+"""
+import calendar
+import hashlib
+import html
 import json
-import time
-import math
-import requests
-import feedparser
+import os
 import re
-from datetime import datetime, timedelta
+import time
 from concurrent.futures import ThreadPoolExecutor
-from sentence_transformers import SentenceTransformer, util
-from google import genai
-from google.genai import types
+from datetime import datetime, timezone
+from urllib.parse import quote_plus
 
-# --- CONFIGURATION ---
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-OANDA_API_KEY = os.environ.get("OANDA_API_KEY")
-
-if GEMINI_API_KEY:
-    client = genai.Client(api_key=GEMINI_API_KEY)
-else:
-    client = None
-    print("WARNING: GEMINI_API_KEY not found.")
-
-FALLBACK_MODELS = [
-    "gemini-3.5-flash-lite",
-    "gemini-3.5-flash"
-]
-DEAD_MODELS = set()
-
-CLUSTER_SUMMARY_SCHEMA = types.Schema(
-    type=types.Type.ARRAY,
-    items=types.Schema(
-        type=types.Type.OBJECT,
-        properties={
-            "Cluster_ID": types.Schema(type=types.Type.INTEGER),
-            "Is_Gold_Relevant": types.Schema(type=types.Type.BOOLEAN),
-            "Dominant_Driver": types.Schema(type=types.Type.STRING),
-            "Event_Timestamp": types.Schema(type=types.Type.STRING),
-            "Facts": types.Schema(type=types.Type.STRING),
-            "Macro_Context": types.Schema(type=types.Type.STRING),
-        },
-        required=[
-            "Cluster_ID", "Is_Gold_Relevant", "Dominant_Driver", "Event_Timestamp",
-            "Facts", "Macro_Context"
-        ]
-    )
-)
-
-BATCH_SIZE = 6
-MAX_BATCH_CALLS_PER_RUN = 4
-MAX_ZONE_RADIUS_PCT = 0.025
-
-FEEDS = {
-    "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
-    "Investing.com": "https://www.investing.com/rss/news_11.rss",
-    "Yahoo Finance Gold": "https://finance.yahoo.com/rss/headline?s=GC=F",
-    "Yahoo Finance Oil": "https://finance.yahoo.com/rss/headline?s=CL=F",
-    "CNBC Tech & AI": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910",
-    "CNBC Economy": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
-    "Yahoo Finance Nasdaq": "https://finance.yahoo.com/rss/headline?s=%5EIXIC,NVDA,MSFT,AAPL,TSM",
-    "MarketWatch Macro": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
-    "Zawya": "https://www.zawya.com/en/rss",
-    "Arab News": "https://www.arabnews.com/cat/4/rss.xml",
-    "Al Jazeera English": "https://www.aljazeera.com/xml/rss/all.xml",
-    "Middle East Eye": "https://www.middleeasteye.net/rss",
-    "Tehran Times": "https://www.tehrantimes.com/rss",
-    "Mehr News Agency": "https://en.mehrnews.com/rss",
-    "The Times of Israel": "https://www.timesofisrael.com/feed/",
-    "Saba News Agency": "https://www.saba.ye/en/rss"
-}
-
-CORE_MACRO_GEO_KEYWORDS = [
-    "gold", "xau", "bullion", "oil", "brent", "crude", "opec", "energy", 
-    "hormuz", "red sea", "yemen", "houthi", "iran", "tehran", "israel", 
-    "idf", "missile", "strike", "attack", "drone", "sanction", "nuclear", 
-    "irgc", "escalat", "retaliat", "war", "truce", "ceasefire", "saudi",
-    "fed", "inflation", "rate", "central bank", "brics", "dollar", "treasury", 
-    "tariff", "recession", "gdp", "unemployment", "payroll", "cpi", "pmi", 
-    "stimulus", "china", "default", "liquidity", "debt", "yield"
-]
-
-TECH_ENTITIES = [
-    "nvidia", "nvda", "nasdaq", "s&p", "semiconductor", "chip", "taiwan", 
-    "tsmc", "artificial intelligence", "ai ", "big tech", "microsoft", "apple", "supermicro"
-]
-
-TECH_SYSTEMIC_TRIGGERS = [
-    "crash", "selloff", "sell-off", "rout", "bubble", "margin", "plunge", "turmoil",
-    "scandal", "resign", "doj", "probe", "investigation", "ban", "curb", "export",
-    "tariff", "sanction", "china", "taiwan", "beijing", "trump", "fed", "inflation",
-    "liquidity", "yield", "guidance", "shock", "record", "trillion", "war", "spy"
-]
+import feedparser
+import numpy as np
+import requests
 
 DATA_FILE = "data.json"
-SIMILARITY_THRESHOLD = 0.54
+OANDA_FILE = "oanda_book.json"
 
-def fetch_capitalcom_tv_price():
-    url = "https://scanner.tradingview.com/global/scan"
-    payload = {
-        "symbols": {"tickers": ["CAPITALCOM:GOLD", "OANDA:XAUUSD", "FOREXCOM:XAUUSD"]},
-        "columns": ["close", "high", "low", "open", "change", "change_abs"]
-    }
-    headers = {"User-Agent": "Mozilla/5.0", "Content-Type": "application/json"}
-    try:
-        res = requests.post(url, json=payload, headers=headers, timeout=6)
-        if res.status_code == 200:
-            rows = res.json().get("data", [])
-            for row in rows:
-                sym = row.get("s", "")
-                d = row.get("d", [])
-                if d and d[0] is not None and float(d[0]) > 0:
-                    price = round(float(d[0]), 2)
-                    print(f"TradingView Live Price loaded ({sym}): ${price:.2f}")
-                    return price, sym
-    except Exception as e:
-        print(f"TradingView Scanner API note: {e}")
-    return 0.0, "N/A"
+RETENTION_HOURS = 48        # clusters older than this (since last article) are dropped
+JOIN_WINDOW_HOURS = 12      # an article may only join a cluster updated within this window
+SIM_THRESHOLD = 0.62        # cosine similarity to a cluster's centroid needed to join it
+MAX_CLUSTER_SIZE = 40       # beyond this a story continues in a new cluster
+BATCH_SIZE = 6              # clusters per Gemini call
+MAX_BATCHES_PER_RUN = 4
+ARTICLES_PER_PROMPT = 10    # first report + newest 9
 
-def passes_stage1_filter(title, description):
-    full_text = f"{title} {description}".lower()
-    if any(kw in full_text for kw in CORE_MACRO_GEO_KEYWORDS):
-        return True
-    if any(te in full_text for te in TECH_ENTITIES):
-        if any(trig in full_text for trig in TECH_SYSTEMIC_TRIGGERS):
-            return True
-    return False
+GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash"]
+EMBED_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
+HTTP_HEADERS = {"User-Agent": "Mozilla/5.0"}
 
-def clean_html(raw_html):
-    return re.sub(re.compile('<.*?>'), '', raw_html)
 
-def detect_specific_narrative(text):
-    t = text.lower()
-    if any(k in t for k in ["iran", "tehran", "hormuz", "irgc", "nuclear"]):
-        return ("Iran & Strait of Hormuz", "Geopolitics & War")
-    if any(k in t for k in ["houthi", "yemen", "red sea", "saba"]):
-        return ("Red Sea & Yemen Conflict", "Geopolitics & War")
-    if any(k in t for k in ["israel", "idf", "gaza", "lebanon", "hezbollah"]):
-        return ("Israel & Middle East Escalation", "Geopolitics & War")
-    if any(k in t for k in ["tariff", "trade war", "sanction", "brics"]):
-        return ("Tariffs, Sanctions & Geoeconomics", "Fed, Rates & Macro")
-    if any(k in t for k in ["fed", "powell", "fomc", "rate", "cpi", "inflation", "payroll", "yield", "treasury"]):
-        return ("US Inflation (CPI) & Fed Rate Path", "Fed, Rates & Macro")
-    if any(k in t for k in ["nvidia", "nvda", "semiconductor", "chip", "tsmc", "ai ", "artificial intelligence", "nasdaq"]):
-        return ("AI, Semiconductors & Tech Liquidity", "Tech, AI & Equities")
-    if any(k in t for k in ["oil", "brent", "crude", "opec", "energy"]):
-        return ("Crude Oil & Energy Supply", "Commodities & Energy")
-    if any(k in t for k in ["recession", "gdp", "debt", "default", "stimulus", "china"]):
-        return ("Global Growth, Debt & China Macro", "Fed, Rates & Macro")
-    return ("Gold Bullion & Central Bank Demand", "Commodities & Energy")
+def google_news(query):
+    q = quote_plus(f"{query} when:1d")
+    return f"https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
 
-def fetch_single_feed(source_url):
-    source, url = source_url
+
+# Publisher feeds, plus Google News searches. Google News brings in Reuters, AP,
+# Bloomberg, FT, Kitco etc. and outlets whose own feeds block bots (Times of Israel, Arab News).
+FEEDS = {
+    "CNBC Commodities": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000118",
+    "CNBC Economy": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
+    "MarketWatch": "https://feeds.content.dowjones.io/public/rss/mw_topstories",
+    "Investing.com": "https://www.investing.com/rss/news_11.rss",
+    "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml",
+    "Middle East Eye": "https://www.middleeasteye.net/rss",
+    "Tehran Times": "https://www.tehrantimes.com/rss",
+    "Mehr News": "https://en.mehrnews.com/rss",
+    "GN Gold": google_news('gold price OR bullion OR "precious metals"'),
+    "GN Fed & Rates": google_news('"Federal Reserve" OR FOMC OR Powell OR "Treasury yields"'),
+    "GN US Data": google_news('"consumer prices" OR "nonfarm payrolls" OR "jobs report" OR "PCE inflation" OR "US GDP"'),
+    "GN Central Banks": google_news('"central bank" gold OR ECB OR "Bank of Japan" OR PBOC'),
+    "GN Oil": google_news('"oil prices" OR OPEC OR Brent crude'),
+    "GN Middle East": google_news('Iran OR Israel OR Hormuz OR Houthi OR "Red Sea"'),
+    "GN Times of Israel": google_news("site:timesofisrael.com"),
+    "GN Arab News": google_news("site:arabnews.com"),
+}
+
+# Google News returns hundreds of publishers, many of them SEO sites, broker promos and
+# price-forecast blogs. Only these publishers are accepted from Google News results
+# (matched case-insensitively, ignoring a trailing ".com"). Direct feeds above are always accepted.
+GOOGLE_NEWS_PUBLISHERS = {
+    # wires & business press
+    "reuters", "bloomberg", "associated press", "ap news", "financial times", "wsj",
+    "the wall street journal", "cnbc", "marketwatch", "barron's", "the economist", "nikkei asia",
+    "kitco", "mining", "mining weekly", "world gold council", "oilprice", "s&p global",
+    "argus media", "gcaptain", "lloyd's list", "tradewinds news", "investing", "yahoo finance",
+    "morningstar", "axios", "politico",
+    # general news
+    "bbc", "the guardian", "the new york times", "the washington post", "npr", "cnn", "nbc news",
+    "cbs news", "abc news", "fox news", "france 24", "dw", "euronews", "south china morning post",
+    "the independent", "the telegraph", "time", "newsweek",
+    # Middle East
+    "the times of israel", "the jerusalem post", "haaretz", "i24news", "arab news", "al jazeera",
+    "al-monitor", "middle east eye", "the national", "thenationalnews", "gulf news", "iran international",
+    "the arab weekly", "the media line", "anadolu ajansı", "anadolu agency", "daily sabah",
+}
+
+# SEO filler and speculation, not news: dropped from every feed.
+FILLER_RE = re.compile(
+    r"\b(?:price forecast|price prediction|predictions?:|technical analysis|price today|prices today"
+    r"|price of (?:gold|oil|silver) today|current price of|should you buy|to buy now|best (?:places|way)s? to buy"
+    r"|stocks? to buy|elliott wave)\b", re.IGNORECASE)
+
+# Outlets editorially controlled by a government. Shown with a label; their claims get attributed.
+STATE_AFFILIATED = {
+    "tehran times", "mehr news", "mehr news agency", "irna", "tasnim", "tasnim news agency",
+    "press tv", "presstv", "fars news", "fars news agency", "irib", "saba", "saba news agency",
+    "al masirah", "rt", "tass", "sputnik", "xinhua", "cgtn", "global times", "china daily",
+    "anadolu ajansı", "anadolu agency", "daily sabah",
+}
+
+KEYWORDS = [
+    # gold & metals
+    r"gold", r"bullion", r"xau", r"precious metals?", r"silver",
+    # rates, dollar, data
+    r"fed", r"federal reserve", r"fomc", r"powell", r"interest rates?", r"rate (?:cut|hike)s?",
+    r"treasur(?:y|ies)", r"yields?", r"dollar", r"dxy", r"inflation", r"cpi", r"pce", r"ppi",
+    r"payrolls?", r"jobs report", r"jobless", r"unemployment", r"gdp", r"recession",
+    r"central banks?", r"ecb", r"bank of japan", r"boj", r"pboc", r"bank of england",
+    r"tariffs?", r"trade war", r"sanctions?", r"debt ceiling", r"shutdown",
+    # energy
+    r"oil", r"crude", r"brent", r"wti", r"opec\+?", r"lng", r"natural gas",
+    # geopolitics
+    r"iran(?:ian)?", r"tehran", r"hormuz", r"irgc", r"israel(?:i)?", r"gaza", r"hezbollah", r"lebanon",
+    r"houthis?", r"yemen", r"red sea", r"bab al-mandab", r"saudi", r"missiles?", r"air ?strikes?",
+    r"drones?", r"ceasefire", r"truce", r"nuclear", r"ukraine", r"russia", r"taiwan", r"war",
+    r"invasion", r"military",
+]
+KEYWORD_RE = re.compile(r"\b(?:" + "|".join(KEYWORDS) + r")\b", re.IGNORECASE)
+
+TOPICS = [
+    "Gold & Precious Metals", "Fed & US Rates", "Economic Data", "Central Banks",
+    "Oil & Energy", "Middle East", "Trade & Sanctions", "Other Geopolitics", "Other",
+]
+
+
+def passes_filter(text):
+    return bool(KEYWORD_RE.search(text)) and not FILLER_RE.search(text)
+
+
+def publisher_key(name):
+    return re.sub(r"\.com$", "", name.strip().lower().removeprefix("www."))
+
+
+def utc_str(ts):
+    return datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d %H:%M")
+
+
+def clean_text(raw):
+    return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", raw or ""))).strip()
+
+
+def is_state_affiliated(source):
+    return source.strip().lower() in STATE_AFFILIATED
+
+
+# ---------------------------------------------------------------- fetching
+
+def fetch_feed(item):
+    name, url = item
+    is_gn = name.startswith("GN ")
+    stats = {"feed": name, "status": "ok", "items": 0, "kept": 0}
     articles = []
-    now = datetime.now()
-    cutoff_time = now - timedelta(hours=24)
     try:
-        response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=6)
-        if response.status_code != 200:
-            return articles
-        feed = feedparser.parse(response.content)
-        for entry in feed.entries[:20]:
-            raw_desc = entry.get("summary", entry.get("description", ""))
-            clean_desc = clean_html(raw_desc).strip()
-            title = entry.title
-            if not passes_stage1_filter(title, clean_desc):
+        res = requests.get(url, headers=HTTP_HEADERS, timeout=12)
+        if res.status_code != 200:
+            stats["status"] = f"HTTP {res.status_code}"
+            return articles, stats
+        feed = feedparser.parse(res.content)
+        stats["items"] = len(feed.entries)
+        cutoff = time.time() - RETENTION_HOURS * 3600
+        for e in feed.entries[:100]:
+            title = clean_text(e.get("title", ""))
+            link = e.get("link", "")
+            if not title or not link:
                 continue
-            pub_dt = now
-            if hasattr(entry, "published_parsed") and entry.published_parsed:
-                try:
-                    pub_dt = datetime.fromtimestamp(time.mktime(entry.published_parsed))
-                except Exception:
-                    pass
-            if pub_dt < cutoff_time:
+            if is_gn:
+                # Google News: real publisher is in <source>; title ends with " - Publisher"
+                source = (e.get("source") or {}).get("title") or "Google News"
+                if title.endswith(f" - {source}"):
+                    title = title[: -len(source) - 3].strip()
+                if publisher_key(source) not in GOOGLE_NEWS_PUBLISHERS:
+                    continue
+                desc = ""
+            else:
+                source = name
+                desc = clean_text(e.get("summary", e.get("description", "")))[:400]
+            if not passes_filter(f"{title} {desc}"):
+                continue
+            parsed = e.get("published_parsed") or e.get("updated_parsed")
+            ts = calendar.timegm(parsed) if parsed else time.time()  # feed times are UTC
+            ts = min(ts, time.time())
+            if ts < cutoff:
                 continue
             articles.append({
                 "title": title,
-                "link": entry.link,
+                "link": link,
                 "source": source,
-                "date": pub_dt.strftime("%Y-%m-%d %H:%M"),
-                "description": clean_desc[:450],
-                "_timestamp": pub_dt.timestamp()
+                "state_affiliated": is_state_affiliated(source),
+                "ts": ts,
+                "time_utc": utc_str(ts),
+                "description": desc,
             })
-    except Exception as e:
-        print(f"Timeout/Error on {source}: {e}")
-    return articles
+        stats["kept"] = len(articles)
+    except Exception as ex:
+        stats["status"] = f"error: {type(ex).__name__}"
+    return articles, stats
 
-def fetch_new_articles(existing_urls):
-    articles = []
-    with ThreadPoolExecutor(max_workers=16) as executor:
-        for feed_articles in executor.map(fetch_single_feed, FEEDS.items()):
-            for a in feed_articles:
-                if a["link"] not in existing_urls:
-                    articles.append(a)
-    return articles
 
-def fetch_live_perp_price():
-    headers = {"User-Agent": "Mozilla/5.0"}
-    for inst, lbl in [("XAU-USDT-SWAP", "OKX XAUUSDT.P"), ("XAUT-USDT-SWAP", "OKX XAUTUSDT.P")]:
-        try:
-            res = requests.get(f"https://www.okx.com/api/v5/market/ticker?instId={inst}", headers=headers, timeout=6)
-            if res.status_code == 200:
-                data = res.json().get("data", [])
-                if data and data[0].get("last"):
-                    return float(data[0]["last"]), lbl
-        except Exception:
-            pass
-    return 0.0, "N/A"
+def fetch_all_feeds():
+    articles, health = [], []
+    with ThreadPoolExecutor(max_workers=len(FEEDS)) as pool:
+        for arts, stats in pool.map(fetch_feed, FEEDS.items()):
+            articles.extend(arts)
+            health.append(stats)
+    for s in health:
+        print(f"  feed {s['feed']:<20} {s['status']:<14} items={s['items']:<4} kept={s['kept']}")
+    return articles, health
 
-def fetch_crypto_gold_basis(spot_price):
-    crypto_price, source_used = fetch_live_perp_price()
-    if crypto_price > 0 and spot_price <= 0:
-        spot_price = crypto_price
-    if crypto_price > 0 and spot_price > 0:
-        spread_usd = round(crypto_price - spot_price, 2)
-        spread_pct = round((spread_usd / spot_price) * 100.0, 2)
-        return {
-            "crypto_price": round(crypto_price, 2),
-            "spot_price": round(spot_price, 2),
-            "spread_usd": spread_usd,
-            "spread_pct": spread_pct,
-            "source": source_used
-        }
-    return {}
 
-def fetch_yahoo_futures_zones(reference_price, zone_width=10.0):
-    comex_zones = {}
-    try:
-        url = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=5d&interval=1h"
-        res = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=8)
-        if res.status_code != 200:
-            return comex_zones
-        result = res.json().get("chart", {}).get("result", [])
-        if not result:
-            return comex_zones
-        q = result[0].get("indicators", {}).get("quote", [{}])[0]
-        closes, highs, lows, volumes = q.get("close", []), q.get("high", []), q.get("low", []), q.get("volume", [])
-        candles = []
-        for c, h, l, v in zip(closes, highs, lows, volumes):
-            if c is not None and h is not None and l is not None and v is not None and v > 0:
-                candles.append({"c": float(c), "h": float(h), "l": float(l), "v": float(v)})
-        if not candles:
-            return comex_zones
-        if reference_price <= 0:
-            reference_price = candles[-1]["c"]
-        raw_entries = []
-        total_adj_vol = 0.0
-        n = len(candles)
-        for idx, cndl in enumerate(candles):
-            p = cndl["c"]
-            if abs(p - reference_price) / reference_price > MAX_ZONE_RADIUS_PCT:
+# ---------------------------------------------------------------- clustering
+
+def norm_title(t):
+    return re.sub(r"[^a-z0-9 ]", "", t.lower()).strip()
+
+
+def make_cluster(article):
+    cid = hashlib.sha1(article["link"].encode()).hexdigest()[:12]
+    return {"id": cid, "first_ts": article["ts"], "last_ts": article["ts"],
+            "articles": [article], "summary": None, "needs_summary": True}
+
+
+def cluster_articles(clusters, new_articles):
+    """Assign each new article to the most similar recent cluster, or start a new one."""
+    from fastembed import TextEmbedding
+    model = TextEmbedding(EMBED_MODEL, cache_dir=os.environ.get("FASTEMBED_CACHE", ".model_cache"))
+
+    def embed(titles):
+        return np.array(list(model.embed(titles))) if titles else np.zeros((0, 384))
+
+    centroid_sum = [embed([a["title"] for a in c["articles"]]).sum(0) for c in clusters]
+    new_vecs = embed([a["title"] for a in new_articles])
+    seen_titles = {norm_title(a["title"]) for c in clusters for a in c["articles"]}
+
+    for art, vec in sorted(zip(new_articles, new_vecs), key=lambda p: p[0]["ts"]):
+        nt = norm_title(art["title"])
+        best, best_sim = -1, -1.0
+        for i, c in enumerate(clusters):
+            if art["ts"] - c["last_ts"] > JOIN_WINDOW_HOURS * 3600 or len(c["articles"]) >= MAX_CLUSTER_SIZE:
                 continue
-            mitigated = False
-            if idx < n - 2:
-                for later in candles[idx + 2:]:
-                    if later["l"] <= p <= later["h"]:
-                        mitigated = True
-                        break
-            recency_factor = 0.5 + 0.5 * (idx / max(1, n - 1))
-            adj_v = cndl["v"] * recency_factor * (0.25 if mitigated else 1.0)
-            raw_entries.append((p, adj_v))
-            total_adj_vol += adj_v
-        if total_adj_vol <= 0:
-            return comex_zones
-        for p, adj_v in raw_entries:
-            zone_key = round(p / zone_width) * zone_width
-            if zone_key not in comex_zones:
-                comex_zones[zone_key] = {"total": 0.0, "weighted_price_sum": 0.0}
-            vol_pct = (adj_v / total_adj_vol) * 100.0
-            comex_zones[zone_key]["total"] += vol_pct
-            comex_zones[zone_key]["weighted_price_sum"] += p * vol_pct
-    except Exception as e:
-        print(f"Note: Yahoo Finance Futures unreachable ({e})")
-    return comex_zones
-
-def get_clustered_oanda_zones(zone_width=10.0, fallback_price=0.0):
-    current_price = float(fallback_price) if fallback_price else 0.0
-    combined_buckets = {}
-    if OANDA_API_KEY:
-        headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
-        url_ob = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook"
-        url_pb = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/positionBook"
-        try:
-            res_ob = requests.get(url_ob, headers=headers, timeout=10)
-            if res_ob.status_code == 200:
-                ob_data = res_ob.json().get("orderBook", {})
-                ob_price = float(ob_data.get("price", 0))
-                if current_price <= 0 and ob_price > 0:
-                    current_price = ob_price
-                for b in ob_data.get("buckets", []):
-                    p = float(b.get("price", 0))
-                    if current_price > 0 and abs(p - current_price) / current_price <= MAX_ZONE_RADIUS_PCT:
-                        combined_buckets[p] = {"long": float(b.get("longCountPercent", 0)), "short": float(b.get("shortCountPercent", 0))}
-        except Exception:
-            pass
-
-    zones = {}
-    for p, vols in combined_buckets.items():
-        zone_key = round(p / zone_width) * zone_width
-        if zone_key not in zones:
-            zones[zone_key] = {"long": 0.0, "short": 0.0, "total": 0.0, "weighted_price_sum": 0.0, "oanda_vol": 0.0, "comex_vol": 0.0}
-        tot = vols["long"] + vols["short"]
-        zones[zone_key]["long"] += vols["long"]
-        zones[zone_key]["short"] += vols["short"]
-        zones[zone_key]["total"] += tot
-        zones[zone_key]["oanda_vol"] += tot
-        zones[zone_key]["weighted_price_sum"] += p * tot
-
-    comex_zones = fetch_yahoo_futures_zones(current_price, zone_width=zone_width)
-    for z_key, f_data in comex_zones.items():
-        if current_price > 0 and abs(z_key - current_price) / current_price > MAX_ZONE_RADIUS_PCT:
-            continue
-        weight = 0.25 if combined_buckets else 1.0
-        scaled_tot = f_data["total"] * weight
-        if z_key not in zones:
-            zones[z_key] = {"long": 0.0, "short": 0.0, "total": 0.0, "weighted_price_sum": 0.0, "oanda_vol": 0.0, "comex_vol": 0.0}
-        zones[z_key]["total"] += scaled_tot
-        zones[z_key]["comex_vol"] += f_data["total"]
-        zones[z_key]["weighted_price_sum"] += f_data["weighted_price_sum"] * weight
-
-    if not zones or current_price == 0:
-        return current_price, [], {"long_pct": 50.0, "short_pct": 50.0}, {}
-
-    above_zones, below_zones = [], []
-    all_zone_objects = {}
-    for z_key, z_data in zones.items():
-        if z_data["total"] > 0:
-            vwap_price = round(z_data["weighted_price_sum"] / z_data["total"], 2)
-            net_diff = round(z_data["long"] - z_data["short"], 2)
-            dominance = "BUY" if net_diff >= 0 else "SELL"
-            
-            active_src = []
-            if z_data["oanda_vol"] > 0: active_src.append("OANDA")
-            if z_data["comex_vol"] > 0: active_src.append("COMEX")
-            is_overlap = len(active_src) >= 2
-            sources_label = "+".join(active_src) if active_src else "OANDA"
-
-            zone_obj = {
-                "price": vwap_price,
-                "zone_center": z_key,
-                "volume": round(z_data["total"], 2),
-                "oanda_vol": round(z_data["oanda_vol"], 2),
-                "comex_vol": round(z_data["comex_vol"], 2),
-                "net": net_diff,
-                "dominance": dominance,
-                "overlap": is_overlap,
-                "sources": sources_label
-            }
-            all_zone_objects[int(z_key)] = zone_obj
-            if vwap_price >= current_price: above_zones.append(zone_obj)
-            else: below_zones.append(zone_obj)
-
-    above_zones.sort(key=lambda x: x["volume"], reverse=True)
-    below_zones.sort(key=lambda x: x["volume"], reverse=True)
-    selected_zones = above_zones[:3] + below_zones[:3]
-    selected_zones.sort(key=lambda x: x["price"], reverse=True)
-    return current_price, selected_zones, {"long_pct": 50.0, "short_pct": 50.0}, all_zone_objects
-
-def build_3d_surfaces(current_price, all_zones_dict, h1_candles, vol_metrics, old_ob_history=None):
-    spot = current_price if current_price > 0 else (h1_candles[-1]["c"] if h1_candles else 3850.0)
-    center_10 = int(round(spot / 10.0) * 10)
-    price_grid = [center_10 + offset for offset in range(-50, 60, 10)]
-
-    history_list = list(old_ob_history) if isinstance(old_ob_history, list) else []
-    now_str = datetime.utcnow().strftime("%H:%M")
-    curr_snapshot_levels = {}
-    for p_lvl in price_grid:
-        z_item = all_zones_dict.get(p_lvl)
-        if z_item:
-            sign = 1.0 if z_item["dominance"] == "BUY" else -1.0
-            curr_snapshot_levels[str(p_lvl)] = {
-                "vol": round(z_item["volume"], 2),
-                "signed_vol": round(z_item["volume"] * sign, 2)
-            }
+            cen = centroid_sum[i]
+            sim = float(cen @ vec / (np.linalg.norm(cen) + 1e-9))
+            if sim > best_sim:
+                best, best_sim = i, sim
+        if best >= 0 and best_sim >= SIM_THRESHOLD:
+            c = clusters[best]
+            if nt in seen_titles and any(norm_title(a["title"]) == nt for a in c["articles"]):
+                continue  # same headline syndicated twice
+            c["articles"].append(art)
+            c["first_ts"] = min(c["first_ts"], art["ts"])
+            c["last_ts"] = max(c["last_ts"], art["ts"])
+            c["needs_summary"] = True
+            centroid_sum[best] = centroid_sum[best] + vec
         else:
-            curr_snapshot_levels[str(p_lvl)] = {
-                "vol": 0.4,
-                "signed_vol": 0.2 if p_lvl < spot else -0.2
-            }
+            clusters.append(make_cluster(art))
+            centroid_sum.append(vec.copy())
+        seen_titles.add(nt)
+    return clusters
 
-    if not history_list or history_list[-1].get("time") != now_str:
-        history_list.append({"time": now_str, "spot": round(spot, 2), "levels": curr_snapshot_levels})
-    else:
-        history_list[-1]["spot"] = round(spot, 2)
-        history_list[-1]["levels"] = curr_snapshot_levels
 
-    history_list = history_list[-24:]
-    ob_timestamps = [h["time"] for h in history_list]
-    ob_vol_matrix, ob_signed_matrix = [], []
-    for p_lvl in price_grid:
-        row_vol, row_signed = [], []
-        for h in history_list:
-            cell = h.get("levels", {}).get(str(p_lvl), {"vol": 0.5, "signed_vol": 0.0})
-            row_vol.append(cell.get("vol", 0.5))
-            row_signed.append(cell.get("signed_vol", 0.0))
-        ob_vol_matrix.append(row_vol)
-        ob_signed_matrix.append(row_signed)
+# ---------------------------------------------------------------- summaries
 
-    ob_surface = {
-        "timestamps": ob_timestamps,
-        "price_levels": price_grid,
-        "vol_matrix": ob_vol_matrix,
-        "signed_matrix": ob_signed_matrix,
-        "spot_price": round(spot, 2)
-    }
+PROMPT = """You write summaries for a news panel on a market data terminal. The reader wants facts only.
 
-    days_labels = ["Mon", "Tue", "Wed", "Thu", "Fri"]
-    hours_labels = [f"{h:02d}:00" for h in range(24)]
-    range_sums = [[0.0 for _ in range(24)] for _ in range(5)]
-    counts = [[0 for _ in range(24)] for _ in range(5)]
+Rules:
+- Report only what the articles state. No analysis, no market commentary, no predictions, no statements
+  about what something means for gold, prices or markets (never write things like "safe-haven demand",
+  "bullish", "could weigh on", "investors fear").
+- Attribute claims that are not independently confirmed by several outlets ("according to Reuters",
+  "Mehr News reported"). Articles marked STATE-AFFILIATED come from government-controlled media:
+  ALWAYS attribute their claims to them by name.
+- If sources contradict each other, give both versions, each attributed.
+- headline: neutral, max 14 words, describes the most recent development.
+- summary: 1-3 sentences describing the core event.
+- key_points: up to 6 distinct facts, newest first, each starting with "[HH:MM UTC, Source] ".
+- topic: the single best category.
+- on_topic: true if the story is about gold or precious metals markets, US monetary policy or rates,
+  major economic data, central banks, the US dollar, oil or energy supply, armed conflict or sanctions
+  involving major economies or energy producers, or trade policy between major economies.
+  false for: individual company news (including mining exploration/drill results and single-stock news),
+  local crime, domestic politics without economic or military relevance, sports, culture, opinion pieces.
 
-    for c in (h1_candles or []):
-        dt_obj = datetime.utcfromtimestamp(c["ts"])
-        w_day = dt_obj.weekday()
-        if w_day > 4: continue
-        hr = dt_obj.hour
-        rng = max(0.2, c["h"] - c["l"])
-        range_sums[w_day][hr] += rng
-        counts[w_day][hr] += 1
+Clusters:
+{clusters}
+"""
 
-    range_matrix = []
-    for d_i in range(5):
-        r_row = []
-        for h_i in range(24):
-            cnt = counts[d_i][h_i]
-            r_row.append(round(range_sums[d_i][h_i] / cnt, 2) if cnt > 0 else 10.0)
-        range_matrix.append(r_row)
 
-    session_surface = {"hours": hours_labels, "days": days_labels, "range_matrix": range_matrix}
-    return ob_surface, session_surface, history_list
+def summary_schema():
+    from google.genai import types
+    S, T = types.Schema, types.Type
+    return S(type=T.ARRAY, items=S(type=T.OBJECT, properties={
+        "cluster_id": S(type=T.INTEGER),
+        "on_topic": S(type=T.BOOLEAN),
+        "topic": S(type=T.STRING, enum=TOPICS),
+        "headline": S(type=T.STRING),
+        "summary": S(type=T.STRING),
+        "key_points": S(type=T.ARRAY, items=S(type=T.STRING)),
+    }, required=["cluster_id", "on_topic", "topic", "headline", "summary", "key_points"]))
 
-def fetch_oanda_price_and_volatility(tv_live_price=0.0):
-    parsed = []
-    if OANDA_API_KEY:
-        url = "https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/candles?count=500&granularity=H1&price=M"
-        headers = {"Authorization": f"Bearer {OANDA_API_KEY}", "Accept-Datetime-Format": "UNIX"}
+
+def format_cluster_for_prompt(idx, cluster):
+    arts = sorted(cluster["articles"], key=lambda a: a["ts"])
+    if len(arts) > ARTICLES_PER_PROMPT:
+        arts = arts[:1] + arts[-(ARTICLES_PER_PROMPT - 1):]
+    lines = []
+    for a in arts:
+        tag = " | STATE-AFFILIATED" if a.get("state_affiliated") else ""
+        desc = f" - {a['description'][:300]}" if a.get("description") else ""
+        lines.append(f"  [{a['time_utc']} UTC | {a['source']}{tag}] {a['title']}{desc}")
+    return f"=== cluster_id {idx} ({len(cluster['articles'])} articles) ===\n" + "\n".join(lines)
+
+
+def summarize_batch(client, batch):
+    from google.genai import types
+    prompt = PROMPT.format(clusters="\n\n".join(format_cluster_for_prompt(i, c) for i, c in enumerate(batch)))
+    config = types.GenerateContentConfig(response_mime_type="application/json", response_schema=summary_schema())
+    for model in GEMINI_MODELS:
         try:
-            response = requests.get(url, headers=headers, timeout=10)
-            if response.status_code == 200:
-                for c in response.json().get("candles", []):
-                    ts = float(c.get("time", 0))
-                    parsed.append({
-                        "ts": ts,
-                        "dt_str": datetime.utcfromtimestamp(ts).strftime("%Y-%m-%d %H:%M"),
-                        "o": float(c["mid"]["o"]),
-                        "h": float(c["mid"]["h"]),
-                        "l": float(c["mid"]["l"]),
-                        "c": float(c["mid"]["c"])
-                    })
-        except Exception:
-            pass
-
-    if len(parsed) < 15:
-        eff_p = tv_live_price if tv_live_price > 0 else 3850.0
-        return parsed, {"current_price": eff_p, "atr_h1": 9.5, "est_daily_atr": 38.0, "change_4h": 0.0, "change_24h": 0.0, "move_to_daily_atr_ratio": 0.5}
-
-    if tv_live_price > 0:
-        parsed[-1]["c"] = tv_live_price
-        parsed[-1]["h"] = max(parsed[-1]["h"], tv_live_price)
-        parsed[-1]["l"] = min(parsed[-1]["l"], tv_live_price)
-
-    trs = [max(parsed[i]["h"] - parsed[i]["l"], abs(parsed[i]["h"] - parsed[i-1]["c"]), abs(parsed[i]["l"] - parsed[i-1]["c"])) for i in range(1, len(parsed))]
-    atr_14_h1 = sum(trs[-14:]) / 14.0
-    est_daily_atr = round(atr_14_h1 * 3.8, 2)
-    curr_c = parsed[-1]["c"]
-    change_4h = round(curr_c - parsed[-5]["c"], 2) if len(parsed) >= 5 else 0.0
-    change_24h = round(curr_c - parsed[-25]["c"], 2) if len(parsed) >= 25 else 0.0
-    ratio_4h = round(abs(change_4h) / est_daily_atr, 2) if est_daily_atr > 0 else 0.0
-
-    vol_metrics = {
-        "current_price": round(curr_c, 2),
-        "atr_h1": round(atr_14_h1, 2),
-        "est_daily_atr": est_daily_atr,
-        "change_4h": change_4h,
-        "change_24h": change_24h,
-        "move_to_daily_atr_ratio": ratio_4h
-    }
-    return parsed, vol_metrics
-
-def fetch_macro_context():
-    if not OANDA_API_KEY:
-        return {}
-    instruments = {"EUR_USD": "EUR/USD", "USB10Y_USD": "US 10Y Bond", "NAS100_USD": "Nasdaq 100", "BCO_USD": "Brent Oil"}
-    headers = {"Authorization": f"Bearer {OANDA_API_KEY}"}
-    macro_summary = {}
-    for instr in instruments.keys():
-        try:
-            url = f"https://api-fxpractice.oanda.com/v3/instruments/{instr}/candles?count=24&granularity=H1&price=M"
-            res = requests.get(url, headers=headers, timeout=6)
-            if res.status_code == 200:
-                candles = res.json().get("candles", [])
-                if len(candles) >= 2:
-                    first_c = float(candles[0]["mid"]["c"])
-                    last_c = float(candles[-1]["mid"]["c"])
-                    pct = round(((last_c - first_c) / first_c) * 100, 2) if first_c > 0 else 0.0
-                    macro_summary[instr] = {"price": last_c, "change_24h_pct": pct}
-        except Exception:
-            pass
-    return macro_summary
-
-def generate_batch_summaries(clusters_batch):
-    if not client or not clusters_batch:
-        return {}
-    clusters_input = []
-    for idx, c in enumerate(clusters_batch):
-        chronological_arts = sorted(c["articles"], key=lambda x: x.get("_timestamp", 0))
-        specific_drv, _ = detect_specific_narrative(" ".join([a.get('title', '') for a in chronological_arts]))
-        arts_lines = [f"  * [{a['date']} UTC | {a['source']}]: {a['title']} - {a.get('description', '')}" for a in chronological_arts[-4:]]
-        clusters_input.append(f"=== CLUSTER_ID: {idx} | DRIVER: {specific_drv} ===\n" + "\n".join(arts_lines))
-
-    prompt = f"""You are a neutral news summarizer for a financial terminal.
-    Summarize these {len(clusters_batch)} news clusters objectively in English. 
-    CRITICAL RULE FOR UPDATES: If a cluster has multiple articles or has been updated with new sources, explicitly include the new information prefixed with '[Update YYYY-MM-DD HH:MM UTC via Source]: <New Info>' before the core background. Do not output generic summaries if new facts arrived.
-
-    Clusters:
-    {chr(10).join(clusters_input)}"""
-
-    try:
-        response = client.models.generate_content(
-            model="gemini-3.5-flash-lite",
-            contents=prompt,
-            config=types.GenerateContentConfig(
-                response_mime_type="application/json",
-                response_schema=CLUSTER_SUMMARY_SCHEMA
-            )
-        )
-        raw_text = response.text.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
-        parsed_list = json.loads(raw_text)
-        if isinstance(parsed_list, list):
-            return {item.get("Cluster_ID", i): item for i, item in enumerate(parsed_list) if isinstance(item, dict)}
-    except Exception as e:
-        print(f"AI batch error: {e}")
+            res = client.models.generate_content(model=model, contents=prompt, config=config)
+            items = json.loads(res.text)
+            out = {}
+            for it in items:
+                cid = it.get("cluster_id")
+                if isinstance(cid, int) and 0 <= cid < len(batch) and cid not in out:
+                    out[cid] = {k: it.get(k) for k in ("on_topic", "topic", "headline", "summary", "key_points")}
+            return out
+        except Exception as ex:
+            print(f"  Gemini {model} failed: {ex}")
     return {}
 
-def update_market_data(top_zones_cache=None, macro_summary=None, vol_metrics=None, crypto_basis_obj=None, h1_candles=None, tv_live_price=0.0, tv_source="CAPITALCOM:GOLD"):
-    old_md = {}
-    if os.path.exists("market_data.json"):
-        try:
-            with open("market_data.json", "r", encoding="utf-8") as f:
-                old_md = json.load(f)
-        except Exception:
-            pass
 
-    loaded_h4_candles = old_md.get("candles", [])
-    curr_p, top_zones, sentiment, all_zones_dict = top_zones_cache if top_zones_cache else get_clustered_oanda_zones(zone_width=10.0)
-    eff_spot = tv_live_price if tv_live_price > 0 else (curr_p if curr_p > 0 else (vol_metrics or {}).get("current_price", 0.0))
+def summarize_pending(clusters):
+    api_key = os.environ.get("GEMINI_API_KEY")
+    pending = sorted((c for c in clusters if c["needs_summary"]), key=lambda c: -c["last_ts"])
+    if not api_key:
+        print("GEMINI_API_KEY missing: summaries skipped")
+        return
+    from google import genai
+    client = genai.Client(api_key=api_key)
+    for b in range(min(MAX_BATCHES_PER_RUN, -(-len(pending) // BATCH_SIZE))):
+        batch = pending[b * BATCH_SIZE:(b + 1) * BATCH_SIZE]
+        results = summarize_batch(client, batch)
+        for i, c in enumerate(batch):
+            if i in results:
+                c["summary"] = results[i]
+                c["summary"]["n_articles"] = len(c["articles"])
+                c["needs_summary"] = False
+    left = sum(c["needs_summary"] for c in clusters)
+    print(f"Summaries: {len(pending) - left} written, {left} queued for next run")
 
-    ob_surf, sess_surf, updated_ob_hist = build_3d_surfaces(eff_spot, all_zones_dict, h1_candles, vol_metrics, old_md.get("ob_history", []))
 
-    market_data = {
-        "spot_price": round(eff_spot, 2),
-        "spot_source": tv_source if tv_live_price > 0 else "OANDA:XAUUSD",
-        "candles": loaded_h4_candles,
-        "orderbook": [],
-        "sentiment": sentiment,
-        "macro": macro_summary or {},
-        "volatility": vol_metrics or {},
-        "crypto_basis": crypto_basis_obj or {},
-        "ob_history": updated_ob_hist,
-        "ob_surface": ob_surf,
-        "session_surface": sess_surf
-    }
+# ---------------------------------------------------------------- OANDA order book
 
-    for z in top_zones:
-        if eff_spot > 0 and abs(z["price"] - eff_spot) / eff_spot > MAX_ZONE_RADIUS_PCT:
-            continue
-        market_data["orderbook"].append({
-            "price": z["price"],
-            "volume": z["volume"],
-            "oanda_vol": z["oanda_vol"],
-            "comex_vol": z["comex_vol"],
-            "net": z["net"],
-            "dominance": z["dominance"],
-            "overlap": z["overlap"],
-            "sources": z["sources"]
-        })
-    with open("market_data.json", "w", encoding="utf-8") as f:
-        json.dump(market_data, f, indent=4)
+def fetch_oanda_book():
+    key = os.environ.get("OANDA_API_KEY")
+    if not key:
+        return None
+    try:
+        res = requests.get("https://api-fxpractice.oanda.com/v3/instruments/XAU_USD/orderBook",
+                           headers={"Authorization": f"Bearer {key}"}, timeout=10)
+        res.raise_for_status()
+        ob = res.json()["orderBook"]
+        price = float(ob["price"])
+        buckets = [
+            {"price": float(b["price"]),
+             "long_pct": float(b["longCountPercent"]),
+             "short_pct": float(b["shortCountPercent"])}
+            for b in ob["buckets"] if abs(float(b["price"]) - price) / price <= 0.02
+        ]
+        return {"time": ob["time"], "price": price, "bucket_width": float(ob["bucketWidth"]), "buckets": buckets}
+    except Exception as ex:
+        print(f"OANDA order book failed: {ex}")
+        return None
+
+
+# ---------------------------------------------------------------- main
+
+def load_clusters():
+    try:
+        with open(DATA_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, dict) and data.get("version") == 2:
+            return data["clusters"]
+    except (OSError, ValueError):
+        pass
+    return []  # missing file or old format: start fresh
+
 
 def main():
-    print("Loading embeddings model...")
-    model = SentenceTransformer('all-MiniLM-L6-v2')
-    existing_data = []
-    if os.path.exists(DATA_FILE):
-        try:
-            with open(DATA_FILE, "r", encoding="utf-8") as f:
-                existing_data = json.load(f)
-        except Exception:
-            existing_data = []
+    now = time.time()
+    clusters = [c for c in load_clusters() if now - c["last_ts"] <= RETENTION_HOURS * 3600]
+    known_links = {a["link"] for c in clusters for a in c["articles"]}
 
-    print("Fetching Live CAPITALCOM:GOLD Price from TradingView Scanner...")
-    tv_live_price, tv_source = fetch_capitalcom_tv_price()
+    print("Fetching feeds...")
+    fetched, health = fetch_all_feeds()
+    new_articles, seen = [], set()
+    for a in fetched:
+        if a["link"] not in known_links and a["link"] not in seen:
+            seen.add(a["link"])
+            new_articles.append(a)
+    print(f"{len(new_articles)} new articles")
 
-    print("Loading H1 Candles & Near-Spot OANDA + COMEX Zones...")
-    h1_candles, vol_metrics = fetch_oanda_price_and_volatility(tv_live_price=tv_live_price)
-    effective_spot_price = tv_live_price if tv_live_price > 0 else vol_metrics.get("current_price", 0.0)
-    
-    oanda_zones_cache = get_clustered_oanda_zones(zone_width=10.0, fallback_price=effective_spot_price)
-    if effective_spot_price <= 0 and oanda_zones_cache:
-        effective_spot_price = oanda_zones_cache[0]
-    
-    crypto_basis_obj = fetch_crypto_gold_basis(effective_spot_price)
-    macro_summary = fetch_macro_context()
-
-    cutoff_timestamp = (datetime.now() - timedelta(hours=24)).timestamp()
-    valid_clusters = [c for c in existing_data if float(c.get("_timestamp", 0)) > cutoff_timestamp]
-
-    existing_urls = {a["link"] for c in valid_clusters for a in c.get("articles", [])}
-    new_articles = fetch_new_articles(existing_urls)
-    
     if new_articles:
-        cluster_embeddings = [model.encode(" ".join([a["title"] for a in c["articles"]])) for c in valid_clusters]
-        for article in new_articles:
-            article_emb = model.encode(article["title"] + " " + article["description"])
-            best_match_idx, highest_sim = -1, -1
-            for i, cluster_emb in enumerate(cluster_embeddings):
-                sim = util.cos_sim(article_emb, cluster_emb).item()
-                if sim > highest_sim:
-                    highest_sim, best_match_idx = sim, i
-            if highest_sim > SIMILARITY_THRESHOLD and best_match_idx != -1:
-                tc = valid_clusters[best_match_idx]
-                tc["articles"].append(article)
-                newest_a = max(tc["articles"], key=lambda x: x["_timestamp"])
-                tc["main_date"] = f"First Reported: {tc['original_date']} UTC | Last Update: {newest_a['date']} UTC"
-                tc["_timestamp"] = newest_a["_timestamp"]
-                tc["needs_update"] = True
-            else:
-                valid_clusters.append({
-                    "main_date": f"First Reported: {article['date']} UTC",
-                    "original_date": article["date"],
-                    "_timestamp": article["_timestamp"],
-                    "articles": [article],
-                    "needs_update": True,
-                    "summary": None
-                })
-                cluster_embeddings.append(article_emb)
+        clusters = cluster_articles(clusters, new_articles)
+    summarize_pending(clusters)
 
-    pending = [c for c in valid_clusters if c.get("needs_update", False) or not isinstance(c.get("summary"), dict)]
-    if pending:
-        total_batches = min(MAX_BATCH_CALLS_PER_RUN, (len(pending) + BATCH_SIZE - 1) // BATCH_SIZE)
-        for b_idx in range(total_batches):
-            batch_slice = pending[b_idx * BATCH_SIZE : (b_idx + 1) * BATCH_SIZE]
-            batch_results = generate_batch_summaries(batch_slice)
-            for idx_in_batch, cluster in enumerate(batch_slice):
-                if idx_in_batch in batch_results:
-                    cluster["summary"] = batch_results[idx_in_batch]
-                    cluster["needs_update"] = False
-
+    clusters.sort(key=lambda c: -c["last_ts"])
     with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump(valid_clusters, f, indent=4, ensure_ascii=False)
+        json.dump({"version": 2, "generated_utc": utc_str(now), "feeds": health, "clusters": clusters},
+                  f, ensure_ascii=False, separators=(",", ":"))
 
-    update_market_data(oanda_zones_cache, macro_summary, vol_metrics, crypto_basis_obj, h1_candles, tv_live_price=effective_spot_price, tv_source=tv_source)
-    print("Update completed.")
+    book = fetch_oanda_book()
+    if book:
+        with open(OANDA_FILE, "w", encoding="utf-8") as f:
+            json.dump(book, f, separators=(",", ":"))
+    print(f"Done: {len(clusters)} clusters")
+
 
 if __name__ == "__main__":
     main()

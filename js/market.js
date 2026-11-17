@@ -1,0 +1,551 @@
+'use strict';
+
+/*
+ * Market tab: everything here is fetched live by the browser from public APIs.
+ *  - Spot price & candles: OKX XAU/USD index (composite of spot gold quotes).
+ *  - Order books: public books of gold perps and gold-backed tokens on several exchanges.
+ *  - Reference quotes: broker prices via TradingView's public scanner.
+ *  - OANDA client orders: snapshot saved by the GitHub workflow (oanda_book.json).
+ */
+
+const OKX = 'https://www.okx.com/api/v5';
+const SPOT_INST = 'XAU-USD';
+
+const TIMEFRAMES = { '1m': '1m', '5m': '5m', '15m': '15m', '1H': '1H', '4H': '4H', '1D': '1Dutc' };
+const TF_SECONDS = { '1m': 60, '5m': 300, '15m': 900, '1H': 3600, '4H': 14400, '1D': 86400 };
+
+const SPOT_POLL_MS = 2000;
+const BOOK_POLL_MS = 3000;
+const REF_POLL_MS = 5000;
+const VENUE_RETRY_MS = 30000;   // wait this long after a venue errors
+const MAX_VENUE_DEVIATION = 0.03; // ignore a venue whose mid is >3% away from spot (bad data)
+
+function okxBook(json, ozPerUnit) {
+    const book = json.data && json.data[0];
+    if (!book) throw new Error(json.msg || 'no data');
+    const conv = (rows) => rows.map((r) => [Number(r[0]), Number(r[1]) * ozPerUnit]);
+    return { bids: conv(book.bids), asks: conv(book.asks) };
+}
+
+function krakenBook(json) {
+    if (json.error && json.error.length) throw new Error(json.error[0]);
+    const book = Object.values(json.result || {})[0];
+    if (!book) throw new Error('no data');
+    const conv = (rows) => rows.map((r) => [Number(r[0]), Number(r[1])]);
+    return { bids: conv(book.bids), asks: conv(book.asks) };
+}
+
+// Sizes are converted to troy ounces. PAXG and XAUT are each backed by 1 troy oz.
+const VENUES = [
+    {
+        id: 'okx-perp', exchange: 'OKX', instrument: 'XAU/USDT perpetual', color: '#f5a524',
+        url: `${OKX}/market/books?instId=XAU-USDT-SWAP&sz=400`,
+        parse: (j) => okxBook(j, okxContractOz),
+    },
+    {
+        id: 'okx-paxg', exchange: 'OKX', instrument: 'PAXG/USDT', color: '#ffd166',
+        url: `${OKX}/market/books?instId=PAXG-USDT&sz=400`, parse: (j) => okxBook(j, 1),
+    },
+    {
+        id: 'okx-xaut', exchange: 'OKX', instrument: 'XAUT/USDT', color: '#c9a227',
+        url: `${OKX}/market/books?instId=XAUT-USDT&sz=400`, parse: (j) => okxBook(j, 1),
+    },
+    {
+        id: 'kraken-paxg', exchange: 'Kraken', instrument: 'PAXG/USD', color: '#8b7cf6',
+        url: 'https://api.kraken.com/0/public/Depth?pair=PAXGUSD&count=500', parse: krakenBook,
+    },
+    {
+        id: 'kraken-xaut', exchange: 'Kraken', instrument: 'XAUT/USD', color: '#b4a9ff',
+        url: 'https://api.kraken.com/0/public/Depth?pair=XAUTUSD&count=500', parse: krakenBook,
+    },
+    {
+        id: 'binance-paxg', exchange: 'Binance', instrument: 'PAXG/USDT', color: '#2ec4b6',
+        url: 'https://api.binance.com/api/v3/depth?symbol=PAXGUSDT&limit=1000',
+        parse: (j) => ({
+            bids: j.bids.map((r) => [Number(r[0]), Number(r[1])]),
+            asks: j.asks.map((r) => [Number(r[0]), Number(r[1])]),
+        }),
+    },
+    {
+        id: 'bybit-xaut', exchange: 'Bybit', instrument: 'XAUT/USDT', color: '#4cc9f0',
+        url: 'https://api.bybit.com/v5/market/orderbook?category=spot&symbol=XAUTUSDT&limit=200',
+        parse: (j) => {
+            if (j.retCode !== 0 || !j.result) throw new Error(j.retMsg || 'no data');
+            return {
+                bids: j.result.b.map((r) => [Number(r[0]), Number(r[1])]),
+                asks: j.result.a.map((r) => [Number(r[0]), Number(r[1])]),
+            };
+        },
+    },
+];
+
+const REFERENCE_TICKERS = [
+    ['OANDA:XAUUSD', 'OANDA'],
+    ['FOREXCOM:XAUUSD', 'Forex.com'],
+    ['PEPPERSTONE:XAUUSD', 'Pepperstone'],
+    ['FX_IDC:XAUUSD', 'ICE (FX_IDC)'],
+    ['TVC:GOLD', 'TVC composite'],
+];
+
+let okxContractOz = 0.001; // replaced by the live contract spec on start
+
+const settings = Object.assign({
+    chartMode: 'spot',   // 'spot' | 'tradingview'
+    tf: '15m',
+    step: 1,             // $ bucket size for depth
+    rangePct: 1,         // show depth within ±range% of spot
+    align: true,         // shift each venue by its offset to spot
+    walls: true,         // draw largest levels as lines
+    enabled: {},         // venue id -> false when switched off
+}, store.get('gt_market_settings', {}));
+
+function saveSettings() { store.set('gt_market_settings', settings); }
+
+const state = {
+    spot: null, open24h: null, spotTs: 0,
+    candles: [], venues: {}, buckets: [], maxOz: 0,
+    chart: null, series: null, wallLines: [], overlay: null,
+    tvLoaded: false, oanda: null,
+};
+VENUES.forEach((v) => { state.venues[v.id] = { status: 'loading', nextTry: 0 }; });
+
+// ---------------------------------------------------------------- spot & candles
+
+async function loadContractSpec() {
+    try {
+        const j = await getJSON(`${OKX}/public/instruments?instType=SWAP&instId=XAU-USDT-SWAP`);
+        const spec = j.data && j.data[0];
+        if (spec && Number(spec.ctVal) > 0) okxContractOz = Number(spec.ctVal);
+    } catch (e) { /* keep default */ }
+}
+
+async function fetchCandles(tf) {
+    const bar = TIMEFRAMES[tf];
+    let rows = (await getJSON(`${OKX}/market/index-candles?instId=${SPOT_INST}&bar=${bar}&limit=100`)).data || [];
+    for (let i = 0; i < 2 && rows.length; i++) {
+        const oldest = rows[rows.length - 1][0];
+        const more = (await getJSON(`${OKX}/market/history-index-candles?instId=${SPOT_INST}&bar=${bar}&limit=100&after=${oldest}`)).data || [];
+        if (!more.length) break;
+        rows = rows.concat(more);
+    }
+    const byTime = new Map();
+    rows.forEach((r) => byTime.set(Math.floor(Number(r[0]) / 1000), {
+        time: Math.floor(Number(r[0]) / 1000), open: +r[1], high: +r[2], low: +r[3], close: +r[4],
+    }));
+    return [...byTime.values()].sort((a, b) => a.time - b.time);
+}
+
+async function loadCandles() {
+    try {
+        state.candles = await fetchCandles(settings.tf);
+        if (state.series) state.series.setData(state.candles);
+        $('chart-status').textContent = '';
+    } catch (e) {
+        $('chart-status').textContent = `Candles unavailable (${e.message})`;
+    }
+}
+
+async function pollSpot() {
+    try {
+        const j = await getJSON(`${OKX}/market/index-tickers?instId=${SPOT_INST}`);
+        const t = j.data && j.data[0];
+        if (!t) return;
+        state.spot = Number(t.idxPx);
+        state.open24h = Number(t.open24h);
+        state.spotTs = Number(t.ts) / 1000;
+        renderSpotHeader();
+        applySpotToCandles();
+    } catch (e) {
+        $('hdr-spot-time').textContent = `spot feed: ${e.message}`;
+    }
+}
+
+function applySpotToCandles() {
+    if (!state.series || !state.candles.length || !state.spot) return;
+    const secs = TF_SECONDS[settings.tf];
+    const barTime = Math.floor(state.spotTs / secs) * secs;
+    const last = state.candles[state.candles.length - 1];
+    if (barTime > last.time) {
+        const bar = { time: barTime, open: state.spot, high: state.spot, low: state.spot, close: state.spot };
+        state.candles.push(bar);
+        state.series.update(bar);
+    } else if (barTime === last.time) {
+        last.close = state.spot;
+        last.high = Math.max(last.high, state.spot);
+        last.low = Math.min(last.low, state.spot);
+        state.series.update(last);
+    }
+}
+
+function renderSpotHeader() {
+    $('hdr-spot').textContent = fmt(state.spot);
+    const chg = state.spot - state.open24h;
+    const pct = state.open24h ? (chg / state.open24h) * 100 : 0;
+    const el = $('hdr-change');
+    el.textContent = `${fmtSigned(chg)} (${fmtSigned(pct)}%) 24h`;
+    el.className = 'hdr-change ' + (chg >= 0 ? 'up' : 'down');
+    $('hdr-spot-time').textContent = `${utcTime(state.spotTs)}:${new Date(state.spotTs * 1000).toISOString().slice(17, 19)} UTC`;
+}
+
+// ---------------------------------------------------------------- order books
+
+async function pollVenue(v) {
+    const vs = state.venues[v.id];
+    if (settings.enabled[v.id] === false) { vs.status = 'off'; return; }
+    if (Date.now() < vs.nextTry) return;
+    try {
+        const book = v.parse(await getJSON(v.url, {}, 5000));
+        book.bids.sort((a, b) => b[0] - a[0]);
+        book.asks.sort((a, b) => a[0] - b[0]);
+        if (!book.bids.length || !book.asks.length) throw new Error('empty book');
+        const mid = (book.bids[0][0] + book.asks[0][0]) / 2;
+        if (state.spot && Math.abs(mid - state.spot) / state.spot > MAX_VENUE_DEVIATION) {
+            throw new Error(`price ${fmt(mid)} too far from spot`);
+        }
+        Object.assign(vs, { status: 'ok', error: null, bids: book.bids, asks: book.asks, mid, ts: Date.now() / 1000 });
+    } catch (e) {
+        const msg = e.message === 'Failed to fetch' ? 'blocked or offline' : e.message;
+        Object.assign(vs, { status: 'error', error: msg, bids: null, asks: null, nextTry: Date.now() + VENUE_RETRY_MS });
+    }
+}
+
+async function pollBooks() {
+    await Promise.allSettled(VENUES.map(pollVenue));
+    aggregateBooks();
+    renderLadder();
+    renderVenueTable();
+    renderWalls();
+}
+
+function aggregateBooks() {
+    const spot = state.spot;
+    const buckets = new Map();
+    state.maxOz = 0;
+    if (!spot) { state.buckets = []; return; }
+    const lo = spot * (1 - settings.rangePct / 100);
+    const hi = spot * (1 + settings.rangePct / 100);
+    const step = settings.step;
+
+    VENUES.forEach((v) => {
+        const vs = state.venues[v.id];
+        if (vs.status !== 'ok') return;
+        vs.offset = vs.mid - spot;
+        const shift = settings.align ? vs.offset : 0;
+        vs.bidOz = 0; vs.askOz = 0;
+        const add = (side, rows) => {
+            for (const [px, oz] of rows) {
+                const p = px - shift;
+                if (p < lo || p > hi) continue;
+                const key = Math.round(p / step) * step;
+                let b = buckets.get(key);
+                if (!b) { b = { price: key, bid: 0, ask: 0, bidBy: {}, askBy: {} }; buckets.set(key, b); }
+                b[side] += oz;
+                b[side + 'By'][v.id] = (b[side + 'By'][v.id] || 0) + oz;
+                vs[side + 'Oz'] += oz;
+            }
+        };
+        add('bid', vs.bids);
+        add('ask', vs.asks);
+    });
+    state.buckets = [...buckets.values()].sort((a, b) => b.price - a.price);
+    state.buckets.forEach((b) => { state.maxOz = Math.max(state.maxOz, b.bid, b.ask); });
+}
+
+function stackedBar(by, total, side) {
+    if (!total) return '';
+    const segs = VENUES.filter((v) => by[v.id]).map((v) => {
+        const w = (by[v.id] / state.maxOz) * 100;
+        return `<span style="width:${w.toFixed(2)}%;background:${v.color}"></span>`;
+    }).join('');
+    return `<div class="dom-bar ${side}">${segs}</div>`;
+}
+
+function venueBreakdown(by) {
+    return VENUES.filter((v) => by[v.id]).map((v) => `${v.exchange} ${v.instrument}: ${fmt(by[v.id], 2)} oz`).join('\n');
+}
+
+let ladderCentered = false;
+
+function renderLadder() {
+    const el = $('dom-ladder');
+    if (!state.buckets.length) {
+        el.innerHTML = '<div class="empty">No order book data yet.</div>';
+        return;
+    }
+    const decimals = settings.step < 1 ? 1 : 0;
+    let spotInserted = false;
+    const rows = [];
+    let totalBid = 0, totalAsk = 0;
+    for (const b of state.buckets) {
+        totalBid += b.bid; totalAsk += b.ask;
+        if (!spotInserted && b.price < state.spot) {
+            rows.push(`<div class="dom-spot" id="dom-spot-row"><span>SPOT</span><span>${fmt(state.spot)}</span></div>`);
+            spotInserted = true;
+        }
+        const tipBid = escapeHtml(venueBreakdown(b.bidBy));
+        const tipAsk = escapeHtml(venueBreakdown(b.askBy));
+        rows.push(`<div class="dom-row">
+            <div class="dom-side bid" title="${tipBid}">${stackedBar(b.bidBy, b.bid, 'bid')}<span class="dom-qty">${b.bid ? fmt(b.bid, 1) : ''}</span></div>
+            <div class="dom-px">${fmt(b.price, decimals)}</div>
+            <div class="dom-side ask" title="${tipAsk}">${stackedBar(b.askBy, b.ask, 'ask')}<span class="dom-qty">${b.ask ? fmt(b.ask, 1) : ''}</span></div>
+        </div>`);
+    }
+    if (!spotInserted) rows.push(`<div class="dom-spot" id="dom-spot-row"><span>SPOT</span><span>${fmt(state.spot)}</span></div>`);
+    const prevScroll = el.scrollTop;
+    el.innerHTML = rows.join('');
+    $('dom-totals').innerHTML =
+        `Bids <b class="up">${fmt(totalBid, 0)} oz</b> · Asks <b class="down">${fmt(totalAsk, 0)} oz</b> within ±${settings.rangePct}%`;
+    if (!ladderCentered) {
+        const spotRow = $('dom-spot-row');
+        if (spotRow) el.scrollTop = spotRow.offsetTop - el.clientHeight / 2;
+        ladderCentered = true;
+    } else {
+        el.scrollTop = prevScroll;
+    }
+}
+
+function renderVenueTable() {
+    const rows = VENUES.map((v) => {
+        const vs = state.venues[v.id];
+        const on = settings.enabled[v.id] !== false;
+        let status;
+        if (!on) status = '<span class="muted">off</span>';
+        else if (vs.status === 'ok') status = '<span class="up">live</span>';
+        else if (vs.status === 'loading') status = '<span class="muted">loading</span>';
+        else status = `<span class="down" title="${escapeHtml(vs.error)}">${escapeHtml(vs.error)}</span>`;
+        const ok = on && vs.status === 'ok';
+        return `<tr>
+            <td><label class="venue-toggle"><input type="checkbox" data-venue="${v.id}" ${on ? 'checked' : ''}>
+                <span class="swatch" style="background:${v.color}"></span>${v.exchange}</label></td>
+            <td>${v.instrument}</td>
+            <td>${status}</td>
+            <td class="num">${ok ? fmt(vs.mid) : '–'}</td>
+            <td class="num">${ok ? fmtSigned(vs.offset) : '–'}</td>
+            <td class="num">${ok ? fmt(vs.bidOz, 1) : '–'}</td>
+            <td class="num">${ok ? fmt(vs.askOz, 1) : '–'}</td>
+        </tr>`;
+    }).join('');
+    $('venue-table-body').innerHTML = rows;
+}
+
+// ---------------------------------------------------------------- chart
+
+function initChart() {
+    const container = $('spot-chart');
+    state.chart = LightweightCharts.createChart(container, {
+        autoSize: true,
+        layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#94a3b8', fontFamily: 'JetBrains Mono, monospace' },
+        grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
+        timeScale: { timeVisible: true, secondsVisible: false, borderColor: '#21293a', rightOffset: 6 },
+        rightPriceScale: { borderColor: '#21293a' },
+        crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+        localization: { priceFormatter: (p) => fmt(p) },
+    });
+    state.series = state.chart.addCandlestickSeries({
+        upColor: '#00c26e', downColor: '#ff4d4f', borderVisible: false,
+        wickUpColor: '#00c26e', wickDownColor: '#ff4d4f',
+        priceFormat: { type: 'price', precision: 2, minMove: 0.01 },
+    });
+    state.overlay = $('depth-overlay');
+    requestAnimationFrame(drawOverlayLoop);
+}
+
+let lastOverlayDraw = 0;
+function drawOverlayLoop(t) {
+    if (t - lastOverlayDraw > 150 && settings.chartMode === 'spot' && document.visibilityState === 'visible') {
+        drawDepthOverlay();
+        lastOverlayDraw = t;
+    }
+    requestAnimationFrame(drawOverlayLoop);
+}
+
+// Draws the aggregated book as horizontal bars on the right edge of the price chart.
+function drawDepthOverlay() {
+    const canvas = state.overlay;
+    if (!canvas || !state.series) return;
+    const rect = canvas.parentElement.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    if (canvas.width !== Math.round(rect.width * dpr) || canvas.height !== Math.round(rect.height * dpr)) {
+        canvas.width = Math.round(rect.width * dpr);
+        canvas.height = Math.round(rect.height * dpr);
+        canvas.style.width = `${rect.width}px`;
+        canvas.style.height = `${rect.height}px`;
+    }
+    const ctx = canvas.getContext('2d');
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, rect.width, rect.height);
+    if (!state.buckets.length || !state.maxOz) return;
+
+    const paneWidth = state.chart.timeScale().width();
+    const paneHeight = rect.height - state.chart.timeScale().height();
+    const maxLen = Math.min(220, paneWidth * 0.28);
+    const half = settings.step / 2;
+    for (const b of state.buckets) {
+        const yTop = state.series.priceToCoordinate(b.price + half);
+        const yBot = state.series.priceToCoordinate(b.price - half);
+        if (yTop === null || yBot === null || yBot < 0 || yTop > paneHeight) continue;
+        const h = Math.max(1, Math.abs(yBot - yTop) - 1);
+        const y = Math.min(yTop, yBot);
+        // bids and asks for the same bucket are drawn stacked (bid first, then ask)
+        const bidLen = (b.bid / state.maxOz) * maxLen;
+        const askLen = (b.ask / state.maxOz) * maxLen;
+        if (bidLen) {
+            ctx.fillStyle = 'rgba(0, 194, 110, 0.45)';
+            ctx.fillRect(paneWidth - bidLen - askLen, y, bidLen, h);
+        }
+        if (askLen) {
+            ctx.fillStyle = 'rgba(255, 77, 79, 0.45)';
+            ctx.fillRect(paneWidth - askLen, y, askLen, h);
+        }
+    }
+}
+
+function renderWalls() {
+    if (!state.series) return;
+    state.wallLines.forEach((l) => state.series.removePriceLine(l));
+    state.wallLines = [];
+    if (!settings.walls || settings.chartMode !== 'spot') return;
+    const top = (side) => [...state.buckets].filter((b) => b[side] > 0).sort((a, b) => b[side] - a[side]).slice(0, 3);
+    for (const [side, color] of [['bid', '#00c26e'], ['ask', '#ff4d4f']]) {
+        top(side).forEach((b) => {
+            state.wallLines.push(state.series.createPriceLine({
+                price: b.price, color, lineWidth: 1, lineStyle: LightweightCharts.LineStyle.Dashed,
+                axisLabelVisible: true, title: `${side} ${fmt(b[side], 0)} oz`,
+            }));
+        });
+    }
+}
+
+// ---------------------------------------------------------------- TradingView widget (Capital.com feed)
+
+function loadTradingView() {
+    if (state.tvLoaded) return;
+    state.tvLoaded = true;
+    const s = document.createElement('script');
+    s.src = 'https://s3.tradingview.com/tv.js';
+    s.onload = () => {
+        new window.TradingView.widget({
+            container_id: 'tv-widget', symbol: 'CAPITALCOM:GOLD', interval: '15',
+            timezone: 'Etc/UTC', theme: 'dark', style: '1', locale: 'en', autosize: true,
+            allow_symbol_change: true, hide_side_toolbar: false, backgroundColor: '#0d1117',
+        });
+    };
+    s.onerror = () => { $('tv-widget').innerHTML = '<div class="empty">TradingView could not be loaded.</div>'; };
+    document.head.appendChild(s);
+}
+
+// ---------------------------------------------------------------- reference quotes & OANDA
+
+async function pollReference() {
+    const el = $('ref-quotes');
+    try {
+        const j = await getJSON('https://scanner.tradingview.com/global/scan', {
+            method: 'POST',
+            headers: { 'Content-Type': 'text/plain' },
+            body: JSON.stringify({ symbols: { tickers: REFERENCE_TICKERS.map((t) => t[0]) }, columns: ['close'] }),
+        });
+        const prices = new Map((j.data || []).map((r) => [r.s, Number(r.d[0])]));
+        el.innerHTML = REFERENCE_TICKERS.map(([sym, label]) => {
+            const p = prices.get(sym);
+            const diff = (p && state.spot) ? p - state.spot : null;
+            return `<tr><td>${label}</td><td class="num">${p ? fmt(p) : '–'}</td>
+                <td class="num muted">${diff !== null ? fmtSigned(diff) : '–'}</td></tr>`;
+        }).join('');
+    } catch (e) {
+        el.innerHTML = `<tr><td colspan="3" class="muted">Unavailable (${escapeHtml(e.message)})</td></tr>`;
+    }
+}
+
+async function loadOanda() {
+    const el = $('oanda-book');
+    try {
+        const ob = await getJSON(`oanda_book.json?t=${Date.now()}`);
+        const width = Math.max(2, ob.bucket_width);
+        const groups = new Map();
+        ob.buckets.forEach((b) => {
+            if (Math.abs(b.price - ob.price) > 40) return;
+            const key = Math.round(b.price / width) * width;
+            const g = groups.get(key) || { price: key, buy: 0, sell: 0 };
+            g.buy += b.long_pct; g.sell += b.short_pct;
+            groups.set(key, g);
+        });
+        const rows = [...groups.values()].sort((a, b) => b.price - a.price);
+        const max = Math.max(...rows.map((r) => Math.max(r.buy, r.sell)), 0.01);
+        $('oanda-time').textContent = `snapshot ${escapeHtml(ob.time.slice(11, 16))} UTC · price then ${fmt(ob.price)}`;
+        el.innerHTML = rows.map((r) => `<div class="dom-row small">
+            <div class="dom-side bid"><div class="dom-bar bid"><span style="width:${(r.buy / max * 100).toFixed(1)}%;background:#00c26e"></span></div><span class="dom-qty">${fmt(r.buy, 2)}%</span></div>
+            <div class="dom-px">${fmt(r.price, 0)}</div>
+            <div class="dom-side ask"><div class="dom-bar ask"><span style="width:${(r.sell / max * 100).toFixed(1)}%;background:#ff4d4f"></span></div><span class="dom-qty">${fmt(r.sell, 2)}%</span></div>
+        </div>`).join('');
+    } catch (e) {
+        el.innerHTML = '<div class="empty">No OANDA snapshot available.</div>';
+    }
+}
+
+// ---------------------------------------------------------------- controls
+
+function syncControls() {
+    document.querySelectorAll('[data-chart-mode]').forEach((b) => b.classList.toggle('active', b.dataset.chartMode === settings.chartMode));
+    document.querySelectorAll('[data-tf]').forEach((b) => b.classList.toggle('active', b.dataset.tf === settings.tf));
+    $('opt-step').value = String(settings.step);
+    $('opt-range').value = String(settings.rangePct);
+    $('opt-align').checked = settings.align;
+    $('opt-walls').checked = settings.walls;
+    const spotMode = settings.chartMode === 'spot';
+    $('spot-chart-wrap').hidden = !spotMode;
+    $('tv-widget').hidden = spotMode;
+    $('tf-group').hidden = !spotMode;
+    $('chart-caption').innerHTML = spotMode
+        ? 'Candles: OKX XAU/USD spot index. Bars on the right: combined order books of the venues below (green bids, red asks).'
+        : 'TradingView chart, Capital.com GOLD feed. Order book levels cannot be drawn on this widget; see the ladder.';
+}
+
+function bindControls() {
+    document.querySelectorAll('[data-chart-mode]').forEach((b) => b.addEventListener('click', () => {
+        settings.chartMode = b.dataset.chartMode; saveSettings(); syncControls();
+        if (settings.chartMode === 'tradingview') loadTradingView();
+        renderWalls();
+    }));
+    document.querySelectorAll('[data-tf]').forEach((b) => b.addEventListener('click', () => {
+        settings.tf = b.dataset.tf; saveSettings(); syncControls(); loadCandles();
+    }));
+    $('opt-step').addEventListener('change', (e) => { settings.step = Number(e.target.value); saveSettings(); refreshDepthViews(); });
+    $('opt-range').addEventListener('change', (e) => { settings.rangePct = Number(e.target.value); saveSettings(); ladderCentered = false; refreshDepthViews(); });
+    $('opt-align').addEventListener('change', (e) => { settings.align = e.target.checked; saveSettings(); refreshDepthViews(); });
+    $('opt-walls').addEventListener('change', (e) => { settings.walls = e.target.checked; saveSettings(); renderWalls(); });
+    $('venue-table-body').addEventListener('change', (e) => {
+        const id = e.target.dataset.venue;
+        if (!id) return;
+        settings.enabled[id] = e.target.checked;
+        state.venues[id].nextTry = 0;
+        saveSettings();
+        pollBooks();
+    });
+    $('dom-recenter').addEventListener('click', () => { ladderCentered = false; renderLadder(); });
+}
+
+function refreshDepthViews() {
+    aggregateBooks(); renderLadder(); renderVenueTable(); renderWalls();
+}
+
+// ---------------------------------------------------------------- start
+
+function every(ms, fn) {
+    fn();
+    setInterval(() => { if (document.visibilityState === 'visible') fn(); }, ms);
+}
+
+async function startMarket() {
+    syncControls();
+    bindControls();
+    initChart();
+    if (settings.chartMode === 'tradingview') loadTradingView();
+    await loadContractSpec();
+    await pollSpot();
+    await loadCandles();
+    every(SPOT_POLL_MS, pollSpot);
+    every(BOOK_POLL_MS, pollBooks);
+    every(REF_POLL_MS, pollReference);
+    every(5 * 60 * 1000, loadOanda);
+    setInterval(() => { if (document.visibilityState === 'visible') loadCandles(); }, 60 * 1000);
+}

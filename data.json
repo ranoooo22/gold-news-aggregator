@@ -7765,9 +7765,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 14:20 UTC",
+        "main_date": "First Reported: 2026-11-16 14:20 UTC | Last Update: 2026-11-17 05:50 UTC",
         "original_date": "2026-11-16 14:20",
-        "_timestamp": 1794838843.0,
+        "_timestamp": 1794894629.0,
         "articles": [
             {
                 "title": "‘My arms are empty’: Tragedy strikes Gaza family after baby dies from cold",
@@ -7776,9 +7776,17 @@
                 "date": "2026-11-16 14:20",
                 "description": "A nine-month-old baby has died from hypothermia inside his family’s displacement tent in Gaza, as winter returns.",
                 "_timestamp": 1794838843.0
+            },
+            {
+                "title": "Stories of survival and pain: Children amid Israel’s war on south Lebanon",
+                "link": "https://www.aljazeera.com/features/2026/11/17/stories-of-survival-and-pain-children-amid-israels-war-on-south-lebanon?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 05:50",
+                "description": "The ongoing Israeli assault continues to have disastrous consequences for the people of southern Lebanon.",
+                "_timestamp": 1794894629.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 5,
             "Is_Gold_Relevant": false,
@@ -9298,37 +9306,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 06:11 UTC",
-        "original_date": "2026-11-16 06:11",
-        "_timestamp": 1794809472.0,
-        "articles": [
-            {
-                "title": "Bitcoin pinned below $65k as crypto sentiment dithers, ETF outflows persist",
-                "link": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-pinned-below-65k-crypto-061112106.html?.tsrc=rss",
-                "source": "Yahoo Finance Nasdaq",
-                "date": "2026-11-16 06:11",
-                "description": "Investing.com-- Bitcoin rose slightly on Monday but remained close to recent three-month lows as fears of rising U.S. interest rates and an uncertain regulatory outlook kept cryptocurrencies broadly under pressure.",
-                "_timestamp": 1794809472.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 06:11 UTC",
-            "Facts": "Cryptocurrencies such as Bitcoin remain pinned near multi-month lows as persistent market fears surrounding elevated U.S. interest rates and strict regulatory policies weigh on digital assets. Macroeconomic uncertainty continues to suppress speculative risk-taking across alternative asset classes.",
-            "Macro_Context": "Ongoing concerns over aggressive Fed rate expectations strengthen the U.S. dollar backdrop and create downward pressure on non-yielding assets, limiting immediate upside momentum for XAU/USD.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "24h",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 65,
-            "Orderflow_Price_Target": "3841.54"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 13.16
     },
     {
         "main_date": "First Reported: 2026-11-16 02:13 UTC | Last Update: 2026-11-17 01:39 UTC",
@@ -11947,9 +11924,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 02:52 UTC",
+        "main_date": "First Reported: 2026-11-17 02:52 UTC | Last Update: 2026-11-17 06:00 UTC",
         "original_date": "2026-11-17 02:52",
-        "_timestamp": 1794883976.0,
+        "_timestamp": 1794895232.0,
         "articles": [
             {
                 "title": "US moves to block China’s remote access to AI chips amid Nvidia scandal",
@@ -11958,9 +11935,17 @@
                 "date": "2026-11-17 02:52",
                 "description": "The Trump administration introduces export licence requirement for Malaysia, Thailand, Indonesia, Singapore and Brazil.",
                 "_timestamp": 1794883976.0
+            },
+            {
+                "title": "Watch these Chinese chip stocks as U.S. tightens access to Nvidia hardware",
+                "link": "https://finance.yahoo.com/technology/ai/articles/watch-chinese-chip-stocks-u-060032967.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 06:00",
+                "description": "Investing.com -- Washington closed the \"back door\" through which China was still reaching top-tier Nvidia compute-- a move that strengthens Beijing’s case for domestic chips and stands to potentially benefit local chipmakers, especially those with exposure to artificial intelligence.",
+                "_timestamp": 1794895232.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
@@ -12211,9 +12196,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 05:48 UTC",
+        "main_date": "First Reported: 2026-11-17 05:48 UTC | Last Update: 2026-11-17 06:04 UTC",
         "original_date": "2026-11-17 05:48",
-        "_timestamp": 1794894501.0,
+        "_timestamp": 1794895472.0,
         "articles": [
             {
                 "title": "Oman, Iran foreign ministers discuss safeguarding maritime corridors",
@@ -12222,10 +12207,25 @@
                 "date": "2026-11-17 05:48",
                 "description": "",
                 "_timestamp": 1794894501.0
+            },
+            {
+                "title": "Iran, Oman FMs discuss regional stability in Muscat",
+                "link": "https://en.mehrnews.com/news/249475/Iran-Oman-FMs-discuss-regional-stability-in-Muscat",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 06:04",
+                "description": "TEHRAN, Nov. 17 (MNA) – Iran and Oman's foreign ministers discussed bilateral relations and the importance of stronger regional consultation to safeguard shared interests and preserve regional peace and stability during talks in Muscat.",
+                "_timestamp": 1794895472.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-17 06:04 UTC",
+            "Facts": "[Update 2026-11-17 06:04 UTC via Mehr News Agency]: Iran and Oman's foreign ministers discussed bilateral relations and the importance of stronger regional consultation to safeguard shared interests and preserve regional peace and stability during talks in Muscat. Oman and Iran foreign ministers discussed safeguarding maritime corridors.",
+            "Macro_Context": "Geopolitical tensions in the Middle East and Strait of Hormuz continue to influence safe-haven demand for gold."
+        }
     },
     {
         "main_date": "First Reported: 2026-11-17 05:52 UTC",
@@ -12241,7 +12241,62 @@
                 "_timestamp": 1794894766.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 05:52 UTC",
+            "Facts": "The Iranian foreign ministry spokesman emphasized that the US 'sword above the law' stance reflects Hitler and ISIL in rejecting international law and rules.",
+            "Macro_Context": "Diplomatic friction and international legal rhetoric involving Middle Eastern nations."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 05:50 UTC",
+        "original_date": "2026-11-17 05:50",
+        "_timestamp": 1794894602.0,
+        "articles": [
+            {
+                "title": "Why GXO Thinks a Recession Could Actually Help It",
+                "link": "https://www.fool.com/investing/2026/11/17/why-gxo-thinks-a-recession-could-actually-help-it/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 05:50",
+                "description": "GXO impressed investors with its 2030 guidance.",
+                "_timestamp": 1794894602.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Global Growth, Debt & China Macro",
+            "Event_Timestamp": "2026-11-17 05:50 UTC",
+            "Facts": "GXO impressed investors with its 2030 guidance, outlining why a potential recession could actually assist its business model.",
+            "Macro_Context": "Corporate outlooks and economic growth expectations amid broader macroeconomic uncertainty."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 06:10 UTC",
+        "original_date": "2026-11-17 06:10",
+        "_timestamp": 1794895808.0,
+        "articles": [
+            {
+                "title": "WHO chief urges unrestricted access to aid in Gaza",
+                "link": "https://en.mehrnews.com/news/249477/WHO-chief-urges-unrestricted-access-to-aid-in-Gaza",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 06:10",
+                "description": "TEHRAN, Nov. 17 (MNA) – World Health Organization Director-General Tedros Adhanom Ghebreyesus says Palestinians in Gaza need unrestricted access to shelter materials, clean water, and sanitation supplies ahead of a looming harsh winter.",
+                "_timestamp": 1794895808.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "2026-11-17 06:10 UTC",
+            "Facts": "World Health Organization Director-General Tedros Adhanom Ghebreyesus stated that Palestinians in Gaza need unrestricted access to shelter materials, clean water, and sanitation supplies ahead of a looming harsh winter.",
+            "Macro_Context": "Ongoing humanitarian concerns and geopolitical instability in the Middle East."
+        }
     }
 ]

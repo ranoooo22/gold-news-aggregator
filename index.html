@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GMIT // XAU — Gold & Macro Data Terminal</title>
     <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" defer></script>
     <style>
         :root {
             --bg-main: #06080c;
@@ -38,6 +38,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
+        /* Sticky Header */
         .top-header {
             background: #000000;
             color: var(--text-primary);
@@ -85,6 +86,7 @@
             font-family: var(--font-mono);
         }
 
+        /* Single-Line Navigation */
         .nav-actions {
             display: flex;
             align-items: center;
@@ -105,9 +107,9 @@
             border: none;
             color: var(--text-secondary);
             font-family: var(--font-mono);
-            font-size: 0.75rem;
+            font-size: 0.74rem;
             font-weight: 700;
-            padding: 6px 14px;
+            padding: 6px 12px;
             border-radius: 3px;
             cursor: pointer;
             text-transform: uppercase;
@@ -133,6 +135,7 @@
         }
         .refresh-btn:hover { background: var(--bb-amber); color: #000000; }
 
+        /* Telemetry Bar */
         .telemetry-ribbon {
             background: #0b0f17;
             border-bottom: 1px solid var(--border-color);
@@ -154,7 +157,6 @@
         .t-item { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
         .t-label { color: var(--bb-amber); font-weight: 700; font-size: 0.68rem; text-transform: uppercase; }
         .t-val { font-weight: 700; color: #ffffff; }
-        .t-sub { color: var(--text-secondary); font-size: 0.7rem; }
         .t-divider { width: 1px; height: 13px; background: var(--border-color); }
         .live-dot { width: 7px; height: 7px; background-color: var(--bull-green); border-radius: 50%; display: inline-block; box-shadow: 0 0 6px var(--bull-green); }
 
@@ -162,6 +164,7 @@
         .tab-content { display: none; }
         .tab-content.active { display: block; }
 
+        /* Chart & Orderbook Grid */
         .cockpit-grid {
             display: grid;
             grid-template-columns: minmax(0, 1fr) 390px;
@@ -194,6 +197,7 @@
         .hud-header {
             display: flex; justify-content: space-between; align-items: center;
             margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border-color);
+            flex-wrap: wrap; gap: 8px;
         }
         .hud-title { font-family: var(--font-mono); font-size: 0.73rem; font-weight: 800; text-transform: uppercase; color: var(--bb-amber); }
         .hud-badge { font-family: var(--font-mono); font-size: 0.66rem; font-weight: 700; padding: 2px 6px; border-radius: 3px; background: var(--bg-subtle); color: var(--bb-cyan); border: 1px solid var(--border-color); }
@@ -209,11 +213,14 @@
         .ladder-row.zone-sell .ladder-vol-fill { background: var(--bear-red); }
         .ladder-row.zone-buy { border-left: 3px solid var(--bull-green); }
         .ladder-row.zone-buy .ladder-vol-fill { background: var(--bull-green); }
+        .ladder-row.is-overlap { border-color: rgba(255, 153, 0, 0.55); }
         .ladder-top-line { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; }
+        .ladder-left { display: flex; align-items: center; gap: 5px; }
         .ladder-price { font-weight: 800; font-size: 0.84rem; color: #ffffff; }
         .ladder-side-tag { font-size: 0.62rem; font-weight: 800; padding: 1px 4px; border-radius: 2px; text-transform: uppercase; }
-        .tag-sell { background: rgba(255, 59, 48, 0.2); color: var(--bear-red); }
-        .tag-buy { background: rgba(0, 230, 118, 0.18); color: var(--bull-green); }
+        .tag-sell { background: rgba(255, 59, 48, 0.2); color: var(--bear-red); border: 1px solid rgba(255, 59, 48, 0.4); }
+        .tag-buy { background: rgba(0, 230, 118, 0.18); color: var(--bull-green); border: 1px solid rgba(0, 230, 118, 0.4); }
+        .tag-overlap { background: var(--bb-amber-dim); color: var(--bb-amber); border: 1px solid var(--bb-amber); font-size: 0.6rem; font-weight: 800; padding: 1px 4px; border-radius: 2px; }
         .ladder-right { font-size: 0.71rem; color: var(--text-secondary); }
         .ladder-tot-vol { font-weight: 800; color: var(--bb-amber); }
         .ladder-split-line {
@@ -228,40 +235,327 @@
             font-family: var(--font-mono); font-size: 0.75rem; font-weight: 800; margin: 2px 0;
         }
 
+        /* 3D Surface Cards */
         .surface-section-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 12px 14px; margin-top: 12px; }
-        .surface-controls { display: flex; align-items: center; gap: 6px; }
+        .surface-controls { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
         .mode-switch-group { display: inline-flex; background: var(--bg-subtle); border: 1px solid var(--border-color); border-radius: 3px; padding: 2px; }
-        .mode-btn { background: transparent; border: none; color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.69rem; font-weight: 700; padding: 4px 9px; cursor: pointer; text-transform: uppercase; }
+        .mode-btn { background: transparent; border: none; color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.69rem; font-weight: 700; padding: 4px 9px; cursor: pointer; text-transform: uppercase; border-radius: 2px; }
         .mode-btn.active { background: var(--bb-amber); color: #000000; }
         .plotly-box { width: 100%; height: 410px; border-radius: var(--radius-md); background: #0d1117; }
-        .surface-caption { margin-top: 8px; padding-top: 7px; border-top: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.71rem; color: var(--text-secondary); display: flex; justify-content: space-between; }
+        .surface-caption { margin-top: 8px; padding-top: 7px; border-top: 1px solid var(--border-color); font-family: var(--font-mono); font-size: 0.71rem; color: var(--text-secondary); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 
+        /* News Tab Controls, Sorting & Cards */
         .controls-panel {
-            background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg);
-            padding: 10px 14px; margin-bottom: 11px; display: flex; justify-content: space-between; align-items: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 10px 14px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            justify-content: space-between;
         }
-        .search-input { padding: 6px 10px; border-radius: var(--radius-md); border: 1px solid var(--border-color); background-color: var(--bg-subtle); color: var(--text-primary); font-family: var(--font-mono); font-size: 0.76rem; width: 100%; outline: none; }
-        .search-input:focus { border-color: var(--bb-amber); }
+        .controls-left {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            flex: 1;
+        }
+        .search-input, select {
+            padding: 7px 10px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            background-color: var(--bg-subtle);
+            color: var(--text-primary);
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            outline: none;
+        }
+        .search-input { flex: 1; min-width: 200px; }
+        .search-input:focus, select:focus { border-color: var(--bb-amber); }
+
+        .feed-stats-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-mono);
+            font-size: 0.73rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            padding: 0 4px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .quick-actions-bar { display: flex; align-items: center; gap: 6px; }
+        .compact-action-btn {
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-family: var(--font-mono);
+            padding: 4px 10px;
+            border-radius: 3px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .compact-action-btn:hover { border-color: var(--bb-amber); color: var(--bb-amber); }
+        .pinned-counter-badge {
+            background: var(--bb-amber-dim);
+            color: var(--bb-amber);
+            border: 1px solid var(--bb-amber);
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-weight: 700;
+            font-size: 0.7rem;
+            cursor: pointer;
+        }
 
         .news-card {
-            background-color: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color);
-            border-left: 4px solid var(--text-muted); margin-bottom: 8px; overflow: hidden;
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            border-left: 4px solid #334155;
+            margin-bottom: 9px;
+            overflow: hidden;
+            transition: border-color 0.14s ease;
         }
-        .news-card.is-pinned { border: 1px solid var(--bb-amber); border-left: 5px solid var(--bb-amber); background: linear-gradient(to bottom, rgba(255, 153, 0, 0.07) 0%, var(--bg-card) 75px); }
-        .card-accordion-header { padding: 10px 14px; cursor: pointer; display: flex; flex-direction: column; gap: 5px; }
-        .card-accordion-header:hover { background-color: var(--bg-subtle); }
-        .card-top-row { display: flex; justify-content: space-between; align-items: center; }
-        .date-header { color: var(--bb-amber); font-family: var(--font-mono); font-size: 0.73rem; }
-        .cluster-headline { font-size: 0.93rem; font-weight: 700; color: #ffffff; margin: 0; }
-        .pin-btn { background: var(--bg-subtle); color: var(--text-secondary); border: 1px solid var(--border-color); padding: 2px 8px; border-radius: 3px; font-family: var(--font-mono); font-size: 0.68rem; font-weight: 700; cursor: pointer; }
+        .news-card:hover { border-color: #475569; }
+        .news-card.is-updated { border-left-color: var(--bb-cyan); }
+        .news-card.is-pinned {
+            border: 1px solid var(--bb-amber);
+            border-left: 5px solid var(--bb-amber);
+            background: linear-gradient(to bottom, rgba(255, 153, 0, 0.08) 0%, var(--bg-card) 85px);
+        }
+
+        .card-accordion-header {
+            padding: 11px 14px;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .card-accordion-header:hover { background-color: rgba(255, 255, 255, 0.02); }
+
+        .card-top-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .card-meta-left {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .pinned-tag {
+            background: var(--bb-amber);
+            color: #000000;
+            font-family: var(--font-mono);
+            font-size: 0.64rem;
+            font-weight: 800;
+            padding: 2px 6px;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+        .updated-tag {
+            background: rgba(0, 230, 118, 0.16);
+            color: var(--bull-green);
+            border: 1px solid rgba(0, 230, 118, 0.4);
+            font-family: var(--font-mono);
+            font-size: 0.64rem;
+            font-weight: 800;
+            padding: 1px 6px;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+        .driver-badge {
+            background: var(--bb-cyan-dim);
+            color: var(--bb-cyan);
+            border: 1px solid rgba(0, 180, 216, 0.35);
+            font-family: var(--font-mono);
+            font-size: 0.67rem;
+            font-weight: 700;
+            padding: 1px 6px;
+            border-radius: 2px;
+        }
+        .sources-count-pill {
+            background: var(--bg-subtle);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            font-family: var(--font-mono);
+            font-size: 0.66rem;
+            font-weight: 700;
+            padding: 1px 6px;
+            border-radius: 2px;
+        }
+        .date-header {
+            color: var(--bb-amber);
+            font-family: var(--font-mono);
+            font-size: 0.72rem;
+            font-weight: 600;
+        }
+
+        .card-actions-right {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .pin-btn {
+            background: var(--bg-subtle);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            padding: 3px 9px;
+            border-radius: 3px;
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.12s ease;
+        }
         .pin-btn:hover { border-color: var(--bb-amber); color: var(--bb-amber); }
         .pin-btn.active { background: var(--bb-amber); color: #000000; border-color: var(--bb-amber); }
-        .pinned-tag { background: var(--bb-amber); color: #000000; font-family: var(--font-mono); font-size: 0.65rem; font-weight: 800; padding: 1px 6px; border-radius: 2px; text-transform: uppercase; }
 
-        .card-accordion-body { display: none; padding: 12px 14px; border-top: 1px solid var(--border-color); background: var(--bg-card); font-size: 0.85rem; line-height: 1.5; }
+        .headline-line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .cluster-headline {
+            font-size: 0.94rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0;
+            line-height: 1.35;
+            flex: 1;
+        }
+        .expand-indicator {
+            font-family: var(--font-mono);
+            font-size: 0.67rem;
+            color: var(--bb-amber);
+            font-weight: 700;
+            background: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            padding: 2px 7px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+
+        .compact-teaser {
+            font-size: 0.81rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .news-card.is-expanded .compact-teaser { display: none; }
+
+        .update-highlight {
+            background: var(--bb-amber-dim);
+            color: var(--bb-amber);
+            font-family: var(--font-mono);
+            font-weight: 700;
+            font-size: 0.76rem;
+            padding: 1px 5px;
+            border-radius: 2px;
+            border: 1px solid rgba(255, 153, 0, 0.4);
+        }
+
+        .card-accordion-body {
+            display: none;
+            padding: 12px 14px 14px 14px;
+            border-top: 1px solid var(--border-color);
+            background: var(--bg-card);
+        }
         .news-card.is-expanded .card-accordion-body { display: block; }
 
-        @media (max-width: 1060px) { .cockpit-grid { grid-template-columns: 1fr; } }
+        .summary-box {
+            background-color: var(--bg-subtle);
+            border-radius: var(--radius-md);
+            padding: 12px;
+            margin-bottom: 11px;
+            border: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            line-height: 1.54;
+        }
+        .data-block { margin-bottom: 9px; }
+        .data-block:last-child { margin-bottom: 0; }
+        .data-label {
+            font-family: var(--font-mono);
+            font-weight: 700;
+            color: var(--bb-amber);
+            text-transform: uppercase;
+            font-size: 0.68rem;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .source-item {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+            gap: 6px;
+            font-size: 0.81rem;
+        }
+        .source-badge {
+            font-family: var(--font-mono);
+            background-color: var(--bg-subtle);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+            padding: 1px 6px;
+            border-radius: 2px;
+            font-size: 0.67rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .latest-src-tag {
+            font-family: var(--font-mono);
+            background: rgba(0, 230, 118, 0.16);
+            color: var(--bull-green);
+            border: 1px solid rgba(0, 230, 118, 0.35);
+            padding: 1px 5px;
+            border-radius: 2px;
+            font-size: 0.62rem;
+            font-weight: 800;
+        }
+        .initial-src-tag {
+            font-family: var(--font-mono);
+            background: var(--bg-subtle);
+            color: var(--text-muted);
+            border: 1px solid var(--border-color);
+            padding: 1px 5px;
+            border-radius: 2px;
+            font-size: 0.62rem;
+            font-weight: 700;
+        }
+        .source-link { color: var(--bb-cyan); text-decoration: none; line-height: 1.36; }
+        .source-link:hover { text-decoration: underline; color: var(--bb-amber); }
+
+        @media (max-width: 1060px) {
+            .cockpit-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 720px) {
+            .top-header { padding: 8px 10px; }
+            .nav-actions { width: 100%; justify-content: space-between; gap: 5px; }
+            .tab-btn { font-size: 0.68rem; padding: 6px 6px; }
+            .refresh-btn { font-size: 0.68rem; padding: 6px 8px; }
+            .telemetry-ribbon { padding: 7px 12px; }
+            .t-divider { display: none; }
+            .controls-left { flex-direction: column; align-items: stretch; }
+            .search-input, select { width: 100%; }
+            #chart-container { height: 340px; }
+            .plotly-box { height: 340px; }
+        }
     </style>
 </head>
 <body>
@@ -271,13 +565,13 @@
             <div class="brand-block">
                 <span class="brand-tag">GMIT // XAU</span>
                 <h1>Gold & Macro Data Terminal</h1>
-                <span class="brand-sub">Pure Factual Market Data &bull; No AI Opinions</span>
+                <span class="brand-sub">Pure Factual Market Data &bull; OANDA + COMEX Flow</span>
             </div>
             <div class="nav-actions">
                 <div class="tab-group">
-                    <button class="tab-btn active" onclick="switchTab(event, 'chart-tab')">[1] Chart & Flow</button>
-                    <button class="tab-btn" onclick="switchTab(event, 'news-tab')">[2] News Feed</button>
-                    <button class="tab-btn" onclick="switchTab(event, '3d-tab')">[3] Session Profile</button>
+                    <button class="tab-btn active" id="tab-btn-chart" onclick="switchTab(event, 'chart-tab')">[1] Chart & Flow</button>
+                    <button class="tab-btn" id="tab-btn-news" onclick="switchTab(event, 'news-tab')">[2] News Feed</button>
+                    <button class="tab-btn" id="tab-btn-3d" onclick="switchTab(event, '3d-tab')">[3] Session Profile</button>
                 </div>
                 <button class="refresh-btn" onclick="refreshAllData()">Refresh</button>
             </div>
@@ -338,6 +632,7 @@
                 <div id="model2-plot" class="plotly-box"></div>
                 <div class="surface-caption">
                     <span><strong>X:</strong> Timeline (UTC) &bull; <strong>Y:</strong> Price Zones ($10) &bull; <strong>Z:</strong> Net Order Volume</span>
+                    <span><strong>Tip:</strong> Switch to 2D Heatmap on mobile for a clean overview.</span>
                 </div>
             </div>
         </div>
@@ -345,8 +640,44 @@
         <!-- TAB 2: NEWS FEED -->
         <div id="news-tab" class="tab-content">
             <div class="controls-panel">
-                <input type="text" id="search-query" class="search-input" placeholder="Search headlines, drivers, sources..." oninput="renderNews()">
+                <div class="controls-left">
+                    <input type="text" id="search-query" class="search-input" placeholder="Search headlines, facts, sources, tickers..." oninput="renderNews()">
+                    <select id="filter-view" onchange="renderNews()">
+                        <option value="all">View: All Intelligence Clusters</option>
+                        <option value="pinned">View: Pinned Watchlist Only</option>
+                        <option value="updated">View: Updated Stories (&gt;1 Source)</option>
+                    </select>
+                    <select id="filter-driver" onchange="renderNews()">
+                        <option value="all">Driver: All Macro Narratives</option>
+                        <option value="Iran & Strait of Hormuz">Iran & Strait of Hormuz</option>
+                        <option value="Israel & Middle East Escalation">Israel & Middle East Escalation</option>
+                        <option value="Red Sea & Yemen Conflict">Red Sea & Yemen Conflict</option>
+                        <option value="US Inflation (CPI) & Fed Rate Path">US Inflation (CPI) & Fed Rate Path</option>
+                        <option value="Tariffs, Sanctions & Geoeconomics">Tariffs, Sanctions & Geoeconomics</option>
+                        <option value="AI, Semiconductors & Tech Liquidity">AI, Semiconductors & Tech Liquidity</option>
+                        <option value="Crude Oil & Energy Supply">Crude Oil & Energy Supply</option>
+                        <option value="Gold Bullion & Central Bank Demand">Gold Bullion & Central Bank Demand</option>
+                    </select>
+                    <select id="sort-by" onchange="renderNews()">
+                        <option value="newest_update">Sort: Latest Update / Newest First (Pinned Top)</option>
+                        <option value="most_sources">Sort: Most Sources / Coverage (Pinned Top)</option>
+                        <option value="first_reported">Sort: First Reported Date (Newest)</option>
+                        <option value="oldest_first">Sort: Oldest First</option>
+                    </select>
+                </div>
             </div>
+
+            <div class="feed-stats-bar">
+                <div>
+                    <span id="feed-count-label">Showing 0 intelligence clusters</span>
+                    <span class="pinned-counter-badge" id="pinned-count-badge" style="margin-left:8px;" onclick="togglePinnedOnlyFilter()" title="Click to toggle Pinned Watchlist filter">Pinned: 0</span>
+                </div>
+                <div class="quick-actions-bar">
+                    <button class="compact-action-btn" onclick="expandAllCards(true)">Expand All</button>
+                    <button class="compact-action-btn" onclick="expandAllCards(false)">Collapse All</button>
+                </div>
+            </div>
+
             <div id="news-container">
                 <p style="text-align:center; padding: 30px; color:#64748b; font-family:var(--font-mono);">Loading objective news feed...</p>
             </div>
@@ -357,10 +688,17 @@
             <div class="surface-section-card" style="margin-top:0;">
                 <div class="hud-header">
                     <span class="hud-title">Model 3 // 30-Day Hourly Session & Volatility Profile</span>
+                    <div class="surface-controls">
+                        <div class="mode-switch-group">
+                            <button class="mode-btn active" id="m3-view-3d" onclick="setModel3View('3d')">3D Surface</button>
+                            <button class="mode-btn" id="m3-view-2d" onclick="setModel3View('2d')">2D Heatmap</button>
+                        </div>
+                    </div>
                 </div>
                 <div id="model3-plot" class="plotly-box"></div>
                 <div class="surface-caption">
-                    <span><strong>X:</strong> Hour of Day (UTC) &bull; <strong>Y:</strong> Weekday &bull; <strong>Z:</strong> Average Hourly Range ($)</span>
+                    <span><strong>X:</strong> Hour of Day (UTC) &bull; <strong>Y:</strong> Weekday (Mon–Fri) &bull; <strong>Z:</strong> Average Hourly Range ($)</span>
+                    <span><strong>Asian:</strong> 00–08 UTC &bull; <strong>London:</strong> 08–13 UTC &bull; <strong>NY COMEX:</strong> 13–21 UTC</span>
                 </div>
             </div>
         </div>
@@ -375,45 +713,194 @@
         let nearSpotOrderbookRef = [];
         let liveTickerInterval = null;
         let chartResizeObserver = null;
+        const expandedCardKeys = new Set();
+
         const MAX_ZONE_RADIUS_PCT = 0.025;
-        let m2ViewMode = '3d';
+        const isMobileScreen = window.innerWidth < 720;
+        let m2ViewMode = isMobileScreen ? '2d' : '3d';
+        let m3ViewMode = isMobileScreen ? '2d' : '3d';
+
         const PINNED_STORAGE_KEY = 'gold_terminal_pinned_clusters_v1';
+
+        function syncToggleButtonsUI() {
+            const m2_3d = document.getElementById('m2-view-3d');
+            const m2_2d = document.getElementById('m2-view-2d');
+            if (m2_3d && m2_2d) {
+                m2_3d.classList.toggle('active', m2ViewMode === '3d');
+                m2_2d.classList.toggle('active', m2ViewMode === '2d');
+            }
+            const m3_3d = document.getElementById('m3-view-3d');
+            const m3_2d = document.getElementById('m3-view-2d');
+            if (m3_3d && m3_2d) {
+                m3_3d.classList.toggle('active', m3ViewMode === '3d');
+                m3_2d.classList.toggle('active', m3ViewMode === '2d');
+            }
+        }
 
         function switchTab(event, tabId) {
             document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
             document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
             document.getElementById(tabId).classList.add('active');
             event.currentTarget.classList.add('active');
-            if (tabId === 'chart-tab') { loadChart(); setTimeout(() => renderModel2(), 60); }
-            else if (tabId === 'news-tab') { loadNews(); }
-            else if (tabId === '3d-tab') { setTimeout(() => renderModel3(), 60); }
+            if (tabId === 'chart-tab') {
+                loadChart();
+                setTimeout(() => renderModel2(), 80);
+            } else if (tabId === 'news-tab') {
+                loadNews();
+            } else if (tabId === '3d-tab') {
+                setTimeout(() => renderModel3(), 80);
+            }
         }
 
-        function refreshAllData() { loadChart(); loadNews(); }
+        function refreshAllData() {
+            syncToggleButtonsUI();
+            loadChart();
+            loadNews();
+        }
 
         function escapeHtml(str) {
-            return String(str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+            return String(str || '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function formatUpdateBadges(rawText) {
+            const safe = escapeHtml(rawText || '-');
+            return safe.replace(
+                /(\[Update[^\]]+\]:)/g,
+                '<span class="update-highlight">$1</span>'
+            );
+        }
+
+        // Parse date string "YYYY-MM-DD HH:MM" into unix timestamp if _timestamp is missing
+        function parseArticleTimestamp(art) {
+            if (!art) return 0;
+            if (art._timestamp && Number(art._timestamp) > 0) return Number(art._timestamp);
+            if (art.date) {
+                const iso = String(art.date).trim().replace(' ', 'T') + ':00Z';
+                const parsed = Date.parse(iso);
+                if (!isNaN(parsed)) return parsed / 1000;
+            }
+            return 0;
+        }
+
+        // Returns articles sorted chronologically from OLDEST (index 0) to NEWEST (last index)
+        function getChronologicalArticles(cluster) {
+            const arts = Array.isArray(cluster?.articles) ? [...cluster.articles] : [];
+            arts.sort((a, b) => parseArticleTimestamp(a) - parseArticleTimestamp(b));
+            return arts;
+        }
+
+        // Returns the timestamp of the LATEST update (or initial report if no update)
+        function getLatestUpdateTimestamp(cluster) {
+            const arts = getChronologicalArticles(cluster);
+            if (arts.length > 0) {
+                const newestArtTs = parseArticleTimestamp(arts[arts.length - 1]);
+                return Math.max(Number(cluster?._timestamp || 0), newestArtTs);
+            }
+            return Number(cluster?._timestamp || 0);
+        }
+
+        // Returns the timestamp of the FIRST (initial) article
+        function getFirstReportedTimestamp(cluster) {
+            const arts = getChronologicalArticles(cluster);
+            if (arts.length > 0) {
+                return parseArticleTimestamp(arts[0]);
+            }
+            return Number(cluster?._timestamp || 0);
+        }
+
+        // Stable cluster key based on the chronologically FIRST article so pinned clusters stay pinned when updated
+        function getClusterKey(cluster) {
+            const arts = getChronologicalArticles(cluster);
+            if (arts.length > 0 && arts[0].link) {
+                return arts[0].link;
+            }
+            return String(cluster?._timestamp || '');
         }
 
         function loadPinnedMap() {
-            try { const raw = localStorage.getItem(PINNED_STORAGE_KEY); return raw ? JSON.parse(raw) : {}; } catch(e) { return {}; }
+            try {
+                const raw = localStorage.getItem(PINNED_STORAGE_KEY);
+                return raw ? JSON.parse(raw) : {};
+            } catch (e) {
+                return {};
+            }
         }
+
         function savePinnedMap(mapObj) {
-            try { localStorage.setItem(PINNED_STORAGE_KEY, JSON.stringify(mapObj)); } catch(e) {}
+            try {
+                localStorage.setItem(PINNED_STORAGE_KEY, JSON.stringify(mapObj));
+            } catch (e) {}
         }
+
+        function getMergedClusters() {
+            const pinnedMap = loadPinnedMap();
+            const merged = [];
+            const seenKeys = new Set();
+
+            allClusters.forEach(c => {
+                const key = getClusterKey(c);
+                seenKeys.add(key);
+                if (pinnedMap[key]) {
+                    pinnedMap[key].snapshot = c;
+                }
+                merged.push(c);
+            });
+
+            // Keep pinned clusters even if they aged past 24h in data.json
+            Object.keys(pinnedMap).forEach(key => {
+                const entry = pinnedMap[key];
+                const snap = entry?.snapshot || entry?.cluster_snapshot;
+                if (!seenKeys.has(key) && snap) {
+                    const archived = JSON.parse(JSON.stringify(snap));
+                    archived._is_archived_pin = true;
+                    merged.push(archived);
+                }
+            });
+
+            savePinnedMap(pinnedMap);
+            return merged;
+        }
+
         function togglePinCluster(clusterKey, event) {
             if (event) event.stopPropagation();
             const map = loadPinnedMap();
-            if (map[clusterKey]) delete map[clusterKey];
-            else {
-                const found = allClusters.find(c => getClusterKey(c) === clusterKey);
-                if (found) map[clusterKey] = { pinned_at: Date.now(), snapshot: found };
+            if (map[clusterKey]) {
+                delete map[clusterKey];
+            } else {
+                const found = getMergedClusters().find(c => getClusterKey(c) === clusterKey);
+                if (found) {
+                    map[clusterKey] = { pinned_at: Date.now(), snapshot: found };
+                }
             }
             savePinnedMap(map);
             renderNews();
         }
-        function getClusterKey(cluster) {
-            return (cluster.articles && cluster.articles[0]) ? cluster.articles[0].link : String(cluster._timestamp || '');
+
+        function togglePinnedOnlyFilter() {
+            const sel = document.getElementById('filter-view');
+            if (!sel) return;
+            sel.value = (sel.value === 'pinned') ? 'all' : 'pinned';
+            renderNews();
+        }
+
+        function toggleCardAccordion(clusterKey) {
+            if (expandedCardKeys.has(clusterKey)) expandedCardKeys.delete(clusterKey);
+            else expandedCardKeys.add(clusterKey);
+            renderNews();
+        }
+
+        function expandAllCards(expand = true) {
+            getMergedClusters().forEach(c => {
+                const k = getClusterKey(c);
+                if (expand) expandedCardKeys.add(k);
+                else expandedCardKeys.delete(k);
+            });
+            renderNews();
         }
 
         function renderLiquidityLadder(orderbookZones, spotPrice) {
@@ -429,24 +916,37 @@
 
             const buildRow = z => {
                 const isBuy = z.dominance === "BUY";
+                const distUsd = spotPrice > 0 ? (z.price - spotPrice) : 0;
+                const distSign = distUsd >= 0 ? '+' : '';
+                const overlapBadge = z.overlap
+                    ? `<span class="tag-overlap">CONFLUENCE [OANDA+COMEX]</span>`
+                    : `<span style="font-size:0.62rem; color:#64748b;">[${escapeHtml(z.sources || 'OANDA')}]</span>`;
                 return `
-                    <div class="ladder-row ${isBuy ? 'zone-buy' : 'zone-sell'}">
-                        <div class="ladder-vol-fill" style="width:${Math.min(100, Math.round((z.volume/maxVol)*100))}%;"></div>
+                    <div class="ladder-row ${isBuy ? 'zone-buy' : 'zone-sell'} ${z.overlap ? 'is-overlap' : ''}">
+                        <div class="ladder-vol-fill" style="width:${Math.min(100, Math.round((z.volume / maxVol) * 100))}%;"></div>
                         <div class="ladder-top-line">
                             <div class="ladder-left">
-                                <span class="ladder-price">$${z.price.toFixed(2)}</span>
-                                <span class="ladder-side-tag ${isBuy ? 'tag-buy' : 'tag-sell'}">${z.dominance}</span>
+                                <span class="ladder-price">$${Number(z.price).toFixed(2)}</span>
+                                <span class="ladder-side-tag ${isBuy ? 'tag-buy' : 'tag-sell'}">${escapeHtml(z.dominance)}</span>
+                                ${overlapBadge}
                             </div>
-                            <div class="ladder-right"><span class="ladder-tot-vol">Tot: ${z.volume.toFixed(2)}%</span></div>
+                            <div class="ladder-right">
+                                <span class="ladder-tot-vol">Tot: ${Number(z.volume).toFixed(2)}%</span>
+                                <span style="margin-left:3px; color:#94a3b8;">(${distSign}$${distUsd.toFixed(1)})</span>
+                            </div>
                         </div>
                         <div class="ladder-split-line">
-                            <span>OANDA: <span class="split-oanda">${z.oanda_vol.toFixed(2)}%</span></span>
-                            <span>COMEX: <span class="split-comex">${z.comex_vol.toFixed(2)}%</span></span>
+                            <span>OANDA Orders: <span class="split-oanda">${Number(z.oanda_vol || 0).toFixed(2)}%</span></span>
+                            <span>COMEX Futures: <span class="split-comex">${Number(z.comex_vol || 0).toFixed(2)}%</span></span>
                         </div>
                     </div>`;
             };
 
-            ladderEl.innerHTML = [...aboveSpot.map(buildRow), `<div class="ladder-spot-divider"><span>SPOT: $${spotPrice.toFixed(2)}</span></div>`, ...belowSpot.map(buildRow)].join('');
+            ladderEl.innerHTML = [
+                ...aboveSpot.map(buildRow),
+                `<div class="ladder-spot-divider"><span>CAPITALCOM:GOLD SPOT: $${spotPrice.toFixed(2)}</span><span style="color:#00e676; font-size:0.66rem;">LIVE SYNC</span></div>`,
+                ...belowSpot.map(buildRow)
+            ].join('');
         }
 
         function applyLiveSpotTick(newSpotPrice) {
@@ -457,7 +957,7 @@
                 latestCandleBar.close = rounded;
                 latestCandleBar.high = Math.max(latestCandleBar.high, rounded);
                 latestCandleBar.low = Math.min(latestCandleBar.low, rounded);
-                try { candleSeriesRef.update(latestCandleBar); } catch(e) {}
+                try { candleSeriesRef.update(latestCandleBar); } catch (e) {}
             }
             if (nearSpotOrderbookRef.length > 0) renderLiquidityLadder(nearSpotOrderbookRef, rounded);
         }
@@ -467,8 +967,8 @@
             try {
                 const res = await fetch('https://scanner.tradingview.com/global/scan', {
                     method: 'POST',
-                    headers: {'Content-Type': 'text/plain'},
-                    body: JSON.stringify({symbols: {tickers: ["CAPITALCOM:GOLD", "OANDA:XAUUSD"]}, columns: ["close"]})
+                    headers: { 'Content-Type': 'text/plain' },
+                    body: JSON.stringify({ symbols: { tickers: ["CAPITALCOM:GOLD", "OANDA:XAUUSD"] }, columns: ["close"] })
                 });
                 if (res.ok) {
                     const json = await res.json();
@@ -477,18 +977,26 @@
                         return;
                     }
                 }
-            } catch(e) {}
+            } catch (e) {}
         }
 
         function setModel2View(mode) {
             m2ViewMode = mode;
-            document.getElementById('m2-view-3d').classList.toggle('active', mode === '3d');
-            document.getElementById('m2-view-2d').classList.toggle('active', mode === '2d');
+            syncToggleButtonsUI();
             renderModel2();
         }
 
+        function setModel3View(mode) {
+            m3ViewMode = mode;
+            syncToggleButtonsUI();
+            renderModel3();
+        }
+
         function renderModel2() {
-            if (typeof Plotly === 'undefined') return;
+            if (typeof window.Plotly === 'undefined') {
+                setTimeout(renderModel2, 300);
+                return;
+            }
             if (!latestMarketData || !latestMarketData.ob_surface) return;
             const ob = latestMarketData.ob_surface;
             const container = document.getElementById('model2-plot');
@@ -502,20 +1010,35 @@
                 type: 'heatmap', x: ob.timestamps, y: ob.price_levels.map(p => `$${p}`), z: ob.signed_matrix,
                 colorscale: [[0, '#ff3b30'], [0.5, '#141a24'], [1, '#00e676']]
             };
-            Plotly.react(container, [trace], {paper_bgcolor: '#0d1117', plot_bgcolor: '#0d1117', margin: {l:50, r:20, b:40, t:10}, font:{color:'#94a3b8'}}, {responsive: true, displayModeBar: false});
+            window.Plotly.react(container, [trace], {
+                paper_bgcolor: '#0d1117', plot_bgcolor: '#0d1117',
+                margin: is3D ? { l: 0, r: 0, b: 0, t: 10 } : { l: 55, r: 20, b: 40, t: 10 },
+                font: { family: 'JetBrains Mono, monospace', size: 11, color: '#94a3b8' }
+            }, { responsive: true, displayModeBar: false });
         }
 
         function renderModel3() {
-            if (typeof Plotly === 'undefined') return;
+            if (typeof window.Plotly === 'undefined') {
+                setTimeout(renderModel3, 300);
+                return;
+            }
             if (!latestMarketData || !latestMarketData.session_surface) return;
             const ss = latestMarketData.session_surface;
             const container = document.getElementById('model3-plot');
             if (!container) return;
-            const trace = {
+            const is3D = (m3ViewMode === '3d');
+            const trace = is3D ? {
                 type: 'surface', x: ss.hours, y: ss.days, z: ss.range_matrix,
                 colorscale: [[0, '#0d1117'], [0.5, '#00b4d8'], [1, '#00e676']]
+            } : {
+                type: 'heatmap', x: ss.hours, y: ss.days, z: ss.range_matrix,
+                colorscale: [[0, '#0d1117'], [0.5, '#00b4d8'], [1, '#00e676']]
             };
-            Plotly.react(container, [trace], {paper_bgcolor: '#0d1117', plot_bgcolor: '#0d1117', margin: {l:0, r:0, b:0, t:10}, font:{color:'#94a3b8'}}, {responsive: true, displayModeBar: false});
+            window.Plotly.react(container, [trace], {
+                paper_bgcolor: '#0d1117', plot_bgcolor: '#0d1117',
+                margin: is3D ? { l: 0, r: 0, b: 0, t: 10 } : { l: 55, r: 20, b: 40, t: 10 },
+                font: { family: 'JetBrains Mono, monospace', size: 11, color: '#94a3b8' }
+            }, { responsive: true, displayModeBar: false });
         }
 
         async function loadChart() {
@@ -543,28 +1066,62 @@
                 renderLiquidityLadder(nearSpotOrderbookRef, spot);
                 renderModel2();
 
+                if (chartResizeObserver) chartResizeObserver.disconnect();
                 container.innerHTML = '';
                 chartInstance = LightweightCharts.createChart(container, {
-                    width: container.clientWidth, height: container.clientHeight || 490,
+                    width: container.clientWidth,
+                    height: container.clientHeight || 490,
                     layout: { background: { type: 'solid', color: '#0d1117' }, textColor: '#94a3b8' },
-                    grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } }
+                    grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
+                    timeScale: { timeVisible: true, borderColor: '#21293a' },
+                    rightPriceScale: { borderColor: '#21293a', scaleMargins: { top: 0.1, bottom: 0.1 } }
                 });
-                candleSeriesRef = chartInstance.addCandlestickSeries({ upColor: '#00e676', downColor: '#ff3b30' });
-                
-                let candles = (data.candles || []).sort((a,b) => a.time - b.time);
-                if (candles.length > 0) {
-                    candles[candles.length-1].close = spot;
-                    latestCandleBar = {...candles[candles.length-1]};
-                    candleSeriesRef.setData(candles);
+
+                chartResizeObserver = new ResizeObserver(entries => {
+                    if (entries.length === 0 || entries[0].target !== container) return;
+                    const newRect = entries[0].contentRect;
+                    chartInstance.applyOptions({ width: newRect.width, height: newRect.height });
+                });
+                chartResizeObserver.observe(container);
+
+                candleSeriesRef = chartInstance.addCandlestickSeries({
+                    upColor: '#00e676', downColor: '#ff3b30',
+                    borderVisible: false, wickUpColor: '#00e676', wickDownColor: '#ff3b30'
+                });
+
+                let candles = (data.candles || []).sort((a, b) => a.time - b.time);
+                let uniqueCandles = [];
+                let lastTime = 0;
+                candles.forEach(c => {
+                    if (c.time > lastTime) {
+                        uniqueCandles.push({ ...c });
+                        lastTime = c.time;
+                    }
+                });
+
+                if (uniqueCandles.length > 0) {
+                    uniqueCandles[uniqueCandles.length - 1].close = spot;
+                    latestCandleBar = { ...uniqueCandles[uniqueCandles.length - 1] };
+                    candleSeriesRef.setData(uniqueCandles);
                 }
 
                 nearSpotOrderbookRef.forEach((l, i) => {
-                    candleSeriesRef.createPriceLine({ price: l.price, color: l.dominance === 'BUY' ? '#00e676' : '#ff3b30', lineWidth: 1, title: `L${i+1}` });
+                    const isOverlap = l.overlap === true;
+                    candleSeriesRef.createPriceLine({
+                        price: l.price,
+                        color: l.dominance === 'BUY' ? '#00e676' : '#ff3b30',
+                        lineWidth: isOverlap ? 2 : 1,
+                        lineStyle: isOverlap ? LightweightCharts.LineStyle.Solid : LightweightCharts.LineStyle.Dashed,
+                        axisLabelVisible: true,
+                        title: `L${i + 1} ${l.dominance}`
+                    });
                 });
 
                 if (liveTickerInterval) clearInterval(liveTickerInterval);
                 liveTickerInterval = setInterval(pollLiveBrowserPrice, 5000);
-            } catch(e) { container.innerHTML = `<p style="color:#ff3b30;">Error loading chart: ${e.message}</p>`; }
+            } catch (e) {
+                container.innerHTML = `<p style="color:#ff3b30; padding:20px;">Error loading chart: ${escapeHtml(e.message)}</p>`;
+            }
         }
 
         async function loadNews() {
@@ -573,70 +1130,181 @@
                 const res = await fetch('data.json?t=' + Date.now());
                 allClusters = await res.json();
                 renderNews();
-            } catch(e) { container.innerHTML = `<p style="color:#ff3b30;">Error loading news.</p>`; }
+            } catch (e) {
+                container.innerHTML = `<p style="color:#ff3b30; text-align:center;">Error loading news: ${escapeHtml(e.message)}</p>`;
+            }
         }
 
         function renderNews() {
             const container = document.getElementById('news-container');
+            if (!container) return;
             container.innerHTML = '';
-            const searchQuery = (document.getElementById('search-query')?.value || '').trim().toLowerCase();
-            const pinnedMap = loadPinnedMap();
 
-            let filtered = allClusters.filter(c => {
+            const searchQuery = (document.getElementById('search-query')?.value || '').trim().toLowerCase();
+            const filterView = document.getElementById('filter-view')?.value || 'all';
+            const filterDriver = document.getElementById('filter-driver')?.value || 'all';
+            const sortBy = document.getElementById('sort-by')?.value || 'newest_update';
+
+            const mergedClusters = getMergedClusters();
+            const pinnedMap = loadPinnedMap();
+            const pinnedCount = Object.keys(pinnedMap).length;
+            const badgeEl = document.getElementById('pinned-count-badge');
+            if (badgeEl) badgeEl.innerText = `Pinned: ${pinnedCount}`;
+
+            let filtered = mergedClusters.filter(c => {
+                const key = getClusterKey(c);
+                const isPinned = Boolean(pinnedMap[key]);
+                const s = c.summary || {};
+                const arts = getChronologicalArticles(c);
+
+                if (!isPinned && s.Is_Gold_Relevant === false) return false;
+                if (filterView === 'pinned' && !isPinned) return false;
+                if (filterView === 'updated' && arts.length < 2) return false;
+
+                const drv = s.Dominant_Driver || 'Gold Bullion & Central Bank Demand';
+                if (filterDriver !== 'all' && drv !== filterDriver) return false;
+
                 if (searchQuery) {
-                    const text = [c.summary?.Dominant_Driver, c.summary?.Facts, ...(c.articles || []).map(a => a.title + ' ' + a.source)].join(' ').toLowerCase();
-                    return text.includes(searchQuery);
+                    const hay = [
+                        drv,
+                        s.Facts || '',
+                        s.Macro_Context || s.Market_Context || '',
+                        ...arts.map(a => `${a.title || ''} ${a.source || ''} ${a.description || ''}`)
+                    ].join(' ').toLowerCase();
+                    if (!hay.includes(searchQuery)) return false;
                 }
                 return true;
             });
 
+            // Sort clusters: Pinned always on top, then according to selected sort mode
             filtered.sort((a, b) => {
                 const pinA = Boolean(pinnedMap[getClusterKey(a)]);
                 const pinB = Boolean(pinnedMap[getClusterKey(b)]);
                 if (pinA && !pinB) return -1;
                 if (!pinA && pinB) return 1;
-                return (b._timestamp || 0) - (a._timestamp || 0);
+
+                if (sortBy === 'most_sources') {
+                    const diff = (b.articles?.length || 0) - (a.articles?.length || 0);
+                    if (diff !== 0) return diff;
+                    return getLatestUpdateTimestamp(b) - getLatestUpdateTimestamp(a);
+                }
+                if (sortBy === 'first_reported') {
+                    return getFirstReportedTimestamp(b) - getFirstReportedTimestamp(a);
+                }
+                if (sortBy === 'oldest_first') {
+                    return getLatestUpdateTimestamp(a) - getLatestUpdateTimestamp(b);
+                }
+                // Default: 'newest_update' (by latest article update or publication date)
+                return getLatestUpdateTimestamp(b) - getLatestUpdateTimestamp(a);
             });
 
+            const countLabel = document.getElementById('feed-count-label');
+            if (countLabel) {
+                countLabel.innerText = `Showing ${filtered.length} intelligence clusters (Sorted by latest update • Click card for details)`;
+            }
+
             if (filtered.length === 0) {
-                container.innerHTML = '<p style="text-align:center; padding: 30px; color:#64748b; font-family:var(--font-mono);">No matching news found.</p>';
+                container.innerHTML = '<p style="text-align:center; padding: 35px; color:#64748b; font-family:var(--font-mono);">No matching intelligence clusters found.</p>';
                 return;
             }
 
             filtered.forEach(c => {
                 const key = getClusterKey(c);
                 const pinned = Boolean(pinnedMap[key]);
+                const isExpanded = expandedCardKeys.has(key);
                 const s = c.summary || {};
-                const articles = c.articles || [];
-                const card = document.createElement('div');
-                card.className = `news-card ${pinned ? 'is-pinned' : ''}`;
 
-                let sourcesHtml = articles.map(a => `<div style="margin-bottom:4px;"><a href="${escapeHtml(a.link)}" target="_blank" style="color:var(--bb-cyan);">${escapeHtml(a.title)}</a> <span style="color:var(--text-muted);">(${escapeHtml(a.source)} - ${escapeHtml(a.date)})</span></div>`).join('');
+                // Chronological articles: index 0 = oldest (First Reported), last index = newest (Latest Update)
+                const chronoArts = getChronologicalArticles(c);
+                const oldestArt = chronoArts[0] || {};
+                const newestArt = chronoArts[chronoArts.length - 1] || {};
+                const hasMultiple = chronoArts.length > 1;
+
+                // REQUIREMENT 1: Always use the chronologically LATEST article's title as the summary headline
+                const latestHeadline = newestArt.title || 'Market Intelligence Update';
+
+                // Clean, unambiguous timestamp header showing Last Update (or Published if single article)
+                const dateDisplay = hasMultiple
+                    ? `Updated: ${newestArt.date || ''} UTC (First: ${oldestArt.date || ''} UTC)`
+                    : `Published: ${newestArt.date || c.original_date || ''} UTC`;
+
+                const rawFacts = s.Facts || newestArt.description || latestHeadline;
+                const formattedFacts = formatUpdateBadges(rawFacts);
+                const contextText = escapeHtml(s.Macro_Context || s.Market_Context || '-');
+
+                // List sources from NEWEST to OLDEST inside the card
+                const newestFirstArts = [...chronoArts].reverse();
+                const sourcesHtml = newestFirstArts.map((a, idx) => {
+                    let roleBadge = '';
+                    if (hasMultiple && idx === 0) {
+                        roleBadge = `<span class="latest-src-tag">LATEST</span>`;
+                    } else if (hasMultiple && idx === newestFirstArts.length - 1) {
+                        roleBadge = `<span class="initial-src-tag">INITIAL</span>`;
+                    }
+                    return `
+                        <div class="source-item">
+                            ${roleBadge}
+                            <span class="source-badge">${escapeHtml(a.source || 'Source')}</span>
+                            <a href="${escapeHtml(a.link || '#')}" target="_blank" rel="noopener noreferrer" class="source-link" onclick="event.stopPropagation()">
+                                ${escapeHtml(a.title || 'Article')}
+                                <span style="color:#64748b; font-size:0.8em;">(${escapeHtml(a.date || '')} UTC)</span>
+                            </a>
+                        </div>`;
+                }).join('');
+
+                const card = document.createElement('div');
+                card.className = `news-card ${hasMultiple ? 'is-updated' : ''} ${pinned ? 'is-pinned' : ''} ${isExpanded ? 'is-expanded' : ''}`;
 
                 card.innerHTML = `
-                    <div class="card-accordion-header" onclick="this.parentElement.classList.toggle('is-expanded')">
+                    <div class="card-accordion-header">
                         <div class="card-top-row">
-                            <div style="display:flex; align-items:center; gap:8px;">
-                                ${pinned ? '<span class="pinned-tag">PINNED</span>' : ''}
-                                <span class="date-header">${escapeHtml(c.main_date)}</span>
-                                <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--bb-cyan);">${escapeHtml(s.Dominant_Driver || 'News')}</span>
+                            <div class="card-meta-left">
+                                ${pinned ? `<span class="pinned-tag">${c._is_archived_pin ? 'PINNED (>24H)' : 'PINNED'}</span>` : ''}
+                                ${hasMultiple ? `<span class="updated-tag">UPDATED • ${chronoArts.length} SRC</span>` : `<span class="sources-count-pill">1 SRC</span>`}
+                                <span class="driver-badge">${escapeHtml(s.Dominant_Driver || 'Gold & Macro')}</span>
+                                <span class="date-header">${escapeHtml(dateDisplay)}</span>
                             </div>
-                            <button class="pin-btn ${pinned ? 'active' : ''}" onclick="togglePinCluster('${escapeHtml(key)}', event)">${pinned ? 'UNPIN' : 'PIN'}</button>
+                            <div class="card-actions-right">
+                                <button class="pin-btn ${pinned ? 'active' : ''}" type="button">${pinned ? 'UNPIN' : 'PIN'}</button>
+                            </div>
                         </div>
-                        <h2 class="cluster-headline">${escapeHtml((articles[0] || {}).title || 'News Update')}</h2>
+                        <div class="headline-line">
+                            <h2 class="cluster-headline">${escapeHtml(latestHeadline)}</h2>
+                            <span class="expand-indicator">${isExpanded ? '[-] HIDE' : '[+] DETAILS'}</span>
+                        </div>
+                        <div class="compact-teaser">${formattedFacts}</div>
                     </div>
                     <div class="card-accordion-body">
-                        <p><strong>Facts:</strong> ${escapeHtml(s.Facts)}</p>
-                        <p><strong>Market Context:</strong> ${escapeHtml(s.Market_Context)}</p>
-                        <hr style="border:0; border-top:1px solid var(--border-color); margin:10px 0;">
-                        <strong style="font-family:var(--font-mono); font-size:0.75rem; color:var(--bb-amber);">Sources (${articles.length}):</strong>
-                        <div style="margin-top:6px;">${sourcesHtml}</div>
+                        <div class="summary-box">
+                            <div class="data-block">
+                                <span class="data-label">Synthesized Facts & Chronological Updates</span>
+                                ${formattedFacts}
+                            </div>
+                            <div class="data-block">
+                                <span class="data-label">Macro & Market Transmission</span>
+                                ${contextText}
+                            </div>
+                        </div>
+                        <div style="font-family:var(--font-mono); font-size:0.7rem; font-weight:700; color:var(--bb-amber); text-transform:uppercase; margin-bottom:6px;">
+                            Reported By (${chronoArts.length} Source${chronoArts.length > 1 ? 's' : ''} — Newest First)
+                        </div>
+                        <div>${sourcesHtml}</div>
                     </div>`;
+
+                const headerEl = card.querySelector('.card-accordion-header');
+                const pinBtnEl = card.querySelector('.pin-btn');
+                headerEl.addEventListener('click', () => toggleCardAccordion(key));
+                pinBtnEl.addEventListener('click', (ev) => togglePinCluster(key, ev));
+
                 container.appendChild(card);
             });
         }
 
-        loadChart();
+        document.addEventListener("visibilitychange", function() {
+            if (document.visibilityState === 'visible') refreshAllData();
+        });
+
+        refreshAllData();
     </script>
 </body>
 </html>

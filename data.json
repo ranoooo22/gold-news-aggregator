@@ -5649,14 +5649,14 @@
                 "_timestamp": 1794873469.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 20:38 UTC",
-            "Facts": "[Update 2026-11-16 19:05 UTC via Mehr News Agency]: The Iranian Army shot down an MQ-1 drone over the Strait of Hormuz using domestically developed air defense systems. [Update 2026-11-16 16:40 UTC via Mehr News Agency]: The Iranian Navy reported that multiple oil tankers violating maritime regulations exploded after striking naval mines in prohibited areas east of the Strait of Hormuz. A fourth tanker caught fire within a 24-hour period.",
-            "Macro_Context": "Escalating military tensions and maritime disruptions in the Strait of Hormuz directly threaten global crude oil supply routes, increasing safe-haven demand for gold."
+            "Event_Timestamp": "2026-11-16 23:57 UTC",
+            "Facts": "[Update 2026-11-16 23:57 UTC via Al Jazeera English]: Iran-aligned Houthi fighters advanced in southern Yemen while oil tankers hit sea mines in the Strait of Hormuz. Multiple oil tankers have been damaged or set ablaze following naval mine explosions in the Strait of Hormuz, with reports noting up to four incidents within 24 hours. Additionally, the Iranian Army reported shooting down an MQ-1 drone over the strait.",
+            "Macro_Context": "Escalating geopolitical tensions in the Middle East and maritime disruptions in the Strait of Hormuz directly threaten global crude oil supply routes, driving safe-haven demand for gold."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -10089,9 +10089,9 @@
         "max_dd_usd": 41.87
     },
     {
-        "main_date": "First Reported: 2026-11-15 22:47 UTC | Last Update: 2026-11-16 03:11 UTC",
+        "main_date": "First Reported: 2026-11-15 22:47 UTC | Last Update: 2026-11-17 00:17 UTC",
         "original_date": "2026-11-15 22:47",
-        "_timestamp": 1794798660.0,
+        "_timestamp": 1794874620.0,
         "articles": [
             {
                 "title": "Berkshire’s record high exposes hidden trap in S&P 500 401(k) plans",
@@ -10108,21 +10108,24 @@
                 "date": "2026-11-16 03:11",
                 "description": "The scandal at the computer-chip giant is exactly what’s wrong with the S&amp;P 500.",
                 "_timestamp": 1794798660.0
+            },
+            {
+                "title": "Nvidia's crisis exposes a hidden risk in Americans' 401(k)s",
+                "link": "https://www.thestreet.com/investing/nvidias-crisis-exposes-a-hidden-risk-in-americans-401ks?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 00:17",
+                "description": "The AI giant’s stock plunge reveals how one company can quietly weigh on millions of retirement accounts.",
+                "_timestamp": 1794874620.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 03:11 UTC",
-            "Facts": "Financial media highlighted concentration risks in standard 401(k) retirement accounts due to heavy index weightings of mega-cap stocks like Nvidia and Berkshire Hathaway. The commentary focuses on retail passive investment exposure rather than any structural liquidity shock or corporate crisis.",
-            "Macro_Context": "Personal finance commentary regarding index concentration lacks a direct transmission channel to macro liquidity or gold safe-haven demand.",
-            "Impact_Timing": "Immediate / Intra-session",
-            "Timeframe": "Intraday (1-24h)",
-            "XAUUSD_Impact": "Neutral / Rangebound",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "3852.55"
+            "Event_Timestamp": "2026-11-17 00:17 UTC",
+            "Facts": "[Update 2026-11-17 00:17 UTC via Yahoo Finance Nasdaq]: Nvidia's crisis exposes a hidden risk in Americans' 401(k)s, revealing how the AI giant’s stock plunge quietly weighs on millions of retirement accounts and highlights concentration risks in major index funds.",
+            "Macro_Context": "Tech-heavy market concentration creates systemic vulnerabilities in retirement portfolios as artificial intelligence sector valuations face heavy downward pressure."
         }
     },
     {
@@ -10668,9 +10671,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 19:11 UTC",
+        "main_date": "First Reported: 2026-11-16 19:11 UTC | Last Update: 2026-11-16 23:57 UTC",
         "original_date": "2026-11-16 19:11",
-        "_timestamp": 1794856283.0,
+        "_timestamp": 1794873420.0,
         "articles": [
             {
                 "title": "Tyson, Starbucks Lead The S&P 500, Nasdaq 100 As Investors Play Defense",
@@ -10679,16 +10682,24 @@
                 "date": "2026-11-16 19:11",
                 "description": "The AI sell-off steepened on Monday. Defensive stocks made strides amid rotation out of tech. Starbucks jumped on the Nasdaq-100.",
                 "_timestamp": 1794856283.0
+            },
+            {
+                "title": "USDA Projects Lower Beef and Higher Chicken Output for the Year Ahead",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/usda-projects-lower-beef-higher-235700990.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:57",
+                "description": "American News Group News Commentary - Protein producers had one of the brighter stories on a weak day for stocks. The S&amp;P 500 fell 1.92% to 7,416.59 and the Nasdaq Composite dropped 2.49% to 24,509.76 on Monday, according to CNBC's closing report. Tyson Foods rose 8.7% after its fiscal fourth quarter profit beat expectations, even as revenue fell short because it sold less beef than a year earlier, according to the Associated Press. Over the ",
+                "_timestamp": 1794873420.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
-            "Dominant_Driver": "Sector Rotation & Defensive Equities",
-            "Event_Timestamp": "2026-11-16 19:11 UTC",
-            "Facts": "An ongoing sell-off in artificial intelligence and technology stocks led to capital rotation into defensive equities on Monday, with companies like Tyson and Starbucks leading gains in the S&P 500 and Nasdaq 100.",
-            "Market_Context": "Investors are shifting portfolios toward defensive assets amidst a broader contraction in technology sector valuations."
+            "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
+            "Event_Timestamp": "2026-11-16 23:57 UTC",
+            "Facts": "[Update 2026-11-16 23:57 UTC via Yahoo Finance Nasdaq]: Protein producers posted strong results as the S&P 500 fell 1.92% to 7,416.59 and the Nasdaq Composite dropped 2.49% to 24,509.76. Tyson Foods rose 8.7% after beating fourth-quarter profit expectations, while defensive stocks and companies like Starbucks gained ground during the broader tech sell-off.",
+            "Macro_Context": "Investors are rotating out of high-flying technology stocks into defensive consumer staples and protein producers amid an ongoing market pullback."
         }
     },
     {
@@ -11793,7 +11804,86 @@
                 "_timestamp": 1794873600.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 00:00 UTC",
+            "Facts": "[Update 2026-11-17 00:00 UTC via Yahoo Finance Gold]: Gold X2 Mining Inc. announced that its board of directors approved the grant of 1,105,700 incentive stock options and 460,500 restricted share units to officers, directors, employees, and consultants under its Omnibus Incentive Plan.",
+            "Macro_Context": "Corporate compensation and equity management updates within junior mining firms reflect standard operational developments across the gold sector."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:53 UTC",
+        "original_date": "2026-11-16 23:53",
+        "_timestamp": 1794873180.0,
+        "articles": [
+            {
+                "title": "Alkane's portfolio at a glance: Three producing mines and a pipeline of growth projects",
+                "link": "https://www.proactiveinvestors.com/companies/news/1101876/alkane-s-portfolio-at-a-glance-three-producing-mines-and-a-pipeline-of-growth-projects-1101876.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-16 23:53",
+                "description": "Alkane Resources Ltd (ASX:ALK, OTC:ALKEF) has built a diversified gold and antimony portfolio spanning Australia and Sweden, with three producing mines supported by development projects, near-mine expansions and exploration opportunities. The company's operating portfolio comprises Tomingley in...",
+                "_timestamp": 1794873180.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 23:53 UTC",
+            "Facts": "[Update 2026-11-16 23:53 UTC via Yahoo Finance Gold]: Alkane Resources Ltd maintains a diversified gold and antimony portfolio across Australia and Sweden, featuring three producing mines alongside development projects, near-mine expansions, and exploration opportunities anchored by operations like Tomingley.",
+            "Macro_Context": "Producer portfolio reviews highlight steady output capabilities and ongoing exploration pipelines across major established gold mining entities."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 00:08 UTC",
+        "original_date": "2026-11-17 00:08",
+        "_timestamp": 1794874080.0,
+        "articles": [
+            {
+                "title": "Fuel Cell Market Seen at $18 Billion by 2030 as Quarterly Results Diverge",
+                "link": "https://finance.yahoo.com/news/fuel-cell-market-seen-18-000800746.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 00:08",
+                "description": "Equity Insider News Commentary - Fuel cell and hydrogen companies have been reporting very different quarters, and Ballard Power Systems added its results on Monday. The S&amp;P 500 fell 1.92% to 7,416.59 and the Nasdaq Composite dropped 2.49% to 24,509.76 on Monday, according to CNBC's closing report. MarketsandMarkets projects the global fuel cell market will reach USD 18.16 billion by 2030 from USD 5.66 billion in 2025, a compound annual growt",
+                "_timestamp": 1794874080.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 5,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 00:08 UTC",
+            "Facts": "[Update 2026-11-17 00:08 UTC via Yahoo Finance Nasdaq]: Ballard Power Systems reported divergent quarterly earnings as equity markets digested broader macro pullbacks, while MarketsandMarkets projected the global fuel cell market to reach $18.16 billion by 2030.",
+            "Macro_Context": "Alternative energy and clean tech sectors experience mixed quarterly results against the backdrop of broader equity market declines."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-16 23:58 UTC",
+        "original_date": "2026-11-16 23:58",
+        "_timestamp": 1794873480.0,
+        "articles": [
+            {
+                "title": "Canada's Telecom Map Could Be Redrawn as a Takeover Approach Goes Public",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/canadas-telecom-map-could-redrawn-235800126.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-16 23:58",
+                "description": "Canada News Group News Commentary - Canada's telecom sector produced one of Monday's biggest corporate stories, as TELUS confirmed it has received an unsolicited proposal from Québecor. Shares of TELUS rose sharply on the news even as U.S. markets fell. The S&amp;P 500 fell 1.92% to 7,416.59 and the Nasdaq Composite dropped 2.49% to 24,509.76 on Monday, according to CNBC's closing report. By one estimate from Mordor Intelligence, the Canada telec",
+                "_timestamp": 1794873480.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-16 23:58 UTC",
+            "Facts": "TELUS confirmed receiving an unsolicited takeover proposal from Québecor, causing its shares to rise while broader U.S. markets declined.",
+            "Macro_Context": "U.S. markets saw significant declines on Monday, with the S&P 500 falling 1.92% to 7,416.59 and the Nasdaq Composite dropping 2.49% to 24,509.76."
+        }
     }
 ]

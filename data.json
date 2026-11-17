@@ -3798,9 +3798,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 01:43 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 05:02 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794879839.0,
+        "_timestamp": 1794891754.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4665,6 +4665,14 @@
                 "date": "2026-11-17 01:43",
                 "description": "Nvidia reports quarterly earnings on Tuesday, its first since Jensen Huang's departure as CEO, with investors watching for signs of whether the AI boom can withstand the widening scandal that toppled him.Analysts will be watching for signs of whether Kress will slow Huang's aggressive investment strategy, which saw him commit tens of billions of dollars to AI companies.",
                 "_timestamp": 1794879839.0
+            },
+            {
+                "title": "Nvidia set for first earnings call since Jensen Huang's resignation",
+                "link": "https://www.usatoday.com/story/money/2026/11/17/nvidia-earnings-call-how-to-watch/92819260007/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 05:02",
+                "description": "Nvidia is set to hold its first earnings call since former CEO Jensen Huang resigned. Here's how to watch.",
+                "_timestamp": 1794891754.0
             }
         ],
         "needs_update": false,
@@ -4672,9 +4680,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-17 01:43 UTC",
-            "Facts": "[Update 2026-11-17 01:43 UTC via Yahoo Finance Nasdaq]: Nvidia reports quarterly earnings on Tuesday, its first since Jensen Huang's departure as CEO, with investors watching for signs of whether the AI boom can withstand the widening scandal that toppled him. Tesla board member Joe Gebbia publicly stated that Nvidia should reinstate Jensen Huang and allow due diligence to proceed.",
-            "Macro_Context": "Corporate governance turmoil at Nvidia amid leadership changes and oncoming earnings reports."
+            "Event_Timestamp": "2026-11-17 05:02 UTC",
+            "Facts": "[Update 2026-11-17 01:00 UTC via Yahoo Finance Nasdaq]: Tesla board member Joe Gebbia stated that Nvidia should reinstate Jensen Huang as CEO and allow due diligence to play out. [Update 2026-11-17 01:43 UTC via Yahoo Finance Nasdaq]: Nvidia prepares for its quarterly earnings report on Tuesday, marking its first since Huang's departure, with investors scrutinizing whether the AI investment strategy will continue under Kress.",
+            "Macro_Context": "Nvidia faces executive leadership turmoil and investor scrutiny ahead of its quarterly earnings following the resignation of CEO Jensen Huang."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -7724,9 +7732,9 @@
         "max_dd_usd": 17.01
     },
     {
-        "main_date": "First Reported: 2026-11-16 14:17 UTC | Last Update: 2026-11-17 01:09 UTC",
+        "main_date": "First Reported: 2026-11-16 14:17 UTC | Last Update: 2026-11-17 04:39 UTC",
         "original_date": "2026-11-16 14:17",
-        "_timestamp": 1794877791.0,
+        "_timestamp": 1794890376.0,
         "articles": [
             {
                 "title": "4 High-Yield Energy Stocks That Get Paid to Move Oil and Gas",
@@ -7751,16 +7759,24 @@
                 "date": "2026-11-17 01:09",
                 "description": "Oil benchmarks have been sliding while major forecasters talk about a supply surplus stretching into the next few years, and that mix puts energy hungry businesses in an unusual spotlight. Cheaper crude can quietly reshape cost bases and profit potential, and investors who ignore that shift risk missing it. This article picks out three stocks from our Global Oil Importing, Energy Intensive Sectors screener that appear well placed if fuel stays le",
                 "_timestamp": 1794877791.0
+            },
+            {
+                "title": "3 US Oil And Gas Stocks Investors Are Watching As Jet Fuel Prices Stay High",
+                "link": "https://finance.yahoo.com/energy/articles/3-us-oil-gas-stocks-043936633.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 04:39",
+                "description": "Jet fuel prices near $150 a barrel are hurting airlines, but the same pressure on carriers can create a very different story for energy producers and refiners. When one part of the travel ecosystem is squeezed, another can quietly gain pricing power and cash flow resilience. This article walks through three stocks linked to the jet fuel shock. It explains how each might benefit and what that could mean for your portfolio decisions. The three stoc",
+                "_timestamp": 1794890376.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 01:09 UTC",
-            "Facts": "[Update 2026-11-17 01:09 UTC via Yahoo Finance Oil]: FedEx Stock And Other Fuel Cost Winners If Oil Prices Stay Low - Oil benchmarks have been sliding while major forecasters talk about a supply surplus stretching into the next few years. Crude prices are slipping from recent quarters, prompting analysis on high-yield energy stocks, pipeline partnerships, big oil dividend sustainability, and energy-intensive beneficiaries like FedEx.",
-            "Macro_Context": "Energy markets are reacting to sliding crude benchmarks, potential long-term supply surpluses, and their subsequent impact on high-yield equities and fuel-sensitive transport sectors."
+            "Event_Timestamp": "2026-11-17 04:39 UTC",
+            "Facts": "[Update 2026-11-17 01:09 UTC via Yahoo Finance Oil]: Falling crude prices and anticipated supply surpluses are putting energy-hungry businesses and fuel cost beneficiaries in focus. [Update 2026-11-17 04:39 UTC via Yahoo Finance Oil]: High jet fuel prices near $150 a barrel are creating distinct pricing power dynamics and cash flow resilience for specific energy producers and refiners.",
+            "Macro_Context": "Energy markets are reacting to shifting crude benchmarks, supply surplus projections, and divergent impacts on fuel-intensive industries versus producers."
         }
     },
     {
@@ -8247,9 +8263,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 05:00 UTC | Last Update: 2026-11-17 02:09 UTC",
+        "main_date": "First Reported: 2026-11-16 05:00 UTC | Last Update: 2026-11-17 04:30 UTC",
         "original_date": "2026-11-16 05:00",
-        "_timestamp": 1794881346.0,
+        "_timestamp": 1794889800.0,
         "articles": [
             {
                 "title": "Horizon Gold targets 880,000oz gold production and A$1.85bn cash flow at Gum Creek",
@@ -8274,16 +8290,32 @@
                 "date": "2026-11-17 02:09",
                 "description": "Investing.com -- Gold prices remained near a 14-month low on Tuesday as persistent U.S. inflation concerns, expectations of further Federal Reserve tightening and losses in technology stocks weighed on the precious metal.",
                 "_timestamp": 1794881346.0
+            },
+            {
+                "title": "Gold Heads for Worst Year Since 2015. Why Is It Losing to a 5% Treasury?",
+                "link": "https://beincrypto.com/gold-price-treasury-yields-fed-hike/?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 04:30",
+                "description": "The gold price hit a one-year low as Treasury yields passed 5% and Fed hike odds hit 95%. See who is still buying.",
+                "_timestamp": 1794889800.0
+            },
+            {
+                "title": "Gold Heads for Worst Year Since 2015. Why Is It Losing to a 5% Treasury?",
+                "link": "https://beincrypto.com/gold-price-treasury-yields-fed-hike/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 04:30",
+                "description": "The gold price hit a one-year low as Treasury yields passed 5% and Fed hike odds hit 95%. See who is still buying.",
+                "_timestamp": 1794889800.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 02:09 UTC",
-            "Facts": "[Update 2026-11-17 02:09 UTC via Yahoo Finance Gold]: Gold prices hovered near a 14-month low on Tuesday, trading around $3,873.70 per troy ounce as persistent U.S. inflation concerns, expectations of further Federal Reserve tightening, and a tech stock selloff weighed on the precious metal. Meanwhile, Horizon Gold announced plans for its Gum Creek Gold Project in Western Australia, targeting 880,000 ounces of gold production over a 10-year mine life with a Definitive Feasibility Study.",
-            "Macro_Context": "Persistent U.S. inflation and expectations of further Federal Reserve rate hikes continue to pressure non-yielding bullion, pushing prices down to multi-month lows."
+            "Event_Timestamp": "2026-11-17 04:30 UTC",
+            "Facts": "[Update 2026-11-17 02:09 UTC via Yahoo Finance Gold]: Gold prices hovered near 14-month lows, pressured by persistent U.S. inflation concerns, Fed tightening expectations, and tech stock losses. [Update 2026-11-17 04:30 UTC via Yahoo Finance Gold]: Gold is heading for its worst year since 2015 as Treasury yields surpass 5% and Federal Reserve rate hike odds reach 95%.",
+            "Macro_Context": "Precious metals face intense downward pressure as surging Treasury yields and heightened Federal Reserve rate hike expectations divert capital away from bullion."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.85
@@ -12139,6 +12171,30 @@
             "Event_Timestamp": "2026-11-17 04:34 UTC",
             "Facts": "[Update 2026-11-17 04:34 UTC via Yahoo Finance Oil]: Suncor Energy is evaluating faster timelines for new in situ oilsands projects in response to Alberta's policy shifts and government targets aimed at doubling oilsands production over the next decade.",
             "Macro_Context": "Favorable regulatory changes and policy targets in Alberta are encouraging Canadian energy firms to accelerate production timelines and expand oilsands development."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 04:39 UTC",
+        "original_date": "2026-11-17 04:39",
+        "_timestamp": 1794890385.0,
+        "articles": [
+            {
+                "title": "Elite Undervalued Stocks To Own In November 2026",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/elite-undervalued-stocks-own-november-043945272.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 04:39",
+                "description": "Rising interest rates in Australia have put fresh pressure on companies that rely heavily on borrowed money, which has pushed many investors toward businesses that can fund themselves through solid cash generation. When cash flows look healthy but share prices still lag fair value estimates, that gap can spell opportunity for value hunters. This article highlights three stocks that appear mispriced based on their future cash potential. The three ",
+                "_timestamp": 1794890385.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 04:39 UTC",
+            "Facts": "[Update 2026-11-17 04:39 UTC via Yahoo Finance Nasdaq]: Rising interest rates in Australia have pressured debt-reliant companies, steering investors toward cash-generating, undervalued equities.",
+            "Macro_Context": "Higher interest rate environments are prompting a flight toward self-funding companies with solid cash generation and discounted valuations."
         }
     }
 ]

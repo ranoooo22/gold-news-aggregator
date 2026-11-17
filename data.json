@@ -3822,9 +3822,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 05:16 UTC",
+        "main_date": "First Reported: 2026-11-11 16:44 UTC | Last Update: 2026-11-17 06:38 UTC",
         "original_date": "2026-11-11 16:44",
-        "_timestamp": 1794892610.0,
+        "_timestamp": 1794897526.0,
         "articles": [
             {
                 "title": "“Stay Away From CoreWeave”: Huang’s Scandal Puts Nvidia’s $6.3 Billion Backstop in Focus",
@@ -4721,6 +4721,22 @@
                 "date": "2026-11-17 04:31",
                 "description": "OpenAI CEO Sam Altman expressed personal sympathy for Jensen Huang amid uncertainty surrounding the Nvidia Corp. (NASDAQ:NVDA) co-founder’s potential return to the company, drawing parallels with his own dramatic ouster in 2023. Altman Relates to Huang’s Leadership Turmoil Speaking at Semafor’s Silicon Valley & The World event Monday, Altman said he understood the personal toll of losing control of a company, recalling his abrupt removal as OpenA",
                 "_timestamp": 1794889916.0
+            },
+            {
+                "title": "Lies, spies and sex are just one part of the Nvidia story. The real stakes are much bigger",
+                "link": "https://www.cnn.com/2026/11/16/tech/nvidia-sex-spies-serious-problems?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 06:38",
+                "description": "Nvidia CEO Jensen Huang resigned from the company he founded this week after reports of multiple affairs, including one with a subordinate and one with a woman whom US officials feared could be working with Chinese intelligence.",
+                "_timestamp": 1794897526.0
+            },
+            {
+                "title": "Nvidia Director Reportedly Warns of ‘Irreplaceable Talent’ Loss: Board Urged to Bring Back Jensen Huang as NVDA Stock Slips",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-reportedly-warns-irreplaceable-060446835.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 06:04",
+                "description": "A senior executive at Nvidia Corp. (NASDAQ:NVDA) has warned that the company risks losing \"irreplaceable talent\" unless it reinstates former CEO Jensen Huang, as an employee-led campaign demanding his return intensifies following his resignation last week. Nvidia Executive Warns Board Of Talent Exodus Nader Khalil, Nvidia’s director of developer technology, sent a letter to the company’s board and senior executives urging them to reconsider Huang",
+                "_timestamp": 1794895486.0
             }
         ],
         "needs_update": false,
@@ -4728,9 +4744,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-17 05:16 UTC",
-            "Facts": "[Update 2026-11-17 04:31 UTC via Yahoo Finance Nasdaq]: OpenAI CEO Sam Altman expressed sympathy for Jensen Huang regarding leadership turmoil, drawing parallels to his own ouster. [Update 2026-11-17 04:41 UTC via Yahoo Finance Nasdaq]: Jensen Huang resigned after 33 years following an affair with Chinese businesswoman Alice Huang, who is suspected of being an intelligence asset. [Update 2026-11-17 05:02 UTC via Yahoo Finance Nasdaq]: Nvidia is preparing for its first earnings call since Huang's resignation. Nvidia co-founder Jensen Huang resigned following multiple scandals, prompting discussions among tech leaders at a Silicon Valley conference.",
-            "Macro_Context": "Corporate governance developments within the major technology sector."
+            "Event_Timestamp": "2026-11-17 06:38 UTC",
+            "Facts": "[Update 2026-11-17 06:38 UTC via Yahoo Finance Nasdaq]: Jensen Huang resigned from Nvidia following multiple affairs, including one with a subordinate and another with a woman feared to be linked to Chinese intelligence. Nvidia is preparing for its first earnings call since his departure, while tech elites and executives like Nader Khalil warn of talent loss and urge the board to reinstate him as NVDA stock slips.",
+            "Macro_Context": "Tech governance and corporate leadership stability within major US semiconductor firms amid geopolitical tensions."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -11910,9 +11926,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 02:52 UTC | Last Update: 2026-11-17 06:40 UTC",
+        "main_date": "First Reported: 2026-11-17 02:52 UTC | Last Update: 2026-11-17 07:07 UTC",
         "original_date": "2026-11-17 02:52",
-        "_timestamp": 1794897658.0,
+        "_timestamp": 1794899255.0,
         "articles": [
             {
                 "title": "US moves to block China’s remote access to AI chips amid Nvidia scandal",
@@ -11937,16 +11953,24 @@
                 "date": "2026-11-17 06:40",
                 "description": "Bloomberg Intelligence Senior Analyst Rob Lea discusses US concerns about the Chinese AI sector as the Trump administration moves to limit several  countries from providing Chinese companies remote access to advanced artificial intelligence chips and servers. Several Southeast Asian nations, along with Brazil, will need a US government license to purchase advanced AI chips from Nvidia Corp. and other American manufacturers, according to an interi",
                 "_timestamp": 1794897658.0
+            },
+            {
+                "title": "Nvidia warns chip buyers of legal risks tied to China AI access, sources tell CNBC",
+                "link": "https://www.cnbc.com/2026/11/17/nvidia-china-cloud-ai-chip-access.html",
+                "source": "CNBC Tech & AI",
+                "date": "2026-11-17 07:07",
+                "description": "The U.S. Commerce Department is making moves to tighten export controls.",
+                "_timestamp": 1794899255.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 2,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 06:40 UTC",
-            "Facts": "[Update 2026-11-17 06:40 UTC via Yahoo Finance Nasdaq]: The Trump administration introduced new export license requirements for Malaysia, Thailand, Indonesia, Singapore, and Brazil to block China's remote access to advanced AI chips and Nvidia hardware, aiming to close regulatory loopholes.",
-            "Macro_Context": "Ongoing US-China technological competition and tighter export controls on artificial intelligence hardware and infrastructure."
+            "Event_Timestamp": "2026-11-17 07:07 UTC",
+            "Facts": "[Update 2026-11-17 07:07 UTC via CNBC Tech & AI]: The Trump administration introduced new export license requirements for Malaysia, Thailand, Indonesia, Singapore, and Brazil to block China's remote access to advanced AI chips. Nvidia has warned chip buyers of legal risks tied to unauthorized Chinese AI access as Washington closes loopholes in hardware export controls.",
+            "Macro_Context": "US-China technological decoupling and tightening trade restrictions on advanced semiconductors and cloud compute infrastructure."
         }
     },
     {
@@ -12166,9 +12190,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 05:40 UTC",
+        "main_date": "First Reported: 2026-11-17 05:40 UTC | Last Update: 2026-11-17 07:17 UTC",
         "original_date": "2026-11-17 05:40",
-        "_timestamp": 1794894059.0,
+        "_timestamp": 1794899876.0,
         "articles": [
             {
                 "title": "Iran to apply reasoning without modification: Ghalibaf warns",
@@ -12177,16 +12201,24 @@
                 "date": "2026-11-17 05:40",
                 "description": "TEHRAN, Nov. 17 (MNA) – In reaction to the US preparations for launching new attack on Iran’s dams, Iranian Parliament Speaker Mohammad Bagher Ghalibaf emphasized that Iran would apply this reasoning without modification.",
                 "_timestamp": 1794894059.0
+            },
+            {
+                "title": "Iran’s Ghalibaf warns US, Israel against targeting civilian infrastructure",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-ghalibaf-warns-us-israel-against-targeting-civilian-infrastructure",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 07:17",
+                "description": "Iran’s Ghalibaf warns US, Israel against targeting civilian infrastructure\n\n    \n    \n\n        \n    \n                Iran’s&nbsp;top negotiator Mohammad Bagher Ghalibaf has warned retaliation to the US and Israel after a&nbsp;New York Times report quoted analysts suggesting Tehran's \"dual-use\" of civilian infrastructure.\n\n\"Prepping the next round on civilian infra, their 'experts' tell NYT: 'dams near Iran’s missile sites are dual-use.',\" he mock",
+                "_timestamp": 1794899876.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-17 05:40 UTC",
-            "Facts": "[Update 2026-11-17 05:40 UTC via Mehr News Agency]: Iranian Parliament Speaker Mohammad Bagher Ghalibaf warned in reaction to US preparations for a new attack on Iran's dams that Iran would apply its reasoning without modification.",
-            "Macro_Context": "Geopolitical tensions involving the US and Iran, raising concerns over regional stability and potential impacts on key supply routes."
+            "Event_Timestamp": "2026-11-17 07:17 UTC",
+            "Facts": "[Update 2026-11-17 07:17 UTC via Middle East Eye]: Iranian Parliament Speaker Mohammad Bagher Ghalibaf warned the US and Israel against targeting civilian infrastructure, specifically responding to reports and analyst claims regarding the alleged dual-use nature of dams near Iranian missile sites.",
+            "Macro_Context": "Geopolitical friction and potential infrastructure targeting risks in the Middle East."
         }
     },
     {
@@ -12363,6 +12395,54 @@
             "Event_Timestamp": "2026-11-17 06:59 UTC",
             "Facts": "The Commerce and Justice departments issued a joint statement revealing that U.S. investigations into Nvidia partner Megaspeed were initiated in 2024.",
             "Macro_Context": "Ongoing U.S. regulatory scrutiny and investigations involving major artificial intelligence hardware partners and semiconductor supply chains."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 07:05 UTC",
+        "original_date": "2026-11-17 07:05",
+        "_timestamp": 1794899112.0,
+        "articles": [
+            {
+                "title": "Goldman Sachs starts SBM Offshore at Buy, sees 25% upside on deepwater wave",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/goldman-sachs-starts-sbm-offshore-070512040.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 07:05",
+                "description": "Investing.com -- Goldman Sachs has initiated coverage of SBM Offshore with a \"buy\" rating, saying the Dutch offshore engineering company is well positioned to benefit from an anticipated wave of deepwater oil and gas investment.",
+                "_timestamp": 1794899112.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 07:05 UTC",
+            "Facts": "[Update 2026-11-17 07:05 UTC via Yahoo Finance Oil]: Goldman Sachs initiated coverage of SBM Offshore with a Buy rating, forecasting a 25% upside driven by an anticipated wave of deepwater oil and gas investments.",
+            "Macro_Context": "Energy sector capital expenditure and offshore oil and gas market valuation trends."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 06:53 UTC",
+        "original_date": "2026-11-17 06:53",
+        "_timestamp": 1794898403.0,
+        "articles": [
+            {
+                "title": "Will Netanyahu lose this time?",
+                "link": "https://www.aljazeera.com/opinions/2026/11/17/will-netanyahu-finally-lose?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 06:53",
+                "description": "The Israeli prime minister has manoeuvred out of tough situations to retain power. But he may find it hard this time.",
+                "_timestamp": 1794898403.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 06:53 UTC",
+            "Facts": "[Update 2026-11-17 06:53 UTC via Al Jazeera English]: Political analysis debates whether Israeli Prime Minister Benjamin Netanyahu will lose power amidst mounting domestic and regional pressures, noting that while he has historically survived numerous political crises, current conditions present unique challenges.",
+            "Macro_Context": "Israeli domestic politics and regional leadership stability."
         }
     }
 ]

@@ -6013,9 +6013,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-17 04:00 UTC",
+        "main_date": "First Reported: 2026-11-16 12:25 UTC | Last Update: 2026-11-17 04:18 UTC",
         "original_date": "2026-11-16 12:25",
-        "_timestamp": 1794888008.0,
+        "_timestamp": 1794889093.0,
         "articles": [
             {
                 "title": "Jericho settlers harass Al Jazeera reporter after stealing Palestinian home",
@@ -6080,9 +6080,17 @@
                 "date": "2026-11-17 04:00",
                 "description": "Israeli settlers opened fire in the village of al Duyuk near Jericho killing one woman and injuring several others.",
                 "_timestamp": 1794888008.0
+            },
+            {
+                "title": "1 killed, 10 injured in Israeli settler attacks on Ariha",
+                "link": "https://en.mehrnews.com/news/249466/1-killed-10-injured-in-Israeli-settler-attacks-on-Ariha",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 04:18",
+                "description": "TEHRAN, Nov. 17 (MNA) – 11 Palestinians were killed and injured following an attack by Israeli settlers on Ariha in the occupied West Bank.",
+                "_timestamp": 1794889093.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
@@ -12065,5 +12073,22 @@
             "Facts": "[Update 2026-11-17 04:01 UTC via Yahoo Finance Oil]: Asian shares declined following Wall Street stock drops driven by the artificial intelligence industry ahead of Nvidia earnings results, while futures remained mixed and oil prices edged lower.",
             "Macro_Context": "Broader equity market weakness and tech sector volatility enhance the safe-haven appeal of gold bullion and precious metals."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 04:12 UTC",
+        "original_date": "2026-11-17 04:12",
+        "_timestamp": 1794888763.0,
+        "articles": [
+            {
+                "title": "Poll shows only 31 percent of Americans support war on Iran",
+                "link": "https://en.mehrnews.com/news/249465/Poll-shows-only-31-percent-of-Americans-support-war-on-Iran",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 04:12",
+                "description": "TEHRAN, Nov. 17 (MNA) – A new poll suggests that just 31 percent of US adults support the war on Iran.",
+                "_timestamp": 1794888763.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

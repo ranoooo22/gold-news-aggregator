@@ -136,9 +136,9 @@
         "max_dd_usd": 7.02
     },
     {
-        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-16 23:12 UTC",
+        "main_date": "First Reported: 2026-11-11 21:22 UTC | Last Update: 2026-11-17 00:27 UTC",
         "original_date": "2026-11-11 21:22",
-        "_timestamp": 1794870779.0,
+        "_timestamp": 1794875261.0,
         "articles": [
             {
                 "title": "Nvidia Downgraded Ahead Of Report, But Stock Joins AI Rebound",
@@ -995,6 +995,14 @@
                 "date": "2026-11-16 23:12",
                 "description": "Key TakeawaysBroadcom (AVGO) surged 5. 5% on November 12 following NVIDIA (NVDA) CEO Jensen Huang’s departure, before retreating to $333.",
                 "_timestamp": 1794870779.0
+            },
+            {
+                "title": "Qualcomm CEO: “There Is No AI Correction” at Qualcomm. Nvidia’s November 17 Earnings Face a Major Test",
+                "link": "https://www.tikr.com/blog/qualcomm-ceo-there-is-no-ai-correction-at-qualcomm-nvidias-november-17-earnings-face-a-major-test?ref=yahoofinance&tlnk=yf-261116-766m6rp9&.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 00:27",
+                "description": "Key TakeawaysQualcomm (QCOM) CEO Cristiano Amon said there is no AI correction at his company, citing strong semiconductor demand and industrywide supply shortages despite the recent technology selloff. NVIDIA (NVDA) faces its November 17 earnings report following Jensen Huang’s resignation, with investors watching whether AI infrastructure demand can sustain its aggressive growth forecasts.",
+                "_timestamp": 1794875261.0
             }
         ],
         "needs_update": false,
@@ -1002,9 +1010,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 23:12 UTC",
-            "Facts": "[Update 2026-11-16 23:12 UTC via Yahoo Finance Nasdaq]: Broadcom surged 5.5% following Nvidia's CEO exit. Major US stock indices fell on Monday, 11/16/2026, led by a Nvidia-driven tech sell-off that pulled down the Nasdaq composite by 2%. Berkshire Hathaway disclosed Q3 portfolio changes in its 13F filing.",
-            "Macro_Context": "Tech sector volatility driven by leadership changes and institutional portfolio adjustments."
+            "Event_Timestamp": "2026-11-17 00:27 UTC",
+            "Facts": "[Update 2026-11-17 00:27 UTC via Yahoo Finance Nasdaq]: Qualcomm CEO Cristiano Amon stated there is no AI correction at his company, pointing to strong semiconductor demand despite a tech sell-off, while Nvidia prepares for its November 17 earnings report following CEO Jensen Huang's departure. Major US stock indexes fell Monday led by technology sell-offs, and Berkshire Hathaway released its Q3 13F filing showing major portfolio adjustments.",
+            "Macro_Context": "Broader equity markets face downward pressure as technology sector sell-offs intensify ahead of key corporate earnings and regulatory developments."
         },
         "eval_status": "HIT",
         "max_dd_usd": 11.82
@@ -1126,9 +1134,9 @@
         "max_dd_usd": 13.22
     },
     {
-        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-16 21:43 UTC",
+        "main_date": "First Reported: 2026-11-05 15:15 UTC | Last Update: 2026-11-17 00:41 UTC",
         "original_date": "2026-11-05 15:15",
-        "_timestamp": 1794865398.0,
+        "_timestamp": 1794876070.0,
         "articles": [
             {
                 "title": "Nvidia vs. Taiwan Semiconductor: The AI Revolution Is Big Enough for Both. Here's the Better Buy.",
@@ -1777,16 +1785,24 @@
                 "date": "2026-11-16 21:43",
                 "description": "Advanced Micro Devices has benefited from Nvidia's turmoil.",
                 "_timestamp": 1794865398.0
+            },
+            {
+                "title": "Taiwan Semiconductor Booked a Record NT$587 Billion Month. The Stock Has Lost Nearly 10% in Three Days Anyway",
+                "link": "https://247wallst.com/investing/2026/11/16/taiwan-semiconductor-booked-a-record-nt587-billion-month-the-stock-has-lost-nearly-10-in-three-days-anyway/?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 00:41",
+                "description": "Taiwan Semiconductor closed at $373.45 on Monday, 9.7% below Wednesday's close, days after reporting record monthly revenue. Nvidia reports Tuesday.",
+                "_timestamp": 1794876070.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 21:43 UTC",
-            "Facts": "[Update 2026-11-16 21:43 UTC via Yahoo Finance Nasdaq]: Is AMD Stock Still a Buy After Its Post-Earnings Jump? Advanced Micro Devices has benefited from Nvidia's turmoil. AI-related semiconductor stocks slid broadly due to new export restrictions targeting Southeast Asia and investor anxiety regarding upcoming earnings and potential scaling back of ecosystem financing.",
-            "Macro_Context": "Tech sector selloffs driven by regulatory trade headwinds and concerns over AI spending sustainability."
+            "Event_Timestamp": "2026-11-17 00:41 UTC",
+            "Facts": "[Update 2026-11-17 00:41 UTC via Yahoo Finance Nasdaq]: Taiwan Semiconductor closed down 9.7% over three days despite reporting a record monthly revenue of NT$587 billion. The broader chip sector, including Micron and AMD, experienced a steep sell-off as investors grew jittery ahead of Nvidia's upcoming earnings report.",
+            "Macro_Context": "Semiconductor equities face broad liquidation and volatility as investors reassess valuation multiples and risk exposure ahead of major sector earnings."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0
@@ -3194,9 +3210,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-16 21:54 UTC",
+        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-17 00:21 UTC",
         "original_date": "2026-11-11 04:32",
-        "_timestamp": 1794866040.0,
+        "_timestamp": 1794874860.0,
         "articles": [
             {
                 "title": "3 Data Center Infrastructure Stocks Retail Investors Are Watching Beyond Nvidia",
@@ -3421,16 +3437,24 @@
                 "date": "2026-11-16 21:54",
                 "description": "Nvidia (NVDA) is set to report its fiscal third-quarter 2027 results on November 17, after the market closes. Investors will be closely watching its Data Center business, which accounts for the bulk of the company’s revenue and remains central to its AI growth story. Meanwhile, NVDA stock has been under pressure, following reports about CEO Jensen Huang’s alleged affairs and his subsequent resignation. CFO Colette Kress has taken over as interim ",
                 "_timestamp": 1794866040.0
+            },
+            {
+                "title": "UiPath Stock And Other Software Picks Built For Higher AI Costs",
+                "link": "https://finance.yahoo.com/technology/ai/articles/uipath-stock-other-software-picks-002100761.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 00:21",
+                "description": "Nvidia’s sudden CEO vacuum and the recent 10% slide in its share price have rattled expectations around cheap, abundant AI compute, yet that shock also throws a spotlight on which enterprises can absorb higher infrastructure costs without breaking their business models. Investors who ignore this shift risk missing where resilience could build next. This article unpacks three stocks exposed to that Nvidia news, all drawn from our AI Cost-Resilient",
+                "_timestamp": 1794874860.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-16 21:54 UTC",
-            "Facts": "[Update 2026-11-16 21:54 UTC via Yahoo Finance Nasdaq]: Nvidia Export Curbs Could Lift These Semiconductor Stocks With US Fab Exposure. Nvidia is set to report earnings amid executive transition news involving CEO Jensen Huang and CFO Colette Kress taking over as interim. New U.S. export controls also restrict remote access to advanced chips and target overseas data centers in several countries.",
-            "Macro_Context": "Stricter semiconductor trade controls impacting multinational chip operations and shifting capital to domestic fabs."
+            "Event_Timestamp": "2026-11-17 00:21 UTC",
+            "Facts": "[Update 2026-11-17 00:21 UTC via Yahoo Finance Nasdaq]: UiPath and other software stocks are gaining attention for their ability to absorb higher AI infrastructure costs following Nvidia's 10% share price slide and sudden leadership vacuum. Nvidia prepares for its fiscal third-quarter 2027 earnings report on November 17, with attention centering on its Data Center business, China export restrictions, and interim leadership under CFO Colette Kress following Jensen Huang's resignation.",
+            "Macro_Context": "Corporate governance changes and tighter export controls are colliding with high-growth AI infrastructure narratives, shifting capital flows across the semiconductor and software sectors."
         },
         "eval_status": "HIT",
         "max_dd_usd": 18.93
@@ -11900,6 +11924,30 @@
             "Event_Timestamp": "2026-11-16 23:58 UTC",
             "Facts": "TELUS confirmed receiving an unsolicited takeover proposal from Québecor, causing its shares to rise while broader U.S. markets declined.",
             "Macro_Context": "U.S. markets saw significant declines on Monday, with the S&P 500 falling 1.92% to 7,416.59 and the Nasdaq Composite dropping 2.49% to 24,509.76."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 00:33 UTC",
+        "original_date": "2026-11-17 00:33",
+        "_timestamp": 1794875580.0,
+        "articles": [
+            {
+                "title": "Largo Reports Q3 2026 Financial Results Start to Reflect Diversification into Copper, Gold and Platinum Group Metals as By-Product of Its Core Vanadium Business and $3.5 Million in Operating Cash Flow",
+                "link": "https://finance.yahoo.com/markets/commodities/articles/largo-reports-q3-2026-financial-003300155.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 00:33",
+                "description": "All amounts expressed are in U.S. dollars, denoted by \"$\".Toronto, Ontario--(Newsfile Corp. - November 16, 2026) - Largo Inc. (TSX: LGO) (NASDAQ: LGO) (\"Largo\" or the \"Company\"), the world's largest primary vanadium producer, today announces financial and operating results for the third quarter and the nine months ended September 30, 2026.Mr. Alberto Arias, Executive Chairman and Co-Chief Executive Officer of Largo, stated: \"Our third-quarter res",
+                "_timestamp": 1794875580.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 00:33 UTC",
+            "Facts": "[Update 2026-11-17 00:33 UTC via Yahoo Finance Gold]: Largo Inc. reported its Q3 2026 financial results, highlighting a successful diversification strategy into copper, gold, and platinum group metals as by-products of its core vanadium business, alongside generating $3.5 million in operating cash flow.",
+            "Macro_Context": "Mining firms are expanding diversification into precious and industrial metals to capture robust demand dynamics and strengthen operating cash flows."
         }
     }
 ]

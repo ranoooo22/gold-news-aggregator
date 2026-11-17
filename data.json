@@ -4924,9 +4924,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-16 20:38 UTC",
+        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-16 23:57 UTC",
         "original_date": "2026-11-02 21:53",
-        "_timestamp": 1794861480.0,
+        "_timestamp": 1794873469.0,
         "articles": [
             {
                 "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
@@ -5639,9 +5639,17 @@
                 "date": "2026-11-16 20:38",
                 "description": "Iranian TV: Tanker ablaze after hitting mine in Strait of Hormuz, fourth in 24 hours\n\n    \n    \n\n        \n    \n                A tanker caught fire after hitting a mine in the Strait of Hormuz, the fourth such incident in 24 hours, Iranian state TV reported.",
                 "_timestamp": 1794861480.0
+            },
+            {
+                "title": "Live: Houthis advance in Yemen as tankers hit sea mines in Strait of Hormuz",
+                "link": "https://www.aljazeera.com/news/liveblog/2026/11/16/live-houthis-advance-in-yemen-as-tankers-hit-sea-mines-in-strait-of-hormuz?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-16 23:57",
+                "description": "Iran-aligned Houthi fighters kept up their push in southern Yemen as oil tankers hit sea mines in the Strait of Hormuz.",
+                "_timestamp": 1794873469.0
             }
         ],
-        "needs_update": false,
+        "needs_update": true,
         "summary": {
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
@@ -11770,5 +11778,22 @@
             "Facts": "Navitas Semiconductor stock declined by 12% on Monday amid a broader market impact on advanced semiconductor equities following a new sector scandal.",
             "Macro_Context": "Tech sector liquidity and semiconductor valuations are currently sensitive to negative sentiment and scandals within the AI space."
         }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 00:00 UTC",
+        "original_date": "2026-11-17 00:00",
+        "_timestamp": 1794873600.0,
+        "articles": [
+            {
+                "title": "Gold X2 Announces Grant of Stock Options and RSUs",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/gold-x2-announces-grant-stock-000000900.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 00:00",
+                "description": "Vancouver, British Columbia--(Newsfile Corp. - November 16, 2026) - Gold X2 Mining Inc. (NYSE American: AUXX) (TSXV: AUXX) (FSE: DF80) (\"Gold X2\" or the \"Company\") announces that the board of directors of the Company has approved the grant of 1,105,700 incentive stock options (the \"Options\") and 460,500 restricted share units (the \"RSUs\") pursuant to the Company's Omnibus Incentive Plan, to officers, directors, employees and consultants of the Co",
+                "_timestamp": 1794873600.0
+            }
+        ],
+        "needs_update": true,
+        "summary": null
     }
 ]

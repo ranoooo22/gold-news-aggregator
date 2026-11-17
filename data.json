@@ -4787,9 +4787,9 @@
         "max_dd_usd": 1.31
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-16 22:25 UTC",
+        "main_date": "First Reported: 2026-11-16 02:04 UTC | Last Update: 2026-11-17 00:23 UTC",
         "original_date": "2026-11-16 02:04",
-        "_timestamp": 1794867902.0,
+        "_timestamp": 1794874980.0,
         "articles": [
             {
                 "title": "Dow, S&P 500, Nasdaq Futures Edge Lower As Markets Brace For Nvidia Earnings, Anthropic IPO, Fed Minutes: SMMT, NBIS, HELP, MSTR In Focus",
@@ -4870,16 +4870,32 @@
                 "date": "2026-11-16 22:25",
                 "description": "Investors weighed a Nvidia leadership shakeup, rising Treasury yields, and fresh chip export curbs as tech stocks slid across the board, today, Nov. 16, 2026.",
                 "_timestamp": 1794867902.0
+            },
+            {
+                "title": "Stocks Carry Weekly Gains Into a Wall of Chart Resistance as Volatility Cools",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-carry-weekly-gains-wall-002300085.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 00:23",
+                "description": "Stock Preachers News Commentary - Wall Street heads into the new week with solid weekly gains behind it, even after Friday's pullback. The Dow Jones Industrial Average, S&amp;P 500, Nasdaq Composite and Russell 2000 all closed the week higher, while the VIX and VXN volatility gauges fell sharply from a week earlier, even as both ticked up on Friday. Gold, silver, copper and WTI crude all lost ground on the week, while natural gas rose and the 10-",
+                "_timestamp": 1794874980.0
+            },
+            {
+                "title": "Stocks Carry Weekly Gains Into a Wall of Chart Resistance as Volatility Cools",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/stocks-carry-weekly-gains-wall-002300085.html?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 00:23",
+                "description": "Stock Preachers News Commentary - Wall Street heads into the new week with solid weekly gains behind it, even after Friday's pullback. The Dow Jones Industrial Average, S&amp;P 500, Nasdaq Composite and Russell 2000 all closed the week higher, while the VIX and VXN volatility gauges fell sharply from a week earlier, even as both ticked up on Friday. Gold, silver, copper and WTI crude all lost ground on the week, while natural gas rose and the 10-",
+                "_timestamp": 1794874980.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 22:25 UTC",
-            "Facts": "[Update 2026-11-16 22:25 UTC via Yahoo Finance Gold]: Markets weighed a combination of the Nvidia leadership shakeup, rising Treasury yields, and fresh chip export curbs as the Nasdaq and S&P 500 fell for a third consecutive day.",
-            "Macro_Context": "Rising Treasury yields and tighter monetary/trade conditions exacerbating the broader tech sector sell-off."
+            "Event_Timestamp": "2026-11-17 00:23 UTC",
+            "Facts": "[Update 2026-11-17 00:23 UTC via Yahoo Finance Gold]: Wall Street heads into the new week with solid weekly gains behind it despite Friday's pullback, while precious metals including gold and silver lost ground on the week. Stock markets previously faced a tech selloff driven by rising Treasury yields, an Nvidia leadership shakeup, and fresh chip export curbs.",
+            "Macro_Context": "Rising Treasury yields and macroeconomic headwinds put pressure on gold and tech equities as investors navigate changing Fed rate paths and market volatility."
         },
         "eval_status": "HIT",
         "max_dd_usd": 17.78

@@ -4597,14 +4597,14 @@
                 "_timestamp": 1794879839.0
             }
         ],
-        "needs_update": true,
+        "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Israel & Middle East Escalation",
-            "Event_Timestamp": "2026-11-17 01:00 UTC",
-            "Facts": "[Update 2026-11-17 01:00 UTC via Yahoo Finance Nasdaq]: Tesla board member Joe Gebbia stated that Nvidia should reinstate Jensen Huang as CEO to let investigations play out, following Huang's resignation amid corporate turmoil and substantial market value destruction.",
-            "Macro_Context": "Corporate governance updates and leadership uncertainty surrounding Nvidia following the departure of its long-standing CEO."
+            "Event_Timestamp": "2026-11-17 01:43 UTC",
+            "Facts": "[Update 2026-11-17 01:43 UTC via Yahoo Finance Nasdaq]: Nvidia reports quarterly earnings on Tuesday, its first since Jensen Huang's departure as CEO, with investors watching for signs of whether the AI boom can withstand the widening scandal that toppled him. Tesla board member Joe Gebbia publicly stated that Nvidia should reinstate Jensen Huang and allow due diligence to proceed.",
+            "Macro_Context": "Corporate governance turmoil at Nvidia amid leadership changes and oncoming earnings reports."
         },
         "eval_status": "HIT",
         "max_dd_usd": 10.96
@@ -7337,9 +7337,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 23:45 UTC | Last Update: 2026-11-17 01:04 UTC",
+        "main_date": "First Reported: 2026-11-15 23:45 UTC | Last Update: 2026-11-17 01:42 UTC",
         "original_date": "2026-11-15 23:45",
-        "_timestamp": 1794877450.0,
+        "_timestamp": 1794879741.0,
         "articles": [
             {
                 "title": "Oil prices dip as markets look to recovering supplies, M.East tensions",
@@ -7404,16 +7404,24 @@
                 "date": "2026-11-17 01:04",
                 "description": "",
                 "_timestamp": 1794877450.0
+            },
+            {
+                "title": "Oil slips on supply surplus outlook despite Gulf tensions",
+                "link": "https://www.investing.com/news/commodities-news/oil-slips-on-supply-surplus-outlook-despite-gulf-tensions-5031433",
+                "source": "Investing.com",
+                "date": "2026-11-17 01:42",
+                "description": "",
+                "_timestamp": 1794879741.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
+            "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-17 01:04 UTC",
-            "Facts": "[Update 2026-11-17 01:04 UTC via Investing.com]: Oil prices fell further as markets continued to digest expectations of a global supply surplus, alongside a strong U.S. dollar, outweighing ongoing maritime security risks in the Middle East.",
-            "Macro_Context": "Energy markets trading lower due to global surplus projections and currency pressures despite geopolitical risks."
+            "Event_Timestamp": "2026-11-17 01:42 UTC",
+            "Facts": "[Update 2026-11-17 01:42 UTC via Investing.com]: Oil prices fell further on supply surplus concerns and a strong US dollar, slipping despite ongoing Gulf tensions and Middle East unrests.",
+            "Macro_Context": "Energy markets focusing on global supply surpluses rather than localized geopolitical risks."
         },
         "eval_status": "HIT",
         "max_dd_usd": 1.1
@@ -9182,9 +9190,9 @@
         "max_dd_usd": 51.74
     },
     {
-        "main_date": "First Reported: 2026-11-16 02:13 UTC | Last Update: 2026-11-16 05:14 UTC",
+        "main_date": "First Reported: 2026-11-16 02:13 UTC | Last Update: 2026-11-17 01:39 UTC",
         "original_date": "2026-11-16 02:13",
-        "_timestamp": 1794806066.0,
+        "_timestamp": 1794879546.0,
         "articles": [
             {
                 "title": "Gold extends slide below $3,900 as dollar strength and Fed hike bets weigh",
@@ -9209,21 +9217,24 @@
                 "date": "2026-11-16 05:14",
                 "description": "",
                 "_timestamp": 1794806066.0
+            },
+            {
+                "title": "Gold hovers near 14-month low as Fed hike bets and tech selloff weigh",
+                "link": "https://www.investing.com/news/commodities-news/gold-hovers-near-14month-low-as-fed-hike-bets-and-tech-selloff-weigh-5031431",
+                "source": "Investing.com",
+                "date": "2026-11-17 01:39",
+                "description": "",
+                "_timestamp": 1794879546.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 5,
+            "Cluster_ID": 2,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 05:14 UTC",
-            "Facts": "[Update 2026-11-16 05:14 UTC via Investing.com]: Gold prices extended their downward slide, trading firmly below the $3,900 threshold. | Persistent dollar strength and rising market expectations for additional Federal Reserve interest rate increases continue to pressure non-yielding bullion.",
-            "Macro_Context": "Hawkish Fed rate expectations and a strong USD create immediate headwinds for gold, driving aggressive long-stop liquidations below current levels.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday",
-            "XAUUSD_Impact": "Bearish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "3819.86"
+            "Event_Timestamp": "2026-11-17 01:39 UTC",
+            "Facts": "[Update 2026-11-17 01:39 UTC via Investing.com]: Gold hovered near a 14-month low, extending losses below $3,900 an ounce as a stronger U.S. dollar and expectations of further Federal Reserve interest-rate increases weighed on the metal.",
+            "Macro_Context": "Precious metals under pressure due to hawkish Fed rate expectations and dollar strength."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 54.84
@@ -9565,9 +9576,9 @@
         "max_dd_usd": 35.32
     },
     {
-        "main_date": "First Reported: 2026-11-09 19:00 UTC | Last Update: 2026-11-16 04:14 UTC",
+        "main_date": "First Reported: 2026-11-09 19:00 UTC | Last Update: 2026-11-17 01:38 UTC",
         "original_date": "2026-11-09 19:00",
-        "_timestamp": 1794802492.0,
+        "_timestamp": 1794879493.0,
         "articles": [
             {
                 "title": "Saudi-led coalition says it destroyed Houthi missile facilities",
@@ -9912,21 +9923,24 @@
                 "date": "2026-11-16 04:14",
                 "description": "TEHRAN, Nov. 16 (MNA) – Saudi airstrikes hit Ash Shamayatayn district in Taiz, Hodeidah International Airport and a fuel station in Amran's Harf Sufyan, martyring two people and wounding eight.",
                 "_timestamp": 1794802492.0
+            },
+            {
+                "title": "Yemeni army reports 661 attacks on Houthis as group advances towards Aden",
+                "link": "https://www.aljazeera.com/news/2026/11/17/yemen-army-reports-661-attacks-on-houthis-amid-houthi-push-towards-aden?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 01:38",
+                "description": "Yemen&#039;s army reports 173 Houthi fighters killed or wounded as government forces reposition to defend Aden.",
+                "_timestamp": 1794879493.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 04:14 UTC",
-            "Facts": "[Update 2026-11-16 04:14 UTC via Mehr News Agency]: Saudi airstrikes across Yemen killed two people and wounded eight following earlier missile exchanges involving Houthi forces targeting infrastructure. | Regional hostilities in the Arabian Peninsula continue to escalate as coalition airstrikes target Hodeidah airport and Taiz governorate, intensifying security risks across vital shipping lanes.",
-            "Macro_Context": "Persistent Middle East conflict spikes geopolitical risk premiums, directly bolstering safe-haven demand for gold amidst supply chain anxieties.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday (0-24h)",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 85,
-            "Orderflow_Price_Target": "3900.46"
+            "Event_Timestamp": "2026-11-17 01:38 UTC",
+            "Facts": "[Update 2026-11-17 01:38 UTC via Al Jazeera English]: Yemen's army reports 661 attacks on Houthis as the group advances towards Aden, following earlier airstrikes hitting Taiz, Hodeidah airport, and fuel stations.",
+            "Macro_Context": "Escalating military conflict in Yemen with government forces defending Aden against Houthi advances."
         },
         "eval_status": "MISS",
         "max_dd_usd": 103.5
@@ -10419,37 +10433,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 01:58 UTC",
-        "original_date": "2026-11-16 01:58",
-        "_timestamp": 1794794322.0,
-        "articles": [
-            {
-                "title": "Treasury Secretary Bessent Urges Fed to Look Past Oil as Quarter-Point Hike Odds Reach 92%",
-                "link": "https://beincrypto.com/bessent-urges-fed-quarter-point-hike/?.tsrc=rss",
-                "source": "Yahoo Finance Oil",
-                "date": "2026-11-16 01:58",
-                "description": "Treasury Secretary Scott Bessent urges the Fed to look past oil as markets price a 92% chance of a quarter-point hike.",
-                "_timestamp": 1794794322.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 01:58 UTC",
-            "Facts": "Treasury Secretary Scott Bessent has urged the Federal Reserve to look past energy shocks as markets price in a high probability of a rate hike. | The comments highlight ongoing tensions between fiscal policy guidance and monetary authority reactions to commodity price pressures. | Market participants are closely evaluating these signals to gauge the trajectory of US interest rates and currency valuation.",
-            "Macro_Context": "Shifts in Fed rate expectations and Treasury commentary create volatility in the US dollar, directly influencing gold's inverse correlation and broader macro momentum.",
-            "Impact_Timing": "Short-term",
-            "Timeframe": "Weekly (7-14d)",
-            "XAUUSD_Impact": "Neutral-Bullish",
-            "Probability_Percent": 70,
-            "Orderflow_Price_Target": "$3880.65"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 9.47
     },
     {
         "main_date": "First Reported: 2026-11-15 21:50 UTC | Last Update: 2026-11-16 18:42 UTC",
@@ -12121,7 +12104,14 @@
                 "_timestamp": 1794878396.0
             }
         ],
-        "needs_update": true,
-        "summary": null
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 4,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 01:19 UTC",
+            "Facts": "[Update 2026-11-17 01:19 UTC via Al Jazeera English]: An Irish court jailed a man for life over the 2023 Dublin knife attack outside a central school that had previously sparked riots.",
+            "Macro_Context": "Legal proceedings concluding regarding a high-profile violent crime and subsequent civil unrest in Ireland."
+        }
     }
 ]

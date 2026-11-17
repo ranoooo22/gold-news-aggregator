@@ -5031,9 +5031,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-17 03:12 UTC",
+        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-17 03:39 UTC",
         "original_date": "2026-11-02 21:53",
-        "_timestamp": 1794885174.0,
+        "_timestamp": 1794886754.0,
         "articles": [
             {
                 "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
@@ -5762,16 +5762,24 @@
                 "date": "2026-11-17 03:12",
                 "description": "Iran reports tanker mine strikes as a drone alert in Iraq and the arrival of a US aircraft carrier raise tensions.",
                 "_timestamp": 1794885174.0
+            },
+            {
+                "title": "IRGC captures ninth U.S. MQM-170 drone over Qeshm",
+                "link": "https://en.mehrnews.com/news/249462/IRGC-captures-ninth-U-S-MQM-170-drone-over-Qeshm",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 03:39",
+                "description": "TEHRAN, Nov. 17 (MNA) – The IRGC said its Aerospace Force seized another U.S. MQM-170 drone over southern Qeshm in a successful electronic warfare operation and landed it intact, bringing the number of captured drones of this type to nine.",
+                "_timestamp": 1794886754.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-17 03:12 UTC",
-            "Facts": "[Update 2026-11-17 03:12 UTC via Al Jazeera English]: A drone alert in Iraq and the arrival of a US aircraft carrier raise regional tensions as Iran reports tanker mine strikes. The Iranian Army reported shooting down an MQ-1 drone over the Strait of Hormuz using domestically developed air defense systems, while multiple oil tankers were reported ablaze after striking sea mines in the strait over a 24-hour window.",
-            "Macro_Context": "Geopolitical escalation in the Middle East and Strait of Hormuz threatening global crude oil supply routes and driving safe-haven demand."
+            "Event_Timestamp": "2026-11-17 03:39 UTC",
+            "Facts": "[Update 2026-11-17 03:39 UTC via Mehr News Agency]: The IRGC announced it captured another U.S. MQM-170 drone over southern Qeshm using electronic warfare, bringing the total captured to nine. [Update 2026-11-17 03:12 UTC via Al Jazeera English]: A drone alert was reported at an Iraq gas field alongside the arrival of a US aircraft carrier. [Update 2026-11-16 23:57 UTC via Al Jazeera English]: Iran-aligned Houthi fighters advanced in southern Yemen while oil tankers continued to hit sea mines in the Strait of Hormuz. Iranian state television reported that a tanker caught fire after striking a mine in the Strait of Hormuz, marking the fourth such incident within a 24-hour period.",
+            "Macro_Context": "Escalating geopolitical tensions in the Middle East, including disruptions in the Strait of Hormuz, drone captures, and heightened security around energy infrastructure, act as a primary safe-haven driver for gold prices."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0

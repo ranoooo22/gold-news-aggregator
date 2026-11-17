@@ -9181,9 +9181,9 @@
         "max_dd_usd": 1.65
     },
     {
-        "main_date": "First Reported: 2026-11-15 02:07 UTC | Last Update: 2026-11-17 07:25 UTC",
+        "main_date": "First Reported: 2026-11-15 02:07 UTC | Last Update: 2026-11-17 07:49 UTC",
         "original_date": "2026-11-15 02:07",
-        "_timestamp": 1794900339.0,
+        "_timestamp": 1794901761.0,
         "articles": [
             {
                 "title": "Bahrain's ministry of interior issues 'hazard' alert, urges citizens to stay calm",
@@ -9272,6 +9272,22 @@
                 "date": "2026-11-17 07:25",
                 "description": "TEHRAN, Nov. 17 (MNA) – The IRGC said its combat drones targeted a U.S. radar system at Sheikh Isa base in Bahrain, saying the attack was a response to continued U.S. drone violations of Iran's airspace.",
                 "_timestamp": 1794900339.0
+            },
+            {
+                "title": "Bahrain thwarts drone attack, Iran claims targeting US military radar",
+                "link": "https://www.aljazeera.com/news/2026/11/17/bahrain-thwarts-drone-attack-iran-claims-targeting-us-military-radar?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 07:35",
+                "description": "This is a breaking news story.",
+                "_timestamp": 1794900954.0
+            },
+            {
+                "title": "IRGC claims attack on US radar system in Bahrain, as Manama says it thwarted them",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-attack-us-radar-system-bahrain-manama-says-it-thwarted-them",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 07:49",
+                "description": "IRGC claims attack on US radar system in Bahrain, as Manama says it thwarted them\n\n    \n    \n\n        \n    \n                Iran’s Islamic Revolutionary Guard Corps (IRGC) said that it carried out a drone attack targeting a US radar system at the Isa airbase in Bahrain.\n\nThe IRGC that the action was \"taken within the framework of countering the hostile movements of American forces in the region\".\n\nIt further stressed that \"the continued violation",
+                "_timestamp": 1794901761.0
             }
         ],
         "needs_update": false,
@@ -9279,9 +9295,9 @@
             "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-17 07:25 UTC",
-            "Facts": "[Update 2026-11-17 07:25 UTC via Mehr News Agency]: The IRGC stated its combat drones targeted a U.S. radar system at the Sheikh Isa base in Bahrain in retaliation for alleged U.S. drone violations of Iranian airspace. [Update 2026-11-17 07:06 UTC via Middle East Eye]: Bahrain's interior ministry issued an alert warning of potential danger and urging residents to seek safety. [Update 2026-11-17 04:07 UTC via Mehr News Agency]: A drone also targeted the headquarters of an Iranian separatist group in Dokan, Iraq's Kurdistan region. These events follow the U.S. Embassy in Bahrain urging citizens on November 16 to exercise heightened vigilance due to threats from Iranian-supported groups.",
-            "Macro_Context": "Rising geopolitical tensions and direct military actions in the Persian Gulf region threaten critical infrastructure and regional stability, influencing safe-haven asset demand."
+            "Event_Timestamp": "2026-11-17 07:49 UTC",
+            "Facts": "[Update 2026-11-17 07:49 UTC via Middle East Eye]: Iran's IRGC claimed responsibility for a drone attack targeting a US radar system at the Isa airbase in Bahrain, framing it as a response to US airspace violations, while Bahrain reported thwarting the attack after initially issuing a general safety alert.",
+            "Macro_Context": "Escalating geopolitical tensions in the Middle East involving Iran and US regional military assets threaten maritime and regional security, creating safe-haven demand for gold."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02

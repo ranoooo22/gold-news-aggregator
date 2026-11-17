@@ -6098,9 +6098,9 @@
         "max_dd_usd": 0.0
     },
     {
-        "main_date": "First Reported: 2026-11-16 17:35 UTC",
+        "main_date": "First Reported: 2026-11-16 17:35 UTC | Last Update: 2026-11-17 11:03 UTC",
         "original_date": "2026-11-16 17:35",
-        "_timestamp": 1794850518.0,
+        "_timestamp": 1794913430.0,
         "articles": [
             {
                 "title": "Iran rejects allegations of plot to assassinate US officials, cites Israeli disinformation campaign",
@@ -6109,21 +6109,24 @@
                 "date": "2026-11-16 17:35",
                 "description": "TEHRAN – Iran’s Foreign Ministry spokesperson has rejected allegations that the Islamic Republic is plotting to assassinate US officials, describing them as part of a coordinated Israeli disinformation campaign designed to portray Iran as a threat to Western societies, manufacture public fear, and create justification for further escalation of the war.",
                 "_timestamp": 1794850518.0
+            },
+            {
+                "title": "Tehran denies report of alleged Iranian plan to detonate 'dirty bomb' in Washington",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/tehran-denies-report-alleged-iranian-plan-detonate-dirty-bomb-washington",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 11:03",
+                "description": "Tehran denies report of alleged Iranian plan to detonate 'dirty bomb' in Washington\n\n    \n    \n\n        \n    \n                Iran's Foreign Ministry spokesperson denied a CNN report that it planned to detonate a \"dirty bomb\" in Washington, saying the allegations were \"baseless\", in a post on X on Tuesday.\n\nCNN cited sources as saying that US intelligence indicates that Tehran is developing plans to potentially detonate a dirty bomb in Washington",
+                "_timestamp": 1794913430.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": false,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 17:35 UTC",
-            "Facts": "Iran's Foreign Ministry rejected US assassination plot allegations, dismissing them as an Israeli disinformation campaign intended to manufacture fear and justify war. | Tehran continues to push back against Western pressure amid heightened geopolitical friction in the region.",
-            "Macro_Context": "Geopolitical rhetoric keeps safe-haven premiums elevated, supporting sustained aggressive market buying in gold.",
-            "Impact_Timing": "Immediate",
-            "Timeframe": "Intraday (24h)",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 75,
-            "Orderflow_Price_Target": "3880.19"
+            "Event_Timestamp": "2026-11-17 11:03 UTC",
+            "Facts": "[Update 2026-11-17 11:03 UTC via Middle East Eye]: Tehran denies report of alleged Iranian plan to detonate 'dirty bomb' in Washington. Iran's Foreign Ministry spokesperson rejected allegations of plots against US officials and denied CNN reports regarding a dirty bomb plot, dismissing them as an Israeli disinformation campaign.",
+            "Macro_Context": "Geopolitical tensions involving Iran and Western nations, with unverified intelligence reports circulating regarding potential security threats in Washington."
         },
         "eval_status": "ACTIVE",
         "max_dd_usd": 17.09
@@ -12380,9 +12383,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-17 06:40 UTC",
+        "main_date": "First Reported: 2026-11-17 06:40 UTC | Last Update: 2026-11-17 10:46 UTC",
         "original_date": "2026-11-17 06:40",
-        "_timestamp": 1794897600.0,
+        "_timestamp": 1794912396.0,
         "articles": [
             {
                 "title": "ExxonMobil's Uaru Startup Lifts Guyana Oil Capacity to 1.1 Million Bpd",
@@ -12391,16 +12394,24 @@
                 "date": "2026-11-17 06:40",
                 "description": "ExxonMobil's Uaru Startup Lifts Guyana Oil Capacity to 1.1 Million Bpd",
                 "_timestamp": 1794897600.0
+            },
+            {
+                "title": "ExxonMobil begins oil production at Uaru in Guyana’s Stabroek block",
+                "link": "https://www.offshore-technology.com/news/exxonmobil-oil-production-uaru-stabroek-block/?.tsrc=rss",
+                "source": "Yahoo Finance Oil",
+                "date": "2026-11-17 10:46",
+                "description": "Errea Wittu FPSO’s startup raises Guyana’s total installed oil production capacity to 1.1 million barrels per day.",
+                "_timestamp": 1794912396.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": false,
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": true,
             "Dominant_Driver": "Crude Oil & Energy Supply",
-            "Event_Timestamp": "2026-11-17 06:40 UTC",
-            "Facts": "ExxonMobil has initiated operations at the Uaru offshore project in Guyana, raising the country's total crude oil production capacity to 1.1 million barrels per day.",
-            "Macro_Context": "Expansion of non-OPEC oil production capacity from major offshore developments, impacting global energy supply dynamics."
+            "Event_Timestamp": "2026-11-17 10:46 UTC",
+            "Facts": "[Update 2026-11-17 10:46 UTC via Yahoo Finance Oil]: ExxonMobil begins oil production at the Uaru project in Guyana's Stabroek block using the Errea Wittu FPSO, raising Guyana's total installed oil production capacity to 1.1 million barrels per day.",
+            "Macro_Context": "Expansion of global crude oil production capacity, particularly in South America, impacting energy supply dynamics."
         }
     },
     {
@@ -13081,6 +13092,54 @@
             "Event_Timestamp": "2026-11-17 10:38 UTC",
             "Facts": "Take-Two Interactive Software (TTWO) reported fiscal second-quarter net bookings of $1.6 billion, missing its guidance range of $1.62 billion to $1.67 billion, though company shares subsequently rose 8.3% while analysts continue to project higher annual revenue than the company's official guidance.",
             "Macro_Context": "Gaming sector financial performance and analyst consensus expectations versus corporate guidance."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 10:53 UTC",
+        "original_date": "2026-11-17 10:53",
+        "_timestamp": 1794912822.0,
+        "articles": [
+            {
+                "title": "Who is behind Habibi UK, an X account that targeted critics of Israel?",
+                "link": "https://www.aljazeera.com/news/2026/11/17/who-is-behind-habibi-uk-an-x-account-that-targeted-critics-of-israel?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 10:53",
+                "description": "A former US Foreign Service officer ran a company that funded election adverts attacking Jeremy Corbyn’s Labour.",
+                "_timestamp": 1794912822.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 2,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "2026-11-17 10:53 UTC",
+            "Facts": "Investigations reveal that a former US Foreign Service officer operated a company behind the 'Habibi UK' X account, which targeted critics of Israel and funded election advertisements attacking Jeremy Corbyn's Labour Party.",
+            "Macro_Context": "Information warfare and covert political influence operations linked to Middle Eastern geopolitical debates in the UK."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:04 UTC",
+        "original_date": "2026-11-17 11:04",
+        "_timestamp": 1794913485.0,
+        "articles": [
+            {
+                "title": "Iran volleyball federation decides not to renew Piazza’s deal",
+                "link": "https://www.tehrantimes.com/news/532235/Iran-volleyball-federation-decides-not-to-renew-Piazza-s-deal",
+                "source": "Tehran Times",
+                "date": "2026-11-17 11:04",
+                "description": "TEHRAN – Milad Taghavi, president of the Iran Volleyball Federation, has opted not to renew the contract of Italian head coach Roberto Piazza. He has been tasked by the federation’s board of directors  with appointing a world-class coach who can arrive in Iran earlier and dedicate more time to the national team.",
+                "_timestamp": 1794913485.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-17 11:04 UTC",
+            "Facts": "[Update 2026-11-17 11:04 UTC via Tehran Times]: The Iran Volleyball Federation decided not to renew the contract of Italian head coach Roberto Piazza, with plans to search for a new world-class coach for the national team.",
+            "Macro_Context": "Domestic sports administration news within Iran with no macroeconomic or geopolitical impact."
         }
     }
 ]

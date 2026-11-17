@@ -6929,9 +6929,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 16:11 UTC",
+        "main_date": "First Reported: 2026-11-16 16:11 UTC | Last Update: 2026-11-17 06:12 UTC",
         "original_date": "2026-11-16 16:11",
-        "_timestamp": 1794845500.0,
+        "_timestamp": 1794895935.0,
         "articles": [
             {
                 "title": "3 Australian Growth Stocks With Earnings Growth Over 23%",
@@ -6940,21 +6940,24 @@
                 "date": "2026-11-16 16:11",
                 "description": "Global markets are watching central banks signal fresh moves on inflation, and higher rates can hit weaker businesses hard while rewarding those with solid balance sheets and real earnings momentum. That backdrop puts fast growing but financially healthy Australian stocks in the spotlight for investors who do not want to chase hype alone. This article highlights three of the strongest candidates from that growth focused pool. The three stocks hig",
                 "_timestamp": 1794845500.0
+            },
+            {
+                "title": "3 Australian Stock Picks Trading Up To 45% Below Cash Flow Value",
+                "link": "https://finance.yahoo.com/markets/stocks/articles/3-australian-stock-picks-trading-061215252.html?.tsrc=rss",
+                "source": "Yahoo Finance Gold",
+                "date": "2026-11-17 06:12",
+                "description": "The Reserve Bank of Australia has lifted interest rates to an 18 year high, which puts more pressure on weaker balance sheets and rewards companies that generate solid cash coming through the door. When funding is more expensive, investors often pay closer attention to cash flow and valuation gaps. This article highlights three Australian stocks where discounted cash flow estimates suggest the share price trails the underlying cash potential. The",
+                "_timestamp": 1794895935.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 3,
-            "Is_Gold_Relevant": false,
-            "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-16 16:11 UTC",
-            "Facts": "Global markets are observing central bank policy shifts on inflation and elevated borrowing costs impacting corporate earnings performance. | Commentary highlights fundamentally sound Australian growth stocks displaying strong balance sheets amidst tighter monetary conditions.",
-            "Macro_Context": "General commentary on equity stock selection provides no direct catalyst for immediate precious metals pricing.",
-            "Impact_Timing": "None",
-            "Timeframe": "Structural Weekly",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 20,
-            "Orderflow_Price_Target": "$3858.80"
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
+            "Event_Timestamp": "2026-11-17 06:12 UTC",
+            "Facts": "[Update 2026-11-17 06:12 UTC via Yahoo Finance Gold]: The Reserve Bank of Australia has raised interest rates to an 18-year high, increasing pressure on weaker balance sheets and turning investor attention toward cash flow and valuation gaps. [Update 2026-11-16 16:11 UTC via Yahoo Finance Gold]: Global markets are observing central bank policy shifts regarding inflation and higher rates, highlighting financially robust Australian growth stocks.",
+            "Macro_Context": "Central banks are signaling moves on inflation with higher interest rates, impacting global market sentiment and forcing investors to focus on fundamental earnings momentum and cash flow value."
         }
     },
     {

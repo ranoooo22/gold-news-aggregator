@@ -3392,9 +3392,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-17 10:55 UTC",
+        "main_date": "First Reported: 2026-11-11 04:32 UTC | Last Update: 2026-11-17 11:58 UTC",
         "original_date": "2026-11-11 04:32",
-        "_timestamp": 1794912923.0,
+        "_timestamp": 1794916714.0,
         "articles": [
             {
                 "title": "3 Data Center Infrastructure Stocks Retail Investors Are Watching Beyond Nvidia",
@@ -3651,16 +3651,24 @@
                 "date": "2026-11-17 10:55",
                 "description": "Board Chairman Harvey Jones said Nvidia will work with government and industry partners to protect national security while supporting continued technological innovation.",
                 "_timestamp": 1794912923.0
+            },
+            {
+                "title": "Nvidia establishes committee to oversee national security after abrupt departure of CEO Jensen Huang",
+                "link": "https://finance.yahoo.com/technology/articles/nvidia-establishes-committee-oversee-national-115834618.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 11:58",
+                "description": "Nvidia is creating a new board committee to oversee national security and global trade compliance following revelations that former CEO Jensen Huang had an extramarital affair with an alleged spy for China. Nvidia's National Security and Export Control Oversight Committee will be responsible for oversight of national security policies and compliance with export controls, the company said Tuesday that the Nvidia's advanced chips are in high demand",
+                "_timestamp": 1794916714.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 4,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "AI, Semiconductors & Tech Liquidity",
-            "Event_Timestamp": "2026-11-17 10:55 UTC",
-            "Facts": "[Update 2026-11-17 10:55 UTC via Yahoo Finance Nasdaq]: In response to recent national security concerns and export control pressures, Nvidia's Board of Directors established a National Security and Export Control Oversight Committee, appointing Suzanne Nora Johnson as Chair. The committee will utilize independent outside experts to oversee global trade compliance programs.",
-            "Macro_Context": "Corporate governance adaptation to heightened geopolitical and regulatory oversight."
+            "Event_Timestamp": "2026-11-17 11:58 UTC",
+            "Facts": "[Update 2026-11-17 10:00 UTC via Yahoo Finance Nasdaq]: NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee chaired by Suzanne Nora Johnson. [Update 2026-11-17 11:58 UTC via Yahoo Finance Nasdaq]: The committee was formed following the abrupt departure of CEO Jensen Huang amid revelations of an affair with an alleged spy for China. Asian stock markets fell as US moves tightened restrictions on Chinese access to advanced Nvidia chips remotely.",
+            "Macro_Context": "Tightening US export controls on artificial intelligence hardware and corporate governance shocks involving major semiconductor firms are weighing on Asian equity markets."
         },
         "eval_status": "HIT",
         "max_dd_usd": 18.93
@@ -3871,9 +3879,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-15 17:33 UTC | Last Update: 2026-11-16 19:19 UTC",
+        "main_date": "First Reported: 2026-11-15 17:33 UTC | Last Update: 2026-11-17 11:53 UTC",
         "original_date": "2026-11-15 17:33",
-        "_timestamp": 1794856761.0,
+        "_timestamp": 1794916417.0,
         "articles": [
             {
                 "title": "Yemeni government forces redeploy from Bab al-Mandeb to defend Aden",
@@ -3930,6 +3938,14 @@
                 "date": "2026-11-16 19:19",
                 "description": "Move comes as government forces withdraw from Red Sea coast to halt Houthi approach to interim capital Aden.",
                 "_timestamp": 1794856761.0
+            },
+            {
+                "title": "Yemen's government forces withdraw from Bab al-Mandab and west coast to defend Aden",
+                "link": "https://www.middleeasteye.net/news/yemen-government-forces-withdraw-bab-mandab-west-coast-defend-aden",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 11:53",
+                "description": "Yemen's government forces withdraw from Bab al-Mandab and west coast to defend Aden\n\n    \n    \n\n          \n      \n      \n        Submitted by \nMEE correspondent\n on \nTue, 11/17/2026 - 09:43\n\n        \n      \n    \n      \n    \n                Houthis advance in Lahij amid government withdrawal, reaching within 70km of provisional capital\n                      \n                  \n                  \n\n  \n\n\n                  Armoured vehicles are left d",
+                "_timestamp": 1794916417.0
             }
         ],
         "needs_update": false,
@@ -3937,9 +3953,9 @@
             "Cluster_ID": 1,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "Red Sea & Yemen Conflict",
-            "Event_Timestamp": "2026-11-16 19:19 UTC",
-            "Facts": "Yemeni forces and Saudi-backed troops retreated from the Bab al-Mandeb strait and Red Sea coast, allowing Houthi forces to advance toward Aden. In response, Saudi King Salman dismissed the commander of the coalition forces.",
-            "Market_Context": "Geopolitical instability in the Red Sea region impacting strategic maritime choke points and regional security alignments."
+            "Event_Timestamp": "2026-11-17 11:53 UTC",
+            "Facts": "[Update 2026-11-16 19:19 UTC via Al Jazeera English]: Saudi Arabia dismissed the commander of coalition forces fighting Houthi rebels as government forces withdrew from the Red Sea coast. [Update 2026-11-17 11:53 UTC via Middle East Eye]: Yemen government forces retreated from Bab al-Mandab and the west coast to reinforce Aden, allowing Houthi forces to advance within 70km of the provisional capital.",
+            "Macro_Context": "Shifting territorial control along Yemen's strategic Red Sea coastline threatens maritime security and regional stability near crucial shipping lanes."
         },
         "eval_status": "HIT",
         "max_dd_usd": 7.02
@@ -6646,9 +6662,9 @@
         }
     },
     {
-        "main_date": "First Reported: 2026-11-16 17:00 UTC | Last Update: 2026-11-17 10:09 UTC",
+        "main_date": "First Reported: 2026-11-16 17:00 UTC | Last Update: 2026-11-17 12:00 UTC",
         "original_date": "2026-11-16 17:00",
-        "_timestamp": 1794910140.0,
+        "_timestamp": 1794916800.0,
         "articles": [
             {
                 "title": "Rockwell Automation Integrates NVIDIA Omniverse into Emulate3D to Advance Industrial Simulation and AI-Powered Factory Design",
@@ -6665,6 +6681,14 @@
                 "date": "2026-11-17 10:09",
                 "description": "Rockwell Automation (NYSE:ROK) announced a new partnership with Velotic to support industrial modernization for manufacturers. The collaboration focuses on connecting legacy factory equipment with newer automation platforms to streamline production workflows. Rockwell Automation reported expanded use of NVIDIA Omniverse within its Emulate3D software to support advanced industrial simulation and design. These moves, from the Velotic partnership to",
                 "_timestamp": 1794910140.0
+            },
+            {
+                "title": "Rockwell Automation Expands Edge Computing Options for Industrial AI with NVIDIA GPUs",
+                "link": "https://finance.yahoo.com/technology/ai/articles/rockwell-automation-expands-edge-computing-120000700.html?.tsrc=rss",
+                "source": "Yahoo Finance Nasdaq",
+                "date": "2026-11-17 12:00",
+                "description": "Rockwell Automation, Inc. (NYSE: ROK), the world's largest company dedicated to industrial automation and digital transformation, today announced new GPU-enabled industrial computing powered by NVIDIA accelerated computing. The offering expands the range of compute to run demanding AI and machine learning workloads closer to production. It builds on Rockwell's existing industrial AI capabilities across control, visualization and software, which d",
+                "_timestamp": 1794916800.0
             }
         ],
         "needs_update": false,
@@ -6672,9 +6696,9 @@
             "Cluster_ID": 2,
             "Is_Gold_Relevant": false,
             "Dominant_Driver": "US Inflation (CPI) & Fed Rate Path",
-            "Event_Timestamp": "2026-11-17 10:09 UTC",
-            "Facts": "[Update 2026-11-17 10:09 UTC via Yahoo Finance Nasdaq]: Rockwell Automation announced a new partnership with Velotic for factory modernization and expanded the integration of NVIDIA Omniverse and Emulate3D technologies into industrial workflows.",
-            "Macro_Context": "Industrial automation companies are deepening technology partnerships to enhance digital transformation and AI integration."
+            "Event_Timestamp": "2026-11-17 12:00 UTC",
+            "Facts": "[Update 2026-11-17 10:09 UTC via Yahoo Finance Nasdaq]: Rockwell Automation announced a new partnership with Velotic for industrial modernization. [Update 2026-11-17 12:00 UTC via Yahoo Finance Nasdaq]: Rockwell expanded edge computing options for industrial AI with NVIDIA GPUs, integrating NVIDIA Omniverse into Emulate3D to advance industrial simulation and factory design.",
+            "Macro_Context": "Industrial automation companies are deepening technology partnerships and incorporating accelerated computing capabilities to modernize manufacturing workflows."
         }
     },
     {
@@ -8944,35 +8968,6 @@
         },
         "eval_status": "HIT",
         "max_dd_usd": 4.14
-    },
-    {
-        "main_date": "First Reported: 2026-11-16 12:00 UTC",
-        "original_date": "2026-11-16 12:00",
-        "_timestamp": 1794830400.0,
-        "articles": [
-            {
-                "title": "WESCAN GOLDFIELDS STAKES THE LUTZKO LAKE GOLD PROJECT IN THE LA RONGE GOLD BELT, ITS FIFTH PROJECT IN SASKATCHEWAN",
-                "link": "https://finance.yahoo.com/markets/commodities/articles/wescan-goldfields-stakes-lutzko-lake-120000087.html?.tsrc=rss",
-                "source": "Yahoo Finance Gold",
-                "date": "2026-11-16 12:00",
-                "description": "Wescan Goldfields Inc. (TSXV: WGF) (FSE: W17A) (\"Wescan\" or the \"Company\") is pleased to announce that it has acquired, by claim staking, a 100% interest in the Lutzko Lake Project (the \"Project\"), a 3,306‑hectare mineral claim in Saskatchewan's La Ronge Gold Belt. This is the Company's fifth gold project, alongside the Munro Lake, Fork Lake, Jojay Lake and Lindsay Lake projects. It lies approximately 16 kilometres southwest of the Company's Fork",
-                "_timestamp": 1794830400.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 0,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Gold Bullion & Central Bank Demand",
-            "Event_Timestamp": "2026-11-16 12:00 UTC",
-            "Facts": "Wescan Goldfields acquired a 100 percent interest in the Lutzko Lake Project via claim staking in Saskatchewan's La Ronge Gold Belt. This new 3,306-hectare property becomes the company's fifth gold project in the region.",
-            "Macro_Context": "Micro-cap junior mining project expansion reflects broader industry efforts to scale up physical gold exploration amid strong structural demand.",
-            "Impact_Timing": "Intraday",
-            "Timeframe": "7-14d",
-            "XAUUSD_Impact": "Neutral",
-            "Probability_Percent": 50,
-            "Orderflow_Price_Target": "3869.99"
-        }
     },
     {
         "main_date": "First Reported: 2026-11-16 10:11 UTC | Last Update: 2026-11-17 10:12 UTC",
@@ -13242,6 +13237,30 @@
             "Event_Timestamp": "2026-11-17 11:39 UTC",
             "Facts": "Iran secured a spot in the 2027 AFC U17 Asian Cup in Uzbekistan after defeating Jordan 3-0 in their Qualifiers Group D match on Tuesday.",
             "Macro_Context": "Sports news regarding regional soccer qualifications in Asia."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 11:54 UTC",
+        "original_date": "2026-11-17 11:54",
+        "_timestamp": 1794916469.0,
+        "articles": [
+            {
+                "title": "Young Palestinian man killed by Israeli fire in central Gaza",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/young-palestinian-man-killed-israeli-fire-central-gaza",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 11:54",
+                "description": "Young Palestinian man killed by Israeli fire in central Gaza\n\n    \n    \n\n        \n    \n                Wafa reports, citing local sources, that a young Palestinian man has been killed and others wounded in an Israeli attack east of the city of Deir el-Balah in central Gaza.\n\nAccording to the sources, Israeli forces opened fire on civilians in the&nbsp;al-Ja'farawi area, killng one man and wounding others.",
+                "_timestamp": 1794916469.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 3,
+            "Is_Gold_Relevant": false,
+            "Dominant_Driver": "Israel & Middle East Escalation",
+            "Event_Timestamp": "2026-11-17 11:54 UTC",
+            "Facts": "[Update 2026-11-17 11:54 UTC via Middle East Eye]: A young Palestinian man was killed and others were wounded by Israeli military fire targeting civilians east of Deir el-Balah in central Gaza.",
+            "Macro_Context": "Ongoing military engagements and localized casualties in the Gaza Strip continue to maintain heightened geopolitical tensions across the region."
         }
     }
 ]

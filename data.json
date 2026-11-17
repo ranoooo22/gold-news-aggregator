@@ -5347,9 +5347,9 @@
         "max_dd_usd": 52.22
     },
     {
-        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-17 10:56 UTC",
+        "main_date": "First Reported: 2026-11-02 21:53 UTC | Last Update: 2026-11-17 11:19 UTC",
         "original_date": "2026-11-02 21:53",
-        "_timestamp": 1794913002.0,
+        "_timestamp": 1794914344.0,
         "articles": [
             {
                 "title": "IRGC downs 55th US MQ-9 over Strait of Hormuz",
@@ -6110,16 +6110,24 @@
                 "date": "2026-11-17 10:56",
                 "description": "Iran's IRGC says two tankers ablaze in Hormuz\n\n    \n    \n\n        \n    \n                The IRGC reports that two tankers caught fire after colliding with naval mines in the Strait of Hormuz.\n\nIn comments carried by Iran's Fars News Agency, the IRGC's navy said that one of the ships was a supertanker carrying over 2m barrels of crude oil, while the other was transporting liquefied natural gas.\n\nIt added that both vessels, which it said were suppo",
                 "_timestamp": 1794913002.0
+            },
+            {
+                "title": "Vessels on fire after naval mine hit in Hormuz Strait, Iran says",
+                "link": "https://www.aljazeera.com/video/newsfeed/2026/11/17/vessels-on-fire-after-naval-mine-hit-in-hormuz-strait-iran-says?traffic_source=rss",
+                "source": "Al Jazeera English",
+                "date": "2026-11-17 11:19",
+                "description": "Two vessels have caught fire after hitting a naval mine in the Strait of Hormuz.",
+                "_timestamp": 1794914344.0
             }
         ],
         "needs_update": false,
         "summary": {
-            "Cluster_ID": 1,
+            "Cluster_ID": 0,
             "Is_Gold_Relevant": true,
             "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-17 10:56 UTC",
-            "Facts": "[Update 2026-11-17 10:56 UTC via Middle East Eye]: Two tankers, including a supertanker carrying over two million barrels of crude oil and an LNG vessel, caught fire after colliding with naval mines in the Strait of Hormuz. [Update 2026-11-17 03:39 UTC via Mehr News Agency]: The IRGC Aerospace Force captured a U.S. MQM-170 drone over Qeshm Island via electronic warfare operations.",
-            "Macro_Context": "Escalating military friction and infrastructure threats near the Strait of Hormuz heighten geopolitical risk premiums for global energy shipments."
+            "Event_Timestamp": "2026-11-17 11:19 UTC",
+            "Facts": "[Update 2026-11-17 04:43 UTC via Mehr News Agency]: An oil tanker caught fire after striking a naval mine in the Strait of Hormuz. [Update 2026-11-17 10:56 UTC via Middle East Eye]: Iran's IRGC reported that two tankers, including a supertanker carrying over two million barrels of crude oil and an LNG carrier, caught fire after colliding with naval mines in the strait. Initially, Iran's IRGC announced the seizure of a US MQM-170 drone flying near Qeshm Island.",
+            "Macro_Context": "Escalating maritime security incidents in the Strait of Hormuz heighten geopolitical risk premiums for crude oil and safe-haven assets such as gold."
         },
         "eval_status": "MISS",
         "max_dd_usd": 0.0

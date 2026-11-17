@@ -9181,37 +9181,6 @@
         "max_dd_usd": 1.65
     },
     {
-        "main_date": "First Reported: 2026-11-16 07:33 UTC",
-        "original_date": "2026-11-16 07:33",
-        "_timestamp": 1794814409.0,
-        "articles": [
-            {
-                "title": "War on Iran has cost US taxpayers over $47 billion: Kent",
-                "link": "https://en.mehrnews.com/news/249442/War-on-Iran-has-cost-US-taxpayers-over-47-billion-Kent",
-                "source": "Mehr News Agency",
-                "date": "2026-11-16 07:33",
-                "description": "TEHRAN, Nov. 16 (MNA) – Former Director of the National Counterterrorism Center Joe Kent has said that war against Iran has cost US taxpayers over $47 billion.",
-                "_timestamp": 1794814409.0
-            }
-        ],
-        "needs_update": false,
-        "summary": {
-            "Cluster_ID": 1,
-            "Is_Gold_Relevant": true,
-            "Dominant_Driver": "Iran & Strait of Hormuz",
-            "Event_Timestamp": "2026-11-16 07:33 UTC",
-            "Facts": "Former National Counterterrorism Center Director Joe Kent revealed that ongoing hostilities and military posture against Iran have imposed a cumulative financial burden exceeding $47 billion on US taxpayers. This commentary highlights the mounting fiscal and strategic costs associated with protracted tensions in the Middle East. | Extended military expenditures contribute to broader fiscal deficit concerns and geopolitical friction involving Iran.",
-            "Macro_Context": "Persistent fiscal outlays for Middle East conflicts compound US debt burdens and heighten geopolitical friction, providing a supportive macro backdrop for Gold.",
-            "Impact_Timing": "Short-term (2-6 hours)",
-            "Timeframe": "Structural Weekly Regime",
-            "XAUUSD_Impact": "Bullish",
-            "Probability_Percent": 60,
-            "Orderflow_Price_Target": "3890.05"
-        },
-        "eval_status": "HIT",
-        "max_dd_usd": 8.9
-    },
-    {
         "main_date": "First Reported: 2026-11-15 02:07 UTC | Last Update: 2026-11-17 07:25 UTC",
         "original_date": "2026-11-15 02:07",
         "_timestamp": 1794900339.0,
@@ -12475,6 +12444,54 @@
             "Event_Timestamp": "2026-11-17 07:11 UTC",
             "Facts": "[Update 2026-11-17 07:11 UTC via Yahoo Finance Oil]: Woodside Energy Group and other global producers face an emerging global oil supply surplus, with supply expected to exceed demand through at least 2027 according to the International Energy Agency. Recovering Middle East exports and softer Chinese consumption are cited as key drivers.",
             "Macro_Context": "Persistent global oil surpluses and weaker consumption trends weigh on energy sector revenue mixes and operating cash flows."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 07:35 UTC",
+        "original_date": "2026-11-17 07:35",
+        "_timestamp": 1794900958.0,
+        "articles": [
+            {
+                "title": "Indian minister confirms no casualties onboard tanker hit by missile in Hormuz Strait",
+                "link": "https://www.middleeasteye.net/live-blog/live-blog-update/indian-minister-confirms-no-casualties-onboard-tanker-hit-missile-hormuz",
+                "source": "Middle East Eye",
+                "date": "2026-11-17 07:35",
+                "description": "Indian minister confirms no casualties onboard tanker hit by missile in Hormuz Strait\n\n    \n    \n\n        \n    \n                India’s Shipping Minister Sarbananda Sonowal announced that there were no casualties following a missile strike on a vessel in the Strait of Hormuz.\n\nThe&nbsp;Panama-flagged liquefied petroleum gas (LPG) tanker Tara Gas&nbsp;was carrying 24 Indian sailors at the time.&nbsp;\n\n\"All 24 Indian nationals, along with the entir",
+                "_timestamp": 1794900958.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 0,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-17 07:35 UTC",
+            "Facts": "India’s Shipping Minister Sarbananda Sonowal announced that there were no casualties after the Panama-flagged LPG tanker Tara Gas, carrying 24 Indian sailors, was hit by a missile in the Strait of Hormuz.",
+            "Macro_Context": "Geopolitical tensions in the Middle East impacting vital maritime shipping lanes and energy transport routes."
+        }
+    },
+    {
+        "main_date": "First Reported: 2026-11-17 07:37 UTC",
+        "original_date": "2026-11-17 07:37",
+        "_timestamp": 1794901057.0,
+        "articles": [
+            {
+                "title": "Iran arrangement for Hormuz only safe route despite rhetoric",
+                "link": "https://en.mehrnews.com/news/249479/Iran-arrangement-for-Hormuz-only-safe-route-despite-rhetoric",
+                "source": "Mehr News Agency",
+                "date": "2026-11-17 07:37",
+                "description": "TEHRAN, Nov. 17 (MNA) – Deputy Speaker of Iranian Parliament Ali Nikzad has emphasized that the Iranian arrangement for the Strait of Hormuz is the only safe route in spite of the enemy’s rhetoric.",
+                "_timestamp": 1794901057.0
+            }
+        ],
+        "needs_update": false,
+        "summary": {
+            "Cluster_ID": 1,
+            "Is_Gold_Relevant": true,
+            "Dominant_Driver": "Iran & Strait of Hormuz",
+            "Event_Timestamp": "2026-11-17 07:37 UTC",
+            "Facts": "Deputy Speaker of the Iranian Parliament Ali Nikzad stated that Iran's security arrangement for the Strait of Hormuz remains the only safe route despite external rhetoric.",
+            "Macro_Context": "Regional maritime security claims and sovereignty messaging amid heightened tensions in the Strait of Hormuz."
         }
     }
 ]

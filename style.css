@@ -81,7 +81,7 @@ input[type="checkbox"] { accent-color: var(--amber); }
 .dom-head { display: grid; grid-template-columns: 1fr 76px 1fr; font: 700 0.66rem var(--mono); color: var(--muted); text-transform: uppercase; padding: 0 2px 4px; border-bottom: 1px solid var(--line); }
 .dom-head span:nth-child(2) { text-align: center; }
 .dom-head span:nth-child(3) { text-align: right; }
-.dom-ladder { flex: 1; overflow-y: auto; min-height: 0; max-height: 540px; font-family: var(--mono); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+.dom-ladder { position: relative; flex: 1; overflow-y: auto; min-height: 0; max-height: 330px; font-family: var(--mono); font-size: 0.72rem; font-variant-numeric: tabular-nums; }
 .dom-ladder.short { max-height: 300px; }
 .dom-row { display: grid; grid-template-columns: 1fr 76px 1fr; align-items: center; height: 19px; border-bottom: 1px solid rgba(255, 255, 255, 0.03); }
 .dom-row:hover { background: var(--panel-2); }
@@ -100,6 +100,12 @@ input[type="checkbox"] { accent-color: var(--amber); }
 .dom-side.bid { background: linear-gradient(to left, rgba(0, 194, 110, 0.07), transparent); }
 .dom-side.ask { background: linear-gradient(to right, rgba(255, 77, 79, 0.07), transparent); }
 .dom-spot { display: flex; justify-content: space-between; padding: 3px 8px; margin: 2px 0; background: #000; border: 1px solid var(--amber); border-radius: 3px; color: var(--amber); font-weight: 800; }
+.ladder-head { margin-top: 12px; }
+.largest td { padding: 3px 6px; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.largest tr.ask td:first-child, .largest tr.ask b { color: #ff8a8c; }
+.largest tr.bid td:first-child, .largest tr.bid b { color: #5cf0a8; }
+.largest tr.spot-sep td { text-align: center; color: var(--amber); font: 700 0.68rem var(--mono); border-top: 1px solid var(--amber); border-bottom: 1px solid var(--amber); padding: 3px; }
+td.warn { color: var(--amber); }
 .dom-totals { font-size: 0.74rem; color: var(--text-2); padding-top: 8px; border-top: 1px solid var(--line); margin-top: 6px; }
 
 .info-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin-top: 12px; }

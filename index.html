@@ -37,12 +37,13 @@
                     <button data-tf="1H">1H</button><button data-tf="4H">4H</button><button data-tf="1D">1D</button>
                 </div>
                 <div class="toolbar-opts">
-                    <label>Bucket <select id="opt-step">
-                        <option value="0.5">$0.50</option><option value="1">$1</option>
-                        <option value="2">$2</option><option value="5">$5</option>
-                    </select></label>
                     <label>Range <select id="opt-range">
-                        <option value="0.5">±0.5%</option><option value="1">±1%</option><option value="2">±2%</option>
+                        <option value="25">±$25</option><option value="50">±$50</option>
+                        <option value="100">±$100</option><option value="200">±$200</option>
+                    </select></label>
+                    <label title="Price step per ladder row. Auto keeps the ladder at about 80 rows.">Bucket <select id="opt-step">
+                        <option value="auto">Auto</option><option value="0.5">$0.50</option><option value="1">$1</option>
+                        <option value="2">$2</option><option value="5">$5</option><option value="10">$10</option>
                     </select></label>
                     <label title="Averages each price level over time: orders that stay put show at full size, orders that flash in and out fade away.">Smoothing <select id="opt-smooth">
                         <option value="0">Live</option><option value="1">1 min</option>
@@ -71,6 +72,10 @@
 
                 <div class="panel dom-panel">
                     <div class="panel-head">
+                        <span class="panel-title" id="largest-title">Largest levels</span>
+                    </div>
+                    <div id="largest-levels"></div>
+                    <div class="panel-head ladder-head">
                         <span class="panel-title">Combined order book</span>
                         <button class="link-btn" id="dom-recenter">Center</button>
                     </div>
@@ -86,7 +91,8 @@
                     <div class="table-scroll">
                         <table class="data-table">
                             <thead><tr><th>Venue</th><th>Market</th><th>Status</th><th class="num">Mid</th>
-                                <th class="num" title="Venue mid minus spot">vs spot</th><th class="num">Bid oz</th><th class="num">Ask oz</th></tr></thead>
+                                <th class="num" title="Venue mid minus spot">vs spot</th><th class="num">Bid oz</th><th class="num">Ask oz</th>
+                                <th class="num" title="How far this venue's book reaches from spot">Reach</th></tr></thead>
                             <tbody id="venue-table-body"></tbody>
                         </table>
                     </div>
@@ -129,6 +135,8 @@
                     <option>Middle East</option>
                     <option>Trade &amp; Sanctions</option>
                     <option>Other Geopolitics</option>
+                    <option>AI &amp; Tech</option>
+                    <option>Stock Markets</option>
                     <option>Other</option>
                 </select>
                 <select id="news-hours">

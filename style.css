@@ -118,6 +118,16 @@ td.warn { color: var(--amber); }
 .venue-toggle { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
 .swatch { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
 
+/* ---------- COT */
+.cot-panel { margin-top: 12px; }
+.cot-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.cot-chart-title { font: 700 0.66rem var(--mono); color: var(--muted); text-transform: uppercase; margin-bottom: 4px; }
+#cot-chart { height: 220px; }
+.range-cell { min-width: 90px; }
+.range-bar { position: relative; height: 6px; border-radius: 3px; background: linear-gradient(to right, rgba(255, 77, 79, 0.35), var(--panel-2), rgba(0, 194, 110, 0.35)); }
+.range-bar span { position: absolute; top: -3px; width: 3px; height: 12px; margin-left: -1px; background: var(--amber); border-radius: 1px; }
+.cot-panel .note a { color: var(--text-2); }
+
 /* ---------- news */
 .news-toolbar input[type="search"] { flex: 1 1 260px; }
 .news-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; font-size: 0.8rem; color: var(--text-2); margin-bottom: 10px; }
@@ -167,6 +177,7 @@ td.warn { color: var(--amber); }
     .dom-ladder { max-height: 420px; }
     .info-grid { grid-template-columns: 1fr 1fr; }
     .info-grid > .panel:first-child { grid-column: 1 / -1; }
+    .cot-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 680px) {
     .topbar-inner { gap: 10px; padding: 8px 12px; }

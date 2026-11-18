@@ -119,6 +119,22 @@
                     <p class="note">Share of OANDA's open client orders per price level. One broker's retail clients, refreshed by OANDA every 20 min.</p>
                 </div>
             </div>
+
+            <div class="panel cot-panel">
+                <div class="panel-head">
+                    <span class="panel-title">CFTC Commitments of Traders · COMEX gold futures</span>
+                    <span class="muted small" id="cot-asof"></span>
+                </div>
+                <div class="cot-grid">
+                    <div class="table-scroll" id="cot-table"><div class="empty">Loading…</div></div>
+                    <div>
+                        <div class="cot-chart-title">Managed money net position, 52 weeks (contracts)</div>
+                        <div id="cot-chart"></div>
+                    </div>
+                </div>
+                <p class="note">Weekly positions of large traders as reported to the CFTC (Disaggregated report, futures only).
+                    Source: <a href="https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm" target="_blank" rel="noopener noreferrer">cftc.gov</a>.</p>
+            </div>
         </section>
 
         <!-- NEWS -->
@@ -182,6 +198,7 @@
     <script src="js/util.js"></script>
     <script src="js/market.js"></script>
     <script src="js/news.js"></script>
+    <script src="js/cot.js"></script>
     <script>
         (function () {
             const show = (tab) => {
@@ -193,6 +210,7 @@
             show(store.get('gt_tab', 'market'));
             startMarket();
             startNews();
+            startCot();
         })();
     </script>
 </body>

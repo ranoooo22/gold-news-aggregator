@@ -55,6 +55,7 @@ def google_news(query):
 FEEDS = {
     "CNBC Economy": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
     "Investing.com": "https://www.investing.com/rss/news_11.rss",
+    "CNBC Technology": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910",
     "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml",
     "Middle East Eye": "https://www.middleeasteye.net/rss",
     "Tehran Times": "https://www.tehrantimes.com/rss",
@@ -67,6 +68,8 @@ FEEDS = {
     "GN Middle East": google_news('Iran OR Israel OR Hormuz OR Houthi OR "Red Sea"'),
     "GN Times of Israel": google_news("site:timesofisrael.com"),
     "GN Arab News": google_news("site:arabnews.com"),
+    "GN AI & Tech": google_news('Nvidia OR "AI chips" OR semiconductors OR OpenAI OR "AI spending" OR "data centers"'),
+    "GN Stock Markets": google_news('"stock market" OR Nasdaq OR "S&P 500" OR "Wall Street"'),
 }
 
 # Google News returns hundreds of publishers, many of them SEO sites, broker promos and
@@ -78,7 +81,9 @@ GOOGLE_NEWS_PUBLISHERS = {
     "the wall street journal", "cnbc", "marketwatch", "barron's", "the economist", "nikkei asia",
     "kitco", "mining", "mining weekly", "world gold council", "oilprice", "s&p global",
     "argus media", "gcaptain", "lloyd's list", "tradewinds news", "investing", "yahoo finance",
-    "morningstar", "axios", "politico",
+    "morningstar", "axios", "politico", "fortune", "business insider", "investor's business daily",
+    # tech press
+    "techcrunch", "the verge", "the information", "wired", "ars technica", "semafor",
     # general news
     "bbc", "the guardian", "the new york times", "the washington post", "npr", "cnn", "nbc news",
     "cbs news", "abc news", "fox news", "france 24", "dw", "euronews", "south china morning post",
@@ -93,7 +98,8 @@ GOOGLE_NEWS_PUBLISHERS = {
 FILLER_RE = re.compile(
     r"\b(?:price forecast|price prediction|predictions?:|technical analysis|price today|prices today"
     r"|price of (?:gold|oil|silver) today|current price of|should you buy|to buy now|best (?:places|way)s? to buy"
-    r"|stocks? to buy|elliott wave)\b", re.IGNORECASE)
+    r"|stocks? to buy|elliott wave|better buy|buy the dip|is it time to (?:buy|sell)|should you sell"
+    r"|top \d+ stocks|millionaire|could make you rich|price target|how to trade|analysts? (?:believe|see|expect)\b.*\bcould\b|could (?:rally|soar|surge|double|triple))\b", re.IGNORECASE)
 
 # Outlets editorially controlled by a government. Shown with a label; their claims get attributed.
 STATE_AFFILIATED = {
@@ -119,12 +125,17 @@ KEYWORDS = [
     r"houthis?", r"yemen", r"red sea", r"bab al-mandab", r"saudi", r"missiles?", r"air ?strikes?",
     r"drones?", r"ceasefire", r"truce", r"nuclear", r"ukraine", r"russia", r"taiwan", r"war",
     r"invasion", r"military",
+    # AI, tech & equity markets
+    r"ai", r"artificial intelligence", r"openai", r"nvidia", r"nvda", r"tsmc", r"amd", r"broadcom",
+    r"semiconductors?", r"chips?", r"chipmakers?", r"data cent(?:er|re)s?", r"hyperscalers?",
+    r"big tech", r"magnificent seven", r"nasdaq", r"s&p 500", r"stock market", r"wall street",
 ]
 KEYWORD_RE = re.compile(r"\b(?:" + "|".join(KEYWORDS) + r")\b", re.IGNORECASE)
 
 TOPICS = [
     "Gold & Precious Metals", "Fed & US Rates", "Economic Data", "Central Banks",
-    "Oil & Energy", "Middle East", "Trade & Sanctions", "Other Geopolitics", "Other",
+    "Oil & Energy", "Middle East", "Trade & Sanctions", "Other Geopolitics",
+    "AI & Tech", "Stock Markets", "Other",
 ]
 
 
@@ -297,9 +308,13 @@ Rules:
 - topic: the single best category.
 - on_topic: true if the story is about gold or precious metals markets, US monetary policy or rates,
   major economic data, central banks, the US dollar, oil or energy supply, armed conflict or sanctions
-  involving major economies or energy producers, or trade policy between major economies.
-  false for: individual company news (including mining exploration/drill results and single-stock news),
-  local crime, domestic politics without economic or military relevance, sports, culture, opinion pieces.
+  involving major economies or energy producers, trade policy between major economies, broad stock market
+  moves, or major AI/technology developments: earnings, guidance and leadership changes at the largest
+  tech/AI companies (e.g. Nvidia, Microsoft, Alphabet, Amazon, Meta, Apple, TSMC, OpenAI), AI investment
+  and data-center spending, chip export controls.
+  false for: other individual company news (including mining exploration/drill results and small-cap stocks),
+  product launches and reviews, stock picks and investing advice, local crime, domestic politics without
+  economic or military relevance, sports, culture, opinion pieces.
 
 Clusters:
 {clusters}
@@ -386,7 +401,7 @@ def fetch_oanda_book():
             {"price": float(b["price"]),
              "long_pct": float(b["longCountPercent"]),
              "short_pct": float(b["shortCountPercent"])}
-            for b in ob["buckets"] if abs(float(b["price"]) - price) / price <= 0.02
+            for b in ob["buckets"] if abs(float(b["price"]) - price) / price <= 0.06
         ]
         return {"time": ob["time"], "price": price, "bucket_width": float(ob["bucketWidth"]), "buckets": buckets}
     except Exception as ex:

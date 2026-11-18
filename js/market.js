@@ -15,7 +15,7 @@ const TIMEFRAMES = { '1m': '1m', '5m': '5m', '15m': '15m', '1H': '1H', '4H': '4H
 const TF_SECONDS = { '1m': 60, '5m': 300, '15m': 900, '1H': 3600, '4H': 14400, '1D': 86400 };
 
 const SPOT_POLL_MS = 2000;
-const BOOK_POLL_MS = 3000;
+const BOOK_POLL_MS = 6000;      // deep books are ~80 KB each; with smoothing faster polling adds nothing
 const REF_POLL_MS = 5000;
 const VENUE_RETRY_MS = 30000;   // wait this long after a venue errors
 const MAX_VENUE_DEVIATION = 0.03; // ignore a venue whose mid is >3% away from spot (bad data)
@@ -39,16 +39,16 @@ function krakenBook(json) {
 const VENUES = [
     {
         id: 'okx-perp', exchange: 'OKX', instrument: 'XAU/USDT perpetual', color: '#f5a524',
-        url: `${OKX}/market/books?instId=XAU-USDT-SWAP&sz=400`,
+        url: `${OKX}/market/books-full?instId=XAU-USDT-SWAP&sz=2000`,
         parse: (j) => okxBook(j, okxContractOz),
     },
     {
         id: 'okx-paxg', exchange: 'OKX', instrument: 'PAXG/USDT', color: '#ffd166',
-        url: `${OKX}/market/books?instId=PAXG-USDT&sz=400`, parse: (j) => okxBook(j, 1),
+        url: `${OKX}/market/books-full?instId=PAXG-USDT&sz=2000`, parse: (j) => okxBook(j, 1),
     },
     {
         id: 'okx-xaut', exchange: 'OKX', instrument: 'XAUT/USDT', color: '#c9a227',
-        url: `${OKX}/market/books?instId=XAUT-USDT&sz=400`, parse: (j) => okxBook(j, 1),
+        url: `${OKX}/market/books-full?instId=XAUT-USDT&sz=2000`, parse: (j) => okxBook(j, 1),
     },
     {
         id: 'kraken-paxg', exchange: 'Kraken', instrument: 'PAXG/USD', color: '#8b7cf6',
@@ -92,14 +92,34 @@ let okxContractOz = 0.001; // replaced by the live contract spec on start
 const settings = Object.assign({
     chartMode: 'spot',   // 'spot' | 'tradingview'
     tf: '15m',
-    step: 1,             // $ bucket size for depth
-    rangePct: 1,         // show depth within ±range% of spot
+    step: 'auto',        // $ bucket size for depth, or 'auto' (depends on the range)
+    rangeUsd: 100,       // show depth within ±$ of spot
     align: true,         // shift each venue by its offset to spot
     walls: true,         // draw largest levels as lines
     smooth: 5,           // minutes of time-averaging for the depth (0 = live)
     levels: 'larger',    // 'all' | 'larger' | 'largest': which levels are drawn on the chart
     enabled: {},         // venue id -> false when switched off
 }, store.get('gt_market_settings', {}));
+// settings saved before the range became a $ amount: switch to the new defaults
+if (settings.rangePct !== undefined) {
+    settings.rangePct = undefined;
+    settings.rangeUsd = 100;
+    settings.step = 'auto';
+    store.set('gt_market_settings', settings);
+}
+
+// Liquidity on these books is always densest right at spot. The "largest levels" table and
+// the marked lines skip this zone (the ladder shows it) so that big orders further out surface.
+const NEAR_ZONE_USD = 10;
+const isFarLevel = (b) => Math.abs(b.price - state.spot) >= NEAR_ZONE_USD;
+
+const AUTO_STEPS = [0.5, 1, 2, 5, 10];
+// 'auto' picks the smallest bucket that keeps the ladder at roughly 80 rows or fewer
+function effectiveStep() {
+    if (settings.step !== 'auto') return Number(settings.step);
+    const raw = (settings.rangeUsd * 2) / 80;
+    return AUTO_STEPS.find((x) => x >= raw) || AUTO_STEPS[AUTO_STEPS.length - 1];
+}
 
 function saveSettings() { store.set('gt_market_settings', settings); }
 
@@ -215,6 +235,7 @@ async function pollVenue(v) {
 async function pollBooks() {
     await Promise.allSettled(VENUES.map(pollVenue));
     aggregateBooks();
+    renderLargest();
     renderLadder();
     renderVenueTable();
     renderWalls();
@@ -227,9 +248,10 @@ async function pollBooks() {
 function aggregateBooks() {
     const spot = state.spot;
     if (!spot) { state.buckets = []; state.maxOz = 0; return; }
-    const lo = spot * (1 - settings.rangePct / 100);
-    const hi = spot * (1 + settings.rangePct / 100);
-    const step = settings.step;
+    const lo = spot - settings.rangeUsd;
+    const hi = spot + settings.rangeUsd;
+    const step = effectiveStep();
+    if (state.lastStep !== step) { resetDepthHistory(); state.lastStep = step; }
 
     const now = Date.now() / 1000;
     const dt = state.lastAggregate ? Math.min(now - state.lastAggregate, 60) : 0;
@@ -247,6 +269,8 @@ function aggregateBooks() {
         vs.offsetSmooth = isFinite(vs.offsetSmooth) ? vs.offsetSmooth + offsetAlpha * (vs.offset - vs.offsetSmooth) : vs.offset;
         const shift = settings.align ? vs.offsetSmooth : 0;
         vs.bidOz = 0; vs.askOz = 0;
+        // how far this venue's book reaches from spot (the shallower side counts)
+        vs.reach = Math.min(spot - (vs.bids[vs.bids.length - 1][0] - shift), (vs.asks[vs.asks.length - 1][0] - shift) - spot);
         const add = (side, rows) => {
             for (const [px, oz] of rows) {
                 const p = px - shift;
@@ -321,13 +345,34 @@ function venueBreakdown(by) {
 
 let ladderCentered = false;
 
+// The 5 biggest bid and ask levels in the range, with their distance from spot.
+function renderLargest() {
+    const el = $('largest-levels');
+    if (!state.buckets.length) { el.innerHTML = ''; return; }
+    const decimals = effectiveStep() < 1 ? 1 : 0;
+    const top = (side) => state.buckets.filter((b) => b[side] > 0 && isFarLevel(b)).sort((a, b) => b[side] - a[side]).slice(0, 5);
+    const row = (b, side) => `<tr class="${side}">
+        <td>${side === 'bid' ? 'Bid' : 'Ask'}</td>
+        <td class="num">${fmt(b.price, decimals)}</td>
+        <td class="num"><b>${fmt(b[side], 0)} oz</b></td>
+        <td class="num muted">${fmtSigned(b.price - state.spot, 0)}</td>
+    </tr>`;
+    const asks = top('ask').sort((a, b) => b.price - a.price).map((b) => row(b, 'ask'));
+    const bids = top('bid').sort((a, b) => b.price - a.price).map((b) => row(b, 'bid'));
+    el.innerHTML = `<table class="data-table largest">
+        <thead><tr><th></th><th class="num">Price</th><th class="num">Size</th><th class="num">vs spot</th></tr></thead>
+        <tbody>${asks.join('')}<tr class="spot-sep"><td colspan="4">Spot ${fmt(state.spot)}</td></tr>${bids.join('')}</tbody>
+    </table>`;
+    $('largest-title').textContent = `Largest levels $${NEAR_ZONE_USD}–$${settings.rangeUsd} from spot`;
+}
+
 function renderLadder() {
     const el = $('dom-ladder');
     if (!state.buckets.length) {
         el.innerHTML = '<div class="empty">No order book data yet.</div>';
         return;
     }
-    const decimals = settings.step < 1 ? 1 : 0;
+    const decimals = effectiveStep() < 1 ? 1 : 0;
     let spotInserted = false;
     const rows = [];
     let totalBid = 0, totalAsk = 0;
@@ -351,7 +396,7 @@ function renderLadder() {
     const prevScroll = el.scrollTop;
     el.innerHTML = rows.join('');
     $('dom-totals').innerHTML =
-        `Bids <b class="up">${fmt(totalBid, 0)} oz</b> · Asks <b class="down">${fmt(totalAsk, 0)} oz</b> within ±${settings.rangePct}%`;
+        `Bids <b class="up">${fmt(totalBid, 0)} oz</b> · Asks <b class="down">${fmt(totalAsk, 0)} oz</b> within ±$${settings.rangeUsd}`;
     if (!ladderCentered) {
         const spotRow = $('dom-spot-row');
         if (spotRow) el.scrollTop = spotRow.offsetTop - el.clientHeight / 2;
@@ -380,6 +425,7 @@ function renderVenueTable() {
             <td class="num">${ok ? fmtSigned(vs.offset) : '–'}</td>
             <td class="num">${ok ? fmt(vs.bidOz, 1) : '–'}</td>
             <td class="num">${ok ? fmt(vs.askOz, 1) : '–'}</td>
+            <td class="num ${ok && vs.reach < settings.rangeUsd ? 'warn' : ''}" title="${ok && vs.reach < settings.rangeUsd ? 'This book does not reach the full range' : ''}">${ok ? '±$' + fmt(Math.min(vs.reach, 999), 0) : '–'}</td>
         </tr>`;
     }).join('');
     $('venue-table-body').innerHTML = rows;
@@ -402,6 +448,19 @@ function initChart() {
         upColor: '#00c26e', downColor: '#ff4d4f', borderVisible: false,
         wickUpColor: '#00c26e', wickDownColor: '#ff4d4f',
         priceFormat: { type: 'price', precision: 2, minMove: 0.01 },
+        autoscaleInfoProvider: (original) => {
+            const res = original();
+            const prices = [...lastWallSet.bid, ...lastWallSet.ask];
+            if (!res || !settings.walls || settings.chartMode !== 'spot' || !prices.length) return res;
+            const pad = effectiveStep();
+            return {
+                priceRange: {
+                    minValue: Math.min(res.priceRange.minValue, ...prices) - pad,
+                    maxValue: Math.max(res.priceRange.maxValue, ...prices) + pad,
+                },
+                margins: res.margins,
+            };
+        },
     });
     state.overlay = $('depth-overlay');
     requestAnimationFrame(drawOverlayLoop);
@@ -436,7 +495,7 @@ function drawDepthOverlay() {
     const paneWidth = state.chart.timeScale().width();
     const paneHeight = rect.height - state.chart.timeScale().height();
     const maxLen = Math.min(220, paneWidth * 0.28);
-    const half = settings.step / 2;
+    const half = effectiveStep() / 2;
     for (const b of state.buckets) {
         const yTop = state.series.priceToCoordinate(b.price + half);
         const yBot = state.series.priceToCoordinate(b.price - half);
@@ -465,7 +524,7 @@ let lastWallSet = { bid: [], ask: [] };
 let lastWallDraw = 0;
 
 function pickWalls(side) {
-    const ranked = state.buckets.filter((b) => isSignificant(b[side])).sort((a, b) => b[side] - a[side]);
+    const ranked = state.buckets.filter((b) => isSignificant(b[side]) && isFarLevel(b)).sort((a, b) => b[side] - a[side]);
     const keepable = new Set(ranked.slice(0, WALL_KEEP_RANK).map((b) => b.price));
     const chosen = lastWallSet[side].filter((p) => keepable.has(p)).slice(0, WALL_COUNT);
     for (const b of ranked) {
@@ -544,10 +603,10 @@ async function loadOanda() {
     const el = $('oanda-book');
     try {
         const ob = await getJSON(`oanda_book.json?t=${Date.now()}`);
-        const width = Math.max(2, ob.bucket_width);
+        const width = Math.max(ob.bucket_width, effectiveStep());
         const groups = new Map();
         ob.buckets.forEach((b) => {
-            if (Math.abs(b.price - ob.price) > 40) return;
+            if (Math.abs(b.price - ob.price) > settings.rangeUsd) return;
             const key = Math.round(b.price / width) * width;
             const g = groups.get(key) || { price: key, buy: 0, sell: 0 };
             g.buy += b.long_pct; g.sell += b.short_pct;
@@ -572,7 +631,7 @@ function syncControls() {
     document.querySelectorAll('[data-chart-mode]').forEach((b) => b.classList.toggle('active', b.dataset.chartMode === settings.chartMode));
     document.querySelectorAll('[data-tf]').forEach((b) => b.classList.toggle('active', b.dataset.tf === settings.tf));
     $('opt-step').value = String(settings.step);
-    $('opt-range').value = String(settings.rangePct);
+    $('opt-range').value = String(settings.rangeUsd);
     $('opt-align').checked = settings.align;
     $('opt-smooth').value = String(settings.smooth);
     $('opt-levels').value = settings.levels;
@@ -595,8 +654,8 @@ function bindControls() {
     document.querySelectorAll('[data-tf]').forEach((b) => b.addEventListener('click', () => {
         settings.tf = b.dataset.tf; saveSettings(); syncControls(); loadCandles();
     }));
-    $('opt-step').addEventListener('change', (e) => { settings.step = Number(e.target.value); saveSettings(); resetDepthHistory(); refreshDepthViews(); });
-    $('opt-range').addEventListener('change', (e) => { settings.rangePct = Number(e.target.value); saveSettings(); ladderCentered = false; refreshDepthViews(); });
+    $('opt-step').addEventListener('change', (e) => { settings.step = e.target.value === 'auto' ? 'auto' : Number(e.target.value); saveSettings(); resetDepthHistory(); refreshDepthViews(); });
+    $('opt-range').addEventListener('change', (e) => { settings.rangeUsd = Number(e.target.value); saveSettings(); ladderCentered = false; refreshDepthViews(); });
     $('opt-align').addEventListener('change', (e) => { settings.align = e.target.checked; saveSettings(); resetDepthHistory(); refreshDepthViews(); });
     $('opt-smooth').addEventListener('change', (e) => { settings.smooth = Number(e.target.value); saveSettings(); syncControls(); refreshDepthViews(); });
     $('opt-levels').addEventListener('change', (e) => { settings.levels = e.target.value; saveSettings(); refreshDepthViews(); });
@@ -613,7 +672,7 @@ function bindControls() {
 }
 
 function refreshDepthViews() {
-    aggregateBooks(); renderLadder(); renderVenueTable(); renderWalls(true);
+    aggregateBooks(); renderLargest(); renderLadder(); renderVenueTable(); renderWalls(true);
 }
 
 // ---------------------------------------------------------------- start

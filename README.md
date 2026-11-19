@@ -14,7 +14,7 @@ No analysis, signals or predictions anywhere.
 |---|---|---|
 | Spot price & candles | OKX XAU/USD index (composite of spot quotes) | live, every 2 s, in the browser |
 | Order books | OKX XAU/USDT perp, OKX PAXG/XAUT, Kraken PAXG/XAUT, Binance PAXG, Bybit XAUT | live, every 6 s, in the browser |
-| Volume profile | OKX XAU/USDT perp candles (volume in oz), aligned to the spot index | every 15 min, in the browser |
+| Volume profile | COMEX gold futures (GC=F) hourly volume via Yahoo Finance (`comex_volume.json`), or OKX XAU/USDT perp candles; both aligned to the spot index | COMEX: each workflow run; OKX: in the browser |
 | Aggressor flow | OKX hourly taker buy/sell volume of the XAU/USDT perp (`taker_volume.json`) | hourly |
 | Reference quotes | OANDA, Forex.com, Pepperstone, ICE, TVC via TradingView's scanner | every 5 s, in the browser |
 | OANDA client orders | OANDA v20 API (`oanda_book.json`) | each workflow run |

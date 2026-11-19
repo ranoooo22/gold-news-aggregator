@@ -121,7 +121,8 @@ td.warn { color: var(--amber); }
 .swatch { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
 
 /* ---------- COT */
-.cot-panel { margin-top: 12px; }
+.cot-panel, .flow-panel { margin-top: 12px; }
+#flow-chart { height: 220px; }
 .cot-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 16px; align-items: start; }
 .cot-chart-title { font: 700 0.66rem var(--mono); color: var(--muted); text-transform: uppercase; margin-bottom: 4px; }
 #cot-chart { height: 220px; }
@@ -133,7 +134,7 @@ td.warn { color: var(--amber); }
 /* ---------- macro tab */
 .macro-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 12px; align-items: start; }
 .macro-table tr.group-row td { color: var(--amber); font: 700 0.64rem var(--mono); text-transform: uppercase; padding-top: 10px; border-bottom: 1px solid var(--line); }
-.ship-panel { margin-top: 12px; }
+.macro-grid .ship-grid { grid-template-columns: minmax(0, 1fr); }
 .ship-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 16px; align-items: start; }
 #ship-chart { height: 220px; }
 

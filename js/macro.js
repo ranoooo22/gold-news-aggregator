@@ -1,11 +1,9 @@
 'use strict';
 
 /*
- * Macro tab: cross-asset dashboard and earnings calendar.
+ * Macro tab: cross-asset dashboard.
  *  - Live quotes and 1D/1W/1M/3M/1Y changes: TradingView's public scanner (browser).
  *  - US 10Y real yield and breakeven: US Treasury, saved daily by the workflow (macro.json).
- *  - Earnings: Alpha Vantage, saved daily by the workflow (earnings.json),
- *    only when the ALPHAVANTAGE_API_KEY secret is set.
  */
 
 const MACRO_POLL_MS = 30000;
@@ -132,43 +130,10 @@ function renderMacro(quotes) {
     if (quotes.size) $('macro-status').textContent = `Live via TradingView · updated ${new Date().toISOString().slice(11, 19)} UTC`;
 }
 
-// ---------------------------------------------------------------- earnings calendar
-
-async function loadEarnings() {
-    const el = $('earnings-table');
-    try {
-        const data = await getJSON(`earnings.json?t=${Date.now()}`);
-        const today = new Date().toISOString().slice(0, 10);
-        const rows = (data.rows || []).filter((r) => r.date >= today);
-        $('earnings-asof').textContent = `${data.source || ''} · updated ${data.generated_utc || ''} UTC`;
-        if (!rows.length) {
-            el.innerHTML = '<div class="empty">No watchlist earnings in the next 90 days.</div>';
-            return;
-        }
-        const when = { 'pre-market': 'Before open', 'post-market': 'After close' };
-        el.innerHTML = `<table class="data-table">
-            <thead><tr><th>Date</th><th>In</th><th>Company</th><th>Time</th><th class="num">EPS estimate</th><th>Quarter ending</th></tr></thead>
-            <tbody>${rows.map((r) => {
-                const days = Math.round((Date.parse(r.date) - Date.parse(today)) / 86400000);
-                return `<tr>
-                    <td>${escapeHtml(new Date(`${r.date}T00:00:00Z`).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }))}</td>
-                    <td class="muted">${days === 0 ? 'today' : `${days}d`}</td>
-                    <td>${escapeHtml(r.name)} <span class="muted small">${escapeHtml(r.symbol)}</span></td>
-                    <td>${escapeHtml(when[r.time] || 'n/a')}</td>
-                    <td class="num">${r.estimate === null ? '–' : fmt(r.estimate, 2) + ' ' + escapeHtml(r.currency)}</td>
-                    <td class="muted">${escapeHtml(r.fiscal_period_end)}</td>
-                </tr>`;
-            }).join('')}</tbody></table>`;
-    } catch (e) {
-        el.innerHTML = '<div class="empty">No earnings data yet. Add the ALPHAVANTAGE_API_KEY secret to enable it (see README).</div>';
-    }
-}
-
 function startMacro() {
     loadDailyMacro().then(pollMacro);
-    loadEarnings();
     setInterval(() => { if (document.visibilityState === 'visible') pollMacro(); }, MACRO_POLL_MS);
     setInterval(() => {
-        if (document.visibilityState === 'visible') { loadDailyMacro(); loadEarnings(); }
+        if (document.visibilityState === 'visible') loadDailyMacro();
     }, 60 * 60 * 1000);
 }

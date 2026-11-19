@@ -450,8 +450,8 @@ def main():
         with open(OANDA_FILE, "w", encoding="utf-8") as f:
             json.dump(book, f, separators=(",", ":"))
 
-    import extras  # optional jobs: FRED, earnings calendar, push alerts
-    extras.run_all(clusters)
+    import extras  # daily jobs: Treasury yields, earnings calendar
+    extras.run_all()
     print(f"Done: {len(clusters)} clusters")
 
 

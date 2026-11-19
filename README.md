@@ -17,7 +17,7 @@ No analysis, signals or predictions anywhere.
 | Reference quotes | OANDA, Forex.com, Pepperstone, ICE, TVC via TradingView's scanner | every 5 s, in the browser |
 | OANDA client orders | OANDA v20 API (`oanda_book.json`) | each workflow run |
 | Cross-asset quotes | TradingView's scanner | every 30 s, in the browser |
-| US 10Y real yield & breakeven | FRED (`macro.json`), needs `FRED_API_KEY` | daily |
+| US 10Y real yield & breakeven | U.S. Treasury daily yield curves (`macro.json`) | daily |
 | Prediction markets | Polymarket Gamma API | every 3 min, in the browser |
 | Shipping chokepoints | IMF PortWatch (satellite AIS) | weekly, a few days' delay, in the browser |
 | Earnings calendar | Alpha Vantage (`earnings.json`), needs `ALPHAVANTAGE_API_KEY` | daily |
@@ -33,7 +33,7 @@ Anything fetched by the visitor's browser can be blocked by a provider for the v
 1. Fetch the feeds in `FEEDS`; keep articles matching `KEYWORDS`, drop SEO/forecast filler (`FILLER_RE`). Google News results are only accepted from `GOOGLE_NEWS_PUBLISHERS`.
 2. Group articles about the same event (MiniLM sentence embeddings, `SIM_THRESHOLD`).
 3. Gemini writes a factual headline, summary and key points for new or updated stories and marks off-topic ones (hidden by default on the site).
-4. Optional jobs in `extras.py` (each skipped when its secret is missing): FRED series, earnings calendar, push alerts.
+4. Daily jobs in `extras.py`: US Treasury real yields, and the earnings calendar (skipped without its key).
 5. Commit the data files.
 
 ## Secrets (Settings → Secrets and variables → Actions)
@@ -42,24 +42,7 @@ Anything fetched by the visitor's browser can be blocked by a provider for the v
 |---|---|---|
 | `GEMINI_API_KEY` | yes | news summaries |
 | `OANDA_API_KEY` | yes | OANDA client order book (practice account is enough) |
-| `FRED_API_KEY` | optional | real yield and breakeven rows; free key at fred.stlouisfed.org (My Account → API Keys) |
 | `ALPHAVANTAGE_API_KEY` | optional | earnings calendar; free key at alphavantage.co/support/#api-key |
-| `NTFY_TOPIC` | optional | push alerts, see below |
-
-## Push alerts
-
-Alerts are sent with [ntfy](https://ntfy.sh) (free app for iOS/Android, no account needed):
-
-1. Pick a long random topic name, e.g. `gold-terminal-7f3k9q2x` (anyone who knows the name can read it, so don't use a guessable one).
-2. In the ntfy app, subscribe to that topic.
-3. Add the same name as the `NTFY_TOPIC` secret.
-4. Edit `alerts.json` in the repo:
-   - `price_above` / `price_below`: gold price levels. Each fires once, and again only after price has moved back by `rearm_gap_usd`.
-   - `news_min_sources`: notify when a story reaches this many sources.
-   - `news_topics`: limit news alerts to these topics (as shown in the News tab); empty = all on-topic stories.
-   - `site_url`: link opened when you tap a notification.
-
-Checks run with the workflow (every 15 min). Price alerts use the high/low since the previous check, so a touch between runs is not missed. On the very first run, existing stories are only recorded, not sent.
 
 ## Run locally
 

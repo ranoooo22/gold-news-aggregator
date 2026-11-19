@@ -3,8 +3,7 @@
 /*
  * Macro tab: cross-asset dashboard and earnings calendar.
  *  - Live quotes and 1D/1W/1M/3M/1Y changes: TradingView's public scanner (browser).
- *  - US 10Y real yield and breakeven: FRED, saved daily by the workflow (macro.json),
- *    only when the FRED_API_KEY secret is set.
+ *  - US 10Y real yield and breakeven: US Treasury, saved daily by the workflow (macro.json).
  *  - Earnings: Alpha Vantage, saved daily by the workflow (earnings.json),
  *    only when the ALPHAVANTAGE_API_KEY secret is set.
  */
@@ -27,36 +26,31 @@ const MACRO_ROWS = [
     { group: 'Dollar & rates', sym: 'TVC:US10Y', label: 'US 10Y yield', kind: 'yield', digits: 3, unit: '%' },
     { group: 'Dollar & rates', id: 'spread', label: '10Y − 2Y spread', kind: 'yield', digits: 3, unit: '%',
         derive: (v) => v['TVC:US10Y'] - v['TVC:US02Y'] },
-    { group: 'Dollar & rates', fred: 'DFII10', label: 'US 10Y real yield (TIPS)', kind: 'yield', digits: 2, unit: '%' },
-    { group: 'Inflation', fred: 'T10YIE', label: 'US 10Y breakeven inflation', kind: 'yield', digits: 2, unit: '%' },
+    { group: 'Dollar & rates', daily: 'REAL10', label: 'US 10Y real yield (TIPS)', kind: 'yield', digits: 2, unit: '%' },
+    { group: 'Inflation', daily: 'BE10', label: 'US 10Y breakeven inflation', kind: 'yield', digits: 2, unit: '%' },
     { group: 'Inflation', sym: 'ECONOMICS:USIRYY', label: 'US CPI inflation (YoY)', kind: 'level', digits: 1, unit: '%' },
     { group: 'Inflation', sym: 'ECONOMICS:USCIR', label: 'US core CPI inflation (YoY)', kind: 'level', digits: 1, unit: '%' },
     { group: 'Equities', sym: 'SP:SPX', label: 'S&P 500', kind: 'price', digits: 2 },
     { group: 'Equities', sym: 'NASDAQ:NDX', label: 'Nasdaq 100', kind: 'price', digits: 2 },
 ];
 
-const macroState = { fred: null, fredDate: '' };
+const macroState = { daily: null };
 
 // Value `n` periods ago from a current value and a % performance figure.
 const pastFromPerf = (last, perf) => (perf === null || perf === undefined ? null : last / (1 + perf / 100));
 
-// FRED history: latest value on or before a date
-function fredValueAt(points, isoDate) {
+// daily history: latest value on or before a date
+function dailyValueAt(points, isoDate) {
     for (let i = points.length - 1; i >= 0; i--) if (points[i][0] <= isoDate) return points[i][1];
     return null;
 }
 
-function isoDaysAgo(days) {
-    return new Date(Date.now() - days * 86400000).toISOString().slice(0, 10);
-}
-
-async function loadFred() {
+async function loadDailyMacro() {
     try {
         const data = await getJSON(`macro.json?t=${Date.now()}`);
-        macroState.fred = data.fred || null;
-        macroState.fredDate = data.generated_utc || '';
+        macroState.daily = data.series || null;
     } catch (e) {
-        macroState.fred = null;
+        macroState.daily = null;
     }
 }
 
@@ -83,7 +77,7 @@ function renderMacro(quotes) {
         const last = d[0];
         series[sym] = [last, ...d.slice(1).map((p) => pastFromPerf(last, p))];
     });
-    const fredDays = [0, 1, 7, 30, 91, 365];
+    const periodDays = [0, 1, 7, 30, 91, 365];
 
     let group = '';
     const rows = [];
@@ -93,20 +87,22 @@ function renderMacro(quotes) {
         if (r.sym) {
             vals = series[r.sym] || null;
         } else if (r.derive) {
-            vals = fredDays.map((_, i) => {
+            vals = periodDays.map((_, i) => {
                 const v = {};
                 for (const sym of Object.keys(series)) v[sym] = series[sym][i];
                 const out = r.derive(v);
                 return isFinite(out) ? out : null;
             });
-        } else if (r.fred) {
-            const s = macroState.fred && macroState.fred[r.fred];
-            if (s) {
+        } else if (r.daily) {
+            const s = macroState.daily && macroState.daily[r.daily];
+            if (s && s.points.length) {
                 const lastDate = s.points[s.points.length - 1][0];
-                vals = fredDays.map((d) => fredValueAt(s.points, d === 0 ? lastDate : isoDaysAgo(d)));
+                // changes measured back from the latest published day
+                const base = Date.parse(lastDate);
+                vals = periodDays.map((d) => dailyValueAt(s.points, new Date(base - d * 86400000).toISOString().slice(0, 10)));
                 note = `daily · ${lastDate}`;
             } else {
-                note = 'needs FRED_API_KEY';
+                note = 'loading daily data';
             }
         }
         if (r.group !== group) {
@@ -169,10 +165,10 @@ async function loadEarnings() {
 }
 
 function startMacro() {
-    loadFred().then(pollMacro);
+    loadDailyMacro().then(pollMacro);
     loadEarnings();
     setInterval(() => { if (document.visibilityState === 'visible') pollMacro(); }, MACRO_POLL_MS);
     setInterval(() => {
-        if (document.visibilityState === 'visible') { loadFred(); loadEarnings(); }
+        if (document.visibilityState === 'visible') { loadDailyMacro(); loadEarnings(); }
     }, 60 * 60 * 1000);
 }

@@ -57,9 +57,12 @@
                     <label class="check" title="Each venue trades a few dollars away from spot. When on, its book is shifted by that difference so levels line up with the spot chart.">
                         <input type="checkbox" id="opt-align"> Align venues to spot</label>
                     <label class="check"><input type="checkbox" id="opt-walls"> Mark largest levels</label>
-                    <label title="How much gold traded at each price over a past window (OKX perp volume, aligned to spot)">Volume profile <select id="opt-vp">
+                    <label title="How much gold traded at each price over a past window, aligned to the spot chart">Volume profile <select id="opt-vp">
                         <option value="off">Off</option><option value="1W">1 week</option>
                         <option value="1M">1 month</option><option value="3M">3 months</option>
+                    </select>
+                    <select id="opt-vp-src" title="Volume source">
+                        <option value="comex">COMEX</option><option value="okx">OKX</option>
                     </select></label>
                 </div>
             </div>

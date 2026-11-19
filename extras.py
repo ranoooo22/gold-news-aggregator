@@ -4,6 +4,8 @@ or the news update.
 - US Treasury: 10Y real yield (TIPS) and 10Y breakeven inflation -> macro.json
 - OKX: hourly aggressive (taker) buy and sell volume of the XAU/USDT perp -> taker_volume.json
   (OKX keeps 60 days; the file keeps building up history beyond that)
+- Yahoo Finance: hourly COMEX gold futures (GC=F) candles with volume, aligned to the spot
+  index -> comex_volume.json, for the volume profile on the chart
 """
 import csv
 import io
@@ -25,6 +27,11 @@ TAKER_URL = "https://www.okx.com/api/v5/rubik/stat/taker-volume-contract"
 TAKER_INST = "XAU-USDT-SWAP"
 TAKER_KEEP_DAYS = 100         # enough for the 3-month volume profile
 TAKER_MAX_PAGES = 16          # 100 hours per page; OKX serves at most ~60 days
+
+COMEX_FILE = "comex_volume.json"
+COMEX_URL = "https://query1.finance.yahoo.com/v8/finance/chart/GC=F"
+COMEX_KEEP_DAYS = 100         # enough for the 3-month volume profile
+OKX_INDEX_URL = "https://www.okx.com/api/v5/market/history-index-candles"
 
 HTTP_HEADERS = {"User-Agent": "Mozilla/5.0"}
 
@@ -140,8 +147,73 @@ def update_taker_volume():
         print(f"Taker volume: {len(rows)} hours stored ({len(rows) - len(stored)} new)")
 
 
+# ---------------------------------------------------------------- COMEX gold futures volume
+
+def fetch_index_closes(since_ms):
+    """{hour_ms: close} of the OKX XAU/USD spot index for completed hours since since_ms."""
+    closes, after = {}, ""
+    for _ in range(30):  # 100 hours per page, ~3 months at most
+        params = {"instId": "XAU-USD", "bar": "1H", "limit": "100"}
+        if after:
+            params["after"] = after
+        res = requests.get(OKX_INDEX_URL, params=params, headers=HTTP_HEADERS, timeout=20)
+        res.raise_for_status()
+        page = res.json().get("data") or []
+        if not page:
+            break
+        for r in page:
+            closes[int(r[0])] = float(r[4])
+        after = page[-1][0]
+        if int(after) <= since_ms:
+            break
+        time.sleep(0.12)
+    return closes
+
+
+def write_comex_file(rows):
+    """One row per line so each update is a small git diff."""
+    lines = ",\n".join(json.dumps(r, separators=(",", ":")) for r in rows)
+    with open(COMEX_FILE, "w", encoding="utf-8") as f:
+        f.write('{"symbol":"GC=F","source":"Yahoo Finance","unit":"contracts (100 oz)",'
+                '"note":"low/high shifted by each hour\'s futures-minus-spot gap",'
+                '"columns":["ts_ms","low_spot","high_spot","volume"],"rows":[\n%s\n]}\n' % lines)
+
+
+def update_comex():
+    stored = {r[0]: r for r in read_json(COMEX_FILE, {}).get("rows", [])}
+    newest = max(stored) if stored else 0
+    # small request once history exists; 3 months on the first run
+    rng = "5d" if newest and time.time() * 1000 - newest < 4 * 86400000 else "3mo"
+    res = requests.get(COMEX_URL, params={"range": rng, "interval": "1h"}, headers=HTTP_HEADERS, timeout=30)
+    res.raise_for_status()
+    result = res.json()["chart"]["result"][0]
+    quote = result["indicators"]["quote"][0]
+    now_ms = time.time() * 1000
+    candles = []
+    for ts, high, low, close, vol in zip(result["timestamp"], quote["high"], quote["low"],
+                                         quote["close"], quote["volume"]):
+        ts_ms = ts * 1000
+        # completed hourly candles only, with volume, and not already stored
+        if ts % 3600 or ts_ms + 3600000 > now_ms or not vol or None in (high, low, close) or ts_ms in stored:
+            continue
+        candles.append((ts_ms, high, low, close, vol))
+    if not candles:
+        return
+    index = fetch_index_closes(min(c[0] for c in candles))
+    for ts_ms, high, low, close, vol in candles:
+        spot = index.get(ts_ms)
+        if spot is None:
+            continue
+        basis = close - spot  # futures premium over spot at that hour
+        stored[ts_ms] = [ts_ms, round(low - basis, 2), round(high - basis, 2), int(vol)]
+    cutoff = now_ms - COMEX_KEEP_DAYS * 86400000
+    rows = sorted(r for ts, r in stored.items() if ts >= cutoff)
+    write_comex_file(rows)
+    print(f"COMEX volume: {len(rows)} hours stored, latest {datetime.fromtimestamp(rows[-1][0] / 1000, timezone.utc):%Y-%m-%d %H:%M} UTC")
+
+
 def run_all():
-    for job in (update_macro, update_taker_volume):
+    for job in (update_macro, update_taker_volume, update_comex):
         try:
             job()
         except Exception as ex:

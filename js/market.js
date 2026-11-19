@@ -99,6 +99,7 @@ const settings = Object.assign({
     smooth: 5,           // minutes of time-averaging for the depth (0 = live)
     levels: 'larger',    // 'all' | 'larger' | 'largest': which levels are drawn on the chart
     vp: '1M',            // volume profile window: 'off' | '1W' | '1M' | '3M'
+    vpSource: 'comex',   // volume profile source: 'comex' (COMEX futures) | 'okx' (OKX perp)
     enabled: {},         // venue id -> false when switched off
 }, store.get('gt_market_settings', {}));
 // settings saved before the range became a $ amount: switch to the new defaults
@@ -451,8 +452,9 @@ function initChart() {
         priceFormat: { type: 'price', precision: 2, minMove: 0.01 },
         autoscaleInfoProvider: (original) => {
             const res = original();
-            const prices = [...lastWallSet.bid, ...lastWallSet.ask];
-            if (!res || !settings.walls || settings.chartMode !== 'spot' || !prices.length) return res;
+            const prices = settings.walls ? [...lastWallSet.bid, ...lastWallSet.ask] : [];
+            if (typeof vpAutoscalePrices === 'function') prices.push(...vpAutoscalePrices());
+            if (!res || settings.chartMode !== 'spot' || !prices.length) return res;
             const pad = effectiveStep();
             return {
                 priceRange: {
@@ -645,7 +647,7 @@ function syncControls() {
     $('tv-widget').hidden = spotMode;
     $('tf-group').hidden = !spotMode;
     $('chart-caption').innerHTML = spotMode
-        ? `Candles: OKX XAU/USD spot index. Bars on the right: combined order books of the venues below (green bids, red asks); grey bars on the left: volume profile${settings.smooth ? `, averaged over ${settings.smooth} min` : ', live'}.`
+        ? `Candles: OKX XAU/USD spot index. Bars on the right: combined order books of the venues below (green bids, red asks); cyan bars on the left: volume profile (orange = POC)${settings.smooth ? `, averaged over ${settings.smooth} min` : ', live'}.`
         : 'TradingView chart, Capital.com GOLD feed. Order book levels cannot be drawn on this widget; see the ladder.';
 }
 

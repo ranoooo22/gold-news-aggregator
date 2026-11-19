@@ -19,6 +19,7 @@
             </div>
             <nav class="tabs">
                 <button class="tab active" data-tab="market">Market</button>
+                <button class="tab" data-tab="macro">Macro</button>
                 <button class="tab" data-tab="news">News <span class="tab-count" id="tab-news-count">–</span></button>
             </nav>
         </div>
@@ -119,6 +120,57 @@
                     <p class="note">Share of OANDA's open client orders per price level. One broker's retail clients, refreshed by OANDA every 20 min.</p>
                 </div>
             </div>
+        </section>
+
+        <!-- MACRO -->
+        <section id="tab-macro" class="tab-panel">
+            <div class="macro-grid">
+                <div class="panel">
+                    <div class="panel-head">
+                        <span class="panel-title">Cross-asset dashboard</span>
+                        <span class="muted small" id="macro-status"></span>
+                    </div>
+                    <div class="table-scroll" id="macro-table"><div class="empty">Loading…</div></div>
+                    <p class="note">Changes for yields and rates in basis points (1 bp = 0.01 percentage points), for prices in percent.
+                        Fed funds rate and CPI are the latest published values.</p>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-head">
+                        <span class="panel-title">Prediction markets</span>
+                        <span class="muted small" id="pm-asof"></span>
+                    </div>
+                    <div class="pm-list" id="pm-list"><div class="empty">Loading…</div></div>
+                    <p class="note">Polymarket odds (price of a "Yes" share) for Fed, geopolitical, economic and commodity events,
+                        most-traded first. Change in percentage points vs 24 h ago. Click a card to open it on polymarket.com.</p>
+                </div>
+            </div>
+
+            <div class="panel ship-panel">
+                <div class="panel-head">
+                    <span class="panel-title">Shipping chokepoints</span>
+                    <span class="muted small" id="ship-asof"></span>
+                </div>
+                <div class="ship-grid">
+                    <div class="table-scroll" id="ship-table"><div class="empty">Loading…</div></div>
+                    <div>
+                        <div class="cot-chart-title">Tanker transits per day, 7-day average</div>
+                        <div id="ship-chart"></div>
+                    </div>
+                </div>
+                <p class="note">Daily vessel transits from <a href="https://portwatch.imf.org/" target="_blank" rel="noopener noreferrer">IMF PortWatch</a>
+                    (satellite AIS), published with a delay of a few days. Ships that switch off their AIS transponder are not counted,
+                    so counts in conflict zones can understate real traffic.</p>
+            </div>
+
+            <div class="panel earnings-panel">
+                <div class="panel-head">
+                    <span class="panel-title">Earnings calendar · watchlist</span>
+                    <span class="muted small" id="earnings-asof"></span>
+                </div>
+                <div class="table-scroll" id="earnings-table"><div class="empty">Loading…</div></div>
+                <p class="note">Next 90 days for large tech/AI companies, JPMorgan and the largest gold miners. Dates as announced or estimated by the data provider.</p>
+            </div>
 
             <div class="panel cot-panel">
                 <div class="panel-head">
@@ -199,6 +251,9 @@
     <script src="js/market.js"></script>
     <script src="js/news.js"></script>
     <script src="js/cot.js"></script>
+    <script src="js/macro.js"></script>
+    <script src="js/polymarket.js"></script>
+    <script src="js/shipping.js"></script>
     <script>
         (function () {
             const show = (tab) => {
@@ -211,6 +266,9 @@
             startMarket();
             startNews();
             startCot();
+            startMacro();
+            startPolymarket();
+            startShipping();
         })();
     </script>
 </body>

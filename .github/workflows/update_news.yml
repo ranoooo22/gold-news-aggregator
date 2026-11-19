@@ -37,13 +37,19 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OANDA_API_KEY: ${{ secrets.OANDA_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: python aggregator.py
 
       - name: Commit and push updated data
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data.json oanda_book.json 2>/dev/null || git add data.json
+          # add whichever data files this run produced (optional jobs may not have run)
+          for f in data.json oanda_book.json macro.json earnings.json alerts_state.json; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
           if ! git diff --staged --quiet; then
             git commit -m "Auto-update news data"
             # on a conflict keep this run's freshly generated files

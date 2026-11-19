@@ -3,7 +3,7 @@
 A static site (GitHub Pages) with three tabs:
 
 - **Market**: live spot gold chart with the combined order books of several venues drawn on it, the largest levels up to ±$200 from spot, a depth ladder, broker reference quotes, OANDA's client order book, and the TradingView Capital.com chart.
-- **Macro**: cross-asset dashboard (metals, oil, dollar, US yields, inflation, equities), Polymarket odds for Fed and geopolitical events, shipping through Hormuz / Bab el-Mandeb / Suez, an earnings calendar, and the CFTC Commitments of Traders report.
+- **Macro**: cross-asset dashboard (metals, oil, dollar, US yields, inflation, equities), an earnings calendar, shipping through Hormuz / Bab el-Mandeb / Suez, and the CFTC Commitments of Traders report.
 - **News**: gold-relevant news grouped into stories with short factual AI summaries. Search, filter, sort, and pin stories (pins are saved in your browser).
 
 No analysis, signals or predictions anywhere.
@@ -14,11 +14,11 @@ No analysis, signals or predictions anywhere.
 |---|---|---|
 | Spot price & candles | OKX XAU/USD index (composite of spot quotes) | live, every 2 s, in the browser |
 | Order books | OKX XAU/USDT perp, OKX PAXG/XAUT, Kraken PAXG/XAUT, Binance PAXG, Bybit XAUT | live, every 6 s, in the browser |
+| Volume profile | OKX XAU/USDT perp candles (volume in oz), aligned to the spot index | every 15 min, in the browser |
 | Reference quotes | OANDA, Forex.com, Pepperstone, ICE, TVC via TradingView's scanner | every 5 s, in the browser |
 | OANDA client orders | OANDA v20 API (`oanda_book.json`) | each workflow run |
 | Cross-asset quotes | TradingView's scanner | every 30 s, in the browser |
 | US 10Y real yield & breakeven | U.S. Treasury daily yield curves (`macro.json`) | daily |
-| Prediction markets | Polymarket Gamma API | every 3 min, in the browser |
 | Shipping chokepoints | IMF PortWatch (satellite AIS) | weekly, a few days' delay, in the browser |
 | Earnings calendar | Alpha Vantage (`earnings.json`), needs `ALPHAVANTAGE_API_KEY` | daily |
 | COT report | CFTC Public Reporting API | weekly (Fridays), in the browser |

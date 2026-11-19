@@ -55,6 +55,8 @@ a { color: var(--text); }
 .panel-title { font: 800 0.74rem var(--mono); color: var(--amber); text-transform: uppercase; letter-spacing: 0.03em; }
 .note { color: var(--muted); font-size: 0.74rem; line-height: 1.45; margin: 10px 0 0; }
 .caption { color: var(--muted); font-size: 0.74rem; margin-top: 8px; }
+.vp-summary { margin-top: 4px; color: var(--text-2); }
+.vp-summary b { color: var(--text); font-weight: 600; }
 
 .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
 .toolbar-opts { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; font-size: 0.78rem; color: var(--text-2); }
@@ -131,20 +133,9 @@ td.warn { color: var(--amber); }
 /* ---------- macro tab */
 .macro-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 12px; align-items: start; }
 .macro-table tr.group-row td { color: var(--amber); font: 700 0.64rem var(--mono); text-transform: uppercase; padding-top: 10px; border-bottom: 1px solid var(--line); }
-.ship-panel, .earnings-panel { margin-top: 12px; }
+.ship-panel { margin-top: 12px; }
 .ship-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 16px; align-items: start; }
 #ship-chart { height: 220px; }
-.pm-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; max-height: 640px; overflow-y: auto; }
-.pm-card { display: block; text-decoration: none; background: var(--panel-2); border: 1px solid var(--line); border-radius: 4px; padding: 8px 10px; }
-.pm-card:hover { border-color: var(--amber); }
-.pm-title { font-size: 0.82rem; font-weight: 600; margin-bottom: 6px; line-height: 1.3; }
-.pm-row { display: grid; grid-template-columns: minmax(0, 1fr) 60px 46px 40px; gap: 6px; align-items: center; font-size: 0.74rem; padding: 2px 0; }
-.pm-label { color: var(--text-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.pm-bar { height: 6px; background: var(--panel); border-radius: 3px; overflow: hidden; }
-.pm-bar span { display: block; height: 100%; background: var(--cyan); }
-.pm-prob { text-align: right; font: 700 0.74rem var(--mono); }
-.pm-chg { text-align: right; font: 0.68rem var(--mono); }
-.pm-meta { margin-top: 6px; font: 0.66rem var(--mono); color: var(--muted); }
 
 /* ---------- news */
 .news-toolbar input[type="search"] { flex: 1 1 260px; }

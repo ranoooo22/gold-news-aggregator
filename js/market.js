@@ -98,6 +98,7 @@ const settings = Object.assign({
     walls: true,         // draw largest levels as lines
     smooth: 5,           // minutes of time-averaging for the depth (0 = live)
     levels: 'larger',    // 'all' | 'larger' | 'largest': which levels are drawn on the chart
+    vp: '1M',            // volume profile window: 'off' | '1W' | '1M' | '3M'
     enabled: {},         // venue id -> false when switched off
 }, store.get('gt_market_settings', {}));
 // settings saved before the range became a $ amount: switch to the new defaults
@@ -490,6 +491,9 @@ function drawDepthOverlay() {
     const ctx = canvas.getContext('2d');
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, rect.width, rect.height);
+    if (typeof drawVolumeProfile === 'function') {
+        drawVolumeProfile(ctx, state.chart.timeScale().width(), rect.height - state.chart.timeScale().height());
+    }
     if (!state.buckets.length || !state.maxOz) return;
 
     const paneWidth = state.chart.timeScale().width();
@@ -641,7 +645,7 @@ function syncControls() {
     $('tv-widget').hidden = spotMode;
     $('tf-group').hidden = !spotMode;
     $('chart-caption').innerHTML = spotMode
-        ? `Candles: OKX XAU/USD spot index. Bars on the right: combined order books of the venues below (green bids, red asks)${settings.smooth ? `, averaged over ${settings.smooth} min` : ', live'}.`
+        ? `Candles: OKX XAU/USD spot index. Bars on the right: combined order books of the venues below (green bids, red asks); grey bars on the left: volume profile${settings.smooth ? `, averaged over ${settings.smooth} min` : ', live'}.`
         : 'TradingView chart, Capital.com GOLD feed. Order book levels cannot be drawn on this widget; see the ladder.';
 }
 
@@ -650,6 +654,7 @@ function bindControls() {
         settings.chartMode = b.dataset.chartMode; saveSettings(); syncControls();
         if (settings.chartMode === 'tradingview') loadTradingView();
         renderWalls(true);
+        if (typeof updatePocLine === 'function') updatePocLine();
     }));
     document.querySelectorAll('[data-tf]').forEach((b) => b.addEventListener('click', () => {
         settings.tf = b.dataset.tf; saveSettings(); syncControls(); loadCandles();

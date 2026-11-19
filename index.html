@@ -19,6 +19,7 @@
             </div>
             <nav class="tabs">
                 <button class="tab active" data-tab="market">Market</button>
+                <button class="tab" data-tab="macro">Macro</button>
                 <button class="tab" data-tab="news">News <span class="tab-count" id="tab-news-count">–</span></button>
             </nav>
         </div>
@@ -56,6 +57,10 @@
                     <label class="check" title="Each venue trades a few dollars away from spot. When on, its book is shifted by that difference so levels line up with the spot chart.">
                         <input type="checkbox" id="opt-align"> Align venues to spot</label>
                     <label class="check"><input type="checkbox" id="opt-walls"> Mark largest levels</label>
+                    <label title="How much gold traded at each price over a past window (OKX perp volume, aligned to spot)">Volume profile <select id="opt-vp">
+                        <option value="off">Off</option><option value="1W">1 week</option>
+                        <option value="1M">1 month</option><option value="3M">3 months</option>
+                    </select></label>
                 </div>
             </div>
 
@@ -68,6 +73,7 @@
                     </div>
                     <div id="tv-widget" class="chart-wrap" hidden></div>
                     <div class="caption" id="chart-caption"></div>
+                    <div class="caption vp-summary" id="vp-summary"></div>
                 </div>
 
                 <div class="panel dom-panel">
@@ -118,6 +124,47 @@
                     <div class="dom-ladder short" id="oanda-book"><div class="empty">Loading…</div></div>
                     <p class="note">Share of OANDA's open client orders per price level. One broker's retail clients, refreshed by OANDA every 20 min.</p>
                 </div>
+            </div>
+        </section>
+
+        <!-- MACRO -->
+        <section id="tab-macro" class="tab-panel">
+            <div class="macro-grid">
+                <div class="panel">
+                    <div class="panel-head">
+                        <span class="panel-title">Cross-asset dashboard</span>
+                        <span class="muted small" id="macro-status"></span>
+                    </div>
+                    <div class="table-scroll" id="macro-table"><div class="empty">Loading…</div></div>
+                    <p class="note">Changes for yields and rates in basis points (1 bp = 0.01 percentage points), for prices in percent.
+                        Fed funds rate and CPI are the latest published values.</p>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-head">
+                        <span class="panel-title">Earnings calendar · watchlist</span>
+                        <span class="muted small" id="earnings-asof"></span>
+                    </div>
+                    <div class="table-scroll" id="earnings-table"><div class="empty">Loading…</div></div>
+                    <p class="note">Next 90 days for large tech/AI companies, JPMorgan and the largest gold miners. Dates as announced or estimated by the data provider.</p>
+                </div>
+            </div>
+
+            <div class="panel ship-panel">
+                <div class="panel-head">
+                    <span class="panel-title">Shipping chokepoints</span>
+                    <span class="muted small" id="ship-asof"></span>
+                </div>
+                <div class="ship-grid">
+                    <div class="table-scroll" id="ship-table"><div class="empty">Loading…</div></div>
+                    <div>
+                        <div class="cot-chart-title">Tanker transits per day, 7-day average</div>
+                        <div id="ship-chart"></div>
+                    </div>
+                </div>
+                <p class="note">Daily vessel transits from <a href="https://portwatch.imf.org/" target="_blank" rel="noopener noreferrer">IMF PortWatch</a>
+                    (satellite AIS), published with a delay of a few days. Ships that switch off their AIS transponder are not counted,
+                    so counts in conflict zones can understate real traffic.</p>
             </div>
 
             <div class="panel cot-panel">
@@ -197,8 +244,11 @@
 
     <script src="js/util.js"></script>
     <script src="js/market.js"></script>
+    <script src="js/volprofile.js"></script>
     <script src="js/news.js"></script>
     <script src="js/cot.js"></script>
+    <script src="js/macro.js"></script>
+    <script src="js/shipping.js"></script>
     <script>
         (function () {
             const show = (tab) => {
@@ -209,8 +259,11 @@
             document.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
             show(store.get('gt_tab', 'market'));
             startMarket();
+            startVolumeProfile();
             startNews();
             startCot();
+            startMacro();
+            startShipping();
         })();
     </script>
 </body>

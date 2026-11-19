@@ -1,8 +1,9 @@
 # Gold Terminal
 
-A static site (GitHub Pages) with two tabs:
+A static site (GitHub Pages) with three tabs:
 
-- **Market**: live spot gold chart with the combined order books of several venues drawn on it, a depth ladder, broker reference quotes, OANDA's client order book, and the TradingView Capital.com chart.
+- **Market**: live spot gold chart with the combined order books of several venues drawn on it, the largest levels up to ±$200 from spot, a depth ladder, broker reference quotes, OANDA's client order book, and the TradingView Capital.com chart.
+- **Macro**: cross-asset dashboard (metals, oil, dollar, US yields, inflation, equities), an earnings calendar, shipping through Hormuz / Bab el-Mandeb / Suez, and the CFTC Commitments of Traders report.
 - **News**: gold-relevant news grouped into stories with short factual AI summaries. Search, filter, sort, and pin stories (pins are saved in your browser).
 
 No analysis, signals or predictions anywhere.
@@ -12,23 +13,36 @@ No analysis, signals or predictions anywhere.
 | What | Source | Updated |
 |---|---|---|
 | Spot price & candles | OKX XAU/USD index (composite of spot quotes) | live, every 2 s, in the browser |
-| Order books | OKX XAU/USDT perp, OKX PAXG/XAUT, Kraken PAXG/XAUT, Binance PAXG, Bybit XAUT | live, every 3 s, in the browser |
+| Order books | OKX XAU/USDT perp, OKX PAXG/XAUT, Kraken PAXG/XAUT, Binance PAXG, Bybit XAUT | live, every 6 s, in the browser |
+| Volume profile | OKX XAU/USDT perp candles (volume in oz), aligned to the spot index | every 15 min, in the browser |
 | Reference quotes | OANDA, Forex.com, Pepperstone, ICE, TVC via TradingView's scanner | every 5 s, in the browser |
 | OANDA client orders | OANDA v20 API (`oanda_book.json`) | each workflow run |
+| Cross-asset quotes | TradingView's scanner | every 30 s, in the browser |
+| US 10Y real yield & breakeven | U.S. Treasury daily yield curves (`macro.json`) | daily |
+| Shipping chokepoints | IMF PortWatch (satellite AIS) | weekly, a few days' delay, in the browser |
+| Earnings calendar | Alpha Vantage (`earnings.json`), needs `ALPHAVANTAGE_API_KEY` | daily |
+| COT report | CFTC Public Reporting API | weekly (Fridays), in the browser |
 | News | Publisher RSS feeds and Google News searches (`data.json`) | each workflow run |
 
-Order books are fetched directly by the visitor's browser, so a venue that blocks the visitor's country shows as "blocked" in the venue table.
+Anything fetched by the visitor's browser can be blocked by a provider for the visitor's country; the page then shows that source as unavailable.
 
-## How the news update works
+## How the update works
 
 `.github/workflows/update_news.yml` runs `aggregator.py` (started every 15 min by cron-job.org, or manually):
 
 1. Fetch the feeds in `FEEDS`; keep articles matching `KEYWORDS`, drop SEO/forecast filler (`FILLER_RE`). Google News results are only accepted from `GOOGLE_NEWS_PUBLISHERS`.
 2. Group articles about the same event (MiniLM sentence embeddings, `SIM_THRESHOLD`).
 3. Gemini writes a factual headline, summary and key points for new or updated stories and marks off-topic ones (hidden by default on the site).
-4. Commit `data.json` and `oanda_book.json`.
+4. Daily jobs in `extras.py`: US Treasury real yields, and the earnings calendar (skipped without its key).
+5. Commit the data files.
 
-Secrets: `GEMINI_API_KEY`, `OANDA_API_KEY` (practice account is enough).
+## Secrets (Settings → Secrets and variables → Actions)
+
+| Secret | Required | What for |
+|---|---|---|
+| `GEMINI_API_KEY` | yes | news summaries |
+| `OANDA_API_KEY` | yes | OANDA client order book (practice account is enough) |
+| `ALPHAVANTAGE_API_KEY` | optional | earnings calendar; free key at alphavantage.co/support/#api-key |
 
 ## Run locally
 

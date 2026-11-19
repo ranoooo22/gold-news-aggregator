@@ -103,6 +103,7 @@ function renderCotChart() {
             localization: { priceFormatter: (p) => fmt(p, 0) },
             handleScroll: false, handleScale: false,
         });
+        registerFitOnShow(cotState.chart);
         cotState.series = cotState.chart.addBaselineSeries({
             baseValue: { type: 'price', price: 0 },
             topLineColor: '#00c26e', topFillColor1: 'rgba(0, 194, 110, 0.25)', topFillColor2: 'rgba(0, 194, 110, 0.02)',

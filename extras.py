@@ -1,32 +1,30 @@
-"""Daily data jobs run after the news update. A failure in one never stops the other
+"""Data jobs run after the news update. A failure in one never stops the other
 or the news update.
 
-- US Treasury (no key): 10Y real yield (TIPS) and 10Y breakeven inflation -> macro.json
-- Alpha Vantage (ALPHAVANTAGE_API_KEY): upcoming earnings for a watchlist -> earnings.json
+- US Treasury: 10Y real yield (TIPS) and 10Y breakeven inflation -> macro.json
+- OKX: hourly aggressive (taker) buy and sell volume of the XAU/USDT perp -> taker_volume.json
+  (OKX keeps 60 days; the file keeps building up history beyond that)
 """
 import csv
 import io
 import json
-import os
+import time
 from datetime import datetime, timedelta, timezone
 
 import requests
 
 MACRO_FILE = "macro.json"
-EARNINGS_FILE = "earnings.json"
+TAKER_FILE = "taker_volume.json"
 
 TREASURY_URL = ("https://home.treasury.gov/resource-center/data-chart-center/interest-rates/"
                 "daily-treasury-rates.csv/{year}/all?type={kind}&field_tdr_date_value={year}&page&_format=csv")
 MACRO_REFRESH_HOURS = 6       # daily data; no need to fetch every 15 min
 MACRO_HISTORY_DAYS = 400
 
-EARNINGS_REFRESH_HOURS = 20   # free Alpha Vantage tier allows 25 calls/day; one is enough
-EARNINGS_HORIZON_DAYS = 90
-EARNINGS_WATCHLIST = {
-    "NVDA": "Nvidia", "MSFT": "Microsoft", "AAPL": "Apple", "GOOGL": "Alphabet", "AMZN": "Amazon",
-    "META": "Meta", "TSLA": "Tesla", "AVGO": "Broadcom", "TSM": "TSMC", "AMD": "AMD", "ORCL": "Oracle",
-    "JPM": "JPMorgan", "NEM": "Newmont", "AEM": "Agnico Eagle",
-}
+TAKER_URL = "https://www.okx.com/api/v5/rubik/stat/taker-volume-contract"
+TAKER_INST = "XAU-USDT-SWAP"
+TAKER_KEEP_DAYS = 100         # enough for the 3-month volume profile
+TAKER_MAX_PAGES = 16          # 100 hours per page; OKX serves at most ~60 days
 
 HTTP_HEADERS = {"User-Agent": "Mozilla/5.0"}
 
@@ -98,55 +96,52 @@ def update_macro():
     print(f"Treasury: 10Y real yield {last[1]}% on {last[0]}")
 
 
-# ---------------------------------------------------------------- earnings
+# ---------------------------------------------------------------- OKX taker buy/sell volume
 
-def parse_earnings_csv(text, today=None):
-    today = today or datetime.now(timezone.utc).date()
-    horizon = today + timedelta(days=EARNINGS_HORIZON_DAYS)
-    rows = []
-    for r in csv.DictReader(io.StringIO(text)):
-        symbol = (r.get("symbol") or "").strip()
-        if symbol not in EARNINGS_WATCHLIST:
-            continue
-        try:
-            date = datetime.strptime(r["reportDate"], "%Y-%m-%d").date()
-        except (KeyError, ValueError):
-            continue
-        if not today <= date <= horizon:
-            continue
-        rows.append({
-            "symbol": symbol,
-            "name": EARNINGS_WATCHLIST[symbol],
-            "date": date.isoformat(),
-            "time": (r.get("timeOfTheDay") or "").strip(),   # pre-market / post-market / ""
-            "estimate": float(r["estimate"]) if (r.get("estimate") or "").strip() else None,
-            "currency": (r.get("currency") or "").strip(),
-            "fiscal_period_end": (r.get("fiscalDateEnding") or "").strip(),
-        })
-    rows.sort(key=lambda x: (x["date"], x["symbol"]))
-    return rows
+def write_taker_file(rows):
+    """One row per line so each hourly update is a small git diff."""
+    lines = ",\n".join(json.dumps(r, separators=(",", ":")) for r in rows)
+    with open(TAKER_FILE, "w", encoding="utf-8") as f:
+        f.write('{"inst":"%s","unit":"contracts","columns":["ts_ms","taker_sell","taker_buy"],"rows":[\n%s\n]}\n'
+                % (TAKER_INST, lines))
 
 
-def update_earnings():
-    key = os.environ.get("ALPHAVANTAGE_API_KEY")
-    if not key:
-        print("Earnings: no ALPHAVANTAGE_API_KEY, skipped")
-        return
-    if data_age_hours(EARNINGS_FILE) < EARNINGS_REFRESH_HOURS:
-        return
-    res = requests.get("https://www.alphavantage.co/query", params={
-        "function": "EARNINGS_CALENDAR", "horizon": "3month", "apikey": key,
-    }, timeout=30)
-    res.raise_for_status()
-    if not res.text.startswith("symbol,"):
-        raise ValueError(res.text[:120])  # rate limit or key message comes back as JSON/text
-    rows = parse_earnings_csv(res.text)
-    write_json(EARNINGS_FILE, {"generated_utc": utc_now_str(), "source": "Alpha Vantage", "rows": rows})
-    print(f"Earnings: {len(rows)} upcoming reports in watchlist")
+def update_taker_volume():
+    stored = {r[0]: r for r in read_json(TAKER_FILE, {}).get("rows", [])}
+    newest_stored = max(stored) if stored else 0
+    # only completed hours: the current hour is still changing
+    current_hour = int(time.time() // 3600 * 3600 * 1000)
+    fetched, end = {}, ""
+    for _ in range(TAKER_MAX_PAGES):
+        params = {"instId": TAKER_INST, "period": "1H", "limit": "100"}
+        if end:
+            params["end"] = end
+        res = requests.get(TAKER_URL, params=params, headers=HTTP_HEADERS, timeout=20)
+        res.raise_for_status()
+        body = res.json()
+        if body.get("code") != "0":
+            raise ValueError(body.get("msg") or "OKX error")
+        page = body.get("data") or []
+        if not page:
+            break
+        for ts, sell, buy in page:
+            ts = int(ts)
+            if ts < current_hour:
+                fetched[ts] = [ts, round(float(sell)), round(float(buy))]
+        end = page[-1][0]
+        if int(end) <= newest_stored:
+            break  # reached hours we already have
+        time.sleep(0.45)  # OKX allows 5 requests per 2 s on this endpoint
+    merged = {**stored, **fetched}
+    cutoff = (time.time() - TAKER_KEEP_DAYS * 86400) * 1000
+    rows = sorted(r for ts, r in merged.items() if ts >= cutoff)
+    if rows != sorted(stored.values()):
+        write_taker_file(rows)
+        print(f"Taker volume: {len(rows)} hours stored ({len(rows) - len(stored)} new)")
 
 
 def run_all():
-    for job in (update_macro, update_earnings):
+    for job in (update_macro, update_taker_volume):
         try:
             job()
         except Exception as ex:

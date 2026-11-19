@@ -57,6 +57,15 @@ async function getJSON(url, options = {}, timeoutMs = 7000) {
     }
 }
 
+// Charts created inside a hidden tab get width 0, so their fitted time range is wrong once the
+// tab is shown. Each chart registers here and is re-fitted whenever its tab becomes visible.
+const fitOnShow = [];
+function registerFitOnShow(chart) { fitOnShow.push(chart); }
+function refitCharts() {
+    // wait for the browser to lay out the newly shown tab and the charts to resize
+    setTimeout(() => fitOnShow.forEach((c) => { try { c.timeScale().fitContent(); } catch (e) { /* ignore */ } }), 60);
+}
+
 // localStorage can be unavailable (private mode, blocked storage): never let that break the page.
 const store = {
     get(key, fallback) {

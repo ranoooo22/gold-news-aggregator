@@ -125,6 +125,23 @@
                     <p class="note">Share of OANDA's open client orders per price level. One broker's retail clients, refreshed by OANDA every 20 min.</p>
                 </div>
             </div>
+
+            <div class="panel flow-panel">
+                <div class="panel-head">
+                    <span class="panel-title">Aggressor flow · OKX gold perp</span>
+                    <span class="muted small" id="flow-asof"></span>
+                </div>
+                <div class="cot-grid">
+                    <div class="table-scroll" id="flow-table"><div class="empty">Loading…</div></div>
+                    <div>
+                        <div class="cot-chart-title">Delta per 4 h (bars, right scale) · cumulative delta (line, left scale), oz</div>
+                        <div id="flow-chart"></div>
+                    </div>
+                </div>
+                <p class="note">Every trade has a buyer and a seller. "Aggressive buys" is volume where the buyer crossed the spread
+                    (market order lifting the offer), "aggressive sells" where the seller did; delta is the difference.
+                    Hourly data from OKX, kept from the first workflow run onwards (OKX itself serves 60 days).</p>
+            </div>
         </section>
 
         <!-- MACRO -->
@@ -140,31 +157,22 @@
                         Fed funds rate and CPI are the latest published values.</p>
                 </div>
 
-                <div class="panel">
+                <div class="panel ship-panel">
                     <div class="panel-head">
-                        <span class="panel-title">Earnings calendar · watchlist</span>
-                        <span class="muted small" id="earnings-asof"></span>
+                        <span class="panel-title">Shipping chokepoints</span>
+                        <span class="muted small" id="ship-asof"></span>
                     </div>
-                    <div class="table-scroll" id="earnings-table"><div class="empty">Loading…</div></div>
-                    <p class="note">Next 90 days for large tech/AI companies, JPMorgan and the largest gold miners. Dates as announced or estimated by the data provider.</p>
-                </div>
-            </div>
-
-            <div class="panel ship-panel">
-                <div class="panel-head">
-                    <span class="panel-title">Shipping chokepoints</span>
-                    <span class="muted small" id="ship-asof"></span>
-                </div>
-                <div class="ship-grid">
-                    <div class="table-scroll" id="ship-table"><div class="empty">Loading…</div></div>
-                    <div>
-                        <div class="cot-chart-title">Tanker transits per day, 7-day average</div>
-                        <div id="ship-chart"></div>
+                    <div class="ship-grid">
+                        <div class="table-scroll" id="ship-table"><div class="empty">Loading…</div></div>
+                        <div>
+                            <div class="cot-chart-title">Tanker transits per day, 7-day average</div>
+                            <div id="ship-chart"></div>
+                        </div>
                     </div>
+                    <p class="note">Daily vessel transits from <a href="https://portwatch.imf.org/" target="_blank" rel="noopener noreferrer">IMF PortWatch</a>
+                        (satellite AIS), published with a delay of a few days. Ships that switch off their AIS transponder are not counted,
+                        so counts in conflict zones can understate real traffic.</p>
                 </div>
-                <p class="note">Daily vessel transits from <a href="https://portwatch.imf.org/" target="_blank" rel="noopener noreferrer">IMF PortWatch</a>
-                    (satellite AIS), published with a delay of a few days. Ships that switch off their AIS transponder are not counted,
-                    so counts in conflict zones can understate real traffic.</p>
             </div>
 
             <div class="panel cot-panel">
@@ -245,6 +253,7 @@
     <script src="js/util.js"></script>
     <script src="js/market.js"></script>
     <script src="js/volprofile.js"></script>
+    <script src="js/flow.js"></script>
     <script src="js/news.js"></script>
     <script src="js/cot.js"></script>
     <script src="js/macro.js"></script>
@@ -255,11 +264,13 @@
                 document.querySelectorAll('.tab').forEach((b) => b.classList.toggle('active', b.dataset.tab === tab));
                 document.querySelectorAll('.tab-panel').forEach((p) => p.classList.toggle('active', p.id === `tab-${tab}`));
                 store.set('gt_tab', tab);
+                refitCharts();
             };
             document.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
             show(store.get('gt_tab', 'market'));
             startMarket();
             startVolumeProfile();
+            startFlow();
             startNews();
             startCot();
             startMacro();

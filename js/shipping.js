@@ -118,6 +118,7 @@ function renderShipChart(byStrait) {
             rightPriceScale: { borderColor: '#21293a' },
             handleScroll: false, handleScale: false,
         });
+        registerFitOnShow(shipState.chart);
         PW_STRAITS.forEach((s) => {
             shipState.series[s.name] = shipState.chart.addLineSeries({ color: s.color, lineWidth: 2, priceLineVisible: false, title: '' });
         });

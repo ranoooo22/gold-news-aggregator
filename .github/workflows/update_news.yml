@@ -37,7 +37,6 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OANDA_API_KEY: ${{ secrets.OANDA_API_KEY }}
-          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
         run: python aggregator.py
 
       - name: Commit and push updated data
@@ -45,7 +44,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           # add whichever data files this run produced (optional jobs may not have run)
-          for f in data.json oanda_book.json macro.json earnings.json; do
+          for f in data.json oanda_book.json macro.json taker_volume.json; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if ! git diff --staged --quiet; then

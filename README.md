@@ -4,9 +4,9 @@ A static site (GitHub Pages) with three tabs:
 
 - **Market**: live spot gold chart with a volume profile and the combined order books of several venues drawn on it, aggressor flow (buy vs sell pressure), the largest levels up to ±$200 from spot, a depth ladder, broker reference quotes, OANDA's client order book, and the TradingView Capital.com chart.
 - **Macro**: cross-asset dashboard (metals, oil, dollar, US yields, inflation, equities), shipping through Hormuz / Bab el-Mandeb / Suez, and the CFTC Commitments of Traders report.
-- **News**: gold-relevant news grouped into stories with short factual AI summaries. Search, filter, sort, and pin stories (pins are saved in your browser).
+- **News**: gold-relevant news grouped into stories with short factual AI summaries. Search, filter, sort, and pin stories (pins are saved in your browser). A second view, **Analysis & commentary**, lists gold market analysis from analyst publishers as published (no AI summary).
 
-No analysis, signals or predictions anywhere.
+No AI analysis, signals or predictions. Human analysts' commentary is kept in its own, clearly labelled view.
 
 ## Data sources
 
@@ -23,6 +23,7 @@ No analysis, signals or predictions anywhere.
 | Shipping chokepoints | IMF PortWatch (satellite AIS) | weekly, a few days' delay, in the browser |
 | COT report | CFTC Public Reporting API | weekly (Fridays), in the browser |
 | News | Publisher RSS feeds and Google News searches (`data.json`) | each workflow run |
+| Analysis & commentary | Google News searches limited to analyst publishers (`analysis.json`) | each workflow run |
 
 Anything fetched by the visitor's browser can be blocked by a provider for the visitor's country; the page then shows that source as unavailable.
 

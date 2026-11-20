@@ -6,12 +6,20 @@ or the news update.
   (OKX keeps 60 days; the file keeps building up history beyond that)
 - Yahoo Finance: hourly COMEX gold futures (GC=F) candles with volume, aligned to the spot
   index -> comex_volume.json, for the volume profile on the chart
+- Google News: gold market analysis and commentary from analyst publishers -> analysis.json
+  (listed as published: no clustering, no AI summary)
 """
+import calendar
 import csv
+import html
 import io
 import json
+import re
 import time
 from datetime import datetime, timedelta, timezone
+from urllib.parse import quote_plus
+
+import feedparser
 
 import requests
 
@@ -212,8 +220,74 @@ def update_comex():
     print(f"COMEX volume: {len(rows)} hours stored, latest {datetime.fromtimestamp(rows[-1][0] / 1000, timezone.utc):%Y-%m-%d %H:%M} UTC")
 
 
+# ---------------------------------------------------------------- analysis & commentary
+
+ANALYSIS_FILE = "analysis.json"
+ANALYSIS_KEEP_DAYS = 7
+ANALYSIS_QUERIES = [
+    "gold (site:kitco.com OR site:investing.com)",
+    "gold (site:fxstreet.com OR site:fxempire.com)",
+    "(gold OR commodities OR metals) (site:think.ing.com OR site:home.saxo OR site:gold.org OR site:stonex.com)",
+    'gold (outlook OR forecast OR analysis OR "week ahead" OR weekly)',
+]
+# publisher names as Google News reports them -> name shown on the site
+ANALYSIS_PUBLISHERS = {
+    "kitco": "Kitco", "investing.com": "Investing.com", "fxstreet": "FXStreet", "fxempire": "FXEmpire",
+    "ing think": "ING Think", "saxo": "Saxo", "world gold council": "World Gold Council",
+    "stonex": "StoneX", "investinglive": "investingLive", "reuters": "Reuters", "bloomberg": "Bloomberg",
+    "cnbc": "CNBC", "marketwatch": "MarketWatch", "barron's": "Barron's", "financial times": "Financial Times",
+    "wsj": "WSJ", "the wall street journal": "WSJ", "mining.com": "Mining.com",
+}
+ANALYSIS_TOPIC_RE = re.compile(r"\b(gold|bullion|xau|precious metals?|metals?|commodit\w*)\b", re.IGNORECASE)
+# landing pages, ads and SEO price pages are not analysis
+ANALYSIS_JUNK_RE = re.compile(r"trade gold on|news, analysis & commentary|methodology|price today|prices today"
+                              r"|current price of|live price|price chart|how to buy|best way to buy"
+                              r"|^form \d|\|.*\|"                                # filings, navigation pages
+                              r"|\b(ftse|tsx|asx|nikkei|dax|stoxx|sensex|nifty)\b",  # equity market wraps
+                              re.IGNORECASE)
+
+
+def analysis_publisher(name):
+    key = re.sub(r"\s+(uk|india|south africa|nigeria|australia|canada)$", "", name.strip().lower())
+    return ANALYSIS_PUBLISHERS.get(key)
+
+
+def update_analysis():
+    # re-apply the junk filter to stored items too, so filter changes take effect immediately
+    stored = {i["key"]: i for i in read_json(ANALYSIS_FILE, {}).get("items", [])
+              if not ANALYSIS_JUNK_RE.search(i["title"])}
+    found = 0
+    for q in ANALYSIS_QUERIES:
+        url = ("https://news.google.com/rss/search?q=" + quote_plus(f"{q} when:2d")
+               + "&hl=en-US&gl=US&ceid=US:en")
+        res = requests.get(url, headers=HTTP_HEADERS, timeout=20)
+        if res.status_code == 429:
+            time.sleep(8)
+            res = requests.get(url, headers=HTTP_HEADERS, timeout=20)
+        res.raise_for_status()
+        for e in feedparser.parse(res.content).entries:
+            raw_source = (e.get("source") or {}).get("title") or ""
+            source = analysis_publisher(raw_source)
+            title = html.unescape(e.get("title", "")).strip()
+            if title.endswith(f" - {raw_source}"):
+                title = title[: -len(raw_source) - 3].strip()
+            if not source or not title or ANALYSIS_JUNK_RE.search(title) or not ANALYSIS_TOPIC_RE.search(title):
+                continue
+            parsed = e.get("published_parsed")
+            ts = min(calendar.timegm(parsed), time.time()) if parsed else time.time()
+            key = re.sub(r"[^a-z0-9]", "", title.lower())[:120]  # same story via several queries
+            if key not in stored:
+                stored[key] = {"key": key, "title": title, "source": source, "link": e.get("link", ""), "ts": int(ts)}
+                found += 1
+        time.sleep(1.5)  # Google News rate-limits bursts
+    cutoff = time.time() - ANALYSIS_KEEP_DAYS * 86400
+    items = sorted((i for i in stored.values() if i["ts"] >= cutoff), key=lambda i: -i["ts"])
+    write_json(ANALYSIS_FILE, {"generated_utc": utc_now_str(), "items": items})
+    print(f"Analysis: {len(items)} articles in the last {ANALYSIS_KEEP_DAYS} days ({found} new)")
+
+
 def run_all():
-    for job in (update_macro, update_taker_volume, update_comex):
+    for job in (update_macro, update_taker_volume, update_comex, update_analysis):
         try:
             job()
         except Exception as ex:

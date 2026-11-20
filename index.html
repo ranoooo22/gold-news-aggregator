@@ -197,76 +197,57 @@
 
         <!-- NEWS -->
         <section id="tab-news" class="tab-panel">
-            <div class="seg news-mode">
-                <button data-news-mode="news">News</button>
-                <button data-news-mode="analysis">Analysis &amp; commentary</button>
+            <div class="toolbar news-toolbar">
+                <input type="search" id="news-search" placeholder="Search headlines, summaries, sources…">
+                <select id="news-topic">
+                    <option value="all">All topics</option>
+                    <option>Gold &amp; Precious Metals</option>
+                    <option>Fed &amp; US Rates</option>
+                    <option>Economic Data</option>
+                    <option>Central Banks</option>
+                    <option>Oil &amp; Energy</option>
+                    <option>Middle East</option>
+                    <option>Trade &amp; Sanctions</option>
+                    <option>Other Geopolitics</option>
+                    <option>Analysis &amp; commentary</option>
+                    <option>AI &amp; Tech</option>
+                    <option>Stock Markets</option>
+                    <option>Other</option>
+                </select>
+                <select id="news-hours">
+                    <option value="3">Last 3 h</option><option value="6">Last 6 h</option>
+                    <option value="12">Last 12 h</option><option value="24">Last 24 h</option><option value="48">Last 48 h</option>
+                </select>
+                <select id="news-view">
+                    <option value="all">News + analysis</option>
+                    <option value="news">News only</option>
+                    <option value="pinned">Pinned only</option>
+                    <option value="multi">2+ sources only</option>
+                </select>
+                <select id="news-sort">
+                    <option value="updated">Newest update first</option>
+                    <option value="first">Newest first report</option>
+                    <option value="sources">Most sources</option>
+                    <option value="oldest">Oldest first</option>
+                </select>
             </div>
-
-            <div id="news-view">
-                <div class="toolbar news-toolbar">
-                    <input type="search" id="news-search" placeholder="Search headlines, summaries, sources…">
-                    <select id="news-topic">
-                        <option value="all">All topics</option>
-                        <option>Gold &amp; Precious Metals</option>
-                        <option>Fed &amp; US Rates</option>
-                        <option>Economic Data</option>
-                        <option>Central Banks</option>
-                        <option>Oil &amp; Energy</option>
-                        <option>Middle East</option>
-                        <option>Trade &amp; Sanctions</option>
-                        <option>Other Geopolitics</option>
-                        <option>AI &amp; Tech</option>
-                        <option>Stock Markets</option>
-                        <option>Other</option>
-                    </select>
-                    <select id="news-hours">
-                        <option value="3">Last 3 h</option><option value="6">Last 6 h</option>
-                        <option value="12">Last 12 h</option><option value="24">Last 24 h</option><option value="48">Last 48 h</option>
-                    </select>
-                    <select id="news-view">
-                        <option value="all">All stories</option>
-                        <option value="pinned">Pinned only</option>
-                        <option value="multi">2+ sources only</option>
-                    </select>
-                    <select id="news-sort">
-                        <option value="updated">Newest update first</option>
-                        <option value="first">Newest first report</option>
-                        <option value="sources">Most sources</option>
-                        <option value="oldest">Oldest first</option>
-                    </select>
+            <div class="news-bar">
+                <div>
+                    <span id="news-count">–</span>
+                    <button class="chip" id="pin-filter" title="Show pinned only">★ <span id="pin-count">0</span> pinned</button>
+                    <label class="check small" title="Stories the AI marked as unrelated to gold, rates, energy or geopolitics">
+                        <input type="checkbox" id="news-show-filtered"> Show <span id="filtered-count">0</span> off-topic</label>
                 </div>
-                <div class="news-bar">
-                    <div>
-                        <span id="news-count">–</span>
-                        <button class="chip" id="pin-filter" title="Show pinned only">★ <span id="pin-count">0</span> pinned</button>
-                        <label class="check small" title="Stories the AI marked as unrelated to gold, rates, energy or geopolitics">
-                            <input type="checkbox" id="news-show-filtered"> Show <span id="filtered-count">0</span> off-topic</label>
-                    </div>
-                    <div>
-                        <button class="link-btn" id="expand-all">Expand all</button>
-                        <button class="link-btn" id="collapse-all">Collapse all</button>
-                    </div>
+                <div>
+                    <button class="link-btn" id="expand-all">Expand all</button>
+                    <button class="link-btn" id="collapse-all">Collapse all</button>
                 </div>
-                <div id="news-list"><div class="empty">Loading news…</div></div>
-                <details class="feed-health">
-                    <summary id="feed-health-summary">Feed status</summary>
-                    <ul id="feed-health-list"></ul>
-                </details>
             </div>
-
-            <div id="analysis-view" hidden>
-                <div class="toolbar news-toolbar">
-                    <input type="search" id="analysis-search" placeholder="Search analysis titles…">
-                    <select id="analysis-source"><option value="all">All publishers</option></select>
-                    <select id="analysis-hours">
-                        <option value="24">Last 24 h</option><option value="72">Last 3 days</option><option value="168">Last 7 days</option>
-                    </select>
-                </div>
-                <div class="news-bar"><span id="analysis-count">–</span></div>
-                <div id="analysis-list"><div class="empty">Loading…</div></div>
-                <p class="note">Market analysis and commentary from analyst publishers, listed as published (no AI summary, no grouping).
-                    These are the authors' own views and forecasts. Some publishers (e.g. FXStreet) label parts of their content as AI-assisted.</p>
-            </div>
+            <div id="news-list"><div class="empty">Loading news…</div></div>
+            <details class="feed-health">
+                <summary id="feed-health-summary">Feed status</summary>
+                <ul id="feed-health-list"></ul>
+            </details>
         </section>
     </main>
 
@@ -279,7 +260,6 @@
     <script src="js/volprofile.js"></script>
     <script src="js/flow.js"></script>
     <script src="js/news.js"></script>
-    <script src="js/analysis.js"></script>
     <script src="js/cot.js"></script>
     <script src="js/macro.js"></script>
     <script src="js/shipping.js"></script>
@@ -297,7 +277,6 @@
             startVolumeProfile();
             startFlow();
             startNews();
-            startAnalysis();
             startCot();
             startMacro();
             startShipping();

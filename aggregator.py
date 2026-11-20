@@ -151,6 +151,21 @@ def utc_str(ts):
     return datetime.fromtimestamp(ts, tz=timezone.utc).strftime("%Y-%m-%d %H:%M")
 
 
+def entry_timestamp(entry):
+    """Publish time of a feed entry (UTC), or None. Also handles Investing.com's
+    non-standard "Nov 20, 2026 17:06 GMT", which feedparser does not recognise."""
+    parsed = entry.get("published_parsed") or entry.get("updated_parsed")
+    if parsed:
+        return calendar.timegm(parsed)
+    raw = (entry.get("published") or entry.get("updated") or "").strip()
+    for fmt in ("%b %d, %Y %H:%M GMT", "%b %d, %Y %H:%M:%S GMT"):
+        try:
+            return datetime.strptime(raw, fmt).replace(tzinfo=timezone.utc).timestamp()
+        except ValueError:
+            pass
+    return None
+
+
 def clean_text(raw):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", raw or ""))).strip()
 
@@ -195,8 +210,7 @@ def fetch_feed(item):
                 desc = clean_text(e.get("summary", e.get("description", "")))[:400]
             if not passes_filter(f"{title} {desc}"):
                 continue
-            parsed = e.get("published_parsed") or e.get("updated_parsed")
-            ts = calendar.timegm(parsed) if parsed else time.time()  # feed times are UTC
+            ts = entry_timestamp(e) or time.time()
             ts = min(ts, time.time())
             if ts < cutoff:
                 continue

@@ -47,6 +47,7 @@ async function loadDailyMacro() {
     try {
         const data = await getJSON(`macro.json?t=${Date.now()}`);
         macroState.daily = data.series || null;
+        if (typeof refreshPanes === 'function') refreshPanes();
     } catch (e) {
         macroState.daily = null;
     }

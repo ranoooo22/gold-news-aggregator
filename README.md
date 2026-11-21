@@ -8,6 +8,12 @@ A static site (GitHub Pages) with three tabs:
 
 No AI analysis, signals or predictions. Human analysts' commentary is shown as such, clearly labelled and never summarised.
 
+## Using the chart
+
+- **Layers** (button above the chart): choose what is drawn on the gold chart (order book, largest orders, volume profile, volume zones) and which small charts appear below it (buy vs sell pressure, hedge fund positioning, US real yield, Hormuz tankers). Quick choices: Price only / Key levels / Everything.
+- **Settings**: order book range, row size, smoothing, which levels are drawn, volume profile period and source.
+- Choices are saved in your browser. On phones the menus open from the bottom and the tabs sit at the bottom of the screen.
+
 ## Data sources
 
 | What | Source | Updated |

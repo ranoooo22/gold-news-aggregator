@@ -63,7 +63,10 @@ const fitOnShow = [];
 function registerFitOnShow(chart) { fitOnShow.push(chart); }
 function refitCharts() {
     // wait for the browser to lay out the newly shown tab and the charts to resize
-    setTimeout(() => fitOnShow.forEach((c) => { try { c.timeScale().fitContent(); } catch (e) { /* ignore */ } }), 60);
+    setTimeout(() => {
+        const charts = [...fitOnShow, ...(typeof paneCharts !== 'undefined' ? Object.values(paneCharts) : [])];
+        charts.forEach((c) => { try { c.timeScale().fitContent(); } catch (e) { /* ignore */ } });
+    }, 60);
 }
 
 // localStorage can be unavailable (private mode, blocked storage): never let that break the page.

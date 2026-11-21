@@ -243,6 +243,11 @@ function bindNewsControls() {
     bind('news-sort', 'sort');
     bind('news-show-filtered', 'showFiltered');
     $('news-search').addEventListener('input', renderNews);
+    // phones: filters are folded away behind a button
+    $('news-filter-toggle').addEventListener('click', (e) => {
+        const open = document.querySelector('.news-toolbar').classList.toggle('filters-open');
+        e.currentTarget.setAttribute('aria-expanded', String(open));
+    });
     $('pin-filter').addEventListener('click', () => {
         newsSettings.view = newsSettings.view === 'pinned' ? 'all' : 'pinned';
         store.set(NEWS_SETTINGS_KEY, newsSettings);

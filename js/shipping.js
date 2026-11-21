@@ -103,6 +103,9 @@ async function loadShipping() {
             </thead><tbody>${tableRows}</tbody></table>`;
         $('ship-asof').textContent = latest ? `data through ${latest}` : '';
         renderShipChart(byStrait);
+        shipState.byStrait = byStrait;
+        shipState.latest = latest;
+        if (typeof refreshPanes === 'function') refreshPanes();
     } catch (e) {
         $('ship-table').innerHTML = `<div class="empty">PortWatch unavailable (${escapeHtml(e.message)})</div>`;
     }

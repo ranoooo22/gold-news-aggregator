@@ -95,14 +95,22 @@ const settings = Object.assign({
     step: 'auto',        // $ bucket size for depth, or 'auto' (depends on the range)
     rangeUsd: 100,       // show depth within ±$ of spot
     align: true,         // shift each venue by its offset to spot
-    walls: true,         // draw largest levels as lines
+    // what is drawn on the gold chart, and which charts are shown below it (Layers menu)
+    layers: { book: true, walls: true, vp: true, vpLines: true },
+    panes: { flow: false, cot: false, real: false, hormuz: false },
     smooth: 5,           // minutes of time-averaging for the depth (0 = live)
     levels: 'larger',    // 'all' | 'larger' | 'largest': which levels are drawn on the chart
-    vp: '1M',            // volume profile window: 'off' | '1W' | '1M' | '3M'
+    vp: '1M',            // volume profile window: '1W' | '1M' | '3M'
     vpSource: 'comex',   // volume profile source: 'comex' (COMEX futures) | 'okx' (OKX perp)
     enabled: {},         // venue id -> false when switched off
 }, store.get('gt_market_settings', {}));
 // settings saved before the range became a $ amount: switch to the new defaults
+// settings saved before the Layers menu: carry over what was switched off
+if (settings.walls === false) settings.layers.walls = false;
+if (settings.vp === 'off') { settings.layers.vp = false; settings.layers.vpLines = false; settings.vp = '1M'; }
+settings.walls = undefined;
+settings.layers = Object.assign({ book: true, walls: true, vp: true, vpLines: true }, settings.layers);
+settings.panes = Object.assign({ flow: false, cot: false, real: false, hormuz: false }, settings.panes);
 if (settings.rangePct !== undefined) {
     settings.rangePct = undefined;
     settings.rangeUsd = 100;
@@ -452,7 +460,7 @@ function initChart() {
         priceFormat: { type: 'price', precision: 2, minMove: 0.01 },
         autoscaleInfoProvider: (original) => {
             const res = original();
-            const prices = settings.walls ? [...lastWallSet.bid, ...lastWallSet.ask] : [];
+            const prices = settings.layers.walls ? [...lastWallSet.bid, ...lastWallSet.ask] : [];
             if (typeof vpAutoscalePrices === 'function') prices.push(...vpAutoscalePrices());
             if (!res || settings.chartMode !== 'spot' || !prices.length) return res;
             const pad = effectiveStep();
@@ -496,7 +504,7 @@ function drawDepthOverlay() {
     if (typeof drawVolumeProfile === 'function') {
         drawVolumeProfile(ctx, state.chart.timeScale().width(), rect.height - state.chart.timeScale().height());
     }
-    if (!state.buckets.length || !state.maxOz) return;
+    if (!settings.layers.book || !state.buckets.length || !state.maxOz) return;
 
     const paneWidth = state.chart.timeScale().width();
     const paneHeight = rect.height - state.chart.timeScale().height();
@@ -542,7 +550,7 @@ function pickWalls(side) {
 
 function renderWalls(force = false) {
     if (!state.series) return;
-    const show = settings.walls && settings.chartMode === 'spot';
+    const show = settings.layers.walls && settings.chartMode === 'spot';
     const next = show ? { bid: pickWalls('bid'), ask: pickWalls('ask') } : { bid: [], ask: [] };
     const key = JSON.stringify(next);
     // redraw when the marked levels change, otherwise only every 30 s to refresh the oz labels
@@ -559,7 +567,8 @@ function renderWalls(force = false) {
             if (!b) return;
             state.wallLines.push(state.series.createPriceLine({
                 price, color, lineWidth: 1, lineStyle: LightweightCharts.LineStyle.Dashed,
-                axisLabelVisible: true, title: `${side} ${fmt(b[side], 0)} oz`,
+                // on narrow screens only the size, so the labels don't cover the candles
+                axisLabelVisible: true, title: window.innerWidth < 680 ? fmt(b[side], 0) : `${side} ${fmt(b[side], 0)} oz`,
             }));
         });
     }
@@ -641,14 +650,15 @@ function syncControls() {
     $('opt-align').checked = settings.align;
     $('opt-smooth').value = String(settings.smooth);
     $('opt-levels').value = settings.levels;
-    $('opt-walls').checked = settings.walls;
     const spotMode = settings.chartMode === 'spot';
     $('spot-chart-wrap').hidden = !spotMode;
     $('tv-widget').hidden = spotMode;
     $('tf-group').hidden = !spotMode;
-    $('chart-caption').innerHTML = spotMode
-        ? `Candles: OKX XAU/USD spot index. Bars on the right: combined order books of the venues below (green bids, red asks); cyan bars on the left: volume profile (orange = POC)${settings.smooth ? `, averaged over ${settings.smooth} min` : ', live'}.`
-        : 'TradingView chart, Capital.com GOLD feed. Order book levels cannot be drawn on this widget; see the ladder.';
+    if (!spotMode) {
+        $('chart-caption').textContent = 'TradingView chart, Capital.com GOLD feed. Layers cannot be drawn on this widget; the order book is in the ladder.';
+    } else if (typeof updateLegend === 'function') {
+        updateLegend();
+    }
 }
 
 function bindControls() {
@@ -666,7 +676,6 @@ function bindControls() {
     $('opt-align').addEventListener('change', (e) => { settings.align = e.target.checked; saveSettings(); resetDepthHistory(); refreshDepthViews(); });
     $('opt-smooth').addEventListener('change', (e) => { settings.smooth = Number(e.target.value); saveSettings(); syncControls(); refreshDepthViews(); });
     $('opt-levels').addEventListener('change', (e) => { settings.levels = e.target.value; saveSettings(); refreshDepthViews(); });
-    $('opt-walls').addEventListener('change', (e) => { settings.walls = e.target.checked; saveSettings(); renderWalls(true); });
     $('venue-table-body').addEventListener('change', (e) => {
         const id = e.target.dataset.venue;
         if (!id) return;

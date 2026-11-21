@@ -110,7 +110,7 @@ async function comexCandles(win) {
 async function loadVolumeProfile() {
     const id = ++vpState.loadId;
     const win = VP_WINDOWS[settings.vp];
-    if (!win) {
+    if (!win) { // unknown window: fall back to nothing shown
         Object.assign(vpState, { profile: null, peaks: [] });
         updatePocLine();
         renderVpSummary();
@@ -156,7 +156,7 @@ function vpLevels() {
 
 // levels close enough to spot to keep in view (used by the chart's autoscale in market.js)
 function vpAutoscalePrices() {
-    if (!vpState.profile || settings.chartMode !== 'spot' || !state.spot) return [];
+    if (!vpState.profile || !settings.layers.vpLines || settings.chartMode !== 'spot' || !state.spot) return [];
     return vpLevels().filter((l) => Math.abs(l.price - state.spot) <= VP_ZOOM_RANGE_USD).map((l) => l.price);
 }
 
@@ -164,7 +164,7 @@ function updatePocLine() {
     if (!state.series) return;
     (vpState.lines || []).forEach((l) => state.series.removePriceLine(l));
     vpState.lines = [];
-    if (!vpState.profile || settings.chartMode !== 'spot') return;
+    if (!vpState.profile || !settings.layers.vpLines || settings.chartMode !== 'spot') return;
     vpLevels().forEach((l) => {
         vpState.lines.push(state.series.createPriceLine({
             price: l.price, color: l.poc ? '#ffa31a' : '#38bdf8', lineWidth: l.poc ? 2 : 1,
@@ -175,7 +175,7 @@ function updatePocLine() {
 
 function renderVpSummary() {
     const el = $('vp-summary');
-    if (!vpState.profile) { el.textContent = ''; return; }
+    if (!vpState.profile || !(settings.layers.vp || settings.layers.vpLines)) { el.textContent = ''; return; }
     if (!state.spot) setTimeout(renderVpSummary, 2000); // distances follow once the first spot price is in
     const win = VP_WINDOWS[settings.vp];
     const mid = (k) => k + vpState.step / 2;
@@ -191,7 +191,7 @@ function renderVpSummary() {
 
 // Called by the chart overlay loop in market.js.
 function drawVolumeProfile(ctx, paneWidth, paneHeight) {
-    if (!vpState.profile || !state.series) return;
+    if (!vpState.profile || !settings.layers.vp || !state.series) return;
     const maxLen = Math.min(240, paneWidth * 0.25);
     for (const [price, oz] of vpState.profile) {
         const yTop = state.series.priceToCoordinate(price + vpState.step);

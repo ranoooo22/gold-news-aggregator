@@ -2,18 +2,18 @@
 
 /*
  * Layers and Settings menus for the gold chart.
- *  - Layers: what is drawn on the chart (order book, largest orders, volume profile, volume zones)
+ *  - Layers: what is drawn on the chart (order zones, volume profile, volume zones)
  *    and which small charts appear below it (buy/sell pressure, hedge fund positioning,
  *    real yield, Hormuz tankers). Presets switch several at once.
- *  - Settings: the detail controls (order book range, row size, smoothing, …).
+ *  - Settings: the detail controls (zone size and range, COMEX period, volume profile).
  * On phones both open as a sheet from the bottom of the screen; on desktop as a side panel.
  * Choices are saved in this browser (settings in market.js).
  */
 
 const LAYER_PRESETS = {
-    clean: { layers: { book: false, walls: false, vp: false, vpLines: false } },
-    levels: { layers: { book: false, walls: true, vp: false, vpLines: true } },
-    all: { layers: { book: true, walls: true, vp: true, vpLines: true } },
+    clean: { layers: { zones: false, vp: false, vpLines: false } },
+    levels: { layers: { zones: true, vp: false, vpLines: false } },
+    all: { layers: { zones: true, vp: true, vpLines: true } },
 };
 
 function openSheet(id) {
@@ -43,7 +43,7 @@ function syncLayerControls() {
 function applyLayers() {
     saveSettings();
     syncLayerControls();
-    renderWalls(true);
+    if (typeof updateZoneLines === 'function') updateZoneLines();
     if (typeof updatePocLine === 'function') updatePocLine();
     if (typeof renderVpSummary === 'function') renderVpSummary();
     if (state.series) state.series.applyOptions({}); // re-run autoscale for the lines now shown
@@ -56,8 +56,7 @@ function updateLegend() {
     if (settings.chartMode !== 'spot') return;
     const L = settings.layers;
     const items = [`<span class="lg"><i class="lg-candle"></i>Spot gold (OKX index)</span>`];
-    if (L.book) items.push(`<span class="lg"><i class="lg-book"></i>Order book, right edge${settings.smooth ? ` (${settings.smooth}-min average)` : ''}</span>`);
-    if (L.walls) items.push('<span class="lg"><i class="lg-walls"></i>Largest orders (bid / ask lines)</span>');
+    if (L.zones) items.push('<span class="lg"><i class="lg-zone-buy"></i><i class="lg-zone-sell"></i>Order zones: green = more OANDA buy orders, red = more sell orders, solid line = OANDA + COMEX</span>');
     if (L.vp) items.push(`<span class="lg"><i class="lg-vp"></i>Volume profile, left edge (${settings.vpSource === 'okx' ? 'OKX' : 'COMEX'}, ${({ '1W': '1 week', '1M': '1 month', '3M': '3 months' })[settings.vp] || ''})</span>`);
     if (L.vpLines) items.push('<span class="lg"><i class="lg-poc"></i>Volume zones (VOL lines)</span>');
     $('chart-caption').innerHTML = items.join('');
@@ -83,7 +82,7 @@ function startLayers() {
         applyLayers();
     }));
     // settings that change what the legend says
-    ['opt-smooth', 'opt-vp', 'opt-vp-src'].forEach((id) => $(id).addEventListener('change', () => setTimeout(updateLegend, 0)));
+    ['opt-vp', 'opt-vp-src'].forEach((id) => $(id).addEventListener('change', () => setTimeout(updateLegend, 0)));
     syncLayerControls();
     updateLegend();
 }

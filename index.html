@@ -30,40 +30,16 @@
         <section id="tab-market" class="tab-panel active">
             <div class="toolbar">
                 <div class="seg">
-                    <button data-chart-mode="spot">Spot + order book</button>
-                    <button data-chart-mode="tradingview">TradingView · Capital.com</button>
+                    <button data-chart-mode="spot">Live chart</button>
+                    <button data-chart-mode="tradingview">Capital.com</button>
                 </div>
                 <div class="seg" id="tf-group">
                     <button data-tf="1m">1m</button><button data-tf="5m">5m</button><button data-tf="15m">15m</button>
                     <button data-tf="1H">1H</button><button data-tf="4H">4H</button><button data-tf="1D">1D</button>
                 </div>
-                <div class="toolbar-opts">
-                    <label>Range <select id="opt-range">
-                        <option value="25">±$25</option><option value="50">±$50</option>
-                        <option value="100">±$100</option><option value="200">±$200</option>
-                    </select></label>
-                    <label title="Price step per ladder row. Auto keeps the ladder at about 80 rows.">Bucket <select id="opt-step">
-                        <option value="auto">Auto</option><option value="0.5">$0.50</option><option value="1">$1</option>
-                        <option value="2">$2</option><option value="5">$5</option><option value="10">$10</option>
-                    </select></label>
-                    <label title="Averages each price level over time: orders that stay put show at full size, orders that flash in and out fade away.">Smoothing <select id="opt-smooth">
-                        <option value="0">Live</option><option value="1">1 min</option>
-                        <option value="5">5 min</option><option value="15">15 min</option>
-                    </select></label>
-                    <label title="Which levels are drawn on the chart. 'Larger' = at least 1.5x a typical level, 'Largest' = at least 3x.">Show <select id="opt-levels">
-                        <option value="all">All levels</option><option value="larger">Larger levels</option>
-                        <option value="largest">Largest levels</option>
-                    </select></label>
-                    <label class="check" title="Each venue trades a few dollars away from spot. When on, its book is shifted by that difference so levels line up with the spot chart.">
-                        <input type="checkbox" id="opt-align"> Align venues to spot</label>
-                    <label class="check"><input type="checkbox" id="opt-walls"> Mark largest levels</label>
-                    <label title="How much gold traded at each price over a past window, aligned to the spot chart">Volume profile <select id="opt-vp">
-                        <option value="off">Off</option><option value="1W">1 week</option>
-                        <option value="1M">1 month</option><option value="3M">3 months</option>
-                    </select>
-                    <select id="opt-vp-src" title="Volume source">
-                        <option value="comex">COMEX</option><option value="okx">OKX</option>
-                    </select></label>
+                <div class="toolbar-actions">
+                    <button class="tool-btn" id="open-layers" aria-haspopup="dialog">Layers <span class="count">–</span></button>
+                    <button class="tool-btn" id="open-settings" aria-haspopup="dialog">Settings</button>
                 </div>
             </div>
 
@@ -77,6 +53,7 @@
                     <div id="tv-widget" class="chart-wrap" hidden></div>
                     <div class="caption" id="chart-caption"></div>
                     <div class="caption vp-summary" id="vp-summary"></div>
+                    <div class="panes" id="panes"></div>
                 </div>
 
                 <div class="panel dom-panel">
@@ -199,6 +176,7 @@
         <section id="tab-news" class="tab-panel">
             <div class="toolbar news-toolbar">
                 <input type="search" id="news-search" placeholder="Search headlines, summaries, sources…">
+                <button class="tool-btn filter-toggle" id="news-filter-toggle" aria-expanded="false">Filters</button>
                 <select id="news-topic">
                     <option value="all">All topics</option>
                     <option>Gold &amp; Precious Metals</option>
@@ -209,6 +187,7 @@
                     <option>Middle East</option>
                     <option>Trade &amp; Sanctions</option>
                     <option>Other Geopolitics</option>
+                    <option>Analysis &amp; commentary</option>
                     <option>AI &amp; Tech</option>
                     <option>Stock Markets</option>
                     <option>Other</option>
@@ -218,7 +197,8 @@
                     <option value="12">Last 12 h</option><option value="24">Last 24 h</option><option value="48">Last 48 h</option>
                 </select>
                 <select id="news-view">
-                    <option value="all">All stories</option>
+                    <option value="all">News + analysis</option>
+                    <option value="news">News only</option>
                     <option value="pinned">Pinned only</option>
                     <option value="multi">2+ sources only</option>
                 </select>
@@ -249,6 +229,75 @@
         </section>
     </main>
 
+    <!-- Layers & Settings menus (side panel on desktop, sheet from the bottom on phones) -->
+    <div class="sheet-backdrop" id="sheet-backdrop" hidden></div>
+
+    <div class="sheet" id="layers-sheet" role="dialog" aria-label="Chart layers" hidden>
+        <div class="sheet-head"><span>What to show</span><button class="sheet-done" data-close>Done</button></div>
+        <div class="sheet-presets">
+            <span class="sheet-label">Quick choice</span>
+            <div class="seg">
+                <button data-preset="clean">Price only</button>
+                <button data-preset="levels">Key levels</button>
+                <button data-preset="all">Everything</button>
+            </div>
+        </div>
+        <div class="sheet-section">On the gold chart</div>
+        <label class="opt-row"><input type="checkbox" data-layer="book">
+            <span><b>Order book</b><small>Bars on the right edge: open buy orders (green) and sell orders (red) of 7 gold markets, by price.</small></span></label>
+        <label class="opt-row"><input type="checkbox" data-layer="walls">
+            <span><b>Largest orders</b><small>Lines at the 3 biggest buy and sell levels, $10 or more away from the price.</small></span></label>
+        <label class="opt-row"><input type="checkbox" data-layer="vp">
+            <span><b>Volume profile</b><small>Bars on the left edge: how much gold traded at each price in the past week, month or 3 months.</small></span></label>
+        <label class="opt-row"><input type="checkbox" data-layer="vpLines">
+            <span><b>Volume zones</b><small>Lines at the price with the most trading (VOL POC) and other busy price zones.</small></span></label>
+        <div class="sheet-section">Charts below the gold chart</div>
+        <label class="opt-row"><input type="checkbox" data-pane="flow">
+            <span><b>Buy vs sell pressure</b><small>Whether market buy orders or market sell orders dominated, every 4 hours (OKX gold perp).</small></span></label>
+        <label class="opt-row"><input type="checkbox" data-pane="cot">
+            <span><b>Hedge fund positioning</b><small>How many COMEX gold contracts hedge funds hold long minus short, weekly (CFTC).</small></span></label>
+        <label class="opt-row"><input type="checkbox" data-pane="real">
+            <span><b>US 10-year real yield</b><small>Interest on inflation-protected US bonds, daily (US Treasury).</small></span></label>
+        <label class="opt-row"><input type="checkbox" data-pane="hormuz">
+            <span><b>Strait of Hormuz tankers</b><small>Tankers passing per day, 7-day average (IMF PortWatch, a few days delayed).</small></span></label>
+    </div>
+
+    <div class="sheet" id="settings-sheet" role="dialog" aria-label="Chart settings" hidden>
+        <div class="sheet-head"><span>Settings</span><button class="sheet-done" data-close>Done</button></div>
+        <div class="sheet-section">Order book</div>
+        <label class="opt-row select"><span><b>Price range</b><small>How far from the price orders are shown.</small></span>
+            <select id="opt-range">
+                <option value="25">±$25</option><option value="50">±$50</option>
+                <option value="100">±$100</option><option value="200">±$200</option>
+            </select></label>
+        <label class="opt-row select"><span><b>Row size</b><small>Price step per row in the order book. Auto keeps it readable.</small></span>
+            <select id="opt-step">
+                <option value="auto">Auto</option><option value="0.5">$0.50</option><option value="1">$1</option>
+                <option value="2">$2</option><option value="5">$5</option><option value="10">$10</option>
+            </select></label>
+        <label class="opt-row select"><span><b>Smoothing</b><small>Average each level over time, so orders that flash in and out fade away.</small></span>
+            <select id="opt-smooth">
+                <option value="0">Live</option><option value="1">1 min</option>
+                <option value="5">5 min</option><option value="15">15 min</option>
+            </select></label>
+        <label class="opt-row select"><span><b>Which levels on the chart</b><small>Only levels clearly bigger than a typical level, or all of them.</small></span>
+            <select id="opt-levels">
+                <option value="all">All levels</option><option value="larger">Larger (1.5× typical)</option>
+                <option value="largest">Largest (3× typical)</option>
+            </select></label>
+        <label class="opt-row"><input type="checkbox" id="opt-align">
+            <span><b>Line up markets with spot</b><small>Each market trades a few dollars away from spot; this shifts its orders so they sit at the right place on the spot chart.</small></span></label>
+        <div class="sheet-section">Volume profile</div>
+        <label class="opt-row select"><span><b>Period</b><small>How far back trading volume is counted.</small></span>
+            <select id="opt-vp">
+                <option value="1W">1 week</option><option value="1M">1 month</option><option value="3M">3 months</option>
+            </select></label>
+        <label class="opt-row select"><span><b>Source</b><small>COMEX futures (main market, hourly) or OKX (live).</small></span>
+            <select id="opt-vp-src" title="Volume source">
+                <option value="comex">COMEX</option><option value="okx">OKX</option>
+            </select></label>
+    </div>
+
     <footer class="footer">
         Times in UTC. Summaries are written by an AI from the linked articles and contain no market commentary; check the sources for anything important.
     </footer>
@@ -257,6 +306,8 @@
     <script src="js/market.js"></script>
     <script src="js/volprofile.js"></script>
     <script src="js/flow.js"></script>
+    <script src="js/layers.js"></script>
+    <script src="js/panes.js"></script>
     <script src="js/news.js"></script>
     <script src="js/cot.js"></script>
     <script src="js/macro.js"></script>
@@ -274,6 +325,7 @@
             startMarket();
             startVolumeProfile();
             startFlow();
+            startLayers();
             startNews();
             startCot();
             startMacro();

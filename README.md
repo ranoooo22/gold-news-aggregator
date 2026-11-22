@@ -4,9 +4,15 @@ A static site (GitHub Pages) with three tabs:
 
 - **Market**: live spot gold chart with a volume profile and the combined order books of several venues drawn on it, aggressor flow (buy vs sell pressure), the largest levels up to ±$200 from spot, a depth ladder, broker reference quotes, OANDA's client order book, and the TradingView Capital.com chart.
 - **Macro**: cross-asset dashboard (metals, oil, dollar, US yields, inflation, equities), shipping through Hormuz / Bab el-Mandeb / Suez, and the CFTC Commitments of Traders report.
-- **News**: gold-relevant news grouped into stories with short factual AI summaries. Search, filter, sort, and pin stories (pins are saved in your browser).
+- **News**: gold-relevant news grouped into stories with short factual AI summaries. Search, filter, sort, and pin stories (pins are saved in your browser). Gold market analysis from analyst publishers appears between the news as clearly labelled cards, as published (publisher teaser, no AI summary).
 
-No analysis, signals or predictions anywhere.
+No AI analysis, signals or predictions. Human analysts' commentary is shown as such, clearly labelled and never summarised.
+
+## Using the chart
+
+- **Layers** (button above the chart): choose what is drawn on the gold chart (order book, largest orders, volume profile, volume zones) and which small charts appear below it (buy vs sell pressure, hedge fund positioning, US real yield, Hormuz tankers). Quick choices: Price only / Key levels / Everything.
+- **Settings**: order book range, row size, smoothing, which levels are drawn, volume profile period and source.
+- Choices are saved in your browser. On phones the menus open from the bottom and the tabs sit at the bottom of the screen.
 
 ## Data sources
 
@@ -23,6 +29,7 @@ No analysis, signals or predictions anywhere.
 | Shipping chokepoints | IMF PortWatch (satellite AIS) | weekly, a few days' delay, in the browser |
 | COT report | CFTC Public Reporting API | weekly (Fridays), in the browser |
 | News | Publisher RSS feeds and Google News searches (`data.json`) | each workflow run |
+| Analysis & commentary | Kitco (pages), ING Think, FXEmpire and Investing.com (RSS), Google News for FXStreet, StoneX, Saxo, WGC and others (`analysis.json`) | each workflow run |
 
 Anything fetched by the visitor's browser can be blocked by a provider for the visitor's country; the page then shows that source as unavailable.
 

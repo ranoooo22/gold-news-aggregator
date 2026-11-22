@@ -1,19 +1,38 @@
 'use strict';
 
 /*
- * News tab: reads data.json (written every 15 min by aggregator.py).
+ * News tab: reads data.json (written every 15 min by aggregator.py) and analysis.json
+ * (analysts' commentary, shown as published between the news, clearly labelled).
  * Pins are stored in this browser together with a copy of the story,
  * so a pinned story stays visible after it drops out of data.json.
  */
+
+const ANALYSIS_TOPIC = 'Analysis & commentary';
 
 const PIN_KEY = 'gt_pins_v2';
 const NEWS_SETTINGS_KEY = 'gt_news_settings';
 const NEWS_REFRESH_MS = 3 * 60 * 1000;
 
 const newsState = {
-    clusters: [], feeds: [], generated: '',
+    clusters: [], analysis: [], feeds: [], generated: '',
     expanded: new Set(),
 };
+
+// An analysis article in the same shape as a news story, so filters, sorting and pins work for both.
+function analysisAsStory(i) {
+    return {
+        id: `a:${i.key}`, type: 'analysis', first_ts: i.ts, last_ts: i.ts, item: i,
+        articles: [{ title: i.title, link: i.link, source: i.source, ts: i.ts }],
+    };
+}
+
+function liveStories() {
+    return [...newsState.clusters, ...newsState.analysis.map(analysisAsStory)];
+}
+
+function storyTopic(c) {
+    return c.type === 'analysis' ? ANALYSIS_TOPIC : (c.summary && c.summary.topic);
+}
 const newsSettings = Object.assign({
     topic: 'all', view: 'all', hours: 24, sort: 'updated', showFiltered: false,
 }, store.get(NEWS_SETTINGS_KEY, {}));
@@ -32,7 +51,7 @@ function togglePin(id) {
     if (pins[id]) {
         delete pins[id];
     } else {
-        const c = newsState.clusters.find((x) => x.id === id);
+        const c = liveStories().find((x) => x.id === id);
         if (c) pins[id] = c;
     }
     savePins(pins);
@@ -42,7 +61,7 @@ function togglePin(id) {
 // Pinned stories: use the live version when it still exists (it may have new sources).
 function allClustersWithPins() {
     const pins = loadPins();
-    const live = new Map(newsState.clusters.map((c) => [c.id, c]));
+    const live = new Map(liveStories().map((c) => [c.id, c]));
     let pinsChanged = false;
     for (const id of Object.keys(pins)) {
         if (live.has(id)) {
@@ -70,12 +89,15 @@ function renderNews() {
             filteredOut++;
             if (!newsSettings.showFiltered) return false;
         }
+        const isAnalysis = c.type === 'analysis';
         if (newsSettings.view === 'pinned' && !pinned) return false;
         if (newsSettings.view === 'multi' && c.articles.length < 2) return false;
+        if (newsSettings.view === 'news' && isAnalysis) return false;
         if (!pinned && now - c.last_ts > newsSettings.hours * 3600) return false;
-        if (newsSettings.topic !== 'all' && (!s || s.topic !== newsSettings.topic)) return false;
+        if (newsSettings.topic !== 'all' && storyTopic(c) !== newsSettings.topic) return false;
         if (query) {
             const hay = [clusterHeadline(c), s?.summary, ...(s?.key_points || []),
+                isAnalysis ? `${c.item.teaser || ''} ${c.item.author || ''}` : '',
                 ...c.articles.map((a) => `${a.title} ${a.source}`)].join(' ').toLowerCase();
             if (!hay.includes(query)) return false;
         }
@@ -91,7 +113,9 @@ function renderNews() {
     shown.sort((a, b) => (Boolean(pins[b.id]) - Boolean(pins[a.id])) || sorters[newsSettings.sort](a, b));
 
     $('pin-count').textContent = Object.keys(pins).length;
-    $('news-count').textContent = `${shown.length} stor${shown.length === 1 ? 'y' : 'ies'}`;
+    const nAnalysis = shown.filter((c) => c.type === 'analysis').length;
+    const nNews = shown.length - nAnalysis;
+    $('news-count').textContent = `${nNews} stor${nNews === 1 ? 'y' : 'ies'} · ${nAnalysis} analys${nAnalysis === 1 ? 'is' : 'es'}`;
     $('filtered-count').textContent = filteredOut;
     $('tab-news-count').textContent = shown.length;
 
@@ -102,7 +126,30 @@ function renderNews() {
     container.innerHTML = shown.map((c) => renderCard(c, Boolean(pins[c.id]))).join('');
 }
 
+// Analysis card: the author's own words (publisher teaser), never summarised.
+function renderAnalysisCard(c, pinned) {
+    const i = c.item;
+    const label = i.kind === 'commentary' ? 'Commentary' : 'Analysis';
+    const badges = [
+        pinned ? `<span class="badge pin">${c.archived ? 'Pinned · expired' : 'Pinned'}</span>` : '',
+        `<span class="badge analysis" title="Written by the publisher's analysts or columnists; their own views and forecasts">${label}</span>`,
+        `<span class="badge src">${escapeHtml(i.source)}</span>`,
+        i.author ? `<span class="card-author">by ${escapeHtml(i.author)}</span>` : '',
+        i.ai ? '<span class="badge muted" title="The publisher marks this article as AI-generated or AI-assisted">AI-assisted (per publisher)</span>' : '',
+    ].join('');
+    return `<article class="news-card analysis-card ${pinned ? 'pinned' : ''}" data-id="${escapeHtml(c.id)}">
+        <header class="card-head">
+            <div class="card-meta">${badges}<span class="card-time">${utcTime(i.ts, true)} UTC (${timeAgo(i.ts)})</span></div>
+            <button class="pin-btn ${pinned ? 'active' : ''}" data-action="pin" title="${pinned ? 'Unpin' : 'Pin to top'}">${pinned ? '★ Pinned' : '☆ Pin'}</button>
+        </header>
+        <h3 class="card-title"><a href="${escapeHtml(safeUrl(i.link))}" target="_blank" rel="noopener noreferrer">${escapeHtml(i.title)}</a></h3>
+        ${i.teaser ? `<p class="analysis-teaser">${escapeHtml(i.teaser)}</p>` : ''}
+        <a class="card-toggle" href="${escapeHtml(safeUrl(i.link))}" target="_blank" rel="noopener noreferrer">Read on ${escapeHtml(i.source)} ↗</a>
+    </article>`;
+}
+
 function renderCard(c, pinned) {
+    if (c.type === 'analysis') return renderAnalysisCard(c, pinned);
     const s = c.summary;
     const expanded = newsState.expanded.has(c.id);
     const arts = [...c.articles].sort((a, b) => b.ts - a.ts);
@@ -160,9 +207,13 @@ function renderFeedHealth() {
 
 async function loadNews() {
     try {
-        const data = await getJSON(`data.json?t=${Date.now()}`, {}, 15000);
+        const [data, analysis] = await Promise.all([
+            getJSON(`data.json?t=${Date.now()}`, {}, 15000),
+            getJSON(`analysis.json?t=${Date.now()}`, {}, 15000).catch(() => ({ items: [] })),
+        ]);
         if (!data || data.version !== 2) throw new Error('news data is in an old format; it will update on the next run');
         newsState.clusters = data.clusters || [];
+        newsState.analysis = analysis.items || [];
         newsState.feeds = data.feeds || [];
         newsState.generated = data.generated_utc || '';
         renderFeedHealth();
@@ -192,6 +243,11 @@ function bindNewsControls() {
     bind('news-sort', 'sort');
     bind('news-show-filtered', 'showFiltered');
     $('news-search').addEventListener('input', renderNews);
+    // phones: filters are folded away behind a button
+    $('news-filter-toggle').addEventListener('click', (e) => {
+        const open = document.querySelector('.news-toolbar').classList.toggle('filters-open');
+        e.currentTarget.setAttribute('aria-expanded', String(open));
+    });
     $('pin-filter').addEventListener('click', () => {
         newsSettings.view = newsSettings.view === 'pinned' ? 'all' : 'pinned';
         store.set(NEWS_SETTINGS_KEY, newsSettings);

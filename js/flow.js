@@ -42,6 +42,8 @@ async function loadFlow() {
             line.push({ time, value: Math.round(cum) });
         });
         renderFlowChart(bars, line);
+        flowState.data = { bars, line, rows };
+        if (typeof refreshPanes === 'function') refreshPanes();
 
         // totals for recent windows
         const lastTs = rows[rows.length - 1].ts;

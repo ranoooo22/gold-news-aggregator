@@ -44,6 +44,7 @@ async function loadCot() {
         }).reverse(); // oldest first
         renderCotTable();
         renderCotChart();
+        if (typeof refreshPanes === 'function') refreshPanes();
     } catch (e) {
         $('cot-table').innerHTML = `<div class="empty">CFTC data unavailable (${escapeHtml(e.message)})</div>`;
     }

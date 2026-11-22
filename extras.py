@@ -6,12 +6,22 @@ or the news update.
   (OKX keeps 60 days; the file keeps building up history beyond that)
 - Yahoo Finance: hourly COMEX gold futures (GC=F) candles with volume, aligned to the spot
   index -> comex_volume.json, for the volume profile on the chart
+- Gold market analysis and commentary from analyst publishers (RSS feeds, Kitco pages, and
+  Google News for the rest) -> analysis.json (listed as published: no clustering, no AI summary)
 """
+import calendar
 import csv
+import html
 import io
 import json
+import re
 import time
 from datetime import datetime, timedelta, timezone
+from urllib.parse import quote_plus
+
+import feedparser
+
+from aggregator import entry_timestamp
 
 import requests
 
@@ -212,8 +222,188 @@ def update_comex():
     print(f"COMEX volume: {len(rows)} hours stored, latest {datetime.fromtimestamp(rows[-1][0] / 1000, timezone.utc):%Y-%m-%d %H:%M} UTC")
 
 
+# ---------------------------------------------------------------- analysis & commentary
+#
+# Gold market analysis written by analysts, listed as published (no clustering, no AI summary).
+# Publishers with an RSS feed or crawlable pages are read directly (with a teaser text);
+# the rest come via Google News (title only).
+
+ANALYSIS_FILE = "analysis.json"
+ANALYSIS_KEEP_DAYS = 7
+ANALYSIS_TEASER_CHARS = 320
+BROWSER_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                                 "(KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
+
+# (publisher, RSS feed, only items by this author or None); Investing.com feeds have no teaser
+ANALYSIS_FEEDS = [
+    ("ING Think", "https://think.ing.com/rss/", None),
+    ("FXEmpire", "https://www.fxempire.com/api/v1/en/articles/rss/forecasts", None),
+    ("Investing.com", "https://www.investing.com/rss/commodities.rss", None),      # analysis & opinion
+    ("Investing.com", "https://www.investing.com/rss/news_11.rss", "Investing.com"),  # own daily reports, not wires
+]
+# Kitco has no RSS feed; its listing pages are crawlable (robots.txt allows all).
+KITCO_PAGES = [
+    ("https://www.kitco.com/opinion/", r"/opinion/\d{4}-\d{2}-\d{2}/[a-z0-9-]+"),
+    ("https://www.kitco.com/news/", r"/news/(?:article|off-the-wire)/\d{4}-\d{2}-\d{2}/[a-z0-9-]+"),
+]
+KITCO_MAX_NEW_PER_RUN = 20
+# Google News for publishers without a usable feed (FXStreet and StoneX block direct access)
+ANALYSIS_QUERIES = [
+    "gold (site:fxstreet.com OR site:stonex.com)",
+    "(gold OR commodities OR metals) (site:home.saxo OR site:gold.org)",
+    'gold (outlook OR forecast OR analysis OR "week ahead" OR weekly)',
+]
+# publisher names as Google News reports them -> name shown on the site
+ANALYSIS_PUBLISHERS = {
+    "kitco": "Kitco", "investing.com": "Investing.com", "fxstreet": "FXStreet", "fxempire": "FXEmpire",
+    "ing think": "ING Think", "saxo": "Saxo", "world gold council": "World Gold Council",
+    "stonex": "StoneX", "investinglive": "investingLive", "reuters": "Reuters", "bloomberg": "Bloomberg",
+    "cnbc": "CNBC", "marketwatch": "MarketWatch", "barron's": "Barron's", "financial times": "Financial Times",
+    "wsj": "WSJ", "the wall street journal": "WSJ", "mining.com": "Mining.com",
+}
+ANALYSIS_TOPIC_RE = re.compile(r"\b(gold|bullion|xau|precious metals?|metals?|silver|commodit\w*)\b", re.IGNORECASE)
+# landing pages, ads, SEO price pages, filings and equity market wraps are not analysis
+ANALYSIS_JUNK_RE = re.compile(r"trade gold on|news, analysis & commentary|methodology|price today|prices today"
+                              r"|current price of|live price|price chart|how to buy|best way to buy"
+                              r"|^form \d|\|.*\|"
+                              r"|\b(ftse|tsx|asx|nikkei|dax|stoxx|sensex|nifty)\b",
+                              re.IGNORECASE)
+AI_DISCLAIMER_RE = re.compile(r"AI-generated content[^.]*\.?|For informational and educational purposes only\.?"
+                              r"|Not investment advice\.?", re.IGNORECASE)
+
+
+def title_key(title):
+    return re.sub(r"[^a-z0-9]", "", title.lower())[:120]
+
+
+def clean_teaser(text):
+    s = html.unescape(html.unescape(text or ""))
+    s = re.sub(r"<[^>]+>", " ", s)
+    s = re.sub(r"\.[a-z][\w-]*[^{}]*\{[^}]*\}", " ", s)          # inline CSS that leaks into descriptions
+    s = re.sub(r"^\s*\(Kitco [A-Za-z]+\)\s*-\s*", "", s)           # "(Kitco News) - " prefix
+    s = re.sub(r"([a-z0-9][.!?”\"])([A-Z])", r"\1 \2", s)          # "published.The" -> "published. The"
+    s = re.sub(r"\s+", " ", s).strip()
+    if len(s) > ANALYSIS_TEASER_CHARS:
+        s = s[:ANALYSIS_TEASER_CHARS].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+    return s
+
+
+def analysis_publisher(name):
+    key = re.sub(r"\s+(uk|india|south africa|nigeria|australia|canada)$", "", name.strip().lower())
+    return ANALYSIS_PUBLISHERS.get(key)
+
+
+def page_meta(page, key):
+    m = (re.search(r'<meta[^>]+(?:property|name)="%s"[^>]+content="([^"]*)"' % re.escape(key), page)
+         or re.search(r'<meta[^>]+content="([^"]*)"[^>]+(?:property|name)="%s"' % re.escape(key), page))
+    return html.unescape(m.group(1)) if m else ""
+
+
+def collect_feeds(add):
+    for source, url, only_author in ANALYSIS_FEEDS:
+        try:
+            res = requests.get(url, headers=BROWSER_HEADERS, timeout=20)
+            res.raise_for_status()
+            for e in feedparser.parse(res.content).entries:
+                if only_author and (e.get("author") or "").strip() != only_author:
+                    continue
+                title = html.unescape(e.get("title", "")).strip()
+                raw = e.get("summary", "") or e.get("description", "")
+                ai = bool(re.search(r"AI-generated", raw, re.IGNORECASE))
+                teaser = clean_teaser(AI_DISCLAIMER_RE.sub(" ", raw))
+                ts = entry_timestamp(e)
+                if ts is None:
+                    continue  # without a date the article can't be placed in the list
+                add(title, source, e.get("link", ""), ts,
+                    teaser=teaser, author=(e.get("author") or "").strip(), ai=ai, topic_text=f"{title} {teaser}")
+        except Exception as ex:
+            print(f"Analysis feed {source} failed: {type(ex).__name__}")
+
+
+def collect_kitco(add, known_links):
+    new_links = []
+    for page_url, pattern in KITCO_PAGES:
+        try:
+            res = requests.get(page_url, headers=BROWSER_HEADERS, timeout=20)
+            res.raise_for_status()
+            for path in dict.fromkeys(re.findall(pattern, res.text)):
+                link = "https://www.kitco.com" + path
+                if link not in known_links and link not in new_links:
+                    new_links.append(link)
+        except Exception as ex:
+            print(f"Kitco listing {page_url} failed: {type(ex).__name__}")
+    for link in new_links[:KITCO_MAX_NEW_PER_RUN]:
+        try:
+            page = requests.get(link, headers=BROWSER_HEADERS, timeout=20).text
+            title = page_meta(page, "og:title")
+            published = page_meta(page, "article:published_time")
+            try:
+                ts = datetime.fromisoformat(published.replace("Z", "+00:00")).timestamp()
+            except ValueError:
+                ts = time.time()
+            authors = re.findall(r'"author[s]?"\s*:\s*\[?\s*\{[^}]*?"name"\s*:\s*"([^"]+)"', page)
+            add(title, "Kitco", link, ts, teaser=clean_teaser(page_meta(page, "description")),
+                author=authors[0] if authors else "", kind="commentary" if "/opinion/" in link else "")
+            time.sleep(0.3)
+        except Exception as ex:
+            print(f"Kitco article failed: {type(ex).__name__}")
+
+
+def collect_google_news(add):
+    for q in ANALYSIS_QUERIES:
+        url = ("https://news.google.com/rss/search?q=" + quote_plus(f"{q} when:2d")
+               + "&hl=en-US&gl=US&ceid=US:en")
+        try:
+            res = requests.get(url, headers=HTTP_HEADERS, timeout=20)
+            if res.status_code == 429:
+                time.sleep(8)
+                res = requests.get(url, headers=HTTP_HEADERS, timeout=20)
+            res.raise_for_status()
+            for e in feedparser.parse(res.content).entries:
+                raw_source = (e.get("source") or {}).get("title") or ""
+                source = analysis_publisher(raw_source)
+                title = html.unescape(e.get("title", "")).strip()
+                if title.endswith(f" - {raw_source}"):
+                    title = title[: -len(raw_source) - 3].strip()
+                parsed = e.get("published_parsed")
+                if source:
+                    add(title, source, e.get("link", ""), calendar.timegm(parsed) if parsed else time.time())
+        except Exception as ex:
+            print(f"Analysis Google News query failed: {type(ex).__name__}")
+        time.sleep(1.5)  # Google News rate-limits bursts
+
+
+def update_analysis():
+    # re-apply the junk filter to stored items too, so filter changes take effect immediately
+    stored = {i["key"]: i for i in read_json(ANALYSIS_FILE, {}).get("items", [])
+              if not ANALYSIS_JUNK_RE.search(i["title"])}
+    added = 0
+
+    def add(title, source, link, ts, teaser="", author="", ai=False, kind="", topic_text=None):
+        nonlocal added
+        if not title or ANALYSIS_JUNK_RE.search(title) or not ANALYSIS_TOPIC_RE.search(topic_text or title):
+            return
+        key = title_key(title)
+        old = stored.get(key)
+        if old and (old.get("teaser") or not teaser):
+            return  # already have it (same story via several sources): keep the version with a teaser
+        stored[key] = {"key": key, "title": title, "source": source, "link": link,
+                       "ts": int(min(ts, time.time())), "teaser": teaser, "author": author,
+                       "ai": ai, "kind": kind}
+        added += 0 if old else 1
+
+    collect_feeds(add)
+    collect_kitco(add, {i["link"] for i in stored.values()})
+    collect_google_news(add)
+    cutoff = time.time() - ANALYSIS_KEEP_DAYS * 86400
+    items = sorted((i for i in stored.values() if i["ts"] >= cutoff), key=lambda i: -i["ts"])
+    write_json(ANALYSIS_FILE, {"generated_utc": utc_now_str(), "items": items})
+    with_teaser = sum(1 for i in items if i.get("teaser"))
+    print(f"Analysis: {len(items)} articles in the last {ANALYSIS_KEEP_DAYS} days ({added} new, {with_teaser} with teaser)")
+
+
 def run_all():
-    for job in (update_macro, update_taker_volume, update_comex):
+    for job in (update_macro, update_taker_volume, update_comex, update_analysis):
         try:
             job()
         except Exception as ex:

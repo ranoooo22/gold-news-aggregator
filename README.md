@@ -2,7 +2,7 @@
 
 A static site (GitHub Pages) with three tabs:
 
-- **Market**: live spot gold chart with a volume profile and the combined order books of several venues drawn on it, aggressor flow (buy vs sell pressure), the largest levels up to ±$200 from spot, a depth ladder, broker reference quotes, OANDA's client order book, and the TradingView Capital.com chart.
+- **Market**: live spot gold chart with OANDA + COMEX order zones (bands, lines and a zone list), an optional volume profile, small charts below it (buy vs sell pressure, COT, real yield, Hormuz), broker quotes, aggressor flow, and the TradingView Capital.com chart.
 - **Macro**: cross-asset dashboard (metals, oil, dollar, US yields, inflation, equities), shipping through Hormuz / Bab el-Mandeb / Suez, and the CFTC Commitments of Traders report.
 - **News**: gold-relevant news grouped into stories with short factual AI summaries. Search, filter, sort, and pin stories (pins are saved in your browser). Gold market analysis from analyst publishers appears between the news as clearly labelled cards, as published (publisher teaser, no AI summary).
 
@@ -10,8 +10,8 @@ No AI analysis, signals or predictions. Human analysts' commentary is shown as s
 
 ## Using the chart
 
-- **Layers** (button above the chart): choose what is drawn on the gold chart (order book, largest orders, volume profile, volume zones) and which small charts appear below it (buy vs sell pressure, hedge fund positioning, US real yield, Hormuz tankers). Quick choices: Price only / Key levels / Everything.
-- **Settings**: order book range, row size, smoothing, which levels are drawn, volume profile period and source.
+- **Layers** (button above the chart): choose what is drawn on the gold chart (order zones, volume profile, volume zones) and which small charts appear below it (buy vs sell pressure, hedge fund positioning, US real yield, Hormuz tankers). Quick choices: Price only / Key levels / Everything.
+- **Settings**: zone size and price range, COMEX period for the zones, volume profile period and source.
 - Choices are saved in your browser. On phones the menus open from the bottom and the tabs sit at the bottom of the screen.
 
 ## Data sources
@@ -19,11 +19,10 @@ No AI analysis, signals or predictions. Human analysts' commentary is shown as s
 | What | Source | Updated |
 |---|---|---|
 | Spot price & candles | OKX XAU/USD index (composite of spot quotes) | live, every 2 s, in the browser |
-| Order books | OKX XAU/USDT perp, OKX PAXG/XAUT, Kraken PAXG/XAUT, Binance PAXG, Bybit XAUT | live, every 6 s, in the browser |
+| Order zones | OANDA client order book (`oanda_book.json`, each workflow run) + COMEX gold futures hourly volume (`comex_volume.json`) | OANDA every 20 min, COMEX hourly |
 | Volume profile | COMEX gold futures (GC=F) hourly volume via Yahoo Finance (`comex_volume.json`), or OKX XAU/USDT perp candles; both aligned to the spot index | COMEX: each workflow run; OKX: in the browser |
 | Aggressor flow | OKX hourly taker buy/sell volume of the XAU/USDT perp (`taker_volume.json`) | hourly |
 | Reference quotes | OANDA, Forex.com, Pepperstone, ICE, TVC via TradingView's scanner | every 5 s, in the browser |
-| OANDA client orders | OANDA v20 API (`oanda_book.json`) | each workflow run |
 | Cross-asset quotes | TradingView's scanner | every 30 s, in the browser |
 | US 10Y real yield & breakeven | U.S. Treasury daily yield curves (`macro.json`) | daily |
 | Shipping chokepoints | IMF PortWatch (satellite AIS) | weekly, a few days' delay, in the browser |

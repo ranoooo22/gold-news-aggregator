@@ -56,53 +56,26 @@
                     <div class="panes" id="panes"></div>
                 </div>
 
-                <div class="panel dom-panel">
-                    <div class="panel-head">
-                        <span class="panel-title" id="largest-title">Largest levels</span>
+                <div class="side-col">
+                    <div class="panel zones-panel">
+                        <div class="panel-head">
+                            <span class="panel-title">Order zones · OANDA + COMEX</span>
+                        </div>
+                        <div class="zones-meta"><span id="zones-sub"></span><span id="zones-asof"></span></div>
+                        <div id="zones-list"><div class="empty">Loading…</div></div>
+                        <p class="note"><b>OANDA</b>: share of OANDA clients' open orders in the zone, and how many are buy vs sell orders (one broker, refreshed every 20 min).
+                            <b>COMEX</b>: share of gold futures volume traded in the zone. The two are shown side by side, not added up.
+                            Listed: the 3 most important zones above and below the price.</p>
                     </div>
-                    <div id="largest-levels"></div>
-                    <div class="panel-head ladder-head">
-                        <span class="panel-title">Combined order book</span>
-                        <button class="link-btn" id="dom-recenter">Center</button>
-                    </div>
-                    <div class="dom-head"><span>Bids (oz)</span><span>Price</span><span>Asks (oz)</span></div>
-                    <div class="dom-ladder" id="dom-ladder"><div class="empty">Loading order books…</div></div>
-                    <div class="dom-totals" id="dom-totals"></div>
-                </div>
-            </div>
 
-            <div class="info-grid">
-                <div class="panel">
-                    <div class="panel-head"><span class="panel-title">Order book venues</span></div>
-                    <div class="table-scroll">
+                    <div class="panel">
+                        <div class="panel-head"><span class="panel-title">Broker quotes</span></div>
                         <table class="data-table">
-                            <thead><tr><th>Venue</th><th>Market</th><th>Status</th><th class="num">Mid</th>
-                                <th class="num" title="Venue mid minus spot">vs spot</th><th class="num">Bid oz</th><th class="num">Ask oz</th>
-                                <th class="num" title="How far this venue's book reaches from spot">Reach</th></tr></thead>
-                            <tbody id="venue-table-body"></tbody>
+                            <thead><tr><th>Source</th><th class="num">Price</th><th class="num">vs spot</th></tr></thead>
+                            <tbody id="ref-quotes"><tr><td colspan="3" class="muted">Loading…</td></tr></tbody>
                         </table>
+                        <p class="note">Via TradingView, every 5 s. Capital.com's price is in the Capital.com chart.</p>
                     </div>
-                    <p class="note">Public order books of gold perpetuals and gold-backed tokens (1 PAXG = 1 XAUT = 1 troy oz).
-                        These are real, live books, but much thinner than COMEX futures or the interbank market. Hover a ladder row for the per-venue split.</p>
-                </div>
-
-                <div class="panel">
-                    <div class="panel-head"><span class="panel-title">Broker reference quotes</span></div>
-                    <table class="data-table">
-                        <thead><tr><th>Source</th><th class="num">Price</th><th class="num">vs spot</th></tr></thead>
-                        <tbody id="ref-quotes"><tr><td colspan="3" class="muted">Loading…</td></tr></tbody>
-                    </table>
-                    <p class="note">Via TradingView, every 5 s. Capital.com's price is not available from this source; it is shown in the TradingView chart.</p>
-                </div>
-
-                <div class="panel">
-                    <div class="panel-head">
-                        <span class="panel-title">OANDA client orders</span>
-                        <span class="muted small" id="oanda-time"></span>
-                    </div>
-                    <div class="dom-head"><span>Buy orders</span><span>Price</span><span>Sell orders</span></div>
-                    <div class="dom-ladder short" id="oanda-book"><div class="empty">Loading…</div></div>
-                    <p class="note">Share of OANDA's open client orders per price level. One broker's retail clients, refreshed by OANDA every 20 min.</p>
                 </div>
             </div>
 
@@ -190,6 +163,7 @@
                     <option>Analysis &amp; commentary</option>
                     <option>AI &amp; Tech</option>
                     <option>Stock Markets</option>
+                    <option>Currencies</option>
                     <option>Other</option>
                 </select>
                 <select id="news-hours">
@@ -243,10 +217,8 @@
             </div>
         </div>
         <div class="sheet-section">On the gold chart</div>
-        <label class="opt-row"><input type="checkbox" data-layer="book">
-            <span><b>Order book</b><small>Bars on the right edge: open buy orders (green) and sell orders (red) of 7 gold markets, by price.</small></span></label>
-        <label class="opt-row"><input type="checkbox" data-layer="walls">
-            <span><b>Largest orders</b><small>Lines at the 3 biggest buy and sell levels, $10 or more away from the price.</small></span></label>
+        <label class="opt-row"><input type="checkbox" data-layer="zones">
+            <span><b>Order zones (OANDA + COMEX)</b><small>Bands and lines at the 3 most important $10 zones above and below the price: where OANDA clients have orders and where COMEX futures traded most.</small></span></label>
         <label class="opt-row"><input type="checkbox" data-layer="vp">
             <span><b>Volume profile</b><small>Bars on the left edge: how much gold traded at each price in the past week, month or 3 months.</small></span></label>
         <label class="opt-row"><input type="checkbox" data-layer="vpLines">
@@ -264,29 +236,19 @@
 
     <div class="sheet" id="settings-sheet" role="dialog" aria-label="Chart settings" hidden>
         <div class="sheet-head"><span>Settings</span><button class="sheet-done" data-close>Done</button></div>
-        <div class="sheet-section">Order book</div>
-        <label class="opt-row select"><span><b>Price range</b><small>How far from the price orders are shown.</small></span>
-            <select id="opt-range">
-                <option value="25">±$25</option><option value="50">±$50</option>
-                <option value="100">±$100</option><option value="200">±$200</option>
+        <div class="sheet-section">Order zones</div>
+        <label class="opt-row select"><span><b>Zone size</b><small>Price width of one zone.</small></span>
+            <select id="opt-zone-width">
+                <option value="5">$5</option><option value="10">$10</option><option value="20">$20</option>
             </select></label>
-        <label class="opt-row select"><span><b>Row size</b><small>Price step per row in the order book. Auto keeps it readable.</small></span>
-            <select id="opt-step">
-                <option value="auto">Auto</option><option value="0.5">$0.50</option><option value="1">$1</option>
-                <option value="2">$2</option><option value="5">$5</option><option value="10">$10</option>
+        <label class="opt-row select"><span><b>Price range</b><small>How far from the price zones are looked for.</small></span>
+            <select id="opt-zone-range">
+                <option value="50">±$50</option><option value="100">±$100</option><option value="200">±$200</option>
             </select></label>
-        <label class="opt-row select"><span><b>Smoothing</b><small>Average each level over time, so orders that flash in and out fade away.</small></span>
-            <select id="opt-smooth">
-                <option value="0">Live</option><option value="1">1 min</option>
-                <option value="5">5 min</option><option value="15">15 min</option>
+        <label class="opt-row select"><span><b>COMEX period</b><small>How many days of COMEX trading volume are counted.</small></span>
+            <select id="opt-zone-days">
+                <option value="2">2 days</option><option value="5">5 days</option><option value="10">10 days</option>
             </select></label>
-        <label class="opt-row select"><span><b>Which levels on the chart</b><small>Only levels clearly bigger than a typical level, or all of them.</small></span>
-            <select id="opt-levels">
-                <option value="all">All levels</option><option value="larger">Larger (1.5× typical)</option>
-                <option value="largest">Largest (3× typical)</option>
-            </select></label>
-        <label class="opt-row"><input type="checkbox" id="opt-align">
-            <span><b>Line up markets with spot</b><small>Each market trades a few dollars away from spot; this shifts its orders so they sit at the right place on the spot chart.</small></span></label>
         <div class="sheet-section">Volume profile</div>
         <label class="opt-row select"><span><b>Period</b><small>How far back trading volume is counted.</small></span>
             <select id="opt-vp">
@@ -304,6 +266,7 @@
 
     <script src="js/util.js"></script>
     <script src="js/market.js"></script>
+    <script src="js/zones.js"></script>
     <script src="js/volprofile.js"></script>
     <script src="js/flow.js"></script>
     <script src="js/layers.js"></script>
@@ -323,6 +286,7 @@
             document.querySelectorAll('.tab').forEach((b) => b.addEventListener('click', () => show(b.dataset.tab)));
             show(store.get('gt_tab', 'market'));
             startMarket();
+            startZones();
             startVolumeProfile();
             startFlow();
             startLayers();

@@ -35,7 +35,8 @@ JOIN_WINDOW_HOURS = 12      # an article may only join a cluster updated within 
 SIM_THRESHOLD = 0.62        # cosine similarity to a cluster's centroid needed to join it
 MAX_CLUSTER_SIZE = 40       # beyond this a story continues in a new cluster
 BATCH_SIZE = 6              # clusters per Gemini call
-MAX_BATCHES_PER_RUN = 4
+MAX_BATCHES_PER_RUN = 6
+RELEVANCE_RULES = 2         # bump when the on_topic rules change: recent off-topic stories get re-judged
 ARTICLES_PER_PROMPT = 10    # first report + newest 9
 
 GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash"]
@@ -55,6 +56,10 @@ def google_news(query):
 FEEDS = {
     "CNBC Economy": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258",
     "Investing.com": "https://www.investing.com/rss/news_11.rss",
+    "Investing.com Forex": "https://www.investing.com/rss/news_1.rss",
+    "Investing.com Stock Market": "https://www.investing.com/rss/news_25.rss",
+    "Investing.com Economy": "https://www.investing.com/rss/news_14.rss",
+    "Investing.com Economic Data": "https://www.investing.com/rss/news_95.rss",
     "CNBC Technology": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910",
     "Al Jazeera": "https://www.aljazeera.com/xml/rss/all.xml",
     "Middle East Eye": "https://www.middleeasteye.net/rss",
@@ -125,6 +130,14 @@ KEYWORDS = [
     r"houthis?", r"yemen", r"red sea", r"bab al-mandab", r"saudi", r"missiles?", r"air ?strikes?",
     r"drones?", r"ceasefire", r"truce", r"nuclear", r"ukraine", r"russia", r"taiwan", r"war",
     r"invasion", r"military",
+    # currencies, economy & markets
+    r"euro", r"yen", r"sterling", r"pound", r"yuan", r"renminbi", r"swiss franc", r"forex", r"currenc(?:y|ies)",
+    r"eur/usd", r"usd/jpy", r"gbp/usd", r"usd/chf", r"bitcoin", r"crypto",
+    r"econom(?:y|ic|ies)", r"growth", r"consumer", r"sentiment", r"retail sales", r"spending", r"housing",
+    r"manufacturing", r"pmi", r"ism", r"wages?", r"jobs?", r"labou?r market", r"budget", r"deficit", r"fiscal",
+    r"debt", r"bonds?", r"exports?", r"imports?", r"trade (?:deal|talks|balance|surplus)",
+    r"snb", r"rba", r"boc", r"rbnz", r"ipo",
+    r"stocks?", r"equities", r"shares", r"dow", r"futures", r"earnings", r"selloff", r"sell-off", r"rally",
     # AI, tech & equity markets
     r"ai", r"artificial intelligence", r"openai", r"nvidia", r"nvda", r"tsmc", r"amd", r"broadcom",
     r"semiconductors?", r"chips?", r"chipmakers?", r"data cent(?:er|re)s?", r"hyperscalers?",
@@ -132,10 +145,14 @@ KEYWORDS = [
 ]
 KEYWORD_RE = re.compile(r"\b(?:" + "|".join(KEYWORDS) + r")\b", re.IGNORECASE)
 
+# feeds that only carry market news: no keyword filter
+UNFILTERED_FEEDS = {"Investing.com", "Investing.com Forex", "Investing.com Stock Market",
+                    "Investing.com Economy", "Investing.com Economic Data"}
+
 TOPICS = [
     "Gold & Precious Metals", "Fed & US Rates", "Economic Data", "Central Banks",
     "Oil & Energy", "Middle East", "Trade & Sanctions", "Other Geopolitics",
-    "AI & Tech", "Stock Markets", "Other",
+    "AI & Tech", "Stock Markets", "Currencies", "Other",
 ]
 
 
@@ -208,7 +225,9 @@ def fetch_feed(item):
             else:
                 source = name
                 desc = clean_text(e.get("summary", e.get("description", "")))[:400]
-            if not passes_filter(f"{title} {desc}"):
+            # curated market sections (Investing.com) skip the keyword list; Gemini still judges relevance
+            text = f"{title} {desc}"
+            if FILLER_RE.search(text) or (name not in UNFILTERED_FEEDS and not passes_filter(text)):
                 continue
             ts = entry_timestamp(e) or time.time()
             ts = min(ts, time.time())
@@ -320,15 +339,15 @@ Rules:
 - summary: 1-3 sentences describing the core event.
 - key_points: up to 6 distinct facts, newest first, each starting with "[HH:MM UTC, Source] ".
 - topic: the single best category.
-- on_topic: true if the story is about gold or precious metals markets, US monetary policy or rates,
-  major economic data, central banks, the US dollar, oil or energy supply, armed conflict or sanctions
-  involving major economies or energy producers, trade policy between major economies, broad stock market
-  moves, or major AI/technology developments: earnings, guidance and leadership changes at the largest
-  tech/AI companies (e.g. Nvidia, Microsoft, Alphabet, Amazon, Meta, Apple, TSMC, OpenAI), AI investment
-  and data-center spending, chip export controls.
-  false for: other individual company news (including mining exploration/drill results and small-cap stocks),
-  product launches and reviews, stock picks and investing advice, local crime, domestic politics without
-  economic or military relevance, sports, culture, opinion pieces.
+- on_topic: true for anything a macro or gold trader follows: gold and other commodities, central banks
+  and interest rates, bond markets, currencies (dollar, euro, yen, pound, yuan, franc, crypto), economic data
+  and the economy of any major country, government budgets, debt and fiscal policy, trade policy, stock
+  markets and indices of any country, earnings and major news of large companies, AI and tech developments
+  with market impact, energy, armed conflict, sanctions, elections and politics with economic or security
+  impact.
+  false only for: sports, entertainment, celebrities, culture and religion, lifestyle and travel, local
+  crime and accidents without wider impact, human-interest stories, product reviews, personal-finance tips,
+  stock picks and investing advice, and opinion pieces.
 
 Clusters:
 {clusters}
@@ -430,7 +449,14 @@ def load_clusters():
         with open(DATA_FILE, encoding="utf-8") as f:
             data = json.load(f)
         if isinstance(data, dict) and data.get("version") == 2:
-            return data["clusters"]
+            clusters = data["clusters"]
+            if data.get("relevance_rules", 1) < RELEVANCE_RULES:
+                # relevance rules changed: let Gemini re-judge recent stories it had filtered out
+                cutoff = time.time() - 24 * 3600
+                for c in clusters:
+                    if (c.get("summary") or {}).get("on_topic") is False and c["last_ts"] >= cutoff:
+                        c["needs_summary"] = True
+            return clusters
     except (OSError, ValueError):
         pass
     return []  # missing file or old format: start fresh
@@ -456,7 +482,8 @@ def main():
 
     clusters.sort(key=lambda c: -c["last_ts"])
     with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump({"version": 2, "generated_utc": utc_str(now), "feeds": health, "clusters": clusters},
+        json.dump({"version": 2, "relevance_rules": RELEVANCE_RULES, "generated_utc": utc_str(now),
+                   "feeds": health, "clusters": clusters},
                   f, ensure_ascii=False, separators=(",", ":"))
 
     book = fetch_oanda_book()

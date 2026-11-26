@@ -282,8 +282,8 @@ a.card-toggle { text-decoration: none; }
     .sheet { top: auto; left: 0; right: 0; width: 100%; max-height: 82vh; border-left: 0; border-top: 1px solid var(--line);
         border-radius: 16px 16px 0 0; padding-bottom: calc(24px + env(safe-area-inset-bottom)); box-shadow: 0 -10px 30px rgba(70, 50, 20, 0.12); }
     .pin-btn, .link-btn, .chip { padding: 8px 12px; }
-    /* header in one line: logo, price, change */
-    .brand-name, .spot-label { display: none; }
+    /* header in one line: coin, name, price, change */
+    .spot-label { display: none; }
     .topbar-inner { flex-wrap: nowrap; }
     .spot-block { gap: 6px; }
     .spot-price { font-size: 1.1rem; }
@@ -298,4 +298,8 @@ a.card-toggle { text-decoration: none; }
     .chart-wrap { height: 400px; }
     .news-toolbar select { flex: 1 1 45%; }
     .news-card { padding: 12px 14px 8px; }
+}
+@media (max-width: 360px) {
+    /* very narrow phones: coin, price and change only, so the header stays on one line */
+    .brand-name { display: none; }
 }

@@ -1,4 +1,4 @@
-# Gold Terminal
+# Rano
 
 A static site (GitHub Pages) with three tabs:
 

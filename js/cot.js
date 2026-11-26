@@ -97,18 +97,18 @@ function renderCotChart() {
     if (!cotState.chart) {
         cotState.chart = LightweightCharts.createChart(container, {
             autoSize: true,
-            layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#94a3b8', fontFamily: 'JetBrains Mono, monospace' },
-            grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
-            timeScale: { borderColor: '#21293a' },
-            rightPriceScale: { borderColor: '#21293a' },
+            layout: chartLayout(),
+            grid: chartGrid(),
+            timeScale: { borderColor: THEME.border },
+            rightPriceScale: { borderColor: THEME.border },
             localization: { priceFormatter: (p) => fmt(p, 0) },
             handleScroll: false, handleScale: false,
         });
         registerFitOnShow(cotState.chart);
         cotState.series = cotState.chart.addBaselineSeries({
             baseValue: { type: 'price', price: 0 },
-            topLineColor: '#00c26e', topFillColor1: 'rgba(0, 194, 110, 0.25)', topFillColor2: 'rgba(0, 194, 110, 0.02)',
-            bottomLineColor: '#ff4d4f', bottomFillColor1: 'rgba(255, 77, 79, 0.02)', bottomFillColor2: 'rgba(255, 77, 79, 0.25)',
+            topLineColor: THEME.up, topFillColor1: rgba('up', 0.2), topFillColor2: rgba('up', 0.02),
+            bottomLineColor: THEME.down, bottomFillColor1: rgba('down', 0.02), bottomFillColor2: rgba('down', 0.2),
             lineWidth: 2,
         });
     }

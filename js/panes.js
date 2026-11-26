@@ -27,7 +27,7 @@ const PANE_DEFS = {
         draw: (chart) => {
             const bars = chart.addHistogramSeries({ priceLineVisible: false, lastValueVisible: false });
             bars.setData(flowState.data.bars);
-            const cum = chart.addLineSeries({ priceScaleId: 'left', color: '#ffa31a', lineWidth: 2, priceLineVisible: false, lastValueVisible: false });
+            const cum = chart.addLineSeries({ priceScaleId: 'left', color: THEME.accent, lineWidth: 2, priceLineVisible: false, lastValueVisible: false });
             cum.setData(flowState.data.line);
             chart.applyOptions({ leftPriceScale: { visible: false } });
         },
@@ -45,8 +45,8 @@ const PANE_DEFS = {
         draw: (chart) => {
             const s = chart.addBaselineSeries({
                 baseValue: { type: 'price', price: 0 }, lineWidth: 2, priceLineVisible: false,
-                topLineColor: '#00c26e', topFillColor1: 'rgba(0, 194, 110, 0.2)', topFillColor2: 'rgba(0, 194, 110, 0.02)',
-                bottomLineColor: '#ff4d4f', bottomFillColor1: 'rgba(255, 77, 79, 0.02)', bottomFillColor2: 'rgba(255, 77, 79, 0.2)',
+                topLineColor: THEME.up, topFillColor1: rgba('up', 0.18), topFillColor2: rgba('up', 0.02),
+                bottomLineColor: THEME.down, bottomFillColor1: rgba('down', 0.02), bottomFillColor2: rgba('down', 0.18),
             });
             s.setData(cotState.rows.slice(-52).map((r) => ({ time: r.date, value: r.mm.net })));
         },
@@ -62,7 +62,7 @@ const PANE_DEFS = {
             return `<b>${fmt(last[1], 2)}%</b> on ${last[0]} (${fmtSigned((last[1] - weekAgo[1]) * 100, 0)} bp in a week)`;
         },
         draw: (chart) => {
-            const s = chart.addLineSeries({ color: '#38bdf8', lineWidth: 2, priceLineVisible: false });
+            const s = chart.addLineSeries({ color: THEME.info, lineWidth: 2, priceLineVisible: false });
             s.setData(macroState.daily.REAL10.points.map(([time, value]) => ({ time, value })));
         },
         legend: 'yield of inflation-protected 10-year US bonds',
@@ -78,7 +78,7 @@ const PANE_DEFS = {
             return `<b>${fmt(last.value, 1)} tankers/day</b> (7-day avg, ${last.time})${yearAgo ? ` · a year ago ${fmt(yearAgo.value, 1)}` : ''}`;
         },
         draw: (chart) => {
-            const s = chart.addAreaSeries({ lineColor: '#ffa31a', topColor: 'rgba(255, 163, 26, 0.25)', bottomColor: 'rgba(255, 163, 26, 0.02)', lineWidth: 2, priceLineVisible: false });
+            const s = chart.addAreaSeries({ lineColor: THEME.accent, topColor: rgba('accent', 0.2), bottomColor: rgba('accent', 0.02), lineWidth: 2, priceLineVisible: false });
             s.setData(rollingAvg(shipState.byStrait['Strait of Hormuz'].tanker, PW_AVG_DAYS));
         },
         legend: 'tankers passing per day, 7-day average (satellite AIS)',
@@ -90,10 +90,10 @@ const paneCharts = {};
 function paneChartOptions() {
     return {
         autoSize: true,
-        layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#94a3b8', fontFamily: 'JetBrains Mono, monospace', fontSize: 10 },
-        grid: { vertLines: { visible: false }, horzLines: { color: '#161d2a' } },
-        timeScale: { borderColor: '#21293a' },
-        rightPriceScale: { borderColor: '#21293a' },
+        layout: chartLayout({ fontSize: 10 }),
+        grid: chartGrid(false),
+        timeScale: { borderColor: THEME.border },
+        rightPriceScale: { borderColor: THEME.border },
         localization: { priceFormatter: (p) => (Math.abs(p) >= 1000 ? fmt(p, 0) : fmt(p, 2)) },
         handleScroll: false, handleScale: false,
     };

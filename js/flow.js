@@ -38,7 +38,7 @@ async function loadFlow() {
             const delta = g.buy - g.sell;
             cum += delta;
             const time = k / 1000;
-            bars.push({ time, value: Math.round(delta), color: delta >= 0 ? 'rgba(0, 194, 110, 0.6)' : 'rgba(255, 77, 79, 0.6)' });
+            bars.push({ time, value: Math.round(delta), color: delta >= 0 ? rgba('up', 0.55) : rgba('down', 0.55) });
             line.push({ time, value: Math.round(cum) });
         });
         renderFlowChart(bars, line);
@@ -76,16 +76,16 @@ function renderFlowChart(bars, line) {
     if (!flowState.chart) {
         flowState.chart = LightweightCharts.createChart($('flow-chart'), {
             autoSize: true,
-            layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#94a3b8', fontFamily: 'JetBrains Mono, monospace' },
-            grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
-            timeScale: { borderColor: '#21293a', timeVisible: true },
-            rightPriceScale: { borderColor: '#21293a' },
-            leftPriceScale: { visible: true, borderColor: '#21293a' },
+            layout: chartLayout(),
+            grid: chartGrid(),
+            timeScale: { borderColor: THEME.border, timeVisible: true },
+            rightPriceScale: { borderColor: THEME.border },
+            leftPriceScale: { visible: true, borderColor: THEME.border },
             localization: { priceFormatter: (p) => fmt(p, 0) },
         });
         registerFitOnShow(flowState.chart);
         flowState.bars = flowState.chart.addHistogramSeries({ priceScaleId: 'right', priceLineVisible: false });
-        flowState.cum = flowState.chart.addLineSeries({ priceScaleId: 'left', color: '#ffa31a', lineWidth: 2, priceLineVisible: false });
+        flowState.cum = flowState.chart.addLineSeries({ priceScaleId: 'left', color: THEME.accent, lineWidth: 2, priceLineVisible: false });
     }
     flowState.bars.setData(bars);
     flowState.cum.setData(line);

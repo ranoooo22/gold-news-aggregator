@@ -167,7 +167,7 @@ function updatePocLine() {
     if (!vpState.profile || !settings.layers.vpLines || settings.chartMode !== 'spot') return;
     vpLevels().forEach((l) => {
         vpState.lines.push(state.series.createPriceLine({
-            price: l.price, color: l.poc ? '#ffa31a' : '#38bdf8', lineWidth: l.poc ? 2 : 1,
+            price: l.price, color: l.poc ? THEME.accent : THEME.info, lineWidth: l.poc ? 2 : 1,
             lineStyle: LightweightCharts.LineStyle.Dotted, axisLabelVisible: true, title: l.title,
         }));
     });
@@ -200,8 +200,8 @@ function drawVolumeProfile(ctx, paneWidth, paneHeight) {
         const h = Math.max(1, Math.abs(yBot - yTop) - 1);
         const len = (oz / vpState.max) * maxLen;
         const inValueArea = price >= vpState.val && price < vpState.vah;
-        ctx.fillStyle = price === vpState.poc ? 'rgba(255, 163, 26, 0.7)'
-            : inValueArea ? 'rgba(56, 189, 248, 0.42)' : 'rgba(56, 189, 248, 0.2)';
+        ctx.fillStyle = price === vpState.poc ? rgba('accent', 0.6)
+            : inValueArea ? rgba('info', 0.38) : rgba('info', 0.18);
         ctx.fillRect(0, Math.min(yTop, yBot), len, h);
     }
 }

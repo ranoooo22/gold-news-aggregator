@@ -37,6 +37,13 @@ MAX_CLUSTER_SIZE = 40       # beyond this a story continues in a new cluster
 BATCH_SIZE = 6              # clusters per Gemini call
 MAX_BATCHES_PER_RUN = 6
 RELEVANCE_RULES = 2         # bump when the on_topic rules change: recent off-topic stories get re-judged
+SUMMARY_RULES = 2           # bump when the summary rules change: recent stories get rewritten once
+TEXT_ARTICLES_PER_STORY = 2  # article texts fetched per story being summarised
+TEXT_CHARS = 1500            # characters of article text given to Gemini per article
+# sites that refuse automated access to article pages (texts can't be fetched)
+TEXT_BLOCKED = ("news.google.com", "investing.com")
+BROWSER_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                                 "(KHTML, like Gecko) Chrome/130.0 Safari/537.36"}
 ARTICLES_PER_PROMPT = 10    # first report + newest 9
 
 GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.5-flash"]
@@ -200,7 +207,7 @@ def fetch_feed(item):
     articles = []
     try:
         res = requests.get(url, headers=HTTP_HEADERS, timeout=12)
-        if res.status_code == 429:  # rate limited: wait once and retry
+        if res.status_code in (429, 503):  # rate limited or briefly unavailable: wait once and retry
             time.sleep(RATE_LIMIT_RETRY_S)
             res = requests.get(url, headers=HTTP_HEADERS, timeout=12)
         if res.status_code != 200:
@@ -336,7 +343,12 @@ Rules:
   ALWAYS attribute their claims to them by name.
 - If sources contradict each other, give both versions, each attributed.
 - headline: neutral, max 14 words, describes the most recent development.
-- summary: 1-3 sentences describing the core event.
+- summary: 2-4 sentences of pure information: the core news first, then the most important supporting
+  facts from the article texts: numbers, names, dates, amounts, reasons given and consequences stated.
+  Cut every filler word. Never describe the article or the publisher ("X published a factbox", "the article
+  discusses", "reports highlight", "market developments concerning"); state the facts themselves.
+  Do not repeat the headline's wording. Where only headlines are available, write only what the headlines
+  say, even if that is a single sentence. Never add facts that are not in the input.
 - key_points: up to 6 distinct facts, newest first, each starting with "[HH:MM UTC, Source] ".
 - topic: the single best category.
 - on_topic: true for anything a macro or gold trader follows: gold and other commodities, central banks
@@ -367,7 +379,38 @@ def summary_schema():
     }, required=["cluster_id", "on_topic", "topic", "headline", "summary", "key_points"]))
 
 
-def format_cluster_for_prompt(idx, cluster):
+def fetch_article_text(url):
+    """Main text of an article page (first TEXT_CHARS characters), or "" if it can't be fetched."""
+    if any(d in url for d in TEXT_BLOCKED):
+        return ""
+    try:
+        import trafilatura
+        res = requests.get(url, headers=BROWSER_HEADERS, timeout=12)
+        if res.status_code != 200:
+            return ""
+        text = trafilatura.extract(res.text, include_comments=False, include_tables=False) or ""
+        return re.sub(r"\s+", " ", text).strip()[:TEXT_CHARS]
+    except Exception:
+        return ""
+
+
+def attach_article_texts(batch):
+    """Fetch the text of up to TEXT_ARTICLES_PER_STORY articles per story (newest first), in parallel.
+    Texts are only used for this prompt, not stored."""
+    jobs = []
+    for c in batch:
+        candidates = [a for a in sorted(c["articles"], key=lambda a: -a["ts"])
+                      if not any(d in a["link"] for d in TEXT_BLOCKED)]
+        jobs += candidates[:TEXT_ARTICLES_PER_STORY]
+    if not jobs:
+        return {}
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        texts = list(pool.map(lambda a: fetch_article_text(a["link"]), jobs))
+    return {a["link"]: t for a, t in zip(jobs, texts) if t}
+
+
+def format_cluster_for_prompt(idx, cluster, texts=None):
+    texts = texts or {}
     arts = sorted(cluster["articles"], key=lambda a: a["ts"])
     if len(arts) > ARTICLES_PER_PROMPT:
         arts = arts[:1] + arts[-(ARTICLES_PER_PROMPT - 1):]
@@ -376,12 +419,16 @@ def format_cluster_for_prompt(idx, cluster):
         tag = " | STATE-AFFILIATED" if a.get("state_affiliated") else ""
         desc = f" - {a['description'][:300]}" if a.get("description") else ""
         lines.append(f"  [{a['time_utc']} UTC | {a['source']}{tag}] {a['title']}{desc}")
+        if texts.get(a["link"]):
+            lines.append(f"    ARTICLE TEXT (excerpt): {texts[a['link']]}")
     return f"=== cluster_id {idx} ({len(cluster['articles'])} articles) ===\n" + "\n".join(lines)
 
 
 def summarize_batch(client, batch):
     from google.genai import types
-    prompt = PROMPT.format(clusters="\n\n".join(format_cluster_for_prompt(i, c) for i, c in enumerate(batch)))
+    texts = attach_article_texts(batch)
+    prompt = PROMPT.format(clusters="\n\n".join(format_cluster_for_prompt(i, c, texts) for i, c in enumerate(batch)))
+    print(f"  batch of {len(batch)}: article text for {len(texts)} articles")
     config = types.GenerateContentConfig(response_mime_type="application/json", response_schema=summary_schema())
     for model in GEMINI_MODELS:
         try:
@@ -450,6 +497,12 @@ def load_clusters():
             data = json.load(f)
         if isinstance(data, dict) and data.get("version") == 2:
             clusters = data["clusters"]
+            if data.get("summary_rules", 1) < SUMMARY_RULES:
+                # summary rules changed: rewrite the summaries of recent on-topic stories once
+                cutoff = time.time() - 12 * 3600
+                for c in clusters:
+                    if (c.get("summary") or {}).get("on_topic") and c["last_ts"] >= cutoff:
+                        c["needs_summary"] = True
             if data.get("relevance_rules", 1) < RELEVANCE_RULES:
                 # relevance rules changed: let Gemini re-judge recent stories it had filtered out
                 cutoff = time.time() - 24 * 3600
@@ -482,7 +535,8 @@ def main():
 
     clusters.sort(key=lambda c: -c["last_ts"])
     with open(DATA_FILE, "w", encoding="utf-8") as f:
-        json.dump({"version": 2, "relevance_rules": RELEVANCE_RULES, "generated_utc": utc_str(now),
+        json.dump({"version": 2, "relevance_rules": RELEVANCE_RULES, "summary_rules": SUMMARY_RULES,
+                   "generated_utc": utc_str(now),
                    "feeds": health, "clusters": clusters},
                   f, ensure_ascii=False, separators=(",", ":"))
 

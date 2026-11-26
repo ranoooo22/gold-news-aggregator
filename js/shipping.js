@@ -8,9 +8,9 @@
 
 const PW_URL = 'https://services9.arcgis.com/weJ1QsnbMYJlCHdG/arcgis/rest/services/Daily_Chokepoints_Data/FeatureServer/0/query';
 const PW_STRAITS = [
-    { name: 'Strait of Hormuz', color: '#ffa31a' },
-    { name: 'Bab el-Mandeb Strait', color: '#8b7cf6' },
-    { name: 'Suez Canal', color: '#38bdf8' },
+    { name: 'Strait of Hormuz', color: '#a8822f' },
+    { name: 'Bab el-Mandeb Strait', color: '#7a68a6' },
+    { name: 'Suez Canal', color: '#5a7a99' },
 ];
 const PW_HISTORY_DAYS = 480;
 const PW_AVG_DAYS = 7;
@@ -115,10 +115,10 @@ function renderShipChart(byStrait) {
     if (!shipState.chart) {
         shipState.chart = LightweightCharts.createChart($('ship-chart'), {
             autoSize: true,
-            layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#94a3b8', fontFamily: 'JetBrains Mono, monospace' },
-            grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
-            timeScale: { borderColor: '#21293a' },
-            rightPriceScale: { borderColor: '#21293a' },
+            layout: chartLayout(),
+            grid: chartGrid(),
+            timeScale: { borderColor: THEME.border },
+            rightPriceScale: { borderColor: THEME.border },
             handleScroll: false, handleScale: false,
         });
         registerFitOnShow(shipState.chart);

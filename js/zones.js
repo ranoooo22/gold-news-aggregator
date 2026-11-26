@@ -90,7 +90,7 @@ function computeZones() {
 }
 
 const DIR_LABEL = { buy: 'Buy orders', sell: 'Sell orders', mixed: 'Mixed', none: '' };
-const DIR_COLOR = { buy: '0, 194, 110', sell: '255, 77, 79', mixed: '255, 163, 26', none: '56, 189, 248' };
+const DIR_COLOR = { buy: RGB.up, sell: RGB.down, mixed: RGB.accent, none: RGB.info };
 
 function renderZonesPanel(spot) {
     const el = $('zones-list');
@@ -141,11 +141,11 @@ function updateZoneLines() {
     if (!settings.layers.zones || settings.chartMode !== 'spot') return;
     const narrow = window.innerWidth < 680;
     for (const z of zonesState.zones) {
-        const label = z.dir === 'buy' ? 'BUY' : z.dir === 'sell' ? 'SELL' : 'ZONE';
+        const label = z.dir === 'buy' ? 'Buy' : z.dir === 'sell' ? 'Sell' : 'Zone';
         zonesState.lines.push(state.series.createPriceLine({
             price: z.mid, color: `rgb(${DIR_COLOR[z.dir]})`, lineWidth: z.overlap ? 2 : 1,
             lineStyle: z.overlap ? LightweightCharts.LineStyle.Solid : LightweightCharts.LineStyle.Dashed,
-            axisLabelVisible: true, title: narrow ? label : `${label}${z.overlap ? ' · OANDA+COMEX' : ''}`,
+            axisLabelVisible: true, title: narrow ? label : `${label}${z.overlap ? ' · OANDA + COMEX' : ''}`,
         }));
     }
 }
@@ -163,7 +163,7 @@ function drawZones(ctx, paneWidth, paneHeight) {
         const yTop = state.series.priceToCoordinate(z.hi);
         const yBot = state.series.priceToCoordinate(z.lo);
         if (yTop === null || yBot === null || yBot < 0 || yTop > paneHeight) continue;
-        const alpha = 0.07 + 0.13 * (zonesState.maxScore ? z.score / zonesState.maxScore : 0);
+        const alpha = 0.06 + 0.12 * (zonesState.maxScore ? z.score / zonesState.maxScore : 0);
         ctx.fillStyle = `rgba(${DIR_COLOR[z.dir]}, ${alpha.toFixed(3)})`;
         ctx.fillRect(0, Math.min(yTop, yBot), paneWidth, Math.max(1, Math.abs(yBot - yTop)));
     }

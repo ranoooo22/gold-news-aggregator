@@ -138,16 +138,16 @@ function initChart() {
     const container = $('spot-chart');
     state.chart = LightweightCharts.createChart(container, {
         autoSize: true,
-        layout: { background: { type: 'solid', color: 'transparent' }, textColor: '#94a3b8', fontFamily: 'JetBrains Mono, monospace' },
-        grid: { vertLines: { color: '#161d2a' }, horzLines: { color: '#161d2a' } },
-        timeScale: { timeVisible: true, secondsVisible: false, borderColor: '#21293a', rightOffset: 6 },
-        rightPriceScale: { borderColor: '#21293a' },
-        crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
+        layout: chartLayout(),
+        grid: chartGrid(),
+        timeScale: { timeVisible: true, secondsVisible: false, borderColor: THEME.border, rightOffset: 6 },
+        rightPriceScale: { borderColor: THEME.border },
+        crosshair: { mode: LightweightCharts.CrosshairMode.Normal, vertLine: { color: '#b9ae99' }, horzLine: { color: '#b9ae99' } },
         localization: { priceFormatter: (p) => fmt(p) },
     });
     state.series = state.chart.addCandlestickSeries({
-        upColor: '#00c26e', downColor: '#ff4d4f', borderVisible: false,
-        wickUpColor: '#00c26e', wickDownColor: '#ff4d4f',
+        upColor: THEME.up, downColor: THEME.down, borderVisible: false,
+        wickUpColor: THEME.up, wickDownColor: THEME.down,
         priceFormat: { type: 'price', precision: 2, minMove: 0.01 },
         // zoom out far enough that the order zones and volume zones are in view
         autoscaleInfoProvider: (original) => {
@@ -209,8 +209,8 @@ function loadTradingView() {
     s.onload = () => {
         new window.TradingView.widget({
             container_id: 'tv-widget', symbol: 'CAPITALCOM:GOLD', interval: '15',
-            timezone: 'Etc/UTC', theme: 'dark', style: '1', locale: 'en', autosize: true,
-            allow_symbol_change: true, hide_side_toolbar: false, backgroundColor: '#0d1117',
+            timezone: 'Etc/UTC', theme: 'light', style: '1', locale: 'en', autosize: true,
+            allow_symbol_change: true, hide_side_toolbar: false, backgroundColor: '#fffcf6', gridColor: 'rgba(230, 221, 204, 0.5)',
         });
     };
     s.onerror = () => { $('tv-widget').innerHTML = '<div class="empty">TradingView could not be loaded.</div>'; };

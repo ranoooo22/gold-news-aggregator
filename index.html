@@ -10,7 +10,7 @@
 <body>
     <header class="topbar">
         <div class="topbar-inner">
-            <div class="brand"><span class="brand-tag">XAU</span><span class="brand-name">Gold Terminal</span></div>
+            <div class="brand"><span class="brand-mark" aria-hidden="true"></span><span class="brand-name">Gold Terminal</span></div>
             <div class="spot-block" title="Spot gold: OKX XAU/USD index">
                 <span class="spot-label">Spot</span>
                 <span class="spot-price" id="hdr-spot">–</span>
@@ -59,7 +59,7 @@
                 <div class="side-col">
                     <div class="panel zones-panel">
                         <div class="panel-head">
-                            <span class="panel-title">Order zones · OANDA + COMEX</span>
+                            <span class="panel-title">Order zones <span class="panel-src">OANDA + COMEX</span></span>
                         </div>
                         <div class="zones-meta"><span id="zones-sub"></span><span id="zones-asof"></span></div>
                         <div id="zones-list"><div class="empty">Loading…</div></div>
@@ -81,7 +81,7 @@
 
             <div class="panel flow-panel">
                 <div class="panel-head">
-                    <span class="panel-title">Aggressor flow · OKX gold perp</span>
+                    <span class="panel-title">Aggressor flow <span class="panel-src">OKX gold perp</span></span>
                     <span class="muted small" id="flow-asof"></span>
                 </div>
                 <div class="cot-grid">
@@ -130,7 +130,7 @@
 
             <div class="panel cot-panel">
                 <div class="panel-head">
-                    <span class="panel-title">CFTC Commitments of Traders · COMEX gold futures</span>
+                    <span class="panel-title">Commitments of Traders <span class="panel-src">CFTC, COMEX gold futures</span></span>
                     <span class="muted small" id="cot-asof"></span>
                 </div>
                 <div class="cot-grid">

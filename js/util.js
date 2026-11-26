@@ -2,6 +2,18 @@
 
 const $ = (id) => document.getElementById(id);
 
+// Colours shared by all charts and canvas overlays (keep in line with style.css)
+const THEME = {
+    text: '#786f61', grid: '#f0eadf', border: '#e6ddcc',
+    font: '-apple-system, BlinkMacSystemFont, Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+    up: '#3d8a5e', down: '#c0533f', accent: '#a8822f', info: '#5a7a99', violet: '#7a68a6',
+};
+// the same colours as "r, g, b" for rgba()
+const RGB = { up: '61, 138, 94', down: '192, 83, 63', accent: '168, 130, 47', info: '90, 122, 153' };
+const rgba = (name, alpha) => `rgba(${RGB[name]}, ${alpha})`;
+const chartLayout = (extra = {}) => ({ background: { type: 'solid', color: 'transparent' }, textColor: THEME.text, fontFamily: THEME.font, ...extra });
+const chartGrid = (vert = true) => ({ vertLines: vert ? { color: THEME.grid } : { visible: false }, horzLines: { color: THEME.grid } });
+
 function escapeHtml(value) {
     return String(value ?? '')
         .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
